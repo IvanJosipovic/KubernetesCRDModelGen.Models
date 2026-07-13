@@ -1,0 +1,1379 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.serviceprincipaldelegated.azuread.upbound.io;
+/// <summary>PermissionGrant is the Schema for the PermissionGrants API.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1PermissionGrantList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PermissionGrant>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "PermissionGrantList";
+    public const string KubeGroup = "serviceprincipaldelegated.azuread.upbound.io";
+    public const string KubePluralName = "permissiongrants";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "serviceprincipaldelegated.azuread.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "PermissionGrantList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta1PermissionGrant objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta1PermissionGrant> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecDeletionPolicyEnum>))]
+public enum V1beta1PermissionGrantSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a User in users to populate userObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderUserObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a User in users to populate userObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProviderUserObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecForProvider
+{
+    /// <summary>
+    /// - A set of claim values for delegated permission scopes which should be included in access tokens for the resource.
+    /// A set of claim values for delegated permission scopes which should be included in access tokens for the resource
+    /// </summary>
+    [JsonPropertyName("claimValues")]
+    public IList<string>? ClaimValues { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal representing the resource to be accessed. Changing this forces a new resource to be created.
+    /// The object ID of the service principal representing the resource to be accessed
+    /// </summary>
+    [JsonPropertyName("resourceServicePrincipalObjectId")]
+    public string? ResourceServicePrincipalObjectId { get; set; }
+
+    /// <summary>Reference to a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+    [JsonPropertyName("resourceServicePrincipalObjectIdRef")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdRef? ResourceServicePrincipalObjectIdRef { get; set; }
+
+    /// <summary>Selector for a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+    [JsonPropertyName("resourceServicePrincipalObjectIdSelector")]
+    public V1beta1PermissionGrantSpecForProviderResourceServicePrincipalObjectIdSelector? ResourceServicePrincipalObjectIdSelector { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal for which this delegated permission grant should be created. Changing this forces a new resource to be created.
+    /// The object ID of the service principal for which this delegated permission grant should be created
+    /// </summary>
+    [JsonPropertyName("servicePrincipalObjectId")]
+    public string? ServicePrincipalObjectId { get; set; }
+
+    /// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+    [JsonPropertyName("servicePrincipalObjectIdRef")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdRef? ServicePrincipalObjectIdRef { get; set; }
+
+    /// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+    [JsonPropertyName("servicePrincipalObjectIdSelector")]
+    public V1beta1PermissionGrantSpecForProviderServicePrincipalObjectIdSelector? ServicePrincipalObjectIdSelector { get; set; }
+
+    /// <summary>
+    /// - The object ID of the user on behalf of whom the service principal is authorized to access the resource. When omitted, the delegated permission grant will be consented for all users. Changing this forces a new resource to be created.
+    /// The object ID of the user on behalf of whom the service principal is authorized to access the resource
+    /// </summary>
+    [JsonPropertyName("userObjectId")]
+    public string? UserObjectId { get; set; }
+
+    /// <summary>Reference to a User in users to populate userObjectId.</summary>
+    [JsonPropertyName("userObjectIdRef")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdRef? UserObjectIdRef { get; set; }
+
+    /// <summary>Selector for a User in users to populate userObjectId.</summary>
+    [JsonPropertyName("userObjectIdSelector")]
+    public V1beta1PermissionGrantSpecForProviderUserObjectIdSelector? UserObjectIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a User in users to populate userObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderUserObjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a User in users to populate userObjectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProviderUserObjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecInitProvider
+{
+    /// <summary>
+    /// - A set of claim values for delegated permission scopes which should be included in access tokens for the resource.
+    /// A set of claim values for delegated permission scopes which should be included in access tokens for the resource
+    /// </summary>
+    [JsonPropertyName("claimValues")]
+    public IList<string>? ClaimValues { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal representing the resource to be accessed. Changing this forces a new resource to be created.
+    /// The object ID of the service principal representing the resource to be accessed
+    /// </summary>
+    [JsonPropertyName("resourceServicePrincipalObjectId")]
+    public string? ResourceServicePrincipalObjectId { get; set; }
+
+    /// <summary>Reference to a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+    [JsonPropertyName("resourceServicePrincipalObjectIdRef")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdRef? ResourceServicePrincipalObjectIdRef { get; set; }
+
+    /// <summary>Selector for a Principal in serviceprincipals to populate resourceServicePrincipalObjectId.</summary>
+    [JsonPropertyName("resourceServicePrincipalObjectIdSelector")]
+    public V1beta1PermissionGrantSpecInitProviderResourceServicePrincipalObjectIdSelector? ResourceServicePrincipalObjectIdSelector { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal for which this delegated permission grant should be created. Changing this forces a new resource to be created.
+    /// The object ID of the service principal for which this delegated permission grant should be created
+    /// </summary>
+    [JsonPropertyName("servicePrincipalObjectId")]
+    public string? ServicePrincipalObjectId { get; set; }
+
+    /// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+    [JsonPropertyName("servicePrincipalObjectIdRef")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdRef? ServicePrincipalObjectIdRef { get; set; }
+
+    /// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalObjectId.</summary>
+    [JsonPropertyName("servicePrincipalObjectIdSelector")]
+    public V1beta1PermissionGrantSpecInitProviderServicePrincipalObjectIdSelector? ServicePrincipalObjectIdSelector { get; set; }
+
+    /// <summary>
+    /// - The object ID of the user on behalf of whom the service principal is authorized to access the resource. When omitted, the delegated permission grant will be consented for all users. Changing this forces a new resource to be created.
+    /// The object ID of the user on behalf of whom the service principal is authorized to access the resource
+    /// </summary>
+    [JsonPropertyName("userObjectId")]
+    public string? UserObjectId { get; set; }
+
+    /// <summary>Reference to a User in users to populate userObjectId.</summary>
+    [JsonPropertyName("userObjectIdRef")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdRef? UserObjectIdRef { get; set; }
+
+    /// <summary>Selector for a User in users to populate userObjectId.</summary>
+    [JsonPropertyName("userObjectIdSelector")]
+    public V1beta1PermissionGrantSpecInitProviderUserObjectIdSelector? UserObjectIdSelector { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecManagementPoliciesEnum>))]
+public enum V1beta1PermissionGrantSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta1PermissionGrantSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionGrantSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta1PermissionGrantSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1PermissionGrantSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1PermissionGrantSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1PermissionGrantSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>PermissionGrantSpec defines the desired state of PermissionGrant</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta1PermissionGrantSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta1PermissionGrantSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta1PermissionGrantSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta1PermissionGrantSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta1PermissionGrantSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta1PermissionGrantSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantStatusAtProvider
+{
+    /// <summary>
+    /// - A set of claim values for delegated permission scopes which should be included in access tokens for the resource.
+    /// A set of claim values for delegated permission scopes which should be included in access tokens for the resource
+    /// </summary>
+    [JsonPropertyName("claimValues")]
+    public IList<string>? ClaimValues { get; set; }
+
+    /// <summary>The ID of the delegated permission grant.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal representing the resource to be accessed. Changing this forces a new resource to be created.
+    /// The object ID of the service principal representing the resource to be accessed
+    /// </summary>
+    [JsonPropertyName("resourceServicePrincipalObjectId")]
+    public string? ResourceServicePrincipalObjectId { get; set; }
+
+    /// <summary>
+    /// The object ID of the service principal for which this delegated permission grant should be created. Changing this forces a new resource to be created.
+    /// The object ID of the service principal for which this delegated permission grant should be created
+    /// </summary>
+    [JsonPropertyName("servicePrincipalObjectId")]
+    public string? ServicePrincipalObjectId { get; set; }
+
+    /// <summary>
+    /// - The object ID of the user on behalf of whom the service principal is authorized to access the resource. When omitted, the delegated permission grant will be consented for all users. Changing this forces a new resource to be created.
+    /// The object ID of the user on behalf of whom the service principal is authorized to access the resource
+    /// </summary>
+    [JsonPropertyName("userObjectId")]
+    public string? UserObjectId { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>PermissionGrantStatus defines the observed state of PermissionGrant.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PermissionGrantStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta1PermissionGrantStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta1PermissionGrantStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>PermissionGrant is the Schema for the PermissionGrants API.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1PermissionGrant : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PermissionGrantSpec>, IStatus<V1beta1PermissionGrantStatus?>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "PermissionGrant";
+    public const string KubeGroup = "serviceprincipaldelegated.azuread.upbound.io";
+    public const string KubePluralName = "permissiongrants";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "serviceprincipaldelegated.azuread.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "PermissionGrant";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>PermissionGrantSpec defines the desired state of PermissionGrant</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta1PermissionGrantSpec Spec { get; set; }
+
+    /// <summary>PermissionGrantStatus defines the observed state of PermissionGrant.</summary>
+    [JsonPropertyName("status")]
+    public V1beta1PermissionGrantStatus? Status { get; set; }
+}

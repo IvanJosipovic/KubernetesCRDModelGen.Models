@@ -1,0 +1,824 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
+/// <summary>ImageVersion is the Schema for the ImageVersions API. Provides a SageMaker AI Image Version resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1ImageVersionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ImageVersion>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "ImageVersionList";
+    public const string KubeGroup = "sagemaker.aws.upbound.io";
+    public const string KubePluralName = "imageversions";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "sagemaker.aws.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ImageVersionList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta1ImageVersion objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta1ImageVersion> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecDeletionPolicyEnum>))]
+public enum V1beta1ImageVersionSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolutionEnum>))]
+public enum V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolveEnum>))]
+public enum V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecForProviderImageNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ImageVersionSpecForProviderImageNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Image in sagemaker to populate imageName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecForProviderImageNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ImageVersionSpecForProviderImageNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolveEnum>))]
+public enum V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecForProviderImageNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ImageVersionSpecForProviderImageNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Image in sagemaker to populate imageName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecForProviderImageNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ImageVersionSpecForProviderImageNameSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecForProvider
+{
+    /// <summary>A list of aliases for the image version.</summary>
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The registry path of the container image on which this image version is based.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>Indicates Horovod compatibility.</summary>
+    [JsonPropertyName("horovod")]
+    public bool? Horovod { get; set; }
+
+    /// <summary>The name of the image. Must be unique to your account.</summary>
+    [JsonPropertyName("imageName")]
+    public string? ImageName { get; set; }
+
+    /// <summary>Reference to a Image in sagemaker to populate imageName.</summary>
+    [JsonPropertyName("imageNameRef")]
+    public V1beta1ImageVersionSpecForProviderImageNameRef? ImageNameRef { get; set; }
+
+    /// <summary>Selector for a Image in sagemaker to populate imageName.</summary>
+    [JsonPropertyName("imageNameSelector")]
+    public V1beta1ImageVersionSpecForProviderImageNameSelector? ImageNameSelector { get; set; }
+
+    /// <summary>Indicates SageMaker AI job type compatibility. Valid values are: TRAINING, INFERENCE, and NOTEBOOK_KERNEL.</summary>
+    [JsonPropertyName("jobType")]
+    public string? JobType { get; set; }
+
+    /// <summary>The machine learning framework vended in the image version.</summary>
+    [JsonPropertyName("mlFramework")]
+    public string? MlFramework { get; set; }
+
+    /// <summary>Indicates CPU or GPU compatibility. Valid values are: CPU and GPU.</summary>
+    [JsonPropertyName("processor")]
+    public string? Processor { get; set; }
+
+    /// <summary>The supported programming language and its version.</summary>
+    [JsonPropertyName("programmingLang")]
+    public string? ProgrammingLang { get; set; }
+
+    /// <summary>
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
+    [JsonPropertyName("region")]
+    public required string Region { get; set; }
+
+    /// <summary>The maintainer description of the image version.</summary>
+    [JsonPropertyName("releaseNotes")]
+    public string? ReleaseNotes { get; set; }
+
+    /// <summary>The stability of the image version, specified by the maintainer. Valid values are: NOT_PROVIDED, STABLE, TO_BE_ARCHIVED, and ARCHIVED.</summary>
+    [JsonPropertyName("vendorGuidance")]
+    public string? VendorGuidance { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolutionEnum>))]
+public enum V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolveEnum>))]
+public enum V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecInitProviderImageNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ImageVersionSpecInitProviderImageNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Image in sagemaker to populate imageName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecInitProviderImageNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ImageVersionSpecInitProviderImageNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolveEnum>))]
+public enum V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Image in sagemaker to populate imageName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecInitProviderImageNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ImageVersionSpecInitProviderImageNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecInitProvider
+{
+    /// <summary>A list of aliases for the image version.</summary>
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The registry path of the container image on which this image version is based.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>Indicates Horovod compatibility.</summary>
+    [JsonPropertyName("horovod")]
+    public bool? Horovod { get; set; }
+
+    /// <summary>The name of the image. Must be unique to your account.</summary>
+    [JsonPropertyName("imageName")]
+    public string? ImageName { get; set; }
+
+    /// <summary>Reference to a Image in sagemaker to populate imageName.</summary>
+    [JsonPropertyName("imageNameRef")]
+    public V1beta1ImageVersionSpecInitProviderImageNameRef? ImageNameRef { get; set; }
+
+    /// <summary>Selector for a Image in sagemaker to populate imageName.</summary>
+    [JsonPropertyName("imageNameSelector")]
+    public V1beta1ImageVersionSpecInitProviderImageNameSelector? ImageNameSelector { get; set; }
+
+    /// <summary>Indicates SageMaker AI job type compatibility. Valid values are: TRAINING, INFERENCE, and NOTEBOOK_KERNEL.</summary>
+    [JsonPropertyName("jobType")]
+    public string? JobType { get; set; }
+
+    /// <summary>The machine learning framework vended in the image version.</summary>
+    [JsonPropertyName("mlFramework")]
+    public string? MlFramework { get; set; }
+
+    /// <summary>Indicates CPU or GPU compatibility. Valid values are: CPU and GPU.</summary>
+    [JsonPropertyName("processor")]
+    public string? Processor { get; set; }
+
+    /// <summary>The supported programming language and its version.</summary>
+    [JsonPropertyName("programmingLang")]
+    public string? ProgrammingLang { get; set; }
+
+    /// <summary>The maintainer description of the image version.</summary>
+    [JsonPropertyName("releaseNotes")]
+    public string? ReleaseNotes { get; set; }
+
+    /// <summary>The stability of the image version, specified by the maintainer. Valid values are: NOT_PROVIDED, STABLE, TO_BE_ARCHIVED, and ARCHIVED.</summary>
+    [JsonPropertyName("vendorGuidance")]
+    public string? VendorGuidance { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecManagementPoliciesEnum>))]
+public enum V1beta1ImageVersionSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta1ImageVersionSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageVersionSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta1ImageVersionSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ImageVersionSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ImageVersionSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ImageVersionSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>ImageVersionSpec defines the desired state of ImageVersion</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta1ImageVersionSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta1ImageVersionSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta1ImageVersionSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta1ImageVersionSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta1ImageVersionSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta1ImageVersionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionStatusAtProvider
+{
+    /// <summary>A list of aliases for the image version.</summary>
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Image Version.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>The registry path of the container image on which this image version is based.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>The registry path of the container image that contains this image version.</summary>
+    [JsonPropertyName("containerImage")]
+    public string? ContainerImage { get; set; }
+
+    /// <summary>Indicates Horovod compatibility.</summary>
+    [JsonPropertyName("horovod")]
+    public bool? Horovod { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Image Version.</summary>
+    [JsonPropertyName("imageArn")]
+    public string? ImageArn { get; set; }
+
+    /// <summary>The name of the image. Must be unique to your account.</summary>
+    [JsonPropertyName("imageName")]
+    public string? ImageName { get; set; }
+
+    /// <summary>Indicates SageMaker AI job type compatibility. Valid values are: TRAINING, INFERENCE, and NOTEBOOK_KERNEL.</summary>
+    [JsonPropertyName("jobType")]
+    public string? JobType { get; set; }
+
+    /// <summary>The machine learning framework vended in the image version.</summary>
+    [JsonPropertyName("mlFramework")]
+    public string? MlFramework { get; set; }
+
+    /// <summary>Indicates CPU or GPU compatibility. Valid values are: CPU and GPU.</summary>
+    [JsonPropertyName("processor")]
+    public string? Processor { get; set; }
+
+    /// <summary>The supported programming language and its version.</summary>
+    [JsonPropertyName("programmingLang")]
+    public string? ProgrammingLang { get; set; }
+
+    /// <summary>
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>The maintainer description of the image version.</summary>
+    [JsonPropertyName("releaseNotes")]
+    public string? ReleaseNotes { get; set; }
+
+    /// <summary>The stability of the image version, specified by the maintainer. Valid values are: NOT_PROVIDED, STABLE, TO_BE_ARCHIVED, and ARCHIVED.</summary>
+    [JsonPropertyName("vendorGuidance")]
+    public string? VendorGuidance { get; set; }
+
+    /// <summary>The version of the image. If not specified, the latest version is described.</summary>
+    [JsonPropertyName("version")]
+    public double? Version { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>ImageVersionStatus defines the observed state of ImageVersion.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageVersionStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta1ImageVersionStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta1ImageVersionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>ImageVersion is the Schema for the ImageVersions API. Provides a SageMaker AI Image Version resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1ImageVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ImageVersionSpec>, IStatus<V1beta1ImageVersionStatus?>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "ImageVersion";
+    public const string KubeGroup = "sagemaker.aws.upbound.io";
+    public const string KubePluralName = "imageversions";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "sagemaker.aws.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ImageVersion";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>ImageVersionSpec defines the desired state of ImageVersion</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta1ImageVersionSpec Spec { get; set; }
+
+    /// <summary>ImageVersionStatus defines the observed state of ImageVersion.</summary>
+    [JsonPropertyName("status")]
+    public V1beta1ImageVersionStatus? Status { get; set; }
+}

@@ -1,0 +1,995 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.apigee.gcp.upbound.io;
+/// <summary>Environment is the Schema for the Environments API. An</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2EnvironmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Environment>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "EnvironmentList";
+    public const string KubeGroup = "apigee.gcp.upbound.io";
+    public const string KubePluralName = "environments";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "apigee.gcp.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "EnvironmentList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2Environment objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2Environment> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecDeletionPolicyEnum>))]
+public enum V1beta2EnvironmentSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Resolves the client ip based on a custom header.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderClientIpResolutionConfigHeaderIndexAlgorithm
+{
+    /// <summary>The index of the ip in the header. Positive indices 0, 1, 2, 3 chooses indices from the left (first ips). Negative indices -1, -2, -3 chooses indices from the right (last ips).</summary>
+    [JsonPropertyName("ipHeaderIndex")]
+    public double? IpHeaderIndex { get; set; }
+
+    /// <summary>The name of the header to extract the client ip from. We are currently only supporting the X-Forwarded-For header.</summary>
+    [JsonPropertyName("ipHeaderName")]
+    public string? IpHeaderName { get; set; }
+}
+
+/// <summary>
+/// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderClientIpResolutionConfig
+{
+    /// <summary>
+    /// Resolves the client ip based on a custom header.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerIndexAlgorithm")]
+    public V1beta2EnvironmentSpecForProviderClientIpResolutionConfigHeaderIndexAlgorithm? HeaderIndexAlgorithm { get; set; }
+}
+
+/// <summary>
+/// NodeConfig for setting the min/max number of nodes associated with the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderNodeConfig
+{
+    /// <summary>
+    /// The maximum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended maximum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("maxNodeCount")]
+    public string? MaxNodeCount { get; set; }
+
+    /// <summary>
+    /// The minimum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended minimum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("minNodeCount")]
+    public string? MinNodeCount { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolutionEnum>))]
+public enum V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolveEnum>))]
+public enum V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderOrgIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2EnvironmentSpecForProviderOrgIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Organization in apigee to populate orgId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderOrgIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2EnvironmentSpecForProviderOrgIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolveEnum>))]
+public enum V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Organization in apigee to populate orgId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderOrgIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2EnvironmentSpecForProviderOrgIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderPropertiesProperty
+{
+    /// <summary>The property key.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The property value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// Key-value pairs that may be used for customizing the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProviderProperties
+{
+    /// <summary>
+    /// List of all properties in the object.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("property")]
+    public IList<V1beta2EnvironmentSpecForProviderPropertiesProperty>? Property { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecForProvider
+{
+    /// <summary>
+    /// Optional. API Proxy type supported by the environment. The type can be set when creating
+    /// the Environment and cannot be changed.
+    /// Possible values are: API_PROXY_TYPE_UNSPECIFIED, PROGRAMMABLE, CONFIGURABLE.
+    /// </summary>
+    [JsonPropertyName("apiProxyType")]
+    public string? ApiProxyType { get; set; }
+
+    /// <summary>
+    /// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientIpResolutionConfig")]
+    public V1beta2EnvironmentSpecForProviderClientIpResolutionConfig? ClientIpResolutionConfig { get; set; }
+
+    /// <summary>
+    /// Optional. Deployment type supported by the environment. The deployment type can be
+    /// set when creating the environment and cannot be changed. When you enable archive
+    /// deployment, you will be prevented from performing a subset of actions within the
+    /// environment, including:
+    /// Managing the deployment of API proxy or shared flow revisions;
+    /// Creating, updating, or deleting resource files;
+    /// Creating, updating, or deleting target servers.
+    /// Possible values are: DEPLOYMENT_TYPE_UNSPECIFIED, PROXY, ARCHIVE.
+    /// </summary>
+    [JsonPropertyName("deploymentType")]
+    public string? DeploymentType { get; set; }
+
+    /// <summary>Description of the environment.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>Display name of the environment.</summary>
+    [JsonPropertyName("displayName")]
+    public string? DisplayName { get; set; }
+
+    /// <summary>Optional. URI of the forward proxy to be applied to the runtime instances in this environment. Must be in the format of {scheme}://{hostname}:{port}. Note that the scheme must be one of &quot;http&quot; or &quot;https&quot;, and the port must be supplied.</summary>
+    [JsonPropertyName("forwardProxyUri")]
+    public string? ForwardProxyUri { get; set; }
+
+    /// <summary>
+    /// NodeConfig for setting the min/max number of nodes associated with the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeConfig")]
+    public V1beta2EnvironmentSpecForProviderNodeConfig? NodeConfig { get; set; }
+
+    /// <summary>
+    /// The Apigee Organization associated with the Apigee environment,
+    /// in the format organizations/{{org_name}}.
+    /// </summary>
+    [JsonPropertyName("orgId")]
+    public string? OrgId { get; set; }
+
+    /// <summary>Reference to a Organization in apigee to populate orgId.</summary>
+    [JsonPropertyName("orgIdRef")]
+    public V1beta2EnvironmentSpecForProviderOrgIdRef? OrgIdRef { get; set; }
+
+    /// <summary>Selector for a Organization in apigee to populate orgId.</summary>
+    [JsonPropertyName("orgIdSelector")]
+    public V1beta2EnvironmentSpecForProviderOrgIdSelector? OrgIdSelector { get; set; }
+
+    /// <summary>
+    /// Key-value pairs that may be used for customizing the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public V1beta2EnvironmentSpecForProviderProperties? Properties { get; set; }
+
+    /// <summary>
+    /// Types that can be selected for an Environment. Each of the types are
+    /// limited by capability and capacity. Refer to Apigee&apos;s public documentation
+    /// to understand about each of these types in details.
+    /// An Apigee org can support heterogeneous Environments.
+    /// Possible values are: ENVIRONMENT_TYPE_UNSPECIFIED, BASE, INTERMEDIATE, COMPREHENSIVE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Resolves the client ip based on a custom header.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProviderClientIpResolutionConfigHeaderIndexAlgorithm
+{
+    /// <summary>The index of the ip in the header. Positive indices 0, 1, 2, 3 chooses indices from the left (first ips). Negative indices -1, -2, -3 chooses indices from the right (last ips).</summary>
+    [JsonPropertyName("ipHeaderIndex")]
+    public double? IpHeaderIndex { get; set; }
+
+    /// <summary>The name of the header to extract the client ip from. We are currently only supporting the X-Forwarded-For header.</summary>
+    [JsonPropertyName("ipHeaderName")]
+    public string? IpHeaderName { get; set; }
+}
+
+/// <summary>
+/// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProviderClientIpResolutionConfig
+{
+    /// <summary>
+    /// Resolves the client ip based on a custom header.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerIndexAlgorithm")]
+    public V1beta2EnvironmentSpecInitProviderClientIpResolutionConfigHeaderIndexAlgorithm? HeaderIndexAlgorithm { get; set; }
+}
+
+/// <summary>
+/// NodeConfig for setting the min/max number of nodes associated with the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProviderNodeConfig
+{
+    /// <summary>
+    /// The maximum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended maximum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("maxNodeCount")]
+    public string? MaxNodeCount { get; set; }
+
+    /// <summary>
+    /// The minimum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended minimum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("minNodeCount")]
+    public string? MinNodeCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProviderPropertiesProperty
+{
+    /// <summary>The property key.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The property value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// Key-value pairs that may be used for customizing the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProviderProperties
+{
+    /// <summary>
+    /// List of all properties in the object.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("property")]
+    public IList<V1beta2EnvironmentSpecInitProviderPropertiesProperty>? Property { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecInitProvider
+{
+    /// <summary>
+    /// Optional. API Proxy type supported by the environment. The type can be set when creating
+    /// the Environment and cannot be changed.
+    /// Possible values are: API_PROXY_TYPE_UNSPECIFIED, PROGRAMMABLE, CONFIGURABLE.
+    /// </summary>
+    [JsonPropertyName("apiProxyType")]
+    public string? ApiProxyType { get; set; }
+
+    /// <summary>
+    /// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientIpResolutionConfig")]
+    public V1beta2EnvironmentSpecInitProviderClientIpResolutionConfig? ClientIpResolutionConfig { get; set; }
+
+    /// <summary>
+    /// Optional. Deployment type supported by the environment. The deployment type can be
+    /// set when creating the environment and cannot be changed. When you enable archive
+    /// deployment, you will be prevented from performing a subset of actions within the
+    /// environment, including:
+    /// Managing the deployment of API proxy or shared flow revisions;
+    /// Creating, updating, or deleting resource files;
+    /// Creating, updating, or deleting target servers.
+    /// Possible values are: DEPLOYMENT_TYPE_UNSPECIFIED, PROXY, ARCHIVE.
+    /// </summary>
+    [JsonPropertyName("deploymentType")]
+    public string? DeploymentType { get; set; }
+
+    /// <summary>Description of the environment.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>Display name of the environment.</summary>
+    [JsonPropertyName("displayName")]
+    public string? DisplayName { get; set; }
+
+    /// <summary>Optional. URI of the forward proxy to be applied to the runtime instances in this environment. Must be in the format of {scheme}://{hostname}:{port}. Note that the scheme must be one of &quot;http&quot; or &quot;https&quot;, and the port must be supplied.</summary>
+    [JsonPropertyName("forwardProxyUri")]
+    public string? ForwardProxyUri { get; set; }
+
+    /// <summary>
+    /// NodeConfig for setting the min/max number of nodes associated with the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeConfig")]
+    public V1beta2EnvironmentSpecInitProviderNodeConfig? NodeConfig { get; set; }
+
+    /// <summary>
+    /// Key-value pairs that may be used for customizing the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public V1beta2EnvironmentSpecInitProviderProperties? Properties { get; set; }
+
+    /// <summary>
+    /// Types that can be selected for an Environment. Each of the types are
+    /// limited by capability and capacity. Refer to Apigee&apos;s public documentation
+    /// to understand about each of these types in details.
+    /// An Apigee org can support heterogeneous Environments.
+    /// Possible values are: ENVIRONMENT_TYPE_UNSPECIFIED, BASE, INTERMEDIATE, COMPREHENSIVE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecManagementPoliciesEnum>))]
+public enum V1beta2EnvironmentSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2EnvironmentSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2EnvironmentSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2EnvironmentSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2EnvironmentSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2EnvironmentSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2EnvironmentSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>EnvironmentSpec defines the desired state of Environment</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2EnvironmentSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2EnvironmentSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2EnvironmentSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2EnvironmentSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2EnvironmentSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2EnvironmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>
+/// Resolves the client ip based on a custom header.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProviderClientIpResolutionConfigHeaderIndexAlgorithm
+{
+    /// <summary>The index of the ip in the header. Positive indices 0, 1, 2, 3 chooses indices from the left (first ips). Negative indices -1, -2, -3 chooses indices from the right (last ips).</summary>
+    [JsonPropertyName("ipHeaderIndex")]
+    public double? IpHeaderIndex { get; set; }
+
+    /// <summary>The name of the header to extract the client ip from. We are currently only supporting the X-Forwarded-For header.</summary>
+    [JsonPropertyName("ipHeaderName")]
+    public string? IpHeaderName { get; set; }
+}
+
+/// <summary>
+/// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProviderClientIpResolutionConfig
+{
+    /// <summary>
+    /// Resolves the client ip based on a custom header.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerIndexAlgorithm")]
+    public V1beta2EnvironmentStatusAtProviderClientIpResolutionConfigHeaderIndexAlgorithm? HeaderIndexAlgorithm { get; set; }
+}
+
+/// <summary>
+/// NodeConfig for setting the min/max number of nodes associated with the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProviderNodeConfig
+{
+    /// <summary>
+    /// (Output)
+    /// The current total number of gateway nodes that each environment currently has across
+    /// all instances.
+    /// </summary>
+    [JsonPropertyName("currentAggregateNodeCount")]
+    public string? CurrentAggregateNodeCount { get; set; }
+
+    /// <summary>
+    /// The maximum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended maximum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("maxNodeCount")]
+    public string? MaxNodeCount { get; set; }
+
+    /// <summary>
+    /// The minimum total number of gateway nodes that the is reserved for all instances that
+    /// has the specified environment. If not specified, the default is determined by the
+    /// recommended minimum number of nodes for that gateway.
+    /// </summary>
+    [JsonPropertyName("minNodeCount")]
+    public string? MinNodeCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProviderPropertiesProperty
+{
+    /// <summary>The property key.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The property value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// Key-value pairs that may be used for customizing the environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProviderProperties
+{
+    /// <summary>
+    /// List of all properties in the object.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("property")]
+    public IList<V1beta2EnvironmentStatusAtProviderPropertiesProperty>? Property { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusAtProvider
+{
+    /// <summary>
+    /// Optional. API Proxy type supported by the environment. The type can be set when creating
+    /// the Environment and cannot be changed.
+    /// Possible values are: API_PROXY_TYPE_UNSPECIFIED, PROGRAMMABLE, CONFIGURABLE.
+    /// </summary>
+    [JsonPropertyName("apiProxyType")]
+    public string? ApiProxyType { get; set; }
+
+    /// <summary>
+    /// The algorithm to resolve IP. This will affect Analytics, API Security, and other features that use the client ip. To remove a client ip resolution config, update the field to an empty value. Example: &apos;{ &quot;clientIpResolutionConfig&quot; = {} }&apos; For more information, see: https://cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientIpResolutionConfig")]
+    public V1beta2EnvironmentStatusAtProviderClientIpResolutionConfig? ClientIpResolutionConfig { get; set; }
+
+    /// <summary>
+    /// Optional. Deployment type supported by the environment. The deployment type can be
+    /// set when creating the environment and cannot be changed. When you enable archive
+    /// deployment, you will be prevented from performing a subset of actions within the
+    /// environment, including:
+    /// Managing the deployment of API proxy or shared flow revisions;
+    /// Creating, updating, or deleting resource files;
+    /// Creating, updating, or deleting target servers.
+    /// Possible values are: DEPLOYMENT_TYPE_UNSPECIFIED, PROXY, ARCHIVE.
+    /// </summary>
+    [JsonPropertyName("deploymentType")]
+    public string? DeploymentType { get; set; }
+
+    /// <summary>Description of the environment.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>Display name of the environment.</summary>
+    [JsonPropertyName("displayName")]
+    public string? DisplayName { get; set; }
+
+    /// <summary>Optional. URI of the forward proxy to be applied to the runtime instances in this environment. Must be in the format of {scheme}://{hostname}:{port}. Note that the scheme must be one of &quot;http&quot; or &quot;https&quot;, and the port must be supplied.</summary>
+    [JsonPropertyName("forwardProxyUri")]
+    public string? ForwardProxyUri { get; set; }
+
+    /// <summary>an identifier for the resource with format {{org_id}}/environments/{{name}}</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>
+    /// NodeConfig for setting the min/max number of nodes associated with the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeConfig")]
+    public V1beta2EnvironmentStatusAtProviderNodeConfig? NodeConfig { get; set; }
+
+    /// <summary>
+    /// The Apigee Organization associated with the Apigee environment,
+    /// in the format organizations/{{org_name}}.
+    /// </summary>
+    [JsonPropertyName("orgId")]
+    public string? OrgId { get; set; }
+
+    /// <summary>
+    /// Key-value pairs that may be used for customizing the environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public V1beta2EnvironmentStatusAtProviderProperties? Properties { get; set; }
+
+    /// <summary>
+    /// Types that can be selected for an Environment. Each of the types are
+    /// limited by capability and capacity. Refer to Apigee&apos;s public documentation
+    /// to understand about each of these types in details.
+    /// An Apigee org can support heterogeneous Environments.
+    /// Possible values are: ENVIRONMENT_TYPE_UNSPECIFIED, BASE, INTERMEDIATE, COMPREHENSIVE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>EnvironmentStatus defines the observed state of Environment.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2EnvironmentStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2EnvironmentStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2EnvironmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>Environment is the Schema for the Environments API. An</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2Environment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2EnvironmentSpec>, IStatus<V1beta2EnvironmentStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "Environment";
+    public const string KubeGroup = "apigee.gcp.upbound.io";
+    public const string KubePluralName = "environments";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "apigee.gcp.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Environment";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>EnvironmentSpec defines the desired state of Environment</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2EnvironmentSpec Spec { get; set; }
+
+    /// <summary>EnvironmentStatus defines the observed state of Environment.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2EnvironmentStatus? Status { get; set; }
+}

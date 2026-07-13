@@ -1,0 +1,1555 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
+/// <summary>ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2ConnectionMonitorList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ConnectionMonitor>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "ConnectionMonitorList";
+    public const string KubeGroup = "network.azure.upbound.io";
+    public const string KubePluralName = "connectionmonitors";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "network.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ConnectionMonitorList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2ConnectionMonitor objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2ConnectionMonitor> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecDeletionPolicyEnum>))]
+public enum V1beta2ConnectionMonitorSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderEndpointFilterItem
+{
+    /// <summary>The address of the filter item.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A filter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderEndpointFilter
+{
+    /// <summary>A item block as defined below.</summary>
+    [JsonPropertyName("item")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderEndpointFilterItem>? Item { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderEndpoint
+{
+    /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The test coverage for the Network Connection Monitor endpoint. Possible values are AboveAverage, Average, BelowAverage, Default, Full and Low.</summary>
+    [JsonPropertyName("coverageLevel")]
+    public string? CoverageLevel { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be excluded to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("excludedIpAddresses")]
+    public IList<string>? ExcludedIpAddresses { get; set; }
+
+    /// <summary>A filter block as defined below.</summary>
+    [JsonPropertyName("filter")]
+    public V1beta2ConnectionMonitorSpecForProviderEndpointFilter? Filter { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be included to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("includedIpAddresses")]
+    public IList<string>? IncludedIpAddresses { get; set; }
+
+    /// <summary>The name of the endpoint for the Network Connection Monitor .</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The resource ID which is used as the endpoint by the Network Connection Monitor.</summary>
+    [JsonPropertyName("targetResourceId")]
+    public string? TargetResourceId { get; set; }
+
+    /// <summary>The endpoint type of the Network Connection Monitor. Possible values are AzureArcVM, AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine and MMAWorkspaceNetwork.</summary>
+    [JsonPropertyName("targetResourceType")]
+    public string? TargetResourceType { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Watcher in network to populate networkWatcherId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Watcher in network to populate networkWatcherId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfigurationHttpConfigurationRequestHeader
+{
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The value of the HTTP header.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A http_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfigurationHttpConfiguration
+{
+    /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+
+    /// <summary>The path component of the URI. It only accepts the absolute path.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should HTTPS be preferred over HTTP in cases where the choice is not explicit? Defaults to false.</summary>
+    [JsonPropertyName("preferHttps")]
+    public bool? PreferHttps { get; set; }
+
+    /// <summary>A request_header block as defined below.</summary>
+    [JsonPropertyName("requestHeader")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderTestConfigurationHttpConfigurationRequestHeader>? RequestHeader { get; set; }
+
+    /// <summary>The HTTP status codes to consider successful. For instance, 2xx, 301-304 and 418.</summary>
+    [JsonPropertyName("validStatusCodeRanges")]
+    public IList<string>? ValidStatusCodeRanges { get; set; }
+}
+
+/// <summary>A icmp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfigurationIcmpConfiguration
+{
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+/// <summary>A success_threshold block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfigurationSuccessThreshold
+{
+    /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
+    [JsonPropertyName("checksFailedPercent")]
+    public double? ChecksFailedPercent { get; set; }
+
+    /// <summary>The maximum round-trip time in milliseconds permitted for a test to be successful.</summary>
+    [JsonPropertyName("roundTripTimeMs")]
+    public double? RoundTripTimeMs { get; set; }
+}
+
+/// <summary>A tcp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfigurationTcpConfiguration
+{
+    /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
+    [JsonPropertyName("destinationPortBehavior")]
+    public string? DestinationPortBehavior { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestConfiguration
+{
+    /// <summary>A http_configuration block as defined below.</summary>
+    [JsonPropertyName("httpConfiguration")]
+    public V1beta2ConnectionMonitorSpecForProviderTestConfigurationHttpConfiguration? HttpConfiguration { get; set; }
+
+    /// <summary>A icmp_configuration block as defined below.</summary>
+    [JsonPropertyName("icmpConfiguration")]
+    public V1beta2ConnectionMonitorSpecForProviderTestConfigurationIcmpConfiguration? IcmpConfiguration { get; set; }
+
+    /// <summary>The name of test configuration for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The preferred IP version which is used in the test evaluation. Possible values are IPv4 and IPv6.</summary>
+    [JsonPropertyName("preferredIpVersion")]
+    public string? PreferredIpVersion { get; set; }
+
+    /// <summary>The protocol used to evaluate tests. Possible values are Tcp, Http and Icmp.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>A success_threshold block as defined below.</summary>
+    [JsonPropertyName("successThreshold")]
+    public V1beta2ConnectionMonitorSpecForProviderTestConfigurationSuccessThreshold? SuccessThreshold { get; set; }
+
+    /// <summary>A tcp_configuration block as defined below.</summary>
+    [JsonPropertyName("tcpConfiguration")]
+    public V1beta2ConnectionMonitorSpecForProviderTestConfigurationTcpConfiguration? TcpConfiguration { get; set; }
+
+    /// <summary>The time interval in seconds at which the test evaluation will happen. Defaults to 60.</summary>
+    [JsonPropertyName("testFrequencyInSeconds")]
+    public double? TestFrequencyInSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProviderTestGroup
+{
+    /// <summary>A list of destination endpoint names.</summary>
+    [JsonPropertyName("destinationEndpoints")]
+    public IList<string>? DestinationEndpoints { get; set; }
+
+    /// <summary>Should the test group be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A list of source endpoint names.</summary>
+    [JsonPropertyName("sourceEndpoints")]
+    public IList<string>? SourceEndpoints { get; set; }
+
+    /// <summary>A list of test configuration names.</summary>
+    [JsonPropertyName("testConfigurationNames")]
+    public IList<string>? TestConfigurationNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecForProvider
+{
+    /// <summary>A endpoint block as defined below.</summary>
+    [JsonPropertyName("endpoint")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderEndpoint>? Endpoint { get; set; }
+
+    /// <summary>The Azure Region where the Network Connection Monitor should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The ID of the Network Watcher. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("networkWatcherId")]
+    public string? NetworkWatcherId { get; set; }
+
+    /// <summary>Reference to a Watcher in network to populate networkWatcherId.</summary>
+    [JsonPropertyName("networkWatcherIdRef")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdRef? NetworkWatcherIdRef { get; set; }
+
+    /// <summary>Selector for a Watcher in network to populate networkWatcherId.</summary>
+    [JsonPropertyName("networkWatcherIdSelector")]
+    public V1beta2ConnectionMonitorSpecForProviderNetworkWatcherIdSelector? NetworkWatcherIdSelector { get; set; }
+
+    /// <summary>The description of the Network Connection Monitor.</summary>
+    [JsonPropertyName("notes")]
+    public string? Notes { get; set; }
+
+    /// <summary>A list of IDs of the Log Analytics Workspace which will accept the output from the Network Connection Monitor.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIds")]
+    public IList<string>? OutputWorkspaceResourceIds { get; set; }
+
+    /// <summary>References to Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIdsRefs")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefs>? OutputWorkspaceResourceIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIdsSelector")]
+    public V1beta2ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelector? OutputWorkspaceResourceIdsSelector { get; set; }
+
+    /// <summary>A mapping of tags which should be assigned to the Network Connection Monitor.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>A test_configuration block as defined below.</summary>
+    [JsonPropertyName("testConfiguration")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderTestConfiguration>? TestConfiguration { get; set; }
+
+    /// <summary>A test_group block as defined below.</summary>
+    [JsonPropertyName("testGroup")]
+    public IList<V1beta2ConnectionMonitorSpecForProviderTestGroup>? TestGroup { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderEndpointFilterItem
+{
+    /// <summary>The address of the filter item.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A filter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderEndpointFilter
+{
+    /// <summary>A item block as defined below.</summary>
+    [JsonPropertyName("item")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderEndpointFilterItem>? Item { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderEndpoint
+{
+    /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The test coverage for the Network Connection Monitor endpoint. Possible values are AboveAverage, Average, BelowAverage, Default, Full and Low.</summary>
+    [JsonPropertyName("coverageLevel")]
+    public string? CoverageLevel { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be excluded to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("excludedIpAddresses")]
+    public IList<string>? ExcludedIpAddresses { get; set; }
+
+    /// <summary>A filter block as defined below.</summary>
+    [JsonPropertyName("filter")]
+    public V1beta2ConnectionMonitorSpecInitProviderEndpointFilter? Filter { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be included to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("includedIpAddresses")]
+    public IList<string>? IncludedIpAddresses { get; set; }
+
+    /// <summary>The name of the endpoint for the Network Connection Monitor .</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The resource ID which is used as the endpoint by the Network Connection Monitor.</summary>
+    [JsonPropertyName("targetResourceId")]
+    public string? TargetResourceId { get; set; }
+
+    /// <summary>The endpoint type of the Network Connection Monitor. Possible values are AzureArcVM, AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine and MMAWorkspaceNetwork.</summary>
+    [JsonPropertyName("targetResourceType")]
+    public string? TargetResourceType { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfigurationHttpConfigurationRequestHeader
+{
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The value of the HTTP header.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A http_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfigurationHttpConfiguration
+{
+    /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+
+    /// <summary>The path component of the URI. It only accepts the absolute path.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should HTTPS be preferred over HTTP in cases where the choice is not explicit? Defaults to false.</summary>
+    [JsonPropertyName("preferHttps")]
+    public bool? PreferHttps { get; set; }
+
+    /// <summary>A request_header block as defined below.</summary>
+    [JsonPropertyName("requestHeader")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderTestConfigurationHttpConfigurationRequestHeader>? RequestHeader { get; set; }
+
+    /// <summary>The HTTP status codes to consider successful. For instance, 2xx, 301-304 and 418.</summary>
+    [JsonPropertyName("validStatusCodeRanges")]
+    public IList<string>? ValidStatusCodeRanges { get; set; }
+}
+
+/// <summary>A icmp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfigurationIcmpConfiguration
+{
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+/// <summary>A success_threshold block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfigurationSuccessThreshold
+{
+    /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
+    [JsonPropertyName("checksFailedPercent")]
+    public double? ChecksFailedPercent { get; set; }
+
+    /// <summary>The maximum round-trip time in milliseconds permitted for a test to be successful.</summary>
+    [JsonPropertyName("roundTripTimeMs")]
+    public double? RoundTripTimeMs { get; set; }
+}
+
+/// <summary>A tcp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfigurationTcpConfiguration
+{
+    /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
+    [JsonPropertyName("destinationPortBehavior")]
+    public string? DestinationPortBehavior { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestConfiguration
+{
+    /// <summary>A http_configuration block as defined below.</summary>
+    [JsonPropertyName("httpConfiguration")]
+    public V1beta2ConnectionMonitorSpecInitProviderTestConfigurationHttpConfiguration? HttpConfiguration { get; set; }
+
+    /// <summary>A icmp_configuration block as defined below.</summary>
+    [JsonPropertyName("icmpConfiguration")]
+    public V1beta2ConnectionMonitorSpecInitProviderTestConfigurationIcmpConfiguration? IcmpConfiguration { get; set; }
+
+    /// <summary>The name of test configuration for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The preferred IP version which is used in the test evaluation. Possible values are IPv4 and IPv6.</summary>
+    [JsonPropertyName("preferredIpVersion")]
+    public string? PreferredIpVersion { get; set; }
+
+    /// <summary>The protocol used to evaluate tests. Possible values are Tcp, Http and Icmp.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>A success_threshold block as defined below.</summary>
+    [JsonPropertyName("successThreshold")]
+    public V1beta2ConnectionMonitorSpecInitProviderTestConfigurationSuccessThreshold? SuccessThreshold { get; set; }
+
+    /// <summary>A tcp_configuration block as defined below.</summary>
+    [JsonPropertyName("tcpConfiguration")]
+    public V1beta2ConnectionMonitorSpecInitProviderTestConfigurationTcpConfiguration? TcpConfiguration { get; set; }
+
+    /// <summary>The time interval in seconds at which the test evaluation will happen. Defaults to 60.</summary>
+    [JsonPropertyName("testFrequencyInSeconds")]
+    public double? TestFrequencyInSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProviderTestGroup
+{
+    /// <summary>A list of destination endpoint names.</summary>
+    [JsonPropertyName("destinationEndpoints")]
+    public IList<string>? DestinationEndpoints { get; set; }
+
+    /// <summary>Should the test group be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A list of source endpoint names.</summary>
+    [JsonPropertyName("sourceEndpoints")]
+    public IList<string>? SourceEndpoints { get; set; }
+
+    /// <summary>A list of test configuration names.</summary>
+    [JsonPropertyName("testConfigurationNames")]
+    public IList<string>? TestConfigurationNames { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecInitProvider
+{
+    /// <summary>A endpoint block as defined below.</summary>
+    [JsonPropertyName("endpoint")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderEndpoint>? Endpoint { get; set; }
+
+    /// <summary>The Azure Region where the Network Connection Monitor should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The description of the Network Connection Monitor.</summary>
+    [JsonPropertyName("notes")]
+    public string? Notes { get; set; }
+
+    /// <summary>A list of IDs of the Log Analytics Workspace which will accept the output from the Network Connection Monitor.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIds")]
+    public IList<string>? OutputWorkspaceResourceIds { get; set; }
+
+    /// <summary>References to Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIdsRefs")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefs>? OutputWorkspaceResourceIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIdsSelector")]
+    public V1beta2ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelector? OutputWorkspaceResourceIdsSelector { get; set; }
+
+    /// <summary>A mapping of tags which should be assigned to the Network Connection Monitor.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>A test_configuration block as defined below.</summary>
+    [JsonPropertyName("testConfiguration")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderTestConfiguration>? TestConfiguration { get; set; }
+
+    /// <summary>A test_group block as defined below.</summary>
+    [JsonPropertyName("testGroup")]
+    public IList<V1beta2ConnectionMonitorSpecInitProviderTestGroup>? TestGroup { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecManagementPoliciesEnum>))]
+public enum V1beta2ConnectionMonitorSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2ConnectionMonitorSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>ConnectionMonitorSpec defines the desired state of ConnectionMonitor</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2ConnectionMonitorSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2ConnectionMonitorSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2ConnectionMonitorSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2ConnectionMonitorSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2ConnectionMonitorSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2ConnectionMonitorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderEndpointFilterItem
+{
+    /// <summary>The address of the filter item.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A filter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderEndpointFilter
+{
+    /// <summary>A item block as defined below.</summary>
+    [JsonPropertyName("item")]
+    public IList<V1beta2ConnectionMonitorStatusAtProviderEndpointFilterItem>? Item { get; set; }
+
+    /// <summary>The type of items included in the filter. Possible values are AgentAddress. Defaults to AgentAddress.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderEndpoint
+{
+    /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("address")]
+    public string? Address { get; set; }
+
+    /// <summary>The test coverage for the Network Connection Monitor endpoint. Possible values are AboveAverage, Average, BelowAverage, Default, Full and Low.</summary>
+    [JsonPropertyName("coverageLevel")]
+    public string? CoverageLevel { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be excluded to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("excludedIpAddresses")]
+    public IList<string>? ExcludedIpAddresses { get; set; }
+
+    /// <summary>A filter block as defined below.</summary>
+    [JsonPropertyName("filter")]
+    public V1beta2ConnectionMonitorStatusAtProviderEndpointFilter? Filter { get; set; }
+
+    /// <summary>A list of IPv4/IPv6 subnet masks or IPv4/IPv6 IP addresses to be included to the Network Connection Monitor endpoint.</summary>
+    [JsonPropertyName("includedIpAddresses")]
+    public IList<string>? IncludedIpAddresses { get; set; }
+
+    /// <summary>The name of the endpoint for the Network Connection Monitor .</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The resource ID which is used as the endpoint by the Network Connection Monitor.</summary>
+    [JsonPropertyName("targetResourceId")]
+    public string? TargetResourceId { get; set; }
+
+    /// <summary>The endpoint type of the Network Connection Monitor. Possible values are AzureArcVM, AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine and MMAWorkspaceNetwork.</summary>
+    [JsonPropertyName("targetResourceType")]
+    public string? TargetResourceType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfigurationHttpConfigurationRequestHeader
+{
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The value of the HTTP header.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A http_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfigurationHttpConfiguration
+{
+    /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+
+    /// <summary>The path component of the URI. It only accepts the absolute path.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should HTTPS be preferred over HTTP in cases where the choice is not explicit? Defaults to false.</summary>
+    [JsonPropertyName("preferHttps")]
+    public bool? PreferHttps { get; set; }
+
+    /// <summary>A request_header block as defined below.</summary>
+    [JsonPropertyName("requestHeader")]
+    public IList<V1beta2ConnectionMonitorStatusAtProviderTestConfigurationHttpConfigurationRequestHeader>? RequestHeader { get; set; }
+
+    /// <summary>The HTTP status codes to consider successful. For instance, 2xx, 301-304 and 418.</summary>
+    [JsonPropertyName("validStatusCodeRanges")]
+    public IList<string>? ValidStatusCodeRanges { get; set; }
+}
+
+/// <summary>A icmp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfigurationIcmpConfiguration
+{
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+/// <summary>A success_threshold block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfigurationSuccessThreshold
+{
+    /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
+    [JsonPropertyName("checksFailedPercent")]
+    public double? ChecksFailedPercent { get; set; }
+
+    /// <summary>The maximum round-trip time in milliseconds permitted for a test to be successful.</summary>
+    [JsonPropertyName("roundTripTimeMs")]
+    public double? RoundTripTimeMs { get; set; }
+}
+
+/// <summary>A tcp_configuration block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfigurationTcpConfiguration
+{
+    /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
+    [JsonPropertyName("destinationPortBehavior")]
+    public string? DestinationPortBehavior { get; set; }
+
+    /// <summary>The port for the TCP connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
+    [JsonPropertyName("traceRouteEnabled")]
+    public bool? TraceRouteEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestConfiguration
+{
+    /// <summary>A http_configuration block as defined below.</summary>
+    [JsonPropertyName("httpConfiguration")]
+    public V1beta2ConnectionMonitorStatusAtProviderTestConfigurationHttpConfiguration? HttpConfiguration { get; set; }
+
+    /// <summary>A icmp_configuration block as defined below.</summary>
+    [JsonPropertyName("icmpConfiguration")]
+    public V1beta2ConnectionMonitorStatusAtProviderTestConfigurationIcmpConfiguration? IcmpConfiguration { get; set; }
+
+    /// <summary>The name of test configuration for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The preferred IP version which is used in the test evaluation. Possible values are IPv4 and IPv6.</summary>
+    [JsonPropertyName("preferredIpVersion")]
+    public string? PreferredIpVersion { get; set; }
+
+    /// <summary>The protocol used to evaluate tests. Possible values are Tcp, Http and Icmp.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>A success_threshold block as defined below.</summary>
+    [JsonPropertyName("successThreshold")]
+    public V1beta2ConnectionMonitorStatusAtProviderTestConfigurationSuccessThreshold? SuccessThreshold { get; set; }
+
+    /// <summary>A tcp_configuration block as defined below.</summary>
+    [JsonPropertyName("tcpConfiguration")]
+    public V1beta2ConnectionMonitorStatusAtProviderTestConfigurationTcpConfiguration? TcpConfiguration { get; set; }
+
+    /// <summary>The time interval in seconds at which the test evaluation will happen. Defaults to 60.</summary>
+    [JsonPropertyName("testFrequencyInSeconds")]
+    public double? TestFrequencyInSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProviderTestGroup
+{
+    /// <summary>A list of destination endpoint names.</summary>
+    [JsonPropertyName("destinationEndpoints")]
+    public IList<string>? DestinationEndpoints { get; set; }
+
+    /// <summary>Should the test group be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the test group for the Network Connection Monitor.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A list of source endpoint names.</summary>
+    [JsonPropertyName("sourceEndpoints")]
+    public IList<string>? SourceEndpoints { get; set; }
+
+    /// <summary>A list of test configuration names.</summary>
+    [JsonPropertyName("testConfigurationNames")]
+    public IList<string>? TestConfigurationNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusAtProvider
+{
+    /// <summary>A endpoint block as defined below.</summary>
+    [JsonPropertyName("endpoint")]
+    public IList<V1beta2ConnectionMonitorStatusAtProviderEndpoint>? Endpoint { get; set; }
+
+    /// <summary>The ID of the Network Connection Monitor.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The Azure Region where the Network Connection Monitor should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The ID of the Network Watcher. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("networkWatcherId")]
+    public string? NetworkWatcherId { get; set; }
+
+    /// <summary>The description of the Network Connection Monitor.</summary>
+    [JsonPropertyName("notes")]
+    public string? Notes { get; set; }
+
+    /// <summary>A list of IDs of the Log Analytics Workspace which will accept the output from the Network Connection Monitor.</summary>
+    [JsonPropertyName("outputWorkspaceResourceIds")]
+    public IList<string>? OutputWorkspaceResourceIds { get; set; }
+
+    /// <summary>A mapping of tags which should be assigned to the Network Connection Monitor.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>A test_configuration block as defined below.</summary>
+    [JsonPropertyName("testConfiguration")]
+    public IList<V1beta2ConnectionMonitorStatusAtProviderTestConfiguration>? TestConfiguration { get; set; }
+
+    /// <summary>A test_group block as defined below.</summary>
+    [JsonPropertyName("testGroup")]
+    public IList<V1beta2ConnectionMonitorStatusAtProviderTestGroup>? TestGroup { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>ConnectionMonitorStatus defines the observed state of ConnectionMonitor.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ConnectionMonitorStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2ConnectionMonitorStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2ConnectionMonitorStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2ConnectionMonitor : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ConnectionMonitorSpec>, IStatus<V1beta2ConnectionMonitorStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "ConnectionMonitor";
+    public const string KubeGroup = "network.azure.upbound.io";
+    public const string KubePluralName = "connectionmonitors";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "network.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ConnectionMonitor";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>ConnectionMonitorSpec defines the desired state of ConnectionMonitor</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2ConnectionMonitorSpec Spec { get; set; }
+
+    /// <summary>ConnectionMonitorStatus defines the observed state of ConnectionMonitor.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2ConnectionMonitorStatus? Status { get; set; }
+}

@@ -1,0 +1,570 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.unity.databricks.crossplane.io;
+/// <summary>
+/// Metastore is the Schema for the Metastores API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1MetastoreList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Metastore>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "MetastoreList";
+    public const string KubeGroup = "unity.databricks.crossplane.io";
+    public const string KubePluralName = "metastores";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "unity.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "MetastoreList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1Metastore objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1Metastore> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MetastoreSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MetastoreSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecForProvider
+{
+    /// <summary>Unique identifier of the metastore&apos;s default data access configuration.</summary>
+    [JsonPropertyName("defaultDataAccessConfigId")]
+    public string? DefaultDataAccessConfigId { get; set; }
+
+    /// <summary>The organization name of a Delta Sharing entity. This field is used for Databricks to Databricks sharing. Once this is set it cannot be removed and can only be modified to another valid value. To delete this value please taint and recreate the resource.</summary>
+    [JsonPropertyName("deltaSharingOrganizationName")]
+    public string? DeltaSharingOrganizationName { get; set; }
+
+    /// <summary>Required along with delta_sharing_scope. Used to set expiration duration in seconds on recipient data access tokens. Defaults to 31536000 (1 year).</summary>
+    [JsonPropertyName("deltaSharingRecipientTokenLifetimeInSeconds")]
+    public double? DeltaSharingRecipientTokenLifetimeInSeconds { get; set; }
+
+    /// <summary>Required along with delta_sharing_recipient_token_lifetime_in_seconds. Used to enable delta sharing on the metastore. Valid values: INTERNAL, INTERNAL_AND_EXTERNAL.  INTERNAL only allows sharing within the same account, and INTERNAL_AND_EXTERNAL allows cross account sharing and token based sharing.</summary>
+    [JsonPropertyName("deltaSharingScope")]
+    public string? DeltaSharingScope { get; set; }
+
+    /// <summary>Whether to allow non-DBR clients to directly access entities under the metastore.</summary>
+    [JsonPropertyName("externalAccessEnabled")]
+    public bool? ExternalAccessEnabled { get; set; }
+
+    /// <summary>Destroy metastore regardless of its contents.</summary>
+    [JsonPropertyName("forceDestroy")]
+    public bool? ForceDestroy { get; set; }
+
+    /// <summary>Name of metastore.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Username/groupname/sp application_id of the metastore owner.</summary>
+    [JsonPropertyName("owner")]
+    public string? Owner { get; set; }
+
+    /// <summary>Privilege model version of the metastore, of the form major.minor (e.g., 1.0).</summary>
+    [JsonPropertyName("privilegeModelVersion")]
+    public string? PrivilegeModelVersion { get; set; }
+
+    /// <summary>(Mandatory for account-level) The region of the metastore</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>Path on cloud storage account, where managed databricks_table are stored.  If the URL contains special characters, such as space, &amp;, etc., they should be percent-encoded (space -&gt; %20, etc.). Change forces creation of a new resource. If no storage_root is defined for the metastore, each catalog must have a storage_root defined.  **It&apos;s recommended to define storage_root on the catalog level.</summary>
+    [JsonPropertyName("storageRoot")]
+    public string? StorageRoot { get; set; }
+
+    /// <summary>UUID of storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialId")]
+    public string? StorageRootCredentialId { get; set; }
+
+    /// <summary>Name of the storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialName")]
+    public string? StorageRootCredentialName { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecInitProvider
+{
+    /// <summary>Unique identifier of the metastore&apos;s default data access configuration.</summary>
+    [JsonPropertyName("defaultDataAccessConfigId")]
+    public string? DefaultDataAccessConfigId { get; set; }
+
+    /// <summary>The organization name of a Delta Sharing entity. This field is used for Databricks to Databricks sharing. Once this is set it cannot be removed and can only be modified to another valid value. To delete this value please taint and recreate the resource.</summary>
+    [JsonPropertyName("deltaSharingOrganizationName")]
+    public string? DeltaSharingOrganizationName { get; set; }
+
+    /// <summary>Required along with delta_sharing_scope. Used to set expiration duration in seconds on recipient data access tokens. Defaults to 31536000 (1 year).</summary>
+    [JsonPropertyName("deltaSharingRecipientTokenLifetimeInSeconds")]
+    public double? DeltaSharingRecipientTokenLifetimeInSeconds { get; set; }
+
+    /// <summary>Required along with delta_sharing_recipient_token_lifetime_in_seconds. Used to enable delta sharing on the metastore. Valid values: INTERNAL, INTERNAL_AND_EXTERNAL.  INTERNAL only allows sharing within the same account, and INTERNAL_AND_EXTERNAL allows cross account sharing and token based sharing.</summary>
+    [JsonPropertyName("deltaSharingScope")]
+    public string? DeltaSharingScope { get; set; }
+
+    /// <summary>Whether to allow non-DBR clients to directly access entities under the metastore.</summary>
+    [JsonPropertyName("externalAccessEnabled")]
+    public bool? ExternalAccessEnabled { get; set; }
+
+    /// <summary>Destroy metastore regardless of its contents.</summary>
+    [JsonPropertyName("forceDestroy")]
+    public bool? ForceDestroy { get; set; }
+
+    /// <summary>Name of metastore.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Username/groupname/sp application_id of the metastore owner.</summary>
+    [JsonPropertyName("owner")]
+    public string? Owner { get; set; }
+
+    /// <summary>Privilege model version of the metastore, of the form major.minor (e.g., 1.0).</summary>
+    [JsonPropertyName("privilegeModelVersion")]
+    public string? PrivilegeModelVersion { get; set; }
+
+    /// <summary>(Mandatory for account-level) The region of the metastore</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>Path on cloud storage account, where managed databricks_table are stored.  If the URL contains special characters, such as space, &amp;, etc., they should be percent-encoded (space -&gt; %20, etc.). Change forces creation of a new resource. If no storage_root is defined for the metastore, each catalog must have a storage_root defined.  **It&apos;s recommended to define storage_root on the catalog level.</summary>
+    [JsonPropertyName("storageRoot")]
+    public string? StorageRoot { get; set; }
+
+    /// <summary>UUID of storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialId")]
+    public string? StorageRootCredentialId { get; set; }
+
+    /// <summary>Name of the storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialName")]
+    public string? StorageRootCredentialName { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MetastoreSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MetastoreSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MetastoreSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MetastoreSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MetastoreSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MetastoreSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MetastoreSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MetastoreSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MetastoreSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>MetastoreSpec defines the desired state of Metastore</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1alpha1MetastoreSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1alpha1MetastoreSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1alpha1MetastoreSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1alpha1MetastoreSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1alpha1MetastoreSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1alpha1MetastoreSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreStatusAtProvider
+{
+    /// <summary>Cloud vendor of the metastore home shard (e.g., aws, azure, gcp).</summary>
+    [JsonPropertyName("cloud")]
+    public string? Cloud { get; set; }
+
+    /// <summary>Time at which the metastore was created, in epoch milliseconds.</summary>
+    [JsonPropertyName("createdAt")]
+    public double? CreatedAt { get; set; }
+
+    /// <summary>Username of metastore creator.</summary>
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    /// <summary>Unique identifier of the metastore&apos;s default data access configuration.</summary>
+    [JsonPropertyName("defaultDataAccessConfigId")]
+    public string? DefaultDataAccessConfigId { get; set; }
+
+    /// <summary>The organization name of a Delta Sharing entity. This field is used for Databricks to Databricks sharing. Once this is set it cannot be removed and can only be modified to another valid value. To delete this value please taint and recreate the resource.</summary>
+    [JsonPropertyName("deltaSharingOrganizationName")]
+    public string? DeltaSharingOrganizationName { get; set; }
+
+    /// <summary>Required along with delta_sharing_scope. Used to set expiration duration in seconds on recipient data access tokens. Defaults to 31536000 (1 year).</summary>
+    [JsonPropertyName("deltaSharingRecipientTokenLifetimeInSeconds")]
+    public double? DeltaSharingRecipientTokenLifetimeInSeconds { get; set; }
+
+    /// <summary>Required along with delta_sharing_recipient_token_lifetime_in_seconds. Used to enable delta sharing on the metastore. Valid values: INTERNAL, INTERNAL_AND_EXTERNAL.  INTERNAL only allows sharing within the same account, and INTERNAL_AND_EXTERNAL allows cross account sharing and token based sharing.</summary>
+    [JsonPropertyName("deltaSharingScope")]
+    public string? DeltaSharingScope { get; set; }
+
+    /// <summary>Whether to allow non-DBR clients to directly access entities under the metastore.</summary>
+    [JsonPropertyName("externalAccessEnabled")]
+    public bool? ExternalAccessEnabled { get; set; }
+
+    /// <summary>Destroy metastore regardless of its contents.</summary>
+    [JsonPropertyName("forceDestroy")]
+    public bool? ForceDestroy { get; set; }
+
+    /// <summary>Globally unique metastore ID across clouds and regions, of the form cloud:region:metastore_id.</summary>
+    [JsonPropertyName("globalMetastoreId")]
+    public string? GlobalMetastoreId { get; set; }
+
+    /// <summary>System-generated ID of this Unity Catalog Metastore. Same as metastore_id.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>Unique identifier of the metastore.</summary>
+    [JsonPropertyName("metastoreId")]
+    public string? MetastoreId { get; set; }
+
+    /// <summary>Name of metastore.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Username/groupname/sp application_id of the metastore owner.</summary>
+    [JsonPropertyName("owner")]
+    public string? Owner { get; set; }
+
+    /// <summary>Privilege model version of the metastore, of the form major.minor (e.g., 1.0).</summary>
+    [JsonPropertyName("privilegeModelVersion")]
+    public string? PrivilegeModelVersion { get; set; }
+
+    /// <summary>(Mandatory for account-level) The region of the metastore</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>Path on cloud storage account, where managed databricks_table are stored.  If the URL contains special characters, such as space, &amp;, etc., they should be percent-encoded (space -&gt; %20, etc.). Change forces creation of a new resource. If no storage_root is defined for the metastore, each catalog must have a storage_root defined.  **It&apos;s recommended to define storage_root on the catalog level.</summary>
+    [JsonPropertyName("storageRoot")]
+    public string? StorageRoot { get; set; }
+
+    /// <summary>UUID of storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialId")]
+    public string? StorageRootCredentialId { get; set; }
+
+    /// <summary>Name of the storage credential to access the metastore storage_root.</summary>
+    [JsonPropertyName("storageRootCredentialName")]
+    public string? StorageRootCredentialName { get; set; }
+
+    /// <summary>Time at which the metastore was last modified, in epoch milliseconds.</summary>
+    [JsonPropertyName("updatedAt")]
+    public double? UpdatedAt { get; set; }
+
+    /// <summary>Username of user who last modified the metastore.</summary>
+    [JsonPropertyName("updatedBy")]
+    public string? UpdatedBy { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>MetastoreStatus defines the observed state of Metastore.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1alpha1MetastoreStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1MetastoreStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>
+/// Metastore is the Schema for the Metastores API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1Metastore : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MetastoreSpec>, IStatus<V1alpha1MetastoreStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "Metastore";
+    public const string KubeGroup = "unity.databricks.crossplane.io";
+    public const string KubePluralName = "metastores";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "unity.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Metastore";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>MetastoreSpec defines the desired state of Metastore</summary>
+    [JsonPropertyName("spec")]
+    public required V1alpha1MetastoreSpec Spec { get; set; }
+
+    /// <summary>MetastoreStatus defines the observed state of Metastore.</summary>
+    [JsonPropertyName("status")]
+    public V1alpha1MetastoreStatus? Status { get; set; }
+}

@@ -1,0 +1,1940 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
+/// <summary>
+/// Routine is the Schema for the Routines API. A user-defined function or a stored procedure that belongs to a Dataset
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1RoutineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Routine>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "RoutineList";
+    public const string KubeGroup = "bigquery.gcp.upbound.io";
+    public const string KubePluralName = "routines";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "bigquery.gcp.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "RoutineList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta1Routine objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta1Routine> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderArguments
+{
+    /// <summary>
+    /// Defaults to FIXED_TYPE.
+    /// Default value is FIXED_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// </summary>
+    [JsonPropertyName("argumentKind")]
+    public string? ArgumentKind { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// Specifies whether the argument is input or output. Can be set for procedures only.
+    /// Possible values are: IN, OUT, INOUT.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The name of this argument. Can be absent for function return argument.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderDatasetIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderDatasetIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderDatasetIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderDatasetIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderDatasetIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderDatasetIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptions
+{
+    /// <summary>
+    /// Fully qualified name of the user-provided connection object which holds
+    /// the authentication information to send requests to the remote service.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionRef")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRef? ConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionSelector")]
+    public V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelector? ConnectionSelector { get; set; }
+
+    /// <summary>
+    /// Endpoint of the user-provided remote service, e.g.
+    /// https://us-east1-my_gcf_project.cloudfunctions.net/remote_add
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Max number of rows in each batch sent to the remote service. If absent or if 0,
+    /// BigQuery dynamically decides the number of rows in a batch.
+    /// </summary>
+    [JsonPropertyName("maxBatchingRows")]
+    public string? MaxBatchingRows { get; set; }
+
+    /// <summary>
+    /// User-defined context as a set of key/value pairs, which will be sent as function
+    /// invocation context together with batched arguments in the requests to the remote
+    /// service. The total number of bytes of keys and values must be less than 8KB.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example:
+    /// { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("userDefinedContext")]
+    public IDictionary<string, string>? UserDefinedContext { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProviderSparkOptions
+{
+    /// <summary>Archive files to be extracted into the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("archiveUris")]
+    public IList<string>? ArchiveUris { get; set; }
+
+    /// <summary>
+    /// Fully qualified name of the user-provided Spark connection object.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionRef")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionRef? ConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionSelector")]
+    public V1beta1RoutineSpecForProviderSparkOptionsConnectionSelector? ConnectionSelector { get; set; }
+
+    /// <summary>Custom container image for the runtime environment.</summary>
+    [JsonPropertyName("containerImage")]
+    public string? ContainerImage { get; set; }
+
+    /// <summary>Files to be placed in the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("fileUris")]
+    public IList<string>? FileUris { get; set; }
+
+    /// <summary>JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("jarUris")]
+    public IList<string>? JarUris { get; set; }
+
+    /// <summary>
+    /// The fully qualified name of a class in jarUris, for example, com.example.wordcount.
+    /// Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainClass")]
+    public string? MainClass { get; set; }
+
+    /// <summary>
+    /// The main file/jar URI of the Spark application.
+    /// Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
+    /// Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainFileUri")]
+    public string? MainFileUri { get; set; }
+
+    /// <summary>
+    /// Configuration properties as a set of key/value pairs, which will be passed on to the Spark application.
+    /// For more information, see Apache Spark and the procedure option list.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example: { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>Python files to be placed on the PYTHONPATH for PySpark application. Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("pyFileUris")]
+    public IList<string>? PyFileUris { get; set; }
+
+    /// <summary>Runtime version. If not specified, the default runtime version is used.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecForProvider
+{
+    /// <summary>
+    /// Input/output argument of a function or a stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("arguments")]
+    public IList<V1beta1RoutineSpecForProviderArguments>? Arguments { get; set; }
+
+    /// <summary>
+    /// If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask
+    /// Possible values are: DATA_MASKING.
+    /// </summary>
+    [JsonPropertyName("dataGovernanceType")]
+    public string? DataGovernanceType { get; set; }
+
+    /// <summary>The ID of the dataset containing this routine</summary>
+    [JsonPropertyName("datasetId")]
+    public string? DatasetId { get; set; }
+
+    /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
+    [JsonPropertyName("datasetIdRef")]
+    public V1beta1RoutineSpecForProviderDatasetIdRef? DatasetIdRef { get; set; }
+
+    /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
+    [JsonPropertyName("datasetIdSelector")]
+    public V1beta1RoutineSpecForProviderDatasetIdSelector? DatasetIdSelector { get; set; }
+
+    /// <summary>
+    /// The body of the routine. For functions, this is the expression in the AS clause.
+    /// If language=SQL, it is the substring inside (but excluding) the parentheses.
+    /// </summary>
+    [JsonPropertyName("definitionBody")]
+    public string? DefinitionBody { get; set; }
+
+    /// <summary>The description of the routine if defined.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// The determinism level of the JavaScript UDF if defined.
+    /// Possible values are: DETERMINISM_LEVEL_UNSPECIFIED, DETERMINISTIC, NOT_DETERMINISTIC.
+    /// </summary>
+    [JsonPropertyName("determinismLevel")]
+    public string? DeterminismLevel { get; set; }
+
+    /// <summary>
+    /// Optional. If language = &quot;JAVASCRIPT&quot;, this field stores the path of the
+    /// imported JAVASCRIPT libraries.
+    /// </summary>
+    [JsonPropertyName("importedLibraries")]
+    public IList<string>? ImportedLibraries { get; set; }
+
+    /// <summary>
+    /// The language of the routine.
+    /// Possible values are: SQL, JAVASCRIPT, PYTHON, JAVA, SCALA.
+    /// </summary>
+    [JsonPropertyName("language")]
+    public string? Language { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Remote function specific options.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("remoteFunctionOptions")]
+    public IList<V1beta1RoutineSpecForProviderRemoteFunctionOptions>? RemoteFunctionOptions { get; set; }
+
+    /// <summary>
+    /// Optional. Can be set only if routineType = &quot;TABLE_VALUED_FUNCTION&quot;.
+    /// If absent, the return table type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the columns in the evaluated table result will
+    /// be cast to match the column types specificed in return table type, at query time.
+    /// </summary>
+    [JsonPropertyName("returnTableType")]
+    public string? ReturnTableType { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the return type. Optional if language = &quot;SQL&quot;; required otherwise.
+    /// If absent, the return type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the evaluated result will be cast to
+    /// the specified returned type at query time. ~&gt;NOTE: Because this field expects a JSON
+    /// string, any changes to the string will create a diff, even if the JSON itself hasn&apos;t
+    /// changed. If the API returns a different value for the same schema, e.g. it switche
+    /// d the order of values or replaced STRUCT field type with RECORD field type, we currently
+    /// cannot suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("returnType")]
+    public string? ReturnType { get; set; }
+
+    /// <summary>
+    /// The type of routine.
+    /// Possible values are: SCALAR_FUNCTION, PROCEDURE, TABLE_VALUED_FUNCTION.
+    /// </summary>
+    [JsonPropertyName("routineType")]
+    public string? RoutineType { get; set; }
+
+    /// <summary>
+    /// Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine&apos;s configuration.
+    /// Possible values are: DEFINER, INVOKER.
+    /// </summary>
+    [JsonPropertyName("securityMode")]
+    public string? SecurityMode { get; set; }
+
+    /// <summary>
+    /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sparkOptions")]
+    public IList<V1beta1RoutineSpecForProviderSparkOptions>? SparkOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderArguments
+{
+    /// <summary>
+    /// Defaults to FIXED_TYPE.
+    /// Default value is FIXED_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// </summary>
+    [JsonPropertyName("argumentKind")]
+    public string? ArgumentKind { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// Specifies whether the argument is input or output. Can be set for procedures only.
+    /// Possible values are: IN, OUT, INOUT.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The name of this argument. Can be absent for function return argument.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptions
+{
+    /// <summary>
+    /// Fully qualified name of the user-provided connection object which holds
+    /// the authentication information to send requests to the remote service.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionRef")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRef? ConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionSelector")]
+    public V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelector? ConnectionSelector { get; set; }
+
+    /// <summary>
+    /// Endpoint of the user-provided remote service, e.g.
+    /// https://us-east1-my_gcf_project.cloudfunctions.net/remote_add
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Max number of rows in each batch sent to the remote service. If absent or if 0,
+    /// BigQuery dynamically decides the number of rows in a batch.
+    /// </summary>
+    [JsonPropertyName("maxBatchingRows")]
+    public string? MaxBatchingRows { get; set; }
+
+    /// <summary>
+    /// User-defined context as a set of key/value pairs, which will be sent as function
+    /// invocation context together with batched arguments in the requests to the remote
+    /// service. The total number of bytes of keys and values must be less than 8KB.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example:
+    /// { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("userDefinedContext")]
+    public IDictionary<string, string>? UserDefinedContext { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProviderSparkOptions
+{
+    /// <summary>Archive files to be extracted into the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("archiveUris")]
+    public IList<string>? ArchiveUris { get; set; }
+
+    /// <summary>
+    /// Fully qualified name of the user-provided Spark connection object.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionRef")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionRef? ConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
+    [JsonPropertyName("connectionSelector")]
+    public V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelector? ConnectionSelector { get; set; }
+
+    /// <summary>Custom container image for the runtime environment.</summary>
+    [JsonPropertyName("containerImage")]
+    public string? ContainerImage { get; set; }
+
+    /// <summary>Files to be placed in the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("fileUris")]
+    public IList<string>? FileUris { get; set; }
+
+    /// <summary>JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("jarUris")]
+    public IList<string>? JarUris { get; set; }
+
+    /// <summary>
+    /// The fully qualified name of a class in jarUris, for example, com.example.wordcount.
+    /// Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainClass")]
+    public string? MainClass { get; set; }
+
+    /// <summary>
+    /// The main file/jar URI of the Spark application.
+    /// Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
+    /// Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainFileUri")]
+    public string? MainFileUri { get; set; }
+
+    /// <summary>
+    /// Configuration properties as a set of key/value pairs, which will be passed on to the Spark application.
+    /// For more information, see Apache Spark and the procedure option list.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example: { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>Python files to be placed on the PYTHONPATH for PySpark application. Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("pyFileUris")]
+    public IList<string>? PyFileUris { get; set; }
+
+    /// <summary>Runtime version. If not specified, the default runtime version is used.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecInitProvider
+{
+    /// <summary>
+    /// Input/output argument of a function or a stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("arguments")]
+    public IList<V1beta1RoutineSpecInitProviderArguments>? Arguments { get; set; }
+
+    /// <summary>
+    /// If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask
+    /// Possible values are: DATA_MASKING.
+    /// </summary>
+    [JsonPropertyName("dataGovernanceType")]
+    public string? DataGovernanceType { get; set; }
+
+    /// <summary>
+    /// The body of the routine. For functions, this is the expression in the AS clause.
+    /// If language=SQL, it is the substring inside (but excluding) the parentheses.
+    /// </summary>
+    [JsonPropertyName("definitionBody")]
+    public string? DefinitionBody { get; set; }
+
+    /// <summary>The description of the routine if defined.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// The determinism level of the JavaScript UDF if defined.
+    /// Possible values are: DETERMINISM_LEVEL_UNSPECIFIED, DETERMINISTIC, NOT_DETERMINISTIC.
+    /// </summary>
+    [JsonPropertyName("determinismLevel")]
+    public string? DeterminismLevel { get; set; }
+
+    /// <summary>
+    /// Optional. If language = &quot;JAVASCRIPT&quot;, this field stores the path of the
+    /// imported JAVASCRIPT libraries.
+    /// </summary>
+    [JsonPropertyName("importedLibraries")]
+    public IList<string>? ImportedLibraries { get; set; }
+
+    /// <summary>
+    /// The language of the routine.
+    /// Possible values are: SQL, JAVASCRIPT, PYTHON, JAVA, SCALA.
+    /// </summary>
+    [JsonPropertyName("language")]
+    public string? Language { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Remote function specific options.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("remoteFunctionOptions")]
+    public IList<V1beta1RoutineSpecInitProviderRemoteFunctionOptions>? RemoteFunctionOptions { get; set; }
+
+    /// <summary>
+    /// Optional. Can be set only if routineType = &quot;TABLE_VALUED_FUNCTION&quot;.
+    /// If absent, the return table type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the columns in the evaluated table result will
+    /// be cast to match the column types specificed in return table type, at query time.
+    /// </summary>
+    [JsonPropertyName("returnTableType")]
+    public string? ReturnTableType { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the return type. Optional if language = &quot;SQL&quot;; required otherwise.
+    /// If absent, the return type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the evaluated result will be cast to
+    /// the specified returned type at query time. ~&gt;NOTE: Because this field expects a JSON
+    /// string, any changes to the string will create a diff, even if the JSON itself hasn&apos;t
+    /// changed. If the API returns a different value for the same schema, e.g. it switche
+    /// d the order of values or replaced STRUCT field type with RECORD field type, we currently
+    /// cannot suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("returnType")]
+    public string? ReturnType { get; set; }
+
+    /// <summary>
+    /// The type of routine.
+    /// Possible values are: SCALAR_FUNCTION, PROCEDURE, TABLE_VALUED_FUNCTION.
+    /// </summary>
+    [JsonPropertyName("routineType")]
+    public string? RoutineType { get; set; }
+
+    /// <summary>
+    /// Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine&apos;s configuration.
+    /// Possible values are: DEFINER, INVOKER.
+    /// </summary>
+    [JsonPropertyName("securityMode")]
+    public string? SecurityMode { get; set; }
+
+    /// <summary>
+    /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sparkOptions")]
+    public IList<V1beta1RoutineSpecInitProviderSparkOptions>? SparkOptions { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1RoutineSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RoutineSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RoutineSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RoutineSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>RoutineSpec defines the desired state of Routine</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta1RoutineSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta1RoutineSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta1RoutineSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta1RoutineSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta1RoutineSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta1RoutineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatusAtProviderArguments
+{
+    /// <summary>
+    /// Defaults to FIXED_TYPE.
+    /// Default value is FIXED_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// </summary>
+    [JsonPropertyName("argumentKind")]
+    public string? ArgumentKind { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// Specifies whether the argument is input or output. Can be set for procedures only.
+    /// Possible values are: IN, OUT, INOUT.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The name of this argument. Can be absent for function return argument.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatusAtProviderRemoteFunctionOptions
+{
+    /// <summary>
+    /// Fully qualified name of the user-provided connection object which holds
+    /// the authentication information to send requests to the remote service.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>
+    /// Endpoint of the user-provided remote service, e.g.
+    /// https://us-east1-my_gcf_project.cloudfunctions.net/remote_add
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Max number of rows in each batch sent to the remote service. If absent or if 0,
+    /// BigQuery dynamically decides the number of rows in a batch.
+    /// </summary>
+    [JsonPropertyName("maxBatchingRows")]
+    public string? MaxBatchingRows { get; set; }
+
+    /// <summary>
+    /// User-defined context as a set of key/value pairs, which will be sent as function
+    /// invocation context together with batched arguments in the requests to the remote
+    /// service. The total number of bytes of keys and values must be less than 8KB.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example:
+    /// { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("userDefinedContext")]
+    public IDictionary<string, string>? UserDefinedContext { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatusAtProviderSparkOptions
+{
+    /// <summary>Archive files to be extracted into the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("archiveUris")]
+    public IList<string>? ArchiveUris { get; set; }
+
+    /// <summary>
+    /// Fully qualified name of the user-provided Spark connection object.
+    /// Format: &quot;projects/{projectId}/locations/{locationId}/connections/{connectionId}&quot;
+    /// </summary>
+    [JsonPropertyName("connection")]
+    public string? Connection { get; set; }
+
+    /// <summary>Custom container image for the runtime environment.</summary>
+    [JsonPropertyName("containerImage")]
+    public string? ContainerImage { get; set; }
+
+    /// <summary>Files to be placed in the working directory of each executor. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("fileUris")]
+    public IList<string>? FileUris { get; set; }
+
+    /// <summary>JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("jarUris")]
+    public IList<string>? JarUris { get; set; }
+
+    /// <summary>
+    /// The fully qualified name of a class in jarUris, for example, com.example.wordcount.
+    /// Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainClass")]
+    public string? MainClass { get; set; }
+
+    /// <summary>
+    /// The main file/jar URI of the Spark application.
+    /// Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
+    /// Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
+    /// </summary>
+    [JsonPropertyName("mainFileUri")]
+    public string? MainFileUri { get; set; }
+
+    /// <summary>
+    /// Configuration properties as a set of key/value pairs, which will be passed on to the Spark application.
+    /// For more information, see Apache Spark and the procedure option list.
+    /// An object containing a list of &quot;key&quot;: value pairs. Example: { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>Python files to be placed on the PYTHONPATH for PySpark application. Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.</summary>
+    [JsonPropertyName("pyFileUris")]
+    public IList<string>? PyFileUris { get; set; }
+
+    /// <summary>Runtime version. If not specified, the default runtime version is used.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatusAtProvider
+{
+    /// <summary>
+    /// Input/output argument of a function or a stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("arguments")]
+    public IList<V1beta1RoutineStatusAtProviderArguments>? Arguments { get; set; }
+
+    /// <summary>
+    /// The time when this routine was created, in milliseconds since the
+    /// epoch.
+    /// </summary>
+    [JsonPropertyName("creationTime")]
+    public double? CreationTime { get; set; }
+
+    /// <summary>
+    /// If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask
+    /// Possible values are: DATA_MASKING.
+    /// </summary>
+    [JsonPropertyName("dataGovernanceType")]
+    public string? DataGovernanceType { get; set; }
+
+    /// <summary>The ID of the dataset containing this routine</summary>
+    [JsonPropertyName("datasetId")]
+    public string? DatasetId { get; set; }
+
+    /// <summary>
+    /// The body of the routine. For functions, this is the expression in the AS clause.
+    /// If language=SQL, it is the substring inside (but excluding) the parentheses.
+    /// </summary>
+    [JsonPropertyName("definitionBody")]
+    public string? DefinitionBody { get; set; }
+
+    /// <summary>The description of the routine if defined.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// The determinism level of the JavaScript UDF if defined.
+    /// Possible values are: DETERMINISM_LEVEL_UNSPECIFIED, DETERMINISTIC, NOT_DETERMINISTIC.
+    /// </summary>
+    [JsonPropertyName("determinismLevel")]
+    public string? DeterminismLevel { get; set; }
+
+    /// <summary>an identifier for the resource with format projects/{{project}}/datasets/{{dataset_id}}/routines/{{routine_id}}</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>
+    /// Optional. If language = &quot;JAVASCRIPT&quot;, this field stores the path of the
+    /// imported JAVASCRIPT libraries.
+    /// </summary>
+    [JsonPropertyName("importedLibraries")]
+    public IList<string>? ImportedLibraries { get; set; }
+
+    /// <summary>
+    /// The language of the routine.
+    /// Possible values are: SQL, JAVASCRIPT, PYTHON, JAVA, SCALA.
+    /// </summary>
+    [JsonPropertyName("language")]
+    public string? Language { get; set; }
+
+    /// <summary>
+    /// The time when this routine was modified, in milliseconds since the
+    /// epoch.
+    /// </summary>
+    [JsonPropertyName("lastModifiedTime")]
+    public double? LastModifiedTime { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Remote function specific options.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("remoteFunctionOptions")]
+    public IList<V1beta1RoutineStatusAtProviderRemoteFunctionOptions>? RemoteFunctionOptions { get; set; }
+
+    /// <summary>
+    /// Optional. Can be set only if routineType = &quot;TABLE_VALUED_FUNCTION&quot;.
+    /// If absent, the return table type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the columns in the evaluated table result will
+    /// be cast to match the column types specificed in return table type, at query time.
+    /// </summary>
+    [JsonPropertyName("returnTableType")]
+    public string? ReturnTableType { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the return type. Optional if language = &quot;SQL&quot;; required otherwise.
+    /// If absent, the return type is inferred from definitionBody at query time in each query
+    /// that references this routine. If present, then the evaluated result will be cast to
+    /// the specified returned type at query time. ~&gt;NOTE: Because this field expects a JSON
+    /// string, any changes to the string will create a diff, even if the JSON itself hasn&apos;t
+    /// changed. If the API returns a different value for the same schema, e.g. it switche
+    /// d the order of values or replaced STRUCT field type with RECORD field type, we currently
+    /// cannot suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("returnType")]
+    public string? ReturnType { get; set; }
+
+    /// <summary>
+    /// The type of routine.
+    /// Possible values are: SCALAR_FUNCTION, PROCEDURE, TABLE_VALUED_FUNCTION.
+    /// </summary>
+    [JsonPropertyName("routineType")]
+    public string? RoutineType { get; set; }
+
+    /// <summary>
+    /// Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine&apos;s configuration.
+    /// Possible values are: DEFINER, INVOKER.
+    /// </summary>
+    [JsonPropertyName("securityMode")]
+    public string? SecurityMode { get; set; }
+
+    /// <summary>
+    /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sparkOptions")]
+    public IList<V1beta1RoutineStatusAtProviderSparkOptions>? SparkOptions { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>RoutineStatus defines the observed state of Routine.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1RoutineStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta1RoutineStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta1RoutineStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>
+/// Routine is the Schema for the Routines API. A user-defined function or a stored procedure that belongs to a Dataset
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta1Routine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RoutineSpec>, IStatus<V1beta1RoutineStatus?>
+{
+    public const string KubeApiVersion = "v1beta1";
+    public const string KubeKind = "Routine";
+    public const string KubeGroup = "bigquery.gcp.upbound.io";
+    public const string KubePluralName = "routines";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "bigquery.gcp.upbound.io/v1beta1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Routine";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>RoutineSpec defines the desired state of Routine</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta1RoutineSpec Spec { get; set; }
+
+    /// <summary>RoutineStatus defines the observed state of Routine.</summary>
+    [JsonPropertyName("status")]
+    public V1beta1RoutineStatus? Status { get; set; }
+}

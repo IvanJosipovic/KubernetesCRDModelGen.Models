@@ -1,0 +1,627 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.auth.vault.m.upbound.io;
+/// <summary>Backend is the Schema for the Backends API. Writes auth methods for Vault</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1BackendList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Backend>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "BackendList";
+    public const string KubeGroup = "auth.vault.m.upbound.io";
+    public const string KubePluralName = "backends";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "auth.vault.m.upbound.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "BackendList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1Backend objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1Backend> Items { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecForProviderTune
+{
+    /// <summary>
+    /// List of headers to whitelist and allowing
+    /// a plugin to include them in the response.
+    /// </summary>
+    [JsonPropertyName("allowedResponseHeaders")]
+    public IList<string>? AllowedResponseHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the request data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacRequestKeys")]
+    public IList<string>? AuditNonHmacRequestKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the response data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacResponseKeys")]
+    public IList<string>? AuditNonHmacResponseKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the default time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("defaultLeaseTtl")]
+    public string? DefaultLeaseTtl { get; set; }
+
+    /// <summary>
+    /// Specifies whether to show this mount in
+    /// the UI-specific listing endpoint. Valid values are &quot;unauth&quot; or &quot;hidden&quot;.
+    /// </summary>
+    [JsonPropertyName("listingVisibility")]
+    public string? ListingVisibility { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("maxLeaseTtl")]
+    public string? MaxLeaseTtl { get; set; }
+
+    /// <summary>
+    /// List of headers to whitelist and
+    /// pass from the request to the backend.
+    /// </summary>
+    [JsonPropertyName("passthroughRequestHeaders")]
+    public IList<string>? PassthroughRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the type of tokens that should be returned by
+    /// the mount. Valid values are &quot;default-service&quot;, &quot;default-batch&quot;, &quot;service&quot;, &quot;batch&quot;.
+    /// </summary>
+    [JsonPropertyName("tokenType")]
+    public string? TokenType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecForProvider
+{
+    /// <summary>
+    /// A description of the auth method.
+    /// The description of the auth backend
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If set, opts out of mount migration on path updates.
+    /// See here for more info on Mount Migration
+    /// If set, opts out of mount migration on path updates.
+    /// </summary>
+    [JsonPropertyName("disableRemount")]
+    public bool? DisableRemount { get; set; }
+
+    /// <summary>The key to use for signing identity tokens.</summary>
+    [JsonPropertyName("identityTokenKey")]
+    public string? IdentityTokenKey { get; set; }
+
+    /// <summary>
+    /// Specifies if the auth method is local only.
+    /// Specifies if the auth method is local only
+    /// </summary>
+    [JsonPropertyName("local")]
+    public bool? Local { get; set; }
+
+    /// <summary>
+    /// The namespace to provision the resource in.
+    /// The value should not contain leading or trailing forward slashes.
+    /// The namespace is always relative to the provider&apos;s configured namespace.
+    /// Available only for Vault Enterprise.
+    /// Target namespace. (requires Enterprise)
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// The path to mount the auth method — this defaults to the name of the type.
+    /// path to mount the backend. This defaults to the type.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Extra configuration block. Structure is documented below.</summary>
+    [JsonPropertyName("tune")]
+    public IList<V1alpha1BackendSpecForProviderTune>? Tune { get; set; }
+
+    /// <summary>
+    /// The name of the auth method type.
+    /// Name of the auth backend
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecInitProviderTune
+{
+    /// <summary>
+    /// List of headers to whitelist and allowing
+    /// a plugin to include them in the response.
+    /// </summary>
+    [JsonPropertyName("allowedResponseHeaders")]
+    public IList<string>? AllowedResponseHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the request data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacRequestKeys")]
+    public IList<string>? AuditNonHmacRequestKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the response data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacResponseKeys")]
+    public IList<string>? AuditNonHmacResponseKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the default time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("defaultLeaseTtl")]
+    public string? DefaultLeaseTtl { get; set; }
+
+    /// <summary>
+    /// Specifies whether to show this mount in
+    /// the UI-specific listing endpoint. Valid values are &quot;unauth&quot; or &quot;hidden&quot;.
+    /// </summary>
+    [JsonPropertyName("listingVisibility")]
+    public string? ListingVisibility { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("maxLeaseTtl")]
+    public string? MaxLeaseTtl { get; set; }
+
+    /// <summary>
+    /// List of headers to whitelist and
+    /// pass from the request to the backend.
+    /// </summary>
+    [JsonPropertyName("passthroughRequestHeaders")]
+    public IList<string>? PassthroughRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the type of tokens that should be returned by
+    /// the mount. Valid values are &quot;default-service&quot;, &quot;default-batch&quot;, &quot;service&quot;, &quot;batch&quot;.
+    /// </summary>
+    [JsonPropertyName("tokenType")]
+    public string? TokenType { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecInitProvider
+{
+    /// <summary>
+    /// A description of the auth method.
+    /// The description of the auth backend
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If set, opts out of mount migration on path updates.
+    /// See here for more info on Mount Migration
+    /// If set, opts out of mount migration on path updates.
+    /// </summary>
+    [JsonPropertyName("disableRemount")]
+    public bool? DisableRemount { get; set; }
+
+    /// <summary>The key to use for signing identity tokens.</summary>
+    [JsonPropertyName("identityTokenKey")]
+    public string? IdentityTokenKey { get; set; }
+
+    /// <summary>
+    /// Specifies if the auth method is local only.
+    /// Specifies if the auth method is local only
+    /// </summary>
+    [JsonPropertyName("local")]
+    public bool? Local { get; set; }
+
+    /// <summary>
+    /// The namespace to provision the resource in.
+    /// The value should not contain leading or trailing forward slashes.
+    /// The namespace is always relative to the provider&apos;s configured namespace.
+    /// Available only for Vault Enterprise.
+    /// Target namespace. (requires Enterprise)
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// The path to mount the auth method — this defaults to the name of the type.
+    /// path to mount the backend. This defaults to the type.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Extra configuration block. Structure is documented below.</summary>
+    [JsonPropertyName("tune")]
+    public IList<V1alpha1BackendSpecInitProviderTune>? Tune { get; set; }
+
+    /// <summary>
+    /// The name of the auth method type.
+    /// Name of the auth backend
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BackendSpecManagementPoliciesEnum>))]
+public enum V1alpha1BackendSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecProviderConfigRef
+{
+    /// <summary>Kind of the referenced object.</summary>
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>BackendSpec defines the desired state of Backend</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendSpec
+{
+    [JsonPropertyName("forProvider")]
+    public required V1alpha1BackendSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1alpha1BackendSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1alpha1BackendSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1alpha1BackendSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1alpha1BackendSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendStatusAtProviderTune
+{
+    /// <summary>
+    /// List of headers to whitelist and allowing
+    /// a plugin to include them in the response.
+    /// </summary>
+    [JsonPropertyName("allowedResponseHeaders")]
+    public IList<string>? AllowedResponseHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the request data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacRequestKeys")]
+    public IList<string>? AuditNonHmacRequestKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the list of keys that will
+    /// not be HMAC&apos;d by audit devices in the response data object.
+    /// </summary>
+    [JsonPropertyName("auditNonHmacResponseKeys")]
+    public IList<string>? AuditNonHmacResponseKeys { get; set; }
+
+    /// <summary>
+    /// Specifies the default time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("defaultLeaseTtl")]
+    public string? DefaultLeaseTtl { get; set; }
+
+    /// <summary>
+    /// Specifies whether to show this mount in
+    /// the UI-specific listing endpoint. Valid values are &quot;unauth&quot; or &quot;hidden&quot;.
+    /// </summary>
+    [JsonPropertyName("listingVisibility")]
+    public string? ListingVisibility { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum time-to-live.
+    /// If set, this overrides the global default.
+    /// Must be a valid duration string
+    /// </summary>
+    [JsonPropertyName("maxLeaseTtl")]
+    public string? MaxLeaseTtl { get; set; }
+
+    /// <summary>
+    /// List of headers to whitelist and
+    /// pass from the request to the backend.
+    /// </summary>
+    [JsonPropertyName("passthroughRequestHeaders")]
+    public IList<string>? PassthroughRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Specifies the type of tokens that should be returned by
+    /// the mount. Valid values are &quot;default-service&quot;, &quot;default-batch&quot;, &quot;service&quot;, &quot;batch&quot;.
+    /// </summary>
+    [JsonPropertyName("tokenType")]
+    public string? TokenType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendStatusAtProvider
+{
+    /// <summary>
+    /// The accessor for this auth method
+    /// The accessor of the auth backend
+    /// </summary>
+    [JsonPropertyName("accessor")]
+    public string? Accessor { get; set; }
+
+    /// <summary>
+    /// A description of the auth method.
+    /// The description of the auth backend
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If set, opts out of mount migration on path updates.
+    /// See here for more info on Mount Migration
+    /// If set, opts out of mount migration on path updates.
+    /// </summary>
+    [JsonPropertyName("disableRemount")]
+    public bool? DisableRemount { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The key to use for signing identity tokens.</summary>
+    [JsonPropertyName("identityTokenKey")]
+    public string? IdentityTokenKey { get; set; }
+
+    /// <summary>
+    /// Specifies if the auth method is local only.
+    /// Specifies if the auth method is local only
+    /// </summary>
+    [JsonPropertyName("local")]
+    public bool? Local { get; set; }
+
+    /// <summary>
+    /// The namespace to provision the resource in.
+    /// The value should not contain leading or trailing forward slashes.
+    /// The namespace is always relative to the provider&apos;s configured namespace.
+    /// Available only for Vault Enterprise.
+    /// Target namespace. (requires Enterprise)
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// The path to mount the auth method — this defaults to the name of the type.
+    /// path to mount the backend. This defaults to the type.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Extra configuration block. Structure is documented below.</summary>
+    [JsonPropertyName("tune")]
+    public IList<V1alpha1BackendStatusAtProviderTune>? Tune { get; set; }
+
+    /// <summary>
+    /// The name of the auth method type.
+    /// Name of the auth backend
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>BackendStatus defines the observed state of Backend.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BackendStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1alpha1BackendStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1BackendStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>Backend is the Schema for the Backends API. Writes auth methods for Vault</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1Backend : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BackendSpec>, IStatus<V1alpha1BackendStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "Backend";
+    public const string KubeGroup = "auth.vault.m.upbound.io";
+    public const string KubePluralName = "backends";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "auth.vault.m.upbound.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Backend";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>BackendSpec defines the desired state of Backend</summary>
+    [JsonPropertyName("spec")]
+    public required V1alpha1BackendSpec Spec { get; set; }
+
+    /// <summary>BackendStatus defines the observed state of Backend.</summary>
+    [JsonPropertyName("status")]
+    public V1alpha1BackendStatus? Status { get; set; }
+}

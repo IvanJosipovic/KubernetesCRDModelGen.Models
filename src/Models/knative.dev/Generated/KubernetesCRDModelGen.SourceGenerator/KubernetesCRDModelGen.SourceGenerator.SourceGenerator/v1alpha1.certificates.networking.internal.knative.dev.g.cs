@@ -1,0 +1,214 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.networking.@internal.knative.dev;
+/// <summary>
+/// Certificate is responsible for provisioning a SSL certificate for the
+/// given hosts. It is a Knative abstraction for various SSL certificate
+/// provisioning solutions (such as cert-manager or self-signed SSL certificate).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1CertificateList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Certificate>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "CertificateList";
+    public const string KubeGroup = "networking.internal.knative.dev";
+    public const string KubePluralName = "certificates";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "networking.internal.knative.dev/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "CertificateList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1Certificate objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1Certificate> Items { get; set; }
+}
+
+/// <summary>
+/// Spec is the desired state of the Certificate.
+/// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateSpec
+{
+    /// <summary>
+    /// DNSNames is a list of DNS names the Certificate could support.
+    /// The wildcard format of DNSNames (e.g. *.default.example.com) is supported.
+    /// </summary>
+    [JsonPropertyName("dnsNames")]
+    public required IList<string> DnsNames { get; set; }
+
+    /// <summary>Domain is the top level domain of the values for DNSNames.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>SecretName is the name of the secret resource to store the SSL certificate in.</summary>
+    [JsonPropertyName("secretName")]
+    public required string SecretName { get; set; }
+}
+
+/// <summary>
+/// Condition defines a readiness condition for a Knative resource.
+/// See: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time the condition transitioned from one status to another.
+    /// We use VolatileTime in place of metav1.Time to exclude this from creating equality.Semantic
+    /// differences (all other things held constant).
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public string? LastTransitionTime { get; set; }
+
+    /// <summary>A human readable message indicating details about the transition.</summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>The reason for the condition&apos;s last transition.</summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
+    /// <summary>
+    /// Severity with which to treat failures of this type of condition.
+    /// When this is not specified, it defaults to Error.
+    /// </summary>
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    /// <summary>Status of the condition, one of True, False, Unknown.</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>Type of condition.</summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>
+/// HTTP01Challenge defines the status of a HTTP01 challenge that a certificate needs
+/// to fulfill.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateStatusHttp01Challenges
+{
+    /// <summary>ServiceName is the name of the service to serve HTTP01 challenge requests.</summary>
+    [JsonPropertyName("serviceName")]
+    public string? ServiceName { get; set; }
+
+    /// <summary>ServiceNamespace is the namespace of the service to serve HTTP01 challenge requests.</summary>
+    [JsonPropertyName("serviceNamespace")]
+    public string? ServiceNamespace { get; set; }
+
+    /// <summary>ServicePort is the port of the service to serve HTTP01 challenge requests.</summary>
+    [JsonPropertyName("servicePort")]
+    public IntOrString? ServicePort { get; set; }
+
+    /// <summary>URL is the URL that the HTTP01 challenge is expected to serve on.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>
+/// Status is the current state of the Certificate.
+/// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateStatus
+{
+    /// <summary>
+    /// Annotations is additional Status fields for the Resource to save some
+    /// additional State as well as convey more information to the user. This is
+    /// roughly akin to Annotations on any k8s resource, just the reconciler conveying
+    /// richer information outwards.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>Conditions the latest available observations of a resource&apos;s current state.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1CertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// HTTP01Challenges is a list of HTTP01 challenges that need to be fulfilled
+    /// in order to get the TLS certificate..
+    /// </summary>
+    [JsonPropertyName("http01Challenges")]
+    public IList<V1alpha1CertificateStatusHttp01Challenges>? Http01Challenges { get; set; }
+
+    /// <summary>
+    /// The expiration time of the TLS certificate stored in the secret named
+    /// by this resource in spec.secretName.
+    /// </summary>
+    [JsonPropertyName("notAfter")]
+    public DateTime? NotAfter { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the &apos;Generation&apos; of the Service that
+    /// was last processed by the controller.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>
+/// Certificate is responsible for provisioning a SSL certificate for the
+/// given hosts. It is a Knative abstraction for various SSL certificate
+/// provisioning solutions (such as cert-manager or self-signed SSL certificate).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1Certificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CertificateSpec?>, IStatus<V1alpha1CertificateStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "Certificate";
+    public const string KubeGroup = "networking.internal.knative.dev";
+    public const string KubePluralName = "certificates";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "networking.internal.knative.dev/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Certificate";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>
+    /// Spec is the desired state of the Certificate.
+    /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    /// </summary>
+    [JsonPropertyName("spec")]
+    public V1alpha1CertificateSpec? Spec { get; set; }
+
+    /// <summary>
+    /// Status is the current state of the Certificate.
+    /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    /// </summary>
+    [JsonPropertyName("status")]
+    public V1alpha1CertificateStatus? Status { get; set; }
+}

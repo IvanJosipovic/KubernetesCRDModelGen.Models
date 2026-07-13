@@ -1,0 +1,366 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.cache.azure.com;
+/// <summary>
+/// Generator information:
+/// - Generated from: /redis/resource-manager/Microsoft.Cache/Redis/stable/2023-04-01/redis.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redis/{name}/linkedServers/{linkedServerName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1api20230401RedisLinkedServerList : IKubernetesObject<V1ListMeta>, IItems<V1api20230401RedisLinkedServer>
+{
+    public const string KubeApiVersion = "v1api20230401";
+    public const string KubeKind = "RedisLinkedServerList";
+    public const string KubeGroup = "cache.azure.com";
+    public const string KubePluralName = "redislinkedservers";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cache.azure.com/v1api20230401";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "RedisLinkedServerList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1api20230401RedisLinkedServer objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1api20230401RedisLinkedServer> Items { get; set; }
+}
+
+/// <summary>LinkedRedisCacheReference: Fully qualified resourceId of the linked redis cache.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpecLinkedRedisCacheReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// DestinationExpression is a CEL expression and a destination to store the result in. The destination may
+/// be a secret or a configmap. The value of the expression is stored at the specified location in
+/// the destination.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpecOperatorSpecConfigMapExpressions
+{
+    /// <summary>Annotations is an optional set of annotations to apply to the destination resource.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Key is the key in the ConfigMap or Secret being written to. If the CEL expression in Value returns a string
+    /// this is required to identify what key to write to. If the CEL expression in Value returns a map[string]string
+    /// Key must not be set, instead the keys written will be determined dynamically based on the keys of the resulting
+    /// map[string]string.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Labels is an optional set of labels to apply to the destination resource.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap or secret to write to.
+    /// The configmap or secret will be created in the same namespace as the resource.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Value is a CEL expression. The CEL expression may return a string or a map[string]string. For more information
+    /// on CEL in ASO see https://azure.github.io/azure-service-operator/guide/expressions/
+    /// </summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>
+/// DestinationExpression is a CEL expression and a destination to store the result in. The destination may
+/// be a secret or a configmap. The value of the expression is stored at the specified location in
+/// the destination.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpecOperatorSpecSecretExpressions
+{
+    /// <summary>Annotations is an optional set of annotations to apply to the destination resource.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Key is the key in the ConfigMap or Secret being written to. If the CEL expression in Value returns a string
+    /// this is required to identify what key to write to. If the CEL expression in Value returns a map[string]string
+    /// Key must not be set, instead the keys written will be determined dynamically based on the keys of the resulting
+    /// map[string]string.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Labels is an optional set of labels to apply to the destination resource.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap or secret to write to.
+    /// The configmap or secret will be created in the same namespace as the resource.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Value is a CEL expression. The CEL expression may return a string or a map[string]string. For more information
+    /// on CEL in ASO see https://azure.github.io/azure-service-operator/guide/expressions/
+    /// </summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>
+/// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
+/// passed directly to Azure
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpecOperatorSpec
+{
+    /// <summary>ConfigMapExpressions: configures where to place operator written dynamic ConfigMaps (created with CEL expressions).</summary>
+    [JsonPropertyName("configMapExpressions")]
+    public IList<V1api20230401RedisLinkedServerSpecOperatorSpecConfigMapExpressions>? ConfigMapExpressions { get; set; }
+
+    /// <summary>SecretExpressions: configures where to place operator written dynamic secrets (created with CEL expressions).</summary>
+    [JsonPropertyName("secretExpressions")]
+    public IList<V1api20230401RedisLinkedServerSpecOperatorSpecSecretExpressions>? SecretExpressions { get; set; }
+}
+
+/// <summary>
+/// Owner: The owner of the resource. The owner controls where the resource goes when it is deployed. The owner also
+/// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
+/// reference to a cache.azure.com/Redis resource
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpecOwner
+{
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>This is the name of the Kubernetes resource to reference.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>ServerRole: Role of the linked server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1api20230401RedisLinkedServerSpecServerRoleEnum>))]
+public enum V1api20230401RedisLinkedServerSpecServerRoleEnum
+{
+    [EnumMember(Value = "Primary"), JsonStringEnumMemberName("Primary")]
+    Primary,
+    [EnumMember(Value = "Secondary"), JsonStringEnumMemberName("Secondary")]
+    Secondary
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerSpec
+{
+    /// <summary>
+    /// AzureName: The name of the resource in Azure. This is often the same as the name of the resource in Kubernetes but it
+    /// doesn&apos;t have to be.
+    /// </summary>
+    [JsonPropertyName("azureName")]
+    public string? AzureName { get; set; }
+
+    /// <summary>LinkedRedisCacheLocation: Location of the linked redis cache.</summary>
+    [JsonPropertyName("linkedRedisCacheLocation")]
+    public required string LinkedRedisCacheLocation { get; set; }
+
+    /// <summary>LinkedRedisCacheReference: Fully qualified resourceId of the linked redis cache.</summary>
+    [JsonPropertyName("linkedRedisCacheReference")]
+    public required V1api20230401RedisLinkedServerSpecLinkedRedisCacheReference LinkedRedisCacheReference { get; set; }
+
+    /// <summary>
+    /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
+    /// passed directly to Azure
+    /// </summary>
+    [JsonPropertyName("operatorSpec")]
+    public V1api20230401RedisLinkedServerSpecOperatorSpec? OperatorSpec { get; set; }
+
+    /// <summary>
+    /// Owner: The owner of the resource. The owner controls where the resource goes when it is deployed. The owner also
+    /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
+    /// reference to a cache.azure.com/Redis resource
+    /// </summary>
+    [JsonPropertyName("owner")]
+    public required V1api20230401RedisLinkedServerSpecOwner Owner { get; set; }
+
+    /// <summary>ServerRole: Role of the linked server.</summary>
+    [JsonPropertyName("serverRole")]
+    public required V1api20230401RedisLinkedServerSpecServerRoleEnum ServerRole { get; set; }
+}
+
+/// <summary>Condition defines an extension to status (an observation) of a resource</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerStatusConditions
+{
+    /// <summary>LastTransitionTime is the last time the condition transitioned from one status to another.</summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>Message is a human readable message indicating details about the transition. This field may be empty.</summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the .metadata.generation that the condition was set based upon. For instance, if
+    /// .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>
+    /// Reason for the condition&apos;s last transition.
+    /// Reasons are upper CamelCase (PascalCase) with no spaces. A reason is always provided, this field will not be empty.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>
+    /// Severity with which to treat failures of this type of condition.
+    /// For conditions which have positive polarity (Status == True is their normal/healthy state), this will be omitted when Status == True
+    /// For conditions which have negative polarity (Status == False is their normal/healthy state), this will be omitted when Status == False.
+    /// This is omitted in all cases when Status == Unknown
+    /// </summary>
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    /// <summary>Status of the condition, one of True, False, or Unknown.</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>Type of condition.</summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20230401RedisLinkedServerStatus
+{
+    /// <summary>Conditions: The observed state of the resource</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1api20230401RedisLinkedServerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// GeoReplicatedPrimaryHostName: The unchanging DNS name which will always point to current geo-primary cache among the
+    /// linked redis caches for seamless Geo Failover experience.
+    /// </summary>
+    [JsonPropertyName("geoReplicatedPrimaryHostName")]
+    public string? GeoReplicatedPrimaryHostName { get; set; }
+
+    /// <summary>
+    /// Id: Fully qualified resource ID for the resource. Ex -
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// </summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>LinkedRedisCacheId: Fully qualified resourceId of the linked redis cache.</summary>
+    [JsonPropertyName("linkedRedisCacheId")]
+    public string? LinkedRedisCacheId { get; set; }
+
+    /// <summary>LinkedRedisCacheLocation: Location of the linked redis cache.</summary>
+    [JsonPropertyName("linkedRedisCacheLocation")]
+    public string? LinkedRedisCacheLocation { get; set; }
+
+    /// <summary>Name: The name of the resource</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// PrimaryHostName: The changing DNS name that resolves to the current geo-primary cache among the linked redis caches
+    /// before or after the Geo Failover.
+    /// </summary>
+    [JsonPropertyName("primaryHostName")]
+    public string? PrimaryHostName { get; set; }
+
+    /// <summary>ProvisioningState: Terminal state of the link between primary and secondary redis cache.</summary>
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    /// <summary>ServerRole: Role of the linked server.</summary>
+    [JsonPropertyName("serverRole")]
+    public string? ServerRole { get; set; }
+
+    /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Generator information:
+/// - Generated from: /redis/resource-manager/Microsoft.Cache/Redis/stable/2023-04-01/redis.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redis/{name}/linkedServers/{linkedServerName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1api20230401RedisLinkedServer : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20230401RedisLinkedServerSpec?>, IStatus<V1api20230401RedisLinkedServerStatus?>
+{
+    public const string KubeApiVersion = "v1api20230401";
+    public const string KubeKind = "RedisLinkedServer";
+    public const string KubeGroup = "cache.azure.com";
+    public const string KubePluralName = "redislinkedservers";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cache.azure.com/v1api20230401";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "RedisLinkedServer";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public V1api20230401RedisLinkedServerSpec? Spec { get; set; }
+
+    [JsonPropertyName("status")]
+    public V1api20230401RedisLinkedServerStatus? Status { get; set; }
+}

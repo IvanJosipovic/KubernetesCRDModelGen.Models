@@ -1,0 +1,10 @@
+# KubernetesCRDModelGen.Models.http.crossplane.io
+[![Nuget](https://img.shields.io/nuget/vpre/KubernetesCRDModelGen.Models.http.crossplane.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.http.crossplane.io)[![Nuget)](https://img.shields.io/nuget/dt/KubernetesCRDModelGen.Models.http.crossplane.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.http.crossplane.io)
+
+C# models for Kubernetes CRDs in group `http.crossplane.io`.
+
+## Installation
+
+```shell
+dotnet add package KubernetesCRDModelGen.Models.http.crossplane.io
+```

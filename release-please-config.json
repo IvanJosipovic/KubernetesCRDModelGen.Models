@@ -33,6 +33,391 @@
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
+    },
+    "src/Models/argoproj.io": {
+      "release-type": "simple",
+      "component": "argoproj.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/azure.com": {
+      "release-type": "simple",
+      "component": "azure.com",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/cnrm.cloud.google.com": {
+      "release-type": "simple",
+      "component": "cnrm.cloud.google.com",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/aws.upbound.io": {
+      "release-type": "simple",
+      "component": "aws.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/azapi.upbound.io": {
+      "release-type": "simple",
+      "component": "azapi.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/azure.upbound.io": {
+      "release-type": "simple",
+      "component": "azure.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/azuread.upbound.io": {
+      "release-type": "simple",
+      "component": "azuread.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/crossplane.io": {
+      "release-type": "simple",
+      "component": "crossplane.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/databricks.crossplane.io": {
+      "release-type": "simple",
+      "component": "databricks.crossplane.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/databricks.upbound.io": {
+      "release-type": "simple",
+      "component": "databricks.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/gcp.upbound.io": {
+      "release-type": "simple",
+      "component": "gcp.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/github.upbound.io": {
+      "release-type": "simple",
+      "component": "github.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/helm.crossplane.io": {
+      "release-type": "simple",
+      "component": "helm.crossplane.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/http.crossplane.io": {
+      "release-type": "simple",
+      "component": "http.crossplane.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/kubernetes.crossplane.io": {
+      "release-type": "simple",
+      "component": "kubernetes.crossplane.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/opentofu.upbound.io": {
+      "release-type": "simple",
+      "component": "opentofu.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/tf.upbound.io": {
+      "release-type": "simple",
+      "component": "tf.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/upbound.io": {
+      "release-type": "simple",
+      "component": "upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/vault.upbound.io": {
+      "release-type": "simple",
+      "component": "vault.upbound.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/fluxcd.io": {
+      "release-type": "simple",
+      "component": "fluxcd.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/gateway.networking.k8s.io": {
+      "release-type": "simple",
+      "component": "gateway.networking.k8s.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/istio.io": {
+      "release-type": "simple",
+      "component": "istio.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/jetstack.io": {
+      "release-type": "simple",
+      "component": "jetstack.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/keda.sh": {
+      "release-type": "simple",
+      "component": "keda.sh",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/knative.dev": {
+      "release-type": "simple",
+      "component": "knative.dev",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/kubevirt.io": {
+      "release-type": "simple",
+      "component": "kubevirt.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/kyverno.io": {
+      "release-type": "simple",
+      "component": "kyverno.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/longhorn.io": {
+      "release-type": "simple",
+      "component": "longhorn.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/postgresql.cnpg.io": {
+      "release-type": "simple",
+      "component": "postgresql.cnpg.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/projectcalico.org": {
+      "release-type": "simple",
+      "component": "projectcalico.org",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/secrets-store.csi.x-k8s.io": {
+      "release-type": "simple",
+      "component": "secrets-store.csi.x-k8s.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/storage.k8s.io": {
+      "release-type": "simple",
+      "component": "storage.k8s.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/strimzi.io": {
+      "release-type": "simple",
+      "component": "strimzi.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/temporal.io": {
+      "release-type": "simple",
+      "component": "temporal.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    },
+    "src/Models/traefik.io": {
+      "release-type": "simple",
+      "component": "traefik.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
     }
   }
 }

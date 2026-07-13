@@ -1,0 +1,5260 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.certmanager.io;
+/// <summary>
+/// A ClusterIssuer represents a certificate issuing authority which can be
+/// referenced as part of `issuerRef` fields.
+/// It is similar to an Issuer, however it is cluster-scoped and therefore can
+/// be referenced by resources that exist in *any* namespace, not just the same
+/// namespace as the referent.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1ClusterIssuerList : IKubernetesObject<V1ListMeta>, IItems<V1ClusterIssuer>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "ClusterIssuerList";
+    public const string KubeGroup = "cert-manager.io";
+    public const string KubePluralName = "clusterissuers";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cert-manager.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ClusterIssuerList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1ClusterIssuer objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1ClusterIssuer> Items { get; set; }
+}
+
+/// <summary>
+/// Deprecated: keyAlgorithm field exists for historical compatibility
+/// reasons and should not be used. The algorithm is now hardcoded to HS256
+/// in golang/x/crypto/acme.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerSpecAcmeExternalAccountBindingKeyAlgorithmEnum>))]
+public enum V1ClusterIssuerSpecAcmeExternalAccountBindingKeyAlgorithmEnum
+{
+    [EnumMember(Value = "HS256"), JsonStringEnumMemberName("HS256")]
+    HS256,
+    [EnumMember(Value = "HS384"), JsonStringEnumMemberName("HS384")]
+    HS384,
+    [EnumMember(Value = "HS512"), JsonStringEnumMemberName("HS512")]
+    HS512
+}
+
+/// <summary>
+/// keySecretRef is a Secret Key Selector referencing a data item in a Kubernetes
+/// Secret which holds the symmetric MAC key of the External Account Binding.
+/// The `key` is the index string that is paired with the key data in the
+/// Secret and should not be confused with the key data itself, or indeed with
+/// the External Account Binding keyID above.
+/// The secret key stored in the Secret **must** be un-padded, base64 URL
+/// encoded data.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeExternalAccountBindingKeySecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// ExternalAccountBinding is a reference to a CA external account of the ACME
+/// server.
+/// If set, upon registration cert-manager will attempt to associate the given
+/// external account credentials with the registered ACME account.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeExternalAccountBinding
+{
+    /// <summary>
+    /// Deprecated: keyAlgorithm field exists for historical compatibility
+    /// reasons and should not be used. The algorithm is now hardcoded to HS256
+    /// in golang/x/crypto/acme.
+    /// </summary>
+    [JsonPropertyName("keyAlgorithm")]
+    public V1ClusterIssuerSpecAcmeExternalAccountBindingKeyAlgorithmEnum? KeyAlgorithm { get; set; }
+
+    /// <summary>keyID is the ID of the CA key that the External Account is bound to.</summary>
+    [JsonPropertyName("keyID")]
+    public required string KeyID { get; set; }
+
+    /// <summary>
+    /// keySecretRef is a Secret Key Selector referencing a data item in a Kubernetes
+    /// Secret which holds the symmetric MAC key of the External Account Binding.
+    /// The `key` is the index string that is paired with the key data in the
+    /// Secret and should not be confused with the key data itself, or indeed with
+    /// the External Account Binding keyID above.
+    /// The secret key stored in the Secret **must** be un-padded, base64 URL
+    /// encoded data.
+    /// </summary>
+    [JsonPropertyName("keySecretRef")]
+    public required V1ClusterIssuerSpecAcmeExternalAccountBindingKeySecretRef KeySecretRef { get; set; }
+}
+
+/// <summary>
+/// PrivateKey is the name of a Kubernetes Secret resource that will be used to
+/// store the automatically generated ACME account private key.
+/// Optionally, a `key` may be specified to select a specific entry within
+/// the named Secret resource.
+/// If `key` is not specified, a default of `tls.key` will be used.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmePrivateKeySecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AcmeDNSAccountSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Use the &apos;ACME DNS&apos; (https://github.com/joohoi/acme-dns) API to manage
+/// DNS01 challenge records.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AcmeDNS
+{
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("accountSecretRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01AcmeDNSAccountSecretRef AccountSecretRef { get; set; }
+
+    [JsonPropertyName("host")]
+    public required string Host { get; set; }
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AkamaiAccessTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AkamaiClientSecretSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AkamaiClientTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Use the Akamai DNS zone management API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Akamai
+{
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("accessTokenSecretRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01AkamaiAccessTokenSecretRef AccessTokenSecretRef { get; set; }
+
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01AkamaiClientSecretSecretRef ClientSecretSecretRef { get; set; }
+
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("clientTokenSecretRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01AkamaiClientTokenSecretRef ClientTokenSecretRef { get; set; }
+
+    [JsonPropertyName("serviceConsumerDomain")]
+    public required string ServiceConsumerDomain { get; set; }
+}
+
+/// <summary>
+/// Auth: Azure Service Principal:
+/// A reference to a Secret containing the password associated with the Service Principal.
+/// If set, ClientID and TenantID must also be set.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AzureDNSClientSecretSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>name of the Azure environment (default AzurePublicCloud)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerSpecAcmeSolversDns01AzureDNSEnvironmentEnum>))]
+public enum V1ClusterIssuerSpecAcmeSolversDns01AzureDNSEnvironmentEnum
+{
+    [EnumMember(Value = "AzurePublicCloud"), JsonStringEnumMemberName("AzurePublicCloud")]
+    AzurePublicCloud,
+    [EnumMember(Value = "AzureChinaCloud"), JsonStringEnumMemberName("AzureChinaCloud")]
+    AzureChinaCloud,
+    [EnumMember(Value = "AzureGermanCloud"), JsonStringEnumMemberName("AzureGermanCloud")]
+    AzureGermanCloud,
+    [EnumMember(Value = "AzureUSGovernmentCloud"), JsonStringEnumMemberName("AzureUSGovernmentCloud")]
+    AzureUSGovernmentCloud
+}
+
+/// <summary>
+/// Auth: Azure Workload Identity or Azure Managed Service Identity:
+/// Settings to enable Azure Workload Identity or Azure Managed Service Identity
+/// If set, ClientID, ClientSecret and TenantID must not be set.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AzureDNSManagedIdentity
+{
+    /// <summary>client ID of the managed identity, cannot be used at the same time as resourceID</summary>
+    [JsonPropertyName("clientID")]
+    public string? ClientID { get; set; }
+
+    /// <summary>
+    /// resource ID of the managed identity, cannot be used at the same time as clientID
+    /// Cannot be used for Azure Managed Service Identity
+    /// </summary>
+    [JsonPropertyName("resourceID")]
+    public string? ResourceID { get; set; }
+
+    /// <summary>tenant ID of the managed identity, cannot be used at the same time as resourceID</summary>
+    [JsonPropertyName("tenantID")]
+    public string? TenantID { get; set; }
+}
+
+/// <summary>
+/// ZoneType determines which type of Azure DNS zone to use.
+/// 
+/// Valid values are:
+///   - AzurePublicZone  (default): Use a public Azure DNS zone.
+///   - AzurePrivateZone: Use an Azure Private DNS zone.
+/// 
+/// If not specified, AzurePublicZone is used.
+/// 
+/// Support for Azure Private DNS zones is currently
+/// experimental and may change in future releases.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerSpecAcmeSolversDns01AzureDNSZoneTypeEnum>))]
+public enum V1ClusterIssuerSpecAcmeSolversDns01AzureDNSZoneTypeEnum
+{
+    [EnumMember(Value = "AzurePublicZone"), JsonStringEnumMemberName("AzurePublicZone")]
+    AzurePublicZone,
+    [EnumMember(Value = "AzurePrivateZone"), JsonStringEnumMemberName("AzurePrivateZone")]
+    AzurePrivateZone
+}
+
+/// <summary>Use the Microsoft Azure DNS API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01AzureDNS
+{
+    /// <summary>
+    /// Auth: Azure Service Principal:
+    /// The ClientID of the Azure Service Principal used to authenticate with Azure DNS.
+    /// If set, ClientSecret and TenantID must also be set.
+    /// </summary>
+    [JsonPropertyName("clientID")]
+    public string? ClientID { get; set; }
+
+    /// <summary>
+    /// Auth: Azure Service Principal:
+    /// A reference to a Secret containing the password associated with the Service Principal.
+    /// If set, ClientID and TenantID must also be set.
+    /// </summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AzureDNSClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+
+    /// <summary>name of the Azure environment (default AzurePublicCloud)</summary>
+    [JsonPropertyName("environment")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AzureDNSEnvironmentEnum? Environment { get; set; }
+
+    /// <summary>name of the DNS zone that should be used</summary>
+    [JsonPropertyName("hostedZoneName")]
+    public string? HostedZoneName { get; set; }
+
+    /// <summary>
+    /// Auth: Azure Workload Identity or Azure Managed Service Identity:
+    /// Settings to enable Azure Workload Identity or Azure Managed Service Identity
+    /// If set, ClientID, ClientSecret and TenantID must not be set.
+    /// </summary>
+    [JsonPropertyName("managedIdentity")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AzureDNSManagedIdentity? ManagedIdentity { get; set; }
+
+    /// <summary>resource group the DNS zone is located in</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public required string ResourceGroupName { get; set; }
+
+    /// <summary>ID of the Azure subscription</summary>
+    [JsonPropertyName("subscriptionID")]
+    public required string SubscriptionID { get; set; }
+
+    /// <summary>
+    /// Auth: Azure Service Principal:
+    /// The TenantID of the Azure Service Principal used to authenticate with Azure DNS.
+    /// If set, ClientID and ClientSecret must also be set.
+    /// </summary>
+    [JsonPropertyName("tenantID")]
+    public string? TenantID { get; set; }
+
+    /// <summary>
+    /// ZoneType determines which type of Azure DNS zone to use.
+    /// 
+    /// Valid values are:
+    ///   - AzurePublicZone  (default): Use a public Azure DNS zone.
+    ///   - AzurePrivateZone: Use an Azure Private DNS zone.
+    /// 
+    /// If not specified, AzurePublicZone is used.
+    /// 
+    /// Support for Azure Private DNS zones is currently
+    /// experimental and may change in future releases.
+    /// </summary>
+    [JsonPropertyName("zoneType")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AzureDNSZoneTypeEnum? ZoneType { get; set; }
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01CloudDNSServiceAccountSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Use the Google Cloud DNS API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01CloudDNS
+{
+    /// <summary>
+    /// HostedZoneName is an optional field that tells cert-manager in which
+    /// Cloud DNS zone the challenge record has to be created.
+    /// If left empty cert-manager will automatically choose a zone.
+    /// </summary>
+    [JsonPropertyName("hostedZoneName")]
+    public string? HostedZoneName { get; set; }
+
+    [JsonPropertyName("project")]
+    public required string Project { get; set; }
+
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("serviceAccountSecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01CloudDNSServiceAccountSecretRef? ServiceAccountSecretRef { get; set; }
+}
+
+/// <summary>
+/// API key to use to authenticate with Cloudflare.
+/// Note: using an API token to authenticate is now the recommended method
+/// as it allows greater control of permissions.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01CloudflareApiKeySecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>API token used to authenticate with Cloudflare.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01CloudflareApiTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Use the Cloudflare API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Cloudflare
+{
+    /// <summary>
+    /// API key to use to authenticate with Cloudflare.
+    /// Note: using an API token to authenticate is now the recommended method
+    /// as it allows greater control of permissions.
+    /// </summary>
+    [JsonPropertyName("apiKeySecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01CloudflareApiKeySecretRef? ApiKeySecretRef { get; set; }
+
+    /// <summary>API token used to authenticate with Cloudflare.</summary>
+    [JsonPropertyName("apiTokenSecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01CloudflareApiTokenSecretRef? ApiTokenSecretRef { get; set; }
+
+    /// <summary>Email of the account, only required when using API key based authentication.</summary>
+    [JsonPropertyName("email")]
+    public string? Email { get; set; }
+}
+
+/// <summary>
+/// CNAMEStrategy configures how the DNS01 provider should handle CNAME
+/// records when found in DNS zones.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerSpecAcmeSolversDns01CnameStrategyEnum>))]
+public enum V1ClusterIssuerSpecAcmeSolversDns01CnameStrategyEnum
+{
+    [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
+    None,
+    [EnumMember(Value = "Follow"), JsonStringEnumMemberName("Follow")]
+    Follow
+}
+
+/// <summary>
+/// A reference to a specific &apos;key&apos; within a Secret resource.
+/// In some instances, `key` is a required field.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Use the DigitalOcean DNS API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Digitalocean
+{
+    /// <summary>
+    /// A reference to a specific &apos;key&apos; within a Secret resource.
+    /// In some instances, `key` is a required field.
+    /// </summary>
+    [JsonPropertyName("tokenSecretRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef TokenSecretRef { get; set; }
+}
+
+/// <summary>Protocol to use for dynamic DNS update queries. Valid values are (case-sensitive) ``TCP`` and ``UDP``; ``UDP`` (default).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerSpecAcmeSolversDns01Rfc2136ProtocolEnum>))]
+public enum V1ClusterIssuerSpecAcmeSolversDns01Rfc2136ProtocolEnum
+{
+    [EnumMember(Value = "TCP"), JsonStringEnumMemberName("TCP")]
+    TCP,
+    [EnumMember(Value = "UDP"), JsonStringEnumMemberName("UDP")]
+    UDP
+}
+
+/// <summary>
+/// The name of the secret containing the TSIG value.
+/// If ``tsigKeyName`` is defined, this field is required.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Rfc2136TsigSecretSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Use RFC2136 (&quot;Dynamic Updates in the Domain Name System&quot;) (https://datatracker.ietf.org/doc/rfc2136/)
+/// to manage DNS01 challenge records.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Rfc2136
+{
+    /// <summary>
+    /// The IP address or hostname of an authoritative DNS server supporting
+    /// RFC2136 in the form host:port. If the host is an IPv6 address it must be
+    /// enclosed in square brackets (e.g [2001:db8::1]); port is optional.
+    /// This field is required.
+    /// </summary>
+    [JsonPropertyName("nameserver")]
+    public required string Nameserver { get; set; }
+
+    /// <summary>Protocol to use for dynamic DNS update queries. Valid values are (case-sensitive) ``TCP`` and ``UDP``; ``UDP`` (default).</summary>
+    [JsonPropertyName("protocol")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Rfc2136ProtocolEnum? Protocol { get; set; }
+
+    /// <summary>
+    /// The TSIG Algorithm configured in the DNS supporting RFC2136. Used only
+    /// when ``tsigSecretSecretRef`` and ``tsigKeyName`` are defined.
+    /// Supported values are (case-insensitive): ``HMACMD5`` (default),
+    /// ``HMACSHA1``, ``HMACSHA256`` or ``HMACSHA512``.
+    /// </summary>
+    [JsonPropertyName("tsigAlgorithm")]
+    public string? TsigAlgorithm { get; set; }
+
+    /// <summary>
+    /// The TSIG Key name configured in the DNS.
+    /// If ``tsigSecretSecretRef`` is defined, this field is required.
+    /// </summary>
+    [JsonPropertyName("tsigKeyName")]
+    public string? TsigKeyName { get; set; }
+
+    /// <summary>
+    /// The name of the secret containing the TSIG value.
+    /// If ``tsigKeyName`` is defined, this field is required.
+    /// </summary>
+    [JsonPropertyName("tsigSecretSecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Rfc2136TsigSecretSecretRef? TsigSecretSecretRef { get; set; }
+}
+
+/// <summary>
+/// The SecretAccessKey is used for authentication. If set, pull the AWS
+/// access key ID from a key within a Kubernetes Secret.
+/// Cannot be set when AccessKeyID is set.
+/// If neither the Access Key nor Key ID are set, we fall back to using env
+/// vars, shared credentials file, or AWS Instance metadata,
+/// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53AccessKeyIDSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a service account that will be used to request a bound
+/// token (also known as &quot;projected token&quot;). To use this field, you must
+/// configure an RBAC rule to let cert-manager request a token.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53AuthKubernetesServiceAccountRef
+{
+    /// <summary>
+    /// TokenAudiences is an optional list of audiences to include in the
+    /// token passed to AWS. The default token consisting of the issuer&apos;s namespace
+    /// and name is always included.
+    /// If unset the audience defaults to `sts.amazonaws.com`.
+    /// </summary>
+    [JsonPropertyName("audiences")]
+    public IList<string>? Audiences { get; set; }
+
+    /// <summary>Name of the ServiceAccount used to request a token.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Kubernetes authenticates with Route53 using AssumeRoleWithWebIdentity
+/// by passing a bound ServiceAccount token.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53AuthKubernetes
+{
+    /// <summary>
+    /// A reference to a service account that will be used to request a bound
+    /// token (also known as &quot;projected token&quot;). To use this field, you must
+    /// configure an RBAC rule to let cert-manager request a token.
+    /// </summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01Route53AuthKubernetesServiceAccountRef ServiceAccountRef { get; set; }
+}
+
+/// <summary>Auth configures how cert-manager authenticates.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53Auth
+{
+    /// <summary>
+    /// Kubernetes authenticates with Route53 using AssumeRoleWithWebIdentity
+    /// by passing a bound ServiceAccount token.
+    /// </summary>
+    [JsonPropertyName("kubernetes")]
+    public required V1ClusterIssuerSpecAcmeSolversDns01Route53AuthKubernetes Kubernetes { get; set; }
+}
+
+/// <summary>
+/// The SecretAccessKey is used for authentication.
+/// If neither the Access Key nor Key ID are set, we fall back to using env
+/// vars, shared credentials file, or AWS Instance metadata,
+/// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53SecretAccessKeySecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Use the AWS Route53 API to manage DNS01 challenge records.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Route53
+{
+    /// <summary>
+    /// The AccessKeyID is used for authentication.
+    /// Cannot be set when SecretAccessKeyID is set.
+    /// If neither the Access Key nor Key ID are set, we fall back to using env
+    /// vars, shared credentials file, or AWS Instance metadata,
+    /// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+    /// </summary>
+    [JsonPropertyName("accessKeyID")]
+    public string? AccessKeyID { get; set; }
+
+    /// <summary>
+    /// The SecretAccessKey is used for authentication. If set, pull the AWS
+    /// access key ID from a key within a Kubernetes Secret.
+    /// Cannot be set when AccessKeyID is set.
+    /// If neither the Access Key nor Key ID are set, we fall back to using env
+    /// vars, shared credentials file, or AWS Instance metadata,
+    /// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+    /// </summary>
+    [JsonPropertyName("accessKeyIDSecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Route53AccessKeyIDSecretRef? AccessKeyIDSecretRef { get; set; }
+
+    /// <summary>Auth configures how cert-manager authenticates.</summary>
+    [JsonPropertyName("auth")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Route53Auth? Auth { get; set; }
+
+    /// <summary>If set, the provider will manage only this zone in Route53 and will not do a lookup using the route53:ListHostedZonesByName api call.</summary>
+    [JsonPropertyName("hostedZoneID")]
+    public string? HostedZoneID { get; set; }
+
+    /// <summary>
+    /// Override the AWS region.
+    /// 
+    /// Route53 is a global service and does not have regional endpoints but the
+    /// region specified here (or via environment variables) is used as a hint to
+    /// help compute the correct AWS credential scope and partition when it
+    /// connects to Route53. See:
+    /// - [Amazon Route 53 endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/r53.html)
+    /// - [Global services](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/global-services.html)
+    /// 
+    /// If you omit this region field, cert-manager will use the region from
+    /// AWS_REGION and AWS_DEFAULT_REGION environment variables, if they are set
+    /// in the cert-manager controller Pod.
+    /// 
+    /// The `region` field is not needed if you use [IAM Roles for Service Accounts (IRSA)](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html).
+    /// Instead an AWS_REGION environment variable is added to the cert-manager controller Pod by:
+    /// [Amazon EKS Pod Identity Webhook](https://github.com/aws/amazon-eks-pod-identity-webhook).
+    /// In this case this `region` field value is ignored.
+    /// 
+    /// The `region` field is not needed if you use [EKS Pod Identities](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html).
+    /// Instead an AWS_REGION environment variable is added to the cert-manager controller Pod by:
+    /// [Amazon EKS Pod Identity Agent](https://github.com/aws/eks-pod-identity-agent),
+    /// In this case this `region` field value is ignored.
+    /// </summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>
+    /// Role is a Role ARN which the Route53 provider will assume using either the explicit credentials AccessKeyID/SecretAccessKey
+    /// or the inferred credentials from environment variables, shared credentials file or AWS Instance metadata
+    /// </summary>
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    /// <summary>
+    /// The SecretAccessKey is used for authentication.
+    /// If neither the Access Key nor Key ID are set, we fall back to using env
+    /// vars, shared credentials file, or AWS Instance metadata,
+    /// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+    /// </summary>
+    [JsonPropertyName("secretAccessKeySecretRef")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Route53SecretAccessKeySecretRef? SecretAccessKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Configure an external webhook based DNS01 challenge solver to manage
+/// DNS01 challenge records.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01Webhook
+{
+    /// <summary>
+    /// Additional configuration that should be passed to the webhook apiserver
+    /// when challenges are processed.
+    /// This can contain arbitrary JSON data.
+    /// Secret values should not be specified in this stanza.
+    /// If secret values are needed (e.g., credentials for a DNS service), you
+    /// should use a SecretKeySelector to reference a Secret resource.
+    /// For details on the schema of this field, consult the webhook provider
+    /// implementation&apos;s documentation.
+    /// </summary>
+    [JsonPropertyName("config")]
+    public JsonNode? Config { get; set; }
+
+    /// <summary>
+    /// The API group name that should be used when POSTing ChallengePayload
+    /// resources to the webhook apiserver.
+    /// This should be the same as the GroupName specified in the webhook
+    /// provider implementation.
+    /// </summary>
+    [JsonPropertyName("groupName")]
+    public required string GroupName { get; set; }
+
+    /// <summary>
+    /// The name of the solver to use, as defined in the webhook provider
+    /// implementation.
+    /// This will typically be the name of the provider, e.g., &apos;cloudflare&apos;.
+    /// </summary>
+    [JsonPropertyName("solverName")]
+    public required string SolverName { get; set; }
+}
+
+/// <summary>
+/// Configures cert-manager to attempt to complete authorizations by
+/// performing the DNS01 challenge flow.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversDns01
+{
+    /// <summary>
+    /// Use the &apos;ACME DNS&apos; (https://github.com/joohoi/acme-dns) API to manage
+    /// DNS01 challenge records.
+    /// </summary>
+    [JsonPropertyName("acmeDNS")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AcmeDNS? AcmeDNS { get; set; }
+
+    /// <summary>Use the Akamai DNS zone management API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("akamai")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Akamai? Akamai { get; set; }
+
+    /// <summary>Use the Microsoft Azure DNS API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("azureDNS")]
+    public V1ClusterIssuerSpecAcmeSolversDns01AzureDNS? AzureDNS { get; set; }
+
+    /// <summary>Use the Google Cloud DNS API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("cloudDNS")]
+    public V1ClusterIssuerSpecAcmeSolversDns01CloudDNS? CloudDNS { get; set; }
+
+    /// <summary>Use the Cloudflare API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("cloudflare")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Cloudflare? Cloudflare { get; set; }
+
+    /// <summary>
+    /// CNAMEStrategy configures how the DNS01 provider should handle CNAME
+    /// records when found in DNS zones.
+    /// </summary>
+    [JsonPropertyName("cnameStrategy")]
+    public V1ClusterIssuerSpecAcmeSolversDns01CnameStrategyEnum? CnameStrategy { get; set; }
+
+    /// <summary>Use the DigitalOcean DNS API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("digitalocean")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Digitalocean? Digitalocean { get; set; }
+
+    /// <summary>
+    /// Use RFC2136 (&quot;Dynamic Updates in the Domain Name System&quot;) (https://datatracker.ietf.org/doc/rfc2136/)
+    /// to manage DNS01 challenge records.
+    /// </summary>
+    [JsonPropertyName("rfc2136")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Rfc2136? Rfc2136 { get; set; }
+
+    /// <summary>Use the AWS Route53 API to manage DNS01 challenge records.</summary>
+    [JsonPropertyName("route53")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Route53? Route53 { get; set; }
+
+    /// <summary>
+    /// Configure an external webhook based DNS01 challenge solver to manage
+    /// DNS01 challenge records.
+    /// </summary>
+    [JsonPropertyName("webhook")]
+    public V1ClusterIssuerSpecAcmeSolversDns01Webhook? Webhook { get; set; }
+}
+
+/// <summary>
+/// ParentReference identifies an API object (usually a Gateway) that can be considered
+/// a parent of this resource (usually a route). There are two kinds of parent resources
+/// with &quot;Core&quot; support:
+/// 
+/// * Gateway (Gateway conformance profile)
+/// * Service (Mesh conformance profile, ClusterIP Services only)
+/// 
+/// This API may be extended in the future to support additional kinds of parent
+/// resources.
+/// 
+/// The API object must be valid in the cluster; the Group and Kind must
+/// be registered in the cluster for this reference to be valid.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRouteParentRefs
+{
+    /// <summary>
+    /// Group is the group of the referent.
+    /// When unspecified, &quot;gateway.networking.k8s.io&quot; is inferred.
+    /// To set the core API group (such as for a &quot;Service&quot; kind referent),
+    /// Group must be explicitly set to &quot; &quot; (empty string).
+    /// 
+    /// Support: Core
+    /// </summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>
+    /// Kind is kind of the referent.
+    /// 
+    /// There are two kinds of parent resources with &quot;Core&quot; support:
+    /// 
+    /// * Gateway (Gateway conformance profile)
+    /// * Service (Mesh conformance profile, ClusterIP Services only)
+    /// 
+    /// Support for other resources is Implementation-Specific.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>
+    /// Name is the name of the referent.
+    /// 
+    /// Support: Core
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Namespace is the namespace of the referent. When unspecified, this refers
+    /// to the local namespace of the Route.
+    /// 
+    /// Note that there are specific rules for ParentRefs which cross namespace
+    /// boundaries. Cross-namespace references are only valid if they are explicitly
+    /// allowed by something in the namespace they are referring to. For example:
+    /// Gateway has the AllowedRoutes field, and ReferenceGrant provides a
+    /// generic way to enable any other kind of cross-namespace reference.
+    /// 
+    /// &lt;gateway:experimental:description&gt;
+    /// ParentRefs from a Route to a Service in the same namespace are &quot;producer&quot;
+    /// routes, which apply default routing rules to inbound connections from
+    /// any namespace to the Service.
+    /// 
+    /// ParentRefs from a Route to a Service in a different namespace are
+    /// &quot;consumer&quot; routes, and these routing rules are only applied to outbound
+    /// connections originating from the same namespace as the Route, for which
+    /// the intended destination of the connections are a Service targeted as a
+    /// ParentRef of the Route.
+    /// &lt;/gateway:experimental:description&gt;
+    /// 
+    /// Support: Core
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// Port is the network port this Route targets. It can be interpreted
+    /// differently based on the type of parent resource.
+    /// 
+    /// When the parent resource is a Gateway, this targets all listeners
+    /// listening on the specified port that also support this kind of Route(and
+    /// select this Route). It&apos;s not recommended to set `Port` unless the
+    /// networking behaviors specified in a Route must apply to a specific port
+    /// as opposed to a listener(s) whose port(s) may be changed. When both Port
+    /// and SectionName are specified, the name and port of the selected listener
+    /// must match both specified values.
+    /// 
+    /// &lt;gateway:experimental:description&gt;
+    /// When the parent resource is a Service, this targets a specific port in the
+    /// Service spec. When both Port (experimental) and SectionName are specified,
+    /// the name and port of the selected port must match both specified values.
+    /// &lt;/gateway:experimental:description&gt;
+    /// 
+    /// Implementations MAY choose to support other parent resources.
+    /// Implementations supporting other types of parent resources MUST clearly
+    /// document how/if Port is interpreted.
+    /// 
+    /// For the purpose of status, an attachment is considered successful as
+    /// long as the parent resource accepts it partially. For example, Gateway
+    /// listeners can restrict which Routes can attach to them by Route kind,
+    /// namespace, or hostname. If 1 of 2 Gateway listeners accept attachment
+    /// from the referencing Route, the Route MUST be considered successfully
+    /// attached. If no Gateway listeners accept attachment from this Route,
+    /// the Route MUST be considered detached from the Gateway.
+    /// 
+    /// Support: Extended
+    /// </summary>
+    [JsonPropertyName("port")]
+    public int? Port { get; set; }
+
+    /// <summary>
+    /// SectionName is the name of a section within the target resource. In the
+    /// following resources, SectionName is interpreted as the following:
+    /// 
+    /// * Gateway: Listener name. When both Port (experimental) and SectionName
+    /// are specified, the name and port of the selected listener must match
+    /// both specified values.
+    /// * Service: Port name. When both Port (experimental) and SectionName
+    /// are specified, the name and port of the selected listener must match
+    /// both specified values.
+    /// 
+    /// Implementations MAY choose to support attaching Routes to other resources.
+    /// If that is the case, they MUST clearly document how SectionName is
+    /// interpreted.
+    /// 
+    /// When unspecified (empty string), this will reference the entire resource.
+    /// For the purpose of status, an attachment is considered successful if at
+    /// least one section in the parent resource accepts it. For example, Gateway
+    /// listeners can restrict which Routes can attach to them by Route kind,
+    /// namespace, or hostname. If 1 of 2 Gateway listeners accept attachment from
+    /// the referencing Route, the Route MUST be considered successfully
+    /// attached. If no Gateway listeners accept attachment from this Route, the
+    /// Route MUST be considered detached from the Gateway.
+    /// 
+    /// Support: Core
+    /// </summary>
+    [JsonPropertyName("sectionName")]
+    public string? SectionName { get; set; }
+}
+
+/// <summary>
+/// ObjectMeta overrides for the pod used to solve HTTP01 challenges.
+/// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+/// If labels or annotations overlap with in-built values, the values here
+/// will override the in-built values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateMetadata
+{
+    /// <summary>Annotations that should be added to the created ACME HTTP01 solver pods.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>Labels that should be added to the created ACME HTTP01 solver pods.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>A node selector term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// An empty preferred scheduling term matches all objects with implicit weight 0
+/// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>A node selector term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("preference")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference Preference { get; set; }
+
+    /// <summary>Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.</summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A null or empty node selector term matches no objects. The requirements of
+/// them are ANDed.
+/// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// If the affinity requirements specified by this field are not met at
+/// scheduling time, the pod will not be scheduled onto the node.
+/// If the affinity requirements specified by this field cease to be met
+/// at some point during pod execution (e.g. due to an update), the system
+/// may or may not try to eventually evict the pod from its node.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A list of node selector terms. The terms are ORed.</summary>
+    [JsonPropertyName("nodeSelectorTerms")]
+    public required IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
+}
+
+/// <summary>Describes node affinity scheduling rules for the pod.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node matches the corresponding matchExpressions; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to an update), the system
+    /// may or may not try to eventually evict the pod from its node.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the anti-affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling anti-affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and subtracting
+    /// &quot;weight&quot; from the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the anti-affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the anti-affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>If specified, the pod&apos;s scheduling constraints</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinity
+{
+    /// <summary>Describes node affinity scheduling rules for the pod.</summary>
+    [JsonPropertyName("nodeAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinity? NodeAffinity { get; set; }
+
+    /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinity? PodAffinity { get; set; }
+
+    /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAntiAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
+}
+
+/// <summary>
+/// LocalObjectReference contains enough information to let you locate the
+/// referenced object inside the same namespace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecImagePullSecrets
+{
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// If specified, the pod&apos;s resource requirements.
+/// These values override the global resource configuration flags.
+/// Note that when only specifying resource limits, ensure they are greater than or equal
+/// to the corresponding global resource requests configured via controller flags
+/// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
+/// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecResources
+{
+    /// <summary>
+    /// Limits describes the maximum amount of compute resources allowed.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    /// <summary>
+    /// Requests describes the minimum amount of compute resources required.
+    /// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+    /// otherwise to the global values configured via controller flags. Requests cannot exceed Limits.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>
+/// The SELinux context to be applied to all containers.
+/// If unspecified, the container runtime will allocate a random SELinux context for each
+/// container.  May also be set in SecurityContext.  If set in
+/// both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+/// takes precedence for that container.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeLinuxOptions
+{
+    /// <summary>Level is SELinux level label that applies to the container.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Role is a SELinux role label that applies to the container.</summary>
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    /// <summary>Type is a SELinux type label that applies to the container.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>User is a SELinux user label that applies to the container.</summary>
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+/// <summary>
+/// The seccomp options to use by the containers in this pod.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeccompProfile
+{
+    /// <summary>
+    /// localhostProfile indicates a profile defined in a file on the node should be used.
+    /// The profile must be preconfigured on the node to work.
+    /// Must be a descending path, relative to the kubelet&apos;s configured seccomp profile location.
+    /// Must be set if type is &quot;Localhost&quot;. Must NOT be set for any other type.
+    /// </summary>
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    /// <summary>
+    /// type indicates which kind of seccomp profile will be applied.
+    /// Valid options are:
+    /// 
+    /// Localhost - a profile defined in a file on the node should be used.
+    /// RuntimeDefault - the container runtime default profile should be used.
+    /// Unconfined - no profile should be applied.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>Sysctl defines a kernel parameter to be set</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSysctls
+{
+    /// <summary>Name of a property to set</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Value of a property to set</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>If specified, the pod&apos;s security context</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContext
+{
+    /// <summary>
+    /// A special supplemental group that applies to all containers in a pod.
+    /// Some volume types allow the Kubelet to change the ownership of that volume
+    /// to be owned by the pod:
+    /// 
+    /// 1. The owning GID will be the FSGroup
+    /// 2. The setgid bit is set (new files created in the volume will be owned by FSGroup)
+    /// 3. The permission bits are OR&apos;d with rw-rw----
+    /// 
+    /// If unset, the Kubelet will not modify the ownership and permissions of any volume.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("fsGroup")]
+    public long? FsGroup { get; set; }
+
+    /// <summary>
+    /// fsGroupChangePolicy defines behavior of changing ownership and permission of the volume
+    /// before being exposed inside Pod. This field will only apply to
+    /// volume types which support fsGroup based ownership(and permissions).
+    /// It will have no effect on ephemeral volume types such as: secret, configmaps
+    /// and emptydir.
+    /// Valid values are &quot;OnRootMismatch&quot; and &quot;Always&quot;. If not specified, &quot;Always&quot; is used.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("fsGroupChangePolicy")]
+    public string? FsGroupChangePolicy { get; set; }
+
+    /// <summary>
+    /// The GID to run the entrypoint of the container process.
+    /// Uses runtime default if unset.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence
+    /// for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    /// <summary>
+    /// Indicates that the container must run as a non-root user.
+    /// If true, the Kubelet will validate the image at runtime to ensure that it
+    /// does not run as UID 0 (root) and fail to start the container if it does.
+    /// If unset or false, no such validation will be performed.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// </summary>
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    /// <summary>
+    /// The UID to run the entrypoint of the container process.
+    /// Defaults to user specified in image metadata if unspecified.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence
+    /// for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    /// <summary>
+    /// The SELinux context to be applied to all containers.
+    /// If unspecified, the container runtime will allocate a random SELinux context for each
+    /// container.  May also be set in SecurityContext.  If set in
+    /// both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+    /// takes precedence for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seLinuxOptions")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    /// <summary>
+    /// The seccomp options to use by the containers in this pod.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seccompProfile")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    /// <summary>
+    /// A list of groups applied to the first process run in each container, in addition
+    /// to the container&apos;s primary GID, the fsGroup (if specified), and group memberships
+    /// defined in the container image for the uid of the container process. If unspecified,
+    /// no additional groups are added to any container. Note that group memberships
+    /// defined in the container image for the uid of the container process are still effective,
+    /// even if they are not included in this list.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("supplementalGroups")]
+    public IList<long>? SupplementalGroups { get; set; }
+
+    /// <summary>
+    /// Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported
+    /// sysctls (by the container runtime) might fail to launch.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("sysctls")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSysctls>? Sysctls { get; set; }
+}
+
+/// <summary>
+/// The pod this Toleration is attached to tolerates any taint that matches
+/// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecTolerations
+{
+    /// <summary>
+    /// Effect indicates the taint effect to match. Empty means match all taint effects.
+    /// When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
+    /// </summary>
+    [JsonPropertyName("effect")]
+    public string? Effect { get; set; }
+
+    /// <summary>
+    /// Key is the taint key that the toleration applies to. Empty means match all taint keys.
+    /// If the key is empty, operator must be Exists; this combination means to match all values and all keys.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Operator represents a key&apos;s relationship to the value.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
+    /// Exists is equivalent to wildcard for value, so that a pod can
+    /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public string? Operator { get; set; }
+
+    /// <summary>
+    /// TolerationSeconds represents the period of time the toleration (which must be
+    /// of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default,
+    /// it is not set, which means tolerate the taint forever (do not evict). Zero and
+    /// negative values will be treated as 0 (evict immediately) by the system.
+    /// </summary>
+    [JsonPropertyName("tolerationSeconds")]
+    public long? TolerationSeconds { get; set; }
+
+    /// <summary>
+    /// Value is the taint value the toleration matches to.
+    /// If the operator is Exists, the value should be empty, otherwise just a regular string.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// PodSpec defines overrides for the HTTP01 challenge solver pod.
+/// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
+/// All other fields will be ignored.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpec
+{
+    /// <summary>If specified, the pod&apos;s scheduling constraints</summary>
+    [JsonPropertyName("affinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecAffinity? Affinity { get; set; }
+
+    /// <summary>If specified, the pod&apos;s imagePullSecrets</summary>
+    [JsonPropertyName("imagePullSecrets")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecImagePullSecrets>? ImagePullSecrets { get; set; }
+
+    /// <summary>
+    /// NodeSelector is a selector which must be true for the pod to fit on a node.
+    /// Selector which must match a node&apos;s labels for the pod to be scheduled on that node.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public IDictionary<string, string>? NodeSelector { get; set; }
+
+    /// <summary>If specified, the pod&apos;s priorityClassName.</summary>
+    [JsonPropertyName("priorityClassName")]
+    public string? PriorityClassName { get; set; }
+
+    /// <summary>
+    /// If specified, the pod&apos;s resource requirements.
+    /// These values override the global resource configuration flags.
+    /// Note that when only specifying resource limits, ensure they are greater than or equal
+    /// to the corresponding global resource requests configured via controller flags
+    /// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
+    /// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecResources? Resources { get; set; }
+
+    /// <summary>If specified, the pod&apos;s security context</summary>
+    [JsonPropertyName("securityContext")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecSecurityContext? SecurityContext { get; set; }
+
+    /// <summary>If specified, the pod&apos;s service account</summary>
+    [JsonPropertyName("serviceAccountName")]
+    public string? ServiceAccountName { get; set; }
+
+    /// <summary>If specified, the pod&apos;s tolerations.</summary>
+    [JsonPropertyName("tolerations")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpecTolerations>? Tolerations { get; set; }
+}
+
+/// <summary>
+/// Optional pod template used to configure the ACME challenge solver pods
+/// used for HTTP01 challenges.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplate
+{
+    /// <summary>
+    /// ObjectMeta overrides for the pod used to solve HTTP01 challenges.
+    /// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+    /// If labels or annotations overlap with in-built values, the values here
+    /// will override the in-built values.
+    /// </summary>
+    [JsonPropertyName("metadata")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateMetadata? Metadata { get; set; }
+
+    /// <summary>
+    /// PodSpec defines overrides for the HTTP01 challenge solver pod.
+    /// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
+    /// All other fields will be ignored.
+    /// </summary>
+    [JsonPropertyName("spec")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplateSpec? Spec { get; set; }
+}
+
+/// <summary>
+/// The Gateway API is a sig-network community API that models service networking
+/// in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will
+/// create HTTPRoutes with the specified labels in the same namespace as the challenge.
+/// This solver is experimental, and fields / behaviour may change in the future.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoute
+{
+    /// <summary>
+    /// Custom labels that will be applied to HTTPRoutes created by cert-manager
+    /// while solving HTTP-01 challenges.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// When solving an HTTP-01 challenge, cert-manager creates an HTTPRoute.
+    /// cert-manager needs to know which parentRefs should be used when creating
+    /// the HTTPRoute. Usually, the parentRef references a Gateway. See:
+    /// https://gateway-api.sigs.k8s.io/api-types/httproute/#attaching-to-gateways
+    /// </summary>
+    [JsonPropertyName("parentRefs")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRouteParentRefs>? ParentRefs { get; set; }
+
+    /// <summary>
+    /// Optional pod template used to configure the ACME challenge solver pods
+    /// used for HTTP01 challenges.
+    /// </summary>
+    [JsonPropertyName("podTemplate")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoutePodTemplate? PodTemplate { get; set; }
+
+    /// <summary>
+    /// Optional service type for Kubernetes solver service. Supported values
+    /// are NodePort or ClusterIP. If unset, defaults to NodePort.
+    /// </summary>
+    [JsonPropertyName("serviceType")]
+    public string? ServiceType { get; set; }
+}
+
+/// <summary>
+/// ObjectMeta overrides for the ingress used to solve HTTP01 challenges.
+/// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+/// If labels or annotations overlap with in-built values, the values here
+/// will override the in-built values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplateMetadata
+{
+    /// <summary>Annotations that should be added to the created ACME HTTP01 solver ingress.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>Labels that should be added to the created ACME HTTP01 solver ingress.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>
+/// Optional ingress template used to configure the ACME challenge solver
+/// ingress used for HTTP01 challenges.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplate
+{
+    /// <summary>
+    /// ObjectMeta overrides for the ingress used to solve HTTP01 challenges.
+    /// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+    /// If labels or annotations overlap with in-built values, the values here
+    /// will override the in-built values.
+    /// </summary>
+    [JsonPropertyName("metadata")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplateMetadata? Metadata { get; set; }
+}
+
+/// <summary>
+/// ObjectMeta overrides for the pod used to solve HTTP01 challenges.
+/// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+/// If labels or annotations overlap with in-built values, the values here
+/// will override the in-built values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateMetadata
+{
+    /// <summary>Annotations that should be added to the created ACME HTTP01 solver pods.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>Labels that should be added to the created ACME HTTP01 solver pods.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>A node selector term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// An empty preferred scheduling term matches all objects with implicit weight 0
+/// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>A node selector term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("preference")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference Preference { get; set; }
+
+    /// <summary>Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.</summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A null or empty node selector term matches no objects. The requirements of
+/// them are ANDed.
+/// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// If the affinity requirements specified by this field are not met at
+/// scheduling time, the pod will not be scheduled onto the node.
+/// If the affinity requirements specified by this field cease to be met
+/// at some point during pod execution (e.g. due to an update), the system
+/// may or may not try to eventually evict the pod from its node.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A list of node selector terms. The terms are ORed.</summary>
+    [JsonPropertyName("nodeSelectorTerms")]
+    public required IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
+}
+
+/// <summary>Describes node affinity scheduling rules for the pod.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node matches the corresponding matchExpressions; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to an update), the system
+    /// may or may not try to eventually evict the pod from its node.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key in (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with `labelSelector` as `key notin (value)`
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the anti-affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling anti-affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and subtracting
+    /// &quot;weight&quot; from the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the anti-affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the anti-affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>If specified, the pod&apos;s scheduling constraints</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinity
+{
+    /// <summary>Describes node affinity scheduling rules for the pod.</summary>
+    [JsonPropertyName("nodeAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinity? NodeAffinity { get; set; }
+
+    /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinity? PodAffinity { get; set; }
+
+    /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAntiAffinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
+}
+
+/// <summary>
+/// LocalObjectReference contains enough information to let you locate the
+/// referenced object inside the same namespace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecImagePullSecrets
+{
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// If specified, the pod&apos;s resource requirements.
+/// These values override the global resource configuration flags.
+/// Note that when only specifying resource limits, ensure they are greater than or equal
+/// to the corresponding global resource requests configured via controller flags
+/// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
+/// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecResources
+{
+    /// <summary>
+    /// Limits describes the maximum amount of compute resources allowed.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    /// <summary>
+    /// Requests describes the minimum amount of compute resources required.
+    /// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+    /// otherwise to the global values configured via controller flags. Requests cannot exceed Limits.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>
+/// The SELinux context to be applied to all containers.
+/// If unspecified, the container runtime will allocate a random SELinux context for each
+/// container.  May also be set in SecurityContext.  If set in
+/// both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+/// takes precedence for that container.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSeLinuxOptions
+{
+    /// <summary>Level is SELinux level label that applies to the container.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Role is a SELinux role label that applies to the container.</summary>
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    /// <summary>Type is a SELinux type label that applies to the container.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>User is a SELinux user label that applies to the container.</summary>
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+/// <summary>
+/// The seccomp options to use by the containers in this pod.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSeccompProfile
+{
+    /// <summary>
+    /// localhostProfile indicates a profile defined in a file on the node should be used.
+    /// The profile must be preconfigured on the node to work.
+    /// Must be a descending path, relative to the kubelet&apos;s configured seccomp profile location.
+    /// Must be set if type is &quot;Localhost&quot;. Must NOT be set for any other type.
+    /// </summary>
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    /// <summary>
+    /// type indicates which kind of seccomp profile will be applied.
+    /// Valid options are:
+    /// 
+    /// Localhost - a profile defined in a file on the node should be used.
+    /// RuntimeDefault - the container runtime default profile should be used.
+    /// Unconfined - no profile should be applied.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>Sysctl defines a kernel parameter to be set</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSysctls
+{
+    /// <summary>Name of a property to set</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Value of a property to set</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>If specified, the pod&apos;s security context</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContext
+{
+    /// <summary>
+    /// A special supplemental group that applies to all containers in a pod.
+    /// Some volume types allow the Kubelet to change the ownership of that volume
+    /// to be owned by the pod:
+    /// 
+    /// 1. The owning GID will be the FSGroup
+    /// 2. The setgid bit is set (new files created in the volume will be owned by FSGroup)
+    /// 3. The permission bits are OR&apos;d with rw-rw----
+    /// 
+    /// If unset, the Kubelet will not modify the ownership and permissions of any volume.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("fsGroup")]
+    public long? FsGroup { get; set; }
+
+    /// <summary>
+    /// fsGroupChangePolicy defines behavior of changing ownership and permission of the volume
+    /// before being exposed inside Pod. This field will only apply to
+    /// volume types which support fsGroup based ownership(and permissions).
+    /// It will have no effect on ephemeral volume types such as: secret, configmaps
+    /// and emptydir.
+    /// Valid values are &quot;OnRootMismatch&quot; and &quot;Always&quot;. If not specified, &quot;Always&quot; is used.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("fsGroupChangePolicy")]
+    public string? FsGroupChangePolicy { get; set; }
+
+    /// <summary>
+    /// The GID to run the entrypoint of the container process.
+    /// Uses runtime default if unset.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence
+    /// for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    /// <summary>
+    /// Indicates that the container must run as a non-root user.
+    /// If true, the Kubelet will validate the image at runtime to ensure that it
+    /// does not run as UID 0 (root) and fail to start the container if it does.
+    /// If unset or false, no such validation will be performed.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// </summary>
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    /// <summary>
+    /// The UID to run the entrypoint of the container process.
+    /// Defaults to user specified in image metadata if unspecified.
+    /// May also be set in SecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence
+    /// for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    /// <summary>
+    /// The SELinux context to be applied to all containers.
+    /// If unspecified, the container runtime will allocate a random SELinux context for each
+    /// container.  May also be set in SecurityContext.  If set in
+    /// both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+    /// takes precedence for that container.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seLinuxOptions")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    /// <summary>
+    /// The seccomp options to use by the containers in this pod.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seccompProfile")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    /// <summary>
+    /// A list of groups applied to the first process run in each container, in addition
+    /// to the container&apos;s primary GID, the fsGroup (if specified), and group memberships
+    /// defined in the container image for the uid of the container process. If unspecified,
+    /// no additional groups are added to any container. Note that group memberships
+    /// defined in the container image for the uid of the container process are still effective,
+    /// even if they are not included in this list.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("supplementalGroups")]
+    public IList<long>? SupplementalGroups { get; set; }
+
+    /// <summary>
+    /// Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported
+    /// sysctls (by the container runtime) might fail to launch.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("sysctls")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContextSysctls>? Sysctls { get; set; }
+}
+
+/// <summary>
+/// The pod this Toleration is attached to tolerates any taint that matches
+/// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations
+{
+    /// <summary>
+    /// Effect indicates the taint effect to match. Empty means match all taint effects.
+    /// When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
+    /// </summary>
+    [JsonPropertyName("effect")]
+    public string? Effect { get; set; }
+
+    /// <summary>
+    /// Key is the taint key that the toleration applies to. Empty means match all taint keys.
+    /// If the key is empty, operator must be Exists; this combination means to match all values and all keys.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Operator represents a key&apos;s relationship to the value.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
+    /// Exists is equivalent to wildcard for value, so that a pod can
+    /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public string? Operator { get; set; }
+
+    /// <summary>
+    /// TolerationSeconds represents the period of time the toleration (which must be
+    /// of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default,
+    /// it is not set, which means tolerate the taint forever (do not evict). Zero and
+    /// negative values will be treated as 0 (evict immediately) by the system.
+    /// </summary>
+    [JsonPropertyName("tolerationSeconds")]
+    public long? TolerationSeconds { get; set; }
+
+    /// <summary>
+    /// Value is the taint value the toleration matches to.
+    /// If the operator is Exists, the value should be empty, otherwise just a regular string.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// PodSpec defines overrides for the HTTP01 challenge solver pod.
+/// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
+/// All other fields will be ignored.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpec
+{
+    /// <summary>If specified, the pod&apos;s scheduling constraints</summary>
+    [JsonPropertyName("affinity")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinity? Affinity { get; set; }
+
+    /// <summary>If specified, the pod&apos;s imagePullSecrets</summary>
+    [JsonPropertyName("imagePullSecrets")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecImagePullSecrets>? ImagePullSecrets { get; set; }
+
+    /// <summary>
+    /// NodeSelector is a selector which must be true for the pod to fit on a node.
+    /// Selector which must match a node&apos;s labels for the pod to be scheduled on that node.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public IDictionary<string, string>? NodeSelector { get; set; }
+
+    /// <summary>If specified, the pod&apos;s priorityClassName.</summary>
+    [JsonPropertyName("priorityClassName")]
+    public string? PriorityClassName { get; set; }
+
+    /// <summary>
+    /// If specified, the pod&apos;s resource requirements.
+    /// These values override the global resource configuration flags.
+    /// Note that when only specifying resource limits, ensure they are greater than or equal
+    /// to the corresponding global resource requests configured via controller flags
+    /// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
+    /// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecResources? Resources { get; set; }
+
+    /// <summary>If specified, the pod&apos;s security context</summary>
+    [JsonPropertyName("securityContext")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecSecurityContext? SecurityContext { get; set; }
+
+    /// <summary>If specified, the pod&apos;s service account</summary>
+    [JsonPropertyName("serviceAccountName")]
+    public string? ServiceAccountName { get; set; }
+
+    /// <summary>If specified, the pod&apos;s tolerations.</summary>
+    [JsonPropertyName("tolerations")]
+    public IList<V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations>? Tolerations { get; set; }
+}
+
+/// <summary>
+/// Optional pod template used to configure the ACME challenge solver pods
+/// used for HTTP01 challenges.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplate
+{
+    /// <summary>
+    /// ObjectMeta overrides for the pod used to solve HTTP01 challenges.
+    /// Only the &apos;labels&apos; and &apos;annotations&apos; fields may be set.
+    /// If labels or annotations overlap with in-built values, the values here
+    /// will override the in-built values.
+    /// </summary>
+    [JsonPropertyName("metadata")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateMetadata? Metadata { get; set; }
+
+    /// <summary>
+    /// PodSpec defines overrides for the HTTP01 challenge solver pod.
+    /// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
+    /// All other fields will be ignored.
+    /// </summary>
+    [JsonPropertyName("spec")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpec? Spec { get; set; }
+}
+
+/// <summary>
+/// The ingress based HTTP01 challenge solver will solve challenges by
+/// creating or modifying Ingress resources in order to route requests for
+/// &apos;/.well-known/acme-challenge/XYZ&apos; to &apos;challenge solver&apos; pods that are
+/// provisioned by cert-manager for each Challenge to be completed.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01Ingress
+{
+    /// <summary>
+    /// This field configures the annotation `kubernetes.io/ingress.class` when
+    /// creating Ingress resources to solve ACME challenges that use this
+    /// challenge solver. Only one of `class`, `name` or `ingressClassName` may
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("class")]
+    public string? Class { get; set; }
+
+    /// <summary>
+    /// This field configures the field `ingressClassName` on the created Ingress
+    /// resources used to solve ACME challenges that use this challenge solver.
+    /// This is the recommended way of configuring the ingress class. Only one of
+    /// `class`, `name` or `ingressClassName` may be specified.
+    /// </summary>
+    [JsonPropertyName("ingressClassName")]
+    public string? IngressClassName { get; set; }
+
+    /// <summary>
+    /// Optional ingress template used to configure the ACME challenge solver
+    /// ingress used for HTTP01 challenges.
+    /// </summary>
+    [JsonPropertyName("ingressTemplate")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplate? IngressTemplate { get; set; }
+
+    /// <summary>
+    /// The name of the ingress resource that should have ACME challenge solving
+    /// routes inserted into it in order to solve HTTP01 challenges.
+    /// This is typically used in conjunction with ingress controllers like
+    /// ingress-gce, which maintains a 1:1 mapping between external IPs and
+    /// ingress resources. Only one of `class`, `name` or `ingressClassName` may
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Optional pod template used to configure the ACME challenge solver pods
+    /// used for HTTP01 challenges.
+    /// </summary>
+    [JsonPropertyName("podTemplate")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplate? PodTemplate { get; set; }
+
+    /// <summary>
+    /// Optional service type for Kubernetes solver service. Supported values
+    /// are NodePort or ClusterIP. If unset, defaults to NodePort.
+    /// </summary>
+    [JsonPropertyName("serviceType")]
+    public string? ServiceType { get; set; }
+}
+
+/// <summary>
+/// Configures cert-manager to attempt to complete authorizations by
+/// performing the HTTP01 challenge flow.
+/// It is not possible to obtain certificates for wildcard domain names
+/// (e.g., `*.example.com`) using the HTTP01 challenge mechanism.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversHttp01
+{
+    /// <summary>
+    /// The Gateway API is a sig-network community API that models service networking
+    /// in Kubernetes (https://gateway-api.sigs.k8s.io/). The Gateway solver will
+    /// create HTTPRoutes with the specified labels in the same namespace as the challenge.
+    /// This solver is experimental, and fields / behaviour may change in the future.
+    /// </summary>
+    [JsonPropertyName("gatewayHTTPRoute")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoute? GatewayHTTPRoute { get; set; }
+
+    /// <summary>
+    /// The ingress based HTTP01 challenge solver will solve challenges by
+    /// creating or modifying Ingress resources in order to route requests for
+    /// &apos;/.well-known/acme-challenge/XYZ&apos; to &apos;challenge solver&apos; pods that are
+    /// provisioned by cert-manager for each Challenge to be completed.
+    /// </summary>
+    [JsonPropertyName("ingress")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01Ingress? Ingress { get; set; }
+}
+
+/// <summary>
+/// Selector selects a set of DNSNames on the Certificate resource that
+/// should be solved using this challenge solver.
+/// If not specified, the solver will be treated as the &apos;default&apos; solver
+/// with the lowest priority, i.e. if any other solver has a more specific
+/// match, it will be used instead.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolversSelector
+{
+    /// <summary>
+    /// List of DNSNames that this solver will be used to solve.
+    /// If specified and a match is found, a dnsNames selector will take
+    /// precedence over a dnsZones selector.
+    /// If multiple solvers match with the same dnsNames value, the solver
+    /// with the most matching labels in matchLabels will be selected.
+    /// If neither has more matches, the solver defined earlier in the list
+    /// will be selected.
+    /// </summary>
+    [JsonPropertyName("dnsNames")]
+    public IList<string>? DnsNames { get; set; }
+
+    /// <summary>
+    /// List of DNSZones that this solver will be used to solve.
+    /// The most specific DNS zone match specified here will take precedence
+    /// over other DNS zone matches, so a solver specifying sys.example.com
+    /// will be selected over one specifying example.com for the domain
+    /// www.sys.example.com.
+    /// If multiple solvers match with the same dnsZones value, the solver
+    /// with the most matching labels in matchLabels will be selected.
+    /// If neither has more matches, the solver defined earlier in the list
+    /// will be selected.
+    /// </summary>
+    [JsonPropertyName("dnsZones")]
+    public IList<string>? DnsZones { get; set; }
+
+    /// <summary>
+    /// A label selector that is used to refine the set of certificate&apos;s that
+    /// this challenge solver will apply to.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// An ACMEChallengeSolver describes how to solve ACME challenges for the issuer it is part of.
+/// A selector may be provided to use different solving strategies for different DNS names.
+/// Only one of HTTP01 or DNS01 must be provided.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcmeSolvers
+{
+    /// <summary>
+    /// Configures cert-manager to attempt to complete authorizations by
+    /// performing the DNS01 challenge flow.
+    /// </summary>
+    [JsonPropertyName("dns01")]
+    public V1ClusterIssuerSpecAcmeSolversDns01? Dns01 { get; set; }
+
+    /// <summary>
+    /// Configures cert-manager to attempt to complete authorizations by
+    /// performing the HTTP01 challenge flow.
+    /// It is not possible to obtain certificates for wildcard domain names
+    /// (e.g., `*.example.com`) using the HTTP01 challenge mechanism.
+    /// </summary>
+    [JsonPropertyName("http01")]
+    public V1ClusterIssuerSpecAcmeSolversHttp01? Http01 { get; set; }
+
+    /// <summary>
+    /// Selector selects a set of DNSNames on the Certificate resource that
+    /// should be solved using this challenge solver.
+    /// If not specified, the solver will be treated as the &apos;default&apos; solver
+    /// with the lowest priority, i.e. if any other solver has a more specific
+    /// match, it will be used instead.
+    /// </summary>
+    [JsonPropertyName("selector")]
+    public V1ClusterIssuerSpecAcmeSolversSelector? Selector { get; set; }
+
+    /// <summary>
+    /// WaitInsteadOfSelfCheck, if set, skips cert-manager&apos;s self-check and
+    /// instead waits this long after presentation before asking the ACME server
+    /// to validate the challenge.
+    /// 
+    /// This is an advanced escape hatch for environments where cert-manager&apos;s
+    /// self-check cannot succeed from its own network or DNS viewpoint even
+    /// though the ACME server can still validate successfully, for example due
+    /// to split-horizon DNS or NAT hairpinning.
+    /// 
+    /// A value of 0 skips the self-check and asks the ACME server to validate
+    /// immediately after presentation, relying on the ACME server&apos;s own
+    /// validation retries (RFC 8555 section 8.2) to succeed once the challenge
+    /// has propagated. A negative duration is rejected.
+    /// Value must be in units accepted by Go time.ParseDuration https://golang.org/pkg/time/#ParseDuration,
+    /// for example `30s` or `2m`.
+    /// </summary>
+    [JsonPropertyName("waitInsteadOfSelfCheck")]
+    public string? WaitInsteadOfSelfCheck { get; set; }
+}
+
+/// <summary>
+/// ACME configures this issuer to communicate with a RFC8555 (ACME) server
+/// to obtain signed x509 certificates.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecAcme
+{
+    /// <summary>
+    /// Base64-encoded bundle of PEM CAs which can be used to validate the certificate
+    /// chain presented by the ACME server.
+    /// Mutually exclusive with SkipTLSVerify; prefer using CABundle to prevent various
+    /// kinds of security vulnerabilities.
+    /// If CABundle and SkipTLSVerify are unset, the system certificate bundle inside
+    /// the container is used to validate the TLS connection.
+    /// </summary>
+    [JsonPropertyName("caBundle")]
+    public byte[]? CaBundle { get; set; }
+
+    /// <summary>
+    /// Enables or disables generating a new ACME account key.
+    /// If true, the Issuer resource will *not* request a new account but will expect
+    /// the account key to be supplied via an existing secret.
+    /// If false, the cert-manager system will generate a new ACME account key
+    /// for the Issuer.
+    /// Defaults to false.
+    /// </summary>
+    [JsonPropertyName("disableAccountKeyGeneration")]
+    public bool? DisableAccountKeyGeneration { get; set; }
+
+    /// <summary>
+    /// Email is the email address to be associated with the ACME account.
+    /// This field is optional, but it is strongly recommended to be set.
+    /// It will be used to contact you in case of issues with your account or
+    /// certificates, including expiry notification emails.
+    /// This field may be updated after the account is initially registered.
+    /// </summary>
+    [JsonPropertyName("email")]
+    public string? Email { get; set; }
+
+    /// <summary>
+    /// Enables requesting a Not After date on certificates that matches the
+    /// duration of the certificate. This is not supported by all ACME servers
+    /// like Let&apos;s Encrypt. If set to true when the ACME server does not support
+    /// it, it will create an error on the Order.
+    /// Defaults to false.
+    /// </summary>
+    [JsonPropertyName("enableDurationFeature")]
+    public bool? EnableDurationFeature { get; set; }
+
+    /// <summary>
+    /// ExternalAccountBinding is a reference to a CA external account of the ACME
+    /// server.
+    /// If set, upon registration cert-manager will attempt to associate the given
+    /// external account credentials with the registered ACME account.
+    /// </summary>
+    [JsonPropertyName("externalAccountBinding")]
+    public V1ClusterIssuerSpecAcmeExternalAccountBinding? ExternalAccountBinding { get; set; }
+
+    /// <summary>
+    /// PreferredChain is the chain to use if the ACME server outputs multiple.
+    /// PreferredChain is no guarantee that this one gets delivered by the ACME
+    /// endpoint.
+    /// For example, for Let&apos;s Encrypt&apos;s DST cross-sign you would use:
+    /// &quot;DST Root CA X3&quot; or &quot;ISRG Root X1&quot; for the newer Let&apos;s Encrypt root CA.
+    /// This value picks the first certificate bundle in the combined set of
+    /// ACME default and alternative chains that has a root-most certificate with
+    /// this value as its issuer&apos;s commonname.
+    /// </summary>
+    [JsonPropertyName("preferredChain")]
+    public string? PreferredChain { get; set; }
+
+    /// <summary>
+    /// PrivateKey is the name of a Kubernetes Secret resource that will be used to
+    /// store the automatically generated ACME account private key.
+    /// Optionally, a `key` may be specified to select a specific entry within
+    /// the named Secret resource.
+    /// If `key` is not specified, a default of `tls.key` will be used.
+    /// </summary>
+    [JsonPropertyName("privateKeySecretRef")]
+    public required V1ClusterIssuerSpecAcmePrivateKeySecretRef PrivateKeySecretRef { get; set; }
+
+    /// <summary>
+    /// Profile allows requesting a certificate profile from the ACME server.
+    /// Supported profiles are listed by the server&apos;s ACME directory URL.
+    /// </summary>
+    [JsonPropertyName("profile")]
+    public string? Profile { get; set; }
+
+    /// <summary>
+    /// Server is the URL used to access the ACME server&apos;s &apos;directory&apos; endpoint.
+    /// For example, for Let&apos;s Encrypt&apos;s staging endpoint, you would use:
+    /// &quot;https://acme-staging-v02.api.letsencrypt.org/directory&quot;.
+    /// Only ACME v2 endpoints (i.e. RFC 8555) are supported.
+    /// </summary>
+    [JsonPropertyName("server")]
+    public required string Server { get; set; }
+
+    /// <summary>
+    /// INSECURE: Enables or disables validation of the ACME server TLS certificate.
+    /// If true, requests to the ACME server will not have the TLS certificate chain
+    /// validated.
+    /// Mutually exclusive with CABundle; prefer using CABundle to prevent various
+    /// kinds of security vulnerabilities.
+    /// Only enable this option in development environments.
+    /// If CABundle and SkipTLSVerify are unset, the system certificate bundle inside
+    /// the container is used to validate the TLS connection.
+    /// Defaults to false.
+    /// </summary>
+    [JsonPropertyName("skipTLSVerify")]
+    public bool? SkipTLSVerify { get; set; }
+
+    /// <summary>
+    /// Solvers is a list of challenge solvers that will be used to solve
+    /// ACME challenges for the matching domains.
+    /// Solver configurations must be provided in order to obtain certificates
+    /// from an ACME server.
+    /// For more information, see: https://cert-manager.io/docs/configuration/acme/
+    /// </summary>
+    [JsonPropertyName("solvers")]
+    public IList<V1ClusterIssuerSpecAcmeSolvers>? Solvers { get; set; }
+}
+
+/// <summary>
+/// CA configures this issuer to sign certificates using a signing CA keypair
+/// stored in a Secret resource.
+/// This is used to build internal PKIs that are managed by cert-manager.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecCa
+{
+    /// <summary>
+    /// The CRL distribution points is an X.509 v3 certificate extension which identifies
+    /// the location of the CRL from which the revocation of this certificate can be checked.
+    /// If not set, certificates will be issued without distribution points set.
+    /// </summary>
+    [JsonPropertyName("crlDistributionPoints")]
+    public IList<string>? CrlDistributionPoints { get; set; }
+
+    /// <summary>
+    /// IssuingCertificateURLs is a list of URLs which this issuer should embed into certificates
+    /// it creates. See https://www.rfc-editor.org/rfc/rfc5280#section-4.2.2.1 for more details.
+    /// As an example, such a URL might be &quot;http://ca.domain.com/ca.crt&quot;.
+    /// </summary>
+    [JsonPropertyName("issuingCertificateURLs")]
+    public IList<string>? IssuingCertificateURLs { get; set; }
+
+    /// <summary>
+    /// The OCSP server list is an X.509 v3 extension that defines a list of
+    /// URLs of OCSP responders. The OCSP responders can be queried for the
+    /// revocation status of an issued certificate. If not set, the
+    /// certificate will be issued with no OCSP servers set. For example, an
+    /// OCSP server URL could be &quot;http://ocsp.int-x3.letsencrypt.org&quot;.
+    /// </summary>
+    [JsonPropertyName("ocspServers")]
+    public IList<string>? OcspServers { get; set; }
+
+    /// <summary>
+    /// SecretName is the name of the secret used to sign Certificates issued
+    /// by this Issuer.
+    /// </summary>
+    [JsonPropertyName("secretName")]
+    public required string SecretName { get; set; }
+}
+
+/// <summary>
+/// SelfSigned configures this issuer to &apos;self sign&apos; certificates using the
+/// private key used to create the CertificateRequest object.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecSelfSigned
+{
+    /// <summary>
+    /// The CRL distribution points is an X.509 v3 certificate extension which identifies
+    /// the location of the CRL from which the revocation of this certificate can be checked.
+    /// If not set certificate will be issued without CDP. Values are strings.
+    /// </summary>
+    [JsonPropertyName("crlDistributionPoints")]
+    public IList<string>? CrlDistributionPoints { get; set; }
+}
+
+/// <summary>
+/// Reference to a key in a Secret that contains the App Role secret used
+/// to authenticate with Vault.
+/// The `key` field must be specified and denotes which entry within the Secret
+/// resource is used as the app role secret.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthAppRoleSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AppRole authenticates with Vault using the App Role auth mechanism,
+/// with the role and secret stored in a Kubernetes Secret resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthAppRole
+{
+    /// <summary>
+    /// Path where the App Role authentication backend is mounted in Vault, e.g:
+    /// &quot;approle&quot;
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>
+    /// RoleID configured in the App Role authentication backend when setting
+    /// up the authentication backend in Vault.
+    /// </summary>
+    [JsonPropertyName("roleId")]
+    public required string RoleId { get; set; }
+
+    /// <summary>
+    /// Reference to a key in a Secret that contains the App Role secret used
+    /// to authenticate with Vault.
+    /// The `key` field must be specified and denotes which entry within the Secret
+    /// resource is used as the app role secret.
+    /// </summary>
+    [JsonPropertyName("secretRef")]
+    public required V1ClusterIssuerSpecVaultAuthAppRoleSecretRef SecretRef { get; set; }
+}
+
+/// <summary>
+/// A reference to a service account that will be used to request a web identity
+/// token for IRSA (IAM Roles for Service Accounts) authentication.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthAwsServiceAccountRef
+{
+    /// <summary>
+    /// TokenAudiences is an optional list of extra audiences to include in the token passed to Vault.
+    /// The default audiences are always included in the token.
+    /// </summary>
+    [JsonPropertyName("audiences")]
+    public IList<string>? Audiences { get; set; }
+
+    /// <summary>Name of the ServiceAccount used to request a token.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AWS authenticates with Vault using AWS IAM authentication.
+/// This allows authentication using IAM roles for service accounts (IRSA),
+/// EKS Pod Identity (PIA), or ambient credentials (EC2 instance profiles, ECS task role).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthAws
+{
+    /// <summary>
+    /// The ARN of the AWS IAM role to assume using the Kubernetes service account
+    /// token. Required when using IRSA (serviceAccountRef is set).
+    /// This role must have a trust policy that allows the OIDC provider to assume it.
+    /// </summary>
+    [JsonPropertyName("iamRoleArn")]
+    public string? IamRoleArn { get; set; }
+
+    /// <summary>
+    /// The Vault mountPath here is the mount path to use when authenticating with
+    /// Vault. For example, setting a value to `/v1/auth/foo`, will use the path
+    /// `/v1/auth/foo/login` to authenticate with Vault. If unspecified, the
+    /// default value &quot;/v1/auth/aws&quot; will be used.
+    /// </summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>
+    /// The AWS region to use for authentication. If not specified, the region
+    /// will be determined from AWS_REGION or AWS_DEFAULT_REGION environment
+    /// variables, falling back to &quot;us-east-1&quot; if not set.
+    /// </summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>A required field containing the Vault Role to assume when authenticating.</summary>
+    [JsonPropertyName("role")]
+    public required string Role { get; set; }
+
+    /// <summary>
+    /// A reference to a service account that will be used to request a web identity
+    /// token for IRSA (IAM Roles for Service Accounts) authentication.
+    /// </summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public V1ClusterIssuerSpecVaultAuthAwsServiceAccountRef? ServiceAccountRef { get; set; }
+
+    /// <summary>
+    /// The Vault header value to include in the STS signing request.
+    /// This is used to prevent replay attacks.
+    /// </summary>
+    [JsonPropertyName("vaultHeaderValue")]
+    public string? VaultHeaderValue { get; set; }
+}
+
+/// <summary>
+/// ClientCertificate authenticates with Vault by presenting a client
+/// certificate during the request&apos;s TLS handshake.
+/// Works only when using HTTPS protocol.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthClientCertificate
+{
+    /// <summary>
+    /// The Vault mountPath here is the mount path to use when authenticating with
+    /// Vault. For example, setting a value to `/v1/auth/foo`, will use the path
+    /// `/v1/auth/foo/login` to authenticate with Vault. If unspecified, the
+    /// default value &quot;/v1/auth/cert&quot; will be used.
+    /// </summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>
+    /// Name of the certificate role to authenticate against.
+    /// If not set, matching any certificate role, if available.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Reference to Kubernetes Secret of type &quot;kubernetes.io/tls&quot; (hence containing
+    /// tls.crt and tls.key) used to authenticate to Vault using TLS client
+    /// authentication.
+    /// </summary>
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+/// <summary>
+/// The required Secret field containing a Kubernetes ServiceAccount JWT used
+/// for authenticating with Vault. Use of &apos;ambient credentials&apos; is not
+/// supported.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthKubernetesSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a service account that will be used to request a bound
+/// token (also known as &quot;projected token&quot;). Compared to using &quot;secretRef&quot;,
+/// using this field means that you don&apos;t rely on statically bound tokens. To
+/// use this field, you must configure an RBAC rule to let cert-manager
+/// request a token.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthKubernetesServiceAccountRef
+{
+    /// <summary>
+    /// TokenAudiences is an optional list of extra audiences to include in the token passed to Vault.
+    /// The default audiences are always included in the token.
+    /// </summary>
+    [JsonPropertyName("audiences")]
+    public IList<string>? Audiences { get; set; }
+
+    /// <summary>Name of the ServiceAccount used to request a token.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Kubernetes authenticates with Vault by passing the ServiceAccount
+/// token stored in the named Secret resource to the Vault server.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthKubernetes
+{
+    /// <summary>
+    /// The Vault mountPath here is the mount path to use when authenticating with
+    /// Vault. For example, setting a value to `/v1/auth/foo`, will use the path
+    /// `/v1/auth/foo/login` to authenticate with Vault. If unspecified, the
+    /// default value &quot;/v1/auth/kubernetes&quot; will be used.
+    /// </summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>
+    /// A required field containing the Vault Role to assume. A Role binds a
+    /// Kubernetes ServiceAccount with a set of Vault policies.
+    /// </summary>
+    [JsonPropertyName("role")]
+    public required string Role { get; set; }
+
+    /// <summary>
+    /// The required Secret field containing a Kubernetes ServiceAccount JWT used
+    /// for authenticating with Vault. Use of &apos;ambient credentials&apos; is not
+    /// supported.
+    /// </summary>
+    [JsonPropertyName("secretRef")]
+    public V1ClusterIssuerSpecVaultAuthKubernetesSecretRef? SecretRef { get; set; }
+
+    /// <summary>
+    /// A reference to a service account that will be used to request a bound
+    /// token (also known as &quot;projected token&quot;). Compared to using &quot;secretRef&quot;,
+    /// using this field means that you don&apos;t rely on statically bound tokens. To
+    /// use this field, you must configure an RBAC rule to let cert-manager
+    /// request a token.
+    /// </summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public V1ClusterIssuerSpecVaultAuthKubernetesServiceAccountRef? ServiceAccountRef { get; set; }
+}
+
+/// <summary>TokenSecretRef authenticates with Vault by presenting a token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuthTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>Auth configures how cert-manager authenticates with the Vault server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultAuth
+{
+    /// <summary>
+    /// AppRole authenticates with Vault using the App Role auth mechanism,
+    /// with the role and secret stored in a Kubernetes Secret resource.
+    /// </summary>
+    [JsonPropertyName("appRole")]
+    public V1ClusterIssuerSpecVaultAuthAppRole? AppRole { get; set; }
+
+    /// <summary>
+    /// AWS authenticates with Vault using AWS IAM authentication.
+    /// This allows authentication using IAM roles for service accounts (IRSA),
+    /// EKS Pod Identity (PIA), or ambient credentials (EC2 instance profiles, ECS task role).
+    /// </summary>
+    [JsonPropertyName("aws")]
+    public V1ClusterIssuerSpecVaultAuthAws? Aws { get; set; }
+
+    /// <summary>
+    /// ClientCertificate authenticates with Vault by presenting a client
+    /// certificate during the request&apos;s TLS handshake.
+    /// Works only when using HTTPS protocol.
+    /// </summary>
+    [JsonPropertyName("clientCertificate")]
+    public V1ClusterIssuerSpecVaultAuthClientCertificate? ClientCertificate { get; set; }
+
+    /// <summary>
+    /// Kubernetes authenticates with Vault by passing the ServiceAccount
+    /// token stored in the named Secret resource to the Vault server.
+    /// </summary>
+    [JsonPropertyName("kubernetes")]
+    public V1ClusterIssuerSpecVaultAuthKubernetes? Kubernetes { get; set; }
+
+    /// <summary>TokenSecretRef authenticates with Vault by presenting a token.</summary>
+    [JsonPropertyName("tokenSecretRef")]
+    public V1ClusterIssuerSpecVaultAuthTokenSecretRef? TokenSecretRef { get; set; }
+}
+
+/// <summary>
+/// Reference to a Secret containing a bundle of PEM-encoded CAs to use when
+/// verifying the certificate chain presented by Vault when using HTTPS.
+/// Mutually exclusive with CABundle.
+/// If neither CABundle nor CABundleSecretRef are defined, the certificate bundle in
+/// the cert-manager controller container is used to validate the TLS connection.
+/// If no key for the Secret is specified, cert-manager will default to &apos;ca.crt&apos;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultCaBundleSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Reference to a Secret containing a PEM-encoded Client Certificate to use when the
+/// Vault server requires mTLS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultClientCertSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Reference to a Secret containing a PEM-encoded Client Private Key to use when the
+/// Vault server requires mTLS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVaultClientKeySecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Vault configures this issuer to sign certificates using a HashiCorp Vault
+/// PKI backend.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVault
+{
+    /// <summary>Auth configures how cert-manager authenticates with the Vault server.</summary>
+    [JsonPropertyName("auth")]
+    public required V1ClusterIssuerSpecVaultAuth Auth { get; set; }
+
+    /// <summary>
+    /// Base64-encoded bundle of PEM CAs which will be used to validate the certificate
+    /// chain presented by Vault. Only used if using HTTPS to connect to Vault and
+    /// ignored for HTTP connections.
+    /// Mutually exclusive with CABundleSecretRef.
+    /// If neither CABundle nor CABundleSecretRef are defined, the certificate bundle in
+    /// the cert-manager controller container is used to validate the TLS connection.
+    /// </summary>
+    [JsonPropertyName("caBundle")]
+    public byte[]? CaBundle { get; set; }
+
+    /// <summary>
+    /// Reference to a Secret containing a bundle of PEM-encoded CAs to use when
+    /// verifying the certificate chain presented by Vault when using HTTPS.
+    /// Mutually exclusive with CABundle.
+    /// If neither CABundle nor CABundleSecretRef are defined, the certificate bundle in
+    /// the cert-manager controller container is used to validate the TLS connection.
+    /// If no key for the Secret is specified, cert-manager will default to &apos;ca.crt&apos;.
+    /// </summary>
+    [JsonPropertyName("caBundleSecretRef")]
+    public V1ClusterIssuerSpecVaultCaBundleSecretRef? CaBundleSecretRef { get; set; }
+
+    /// <summary>
+    /// Reference to a Secret containing a PEM-encoded Client Certificate to use when the
+    /// Vault server requires mTLS.
+    /// </summary>
+    [JsonPropertyName("clientCertSecretRef")]
+    public V1ClusterIssuerSpecVaultClientCertSecretRef? ClientCertSecretRef { get; set; }
+
+    /// <summary>
+    /// Reference to a Secret containing a PEM-encoded Client Private Key to use when the
+    /// Vault server requires mTLS.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public V1ClusterIssuerSpecVaultClientKeySecretRef? ClientKeySecretRef { get; set; }
+
+    /// <summary>
+    /// Name of the vault namespace. Namespaces is a set of features within Vault Enterprise that allows Vault environments to support Secure Multi-tenancy. e.g: &quot;ns1&quot;
+    /// More about namespaces can be found here https://www.vaultproject.io/docs/enterprise/namespaces
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// Path is the mount path of the Vault PKI backend&apos;s `sign` endpoint, e.g:
+    /// &quot;my_pki_mount/sign/my-role-name&quot;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>Server is the connection address for the Vault server, e.g: &quot;https://vault.example.com:8200&quot;.</summary>
+    [JsonPropertyName("server")]
+    public required string Server { get; set; }
+
+    /// <summary>
+    /// ServerName is used to verify the hostname on the returned certificates
+    /// by the Vault server.
+    /// </summary>
+    [JsonPropertyName("serverName")]
+    public string? ServerName { get; set; }
+}
+
+/// <summary>APITokenSecretRef is a secret key selector for the CyberArk Certificate Manager SaaS API token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiCloudApiTokenSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Cloud specifies the CyberArk Certificate Manager SaaS configuration settings.
+/// Only one of CyberArk Certificate Manager may be specified.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiCloud
+{
+    /// <summary>APITokenSecretRef is a secret key selector for the CyberArk Certificate Manager SaaS API token.</summary>
+    [JsonPropertyName("apiTokenSecretRef")]
+    public required V1ClusterIssuerSpecVenafiCloudApiTokenSecretRef ApiTokenSecretRef { get; set; }
+
+    /// <summary>
+    /// URL is the base URL for CyberArk Certificate Manager SaaS.
+    /// Defaults to &quot;https://api.venafi.cloud/&quot;.
+    /// </summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>
+/// CredentialsRef is a reference to a Kubernetes Secret containing the OAuth 2.0
+/// Client ID and Client Secret. The secret must contain the keys &apos;client-id&apos; and
+/// &apos;client-secret&apos;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiNgtsCredentialsRef
+{
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// NGTS specifies Palo Alto Networks Next Generation Trust Services (NGTS) configuration
+/// using OAuth 2.0 Client Credentials. Only one of tpp, cloud, or ngts may be specified.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiNgts
+{
+    /// <summary>
+    /// CredentialsRef is a reference to a Kubernetes Secret containing the OAuth 2.0
+    /// Client ID and Client Secret. The secret must contain the keys &apos;client-id&apos; and
+    /// &apos;client-secret&apos;.
+    /// </summary>
+    [JsonPropertyName("credentialsRef")]
+    public required V1ClusterIssuerSpecVenafiNgtsCredentialsRef CredentialsRef { get; set; }
+
+    /// <summary>
+    /// TokenEndpoint is the OAuth 2.0 token endpoint URL used to obtain access tokens,
+    /// for example &quot;https://auth.apps.paloaltonetworks.com/oauth2/access_token&quot;.
+    /// Defaults to &quot;https://auth.apps.paloaltonetworks.com/oauth2/access_token&quot; if not set.
+    /// </summary>
+    [JsonPropertyName("tokenEndpoint")]
+    public string? TokenEndpoint { get; set; }
+
+    /// <summary>
+    /// TSGID is the Tenant Service Group ID used to scope the OAuth 2.0 access token,
+    /// for example &quot;1234567890&quot;. The tsg_id: prefix is added automatically.
+    /// This field is required.
+    /// </summary>
+    [JsonPropertyName("tsgID")]
+    public required string TsgID { get; set; }
+
+    /// <summary>
+    /// URL is the base URL for the NGTS API endpoint.
+    /// Defaults to &quot;https://api.strata.paloaltonetworks.com/ngts&quot; if not set.
+    /// </summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>
+/// Reference to a Secret containing a base64-encoded bundle of PEM CAs
+/// which will be used to validate the certificate chain presented by the CyberArk Certificate Manager Self-Hosted server.
+/// Only used if using HTTPS; ignored for HTTP. Mutually exclusive with CABundle.
+/// If neither CABundle nor CABundleSecretRef is defined, the certificate bundle in
+/// the cert-manager controller container is used to validate the TLS connection.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiTppCaBundleSecretRef
+{
+    /// <summary>
+    /// The key of the entry in the Secret resource&apos;s `data` field to be used.
+    /// Some instances of this field may be defaulted, in others it may be
+    /// required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// CredentialsRef is a reference to a Secret containing the CyberArk Certificate Manager Self-Hosted API credentials.
+/// The secret must contain the key &apos;access-token&apos; for the Access Token Authentication,
+/// or two keys, &apos;username&apos; and &apos;password&apos; for the API Keys Authentication.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiTppCredentialsRef
+{
+    /// <summary>
+    /// Name of the resource being referred to.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// TPP specifies CyberArk Certificate Manager Self-Hosted configuration settings.
+/// Only one of CyberArk Certificate Manager may be specified.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafiTpp
+{
+    /// <summary>
+    /// Base64-encoded bundle of PEM CAs which will be used to validate the certificate
+    /// chain presented by the CyberArk Certificate Manager Self-Hosted server. Only used if using HTTPS; ignored for HTTP.
+    /// If undefined, the certificate bundle in the cert-manager controller container
+    /// is used to validate the chain.
+    /// </summary>
+    [JsonPropertyName("caBundle")]
+    public byte[]? CaBundle { get; set; }
+
+    /// <summary>
+    /// Reference to a Secret containing a base64-encoded bundle of PEM CAs
+    /// which will be used to validate the certificate chain presented by the CyberArk Certificate Manager Self-Hosted server.
+    /// Only used if using HTTPS; ignored for HTTP. Mutually exclusive with CABundle.
+    /// If neither CABundle nor CABundleSecretRef is defined, the certificate bundle in
+    /// the cert-manager controller container is used to validate the TLS connection.
+    /// </summary>
+    [JsonPropertyName("caBundleSecretRef")]
+    public V1ClusterIssuerSpecVenafiTppCaBundleSecretRef? CaBundleSecretRef { get; set; }
+
+    /// <summary>
+    /// CredentialsRef is a reference to a Secret containing the CyberArk Certificate Manager Self-Hosted API credentials.
+    /// The secret must contain the key &apos;access-token&apos; for the Access Token Authentication,
+    /// or two keys, &apos;username&apos; and &apos;password&apos; for the API Keys Authentication.
+    /// </summary>
+    [JsonPropertyName("credentialsRef")]
+    public required V1ClusterIssuerSpecVenafiTppCredentialsRef CredentialsRef { get; set; }
+
+    /// <summary>
+    /// URL is the base URL for the vedsdk endpoint of the CyberArk Certificate Manager Self-Hosted instance,
+    /// for example: &quot;https://tpp.example.com/vedsdk&quot;.
+    /// </summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
+}
+
+/// <summary>
+/// Venafi configures this issuer to sign certificates using a CyberArk Certificate Manager Self-Hosted
+/// or SaaS policy zone.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpecVenafi
+{
+    /// <summary>
+    /// Cloud specifies the CyberArk Certificate Manager SaaS configuration settings.
+    /// Only one of CyberArk Certificate Manager may be specified.
+    /// </summary>
+    [JsonPropertyName("cloud")]
+    public V1ClusterIssuerSpecVenafiCloud? Cloud { get; set; }
+
+    /// <summary>
+    /// NGTS specifies Palo Alto Networks Next Generation Trust Services (NGTS) configuration
+    /// using OAuth 2.0 Client Credentials. Only one of tpp, cloud, or ngts may be specified.
+    /// </summary>
+    [JsonPropertyName("ngts")]
+    public V1ClusterIssuerSpecVenafiNgts? Ngts { get; set; }
+
+    /// <summary>
+    /// TPP specifies CyberArk Certificate Manager Self-Hosted configuration settings.
+    /// Only one of CyberArk Certificate Manager may be specified.
+    /// </summary>
+    [JsonPropertyName("tpp")]
+    public V1ClusterIssuerSpecVenafiTpp? Tpp { get; set; }
+
+    /// <summary>
+    /// Zone is the Certificate Manager Policy Zone to use for this issuer.
+    /// All requests made to the Certificate Manager platform will be restricted by the named
+    /// zone policy.
+    /// This field is required.
+    /// </summary>
+    [JsonPropertyName("zone")]
+    public required string Zone { get; set; }
+}
+
+/// <summary>Desired state of the ClusterIssuer resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerSpec
+{
+    /// <summary>
+    /// ACME configures this issuer to communicate with a RFC8555 (ACME) server
+    /// to obtain signed x509 certificates.
+    /// </summary>
+    [JsonPropertyName("acme")]
+    public V1ClusterIssuerSpecAcme? Acme { get; set; }
+
+    /// <summary>
+    /// CA configures this issuer to sign certificates using a signing CA keypair
+    /// stored in a Secret resource.
+    /// This is used to build internal PKIs that are managed by cert-manager.
+    /// </summary>
+    [JsonPropertyName("ca")]
+    public V1ClusterIssuerSpecCa? Ca { get; set; }
+
+    /// <summary>
+    /// SelfSigned configures this issuer to &apos;self sign&apos; certificates using the
+    /// private key used to create the CertificateRequest object.
+    /// </summary>
+    [JsonPropertyName("selfSigned")]
+    public V1ClusterIssuerSpecSelfSigned? SelfSigned { get; set; }
+
+    /// <summary>
+    /// Vault configures this issuer to sign certificates using a HashiCorp Vault
+    /// PKI backend.
+    /// </summary>
+    [JsonPropertyName("vault")]
+    public V1ClusterIssuerSpecVault? Vault { get; set; }
+
+    /// <summary>
+    /// Venafi configures this issuer to sign certificates using a CyberArk Certificate Manager Self-Hosted
+    /// or SaaS policy zone.
+    /// </summary>
+    [JsonPropertyName("venafi")]
+    public V1ClusterIssuerSpecVenafi? Venafi { get; set; }
+}
+
+/// <summary>
+/// ACME specific status options.
+/// This field should only be set if the Issuer is configured to use an ACME
+/// server to issue certificates.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerStatusAcme
+{
+    /// <summary>
+    /// LastPrivateKeyHash is a hash of the private key associated with the latest
+    /// registered ACME account, in order to track changes made to registered account
+    /// associated with the Issuer
+    /// </summary>
+    [JsonPropertyName("lastPrivateKeyHash")]
+    public string? LastPrivateKeyHash { get; set; }
+
+    /// <summary>
+    /// LastRegisteredEmail is the email associated with the latest registered
+    /// ACME account, in order to track changes made to registered account
+    /// associated with the  Issuer
+    /// </summary>
+    [JsonPropertyName("lastRegisteredEmail")]
+    public string? LastRegisteredEmail { get; set; }
+
+    /// <summary>
+    /// URI is the unique account identifier, which can also be used to retrieve
+    /// account details from the CA
+    /// </summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
+}
+
+/// <summary>Status of the condition, one of (`True`, `False`, `Unknown`).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterIssuerStatusConditionsStatusEnum>))]
+public enum V1ClusterIssuerStatusConditionsStatusEnum
+{
+    [EnumMember(Value = "True"), JsonStringEnumMemberName("True")]
+    True,
+    [EnumMember(Value = "False"), JsonStringEnumMemberName("False")]
+    False,
+    [EnumMember(Value = "Unknown"), JsonStringEnumMemberName("Unknown")]
+    Unknown
+}
+
+/// <summary>IssuerCondition contains condition information for an Issuer.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the timestamp corresponding to the last status
+    /// change of this condition.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public DateTime? LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// Message is a human readable description of the details of the last
+    /// transition, complementing reason.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// If set, this represents the .metadata.generation that the condition was
+    /// set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the
+    /// .status.condition[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the Issuer.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>
+    /// Reason is a brief machine readable explanation for the condition&apos;s last
+    /// transition.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
+    /// <summary>Status of the condition, one of (`True`, `False`, `Unknown`).</summary>
+    [JsonPropertyName("status")]
+    public required V1ClusterIssuerStatusConditionsStatusEnum Status { get; set; }
+
+    /// <summary>Type of the condition, known values are (`Ready`).</summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>Status of the ClusterIssuer. This is set and managed automatically.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterIssuerStatus
+{
+    /// <summary>
+    /// ACME specific status options.
+    /// This field should only be set if the Issuer is configured to use an ACME
+    /// server to issue certificates.
+    /// </summary>
+    [JsonPropertyName("acme")]
+    public V1ClusterIssuerStatusAcme? Acme { get; set; }
+
+    /// <summary>
+    /// List of status conditions to indicate the status of a CertificateRequest.
+    /// Known condition types are `Ready`.
+    /// </summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1ClusterIssuerStatusConditions>? Conditions { get; set; }
+}
+
+/// <summary>
+/// A ClusterIssuer represents a certificate issuing authority which can be
+/// referenced as part of `issuerRef` fields.
+/// It is similar to an Issuer, however it is cluster-scoped and therefore can
+/// be referenced by resources that exist in *any* namespace, not just the same
+/// namespace as the referent.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1ClusterIssuer : IKubernetesObject<V1ObjectMeta>, ISpec<V1ClusterIssuerSpec>, IStatus<V1ClusterIssuerStatus?>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "ClusterIssuer";
+    public const string KubeGroup = "cert-manager.io";
+    public const string KubePluralName = "clusterissuers";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cert-manager.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "ClusterIssuer";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>Desired state of the ClusterIssuer resource.</summary>
+    [JsonPropertyName("spec")]
+    public required V1ClusterIssuerSpec Spec { get; set; }
+
+    /// <summary>Status of the ClusterIssuer. This is set and managed automatically.</summary>
+    [JsonPropertyName("status")]
+    public V1ClusterIssuerStatus? Status { get; set; }
+}

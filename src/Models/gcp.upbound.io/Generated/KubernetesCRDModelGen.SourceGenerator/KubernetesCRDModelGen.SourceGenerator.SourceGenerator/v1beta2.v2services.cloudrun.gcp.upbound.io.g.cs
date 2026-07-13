@@ -1,0 +1,5258 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.cloudrun.gcp.upbound.io;
+/// <summary>V2Service is the Schema for the V2Services API. Service acts as a top-level container that manages a set of configurations and revision templates which implement a network service.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2V2ServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2V2Service>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "V2ServiceList";
+    public const string KubeGroup = "cloudrun.gcp.upbound.io";
+    public const string KubePluralName = "v2services";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cloudrun.gcp.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "V2ServiceList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2V2Service objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2V2Service> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecDeletionPolicyEnum>))]
+public enum V1beta2V2ServiceSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Settings for the Binary Authorization feature.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBinaryAuthorization
+{
+    /// <summary>If present, indicates to use Breakglass using this justification. If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass</summary>
+    [JsonPropertyName("breakglassJustification")]
+    public string? BreakglassJustification { get; set; }
+
+    /// <summary>The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>If True, indicates to use the default project&apos;s binary authorization policy. If False, binary authorization will be disabled.</summary>
+    [JsonPropertyName("useDefault")]
+    public bool? UseDefault { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for building a Cloud Run function.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderBuildConfig
+{
+    /// <summary>The base image used to build the function.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>Sets whether the function will receive automatic base image updates.</summary>
+    [JsonPropertyName("enableAutomaticUpdates")]
+    public bool? EnableAutomaticUpdates { get; set; }
+
+    /// <summary>User-provided build-time environment variables for the function.</summary>
+    [JsonPropertyName("environmentVariables")]
+    public IDictionary<string, string>? EnvironmentVariables { get; set; }
+
+    /// <summary>The name of the function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. For backward compatibility, if function with given name is not found, then the system will try to use function named &quot;function&quot;.</summary>
+    [JsonPropertyName("functionTarget")]
+    public string? FunctionTarget { get; set; }
+
+    /// <summary>Artifact Registry URI to store the built image.</summary>
+    [JsonPropertyName("imageUri")]
+    public string? ImageUri { get; set; }
+
+    /// <summary>Service account to be used for building the container. The format of this field is projects/{projectId}/serviceAccounts/{serviceAccountEmail}.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRef? ServiceAccountRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+    [JsonPropertyName("serviceAccountSelector")]
+    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelector? ServiceAccountSelector { get; set; }
+
+    /// <summary>The Cloud Storage bucket URI where the function source code is located.</summary>
+    [JsonPropertyName("sourceLocation")]
+    public string? SourceLocation { get; set; }
+
+    /// <summary>Name of the Cloud Build Custom Worker Pool that should be used to build the Cloud Run function. The format of this field is projects/{project}/locations/{region}/workerPools/{workerPool} where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.</summary>
+    [JsonPropertyName("workerPool")]
+    public string? WorkerPool { get; set; }
+}
+
+/// <summary>
+/// Scaling settings that apply to the whole service
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderScaling
+{
+    /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+
+    /// <summary>
+    /// The scaling mode for the service.
+    /// Possible values are: AUTOMATIC, MANUAL.
+    /// </summary>
+    [JsonPropertyName("scalingMode")]
+    public string? ScalingMode { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Selects a secret and a specific version from Cloud Secret Manager.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRef
+{
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+
+    /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretRef")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRef? SecretRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretSelector")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelector? SecretSelector { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Source for the environment variable&apos;s value.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSource
+{
+    /// <summary>
+    /// Selects a secret and a specific version from Cloud Secret Manager.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secretKeyRef")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>
+    /// Source for the environment variable&apos;s value.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("valueSource")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersEnvValueSource? ValueSource { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
+/// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+/// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersPorts
+{
+    /// <summary>Port number the container listens on. This must be a valid TCP port number, 0 &lt; containerPort &lt; 65536.</summary>
+    [JsonPropertyName("containerPort")]
+    public double? ContainerPort { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersResources
+{
+    /// <summary>
+    /// Determines whether CPU is only allocated during requests. True by default if the parent resources field is not set. However, if
+    /// resources is set, this field must be explicitly set to true to preserve the default behavior.
+    /// </summary>
+    [JsonPropertyName("cpuIdle")]
+    public bool? CpuIdle { get; set; }
+
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, string>? Limits { get; set; }
+
+    /// <summary>Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency.</summary>
+    [JsonPropertyName("startupCpuBoost")]
+    public bool? StartupCpuBoost { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Base image for this container. If set, it indicates that the service is enrolled into automatic base image update.</summary>
+    [JsonPropertyName("baseImageUri")]
+    public string? BaseImageUri { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>Containers which should be started before this container. If specified the container will wait to start until all containers with the listed names are healthy.</summary>
+    [JsonPropertyName("dependsOn")]
+    public IList<string>? DependsOn { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the container.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateContainersEnv>? Env { get; set; }
+
+    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+    /// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ports")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersResources? Resources { get; set; }
+
+    /// <summary>
+    /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersStartupProbe? StartupProbe { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Node Selector describes the hardware requirements of the resources.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateNodeSelector
+{
+    /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
+    [JsonPropertyName("accelerator")]
+    public string? Accelerator { get; set; }
+}
+
+/// <summary>
+/// Scaling settings for this Revision.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateScaling
+{
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstance
+{
+    /// <summary>The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}</summary>
+    [JsonPropertyName("instances")]
+    public IList<string>? Instances { get; set; }
+
+    /// <summary>References to DatabaseInstance in sql to populate instances.</summary>
+    [JsonPropertyName("instancesRefs")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesRefs>? InstancesRefs { get; set; }
+
+    /// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
+    [JsonPropertyName("instancesSelector")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstanceInstancesSelector? InstancesSelector { get; set; }
+}
+
+/// <summary>
+/// Ephemeral storage used as a shared volume.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesEmptyDir
+{
+    /// <summary>
+    /// The different types of medium supported for EmptyDir.
+    /// Default value is MEMORY.
+    /// Possible values are: MEMORY.
+    /// </summary>
+    [JsonPropertyName("medium")]
+    public string? Medium { get; set; }
+
+    /// <summary>Limit on the storage usable by this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field&apos;s values are of the &apos;Quantity&apos; k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.</summary>
+    [JsonPropertyName("sizeLimit")]
+    public string? SizeLimit { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in storage to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in storage to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcs
+{
+    /// <summary>GCS Bucket name</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketRef? BucketRef { get; set; }
+
+    /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
+    [JsonPropertyName("bucketSelector")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelector? BucketSelector { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+/// <summary>
+/// Represents an NFS mount.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesNfs
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    /// <summary>Hostname or IP address of the NFS server</summary>
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecretItems
+{
+    /// <summary>Integer octal mode bits to use on this file, must be a value between 01 and 0777 (octal). If 0 or not set, the Volume&apos;s default mode will be used.</summary>
+    [JsonPropertyName("mode")]
+    public double? Mode { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesSecret
+{
+    /// <summary>Integer representation of mode bits to use on created files by default. Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.</summary>
+    [JsonPropertyName("defaultMode")]
+    public double? DefaultMode { get; set; }
+
+    /// <summary>
+    /// If unspecified, the volume will expose a file whose name is the secret, relative to VolumeMount.mount_path. If specified, the key will be used as the version to fetch from Cloud Secret Manager and the path will be the name of the file exposed in the volume. When items are defined, they must specify a path and a version.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("items")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateVolumesSecretItems>? Items { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+
+    /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretRef")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretRef? SecretRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretSelector")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecretSecretSelector? SecretSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVolumes
+{
+    /// <summary>
+    /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cloudSqlInstance")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesCloudSqlInstance? CloudSqlInstance { get; set; }
+
+    /// <summary>
+    /// Ephemeral storage used as a shared volume.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("emptyDir")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesEmptyDir? EmptyDir { get; set; }
+
+    /// <summary>
+    /// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gcs")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesGcs? Gcs { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Represents an NFS mount.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nfs")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesNfs? Nfs { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public V1beta2V2ServiceSpecForProviderTemplateVolumesSecret? Secret { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVpcAccessNetworkInterfaces
+{
+    /// <summary>
+    /// The VPC network that the Cloud Run resource will be able to send traffic to. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
+    /// looked up from the subnetwork.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>
+    /// The VPC subnetwork that the Cloud Run resource will get IPs from. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
+    /// subnetwork with the same name with the network will be used.
+    /// </summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
+/// <summary>
+/// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateVpcAccess
+{
+    /// <summary>VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.</summary>
+    [JsonPropertyName("connector")]
+    public string? Connector { get; set; }
+
+    /// <summary>
+    /// Traffic VPC egress settings.
+    /// Possible values are: ALL_TRAFFIC, PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("egress")]
+    public string? Egress { get; set; }
+
+    /// <summary>
+    /// Direct VPC egress settings. Currently only single network interface is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkInterfaces")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateVpcAccessNetworkInterfaces>? NetworkInterfaces { get; set; }
+}
+
+/// <summary>
+/// The template used to create revisions for this Service.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplate
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system annotations in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Holds the containers that define the unit of execution for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("containers")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateContainers>? Containers { get; set; }
+
+    /// <summary>A reference to a customer managed encryption key (CMEK) to use to encrypt this container image. For more information, go to https://cloud.google.com/run/docs/securing/using-cmek</summary>
+    [JsonPropertyName("encryptionKey")]
+    public string? EncryptionKey { get; set; }
+
+    /// <summary>
+    /// The sandbox environment to host this Revision.
+    /// Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
+    /// </summary>
+    [JsonPropertyName("executionEnvironment")]
+    public string? ExecutionEnvironment { get; set; }
+
+    /// <summary>True if GPU zonal redundancy is disabled on this revision.</summary>
+    [JsonPropertyName("gpuZonalRedundancyDisabled")]
+    public bool? GpuZonalRedundancyDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
+    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Sets the maximum number of requests that each serving instance can receive.
+    /// If not specified or 0, defaults to 80 when requested CPU &gt;= 1 and defaults to 1 when requested CPU &lt; 1.
+    /// </summary>
+    [JsonPropertyName("maxInstanceRequestConcurrency")]
+    public double? MaxInstanceRequestConcurrency { get; set; }
+
+    /// <summary>
+    /// Node Selector describes the hardware requirements of the resources.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public V1beta2V2ServiceSpecForProviderTemplateNodeSelector? NodeSelector { get; set; }
+
+    /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>
+    /// Scaling settings for this Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceSpecForProviderTemplateScaling? Scaling { get; set; }
+
+    /// <summary>Email address of the IAM service account associated with the revision of the service. The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project&apos;s default service account.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity</summary>
+    [JsonPropertyName("sessionAffinity")]
+    public bool? SessionAffinity { get; set; }
+
+    /// <summary>
+    /// Max allowed time for an instance to respond to a request.
+    /// A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;3.5s&quot;.
+    /// </summary>
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
+
+    /// <summary>
+    /// A list of Volumes to make available to containers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumes")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateVolumes>? Volumes { get; set; }
+
+    /// <summary>
+    /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("vpcAccess")]
+    public V1beta2V2ServiceSpecForProviderTemplateVpcAccess? VpcAccess { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTraffic
+{
+    /// <summary>Specifies percent of the traffic to this Revision. This defaults to zero if unspecified.</summary>
+    [JsonPropertyName("percent")]
+    public double? Percent { get; set; }
+
+    /// <summary>Revision to which to send this portion of traffic, if traffic allocation is by revision.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>Indicates a string to be part of the URI to exclusively reference this target.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+
+    /// <summary>
+    /// The allocation type for this traffic target.
+    /// Possible values are: TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST, TRAFFIC_TARGET_ALLOCATION_TYPE_REVISION.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProvider
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected in new resources.
+    /// All system annotations in v1 now have a corresponding field in v2 Service.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// Note: This field is non-authoritative, and will only manage the annotations present in your configuration.
+    /// Please refer to the field effective_annotations for all of the annotations present on the resource.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Settings for the Binary Authorization feature.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("binaryAuthorization")]
+    public V1beta2V2ServiceSpecForProviderBinaryAuthorization? BinaryAuthorization { get; set; }
+
+    /// <summary>
+    /// Configuration for building a Cloud Run function.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("buildConfig")]
+    public V1beta2V2ServiceSpecForProviderBuildConfig? BuildConfig { get; set; }
+
+    /// <summary>Arbitrary identifier for the API client.</summary>
+    [JsonPropertyName("client")]
+    public string? Client { get; set; }
+
+    /// <summary>Arbitrary version identifier for the API client.</summary>
+    [JsonPropertyName("clientVersion")]
+    public string? ClientVersion { get; set; }
+
+    /// <summary>
+    /// One or more custom audiences that you want this service to support. Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
+    /// For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
+    /// </summary>
+    [JsonPropertyName("customAudiences")]
+    public IList<string>? CustomAudiences { get; set; }
+
+    /// <summary>
+    /// Defaults to true.
+    /// When the field is set to false, deleting the service is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
+    /// <summary>User-provided description of the Service. This field currently has a 512-character limit.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// Provides the ingress settings for this Service. On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
+    /// Possible values are: INGRESS_TRAFFIC_ALL, INGRESS_TRAFFIC_INTERNAL_ONLY, INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER.
+    /// </summary>
+    [JsonPropertyName("ingress")]
+    public string? Ingress { get; set; }
+
+    /// <summary>Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.</summary>
+    [JsonPropertyName("invokerIamDisabled")]
+    public bool? InvokerIamDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
+    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 Service.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// The launch stage as defined by Google Cloud Platform Launch Stages. Cloud Run supports ALPHA, BETA, and GA.
+    /// If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features.
+    /// For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output.
+    /// Possible values are: UNIMPLEMENTED, PRELAUNCH, EARLY_ACCESS, ALPHA, BETA, GA, DEPRECATED.
+    /// </summary>
+    [JsonPropertyName("launchStage")]
+    public string? LaunchStage { get; set; }
+
+    /// <summary>The location of the cloud run service</summary>
+    [JsonPropertyName("location")]
+    public required string Location { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Scaling settings that apply to the whole service
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceSpecForProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// The template used to create revisions for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("template")]
+    public V1beta2V2ServiceSpecForProviderTemplate? Template { get; set; }
+
+    /// <summary>
+    /// Specifies how to distribute traffic over a collection of Revisions belonging to the Service. If traffic is empty or not provided, defaults to 100% traffic to the latest Ready Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("traffic")]
+    public IList<V1beta2V2ServiceSpecForProviderTraffic>? Traffic { get; set; }
+}
+
+/// <summary>
+/// Settings for the Binary Authorization feature.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBinaryAuthorization
+{
+    /// <summary>If present, indicates to use Breakglass using this justification. If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass</summary>
+    [JsonPropertyName("breakglassJustification")]
+    public string? BreakglassJustification { get; set; }
+
+    /// <summary>The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>If True, indicates to use the default project&apos;s binary authorization policy. If False, binary authorization will be disabled.</summary>
+    [JsonPropertyName("useDefault")]
+    public bool? UseDefault { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for building a Cloud Run function.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderBuildConfig
+{
+    /// <summary>The base image used to build the function.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>Sets whether the function will receive automatic base image updates.</summary>
+    [JsonPropertyName("enableAutomaticUpdates")]
+    public bool? EnableAutomaticUpdates { get; set; }
+
+    /// <summary>User-provided build-time environment variables for the function.</summary>
+    [JsonPropertyName("environmentVariables")]
+    public IDictionary<string, string>? EnvironmentVariables { get; set; }
+
+    /// <summary>The name of the function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. For backward compatibility, if function with given name is not found, then the system will try to use function named &quot;function&quot;.</summary>
+    [JsonPropertyName("functionTarget")]
+    public string? FunctionTarget { get; set; }
+
+    /// <summary>Artifact Registry URI to store the built image.</summary>
+    [JsonPropertyName("imageUri")]
+    public string? ImageUri { get; set; }
+
+    /// <summary>Service account to be used for building the container. The format of this field is projects/{projectId}/serviceAccounts/{serviceAccountEmail}.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRef? ServiceAccountRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
+    [JsonPropertyName("serviceAccountSelector")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelector? ServiceAccountSelector { get; set; }
+
+    /// <summary>The Cloud Storage bucket URI where the function source code is located.</summary>
+    [JsonPropertyName("sourceLocation")]
+    public string? SourceLocation { get; set; }
+
+    /// <summary>Name of the Cloud Build Custom Worker Pool that should be used to build the Cloud Run function. The format of this field is projects/{project}/locations/{region}/workerPools/{workerPool} where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.</summary>
+    [JsonPropertyName("workerPool")]
+    public string? WorkerPool { get; set; }
+}
+
+/// <summary>
+/// Scaling settings that apply to the whole service
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderScaling
+{
+    /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+
+    /// <summary>
+    /// The scaling mode for the service.
+    /// Possible values are: AUTOMATIC, MANUAL.
+    /// </summary>
+    [JsonPropertyName("scalingMode")]
+    public string? ScalingMode { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Selects a secret and a specific version from Cloud Secret Manager.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRef
+{
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+
+    /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretRef")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretRef? SecretRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretSelector")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRefSecretSelector? SecretSelector { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Source for the environment variable&apos;s value.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSource
+{
+    /// <summary>
+    /// Selects a secret and a specific version from Cloud Secret Manager.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secretKeyRef")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>
+    /// Source for the environment variable&apos;s value.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("valueSource")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersEnvValueSource? ValueSource { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
+/// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+/// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersPorts
+{
+    /// <summary>Port number the container listens on. This must be a valid TCP port number, 0 &lt; containerPort &lt; 65536.</summary>
+    [JsonPropertyName("containerPort")]
+    public double? ContainerPort { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersResources
+{
+    /// <summary>
+    /// Determines whether CPU is only allocated during requests. True by default if the parent resources field is not set. However, if
+    /// resources is set, this field must be explicitly set to true to preserve the default behavior.
+    /// </summary>
+    [JsonPropertyName("cpuIdle")]
+    public bool? CpuIdle { get; set; }
+
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, string>? Limits { get; set; }
+
+    /// <summary>Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency.</summary>
+    [JsonPropertyName("startupCpuBoost")]
+    public bool? StartupCpuBoost { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Base image for this container. If set, it indicates that the service is enrolled into automatic base image update.</summary>
+    [JsonPropertyName("baseImageUri")]
+    public string? BaseImageUri { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>Containers which should be started before this container. If specified the container will wait to start until all containers with the listed names are healthy.</summary>
+    [JsonPropertyName("dependsOn")]
+    public IList<string>? DependsOn { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the container.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateContainersEnv>? Env { get; set; }
+
+    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+    /// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ports")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersResources? Resources { get; set; }
+
+    /// <summary>
+    /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersStartupProbe? StartupProbe { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Node Selector describes the hardware requirements of the resources.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateNodeSelector
+{
+    /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
+    [JsonPropertyName("accelerator")]
+    public string? Accelerator { get; set; }
+}
+
+/// <summary>
+/// Scaling settings for this Revision.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateScaling
+{
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstance
+{
+    /// <summary>The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}</summary>
+    [JsonPropertyName("instances")]
+    public IList<string>? Instances { get; set; }
+
+    /// <summary>References to DatabaseInstance in sql to populate instances.</summary>
+    [JsonPropertyName("instancesRefs")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesRefs>? InstancesRefs { get; set; }
+
+    /// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
+    [JsonPropertyName("instancesSelector")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstanceInstancesSelector? InstancesSelector { get; set; }
+}
+
+/// <summary>
+/// Ephemeral storage used as a shared volume.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesEmptyDir
+{
+    /// <summary>
+    /// The different types of medium supported for EmptyDir.
+    /// Default value is MEMORY.
+    /// Possible values are: MEMORY.
+    /// </summary>
+    [JsonPropertyName("medium")]
+    public string? Medium { get; set; }
+
+    /// <summary>Limit on the storage usable by this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field&apos;s values are of the &apos;Quantity&apos; k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.</summary>
+    [JsonPropertyName("sizeLimit")]
+    public string? SizeLimit { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in storage to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in storage to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcs
+{
+    /// <summary>GCS Bucket name</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketRef? BucketRef { get; set; }
+
+    /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
+    [JsonPropertyName("bucketSelector")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelector? BucketSelector { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+/// <summary>
+/// Represents an NFS mount.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesNfs
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    /// <summary>Hostname or IP address of the NFS server</summary>
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretItems
+{
+    /// <summary>Integer octal mode bits to use on this file, must be a value between 01 and 0777 (octal). If 0 or not set, the Volume&apos;s default mode will be used.</summary>
+    [JsonPropertyName("mode")]
+    public double? Mode { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesSecret
+{
+    /// <summary>Integer representation of mode bits to use on created files by default. Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.</summary>
+    [JsonPropertyName("defaultMode")]
+    public double? DefaultMode { get; set; }
+
+    /// <summary>
+    /// If unspecified, the volume will expose a file whose name is the secret, relative to VolumeMount.mount_path. If specified, the key will be used as the version to fetch from Cloud Secret Manager and the path will be the name of the file exposed in the volume. When items are defined, they must specify a path and a version.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("items")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretItems>? Items { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+
+    /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretRef")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretRef? SecretRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
+    [JsonPropertyName("secretSelector")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecretSecretSelector? SecretSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumes
+{
+    /// <summary>
+    /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cloudSqlInstance")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesCloudSqlInstance? CloudSqlInstance { get; set; }
+
+    /// <summary>
+    /// Ephemeral storage used as a shared volume.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("emptyDir")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesEmptyDir? EmptyDir { get; set; }
+
+    /// <summary>
+    /// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gcs")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcs? Gcs { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Represents an NFS mount.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nfs")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesNfs? Nfs { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVolumesSecret? Secret { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVpcAccessNetworkInterfaces
+{
+    /// <summary>
+    /// The VPC network that the Cloud Run resource will be able to send traffic to. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
+    /// looked up from the subnetwork.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>
+    /// The VPC subnetwork that the Cloud Run resource will get IPs from. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
+    /// subnetwork with the same name with the network will be used.
+    /// </summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
+/// <summary>
+/// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateVpcAccess
+{
+    /// <summary>VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.</summary>
+    [JsonPropertyName("connector")]
+    public string? Connector { get; set; }
+
+    /// <summary>
+    /// Traffic VPC egress settings.
+    /// Possible values are: ALL_TRAFFIC, PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("egress")]
+    public string? Egress { get; set; }
+
+    /// <summary>
+    /// Direct VPC egress settings. Currently only single network interface is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkInterfaces")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateVpcAccessNetworkInterfaces>? NetworkInterfaces { get; set; }
+}
+
+/// <summary>
+/// The template used to create revisions for this Service.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplate
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system annotations in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Holds the containers that define the unit of execution for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("containers")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateContainers>? Containers { get; set; }
+
+    /// <summary>A reference to a customer managed encryption key (CMEK) to use to encrypt this container image. For more information, go to https://cloud.google.com/run/docs/securing/using-cmek</summary>
+    [JsonPropertyName("encryptionKey")]
+    public string? EncryptionKey { get; set; }
+
+    /// <summary>
+    /// The sandbox environment to host this Revision.
+    /// Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
+    /// </summary>
+    [JsonPropertyName("executionEnvironment")]
+    public string? ExecutionEnvironment { get; set; }
+
+    /// <summary>True if GPU zonal redundancy is disabled on this revision.</summary>
+    [JsonPropertyName("gpuZonalRedundancyDisabled")]
+    public bool? GpuZonalRedundancyDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
+    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Sets the maximum number of requests that each serving instance can receive.
+    /// If not specified or 0, defaults to 80 when requested CPU &gt;= 1 and defaults to 1 when requested CPU &lt; 1.
+    /// </summary>
+    [JsonPropertyName("maxInstanceRequestConcurrency")]
+    public double? MaxInstanceRequestConcurrency { get; set; }
+
+    /// <summary>
+    /// Node Selector describes the hardware requirements of the resources.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public V1beta2V2ServiceSpecInitProviderTemplateNodeSelector? NodeSelector { get; set; }
+
+    /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>
+    /// Scaling settings for this Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceSpecInitProviderTemplateScaling? Scaling { get; set; }
+
+    /// <summary>Email address of the IAM service account associated with the revision of the service. The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project&apos;s default service account.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity</summary>
+    [JsonPropertyName("sessionAffinity")]
+    public bool? SessionAffinity { get; set; }
+
+    /// <summary>
+    /// Max allowed time for an instance to respond to a request.
+    /// A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;3.5s&quot;.
+    /// </summary>
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
+
+    /// <summary>
+    /// A list of Volumes to make available to containers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumes")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateVolumes>? Volumes { get; set; }
+
+    /// <summary>
+    /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("vpcAccess")]
+    public V1beta2V2ServiceSpecInitProviderTemplateVpcAccess? VpcAccess { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTraffic
+{
+    /// <summary>Specifies percent of the traffic to this Revision. This defaults to zero if unspecified.</summary>
+    [JsonPropertyName("percent")]
+    public double? Percent { get; set; }
+
+    /// <summary>Revision to which to send this portion of traffic, if traffic allocation is by revision.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>Indicates a string to be part of the URI to exclusively reference this target.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+
+    /// <summary>
+    /// The allocation type for this traffic target.
+    /// Possible values are: TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST, TRAFFIC_TARGET_ALLOCATION_TYPE_REVISION.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProvider
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected in new resources.
+    /// All system annotations in v1 now have a corresponding field in v2 Service.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// Note: This field is non-authoritative, and will only manage the annotations present in your configuration.
+    /// Please refer to the field effective_annotations for all of the annotations present on the resource.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Settings for the Binary Authorization feature.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("binaryAuthorization")]
+    public V1beta2V2ServiceSpecInitProviderBinaryAuthorization? BinaryAuthorization { get; set; }
+
+    /// <summary>
+    /// Configuration for building a Cloud Run function.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("buildConfig")]
+    public V1beta2V2ServiceSpecInitProviderBuildConfig? BuildConfig { get; set; }
+
+    /// <summary>Arbitrary identifier for the API client.</summary>
+    [JsonPropertyName("client")]
+    public string? Client { get; set; }
+
+    /// <summary>Arbitrary version identifier for the API client.</summary>
+    [JsonPropertyName("clientVersion")]
+    public string? ClientVersion { get; set; }
+
+    /// <summary>
+    /// One or more custom audiences that you want this service to support. Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
+    /// For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
+    /// </summary>
+    [JsonPropertyName("customAudiences")]
+    public IList<string>? CustomAudiences { get; set; }
+
+    /// <summary>
+    /// Defaults to true.
+    /// When the field is set to false, deleting the service is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
+    /// <summary>User-provided description of the Service. This field currently has a 512-character limit.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// Provides the ingress settings for this Service. On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
+    /// Possible values are: INGRESS_TRAFFIC_ALL, INGRESS_TRAFFIC_INTERNAL_ONLY, INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER.
+    /// </summary>
+    [JsonPropertyName("ingress")]
+    public string? Ingress { get; set; }
+
+    /// <summary>Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.</summary>
+    [JsonPropertyName("invokerIamDisabled")]
+    public bool? InvokerIamDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
+    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 Service.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// The launch stage as defined by Google Cloud Platform Launch Stages. Cloud Run supports ALPHA, BETA, and GA.
+    /// If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features.
+    /// For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output.
+    /// Possible values are: UNIMPLEMENTED, PRELAUNCH, EARLY_ACCESS, ALPHA, BETA, GA, DEPRECATED.
+    /// </summary>
+    [JsonPropertyName("launchStage")]
+    public string? LaunchStage { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Scaling settings that apply to the whole service
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceSpecInitProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// The template used to create revisions for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("template")]
+    public V1beta2V2ServiceSpecInitProviderTemplate? Template { get; set; }
+
+    /// <summary>
+    /// Specifies how to distribute traffic over a collection of Revisions belonging to the Service. If traffic is empty or not provided, defaults to 100% traffic to the latest Ready Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("traffic")]
+    public IList<V1beta2V2ServiceSpecInitProviderTraffic>? Traffic { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecManagementPoliciesEnum>))]
+public enum V1beta2V2ServiceSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2V2ServiceSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2V2ServiceSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2V2ServiceSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2V2ServiceSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2V2ServiceSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>V2ServiceSpec defines the desired state of V2Service</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2V2ServiceSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2V2ServiceSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2V2ServiceSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2V2ServiceSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2V2ServiceSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2V2ServiceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>
+/// Settings for the Binary Authorization feature.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderBinaryAuthorization
+{
+    /// <summary>If present, indicates to use Breakglass using this justification. If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass</summary>
+    [JsonPropertyName("breakglassJustification")]
+    public string? BreakglassJustification { get; set; }
+
+    /// <summary>The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>If True, indicates to use the default project&apos;s binary authorization policy. If False, binary authorization will be disabled.</summary>
+    [JsonPropertyName("useDefault")]
+    public bool? UseDefault { get; set; }
+}
+
+/// <summary>
+/// Configuration for building a Cloud Run function.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderBuildConfig
+{
+    /// <summary>The base image used to build the function.</summary>
+    [JsonPropertyName("baseImage")]
+    public string? BaseImage { get; set; }
+
+    /// <summary>Sets whether the function will receive automatic base image updates.</summary>
+    [JsonPropertyName("enableAutomaticUpdates")]
+    public bool? EnableAutomaticUpdates { get; set; }
+
+    /// <summary>User-provided build-time environment variables for the function.</summary>
+    [JsonPropertyName("environmentVariables")]
+    public IDictionary<string, string>? EnvironmentVariables { get; set; }
+
+    /// <summary>The name of the function (as defined in source code) that will be executed. Defaults to the resource name suffix, if not specified. For backward compatibility, if function with given name is not found, then the system will try to use function named &quot;function&quot;.</summary>
+    [JsonPropertyName("functionTarget")]
+    public string? FunctionTarget { get; set; }
+
+    /// <summary>Artifact Registry URI to store the built image.</summary>
+    [JsonPropertyName("imageUri")]
+    public string? ImageUri { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The Cloud Build name of the latest successful deployment of the function.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Service account to be used for building the container. The format of this field is projects/{projectId}/serviceAccounts/{serviceAccountEmail}.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>The Cloud Storage bucket URI where the function source code is located.</summary>
+    [JsonPropertyName("sourceLocation")]
+    public string? SourceLocation { get; set; }
+
+    /// <summary>Name of the Cloud Build Custom Worker Pool that should be used to build the Cloud Run function. The format of this field is projects/{project}/locations/{region}/workerPools/{workerPool} where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.</summary>
+    [JsonPropertyName("workerPool")]
+    public string? WorkerPool { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderConditions
+{
+    /// <summary>
+    /// (Output)
+    /// A reason for the execution condition.
+    /// </summary>
+    [JsonPropertyName("executionReason")]
+    public string? ExecutionReason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Last time the condition transitioned from one status to another.
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public string? LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Human readable message indicating details about the current status.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// A common (service-level) reason for this condition.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// A reason for the revision condition.
+    /// </summary>
+    [JsonPropertyName("revisionReason")]
+    public string? RevisionReason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// How to interpret failures of this condition, one of Error, Warning, Info
+    /// </summary>
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// State of the condition.
+    /// </summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// type is used to communicate the status of the reconciliation process. See also: https://github.com/knative/serving/blob/main/docs/spec/errors.md#error-conditions-and-reporting Types common to all resources include: * &quot;Ready&quot;: True when the Resource is ready.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Scaling settings that apply to the whole service
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderScaling
+{
+    /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+
+    /// <summary>
+    /// The scaling mode for the service.
+    /// Possible values are: AUTOMATIC, MANUAL.
+    /// </summary>
+    [JsonPropertyName("scalingMode")]
+    public string? ScalingMode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersBuildInfo
+{
+    /// <summary>
+    /// (Output)
+    /// Entry point of the function when the image is a Cloud Run function.
+    /// </summary>
+    [JsonPropertyName("functionTarget")]
+    public string? FunctionTarget { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Source code location of the image.
+    /// </summary>
+    [JsonPropertyName("sourceLocation")]
+    public string? SourceLocation { get; set; }
+}
+
+/// <summary>
+/// Selects a secret and a specific version from Cloud Secret Manager.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersEnvValueSourceSecretKeyRef
+{
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Source for the environment variable&apos;s value.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersEnvValueSource
+{
+    /// <summary>
+    /// Selects a secret and a specific version from Cloud Secret Manager.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secretKeyRef")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>
+    /// Source for the environment variable&apos;s value.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("valueSource")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersEnvValueSource? ValueSource { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
+/// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+/// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersPorts
+{
+    /// <summary>Port number the container listens on. This must be a valid TCP port number, 0 &lt; containerPort &lt; 65536.</summary>
+    [JsonPropertyName("containerPort")]
+    public double? ContainerPort { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersResources
+{
+    /// <summary>
+    /// Determines whether CPU is only allocated during requests. True by default if the parent resources field is not set. However, if
+    /// resources is set, this field must be explicitly set to true to preserve the default behavior.
+    /// </summary>
+    [JsonPropertyName("cpuIdle")]
+    public bool? CpuIdle { get; set; }
+
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, string>? Limits { get; set; }
+
+    /// <summary>Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency.</summary>
+    [JsonPropertyName("startupCpuBoost")]
+    public bool? StartupCpuBoost { get; set; }
+}
+
+/// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeHttpGetHttpHeaders
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeHttpGet
+{
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeTcpSocket
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public double? InitialDelaySeconds { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// TCPSocket specifies an action involving a TCP port. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Base image for this container. If set, it indicates that the service is enrolled into automatic base image update.</summary>
+    [JsonPropertyName("baseImageUri")]
+    public string? BaseImageUri { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The build info of the container image.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("buildInfo")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersBuildInfo>? BuildInfo { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>Containers which should be started before this container. If specified the container will wait to start until all containers with the listed names are healthy.</summary>
+    [JsonPropertyName("dependsOn")]
+    public IList<string>? DependsOn { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the container.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersEnv>? Env { get; set; }
+
+    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible.
+    /// If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ports")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersResources? Resources { get; set; }
+
+    /// <summary>
+    /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersStartupProbe? StartupProbe { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Node Selector describes the hardware requirements of the resources.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateNodeSelector
+{
+    /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
+    [JsonPropertyName("accelerator")]
+    public string? Accelerator { get; set; }
+}
+
+/// <summary>
+/// Scaling settings for this Revision.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateScaling
+{
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
+
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
+    [JsonPropertyName("minInstanceCount")]
+    public double? MinInstanceCount { get; set; }
+}
+
+/// <summary>
+/// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesCloudSqlInstance
+{
+    /// <summary>The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}</summary>
+    [JsonPropertyName("instances")]
+    public IList<string>? Instances { get; set; }
+}
+
+/// <summary>
+/// Ephemeral storage used as a shared volume.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesEmptyDir
+{
+    /// <summary>
+    /// The different types of medium supported for EmptyDir.
+    /// Default value is MEMORY.
+    /// Possible values are: MEMORY.
+    /// </summary>
+    [JsonPropertyName("medium")]
+    public string? Medium { get; set; }
+
+    /// <summary>Limit on the storage usable by this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field&apos;s values are of the &apos;Quantity&apos; k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.</summary>
+    [JsonPropertyName("sizeLimit")]
+    public string? SizeLimit { get; set; }
+}
+
+/// <summary>
+/// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesGcs
+{
+    /// <summary>GCS Bucket name</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+/// <summary>
+/// Represents an NFS mount.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesNfs
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>If true, mount the NFS volume as read only</summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    /// <summary>Hostname or IP address of the NFS server</summary>
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesSecretItems
+{
+    /// <summary>Integer octal mode bits to use on this file, must be a value between 01 and 0777 (octal). If 0 or not set, the Volume&apos;s default mode will be used.</summary>
+    [JsonPropertyName("mode")]
+    public double? Mode { get; set; }
+
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value or an integer for a specific version.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesSecret
+{
+    /// <summary>Integer representation of mode bits to use on created files by default. Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.</summary>
+    [JsonPropertyName("defaultMode")]
+    public double? DefaultMode { get; set; }
+
+    /// <summary>
+    /// If unspecified, the volume will expose a file whose name is the secret, relative to VolumeMount.mount_path. If specified, the key will be used as the version to fetch from Cloud Secret Manager and the path will be the name of the file exposed in the volume. When items are defined, they must specify a path and a version.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("items")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateVolumesSecretItems>? Items { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumes
+{
+    /// <summary>
+    /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cloudSqlInstance")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVolumesCloudSqlInstance? CloudSqlInstance { get; set; }
+
+    /// <summary>
+    /// Ephemeral storage used as a shared volume.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("emptyDir")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVolumesEmptyDir? EmptyDir { get; set; }
+
+    /// <summary>
+    /// Cloud Storage bucket mounted as a volume using GCSFuse. This feature is only supported in the gen2 execution environment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gcs")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVolumesGcs? Gcs { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Represents an NFS mount.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nfs")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVolumesNfs? Nfs { get; set; }
+
+    /// <summary>
+    /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("secret")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVolumesSecret? Secret { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVpcAccessNetworkInterfaces
+{
+    /// <summary>
+    /// The VPC network that the Cloud Run resource will be able to send traffic to. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
+    /// looked up from the subnetwork.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>
+    /// The VPC subnetwork that the Cloud Run resource will get IPs from. At least one of network or subnetwork must be specified. If both
+    /// network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
+    /// subnetwork with the same name with the network will be used.
+    /// </summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
+/// <summary>
+/// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateVpcAccess
+{
+    /// <summary>VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.</summary>
+    [JsonPropertyName("connector")]
+    public string? Connector { get; set; }
+
+    /// <summary>
+    /// Traffic VPC egress settings.
+    /// Possible values are: ALL_TRAFFIC, PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("egress")]
+    public string? Egress { get; set; }
+
+    /// <summary>
+    /// Direct VPC egress settings. Currently only single network interface is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkInterfaces")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateVpcAccessNetworkInterfaces>? NetworkInterfaces { get; set; }
+}
+
+/// <summary>
+/// The template used to create revisions for this Service.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplate
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system annotations in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Holds the containers that define the unit of execution for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("containers")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateContainers>? Containers { get; set; }
+
+    /// <summary>A reference to a customer managed encryption key (CMEK) to use to encrypt this container image. For more information, go to https://cloud.google.com/run/docs/securing/using-cmek</summary>
+    [JsonPropertyName("encryptionKey")]
+    public string? EncryptionKey { get; set; }
+
+    /// <summary>
+    /// The sandbox environment to host this Revision.
+    /// Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
+    /// </summary>
+    [JsonPropertyName("executionEnvironment")]
+    public string? ExecutionEnvironment { get; set; }
+
+    /// <summary>True if GPU zonal redundancy is disabled on this revision.</summary>
+    [JsonPropertyName("gpuZonalRedundancyDisabled")]
+    public bool? GpuZonalRedundancyDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
+    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Sets the maximum number of requests that each serving instance can receive.
+    /// If not specified or 0, defaults to 80 when requested CPU &gt;= 1 and defaults to 1 when requested CPU &lt; 1.
+    /// </summary>
+    [JsonPropertyName("maxInstanceRequestConcurrency")]
+    public double? MaxInstanceRequestConcurrency { get; set; }
+
+    /// <summary>
+    /// Node Selector describes the hardware requirements of the resources.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public V1beta2V2ServiceStatusAtProviderTemplateNodeSelector? NodeSelector { get; set; }
+
+    /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>
+    /// Scaling settings for this Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceStatusAtProviderTemplateScaling? Scaling { get; set; }
+
+    /// <summary>Email address of the IAM service account associated with the revision of the service. The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project&apos;s default service account.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity</summary>
+    [JsonPropertyName("sessionAffinity")]
+    public bool? SessionAffinity { get; set; }
+
+    /// <summary>
+    /// Max allowed time for an instance to respond to a request.
+    /// A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;3.5s&quot;.
+    /// </summary>
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
+
+    /// <summary>
+    /// A list of Volumes to make available to containers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumes")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateVolumes>? Volumes { get; set; }
+
+    /// <summary>
+    /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("vpcAccess")]
+    public V1beta2V2ServiceStatusAtProviderTemplateVpcAccess? VpcAccess { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTerminalCondition
+{
+    /// <summary>
+    /// (Output)
+    /// A reason for the execution condition.
+    /// </summary>
+    [JsonPropertyName("executionReason")]
+    public string? ExecutionReason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Last time the condition transitioned from one status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public string? LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Human readable message indicating details about the current status.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// A common (service-level) reason for this condition.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// A reason for the revision condition.
+    /// </summary>
+    [JsonPropertyName("revisionReason")]
+    public string? RevisionReason { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// How to interpret failures of this condition, one of Error, Warning, Info
+    /// </summary>
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// State of the condition.
+    /// </summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// type is used to communicate the status of the reconciliation process. See also: https://github.com/knative/serving/blob/main/docs/spec/errors.md#error-conditions-and-reporting Types common to all resources include: * &quot;Ready&quot;: True when the Resource is ready.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTraffic
+{
+    /// <summary>Specifies percent of the traffic to this Revision. This defaults to zero if unspecified.</summary>
+    [JsonPropertyName("percent")]
+    public double? Percent { get; set; }
+
+    /// <summary>Revision to which to send this portion of traffic, if traffic allocation is by revision.</summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>Indicates a string to be part of the URI to exclusively reference this target.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+
+    /// <summary>
+    /// The allocation type for this traffic target.
+    /// Possible values are: TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST, TRAFFIC_TARGET_ALLOCATION_TYPE_REVISION.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTrafficStatuses
+{
+    /// <summary>
+    /// (Output)
+    /// Specifies percent of the traffic to this Revision.
+    /// </summary>
+    [JsonPropertyName("percent")]
+    public double? Percent { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Revision to which this traffic is sent.
+    /// </summary>
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Indicates the string used in the URI to exclusively reference this target.
+    /// </summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The allocation type for this traffic target.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Displays the target URI.
+    /// </summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProvider
+{
+    /// <summary>
+    /// Unstructured key value map that may be set by external tools to store and arbitrary metadata. They are not queryable and should be preserved when modifying objects.
+    /// Cloud Run API v2 does not support annotations with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected in new resources.
+    /// All system annotations in v1 now have a corresponding field in v2 Service.
+    /// This field follows Kubernetes annotations&apos; namespacing, limits, and rules.
+    /// Note: This field is non-authoritative, and will only manage the annotations present in your configuration.
+    /// Please refer to the field effective_annotations for all of the annotations present on the resource.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Settings for the Binary Authorization feature.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("binaryAuthorization")]
+    public V1beta2V2ServiceStatusAtProviderBinaryAuthorization? BinaryAuthorization { get; set; }
+
+    /// <summary>
+    /// Configuration for building a Cloud Run function.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("buildConfig")]
+    public V1beta2V2ServiceStatusAtProviderBuildConfig? BuildConfig { get; set; }
+
+    /// <summary>Arbitrary identifier for the API client.</summary>
+    [JsonPropertyName("client")]
+    public string? Client { get; set; }
+
+    /// <summary>Arbitrary version identifier for the API client.</summary>
+    [JsonPropertyName("clientVersion")]
+    public string? ClientVersion { get; set; }
+
+    /// <summary>
+    /// The Conditions of all other associated sub-resources. They contain additional diagnostics information in case the Service does not reach its Serving state. See comments in reconciling for additional information on reconciliation process in Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2V2ServiceStatusAtProviderConditions>? Conditions { get; set; }
+
+    /// <summary>The creation time.</summary>
+    [JsonPropertyName("createTime")]
+    public string? CreateTime { get; set; }
+
+    /// <summary>Email address of the authenticated creator.</summary>
+    [JsonPropertyName("creator")]
+    public string? Creator { get; set; }
+
+    /// <summary>
+    /// One or more custom audiences that you want this service to support. Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
+    /// For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
+    /// </summary>
+    [JsonPropertyName("customAudiences")]
+    public IList<string>? CustomAudiences { get; set; }
+
+    /// <summary>The deletion time.</summary>
+    [JsonPropertyName("deleteTime")]
+    public string? DeleteTime { get; set; }
+
+    /// <summary>
+    /// Defaults to true.
+    /// When the field is set to false, deleting the service is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
+    /// <summary>User-provided description of the Service. This field currently has a 512-character limit.</summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    [JsonPropertyName("effectiveAnnotations")]
+    public IDictionary<string, string>? EffectiveAnnotations { get; set; }
+
+    [JsonPropertyName("effectiveLabels")]
+    public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>A system-generated fingerprint for this version of the resource. May be used to detect modification conflict during updates.</summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>For a deleted resource, the time after which it will be permanently deleted.</summary>
+    [JsonPropertyName("expireTime")]
+    public string? ExpireTime { get; set; }
+
+    /// <summary>A number that monotonically increases every time the user modifies the desired state. Please note that unlike v1, this is an int64 value. As with most Google APIs, its JSON representation will be a string instead of an integer.</summary>
+    [JsonPropertyName("generation")]
+    public string? Generation { get; set; }
+
+    /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/services/{{name}}</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>
+    /// Provides the ingress settings for this Service. On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
+    /// Possible values are: INGRESS_TRAFFIC_ALL, INGRESS_TRAFFIC_INTERNAL_ONLY, INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER.
+    /// </summary>
+    [JsonPropertyName("ingress")]
+    public string? Ingress { get; set; }
+
+    /// <summary>Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.</summary>
+    [JsonPropertyName("invokerIamDisabled")]
+    public bool? InvokerIamDisabled { get; set; }
+
+    /// <summary>
+    /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
+    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
+    /// All system labels in v1 now have a corresponding field in v2 Service.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>Email address of the last authenticated modifier.</summary>
+    [JsonPropertyName("lastModifier")]
+    public string? LastModifier { get; set; }
+
+    /// <summary>Name of the last created revision. See comments in reconciling for additional information on reconciliation process in Cloud Run.</summary>
+    [JsonPropertyName("latestCreatedRevision")]
+    public string? LatestCreatedRevision { get; set; }
+
+    /// <summary>Name of the latest revision that is serving traffic. See comments in reconciling for additional information on reconciliation process in Cloud Run.</summary>
+    [JsonPropertyName("latestReadyRevision")]
+    public string? LatestReadyRevision { get; set; }
+
+    /// <summary>
+    /// The launch stage as defined by Google Cloud Platform Launch Stages. Cloud Run supports ALPHA, BETA, and GA.
+    /// If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features.
+    /// For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output.
+    /// Possible values are: UNIMPLEMENTED, PRELAUNCH, EARLY_ACCESS, ALPHA, BETA, GA, DEPRECATED.
+    /// </summary>
+    [JsonPropertyName("launchStage")]
+    public string? LaunchStage { get; set; }
+
+    /// <summary>The location of the cloud run service</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The generation of this Service currently serving traffic. See comments in reconciling for additional information on reconciliation process in Cloud Run. Please note that unlike v1, this is an int64 value. As with most Google APIs, its JSON representation will be a string instead of an integer.</summary>
+    [JsonPropertyName("observedGeneration")]
+    public string? ObservedGeneration { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which the resource belongs.
+    /// If it is not provided, the provider project is used.
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
+    /// <summary>
+    /// Returns true if the Service is currently being acted upon by the system to bring it into the desired state.
+    /// When a new Service is created, or an existing one is updated, Cloud Run will asynchronously perform all necessary steps to bring the Service to the desired serving state. This process is called reconciliation. While reconciliation is in process, observedGeneration, latest_ready_revison, trafficStatuses, and uri will have transient values that might mismatch the intended state: Once reconciliation is over (and this field is false), there are two possible outcomes: reconciliation succeeded and the serving state matches the Service, or there was an error, and reconciliation failed. This state can be found in terminalCondition.state.
+    /// If reconciliation succeeded, the following fields will match: traffic and trafficStatuses, observedGeneration and generation, latestReadyRevision and latestCreatedRevision.
+    /// If reconciliation failed, trafficStatuses, observedGeneration, and latestReadyRevision will have the state of the last serving revision, or empty for newly created Services. Additional information on the failure can be found in terminalCondition and conditions.
+    /// </summary>
+    [JsonPropertyName("reconciling")]
+    public bool? Reconciling { get; set; }
+
+    /// <summary>
+    /// Scaling settings that apply to the whole service
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("scaling")]
+    public V1beta2V2ServiceStatusAtProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// The template used to create revisions for this Service.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("template")]
+    public V1beta2V2ServiceStatusAtProviderTemplate? Template { get; set; }
+
+    /// <summary>
+    /// The Condition of this Service, containing its readiness status, and detailed error information in case it did not reach a serving state. See comments in reconciling for additional information on reconciliation process in Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("terminalCondition")]
+    public IList<V1beta2V2ServiceStatusAtProviderTerminalCondition>? TerminalCondition { get; set; }
+
+    /// <summary>
+    /// The combination of labels configured directly on the resource
+    /// and default labels configured on the provider.
+    /// </summary>
+    [JsonPropertyName("terraformLabels")]
+    public IDictionary<string, string>? TerraformLabels { get; set; }
+
+    /// <summary>
+    /// Specifies how to distribute traffic over a collection of Revisions belonging to the Service. If traffic is empty or not provided, defaults to 100% traffic to the latest Ready Revision.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("traffic")]
+    public IList<V1beta2V2ServiceStatusAtProviderTraffic>? Traffic { get; set; }
+
+    /// <summary>
+    /// Detailed status information for corresponding traffic targets. See comments in reconciling for additional information on reconciliation process in Cloud Run.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("trafficStatuses")]
+    public IList<V1beta2V2ServiceStatusAtProviderTrafficStatuses>? TrafficStatuses { get; set; }
+
+    /// <summary>Server assigned unique identifier for the trigger. The value is a UUID4 string and guaranteed to remain unchanged until the resource is deleted.</summary>
+    [JsonPropertyName("uid")]
+    public string? Uid { get; set; }
+
+    /// <summary>The last-modified time.</summary>
+    [JsonPropertyName("updateTime")]
+    public string? UpdateTime { get; set; }
+
+    /// <summary>The main URI in which this Service is serving traffic.</summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
+
+    /// <summary>All URLs serving traffic for this Service.</summary>
+    [JsonPropertyName("urls")]
+    public IList<string>? Urls { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>V2ServiceStatus defines the observed state of V2Service.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2V2ServiceStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2V2ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>V2Service is the Schema for the V2Services API. Service acts as a top-level container that manages a set of configurations and revision templates which implement a network service.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2V2Service : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2V2ServiceSpec>, IStatus<V1beta2V2ServiceStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "V2Service";
+    public const string KubeGroup = "cloudrun.gcp.upbound.io";
+    public const string KubePluralName = "v2services";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "cloudrun.gcp.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "V2Service";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>V2ServiceSpec defines the desired state of V2Service</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2V2ServiceSpec Spec { get; set; }
+
+    /// <summary>V2ServiceStatus defines the observed state of V2Service.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2V2ServiceStatus? Status { get; set; }
+}

@@ -1,0 +1,365 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.pkg.crossplane.io;
+/// <summary>
+/// A FunctionRevision represents a revision of a Function. Crossplane
+/// creates new revisions when there are changes to the Function.
+/// 
+/// Crossplane creates and manages FunctionRevisions. Don&apos;t directly edit
+/// FunctionRevisions.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1FunctionRevisionList : IKubernetesObject<V1ListMeta>, IItems<V1FunctionRevision>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "FunctionRevisionList";
+    public const string KubeGroup = "pkg.crossplane.io";
+    public const string KubePluralName = "functionrevisions";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "pkg.crossplane.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "FunctionRevisionList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1FunctionRevision objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1FunctionRevision> Items { get; set; }
+}
+
+/// <summary>
+/// LocalObjectReference contains enough information to let you locate the
+/// referenced object inside the same namespace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionSpecPackagePullSecrets
+{
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// RuntimeConfigRef references a RuntimeConfig resource that will be used
+/// to configure the package runtime.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionSpecRuntimeConfigRef
+{
+    /// <summary>API version of the referent.</summary>
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    /// <summary>Kind of the referent.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name of the RuntimeConfig.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>FunctionRevisionSpec specifies configuration for a FunctionRevision.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionSpec
+{
+    /// <summary>
+    /// Map of string keys and values that can be used to annotate objects.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
+    /// </summary>
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    /// <summary>
+    /// Map of string keys and values that can be used to organize and categorize
+    /// (scope and select) objects. May match selectors of replication controllers
+    /// and services.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+    /// </summary>
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    /// <summary>DesiredState of the PackageRevision. Can be either Active or Inactive.</summary>
+    [JsonPropertyName("desiredState")]
+    public required string DesiredState { get; set; }
+
+    /// <summary>
+    /// IgnoreCrossplaneConstraints indicates to the package manager whether to
+    /// honor Crossplane version constrains specified by the package.
+    /// Default is false.
+    /// </summary>
+    [JsonPropertyName("ignoreCrossplaneConstraints")]
+    public bool? IgnoreCrossplaneConstraints { get; set; }
+
+    /// <summary>Package image used by install Pod to extract package contents.</summary>
+    [JsonPropertyName("image")]
+    public required string Image { get; set; }
+
+    /// <summary>
+    /// PackagePullPolicy defines the pull policy for the package. It is also
+    /// applied to any images pulled for the package, such as a provider&apos;s
+    /// controller image.
+    /// Default is IfNotPresent.
+    /// </summary>
+    [JsonPropertyName("packagePullPolicy")]
+    public string? PackagePullPolicy { get; set; }
+
+    /// <summary>
+    /// PackagePullSecrets are named secrets in the same namespace that can be
+    /// used to fetch packages from private registries. They are also applied to
+    /// any images pulled for the package, such as a provider&apos;s controller image.
+    /// </summary>
+    [JsonPropertyName("packagePullSecrets")]
+    public IList<V1FunctionRevisionSpecPackagePullSecrets>? PackagePullSecrets { get; set; }
+
+    /// <summary>
+    /// Revision number. Indicates when the revision will be garbage collected
+    /// based on the parent&apos;s RevisionHistoryLimit.
+    /// </summary>
+    [JsonPropertyName("revision")]
+    public required long Revision { get; set; }
+
+    /// <summary>
+    /// RuntimeConfigRef references a RuntimeConfig resource that will be used
+    /// to configure the package runtime.
+    /// </summary>
+    [JsonPropertyName("runtimeConfigRef")]
+    public V1FunctionRevisionSpecRuntimeConfigRef? RuntimeConfigRef { get; set; }
+
+    /// <summary>
+    /// SkipDependencyResolution indicates to the package manager whether to skip
+    /// resolving dependencies for a package. Setting this value to true may have
+    /// unintended consequences.
+    /// Default is false.
+    /// </summary>
+    [JsonPropertyName("skipDependencyResolution")]
+    public bool? SkipDependencyResolution { get; set; }
+
+    /// <summary>
+    /// TLSClientSecretName is the name of the TLS Secret that stores client
+    /// certificates of the Provider.
+    /// </summary>
+    [JsonPropertyName("tlsClientSecretName")]
+    public string? TlsClientSecretName { get; set; }
+
+    /// <summary>
+    /// TLSServerSecretName is the name of the TLS Secret that stores server
+    /// certificates of the Provider.
+    /// </summary>
+    [JsonPropertyName("tlsServerSecretName")]
+    public string? TlsServerSecretName { get; set; }
+}
+
+/// <summary>
+/// ImageConfigRef is a reference to an image config that indicates how the
+/// referenced image config was used by the package manager.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionStatusAppliedImageConfigRefs
+{
+    /// <summary>Name is the name of the image config.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Reason indicates what the image config was used for.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>
+/// A TypedReference refers to an object by Name, Kind, and APIVersion. It is
+/// commonly used to reference cluster-scoped objects or objects where the
+/// namespace is already known.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionStatusObjectRefs
+{
+    /// <summary>APIVersion of the referenced object.</summary>
+    [JsonPropertyName("apiVersion")]
+    public required string ApiVersion { get; set; }
+
+    /// <summary>Kind of the referenced object.</summary>
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>UID of the referenced object.</summary>
+    [JsonPropertyName("uid")]
+    public string? Uid { get; set; }
+}
+
+/// <summary>FunctionRevisionStatus represents the observed state of a FunctionRevision.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1FunctionRevisionStatus
+{
+    /// <summary>
+    /// AppliedImageConfigRefs records any image configs that were applied in
+    /// reconciling this revision, and what they were used for.
+    /// </summary>
+    [JsonPropertyName("appliedImageConfigRefs")]
+    public IList<V1FunctionRevisionStatusAppliedImageConfigRefs>? AppliedImageConfigRefs { get; set; }
+
+    /// <summary>
+    /// Capabilities of this package. Capabilities are opaque strings that
+    /// may be meaningful to package consumers.
+    /// </summary>
+    [JsonPropertyName("capabilities")]
+    public IList<string>? Capabilities { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1FunctionRevisionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// Endpoint is the gRPC endpoint where Crossplane will send
+    /// RunFunctionRequests.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>Dependency information.</summary>
+    [JsonPropertyName("foundDependencies")]
+    public long? FoundDependencies { get; set; }
+
+    [JsonPropertyName("installedDependencies")]
+    public long? InstalledDependencies { get; set; }
+
+    [JsonPropertyName("invalidDependencies")]
+    public long? InvalidDependencies { get; set; }
+
+    /// <summary>References to objects owned by PackageRevision.</summary>
+    [JsonPropertyName("objectRefs")]
+    public IList<V1FunctionRevisionStatusObjectRefs>? ObjectRefs { get; set; }
+
+    /// <summary>
+    /// ResolvedPackage is the name of the package that was installed. It may be
+    /// different from spec.image if the package path was rewritten using an
+    /// image config.
+    /// </summary>
+    [JsonPropertyName("resolvedImage")]
+    public string? ResolvedImage { get; set; }
+
+    /// <summary>
+    /// TLSClientSecretName is the name of the TLS Secret that stores client
+    /// certificates of the Provider.
+    /// </summary>
+    [JsonPropertyName("tlsClientSecretName")]
+    public string? TlsClientSecretName { get; set; }
+
+    /// <summary>
+    /// TLSServerSecretName is the name of the TLS Secret that stores server
+    /// certificates of the Provider.
+    /// </summary>
+    [JsonPropertyName("tlsServerSecretName")]
+    public string? TlsServerSecretName { get; set; }
+}
+
+/// <summary>
+/// A FunctionRevision represents a revision of a Function. Crossplane
+/// creates new revisions when there are changes to the Function.
+/// 
+/// Crossplane creates and manages FunctionRevisions. Don&apos;t directly edit
+/// FunctionRevisions.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1FunctionRevision : IKubernetesObject<V1ObjectMeta>, ISpec<V1FunctionRevisionSpec?>, IStatus<V1FunctionRevisionStatus?>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "FunctionRevision";
+    public const string KubeGroup = "pkg.crossplane.io";
+    public const string KubePluralName = "functionrevisions";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "pkg.crossplane.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "FunctionRevision";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>FunctionRevisionSpec specifies configuration for a FunctionRevision.</summary>
+    [JsonPropertyName("spec")]
+    public V1FunctionRevisionSpec? Spec { get; set; }
+
+    /// <summary>FunctionRevisionStatus represents the observed state of a FunctionRevision.</summary>
+    [JsonPropertyName("status")]
+    public V1FunctionRevisionStatus? Status { get; set; }
+}
