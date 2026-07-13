@@ -1,0 +1,3693 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.web.azure.upbound.io;
+/// <summary>FunctionApp is the Schema for the FunctionApps API. Manages a Function App.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2FunctionAppList : IKubernetesObject<V1ListMeta>, IItems<V1beta2FunctionApp>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "FunctionAppList";
+    public const string KubeGroup = "web.azure.upbound.io";
+    public const string KubePluralName = "functionapps";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "web.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "FunctionAppList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2FunctionApp objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2FunctionApp> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecDeletionPolicyEnum>))]
+public enum V1beta2FunctionAppSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AppServicePlan in web to populate appServicePlanId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAppServicePlanIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AppServicePlan in web to populate appServicePlanId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAppServicePlanIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsActiveDirectoryClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A active_directory block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsActiveDirectory
+{
+    /// <summary>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.</summary>
+    [JsonPropertyName("allowedAudiences")]
+    public IList<string>? AllowedAudiences { get; set; }
+
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsActiveDirectoryClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+}
+
+/// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsFacebookAppSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A facebook block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsFacebook
+{
+    /// <summary>The App ID of the Facebook app used for login</summary>
+    [JsonPropertyName("appId")]
+    public string? AppId { get; set; }
+
+    /// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+    [JsonPropertyName("appSecretSecretRef")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsFacebookAppSecretSecretRef? AppSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsGoogleClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A google block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsGoogle
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsGoogleClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsMicrosoftClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A microsoft block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsMicrosoft
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsMicrosoftClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsTwitterConsumerSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A twitter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettingsTwitter
+{
+    /// <summary>The OAuth 1.0a consumer key of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerKey")]
+    public string? ConsumerKey { get; set; }
+
+    /// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerSecretSecretRef")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsTwitterConsumerSecretSecretRef? ConsumerSecretSecretRef { get; set; }
+}
+
+/// <summary>A auth_settings block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderAuthSettings
+{
+    /// <summary>A active_directory block as defined below.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form &quot;key=value&quot;.</summary>
+    [JsonPropertyName("additionalLoginParams")]
+    public IDictionary<string, string>? AdditionalLoginParams { get; set; }
+
+    /// <summary>External URLs that can be redirected to as part of logging in or logging out of the app.</summary>
+    [JsonPropertyName("allowedExternalRedirectUrls")]
+    public IList<string>? AllowedExternalRedirectUrls { get; set; }
+
+    /// <summary>The default provider to use when multiple providers have been set up. Possible values are AzureActiveDirectory, Facebook, Google, MicrosoftAccount and Twitter.</summary>
+    [JsonPropertyName("defaultProvider")]
+    public string? DefaultProvider { get; set; }
+
+    /// <summary>Is Authentication enabled?</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>A facebook block as defined below.</summary>
+    [JsonPropertyName("facebook")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsFacebook? Facebook { get; set; }
+
+    /// <summary>A google block as defined below.</summary>
+    [JsonPropertyName("google")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsGoogle? Google { get; set; }
+
+    /// <summary>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.</summary>
+    [JsonPropertyName("issuer")]
+    public string? Issuer { get; set; }
+
+    /// <summary>A microsoft block as defined below.</summary>
+    [JsonPropertyName("microsoft")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsMicrosoft? Microsoft { get; set; }
+
+    /// <summary>The runtime version of the Authentication/Authorization module.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+
+    /// <summary>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.</summary>
+    [JsonPropertyName("tokenRefreshExtensionHours")]
+    public double? TokenRefreshExtensionHours { get; set; }
+
+    /// <summary>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.</summary>
+    [JsonPropertyName("tokenStoreEnabled")]
+    public bool? TokenStoreEnabled { get; set; }
+
+    /// <summary>A twitter block as defined below.</summary>
+    [JsonPropertyName("twitter")]
+    public V1beta2FunctionAppSpecForProviderAuthSettingsTwitter? Twitter { get; set; }
+
+    /// <summary>The action to take when an unauthenticated client attempts to access the app. Possible values are AllowAnonymous and RedirectToLoginPage.</summary>
+    [JsonPropertyName("unauthenticatedClientAction")]
+    public string? UnauthenticatedClientAction { get; set; }
+}
+
+/// <summary>The value for the Connection String.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderConnectionStringValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderConnectionString
+{
+    /// <summary>The name of the Connection String.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The type of the Connection String. Possible values are APIHub, Custom, DocDb, EventHub, MySQL, NotificationHub, PostgreSQL, RedisCache, ServiceBus, SQLAzure and SQLServer.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>The value for the Connection String.</summary>
+    [JsonPropertyName("valueSecretRef")]
+    public V1beta2FunctionAppSpecForProviderConnectionStringValueSecretRef? ValueSecretRef { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderIdentity
+{
+    /// <summary>Specifies a list of user managed identity ids to be assigned. Required if type is UserAssigned.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>Specifies the identity type of the Function App. Possible values are SystemAssigned (where Azure will generate a Service Principal for you), UserAssigned where you can specify the Service Principal IDs in the identity_ids field, and SystemAssigned, UserAssigned which assigns both a system managed identity as well as the specified user assigned identities.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderResourceGroupNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderResourceGroupNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A cors block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigCors
+{
+    /// <summary>A list of origins which should be able to make cross-origin calls. * can be used to allow all calls.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>Are credentials supported?</summary>
+    [JsonPropertyName("supportCredentials")]
+    public bool? SupportCredentials { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+
+    /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdRef")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef? VirtualNetworkSubnetIdRef { get; set; }
+
+    /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdSelector")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+
+    /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdRef")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef? VirtualNetworkSubnetIdRef { get; set; }
+
+    /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdSelector")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
+}
+
+/// <summary>A site_config object as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSiteConfig
+{
+    /// <summary>Should the Function App be loaded at all times? Defaults to false.</summary>
+    [JsonPropertyName("alwaysOn")]
+    public bool? AlwaysOn { get; set; }
+
+    /// <summary>The number of workers this function app can scale out to. Only applicable to apps on the Consumption and Premium plan.</summary>
+    [JsonPropertyName("appScaleLimit")]
+    public double? AppScaleLimit { get; set; }
+
+    /// <summary>The name of the slot to automatically swap to during deployment</summary>
+    [JsonPropertyName("autoSwapSlotName")]
+    public string? AutoSwapSlotName { get; set; }
+
+    /// <summary>A cors block as defined below.</summary>
+    [JsonPropertyName("cors")]
+    public V1beta2FunctionAppSpecForProviderSiteConfigCors? Cors { get; set; }
+
+    /// <summary>The version of the .NET framework&apos;s CLR used in this function app. Possible values are v4.0 (including .NET Core 2.1 and 3.1), v5.0 and v6.0. For more information on which .NET Framework version to use based on the runtime version you&apos;re targeting - please see this table. Defaults to v4.0.</summary>
+    [JsonPropertyName("dotnetFrameworkVersion")]
+    public string? DotnetFrameworkVersion { get; set; }
+
+    /// <summary>The number of minimum instances for this function app. Only affects apps on the Premium plan. Possible values are between 1 and 20.</summary>
+    [JsonPropertyName("elasticInstanceMinimum")]
+    public double? ElasticInstanceMinimum { get; set; }
+
+    /// <summary>State of FTP / FTPS service for this function app. Possible values include: AllAllowed, FtpsOnly and Disabled. Defaults to AllAllowed.</summary>
+    [JsonPropertyName("ftpsState")]
+    public string? FtpsState { get; set; }
+
+    /// <summary>Path which will be checked for this function app health.</summary>
+    [JsonPropertyName("healthCheckPath")]
+    public string? HealthCheckPath { get; set; }
+
+    /// <summary>Specifies whether or not the HTTP2 protocol should be enabled. Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
+    /// <summary>A list of ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("ipRestriction")]
+    public IList<V1beta2FunctionAppSpecForProviderSiteConfigIpRestriction>? IpRestriction { get; set; }
+
+    /// <summary>Java version hosted by the function app in Azure. Possible values are 1.8, 11 &amp; 17 (In-Preview).</summary>
+    [JsonPropertyName("javaVersion")]
+    public string? JavaVersion { get; set; }
+
+    /// <summary>Linux App Framework and version for the AppService, e.g. DOCKER|(golang:latest).</summary>
+    [JsonPropertyName("linuxFxVersion")]
+    public string? LinuxFxVersion { get; set; }
+
+    /// <summary>The minimum supported TLS version for the function app. Possible values are 1.0, 1.1, and 1.2. Defaults to 1.2 for new function apps.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.</summary>
+    [JsonPropertyName("preWarmedInstanceCount")]
+    public double? PreWarmedInstanceCount { get; set; }
+
+    /// <summary>Should Runtime Scale Monitoring be enabled?. Only applicable to apps on the Premium plan. Defaults to false.</summary>
+    [JsonPropertyName("runtimeScaleMonitoringEnabled")]
+    public bool? RuntimeScaleMonitoringEnabled { get; set; }
+
+    /// <summary>A list of scm_ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("scmIpRestriction")]
+    public IList<V1beta2FunctionAppSpecForProviderSiteConfigScmIpRestriction>? ScmIpRestriction { get; set; }
+
+    /// <summary>The type of Source Control used by the Function App. Valid values include: BitBucketGit, BitBucketHg, CodePlexGit, CodePlexHg, Dropbox, ExternalGit, ExternalHg, GitHub, LocalGit, None (default), OneDrive, Tfs, VSO, and VSTSRM.</summary>
+    [JsonPropertyName("scmType")]
+    public string? ScmType { get; set; }
+
+    /// <summary>IP security restrictions for scm to use main. Defaults to false.</summary>
+    [JsonPropertyName("scmUseMainIpRestriction")]
+    public bool? ScmUseMainIpRestriction { get; set; }
+
+    /// <summary>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to true.</summary>
+    [JsonPropertyName("use32BitWorkerProcess")]
+    public bool? Use32BitWorkerProcess { get; set; }
+
+    /// <summary>Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to false.</summary>
+    [JsonPropertyName("vnetRouteAllEnabled")]
+    public bool? VnetRouteAllEnabled { get; set; }
+
+    /// <summary>Should WebSockets be enabled?</summary>
+    [JsonPropertyName("websocketsEnabled")]
+    public bool? WebsocketsEnabled { get; set; }
+}
+
+/// <summary>A source_control block, as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderSourceControl
+{
+    /// <summary>The branch of the remote repository to use. Defaults to &apos;master&apos;.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Limits to manual integration. Defaults to false if not specified.</summary>
+    [JsonPropertyName("manualIntegration")]
+    public bool? ManualIntegration { get; set; }
+
+    /// <summary>The URL of the source code repository.</summary>
+    [JsonPropertyName("repoUrl")]
+    public string? RepoUrl { get; set; }
+
+    /// <summary>Enable roll-back for the repository. Defaults to false if not specified.</summary>
+    [JsonPropertyName("rollbackEnabled")]
+    public bool? RollbackEnabled { get; set; }
+
+    /// <summary>Use Mercurial if true, otherwise uses Git.</summary>
+    [JsonPropertyName("useMercurial")]
+    public bool? UseMercurial { get; set; }
+}
+
+/// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderStorageAccountAccessKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Account in storage to populate storageAccountName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderStorageAccountNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Account in storage to populate storageAccountName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProviderStorageAccountNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecForProvider
+{
+    /// <summary>The ID of the App Service Plan within which to create this Function App.</summary>
+    [JsonPropertyName("appServicePlanId")]
+    public string? AppServicePlanId { get; set; }
+
+    /// <summary>Reference to a AppServicePlan in web to populate appServicePlanId.</summary>
+    [JsonPropertyName("appServicePlanIdRef")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdRef? AppServicePlanIdRef { get; set; }
+
+    /// <summary>Selector for a AppServicePlan in web to populate appServicePlanId.</summary>
+    [JsonPropertyName("appServicePlanIdSelector")]
+    public V1beta2FunctionAppSpecForProviderAppServicePlanIdSelector? AppServicePlanIdSelector { get; set; }
+
+    /// <summary>A map of key-value pairs for App Settings and custom values.</summary>
+    [JsonPropertyName("appSettings")]
+    public IDictionary<string, string>? AppSettings { get; set; }
+
+    /// <summary>A auth_settings block as defined below.</summary>
+    [JsonPropertyName("authSettings")]
+    public V1beta2FunctionAppSpecForProviderAuthSettings? AuthSettings { get; set; }
+
+    /// <summary>The mode of the Function App&apos;s client certificates requirement for incoming requests. Possible values are Required and Optional.</summary>
+    [JsonPropertyName("clientCertMode")]
+    public string? ClientCertMode { get; set; }
+
+    /// <summary>An connection_string block as defined below.</summary>
+    [JsonPropertyName("connectionString")]
+    public IList<V1beta2FunctionAppSpecForProviderConnectionString>? ConnectionString { get; set; }
+
+    /// <summary>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan.</summary>
+    [JsonPropertyName("dailyMemoryTimeQuota")]
+    public double? DailyMemoryTimeQuota { get; set; }
+
+    /// <summary>Should the built-in logging of this Function App be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enableBuiltinLogging")]
+    public bool? EnableBuiltinLogging { get; set; }
+
+    /// <summary>Is the Function App enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Can the Function App only be accessed via HTTPS? Defaults to false.</summary>
+    [JsonPropertyName("httpsOnly")]
+    public bool? HttpsOnly { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2FunctionAppSpecForProviderIdentity? Identity { get; set; }
+
+    /// <summary>The User Assigned Identity Id used for looking up KeyVault secrets. The identity must be assigned to the application. See Access vaults with a user-assigned identity for more information.</summary>
+    [JsonPropertyName("keyVaultReferenceIdentityId")]
+    public string? KeyVaultReferenceIdentityId { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>Specifies the name of the Function App. Changing this forces a new resource to be created. Limit the function name to 32 characters to avoid naming collisions. For more information about Function App naming rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    [JsonPropertyName("osType")]
+    public string? OsType { get; set; }
+
+    /// <summary>The name of the resource group in which to create the Function App. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public string? ResourceGroupName { get; set; }
+
+    /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameRef")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameRef? ResourceGroupNameRef { get; set; }
+
+    /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameSelector")]
+    public V1beta2FunctionAppSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
+
+    /// <summary>A site_config object as defined below.</summary>
+    [JsonPropertyName("siteConfig")]
+    public V1beta2FunctionAppSpecForProviderSiteConfig? SiteConfig { get; set; }
+
+    /// <summary>A source_control block, as defined below.</summary>
+    [JsonPropertyName("sourceControl")]
+    public V1beta2FunctionAppSpecForProviderSourceControl? SourceControl { get; set; }
+
+    /// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+    [JsonPropertyName("storageAccountAccessKeySecretRef")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountAccessKeySecretRef? StorageAccountAccessKeySecretRef { get; set; }
+
+    /// <summary>The backend storage account name which will be used by this Function App (such as the dashboard, logs). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountName")]
+    public string? StorageAccountName { get; set; }
+
+    /// <summary>Reference to a Account in storage to populate storageAccountName.</summary>
+    [JsonPropertyName("storageAccountNameRef")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameRef? StorageAccountNameRef { get; set; }
+
+    /// <summary>Selector for a Account in storage to populate storageAccountName.</summary>
+    [JsonPropertyName("storageAccountNameSelector")]
+    public V1beta2FunctionAppSpecForProviderStorageAccountNameSelector? StorageAccountNameSelector { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>The runtime version associated with the Function App. Defaults to ~1.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AppServicePlan in web to populate appServicePlanId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAppServicePlanIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AppServicePlan in web to populate appServicePlanId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A active_directory block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsActiveDirectory
+{
+    /// <summary>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.</summary>
+    [JsonPropertyName("allowedAudiences")]
+    public IList<string>? AllowedAudiences { get; set; }
+
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+}
+
+/// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsFacebookAppSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A facebook block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsFacebook
+{
+    /// <summary>The App ID of the Facebook app used for login</summary>
+    [JsonPropertyName("appId")]
+    public string? AppId { get; set; }
+
+    /// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+    [JsonPropertyName("appSecretSecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderAuthSettingsFacebookAppSecretSecretRef AppSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsGoogleClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A google block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsGoogle
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderAuthSettingsGoogleClientSecretSecretRef ClientSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A microsoft block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsMicrosoft
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef ClientSecretSecretRef { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A twitter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettingsTwitter
+{
+    /// <summary>The OAuth 1.0a consumer key of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerKey")]
+    public string? ConsumerKey { get; set; }
+
+    /// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerSecretSecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef ConsumerSecretSecretRef { get; set; }
+}
+
+/// <summary>A auth_settings block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderAuthSettings
+{
+    /// <summary>A active_directory block as defined below.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form &quot;key=value&quot;.</summary>
+    [JsonPropertyName("additionalLoginParams")]
+    public IDictionary<string, string>? AdditionalLoginParams { get; set; }
+
+    /// <summary>External URLs that can be redirected to as part of logging in or logging out of the app.</summary>
+    [JsonPropertyName("allowedExternalRedirectUrls")]
+    public IList<string>? AllowedExternalRedirectUrls { get; set; }
+
+    /// <summary>The default provider to use when multiple providers have been set up. Possible values are AzureActiveDirectory, Facebook, Google, MicrosoftAccount and Twitter.</summary>
+    [JsonPropertyName("defaultProvider")]
+    public string? DefaultProvider { get; set; }
+
+    /// <summary>Is Authentication enabled?</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>A facebook block as defined below.</summary>
+    [JsonPropertyName("facebook")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsFacebook? Facebook { get; set; }
+
+    /// <summary>A google block as defined below.</summary>
+    [JsonPropertyName("google")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsGoogle? Google { get; set; }
+
+    /// <summary>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.</summary>
+    [JsonPropertyName("issuer")]
+    public string? Issuer { get; set; }
+
+    /// <summary>A microsoft block as defined below.</summary>
+    [JsonPropertyName("microsoft")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsMicrosoft? Microsoft { get; set; }
+
+    /// <summary>The runtime version of the Authentication/Authorization module.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+
+    /// <summary>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.</summary>
+    [JsonPropertyName("tokenRefreshExtensionHours")]
+    public double? TokenRefreshExtensionHours { get; set; }
+
+    /// <summary>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.</summary>
+    [JsonPropertyName("tokenStoreEnabled")]
+    public bool? TokenStoreEnabled { get; set; }
+
+    /// <summary>A twitter block as defined below.</summary>
+    [JsonPropertyName("twitter")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettingsTwitter? Twitter { get; set; }
+
+    /// <summary>The action to take when an unauthenticated client attempts to access the app. Possible values are AllowAnonymous and RedirectToLoginPage.</summary>
+    [JsonPropertyName("unauthenticatedClientAction")]
+    public string? UnauthenticatedClientAction { get; set; }
+}
+
+/// <summary>The value for the Connection String.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderConnectionStringValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderConnectionString
+{
+    /// <summary>The name of the Connection String.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The type of the Connection String. Possible values are APIHub, Custom, DocDb, EventHub, MySQL, NotificationHub, PostgreSQL, RedisCache, ServiceBus, SQLAzure and SQLServer.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>The value for the Connection String.</summary>
+    [JsonPropertyName("valueSecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderConnectionStringValueSecretRef ValueSecretRef { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderIdentity
+{
+    /// <summary>Specifies a list of user managed identity ids to be assigned. Required if type is UserAssigned.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>Specifies the identity type of the Function App. Possible values are SystemAssigned (where Azure will generate a Service Principal for you), UserAssigned where you can specify the Service Principal IDs in the identity_ids field, and SystemAssigned, UserAssigned which assigns both a system managed identity as well as the specified user assigned identities.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderResourceGroupNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderResourceGroupNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A cors block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigCors
+{
+    /// <summary>A list of origins which should be able to make cross-origin calls. * can be used to allow all calls.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>Are credentials supported?</summary>
+    [JsonPropertyName("supportCredentials")]
+    public bool? SupportCredentials { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+
+    /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdRef")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef? VirtualNetworkSubnetIdRef { get; set; }
+
+    /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdSelector")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+
+    /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdRef")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef? VirtualNetworkSubnetIdRef { get; set; }
+
+    /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdSelector")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
+}
+
+/// <summary>A site_config object as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSiteConfig
+{
+    /// <summary>Should the Function App be loaded at all times? Defaults to false.</summary>
+    [JsonPropertyName("alwaysOn")]
+    public bool? AlwaysOn { get; set; }
+
+    /// <summary>The number of workers this function app can scale out to. Only applicable to apps on the Consumption and Premium plan.</summary>
+    [JsonPropertyName("appScaleLimit")]
+    public double? AppScaleLimit { get; set; }
+
+    /// <summary>The name of the slot to automatically swap to during deployment</summary>
+    [JsonPropertyName("autoSwapSlotName")]
+    public string? AutoSwapSlotName { get; set; }
+
+    /// <summary>A cors block as defined below.</summary>
+    [JsonPropertyName("cors")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfigCors? Cors { get; set; }
+
+    /// <summary>The version of the .NET framework&apos;s CLR used in this function app. Possible values are v4.0 (including .NET Core 2.1 and 3.1), v5.0 and v6.0. For more information on which .NET Framework version to use based on the runtime version you&apos;re targeting - please see this table. Defaults to v4.0.</summary>
+    [JsonPropertyName("dotnetFrameworkVersion")]
+    public string? DotnetFrameworkVersion { get; set; }
+
+    /// <summary>The number of minimum instances for this function app. Only affects apps on the Premium plan. Possible values are between 1 and 20.</summary>
+    [JsonPropertyName("elasticInstanceMinimum")]
+    public double? ElasticInstanceMinimum { get; set; }
+
+    /// <summary>State of FTP / FTPS service for this function app. Possible values include: AllAllowed, FtpsOnly and Disabled. Defaults to AllAllowed.</summary>
+    [JsonPropertyName("ftpsState")]
+    public string? FtpsState { get; set; }
+
+    /// <summary>Path which will be checked for this function app health.</summary>
+    [JsonPropertyName("healthCheckPath")]
+    public string? HealthCheckPath { get; set; }
+
+    /// <summary>Specifies whether or not the HTTP2 protocol should be enabled. Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
+    /// <summary>A list of ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("ipRestriction")]
+    public IList<V1beta2FunctionAppSpecInitProviderSiteConfigIpRestriction>? IpRestriction { get; set; }
+
+    /// <summary>Java version hosted by the function app in Azure. Possible values are 1.8, 11 &amp; 17 (In-Preview).</summary>
+    [JsonPropertyName("javaVersion")]
+    public string? JavaVersion { get; set; }
+
+    /// <summary>Linux App Framework and version for the AppService, e.g. DOCKER|(golang:latest).</summary>
+    [JsonPropertyName("linuxFxVersion")]
+    public string? LinuxFxVersion { get; set; }
+
+    /// <summary>The minimum supported TLS version for the function app. Possible values are 1.0, 1.1, and 1.2. Defaults to 1.2 for new function apps.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.</summary>
+    [JsonPropertyName("preWarmedInstanceCount")]
+    public double? PreWarmedInstanceCount { get; set; }
+
+    /// <summary>Should Runtime Scale Monitoring be enabled?. Only applicable to apps on the Premium plan. Defaults to false.</summary>
+    [JsonPropertyName("runtimeScaleMonitoringEnabled")]
+    public bool? RuntimeScaleMonitoringEnabled { get; set; }
+
+    /// <summary>A list of scm_ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("scmIpRestriction")]
+    public IList<V1beta2FunctionAppSpecInitProviderSiteConfigScmIpRestriction>? ScmIpRestriction { get; set; }
+
+    /// <summary>The type of Source Control used by the Function App. Valid values include: BitBucketGit, BitBucketHg, CodePlexGit, CodePlexHg, Dropbox, ExternalGit, ExternalHg, GitHub, LocalGit, None (default), OneDrive, Tfs, VSO, and VSTSRM.</summary>
+    [JsonPropertyName("scmType")]
+    public string? ScmType { get; set; }
+
+    /// <summary>IP security restrictions for scm to use main. Defaults to false.</summary>
+    [JsonPropertyName("scmUseMainIpRestriction")]
+    public bool? ScmUseMainIpRestriction { get; set; }
+
+    /// <summary>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to true.</summary>
+    [JsonPropertyName("use32BitWorkerProcess")]
+    public bool? Use32BitWorkerProcess { get; set; }
+
+    /// <summary>Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to false.</summary>
+    [JsonPropertyName("vnetRouteAllEnabled")]
+    public bool? VnetRouteAllEnabled { get; set; }
+
+    /// <summary>Should WebSockets be enabled?</summary>
+    [JsonPropertyName("websocketsEnabled")]
+    public bool? WebsocketsEnabled { get; set; }
+}
+
+/// <summary>A source_control block, as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderSourceControl
+{
+    /// <summary>The branch of the remote repository to use. Defaults to &apos;master&apos;.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Limits to manual integration. Defaults to false if not specified.</summary>
+    [JsonPropertyName("manualIntegration")]
+    public bool? ManualIntegration { get; set; }
+
+    /// <summary>The URL of the source code repository.</summary>
+    [JsonPropertyName("repoUrl")]
+    public string? RepoUrl { get; set; }
+
+    /// <summary>Enable roll-back for the repository. Defaults to false if not specified.</summary>
+    [JsonPropertyName("rollbackEnabled")]
+    public bool? RollbackEnabled { get; set; }
+
+    /// <summary>Use Mercurial if true, otherwise uses Git.</summary>
+    [JsonPropertyName("useMercurial")]
+    public bool? UseMercurial { get; set; }
+}
+
+/// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderStorageAccountAccessKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Account in storage to populate storageAccountName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderStorageAccountNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Account in storage to populate storageAccountName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProviderStorageAccountNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecInitProvider
+{
+    /// <summary>The ID of the App Service Plan within which to create this Function App.</summary>
+    [JsonPropertyName("appServicePlanId")]
+    public string? AppServicePlanId { get; set; }
+
+    /// <summary>Reference to a AppServicePlan in web to populate appServicePlanId.</summary>
+    [JsonPropertyName("appServicePlanIdRef")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdRef? AppServicePlanIdRef { get; set; }
+
+    /// <summary>Selector for a AppServicePlan in web to populate appServicePlanId.</summary>
+    [JsonPropertyName("appServicePlanIdSelector")]
+    public V1beta2FunctionAppSpecInitProviderAppServicePlanIdSelector? AppServicePlanIdSelector { get; set; }
+
+    /// <summary>A map of key-value pairs for App Settings and custom values.</summary>
+    [JsonPropertyName("appSettings")]
+    public IDictionary<string, string>? AppSettings { get; set; }
+
+    /// <summary>A auth_settings block as defined below.</summary>
+    [JsonPropertyName("authSettings")]
+    public V1beta2FunctionAppSpecInitProviderAuthSettings? AuthSettings { get; set; }
+
+    /// <summary>The mode of the Function App&apos;s client certificates requirement for incoming requests. Possible values are Required and Optional.</summary>
+    [JsonPropertyName("clientCertMode")]
+    public string? ClientCertMode { get; set; }
+
+    /// <summary>An connection_string block as defined below.</summary>
+    [JsonPropertyName("connectionString")]
+    public IList<V1beta2FunctionAppSpecInitProviderConnectionString>? ConnectionString { get; set; }
+
+    /// <summary>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan.</summary>
+    [JsonPropertyName("dailyMemoryTimeQuota")]
+    public double? DailyMemoryTimeQuota { get; set; }
+
+    /// <summary>Should the built-in logging of this Function App be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enableBuiltinLogging")]
+    public bool? EnableBuiltinLogging { get; set; }
+
+    /// <summary>Is the Function App enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Can the Function App only be accessed via HTTPS? Defaults to false.</summary>
+    [JsonPropertyName("httpsOnly")]
+    public bool? HttpsOnly { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2FunctionAppSpecInitProviderIdentity? Identity { get; set; }
+
+    /// <summary>The User Assigned Identity Id used for looking up KeyVault secrets. The identity must be assigned to the application. See Access vaults with a user-assigned identity for more information.</summary>
+    [JsonPropertyName("keyVaultReferenceIdentityId")]
+    public string? KeyVaultReferenceIdentityId { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>Specifies the name of the Function App. Changing this forces a new resource to be created. Limit the function name to 32 characters to avoid naming collisions. For more information about Function App naming rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    [JsonPropertyName("osType")]
+    public string? OsType { get; set; }
+
+    /// <summary>The name of the resource group in which to create the Function App. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public string? ResourceGroupName { get; set; }
+
+    /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameRef")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameRef? ResourceGroupNameRef { get; set; }
+
+    /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameSelector")]
+    public V1beta2FunctionAppSpecInitProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
+
+    /// <summary>A site_config object as defined below.</summary>
+    [JsonPropertyName("siteConfig")]
+    public V1beta2FunctionAppSpecInitProviderSiteConfig? SiteConfig { get; set; }
+
+    /// <summary>A source_control block, as defined below.</summary>
+    [JsonPropertyName("sourceControl")]
+    public V1beta2FunctionAppSpecInitProviderSourceControl? SourceControl { get; set; }
+
+    /// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+    [JsonPropertyName("storageAccountAccessKeySecretRef")]
+    public required V1beta2FunctionAppSpecInitProviderStorageAccountAccessKeySecretRef StorageAccountAccessKeySecretRef { get; set; }
+
+    /// <summary>The backend storage account name which will be used by this Function App (such as the dashboard, logs). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountName")]
+    public string? StorageAccountName { get; set; }
+
+    /// <summary>Reference to a Account in storage to populate storageAccountName.</summary>
+    [JsonPropertyName("storageAccountNameRef")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameRef? StorageAccountNameRef { get; set; }
+
+    /// <summary>Selector for a Account in storage to populate storageAccountName.</summary>
+    [JsonPropertyName("storageAccountNameSelector")]
+    public V1beta2FunctionAppSpecInitProviderStorageAccountNameSelector? StorageAccountNameSelector { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>The runtime version associated with the Function App. Defaults to ~1.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecManagementPoliciesEnum>))]
+public enum V1beta2FunctionAppSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2FunctionAppSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionAppSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2FunctionAppSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FunctionAppSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FunctionAppSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FunctionAppSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>FunctionAppSpec defines the desired state of FunctionApp</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2FunctionAppSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2FunctionAppSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2FunctionAppSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2FunctionAppSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2FunctionAppSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2FunctionAppSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>A active_directory block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettingsActiveDirectory
+{
+    /// <summary>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.</summary>
+    [JsonPropertyName("allowedAudiences")]
+    public IList<string>? AllowedAudiences { get; set; }
+
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+}
+
+/// <summary>A facebook block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettingsFacebook
+{
+    /// <summary>The App ID of the Facebook app used for login</summary>
+    [JsonPropertyName("appId")]
+    public string? AppId { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>A google block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettingsGoogle
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>A microsoft block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettingsMicrosoft
+{
+    /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientId")]
+    public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
+    [JsonPropertyName("oauthScopes")]
+    public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>A twitter block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettingsTwitter
+{
+    /// <summary>The OAuth 1.0a consumer key of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerKey")]
+    public string? ConsumerKey { get; set; }
+}
+
+/// <summary>A auth_settings block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderAuthSettings
+{
+    /// <summary>A active_directory block as defined below.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettingsActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form &quot;key=value&quot;.</summary>
+    [JsonPropertyName("additionalLoginParams")]
+    public IDictionary<string, string>? AdditionalLoginParams { get; set; }
+
+    /// <summary>External URLs that can be redirected to as part of logging in or logging out of the app.</summary>
+    [JsonPropertyName("allowedExternalRedirectUrls")]
+    public IList<string>? AllowedExternalRedirectUrls { get; set; }
+
+    /// <summary>The default provider to use when multiple providers have been set up. Possible values are AzureActiveDirectory, Facebook, Google, MicrosoftAccount and Twitter.</summary>
+    [JsonPropertyName("defaultProvider")]
+    public string? DefaultProvider { get; set; }
+
+    /// <summary>Is Authentication enabled?</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>A facebook block as defined below.</summary>
+    [JsonPropertyName("facebook")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettingsFacebook? Facebook { get; set; }
+
+    /// <summary>A google block as defined below.</summary>
+    [JsonPropertyName("google")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettingsGoogle? Google { get; set; }
+
+    /// <summary>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.</summary>
+    [JsonPropertyName("issuer")]
+    public string? Issuer { get; set; }
+
+    /// <summary>A microsoft block as defined below.</summary>
+    [JsonPropertyName("microsoft")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettingsMicrosoft? Microsoft { get; set; }
+
+    /// <summary>The runtime version of the Authentication/Authorization module.</summary>
+    [JsonPropertyName("runtimeVersion")]
+    public string? RuntimeVersion { get; set; }
+
+    /// <summary>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.</summary>
+    [JsonPropertyName("tokenRefreshExtensionHours")]
+    public double? TokenRefreshExtensionHours { get; set; }
+
+    /// <summary>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.</summary>
+    [JsonPropertyName("tokenStoreEnabled")]
+    public bool? TokenStoreEnabled { get; set; }
+
+    /// <summary>A twitter block as defined below.</summary>
+    [JsonPropertyName("twitter")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettingsTwitter? Twitter { get; set; }
+
+    /// <summary>The action to take when an unauthenticated client attempts to access the app. Possible values are AllowAnonymous and RedirectToLoginPage.</summary>
+    [JsonPropertyName("unauthenticatedClientAction")]
+    public string? UnauthenticatedClientAction { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderConnectionString
+{
+    /// <summary>The name of the Connection String.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The type of the Connection String. Possible values are APIHub, Custom, DocDb, EventHub, MySQL, NotificationHub, PostgreSQL, RedisCache, ServiceBus, SQLAzure and SQLServer.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderIdentity
+{
+    /// <summary>Specifies a list of user managed identity ids to be assigned. Required if type is UserAssigned.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.</summary>
+    [JsonPropertyName("principalId")]
+    public string? PrincipalId { get; set; }
+
+    /// <summary>The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    /// <summary>Specifies the identity type of the Function App. Possible values are SystemAssigned (where Azure will generate a Service Principal for you), UserAssigned where you can specify the Service Principal IDs in the identity_ids field, and SystemAssigned, UserAssigned which assigns both a system managed identity as well as the specified user assigned identities.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A cors block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfigCors
+{
+    /// <summary>A list of origins which should be able to make cross-origin calls. * can be used to allow all calls.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>Are credentials supported?</summary>
+    [JsonPropertyName("supportCredentials")]
+    public bool? SupportCredentials { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfigIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfigIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppStatusAtProviderSiteConfigIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+}
+
+/// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfigScmIpRestrictionHeaders
+{
+    /// <summary>A list of allowed Azure FrontDoor IDs in UUID notation with a maximum of 8.</summary>
+    [JsonPropertyName("xAzureFdid")]
+    public IList<string>? XAzureFdid { get; set; }
+
+    /// <summary>A list to allow the Azure FrontDoor health probe header. Only allowed value is &quot;1&quot;.</summary>
+    [JsonPropertyName("xFdHealthProbe")]
+    public IList<string>? XFdHealthProbe { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-For&apos; IPs in CIDR notation with a maximum of 8</summary>
+    [JsonPropertyName("xForwardedFor")]
+    public IList<string>? XForwardedFor { get; set; }
+
+    /// <summary>A list of allowed &apos;X-Forwarded-Host&apos; domains with a maximum of 8.</summary>
+    [JsonPropertyName("xForwardedHost")]
+    public IList<string>? XForwardedHost { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfigScmIpRestriction
+{
+    /// <summary>Allow or Deny access for this IP range. Defaults to Allow.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The headers block for this specific scm_ip_restriction as defined below.</summary>
+    [JsonPropertyName("headers")]
+    public V1beta2FunctionAppStatusAtProviderSiteConfigScmIpRestrictionHeaders? Headers { get; set; }
+
+    /// <summary>The IP Address used for this IP Restriction in CIDR notation.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>The name for this IP Restriction.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The priority for this IP Restriction. Restrictions are enforced in priority order. By default, priority is set to 65000 if not specified.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+
+    /// <summary>The Service Tag used for this IP Restriction.</summary>
+    [JsonPropertyName("serviceTag")]
+    public string? ServiceTag { get; set; }
+
+    /// <summary>The Virtual Network Subnet ID used for this IP Restriction.</summary>
+    [JsonPropertyName("virtualNetworkSubnetId")]
+    public string? VirtualNetworkSubnetId { get; set; }
+}
+
+/// <summary>A site_config object as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteConfig
+{
+    /// <summary>Should the Function App be loaded at all times? Defaults to false.</summary>
+    [JsonPropertyName("alwaysOn")]
+    public bool? AlwaysOn { get; set; }
+
+    /// <summary>The number of workers this function app can scale out to. Only applicable to apps on the Consumption and Premium plan.</summary>
+    [JsonPropertyName("appScaleLimit")]
+    public double? AppScaleLimit { get; set; }
+
+    /// <summary>The name of the slot to automatically swap to during deployment</summary>
+    [JsonPropertyName("autoSwapSlotName")]
+    public string? AutoSwapSlotName { get; set; }
+
+    /// <summary>A cors block as defined below.</summary>
+    [JsonPropertyName("cors")]
+    public V1beta2FunctionAppStatusAtProviderSiteConfigCors? Cors { get; set; }
+
+    /// <summary>The version of the .NET framework&apos;s CLR used in this function app. Possible values are v4.0 (including .NET Core 2.1 and 3.1), v5.0 and v6.0. For more information on which .NET Framework version to use based on the runtime version you&apos;re targeting - please see this table. Defaults to v4.0.</summary>
+    [JsonPropertyName("dotnetFrameworkVersion")]
+    public string? DotnetFrameworkVersion { get; set; }
+
+    /// <summary>The number of minimum instances for this function app. Only affects apps on the Premium plan. Possible values are between 1 and 20.</summary>
+    [JsonPropertyName("elasticInstanceMinimum")]
+    public double? ElasticInstanceMinimum { get; set; }
+
+    /// <summary>State of FTP / FTPS service for this function app. Possible values include: AllAllowed, FtpsOnly and Disabled. Defaults to AllAllowed.</summary>
+    [JsonPropertyName("ftpsState")]
+    public string? FtpsState { get; set; }
+
+    /// <summary>Path which will be checked for this function app health.</summary>
+    [JsonPropertyName("healthCheckPath")]
+    public string? HealthCheckPath { get; set; }
+
+    /// <summary>Specifies whether or not the HTTP2 protocol should be enabled. Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
+    /// <summary>A list of ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("ipRestriction")]
+    public IList<V1beta2FunctionAppStatusAtProviderSiteConfigIpRestriction>? IpRestriction { get; set; }
+
+    /// <summary>Java version hosted by the function app in Azure. Possible values are 1.8, 11 &amp; 17 (In-Preview).</summary>
+    [JsonPropertyName("javaVersion")]
+    public string? JavaVersion { get; set; }
+
+    /// <summary>Linux App Framework and version for the AppService, e.g. DOCKER|(golang:latest).</summary>
+    [JsonPropertyName("linuxFxVersion")]
+    public string? LinuxFxVersion { get; set; }
+
+    /// <summary>The minimum supported TLS version for the function app. Possible values are 1.0, 1.1, and 1.2. Defaults to 1.2 for new function apps.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.</summary>
+    [JsonPropertyName("preWarmedInstanceCount")]
+    public double? PreWarmedInstanceCount { get; set; }
+
+    /// <summary>Should Runtime Scale Monitoring be enabled?. Only applicable to apps on the Premium plan. Defaults to false.</summary>
+    [JsonPropertyName("runtimeScaleMonitoringEnabled")]
+    public bool? RuntimeScaleMonitoringEnabled { get; set; }
+
+    /// <summary>A list of scm_ip_restriction objects representing IP restrictions as defined below.</summary>
+    [JsonPropertyName("scmIpRestriction")]
+    public IList<V1beta2FunctionAppStatusAtProviderSiteConfigScmIpRestriction>? ScmIpRestriction { get; set; }
+
+    /// <summary>The type of Source Control used by the Function App. Valid values include: BitBucketGit, BitBucketHg, CodePlexGit, CodePlexHg, Dropbox, ExternalGit, ExternalHg, GitHub, LocalGit, None (default), OneDrive, Tfs, VSO, and VSTSRM.</summary>
+    [JsonPropertyName("scmType")]
+    public string? ScmType { get; set; }
+
+    /// <summary>IP security restrictions for scm to use main. Defaults to false.</summary>
+    [JsonPropertyName("scmUseMainIpRestriction")]
+    public bool? ScmUseMainIpRestriction { get; set; }
+
+    /// <summary>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to true.</summary>
+    [JsonPropertyName("use32BitWorkerProcess")]
+    public bool? Use32BitWorkerProcess { get; set; }
+
+    /// <summary>Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to false.</summary>
+    [JsonPropertyName("vnetRouteAllEnabled")]
+    public bool? VnetRouteAllEnabled { get; set; }
+
+    /// <summary>Should WebSockets be enabled?</summary>
+    [JsonPropertyName("websocketsEnabled")]
+    public bool? WebsocketsEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSiteCredential
+{
+    /// <summary>The password associated with the username, which can be used to publish to this App Service.</summary>
+    [JsonPropertyName("password")]
+    public string? Password { get; set; }
+
+    /// <summary>The username which can be used to publish to this App Service</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>A source_control block, as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProviderSourceControl
+{
+    /// <summary>The branch of the remote repository to use. Defaults to &apos;master&apos;.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Limits to manual integration. Defaults to false if not specified.</summary>
+    [JsonPropertyName("manualIntegration")]
+    public bool? ManualIntegration { get; set; }
+
+    /// <summary>The URL of the source code repository.</summary>
+    [JsonPropertyName("repoUrl")]
+    public string? RepoUrl { get; set; }
+
+    /// <summary>Enable roll-back for the repository. Defaults to false if not specified.</summary>
+    [JsonPropertyName("rollbackEnabled")]
+    public bool? RollbackEnabled { get; set; }
+
+    /// <summary>Use Mercurial if true, otherwise uses Git.</summary>
+    [JsonPropertyName("useMercurial")]
+    public bool? UseMercurial { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusAtProvider
+{
+    /// <summary>The ID of the App Service Plan within which to create this Function App.</summary>
+    [JsonPropertyName("appServicePlanId")]
+    public string? AppServicePlanId { get; set; }
+
+    /// <summary>A map of key-value pairs for App Settings and custom values.</summary>
+    [JsonPropertyName("appSettings")]
+    public IDictionary<string, string>? AppSettings { get; set; }
+
+    /// <summary>A auth_settings block as defined below.</summary>
+    [JsonPropertyName("authSettings")]
+    public V1beta2FunctionAppStatusAtProviderAuthSettings? AuthSettings { get; set; }
+
+    /// <summary>The mode of the Function App&apos;s client certificates requirement for incoming requests. Possible values are Required and Optional.</summary>
+    [JsonPropertyName("clientCertMode")]
+    public string? ClientCertMode { get; set; }
+
+    /// <summary>An connection_string block as defined below.</summary>
+    [JsonPropertyName("connectionString")]
+    public IList<V1beta2FunctionAppStatusAtProviderConnectionString>? ConnectionString { get; set; }
+
+    /// <summary>An identifier used by App Service to perform domain ownership verification via DNS TXT record.</summary>
+    [JsonPropertyName("customDomainVerificationId")]
+    public string? CustomDomainVerificationId { get; set; }
+
+    /// <summary>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan.</summary>
+    [JsonPropertyName("dailyMemoryTimeQuota")]
+    public double? DailyMemoryTimeQuota { get; set; }
+
+    /// <summary>The default hostname associated with the Function App - such as mysite.azurewebsites.net</summary>
+    [JsonPropertyName("defaultHostname")]
+    public string? DefaultHostname { get; set; }
+
+    /// <summary>Should the built-in logging of this Function App be enabled? Defaults to true.</summary>
+    [JsonPropertyName("enableBuiltinLogging")]
+    public bool? EnableBuiltinLogging { get; set; }
+
+    /// <summary>Is the Function App enabled? Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Can the Function App only be accessed via HTTPS? Defaults to false.</summary>
+    [JsonPropertyName("httpsOnly")]
+    public bool? HttpsOnly { get; set; }
+
+    /// <summary>The ID of the Function App</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2FunctionAppStatusAtProviderIdentity? Identity { get; set; }
+
+    /// <summary>The User Assigned Identity Id used for looking up KeyVault secrets. The identity must be assigned to the application. See Access vaults with a user-assigned identity for more information.</summary>
+    [JsonPropertyName("keyVaultReferenceIdentityId")]
+    public string? KeyVaultReferenceIdentityId { get; set; }
+
+    /// <summary>The Function App kind - such as functionapp,linux,container</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>Specifies the name of the Function App. Changing this forces a new resource to be created. Limit the function name to 32 characters to avoid naming collisions. For more information about Function App naming rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    [JsonPropertyName("osType")]
+    public string? OsType { get; set; }
+
+    /// <summary>A comma separated list of outbound IP addresses - such as 52.23.25.3,52.143.43.12</summary>
+    [JsonPropertyName("outboundIpAddresses")]
+    public string? OutboundIpAddresses { get; set; }
+
+    /// <summary>A comma separated list of outbound IP addresses - such as 52.23.25.3,52.143.43.12,52.143.43.17 - not all of which are necessarily in use. Superset of outbound_ip_addresses.</summary>
+    [JsonPropertyName("possibleOutboundIpAddresses")]
+    public string? PossibleOutboundIpAddresses { get; set; }
+
+    /// <summary>The name of the resource group in which to create the Function App. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public string? ResourceGroupName { get; set; }
+
+    /// <summary>A site_config object as defined below.</summary>
+    [JsonPropertyName("siteConfig")]
+    public V1beta2FunctionAppStatusAtProviderSiteConfig? SiteConfig { get; set; }
+
+    /// <summary>A site_credential block as defined below, which contains the site-level credentials used to publish to this App Service.</summary>
+    [JsonPropertyName("siteCredential")]
+    public IList<V1beta2FunctionAppStatusAtProviderSiteCredential>? SiteCredential { get; set; }
+
+    /// <summary>A source_control block, as defined below.</summary>
+    [JsonPropertyName("sourceControl")]
+    public V1beta2FunctionAppStatusAtProviderSourceControl? SourceControl { get; set; }
+
+    /// <summary>The backend storage account name which will be used by this Function App (such as the dashboard, logs). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountName")]
+    public string? StorageAccountName { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>The runtime version associated with the Function App. Defaults to ~1.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>FunctionAppStatus defines the observed state of FunctionApp.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FunctionAppStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2FunctionAppStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2FunctionAppStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>FunctionApp is the Schema for the FunctionApps API. Manages a Function App.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2FunctionApp : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FunctionAppSpec>, IStatus<V1beta2FunctionAppStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "FunctionApp";
+    public const string KubeGroup = "web.azure.upbound.io";
+    public const string KubePluralName = "functionapps";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "web.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "FunctionApp";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>FunctionAppSpec defines the desired state of FunctionApp</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2FunctionAppSpec Spec { get; set; }
+
+    /// <summary>FunctionAppStatus defines the observed state of FunctionApp.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2FunctionAppStatus? Status { get; set; }
+}

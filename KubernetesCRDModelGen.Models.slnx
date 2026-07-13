@@ -7,4 +7,44 @@
   <Folder Name="/src/">
     <Project Path="src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj" />
   </Folder>
+  <Folder Name="/src/Models/">
+    <Project Path="src/Models/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj" />
+    <Project Path="src/Models/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
+    <Project Path="src/Models/argoproj.io/KubernetesCRDModelGen.Models.argoproj.io.csproj" />
+    <Project Path="src/Models/aws.upbound.io/KubernetesCRDModelGen.Models.aws.upbound.io.csproj" />
+    <Project Path="src/Models/azapi.upbound.io/KubernetesCRDModelGen.Models.azapi.upbound.io.csproj" />
+    <Project Path="src/Models/azure.com/KubernetesCRDModelGen.Models.azure.com.csproj" />
+    <Project Path="src/Models/azure.upbound.io/KubernetesCRDModelGen.Models.azure.upbound.io.csproj" />
+    <Project Path="src/Models/azuread.upbound.io/KubernetesCRDModelGen.Models.azuread.upbound.io.csproj" />
+    <Project Path="src/Models/cnrm.cloud.google.com/KubernetesCRDModelGen.Models.cnrm.cloud.google.com.csproj" />
+    <Project Path="src/Models/crossplane.io/KubernetesCRDModelGen.Models.crossplane.io.csproj" />
+    <Project Path="src/Models/databricks.crossplane.io/KubernetesCRDModelGen.Models.databricks.crossplane.io.csproj" />
+    <Project Path="src/Models/databricks.upbound.io/KubernetesCRDModelGen.Models.databricks.upbound.io.csproj" />
+    <Project Path="src/Models/fluxcd.io/KubernetesCRDModelGen.Models.fluxcd.io.csproj" />
+    <Project Path="src/Models/gateway.networking.k8s.io/KubernetesCRDModelGen.Models.gateway.networking.k8s.io.csproj" />
+    <Project Path="src/Models/gcp.upbound.io/KubernetesCRDModelGen.Models.gcp.upbound.io.csproj" />
+    <Project Path="src/Models/github.upbound.io/KubernetesCRDModelGen.Models.github.upbound.io.csproj" />
+    <Project Path="src/Models/helm.crossplane.io/KubernetesCRDModelGen.Models.helm.crossplane.io.csproj" />
+    <Project Path="src/Models/http.crossplane.io/KubernetesCRDModelGen.Models.http.crossplane.io.csproj" />
+    <Project Path="src/Models/istio.io/KubernetesCRDModelGen.Models.istio.io.csproj" />
+    <Project Path="src/Models/jetstack.io/KubernetesCRDModelGen.Models.jetstack.io.csproj" />
+    <Project Path="src/Models/k8s.aws/KubernetesCRDModelGen.Models.k8s.aws.csproj" />
+    <Project Path="src/Models/keda.sh/KubernetesCRDModelGen.Models.keda.sh.csproj" />
+    <Project Path="src/Models/knative.dev/KubernetesCRDModelGen.Models.knative.dev.csproj" />
+    <Project Path="src/Models/kubernetes.crossplane.io/KubernetesCRDModelGen.Models.kubernetes.crossplane.io.csproj" />
+    <Project Path="src/Models/kubevirt.io/KubernetesCRDModelGen.Models.kubevirt.io.csproj" />
+    <Project Path="src/Models/kyverno.io/KubernetesCRDModelGen.Models.kyverno.io.csproj" />
+    <Project Path="src/Models/longhorn.io/KubernetesCRDModelGen.Models.longhorn.io.csproj" />
+    <Project Path="src/Models/opentofu.upbound.io/KubernetesCRDModelGen.Models.opentofu.upbound.io.csproj" />
+    <Project Path="src/Models/postgresql.cnpg.io/KubernetesCRDModelGen.Models.postgresql.cnpg.io.csproj" />
+    <Project Path="src/Models/projectcalico.org/KubernetesCRDModelGen.Models.projectcalico.org.csproj" />
+    <Project Path="src/Models/secrets-store.csi.x-k8s.io/KubernetesCRDModelGen.Models.secrets-store.csi.x-k8s.io.csproj" />
+    <Project Path="src/Models/storage.k8s.io/KubernetesCRDModelGen.Models.storage.k8s.io.csproj" />
+    <Project Path="src/Models/strimzi.io/KubernetesCRDModelGen.Models.strimzi.io.csproj" />
+    <Project Path="src/Models/temporal.io/KubernetesCRDModelGen.Models.temporal.io.csproj" />
+    <Project Path="src/Models/tf.upbound.io/KubernetesCRDModelGen.Models.tf.upbound.io.csproj" />
+    <Project Path="src/Models/traefik.io/KubernetesCRDModelGen.Models.traefik.io.csproj" />
+    <Project Path="src/Models/upbound.io/KubernetesCRDModelGen.Models.upbound.io.csproj" />
+    <Project Path="src/Models/vault.upbound.io/KubernetesCRDModelGen.Models.vault.upbound.io.csproj" />
+  </Folder>
 </Solution>

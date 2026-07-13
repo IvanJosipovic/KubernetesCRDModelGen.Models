@@ -1,0 +1,278 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
+/// <summary>
+/// VolumeGroupSnapshot is a user&apos;s request for creating either a point-in-time
+/// group snapshot or binding to a pre-existing group snapshot.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1VolumeGroupSnapshotList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeGroupSnapshot>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "VolumeGroupSnapshotList";
+    public const string KubeGroup = "groupsnapshot.storage.k8s.io";
+    public const string KubePluralName = "volumegroupsnapshots";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "groupsnapshot.storage.k8s.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "VolumeGroupSnapshotList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1VolumeGroupSnapshot objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1VolumeGroupSnapshot> Items { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotSpecSourceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// Selector is a label query over persistent volume claims that are to be
+/// grouped together for snapshotting.
+/// This labelSelector will be used to match the label added to a PVC.
+/// If the label is added or removed to a volume after a group snapshot
+/// is created, the existing group snapshots won&apos;t be modified.
+/// Once a VolumeGroupSnapshotContent is created and the sidecar starts to process
+/// it, the volume list will not change with retries.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotSpecSourceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1VolumeGroupSnapshotSpecSourceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Source specifies where a group snapshot will be created from.
+/// This field is immutable after creation.
+/// Required.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotSpecSource
+{
+    /// <summary>
+    /// Selector is a label query over persistent volume claims that are to be
+    /// grouped together for snapshotting.
+    /// This labelSelector will be used to match the label added to a PVC.
+    /// If the label is added or removed to a volume after a group snapshot
+    /// is created, the existing group snapshots won&apos;t be modified.
+    /// Once a VolumeGroupSnapshotContent is created and the sidecar starts to process
+    /// it, the volume list will not change with retries.
+    /// </summary>
+    [JsonPropertyName("selector")]
+    public V1VolumeGroupSnapshotSpecSourceSelector? Selector { get; set; }
+
+    /// <summary>
+    /// VolumeGroupSnapshotContentName specifies the name of a pre-existing VolumeGroupSnapshotContent
+    /// object representing an existing volume group snapshot.
+    /// This field should be set if the volume group snapshot already exists and
+    /// only needs a representation in Kubernetes.
+    /// This field is immutable.
+    /// </summary>
+    [JsonPropertyName("volumeGroupSnapshotContentName")]
+    public string? VolumeGroupSnapshotContentName { get; set; }
+}
+
+/// <summary>
+/// Spec defines the desired characteristics of a group snapshot requested by a user.
+/// Required.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotSpec
+{
+    /// <summary>
+    /// Source specifies where a group snapshot will be created from.
+    /// This field is immutable after creation.
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("source")]
+    public required V1VolumeGroupSnapshotSpecSource Source { get; set; }
+
+    /// <summary>
+    /// VolumeGroupSnapshotClassName is the name of the VolumeGroupSnapshotClass
+    /// requested by the VolumeGroupSnapshot.
+    /// VolumeGroupSnapshotClassName may be left nil to indicate that the default
+    /// class will be used.
+    /// Empty string is not allowed for this field.
+    /// </summary>
+    [JsonPropertyName("volumeGroupSnapshotClassName")]
+    public string? VolumeGroupSnapshotClassName { get; set; }
+}
+
+/// <summary>
+/// Error is the last observed error during group snapshot creation, if any.
+/// This field could be helpful to upper level controllers (i.e., application
+/// controller) to decide whether they should continue on waiting for the group
+/// snapshot to be created based on the type of error reported.
+/// The snapshot controller will keep retrying when an error occurs during the
+/// group snapshot creation. Upon success, this error field will be cleared.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotStatusError
+{
+    /// <summary>
+    /// message is a string detailing the encountered error during snapshot
+    /// creation if specified.
+    /// NOTE: message may be logged, and it should not contain sensitive
+    /// information.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>time is the timestamp when the error was encountered.</summary>
+    [JsonPropertyName("time")]
+    public DateTime? Time { get; set; }
+}
+
+/// <summary>
+/// Status represents the current information of a group snapshot.
+/// Consumers must verify binding between VolumeGroupSnapshot and
+/// VolumeGroupSnapshotContent objects is successful (by validating that both
+/// VolumeGroupSnapshot and VolumeGroupSnapshotContent point to each other) before
+/// using this object.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeGroupSnapshotStatus
+{
+    /// <summary>
+    /// BoundVolumeGroupSnapshotContentName is the name of the VolumeGroupSnapshotContent
+    /// object to which this VolumeGroupSnapshot object intends to bind to.
+    /// If not specified, it indicates that the VolumeGroupSnapshot object has not
+    /// been successfully bound to a VolumeGroupSnapshotContent object yet.
+    /// NOTE: To avoid possible security issues, consumers must verify binding between
+    /// VolumeGroupSnapshot and VolumeGroupSnapshotContent objects is successful
+    /// (by validating that both VolumeGroupSnapshot and VolumeGroupSnapshotContent
+    /// point at each other) before using this object.
+    /// </summary>
+    [JsonPropertyName("boundVolumeGroupSnapshotContentName")]
+    public string? BoundVolumeGroupSnapshotContentName { get; set; }
+
+    /// <summary>
+    /// CreationTime is the timestamp when the point-in-time group snapshot is taken
+    /// by the underlying storage system.
+    /// If not specified, it may indicate that the creation time of the group snapshot
+    /// is unknown.
+    /// This field is updated based on the CreationTime field in VolumeGroupSnapshotContentStatus
+    /// </summary>
+    [JsonPropertyName("creationTime")]
+    public DateTime? CreationTime { get; set; }
+
+    /// <summary>
+    /// Error is the last observed error during group snapshot creation, if any.
+    /// This field could be helpful to upper level controllers (i.e., application
+    /// controller) to decide whether they should continue on waiting for the group
+    /// snapshot to be created based on the type of error reported.
+    /// The snapshot controller will keep retrying when an error occurs during the
+    /// group snapshot creation. Upon success, this error field will be cleared.
+    /// </summary>
+    [JsonPropertyName("error")]
+    public V1VolumeGroupSnapshotStatusError? Error { get; set; }
+
+    /// <summary>
+    /// ReadyToUse indicates if all the individual snapshots in the group are ready
+    /// to be used to restore a group of volumes.
+    /// ReadyToUse becomes true when ReadyToUse of all individual snapshots become true.
+    /// If not specified, it means the readiness of a group snapshot is unknown.
+    /// </summary>
+    [JsonPropertyName("readyToUse")]
+    public bool? ReadyToUse { get; set; }
+}
+
+/// <summary>
+/// VolumeGroupSnapshot is a user&apos;s request for creating either a point-in-time
+/// group snapshot or binding to a pre-existing group snapshot.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1VolumeGroupSnapshot : IKubernetesObject<V1ObjectMeta>, ISpec<V1VolumeGroupSnapshotSpec>, IStatus<V1VolumeGroupSnapshotStatus?>
+{
+    public const string KubeApiVersion = "v1";
+    public const string KubeKind = "VolumeGroupSnapshot";
+    public const string KubeGroup = "groupsnapshot.storage.k8s.io";
+    public const string KubePluralName = "volumegroupsnapshots";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "groupsnapshot.storage.k8s.io/v1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "VolumeGroupSnapshot";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>
+    /// Spec defines the desired characteristics of a group snapshot requested by a user.
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("spec")]
+    public required V1VolumeGroupSnapshotSpec Spec { get; set; }
+
+    /// <summary>
+    /// Status represents the current information of a group snapshot.
+    /// Consumers must verify binding between VolumeGroupSnapshot and
+    /// VolumeGroupSnapshotContent objects is successful (by validating that both
+    /// VolumeGroupSnapshot and VolumeGroupSnapshotContent point to each other) before
+    /// using this object.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public V1VolumeGroupSnapshotStatus? Status { get; set; }
+}

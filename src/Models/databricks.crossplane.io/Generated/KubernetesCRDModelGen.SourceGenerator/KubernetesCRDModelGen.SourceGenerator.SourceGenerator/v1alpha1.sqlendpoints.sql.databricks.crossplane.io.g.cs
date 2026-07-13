@@ -1,0 +1,790 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.sql.databricks.crossplane.io;
+/// <summary>
+/// SQLEndpoint is the Schema for the SQLEndpoints API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1SQLEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SQLEndpoint>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "SQLEndpointList";
+    public const string KubeGroup = "sql.databricks.crossplane.io";
+    public const string KubePluralName = "sqlendpoints";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "sql.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "SQLEndpointList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1SQLEndpoint objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1SQLEndpoint> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLEndpointSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1SQLEndpointSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecForProviderChannel
+{
+    [JsonPropertyName("dbsqlVersion")]
+    public string? DbsqlVersion { get; set; }
+
+    /// <summary>Name of the Databricks SQL release channel. Possible values are: CHANNEL_NAME_PREVIEW and CHANNEL_NAME_CURRENT. Default is CHANNEL_NAME_CURRENT.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecForProviderTagsCustomTags
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecForProviderTags
+{
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("customTags")]
+    public IList<V1alpha1SQLEndpointSpecForProviderTagsCustomTags>? CustomTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecForProvider
+{
+    /// <summary>Time in minutes until an idle SQL warehouse terminates all clusters and stops. This field is optional. The default is 120, set to 0 to disable the auto stop.</summary>
+    [JsonPropertyName("autoStopMins")]
+    public double? AutoStopMins { get; set; }
+
+    /// <summary>block, consisting of following fields:</summary>
+    [JsonPropertyName("channel")]
+    public IList<V1alpha1SQLEndpointSpecForProviderChannel>? Channel { get; set; }
+
+    /// <summary>The size of the clusters allocated to the endpoint: &quot;2X-Small&quot;, &quot;X-Small&quot;, &quot;Small&quot;, &quot;Medium&quot;, &quot;Large&quot;, &quot;X-Large&quot;, &quot;2X-Large&quot;, &quot;3X-Large&quot;, &quot;4X-Large&quot;, &quot;5X-Large&quot;.</summary>
+    [JsonPropertyName("clusterSize")]
+    public string? ClusterSize { get; set; }
+
+    /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
+    [JsonPropertyName("dataSourceId")]
+    public string? DataSourceId { get; set; }
+
+    /// <summary>Whether to enable Photon. This field is optional and is enabled by default.</summary>
+    [JsonPropertyName("enablePhoton")]
+    public bool? EnablePhoton { get; set; }
+
+    /// <summary>Whether this SQL warehouse is a serverless endpoint. See below for details about the default values. To avoid ambiguity, especially for organizations with many workspaces, Databricks recommends that you always set this field explicitly.</summary>
+    [JsonPropertyName("enableServerlessCompute")]
+    public bool? EnableServerlessCompute { get; set; }
+
+    [JsonPropertyName("instanceProfileArn")]
+    public string? InstanceProfileArn { get; set; }
+
+    /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
+    [JsonPropertyName("maxNumClusters")]
+    public double? MaxNumClusters { get; set; }
+
+    /// <summary>Minimum number of clusters available when a SQL warehouse is running. The default is 1.</summary>
+    [JsonPropertyName("minNumClusters")]
+    public double? MinNumClusters { get; set; }
+
+    /// <summary>Name of the SQL warehouse. Must be unique.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Whether to skip waiting for the SQL warehouse to start after creation. Default is false.
+    /// If true, skip waiting for the warehouse to start after creation.
+    /// </summary>
+    [JsonPropertyName("noWait")]
+    public bool? NoWait { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1SQLEndpointSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+
+    /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
+    [JsonPropertyName("spotInstancePolicy")]
+    public string? SpotInstancePolicy { get; set; }
+
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("tags")]
+    public IList<V1alpha1SQLEndpointSpecForProviderTags>? Tags { get; set; }
+
+    /// <summary>SQL warehouse type. See for AWS or Azure. Set to PRO or CLASSIC. If the field enable_serverless_compute has the value true either explicitly or through the default logic (see that field above for details), the default is PRO, which is required for serverless SQL warehouses. Otherwise, the default is CLASSIC.</summary>
+    [JsonPropertyName("warehouseType")]
+    public string? WarehouseType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecInitProviderChannel
+{
+    [JsonPropertyName("dbsqlVersion")]
+    public string? DbsqlVersion { get; set; }
+
+    /// <summary>Name of the Databricks SQL release channel. Possible values are: CHANNEL_NAME_PREVIEW and CHANNEL_NAME_CURRENT. Default is CHANNEL_NAME_CURRENT.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecInitProviderTagsCustomTags
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecInitProviderTags
+{
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("customTags")]
+    public IList<V1alpha1SQLEndpointSpecInitProviderTagsCustomTags>? CustomTags { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecInitProvider
+{
+    /// <summary>Time in minutes until an idle SQL warehouse terminates all clusters and stops. This field is optional. The default is 120, set to 0 to disable the auto stop.</summary>
+    [JsonPropertyName("autoStopMins")]
+    public double? AutoStopMins { get; set; }
+
+    /// <summary>block, consisting of following fields:</summary>
+    [JsonPropertyName("channel")]
+    public IList<V1alpha1SQLEndpointSpecInitProviderChannel>? Channel { get; set; }
+
+    /// <summary>The size of the clusters allocated to the endpoint: &quot;2X-Small&quot;, &quot;X-Small&quot;, &quot;Small&quot;, &quot;Medium&quot;, &quot;Large&quot;, &quot;X-Large&quot;, &quot;2X-Large&quot;, &quot;3X-Large&quot;, &quot;4X-Large&quot;, &quot;5X-Large&quot;.</summary>
+    [JsonPropertyName("clusterSize")]
+    public string? ClusterSize { get; set; }
+
+    /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
+    [JsonPropertyName("dataSourceId")]
+    public string? DataSourceId { get; set; }
+
+    /// <summary>Whether to enable Photon. This field is optional and is enabled by default.</summary>
+    [JsonPropertyName("enablePhoton")]
+    public bool? EnablePhoton { get; set; }
+
+    /// <summary>Whether this SQL warehouse is a serverless endpoint. See below for details about the default values. To avoid ambiguity, especially for organizations with many workspaces, Databricks recommends that you always set this field explicitly.</summary>
+    [JsonPropertyName("enableServerlessCompute")]
+    public bool? EnableServerlessCompute { get; set; }
+
+    [JsonPropertyName("instanceProfileArn")]
+    public string? InstanceProfileArn { get; set; }
+
+    /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
+    [JsonPropertyName("maxNumClusters")]
+    public double? MaxNumClusters { get; set; }
+
+    /// <summary>Minimum number of clusters available when a SQL warehouse is running. The default is 1.</summary>
+    [JsonPropertyName("minNumClusters")]
+    public double? MinNumClusters { get; set; }
+
+    /// <summary>Name of the SQL warehouse. Must be unique.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Whether to skip waiting for the SQL warehouse to start after creation. Default is false.
+    /// If true, skip waiting for the warehouse to start after creation.
+    /// </summary>
+    [JsonPropertyName("noWait")]
+    public bool? NoWait { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1SQLEndpointSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
+
+    /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
+    [JsonPropertyName("spotInstancePolicy")]
+    public string? SpotInstancePolicy { get; set; }
+
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("tags")]
+    public IList<V1alpha1SQLEndpointSpecInitProviderTags>? Tags { get; set; }
+
+    /// <summary>SQL warehouse type. See for AWS or Azure. Set to PRO or CLASSIC. If the field enable_serverless_compute has the value true either explicitly or through the default logic (see that field above for details), the default is PRO, which is required for serverless SQL warehouses. Otherwise, the default is CLASSIC.</summary>
+    [JsonPropertyName("warehouseType")]
+    public string? WarehouseType { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLEndpointSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1SQLEndpointSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1SQLEndpointSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1SQLEndpointSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>SQLEndpointSpec defines the desired state of SQLEndpoint</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1alpha1SQLEndpointSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1alpha1SQLEndpointSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1alpha1SQLEndpointSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1alpha1SQLEndpointSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1alpha1SQLEndpointSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1alpha1SQLEndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderChannel
+{
+    [JsonPropertyName("dbsqlVersion")]
+    public string? DbsqlVersion { get; set; }
+
+    /// <summary>Name of the Databricks SQL release channel. Possible values are: CHANNEL_NAME_PREVIEW and CHANNEL_NAME_CURRENT. Default is CHANNEL_NAME_CURRENT.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderHealthFailureReason
+{
+    [JsonPropertyName("code")]
+    public string? Code { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderHealth
+{
+    [JsonPropertyName("details")]
+    public string? Details { get; set; }
+
+    [JsonPropertyName("failureReason")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderHealthFailureReason>? FailureReason { get; set; }
+
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    [JsonPropertyName("summary")]
+    public string? Summary { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderOdbcParams
+{
+    /// <summary>Name of the SQL warehouse. Must be unique.</summary>
+    [JsonPropertyName("hostname")]
+    public string? Hostname { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderTagsCustomTags
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProviderTags
+{
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("customTags")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderTagsCustomTags>? CustomTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusAtProvider
+{
+    /// <summary>Time in minutes until an idle SQL warehouse terminates all clusters and stops. This field is optional. The default is 120, set to 0 to disable the auto stop.</summary>
+    [JsonPropertyName("autoStopMins")]
+    public double? AutoStopMins { get; set; }
+
+    /// <summary>block, consisting of following fields:</summary>
+    [JsonPropertyName("channel")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderChannel>? Channel { get; set; }
+
+    /// <summary>The size of the clusters allocated to the endpoint: &quot;2X-Small&quot;, &quot;X-Small&quot;, &quot;Small&quot;, &quot;Medium&quot;, &quot;Large&quot;, &quot;X-Large&quot;, &quot;2X-Large&quot;, &quot;3X-Large&quot;, &quot;4X-Large&quot;, &quot;5X-Large&quot;.</summary>
+    [JsonPropertyName("clusterSize")]
+    public string? ClusterSize { get; set; }
+
+    /// <summary>The username of the user who created the endpoint.</summary>
+    [JsonPropertyName("creatorName")]
+    public string? CreatorName { get; set; }
+
+    /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
+    [JsonPropertyName("dataSourceId")]
+    public string? DataSourceId { get; set; }
+
+    /// <summary>Whether to enable Photon. This field is optional and is enabled by default.</summary>
+    [JsonPropertyName("enablePhoton")]
+    public bool? EnablePhoton { get; set; }
+
+    /// <summary>Whether this SQL warehouse is a serverless endpoint. See below for details about the default values. To avoid ambiguity, especially for organizations with many workspaces, Databricks recommends that you always set this field explicitly.</summary>
+    [JsonPropertyName("enableServerlessCompute")]
+    public bool? EnableServerlessCompute { get; set; }
+
+    /// <summary>Health status of the endpoint.</summary>
+    [JsonPropertyName("health")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderHealth>? Health { get; set; }
+
+    /// <summary>the unique ID of the SQL warehouse.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("instanceProfileArn")]
+    public string? InstanceProfileArn { get; set; }
+
+    /// <summary>JDBC connection string.</summary>
+    [JsonPropertyName("jdbcUrl")]
+    public string? JdbcUrl { get; set; }
+
+    /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
+    [JsonPropertyName("maxNumClusters")]
+    public double? MaxNumClusters { get; set; }
+
+    /// <summary>Minimum number of clusters available when a SQL warehouse is running. The default is 1.</summary>
+    [JsonPropertyName("minNumClusters")]
+    public double? MinNumClusters { get; set; }
+
+    /// <summary>Name of the SQL warehouse. Must be unique.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Whether to skip waiting for the SQL warehouse to start after creation. Default is false.
+    /// If true, skip waiting for the warehouse to start after creation.
+    /// </summary>
+    [JsonPropertyName("noWait")]
+    public bool? NoWait { get; set; }
+
+    /// <summary>The current number of clusters used by the endpoint.</summary>
+    [JsonPropertyName("numActiveSessions")]
+    public double? NumActiveSessions { get; set; }
+
+    /// <summary>The current number of clusters used by the endpoint.</summary>
+    [JsonPropertyName("numClusters")]
+    public double? NumClusters { get; set; }
+
+    /// <summary>ODBC connection params: odbc_params.hostname, odbc_params.path, odbc_params.protocol, and odbc_params.port.</summary>
+    [JsonPropertyName("odbcParams")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderOdbcParams>? OdbcParams { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
+
+    /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
+    [JsonPropertyName("spotInstancePolicy")]
+    public string? SpotInstancePolicy { get; set; }
+
+    /// <summary>The current state of the endpoint.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+
+    /// <summary>Databricks tags all endpoint resources with these tags.</summary>
+    [JsonPropertyName("tags")]
+    public IList<V1alpha1SQLEndpointStatusAtProviderTags>? Tags { get; set; }
+
+    /// <summary>SQL warehouse type. See for AWS or Azure. Set to PRO or CLASSIC. If the field enable_serverless_compute has the value true either explicitly or through the default logic (see that field above for details), the default is PRO, which is required for serverless SQL warehouses. Otherwise, the default is CLASSIC.</summary>
+    [JsonPropertyName("warehouseType")]
+    public string? WarehouseType { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>SQLEndpointStatus defines the observed state of SQLEndpoint.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SQLEndpointStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1alpha1SQLEndpointStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1SQLEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>
+/// SQLEndpoint is the Schema for the SQLEndpoints API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1SQLEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SQLEndpointSpec>, IStatus<V1alpha1SQLEndpointStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "SQLEndpoint";
+    public const string KubeGroup = "sql.databricks.crossplane.io";
+    public const string KubePluralName = "sqlendpoints";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "sql.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "SQLEndpoint";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>SQLEndpointSpec defines the desired state of SQLEndpoint</summary>
+    [JsonPropertyName("spec")]
+    public required V1alpha1SQLEndpointSpec Spec { get; set; }
+
+    /// <summary>SQLEndpointStatus defines the observed state of SQLEndpoint.</summary>
+    [JsonPropertyName("status")]
+    public V1alpha1SQLEndpointStatus? Status { get; set; }
+}

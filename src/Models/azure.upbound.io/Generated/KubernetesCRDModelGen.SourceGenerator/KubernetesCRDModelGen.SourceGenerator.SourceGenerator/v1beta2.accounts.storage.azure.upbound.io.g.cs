@@ -1,0 +1,3063 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
+/// <summary>Account is the Schema for the Accounts API. Manages a Azure Storage Account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2AccountList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Account>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "AccountList";
+    public const string KubeGroup = "storage.azure.upbound.io";
+    public const string KubePluralName = "accounts";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "storage.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "AccountList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2Account objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2Account> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecDeletionPolicyEnum>))]
+public enum V1beta2AccountSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderAzureFilesAuthenticationActiveDirectory
+{
+    /// <summary>Specifies the domain GUID.</summary>
+    [JsonPropertyName("domainGuid")]
+    public string? DomainGuid { get; set; }
+
+    /// <summary>Specifies the primary domain that the AD DNS server is authoritative for.</summary>
+    [JsonPropertyName("domainName")]
+    public string? DomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID). This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("domainSid")]
+    public string? DomainSid { get; set; }
+
+    /// <summary>Specifies the Active Directory forest. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("forestName")]
+    public string? ForestName { get; set; }
+
+    /// <summary>Specifies the NetBIOS domain name. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("netbiosDomainName")]
+    public string? NetbiosDomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID) for Azure Storage. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("storageSid")]
+    public string? StorageSid { get; set; }
+}
+
+/// <summary>A azure_files_authentication block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderAzureFilesAuthentication
+{
+    /// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2AccountSpecForProviderAzureFilesAuthenticationActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Specifies the default share level permissions applied to all users. Possible values are StorageFileDataSmbShareReader, StorageFileDataSmbShareContributor, StorageFileDataSmbShareElevatedContributor, or None. Defaults to None.</summary>
+    [JsonPropertyName("defaultShareLevelPermission")]
+    public string? DefaultShareLevelPermission { get; set; }
+
+    /// <summary>Specifies the directory service used. Possible values are AADDS, AD and AADKERB.</summary>
+    [JsonPropertyName("directoryType")]
+    public string? DirectoryType { get; set; }
+}
+
+/// <summary>A container_delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderBlobPropertiesContainerDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderBlobPropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderBlobPropertiesDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+
+    /// <summary>Indicates whether permanent deletion of the soft deleted blob versions and snapshots is allowed. Defaults to false.</summary>
+    [JsonPropertyName("permanentDeleteEnabled")]
+    public bool? PermanentDeleteEnabled { get; set; }
+}
+
+/// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderBlobPropertiesRestorePolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A blob_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderBlobProperties
+{
+    /// <summary>Is the blob service properties for change feed events enabled? Default to false.</summary>
+    [JsonPropertyName("changeFeedEnabled")]
+    public bool? ChangeFeedEnabled { get; set; }
+
+    /// <summary>The duration of change feed events retention in days. The possible values are between 1 and 146000 days (400 years). Setting this to null (or omit this in the configuration file) indicates an infinite retention of the change feed.</summary>
+    [JsonPropertyName("changeFeedRetentionInDays")]
+    public double? ChangeFeedRetentionInDays { get; set; }
+
+    /// <summary>A container_delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("containerDeleteRetentionPolicy")]
+    public V1beta2AccountSpecForProviderBlobPropertiesContainerDeleteRetentionPolicy? ContainerDeleteRetentionPolicy { get; set; }
+
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecForProviderBlobPropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>The API Version which should be used by default for requests to the Data Plane API if an incoming request doesn&apos;t specify an API Version.</summary>
+    [JsonPropertyName("defaultServiceVersion")]
+    public string? DefaultServiceVersion { get; set; }
+
+    /// <summary>A delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("deleteRetentionPolicy")]
+    public V1beta2AccountSpecForProviderBlobPropertiesDeleteRetentionPolicy? DeleteRetentionPolicy { get; set; }
+
+    /// <summary>Is the last access time based tracking enabled? Default to false.</summary>
+    [JsonPropertyName("lastAccessTimeEnabled")]
+    public bool? LastAccessTimeEnabled { get; set; }
+
+    /// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+    [JsonPropertyName("restorePolicy")]
+    public V1beta2AccountSpecForProviderBlobPropertiesRestorePolicy? RestorePolicy { get; set; }
+
+    /// <summary>Is versioning enabled? Default to false.</summary>
+    [JsonPropertyName("versioningEnabled")]
+    public bool? VersioningEnabled { get; set; }
+}
+
+/// <summary>A custom_domain block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderCustomDomain
+{
+    /// <summary>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Should the Custom Domain Name be validated by using indirect CNAME validation?</summary>
+    [JsonPropertyName("useSubdomain")]
+    public bool? UseSubdomain { get; set; }
+}
+
+/// <summary>A customer_managed_key block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderCustomerManagedKey
+{
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("managedHsmKeyId")]
+    public string? ManagedHsmKeyId { get; set; }
+
+    /// <summary>The ID of a user assigned identity.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderIdentity
+{
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Storage Account.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Storage Account. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderImmutabilityPolicy
+{
+    /// <summary>When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted.</summary>
+    [JsonPropertyName("allowProtectedAppendWrites")]
+    public bool? AllowProtectedAppendWrites { get; set; }
+
+    /// <summary>The immutability period for the blobs in the container since the policy creation, in days.</summary>
+    [JsonPropertyName("periodSinceCreationInDays")]
+    public double? PeriodSinceCreationInDays { get; set; }
+
+    /// <summary>Defines the mode of the policy. Disabled state disables the policy, Unlocked state allows increase and decrease of immutability retention time and also allows toggling allowProtectedAppendWrites property, Locked state only allows the increase of the immutability retention time. A policy can only be created in a Disabled or Unlocked state and can be toggled between the two states. Only a policy in an Unlocked state can transition to a Locked state which cannot be reverted.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRulesPrivateLinkAccess
+{
+    /// <summary>The ID of the Azure resource that should be allowed access to the target storage account.</summary>
+    [JsonPropertyName("endpointResourceId")]
+    public string? EndpointResourceId { get; set; }
+
+    /// <summary>The tenant id of the resource of the resource access rule to be granted access. Defaults to the current tenant id.</summary>
+    [JsonPropertyName("endpointTenantId")]
+    public string? EndpointTenantId { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum>))]
+public enum V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum>))]
+public enum V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A network_rules block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderNetworkRules
+{
+    /// <summary>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are any combination of Logging, Metrics, AzureServices, or None.</summary>
+    [JsonPropertyName("bypass")]
+    public IList<string>? Bypass { get; set; }
+
+    /// <summary>Specifies the default action of allow or deny when no other rules match. Valid options are Deny or Allow.</summary>
+    [JsonPropertyName("defaultAction")]
+    public string? DefaultAction { get; set; }
+
+    /// <summary>List of public IP or IP ranges in CIDR Format. Only IPv4 addresses are allowed. /31 CIDRs, /32 CIDRs, and Private IP address ranges (as defined in RFC 1918), are not allowed.</summary>
+    [JsonPropertyName("ipRules")]
+    public IList<string>? IpRules { get; set; }
+
+    /// <summary>One or more private_link_access block as defined below.</summary>
+    [JsonPropertyName("privateLinkAccess")]
+    public IList<V1beta2AccountSpecForProviderNetworkRulesPrivateLinkAccess>? PrivateLinkAccess { get; set; }
+
+    /// <summary>A list of resource ids for subnets.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIds")]
+    public IList<string>? VirtualNetworkSubnetIds { get; set; }
+
+    /// <summary>References to Subnet in network to populate virtualNetworkSubnetIds.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdsRefs")]
+    public IList<V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsRefs>? VirtualNetworkSubnetIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdsSelector")]
+    public V1beta2AccountSpecForProviderNetworkRulesVirtualNetworkSubnetIdsSelector? VirtualNetworkSubnetIdsSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderQueuePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A hour_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderQueuePropertiesHourMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A logging block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderQueuePropertiesLogging
+{
+    /// <summary>(Defaults to 1 hour) Used when deleting the Storage Account.</summary>
+    [JsonPropertyName("delete")]
+    public bool? Delete { get; set; }
+
+    /// <summary>(Defaults to 5 minutes) Used when retrieving the Storage Account.</summary>
+    [JsonPropertyName("read")]
+    public bool? Read { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+
+    /// <summary>Indicates whether all write requests should be logged.</summary>
+    [JsonPropertyName("write")]
+    public bool? Write { get; set; }
+}
+
+/// <summary>A minute_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderQueuePropertiesMinuteMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A queue_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderQueueProperties
+{
+    /// <summary>A cors_rule block as defined above.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecForProviderQueuePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A hour_metrics block as defined below.</summary>
+    [JsonPropertyName("hourMetrics")]
+    public V1beta2AccountSpecForProviderQueuePropertiesHourMetrics? HourMetrics { get; set; }
+
+    /// <summary>A logging block as defined below.</summary>
+    [JsonPropertyName("logging")]
+    public V1beta2AccountSpecForProviderQueuePropertiesLogging? Logging { get; set; }
+
+    /// <summary>A minute_metrics block as defined below.</summary>
+    [JsonPropertyName("minuteMetrics")]
+    public V1beta2AccountSpecForProviderQueuePropertiesMinuteMetrics? MinuteMetrics { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+public enum V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderResourceGroupNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecForProviderResourceGroupNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderResourceGroupNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecForProviderResourceGroupNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+public enum V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderResourceGroupNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A routing block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderRouting
+{
+    /// <summary>Specifies the kind of network routing opted by the user. Possible values are InternetRouting and MicrosoftRouting. Defaults to MicrosoftRouting.</summary>
+    [JsonPropertyName("choice")]
+    public string? Choice { get; set; }
+
+    /// <summary>Should internet routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishInternetEndpoints")]
+    public bool? PublishInternetEndpoints { get; set; }
+
+    /// <summary>Should Microsoft routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishMicrosoftEndpoints")]
+    public bool? PublishMicrosoftEndpoints { get; set; }
+}
+
+/// <summary>A sas_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderSasPolicy
+{
+    /// <summary>The SAS expiration action. Possible values are Log and Block. Defaults to Log.</summary>
+    [JsonPropertyName("expirationAction")]
+    public string? ExpirationAction { get; set; }
+
+    /// <summary>The SAS expiration period in format of DD.HH:MM:SS.</summary>
+    [JsonPropertyName("expirationPeriod")]
+    public string? ExpirationPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderSharePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderSharePropertiesRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A smb block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderSharePropertiesSmb
+{
+    /// <summary>A set of SMB authentication methods. Possible values are NTLMv2, and Kerberos.</summary>
+    [JsonPropertyName("authenticationTypes")]
+    public IList<string>? AuthenticationTypes { get; set; }
+
+    /// <summary>A set of SMB channel encryption. Possible values are AES-128-CCM, AES-128-GCM, and AES-256-GCM.</summary>
+    [JsonPropertyName("channelEncryptionType")]
+    public IList<string>? ChannelEncryptionType { get; set; }
+
+    /// <summary>A set of Kerberos ticket encryption. Possible values are RC4-HMAC, and AES-256.</summary>
+    [JsonPropertyName("kerberosTicketEncryptionType")]
+    public IList<string>? KerberosTicketEncryptionType { get; set; }
+
+    /// <summary>Indicates whether multichannel is enabled. Defaults to false. This is only supported on Premium storage accounts.</summary>
+    [JsonPropertyName("multichannelEnabled")]
+    public bool? MultichannelEnabled { get; set; }
+
+    /// <summary>A set of SMB protocol versions. Possible values are SMB2.1, SMB3.0, and SMB3.1.1.</summary>
+    [JsonPropertyName("versions")]
+    public IList<string>? Versions { get; set; }
+}
+
+/// <summary>A share_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderShareProperties
+{
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecForProviderSharePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A retention_policy block as defined below.</summary>
+    [JsonPropertyName("retentionPolicy")]
+    public V1beta2AccountSpecForProviderSharePropertiesRetentionPolicy? RetentionPolicy { get; set; }
+
+    /// <summary>A smb block as defined below.</summary>
+    [JsonPropertyName("smb")]
+    public V1beta2AccountSpecForProviderSharePropertiesSmb? Smb { get; set; }
+}
+
+/// <summary>A static_website block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProviderStaticWebsite
+{
+    /// <summary>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.</summary>
+    [JsonPropertyName("error404Document")]
+    public string? Error404Document { get; set; }
+
+    /// <summary>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.</summary>
+    [JsonPropertyName("indexDocument")]
+    public string? IndexDocument { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecForProvider
+{
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    [JsonPropertyName("accessTier")]
+    public string? AccessTier { get; set; }
+
+    /// <summary>Defines the Kind of account. Valid options are BlobStorage, BlockBlobStorage, FileStorage, Storage and StorageV2. Defaults to StorageV2.</summary>
+    [JsonPropertyName("accountKind")]
+    public string? AccountKind { get; set; }
+
+    /// <summary>Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS, ZRS, GZRS and RAGZRS. Changing this forces a new resource to be created when types LRS, GRS and RAGRS are changed to ZRS, GZRS or RAGZRS and vice versa.</summary>
+    [JsonPropertyName("accountReplicationType")]
+    public string? AccountReplicationType { get; set; }
+
+    /// <summary>Defines the Tier to use for this storage account. Valid options are Standard and Premium. For BlockBlobStorage and FileStorage accounts only Premium is valid. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("accountTier")]
+    public string? AccountTier { get; set; }
+
+    /// <summary>Allow or disallow nested items within this Account to opt into being public. Defaults to true.</summary>
+    [JsonPropertyName("allowNestedItemsToBePublic")]
+    public bool? AllowNestedItemsToBePublic { get; set; }
+
+    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    [JsonPropertyName("allowedCopyScope")]
+    public string? AllowedCopyScope { get; set; }
+
+    /// <summary>A azure_files_authentication block as defined below.</summary>
+    [JsonPropertyName("azureFilesAuthentication")]
+    public V1beta2AccountSpecForProviderAzureFilesAuthentication? AzureFilesAuthentication { get; set; }
+
+    /// <summary>A blob_properties block as defined below.</summary>
+    [JsonPropertyName("blobProperties")]
+    public V1beta2AccountSpecForProviderBlobProperties? BlobProperties { get; set; }
+
+    /// <summary>Should cross Tenant replication be enabled? Defaults to false.</summary>
+    [JsonPropertyName("crossTenantReplicationEnabled")]
+    public bool? CrossTenantReplicationEnabled { get; set; }
+
+    /// <summary>A custom_domain block as documented below.</summary>
+    [JsonPropertyName("customDomain")]
+    public V1beta2AccountSpecForProviderCustomDomain? CustomDomain { get; set; }
+
+    /// <summary>A customer_managed_key block as documented below.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta2AccountSpecForProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Default to Azure Active Directory authorization in the Azure portal when accessing the Storage Account. The default value is false</summary>
+    [JsonPropertyName("defaultToOauthAuthentication")]
+    public bool? DefaultToOauthAuthentication { get; set; }
+
+    /// <summary>Specifies which DNS endpoint type to use. Possible values are Standard and AzureDnsZone. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("dnsEndpointType")]
+    public string? DnsEndpointType { get; set; }
+
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Storage Account should exist. Changing this forces a new Storage Account to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
+
+    /// <summary>Boolean flag which forces HTTPS if enabled, see here for more information. Defaults to true.</summary>
+    [JsonPropertyName("httpsTrafficOnlyEnabled")]
+    public bool? HttpsTrafficOnlyEnabled { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2AccountSpecForProviderIdentity? Identity { get; set; }
+
+    /// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("immutabilityPolicy")]
+    public V1beta2AccountSpecForProviderImmutabilityPolicy? ImmutabilityPolicy { get; set; }
+
+    /// <summary>Is infrastructure encryption enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("infrastructureEncryptionEnabled")]
+    public bool? InfrastructureEncryptionEnabled { get; set; }
+
+    /// <summary>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 (see here for more information). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("isHnsEnabled")]
+    public bool? IsHnsEnabled { get; set; }
+
+    /// <summary>Are Large File Shares Enabled? Defaults to false.</summary>
+    [JsonPropertyName("largeFileShareEnabled")]
+    public bool? LargeFileShareEnabled { get; set; }
+
+    /// <summary>Is Local User Enabled? Defaults to true.</summary>
+    [JsonPropertyName("localUserEnabled")]
+    public bool? LocalUserEnabled { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>A network_rules block as documented below.</summary>
+    [JsonPropertyName("networkRules")]
+    public V1beta2AccountSpecForProviderNetworkRules? NetworkRules { get; set; }
+
+    /// <summary>Is NFSv3 protocol enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("nfsv3Enabled")]
+    public bool? Nfsv3Enabled { get; set; }
+
+    /// <summary>Specifies the version of the provisioned billing model (e.g. when account_kind = &quot;FileStorage&quot; for Storage File). Possible value is V2. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("provisionedBillingModelVersion")]
+    public string? ProvisionedBillingModelVersion { get; set; }
+
+    /// <summary>Whether the public network access is enabled? Defaults to true.</summary>
+    [JsonPropertyName("publicNetworkAccessEnabled")]
+    public bool? PublicNetworkAccessEnabled { get; set; }
+
+    /// <summary>The encryption type of the queue service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("queueEncryptionKeyType")]
+    public string? QueueEncryptionKeyType { get; set; }
+
+    /// <summary>A queue_properties block as defined below.</summary>
+    [JsonPropertyName("queueProperties")]
+    public V1beta2AccountSpecForProviderQueueProperties? QueueProperties { get; set; }
+
+    /// <summary>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public string? ResourceGroupName { get; set; }
+
+    /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameRef")]
+    public V1beta2AccountSpecForProviderResourceGroupNameRef? ResourceGroupNameRef { get; set; }
+
+    /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
+    [JsonPropertyName("resourceGroupNameSelector")]
+    public V1beta2AccountSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
+
+    /// <summary>A routing block as defined below.</summary>
+    [JsonPropertyName("routing")]
+    public V1beta2AccountSpecForProviderRouting? Routing { get; set; }
+
+    /// <summary>A sas_policy block as defined below.</summary>
+    [JsonPropertyName("sasPolicy")]
+    public V1beta2AccountSpecForProviderSasPolicy? SasPolicy { get; set; }
+
+    /// <summary>Boolean, enable SFTP for the storage account</summary>
+    [JsonPropertyName("sftpEnabled")]
+    public bool? SftpEnabled { get; set; }
+
+    /// <summary>A share_properties block as defined below.</summary>
+    [JsonPropertyName("shareProperties")]
+    public V1beta2AccountSpecForProviderShareProperties? ShareProperties { get; set; }
+
+    /// <summary>Indicates whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). Defaults to true.</summary>
+    [JsonPropertyName("sharedAccessKeyEnabled")]
+    public bool? SharedAccessKeyEnabled { get; set; }
+
+    /// <summary>A static_website block as defined below.</summary>
+    [JsonPropertyName("staticWebsite")]
+    public V1beta2AccountSpecForProviderStaticWebsite? StaticWebsite { get; set; }
+
+    /// <summary>The encryption type of the table service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("tableEncryptionKeyType")]
+    public string? TableEncryptionKeyType { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderAzureFilesAuthenticationActiveDirectory
+{
+    /// <summary>Specifies the domain GUID.</summary>
+    [JsonPropertyName("domainGuid")]
+    public string? DomainGuid { get; set; }
+
+    /// <summary>Specifies the primary domain that the AD DNS server is authoritative for.</summary>
+    [JsonPropertyName("domainName")]
+    public string? DomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID). This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("domainSid")]
+    public string? DomainSid { get; set; }
+
+    /// <summary>Specifies the Active Directory forest. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("forestName")]
+    public string? ForestName { get; set; }
+
+    /// <summary>Specifies the NetBIOS domain name. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("netbiosDomainName")]
+    public string? NetbiosDomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID) for Azure Storage. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("storageSid")]
+    public string? StorageSid { get; set; }
+}
+
+/// <summary>A azure_files_authentication block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderAzureFilesAuthentication
+{
+    /// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2AccountSpecInitProviderAzureFilesAuthenticationActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Specifies the default share level permissions applied to all users. Possible values are StorageFileDataSmbShareReader, StorageFileDataSmbShareContributor, StorageFileDataSmbShareElevatedContributor, or None. Defaults to None.</summary>
+    [JsonPropertyName("defaultShareLevelPermission")]
+    public string? DefaultShareLevelPermission { get; set; }
+
+    /// <summary>Specifies the directory service used. Possible values are AADDS, AD and AADKERB.</summary>
+    [JsonPropertyName("directoryType")]
+    public string? DirectoryType { get; set; }
+}
+
+/// <summary>A container_delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderBlobPropertiesContainerDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderBlobPropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderBlobPropertiesDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+
+    /// <summary>Indicates whether permanent deletion of the soft deleted blob versions and snapshots is allowed. Defaults to false.</summary>
+    [JsonPropertyName("permanentDeleteEnabled")]
+    public bool? PermanentDeleteEnabled { get; set; }
+}
+
+/// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderBlobPropertiesRestorePolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A blob_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderBlobProperties
+{
+    /// <summary>Is the blob service properties for change feed events enabled? Default to false.</summary>
+    [JsonPropertyName("changeFeedEnabled")]
+    public bool? ChangeFeedEnabled { get; set; }
+
+    /// <summary>The duration of change feed events retention in days. The possible values are between 1 and 146000 days (400 years). Setting this to null (or omit this in the configuration file) indicates an infinite retention of the change feed.</summary>
+    [JsonPropertyName("changeFeedRetentionInDays")]
+    public double? ChangeFeedRetentionInDays { get; set; }
+
+    /// <summary>A container_delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("containerDeleteRetentionPolicy")]
+    public V1beta2AccountSpecInitProviderBlobPropertiesContainerDeleteRetentionPolicy? ContainerDeleteRetentionPolicy { get; set; }
+
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecInitProviderBlobPropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>The API Version which should be used by default for requests to the Data Plane API if an incoming request doesn&apos;t specify an API Version.</summary>
+    [JsonPropertyName("defaultServiceVersion")]
+    public string? DefaultServiceVersion { get; set; }
+
+    /// <summary>A delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("deleteRetentionPolicy")]
+    public V1beta2AccountSpecInitProviderBlobPropertiesDeleteRetentionPolicy? DeleteRetentionPolicy { get; set; }
+
+    /// <summary>Is the last access time based tracking enabled? Default to false.</summary>
+    [JsonPropertyName("lastAccessTimeEnabled")]
+    public bool? LastAccessTimeEnabled { get; set; }
+
+    /// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+    [JsonPropertyName("restorePolicy")]
+    public V1beta2AccountSpecInitProviderBlobPropertiesRestorePolicy? RestorePolicy { get; set; }
+
+    /// <summary>Is versioning enabled? Default to false.</summary>
+    [JsonPropertyName("versioningEnabled")]
+    public bool? VersioningEnabled { get; set; }
+}
+
+/// <summary>A custom_domain block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderCustomDomain
+{
+    /// <summary>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Should the Custom Domain Name be validated by using indirect CNAME validation?</summary>
+    [JsonPropertyName("useSubdomain")]
+    public bool? UseSubdomain { get; set; }
+}
+
+/// <summary>A customer_managed_key block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderCustomerManagedKey
+{
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("managedHsmKeyId")]
+    public string? ManagedHsmKeyId { get; set; }
+
+    /// <summary>The ID of a user assigned identity.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderIdentity
+{
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Storage Account.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Storage Account. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderImmutabilityPolicy
+{
+    /// <summary>When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted.</summary>
+    [JsonPropertyName("allowProtectedAppendWrites")]
+    public bool? AllowProtectedAppendWrites { get; set; }
+
+    /// <summary>The immutability period for the blobs in the container since the policy creation, in days.</summary>
+    [JsonPropertyName("periodSinceCreationInDays")]
+    public double? PeriodSinceCreationInDays { get; set; }
+
+    /// <summary>Defines the mode of the policy. Disabled state disables the policy, Unlocked state allows increase and decrease of immutability retention time and also allows toggling allowProtectedAppendWrites property, Locked state only allows the increase of the immutability retention time. A policy can only be created in a Disabled or Unlocked state and can be toggled between the two states. Only a policy in an Unlocked state can transition to a Locked state which cannot be reverted.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRulesPrivateLinkAccess
+{
+    /// <summary>The ID of the Azure resource that should be allowed access to the target storage account.</summary>
+    [JsonPropertyName("endpointResourceId")]
+    public string? EndpointResourceId { get; set; }
+
+    /// <summary>The tenant id of the resource of the resource access rule to be granted access. Defaults to the current tenant id.</summary>
+    [JsonPropertyName("endpointTenantId")]
+    public string? EndpointTenantId { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum>))]
+public enum V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum>))]
+public enum V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A network_rules block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderNetworkRules
+{
+    /// <summary>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are any combination of Logging, Metrics, AzureServices, or None.</summary>
+    [JsonPropertyName("bypass")]
+    public IList<string>? Bypass { get; set; }
+
+    /// <summary>Specifies the default action of allow or deny when no other rules match. Valid options are Deny or Allow.</summary>
+    [JsonPropertyName("defaultAction")]
+    public string? DefaultAction { get; set; }
+
+    /// <summary>List of public IP or IP ranges in CIDR Format. Only IPv4 addresses are allowed. /31 CIDRs, /32 CIDRs, and Private IP address ranges (as defined in RFC 1918), are not allowed.</summary>
+    [JsonPropertyName("ipRules")]
+    public IList<string>? IpRules { get; set; }
+
+    /// <summary>One or more private_link_access block as defined below.</summary>
+    [JsonPropertyName("privateLinkAccess")]
+    public IList<V1beta2AccountSpecInitProviderNetworkRulesPrivateLinkAccess>? PrivateLinkAccess { get; set; }
+
+    /// <summary>A list of resource ids for subnets.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIds")]
+    public IList<string>? VirtualNetworkSubnetIds { get; set; }
+
+    /// <summary>References to Subnet in network to populate virtualNetworkSubnetIds.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdsRefs")]
+    public IList<V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsRefs>? VirtualNetworkSubnetIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIdsSelector")]
+    public V1beta2AccountSpecInitProviderNetworkRulesVirtualNetworkSubnetIdsSelector? VirtualNetworkSubnetIdsSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderQueuePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A hour_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderQueuePropertiesHourMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A logging block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderQueuePropertiesLogging
+{
+    /// <summary>(Defaults to 1 hour) Used when deleting the Storage Account.</summary>
+    [JsonPropertyName("delete")]
+    public bool? Delete { get; set; }
+
+    /// <summary>(Defaults to 5 minutes) Used when retrieving the Storage Account.</summary>
+    [JsonPropertyName("read")]
+    public bool? Read { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+
+    /// <summary>Indicates whether all write requests should be logged.</summary>
+    [JsonPropertyName("write")]
+    public bool? Write { get; set; }
+}
+
+/// <summary>A minute_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderQueuePropertiesMinuteMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A queue_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderQueueProperties
+{
+    /// <summary>A cors_rule block as defined above.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecInitProviderQueuePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A hour_metrics block as defined below.</summary>
+    [JsonPropertyName("hourMetrics")]
+    public V1beta2AccountSpecInitProviderQueuePropertiesHourMetrics? HourMetrics { get; set; }
+
+    /// <summary>A logging block as defined below.</summary>
+    [JsonPropertyName("logging")]
+    public V1beta2AccountSpecInitProviderQueuePropertiesLogging? Logging { get; set; }
+
+    /// <summary>A minute_metrics block as defined below.</summary>
+    [JsonPropertyName("minuteMetrics")]
+    public V1beta2AccountSpecInitProviderQueuePropertiesMinuteMetrics? MinuteMetrics { get; set; }
+}
+
+/// <summary>A routing block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderRouting
+{
+    /// <summary>Specifies the kind of network routing opted by the user. Possible values are InternetRouting and MicrosoftRouting. Defaults to MicrosoftRouting.</summary>
+    [JsonPropertyName("choice")]
+    public string? Choice { get; set; }
+
+    /// <summary>Should internet routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishInternetEndpoints")]
+    public bool? PublishInternetEndpoints { get; set; }
+
+    /// <summary>Should Microsoft routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishMicrosoftEndpoints")]
+    public bool? PublishMicrosoftEndpoints { get; set; }
+}
+
+/// <summary>A sas_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderSasPolicy
+{
+    /// <summary>The SAS expiration action. Possible values are Log and Block. Defaults to Log.</summary>
+    [JsonPropertyName("expirationAction")]
+    public string? ExpirationAction { get; set; }
+
+    /// <summary>The SAS expiration period in format of DD.HH:MM:SS.</summary>
+    [JsonPropertyName("expirationPeriod")]
+    public string? ExpirationPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderSharePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderSharePropertiesRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A smb block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderSharePropertiesSmb
+{
+    /// <summary>A set of SMB authentication methods. Possible values are NTLMv2, and Kerberos.</summary>
+    [JsonPropertyName("authenticationTypes")]
+    public IList<string>? AuthenticationTypes { get; set; }
+
+    /// <summary>A set of SMB channel encryption. Possible values are AES-128-CCM, AES-128-GCM, and AES-256-GCM.</summary>
+    [JsonPropertyName("channelEncryptionType")]
+    public IList<string>? ChannelEncryptionType { get; set; }
+
+    /// <summary>A set of Kerberos ticket encryption. Possible values are RC4-HMAC, and AES-256.</summary>
+    [JsonPropertyName("kerberosTicketEncryptionType")]
+    public IList<string>? KerberosTicketEncryptionType { get; set; }
+
+    /// <summary>Indicates whether multichannel is enabled. Defaults to false. This is only supported on Premium storage accounts.</summary>
+    [JsonPropertyName("multichannelEnabled")]
+    public bool? MultichannelEnabled { get; set; }
+
+    /// <summary>A set of SMB protocol versions. Possible values are SMB2.1, SMB3.0, and SMB3.1.1.</summary>
+    [JsonPropertyName("versions")]
+    public IList<string>? Versions { get; set; }
+}
+
+/// <summary>A share_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderShareProperties
+{
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountSpecInitProviderSharePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A retention_policy block as defined below.</summary>
+    [JsonPropertyName("retentionPolicy")]
+    public V1beta2AccountSpecInitProviderSharePropertiesRetentionPolicy? RetentionPolicy { get; set; }
+
+    /// <summary>A smb block as defined below.</summary>
+    [JsonPropertyName("smb")]
+    public V1beta2AccountSpecInitProviderSharePropertiesSmb? Smb { get; set; }
+}
+
+/// <summary>A static_website block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProviderStaticWebsite
+{
+    /// <summary>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.</summary>
+    [JsonPropertyName("error404Document")]
+    public string? Error404Document { get; set; }
+
+    /// <summary>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.</summary>
+    [JsonPropertyName("indexDocument")]
+    public string? IndexDocument { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecInitProvider
+{
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    [JsonPropertyName("accessTier")]
+    public string? AccessTier { get; set; }
+
+    /// <summary>Defines the Kind of account. Valid options are BlobStorage, BlockBlobStorage, FileStorage, Storage and StorageV2. Defaults to StorageV2.</summary>
+    [JsonPropertyName("accountKind")]
+    public string? AccountKind { get; set; }
+
+    /// <summary>Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS, ZRS, GZRS and RAGZRS. Changing this forces a new resource to be created when types LRS, GRS and RAGRS are changed to ZRS, GZRS or RAGZRS and vice versa.</summary>
+    [JsonPropertyName("accountReplicationType")]
+    public string? AccountReplicationType { get; set; }
+
+    /// <summary>Defines the Tier to use for this storage account. Valid options are Standard and Premium. For BlockBlobStorage and FileStorage accounts only Premium is valid. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("accountTier")]
+    public string? AccountTier { get; set; }
+
+    /// <summary>Allow or disallow nested items within this Account to opt into being public. Defaults to true.</summary>
+    [JsonPropertyName("allowNestedItemsToBePublic")]
+    public bool? AllowNestedItemsToBePublic { get; set; }
+
+    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    [JsonPropertyName("allowedCopyScope")]
+    public string? AllowedCopyScope { get; set; }
+
+    /// <summary>A azure_files_authentication block as defined below.</summary>
+    [JsonPropertyName("azureFilesAuthentication")]
+    public V1beta2AccountSpecInitProviderAzureFilesAuthentication? AzureFilesAuthentication { get; set; }
+
+    /// <summary>A blob_properties block as defined below.</summary>
+    [JsonPropertyName("blobProperties")]
+    public V1beta2AccountSpecInitProviderBlobProperties? BlobProperties { get; set; }
+
+    /// <summary>Should cross Tenant replication be enabled? Defaults to false.</summary>
+    [JsonPropertyName("crossTenantReplicationEnabled")]
+    public bool? CrossTenantReplicationEnabled { get; set; }
+
+    /// <summary>A custom_domain block as documented below.</summary>
+    [JsonPropertyName("customDomain")]
+    public V1beta2AccountSpecInitProviderCustomDomain? CustomDomain { get; set; }
+
+    /// <summary>A customer_managed_key block as documented below.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta2AccountSpecInitProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Default to Azure Active Directory authorization in the Azure portal when accessing the Storage Account. The default value is false</summary>
+    [JsonPropertyName("defaultToOauthAuthentication")]
+    public bool? DefaultToOauthAuthentication { get; set; }
+
+    /// <summary>Specifies which DNS endpoint type to use. Possible values are Standard and AzureDnsZone. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("dnsEndpointType")]
+    public string? DnsEndpointType { get; set; }
+
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Storage Account should exist. Changing this forces a new Storage Account to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
+
+    /// <summary>Boolean flag which forces HTTPS if enabled, see here for more information. Defaults to true.</summary>
+    [JsonPropertyName("httpsTrafficOnlyEnabled")]
+    public bool? HttpsTrafficOnlyEnabled { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2AccountSpecInitProviderIdentity? Identity { get; set; }
+
+    /// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("immutabilityPolicy")]
+    public V1beta2AccountSpecInitProviderImmutabilityPolicy? ImmutabilityPolicy { get; set; }
+
+    /// <summary>Is infrastructure encryption enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("infrastructureEncryptionEnabled")]
+    public bool? InfrastructureEncryptionEnabled { get; set; }
+
+    /// <summary>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 (see here for more information). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("isHnsEnabled")]
+    public bool? IsHnsEnabled { get; set; }
+
+    /// <summary>Are Large File Shares Enabled? Defaults to false.</summary>
+    [JsonPropertyName("largeFileShareEnabled")]
+    public bool? LargeFileShareEnabled { get; set; }
+
+    /// <summary>Is Local User Enabled? Defaults to true.</summary>
+    [JsonPropertyName("localUserEnabled")]
+    public bool? LocalUserEnabled { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>A network_rules block as documented below.</summary>
+    [JsonPropertyName("networkRules")]
+    public V1beta2AccountSpecInitProviderNetworkRules? NetworkRules { get; set; }
+
+    /// <summary>Is NFSv3 protocol enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("nfsv3Enabled")]
+    public bool? Nfsv3Enabled { get; set; }
+
+    /// <summary>Specifies the version of the provisioned billing model (e.g. when account_kind = &quot;FileStorage&quot; for Storage File). Possible value is V2. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("provisionedBillingModelVersion")]
+    public string? ProvisionedBillingModelVersion { get; set; }
+
+    /// <summary>Whether the public network access is enabled? Defaults to true.</summary>
+    [JsonPropertyName("publicNetworkAccessEnabled")]
+    public bool? PublicNetworkAccessEnabled { get; set; }
+
+    /// <summary>The encryption type of the queue service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("queueEncryptionKeyType")]
+    public string? QueueEncryptionKeyType { get; set; }
+
+    /// <summary>A queue_properties block as defined below.</summary>
+    [JsonPropertyName("queueProperties")]
+    public V1beta2AccountSpecInitProviderQueueProperties? QueueProperties { get; set; }
+
+    /// <summary>A routing block as defined below.</summary>
+    [JsonPropertyName("routing")]
+    public V1beta2AccountSpecInitProviderRouting? Routing { get; set; }
+
+    /// <summary>A sas_policy block as defined below.</summary>
+    [JsonPropertyName("sasPolicy")]
+    public V1beta2AccountSpecInitProviderSasPolicy? SasPolicy { get; set; }
+
+    /// <summary>Boolean, enable SFTP for the storage account</summary>
+    [JsonPropertyName("sftpEnabled")]
+    public bool? SftpEnabled { get; set; }
+
+    /// <summary>A share_properties block as defined below.</summary>
+    [JsonPropertyName("shareProperties")]
+    public V1beta2AccountSpecInitProviderShareProperties? ShareProperties { get; set; }
+
+    /// <summary>Indicates whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). Defaults to true.</summary>
+    [JsonPropertyName("sharedAccessKeyEnabled")]
+    public bool? SharedAccessKeyEnabled { get; set; }
+
+    /// <summary>A static_website block as defined below.</summary>
+    [JsonPropertyName("staticWebsite")]
+    public V1beta2AccountSpecInitProviderStaticWebsite? StaticWebsite { get; set; }
+
+    /// <summary>The encryption type of the table service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("tableEncryptionKeyType")]
+    public string? TableEncryptionKeyType { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecManagementPoliciesEnum>))]
+public enum V1beta2AccountSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2AccountSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AccountSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2AccountSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AccountSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AccountSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AccountSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>AccountSpec defines the desired state of Account</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2AccountSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2AccountSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2AccountSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2AccountSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2AccountSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2AccountSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderAzureFilesAuthenticationActiveDirectory
+{
+    /// <summary>Specifies the domain GUID.</summary>
+    [JsonPropertyName("domainGuid")]
+    public string? DomainGuid { get; set; }
+
+    /// <summary>Specifies the primary domain that the AD DNS server is authoritative for.</summary>
+    [JsonPropertyName("domainName")]
+    public string? DomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID). This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("domainSid")]
+    public string? DomainSid { get; set; }
+
+    /// <summary>Specifies the Active Directory forest. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("forestName")]
+    public string? ForestName { get; set; }
+
+    /// <summary>Specifies the NetBIOS domain name. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("netbiosDomainName")]
+    public string? NetbiosDomainName { get; set; }
+
+    /// <summary>Specifies the security identifier (SID) for Azure Storage. This is required when directory_type is set to AD.</summary>
+    [JsonPropertyName("storageSid")]
+    public string? StorageSid { get; set; }
+}
+
+/// <summary>A azure_files_authentication block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderAzureFilesAuthentication
+{
+    /// <summary>A active_directory block as defined below. Required when directory_type is AD.</summary>
+    [JsonPropertyName("activeDirectory")]
+    public V1beta2AccountStatusAtProviderAzureFilesAuthenticationActiveDirectory? ActiveDirectory { get; set; }
+
+    /// <summary>Specifies the default share level permissions applied to all users. Possible values are StorageFileDataSmbShareReader, StorageFileDataSmbShareContributor, StorageFileDataSmbShareElevatedContributor, or None. Defaults to None.</summary>
+    [JsonPropertyName("defaultShareLevelPermission")]
+    public string? DefaultShareLevelPermission { get; set; }
+
+    /// <summary>Specifies the directory service used. Possible values are AADDS, AD and AADKERB.</summary>
+    [JsonPropertyName("directoryType")]
+    public string? DirectoryType { get; set; }
+}
+
+/// <summary>A container_delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderBlobPropertiesContainerDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderBlobPropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A delete_retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderBlobPropertiesDeleteRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+
+    /// <summary>Indicates whether permanent deletion of the soft deleted blob versions and snapshots is allowed. Defaults to false.</summary>
+    [JsonPropertyName("permanentDeleteEnabled")]
+    public bool? PermanentDeleteEnabled { get; set; }
+}
+
+/// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderBlobPropertiesRestorePolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A blob_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderBlobProperties
+{
+    /// <summary>Is the blob service properties for change feed events enabled? Default to false.</summary>
+    [JsonPropertyName("changeFeedEnabled")]
+    public bool? ChangeFeedEnabled { get; set; }
+
+    /// <summary>The duration of change feed events retention in days. The possible values are between 1 and 146000 days (400 years). Setting this to null (or omit this in the configuration file) indicates an infinite retention of the change feed.</summary>
+    [JsonPropertyName("changeFeedRetentionInDays")]
+    public double? ChangeFeedRetentionInDays { get; set; }
+
+    /// <summary>A container_delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("containerDeleteRetentionPolicy")]
+    public V1beta2AccountStatusAtProviderBlobPropertiesContainerDeleteRetentionPolicy? ContainerDeleteRetentionPolicy { get; set; }
+
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountStatusAtProviderBlobPropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>The API Version which should be used by default for requests to the Data Plane API if an incoming request doesn&apos;t specify an API Version.</summary>
+    [JsonPropertyName("defaultServiceVersion")]
+    public string? DefaultServiceVersion { get; set; }
+
+    /// <summary>A delete_retention_policy block as defined below.</summary>
+    [JsonPropertyName("deleteRetentionPolicy")]
+    public V1beta2AccountStatusAtProviderBlobPropertiesDeleteRetentionPolicy? DeleteRetentionPolicy { get; set; }
+
+    /// <summary>Is the last access time based tracking enabled? Default to false.</summary>
+    [JsonPropertyName("lastAccessTimeEnabled")]
+    public bool? LastAccessTimeEnabled { get; set; }
+
+    /// <summary>A restore_policy block as defined below. This must be used together with delete_retention_policy set, versioning_enabled and change_feed_enabled set to true.</summary>
+    [JsonPropertyName("restorePolicy")]
+    public V1beta2AccountStatusAtProviderBlobPropertiesRestorePolicy? RestorePolicy { get; set; }
+
+    /// <summary>Is versioning enabled? Default to false.</summary>
+    [JsonPropertyName("versioningEnabled")]
+    public bool? VersioningEnabled { get; set; }
+}
+
+/// <summary>A custom_domain block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderCustomDomain
+{
+    /// <summary>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Should the Custom Domain Name be validated by using indirect CNAME validation?</summary>
+    [JsonPropertyName("useSubdomain")]
+    public bool? UseSubdomain { get; set; }
+}
+
+/// <summary>A customer_managed_key block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderCustomerManagedKey
+{
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    [JsonPropertyName("managedHsmKeyId")]
+    public string? ManagedHsmKeyId { get; set; }
+
+    /// <summary>The ID of a user assigned identity.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderIdentity
+{
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Storage Account.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>The Principal ID for the Service Principal associated with the Identity of this Storage Account.</summary>
+    [JsonPropertyName("principalId")]
+    public string? PrincipalId { get; set; }
+
+    /// <summary>The Tenant ID for the Service Principal associated with the Identity of this Storage Account.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Storage Account. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderImmutabilityPolicy
+{
+    /// <summary>When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted.</summary>
+    [JsonPropertyName("allowProtectedAppendWrites")]
+    public bool? AllowProtectedAppendWrites { get; set; }
+
+    /// <summary>The immutability period for the blobs in the container since the policy creation, in days.</summary>
+    [JsonPropertyName("periodSinceCreationInDays")]
+    public double? PeriodSinceCreationInDays { get; set; }
+
+    /// <summary>Defines the mode of the policy. Disabled state disables the policy, Unlocked state allows increase and decrease of immutability retention time and also allows toggling allowProtectedAppendWrites property, Locked state only allows the increase of the immutability retention time. A policy can only be created in a Disabled or Unlocked state and can be toggled between the two states. Only a policy in an Unlocked state can transition to a Locked state which cannot be reverted.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderNetworkRulesPrivateLinkAccess
+{
+    /// <summary>The ID of the Azure resource that should be allowed access to the target storage account.</summary>
+    [JsonPropertyName("endpointResourceId")]
+    public string? EndpointResourceId { get; set; }
+
+    /// <summary>The tenant id of the resource of the resource access rule to be granted access. Defaults to the current tenant id.</summary>
+    [JsonPropertyName("endpointTenantId")]
+    public string? EndpointTenantId { get; set; }
+}
+
+/// <summary>A network_rules block as documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderNetworkRules
+{
+    /// <summary>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are any combination of Logging, Metrics, AzureServices, or None.</summary>
+    [JsonPropertyName("bypass")]
+    public IList<string>? Bypass { get; set; }
+
+    /// <summary>Specifies the default action of allow or deny when no other rules match. Valid options are Deny or Allow.</summary>
+    [JsonPropertyName("defaultAction")]
+    public string? DefaultAction { get; set; }
+
+    /// <summary>List of public IP or IP ranges in CIDR Format. Only IPv4 addresses are allowed. /31 CIDRs, /32 CIDRs, and Private IP address ranges (as defined in RFC 1918), are not allowed.</summary>
+    [JsonPropertyName("ipRules")]
+    public IList<string>? IpRules { get; set; }
+
+    /// <summary>One or more private_link_access block as defined below.</summary>
+    [JsonPropertyName("privateLinkAccess")]
+    public IList<V1beta2AccountStatusAtProviderNetworkRulesPrivateLinkAccess>? PrivateLinkAccess { get; set; }
+
+    /// <summary>A list of resource ids for subnets.</summary>
+    [JsonPropertyName("virtualNetworkSubnetIds")]
+    public IList<string>? VirtualNetworkSubnetIds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderQueuePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A hour_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderQueuePropertiesHourMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A logging block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderQueuePropertiesLogging
+{
+    /// <summary>(Defaults to 1 hour) Used when deleting the Storage Account.</summary>
+    [JsonPropertyName("delete")]
+    public bool? Delete { get; set; }
+
+    /// <summary>(Defaults to 5 minutes) Used when retrieving the Storage Account.</summary>
+    [JsonPropertyName("read")]
+    public bool? Read { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+
+    /// <summary>Indicates whether all write requests should be logged.</summary>
+    [JsonPropertyName("write")]
+    public bool? Write { get; set; }
+}
+
+/// <summary>A minute_metrics block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderQueuePropertiesMinuteMetrics
+{
+    /// <summary>Indicates whether minute metrics are enabled for the Queue service.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Indicates whether metrics should generate summary statistics for called API operations.</summary>
+    [JsonPropertyName("includeApis")]
+    public bool? IncludeApis { get; set; }
+
+    /// <summary>Specifies the number of days that logs will be retained.</summary>
+    [JsonPropertyName("retentionPolicyDays")]
+    public double? RetentionPolicyDays { get; set; }
+
+    /// <summary>The version of storage analytics to configure.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>A queue_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderQueueProperties
+{
+    /// <summary>A cors_rule block as defined above.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountStatusAtProviderQueuePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A hour_metrics block as defined below.</summary>
+    [JsonPropertyName("hourMetrics")]
+    public V1beta2AccountStatusAtProviderQueuePropertiesHourMetrics? HourMetrics { get; set; }
+
+    /// <summary>A logging block as defined below.</summary>
+    [JsonPropertyName("logging")]
+    public V1beta2AccountStatusAtProviderQueuePropertiesLogging? Logging { get; set; }
+
+    /// <summary>A minute_metrics block as defined below.</summary>
+    [JsonPropertyName("minuteMetrics")]
+    public V1beta2AccountStatusAtProviderQueuePropertiesMinuteMetrics? MinuteMetrics { get; set; }
+}
+
+/// <summary>A routing block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderRouting
+{
+    /// <summary>Specifies the kind of network routing opted by the user. Possible values are InternetRouting and MicrosoftRouting. Defaults to MicrosoftRouting.</summary>
+    [JsonPropertyName("choice")]
+    public string? Choice { get; set; }
+
+    /// <summary>Should internet routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishInternetEndpoints")]
+    public bool? PublishInternetEndpoints { get; set; }
+
+    /// <summary>Should Microsoft routing storage endpoints be published? Defaults to false.</summary>
+    [JsonPropertyName("publishMicrosoftEndpoints")]
+    public bool? PublishMicrosoftEndpoints { get; set; }
+}
+
+/// <summary>A sas_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderSasPolicy
+{
+    /// <summary>The SAS expiration action. Possible values are Log and Block. Defaults to Log.</summary>
+    [JsonPropertyName("expirationAction")]
+    public string? ExpirationAction { get; set; }
+
+    /// <summary>The SAS expiration period in format of DD.HH:MM:SS.</summary>
+    [JsonPropertyName("expirationPeriod")]
+    public string? ExpirationPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderSharePropertiesCorsRule
+{
+    /// <summary>A list of headers that are allowed to be a part of the cross-origin request.</summary>
+    [JsonPropertyName("allowedHeaders")]
+    public IList<string>? AllowedHeaders { get; set; }
+
+    /// <summary>
+    /// A list of HTTP methods that are allowed to be executed by the origin. Valid options are
+    /// DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT or PATCH.
+    /// </summary>
+    [JsonPropertyName("allowedMethods")]
+    public IList<string>? AllowedMethods { get; set; }
+
+    /// <summary>A list of origin domains that will be allowed by CORS.</summary>
+    [JsonPropertyName("allowedOrigins")]
+    public IList<string>? AllowedOrigins { get; set; }
+
+    /// <summary>A list of response headers that are exposed to CORS clients.</summary>
+    [JsonPropertyName("exposedHeaders")]
+    public IList<string>? ExposedHeaders { get; set; }
+
+    /// <summary>The number of seconds the client should cache a preflight response.</summary>
+    [JsonPropertyName("maxAgeInSeconds")]
+    public double? MaxAgeInSeconds { get; set; }
+}
+
+/// <summary>A retention_policy block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderSharePropertiesRetentionPolicy
+{
+    /// <summary>Specifies the number of days that the azurerm_storage_share should be retained, between 1 and 365 days. Defaults to 7.</summary>
+    [JsonPropertyName("days")]
+    public double? Days { get; set; }
+}
+
+/// <summary>A smb block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderSharePropertiesSmb
+{
+    /// <summary>A set of SMB authentication methods. Possible values are NTLMv2, and Kerberos.</summary>
+    [JsonPropertyName("authenticationTypes")]
+    public IList<string>? AuthenticationTypes { get; set; }
+
+    /// <summary>A set of SMB channel encryption. Possible values are AES-128-CCM, AES-128-GCM, and AES-256-GCM.</summary>
+    [JsonPropertyName("channelEncryptionType")]
+    public IList<string>? ChannelEncryptionType { get; set; }
+
+    /// <summary>A set of Kerberos ticket encryption. Possible values are RC4-HMAC, and AES-256.</summary>
+    [JsonPropertyName("kerberosTicketEncryptionType")]
+    public IList<string>? KerberosTicketEncryptionType { get; set; }
+
+    /// <summary>Indicates whether multichannel is enabled. Defaults to false. This is only supported on Premium storage accounts.</summary>
+    [JsonPropertyName("multichannelEnabled")]
+    public bool? MultichannelEnabled { get; set; }
+
+    /// <summary>A set of SMB protocol versions. Possible values are SMB2.1, SMB3.0, and SMB3.1.1.</summary>
+    [JsonPropertyName("versions")]
+    public IList<string>? Versions { get; set; }
+}
+
+/// <summary>A share_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderShareProperties
+{
+    /// <summary>A cors_rule block as defined below.</summary>
+    [JsonPropertyName("corsRule")]
+    public IList<V1beta2AccountStatusAtProviderSharePropertiesCorsRule>? CorsRule { get; set; }
+
+    /// <summary>A retention_policy block as defined below.</summary>
+    [JsonPropertyName("retentionPolicy")]
+    public V1beta2AccountStatusAtProviderSharePropertiesRetentionPolicy? RetentionPolicy { get; set; }
+
+    /// <summary>A smb block as defined below.</summary>
+    [JsonPropertyName("smb")]
+    public V1beta2AccountStatusAtProviderSharePropertiesSmb? Smb { get; set; }
+}
+
+/// <summary>A static_website block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProviderStaticWebsite
+{
+    /// <summary>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.</summary>
+    [JsonPropertyName("error404Document")]
+    public string? Error404Document { get; set; }
+
+    /// <summary>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.</summary>
+    [JsonPropertyName("indexDocument")]
+    public string? IndexDocument { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusAtProvider
+{
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    [JsonPropertyName("accessTier")]
+    public string? AccessTier { get; set; }
+
+    /// <summary>Defines the Kind of account. Valid options are BlobStorage, BlockBlobStorage, FileStorage, Storage and StorageV2. Defaults to StorageV2.</summary>
+    [JsonPropertyName("accountKind")]
+    public string? AccountKind { get; set; }
+
+    /// <summary>Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS, ZRS, GZRS and RAGZRS. Changing this forces a new resource to be created when types LRS, GRS and RAGRS are changed to ZRS, GZRS or RAGZRS and vice versa.</summary>
+    [JsonPropertyName("accountReplicationType")]
+    public string? AccountReplicationType { get; set; }
+
+    /// <summary>Defines the Tier to use for this storage account. Valid options are Standard and Premium. For BlockBlobStorage and FileStorage accounts only Premium is valid. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("accountTier")]
+    public string? AccountTier { get; set; }
+
+    /// <summary>Allow or disallow nested items within this Account to opt into being public. Defaults to true.</summary>
+    [JsonPropertyName("allowNestedItemsToBePublic")]
+    public bool? AllowNestedItemsToBePublic { get; set; }
+
+    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    [JsonPropertyName("allowedCopyScope")]
+    public string? AllowedCopyScope { get; set; }
+
+    /// <summary>A azure_files_authentication block as defined below.</summary>
+    [JsonPropertyName("azureFilesAuthentication")]
+    public V1beta2AccountStatusAtProviderAzureFilesAuthentication? AzureFilesAuthentication { get; set; }
+
+    /// <summary>A blob_properties block as defined below.</summary>
+    [JsonPropertyName("blobProperties")]
+    public V1beta2AccountStatusAtProviderBlobProperties? BlobProperties { get; set; }
+
+    /// <summary>Should cross Tenant replication be enabled? Defaults to false.</summary>
+    [JsonPropertyName("crossTenantReplicationEnabled")]
+    public bool? CrossTenantReplicationEnabled { get; set; }
+
+    /// <summary>A custom_domain block as documented below.</summary>
+    [JsonPropertyName("customDomain")]
+    public V1beta2AccountStatusAtProviderCustomDomain? CustomDomain { get; set; }
+
+    /// <summary>A customer_managed_key block as documented below.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta2AccountStatusAtProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Default to Azure Active Directory authorization in the Azure portal when accessing the Storage Account. The default value is false</summary>
+    [JsonPropertyName("defaultToOauthAuthentication")]
+    public bool? DefaultToOauthAuthentication { get; set; }
+
+    /// <summary>Specifies which DNS endpoint type to use. Possible values are Standard and AzureDnsZone. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("dnsEndpointType")]
+    public string? DnsEndpointType { get; set; }
+
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Storage Account should exist. Changing this forces a new Storage Account to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
+
+    /// <summary>Boolean flag which forces HTTPS if enabled, see here for more information. Defaults to true.</summary>
+    [JsonPropertyName("httpsTrafficOnlyEnabled")]
+    public bool? HttpsTrafficOnlyEnabled { get; set; }
+
+    /// <summary>The ID of the Storage Account.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>An identity block as defined below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta2AccountStatusAtProviderIdentity? Identity { get; set; }
+
+    /// <summary>An immutability_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("immutabilityPolicy")]
+    public V1beta2AccountStatusAtProviderImmutabilityPolicy? ImmutabilityPolicy { get; set; }
+
+    /// <summary>Is infrastructure encryption enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("infrastructureEncryptionEnabled")]
+    public bool? InfrastructureEncryptionEnabled { get; set; }
+
+    /// <summary>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 (see here for more information). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("isHnsEnabled")]
+    public bool? IsHnsEnabled { get; set; }
+
+    /// <summary>Are Large File Shares Enabled? Defaults to false.</summary>
+    [JsonPropertyName("largeFileShareEnabled")]
+    public bool? LargeFileShareEnabled { get; set; }
+
+    /// <summary>Is Local User Enabled? Defaults to true.</summary>
+    [JsonPropertyName("localUserEnabled")]
+    public bool? LocalUserEnabled { get; set; }
+
+    /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    [JsonPropertyName("minTlsVersion")]
+    public string? MinTlsVersion { get; set; }
+
+    /// <summary>A network_rules block as documented below.</summary>
+    [JsonPropertyName("networkRules")]
+    public V1beta2AccountStatusAtProviderNetworkRules? NetworkRules { get; set; }
+
+    /// <summary>Is NFSv3 protocol enabled? Changing this forces a new resource to be created. Defaults to false.</summary>
+    [JsonPropertyName("nfsv3Enabled")]
+    public bool? Nfsv3Enabled { get; set; }
+
+    /// <summary>The endpoint URL for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobEndpoint")]
+    public string? PrimaryBlobEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobHost")]
+    public string? PrimaryBlobHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobInternetEndpoint")]
+    public string? PrimaryBlobInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobInternetHost")]
+    public string? PrimaryBlobInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobMicrosoftEndpoint")]
+    public string? PrimaryBlobMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for blob storage in the primary location.</summary>
+    [JsonPropertyName("primaryBlobMicrosoftHost")]
+    public string? PrimaryBlobMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsEndpoint")]
+    public string? PrimaryDfsEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsHost")]
+    public string? PrimaryDfsHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsInternetEndpoint")]
+    public string? PrimaryDfsInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsInternetHost")]
+    public string? PrimaryDfsInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsMicrosoftEndpoint")]
+    public string? PrimaryDfsMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for DFS storage in the primary location.</summary>
+    [JsonPropertyName("primaryDfsMicrosoftHost")]
+    public string? PrimaryDfsMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileEndpoint")]
+    public string? PrimaryFileEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileHost")]
+    public string? PrimaryFileHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileInternetEndpoint")]
+    public string? PrimaryFileInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileInternetHost")]
+    public string? PrimaryFileInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileMicrosoftEndpoint")]
+    public string? PrimaryFileMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for file storage in the primary location.</summary>
+    [JsonPropertyName("primaryFileMicrosoftHost")]
+    public string? PrimaryFileMicrosoftHost { get; set; }
+
+    /// <summary>The primary location of the storage account.</summary>
+    [JsonPropertyName("primaryLocation")]
+    public string? PrimaryLocation { get; set; }
+
+    /// <summary>The endpoint URL for queue storage in the primary location.</summary>
+    [JsonPropertyName("primaryQueueEndpoint")]
+    public string? PrimaryQueueEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for queue storage in the primary location.</summary>
+    [JsonPropertyName("primaryQueueHost")]
+    public string? PrimaryQueueHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for queue storage in the primary location.</summary>
+    [JsonPropertyName("primaryQueueMicrosoftEndpoint")]
+    public string? PrimaryQueueMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for queue storage in the primary location.</summary>
+    [JsonPropertyName("primaryQueueMicrosoftHost")]
+    public string? PrimaryQueueMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for table storage in the primary location.</summary>
+    [JsonPropertyName("primaryTableEndpoint")]
+    public string? PrimaryTableEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for table storage in the primary location.</summary>
+    [JsonPropertyName("primaryTableHost")]
+    public string? PrimaryTableHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for table storage in the primary location.</summary>
+    [JsonPropertyName("primaryTableMicrosoftEndpoint")]
+    public string? PrimaryTableMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for table storage in the primary location.</summary>
+    [JsonPropertyName("primaryTableMicrosoftHost")]
+    public string? PrimaryTableMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebEndpoint")]
+    public string? PrimaryWebEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebHost")]
+    public string? PrimaryWebHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebInternetEndpoint")]
+    public string? PrimaryWebInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebInternetHost")]
+    public string? PrimaryWebInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebMicrosoftEndpoint")]
+    public string? PrimaryWebMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for web storage in the primary location.</summary>
+    [JsonPropertyName("primaryWebMicrosoftHost")]
+    public string? PrimaryWebMicrosoftHost { get; set; }
+
+    /// <summary>Specifies the version of the provisioned billing model (e.g. when account_kind = &quot;FileStorage&quot; for Storage File). Possible value is V2. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("provisionedBillingModelVersion")]
+    public string? ProvisionedBillingModelVersion { get; set; }
+
+    /// <summary>Whether the public network access is enabled? Defaults to true.</summary>
+    [JsonPropertyName("publicNetworkAccessEnabled")]
+    public bool? PublicNetworkAccessEnabled { get; set; }
+
+    /// <summary>The encryption type of the queue service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("queueEncryptionKeyType")]
+    public string? QueueEncryptionKeyType { get; set; }
+
+    /// <summary>A queue_properties block as defined below.</summary>
+    [JsonPropertyName("queueProperties")]
+    public V1beta2AccountStatusAtProviderQueueProperties? QueueProperties { get; set; }
+
+    /// <summary>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("resourceGroupName")]
+    public string? ResourceGroupName { get; set; }
+
+    /// <summary>A routing block as defined below.</summary>
+    [JsonPropertyName("routing")]
+    public V1beta2AccountStatusAtProviderRouting? Routing { get; set; }
+
+    /// <summary>A sas_policy block as defined below.</summary>
+    [JsonPropertyName("sasPolicy")]
+    public V1beta2AccountStatusAtProviderSasPolicy? SasPolicy { get; set; }
+
+    /// <summary>The endpoint URL for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobEndpoint")]
+    public string? SecondaryBlobEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobHost")]
+    public string? SecondaryBlobHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobInternetEndpoint")]
+    public string? SecondaryBlobInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobInternetHost")]
+    public string? SecondaryBlobInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobMicrosoftEndpoint")]
+    public string? SecondaryBlobMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for blob storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryBlobMicrosoftHost")]
+    public string? SecondaryBlobMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsEndpoint")]
+    public string? SecondaryDfsEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsHost")]
+    public string? SecondaryDfsHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsInternetEndpoint")]
+    public string? SecondaryDfsInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsInternetHost")]
+    public string? SecondaryDfsInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsMicrosoftEndpoint")]
+    public string? SecondaryDfsMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for DFS storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryDfsMicrosoftHost")]
+    public string? SecondaryDfsMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileEndpoint")]
+    public string? SecondaryFileEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileHost")]
+    public string? SecondaryFileHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileInternetEndpoint")]
+    public string? SecondaryFileInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileInternetHost")]
+    public string? SecondaryFileInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileMicrosoftEndpoint")]
+    public string? SecondaryFileMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for file storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryFileMicrosoftHost")]
+    public string? SecondaryFileMicrosoftHost { get; set; }
+
+    /// <summary>The secondary location of the storage account.</summary>
+    [JsonPropertyName("secondaryLocation")]
+    public string? SecondaryLocation { get; set; }
+
+    /// <summary>The endpoint URL for queue storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryQueueEndpoint")]
+    public string? SecondaryQueueEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for queue storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryQueueHost")]
+    public string? SecondaryQueueHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for queue storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryQueueMicrosoftEndpoint")]
+    public string? SecondaryQueueMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for queue storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryQueueMicrosoftHost")]
+    public string? SecondaryQueueMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for table storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryTableEndpoint")]
+    public string? SecondaryTableEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for table storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryTableHost")]
+    public string? SecondaryTableHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for table storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryTableMicrosoftEndpoint")]
+    public string? SecondaryTableMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for table storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryTableMicrosoftHost")]
+    public string? SecondaryTableMicrosoftHost { get; set; }
+
+    /// <summary>The endpoint URL for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebEndpoint")]
+    public string? SecondaryWebEndpoint { get; set; }
+
+    /// <summary>The hostname with port if applicable for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebHost")]
+    public string? SecondaryWebHost { get; set; }
+
+    /// <summary>The internet routing endpoint URL for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebInternetEndpoint")]
+    public string? SecondaryWebInternetEndpoint { get; set; }
+
+    /// <summary>The internet routing hostname with port if applicable for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebInternetHost")]
+    public string? SecondaryWebInternetHost { get; set; }
+
+    /// <summary>The microsoft routing endpoint URL for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebMicrosoftEndpoint")]
+    public string? SecondaryWebMicrosoftEndpoint { get; set; }
+
+    /// <summary>The microsoft routing hostname with port if applicable for web storage in the secondary location.</summary>
+    [JsonPropertyName("secondaryWebMicrosoftHost")]
+    public string? SecondaryWebMicrosoftHost { get; set; }
+
+    /// <summary>Boolean, enable SFTP for the storage account</summary>
+    [JsonPropertyName("sftpEnabled")]
+    public bool? SftpEnabled { get; set; }
+
+    /// <summary>A share_properties block as defined below.</summary>
+    [JsonPropertyName("shareProperties")]
+    public V1beta2AccountStatusAtProviderShareProperties? ShareProperties { get; set; }
+
+    /// <summary>Indicates whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). Defaults to true.</summary>
+    [JsonPropertyName("sharedAccessKeyEnabled")]
+    public bool? SharedAccessKeyEnabled { get; set; }
+
+    /// <summary>A static_website block as defined below.</summary>
+    [JsonPropertyName("staticWebsite")]
+    public V1beta2AccountStatusAtProviderStaticWebsite? StaticWebsite { get; set; }
+
+    /// <summary>The encryption type of the table service. Possible values are Service and Account. Changing this forces a new resource to be created. Default value is Service.</summary>
+    [JsonPropertyName("tableEncryptionKeyType")]
+    public string? TableEncryptionKeyType { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>AccountStatus defines the observed state of Account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AccountStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2AccountStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>Account is the Schema for the Accounts API. Manages a Azure Storage Account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2Account : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2AccountSpec>, IStatus<V1beta2AccountStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "Account";
+    public const string KubeGroup = "storage.azure.upbound.io";
+    public const string KubePluralName = "accounts";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "storage.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Account";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>AccountSpec defines the desired state of Account</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2AccountSpec Spec { get; set; }
+
+    /// <summary>AccountStatus defines the observed state of Account.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2AccountStatus? Status { get; set; }
+}

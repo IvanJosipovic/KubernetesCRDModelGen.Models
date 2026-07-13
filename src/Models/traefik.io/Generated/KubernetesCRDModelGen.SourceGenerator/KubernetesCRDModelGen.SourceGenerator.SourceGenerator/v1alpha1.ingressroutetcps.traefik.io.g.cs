@@ -1,0 +1,348 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.traefik.io;
+/// <summary>IngressRouteTCP is the CRD implementation of a Traefik TCP Router.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1IngressRouteTCPList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1IngressRouteTCP>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "IngressRouteTCPList";
+    public const string KubeGroup = "traefik.io";
+    public const string KubePluralName = "ingressroutetcps";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "traefik.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "IngressRouteTCPList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1IngressRouteTCP objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1IngressRouteTCP> Items { get; set; }
+}
+
+/// <summary>ObjectReference is a generic reference to a Traefik resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecRoutesMiddlewares
+{
+    /// <summary>Name defines the name of the referenced Traefik resource.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace defines the namespace of the referenced Traefik resource.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// ProxyProtocol defines the PROXY protocol configuration.
+/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/service/#proxy-protocol
+/// 
+/// Deprecated: ProxyProtocol will not be supported in future APIVersions, please use ServersTransport to configure ProxyProtocol instead.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecRoutesServicesProxyProtocol
+{
+    /// <summary>Version defines the PROXY Protocol version to use.</summary>
+    [JsonPropertyName("version")]
+    public int? Version { get; set; }
+}
+
+/// <summary>ServiceTCP defines an upstream TCP service to proxy traffic to.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecRoutesServices
+{
+    /// <summary>Name defines the name of the referenced Kubernetes Service.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace defines the namespace of the referenced Kubernetes Service.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>
+    /// NativeLB controls, when creating the load-balancer,
+    /// whether the LB&apos;s children are directly the pods IPs or if the only child is the Kubernetes Service clusterIP.
+    /// The Kubernetes Service itself does load-balance to the pods.
+    /// By default, NativeLB is false.
+    /// </summary>
+    [JsonPropertyName("nativeLB")]
+    public bool? NativeLB { get; set; }
+
+    /// <summary>
+    /// NodePortLB controls, when creating the load-balancer,
+    /// whether the LB&apos;s children are directly the nodes internal IPs using the nodePort when the service type is NodePort.
+    /// It allows services to be reachable when Traefik runs externally from the Kubernetes cluster but within the same network of the nodes.
+    /// By default, NodePortLB is false.
+    /// </summary>
+    [JsonPropertyName("nodePortLB")]
+    public bool? NodePortLB { get; set; }
+
+    /// <summary>
+    /// Port defines the port of a Kubernetes Service.
+    /// This can be a reference to a named port.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// ProxyProtocol defines the PROXY protocol configuration.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/service/#proxy-protocol
+    /// 
+    /// Deprecated: ProxyProtocol will not be supported in future APIVersions, please use ServersTransport to configure ProxyProtocol instead.
+    /// </summary>
+    [JsonPropertyName("proxyProtocol")]
+    public V1alpha1IngressRouteTCPSpecRoutesServicesProxyProtocol? ProxyProtocol { get; set; }
+
+    /// <summary>
+    /// ServersTransport defines the name of ServersTransportTCP resource to use.
+    /// It allows to configure the transport between Traefik and your servers.
+    /// Can only be used on a Kubernetes Service.
+    /// </summary>
+    [JsonPropertyName("serversTransport")]
+    public string? ServersTransport { get; set; }
+
+    /// <summary>
+    /// TerminationDelay defines the deadline that the proxy sets, after one of its connected peers indicates
+    /// it has closed the writing capability of its connection, to close the reading capability as well,
+    /// hence fully terminating the connection.
+    /// It is a duration in milliseconds, defaulting to 100.
+    /// A negative value means an infinite deadline (i.e. the reading capability is never closed).
+    /// 
+    /// Deprecated: TerminationDelay will not be supported in future APIVersions, please use ServersTransport to configure the TerminationDelay instead.
+    /// </summary>
+    [JsonPropertyName("terminationDelay")]
+    public int? TerminationDelay { get; set; }
+
+    /// <summary>TLS determines whether to use TLS when dialing with the backend.</summary>
+    [JsonPropertyName("tls")]
+    public bool? Tls { get; set; }
+
+    /// <summary>Weight defines the weight used when balancing requests between multiple Kubernetes Service.</summary>
+    [JsonPropertyName("weight")]
+    public int? Weight { get; set; }
+}
+
+/// <summary>
+/// Syntax defines the router&apos;s rule syntax.
+/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
+/// 
+/// Deprecated: Please do not use this field and rewrite the router rules to use the v3 syntax.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum>))]
+public enum V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum
+{
+    [EnumMember(Value = "v3"), JsonStringEnumMemberName("v3")]
+    V3,
+    [EnumMember(Value = "v2"), JsonStringEnumMemberName("v2")]
+    V2
+}
+
+/// <summary>RouteTCP holds the TCP route configuration.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecRoutes
+{
+    /// <summary>
+    /// Match defines the router&apos;s rule.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/
+    /// </summary>
+    [JsonPropertyName("match")]
+    public required string Match { get; set; }
+
+    /// <summary>Middlewares defines the list of references to MiddlewareTCP resources.</summary>
+    [JsonPropertyName("middlewares")]
+    public IList<V1alpha1IngressRouteTCPSpecRoutesMiddlewares>? Middlewares { get; set; }
+
+    /// <summary>
+    /// Priority defines the router&apos;s priority.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#priority
+    /// </summary>
+    [JsonPropertyName("priority")]
+    public int? Priority { get; set; }
+
+    /// <summary>Services defines the list of TCP services.</summary>
+    [JsonPropertyName("services")]
+    public IList<V1alpha1IngressRouteTCPSpecRoutesServices>? Services { get; set; }
+
+    /// <summary>
+    /// Syntax defines the router&apos;s rule syntax.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
+    /// 
+    /// Deprecated: Please do not use this field and rewrite the router rules to use the v3 syntax.
+    /// </summary>
+    [JsonPropertyName("syntax")]
+    public V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum? Syntax { get; set; }
+}
+
+/// <summary>Domain holds a domain name with SANs.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecTlsDomains
+{
+    /// <summary>Main defines the main domain name.</summary>
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>SANs defines the subject alternative domain names.</summary>
+    [JsonPropertyName("sans")]
+    public IList<string>? Sans { get; set; }
+}
+
+/// <summary>
+/// Options defines the reference to a TLSOption, that specifies the parameters of the TLS connection.
+/// If not defined, the `default` TLSOption is used.
+/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#tls-options
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecTlsOptions
+{
+    /// <summary>Name defines the name of the referenced Traefik resource.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace defines the namespace of the referenced Traefik resource.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// Store defines the reference to the TLSStore, that will be used to store certificates.
+/// Please note that only `default` TLSStore can be used.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecTlsStore
+{
+    /// <summary>Name defines the name of the referenced Traefik resource.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace defines the namespace of the referenced Traefik resource.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// TLS defines the TLS configuration on a layer 4 / TCP Route.
+/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/router/#tls
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpecTls
+{
+    /// <summary>
+    /// CertResolver defines the name of the certificate resolver to use.
+    /// Cert resolvers have to be configured in the static configuration.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/install-configuration/tls/certificate-resolvers/acme/
+    /// </summary>
+    [JsonPropertyName("certResolver")]
+    public string? CertResolver { get; set; }
+
+    /// <summary>
+    /// Domains defines the list of domains that will be used to issue certificates.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#domains
+    /// </summary>
+    [JsonPropertyName("domains")]
+    public IList<V1alpha1IngressRouteTCPSpecTlsDomains>? Domains { get; set; }
+
+    /// <summary>
+    /// Options defines the reference to a TLSOption, that specifies the parameters of the TLS connection.
+    /// If not defined, the `default` TLSOption is used.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#tls-options
+    /// </summary>
+    [JsonPropertyName("options")]
+    public V1alpha1IngressRouteTCPSpecTlsOptions? Options { get; set; }
+
+    /// <summary>Passthrough defines whether a TLS router will terminate the TLS connection.</summary>
+    [JsonPropertyName("passthrough")]
+    public bool? Passthrough { get; set; }
+
+    /// <summary>SecretName is the name of the referenced Kubernetes Secret to specify the certificate details.</summary>
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+
+    /// <summary>
+    /// Store defines the reference to the TLSStore, that will be used to store certificates.
+    /// Please note that only `default` TLSStore can be used.
+    /// </summary>
+    [JsonPropertyName("store")]
+    public V1alpha1IngressRouteTCPSpecTlsStore? Store { get; set; }
+}
+
+/// <summary>IngressRouteTCPSpec defines the desired state of IngressRouteTCP.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1IngressRouteTCPSpec
+{
+    /// <summary>
+    /// EntryPoints defines the list of entry point names to bind to.
+    /// Entry points have to be configured in the static configuration.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/install-configuration/entrypoints/
+    /// Default: all.
+    /// </summary>
+    [JsonPropertyName("entryPoints")]
+    public IList<string>? EntryPoints { get; set; }
+
+    /// <summary>IngressClassName defines the name of the IngressClass cluster resource.</summary>
+    [JsonPropertyName("ingressClassName")]
+    public string? IngressClassName { get; set; }
+
+    /// <summary>Routes defines the list of routes.</summary>
+    [JsonPropertyName("routes")]
+    public required IList<V1alpha1IngressRouteTCPSpecRoutes> Routes { get; set; }
+
+    /// <summary>
+    /// TLS defines the TLS configuration on a layer 4 / TCP Route.
+    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/router/#tls
+    /// </summary>
+    [JsonPropertyName("tls")]
+    public V1alpha1IngressRouteTCPSpecTls? Tls { get; set; }
+}
+
+/// <summary>IngressRouteTCP is the CRD implementation of a Traefik TCP Router.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1IngressRouteTCP : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1IngressRouteTCPSpec>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "IngressRouteTCP";
+    public const string KubeGroup = "traefik.io";
+    public const string KubePluralName = "ingressroutetcps";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "traefik.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "IngressRouteTCP";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>IngressRouteTCPSpec defines the desired state of IngressRouteTCP.</summary>
+    [JsonPropertyName("spec")]
+    public required V1alpha1IngressRouteTCPSpec Spec { get; set; }
+}

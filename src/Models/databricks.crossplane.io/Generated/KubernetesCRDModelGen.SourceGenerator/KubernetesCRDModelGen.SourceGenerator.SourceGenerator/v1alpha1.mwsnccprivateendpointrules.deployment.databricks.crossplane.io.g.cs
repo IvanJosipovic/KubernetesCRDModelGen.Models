@@ -1,0 +1,915 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.deployment.databricks.crossplane.io;
+/// <summary>
+/// MwsNccPrivateEndpointRule is the Schema for the MwsNccPrivateEndpointRules API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1MwsNccPrivateEndpointRuleList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MwsNccPrivateEndpointRule>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "MwsNccPrivateEndpointRuleList";
+    public const string KubeGroup = "deployment.databricks.crossplane.io";
+    public const string KubePluralName = "mwsnccprivateendpointrules";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "deployment.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "MwsNccPrivateEndpointRuleList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1MwsNccPrivateEndpointRule objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1MwsNccPrivateEndpointRule> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProvider
+{
+    [JsonPropertyName("accountId")]
+    public string? AccountId { get; set; }
+
+    /// <summary>
+    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
+    /// The possible values are:
+    /// </summary>
+    [JsonPropertyName("connectionState")]
+    public string? ConnectionState { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was created.</summary>
+    [JsonPropertyName("creationTime")]
+    public double? CreationTime { get; set; }
+
+    /// <summary>Whether this private endpoint is deactivated.</summary>
+    [JsonPropertyName("deactivated")]
+    public bool? Deactivated { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was deactivated.</summary>
+    [JsonPropertyName("deactivatedAt")]
+    public double? DeactivatedAt { get; set; }
+
+    [JsonPropertyName("domainNames")]
+    public IList<string>? DomainNames { get; set; }
+
+    /// <summary>(AWS only) Activation status. Only used by private endpoints towards an AWS S3 service. Update this field to activate/deactivate this private endpoint to allow egress access from serverless compute resources. Can only be updated after a private endpoint rule towards an AWS S3 service is successfully created.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the Azure private endpoint resource, e.g. &quot;databricks-088781b3-77fa-4132-b429-1af0d91bc593-pe-3cb31234&quot;</summary>
+    [JsonPropertyName("endpointName")]
+    public string? EndpointName { get; set; }
+
+    /// <summary>(AWS only) Example com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123. The full target AWS endpoint service name that connects to the destination resources of the private endpoint. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("endpointService")]
+    public string? EndpointService { get; set; }
+
+    [JsonPropertyName("errorMessage")]
+    public string? ErrorMessage { get; set; }
+
+    /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
+    [JsonPropertyName("groupId")]
+    public string? GroupId { get; set; }
+
+    /// <summary>Canonical unique identifier of Network Connectivity Config in Databricks Account. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("networkConnectivityConfigId")]
+    public string? NetworkConnectivityConfigId { get; set; }
+
+    /// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+    [JsonPropertyName("networkConnectivityConfigIdRef")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdRef? NetworkConnectivityConfigIdRef { get; set; }
+
+    /// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+    [JsonPropertyName("networkConnectivityConfigIdSelector")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecForProviderNetworkConnectivityConfigIdSelector? NetworkConnectivityConfigIdSelector { get; set; }
+
+    /// <summary>(Azure only) The Azure resource ID of the target resource. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("resourceId")]
+    public string? ResourceId { get; set; }
+
+    /// <summary>.</summary>
+    [JsonPropertyName("resourceNames")]
+    public IList<string>? ResourceNames { get; set; }
+
+    /// <summary>the ID of a private endpoint rule.</summary>
+    [JsonPropertyName("ruleId")]
+    public string? RuleId { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was updated.</summary>
+    [JsonPropertyName("updatedTime")]
+    public double? UpdatedTime { get; set; }
+
+    /// <summary>The AWS VPC endpoint ID. You can use this ID to identify the VPC endpoint created by Databricks.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProvider
+{
+    [JsonPropertyName("accountId")]
+    public string? AccountId { get; set; }
+
+    /// <summary>
+    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
+    /// The possible values are:
+    /// </summary>
+    [JsonPropertyName("connectionState")]
+    public string? ConnectionState { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was created.</summary>
+    [JsonPropertyName("creationTime")]
+    public double? CreationTime { get; set; }
+
+    /// <summary>Whether this private endpoint is deactivated.</summary>
+    [JsonPropertyName("deactivated")]
+    public bool? Deactivated { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was deactivated.</summary>
+    [JsonPropertyName("deactivatedAt")]
+    public double? DeactivatedAt { get; set; }
+
+    [JsonPropertyName("domainNames")]
+    public IList<string>? DomainNames { get; set; }
+
+    /// <summary>(AWS only) Activation status. Only used by private endpoints towards an AWS S3 service. Update this field to activate/deactivate this private endpoint to allow egress access from serverless compute resources. Can only be updated after a private endpoint rule towards an AWS S3 service is successfully created.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the Azure private endpoint resource, e.g. &quot;databricks-088781b3-77fa-4132-b429-1af0d91bc593-pe-3cb31234&quot;</summary>
+    [JsonPropertyName("endpointName")]
+    public string? EndpointName { get; set; }
+
+    /// <summary>(AWS only) Example com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123. The full target AWS endpoint service name that connects to the destination resources of the private endpoint. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("endpointService")]
+    public string? EndpointService { get; set; }
+
+    [JsonPropertyName("errorMessage")]
+    public string? ErrorMessage { get; set; }
+
+    /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
+    [JsonPropertyName("groupId")]
+    public string? GroupId { get; set; }
+
+    /// <summary>Canonical unique identifier of Network Connectivity Config in Databricks Account. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("networkConnectivityConfigId")]
+    public string? NetworkConnectivityConfigId { get; set; }
+
+    /// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+    [JsonPropertyName("networkConnectivityConfigIdRef")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdRef? NetworkConnectivityConfigIdRef { get; set; }
+
+    /// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
+    [JsonPropertyName("networkConnectivityConfigIdSelector")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConnectivityConfigIdSelector? NetworkConnectivityConfigIdSelector { get; set; }
+
+    /// <summary>(Azure only) The Azure resource ID of the target resource. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("resourceId")]
+    public string? ResourceId { get; set; }
+
+    /// <summary>.</summary>
+    [JsonPropertyName("resourceNames")]
+    public IList<string>? ResourceNames { get; set; }
+
+    /// <summary>the ID of a private endpoint rule.</summary>
+    [JsonPropertyName("ruleId")]
+    public string? RuleId { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was updated.</summary>
+    [JsonPropertyName("updatedTime")]
+    public double? UpdatedTime { get; set; }
+
+    /// <summary>The AWS VPC endpoint ID. You can use this ID to identify the VPC endpoint created by Databricks.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public enum V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>MwsNccPrivateEndpointRuleSpec defines the desired state of MwsNccPrivateEndpointRule</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1alpha1MwsNccPrivateEndpointRuleSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1alpha1MwsNccPrivateEndpointRuleSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1alpha1MwsNccPrivateEndpointRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleStatusAtProvider
+{
+    [JsonPropertyName("accountId")]
+    public string? AccountId { get; set; }
+
+    /// <summary>
+    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
+    /// The possible values are:
+    /// </summary>
+    [JsonPropertyName("connectionState")]
+    public string? ConnectionState { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was created.</summary>
+    [JsonPropertyName("creationTime")]
+    public double? CreationTime { get; set; }
+
+    /// <summary>Whether this private endpoint is deactivated.</summary>
+    [JsonPropertyName("deactivated")]
+    public bool? Deactivated { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was deactivated.</summary>
+    [JsonPropertyName("deactivatedAt")]
+    public double? DeactivatedAt { get; set; }
+
+    [JsonPropertyName("domainNames")]
+    public IList<string>? DomainNames { get; set; }
+
+    /// <summary>(AWS only) Activation status. Only used by private endpoints towards an AWS S3 service. Update this field to activate/deactivate this private endpoint to allow egress access from serverless compute resources. Can only be updated after a private endpoint rule towards an AWS S3 service is successfully created.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The name of the Azure private endpoint resource, e.g. &quot;databricks-088781b3-77fa-4132-b429-1af0d91bc593-pe-3cb31234&quot;</summary>
+    [JsonPropertyName("endpointName")]
+    public string? EndpointName { get; set; }
+
+    /// <summary>(AWS only) Example com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123. The full target AWS endpoint service name that connects to the destination resources of the private endpoint. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("endpointService")]
+    public string? EndpointService { get; set; }
+
+    [JsonPropertyName("errorMessage")]
+    public string? ErrorMessage { get; set; }
+
+    /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
+    [JsonPropertyName("groupId")]
+    public string? GroupId { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>Canonical unique identifier of Network Connectivity Config in Databricks Account. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("networkConnectivityConfigId")]
+    public string? NetworkConnectivityConfigId { get; set; }
+
+    /// <summary>(Azure only) The Azure resource ID of the target resource. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("resourceId")]
+    public string? ResourceId { get; set; }
+
+    /// <summary>.</summary>
+    [JsonPropertyName("resourceNames")]
+    public IList<string>? ResourceNames { get; set; }
+
+    /// <summary>the ID of a private endpoint rule.</summary>
+    [JsonPropertyName("ruleId")]
+    public string? RuleId { get; set; }
+
+    /// <summary>Time in epoch milliseconds when this object was updated.</summary>
+    [JsonPropertyName("updatedTime")]
+    public double? UpdatedTime { get; set; }
+
+    /// <summary>The AWS VPC endpoint ID. You can use this ID to identify the VPC endpoint created by Databricks.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>MwsNccPrivateEndpointRuleStatus defines the observed state of MwsNccPrivateEndpointRule.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1alpha1MwsNccPrivateEndpointRuleStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1MwsNccPrivateEndpointRuleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>
+/// MwsNccPrivateEndpointRule is the Schema for the MwsNccPrivateEndpointRules API.
+/// Deprecated: This API version (v1alpha1) has been deprecated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1MwsNccPrivateEndpointRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MwsNccPrivateEndpointRuleSpec>, IStatus<V1alpha1MwsNccPrivateEndpointRuleStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "MwsNccPrivateEndpointRule";
+    public const string KubeGroup = "deployment.databricks.crossplane.io";
+    public const string KubePluralName = "mwsnccprivateendpointrules";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "deployment.databricks.crossplane.io/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "MwsNccPrivateEndpointRule";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>MwsNccPrivateEndpointRuleSpec defines the desired state of MwsNccPrivateEndpointRule</summary>
+    [JsonPropertyName("spec")]
+    public required V1alpha1MwsNccPrivateEndpointRuleSpec Spec { get; set; }
+
+    /// <summary>MwsNccPrivateEndpointRuleStatus defines the observed state of MwsNccPrivateEndpointRule.</summary>
+    [JsonPropertyName("status")]
+    public V1alpha1MwsNccPrivateEndpointRuleStatus? Status { get; set; }
+}

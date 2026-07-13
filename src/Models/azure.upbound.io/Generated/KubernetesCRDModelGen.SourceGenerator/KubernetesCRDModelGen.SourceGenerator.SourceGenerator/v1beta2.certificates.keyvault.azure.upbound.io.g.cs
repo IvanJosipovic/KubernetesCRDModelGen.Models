@@ -1,0 +1,1413 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.keyvault.azure.upbound.io;
+/// <summary>Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2CertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Certificate>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "CertificateList";
+    public const string KubeGroup = "keyvault.azure.upbound.io";
+    public const string KubePluralName = "certificates";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "keyvault.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "CertificateList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1beta2Certificate objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1beta2Certificate> Items { get; set; }
+}
+
+/// <summary>
+/// DeletionPolicy specifies what will happen to the underlying external
+/// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+/// external resource.
+/// This field is planned to be deprecated in favor of the ManagementPolicies
+/// field in a future release. Currently, both could be set independently and
+/// non-default values would be honored if the feature flag is enabled.
+/// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecDeletionPolicyEnum>))]
+public enum V1beta2CertificateSpecDeletionPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete
+}
+
+/// <summary>The base64-encoded certificate contents.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificateContentsSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The password associated with the certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificate
+{
+    /// <summary>The base64-encoded certificate contents.</summary>
+    [JsonPropertyName("contentsSecretRef")]
+    public V1beta2CertificateSpecForProviderCertificateContentsSecretRef? ContentsSecretRef { get; set; }
+
+    /// <summary>The password associated with the certificate.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta2CertificateSpecForProviderCertificatePasswordSecretRef? PasswordSecretRef { get; set; }
+}
+
+/// <summary>A issuer_parameters block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyIssuerParameters
+{
+    /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A key_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyKeyProperties
+{
+    /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
+    [JsonPropertyName("curve")]
+    public string? Curve { get; set; }
+
+    /// <summary>Is this certificate exportable?</summary>
+    [JsonPropertyName("exportable")]
+    public bool? Exportable { get; set; }
+
+    /// <summary>The size of the key used in the certificate. Possible values include 2048, 3072, and 4096 for RSA keys, or 256, 384, and 521 for EC keys. This property is required when using RSA keys.</summary>
+    [JsonPropertyName("keySize")]
+    public double? KeySize { get; set; }
+
+    /// <summary>Specifies the type of key. Possible values are EC, EC-HSM, RSA, RSA-HSM and oct.</summary>
+    [JsonPropertyName("keyType")]
+    public string? KeyType { get; set; }
+
+    /// <summary>Is the key reusable?</summary>
+    [JsonPropertyName("reuseKey")]
+    public bool? ReuseKey { get; set; }
+}
+
+/// <summary>A action block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyLifetimeActionAction
+{
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    [JsonPropertyName("actionType")]
+    public string? ActionType { get; set; }
+}
+
+/// <summary>A trigger block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyLifetimeActionTrigger
+{
+    /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
+    [JsonPropertyName("daysBeforeExpiry")]
+    public double? DaysBeforeExpiry { get; set; }
+
+    /// <summary>The percentage at which during the Certificates Lifetime the action associated with this Trigger should run. Conflicts with days_before_expiry.</summary>
+    [JsonPropertyName("lifetimePercentage")]
+    public double? LifetimePercentage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyLifetimeAction
+{
+    /// <summary>A action block as defined below.</summary>
+    [JsonPropertyName("action")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyLifetimeActionAction? Action { get; set; }
+
+    /// <summary>A trigger block as defined below.</summary>
+    [JsonPropertyName("trigger")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyLifetimeActionTrigger? Trigger { get; set; }
+}
+
+/// <summary>A secret_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicySecretProperties
+{
+    /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
+    [JsonPropertyName("contentType")]
+    public string? ContentType { get; set; }
+}
+
+/// <summary>A subject_alternative_names block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
+{
+    /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
+    [JsonPropertyName("dnsNames")]
+    public IList<string>? DnsNames { get; set; }
+
+    /// <summary>A list of email addresses identified by this Certificate.</summary>
+    [JsonPropertyName("emails")]
+    public IList<string>? Emails { get; set; }
+
+    /// <summary>A list of User Principal Names identified by the Certificate.</summary>
+    [JsonPropertyName("upns")]
+    public IList<string>? Upns { get; set; }
+}
+
+/// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicyX509CertificateProperties
+{
+    /// <summary>A list of Extended/Enhanced Key Usages.</summary>
+    [JsonPropertyName("extendedKeyUsage")]
+    public IList<string>? ExtendedKeyUsage { get; set; }
+
+    /// <summary>A list of uses associated with this Key. Possible values include cRLSign, dataEncipherment, decipherOnly, digitalSignature, encipherOnly, keyAgreement, keyCertSign, keyEncipherment and nonRepudiation and are case-sensitive.</summary>
+    [JsonPropertyName("keyUsage")]
+    public IList<string>? KeyUsage { get; set; }
+
+    /// <summary>The Certificate&apos;s Subject.</summary>
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+
+    /// <summary>A subject_alternative_names block as defined below.</summary>
+    [JsonPropertyName("subjectAlternativeNames")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
+
+    /// <summary>The Certificates Validity Period in Months.</summary>
+    [JsonPropertyName("validityInMonths")]
+    public double? ValidityInMonths { get; set; }
+}
+
+/// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderCertificatePolicy
+{
+    /// <summary>A issuer_parameters block as defined below.</summary>
+    [JsonPropertyName("issuerParameters")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyIssuerParameters? IssuerParameters { get; set; }
+
+    /// <summary>A key_properties block as defined below.</summary>
+    [JsonPropertyName("keyProperties")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyKeyProperties? KeyProperties { get; set; }
+
+    /// <summary>A lifetime_action block as defined below.</summary>
+    [JsonPropertyName("lifetimeAction")]
+    public IList<V1beta2CertificateSpecForProviderCertificatePolicyLifetimeAction>? LifetimeAction { get; set; }
+
+    /// <summary>A secret_properties block as defined below.</summary>
+    [JsonPropertyName("secretProperties")]
+    public V1beta2CertificateSpecForProviderCertificatePolicySecretProperties? SecretProperties { get; set; }
+
+    /// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+    [JsonPropertyName("x509CertificateProperties")]
+    public V1beta2CertificateSpecForProviderCertificatePolicyX509CertificateProperties? X509CertificateProperties { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum>))]
+public enum V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum>))]
+public enum V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderKeyVaultIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderKeyVaultIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum>))]
+public enum V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProviderKeyVaultIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecForProvider
+{
+    /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificate")]
+    public V1beta2CertificateSpecForProviderCertificate? Certificate { get; set; }
+
+    /// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificatePolicy")]
+    public V1beta2CertificateSpecForProviderCertificatePolicy? CertificatePolicy { get; set; }
+
+    /// <summary>The ID of the Key Vault where the Certificate should be created. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultId")]
+    public string? KeyVaultId { get; set; }
+
+    /// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
+    [JsonPropertyName("keyVaultIdRef")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdRef? KeyVaultIdRef { get; set; }
+
+    /// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
+    [JsonPropertyName("keyVaultIdSelector")]
+    public V1beta2CertificateSpecForProviderKeyVaultIdSelector? KeyVaultIdSelector { get; set; }
+
+    /// <summary>Specifies the name of the Key Vault Certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>The base64-encoded certificate contents.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificateContentsSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The password associated with the certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificate
+{
+    /// <summary>The base64-encoded certificate contents.</summary>
+    [JsonPropertyName("contentsSecretRef")]
+    public required V1beta2CertificateSpecInitProviderCertificateContentsSecretRef ContentsSecretRef { get; set; }
+
+    /// <summary>The password associated with the certificate.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta2CertificateSpecInitProviderCertificatePasswordSecretRef? PasswordSecretRef { get; set; }
+}
+
+/// <summary>A issuer_parameters block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyIssuerParameters
+{
+    /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A key_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyKeyProperties
+{
+    /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
+    [JsonPropertyName("curve")]
+    public string? Curve { get; set; }
+
+    /// <summary>Is this certificate exportable?</summary>
+    [JsonPropertyName("exportable")]
+    public bool? Exportable { get; set; }
+
+    /// <summary>The size of the key used in the certificate. Possible values include 2048, 3072, and 4096 for RSA keys, or 256, 384, and 521 for EC keys. This property is required when using RSA keys.</summary>
+    [JsonPropertyName("keySize")]
+    public double? KeySize { get; set; }
+
+    /// <summary>Specifies the type of key. Possible values are EC, EC-HSM, RSA, RSA-HSM and oct.</summary>
+    [JsonPropertyName("keyType")]
+    public string? KeyType { get; set; }
+
+    /// <summary>Is the key reusable?</summary>
+    [JsonPropertyName("reuseKey")]
+    public bool? ReuseKey { get; set; }
+}
+
+/// <summary>A action block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeActionAction
+{
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    [JsonPropertyName("actionType")]
+    public string? ActionType { get; set; }
+}
+
+/// <summary>A trigger block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeActionTrigger
+{
+    /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
+    [JsonPropertyName("daysBeforeExpiry")]
+    public double? DaysBeforeExpiry { get; set; }
+
+    /// <summary>The percentage at which during the Certificates Lifetime the action associated with this Trigger should run. Conflicts with days_before_expiry.</summary>
+    [JsonPropertyName("lifetimePercentage")]
+    public double? LifetimePercentage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeAction
+{
+    /// <summary>A action block as defined below.</summary>
+    [JsonPropertyName("action")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeActionAction? Action { get; set; }
+
+    /// <summary>A trigger block as defined below.</summary>
+    [JsonPropertyName("trigger")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeActionTrigger? Trigger { get; set; }
+}
+
+/// <summary>A secret_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicySecretProperties
+{
+    /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
+    [JsonPropertyName("contentType")]
+    public string? ContentType { get; set; }
+}
+
+/// <summary>A subject_alternative_names block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
+{
+    /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
+    [JsonPropertyName("dnsNames")]
+    public IList<string>? DnsNames { get; set; }
+
+    /// <summary>A list of email addresses identified by this Certificate.</summary>
+    [JsonPropertyName("emails")]
+    public IList<string>? Emails { get; set; }
+
+    /// <summary>A list of User Principal Names identified by the Certificate.</summary>
+    [JsonPropertyName("upns")]
+    public IList<string>? Upns { get; set; }
+}
+
+/// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicyX509CertificateProperties
+{
+    /// <summary>A list of Extended/Enhanced Key Usages.</summary>
+    [JsonPropertyName("extendedKeyUsage")]
+    public IList<string>? ExtendedKeyUsage { get; set; }
+
+    /// <summary>A list of uses associated with this Key. Possible values include cRLSign, dataEncipherment, decipherOnly, digitalSignature, encipherOnly, keyAgreement, keyCertSign, keyEncipherment and nonRepudiation and are case-sensitive.</summary>
+    [JsonPropertyName("keyUsage")]
+    public IList<string>? KeyUsage { get; set; }
+
+    /// <summary>The Certificate&apos;s Subject.</summary>
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+
+    /// <summary>A subject_alternative_names block as defined below.</summary>
+    [JsonPropertyName("subjectAlternativeNames")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
+
+    /// <summary>The Certificates Validity Period in Months.</summary>
+    [JsonPropertyName("validityInMonths")]
+    public double? ValidityInMonths { get; set; }
+}
+
+/// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderCertificatePolicy
+{
+    /// <summary>A issuer_parameters block as defined below.</summary>
+    [JsonPropertyName("issuerParameters")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyIssuerParameters? IssuerParameters { get; set; }
+
+    /// <summary>A key_properties block as defined below.</summary>
+    [JsonPropertyName("keyProperties")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyKeyProperties? KeyProperties { get; set; }
+
+    /// <summary>A lifetime_action block as defined below.</summary>
+    [JsonPropertyName("lifetimeAction")]
+    public IList<V1beta2CertificateSpecInitProviderCertificatePolicyLifetimeAction>? LifetimeAction { get; set; }
+
+    /// <summary>A secret_properties block as defined below.</summary>
+    [JsonPropertyName("secretProperties")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicySecretProperties? SecretProperties { get; set; }
+
+    /// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+    [JsonPropertyName("x509CertificateProperties")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicyX509CertificateProperties? X509CertificateProperties { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum>))]
+public enum V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum>))]
+public enum V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderKeyVaultIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnum>))]
+public enum V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProviderKeyVaultIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// THIS IS A BETA FIELD. It will be honored
+/// unless the Management Policies feature flag is disabled.
+/// InitProvider holds the same fields as ForProvider, with the exception
+/// of Identifier and other resource reference fields. The fields that are
+/// in InitProvider are merged into ForProvider when the resource is created.
+/// The same fields are also added to the terraform ignore_changes hook, to
+/// avoid updating them after creation. This is useful for fields that are
+/// required on creation, but we do not desire to update them after creation,
+/// for example because of an external controller is managing them, like an
+/// autoscaler.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecInitProvider
+{
+    /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificate")]
+    public V1beta2CertificateSpecInitProviderCertificate? Certificate { get; set; }
+
+    /// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificatePolicy")]
+    public V1beta2CertificateSpecInitProviderCertificatePolicy? CertificatePolicy { get; set; }
+
+    /// <summary>The ID of the Key Vault where the Certificate should be created. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultId")]
+    public string? KeyVaultId { get; set; }
+
+    /// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
+    [JsonPropertyName("keyVaultIdRef")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdRef? KeyVaultIdRef { get; set; }
+
+    /// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
+    [JsonPropertyName("keyVaultIdSelector")]
+    public V1beta2CertificateSpecInitProviderKeyVaultIdSelector? KeyVaultIdSelector { get; set; }
+
+    /// <summary>Specifies the name of the Key Vault Certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>
+/// A ManagementAction represents an action that the Crossplane controllers
+/// can take on an external resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecManagementPoliciesEnum>))]
+public enum V1beta2CertificateSpecManagementPoliciesEnum
+{
+    [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
+    Observe,
+    [EnumMember(Value = "Create"), JsonStringEnumMemberName("Create")]
+    Create,
+    [EnumMember(Value = "Update"), JsonStringEnumMemberName("Update")]
+    Update,
+    [EnumMember(Value = "Delete"), JsonStringEnumMemberName("Delete")]
+    Delete,
+    [EnumMember(Value = "LateInitialize"), JsonStringEnumMemberName("LateInitialize")]
+    LateInitialize,
+    [EnumMember(Value = "*"), JsonStringEnumMemberName("*")]
+    Option5
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1beta2CertificateSpecProviderConfigRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1beta2CertificateSpecProviderConfigRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecProviderConfigRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2CertificateSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2CertificateSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>
+/// ProviderConfigReference specifies how the provider that will be used to
+/// create, observe, update, and delete this managed resource should be
+/// configured.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecProviderConfigRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2CertificateSpecProviderConfigRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// WriteConnectionSecretToReference specifies the namespace and name of a
+/// Secret to which any connection details for this managed resource should
+/// be written. Connection details frequently include the endpoint, username,
+/// and password required to connect to the managed resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpecWriteConnectionSecretToRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>CertificateSpec defines the desired state of Certificate</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateSpec
+{
+    /// <summary>
+    /// DeletionPolicy specifies what will happen to the underlying external
+    /// when this managed resource is deleted - either &quot;Delete&quot; or &quot;Orphan&quot; the
+    /// external resource.
+    /// This field is planned to be deprecated in favor of the ManagementPolicies
+    /// field in a future release. Currently, both could be set independently and
+    /// non-default values would be honored if the feature flag is enabled.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public V1beta2CertificateSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("forProvider")]
+    public required V1beta2CertificateSpecForProvider ForProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It will be honored
+    /// unless the Management Policies feature flag is disabled.
+    /// InitProvider holds the same fields as ForProvider, with the exception
+    /// of Identifier and other resource reference fields. The fields that are
+    /// in InitProvider are merged into ForProvider when the resource is created.
+    /// The same fields are also added to the terraform ignore_changes hook, to
+    /// avoid updating them after creation. This is useful for fields that are
+    /// required on creation, but we do not desire to update them after creation,
+    /// for example because of an external controller is managing them, like an
+    /// autoscaler.
+    /// </summary>
+    [JsonPropertyName("initProvider")]
+    public V1beta2CertificateSpecInitProvider? InitProvider { get; set; }
+
+    /// <summary>
+    /// THIS IS A BETA FIELD. It is on by default but can be opted out
+    /// through a Crossplane feature flag.
+    /// ManagementPolicies specify the array of actions Crossplane is allowed to
+    /// take on the managed and external resources.
+    /// This field is planned to replace the DeletionPolicy field in a future
+    /// release. Currently, both could be set independently and non-default
+    /// values would be honored if the feature flag is enabled. If both are
+    /// custom, the DeletionPolicy field will be ignored.
+    /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
+    /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
+    /// </summary>
+    [JsonPropertyName("managementPolicies")]
+    public IList<V1beta2CertificateSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+
+    /// <summary>
+    /// ProviderConfigReference specifies how the provider that will be used to
+    /// create, observe, update, and delete this managed resource should be
+    /// configured.
+    /// </summary>
+    [JsonPropertyName("providerConfigRef")]
+    public V1beta2CertificateSpecProviderConfigRef? ProviderConfigRef { get; set; }
+
+    /// <summary>
+    /// WriteConnectionSecretToReference specifies the namespace and name of a
+    /// Secret to which any connection details for this managed resource should
+    /// be written. Connection details frequently include the endpoint, username,
+    /// and password required to connect to the managed resource.
+    /// </summary>
+    [JsonPropertyName("writeConnectionSecretToRef")]
+    public V1beta2CertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>The base64-encoded certificate contents.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificateContentsSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The password associated with the certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificate
+{
+    /// <summary>The base64-encoded certificate contents.</summary>
+    [JsonPropertyName("contentsSecretRef")]
+    public V1beta2CertificateStatusAtProviderCertificateContentsSecretRef? ContentsSecretRef { get; set; }
+
+    /// <summary>The password associated with the certificate.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta2CertificateStatusAtProviderCertificatePasswordSecretRef? PasswordSecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificateAttribute
+{
+    /// <summary>The create time of the Key Vault Certificate.</summary>
+    [JsonPropertyName("created")]
+    public string? Created { get; set; }
+
+    /// <summary>whether the Key Vault Certificate is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The expires time of the Key Vault Certificate.</summary>
+    [JsonPropertyName("expires")]
+    public string? Expires { get; set; }
+
+    /// <summary>The not before valid time of the Key Vault Certificate.</summary>
+    [JsonPropertyName("notBefore")]
+    public string? NotBefore { get; set; }
+
+    /// <summary>The deletion recovery level of the Key Vault Certificate.</summary>
+    [JsonPropertyName("recoveryLevel")]
+    public string? RecoveryLevel { get; set; }
+
+    /// <summary>The recent update time of the Key Vault Certificate.</summary>
+    [JsonPropertyName("updated")]
+    public string? Updated { get; set; }
+}
+
+/// <summary>A issuer_parameters block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyIssuerParameters
+{
+    /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A key_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyKeyProperties
+{
+    /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
+    [JsonPropertyName("curve")]
+    public string? Curve { get; set; }
+
+    /// <summary>Is this certificate exportable?</summary>
+    [JsonPropertyName("exportable")]
+    public bool? Exportable { get; set; }
+
+    /// <summary>The size of the key used in the certificate. Possible values include 2048, 3072, and 4096 for RSA keys, or 256, 384, and 521 for EC keys. This property is required when using RSA keys.</summary>
+    [JsonPropertyName("keySize")]
+    public double? KeySize { get; set; }
+
+    /// <summary>Specifies the type of key. Possible values are EC, EC-HSM, RSA, RSA-HSM and oct.</summary>
+    [JsonPropertyName("keyType")]
+    public string? KeyType { get; set; }
+
+    /// <summary>Is the key reusable?</summary>
+    [JsonPropertyName("reuseKey")]
+    public bool? ReuseKey { get; set; }
+}
+
+/// <summary>A action block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeActionAction
+{
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    [JsonPropertyName("actionType")]
+    public string? ActionType { get; set; }
+}
+
+/// <summary>A trigger block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeActionTrigger
+{
+    /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
+    [JsonPropertyName("daysBeforeExpiry")]
+    public double? DaysBeforeExpiry { get; set; }
+
+    /// <summary>The percentage at which during the Certificates Lifetime the action associated with this Trigger should run. Conflicts with days_before_expiry.</summary>
+    [JsonPropertyName("lifetimePercentage")]
+    public double? LifetimePercentage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeAction
+{
+    /// <summary>A action block as defined below.</summary>
+    [JsonPropertyName("action")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeActionAction? Action { get; set; }
+
+    /// <summary>A trigger block as defined below.</summary>
+    [JsonPropertyName("trigger")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeActionTrigger? Trigger { get; set; }
+}
+
+/// <summary>A secret_properties block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicySecretProperties
+{
+    /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
+    [JsonPropertyName("contentType")]
+    public string? ContentType { get; set; }
+}
+
+/// <summary>A subject_alternative_names block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
+{
+    /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
+    [JsonPropertyName("dnsNames")]
+    public IList<string>? DnsNames { get; set; }
+
+    /// <summary>A list of email addresses identified by this Certificate.</summary>
+    [JsonPropertyName("emails")]
+    public IList<string>? Emails { get; set; }
+
+    /// <summary>A list of User Principal Names identified by the Certificate.</summary>
+    [JsonPropertyName("upns")]
+    public IList<string>? Upns { get; set; }
+}
+
+/// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicyX509CertificateProperties
+{
+    /// <summary>A list of Extended/Enhanced Key Usages.</summary>
+    [JsonPropertyName("extendedKeyUsage")]
+    public IList<string>? ExtendedKeyUsage { get; set; }
+
+    /// <summary>A list of uses associated with this Key. Possible values include cRLSign, dataEncipherment, decipherOnly, digitalSignature, encipherOnly, keyAgreement, keyCertSign, keyEncipherment and nonRepudiation and are case-sensitive.</summary>
+    [JsonPropertyName("keyUsage")]
+    public IList<string>? KeyUsage { get; set; }
+
+    /// <summary>The Certificate&apos;s Subject.</summary>
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+
+    /// <summary>A subject_alternative_names block as defined below.</summary>
+    [JsonPropertyName("subjectAlternativeNames")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
+
+    /// <summary>The Certificates Validity Period in Months.</summary>
+    [JsonPropertyName("validityInMonths")]
+    public double? ValidityInMonths { get; set; }
+}
+
+/// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProviderCertificatePolicy
+{
+    /// <summary>A issuer_parameters block as defined below.</summary>
+    [JsonPropertyName("issuerParameters")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyIssuerParameters? IssuerParameters { get; set; }
+
+    /// <summary>A key_properties block as defined below.</summary>
+    [JsonPropertyName("keyProperties")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyKeyProperties? KeyProperties { get; set; }
+
+    /// <summary>A lifetime_action block as defined below.</summary>
+    [JsonPropertyName("lifetimeAction")]
+    public IList<V1beta2CertificateStatusAtProviderCertificatePolicyLifetimeAction>? LifetimeAction { get; set; }
+
+    /// <summary>A secret_properties block as defined below.</summary>
+    [JsonPropertyName("secretProperties")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicySecretProperties? SecretProperties { get; set; }
+
+    /// <summary>A x509_certificate_properties block as defined below. Required when certificate block is not specified.</summary>
+    [JsonPropertyName("x509CertificateProperties")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicyX509CertificateProperties? X509CertificateProperties { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusAtProvider
+{
+    /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificate")]
+    public V1beta2CertificateStatusAtProviderCertificate? Certificate { get; set; }
+
+    /// <summary>A certificate_attribute block as defined below.</summary>
+    [JsonPropertyName("certificateAttribute")]
+    public IList<V1beta2CertificateStatusAtProviderCertificateAttribute>? CertificateAttribute { get; set; }
+
+    /// <summary>The raw Key Vault Certificate data represented as a hexadecimal string.</summary>
+    [JsonPropertyName("certificateData")]
+    public string? CertificateData { get; set; }
+
+    /// <summary>The Base64 encoded Key Vault Certificate data.</summary>
+    [JsonPropertyName("certificateDataBase64")]
+    public string? CertificateDataBase64 { get; set; }
+
+    /// <summary>A certificate_policy block as defined below. Changing this (except the lifetime_action field) will create a new version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("certificatePolicy")]
+    public V1beta2CertificateStatusAtProviderCertificatePolicy? CertificatePolicy { get; set; }
+
+    /// <summary>The Key Vault Certificate ID.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The ID of the Key Vault where the Certificate should be created. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultId")]
+    public string? KeyVaultId { get; set; }
+
+    /// <summary>Specifies the name of the Key Vault Certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The (Versioned) ID for this Key Vault Certificate. This property points to a specific version of a Key Vault Certificate, as such using this won&apos;t auto-rotate values if used in other Azure Services.</summary>
+    [JsonPropertyName("resourceManagerId")]
+    public string? ResourceManagerId { get; set; }
+
+    /// <summary>The Versionless ID of the Key Vault Certificate. This property allows other Azure Services (that support it) to auto-rotate their value when the Key Vault Certificate is updated.</summary>
+    [JsonPropertyName("resourceManagerVersionlessId")]
+    public string? ResourceManagerVersionlessId { get; set; }
+
+    /// <summary>The ID of the associated Key Vault Secret.</summary>
+    [JsonPropertyName("secretId")]
+    public string? SecretId { get; set; }
+
+    /// <summary>A mapping of tags to assign to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>The X509 Thumbprint of the Key Vault Certificate represented as a hexadecimal string.</summary>
+    [JsonPropertyName("thumbprint")]
+    public string? Thumbprint { get; set; }
+
+    /// <summary>The current version of the Key Vault Certificate.</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+
+    /// <summary>The Base ID of the Key Vault Certificate.</summary>
+    [JsonPropertyName("versionlessId")]
+    public string? VersionlessId { get; set; }
+
+    /// <summary>The Base ID of the Key Vault Secret.</summary>
+    [JsonPropertyName("versionlessSecretId")]
+    public string? VersionlessSecretId { get; set; }
+}
+
+/// <summary>A Condition that may apply to a resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatusConditions
+{
+    /// <summary>
+    /// LastTransitionTime is the last time this condition transitioned from one
+    /// status to another.
+    /// </summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>
+    /// A Message containing details about this condition&apos;s last transition from
+    /// one status to another, if any.
+    /// </summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>A Reason for this condition&apos;s last transition from one status to another.</summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>Status of this condition; is it currently True, False, or Unknown?</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>
+    /// Type of this condition. At most one of each condition type may apply to
+    /// a resource at any point in time.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>CertificateStatus defines the observed state of Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CertificateStatus
+{
+    [JsonPropertyName("atProvider")]
+    public V1beta2CertificateStatusAtProvider? AtProvider { get; set; }
+
+    /// <summary>Conditions of the resource.</summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1beta2CertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the latest metadata.generation
+    /// which resulted in either a ready state, or stalled due to error
+    /// it can not recover from without human intervention.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+}
+
+/// <summary>Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1beta2Certificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CertificateSpec>, IStatus<V1beta2CertificateStatus?>
+{
+    public const string KubeApiVersion = "v1beta2";
+    public const string KubeKind = "Certificate";
+    public const string KubeGroup = "keyvault.azure.upbound.io";
+    public const string KubePluralName = "certificates";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "keyvault.azure.upbound.io/v1beta2";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Certificate";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>CertificateSpec defines the desired state of Certificate</summary>
+    [JsonPropertyName("spec")]
+    public required V1beta2CertificateSpec Spec { get; set; }
+
+    /// <summary>CertificateStatus defines the observed state of Certificate.</summary>
+    [JsonPropertyName("status")]
+    public V1beta2CertificateStatus? Status { get; set; }
+}

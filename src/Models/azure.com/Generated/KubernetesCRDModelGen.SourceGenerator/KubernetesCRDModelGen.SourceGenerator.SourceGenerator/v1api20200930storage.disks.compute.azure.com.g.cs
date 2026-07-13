@@ -1,0 +1,1387 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.compute.azure.com;
+/// <summary>
+/// Storage version of v1api20200930.Disk
+/// Generator information:
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2020-09-30/disk.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1api20200930storageDiskList : IKubernetesObject<V1ListMeta>, IItems<V1api20200930storageDisk>
+{
+    public const string KubeApiVersion = "v1api20200930storage";
+    public const string KubeKind = "DiskList";
+    public const string KubeGroup = "compute.azure.com";
+    public const string KubePluralName = "disks";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "compute.azure.com/v1api20200930storage";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "DiskList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1api20200930storageDisk objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1api20200930storageDisk> Items { get; set; }
+}
+
+/// <summary>Reference: A relative uri containing either a Platform Image Repository or user image reference.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationDataGalleryImageReferenceReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ImageDiskReference
+/// The source image used for creating the disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationDataGalleryImageReference
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("lun")]
+    public int? Lun { get; set; }
+
+    /// <summary>Reference: A relative uri containing either a Platform Image Repository or user image reference.</summary>
+    [JsonPropertyName("reference")]
+    public required V1api20200930storageDiskSpecCreationDataGalleryImageReferenceReference Reference { get; set; }
+}
+
+/// <summary>Reference: A relative uri containing either a Platform Image Repository or user image reference.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationDataImageReferenceReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ImageDiskReference
+/// The source image used for creating the disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationDataImageReference
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("lun")]
+    public int? Lun { get; set; }
+
+    /// <summary>Reference: A relative uri containing either a Platform Image Repository or user image reference.</summary>
+    [JsonPropertyName("reference")]
+    public required V1api20200930storageDiskSpecCreationDataImageReferenceReference Reference { get; set; }
+}
+
+/// <summary>SourceResourceReference: If createOption is Copy, this is the ARM id of the source snapshot or disk.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationDataSourceResourceReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.CreationData
+/// Data used when creating a disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecCreationData
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("createOption")]
+    public string? CreateOption { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ImageDiskReference
+    /// The source image used for creating the disk.
+    /// </summary>
+    [JsonPropertyName("galleryImageReference")]
+    public V1api20200930storageDiskSpecCreationDataGalleryImageReference? GalleryImageReference { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ImageDiskReference
+    /// The source image used for creating the disk.
+    /// </summary>
+    [JsonPropertyName("imageReference")]
+    public V1api20200930storageDiskSpecCreationDataImageReference? ImageReference { get; set; }
+
+    [JsonPropertyName("logicalSectorSize")]
+    public int? LogicalSectorSize { get; set; }
+
+    /// <summary>SourceResourceReference: If createOption is Copy, this is the ARM id of the source snapshot or disk.</summary>
+    [JsonPropertyName("sourceResourceReference")]
+    public V1api20200930storageDiskSpecCreationDataSourceResourceReference? SourceResourceReference { get; set; }
+
+    [JsonPropertyName("sourceUri")]
+    public string? SourceUri { get; set; }
+
+    [JsonPropertyName("storageAccountId")]
+    public string? StorageAccountId { get; set; }
+
+    [JsonPropertyName("uploadSizeBytes")]
+    public int? UploadSizeBytes { get; set; }
+}
+
+/// <summary>DiskAccessReference: ARM id of the DiskAccess resource for using private endpoints on disks.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecDiskAccessReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>DiskEncryptionSetReference: ResourceId of the disk encryption set to use for enabling encryption at rest.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionDiskEncryptionSetReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.Encryption
+/// Encryption at rest settings for disk or snapshot
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryption
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>DiskEncryptionSetReference: ResourceId of the disk encryption set to use for enabling encryption at rest.</summary>
+    [JsonPropertyName("diskEncryptionSetReference")]
+    public V1api20200930storageDiskSpecEncryptionDiskEncryptionSetReference? DiskEncryptionSetReference { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Reference: Resource Id</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVaultReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.SourceVault
+/// The vault id is an Azure Resource Manager Resource id in the form
+/// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>Reference: Resource Id</summary>
+    [JsonPropertyName("reference")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVaultReference? Reference { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.KeyVaultAndSecretReference
+/// Key Vault Secret Url and vault id of the encryption key
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("secretUrl")]
+    public string? SecretUrl { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.SourceVault
+    /// The vault id is an Azure Resource Manager Resource id in the form
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+    /// </summary>
+    [JsonPropertyName("sourceVault")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault? SourceVault { get; set; }
+}
+
+/// <summary>Reference: Resource Id</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVaultReference
+{
+    /// <summary>
+    /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+    /// The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+    /// ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+    /// </summary>
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>Group is the Kubernetes group of the resource.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    /// <summary>Kind is the Kubernetes kind of the resource.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Name is the Kubernetes name of the resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.SourceVault
+/// The vault id is an Azure Resource Manager Resource id in the form
+/// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>Reference: Resource Id</summary>
+    [JsonPropertyName("reference")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVaultReference? Reference { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.KeyVaultAndKeyReference
+/// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("keyUrl")]
+    public string? KeyUrl { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.SourceVault
+    /// The vault id is an Azure Resource Manager Resource id in the form
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+    /// </summary>
+    [JsonPropertyName("sourceVault")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault? SourceVault { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.EncryptionSettingsElement
+/// Encryption settings for one disk volume.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettings
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.KeyVaultAndSecretReference
+    /// Key Vault Secret Url and vault id of the encryption key
+    /// </summary>
+    [JsonPropertyName("diskEncryptionKey")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey? DiskEncryptionKey { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.KeyVaultAndKeyReference
+    /// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
+    /// </summary>
+    [JsonPropertyName("keyEncryptionKey")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey? KeyEncryptionKey { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.EncryptionSettingsCollection
+/// Encryption settings for disk or snapshot
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecEncryptionSettingsCollection
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("encryptionSettings")]
+    public IList<V1api20200930storageDiskSpecEncryptionSettingsCollectionEncryptionSettings>? EncryptionSettings { get; set; }
+
+    [JsonPropertyName("encryptionSettingsVersion")]
+    public string? EncryptionSettingsVersion { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ExtendedLocation
+/// The complex type of the extended location.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecExtendedLocation
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// DestinationExpression is a CEL expression and a destination to store the result in. The destination may
+/// be a secret or a configmap. The value of the expression is stored at the specified location in
+/// the destination.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecOperatorSpecConfigMapExpressions
+{
+    /// <summary>Annotations is an optional set of annotations to apply to the destination resource.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Key is the key in the ConfigMap or Secret being written to. If the CEL expression in Value returns a string
+    /// this is required to identify what key to write to. If the CEL expression in Value returns a map[string]string
+    /// Key must not be set, instead the keys written will be determined dynamically based on the keys of the resulting
+    /// map[string]string.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Labels is an optional set of labels to apply to the destination resource.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap or secret to write to.
+    /// The configmap or secret will be created in the same namespace as the resource.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Value is a CEL expression. The CEL expression may return a string or a map[string]string. For more information
+    /// on CEL in ASO see https://azure.github.io/azure-service-operator/guide/expressions/
+    /// </summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>
+/// DestinationExpression is a CEL expression and a destination to store the result in. The destination may
+/// be a secret or a configmap. The value of the expression is stored at the specified location in
+/// the destination.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecOperatorSpecSecretExpressions
+{
+    /// <summary>Annotations is an optional set of annotations to apply to the destination resource.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Key is the key in the ConfigMap or Secret being written to. If the CEL expression in Value returns a string
+    /// this is required to identify what key to write to. If the CEL expression in Value returns a map[string]string
+    /// Key must not be set, instead the keys written will be determined dynamically based on the keys of the resulting
+    /// map[string]string.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Labels is an optional set of labels to apply to the destination resource.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap or secret to write to.
+    /// The configmap or secret will be created in the same namespace as the resource.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Value is a CEL expression. The CEL expression may return a string or a map[string]string. For more information
+    /// on CEL in ASO see https://azure.github.io/azure-service-operator/guide/expressions/
+    /// </summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.DiskOperatorSpec
+/// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecOperatorSpec
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("configMapExpressions")]
+    public IList<V1api20200930storageDiskSpecOperatorSpecConfigMapExpressions>? ConfigMapExpressions { get; set; }
+
+    [JsonPropertyName("secretExpressions")]
+    public IList<V1api20200930storageDiskSpecOperatorSpecSecretExpressions>? SecretExpressions { get; set; }
+}
+
+/// <summary>
+/// Owner: The owner of the resource. The owner controls where the resource goes when it is deployed. The owner also
+/// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
+/// reference to a resources.azure.com/ResourceGroup resource
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecOwner
+{
+    [JsonPropertyName("armId")]
+    public string? ArmId { get; set; }
+
+    /// <summary>This is the name of the Kubernetes resource to reference.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.PurchasePlan
+/// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecPurchasePlan
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("product")]
+    public string? Product { get; set; }
+
+    [JsonPropertyName("promotionCode")]
+    public string? PromotionCode { get; set; }
+
+    [JsonPropertyName("publisher")]
+    public string? Publisher { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.DiskSku
+/// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, or UltraSSD_LRS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpecSku
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>Storage version of v1api20200930.Disk_Spec</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskSpec
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>
+    /// AzureName: The name of the resource in Azure. This is often the same as the name of the resource in Kubernetes but it
+    /// doesn&apos;t have to be.
+    /// </summary>
+    [JsonPropertyName("azureName")]
+    public string? AzureName { get; set; }
+
+    [JsonPropertyName("burstingEnabled")]
+    public bool? BurstingEnabled { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.CreationData
+    /// Data used when creating a disk.
+    /// </summary>
+    [JsonPropertyName("creationData")]
+    public V1api20200930storageDiskSpecCreationData? CreationData { get; set; }
+
+    /// <summary>DiskAccessReference: ARM id of the DiskAccess resource for using private endpoints on disks.</summary>
+    [JsonPropertyName("diskAccessReference")]
+    public V1api20200930storageDiskSpecDiskAccessReference? DiskAccessReference { get; set; }
+
+    [JsonPropertyName("diskIOPSReadOnly")]
+    public int? DiskIOPSReadOnly { get; set; }
+
+    [JsonPropertyName("diskIOPSReadWrite")]
+    public int? DiskIOPSReadWrite { get; set; }
+
+    [JsonPropertyName("diskMBpsReadOnly")]
+    public int? DiskMBpsReadOnly { get; set; }
+
+    [JsonPropertyName("diskMBpsReadWrite")]
+    public int? DiskMBpsReadWrite { get; set; }
+
+    [JsonPropertyName("diskSizeGB")]
+    public int? DiskSizeGB { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.Encryption
+    /// Encryption at rest settings for disk or snapshot
+    /// </summary>
+    [JsonPropertyName("encryption")]
+    public V1api20200930storageDiskSpecEncryption? Encryption { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.EncryptionSettingsCollection
+    /// Encryption settings for disk or snapshot
+    /// </summary>
+    [JsonPropertyName("encryptionSettingsCollection")]
+    public V1api20200930storageDiskSpecEncryptionSettingsCollection? EncryptionSettingsCollection { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ExtendedLocation
+    /// The complex type of the extended location.
+    /// </summary>
+    [JsonPropertyName("extendedLocation")]
+    public V1api20200930storageDiskSpecExtendedLocation? ExtendedLocation { get; set; }
+
+    [JsonPropertyName("hyperVGeneration")]
+    public string? HyperVGeneration { get; set; }
+
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    [JsonPropertyName("maxShares")]
+    public int? MaxShares { get; set; }
+
+    [JsonPropertyName("networkAccessPolicy")]
+    public string? NetworkAccessPolicy { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.DiskOperatorSpec
+    /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
+    /// </summary>
+    [JsonPropertyName("operatorSpec")]
+    public V1api20200930storageDiskSpecOperatorSpec? OperatorSpec { get; set; }
+
+    [JsonPropertyName("originalVersion")]
+    public string? OriginalVersion { get; set; }
+
+    [JsonPropertyName("osType")]
+    public string? OsType { get; set; }
+
+    /// <summary>
+    /// Owner: The owner of the resource. The owner controls where the resource goes when it is deployed. The owner also
+    /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
+    /// reference to a resources.azure.com/ResourceGroup resource
+    /// </summary>
+    [JsonPropertyName("owner")]
+    public required V1api20200930storageDiskSpecOwner Owner { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.PurchasePlan
+    /// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
+    /// </summary>
+    [JsonPropertyName("purchasePlan")]
+    public V1api20200930storageDiskSpecPurchasePlan? PurchasePlan { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.DiskSku
+    /// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, or UltraSSD_LRS.
+    /// </summary>
+    [JsonPropertyName("sku")]
+    public V1api20200930storageDiskSpecSku? Sku { get; set; }
+
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    [JsonPropertyName("tier")]
+    public string? Tier { get; set; }
+
+    [JsonPropertyName("zones")]
+    public IList<string>? Zones { get; set; }
+}
+
+/// <summary>Condition defines an extension to status (an observation) of a resource</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusConditions
+{
+    /// <summary>LastTransitionTime is the last time the condition transitioned from one status to another.</summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public required DateTime LastTransitionTime { get; set; }
+
+    /// <summary>Message is a human readable message indicating details about the transition. This field may be empty.</summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>
+    /// ObservedGeneration is the .metadata.generation that the condition was set based upon. For instance, if
+    /// .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date
+    /// with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
+    /// <summary>
+    /// Reason for the condition&apos;s last transition.
+    /// Reasons are upper CamelCase (PascalCase) with no spaces. A reason is always provided, this field will not be empty.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public required string Reason { get; set; }
+
+    /// <summary>
+    /// Severity with which to treat failures of this type of condition.
+    /// For conditions which have positive polarity (Status == True is their normal/healthy state), this will be omitted when Status == True
+    /// For conditions which have negative polarity (Status == False is their normal/healthy state), this will be omitted when Status == False.
+    /// This is omitted in all cases when Status == Unknown
+    /// </summary>
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    /// <summary>Status of the condition, one of True, False, or Unknown.</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>Type of condition.</summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ImageDiskReference_STATUS
+/// The source image used for creating the disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusCreationDataGalleryImageReference
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("lun")]
+    public int? Lun { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ImageDiskReference_STATUS
+/// The source image used for creating the disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusCreationDataImageReference
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("lun")]
+    public int? Lun { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.CreationData_STATUS
+/// Data used when creating a disk.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusCreationData
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("createOption")]
+    public string? CreateOption { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ImageDiskReference_STATUS
+    /// The source image used for creating the disk.
+    /// </summary>
+    [JsonPropertyName("galleryImageReference")]
+    public V1api20200930storageDiskStatusCreationDataGalleryImageReference? GalleryImageReference { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ImageDiskReference_STATUS
+    /// The source image used for creating the disk.
+    /// </summary>
+    [JsonPropertyName("imageReference")]
+    public V1api20200930storageDiskStatusCreationDataImageReference? ImageReference { get; set; }
+
+    [JsonPropertyName("logicalSectorSize")]
+    public int? LogicalSectorSize { get; set; }
+
+    [JsonPropertyName("sourceResourceId")]
+    public string? SourceResourceId { get; set; }
+
+    [JsonPropertyName("sourceUniqueId")]
+    public string? SourceUniqueId { get; set; }
+
+    [JsonPropertyName("sourceUri")]
+    public string? SourceUri { get; set; }
+
+    [JsonPropertyName("storageAccountId")]
+    public string? StorageAccountId { get; set; }
+
+    [JsonPropertyName("uploadSizeBytes")]
+    public int? UploadSizeBytes { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.Encryption_STATUS
+/// Encryption at rest settings for disk or snapshot
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryption
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("diskEncryptionSetId")]
+    public string? DiskEncryptionSetId { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.SourceVault_STATUS
+/// The vault id is an Azure Resource Manager Resource id in the form
+/// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.KeyVaultAndSecretReference_STATUS
+/// Key Vault Secret Url and vault id of the encryption key
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("secretUrl")]
+    public string? SecretUrl { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.SourceVault_STATUS
+    /// The vault id is an Azure Resource Manager Resource id in the form
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+    /// </summary>
+    [JsonPropertyName("sourceVault")]
+    public V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault? SourceVault { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.SourceVault_STATUS
+/// The vault id is an Azure Resource Manager Resource id in the form
+/// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.KeyVaultAndKeyReference_STATUS
+/// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("keyUrl")]
+    public string? KeyUrl { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.SourceVault_STATUS
+    /// The vault id is an Azure Resource Manager Resource id in the form
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
+    /// </summary>
+    [JsonPropertyName("sourceVault")]
+    public V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault? SourceVault { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.EncryptionSettingsElement_STATUS
+/// Encryption settings for one disk volume.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettings
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.KeyVaultAndSecretReference_STATUS
+    /// Key Vault Secret Url and vault id of the encryption key
+    /// </summary>
+    [JsonPropertyName("diskEncryptionKey")]
+    public V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey? DiskEncryptionKey { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.KeyVaultAndKeyReference_STATUS
+    /// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
+    /// </summary>
+    [JsonPropertyName("keyEncryptionKey")]
+    public V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey? KeyEncryptionKey { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.EncryptionSettingsCollection_STATUS
+/// Encryption settings for disk or snapshot
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusEncryptionSettingsCollection
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("encryptionSettings")]
+    public IList<V1api20200930storageDiskStatusEncryptionSettingsCollectionEncryptionSettings>? EncryptionSettings { get; set; }
+
+    [JsonPropertyName("encryptionSettingsVersion")]
+    public string? EncryptionSettingsVersion { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.ExtendedLocation_STATUS
+/// The complex type of the extended location.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusExtendedLocation
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.PurchasePlan_STATUS
+/// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusPurchasePlan
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("product")]
+    public string? Product { get; set; }
+
+    [JsonPropertyName("promotionCode")]
+    public string? PromotionCode { get; set; }
+
+    [JsonPropertyName("publisher")]
+    public string? Publisher { get; set; }
+}
+
+/// <summary>Storage version of v1api20200930.ShareInfoElement_STATUS</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusShareInfo
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("vmUri")]
+    public string? VmUri { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.DiskSku_STATUS
+/// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, or UltraSSD_LRS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatusSku
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("tier")]
+    public string? Tier { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.Disk_STATUS
+/// Disk resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200930storageDiskStatus
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("burstingEnabled")]
+    public bool? BurstingEnabled { get; set; }
+
+    [JsonPropertyName("conditions")]
+    public IList<V1api20200930storageDiskStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.CreationData_STATUS
+    /// Data used when creating a disk.
+    /// </summary>
+    [JsonPropertyName("creationData")]
+    public V1api20200930storageDiskStatusCreationData? CreationData { get; set; }
+
+    [JsonPropertyName("diskAccessId")]
+    public string? DiskAccessId { get; set; }
+
+    [JsonPropertyName("diskIOPSReadOnly")]
+    public int? DiskIOPSReadOnly { get; set; }
+
+    [JsonPropertyName("diskIOPSReadWrite")]
+    public int? DiskIOPSReadWrite { get; set; }
+
+    [JsonPropertyName("diskMBpsReadOnly")]
+    public int? DiskMBpsReadOnly { get; set; }
+
+    [JsonPropertyName("diskMBpsReadWrite")]
+    public int? DiskMBpsReadWrite { get; set; }
+
+    [JsonPropertyName("diskSizeBytes")]
+    public int? DiskSizeBytes { get; set; }
+
+    [JsonPropertyName("diskSizeGB")]
+    public int? DiskSizeGB { get; set; }
+
+    [JsonPropertyName("diskState")]
+    public string? DiskState { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.Encryption_STATUS
+    /// Encryption at rest settings for disk or snapshot
+    /// </summary>
+    [JsonPropertyName("encryption")]
+    public V1api20200930storageDiskStatusEncryption? Encryption { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.EncryptionSettingsCollection_STATUS
+    /// Encryption settings for disk or snapshot
+    /// </summary>
+    [JsonPropertyName("encryptionSettingsCollection")]
+    public V1api20200930storageDiskStatusEncryptionSettingsCollection? EncryptionSettingsCollection { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.ExtendedLocation_STATUS
+    /// The complex type of the extended location.
+    /// </summary>
+    [JsonPropertyName("extendedLocation")]
+    public V1api20200930storageDiskStatusExtendedLocation? ExtendedLocation { get; set; }
+
+    [JsonPropertyName("hyperVGeneration")]
+    public string? HyperVGeneration { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    [JsonPropertyName("managedBy")]
+    public string? ManagedBy { get; set; }
+
+    [JsonPropertyName("managedByExtended")]
+    public IList<string>? ManagedByExtended { get; set; }
+
+    [JsonPropertyName("maxShares")]
+    public int? MaxShares { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("networkAccessPolicy")]
+    public string? NetworkAccessPolicy { get; set; }
+
+    [JsonPropertyName("osType")]
+    public string? OsType { get; set; }
+
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.PurchasePlan_STATUS
+    /// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
+    /// </summary>
+    [JsonPropertyName("purchasePlan")]
+    public V1api20200930storageDiskStatusPurchasePlan? PurchasePlan { get; set; }
+
+    [JsonPropertyName("shareInfo")]
+    public IList<V1api20200930storageDiskStatusShareInfo>? ShareInfo { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.DiskSku_STATUS
+    /// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, or UltraSSD_LRS.
+    /// </summary>
+    [JsonPropertyName("sku")]
+    public V1api20200930storageDiskStatusSku? Sku { get; set; }
+
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    [JsonPropertyName("tier")]
+    public string? Tier { get; set; }
+
+    [JsonPropertyName("timeCreated")]
+    public string? TimeCreated { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("uniqueId")]
+    public string? UniqueId { get; set; }
+
+    [JsonPropertyName("zones")]
+    public IList<string>? Zones { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20200930.Disk
+/// Generator information:
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2020-09-30/disk.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1api20200930storageDisk : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20200930storageDiskSpec?>, IStatus<V1api20200930storageDiskStatus?>
+{
+    public const string KubeApiVersion = "v1api20200930storage";
+    public const string KubeKind = "Disk";
+    public const string KubeGroup = "compute.azure.com";
+    public const string KubePluralName = "disks";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "compute.azure.com/v1api20200930storage";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "Disk";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>Storage version of v1api20200930.Disk_Spec</summary>
+    [JsonPropertyName("spec")]
+    public V1api20200930storageDiskSpec? Spec { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20200930.Disk_STATUS
+    /// Disk resource.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public V1api20200930storageDiskStatus? Status { get; set; }
+}
