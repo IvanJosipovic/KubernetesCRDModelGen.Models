@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/strimzi.io-v1.2.0...strimzi.io-v1.2.1) (2026-07-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency kubernetescrdmodelgen.sourcegenerator to v1.6.10 ([#8](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/8)) ([3d3bebb](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/3d3bebb76d67d84c1935699dbabc3fecec5a7848))
+
 ## [1.2.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/strimzi.io-v1.1.0...strimzi.io-v1.2.0) (2026-07-13)
 
 
