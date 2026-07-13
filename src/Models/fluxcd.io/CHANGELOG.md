@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.14.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/fluxcd.io-v1.13.0...fluxcd.io-v1.14.0) (2026-07-13)
+
+
+### Features
+
+* Sync ([#26](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/26)) ([7a13d2e](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/7a13d2e2e9ee7f9463a262092c0d2c40e75312e8))
+
+
+### Bug Fixes
+
+* **deps:** update dependency kubernetescrdmodelgen.sourcegenerator to v1.6.10 ([#8](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/8)) ([3d3bebb](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/3d3bebb76d67d84c1935699dbabc3fecec5a7848))
+
 ## [1.13.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/fluxcd.io-v1.12.0...fluxcd.io-v1.13.0) (2026-07-13)
 
 
