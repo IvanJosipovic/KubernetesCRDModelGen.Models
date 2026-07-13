@@ -145,7 +145,7 @@ class ProjectGenerator
                 new JsonObject
                 {
                     ["type"] = "xml",
-                    ["path"] = $"{packagePath}/Directory.Build.props",
+                    ["path"] = "Directory.Build.props",
                     ["xpath"] = "//Project/PropertyGroup/Version"
                 }
             }
