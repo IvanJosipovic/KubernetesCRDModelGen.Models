@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+        <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
         <PackageId>KubernetesCRDModelGen.Models.azuread.upbound.io</PackageId>
         <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models</RepositoryUrl>
         <Description>C# models for Kubernetes CRDs in group azuread.upbound.io</Description>
