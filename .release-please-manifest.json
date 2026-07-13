@@ -1,5 +1,5 @@
 {
   "src/Models/akuity.io": "1.2.0",
   "src/Models/aquasecurity.github.io": "1.2.0",
-  "src/Models/k8s.aws": "1.0.0"
+  "src/Models/k8s.aws": "1.1.0"
 }
