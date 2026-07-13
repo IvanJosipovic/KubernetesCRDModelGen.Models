@@ -2,7 +2,9 @@
 
 Generated C# model packages for Kubernetes CustomResourceDefinitions (CRDs).
 
-This repository uses [`KubernetesCRDModelGen.SourceGenerator`](https://www.nuget.org/packages/KubernetesCRDModelGen.SourceGenerator) to generate strongly typed .NET models from CRD YAML files. Each CRD API group is published as its own NuGet package under the [`KubernetesCRDModelGen.Models.*`](https://www.nuget.org/packages?q=KubernetesCRDModelGen.Models.) package namespace.
+This repository uses [`KubernetesCRDModelGen`](https://www.nuget.org/packages/KubernetesCRDModelGen) to generate strongly typed .NET models from CRD YAML files.
+
+Each CRD API group is published as its own NuGet package under the [`KubernetesCRDModelGen.Models.*`](https://www.nuget.org/packages?q=KubernetesCRDModelGen.Models.) package namespace.
 
 [Documentation](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/)
 
@@ -96,7 +98,7 @@ For a live source file, see [sources.json](sources.json).
 
 ## To add a new Source
 
-Update `sources.json' with the required configuration. See `sources.schema.json` and Pr the changes to main.
+Update [sources.json](sources.json) with the required configuration. See [sources.schema.json](sources.schema.json) and PR the changes to main.
 
 ## Manually Updating generated projects
 
