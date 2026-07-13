@@ -30,9 +30,9 @@ jobs:
       with:
         global-json-file: global.json
 
-    - run: dotnet build -c Release
+    - run: dotnet build -c Release -f net10.0
 
-    - run: dotnet run -c Release --project src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj -- --contentRoot $PWD --DocFXGenerator true
+    - run: dotnet run -c Release -f net10.0 --project src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj -- --contentRoot $PWD --DocFXGenerator true
 
     - run: dotnet tool update -g docfx
     - run: docfx docfx.json
