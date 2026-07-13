@@ -1,6 +1,10 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Nodes;
 using Microsoft.VisualStudio.SolutionPersistence.Serializer;
+using NuGet.Common;
+using NuGet.Configuration;
+using NuGet.Protocol;
+using NuGet.Protocol.Core.Types;
 
 namespace KubernetesCRDModelGen.Sync;
 
@@ -11,6 +15,38 @@ class ProjectGenerator
     public static string Namespace = "KubernetesCRDModelGen.Models";
 
     public static string CRDFolderName = "crds";
+
+    public static async Task<string?> GetLatestNuGetReleaseVersionAsync(
+        string packageId,
+        bool includePrerelease = false,
+        CancellationToken cancellationToken = default)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(packageId);
+
+        var repositories = Repository.Provider.GetCoreV3();
+        var packageSource = new PackageSource("https://api.nuget.org/v3/index.json");
+        var sourceRepository = new SourceRepository(packageSource, repositories);
+
+        var metadataResource = await sourceRepository
+            .GetResourceAsync<PackageMetadataResource>(cancellationToken)
+            .ConfigureAwait(false);
+
+        var metadata = await metadataResource
+            .GetMetadataAsync(
+                packageId,
+                includePrerelease,
+                includeUnlisted: false,
+                new SourceCacheContext(),
+                NullLogger.Instance,
+                cancellationToken)
+            .ConfigureAwait(false);
+
+        return metadata
+            .Where(package => includePrerelease || !package.Identity.Version.IsPrerelease)
+            .OrderByDescending(package => package.Identity.Version)
+            .Select(package => package.Identity.Version.ToNormalizedString())
+            .FirstOrDefault();
+    }
 
     public static async Task GenerateProjectAsync(string projectName, string rootDirectory, CancellationToken cancellationToken = default)
     {
@@ -25,7 +61,7 @@ class ProjectGenerator
         GenerateCsProj(projectName, projectDir);
         GenerateReadme(projectName, projectDir);
 
-        GenerateReleasePlease(projectName, rootDirectory);
+        await GenerateReleasePleaseAsync(projectName, rootDirectory).ConfigureAwait(false);
         await AddProjectsToSolutionAsync(projectName, rootDirectory, cancellationToken).ConfigureAwait(false);
     }
 
@@ -114,7 +150,7 @@ class ProjectGenerator
         }
     }
 
-    public static void GenerateReleasePlease(string projectName, string rootDirectory)
+    public static async Task GenerateReleasePleaseAsync(string projectName, string rootDirectory)
     {
         var releasePleasePath = Path.Combine(rootDirectory, "release-please-config.json");
         var releasePleaseConfig = File.Exists(releasePleasePath)
@@ -165,7 +201,8 @@ class ProjectGenerator
             throw new InvalidOperationException($"Unable to parse {releasePleaseManifestPath} as a JSON object.");
         }
 
-        releasePleaseManifest[packagePath] ??= "1.0.0";
+        releasePleaseManifest[packagePath] ??= await GetLatestNuGetReleaseVersionAsync($"{Namespace}.{projectName}")
+            ?? throw new InvalidOperationException($"Unable to get the latest NuGet release version for package '{Namespace}.{projectName}'.");
 
         var releasePleaseManifestContent = releasePleaseManifest.ToJsonString(jsonSerializerOptions);
         File.WriteAllText(releasePleaseManifestPath, releasePleaseManifestContent);

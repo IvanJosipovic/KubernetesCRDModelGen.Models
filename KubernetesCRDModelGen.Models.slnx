@@ -8,8 +8,9 @@
     <Project Path="src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj" />
   </Folder>
   <Folder Name="/src/Models/">
+    <Project Path="src/Models/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj" />
+    <Project Path="src/Models/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
+    <Project Path="src/Models/argoproj.io/KubernetesCRDModelGen.Models.argoproj.io.csproj" />
     <Project Path="src/Models/k8s.aws/KubernetesCRDModelGen.Models.k8s.aws.csproj" />
-    <Project Path="src\Models\akuity.io\KubernetesCRDModelGen.Models.akuity.io.csproj" />
-    <Project Path="src\Models\aquasecurity.github.io\KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
   </Folder>
 </Solution>

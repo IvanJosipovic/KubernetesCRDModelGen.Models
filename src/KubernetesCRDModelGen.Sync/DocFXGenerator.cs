@@ -67,8 +67,6 @@ static class DocFXGenerator
 
     private static JsonObject BuildDocFxMetadataEntry(string projectName)
     {
-        string? currentTfm = AppContext.TargetFrameworkName;
-
         var projectPath = $"{ProjectGenerator.ModelsPath}/{projectName}";
         var assemblyPath = $"/bin/Release/net10.0/{ProjectGenerator.Namespace}.{projectName}.dll";
         var destinationPath = $"{ModelsPath}/{projectName}";

@@ -33,7 +33,7 @@ class Worker : BackgroundService
             var configs = configuration.GetSection("Config").Get<List<Config>>()!
                 ?? throw new InvalidOperationException("Config section is required.");
 
-            if (configuration.GetValue<object>("DocFXGenerator") != null)
+            if (configuration.GetValue<bool>("DocFXGenerator"))
             {
                 DocFXGenerator.GenerateDocFx(configs, rootDirectory);
                 _lifeTime.StopApplication();
