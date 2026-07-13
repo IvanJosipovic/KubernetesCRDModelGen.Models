@@ -58,7 +58,7 @@ class ProjectGenerator
         var projectDir = Path.Combine(modelDir, projectName);
         Directory.CreateDirectory(projectDir);
 
-        GenerateCsProj(projectName, projectDir);
+        await GenerateCsProj(projectName, projectDir);
         GenerateReadme(projectName, projectDir);
 
         await GenerateReleasePleaseAsync(projectName, rootDirectory).ConfigureAwait(false);
@@ -83,7 +83,7 @@ class ProjectGenerator
         File.WriteAllText(Path.Combine(projectDir, "README.md"), readmeContent);
     }
 
-    private static void GenerateCsProj(string projectName, string projectDir)
+    private static async Task GenerateCsProj(string projectName, string projectDir)
     {
         var csprojContent = $"""
             <Project Sdk="Microsoft.NET.Sdk">
@@ -139,10 +139,12 @@ class ProjectGenerator
 
         if (!File.Exists(Path.Combine(projectDir, versionFileName)))
         {
+            var version = await GetLatestNuGetReleaseVersionAsync($"{Namespace}.{projectName}") ?? "1.0.0";;
+
             var versionFileContent = $"""
                 <Project>
                     <PropertyGroup>
-                        <Version>1.0.0</Version>
+                        <Version>{version}</Version>
                     </PropertyGroup>
                 </Project>
                 """;
@@ -202,7 +204,7 @@ class ProjectGenerator
         }
 
         releasePleaseManifest[packagePath] ??= await GetLatestNuGetReleaseVersionAsync($"{Namespace}.{projectName}")
-            ?? throw new InvalidOperationException($"Unable to get the latest NuGet release version for package '{Namespace}.{projectName}'.");
+            ?? "1.0.0";
 
         var releasePleaseManifestContent = releasePleaseManifest.ToJsonString(jsonSerializerOptions);
         File.WriteAllText(releasePleaseManifestPath, releasePleaseManifestContent);

@@ -15,7 +15,7 @@ using YamlDotNet.Serialization;
 
 namespace KubernetesCRDModelGen.Sync.CRD;
 
-class CRDDownloader
+partial class CRDDownloader
 {
     private readonly ILogger<CRDDownloader> _logger;
 
@@ -68,6 +68,7 @@ class CRDDownloader
     public async Task ProcessDirectUrlAsync(DirectUrlConfig config, string projectName, CancellationToken cancellationToken = default)
     {
         using var client = httpClientFactory.CreateClient();
+        client.DefaultRequestHeaders.UserAgent.TryParseAdd("KubernetesCRDModelGen");
 
         using var httpStream = await client.GetStreamAsync(config.Url, cancellationToken).ConfigureAwait(false);
         using var stream = new MemoryStream();
@@ -76,15 +77,15 @@ class CRDDownloader
 
         var ext = Path.GetExtension(config.Url);
 
-        if (ext == ".yaml" || ext == ".yml")
+        if (ext == ".yaml" || ext == ".yml" || config.CompressionType == CompressionType.None)
         {
             SaveYamlStream(stream, projectName, cancellationToken);
         }
-        else if (config.Url.EndsWith(".zip"))
+        else if (config.Url.EndsWith(".zip") || config.CompressionType == CompressionType.Zip)
         {
             SaveYamlStream(stream, CompressionType.Zip, projectName, config.ArchivePathRegex, cancellationToken);
         }
-        else if (config.Url.EndsWith(".tar.gz"))
+        else if (config.Url.EndsWith(".tar.gz") || config.Url.EndsWith(".tgz") || config.CompressionType == CompressionType.TarGz)
         {
             SaveYamlStream(stream, CompressionType.TarGz, projectName, config.ArchivePathRegex, cancellationToken);
         }
@@ -105,7 +106,6 @@ class CRDDownloader
         var releaseNameRegex = config.ReleaseNameRegex != null ? new Regex(config.ReleaseNameRegex, RegexOptions.IgnoreCase) : null;
 
         var release = gitHubReleases
-            .Where(x => x.assets.Length != 0)
             .Where(x => releaseNameRegex == null || releaseNameRegex.IsMatch(x.name))
             .Select(x => new { Release = x, Version = SemVersion.TryParse(x.name, SemVersionStyles.Any, out var ver) ? ver : null })
             .Where(x => x.Version is not null && (config.PreRelease == true || (!x.Version.IsPrerelease && !x.Release.prerelease)))
@@ -114,23 +114,24 @@ class CRDDownloader
 
         var assetNameRegex = config.AssetNameRegex != null ? new Regex(config.AssetNameRegex, RegexOptions.IgnoreCase) : null;
 
-        foreach (var item in release.assets)
+        if(release.assets != null && release.assets.Length > 0)
         {
-            cancellationToken.ThrowIfCancellationRequested();
-
-            if (assetNameRegex != null && !assetNameRegex.IsMatch(item.name))
+            foreach (var item in release.assets)
             {
-                continue;
+                cancellationToken.ThrowIfCancellationRequested();
+
+                if (assetNameRegex != null && !assetNameRegex.IsMatch(item.name))
+                {
+                    continue;
+                }
+
+                await ProcessDirectUrlAsync(new DirectUrlConfig { Url = item.browser_download_url, ArchivePathRegex = config.ArchivePathRegex, CompressionType = config.CompressionType }, projectName, cancellationToken).ConfigureAwait(false);
             }
-
-            await ProcessDirectUrlAsync(new DirectUrlConfig { Url = item.browser_download_url, ArchivePathRegex = config.ArchivePathRegex }, projectName, cancellationToken).ConfigureAwait(false);
         }
-    }
-
-    public enum CompressionType
-    {
-        Zip,
-        TarGz
+        else
+        {
+            await ProcessDirectUrlAsync(new DirectUrlConfig { Url = release.tarball_url, ArchivePathRegex = config.ArchivePathRegex, CompressionType = CompressionType.TarGz }, projectName, cancellationToken).ConfigureAwait(false);
+        }
     }
 
     internal static List<Stream> ExtractAllYaml(Stream stream, CompressionType compressionType, string? assetNameRegexPattern = null, CancellationToken cancellationToken = default)

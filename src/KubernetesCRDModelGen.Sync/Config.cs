@@ -1,4 +1,6 @@
-﻿namespace KubernetesCRDModelGen.Sync;
+﻿using static KubernetesCRDModelGen.Sync.CRD.CRDDownloader;
+
+namespace KubernetesCRDModelGen.Sync;
 
 /// <summary>
 /// Configuration settings for the Kubernetes CRD Model Generator.
@@ -47,6 +49,12 @@ public class DirectUrlConfig
     /// Regex Filter for Archive Path when extracting from archive (zip, tar.gz, etc.)
     /// </summary>
     public string? ArchivePathRegex { get; set; }
+
+    /// <summary>
+    /// Specifies the type of compression used for the resource. Supports None,Zip,TarGz
+    /// </summary>
+    /// <value></value>
+    public CompressionType? CompressionType { get; set; }
 }
 
 /// <summary>
@@ -78,6 +86,12 @@ public class GitHubConfig
     /// Whether to include pre-release versions when selecting the latest release. If true, pre-release versions will be considered; if false, only stable versions will be considered. If null, the default behavior is to exclude pre-release versions.
     /// </summary>
     public bool? PreRelease { get; set; }
+
+    /// <summary>
+    /// Specifies the type of compression used for the resource. Supports None,Zip,TarGz
+    /// </summary>
+    /// <value></value>
+    public CompressionType? CompressionType { get; set; }
 }
 
 /// <summary>
@@ -124,4 +138,11 @@ public class OCIConfig
     /// Whether to include pre-release versions when selecting the latest tag. If true, pre-release versions will be considered; if false, only stable versions will be considered. If null, the default behavior is to exclude pre-release versions.
     /// </summary>
     public bool? PreRelease { get; set; }
+}
+
+public enum CompressionType
+{
+    None,
+    Zip,
+    TarGz
 }

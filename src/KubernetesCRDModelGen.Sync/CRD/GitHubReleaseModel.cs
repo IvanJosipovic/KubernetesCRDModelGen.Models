@@ -7,7 +7,7 @@ class GitHubReleaseModel
     //public bool draft { get; set; }
     public bool prerelease { get; set; } = default!;
     public Asset[] assets { get; set; } = default!;
-    //public string tarball_url { get; set; }
+    public string tarball_url { get; set; } = default!;
     //public string zipball_url { get; set; }
 
     public class Asset
