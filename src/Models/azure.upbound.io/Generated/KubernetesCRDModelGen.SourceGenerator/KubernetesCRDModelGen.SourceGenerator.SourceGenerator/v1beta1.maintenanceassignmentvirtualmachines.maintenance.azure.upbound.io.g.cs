@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.maintenance.azure.upbound.io;
 /// <summary>MaintenanceAssignmentVirtualMachine is the Schema for the MaintenanceAssignmentVirtualMachines API. Manages a Maintenance Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MaintenanceAssignmentVirtualMachine>
@@ -45,7 +45,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineList : IKubernete
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecDeletionPolicyEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenance
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMa
 }
 
 /// <summary>Reference to a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenance
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMa
 }
 
 /// <summary>Selector for a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMaintenanceConfigurationIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMach
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMach
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVi
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMach
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMach
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVi
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVi
     public V1beta1MaintenanceAssignmentVirtualMachineSpecForProviderVirtualMachineIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProvider
 {
@@ -388,7 +388,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderM
 }
 
 /// <summary>Reference to a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderM
 }
 
 /// <summary>Selector for a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderMaintenanceConfigurationIdSelector
 {
@@ -541,7 +541,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProviderM
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProvider
 {
@@ -566,7 +566,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecManagementPoliciesEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecManagementPoliciesEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRefPolicy
 {
@@ -645,7 +645,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfi
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfigRef
 {
@@ -664,7 +664,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecWriteConnectionSecretToRef
 {
@@ -678,7 +678,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpecWriteConnecti
 }
 
 /// <summary>MaintenanceAssignmentVirtualMachineSpec defines the desired state of MaintenanceAssignmentVirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineSpec
 {
@@ -745,7 +745,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineSpec
     public V1beta1MaintenanceAssignmentVirtualMachineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineStatusAtProvider
 {
@@ -767,7 +767,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineStatusConditions
 {
@@ -810,7 +810,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineStatusConditions
 }
 
 /// <summary>MaintenanceAssignmentVirtualMachineStatus defines the observed state of MaintenanceAssignmentVirtualMachine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentVirtualMachineStatus
 {
@@ -831,7 +831,7 @@ public partial class V1beta1MaintenanceAssignmentVirtualMachineStatus
 }
 
 /// <summary>MaintenanceAssignmentVirtualMachine is the Schema for the MaintenanceAssignmentVirtualMachines API. Manages a Maintenance Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceAssignmentVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MaintenanceAssignmentVirtualMachineSpec>, IStatus<V1beta1MaintenanceAssignmentVirtualMachineStatus?>

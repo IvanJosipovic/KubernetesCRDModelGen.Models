@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>VPCEndpointService is the Schema for the VPCEndpointServices API. Provides a VPC Endpoint Service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCEndpointService>
@@ -42,7 +42,7 @@ public partial class V1beta1VPCEndpointServiceList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefsPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancer
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsRefs
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancer
 }
 
 /// <summary>Selector for a list of LB in elbv2 to populate gatewayLoadBalancerArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefsPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancer
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsRefs
 {
@@ -271,7 +271,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancer
 }
 
 /// <summary>Selector for a list of LB in elbv2 to populate networkLoadBalancerArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancer
     public V1beta1VPCEndpointServiceSpecForProviderNetworkLoadBalancerArnsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecForProvider
 {
@@ -408,7 +408,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefsPolicyResolutionEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefsPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefsPolicyResolveEnum
 {
@@ -435,7 +435,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefsPolicy
 {
@@ -459,7 +459,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalance
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsRefs
 {
@@ -482,7 +482,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelectorPolicyResolutionEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelectorPolicyResolveEnum
 {
@@ -509,7 +509,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelectorPolicy
 {
@@ -533,7 +533,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalance
 }
 
 /// <summary>Selector for a list of LB in elbv2 to populate gatewayLoadBalancerArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelector
 {
@@ -563,7 +563,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefsPolicyResolutionEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefsPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefsPolicyResolveEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefsPolicy
 {
@@ -614,7 +614,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalance
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsRefs
 {
@@ -637,7 +637,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelectorPolicyResolutionEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelectorPolicyResolveEnum
 {
@@ -664,7 +664,7 @@ public enum V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelectorPolicy
 {
@@ -688,7 +688,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalance
 }
 
 /// <summary>Selector for a list of LB in elbv2 to populate networkLoadBalancerArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalancerArnsSelector
 {
@@ -724,7 +724,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProviderNetworkLoadBalance
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecInitProvider
 {
@@ -777,7 +777,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCEndpointServiceSpecManagementPoliciesEnum
 {
@@ -800,7 +800,7 @@ public enum V1beta1VPCEndpointServiceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecProviderConfigRef
 {
@@ -819,7 +819,7 @@ public partial class V1beta1VPCEndpointServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpecWriteConnectionSecretToRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1VPCEndpointServiceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VPCEndpointServiceSpec defines the desired state of VPCEndpointService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceSpec
 {
@@ -880,7 +880,7 @@ public partial class V1beta1VPCEndpointServiceSpec
     public V1beta1VPCEndpointServiceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceStatusAtProviderPrivateDnsNameConfiguration
 {
@@ -901,7 +901,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProviderPrivateDnsNameConf
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceStatusAtProvider
 {
@@ -986,7 +986,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceStatusConditions
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1VPCEndpointServiceStatusConditions
 }
 
 /// <summary>VPCEndpointServiceStatus defines the observed state of VPCEndpointService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceStatus
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1VPCEndpointServiceStatus
 }
 
 /// <summary>VPCEndpointService is the Schema for the VPCEndpointServices API. Provides a VPC Endpoint Service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCEndpointServiceSpec>, IStatus<V1beta1VPCEndpointServiceStatus?>

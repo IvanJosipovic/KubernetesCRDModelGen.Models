@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddeploy.cnrm.cloud.google.com;
 /// <summary>CloudDeployAutomation is the Schema for the CloudDeployAutomation API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployAutomationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudDeployAutomation>
@@ -37,7 +37,7 @@ public partial class V1alpha1CloudDeployAutomationList : IKubernetesObject<V1Lis
 }
 
 /// <summary>Immutable. Required. The DeliveryPipeline that this automation belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecDeliveryPipelineRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1CloudDeployAutomationSpecDeliveryPipelineRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecProjectRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1CloudDeployAutomationSpecProjectRef
 }
 
 /// <summary>Optional. The `AdvanceRolloutRule` will automatically advance a successful Rollout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesAdvanceRolloutRule
 {
@@ -95,7 +95,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesAdvanceRolloutRule
 }
 
 /// <summary>Optional. The ID of the stage in the pipeline to which this `Release` is deploying.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesPromoteReleaseRuleDestinationTargetRef
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesPromoteReleaseRuleDes
 }
 
 /// <summary>Optional. `PromoteReleaseRule` will automatically promote a release from the current target to a specified target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesPromoteReleaseRule
 {
@@ -135,7 +135,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesPromoteReleaseRule
 }
 
 /// <summary>Optional. Retries a failed job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepairPhasesRetry
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepa
 }
 
 /// <summary>Optional. Rolls back a `Rollout`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepairPhasesRollback
 {
@@ -166,7 +166,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepa
     public bool? DisableRollbackIfRolloutPending { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepairPhases
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRuleRepa
 }
 
 /// <summary>Optional. The `RepairRolloutRule` will automatically repair a failed rollout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRule
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesRepairRolloutRule
 }
 
 /// <summary>Optional. The ID of the stage in the pipeline to which this `Release` is deploying.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesTimedPromoteReleaseRuleDestinationTargetRef
 {
@@ -220,7 +220,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesTimedPromoteReleaseRu
 }
 
 /// <summary>Optional. The `TimedPromoteReleaseRule` will automatically promote a release from the current target(s) to the specified target(s) on a configured schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRulesTimedPromoteReleaseRule
 {
@@ -245,7 +245,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRulesTimedPromoteReleaseRu
     public required string TimeZone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecRules
 {
@@ -267,7 +267,7 @@ public partial class V1alpha1CloudDeployAutomationSpecRules
 }
 
 /// <summary>Optional. The Target to which the rule applies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecSelectorTargetsTargetRef
 {
@@ -284,7 +284,7 @@ public partial class V1alpha1CloudDeployAutomationSpecSelectorTargetsTargetRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecSelectorTargets
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1CloudDeployAutomationSpecSelectorTargets
 }
 
 /// <summary>Required. Selected resources to which the automation will be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecSelector
 {
@@ -308,7 +308,7 @@ public partial class V1alpha1CloudDeployAutomationSpecSelector
 }
 
 /// <summary>Required. Email address of the user-managed IAM service account that creates Cloud Deploy release and rollout resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpecServiceAccountRef
 {
@@ -326,7 +326,7 @@ public partial class V1alpha1CloudDeployAutomationSpecServiceAccountRef
 }
 
 /// <summary>CloudDeployAutomationSpec defines the desired state of CloudDeployAutomation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationSpec
 {
@@ -371,7 +371,7 @@ public partial class V1alpha1CloudDeployAutomationSpec
     public bool? Suspended { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusConditions
 {
@@ -397,7 +397,7 @@ public partial class V1alpha1CloudDeployAutomationStatusConditions
 }
 
 /// <summary>Optional. Details around targets enumerated in the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanceRolloutRuleConditionTargetsPresentCondition
 {
@@ -414,7 +414,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanc
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanceRolloutRuleConditionTimedPromoteReleaseConditionTargetsList
 {
@@ -428,7 +428,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanc
 }
 
 /// <summary>Optional. TimedPromoteReleaseCondition contains rule conditions specific to a an Automation with a timed promote release rule defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanceRolloutRuleConditionTimedPromoteReleaseCondition
 {
@@ -442,7 +442,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanc
 }
 
 /// <summary>Output only. Information around the state of the Automation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanceRolloutRuleCondition
 {
@@ -456,7 +456,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanc
 }
 
 /// <summary>Optional. The `AdvanceRolloutRule` will automatically advance a successful Rollout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanceRolloutRule
 {
@@ -466,7 +466,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesAdvanc
 }
 
 /// <summary>Optional. Details around targets enumerated in the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromoteReleaseRuleConditionTargetsPresentCondition
 {
@@ -483,7 +483,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromot
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromoteReleaseRuleConditionTimedPromoteReleaseConditionTargetsList
 {
@@ -497,7 +497,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromot
 }
 
 /// <summary>Optional. TimedPromoteReleaseCondition contains rule conditions specific to a an Automation with a timed promote release rule defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromoteReleaseRuleConditionTimedPromoteReleaseCondition
 {
@@ -511,7 +511,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromot
 }
 
 /// <summary>Output only. Information around the state of the Automation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromoteReleaseRuleCondition
 {
@@ -525,7 +525,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromot
 }
 
 /// <summary>Optional. `PromoteReleaseRule` will automatically promote a release from the current target to a specified target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromoteReleaseRule
 {
@@ -535,7 +535,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesPromot
 }
 
 /// <summary>Optional. Details around targets enumerated in the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepairRolloutRuleConditionTargetsPresentCondition
 {
@@ -552,7 +552,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepair
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepairRolloutRuleConditionTimedPromoteReleaseConditionTargetsList
 {
@@ -566,7 +566,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepair
 }
 
 /// <summary>Optional. TimedPromoteReleaseCondition contains rule conditions specific to a an Automation with a timed promote release rule defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepairRolloutRuleConditionTimedPromoteReleaseCondition
 {
@@ -580,7 +580,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepair
 }
 
 /// <summary>Output only. Information around the state of the &apos;Automation&apos; rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepairRolloutRuleCondition
 {
@@ -594,7 +594,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepair
 }
 
 /// <summary>Optional. The `RepairRolloutRule` will automatically repair a failed rollout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepairRolloutRule
 {
@@ -604,7 +604,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesRepair
 }
 
 /// <summary>Optional. Details around targets enumerated in the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRuleConditionTargetsPresentCondition
 {
@@ -621,7 +621,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedP
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRuleConditionTimedPromoteReleaseConditionTargetsList
 {
@@ -635,7 +635,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedP
 }
 
 /// <summary>Optional. TimedPromoteReleaseCondition contains rule conditions specific to a an Automation with a timed promote release rule defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRuleConditionTimedPromoteReleaseCondition
 {
@@ -649,7 +649,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedP
 }
 
 /// <summary>Output only. Information around the state of the Automation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRuleCondition
 {
@@ -663,7 +663,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedP
 }
 
 /// <summary>Optional. The `TimedPromoteReleaseRule` will automatically promote a release from the current target(s) to the specified target(s) on a configured schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRule
 {
@@ -672,7 +672,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedP
     public V1alpha1CloudDeployAutomationStatusObservedStateRulesTimedPromoteReleaseRuleCondition? Condition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedStateRules
 {
@@ -694,7 +694,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedStateRules
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatusObservedState
 {
@@ -720,7 +720,7 @@ public partial class V1alpha1CloudDeployAutomationStatusObservedState
 }
 
 /// <summary>CloudDeployAutomationStatus defines the config connector machine state of CloudDeployAutomation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployAutomationStatus
 {
@@ -742,7 +742,7 @@ public partial class V1alpha1CloudDeployAutomationStatus
 }
 
 /// <summary>CloudDeployAutomation is the Schema for the CloudDeployAutomation API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployAutomation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudDeployAutomationSpec>, IStatus<V1alpha1CloudDeployAutomationStatus?>

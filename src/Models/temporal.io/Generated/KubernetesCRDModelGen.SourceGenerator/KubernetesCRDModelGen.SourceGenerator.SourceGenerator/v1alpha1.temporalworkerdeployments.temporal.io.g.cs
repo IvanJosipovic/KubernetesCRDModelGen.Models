@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.temporal.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,7 +36,7 @@ public partial class V1alpha1TemporalWorkerDeploymentList : IKubernetesObject<V1
     public required IList<V1alpha1TemporalWorkerDeployment> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromConfigMapKeyRef
@@ -51,7 +51,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromCon
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromSecretKeyRef
@@ -66,7 +66,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromSec
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFrom
@@ -78,7 +78,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFrom
     public V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGate
@@ -93,7 +93,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGate
     public required string WorkflowType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutSteps
@@ -105,7 +105,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutSteps
     public required int RampPercentage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TemporalWorkerDeploymentSpecRolloutStrategyEnum>))]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public enum V1alpha1TemporalWorkerDeploymentSpecRolloutStrategyEnum
@@ -118,7 +118,7 @@ public enum V1alpha1TemporalWorkerDeploymentSpecRolloutStrategyEnum
     Progressive
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRollout
@@ -133,7 +133,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRollout
     public required V1alpha1TemporalWorkerDeploymentSpecRolloutStrategyEnum Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecSunset
@@ -145,7 +145,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecSunset
     public string? ScaledownDelay { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateMetadata
@@ -166,7 +166,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateMetadata
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
@@ -181,7 +181,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
@@ -196,7 +196,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
@@ -208,7 +208,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -220,7 +220,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
@@ -235,7 +235,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
@@ -250,7 +250,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
@@ -262,7 +262,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -271,7 +271,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public required IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinity
@@ -283,7 +283,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNod
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -298,7 +298,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -310,7 +310,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -325,7 +325,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -337,7 +337,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -361,7 +361,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -373,7 +373,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -388,7 +388,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -400,7 +400,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -415,7 +415,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -427,7 +427,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -451,7 +451,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinity
@@ -463,7 +463,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -478,7 +478,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -490,7 +490,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -505,7 +505,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -517,7 +517,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -541,7 +541,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -553,7 +553,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -568,7 +568,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -580,7 +580,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -595,7 +595,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -607,7 +607,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -631,7 +631,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinity
@@ -643,7 +643,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPod
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinity
@@ -658,7 +658,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinity
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromConfigMapKeyRef
@@ -673,7 +673,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromFieldRef
@@ -685,7 +685,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromFileKeyRef
@@ -703,7 +703,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public required string VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromResourceFieldRef
@@ -718,7 +718,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromSecretKeyRef
@@ -733,7 +733,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFrom
@@ -754,7 +754,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnv
@@ -769,7 +769,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvFromConfigMapRef
@@ -781,7 +781,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvFromSecretRef
@@ -793,7 +793,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvFrom
@@ -808,7 +808,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersE
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartExec
@@ -817,7 +817,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartHttpGetHttpHeaders
@@ -829,7 +829,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartHttpGet
@@ -850,7 +850,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartSleep
@@ -859,7 +859,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartTcpSocket
@@ -871,7 +871,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStart
@@ -889,7 +889,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopExec
@@ -898,7 +898,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopHttpGetHttpHeaders
@@ -910,7 +910,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopHttpGet
@@ -931,7 +931,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopSleep
@@ -940,7 +940,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopTcpSocket
@@ -952,7 +952,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStop
@@ -970,7 +970,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLifecycle
@@ -985,7 +985,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbeExec
@@ -994,7 +994,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbeGrpc
@@ -1006,7 +1006,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbeHttpGetHttpHeaders
@@ -1018,7 +1018,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbeHttpGet
@@ -1039,7 +1039,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbeTcpSocket
@@ -1051,7 +1051,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersLivenessProbe
@@ -1087,7 +1087,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersL
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersPorts
@@ -1108,7 +1108,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersP
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbeExec
@@ -1117,7 +1117,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbeGrpc
@@ -1129,7 +1129,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbeHttpGetHttpHeaders
@@ -1141,7 +1141,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbeHttpGet
@@ -1162,7 +1162,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbeTcpSocket
@@ -1174,7 +1174,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersReadinessProbe
@@ -1210,7 +1210,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersResizePolicy
@@ -1222,7 +1222,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersResourcesClaims
@@ -1234,7 +1234,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersResources
@@ -1249,7 +1249,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersRestartPolicyRulesExitCodes
@@ -1261,7 +1261,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public IList<int>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersRestartPolicyRules
@@ -1273,7 +1273,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersR
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextAppArmorProfile
@@ -1285,7 +1285,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextCapabilities
@@ -1297,7 +1297,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextSeLinuxOptions
@@ -1315,7 +1315,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextSeccompProfile
@@ -1327,7 +1327,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextWindowsOptions
@@ -1345,7 +1345,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContext
@@ -1387,7 +1387,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbeExec
@@ -1396,7 +1396,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbeGrpc
@@ -1408,7 +1408,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbeHttpGetHttpHeaders
@@ -1420,7 +1420,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbeHttpGet
@@ -1441,7 +1441,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbeTcpSocket
@@ -1453,7 +1453,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersStartupProbe
@@ -1489,7 +1489,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersS
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersVolumeDevices
@@ -1501,7 +1501,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersV
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersVolumeMounts
@@ -1528,7 +1528,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainersV
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainers
@@ -1609,7 +1609,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecContainers
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecDnsConfigOptions
@@ -1621,7 +1621,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecDnsConfigOp
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecDnsConfig
@@ -1636,7 +1636,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecDnsConfig
     public IList<string>? Searches { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromConfigMapKeyRef
@@ -1651,7 +1651,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromFieldRef
@@ -1663,7 +1663,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromFileKeyRef
@@ -1681,7 +1681,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromResourceFieldRef
@@ -1696,7 +1696,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromSecretKeyRef
@@ -1711,7 +1711,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFrom
@@ -1732,7 +1732,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnv
@@ -1747,7 +1747,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvFromConfigMapRef
@@ -1759,7 +1759,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvFromSecretRef
@@ -1771,7 +1771,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvFrom
@@ -1786,7 +1786,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartExec
@@ -1795,7 +1795,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartHttpGetHttpHeaders
@@ -1807,7 +1807,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartHttpGet
@@ -1828,7 +1828,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartSleep
@@ -1837,7 +1837,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartTcpSocket
@@ -1849,7 +1849,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStart
@@ -1867,7 +1867,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopExec
@@ -1876,7 +1876,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopHttpGetHttpHeaders
@@ -1888,7 +1888,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopHttpGet
@@ -1909,7 +1909,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopSleep
@@ -1918,7 +1918,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopTcpSocket
@@ -1930,7 +1930,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStop
@@ -1948,7 +1948,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLifecycle
@@ -1963,7 +1963,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbeExec
@@ -1972,7 +1972,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbeGrpc
@@ -1984,7 +1984,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbeHttpGetHttpHeaders
@@ -1996,7 +1996,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbeHttpGet
@@ -2017,7 +2017,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbeTcpSocket
@@ -2029,7 +2029,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersLivenessProbe
@@ -2065,7 +2065,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersPorts
@@ -2086,7 +2086,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbeExec
@@ -2095,7 +2095,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbeGrpc
@@ -2107,7 +2107,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbeHttpGetHttpHeaders
@@ -2119,7 +2119,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbeHttpGet
@@ -2140,7 +2140,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbeTcpSocket
@@ -2152,7 +2152,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersReadinessProbe
@@ -2188,7 +2188,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersResizePolicy
@@ -2200,7 +2200,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersResourcesClaims
@@ -2212,7 +2212,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersResources
@@ -2227,7 +2227,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersRestartPolicyRulesExitCodes
@@ -2239,7 +2239,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<int>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersRestartPolicyRules
@@ -2251,7 +2251,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextAppArmorProfile
@@ -2263,7 +2263,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextCapabilities
@@ -2275,7 +2275,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextSeLinuxOptions
@@ -2293,7 +2293,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextSeccompProfile
@@ -2305,7 +2305,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextWindowsOptions
@@ -2323,7 +2323,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContext
@@ -2365,7 +2365,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbeExec
@@ -2374,7 +2374,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbeGrpc
@@ -2386,7 +2386,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbeHttpGetHttpHeaders
@@ -2398,7 +2398,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbeHttpGet
@@ -2419,7 +2419,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbeTcpSocket
@@ -2431,7 +2431,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersStartupProbe
@@ -2467,7 +2467,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersVolumeDevices
@@ -2479,7 +2479,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainersVolumeMounts
@@ -2506,7 +2506,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralContainers
@@ -2590,7 +2590,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecEphemeralCo
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecHostAliases
@@ -2602,7 +2602,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecHostAliases
     public required string Ip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecImagePullSecrets
@@ -2611,7 +2611,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecImagePullSe
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromConfigMapKeyRef
@@ -2626,7 +2626,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromFieldRef
@@ -2638,7 +2638,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromFileKeyRef
@@ -2656,7 +2656,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromResourceFieldRef
@@ -2671,7 +2671,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromSecretKeyRef
@@ -2686,7 +2686,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFrom
@@ -2707,7 +2707,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnv
@@ -2722,7 +2722,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvFromConfigMapRef
@@ -2734,7 +2734,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvFromSecretRef
@@ -2746,7 +2746,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvFrom
@@ -2761,7 +2761,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartExec
@@ -2770,7 +2770,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartHttpGetHttpHeaders
@@ -2782,7 +2782,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartHttpGet
@@ -2803,7 +2803,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartSleep
@@ -2812,7 +2812,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartTcpSocket
@@ -2824,7 +2824,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStart
@@ -2842,7 +2842,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopExec
@@ -2851,7 +2851,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopHttpGetHttpHeaders
@@ -2863,7 +2863,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopHttpGet
@@ -2884,7 +2884,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopSleep
@@ -2893,7 +2893,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopTcpSocket
@@ -2905,7 +2905,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStop
@@ -2923,7 +2923,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLifecycle
@@ -2938,7 +2938,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbeExec
@@ -2947,7 +2947,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbeGrpc
@@ -2959,7 +2959,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbeHttpGetHttpHeaders
@@ -2971,7 +2971,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbeHttpGet
@@ -2992,7 +2992,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbeTcpSocket
@@ -3004,7 +3004,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersLivenessProbe
@@ -3040,7 +3040,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersPorts
@@ -3061,7 +3061,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbeExec
@@ -3070,7 +3070,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbeGrpc
@@ -3082,7 +3082,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbeHttpGetHttpHeaders
@@ -3094,7 +3094,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbeHttpGet
@@ -3115,7 +3115,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbeTcpSocket
@@ -3127,7 +3127,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersReadinessProbe
@@ -3163,7 +3163,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersResizePolicy
@@ -3175,7 +3175,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersResourcesClaims
@@ -3187,7 +3187,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersResources
@@ -3202,7 +3202,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersRestartPolicyRulesExitCodes
@@ -3214,7 +3214,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<int>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersRestartPolicyRules
@@ -3226,7 +3226,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextAppArmorProfile
@@ -3238,7 +3238,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextCapabilities
@@ -3250,7 +3250,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextSeLinuxOptions
@@ -3268,7 +3268,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextSeccompProfile
@@ -3280,7 +3280,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextWindowsOptions
@@ -3298,7 +3298,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContext
@@ -3340,7 +3340,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbeExec
@@ -3349,7 +3349,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbeGrpc
@@ -3361,7 +3361,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbeHttpGetHttpHeaders
@@ -3373,7 +3373,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbeHttpGet
@@ -3394,7 +3394,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbeTcpSocket
@@ -3406,7 +3406,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersStartupProbe
@@ -3442,7 +3442,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersVolumeDevices
@@ -3454,7 +3454,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainersVolumeMounts
@@ -3481,7 +3481,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContainers
@@ -3562,7 +3562,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecInitContain
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecOs
@@ -3571,7 +3571,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecOs
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecReadinessGates
@@ -3580,7 +3580,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecReadinessGa
     public required string ConditionType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResourceClaims
@@ -3595,7 +3595,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResourceCla
     public string? ResourceClaimTemplateName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResourcesClaims
@@ -3607,7 +3607,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResourcesCl
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResources
@@ -3622,7 +3622,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingGates
@@ -3631,7 +3631,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingG
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextAppArmorProfile
@@ -3643,7 +3643,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextSeLinuxOptions
@@ -3661,7 +3661,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextSeccompProfile
@@ -3673,7 +3673,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextSysctls
@@ -3685,7 +3685,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextWindowsOptions
@@ -3703,7 +3703,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContext
@@ -3748,7 +3748,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityCon
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTolerations
@@ -3769,7 +3769,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTolerations
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpreadConstraintsLabelSelectorMatchExpressions
@@ -3784,7 +3784,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpr
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpreadConstraintsLabelSelector
@@ -3796,7 +3796,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpr
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpreadConstraints
@@ -3826,7 +3826,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecTopologySpr
     public required string WhenUnsatisfiable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAwsElasticBlockStore
@@ -3844,7 +3844,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAwsE
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAzureDisk
@@ -3868,7 +3868,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAzur
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAzureFile
@@ -3883,7 +3883,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesAzur
     public required string ShareName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCephfsSecretRef
@@ -3892,7 +3892,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCeph
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCephfs
@@ -3916,7 +3916,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCeph
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCinderSecretRef
@@ -3925,7 +3925,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCind
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCinder
@@ -3943,7 +3943,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCind
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesConfigMapItems
@@ -3958,7 +3958,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesConf
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesConfigMap
@@ -3976,7 +3976,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesConf
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCsiNodePublishSecretRef
@@ -3985,7 +3985,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCsiN
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCsi
@@ -4006,7 +4006,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesCsi
     public IDictionary<string, string>? VolumeAttributes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPIItemsFieldRef
@@ -4018,7 +4018,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDown
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPIItemsResourceFieldRef
@@ -4033,7 +4033,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDown
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPIItems
@@ -4051,7 +4051,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDown
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPI
@@ -4063,7 +4063,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDown
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesDownwardAPIItems>? Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEmptyDir
@@ -4075,7 +4075,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEmpt
     public IntOrString? SizeLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateMetadata
@@ -4096,7 +4096,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSource
@@ -4111,7 +4111,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSourceRef
@@ -4129,7 +4129,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecResources
@@ -4141,7 +4141,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions
@@ -4156,7 +4156,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelector
@@ -4168,7 +4168,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpec
@@ -4201,7 +4201,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public string? VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate
@@ -4213,7 +4213,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public required V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplateSpec Spec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeral
@@ -4222,7 +4222,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphe
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate? VolumeClaimTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFc
@@ -4243,7 +4243,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFc
     public IList<string>? Wwids { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlexVolumeSecretRef
@@ -4252,7 +4252,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlex
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlexVolume
@@ -4273,7 +4273,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlex
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlexVolumeSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFlocker
@@ -4285,7 +4285,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesFloc
     public string? DatasetUUID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGcePersistentDisk
@@ -4303,7 +4303,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGceP
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGitRepo
@@ -4318,7 +4318,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGitR
     public string? Revision { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGlusterfs
@@ -4333,7 +4333,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesGlus
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesHostPath
@@ -4345,7 +4345,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesHost
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesImage
@@ -4357,7 +4357,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesImag
     public string? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesIscsiSecretRef
@@ -4366,7 +4366,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesIscs
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesIscsi
@@ -4405,7 +4405,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesIscs
     public required string TargetPortal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesNfs
@@ -4420,7 +4420,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesNfs
     public required string Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPersistentVolumeClaim
@@ -4432,7 +4432,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPers
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPhotonPersistentDisk
@@ -4444,7 +4444,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPhot
     public required string PdID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPortworxVolume
@@ -4459,7 +4459,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesPort
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelectorMatchExpressions
@@ -4474,7 +4474,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelector
@@ -4486,7 +4486,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesClusterTrustBundle
@@ -4507,7 +4507,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public string? SignerName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesConfigMapItems
@@ -4522,7 +4522,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesConfigMap
@@ -4537,7 +4537,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItemsFieldRef
@@ -4549,7 +4549,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef
@@ -4564,7 +4564,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItems
@@ -4582,7 +4582,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPI
@@ -4591,7 +4591,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItems>? Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesPodCertificate
@@ -4618,7 +4618,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public IDictionary<string, string>? UserAnnotations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesSecretItems
@@ -4633,7 +4633,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesSecret
@@ -4648,7 +4648,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesServiceAccountToken
@@ -4663,7 +4663,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSources
@@ -4687,7 +4687,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjected
@@ -4699,7 +4699,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProj
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesProjectedSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesQuobyte
@@ -4723,7 +4723,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesQuob
     public required string Volume { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesRbdSecretRef
@@ -4732,7 +4732,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesRbdS
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesRbd
@@ -4762,7 +4762,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesRbd
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesScaleIOSecretRef
@@ -4771,7 +4771,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesScal
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesScaleIO
@@ -4807,7 +4807,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesScal
     public string? VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesSecretItems
@@ -4822,7 +4822,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesSecr
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesSecret
@@ -4840,7 +4840,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesSecr
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesStorageosSecretRef
@@ -4849,7 +4849,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesStor
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesStorageos
@@ -4870,7 +4870,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesStor
     public string? VolumeNamespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesVsphereVolume
@@ -4888,7 +4888,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesVsph
     public required string VolumePath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumes
@@ -4987,7 +4987,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumes
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumesVsphereVolume? VsphereVolume { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecWorkloadRef
@@ -5002,7 +5002,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecWorkloadRef
     public string? PodGroupReplicaKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpec
@@ -5134,7 +5134,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpec
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecWorkloadRef? WorkloadRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplate
@@ -5146,7 +5146,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplate
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpec? Spec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecWorkerOptionsConnectionRef
@@ -5155,7 +5155,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecWorkerOptionsConnection
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecWorkerOptions
@@ -5170,7 +5170,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecWorkerOptions
     public string? UnsafeCustomBuildID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpec
@@ -5197,7 +5197,7 @@ public partial class V1alpha1TemporalWorkerDeploymentSpec
     public required V1alpha1TemporalWorkerDeploymentSpecWorkerOptions WorkerOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TemporalWorkerDeploymentStatusConditionsStatusEnum>))]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public enum V1alpha1TemporalWorkerDeploymentStatusConditionsStatusEnum
@@ -5210,7 +5210,7 @@ public enum V1alpha1TemporalWorkerDeploymentStatusConditionsStatusEnum
     Unknown
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusConditions
@@ -5234,7 +5234,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusConditions
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersionDeployment
@@ -5261,7 +5261,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersionDeploym
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersionTaskQueues
@@ -5270,7 +5270,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersionTaskQue
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersion
@@ -5294,7 +5294,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusCurrentVersion
     public IList<V1alpha1TemporalWorkerDeploymentStatusCurrentVersionTaskQueues>? TaskQueues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersionsDeployment
@@ -5321,7 +5321,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersionsDep
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersionsTaskQueues
@@ -5330,7 +5330,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersionsTas
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersions
@@ -5360,7 +5360,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersions
     public IList<V1alpha1TemporalWorkerDeploymentStatusDeprecatedVersionsTaskQueues>? TaskQueues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionDeployment
@@ -5387,7 +5387,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionDeployme
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionTaskQueues
@@ -5396,7 +5396,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionTaskQueu
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionTestWorkflows
@@ -5414,7 +5414,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersionTestWork
     public required string WorkflowID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersion
@@ -5450,7 +5450,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatusTargetVersion
     public IList<V1alpha1TemporalWorkerDeploymentStatusTargetVersionTestWorkflows>? TestWorkflows { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentStatus
@@ -5480,7 +5480,7 @@ public partial class V1alpha1TemporalWorkerDeploymentStatus
     public int? VersionCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

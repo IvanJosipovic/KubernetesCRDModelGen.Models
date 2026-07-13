@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.network.frontdoor.azure.com;
 /// - Generated from: /frontdoor/resource-manager/Microsoft.Network/stable/2022-05-01/webapplicationfirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/FrontDoorWebApplicationFirewallPolicies/{policyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220501WebApplicationFirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1api20220501WebApplicationFirewallPolicy>
@@ -41,7 +41,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyList : IKubernetes
 }
 
 /// <summary>Action: Describes what action to be applied when rule matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesActionEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesActionEnum
 {
@@ -58,7 +58,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesActionE
 }
 
 /// <summary>EnabledState: Describes if the custom rule is in enabled or disabled state. Defaults to Enabled if not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesEnabledStateEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesEnabledStateEnum
 {
@@ -69,7 +69,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesEnabled
 }
 
 /// <summary>MatchVariable: Request variable to compare with.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsMatchVariableEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsMatchVariableEnum
 {
@@ -94,7 +94,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchCo
 }
 
 /// <summary>Operator: Comparison type to use for matching with the variable value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsOperatorEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsOperatorEnum
 {
@@ -125,7 +125,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchCo
 }
 
 /// <summary>Describes what transforms applied before matching.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsTransformsEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditionsTransformsEnum
 {
@@ -144,7 +144,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchCo
 }
 
 /// <summary>Define a match condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesMatchConditions
 {
@@ -177,7 +177,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRulesRul
 }
 
 /// <summary>RuleType: Describes type of rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesRuleTypeEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesRuleTypeEnum
 {
@@ -188,7 +188,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecCustomRulesRulesRuleTyp
 }
 
 /// <summary>Defines contents of a web application rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRulesRules
 {
@@ -226,7 +226,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRulesRul
 }
 
 /// <summary>CustomRules: Describes custom rules inside the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRules
 {
@@ -236,7 +236,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecCustomRules
 }
 
 /// <summary>MatchVariable: The variable type to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsExclusionsMatchVariableEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsExclusionsMatchVariableEnum
 {
@@ -256,7 +256,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 /// SelectorMatchOperator: Comparison operator to apply to the selector when specifying which elements in the collection
 /// this exclusion applies to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsExclusionsSelectorMatchOperatorEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsExclusionsSelectorMatchOperatorEnum
 {
@@ -273,7 +273,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsExclusions
 {
@@ -294,7 +294,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>MatchVariable: The variable type to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesExclusionsMatchVariableEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesExclusionsMatchVariableEnum
 {
@@ -314,7 +314,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 /// SelectorMatchOperator: Comparison operator to apply to the selector when specifying which elements in the collection
 /// this exclusion applies to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesExclusionsSelectorMatchOperatorEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesExclusionsSelectorMatchOperatorEnum
 {
@@ -331,7 +331,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesExclusions
 {
@@ -352,7 +352,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>Action: Describes the override action to be applied when rule matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesActionEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesActionEnum
 {
@@ -369,7 +369,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>EnabledState: Describes if the managed rule is in enabled or disabled state. Defaults to Disabled if not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesEnabledStateEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesEnabledStateEnum
 {
@@ -380,7 +380,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>MatchVariable: The variable type to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusionsMatchVariableEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusionsMatchVariableEnum
 {
@@ -400,7 +400,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 /// SelectorMatchOperator: Comparison operator to apply to the selector when specifying which elements in the collection
 /// this exclusion applies to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusionsSelectorMatchOperatorEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusionsSelectorMatchOperatorEnum
 {
@@ -417,7 +417,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusions
 {
@@ -438,7 +438,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>Defines a managed rule group override setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverridesRules
 {
@@ -460,7 +460,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>Defines a managed rule group override setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleGroupOverrides
 {
@@ -478,7 +478,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>RuleSetAction: Defines the rule set action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleSetActionEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSetsRuleSetActionEnum
 {
@@ -491,7 +491,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRule
 }
 
 /// <summary>Defines a managed rule set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesManagedRuleSets
 {
@@ -517,7 +517,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRulesMa
 }
 
 /// <summary>ManagedRules: Describes managed rules inside the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRules
 {
@@ -531,7 +531,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecManagedRules
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpecConfigMapExpressions
 {
@@ -572,7 +572,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpecCo
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpecSecretExpressions
 {
@@ -612,7 +612,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpecSe
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpec
 {
@@ -630,7 +630,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecOwner
 {
@@ -643,7 +643,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecOwner
 }
 
 /// <summary>EnabledState: Describes if the policy is in enabled or disabled state. Defaults to Enabled if not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecPolicySettingsEnabledStateEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsEnabledStateEnum
 {
@@ -654,7 +654,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsEnabledSt
 }
 
 /// <summary>Mode: Describes if it is in detection mode or prevention mode at policy level.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecPolicySettingsModeEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsModeEnum
 {
@@ -665,7 +665,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsModeEnum
 }
 
 /// <summary>RequestBodyCheck: Describes if policy managed rules will inspect the request body content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecPolicySettingsRequestBodyCheckEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsRequestBodyCheckEnum
 {
@@ -676,7 +676,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecPolicySettingsRequestBo
 }
 
 /// <summary>PolicySettings: Describes settings for the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecPolicySettings
 {
@@ -709,7 +709,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecPolicySettings
 }
 
 /// <summary>Name: Name of the pricing tier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220501WebApplicationFirewallPolicySpecSkuNameEnum>))]
 public enum V1api20220501WebApplicationFirewallPolicySpecSkuNameEnum
 {
@@ -722,7 +722,7 @@ public enum V1api20220501WebApplicationFirewallPolicySpecSkuNameEnum
 }
 
 /// <summary>Sku: The pricing tier of web application firewall policy. Defaults to Classic_AzureFrontDoor if not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpecSku
 {
@@ -731,7 +731,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpecSku
     public V1api20220501WebApplicationFirewallPolicySpecSkuNameEnum? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicySpec
 {
@@ -787,7 +787,7 @@ public partial class V1api20220501WebApplicationFirewallPolicySpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusConditions
 {
@@ -833,7 +833,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusConditions
 }
 
 /// <summary>Define a match condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRulesRulesMatchConditions
 {
@@ -866,7 +866,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRulesR
 }
 
 /// <summary>Defines contents of a web application rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRulesRules
 {
@@ -904,7 +904,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRulesR
 }
 
 /// <summary>CustomRules: Describes custom rules inside the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRules
 {
@@ -914,7 +914,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusCustomRules
 }
 
 /// <summary>Defines the Resource ID for a Frontend Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusFrontendEndpointLinks
 {
@@ -924,7 +924,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusFrontendEndp
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSetsExclusions
 {
@@ -945,7 +945,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSetsRuleGroupOverridesExclusions
 {
@@ -966,7 +966,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>Exclude variables from managed rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSetsRuleGroupOverridesRulesExclusions
 {
@@ -987,7 +987,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>Defines a managed rule group override setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSetsRuleGroupOverridesRules
 {
@@ -1009,7 +1009,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>Defines a managed rule group override setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSetsRuleGroupOverrides
 {
@@ -1027,7 +1027,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>Defines a managed rule set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRulesManagedRuleSets
 {
@@ -1053,7 +1053,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>ManagedRules: Describes managed rules inside the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 {
@@ -1063,7 +1063,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusManagedRules
 }
 
 /// <summary>PolicySettings: Describes settings for the policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusPolicySettings
 {
@@ -1096,7 +1096,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusPolicySettin
 }
 
 /// <summary>Defines the Resource ID for a Routing Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusRoutingRuleLinks
 {
@@ -1106,7 +1106,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusRoutingRuleL
 }
 
 /// <summary>Defines the Resource ID for a Security Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusSecurityPolicyLinks
 {
@@ -1116,7 +1116,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusSecurityPoli
 }
 
 /// <summary>Sku: The pricing tier of web application firewall policy. Defaults to Classic_AzureFrontDoor if not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatusSku
 {
@@ -1125,7 +1125,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatusSku
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220501WebApplicationFirewallPolicyStatus
 {
@@ -1198,7 +1198,7 @@ public partial class V1api20220501WebApplicationFirewallPolicyStatus
 /// - Generated from: /frontdoor/resource-manager/Microsoft.Network/stable/2022-05-01/webapplicationfirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/FrontDoorWebApplicationFirewallPolicies/{policyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220501WebApplicationFirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20220501WebApplicationFirewallPolicySpec?>, IStatus<V1api20220501WebApplicationFirewallPolicyStatus?>

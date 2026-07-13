@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dashboard.azure.m.upbound.io;
 /// <summary>GrafanaManagedPrivateEndpoint is the Schema for the GrafanaManagedPrivateEndpoints API. Manages a Dashboard Grafana Managed Private Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GrafanaManagedPrivateEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GrafanaManagedPrivateEndpoint>
@@ -42,7 +42,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaI
 }
 
 /// <summary>Reference to a Grafana in dashboard to populate grafanaId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaI
 }
 
 /// <summary>Selector for a Grafana in dashboard to populate grafanaId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderGrafanaI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 }
 
 /// <summary>Reference to a MonitorWorkspace in insights to populate privateLinkResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 }
 
 /// <summary>Selector for a MonitorWorkspace in insights to populate privateLinkResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRefPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRefPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 }
 
 /// <summary>Reference to a Grafana in dashboard to populate privateLinkResourceRegion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResour
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
 }
 
 /// <summary>Selector for a Grafana in dashboard to populate privateLinkResourceRegion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateL
     public V1beta1GrafanaManagedPrivateEndpointSpecForProviderPrivateLinkResourceRegionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProvider
 {
@@ -568,7 +568,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRefPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRefPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRefPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 }
 
 /// <summary>Reference to a MonitorWorkspace in insights to populate privateLinkResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdRef
 {
@@ -642,7 +642,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelectorPolicyResolutionEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelectorPolicyResolveEnum
 {
@@ -669,7 +669,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelectorPolicy
 {
@@ -693,7 +693,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 }
 
 /// <summary>Selector for a MonitorWorkspace in insights to populate privateLinkResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceIdSelector
 {
@@ -723,7 +723,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRefPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRefPolicyResolutionEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRefPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRefPolicyResolveEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRefPolicy
 {
@@ -774,7 +774,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 }
 
 /// <summary>Reference to a Grafana in dashboard to populate privateLinkResourceRegion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelectorPolicyResolutionEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelectorPolicyResolutionEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelectorPolicyResolveEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelectorPolicyResolveEnum
 {
@@ -824,7 +824,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelectorPolicy
 {
@@ -848,7 +848,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 }
 
 /// <summary>Selector for a Grafana in dashboard to populate privateLinkResourceRegion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivateLinkResourceRegionSelector
 {
@@ -884,7 +884,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProviderPrivate
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProvider
 {
@@ -937,7 +937,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GrafanaManagedPrivateEndpointSpecManagementPoliciesEnum>))]
 public enum V1beta1GrafanaManagedPrivateEndpointSpecManagementPoliciesEnum
 {
@@ -960,7 +960,7 @@ public enum V1beta1GrafanaManagedPrivateEndpointSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecProviderConfigRef
 {
@@ -979,7 +979,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpecWriteConnectionSecretToRef
 {
@@ -989,7 +989,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpecWriteConnectionSecr
 }
 
 /// <summary>GrafanaManagedPrivateEndpointSpec defines the desired state of GrafanaManagedPrivateEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointSpec
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointSpec
     public V1beta1GrafanaManagedPrivateEndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointStatusAtProvider
 {
@@ -1082,7 +1082,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointStatusConditions
 {
@@ -1125,7 +1125,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointStatusConditions
 }
 
 /// <summary>GrafanaManagedPrivateEndpointStatus defines the observed state of GrafanaManagedPrivateEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GrafanaManagedPrivateEndpointStatus
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta1GrafanaManagedPrivateEndpointStatus
 }
 
 /// <summary>GrafanaManagedPrivateEndpoint is the Schema for the GrafanaManagedPrivateEndpoints API. Manages a Dashboard Grafana Managed Private Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GrafanaManagedPrivateEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GrafanaManagedPrivateEndpointSpec>, IStatus<V1beta1GrafanaManagedPrivateEndpointStatus?>

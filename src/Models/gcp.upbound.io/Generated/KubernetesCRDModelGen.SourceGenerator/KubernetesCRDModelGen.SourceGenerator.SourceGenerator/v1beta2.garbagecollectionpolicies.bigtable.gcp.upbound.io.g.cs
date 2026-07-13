@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigtable.gcp.upbound.io;
 /// <summary>GarbageCollectionPolicy is the Schema for the GarbageCollectionPolicys API. Creates a Google Cloud Bigtable GC Policy inside a family.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GarbageCollectionPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GarbageCollectionPolicy>
@@ -45,7 +45,7 @@ public partial class V1beta2GarbageCollectionPolicyList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecDeletionPolicyEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2GarbageCollectionPolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRe
 }
 
 /// <summary>Reference to a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSe
 }
 
 /// <summary>Selector for a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderInstanceNameSe
 }
 
 /// <summary>GC policy that applies to all cells older than the given age.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderMaxAge
 {
@@ -216,7 +216,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderMaxAge
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderMaxVersion
 {
@@ -231,7 +231,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderMaxVersion
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolutionEnum
 {
@@ -247,7 +247,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolveEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicy
 {
@@ -282,7 +282,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderTableRefPolicy
 }
 
 /// <summary>Reference to a Table in bigtable to populate table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderTableRef
 {
@@ -301,7 +301,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderTableRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyResolutionEnum
 {
@@ -317,7 +317,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyResolveEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicy
 {
@@ -352,7 +352,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderTableSelectorP
 }
 
 /// <summary>Selector for a Table in bigtable to populate table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProviderTableSelector
 {
@@ -372,7 +372,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProviderTableSelector
     public V1beta2GarbageCollectionPolicySpecForProviderTableSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecForProvider
 {
@@ -446,7 +446,7 @@ public partial class V1beta2GarbageCollectionPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyResolutionEnum
 {
@@ -462,7 +462,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyResolveEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRefPolicy
 {
@@ -497,7 +497,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameR
 }
 
 /// <summary>Reference to a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameRef
 {
@@ -516,7 +516,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPolicyResolutionEnum
 {
@@ -532,7 +532,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPolicyResolveEnum
 {
@@ -543,7 +543,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelectorPolicy
 {
@@ -567,7 +567,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameS
 }
 
 /// <summary>Selector for a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameSelector
 {
@@ -588,7 +588,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderInstanceNameS
 }
 
 /// <summary>GC policy that applies to all cells older than the given age.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderMaxAge
 {
@@ -601,7 +601,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderMaxAge
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderMaxVersion
 {
@@ -616,7 +616,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderMaxVersion
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResolutionEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResolveEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolicy
 {
@@ -667,7 +667,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableRefPolic
 }
 
 /// <summary>Reference to a Table in bigtable to populate table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableRef
 {
@@ -686,7 +686,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyResolutionEnum
 {
@@ -702,7 +702,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyResolveEnum
 {
@@ -713,7 +713,7 @@ public enum V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableSelectorPolicy
 {
@@ -737,7 +737,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableSelector
 }
 
 /// <summary>Selector for a Table in bigtable to populate table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableSelector
 {
@@ -769,7 +769,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProviderTableSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecInitProvider
 {
@@ -841,7 +841,7 @@ public partial class V1beta2GarbageCollectionPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecManagementPoliciesEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecManagementPoliciesEnum
 {
@@ -865,7 +865,7 @@ public enum V1beta2GarbageCollectionPolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -881,7 +881,7 @@ public enum V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -892,7 +892,7 @@ public enum V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicy
 {
@@ -920,7 +920,7 @@ public partial class V1beta2GarbageCollectionPolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecProviderConfigRef
 {
@@ -939,7 +939,7 @@ public partial class V1beta2GarbageCollectionPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpecWriteConnectionSecretToRef
 {
@@ -953,7 +953,7 @@ public partial class V1beta2GarbageCollectionPolicySpecWriteConnectionSecretToRe
 }
 
 /// <summary>GarbageCollectionPolicySpec defines the desired state of GarbageCollectionPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicySpec
 {
@@ -1021,7 +1021,7 @@ public partial class V1beta2GarbageCollectionPolicySpec
 }
 
 /// <summary>GC policy that applies to all cells older than the given age.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicyStatusAtProviderMaxAge
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta2GarbageCollectionPolicyStatusAtProviderMaxAge
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicyStatusAtProviderMaxVersion
 {
@@ -1043,7 +1043,7 @@ public partial class V1beta2GarbageCollectionPolicyStatusAtProviderMaxVersion
     public double? Number { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicyStatusAtProvider
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta2GarbageCollectionPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicyStatusConditions
 {
@@ -1142,7 +1142,7 @@ public partial class V1beta2GarbageCollectionPolicyStatusConditions
 }
 
 /// <summary>GarbageCollectionPolicyStatus defines the observed state of GarbageCollectionPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GarbageCollectionPolicyStatus
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta2GarbageCollectionPolicyStatus
 }
 
 /// <summary>GarbageCollectionPolicy is the Schema for the GarbageCollectionPolicys API. Creates a Google Cloud Bigtable GC Policy inside a family.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GarbageCollectionPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GarbageCollectionPolicySpec>, IStatus<V1beta2GarbageCollectionPolicyStatus?>

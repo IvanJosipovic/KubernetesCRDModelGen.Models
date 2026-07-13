@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.codecommit.aws.m.upbound.io;
 /// <summary>ApprovalRuleTemplateAssociation is the Schema for the ApprovalRuleTemplateAssociations API. Associates a CodeCommit Approval Rule Template with a Repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApprovalRuleTemplateAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApprovalRuleTemplateAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationList : IKubernetesObj
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRefPolicyResolveEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprov
 }
 
 /// <summary>Reference to a ApprovalRuleTemplate in codecommit to populate approvalRuleTemplateName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprov
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprov
 }
 
 /// <summary>Selector for a ApprovalRuleTemplate in codecommit to populate approvalRuleTemplateName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprovalRuleTemplateNameSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderApprov
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRefPolicyResolveEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderReposi
 }
 
 /// <summary>Reference to a Repository in codecommit to populate repositoryName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderReposi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderReposi
 }
 
 /// <summary>Selector for a Repository in codecommit to populate repositoryName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProviderReposi
     public V1beta1ApprovalRuleTemplateAssociationSpecForProviderRepositoryNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProvider
 {
@@ -394,7 +394,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecInitProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApprovalRuleTemplateAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1ApprovalRuleTemplateAssociationSpecManagementPoliciesEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1ApprovalRuleTemplateAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecProviderConfigRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpecWriteConnectionSecretToRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpecWriteConnectionSe
 }
 
 /// <summary>ApprovalRuleTemplateAssociationSpec defines the desired state of ApprovalRuleTemplateAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationSpec
 {
@@ -507,7 +507,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationSpec
     public V1beta1ApprovalRuleTemplateAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationStatusAtProvider
 {
@@ -532,7 +532,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationStatusConditions
 {
@@ -575,7 +575,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationStatusConditions
 }
 
 /// <summary>ApprovalRuleTemplateAssociationStatus defines the observed state of ApprovalRuleTemplateAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApprovalRuleTemplateAssociationStatus
 {
@@ -596,7 +596,7 @@ public partial class V1beta1ApprovalRuleTemplateAssociationStatus
 }
 
 /// <summary>ApprovalRuleTemplateAssociation is the Schema for the ApprovalRuleTemplateAssociations API. Associates a CodeCommit Approval Rule Template with a Repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApprovalRuleTemplateAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApprovalRuleTemplateAssociationSpec>, IStatus<V1beta1ApprovalRuleTemplateAssociationStatus?>

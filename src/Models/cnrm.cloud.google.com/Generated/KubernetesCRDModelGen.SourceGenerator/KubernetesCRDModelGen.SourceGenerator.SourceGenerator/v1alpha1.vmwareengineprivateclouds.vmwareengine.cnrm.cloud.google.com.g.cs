@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vmwareengine.cnrm.cloud.google.com;
 /// <summary>VMwareEnginePrivateCloud is the Schema for the VMwareEnginePrivateCloud API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VMwareEnginePrivateCloudList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VMwareEnginePrivateCloud>
@@ -36,7 +36,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudList : IKubernetesObject<V1
     public required IList<V1alpha1VMwareEnginePrivateCloud> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpecManagementClusterNodeTypeConfigs
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpecManagementClusterNodeTy
 ///  The following fields can&apos;t be changed after private cloud creation:
 ///  `ManagementCluster.clusterId`, `ManagementCluster.nodeTypeId`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpecManagementCluster
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpecManagementCluster
 }
 
 /// <summary>Optional. The name of the VMware Engine network attached to the private cloud.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpecNetworkConfigVmwareEngineNetworkRef
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpecNetworkConfigVmwareEngi
 }
 
 /// <summary>Required. Network configuration of the private cloud.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpecNetworkConfig
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpecNetworkConfig
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpecProjectRef
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpecProjectRef
 }
 
 /// <summary>VMwareEnginePrivateCloudSpec defines the desired state of VMwareEnginePrivateCloud</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudSpec
 {
@@ -179,7 +179,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudSpec
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusConditions
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusConditions
 }
 
 /// <summary>Output only. HCX appliance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateHcx
 {
@@ -227,7 +227,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateHcx
 }
 
 /// <summary>Network configuration of the private cloud.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateNetworkConfig
 {
@@ -245,7 +245,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateNetworkC
 }
 
 /// <summary>Output only. NSX appliance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateNsx
 {
@@ -267,7 +267,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateNsx
 }
 
 /// <summary>Output only. Vcenter appliance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateVcenter
 {
@@ -289,7 +289,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedStateVcenter
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedState
 {
@@ -335,7 +335,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatusObservedState
 }
 
 /// <summary>VMwareEnginePrivateCloudStatus defines the config connector machine state of VMwareEnginePrivateCloud</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEnginePrivateCloudStatus
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1VMwareEnginePrivateCloudStatus
 }
 
 /// <summary>VMwareEnginePrivateCloud is the Schema for the VMwareEnginePrivateCloud API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VMwareEnginePrivateCloud : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VMwareEnginePrivateCloudSpec>, IStatus<V1alpha1VMwareEnginePrivateCloudStatus?>

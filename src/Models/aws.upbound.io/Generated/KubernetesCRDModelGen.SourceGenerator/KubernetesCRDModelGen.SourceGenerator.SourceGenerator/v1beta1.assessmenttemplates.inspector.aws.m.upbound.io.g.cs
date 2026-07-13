@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.inspector.aws.m.upbound.io;
 /// <summary>AssessmentTemplate is the Schema for the AssessmentTemplates API. Provides an Inspector Classic Assessment Template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AssessmentTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AssessmentTemplate>
@@ -42,7 +42,7 @@ public partial class V1beta1AssessmentTemplateList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRefPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRefPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTo
 }
 
 /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTo
 }
 
 /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTo
     public V1beta1AssessmentTemplateSpecForProviderEventSubscriptionTopicArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscription
 {
@@ -218,7 +218,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderEventSubscription
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolutionEnum
 {
@@ -234,7 +234,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolveEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicy
 {
@@ -269,7 +269,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnRefPolicy
 }
 
 /// <summary>Reference to a AssessmentTarget in inspector to populate targetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnRef
 {
@@ -292,7 +292,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResolutionEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResolveEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPo
 }
 
 /// <summary>Selector for a AssessmentTarget in inspector to populate targetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnSelector
 {
@@ -367,7 +367,7 @@ public partial class V1beta1AssessmentTemplateSpecForProviderTargetArnSelector
     public V1beta1AssessmentTemplateSpecForProviderTargetArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecForProvider
 {
@@ -417,7 +417,7 @@ public partial class V1beta1AssessmentTemplateSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRefPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRefPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRefPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRefPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRefPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionT
 }
 
 /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnRef
 {
@@ -491,7 +491,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionT
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionT
 }
 
 /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelector
 {
@@ -566,7 +566,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionT
     public V1beta1AssessmentTemplateSpecInitProviderEventSubscriptionTopicArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscription
 {
@@ -593,7 +593,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderEventSubscription
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolutionEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolveEnum
 {
@@ -620,7 +620,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicy
 {
@@ -644,7 +644,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnRefPolicy
 }
 
 /// <summary>Reference to a AssessmentTarget in inspector to populate targetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnRef
 {
@@ -667,7 +667,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyResolutionEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyResolveEnum
 {
@@ -694,7 +694,7 @@ public enum V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorPolicy
 {
@@ -718,7 +718,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnSelectorP
 }
 
 /// <summary>Selector for a AssessmentTarget in inspector to populate targetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnSelector
 {
@@ -754,7 +754,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProviderTargetArnSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecInitProvider
 {
@@ -795,7 +795,7 @@ public partial class V1beta1AssessmentTemplateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AssessmentTemplateSpecManagementPoliciesEnum>))]
 public enum V1beta1AssessmentTemplateSpecManagementPoliciesEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta1AssessmentTemplateSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecProviderConfigRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1AssessmentTemplateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpecWriteConnectionSecretToRef
 {
@@ -847,7 +847,7 @@ public partial class V1beta1AssessmentTemplateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AssessmentTemplateSpec defines the desired state of AssessmentTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateSpec
 {
@@ -898,7 +898,7 @@ public partial class V1beta1AssessmentTemplateSpec
     public V1beta1AssessmentTemplateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateStatusAtProviderEventSubscription
 {
@@ -911,7 +911,7 @@ public partial class V1beta1AssessmentTemplateStatusAtProviderEventSubscription
     public string? TopicArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateStatusAtProvider
 {
@@ -959,7 +959,7 @@ public partial class V1beta1AssessmentTemplateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateStatusConditions
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta1AssessmentTemplateStatusConditions
 }
 
 /// <summary>AssessmentTemplateStatus defines the observed state of AssessmentTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AssessmentTemplateStatus
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1AssessmentTemplateStatus
 }
 
 /// <summary>AssessmentTemplate is the Schema for the AssessmentTemplates API. Provides an Inspector Classic Assessment Template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AssessmentTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AssessmentTemplateSpec>, IStatus<V1beta1AssessmentTemplateStatus?>

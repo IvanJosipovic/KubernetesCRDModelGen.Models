@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.source.toolkit.fluxcd.io;
 /// <summary>HelmRepository is the Schema for the helmrepositories API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1HelmRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1HelmRepository>
@@ -40,7 +40,7 @@ public partial class V1HelmRepositoryList : IKubernetesObject<V1ListMeta>, IItem
 /// NamespaceSelector selects the namespaces to which this ACL applies.
 /// An empty map of MatchLabels matches all namespaces in a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositorySpecAccessFromNamespaceSelectors
 {
@@ -58,7 +58,7 @@ public partial class V1HelmRepositorySpecAccessFromNamespaceSelectors
 /// references to this object.
 /// NOTE: Not implemented, provisional as of https://github.com/fluxcd/flux2/pull/2092
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositorySpecAccessFrom
 {
@@ -87,7 +87,7 @@ public partial class V1HelmRepositorySpecAccessFrom
 /// It takes precedence over the values specified in the Secret referred
 /// to by `.spec.secretRef`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositorySpecCertSecretRef
 {
@@ -101,7 +101,7 @@ public partial class V1HelmRepositorySpecCertSecretRef
 /// This field is optional, and only taken into account if the .spec.type field is set to &apos;oci&apos;.
 /// When not specified, defaults to &apos;generic&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmRepositorySpecProviderEnum>))]
 public enum V1HelmRepositorySpecProviderEnum
 {
@@ -123,7 +123,7 @@ public enum V1HelmRepositorySpecProviderEnum
 /// Support for TLS auth using the &apos;certFile&apos; and &apos;keyFile&apos;, and/or &apos;caFile&apos;
 /// keys is deprecated. Please use `.spec.certSecretRef` instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositorySpecSecretRef
 {
@@ -136,7 +136,7 @@ public partial class V1HelmRepositorySpecSecretRef
 /// Type of the HelmRepository.
 /// When this field is set to  &quot;oci&quot;, the URL field value must be prefixed with &quot;oci://&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmRepositorySpecTypeEnum>))]
 public enum V1HelmRepositorySpecTypeEnum
 {
@@ -150,7 +150,7 @@ public enum V1HelmRepositorySpecTypeEnum
 /// HelmRepositorySpec specifies the required configuration to produce an
 /// Artifact for a Helm repository index YAML.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositorySpec
 {
@@ -259,7 +259,7 @@ public partial class V1HelmRepositorySpec
 }
 
 /// <summary>Artifact represents the last successful HelmRepository reconciliation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositoryStatusArtifact
 {
@@ -307,7 +307,7 @@ public partial class V1HelmRepositoryStatusArtifact
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmRepositoryStatusConditionsStatusEnum>))]
 public enum V1HelmRepositoryStatusConditionsStatusEnum
 {
@@ -320,7 +320,7 @@ public enum V1HelmRepositoryStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositoryStatusConditions
 {
@@ -366,7 +366,7 @@ public partial class V1HelmRepositoryStatusConditions
 }
 
 /// <summary>HelmRepositoryStatus records the observed state of the HelmRepository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmRepositoryStatus
 {
@@ -403,7 +403,7 @@ public partial class V1HelmRepositoryStatus
 }
 
 /// <summary>HelmRepository is the Schema for the helmrepositories API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1HelmRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1HelmRepositorySpec?>, IStatus<V1HelmRepositoryStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networksecurity.cnrm.cloud.google.com;
 /// <summary>NetworkSecurityInterceptEndpointGroup is the Schema for the NetworkSecurityInterceptEndpointGroup API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkSecurityInterceptEndpointGroup>
@@ -37,7 +37,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupList : IKubern
 }
 
 /// <summary>Required. Immutable. The deployment group that this endpoint group is connected to, for example: `projects/123456789/locations/global/interceptDeploymentGroups/my-dg`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpecInterceptDeploymentGroupRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpecInterceptD
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpecProjectRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpecProjectRef
 }
 
 /// <summary>NetworkSecurityInterceptEndpointGroupSpec defines the desired state of NetworkSecurityInterceptEndpointGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpec
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusConditions
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusConditio
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObservedStateAssociations
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObserved
     public string? State { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObservedStateConnectedDeploymentGroupLocations
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObserved
 }
 
 /// <summary>Output only. Details about the connected deployment group to this endpoint group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObservedStateConnectedDeploymentGroup
 {
@@ -176,7 +176,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObserved
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObservedState
 {
@@ -206,7 +206,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatusObserved
 }
 
 /// <summary>NetworkSecurityInterceptEndpointGroupStatus defines the config connector machine state of NetworkSecurityInterceptEndpointGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatus
 {
@@ -228,7 +228,7 @@ public partial class V1alpha1NetworkSecurityInterceptEndpointGroupStatus
 }
 
 /// <summary>NetworkSecurityInterceptEndpointGroup is the Schema for the NetworkSecurityInterceptEndpointGroup API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkSecurityInterceptEndpointGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkSecurityInterceptEndpointGroupSpec>, IStatus<V1alpha1NetworkSecurityInterceptEndpointGroupStatus?>

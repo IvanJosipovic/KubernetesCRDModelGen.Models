@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.cnrm.cloud.google.com;
 /// <summary>MonitoringDashboard is the Schema for the monitoring API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringDashboardList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitoringDashboard>
@@ -37,7 +37,7 @@ public partial class V1beta1MonitoringDashboardList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>Required. A reference to the MonitoringAlertPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsAlertChartAlertPolicyRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsAle
 }
 
 /// <summary>A chart of alert policy data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsAlertChart
 {
@@ -65,14 +65,14 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsAle
 }
 
 /// <summary>A blank space.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsBlank
 {
 }
 
 /// <summary>A widget that groups the other widgets. All widgets that are within the area spanned by the grouping widget are considered member widgets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsCollapsibleGroup
 {
@@ -82,7 +82,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsCol
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsErrorReportingPanelProjectRefs
 {
@@ -104,7 +104,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsErr
 }
 
 /// <summary>A widget that displays a list of error groups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsErrorReportingPanel
 {
@@ -121,7 +121,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsErr
     public IList<string>? Versions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsIncidentListMonitoredResources
 {
@@ -135,7 +135,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsInc
 }
 
 /// <summary>MonitoringAlertPolicyRef defines the resource reference to MonitoringAlertPolicy, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsIncidentListPolicyRefs
 {
@@ -153,7 +153,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsInc
 }
 
 /// <summary>A widget that shows list of incidents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsIncidentList
 {
@@ -166,7 +166,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsInc
     public IList<V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsIncidentListPolicyRefs>? PolicyRefs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsLogsPanelResourceNames
 {
@@ -188,7 +188,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsLog
 }
 
 /// <summary>A widget that shows a stream of logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsLogsPanel
 {
@@ -202,7 +202,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsLog
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -224,7 +224,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -242,7 +242,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -264,7 +264,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -286,7 +286,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -308,7 +308,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -322,7 +322,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -344,7 +344,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -358,7 +358,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -376,7 +376,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -398,7 +398,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -420,7 +420,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Required. The query for the PieChart. See, `google.monitoring.dashboard.v1.TimeSeriesQuery`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSetsTimeSeriesQuery
 {
@@ -449,7 +449,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChartDataSets
 {
@@ -467,7 +467,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>A widget that displays timeseries data as a pie chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPieChart
 {
@@ -485,14 +485,14 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsPie
 }
 
 /// <summary>Will cause the `Scorecard` to show only the value, with no indicator to its value relative to its thresholds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardBlankView
 {
 }
 
 /// <summary>Will cause the scorecard to show a gauge chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardGaugeView
 {
@@ -506,7 +506,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Will cause the scorecard to show a spark chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardSparkChartView
 {
@@ -519,7 +519,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
     public required string SparkChartType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardThresholds
 {
@@ -545,7 +545,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -567,7 +567,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -585,7 +585,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -607,7 +607,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilter
 {
@@ -629,7 +629,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -651,7 +651,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -665,7 +665,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -687,7 +687,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -701,7 +701,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -719,7 +719,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -741,7 +741,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -763,7 +763,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecardTimeSeriesQuery
 {
@@ -793,7 +793,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>A scorecard summarizing time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsScorecard
 {
@@ -819,7 +819,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSco
 }
 
 /// <summary>A widget that defines a section header for easier navigation of the dashboard.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSectionHeader
 {
@@ -833,14 +833,14 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSec
 }
 
 /// <summary>A widget that groups the other widgets by using a dropdown menu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsSingleViewGroup
 {
 }
 
 /// <summary>How the text is styled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTextStyle
 {
@@ -874,7 +874,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTex
 }
 
 /// <summary>A raw string or markdown displaying textual content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsText
 {
@@ -891,7 +891,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTex
     public V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTextStyle? Style { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableColumnSettings
 {
@@ -905,7 +905,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Optional. Table display options for configuring how the table is rendered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTableDisplayOptions
 {
@@ -915,7 +915,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -937,7 +937,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -955,7 +955,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -977,7 +977,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -999,7 +999,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -1021,7 +1021,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -1111,7 +1111,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -1133,7 +1133,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSetsTimeSeriesQuery
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTableDataSets
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>A widget that displays time series data in a tabular format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTimeSeriesTable
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsTim
 }
 
 /// <summary>Display options for the chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartChartOptions
 {
@@ -1212,7 +1212,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -1274,7 +1274,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -1368,7 +1368,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -1386,7 +1386,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -1408,7 +1408,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -1430,7 +1430,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQuery
 {
@@ -1459,7 +1459,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSets
 {
@@ -1484,7 +1484,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
     public required V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartDataSetsTimeSeriesQuery TimeSeriesQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartThresholds
 {
@@ -1510,7 +1510,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>The properties applied to the x-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartXAxis
 {
@@ -1524,7 +1524,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>The properties applied to the y2-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartY2Axis
 {
@@ -1538,7 +1538,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>The properties applied to the y-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartYAxis
 {
@@ -1552,7 +1552,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
 }
 
 /// <summary>A chart of time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChart
 {
@@ -1585,7 +1585,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyC
     public V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChartYAxis? YAxis { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgets
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgets
     public V1beta1MonitoringDashboardSpecColumnLayoutColumnsWidgetsXyChart? XyChart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumns
 {
@@ -1664,7 +1664,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayoutColumns
 }
 
 /// <summary>The content is divided into equally spaced columns and the widgets are arranged vertically.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecColumnLayout
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta1MonitoringDashboardSpecColumnLayout
     public IList<V1beta1MonitoringDashboardSpecColumnLayoutColumns>? Columns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecDashboardFilters
 {
@@ -1695,7 +1695,7 @@ public partial class V1beta1MonitoringDashboardSpecDashboardFilters
 }
 
 /// <summary>Required. A reference to the MonitoringAlertPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsAlertChartAlertPolicyRef
 {
@@ -1713,7 +1713,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsAlertChartAl
 }
 
 /// <summary>A chart of alert policy data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsAlertChart
 {
@@ -1723,14 +1723,14 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsAlertChart
 }
 
 /// <summary>A blank space.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsBlank
 {
 }
 
 /// <summary>A widget that groups the other widgets. All widgets that are within the area spanned by the grouping widget are considered member widgets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsCollapsibleGroup
 {
@@ -1740,7 +1740,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsCollapsibleG
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsErrorReportingPanelProjectRefs
 {
@@ -1762,7 +1762,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsErrorReporti
 }
 
 /// <summary>A widget that displays a list of error groups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsErrorReportingPanel
 {
@@ -1779,7 +1779,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsErrorReporti
     public IList<string>? Versions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentListMonitoredResources
 {
@@ -1793,7 +1793,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentList
 }
 
 /// <summary>MonitoringAlertPolicyRef defines the resource reference to MonitoringAlertPolicy, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentListPolicyRefs
 {
@@ -1811,7 +1811,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentList
 }
 
 /// <summary>A widget that shows list of incidents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentList
 {
@@ -1824,7 +1824,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentList
     public IList<V1beta1MonitoringDashboardSpecGridLayoutWidgetsIncidentListPolicyRefs>? PolicyRefs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsLogsPanelResourceNames
 {
@@ -1846,7 +1846,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsLogsPanelRes
 }
 
 /// <summary>A widget that shows a stream of logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsLogsPanel
 {
@@ -1860,7 +1860,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsLogsPanel
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -1882,7 +1882,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -1922,7 +1922,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -1980,7 +1980,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -2002,7 +2002,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -2016,7 +2016,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -2034,7 +2034,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -2056,7 +2056,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>Required. The query for the PieChart. See, `google.monitoring.dashboard.v1.TimeSeriesQuery`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSetsTimeSeriesQuery
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartDataSets
 {
@@ -2125,7 +2125,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChartData
 }
 
 /// <summary>A widget that displays timeseries data as a pie chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChart
 {
@@ -2143,14 +2143,14 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsPieChart
 }
 
 /// <summary>Will cause the `Scorecard` to show only the value, with no indicator to its value relative to its thresholds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardBlankView
 {
 }
 
 /// <summary>Will cause the scorecard to show a gauge chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardGaugeView
 {
@@ -2164,7 +2164,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardGau
 }
 
 /// <summary>Will cause the scorecard to show a spark chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardSparkChartView
 {
@@ -2177,7 +2177,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardSpa
     public required string SparkChartType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardThresholds
 {
@@ -2203,7 +2203,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardThr
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -2225,7 +2225,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -2243,7 +2243,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -2265,7 +2265,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilter
 {
@@ -2287,7 +2287,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -2309,7 +2309,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -2323,7 +2323,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -2345,7 +2345,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -2359,7 +2359,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -2377,7 +2377,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -2399,7 +2399,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -2421,7 +2421,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTimeSeriesQuery
 {
@@ -2451,7 +2451,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecardTim
 }
 
 /// <summary>A scorecard summarizing time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecard
 {
@@ -2477,7 +2477,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsScorecard
 }
 
 /// <summary>A widget that defines a section header for easier navigation of the dashboard.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsSectionHeader
 {
@@ -2491,14 +2491,14 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsSectionHeade
 }
 
 /// <summary>A widget that groups the other widgets by using a dropdown menu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsSingleViewGroup
 {
 }
 
 /// <summary>How the text is styled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTextStyle
 {
@@ -2532,7 +2532,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTextStyle
 }
 
 /// <summary>A raw string or markdown displaying textual content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsText
 {
@@ -2549,7 +2549,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsText
     public V1beta1MonitoringDashboardSpecGridLayoutWidgetsTextStyle? Style { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableColumnSettings
 {
@@ -2563,7 +2563,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Optional. Table display options for configuring how the table is rendered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTableDisplayOptions
 {
@@ -2573,7 +2573,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -2595,7 +2595,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -2613,7 +2613,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -2635,7 +2635,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -2657,7 +2657,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -2679,7 +2679,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -2693,7 +2693,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -2715,7 +2715,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -2729,7 +2729,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -2747,7 +2747,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -2769,7 +2769,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -2791,7 +2791,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSetsTimeSeriesQuery
 {
@@ -2820,7 +2820,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTableDataSets
 {
@@ -2842,7 +2842,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>A widget that displays time series data in a tabular format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTable
 {
@@ -2860,7 +2860,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsTimeSeriesTa
 }
 
 /// <summary>Display options for the chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartChartOptions
 {
@@ -2870,7 +2870,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartChart
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -2892,7 +2892,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -2910,7 +2910,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -2932,7 +2932,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -2954,7 +2954,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -2976,7 +2976,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -2990,7 +2990,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -3012,7 +3012,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -3026,7 +3026,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -3044,7 +3044,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -3066,7 +3066,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -3088,7 +3088,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
 }
 
 /// <summary>Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQuery
 {
@@ -3117,7 +3117,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSets
 {
@@ -3142,7 +3142,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataS
     public required V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartDataSetsTimeSeriesQuery TimeSeriesQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartThresholds
 {
@@ -3168,7 +3168,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartThres
 }
 
 /// <summary>The properties applied to the x-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartXAxis
 {
@@ -3182,7 +3182,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartXAxis
 }
 
 /// <summary>The properties applied to the y2-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartY2Axis
 {
@@ -3196,7 +3196,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartY2Axi
 }
 
 /// <summary>The properties applied to the y-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartYAxis
 {
@@ -3210,7 +3210,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartYAxis
 }
 
 /// <summary>A chart of time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChart
 {
@@ -3243,7 +3243,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChart
     public V1beta1MonitoringDashboardSpecGridLayoutWidgetsXyChartYAxis? YAxis { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgets
 {
@@ -3309,7 +3309,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayoutWidgets
 }
 
 /// <summary>Content is arranged with a basic layout that re-flows a simple list of informational elements like widgets or tiles.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecGridLayout
 {
@@ -3323,7 +3323,7 @@ public partial class V1beta1MonitoringDashboardSpecGridLayout
 }
 
 /// <summary>Required. A reference to the MonitoringAlertPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetAlertChartAlertPolicyRef
 {
@@ -3341,7 +3341,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetAlertC
 }
 
 /// <summary>A chart of alert policy data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetAlertChart
 {
@@ -3351,14 +3351,14 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetAlertC
 }
 
 /// <summary>A blank space.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetBlank
 {
 }
 
 /// <summary>A widget that groups the other widgets. All widgets that are within the area spanned by the grouping widget are considered member widgets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetCollapsibleGroup
 {
@@ -3368,7 +3368,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetCollap
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetErrorReportingPanelProjectRefs
 {
@@ -3390,7 +3390,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetErrorR
 }
 
 /// <summary>A widget that displays a list of error groups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetErrorReportingPanel
 {
@@ -3407,7 +3407,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetErrorR
     public IList<string>? Versions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncidentListMonitoredResources
 {
@@ -3421,7 +3421,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncide
 }
 
 /// <summary>MonitoringAlertPolicyRef defines the resource reference to MonitoringAlertPolicy, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncidentListPolicyRefs
 {
@@ -3439,7 +3439,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncide
 }
 
 /// <summary>A widget that shows list of incidents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncidentList
 {
@@ -3452,7 +3452,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncide
     public IList<V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetIncidentListPolicyRefs>? PolicyRefs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetLogsPanelResourceNames
 {
@@ -3474,7 +3474,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetLogsPa
 }
 
 /// <summary>A widget that shows a stream of logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetLogsPanel
 {
@@ -3488,7 +3488,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetLogsPa
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -3510,7 +3510,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -3528,7 +3528,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -3550,7 +3550,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -3572,7 +3572,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -3594,7 +3594,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -3608,7 +3608,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -3630,7 +3630,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -3644,7 +3644,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -3662,7 +3662,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -3684,7 +3684,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -3706,7 +3706,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Required. The query for the PieChart. See, `google.monitoring.dashboard.v1.TimeSeriesQuery`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSetsTimeSeriesQuery
 {
@@ -3735,7 +3735,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChartDataSets
 {
@@ -3753,7 +3753,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>A widget that displays timeseries data as a pie chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieChart
 {
@@ -3771,14 +3771,14 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetPieCha
 }
 
 /// <summary>Will cause the `Scorecard` to show only the value, with no indicator to its value relative to its thresholds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardBlankView
 {
 }
 
 /// <summary>Will cause the scorecard to show a gauge chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardGaugeView
 {
@@ -3792,7 +3792,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Will cause the scorecard to show a spark chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardSparkChartView
 {
@@ -3805,7 +3805,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
     public required string SparkChartType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardThresholds
 {
@@ -3831,7 +3831,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -3853,7 +3853,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -3871,7 +3871,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -3893,7 +3893,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilter
 {
@@ -3915,7 +3915,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -3937,7 +3937,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -3951,7 +3951,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -3973,7 +3973,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -3987,7 +3987,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -4005,7 +4005,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -4027,7 +4027,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -4049,7 +4049,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecardTimeSeriesQuery
 {
@@ -4079,7 +4079,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>A scorecard summarizing time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorecard
 {
@@ -4105,7 +4105,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetScorec
 }
 
 /// <summary>A widget that defines a section header for easier navigation of the dashboard.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetSectionHeader
 {
@@ -4119,14 +4119,14 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetSectio
 }
 
 /// <summary>A widget that groups the other widgets by using a dropdown menu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetSingleViewGroup
 {
 }
 
 /// <summary>How the text is styled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTextStyle
 {
@@ -4160,7 +4160,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTextSt
 }
 
 /// <summary>A raw string or markdown displaying textual content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetText
 {
@@ -4177,7 +4177,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetText
     public V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTextStyle? Style { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableColumnSettings
 {
@@ -4191,7 +4191,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Optional. Table display options for configuring how the table is rendered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTableDisplayOptions
 {
@@ -4201,7 +4201,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -4223,7 +4223,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -4241,7 +4241,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -4263,7 +4263,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -4285,7 +4285,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -4307,7 +4307,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -4321,7 +4321,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -4343,7 +4343,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -4357,7 +4357,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -4375,7 +4375,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -4397,7 +4397,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -4419,7 +4419,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSetsTimeSeriesQuery
 {
@@ -4448,7 +4448,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTableDataSets
 {
@@ -4470,7 +4470,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>A widget that displays time series data in a tabular format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSeriesTable
 {
@@ -4488,7 +4488,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetTimeSe
 }
 
 /// <summary>Display options for the chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartChartOptions
 {
@@ -4498,7 +4498,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -4520,7 +4520,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -4538,7 +4538,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -4560,7 +4560,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -4582,7 +4582,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -4604,7 +4604,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -4618,7 +4618,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -4640,7 +4640,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -4654,7 +4654,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -4672,7 +4672,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -4694,7 +4694,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -4716,7 +4716,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQuery
 {
@@ -4745,7 +4745,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSets
 {
@@ -4770,7 +4770,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
     public required V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartDataSetsTimeSeriesQuery TimeSeriesQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartThresholds
 {
@@ -4796,7 +4796,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The properties applied to the x-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartXAxis
 {
@@ -4810,7 +4810,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The properties applied to the y2-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartY2Axis
 {
@@ -4824,7 +4824,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The properties applied to the y-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChartYAxis
 {
@@ -4838,7 +4838,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>A chart of time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChart
 {
@@ -4872,7 +4872,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChar
 }
 
 /// <summary>The informational widget contained in the tile. For example an `XyChart`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidget
 {
@@ -4937,7 +4937,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidget
     public V1beta1MonitoringDashboardSpecMosaicLayoutTilesWidgetXyChart? XyChart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTiles
 {
@@ -4963,7 +4963,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayoutTiles
 }
 
 /// <summary>The content is arranged as a grid of tiles, with each content widget occupying one or more grid blocks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecMosaicLayout
 {
@@ -4977,7 +4977,7 @@ public partial class V1beta1MonitoringDashboardSpecMosaicLayout
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecProjectRef
 {
@@ -4999,7 +4999,7 @@ public partial class V1beta1MonitoringDashboardSpecProjectRef
 }
 
 /// <summary>Required. A reference to the MonitoringAlertPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsAlertChartAlertPolicyRef
 {
@@ -5017,7 +5017,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsAlertChar
 }
 
 /// <summary>A chart of alert policy data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsAlertChart
 {
@@ -5027,14 +5027,14 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsAlertChar
 }
 
 /// <summary>A blank space.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsBlank
 {
 }
 
 /// <summary>A widget that groups the other widgets. All widgets that are within the area spanned by the grouping widget are considered member widgets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsCollapsibleGroup
 {
@@ -5044,7 +5044,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsCollapsib
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsErrorReportingPanelProjectRefs
 {
@@ -5066,7 +5066,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsErrorRepo
 }
 
 /// <summary>A widget that displays a list of error groups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsErrorReportingPanel
 {
@@ -5083,7 +5083,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsErrorRepo
     public IList<string>? Versions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentListMonitoredResources
 {
@@ -5097,7 +5097,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentL
 }
 
 /// <summary>MonitoringAlertPolicyRef defines the resource reference to MonitoringAlertPolicy, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentListPolicyRefs
 {
@@ -5115,7 +5115,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentL
 }
 
 /// <summary>A widget that shows list of incidents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentList
 {
@@ -5128,7 +5128,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentL
     public IList<V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsIncidentListPolicyRefs>? PolicyRefs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsLogsPanelResourceNames
 {
@@ -5150,7 +5150,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsLogsPanel
 }
 
 /// <summary>A widget that shows a stream of logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsLogsPanel
 {
@@ -5164,7 +5164,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsLogsPanel
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -5186,7 +5186,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -5204,7 +5204,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -5226,7 +5226,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -5248,7 +5248,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -5270,7 +5270,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -5284,7 +5284,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -5306,7 +5306,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -5320,7 +5320,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -5338,7 +5338,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -5360,7 +5360,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -5382,7 +5382,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>Required. The query for the PieChart. See, `google.monitoring.dashboard.v1.TimeSeriesQuery`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSetsTimeSeriesQuery
 {
@@ -5411,7 +5411,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartDataSets
 {
@@ -5429,7 +5429,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChartD
 }
 
 /// <summary>A widget that displays timeseries data as a pie chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChart
 {
@@ -5447,14 +5447,14 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsPieChart
 }
 
 /// <summary>Will cause the `Scorecard` to show only the value, with no indicator to its value relative to its thresholds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardBlankView
 {
 }
 
 /// <summary>Will cause the scorecard to show a gauge chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardGaugeView
 {
@@ -5468,7 +5468,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Will cause the scorecard to show a spark chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardSparkChartView
 {
@@ -5481,7 +5481,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
     public required string SparkChartType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardThresholds
 {
@@ -5507,7 +5507,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -5529,7 +5529,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -5547,7 +5547,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -5569,7 +5569,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilter
 {
@@ -5591,7 +5591,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -5613,7 +5613,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -5627,7 +5627,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -5649,7 +5649,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -5663,7 +5663,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -5681,7 +5681,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -5703,7 +5703,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -5725,7 +5725,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecardTimeSeriesQuery
 {
@@ -5755,7 +5755,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>A scorecard summarizing time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 {
@@ -5781,7 +5781,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsScorecard
 }
 
 /// <summary>A widget that defines a section header for easier navigation of the dashboard.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsSectionHeader
 {
@@ -5795,14 +5795,14 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsSectionHe
 }
 
 /// <summary>A widget that groups the other widgets by using a dropdown menu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsSingleViewGroup
 {
 }
 
 /// <summary>How the text is styled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTextStyle
 {
@@ -5836,7 +5836,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTextStyle
 }
 
 /// <summary>A raw string or markdown displaying textual content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsText
 {
@@ -5853,7 +5853,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsText
     public V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTextStyle? Style { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableColumnSettings
 {
@@ -5867,7 +5867,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Optional. Table display options for configuring how the table is rendered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTableDisplayOptions
 {
@@ -5877,7 +5877,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -5899,7 +5899,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -5917,7 +5917,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -5939,7 +5939,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -5961,7 +5961,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -5983,7 +5983,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -5997,7 +5997,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -6019,7 +6019,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -6033,7 +6033,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -6051,7 +6051,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -6073,7 +6073,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -6095,7 +6095,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Required. Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSetsTimeSeriesQuery
 {
@@ -6124,7 +6124,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTableDataSets
 {
@@ -6146,7 +6146,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>A widget that displays time series data in a tabular format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSeriesTable
 {
@@ -6164,7 +6164,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsTimeSerie
 }
 
 /// <summary>Display options for the chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartChartOptions
 {
@@ -6174,7 +6174,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartCh
 }
 
 /// <summary>By default, the raw time series data is returned. Use this field to combine multiple time series for different views of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterAggregation
 {
@@ -6196,7 +6196,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterPickTimeSeriesFilter
 {
@@ -6214,7 +6214,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Apply a second aggregation after `aggregation` is applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterSecondaryAggregation
 {
@@ -6236,7 +6236,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Filter parameters to fetch time series.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilter
 {
@@ -6258,7 +6258,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominatorAggregation
 {
@@ -6280,7 +6280,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>The denominator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioDenominator
 {
@@ -6294,7 +6294,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>By default, the raw time series data is returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumeratorAggregation
 {
@@ -6316,7 +6316,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>The numerator of the ratio.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioNumerator
 {
@@ -6330,7 +6330,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Ranking based time series filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioPickTimeSeriesFilter
 {
@@ -6348,7 +6348,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Apply a second aggregation after the ratio is computed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatioSecondaryAggregation
 {
@@ -6370,7 +6370,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Parameters to fetch a ratio between two time series filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQueryTimeSeriesFilterRatio
 {
@@ -6392,7 +6392,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
 }
 
 /// <summary>Fields for querying time series data from the Stackdriver metrics API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQuery
 {
@@ -6421,7 +6421,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
     public string? UnitOverride { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSets
 {
@@ -6446,7 +6446,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDa
     public required V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartDataSetsTimeSeriesQuery TimeSeriesQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartThresholds
 {
@@ -6472,7 +6472,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartTh
 }
 
 /// <summary>The properties applied to the x-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartXAxis
 {
@@ -6486,7 +6486,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartXA
 }
 
 /// <summary>The properties applied to the y2-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartY2Axis
 {
@@ -6500,7 +6500,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartY2
 }
 
 /// <summary>The properties applied to the y-axis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartYAxis
 {
@@ -6514,7 +6514,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartYA
 }
 
 /// <summary>A chart of time series data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChart
 {
@@ -6547,7 +6547,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChart
     public V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChartYAxis? YAxis { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgets
 {
@@ -6612,7 +6612,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRowsWidgets
     public V1beta1MonitoringDashboardSpecRowLayoutRowsWidgetsXyChart? XyChart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayoutRows
 {
@@ -6626,7 +6626,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayoutRows
 }
 
 /// <summary>The content is divided into equally spaced rows and the widgets are arranged horizontally.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpecRowLayout
 {
@@ -6635,7 +6635,7 @@ public partial class V1beta1MonitoringDashboardSpecRowLayout
     public IList<V1beta1MonitoringDashboardSpecRowLayoutRows>? Rows { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardSpec
 {
@@ -6672,7 +6672,7 @@ public partial class V1beta1MonitoringDashboardSpec
     public V1beta1MonitoringDashboardSpecRowLayout? RowLayout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardStatusConditions
 {
@@ -6697,7 +6697,7 @@ public partial class V1beta1MonitoringDashboardStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringDashboardStatus
 {
@@ -6715,7 +6715,7 @@ public partial class V1beta1MonitoringDashboardStatus
 }
 
 /// <summary>MonitoringDashboard is the Schema for the monitoring API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringDashboard : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitoringDashboardSpec>, IStatus<V1beta1MonitoringDashboardStatus?>

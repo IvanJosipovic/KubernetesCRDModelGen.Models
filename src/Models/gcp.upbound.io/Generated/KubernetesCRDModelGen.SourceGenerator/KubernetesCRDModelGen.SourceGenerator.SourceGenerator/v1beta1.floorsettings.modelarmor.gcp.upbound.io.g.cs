@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.modelarmor.gcp.upbound.io;
 /// <summary>FloorSetting is the Schema for the FloorSettings API. Model Armor floor settings define rules that dictate minimum requirements for all Model Armor templates created at a specific point in the Google Cloud resource hierarchy (that is, at an organization, folder, or project level).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FloorSettingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FloorSetting>
@@ -45,7 +45,7 @@ public partial class V1beta1FloorSettingList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecDeletionPolicyEnum>))]
 public enum V1beta1FloorSettingSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1FloorSettingSpecDeletionPolicyEnum
 /// AI Platform floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderAiPlatformFloorSetting
 {
@@ -86,7 +86,7 @@ public partial class V1beta1FloorSettingSpecForProviderAiPlatformFloorSetting
 /// Malicious URI filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigMaliciousUriFilterSettings
 {
@@ -105,7 +105,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigMaliciousUriF
 /// Prompt injection and Jailbreak Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigPiAndJailbreakFilterSettings
 {
@@ -129,7 +129,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigPiAndJailbrea
     public string? FilterEnforcement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigRaiSettingsRaiFilters
 {
@@ -157,7 +157,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigRaiSettingsRa
 /// Responsible AI Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigRaiSettings
 {
@@ -175,7 +175,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigRaiSettings
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolutionEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolveEnum
 {
@@ -202,7 +202,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicy
 {
@@ -226,7 +226,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 }
 
 /// <summary>Reference to a DeidentifyTemplate in datalossprevention to populate deidentifyTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRef
 {
@@ -245,7 +245,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolutionEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolveEnum
 {
@@ -272,7 +272,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicy
 {
@@ -296,7 +296,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 }
 
 /// <summary>Selector for a DeidentifyTemplate in datalossprevention to populate deidentifyTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelector
 {
@@ -322,7 +322,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolutionEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolveEnum
 {
@@ -349,7 +349,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicy
 {
@@ -373,7 +373,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 }
 
 /// <summary>Reference to a InspectTemplate in datalossprevention to populate inspectTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRef
 {
@@ -392,7 +392,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicy
 {
@@ -443,7 +443,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 }
 
 /// <summary>Selector for a InspectTemplate in datalossprevention to populate inspectTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelector
 {
@@ -467,7 +467,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 /// Sensitive Data Protection Advanced configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAdvancedConfig
 {
@@ -517,7 +517,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsAd
 /// Sensitive Data Protection basic configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsBasicConfig
 {
@@ -536,7 +536,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettingsBa
 /// Sensitive Data Protection settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettings
 {
@@ -559,7 +559,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfigSdpSettings
 /// Filters configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFilterConfig
 {
@@ -596,7 +596,7 @@ public partial class V1beta1FloorSettingSpecForProviderFilterConfig
 /// Metadata for multi language detection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFloorSettingMetadataMultiLanguageDetection
 {
@@ -609,7 +609,7 @@ public partial class V1beta1FloorSettingSpecForProviderFloorSettingMetadataMulti
 /// Metadata to enable multi language detection via floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProviderFloorSettingMetadata
 {
@@ -621,7 +621,7 @@ public partial class V1beta1FloorSettingSpecForProviderFloorSettingMetadata
     public V1beta1FloorSettingSpecForProviderFloorSettingMetadataMultiLanguageDetection? MultiLanguageDetection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProvider
 {
@@ -667,7 +667,7 @@ public partial class V1beta1FloorSettingSpecForProvider
 /// AI Platform floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderAiPlatformFloorSetting
 {
@@ -694,7 +694,7 @@ public partial class V1beta1FloorSettingSpecInitProviderAiPlatformFloorSetting
 /// Malicious URI filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigMaliciousUriFilterSettings
 {
@@ -713,7 +713,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigMaliciousUri
 /// Prompt injection and Jailbreak Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigPiAndJailbreakFilterSettings
 {
@@ -737,7 +737,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigPiAndJailbre
     public string? FilterEnforcement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigRaiSettingsRaiFilters
 {
@@ -765,7 +765,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigRaiSettingsR
 /// Responsible AI Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigRaiSettings
 {
@@ -783,7 +783,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigRaiSettings
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolutionEnum
 {
@@ -799,7 +799,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicyResolveEnum
 {
@@ -810,7 +810,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRefPolicy
 {
@@ -834,7 +834,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 }
 
 /// <summary>Reference to a DeidentifyTemplate in datalossprevention to populate deidentifyTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateRef
 {
@@ -853,7 +853,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolutionEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicyResolveEnum
 {
@@ -880,7 +880,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelectorPolicy
 {
@@ -904,7 +904,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 }
 
 /// <summary>Selector for a DeidentifyTemplate in datalossprevention to populate deidentifyTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigDeidentifyTemplateSelector
 {
@@ -930,7 +930,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolutionEnum
 {
@@ -946,7 +946,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicyResolveEnum
 {
@@ -957,7 +957,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRefPolicy
 {
@@ -981,7 +981,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 }
 
 /// <summary>Reference to a InspectTemplate in datalossprevention to populate inspectTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateRef
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolutionEnum
 {
@@ -1016,7 +1016,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicyResolveEnum
 {
@@ -1027,7 +1027,7 @@ public enum V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelectorPolicy
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 }
 
 /// <summary>Selector for a InspectTemplate in datalossprevention to populate inspectTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfigInspectTemplateSelector
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 /// Sensitive Data Protection Advanced configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsAdvancedConfig
 {
@@ -1125,7 +1125,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsA
 /// Sensitive Data Protection basic configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsBasicConfig
 {
@@ -1144,7 +1144,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettingsB
 /// Sensitive Data Protection settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettings
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfigSdpSettings
 /// Filters configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFilterConfig
 {
@@ -1204,7 +1204,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFilterConfig
 /// Metadata for multi language detection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFloorSettingMetadataMultiLanguageDetection
 {
@@ -1217,7 +1217,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFloorSettingMetadataMult
 /// Metadata to enable multi language detection via floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProviderFloorSettingMetadata
 {
@@ -1241,7 +1241,7 @@ public partial class V1beta1FloorSettingSpecInitProviderFloorSettingMetadata
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecInitProvider
 {
@@ -1279,7 +1279,7 @@ public partial class V1beta1FloorSettingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecManagementPoliciesEnum>))]
 public enum V1beta1FloorSettingSpecManagementPoliciesEnum
 {
@@ -1303,7 +1303,7 @@ public enum V1beta1FloorSettingSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1FloorSettingSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1319,7 +1319,7 @@ public enum V1beta1FloorSettingSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FloorSettingSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1FloorSettingSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1330,7 +1330,7 @@ public enum V1beta1FloorSettingSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecProviderConfigRefPolicy
 {
@@ -1358,7 +1358,7 @@ public partial class V1beta1FloorSettingSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecProviderConfigRef
 {
@@ -1377,7 +1377,7 @@ public partial class V1beta1FloorSettingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecWriteConnectionSecretToRef
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta1FloorSettingSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FloorSettingSpec defines the desired state of FloorSetting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpec
 {
@@ -1462,7 +1462,7 @@ public partial class V1beta1FloorSettingSpec
 /// AI Platform floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderAiPlatformFloorSetting
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta1FloorSettingStatusAtProviderAiPlatformFloorSetting
 /// Malicious URI filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigMaliciousUriFilterSettings
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigMaliciousUri
 /// Prompt injection and Jailbreak Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigPiAndJailbreakFilterSettings
 {
@@ -1532,7 +1532,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigPiAndJailbre
     public string? FilterEnforcement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigRaiSettingsRaiFilters
 {
@@ -1560,7 +1560,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigRaiSettingsR
 /// Responsible AI Filter settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigRaiSettings
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigRaiSettings
 /// Sensitive Data Protection Advanced configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettingsAdvancedConfig
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettingsA
 /// Sensitive Data Protection basic configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettingsBasicConfig
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettingsB
 /// Sensitive Data Protection settings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettings
 {
@@ -1652,7 +1652,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfigSdpSettings
 /// Filters configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFilterConfig
 {
@@ -1689,7 +1689,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFilterConfig
 /// Metadata for multi language detection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFloorSettingMetadataMultiLanguageDetection
 {
@@ -1702,7 +1702,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFloorSettingMetadataMult
 /// Metadata to enable multi language detection via floor setting.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProviderFloorSettingMetadata
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta1FloorSettingStatusAtProviderFloorSettingMetadata
     public V1beta1FloorSettingStatusAtProviderFloorSettingMetadataMultiLanguageDetection? MultiLanguageDetection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProvider
 {
@@ -1773,7 +1773,7 @@ public partial class V1beta1FloorSettingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusConditions
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta1FloorSettingStatusConditions
 }
 
 /// <summary>FloorSettingStatus defines the observed state of FloorSetting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatus
 {
@@ -1837,7 +1837,7 @@ public partial class V1beta1FloorSettingStatus
 }
 
 /// <summary>FloorSetting is the Schema for the FloorSettings API. Model Armor floor settings define rules that dictate minimum requirements for all Model Armor templates created at a specific point in the Google Cloud resource hierarchy (that is, at an organization, folder, or project level).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FloorSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FloorSettingSpec>, IStatus<V1beta1FloorSettingStatus?>

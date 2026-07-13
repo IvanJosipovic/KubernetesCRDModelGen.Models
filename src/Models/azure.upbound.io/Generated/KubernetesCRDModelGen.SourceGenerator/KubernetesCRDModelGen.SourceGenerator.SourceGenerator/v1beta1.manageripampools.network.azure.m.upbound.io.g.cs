@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>ManagerIpamPool is the Schema for the ManagerIpamPools API. Manages a Network Manager IP Address Management (IPAM) Pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerIpamPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagerIpamPool>
@@ -42,7 +42,7 @@ public partial class V1beta1ManagerIpamPoolList : IKubernetesObject<V1ListMeta>,
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRefPol
 }
 
 /// <summary>Reference to a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelect
 }
 
 /// <summary>Selector for a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderNetworkManagerIdSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRefPolic
 }
 
 /// <summary>Reference to a ManagerIpamPool in network to populate parentPoolName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelector
 }
 
 /// <summary>Selector for a ManagerIpamPool in network to populate parentPoolName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelector
     public V1beta1ManagerIpamPoolSpecForProviderParentPoolNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecForProvider
 {
@@ -401,7 +401,7 @@ public partial class V1beta1ManagerIpamPoolSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolutionEnum
 {
@@ -417,7 +417,7 @@ public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolveEnum
 {
@@ -428,7 +428,7 @@ public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPolicy
 {
@@ -452,7 +452,7 @@ public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRefPoli
 }
 
 /// <summary>Reference to a ManagerIpamPool in network to populate parentPoolName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRef
 {
@@ -475,7 +475,7 @@ public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyResolutionEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyResolveEnum
 {
@@ -502,7 +502,7 @@ public enum V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelectorPolicy
 {
@@ -526,7 +526,7 @@ public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelecto
 }
 
 /// <summary>Selector for a ManagerIpamPool in network to populate parentPoolName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelector
 {
@@ -562,7 +562,7 @@ public partial class V1beta1ManagerIpamPoolSpecInitProviderParentPoolNameSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecInitProvider
 {
@@ -603,7 +603,7 @@ public partial class V1beta1ManagerIpamPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerIpamPoolSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagerIpamPoolSpecManagementPoliciesEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta1ManagerIpamPoolSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecProviderConfigRef
 {
@@ -645,7 +645,7 @@ public partial class V1beta1ManagerIpamPoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpecWriteConnectionSecretToRef
 {
@@ -655,7 +655,7 @@ public partial class V1beta1ManagerIpamPoolSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ManagerIpamPoolSpec defines the desired state of ManagerIpamPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolSpec
 {
@@ -706,7 +706,7 @@ public partial class V1beta1ManagerIpamPoolSpec
     public V1beta1ManagerIpamPoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolStatusAtProvider
 {
@@ -744,7 +744,7 @@ public partial class V1beta1ManagerIpamPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolStatusConditions
 {
@@ -787,7 +787,7 @@ public partial class V1beta1ManagerIpamPoolStatusConditions
 }
 
 /// <summary>ManagerIpamPoolStatus defines the observed state of ManagerIpamPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerIpamPoolStatus
 {
@@ -808,7 +808,7 @@ public partial class V1beta1ManagerIpamPoolStatus
 }
 
 /// <summary>ManagerIpamPool is the Schema for the ManagerIpamPools API. Manages a Network Manager IP Address Management (IPAM) Pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerIpamPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagerIpamPoolSpec>, IStatus<V1beta1ManagerIpamPoolStatus?>

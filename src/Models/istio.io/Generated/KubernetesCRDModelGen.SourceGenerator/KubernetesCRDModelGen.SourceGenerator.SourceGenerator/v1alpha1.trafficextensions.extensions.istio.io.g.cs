@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.extensions.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TrafficExtensionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TrafficExtension>
@@ -36,7 +36,7 @@ public partial class V1alpha1TrafficExtensionList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>Lua filter configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecLua
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1TrafficExtensionSpecLua
 /// 
 /// Valid Options: CLIENT, SERVER, CLIENT_AND_SERVER
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecMatchModeEnum>))]
 public enum V1alpha1TrafficExtensionSpecMatchModeEnum
 {
@@ -64,7 +64,7 @@ public enum V1alpha1TrafficExtensionSpecMatchModeEnum
     CLIENTANDSERVER
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecMatchPorts
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1TrafficExtensionSpecMatchPorts
     public required int Number { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecMatch
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1TrafficExtensionSpecMatch
 /// 
 /// Valid Options: AUTHN, AUTHZ, STATS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecPhaseEnum>))]
 public enum V1alpha1TrafficExtensionSpecPhaseEnum
 {
@@ -109,7 +109,7 @@ public enum V1alpha1TrafficExtensionSpecPhaseEnum
 }
 
 /// <summary>Optional.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecSelector
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1TrafficExtensionSpecSelector
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecTargetRefs
 {
@@ -144,7 +144,7 @@ public partial class V1alpha1TrafficExtensionSpecTargetRefs
 /// 
 /// Valid Options: FAIL_CLOSE, FAIL_OPEN, FAIL_RELOAD
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecWasmFailStrategyEnum>))]
 public enum V1alpha1TrafficExtensionSpecWasmFailStrategyEnum
 {
@@ -161,7 +161,7 @@ public enum V1alpha1TrafficExtensionSpecWasmFailStrategyEnum
 /// 
 /// Valid Options: IfNotPresent, Always
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecWasmImagePullPolicyEnum>))]
 public enum V1alpha1TrafficExtensionSpecWasmImagePullPolicyEnum
 {
@@ -178,7 +178,7 @@ public enum V1alpha1TrafficExtensionSpecWasmImagePullPolicyEnum
 /// 
 /// Valid Options: HTTP, NETWORK
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecWasmTypeEnum>))]
 public enum V1alpha1TrafficExtensionSpecWasmTypeEnum
 {
@@ -195,7 +195,7 @@ public enum V1alpha1TrafficExtensionSpecWasmTypeEnum
 /// 
 /// Valid Options: INLINE, HOST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TrafficExtensionSpecWasmVmConfigEnvValueFromEnum>))]
 public enum V1alpha1TrafficExtensionSpecWasmVmConfigEnvValueFromEnum
 {
@@ -205,7 +205,7 @@ public enum V1alpha1TrafficExtensionSpecWasmVmConfigEnvValueFromEnum
     HOST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecWasmVmConfigEnv
 {
@@ -227,7 +227,7 @@ public partial class V1alpha1TrafficExtensionSpecWasmVmConfigEnv
 }
 
 /// <summary>Configuration for a Wasm VM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecWasmVmConfig
 {
@@ -237,7 +237,7 @@ public partial class V1alpha1TrafficExtensionSpecWasmVmConfig
 }
 
 /// <summary>WebAssembly filter configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpecWasm
 {
@@ -294,7 +294,7 @@ public partial class V1alpha1TrafficExtensionSpecWasm
 }
 
 /// <summary>Extend the functionality provided by the Istio proxy through WebAssembly or Lua filters. See more details at: https://istio.io/docs/reference/config/proxy_extensions/traffic_extension.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrafficExtensionSpec
 {
@@ -331,7 +331,7 @@ public partial class V1alpha1TrafficExtensionSpec
     public V1alpha1TrafficExtensionSpecWasm? Wasm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TrafficExtension : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TrafficExtensionSpec>, IStatus<JsonNode?>

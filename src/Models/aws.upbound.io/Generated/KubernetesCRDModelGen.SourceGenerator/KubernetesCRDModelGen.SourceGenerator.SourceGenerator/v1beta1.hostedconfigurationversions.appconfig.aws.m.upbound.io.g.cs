@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appconfig.aws.m.upbound.io;
 /// <summary>HostedConfigurationVersion is the Schema for the HostedConfigurationVersions API. Provides an AppConfig Hosted Configuration Version resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedConfigurationVersionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HostedConfigurationVersion>
@@ -42,7 +42,7 @@ public partial class V1beta1HostedConfigurationVersionList : IKubernetesObject<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderApplication
 }
 
 /// <summary>Reference to a Application in appconfig to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderApplicationIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderApplication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderApplication
 }
 
 /// <summary>Selector for a Application in appconfig to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderApplicationIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderApplication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfile
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfile
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurati
 }
 
 /// <summary>Reference to a ConfigurationProfile in appconfig to populate configurationProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfile
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfile
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurati
 }
 
 /// <summary>Selector for a ConfigurationProfile in appconfig to populate configurationProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurationProfileIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderConfigurati
 }
 
 /// <summary>Content of the configuration or the configuration data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProviderContentSecretRef
 {
@@ -359,7 +359,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProviderContentSecr
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecForProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1HostedConfigurationVersionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPolicyResolutionEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPolicyResolveEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRefPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicatio
 }
 
 /// <summary>Reference to a Application in appconfig to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdRef
 {
@@ -487,7 +487,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelectorPolicyResolutionEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelectorPolicyResolveEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelectorPolicy
 {
@@ -538,7 +538,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicatio
 }
 
 /// <summary>Selector for a Application in appconfig to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicationIdSelector
 {
@@ -568,7 +568,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderApplicatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRefPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfil
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRefPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfil
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRefPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurat
 }
 
 /// <summary>Reference to a ConfigurationProfile in appconfig to populate configurationProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdRef
 {
@@ -642,7 +642,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelectorPolicyResolutionEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfil
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelectorPolicyResolveEnum
 {
@@ -669,7 +669,7 @@ public enum V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfil
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelectorPolicy
 {
@@ -693,7 +693,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurat
 }
 
 /// <summary>Selector for a ConfigurationProfile in appconfig to populate configurationProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurationProfileIdSelector
 {
@@ -718,7 +718,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderConfigurat
 }
 
 /// <summary>Content of the configuration or the configuration data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProviderContentSecretRef
 {
@@ -742,7 +742,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProviderContentSec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecInitProvider
 {
@@ -787,7 +787,7 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedConfigurationVersionSpecManagementPoliciesEnum>))]
 public enum V1beta1HostedConfigurationVersionSpecManagementPoliciesEnum
 {
@@ -810,7 +810,7 @@ public enum V1beta1HostedConfigurationVersionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecProviderConfigRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1HostedConfigurationVersionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpecWriteConnectionSecretToRef
 {
@@ -839,7 +839,7 @@ public partial class V1beta1HostedConfigurationVersionSpecWriteConnectionSecretT
 }
 
 /// <summary>HostedConfigurationVersionSpec defines the desired state of HostedConfigurationVersion</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionSpec
 {
@@ -890,7 +890,7 @@ public partial class V1beta1HostedConfigurationVersionSpec
     public V1beta1HostedConfigurationVersionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionStatusAtProvider
 {
@@ -931,7 +931,7 @@ public partial class V1beta1HostedConfigurationVersionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionStatusConditions
 {
@@ -974,7 +974,7 @@ public partial class V1beta1HostedConfigurationVersionStatusConditions
 }
 
 /// <summary>HostedConfigurationVersionStatus defines the observed state of HostedConfigurationVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedConfigurationVersionStatus
 {
@@ -995,7 +995,7 @@ public partial class V1beta1HostedConfigurationVersionStatus
 }
 
 /// <summary>HostedConfigurationVersion is the Schema for the HostedConfigurationVersions API. Provides an AppConfig Hosted Configuration Version resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedConfigurationVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HostedConfigurationVersionSpec>, IStatus<V1beta1HostedConfigurationVersionStatus?>

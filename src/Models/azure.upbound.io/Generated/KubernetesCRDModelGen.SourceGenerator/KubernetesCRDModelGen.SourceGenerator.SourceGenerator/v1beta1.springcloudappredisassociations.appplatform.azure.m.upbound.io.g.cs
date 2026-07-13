@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.m.upbound.io;
 /// <summary>SpringCloudAppRedisAssociation is the Schema for the SpringCloudAppRedisAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppRedisAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudAppRedisAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationList : IKubernetesObje
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAc
 }
 
 /// <summary>Reference to a RedisCache in cache to populate redisAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeyRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAc
 }
 
 /// <summary>Selector for a RedisCache in cache to populate redisAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAccessKeySelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCa
 }
 
 /// <summary>Reference to a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCa
 }
 
 /// <summary>Selector for a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCacheIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderRedisCa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringC
 }
 
 /// <summary>Reference to a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringC
 }
 
 /// <summary>Selector for a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringC
     public V1beta1SpringCloudAppRedisAssociationSpecForProviderSpringCloudAppIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecForProvider
 {
@@ -552,7 +552,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisA
 }
 
 /// <summary>Reference to a RedisCache in cache to populate redisAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeyS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisA
 }
 
 /// <summary>Selector for a RedisCache in cache to populate redisAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisAccessKeySelector
 {
@@ -707,7 +707,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRefPolicyResolutionEnum
 {
@@ -723,7 +723,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRefPolicyResolveEnum
 {
@@ -734,7 +734,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRefPolicy
 {
@@ -758,7 +758,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisC
 }
 
 /// <summary>Reference to a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdRef
 {
@@ -781,7 +781,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelectorPolicyResolutionEnum
 {
@@ -797,7 +797,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelectorPolicyResolveEnum
 {
@@ -808,7 +808,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelectorPolicy
 {
@@ -832,7 +832,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisC
 }
 
 /// <summary>Selector for a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisCacheIdSelector
 {
@@ -868,7 +868,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProviderRedisC
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProvider
 {
@@ -905,7 +905,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppRedisAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SpringCloudAppRedisAssociationSpecManagementPoliciesEnum
 {
@@ -928,7 +928,7 @@ public enum V1beta1SpringCloudAppRedisAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecProviderConfigRef
 {
@@ -947,7 +947,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpecWriteConnectionSecretToRef
 {
@@ -957,7 +957,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpecWriteConnectionSec
 }
 
 /// <summary>SpringCloudAppRedisAssociationSpec defines the desired state of SpringCloudAppRedisAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationSpec
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationSpec
     public V1beta1SpringCloudAppRedisAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationStatusAtProvider
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationStatusConditions
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationStatusConditions
 }
 
 /// <summary>SpringCloudAppRedisAssociationStatus defines the observed state of SpringCloudAppRedisAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppRedisAssociationStatus
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1SpringCloudAppRedisAssociationStatus
 }
 
 /// <summary>SpringCloudAppRedisAssociation is the Schema for the SpringCloudAppRedisAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppRedisAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudAppRedisAssociationSpec>, IStatus<V1beta1SpringCloudAppRedisAssociationStatus?>

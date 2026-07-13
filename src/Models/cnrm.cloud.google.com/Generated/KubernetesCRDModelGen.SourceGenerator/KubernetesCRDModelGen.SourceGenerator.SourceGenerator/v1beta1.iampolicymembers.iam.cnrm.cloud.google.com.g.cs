@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.cnrm.cloud.google.com;
 /// <summary>IAMPolicyMember is the Schema for the iampolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IAMPolicyMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IAMPolicyMember>
@@ -37,7 +37,7 @@ public partial class V1beta1IAMPolicyMemberList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>Immutable. Optional. The condition under which the binding applies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecCondition
 {
@@ -52,7 +52,7 @@ public partial class V1beta1IAMPolicyMemberSpecCondition
 }
 
 /// <summary>Type field specifies the connection type of the BigQueryConnectionConnection resource, whose service account is to be bound to the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IAMPolicyMemberSpecMemberFromBigQueryConnectionConnectionRefTypeEnum>))]
 public enum V1beta1IAMPolicyMemberSpecMemberFromBigQueryConnectionConnectionRefTypeEnum
 {
@@ -65,7 +65,7 @@ public enum V1beta1IAMPolicyMemberSpecMemberFromBigQueryConnectionConnectionRefT
 }
 
 /// <summary>BigQueryConnectionConnection whose service account is to be bound to the role. Use the Type field to specify the connection type. For &quot;spark&quot; connetion, the service account is in `status.observedState.spark.serviceAccountID`. For &quot;cloudSQL&quot; connection, the service account is in `status.observedState.cloudSQL.serviceAccountID`. For &quot;cloudResource&quot; connection, the service account is in `status.observedState.cloudResource.serviceAccountID`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFromBigQueryConnectionConnectionRef
 {
@@ -81,7 +81,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFromBigQueryConnectionConne
 }
 
 /// <summary>The LoggingLogSink whose writer identity (i.e. its &apos;status.writerIdentity&apos;) is to be bound to the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFromLogSinkRef
 {
@@ -93,7 +93,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFromLogSinkRef
 }
 
 /// <summary>The IAMServiceAccount to be bound to the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFromServiceAccountRef
 {
@@ -105,7 +105,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFromServiceAccountRef
 }
 
 /// <summary>The ServiceIdentity whose service account (i.e., its &apos;status.email&apos;) is to be bound to the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFromServiceIdentityRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFromServiceIdentityRef
 }
 
 /// <summary>The SQLInstance whose service account (i.e. its &apos;status.serviceAccountEmailAddress&apos;) is to be bound to the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFromSqlInstanceRef
 {
@@ -129,7 +129,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFromSqlInstanceRef
 }
 
 /// <summary>Immutable. The IAM identity to be bound to the role. Exactly one of &apos;member&apos; or &apos;memberFrom&apos; must be used, and only one subfield within &apos;memberFrom&apos; can be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecMemberFrom
 {
@@ -155,7 +155,7 @@ public partial class V1beta1IAMPolicyMemberSpecMemberFrom
 }
 
 /// <summary>Immutable. Required. The GCP resource to set the IAM policy on (e.g. organization, project...)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpecResourceRef
 {
@@ -179,7 +179,7 @@ public partial class V1beta1IAMPolicyMemberSpecResourceRef
 }
 
 /// <summary>IAMPolicyMemberSpec defines the desired state of IAMPolicyMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberSpec
 {
@@ -204,7 +204,7 @@ public partial class V1beta1IAMPolicyMemberSpec
     public required string Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberStatusConditions
 {
@@ -230,7 +230,7 @@ public partial class V1beta1IAMPolicyMemberStatusConditions
 }
 
 /// <summary>IAMPolicyMemberStatus defines the observed state of IAMPolicyMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMPolicyMemberStatus
 {
@@ -244,7 +244,7 @@ public partial class V1beta1IAMPolicyMemberStatus
 }
 
 /// <summary>IAMPolicyMember is the Schema for the iampolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IAMPolicyMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IAMPolicyMemberSpec?>, IStatus<V1beta1IAMPolicyMemberStatus?>

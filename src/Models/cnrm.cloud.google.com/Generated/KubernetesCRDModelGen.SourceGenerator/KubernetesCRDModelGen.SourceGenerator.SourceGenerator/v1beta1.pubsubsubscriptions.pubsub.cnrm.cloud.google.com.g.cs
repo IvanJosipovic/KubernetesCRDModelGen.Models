@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.pubsub.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PubSubSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PubSubSubscription>
@@ -36,7 +36,7 @@ public partial class V1beta1PubSubSubscriptionList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>The name of the table to which to write data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecBigqueryConfigTableRef
 {
@@ -58,7 +58,7 @@ public partial class V1beta1PubSubSubscriptionSpecBigqueryConfigTableRef
 /// Either pushConfig, bigQueryConfig or cloudStorageConfig can be set, but not combined.
 /// If all three are empty, then the subscriber will pull and ack messages using API methods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecBigqueryConfig
 {
@@ -86,7 +86,7 @@ public partial class V1beta1PubSubSubscriptionSpecBigqueryConfig
 }
 
 /// <summary>If set, message data will be written to Cloud Storage in Avro format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfigAvroConfig
 {
@@ -96,7 +96,7 @@ public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfigAvroConfig
 }
 
 /// <summary>User-provided name for the Cloud Storage bucket. The bucket must be created by the user. The bucket name must be without any prefix like &quot;gs://&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfigBucketRef
 {
@@ -118,7 +118,7 @@ public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfigBucketRef
 /// Either pushConfig, bigQueryConfig or cloudStorageConfig can be set, but not combined.
 /// If all three are empty, then the subscriber will pull and ack messages using API methods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfig
 {
@@ -158,7 +158,7 @@ public partial class V1beta1PubSubSubscriptionSpecCloudStorageConfig
     public string? State { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecDeadLetterPolicyDeadLetterTopicRef
 {
@@ -185,7 +185,7 @@ public partial class V1beta1PubSubSubscriptionSpecDeadLetterPolicyDeadLetterTopi
 /// service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com) must have
 /// permission to Acknowledge() messages on this subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecDeadLetterPolicy
 {
@@ -219,7 +219,7 @@ public partial class V1beta1PubSubSubscriptionSpecDeadLetterPolicy
 /// resource never expires.  The minimum allowed value for expirationPolicy.ttl
 /// is 1 day.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecExpirationPolicy
 {
@@ -238,7 +238,7 @@ public partial class V1beta1PubSubSubscriptionSpecExpirationPolicy
 /// When set, the payload to the push endpoint is not wrapped.Sets the
 /// &apos;data&apos; field as the HTTP body for delivery.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecPushConfigNoWrapper
 {
@@ -255,7 +255,7 @@ public partial class V1beta1PubSubSubscriptionSpecPushConfigNoWrapper
 /// If specified, Pub/Sub will generate and attach an OIDC JWT token as
 /// an Authorization header in the HTTP request for every pushed message.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecPushConfigOidcToken
 {
@@ -285,7 +285,7 @@ public partial class V1beta1PubSubSubscriptionSpecPushConfigOidcToken
 /// configure it. An empty pushConfig signifies that the subscriber will
 /// pull and ack messages using API methods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecPushConfig
 {
@@ -346,7 +346,7 @@ public partial class V1beta1PubSubSubscriptionSpecPushConfig
 /// If not set, the default retry policy is applied. This generally implies that messages will be retried as soon as possible for healthy subscribers.
 /// RetryPolicy will be triggered on NACKs or acknowledgement deadline exceeded events for a given message.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecRetryPolicy
 {
@@ -366,7 +366,7 @@ public partial class V1beta1PubSubSubscriptionSpecRetryPolicy
 }
 
 /// <summary>Reference to a PubSubTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpecTopicRef
 {
@@ -383,7 +383,7 @@ public partial class V1beta1PubSubSubscriptionSpecTopicRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionSpec
 {
@@ -531,7 +531,7 @@ public partial class V1beta1PubSubSubscriptionSpec
     public required V1beta1PubSubSubscriptionSpecTopicRef TopicRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionStatusConditions
 {
@@ -556,7 +556,7 @@ public partial class V1beta1PubSubSubscriptionStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PubSubSubscriptionStatus
 {
@@ -569,7 +569,7 @@ public partial class V1beta1PubSubSubscriptionStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PubSubSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PubSubSubscriptionSpec>, IStatus<V1beta1PubSubSubscriptionStatus?>

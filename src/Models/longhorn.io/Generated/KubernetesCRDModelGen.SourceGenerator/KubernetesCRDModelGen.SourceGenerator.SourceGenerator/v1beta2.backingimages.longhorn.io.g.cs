@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>BackingImage is where Longhorn stores backing image object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackingImageList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BackingImage>
@@ -36,7 +36,7 @@ public partial class V1beta2BackingImageList : IKubernetesObject<V1ListMeta>, II
     public required IList<V1beta2BackingImage> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackingImageSpecDataEngineEnum>))]
 public enum V1beta2BackingImageSpecDataEngineEnum
 {
@@ -46,7 +46,7 @@ public enum V1beta2BackingImageSpecDataEngineEnum
     V2
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackingImageSpecDiskFileSpecMapDataEngineEnum>))]
 public enum V1beta2BackingImageSpecDiskFileSpecMapDataEngineEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2BackingImageSpecDiskFileSpecMapDataEngineEnum
     V2
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageSpecDiskFileSpecMap
 {
@@ -67,7 +67,7 @@ public partial class V1beta2BackingImageSpecDiskFileSpecMap
     public bool? EvictionRequested { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackingImageSpecSourceTypeEnum>))]
 public enum V1beta2BackingImageSpecSourceTypeEnum
 {
@@ -84,7 +84,7 @@ public enum V1beta2BackingImageSpecSourceTypeEnum
 }
 
 /// <summary>BackingImageSpec defines the desired state of the Longhorn backing image</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageSpec
 {
@@ -123,7 +123,7 @@ public partial class V1beta2BackingImageSpec
     public V1beta2BackingImageSpecSourceTypeEnum? SourceType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackingImageStatusDiskFileStatusMapDataEngineEnum>))]
 public enum V1beta2BackingImageStatusDiskFileStatusMapDataEngineEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta2BackingImageStatusDiskFileStatusMapDataEngineEnum
     V2
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageStatusDiskFileStatusMap
 {
@@ -154,7 +154,7 @@ public partial class V1beta2BackingImageStatusDiskFileStatusMap
 }
 
 /// <summary>BackingImageStatus defines the observed state of the Longhorn backing image status</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageStatus
 {
@@ -193,7 +193,7 @@ public partial class V1beta2BackingImageStatus
 }
 
 /// <summary>BackingImage is where Longhorn stores backing image object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackingImage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BackingImageSpec?>, IStatus<V1beta2BackingImageStatus?>

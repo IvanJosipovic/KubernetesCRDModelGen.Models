@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.beyondcorp.cnrm.cloud.google.com;
 /// <summary>BeyondCorpClientConnectorService is the Schema for the BeyondCorpClientConnectorService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BeyondCorpClientConnectorServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BeyondCorpClientConnectorService>
@@ -37,7 +37,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceList : IKubernetesO
 }
 
 /// <summary>A VPC from the consumer project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecEgressPeeredVPC
 {
@@ -47,7 +47,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecEgressPeeredVPC
 }
 
 /// <summary>Required. The details of the egress settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecEgress
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecEgress
     public V1alpha1BeyondCorpClientConnectorServiceSpecEgressPeeredVPC? PeeredVPC { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngressConfigDestinationRoutes
 {
@@ -70,7 +70,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngressConfigDe
 }
 
 /// <summary>The basic ingress config for ClientGateways.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngressConfig
 {
@@ -84,7 +84,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngressConfig
 }
 
 /// <summary>Required. The details of the ingress settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngress
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecIngress
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpecProjectRef
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpecProjectRef
 }
 
 /// <summary>BeyondCorpClientConnectorServiceSpec defines the desired state of BeyondCorpClientConnectorService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceSpec
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceStatusConditions
 {
@@ -171,7 +171,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceStatusObservedState
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceStatusObservedState
 }
 
 /// <summary>BeyondCorpClientConnectorServiceStatus defines the config connector machine state of BeyondCorpClientConnectorService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BeyondCorpClientConnectorServiceStatus
 {
@@ -211,7 +211,7 @@ public partial class V1alpha1BeyondCorpClientConnectorServiceStatus
 }
 
 /// <summary>BeyondCorpClientConnectorService is the Schema for the BeyondCorpClientConnectorService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BeyondCorpClientConnectorService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BeyondCorpClientConnectorServiceSpec>, IStatus<V1alpha1BeyondCorpClientConnectorServiceStatus?>

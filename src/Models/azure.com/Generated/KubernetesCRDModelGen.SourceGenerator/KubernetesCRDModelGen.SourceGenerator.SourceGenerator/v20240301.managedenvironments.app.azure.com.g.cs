@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.app.azure.com;
 /// - Generated from: /app/resource-manager/Microsoft.App/ContainerApps/stable/2024-03-01/ManagedEnvironments.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/managedEnvironments/{environmentName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240301ManagedEnvironmentList : IKubernetesObject<V1ListMeta>, IItems<V20240301ManagedEnvironment>
@@ -41,7 +41,7 @@ public partial class V20240301ManagedEnvironmentList : IKubernetesObject<V1ListM
 }
 
 /// <summary>SharedKey: Log analytics customer key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecAppLogsConfigurationLogAnalyticsConfigurationSharedKey
 {
@@ -61,7 +61,7 @@ public partial class V20240301ManagedEnvironmentSpecAppLogsConfigurationLogAnaly
 /// LogAnalyticsConfiguration: Log Analytics configuration, must only be provided when destination is configured as
 /// &apos;log-analytics&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecAppLogsConfigurationLogAnalyticsConfiguration
 {
@@ -75,7 +75,7 @@ public partial class V20240301ManagedEnvironmentSpecAppLogsConfigurationLogAnaly
 }
 
 /// <summary>AppLogsConfiguration: Cluster configuration which enables the log daemon to export app logs to configured destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecAppLogsConfiguration
 {
@@ -92,7 +92,7 @@ public partial class V20240301ManagedEnvironmentSpecAppLogsConfiguration
 }
 
 /// <summary>CertificatePassword: Certificate password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecCustomDomainConfigurationCertificatePassword
 {
@@ -109,7 +109,7 @@ public partial class V20240301ManagedEnvironmentSpecCustomDomainConfigurationCer
 }
 
 /// <summary>CertificateValue: PFX or PEM blob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecCustomDomainConfigurationCertificateValue
 {
@@ -126,7 +126,7 @@ public partial class V20240301ManagedEnvironmentSpecCustomDomainConfigurationCer
 }
 
 /// <summary>CustomDomainConfiguration: Custom domain configuration for the environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecCustomDomainConfiguration
 {
@@ -147,7 +147,7 @@ public partial class V20240301ManagedEnvironmentSpecCustomDomainConfiguration
 /// DaprAIConnectionString: Application Insights connection string used by Dapr to export Service to Service communication
 /// telemetry
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecDaprAIConnectionString
 {
@@ -167,7 +167,7 @@ public partial class V20240301ManagedEnvironmentSpecDaprAIConnectionString
 /// DaprAIInstrumentationKey: Azure Monitor instrumentation key used by Dapr to export Service to Service communication
 /// telemetry
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecDaprAIInstrumentationKey
 {
@@ -188,7 +188,7 @@ public partial class V20240301ManagedEnvironmentSpecDaprAIInstrumentationKey
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecOperatorSpecConfigMapExpressions
 {
@@ -229,7 +229,7 @@ public partial class V20240301ManagedEnvironmentSpecOperatorSpecConfigMapExpress
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecOperatorSpecSecretExpressions
 {
@@ -269,7 +269,7 @@ public partial class V20240301ManagedEnvironmentSpecOperatorSpecSecretExpression
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecOperatorSpec
 {
@@ -287,7 +287,7 @@ public partial class V20240301ManagedEnvironmentSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecOwner
 {
@@ -300,7 +300,7 @@ public partial class V20240301ManagedEnvironmentSpecOwner
 }
 
 /// <summary>Mtls: Mutual TLS authentication settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecPeerAuthenticationMtls
 {
@@ -310,7 +310,7 @@ public partial class V20240301ManagedEnvironmentSpecPeerAuthenticationMtls
 }
 
 /// <summary>PeerAuthentication: Peer authentication settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecPeerAuthentication
 {
@@ -320,7 +320,7 @@ public partial class V20240301ManagedEnvironmentSpecPeerAuthentication
 }
 
 /// <summary>Encryption: Peer traffic encryption settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecPeerTrafficConfigurationEncryption
 {
@@ -330,7 +330,7 @@ public partial class V20240301ManagedEnvironmentSpecPeerTrafficConfigurationEncr
 }
 
 /// <summary>PeerTrafficConfiguration: Peer traffic settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecPeerTrafficConfiguration
 {
@@ -343,7 +343,7 @@ public partial class V20240301ManagedEnvironmentSpecPeerTrafficConfiguration
 /// InfrastructureSubnetReference: Resource ID of a subnet for infrastructure components. Must not overlap with any other
 /// provided IP ranges.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecVnetConfigurationInfrastructureSubnetReference
 {
@@ -369,7 +369,7 @@ public partial class V20240301ManagedEnvironmentSpecVnetConfigurationInfrastruct
 }
 
 /// <summary>VnetConfiguration: Vnet configuration for the environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecVnetConfiguration
 {
@@ -410,7 +410,7 @@ public partial class V20240301ManagedEnvironmentSpecVnetConfiguration
 }
 
 /// <summary>Workload profile to scope container app execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpecWorkloadProfiles
 {
@@ -431,7 +431,7 @@ public partial class V20240301ManagedEnvironmentSpecWorkloadProfiles
     public required string WorkloadProfileType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentSpec
 {
@@ -524,7 +524,7 @@ public partial class V20240301ManagedEnvironmentSpec
 /// LogAnalyticsConfiguration: Log Analytics configuration, must only be provided when destination is configured as
 /// &apos;log-analytics&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusAppLogsConfigurationLogAnalyticsConfiguration
 {
@@ -534,7 +534,7 @@ public partial class V20240301ManagedEnvironmentStatusAppLogsConfigurationLogAna
 }
 
 /// <summary>AppLogsConfiguration: Cluster configuration which enables the log daemon to export app logs to configured destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusAppLogsConfiguration
 {
@@ -551,7 +551,7 @@ public partial class V20240301ManagedEnvironmentStatusAppLogsConfiguration
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusConditions
 {
@@ -597,7 +597,7 @@ public partial class V20240301ManagedEnvironmentStatusConditions
 }
 
 /// <summary>CustomDomainConfiguration: Custom domain configuration for the environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusCustomDomainConfiguration
 {
@@ -623,7 +623,7 @@ public partial class V20240301ManagedEnvironmentStatusCustomDomainConfiguration
 }
 
 /// <summary>DaprConfiguration: The configuration of Dapr component.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusDaprConfiguration
 {
@@ -633,7 +633,7 @@ public partial class V20240301ManagedEnvironmentStatusDaprConfiguration
 }
 
 /// <summary>KedaConfiguration: The configuration of Keda component.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusKedaConfiguration
 {
@@ -643,7 +643,7 @@ public partial class V20240301ManagedEnvironmentStatusKedaConfiguration
 }
 
 /// <summary>Mtls: Mutual TLS authentication settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusPeerAuthenticationMtls
 {
@@ -653,7 +653,7 @@ public partial class V20240301ManagedEnvironmentStatusPeerAuthenticationMtls
 }
 
 /// <summary>PeerAuthentication: Peer authentication settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusPeerAuthentication
 {
@@ -663,7 +663,7 @@ public partial class V20240301ManagedEnvironmentStatusPeerAuthentication
 }
 
 /// <summary>Encryption: Peer traffic encryption settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusPeerTrafficConfigurationEncryption
 {
@@ -673,7 +673,7 @@ public partial class V20240301ManagedEnvironmentStatusPeerTrafficConfigurationEn
 }
 
 /// <summary>PeerTrafficConfiguration: Peer traffic settings for the Managed Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusPeerTrafficConfiguration
 {
@@ -683,7 +683,7 @@ public partial class V20240301ManagedEnvironmentStatusPeerTrafficConfiguration
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusSystemData
 {
@@ -713,7 +713,7 @@ public partial class V20240301ManagedEnvironmentStatusSystemData
 }
 
 /// <summary>VnetConfiguration: Vnet configuration for the environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusVnetConfiguration
 {
@@ -754,7 +754,7 @@ public partial class V20240301ManagedEnvironmentStatusVnetConfiguration
 }
 
 /// <summary>Workload profile to scope container app execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatusWorkloadProfiles
 {
@@ -776,7 +776,7 @@ public partial class V20240301ManagedEnvironmentStatusWorkloadProfiles
 }
 
 /// <summary>An environment for hosting container apps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240301ManagedEnvironmentStatus
 {
@@ -885,7 +885,7 @@ public partial class V20240301ManagedEnvironmentStatus
 /// - Generated from: /app/resource-manager/Microsoft.App/ContainerApps/stable/2024-03-01/ManagedEnvironments.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/managedEnvironments/{environmentName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240301ManagedEnvironment : IKubernetesObject<V1ObjectMeta>, ISpec<V20240301ManagedEnvironmentSpec?>, IStatus<V20240301ManagedEnvironmentStatus?>

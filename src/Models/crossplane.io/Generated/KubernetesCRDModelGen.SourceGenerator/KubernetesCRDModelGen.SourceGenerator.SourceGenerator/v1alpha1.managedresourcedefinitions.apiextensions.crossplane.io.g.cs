@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// <summary>A ManagedResourceDefinition defines the schema for a new custom Kubernetes API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ManagedResourceDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ManagedResourceDefinition>
@@ -37,7 +37,7 @@ public partial class V1alpha1ManagedResourceDefinitionList : IKubernetesObject<V
 }
 
 /// <summary>ConnectionDetail holds keys and descriptions of connection secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecConnectionDetails
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecConnectionDetails
 /// 
 /// If the webhook is running within the cluster, then you should use `service`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhookClientConfigService
 {
@@ -88,7 +88,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhookClien
 }
 
 /// <summary>clientConfig is the instructions for how to call the webhook if strategy is `Webhook`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhookClientConfig
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhookClien
 }
 
 /// <summary>webhook describes how to call the conversion webhook. Required when `strategy` is set to `&quot;Webhook&quot;`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhook
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecConversionWebhook
 }
 
 /// <summary>Conversion defines conversion settings for the CRD.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecConversion
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecConversion
 }
 
 /// <summary>Names specify the resource and kind names for the custom resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecNames
 {
@@ -229,7 +229,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecNames
 /// Scope indicates whether the defined custom resource is cluster- or namespace-scoped.
 /// Allowed values are `Cluster` and `Namespaced`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ManagedResourceDefinitionSpecScopeEnum>))]
 public enum V1alpha1ManagedResourceDefinitionSpecScopeEnum
 {
@@ -240,7 +240,7 @@ public enum V1alpha1ManagedResourceDefinitionSpecScopeEnum
 }
 
 /// <summary>State toggles whether the underlying CRD is created or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ManagedResourceDefinitionSpecStateEnum>))]
 public enum V1alpha1ManagedResourceDefinitionSpecStateEnum
 {
@@ -251,7 +251,7 @@ public enum V1alpha1ManagedResourceDefinitionSpecStateEnum
 }
 
 /// <summary>CustomResourceColumnDefinition specifies a column for server side printing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsAdditionalPrinterColumns
 {
@@ -295,7 +295,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersionsAdditionalPrin
 }
 
 /// <summary>Schema describes the schema used for validation, pruning, and defaulting of this version of the custom resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSchema
 {
@@ -308,7 +308,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSchema
 }
 
 /// <summary>SelectableField specifies the JSON path of a field that may be used with field selectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSelectableFields
 {
@@ -327,7 +327,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSelectableFiel
 }
 
 /// <summary>scale indicates the custom resource should serve a `/scale` subresource that returns an `autoscaling/v1` Scale object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSubresourcesScale
 {
@@ -371,14 +371,14 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSubresourcesSc
 /// 1. requests to the custom resource primary endpoint ignore changes to the `status` stanza of the object.
 /// 2. requests to the custom resource `/status` subresource ignore changes to anything other than the `status` stanza of the object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSubresourcesStatus
 {
 }
 
 /// <summary>Subresources specify what subresources this version of the defined custom resource have.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSubresources
 {
@@ -397,7 +397,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersionsSubresources
 }
 
 /// <summary>CustomResourceDefinitionVersion describes a version for CRD.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpecVersions
 {
@@ -462,7 +462,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpecVersions
 }
 
 /// <summary>ManagedResourceDefinitionSpec specifies the desired state of the resource definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionSpec
 {
@@ -522,7 +522,7 @@ public partial class V1alpha1ManagedResourceDefinitionSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionStatusConditions
 {
@@ -565,7 +565,7 @@ public partial class V1alpha1ManagedResourceDefinitionStatusConditions
 }
 
 /// <summary>ManagedResourceDefinitionStatus shows the observed state of the resource definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedResourceDefinitionStatus
 {
@@ -575,7 +575,7 @@ public partial class V1alpha1ManagedResourceDefinitionStatus
 }
 
 /// <summary>A ManagedResourceDefinition defines the schema for a new custom Kubernetes API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ManagedResourceDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ManagedResourceDefinitionSpec?>, IStatus<V1alpha1ManagedResourceDefinitionStatus?>

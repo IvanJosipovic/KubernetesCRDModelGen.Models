@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sns.aws.m.upbound.io;
 /// <summary>PlatformApplication is the Schema for the PlatformApplications API. Provides an SNS platform application resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PlatformApplicationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PlatformApplication>
@@ -42,7 +42,7 @@ public partial class V1beta1PlatformApplicationList : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRol
 }
 
 /// <summary>Reference to a Role in iam to populate failureFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRol
 }
 
 /// <summary>Selector for a Role in iam to populate failureFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRoleArnSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderFailureFeedbackRol
 }
 
 /// <summary>Application Platform credential. See Credential for type of credential required for platform.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderPlatformCredentialSecretRef
 {
@@ -205,7 +205,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderPlatformCredential
 }
 
 /// <summary>Application Platform principal. See Principal for type of principal required for platform.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderPlatformPrincipalSecretRef
 {
@@ -223,7 +223,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderPlatformPrincipalS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPolicyResolutionEnum
 {
@@ -239,7 +239,7 @@ public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPolicyResolveEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRefPolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRol
 }
 
 /// <summary>Reference to a Role in iam to populate successFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRol
 }
 
 /// <summary>Selector for a Role in iam to populate successFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelector
 {
@@ -372,7 +372,7 @@ public partial class V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRol
     public V1beta1PlatformApplicationSpecForProviderSuccessFeedbackRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecForProvider
 {
@@ -454,7 +454,7 @@ public partial class V1beta1PlatformApplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRefPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRo
 }
 
 /// <summary>Reference to a Role in iam to populate failureFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnRef
 {
@@ -528,7 +528,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelectorPolicyResolutionEnum
 {
@@ -544,7 +544,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelectorPolicyResolveEnum
 {
@@ -555,7 +555,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelectorPolicy
 {
@@ -579,7 +579,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRo
 }
 
 /// <summary>Selector for a Role in iam to populate failureFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRoleArnSelector
 {
@@ -604,7 +604,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderFailureFeedbackRo
 }
 
 /// <summary>Application Platform credential. See Credential for type of credential required for platform.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderPlatformCredentialSecretRef
 {
@@ -617,7 +617,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderPlatformCredentia
 }
 
 /// <summary>Application Platform principal. See Principal for type of principal required for platform.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderPlatformPrincipalSecretRef
 {
@@ -635,7 +635,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderPlatformPrincipal
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefPolicyResolutionEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefPolicyResolveEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRefPolicy
 {
@@ -686,7 +686,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRo
 }
 
 /// <summary>Reference to a Role in iam to populate successFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnRef
 {
@@ -709,7 +709,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelectorPolicyResolutionEnum
 {
@@ -725,7 +725,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelectorPolicyResolveEnum
 {
@@ -736,7 +736,7 @@ public enum V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelectorPolicy
 {
@@ -760,7 +760,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRo
 }
 
 /// <summary>Selector for a Role in iam to populate successFeedbackRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRoleArnSelector
 {
@@ -796,7 +796,7 @@ public partial class V1beta1PlatformApplicationSpecInitProviderSuccessFeedbackRo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecInitProvider
 {
@@ -869,7 +869,7 @@ public partial class V1beta1PlatformApplicationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlatformApplicationSpecManagementPoliciesEnum>))]
 public enum V1beta1PlatformApplicationSpecManagementPoliciesEnum
 {
@@ -892,7 +892,7 @@ public enum V1beta1PlatformApplicationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecProviderConfigRef
 {
@@ -911,7 +911,7 @@ public partial class V1beta1PlatformApplicationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpecWriteConnectionSecretToRef
 {
@@ -921,7 +921,7 @@ public partial class V1beta1PlatformApplicationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PlatformApplicationSpec defines the desired state of PlatformApplication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationSpec
 {
@@ -972,7 +972,7 @@ public partial class V1beta1PlatformApplicationSpec
     public V1beta1PlatformApplicationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationStatusAtProvider
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1PlatformApplicationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationStatusConditions
 {
@@ -1076,7 +1076,7 @@ public partial class V1beta1PlatformApplicationStatusConditions
 }
 
 /// <summary>PlatformApplicationStatus defines the observed state of PlatformApplication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlatformApplicationStatus
 {
@@ -1097,7 +1097,7 @@ public partial class V1beta1PlatformApplicationStatus
 }
 
 /// <summary>PlatformApplication is the Schema for the PlatformApplications API. Provides an SNS platform application resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PlatformApplication : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PlatformApplicationSpec>, IStatus<V1beta1PlatformApplicationStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appengine.gcp.upbound.io;
 /// <summary>ApplicationURLDispatchRules is the Schema for the ApplicationURLDispatchRuless API. Rules to match an HTTP request and dispatch that request to a service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationURLDispatchRulesList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationURLDispatchRules>
@@ -45,7 +45,7 @@ public partial class V1beta1ApplicationURLDispatchRulesList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecDeletionPolicyEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRu
 }
 
 /// <summary>Reference to a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRu
 }
 
 /// <summary>Selector for a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRu
     public V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRules
 {
@@ -236,7 +236,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRu
     public V1beta1ApplicationURLDispatchRulesSpecForProviderDispatchRulesServiceSelector? ServiceSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecForProvider
 {
@@ -261,7 +261,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRefPolicyResolutionEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRefPolicyResolveEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRefPolicy
 {
@@ -312,7 +312,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchR
 }
 
 /// <summary>Reference to a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceRef
 {
@@ -331,7 +331,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicyResolutionEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicyResolveEnum
 {
@@ -358,7 +358,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicy
 {
@@ -382,7 +382,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchR
 }
 
 /// <summary>Selector for a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelector
 {
@@ -402,7 +402,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchR
     public V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRulesServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchRules
 {
@@ -448,7 +448,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProviderDispatchR
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecInitProvider
 {
@@ -471,7 +471,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecManagementPoliciesEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolveEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPolicy
 {
@@ -550,7 +550,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecProviderConfigRef
 {
@@ -569,7 +569,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpecWriteConnectionSecretToRef
 {
@@ -583,7 +583,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpecWriteConnectionSecret
 }
 
 /// <summary>ApplicationURLDispatchRulesSpec defines the desired state of ApplicationURLDispatchRules</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesSpec
 {
@@ -650,7 +650,7 @@ public partial class V1beta1ApplicationURLDispatchRulesSpec
     public V1beta1ApplicationURLDispatchRulesSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesStatusAtProviderDispatchRules
 {
@@ -676,7 +676,7 @@ public partial class V1beta1ApplicationURLDispatchRulesStatusAtProviderDispatchR
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesStatusAtProvider
 {
@@ -700,7 +700,7 @@ public partial class V1beta1ApplicationURLDispatchRulesStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesStatusConditions
 {
@@ -743,7 +743,7 @@ public partial class V1beta1ApplicationURLDispatchRulesStatusConditions
 }
 
 /// <summary>ApplicationURLDispatchRulesStatus defines the observed state of ApplicationURLDispatchRules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationURLDispatchRulesStatus
 {
@@ -764,7 +764,7 @@ public partial class V1beta1ApplicationURLDispatchRulesStatus
 }
 
 /// <summary>ApplicationURLDispatchRules is the Schema for the ApplicationURLDispatchRuless API. Rules to match an HTTP request and dispatch that request to a service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationURLDispatchRules : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationURLDispatchRulesSpec>, IStatus<V1beta1ApplicationURLDispatchRulesStatus?>

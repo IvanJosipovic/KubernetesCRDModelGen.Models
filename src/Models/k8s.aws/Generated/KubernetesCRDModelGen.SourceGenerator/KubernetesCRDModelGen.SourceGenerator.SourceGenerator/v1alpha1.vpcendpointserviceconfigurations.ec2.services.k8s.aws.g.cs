@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.services.k8s.aws;
 /// <summary>VPCEndpointServiceConfiguration is the Schema for the VPCEndpointServiceConfigurations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VPCEndpointServiceConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VPCEndpointServiceConfiguration>
@@ -37,7 +37,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationList : IKubernetesOb
 }
 
 /// <summary>Describes a tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationSpecTags
 {
@@ -49,7 +49,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationSpecTags
 }
 
 /// <summary>VpcEndpointServiceConfigurationSpec defines the desired state of VpcEndpointServiceConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationSpec
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationStatusAckResourceMetadata
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationStatusAckResourceMet
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationStatusConditions
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationStatusConditions
 }
 
 /// <summary>Information about the endpoint service private DNS name configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationStatusPrivateDNSNameConfiguration
 {
@@ -186,7 +186,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationStatusPrivateDNSName
 }
 
 /// <summary>Describes the type of service for a VPC endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationStatusServiceType
 {
@@ -195,7 +195,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationStatusServiceType
 }
 
 /// <summary>VPCEndpointServiceConfigurationStatus defines the observed state of VPCEndpointServiceConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointServiceConfigurationStatus
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1VPCEndpointServiceConfigurationStatus
 }
 
 /// <summary>VPCEndpointServiceConfiguration is the Schema for the VPCEndpointServiceConfigurations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VPCEndpointServiceConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VPCEndpointServiceConfigurationSpec?>, IStatus<V1alpha1VPCEndpointServiceConfigurationStatus?>

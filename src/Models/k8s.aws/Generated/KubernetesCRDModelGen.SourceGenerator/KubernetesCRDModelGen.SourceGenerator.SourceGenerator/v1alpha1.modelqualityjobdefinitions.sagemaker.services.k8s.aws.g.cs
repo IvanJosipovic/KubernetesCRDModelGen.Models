@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>ModelQualityJobDefinition is the Schema for the ModelQualityJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelQualityJobDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ModelQualityJobDefinition>
@@ -37,7 +37,7 @@ public partial class V1alpha1ModelQualityJobDefinitionList : IKubernetesObject<V
 }
 
 /// <summary>Configuration for the cluster used to run model monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecJobResourcesClusterConfig
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecJobResourcesClusterCon
 }
 
 /// <summary>Identifies the resources to deploy for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecJobResources
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecJobResources
 }
 
 /// <summary>The container that runs the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityAppSpecification
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityAppSpecifi
 }
 
 /// <summary>The constraints resource for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityBaselineConfigConstraintsResource
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityBaselineCo
 }
 
 /// <summary>Specifies the constraints and baselines for the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityBaselineConfig
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityBaselineCo
 }
 
 /// <summary>Input object for the endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInputEndpointInput
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInputEn
 }
 
 /// <summary>The ground truth labels for the dataset used for the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInputGroundTruthS3Input
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInputGr
 }
 
 /// <summary>A list of the inputs that are monitored. Currently endpoints are supported.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInput
 {
@@ -179,7 +179,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobInput
 /// Information about where and how you want to store the results of a monitoring
 /// job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputConfigMonitoringOutputsS3Output
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputC
 }
 
 /// <summary>The output object for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputConfigMonitoringOutputs
 {
@@ -207,7 +207,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputC
 }
 
 /// <summary>The output configuration for monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputConfig
 {
@@ -224,7 +224,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecModelQualityJobOutputC
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecNetworkConfigVpcConfig
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecNetworkConfigVpcConfig
 }
 
 /// <summary>Specifies the network configuration for the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecNetworkConfig
 {
@@ -257,7 +257,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecNetworkConfig
 }
 
 /// <summary>A time limit for how long the monitoring job is allowed to run before stopping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecStoppingCondition
 {
@@ -280,7 +280,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecStoppingCondition
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpecTags
 {
@@ -292,7 +292,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpecTags
 }
 
 /// <summary>ModelQualityJobDefinitionSpec defines the desired state of ModelQualityJobDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionSpec
 {
@@ -355,7 +355,7 @@ public partial class V1alpha1ModelQualityJobDefinitionSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionStatusAckResourceMetadata
 {
@@ -392,7 +392,7 @@ public partial class V1alpha1ModelQualityJobDefinitionStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionStatusConditions
 {
@@ -418,7 +418,7 @@ public partial class V1alpha1ModelQualityJobDefinitionStatusConditions
 }
 
 /// <summary>ModelQualityJobDefinitionStatus defines the observed state of ModelQualityJobDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelQualityJobDefinitionStatus
 {
@@ -441,7 +441,7 @@ public partial class V1alpha1ModelQualityJobDefinitionStatus
 }
 
 /// <summary>ModelQualityJobDefinition is the Schema for the ModelQualityJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelQualityJobDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ModelQualityJobDefinitionSpec?>, IStatus<V1alpha1ModelQualityJobDefinitionStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.services.k8s.aws;
 /// <summary>IAMRoleSelector is the schema for the IAMRoleSelector API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1IAMRoleSelectorList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1IAMRoleSelector>
@@ -37,7 +37,7 @@ public partial class V1alpha1IAMRoleSelectorList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>LabelSelector is a label query over a set of resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorSpecNamespaceSelectorLabelSelector
 {
@@ -46,7 +46,7 @@ public partial class V1alpha1IAMRoleSelectorSpecNamespaceSelectorLabelSelector
 }
 
 /// <summary>IAMRoleSelectorSpec defines the desired state of IAMRoleSelector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorSpecNamespaceSelector
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1IAMRoleSelectorSpecNamespaceSelector
 }
 
 /// <summary>LabelSelector is a label query over a set of resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorSpecResourceLabelSelector
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1IAMRoleSelectorSpecResourceLabelSelector
     public required IDictionary<string, string> MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorSpecResourceTypeSelector
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1IAMRoleSelectorSpecResourceTypeSelector
     public required string Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorSpec
 {
@@ -100,14 +100,14 @@ public partial class V1alpha1IAMRoleSelectorSpec
     public IList<V1alpha1IAMRoleSelectorSpecResourceTypeSelector>? ResourceTypeSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IAMRoleSelectorStatus
 {
 }
 
 /// <summary>IAMRoleSelector is the schema for the IAMRoleSelector API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1IAMRoleSelector : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1IAMRoleSelectorSpec?>, IStatus<V1alpha1IAMRoleSelectorStatus?>

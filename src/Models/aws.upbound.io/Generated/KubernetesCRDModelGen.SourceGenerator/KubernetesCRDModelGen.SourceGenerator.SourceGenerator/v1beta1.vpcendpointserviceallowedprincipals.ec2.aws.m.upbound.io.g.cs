@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>VPCEndpointServiceAllowedPrincipal is the Schema for the VPCEndpointServiceAllowedPrincipals API. Provides a resource to allow a principal to discover a VPC endpoint service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCEndpointServiceAllowedPrincipal>
@@ -42,7 +42,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalList : IKubernetes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpc
 }
 
 /// <summary>Reference to a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpc
 }
 
 /// <summary>Selector for a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpc
     public V1beta1VPCEndpointServiceAllowedPrincipalSpecForProviderVpcEndpointServiceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpoint
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpoint
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVp
 }
 
 /// <summary>Reference to a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpoint
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpoint
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVp
 }
 
 /// <summary>Selector for a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVpcEndpointServiceIdSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProviderVp
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProvider
 {
@@ -411,7 +411,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointServiceAllowedPrincipalSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecManagementPoliciesEnum
 {
@@ -434,7 +434,7 @@ public enum V1beta1VPCEndpointServiceAllowedPrincipalSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecProviderConfigRef
 {
@@ -453,7 +453,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecWriteConnectionSecretToRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpecWriteConnectio
 }
 
 /// <summary>VPCEndpointServiceAllowedPrincipalSpec defines the desired state of VPCEndpointServiceAllowedPrincipal</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpec
 {
@@ -514,7 +514,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalSpec
     public V1beta1VPCEndpointServiceAllowedPrincipalSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusAtProvider
 {
@@ -539,7 +539,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusConditions
 {
@@ -582,7 +582,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatusConditions
 }
 
 /// <summary>VPCEndpointServiceAllowedPrincipalStatus defines the observed state of VPCEndpointServiceAllowedPrincipal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatus
 {
@@ -603,7 +603,7 @@ public partial class V1beta1VPCEndpointServiceAllowedPrincipalStatus
 }
 
 /// <summary>VPCEndpointServiceAllowedPrincipal is the Schema for the VPCEndpointServiceAllowedPrincipals API. Provides a resource to allow a principal to discover a VPC endpoint service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointServiceAllowedPrincipal : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCEndpointServiceAllowedPrincipalSpec>, IStatus<V1beta1VPCEndpointServiceAllowedPrincipalStatus?>

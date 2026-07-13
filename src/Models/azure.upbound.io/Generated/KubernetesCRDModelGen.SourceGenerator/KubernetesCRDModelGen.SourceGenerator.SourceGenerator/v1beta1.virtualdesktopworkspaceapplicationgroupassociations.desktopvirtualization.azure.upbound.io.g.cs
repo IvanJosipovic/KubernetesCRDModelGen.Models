@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.desktopvirtualization.azure.upbound.io;
 /// <summary>VirtualDesktopWorkspaceApplicationGroupAssociation is the Schema for the VirtualDesktopWorkspaceApplicationGroupAssociations API. Manages a Virtual Desktop Workspace Application Group Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationLi
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecDeletio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Reference to a VirtualDesktopApplicationGroup in desktopvirtualization to populate applicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Selector for a VirtualDesktopApplicationGroup in desktopvirtualization to populate applicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderApplicationGroupIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Reference to a VirtualDesktopWorkspace in desktopvirtualization to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Selector for a VirtualDesktopWorkspace in desktopvirtualization to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
     public V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecForProvider
 {
@@ -384,7 +384,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRefPolicyResolutionEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRefPolicyResolveEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRefPolicy
 {
@@ -435,7 +435,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Reference to a VirtualDesktopApplicationGroup in desktopvirtualization to populate applicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdRef
 {
@@ -454,7 +454,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelectorPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelectorPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelectorPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Selector for a VirtualDesktopApplicationGroup in desktopvirtualization to populate applicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderApplicationGroupIdSelector
 {
@@ -531,7 +531,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRefPolicy
 {
@@ -582,7 +582,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Reference to a VirtualDesktopWorkspace in desktopvirtualization to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdRef
 {
@@ -601,7 +601,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelectorPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>Selector for a VirtualDesktopWorkspace in desktopvirtualization to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProviderWorkspaceIdSelector
 {
@@ -684,7 +684,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecInitProvider
 {
@@ -717,7 +717,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecManagementPoliciesEnum
 {
@@ -741,7 +741,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecManagem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProvide
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProvide
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRefPolicy
 {
@@ -796,7 +796,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecProviderConfigRef
 {
@@ -815,7 +815,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecWriteConnectionSecretToRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
 }
 
 /// <summary>VirtualDesktopWorkspaceApplicationGroupAssociationSpec defines the desired state of VirtualDesktopWorkspaceApplicationGroupAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpec
 {
@@ -896,7 +896,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSp
     public V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationStatusAtProvider
 {
@@ -914,7 +914,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSt
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationStatusConditions
 {
@@ -957,7 +957,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSt
 }
 
 /// <summary>VirtualDesktopWorkspaceApplicationGroupAssociationStatus defines the observed state of VirtualDesktopWorkspaceApplicationGroupAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationStatus
 {
@@ -978,7 +978,7 @@ public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSt
 }
 
 /// <summary>VirtualDesktopWorkspaceApplicationGroupAssociation is the Schema for the VirtualDesktopWorkspaceApplicationGroupAssociations API. Manages a Virtual Desktop Workspace Application Group Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualDesktopWorkspaceApplicationGroupAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationSpec>, IStatus<V1beta1VirtualDesktopWorkspaceApplicationGroupAssociationStatus?>

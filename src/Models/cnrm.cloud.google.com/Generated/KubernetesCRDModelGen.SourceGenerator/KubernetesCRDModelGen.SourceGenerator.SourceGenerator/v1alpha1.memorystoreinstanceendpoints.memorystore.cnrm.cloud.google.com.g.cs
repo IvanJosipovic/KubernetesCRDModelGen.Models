@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.memorystore.cnrm.cloud.google.com;
 /// <summary>MemorystoreInstanceEndpoint is the Schema for the MemorystoreInstanceEndpoint API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MemorystoreInstanceEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MemorystoreInstanceEndpoint>
@@ -37,7 +37,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointList : IKubernetesObject
 }
 
 /// <summary>Required. The consumer side forwarding rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnectionsPscConnectionForwardingRuleRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnections
 }
 
 /// <summary>Optional. Detailed information of a PSC connection that is created by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnectionsPscConnection
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnections
     public int? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnections
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnections
     public V1alpha1MemorystoreInstanceEndpointSpecEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpoints
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpecEndpoints
 }
 
 /// <summary>Required. The Memorystore instance reference of the endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpecInstanceRef
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpecInstanceRef
 }
 
 /// <summary>MemorystoreInstanceEndpointSpec defines the desired state of MemorystoreInstanceEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointSpec
 {
@@ -122,7 +122,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatusConditions
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatusConditions
 }
 
 /// <summary>Optional. Detailed information of a PSC connection that is created through service connectivity automation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpointsConnectionsPscConnection
 {
@@ -165,7 +165,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpo
     public string? PscConnectionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpointsConnections
 {
@@ -174,7 +174,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpo
     public V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpoints
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedStateEndpo
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedState
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatusObservedState
 }
 
 /// <summary>MemorystoreInstanceEndpointStatus defines the config connector machine state of MemorystoreInstanceEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceEndpointStatus
 {
@@ -212,7 +212,7 @@ public partial class V1alpha1MemorystoreInstanceEndpointStatus
 }
 
 /// <summary>MemorystoreInstanceEndpoint is the Schema for the MemorystoreInstanceEndpoint API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MemorystoreInstanceEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MemorystoreInstanceEndpointSpec>, IStatus<V1alpha1MemorystoreInstanceEndpointStatus?>

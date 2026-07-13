@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.wgpolicyk8s.io;
 /// <summary>ClusterPolicyReport is the Schema for the clusterpolicyreports API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ClusterPolicyReportList : IKubernetesObject<V1ListMeta>, IItems<V1alpha2ClusterPolicyReport>
@@ -40,7 +40,7 @@ public partial class V1alpha2ClusterPolicyReportList : IKubernetesObject<V1ListM
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportResultsResourceSelectorMatchExpressions
 {
@@ -71,7 +71,7 @@ public partial class V1alpha2ClusterPolicyReportResultsResourceSelectorMatchExpr
 /// Either a Subject or a SubjectSelector can be specified.
 /// If neither are provided, the result is assumed to be for the policy report scope.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportResultsResourceSelector
 {
@@ -89,7 +89,7 @@ public partial class V1alpha2ClusterPolicyReportResultsResourceSelector
 }
 
 /// <summary>ObjectReference contains enough information to let you inspect or modify the referred object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportResultsResources
 {
@@ -146,7 +146,7 @@ public partial class V1alpha2ClusterPolicyReportResultsResources
 }
 
 /// <summary>Result indicates the outcome of the policy rule execution</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterPolicyReportResultsResultEnum>))]
 public enum V1alpha2ClusterPolicyReportResultsResultEnum
 {
@@ -163,7 +163,7 @@ public enum V1alpha2ClusterPolicyReportResultsResultEnum
 }
 
 /// <summary>Severity indicates policy check result criticality</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterPolicyReportResultsSeverityEnum>))]
 public enum V1alpha2ClusterPolicyReportResultsSeverityEnum
 {
@@ -180,7 +180,7 @@ public enum V1alpha2ClusterPolicyReportResultsSeverityEnum
 }
 
 /// <summary>Timestamp indicates the time the result was found</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportResultsTimestamp
 {
@@ -203,7 +203,7 @@ public partial class V1alpha2ClusterPolicyReportResultsTimestamp
 }
 
 /// <summary>PolicyReportResult provides the result for an individual policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportResults
 {
@@ -262,7 +262,7 @@ public partial class V1alpha2ClusterPolicyReportResults
 }
 
 /// <summary>Scope is an optional reference to the report scope (e.g. a Deployment, Namespace, or Node)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportScope
 {
@@ -322,7 +322,7 @@ public partial class V1alpha2ClusterPolicyReportScope
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportScopeSelectorMatchExpressions
 {
@@ -351,7 +351,7 @@ public partial class V1alpha2ClusterPolicyReportScopeSelectorMatchExpressions
 /// ScopeSelector is an optional selector for multiple scopes (e.g. Pods).
 /// Either one of, or none of, but not both of, Scope or ScopeSelector should be specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportScopeSelector
 {
@@ -369,7 +369,7 @@ public partial class V1alpha2ClusterPolicyReportScopeSelector
 }
 
 /// <summary>PolicyReportSummary provides a summary of results</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterPolicyReportSummary
 {
@@ -395,7 +395,7 @@ public partial class V1alpha2ClusterPolicyReportSummary
 }
 
 /// <summary>ClusterPolicyReport is the Schema for the clusterpolicyreports API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ClusterPolicyReport : IKubernetesObject<V1ObjectMeta>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recaptchaenterprise.cnrm.cloud.google.com;
 /// <summary>ReCAPTCHAEnterpriseFirewallPolicy is the Schema for the ReCAPTCHAEnterpriseFirewallPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ReCAPTCHAEnterpriseFirewallPolicy>
@@ -37,35 +37,35 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyList : IKubernetes
 }
 
 /// <summary>The user request did not match any policy and should be allowed access to the requested resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsAllow
 {
 }
 
 /// <summary>This action denies access to a given page. The user gets an HTTP error code.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsBlock
 {
 }
 
 /// <summary>This action injects reCAPTCHA JavaScript code into the HTML page returned by the site backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsIncludeRecaptchaScript
 {
 }
 
 /// <summary>This action redirects the request to a reCAPTCHA interstitial to attach a token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsRedirect
 {
 }
 
 /// <summary>This action sets a custom header but allow the request to continue to the customer backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsSetHeader
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsSetHead
 }
 
 /// <summary>This action transparently serves a different page to an offending user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsSubstitute
 {
@@ -88,7 +88,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActionsSubstit
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActions
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecActions
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecProjectRef
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpecProjectRef
 }
 
 /// <summary>ReCAPTCHAEnterpriseFirewallPolicySpec defines the desired state of ReCAPTCHAEnterpriseFirewallPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpec
 {
@@ -169,7 +169,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyStatusConditions
 {
@@ -195,7 +195,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyStatusConditions
 }
 
 /// <summary>ReCAPTCHAEnterpriseFirewallPolicyStatus defines the config connector machine state of ReCAPTCHAEnterpriseFirewallPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyStatus
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicyStatus
 }
 
 /// <summary>ReCAPTCHAEnterpriseFirewallPolicy is the Schema for the ReCAPTCHAEnterpriseFirewallPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ReCAPTCHAEnterpriseFirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ReCAPTCHAEnterpriseFirewallPolicySpec>, IStatus<V1alpha1ReCAPTCHAEnterpriseFirewallPolicyStatus?>

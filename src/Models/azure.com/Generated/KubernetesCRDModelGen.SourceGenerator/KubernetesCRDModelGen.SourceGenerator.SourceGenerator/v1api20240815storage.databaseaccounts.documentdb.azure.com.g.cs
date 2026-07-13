@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.documentdb.azure.com;
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2024-08-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240815storageDatabaseAccountList : IKubernetesObject<V1ListMeta>, IItems<V1api20240815storageDatabaseAccount>
@@ -45,7 +45,7 @@ public partial class V1api20240815storageDatabaseAccountList : IKubernetesObject
 /// Storage version of v1api20240815.AnalyticalStorageConfiguration
 /// Analytical storage specific properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecAnalyticalStorageConfiguration
 {
@@ -61,7 +61,7 @@ public partial class V1api20240815storageDatabaseAccountSpecAnalyticalStorageCon
 }
 
 /// <summary>Storage version of v1api20240815.ApiProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecApiProperties
 {
@@ -80,7 +80,7 @@ public partial class V1api20240815storageDatabaseAccountSpecApiProperties
 /// Storage version of v1api20240815.ContinuousModeProperties
 /// Configuration values for periodic mode backup
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuousContinuousModeProperties
 {
@@ -99,7 +99,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuo
 /// Storage version of v1api20240815.BackupPolicyMigrationState
 /// The object representing the state of the migration between the backup policies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuousMigrationState
 {
@@ -121,7 +121,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuo
 }
 
 /// <summary>Storage version of v1api20240815.ContinuousModeBackupPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuous
 {
@@ -154,7 +154,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyContinuo
 /// Storage version of v1api20240815.BackupPolicyMigrationState
 /// The object representing the state of the migration between the backup policies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodicMigrationState
 {
@@ -179,7 +179,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodic
 /// Storage version of v1api20240815.PeriodicModeProperties
 /// Configuration values for periodic mode backup
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodicPeriodicModeProperties
 {
@@ -201,7 +201,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodic
 }
 
 /// <summary>Storage version of v1api20240815.PeriodicModeBackupPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodic
 {
@@ -231,7 +231,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicyPeriodic
 }
 
 /// <summary>Storage version of v1api20240815.BackupPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecBackupPolicy
 {
@@ -255,7 +255,7 @@ public partial class V1api20240815storageDatabaseAccountSpecBackupPolicy
 /// Storage version of v1api20240815.Capability
 /// Cosmos DB capability object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecCapabilities
 {
@@ -274,7 +274,7 @@ public partial class V1api20240815storageDatabaseAccountSpecCapabilities
 /// Storage version of v1api20240815.Capacity
 /// The object that represents all properties related to capacity enforcement on an account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecCapacity
 {
@@ -293,7 +293,7 @@ public partial class V1api20240815storageDatabaseAccountSpecCapacity
 /// Storage version of v1api20240815.ConsistencyPolicy
 /// The consistency policy for the Cosmos DB database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecConsistencyPolicy
 {
@@ -318,7 +318,7 @@ public partial class V1api20240815storageDatabaseAccountSpecConsistencyPolicy
 /// Storage version of v1api20240815.CorsPolicy
 /// The CORS policy for the Cosmos DB database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecCors
 {
@@ -346,7 +346,7 @@ public partial class V1api20240815storageDatabaseAccountSpecCors
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -375,7 +375,7 @@ public partial class V1api20240815storageDatabaseAccountSpecIdentityUserAssigned
 /// Storage version of v1api20240815.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecIdentityUserAssignedIdentities
 {
@@ -395,7 +395,7 @@ public partial class V1api20240815storageDatabaseAccountSpecIdentityUserAssigned
 /// Storage version of v1api20240815.ManagedServiceIdentity
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecIdentity
 {
@@ -417,7 +417,7 @@ public partial class V1api20240815storageDatabaseAccountSpecIdentity
 /// Storage version of v1api20240815.IpAddressOrRange
 /// IpAddressOrRange object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecIpRules
 {
@@ -436,7 +436,7 @@ public partial class V1api20240815storageDatabaseAccountSpecIpRules
 /// Storage version of v1api20240815.Location
 /// A region in which the Azure Cosmos DB database account is deployed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecLocations
 {
@@ -458,7 +458,7 @@ public partial class V1api20240815storageDatabaseAccountSpecLocations
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecNetworkAclBypassResourceReferences
 {
@@ -488,7 +488,7 @@ public partial class V1api20240815storageDatabaseAccountSpecNetworkAclBypassReso
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -529,7 +529,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecConfigMa
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretExpressions
 {
@@ -570,7 +570,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretEx
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsDocumentEndpoint
 {
@@ -599,7 +599,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsD
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsPrimaryMasterKey
 {
@@ -628,7 +628,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsP
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsPrimaryReadonlyMasterKey
 {
@@ -657,7 +657,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsP
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsSecondaryMasterKey
 {
@@ -686,7 +686,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsS
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsSecondaryReadonlyMasterKey
 {
@@ -711,7 +711,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecretsS
 }
 
 /// <summary>Storage version of v1api20240815.DatabaseAccountOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecrets
 {
@@ -767,7 +767,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpecSecrets
 /// Storage version of v1api20240815.DatabaseAccountOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOperatorSpec
 {
@@ -794,7 +794,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecOwner
 {
@@ -810,7 +810,7 @@ public partial class V1api20240815storageDatabaseAccountSpecOwner
 /// Storage version of v1api20240815.DatabaseRestoreResource
 /// Specific Databases to restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecRestoreParametersDatabasesToRestore
 {
@@ -832,7 +832,7 @@ public partial class V1api20240815storageDatabaseAccountSpecRestoreParametersDat
 /// Storage version of v1api20240815.GremlinDatabaseRestoreResource
 /// Specific Gremlin Databases to restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecRestoreParametersGremlinDatabasesToRestore
 {
@@ -854,7 +854,7 @@ public partial class V1api20240815storageDatabaseAccountSpecRestoreParametersGre
 /// Storage version of v1api20240815.RestoreParameters
 /// Parameters to indicate the information about the restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecRestoreParameters
 {
@@ -891,7 +891,7 @@ public partial class V1api20240815storageDatabaseAccountSpecRestoreParameters
 /// Reference: Resource ID of a subnet, for example:
 /// /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecVirtualNetworkRulesReference
 {
@@ -920,7 +920,7 @@ public partial class V1api20240815storageDatabaseAccountSpecVirtualNetworkRulesR
 /// Storage version of v1api20240815.VirtualNetworkRule
 /// Virtual Network ACL Rule object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpecVirtualNetworkRules
 {
@@ -943,7 +943,7 @@ public partial class V1api20240815storageDatabaseAccountSpecVirtualNetworkRules
 }
 
 /// <summary>Storage version of v1api20240815.DatabaseAccount_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountSpec
 {
@@ -1108,7 +1108,7 @@ public partial class V1api20240815storageDatabaseAccountSpec
 /// Storage version of v1api20240815.AnalyticalStorageConfiguration_STATUS
 /// Analytical storage specific properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusAnalyticalStorageConfiguration
 {
@@ -1124,7 +1124,7 @@ public partial class V1api20240815storageDatabaseAccountStatusAnalyticalStorageC
 }
 
 /// <summary>Storage version of v1api20240815.ApiProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusApiProperties
 {
@@ -1143,7 +1143,7 @@ public partial class V1api20240815storageDatabaseAccountStatusApiProperties
 /// Storage version of v1api20240815.ContinuousModeProperties_STATUS
 /// Configuration values for periodic mode backup
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContinuousContinuousModeProperties
 {
@@ -1162,7 +1162,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContin
 /// Storage version of v1api20240815.BackupPolicyMigrationState_STATUS
 /// The object representing the state of the migration between the backup policies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContinuousMigrationState
 {
@@ -1184,7 +1184,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContin
 }
 
 /// <summary>Storage version of v1api20240815.ContinuousModeBackupPolicy_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContinuous
 {
@@ -1217,7 +1217,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyContin
 /// Storage version of v1api20240815.BackupPolicyMigrationState_STATUS
 /// The object representing the state of the migration between the backup policies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriodicMigrationState
 {
@@ -1242,7 +1242,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriod
 /// Storage version of v1api20240815.PeriodicModeProperties_STATUS
 /// Configuration values for periodic mode backup
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriodicPeriodicModeProperties
 {
@@ -1264,7 +1264,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriod
 }
 
 /// <summary>Storage version of v1api20240815.PeriodicModeBackupPolicy_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriodic
 {
@@ -1294,7 +1294,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicyPeriod
 }
 
 /// <summary>Storage version of v1api20240815.BackupPolicy_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusBackupPolicy
 {
@@ -1318,7 +1318,7 @@ public partial class V1api20240815storageDatabaseAccountStatusBackupPolicy
 /// Storage version of v1api20240815.Capability_STATUS
 /// Cosmos DB capability object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusCapabilities
 {
@@ -1337,7 +1337,7 @@ public partial class V1api20240815storageDatabaseAccountStatusCapabilities
 /// Storage version of v1api20240815.Capacity_STATUS
 /// The object that represents all properties related to capacity enforcement on an account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusCapacity
 {
@@ -1353,7 +1353,7 @@ public partial class V1api20240815storageDatabaseAccountStatusCapacity
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusConditions
 {
@@ -1402,7 +1402,7 @@ public partial class V1api20240815storageDatabaseAccountStatusConditions
 /// Storage version of v1api20240815.ConsistencyPolicy_STATUS
 /// The consistency policy for the Cosmos DB database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusConsistencyPolicy
 {
@@ -1427,7 +1427,7 @@ public partial class V1api20240815storageDatabaseAccountStatusConsistencyPolicy
 /// Storage version of v1api20240815.CorsPolicy_STATUS
 /// The CORS policy for the Cosmos DB database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusCors
 {
@@ -1458,7 +1458,7 @@ public partial class V1api20240815storageDatabaseAccountStatusCors
 /// Storage version of v1api20240815.FailoverPolicy_STATUS
 /// The failover policy for a given region of a database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusFailoverPolicies
 {
@@ -1480,7 +1480,7 @@ public partial class V1api20240815storageDatabaseAccountStatusFailoverPolicies
 }
 
 /// <summary>Storage version of v1api20240815.ManagedServiceIdentity_UserAssignedIdentities_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusIdentityUserAssignedIdentities
 {
@@ -1502,7 +1502,7 @@ public partial class V1api20240815storageDatabaseAccountStatusIdentityUserAssign
 /// Storage version of v1api20240815.ManagedServiceIdentity_STATUS
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusIdentity
 {
@@ -1530,7 +1530,7 @@ public partial class V1api20240815storageDatabaseAccountStatusIdentity
 /// Storage version of v1api20240815.IpAddressOrRange_STATUS
 /// IpAddressOrRange object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusIpRules
 {
@@ -1549,7 +1549,7 @@ public partial class V1api20240815storageDatabaseAccountStatusIpRules
 /// Storage version of v1api20240815.AccountKeyMetadata_STATUS
 /// The metadata related to an access key for a given database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataPrimaryMasterKey
 {
@@ -1568,7 +1568,7 @@ public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataPrimar
 /// Storage version of v1api20240815.AccountKeyMetadata_STATUS
 /// The metadata related to an access key for a given database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataPrimaryReadonlyMasterKey
 {
@@ -1587,7 +1587,7 @@ public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataPrimar
 /// Storage version of v1api20240815.AccountKeyMetadata_STATUS
 /// The metadata related to an access key for a given database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataSecondaryMasterKey
 {
@@ -1606,7 +1606,7 @@ public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataSecond
 /// Storage version of v1api20240815.AccountKeyMetadata_STATUS
 /// The metadata related to an access key for a given database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataSecondaryReadonlyMasterKey
 {
@@ -1625,7 +1625,7 @@ public partial class V1api20240815storageDatabaseAccountStatusKeysMetadataSecond
 /// Storage version of v1api20240815.DatabaseAccountKeysMetadata_STATUS
 /// The metadata related to each access key for the given Cosmos DB database account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusKeysMetadata
 {
@@ -1669,7 +1669,7 @@ public partial class V1api20240815storageDatabaseAccountStatusKeysMetadata
 /// Storage version of v1api20240815.Location_STATUS
 /// A region in which the Azure Cosmos DB database account is deployed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusLocations
 {
@@ -1703,7 +1703,7 @@ public partial class V1api20240815storageDatabaseAccountStatusLocations
 /// Storage version of v1api20240815.PrivateEndpointConnection_STATUS
 /// A private endpoint connection
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusPrivateEndpointConnections
 {
@@ -1722,7 +1722,7 @@ public partial class V1api20240815storageDatabaseAccountStatusPrivateEndpointCon
 /// Storage version of v1api20240815.Location_STATUS
 /// A region in which the Azure Cosmos DB database account is deployed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusReadLocations
 {
@@ -1756,7 +1756,7 @@ public partial class V1api20240815storageDatabaseAccountStatusReadLocations
 /// Storage version of v1api20240815.DatabaseRestoreResource_STATUS
 /// Specific Databases to restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusRestoreParametersDatabasesToRestore
 {
@@ -1778,7 +1778,7 @@ public partial class V1api20240815storageDatabaseAccountStatusRestoreParametersD
 /// Storage version of v1api20240815.GremlinDatabaseRestoreResource_STATUS
 /// Specific Gremlin Databases to restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusRestoreParametersGremlinDatabasesToRestore
 {
@@ -1800,7 +1800,7 @@ public partial class V1api20240815storageDatabaseAccountStatusRestoreParametersG
 /// Storage version of v1api20240815.RestoreParameters_STATUS
 /// Parameters to indicate the information about the restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusRestoreParameters
 {
@@ -1837,7 +1837,7 @@ public partial class V1api20240815storageDatabaseAccountStatusRestoreParameters
 /// Storage version of v1api20240815.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusSystemData
 {
@@ -1871,7 +1871,7 @@ public partial class V1api20240815storageDatabaseAccountStatusSystemData
 /// Storage version of v1api20240815.VirtualNetworkRule_STATUS
 /// Virtual Network ACL Rule object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusVirtualNetworkRules
 {
@@ -1893,7 +1893,7 @@ public partial class V1api20240815storageDatabaseAccountStatusVirtualNetworkRule
 /// Storage version of v1api20240815.Location_STATUS
 /// A region in which the Azure Cosmos DB database account is deployed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatusWriteLocations
 {
@@ -1924,7 +1924,7 @@ public partial class V1api20240815storageDatabaseAccountStatusWriteLocations
 }
 
 /// <summary>Storage version of v1api20240815.DatabaseAccount_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815storageDatabaseAccountStatus
 {
@@ -2116,7 +2116,7 @@ public partial class V1api20240815storageDatabaseAccountStatus
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2024-08-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240815storageDatabaseAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240815storageDatabaseAccountSpec?>, IStatus<V1api20240815storageDatabaseAccountStatus?>

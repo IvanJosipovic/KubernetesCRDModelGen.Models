@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.cnrm.cloud.google.com;
 /// <summary>IAMServiceAccountKey is the Schema for the IAMServiceAccountKey API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IAMServiceAccountKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IAMServiceAccountKey>
@@ -37,7 +37,7 @@ public partial class V1beta1IAMServiceAccountKeyList : IKubernetesObject<V1ListM
 }
 
 /// <summary>Immutable. The Service Account to create a key for.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeySpecServiceAccountRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1IAMServiceAccountKeySpecServiceAccountRef
 }
 
 /// <summary>IAMServiceAccountKeySpec defines the desired state of IAMServiceAccountKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeySpec
 {
@@ -80,7 +80,7 @@ public partial class V1beta1IAMServiceAccountKeySpec
     public required V1beta1IAMServiceAccountKeySpecServiceAccountRef ServiceAccountRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeyStatusConditions
 {
@@ -106,7 +106,7 @@ public partial class V1beta1IAMServiceAccountKeyStatusConditions
 }
 
 /// <summary>IAMServiceAccountKeyStatus defines the config connector machine state of IAMServiceAccountKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeyStatus
 {
@@ -140,7 +140,7 @@ public partial class V1beta1IAMServiceAccountKeyStatus
 }
 
 /// <summary>IAMServiceAccountKey is the Schema for the IAMServiceAccountKey API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IAMServiceAccountKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IAMServiceAccountKeySpec>, IStatus<V1beta1IAMServiceAccountKeyStatus?>

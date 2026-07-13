@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.argoproj.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkflowTaskSetList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1WorkflowTaskSet>
@@ -35,7 +35,7 @@ public partial class V1alpha1WorkflowTaskSetList : IKubernetesObject<V1ListMeta>
     public required IList<V1alpha1WorkflowTaskSet> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -49,7 +49,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferr
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -63,7 +63,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferr
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferr
     public IList<V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityPreferr
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -99,7 +99,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequire
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequire
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequire
     public IList<V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequire
     public required IList<V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinity
 {
@@ -143,7 +143,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinity
     public V1alpha1WorkflowTaskSetSpecTasksAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -157,7 +157,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -216,7 +216,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -227,7 +227,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityPreferre
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -241,7 +241,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequired
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -252,7 +252,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequired
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -266,7 +266,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequired
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -277,7 +277,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequired
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequired
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinity
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinity
     public IList<V1alpha1WorkflowTaskSetSpecTasksAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -325,7 +325,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -336,7 +336,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -361,7 +361,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -384,7 +384,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -395,7 +395,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityPref
     public required int Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequ
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -420,7 +420,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequ
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -434,7 +434,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequ
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -445,7 +445,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequ
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequ
     public required string TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinity
 {
@@ -479,7 +479,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinity
     public IList<V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksAffinity
 {
@@ -493,7 +493,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksAffinity
     public V1alpha1WorkflowTaskSetSpecTasksAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactoryPasswordSecret
 {
@@ -507,7 +507,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactoryP
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactoryUsernameSecret
 {
@@ -521,7 +521,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactoryU
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactory
 {
@@ -535,7 +535,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactory
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationAzureAccountKeySecret
 {
@@ -549,7 +549,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationAzureAccount
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationAzure
 {
@@ -569,7 +569,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationAzure
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGcsServiceAccountKeySecret
 {
@@ -583,7 +583,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGcsServiceAc
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGcs
 {
@@ -597,7 +597,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGcs
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitPasswordSecret
 {
@@ -611,7 +611,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitPasswordS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitSshPrivateKeySecret
 {
@@ -625,7 +625,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitSshPrivat
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitUsernameSecret
 {
@@ -639,7 +639,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitUsernameS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGit
 {
@@ -680,7 +680,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGit
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbCCacheSecret
 {
@@ -694,7 +694,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbCCach
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbConfigConfigMap
 {
@@ -708,7 +708,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbConfi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbKeytabSecret
 {
@@ -722,7 +722,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfsKrbKeyta
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfs
 {
@@ -760,7 +760,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHdfs
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasicAuthPasswordSecret
 {
@@ -774,7 +774,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasicAuthUsernameSecret
 {
@@ -788,7 +788,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasicAuth
 {
@@ -799,7 +799,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasi
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClientCertClientCertSecret
 {
@@ -813,7 +813,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClie
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClientCertClientKeySecret
 {
@@ -827,7 +827,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClie
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClientCert
 {
@@ -838,7 +838,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClie
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2ClientIDSecret
 {
@@ -852,7 +852,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2ClientSecretSecret
 {
@@ -866,7 +866,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2EndpointParams
 {
@@ -877,7 +877,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOaut
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2TokenURLSecret
 {
@@ -891,7 +891,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2
 {
@@ -911,7 +911,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOaut
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuth
 {
@@ -925,7 +925,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuth
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpHeaders
 {
@@ -936,7 +936,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpHeaders
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttp
 {
@@ -950,7 +950,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttp
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssAccessKeySecret
 {
@@ -964,7 +964,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssAccessKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssLifecycleRule
 {
@@ -975,7 +975,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssLifecycle
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssSecretKeySecret
 {
@@ -989,7 +989,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOssSecretKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOss
 {
@@ -1021,7 +1021,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationOss
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationPlugin
 {
@@ -1038,7 +1038,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationPlugin
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationRaw
 {
@@ -1046,7 +1046,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationRaw
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3AccessKeySecret
 {
@@ -1060,7 +1060,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3AccessKeyS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3CaSecret
 {
@@ -1074,7 +1074,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3CaSecret
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3CreateBucketIfNotPresent
 {
@@ -1082,7 +1082,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3CreateBuck
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -1096,7 +1096,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3Encryption
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3EncryptionOptions
 {
@@ -1113,7 +1113,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3Encryption
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3SecretKeySecret
 {
@@ -1127,7 +1127,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3SecretKeyS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3SessionTokenSecret
 {
@@ -1141,7 +1141,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3SessionTok
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3
 {
@@ -1185,7 +1185,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocation
 {
@@ -1223,7 +1223,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocation
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromConfigMapKeyRef
 {
@@ -1237,7 +1237,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromConfig
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFieldRef
 {
@@ -1248,7 +1248,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFieldR
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromResourceFieldRef
 {
@@ -1262,7 +1262,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromResour
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromSecretKeyRef
 {
@@ -1276,7 +1276,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromSecret
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFrom
 {
@@ -1293,7 +1293,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnv
 {
@@ -1307,7 +1307,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnv
     public V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFromConfigMapRef
 {
@@ -1318,7 +1318,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFromConfigMapRe
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFromSecretRef
 {
@@ -1329,7 +1329,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFromSecretRef
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFrom
 {
@@ -1343,7 +1343,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvFrom
     public V1alpha1WorkflowTaskSetSpecTasksContainerEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartExec
 {
@@ -1351,7 +1351,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartHttpGetHttpHeaders
 {
@@ -1362,7 +1362,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartHttpGet
 {
@@ -1382,7 +1382,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartSleep
 {
@@ -1390,7 +1390,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartTcpSocket
 {
@@ -1401,7 +1401,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
 {
@@ -1418,7 +1418,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStart
     public V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopExec
 {
@@ -1426,7 +1426,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopEx
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopHttpGetHttpHeaders
 {
@@ -1437,7 +1437,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopHt
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopHttpGet
 {
@@ -1457,7 +1457,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopHt
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopSleep
 {
@@ -1465,7 +1465,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopSl
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopTcpSocket
 {
@@ -1476,7 +1476,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopTc
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStop
 {
@@ -1493,7 +1493,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStop
     public V1alpha1WorkflowTaskSetSpecTasksContainerLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecycle
 {
@@ -1507,7 +1507,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLifecycle
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeExec
 {
@@ -1515,7 +1515,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeGrpc
 {
@@ -1526,7 +1526,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeHttpGetHttpHeaders
 {
@@ -1537,7 +1537,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeHttpG
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeHttpGet
 {
@@ -1557,7 +1557,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeHttpG
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeTcpSocket
 {
@@ -1568,7 +1568,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbeTcpSo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbe
 {
@@ -1603,7 +1603,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerLivenessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerPorts
 {
@@ -1623,7 +1623,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerPorts
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeExec
 {
@@ -1631,7 +1631,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeGrpc
 {
@@ -1642,7 +1642,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeHttpGetHttpHeaders
 {
@@ -1653,7 +1653,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeHttp
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeHttpGet
 {
@@ -1673,7 +1673,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeHttp
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeTcpSocket
 {
@@ -1684,7 +1684,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbeTcpS
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbe
 {
@@ -1719,7 +1719,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerReadinessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResizePolicy
 {
@@ -1730,7 +1730,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResizePolicy
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResourcesClaims
 {
@@ -1741,7 +1741,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResourcesClaims
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResources
 {
@@ -1755,7 +1755,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextAppArmorProfile
 {
@@ -1766,7 +1766,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextApp
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextCapabilities
 {
@@ -1777,7 +1777,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextCap
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextSeLinuxOptions
 {
@@ -1794,7 +1794,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextSeL
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextSeccompProfile
 {
@@ -1805,7 +1805,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextSec
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextWindowsOptions
 {
@@ -1822,7 +1822,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextWin
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContext
 {
@@ -1863,7 +1863,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContext
     public V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeExec
 {
@@ -1871,7 +1871,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeGrpc
 {
@@ -1882,7 +1882,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeHttpGetHttpHeaders
 {
@@ -1893,7 +1893,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeHttpGe
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeHttpGet
 {
@@ -1913,7 +1913,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeHttpGe
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeTcpSocket
 {
@@ -1924,7 +1924,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbeTcpSoc
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbe
 {
@@ -1959,7 +1959,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerStartupProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerVolumeDevices
 {
@@ -1970,7 +1970,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerVolumeDevices
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerVolumeMounts
 {
@@ -1996,7 +1996,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerVolumeMounts
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainer
 {
@@ -2073,7 +2073,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainer
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromConfigMapKeyRef
 {
@@ -2087,7 +2087,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromFieldRef
 {
@@ -2098,7 +2098,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromResourceFieldRef
 {
@@ -2112,7 +2112,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromSecretKeyRef
 {
@@ -2126,7 +2126,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFrom
 {
@@ -2143,7 +2143,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnv
 {
@@ -2157,7 +2157,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnv
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFromConfigMapRef
 {
@@ -2168,7 +2168,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFr
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFromSecretRef
 {
@@ -2179,7 +2179,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFr
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFrom
 {
@@ -2193,7 +2193,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFr
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartExec
 {
@@ -2201,7 +2201,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartHttpGetHttpHeaders
 {
@@ -2212,7 +2212,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartHttpGet
 {
@@ -2232,7 +2232,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartSleep
 {
@@ -2240,7 +2240,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartTcpSocket
 {
@@ -2251,7 +2251,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStart
 {
@@ -2268,7 +2268,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopExec
 {
@@ -2276,7 +2276,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopHttpGetHttpHeaders
 {
@@ -2287,7 +2287,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopHttpGet
 {
@@ -2307,7 +2307,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopSleep
 {
@@ -2315,7 +2315,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopTcpSocket
 {
@@ -2326,7 +2326,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStop
 {
@@ -2343,7 +2343,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifecycle
 {
@@ -2357,7 +2357,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLifec
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbeExec
 {
@@ -2365,7 +2365,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbeGrpc
 {
@@ -2376,7 +2376,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbeHttpGetHttpHeaders
 {
@@ -2387,7 +2387,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbeHttpGet
 {
@@ -2407,7 +2407,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbeTcpSocket
 {
@@ -2418,7 +2418,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLivenessProbe
 {
@@ -2453,7 +2453,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersLiven
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersPorts
 {
@@ -2473,7 +2473,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersPorts
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbeExec
 {
@@ -2481,7 +2481,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbeGrpc
 {
@@ -2492,7 +2492,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbeHttpGetHttpHeaders
 {
@@ -2503,7 +2503,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbeHttpGet
 {
@@ -2523,7 +2523,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbeTcpSocket
 {
@@ -2534,7 +2534,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadinessProbe
 {
@@ -2569,7 +2569,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersReadi
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResizePolicy
 {
@@ -2580,7 +2580,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResiz
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResourcesClaims
 {
@@ -2591,7 +2591,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResou
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResources
 {
@@ -2605,7 +2605,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResou
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextAppArmorProfile
 {
@@ -2616,7 +2616,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextCapabilities
 {
@@ -2627,7 +2627,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextSeLinuxOptions
 {
@@ -2644,7 +2644,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextSeccompProfile
 {
@@ -2655,7 +2655,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextWindowsOptions
 {
@@ -2672,7 +2672,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContext
 {
@@ -2713,7 +2713,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecur
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbeExec
 {
@@ -2721,7 +2721,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbeGrpc
 {
@@ -2732,7 +2732,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbeHttpGetHttpHeaders
 {
@@ -2743,7 +2743,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbeHttpGet
 {
@@ -2763,7 +2763,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbeTcpSocket
 {
@@ -2774,7 +2774,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStartupProbe
 {
@@ -2809,7 +2809,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersStart
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersVolumeDevices
 {
@@ -2820,7 +2820,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersVolum
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersVolumeMounts
 {
@@ -2846,7 +2846,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersVolum
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainers
 {
@@ -2926,7 +2926,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainers
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetRetryStrategy
 {
@@ -2937,7 +2937,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetRetryStrategy
     public required IntOrString Retries { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetVolumeMounts
 {
@@ -2963,7 +2963,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetVolumeMounts
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSet
 {
@@ -2977,13 +2977,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSet
     public IList<V1alpha1WorkflowTaskSetSpecTasksContainerSetVolumeMounts>? VolumeMounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArchiveTar
 {
@@ -2991,13 +2991,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArchive
 {
@@ -3011,7 +3011,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactGCPodMetadata
 {
@@ -3022,7 +3022,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactGC
 {
@@ -3036,7 +3036,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactoryPasswordSecret
 {
@@ -3050,7 +3050,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactoryUsernameSecret
 {
@@ -3064,7 +3064,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactory
 {
@@ -3078,7 +3078,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsAzureAccountKeySecret
 {
@@ -3092,7 +3092,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsAzure
 {
@@ -3112,7 +3112,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsA
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGcsServiceAccountKeySecret
 {
@@ -3126,7 +3126,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGcs
 {
@@ -3140,7 +3140,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGitPasswordSecret
 {
@@ -3154,7 +3154,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGitSshPrivateKeySecret
 {
@@ -3168,7 +3168,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGitUsernameSecret
 {
@@ -3182,7 +3182,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGit
 {
@@ -3223,7 +3223,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsG
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHdfsKrbCCacheSecret
 {
@@ -3237,7 +3237,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHdfsKrbConfigConfigMap
 {
@@ -3251,7 +3251,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHdfsKrbKeytabSecret
 {
@@ -3265,7 +3265,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHdfs
 {
@@ -3303,7 +3303,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -3317,7 +3317,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -3331,7 +3331,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthBasicAuth
 {
@@ -3342,7 +3342,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -3356,7 +3356,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -3370,7 +3370,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthClientCert
 {
@@ -3381,7 +3381,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -3395,7 +3395,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -3409,7 +3409,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -3420,7 +3420,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -3434,7 +3434,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2
 {
@@ -3454,7 +3454,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuth
 {
@@ -3468,7 +3468,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpHeaders
 {
@@ -3479,7 +3479,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttp
 {
@@ -3493,7 +3493,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsOssAccessKeySecret
 {
@@ -3507,7 +3507,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsO
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsOssLifecycleRule
 {
@@ -3518,7 +3518,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsO
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsOssSecretKeySecret
 {
@@ -3532,7 +3532,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsO
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsOss
 {
@@ -3564,7 +3564,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsO
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsPlugin
 {
@@ -3581,7 +3581,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsP
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsRaw
 {
@@ -3589,7 +3589,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsR
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3AccessKeySecret
 {
@@ -3603,7 +3603,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3CaSecret
 {
@@ -3617,7 +3617,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3CreateBucketIfNotPresent
 {
@@ -3625,7 +3625,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -3639,7 +3639,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3EncryptionOptions
 {
@@ -3656,7 +3656,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3SecretKeySecret
 {
@@ -3670,7 +3670,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3SessionTokenSecret
 {
@@ -3684,7 +3684,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3
 {
@@ -3728,7 +3728,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifacts
 {
@@ -3802,7 +3802,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifacts
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParametersValueFromConfigMapKeyRef
 {
@@ -3816,13 +3816,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParameters
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParametersValueFrom
 {
@@ -3854,7 +3854,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParameters
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParameters
 {
@@ -3880,7 +3880,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParameters
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArguments
 {
@@ -3891,7 +3891,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArguments
     public IList<V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksContinueOn
 {
@@ -3902,13 +3902,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksContinueOn
     public bool? Failed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArchiveTar
 {
@@ -3916,13 +3916,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArchive
 {
@@ -3936,7 +3936,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactGCPodMetadata
 {
@@ -3947,7 +3947,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactGC
 {
@@ -3961,7 +3961,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactoryPasswordSecret
 {
@@ -3975,7 +3975,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactoryUsernameSecret
 {
@@ -3989,7 +3989,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactory
 {
@@ -4003,7 +4003,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsAzureAccountKeySecret
 {
@@ -4017,7 +4017,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsAzure
 {
@@ -4037,7 +4037,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGcsServiceAccountKeySecret
 {
@@ -4051,7 +4051,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGcs
 {
@@ -4065,7 +4065,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGitPasswordSecret
 {
@@ -4079,7 +4079,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGitSshPrivateKeySecret
 {
@@ -4093,7 +4093,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGitUsernameSecret
 {
@@ -4107,7 +4107,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGit
 {
@@ -4148,7 +4148,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHdfsKrbCCacheSecret
 {
@@ -4162,7 +4162,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHdfsKrbConfigConfigMap
 {
@@ -4176,7 +4176,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHdfsKrbKeytabSecret
 {
@@ -4190,7 +4190,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHdfs
 {
@@ -4228,7 +4228,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -4242,7 +4242,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -4256,7 +4256,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthBasicAuth
 {
@@ -4267,7 +4267,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -4281,7 +4281,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -4295,7 +4295,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthClientCert
 {
@@ -4306,7 +4306,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -4320,7 +4320,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -4334,7 +4334,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -4345,7 +4345,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -4359,7 +4359,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2
 {
@@ -4379,7 +4379,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuth
 {
@@ -4393,7 +4393,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpHeaders
 {
@@ -4404,7 +4404,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttp
 {
@@ -4418,7 +4418,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsOssAccessKeySecret
 {
@@ -4432,7 +4432,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsOssLifecycleRule
 {
@@ -4443,7 +4443,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsOssSecretKeySecret
 {
@@ -4457,7 +4457,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsOss
 {
@@ -4489,7 +4489,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsPlugin
 {
@@ -4506,7 +4506,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsRaw
 {
@@ -4514,7 +4514,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3AccessKeySecret
 {
@@ -4528,7 +4528,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3CaSecret
 {
@@ -4542,7 +4542,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3CreateBucketIfNotPresent
 {
@@ -4550,7 +4550,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -4564,7 +4564,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3EncryptionOptions
 {
@@ -4581,7 +4581,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3SecretKeySecret
 {
@@ -4595,7 +4595,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3SessionTokenSecret
 {
@@ -4609,7 +4609,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3
 {
@@ -4653,7 +4653,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifacts
 {
@@ -4727,7 +4727,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParametersValueFromConfigMapKeyRef
 {
@@ -4741,13 +4741,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParam
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParametersValueFrom
 {
@@ -4779,7 +4779,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParam
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParameters
 {
@@ -4805,7 +4805,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParam
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArguments
 {
@@ -4816,7 +4816,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArguments
     public IList<V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksTemplateRef
 {
@@ -4830,7 +4830,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksTemplateRef
     public string? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooks
 {
@@ -4847,7 +4847,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooks
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksTemplateRef? TemplateRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksTemplateRef
 {
@@ -4861,7 +4861,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksTemplateRef
     public string? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksWithSequence
 {
@@ -4878,7 +4878,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksWithSequence
     public IntOrString? Start { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasks
 {
@@ -4925,7 +4925,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasks
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksWithSequence? WithSequence { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDag
 {
@@ -4939,13 +4939,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDag
     public required IList<V1alpha1WorkflowTaskSetSpecTasksDagTasks> Tasks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArchiveTar
 {
@@ -4953,13 +4953,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArch
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArchive
 {
@@ -4973,7 +4973,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArch
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactGCPodMetadata
 {
@@ -4984,7 +4984,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArti
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactGC
 {
@@ -4998,7 +4998,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArti
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactoryPasswordSecret
 {
@@ -5012,7 +5012,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArti
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactoryUsernameSecret
 {
@@ -5026,7 +5026,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArti
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactory
 {
@@ -5040,7 +5040,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArti
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsAzureAccountKeySecret
 {
@@ -5054,7 +5054,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsAzur
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsAzure
 {
@@ -5074,7 +5074,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsAzur
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGcsServiceAccountKeySecret
 {
@@ -5088,7 +5088,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGcsS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGcs
 {
@@ -5102,7 +5102,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGcs
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitPasswordSecret
 {
@@ -5116,7 +5116,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitP
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitSshPrivateKeySecret
 {
@@ -5130,7 +5130,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitUsernameSecret
 {
@@ -5144,7 +5144,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitU
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGit
 {
@@ -5185,7 +5185,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGit
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfsKrbCCacheSecret
 {
@@ -5199,7 +5199,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfs
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfsKrbConfigConfigMap
 {
@@ -5213,7 +5213,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfs
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfsKrbKeytabSecret
 {
@@ -5227,7 +5227,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfs
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfs
 {
@@ -5265,7 +5265,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHdfs
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthBasicAuthPasswordSecret
 {
@@ -5279,7 +5279,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthBasicAuthUsernameSecret
 {
@@ -5293,7 +5293,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthBasicAuth
 {
@@ -5304,7 +5304,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthClientCertClientCertSecret
 {
@@ -5318,7 +5318,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthClientCertClientKeySecret
 {
@@ -5332,7 +5332,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthClientCert
 {
@@ -5343,7 +5343,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2ClientIDSecret
 {
@@ -5357,7 +5357,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2ClientSecretSecret
 {
@@ -5371,7 +5371,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2EndpointParams
 {
@@ -5382,7 +5382,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2TokenURLSecret
 {
@@ -5396,7 +5396,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2
 {
@@ -5416,7 +5416,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuth
 {
@@ -5430,7 +5430,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpHeaders
 {
@@ -5441,7 +5441,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
 {
@@ -5455,7 +5455,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssAccessKeySecret
 {
@@ -5469,7 +5469,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssA
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssLifecycleRule
 {
@@ -5480,7 +5480,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssL
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssSecretKeySecret
 {
@@ -5494,7 +5494,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOssS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOss
 {
@@ -5526,7 +5526,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsOss
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsPlugin
 {
@@ -5543,7 +5543,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsPlug
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsRaw
 {
@@ -5551,7 +5551,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsRaw
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3AccessKeySecret
 {
@@ -5565,7 +5565,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3Ac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3CaSecret
 {
@@ -5579,7 +5579,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3Ca
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3CreateBucketIfNotPresent
 {
@@ -5587,7 +5587,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3Cr
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -5601,7 +5601,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3En
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3EncryptionOptions
 {
@@ -5618,7 +5618,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3En
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3SecretKeySecret
 {
@@ -5632,7 +5632,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3Se
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3SessionTokenSecret
 {
@@ -5646,7 +5646,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3Se
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3
 {
@@ -5690,7 +5690,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPaths
 {
@@ -5764,7 +5764,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPaths
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataSource
 {
@@ -5772,7 +5772,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSource
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPaths? ArtifactPaths { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksDataTransformation
 {
@@ -5780,7 +5780,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataTransformation
     public required string Expression { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksData
 {
@@ -5791,7 +5791,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksData
     public required IList<V1alpha1WorkflowTaskSetSpecTasksDataTransformation> Transformation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksExecutor
 {
@@ -5799,7 +5799,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksExecutor
     public string? ServiceAccountName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHostAliases
 {
@@ -5810,7 +5810,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHostAliases
     public required string Ip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHttpBodyFrom
 {
@@ -5818,7 +5818,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHttpBodyFrom
     public byte[]? Bytes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFromSecretKeyRef
 {
@@ -5832,7 +5832,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFromSecretK
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFrom
 {
@@ -5840,7 +5840,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeaders
 {
@@ -5854,7 +5854,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHttpHeaders
     public V1alpha1WorkflowTaskSetSpecTasksHttpHeadersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksHttp
 {
@@ -5883,7 +5883,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksHttp
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromConfigMapKeyRef
 {
@@ -5897,7 +5897,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromC
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromFieldRef
 {
@@ -5908,7 +5908,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromF
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromResourceFieldRef
 {
@@ -5922,7 +5922,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromR
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromSecretKeyRef
 {
@@ -5936,7 +5936,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFrom
 {
@@ -5953,7 +5953,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnv
 {
@@ -5967,7 +5967,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnv
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFromConfigMapRef
 {
@@ -5978,7 +5978,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFromConfig
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFromSecretRef
 {
@@ -5989,7 +5989,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFromSecret
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFrom
 {
@@ -6003,7 +6003,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFrom
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartExec
 {
@@ -6011,7 +6011,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartHttpGetHttpHeaders
 {
@@ -6022,7 +6022,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartHttpGet
 {
@@ -6042,7 +6042,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartSleep
 {
@@ -6050,7 +6050,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartTcpSocket
 {
@@ -6061,7 +6061,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStart
 {
@@ -6078,7 +6078,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePost
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopExec
 {
@@ -6086,7 +6086,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopHttpGetHttpHeaders
 {
@@ -6097,7 +6097,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopHttpGet
 {
@@ -6117,7 +6117,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopSleep
 {
@@ -6125,7 +6125,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopTcpSocket
 {
@@ -6136,7 +6136,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStop
 {
@@ -6153,7 +6153,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreS
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecycle
 {
@@ -6167,7 +6167,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLifecycle
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbeExec
 {
@@ -6175,7 +6175,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbeGrpc
 {
@@ -6186,7 +6186,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbeHttpGetHttpHeaders
 {
@@ -6197,7 +6197,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbeHttpGet
 {
@@ -6217,7 +6217,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbeTcpSocket
 {
@@ -6228,7 +6228,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
 {
@@ -6263,7 +6263,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersLivenessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersPorts
 {
@@ -6283,7 +6283,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersPorts
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbeExec
 {
@@ -6291,7 +6291,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbeGrpc
 {
@@ -6302,7 +6302,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbeHttpGetHttpHeaders
 {
@@ -6313,7 +6313,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbeHttpGet
 {
@@ -6333,7 +6333,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbeTcpSocket
 {
@@ -6344,7 +6344,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProbe
 {
@@ -6379,7 +6379,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersReadinessProb
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResizePolicy
 {
@@ -6390,7 +6390,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResizePolicy
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResourcesClaims
 {
@@ -6401,7 +6401,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResourcesClai
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResources
 {
@@ -6415,7 +6415,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextAppArmorProfile
 {
@@ -6426,7 +6426,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextCapabilities
 {
@@ -6437,7 +6437,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextSeLinuxOptions
 {
@@ -6454,7 +6454,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextSeccompProfile
 {
@@ -6465,7 +6465,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextWindowsOptions
 {
@@ -6482,7 +6482,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContext
 {
@@ -6523,7 +6523,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityConte
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeExec
 {
@@ -6531,7 +6531,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeE
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeGrpc
 {
@@ -6542,7 +6542,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeG
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeHttpGetHttpHeaders
 {
@@ -6553,7 +6553,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeH
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeHttpGet
 {
@@ -6573,7 +6573,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeH
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeTcpSocket
 {
@@ -6584,7 +6584,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbeT
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbe
 {
@@ -6619,7 +6619,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersStartupProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersVolumeDevices
 {
@@ -6630,7 +6630,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersVolumeDevices
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersVolumeMounts
 {
@@ -6656,7 +6656,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersVolumeMounts
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainers
 {
@@ -6736,13 +6736,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainers
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchiveTar
 {
@@ -6750,13 +6750,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchiveTar
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchive
 {
@@ -6770,7 +6770,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchive
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactGCPodMetadata
 {
@@ -6781,7 +6781,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactGCPo
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactGC
 {
@@ -6795,7 +6795,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactGC
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactoryPasswordSecret
 {
@@ -6809,7 +6809,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactoryP
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactoryUsernameSecret
 {
@@ -6823,7 +6823,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactoryU
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactory
 {
@@ -6837,7 +6837,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactory
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsAzureAccountKeySecret
 {
@@ -6851,7 +6851,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsAzureAccount
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsAzure
 {
@@ -6871,7 +6871,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsAzure
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGcsServiceAccountKeySecret
 {
@@ -6885,7 +6885,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGcsServiceAc
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGcs
 {
@@ -6899,7 +6899,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGcs
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitPasswordSecret
 {
@@ -6913,7 +6913,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitPasswordS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitSshPrivateKeySecret
 {
@@ -6927,7 +6927,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitSshPrivat
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitUsernameSecret
 {
@@ -6941,7 +6941,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitUsernameS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGit
 {
@@ -6982,7 +6982,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGit
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbCCacheSecret
 {
@@ -6996,7 +6996,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbCCach
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbConfigConfigMap
 {
@@ -7010,7 +7010,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbConfi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbKeytabSecret
 {
@@ -7024,7 +7024,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfsKrbKeyta
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfs
 {
@@ -7062,7 +7062,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHdfs
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -7076,7 +7076,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -7090,7 +7090,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasi
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasicAuth
 {
@@ -7101,7 +7101,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasi
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -7115,7 +7115,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClie
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -7129,7 +7129,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClie
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClientCert
 {
@@ -7140,7 +7140,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClie
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -7154,7 +7154,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -7168,7 +7168,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -7179,7 +7179,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOaut
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -7193,7 +7193,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOaut
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2
 {
@@ -7213,7 +7213,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOaut
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuth
 {
@@ -7227,7 +7227,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuth
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpHeaders
 {
@@ -7238,7 +7238,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpHeaders
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttp
 {
@@ -7252,7 +7252,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttp
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssAccessKeySecret
 {
@@ -7266,7 +7266,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssAccessKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssLifecycleRule
 {
@@ -7277,7 +7277,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssLifecycle
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssSecretKeySecret
 {
@@ -7291,7 +7291,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOssSecretKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOss
 {
@@ -7323,7 +7323,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsOss
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsPlugin
 {
@@ -7340,7 +7340,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsPlugin
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsRaw
 {
@@ -7348,7 +7348,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsRaw
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3AccessKeySecret
 {
@@ -7362,7 +7362,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3AccessKeyS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3CaSecret
 {
@@ -7376,7 +7376,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3CaSecret
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3CreateBucketIfNotPresent
 {
@@ -7384,7 +7384,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3CreateBuck
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -7398,7 +7398,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3Encryption
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3EncryptionOptions
 {
@@ -7415,7 +7415,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3Encryption
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3SecretKeySecret
 {
@@ -7429,7 +7429,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3SecretKeyS
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3SessionTokenSecret
 {
@@ -7443,7 +7443,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3SessionTok
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3
 {
@@ -7487,7 +7487,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifacts
 {
@@ -7561,7 +7561,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifacts
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFromConfigMapKeyRef
 {
@@ -7575,13 +7575,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFromCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFrom
 {
@@ -7613,7 +7613,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParameters
 {
@@ -7639,7 +7639,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsParameters
     public V1alpha1WorkflowTaskSetSpecTasksInputsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInputs
 {
@@ -7650,7 +7650,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputs
     public IList<V1alpha1WorkflowTaskSetSpecTasksInputsParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMemoizeCacheConfigMap
 {
@@ -7658,7 +7658,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMemoizeCacheConfigMap
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMemoizeCache
 {
@@ -7666,7 +7666,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMemoizeCache
     public required V1alpha1WorkflowTaskSetSpecTasksMemoizeCacheConfigMap ConfigMap { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMemoize
 {
@@ -7680,7 +7680,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMemoize
     public required string MaxAge { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetadata
 {
@@ -7691,7 +7691,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetadata
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusCounter
 {
@@ -7699,7 +7699,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusCounter
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusGaugeOperationEnum>))]
 public enum V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusGaugeOperationEnum
 {
@@ -7711,7 +7711,7 @@ public enum V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusGaugeOperationEnum
     Sub
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusGauge
 {
@@ -7725,7 +7725,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusGauge
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusHistogram
 {
@@ -7736,7 +7736,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusHistogram
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusLabels
 {
@@ -7747,7 +7747,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheusLabels
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheus
 {
@@ -7773,7 +7773,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheus
     public string? When { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksMetrics
 {
@@ -7781,13 +7781,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksMetrics
     public required IList<V1alpha1WorkflowTaskSetSpecTasksMetricsPrometheus> Prometheus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchiveTar
 {
@@ -7795,13 +7795,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchiveTar
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchive
 {
@@ -7815,7 +7815,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchive
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactGCPodMetadata
 {
@@ -7826,7 +7826,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactGCP
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactGC
 {
@@ -7840,7 +7840,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactGC
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactoryPasswordSecret
 {
@@ -7854,7 +7854,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactory
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactoryUsernameSecret
 {
@@ -7868,7 +7868,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactory
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactory
 {
@@ -7882,7 +7882,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactory
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsAzureAccountKeySecret
 {
@@ -7896,7 +7896,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsAzureAccoun
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsAzure
 {
@@ -7916,7 +7916,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsAzure
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGcsServiceAccountKeySecret
 {
@@ -7930,7 +7930,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGcsServiceA
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGcs
 {
@@ -7944,7 +7944,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGcs
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitPasswordSecret
 {
@@ -7958,7 +7958,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitPassword
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitSshPrivateKeySecret
 {
@@ -7972,7 +7972,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitSshPriva
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitUsernameSecret
 {
@@ -7986,7 +7986,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitUsername
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGit
 {
@@ -8027,7 +8027,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGit
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbCCacheSecret
 {
@@ -8041,7 +8041,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbCCac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbConfigConfigMap
 {
@@ -8055,7 +8055,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbConf
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbKeytabSecret
 {
@@ -8069,7 +8069,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfsKrbKeyt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfs
 {
@@ -8107,7 +8107,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHdfs
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -8121,7 +8121,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBas
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -8135,7 +8135,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBas
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBasicAuth
 {
@@ -8146,7 +8146,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBas
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -8160,7 +8160,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthCli
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -8174,7 +8174,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthCli
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthClientCert
 {
@@ -8185,7 +8185,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthCli
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -8199,7 +8199,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOau
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -8213,7 +8213,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOau
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -8224,7 +8224,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOau
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -8238,7 +8238,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOau
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2
 {
@@ -8258,7 +8258,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOau
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuth
 {
@@ -8272,7 +8272,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuth
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpHeaders
 {
@@ -8283,7 +8283,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpHeaders
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttp
 {
@@ -8297,7 +8297,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttp
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssAccessKeySecret
 {
@@ -8311,7 +8311,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssAccessKe
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssLifecycleRule
 {
@@ -8322,7 +8322,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssLifecycl
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssSecretKeySecret
 {
@@ -8336,7 +8336,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOssSecretKe
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOss
 {
@@ -8368,7 +8368,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsOss
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsPlugin
 {
@@ -8385,7 +8385,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsPlugin
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsRaw
 {
@@ -8393,7 +8393,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsRaw
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3AccessKeySecret
 {
@@ -8407,7 +8407,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3AccessKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3CaSecret
 {
@@ -8421,7 +8421,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3CaSecret
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3CreateBucketIfNotPresent
 {
@@ -8429,7 +8429,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3CreateBuc
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -8443,7 +8443,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3Encryptio
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3EncryptionOptions
 {
@@ -8460,7 +8460,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3Encryptio
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3SecretKeySecret
 {
@@ -8474,7 +8474,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3SecretKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3SessionTokenSecret
 {
@@ -8488,7 +8488,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3SessionTo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3
 {
@@ -8532,7 +8532,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifacts
 {
@@ -8606,7 +8606,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifacts
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFromConfigMapKeyRef
 {
@@ -8620,13 +8620,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFromC
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFrom
 {
@@ -8658,7 +8658,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParameters
 {
@@ -8684,7 +8684,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsParameters
     public V1alpha1WorkflowTaskSetSpecTasksOutputsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksOutputs
 {
@@ -8701,7 +8701,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputs
     public string? Result { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkflowTaskSetSpecTasksResourceActionEnum>))]
 public enum V1alpha1WorkflowTaskSetSpecTasksResourceActionEnum
 {
@@ -8719,13 +8719,13 @@ public enum V1alpha1WorkflowTaskSetSpecTasksResourceActionEnum
     Patch
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArchiveTar
 {
@@ -8733,13 +8733,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArchive
 {
@@ -8753,7 +8753,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactGCPodMetadata
 {
@@ -8764,7 +8764,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactGC
 {
@@ -8778,7 +8778,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactoryPasswordSecret
 {
@@ -8792,7 +8792,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactoryUsernameSecret
 {
@@ -8806,7 +8806,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactory
 {
@@ -8820,7 +8820,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactAzureAccountKeySecret
 {
@@ -8834,7 +8834,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactAzure
 {
@@ -8854,7 +8854,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGcsServiceAccountKeySecret
 {
@@ -8868,7 +8868,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGcs
 {
@@ -8882,7 +8882,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGitPasswordSecret
 {
@@ -8896,7 +8896,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGitSshPrivateKeySecret
 {
@@ -8910,7 +8910,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGitUsernameSecret
 {
@@ -8924,7 +8924,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGit
 {
@@ -8965,7 +8965,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHdfsKrbCCacheSecret
 {
@@ -8979,7 +8979,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHdfsKrbConfigConfigMap
 {
@@ -8993,7 +8993,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHdfsKrbKeytabSecret
 {
@@ -9007,7 +9007,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHdfs
 {
@@ -9045,7 +9045,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthBasicAuthPasswordSecret
 {
@@ -9059,7 +9059,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthBasicAuthUsernameSecret
 {
@@ -9073,7 +9073,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthBasicAuth
 {
@@ -9084,7 +9084,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthClientCertClientCertSecret
 {
@@ -9098,7 +9098,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthClientCertClientKeySecret
 {
@@ -9112,7 +9112,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthClientCert
 {
@@ -9123,7 +9123,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2ClientIDSecret
 {
@@ -9137,7 +9137,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2ClientSecretSecret
 {
@@ -9151,7 +9151,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2EndpointParams
 {
@@ -9162,7 +9162,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2TokenURLSecret
 {
@@ -9176,7 +9176,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2
 {
@@ -9196,7 +9196,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuth
 {
@@ -9210,7 +9210,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpHeaders
 {
@@ -9221,7 +9221,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttp
 {
@@ -9235,7 +9235,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactOssAccessKeySecret
 {
@@ -9249,7 +9249,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactOssLifecycleRule
 {
@@ -9260,7 +9260,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactOssSecretKeySecret
 {
@@ -9274,7 +9274,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactOss
 {
@@ -9306,7 +9306,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactPlugin
 {
@@ -9323,7 +9323,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactRaw
 {
@@ -9331,7 +9331,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3AccessKeySecret
 {
@@ -9345,7 +9345,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3CaSecret
 {
@@ -9359,7 +9359,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3CreateBucketIfNotPresent
 {
@@ -9367,7 +9367,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -9381,7 +9381,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3EncryptionOptions
 {
@@ -9398,7 +9398,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3SecretKeySecret
 {
@@ -9412,7 +9412,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3SessionTokenSecret
 {
@@ -9426,7 +9426,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3
 {
@@ -9470,7 +9470,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifact
 {
@@ -9544,7 +9544,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFrom
 {
@@ -9552,7 +9552,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFrom
     public required V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifact Artifact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkflowTaskSetSpecTasksResourceMergeStrategyEnum>))]
 public enum V1alpha1WorkflowTaskSetSpecTasksResourceMergeStrategyEnum
 {
@@ -9564,7 +9564,7 @@ public enum V1alpha1WorkflowTaskSetSpecTasksResourceMergeStrategyEnum
     Json
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksResource
 {
@@ -9593,13 +9593,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResource
     public string? SuccessCondition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyAffinityNodeAntiAffinity
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyAffinity
 {
@@ -9607,7 +9607,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyAffinity
     public V1alpha1WorkflowTaskSetSpecTasksRetryStrategyAffinityNodeAntiAffinity? NodeAntiAffinity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyBackoff
 {
@@ -9624,7 +9624,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyBackoff
     public string? MaxDuration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkflowTaskSetSpecTasksRetryStrategyRetryPolicyEnum>))]
 public enum V1alpha1WorkflowTaskSetSpecTasksRetryStrategyRetryPolicyEnum
 {
@@ -9638,7 +9638,7 @@ public enum V1alpha1WorkflowTaskSetSpecTasksRetryStrategyRetryPolicyEnum
     OnTransientError
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategy
 {
@@ -9658,7 +9658,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategy
     public V1alpha1WorkflowTaskSetSpecTasksRetryStrategyRetryPolicyEnum? RetryPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromConfigMapKeyRef
 {
@@ -9672,7 +9672,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromConfigMap
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFieldRef
 {
@@ -9683,7 +9683,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFieldRef
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromResourceFieldRef
 {
@@ -9697,7 +9697,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromResourceF
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromSecretKeyRef
 {
@@ -9711,7 +9711,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromSecretKey
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFrom
 {
@@ -9728,7 +9728,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnv
 {
@@ -9742,7 +9742,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnv
     public V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFromConfigMapRef
 {
@@ -9753,7 +9753,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFromConfigMapRef
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFromSecretRef
 {
@@ -9764,7 +9764,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFromSecretRef
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFrom
 {
@@ -9778,7 +9778,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvFrom
     public V1alpha1WorkflowTaskSetSpecTasksScriptEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartExec
 {
@@ -9786,7 +9786,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartExe
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartHttpGetHttpHeaders
 {
@@ -9797,7 +9797,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartHtt
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartHttpGet
 {
@@ -9817,7 +9817,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartHtt
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartSleep
 {
@@ -9825,7 +9825,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartSle
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartTcpSocket
 {
@@ -9836,7 +9836,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartTcp
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStart
 {
@@ -9853,7 +9853,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStart
     public V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopExec
 {
@@ -9861,7 +9861,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopHttpGetHttpHeaders
 {
@@ -9872,7 +9872,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopHttpG
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopHttpGet
 {
@@ -9892,7 +9892,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopHttpG
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopSleep
 {
@@ -9900,7 +9900,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopSleep
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopTcpSocket
 {
@@ -9911,7 +9911,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopTcpSo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStop
 {
@@ -9928,7 +9928,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStop
     public V1alpha1WorkflowTaskSetSpecTasksScriptLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecycle
 {
@@ -9942,7 +9942,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLifecycle
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeExec
 {
@@ -9950,7 +9950,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeGrpc
 {
@@ -9961,7 +9961,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeHttpGetHttpHeaders
 {
@@ -9972,7 +9972,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeHttpGetH
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeHttpGet
 {
@@ -9992,7 +9992,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeHttpGet
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeTcpSocket
 {
@@ -10003,7 +10003,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbeTcpSocke
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbe
 {
@@ -10038,7 +10038,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptLivenessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptPorts
 {
@@ -10058,7 +10058,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptPorts
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeExec
 {
@@ -10066,7 +10066,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeGrpc
 {
@@ -10077,7 +10077,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeHttpGetHttpHeaders
 {
@@ -10088,7 +10088,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeHttpGet
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeHttpGet
 {
@@ -10108,7 +10108,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeHttpGet
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeTcpSocket
 {
@@ -10119,7 +10119,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbeTcpSock
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbe
 {
@@ -10154,7 +10154,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptReadinessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResizePolicy
 {
@@ -10165,7 +10165,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResizePolicy
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResourcesClaims
 {
@@ -10176,7 +10176,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResourcesClaims
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResources
 {
@@ -10190,7 +10190,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextAppArmorProfile
 {
@@ -10201,7 +10201,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextAppArm
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextCapabilities
 {
@@ -10212,7 +10212,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextCapabi
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextSeLinuxOptions
 {
@@ -10229,7 +10229,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextSeLinu
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextSeccompProfile
 {
@@ -10240,7 +10240,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextSeccom
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextWindowsOptions
 {
@@ -10257,7 +10257,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextWindow
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContext
 {
@@ -10298,7 +10298,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContext
     public V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeExec
 {
@@ -10306,7 +10306,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeGrpc
 {
@@ -10317,7 +10317,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeHttpGetHttpHeaders
 {
@@ -10328,7 +10328,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeHttpGetHt
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeHttpGet
 {
@@ -10348,7 +10348,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeHttpGet
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeTcpSocket
 {
@@ -10359,7 +10359,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbeTcpSocket
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbe
 {
@@ -10394,7 +10394,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptStartupProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptVolumeDevices
 {
@@ -10405,7 +10405,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptVolumeDevices
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptVolumeMounts
 {
@@ -10431,7 +10431,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptVolumeMounts
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScript
 {
@@ -10511,7 +10511,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScript
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextAppArmorProfile
 {
@@ -10522,7 +10522,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextAppArmorProf
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSeLinuxOptions
 {
@@ -10539,7 +10539,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSeLinuxOptio
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSeccompProfile
 {
@@ -10550,7 +10550,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSeccompProfi
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSysctls
 {
@@ -10561,7 +10561,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextSysctls
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextWindowsOptions
 {
@@ -10578,7 +10578,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContextWindowsOptio
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContext
 {
@@ -10622,7 +10622,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSecurityContext
     public V1alpha1WorkflowTaskSetSpecTasksSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromConfigMapKeyRef
 {
@@ -10636,7 +10636,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromConfigM
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFieldRef
 {
@@ -10647,7 +10647,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFieldRe
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromResourceFieldRef
 {
@@ -10661,7 +10661,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromResourc
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromSecretKeyRef
 {
@@ -10675,7 +10675,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromSecretK
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFrom
 {
@@ -10692,7 +10692,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFrom
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnv
 {
@@ -10706,7 +10706,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnv
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFromConfigMapRef
 {
@@ -10717,7 +10717,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFromConfigMapRef
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFromSecretRef
 {
@@ -10728,7 +10728,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFromSecretRef
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFrom
 {
@@ -10742,7 +10742,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFrom
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvFromSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartExec
 {
@@ -10750,7 +10750,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartE
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartHttpGetHttpHeaders
 {
@@ -10761,7 +10761,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartH
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartHttpGet
 {
@@ -10781,7 +10781,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartH
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartSleep
 {
@@ -10789,7 +10789,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartS
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartTcpSocket
 {
@@ -10800,7 +10800,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartT
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStart
 {
@@ -10817,7 +10817,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStart
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePostStartTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopExec
 {
@@ -10825,7 +10825,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopExe
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopHttpGetHttpHeaders
 {
@@ -10836,7 +10836,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopHtt
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopHttpGet
 {
@@ -10856,7 +10856,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopHtt
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopSleep
 {
@@ -10864,7 +10864,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopSle
     public required long Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopTcpSocket
 {
@@ -10875,7 +10875,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopTcp
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStop
 {
@@ -10892,7 +10892,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStop
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecyclePreStopTcpSocket? TcpSocket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecycle
 {
@@ -10906,7 +10906,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLifecycle
     public string? StopSignal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeExec
 {
@@ -10914,7 +10914,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeGrpc
 {
@@ -10925,7 +10925,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeHttpGetHttpHeaders
 {
@@ -10936,7 +10936,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeHttpGe
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeHttpGet
 {
@@ -10956,7 +10956,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeHttpGe
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeTcpSocket
 {
@@ -10967,7 +10967,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbeTcpSoc
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbe
 {
@@ -11002,7 +11002,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsLivenessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsPorts
 {
@@ -11022,7 +11022,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsPorts
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeExec
 {
@@ -11030,7 +11030,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeGrpc
 {
@@ -11041,7 +11041,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeHttpGetHttpHeaders
 {
@@ -11052,7 +11052,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeHttpG
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeHttpGet
 {
@@ -11072,7 +11072,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeHttpG
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeTcpSocket
 {
@@ -11083,7 +11083,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbeTcpSo
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbe
 {
@@ -11118,7 +11118,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsReadinessProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResizePolicy
 {
@@ -11129,7 +11129,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResizePolicy
     public required string RestartPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResourcesClaims
 {
@@ -11140,7 +11140,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResourcesClaims
     public string? Request { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResources
 {
@@ -11154,7 +11154,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextAppArmorProfile
 {
@@ -11165,7 +11165,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextAppA
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextCapabilities
 {
@@ -11176,7 +11176,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextCapa
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextSeLinuxOptions
 {
@@ -11193,7 +11193,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextSeLi
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextSeccompProfile
 {
@@ -11204,7 +11204,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextSecc
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextWindowsOptions
 {
@@ -11221,7 +11221,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextWind
     public string? RunAsUserName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContext
 {
@@ -11262,7 +11262,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContext
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeExec
 {
@@ -11270,7 +11270,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeExec
     public IList<string>? Command { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeGrpc
 {
@@ -11281,7 +11281,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeHttpGetHttpHeaders
 {
@@ -11292,7 +11292,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeHttpGet
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeHttpGet
 {
@@ -11312,7 +11312,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeHttpGet
     public string? Scheme { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeTcpSocket
 {
@@ -11323,7 +11323,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbeTcpSock
     public required IntOrString Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbe
 {
@@ -11358,7 +11358,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsStartupProbe
     public int? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsVolumeDevices
 {
@@ -11369,7 +11369,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsVolumeDevices
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsVolumeMounts
 {
@@ -11395,7 +11395,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsVolumeMounts
     public string? SubPathExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecars
 {
@@ -11475,13 +11475,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecars
     public string? WorkingDir { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArchiveTar
 {
@@ -11489,13 +11489,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArchive
 {
@@ -11509,7 +11509,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactGCPodMetadata
 {
@@ -11520,7 +11520,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactGC
 {
@@ -11534,7 +11534,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactoryPasswordSecret
 {
@@ -11548,7 +11548,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactoryUsernameSecret
 {
@@ -11562,7 +11562,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactory
 {
@@ -11576,7 +11576,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsAzureAccountKeySecret
 {
@@ -11590,7 +11590,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsAzure
 {
@@ -11610,7 +11610,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGcsServiceAccountKeySecret
 {
@@ -11624,7 +11624,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGcs
 {
@@ -11638,7 +11638,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGitPasswordSecret
 {
@@ -11652,7 +11652,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGitSshPrivateKeySecret
 {
@@ -11666,7 +11666,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGitUsernameSecret
 {
@@ -11680,7 +11680,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGit
 {
@@ -11721,7 +11721,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHdfsKrbCCacheSecret
 {
@@ -11735,7 +11735,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHdfsKrbConfigConfigMap
 {
@@ -11749,7 +11749,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHdfsKrbKeytabSecret
 {
@@ -11763,7 +11763,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHdfs
 {
@@ -11801,7 +11801,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -11815,7 +11815,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -11829,7 +11829,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthBasicAuth
 {
@@ -11840,7 +11840,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -11854,7 +11854,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -11868,7 +11868,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthClientCert
 {
@@ -11879,7 +11879,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -11893,7 +11893,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -11907,7 +11907,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -11918,7 +11918,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -11932,7 +11932,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2
 {
@@ -11952,7 +11952,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuth
 {
@@ -11966,7 +11966,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpHeaders
 {
@@ -11977,7 +11977,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttp
 {
@@ -11991,7 +11991,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsOssAccessKeySecret
 {
@@ -12005,7 +12005,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsOssLifecycleRule
 {
@@ -12016,7 +12016,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsOssSecretKeySecret
 {
@@ -12030,7 +12030,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsOss
 {
@@ -12062,7 +12062,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsPlugin
 {
@@ -12079,7 +12079,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsRaw
 {
@@ -12087,7 +12087,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3AccessKeySecret
 {
@@ -12101,7 +12101,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3CaSecret
 {
@@ -12115,7 +12115,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3CreateBucketIfNotPresent
 {
@@ -12123,7 +12123,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -12137,7 +12137,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3EncryptionOptions
 {
@@ -12154,7 +12154,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3SecretKeySecret
 {
@@ -12168,7 +12168,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3SessionTokenSecret
 {
@@ -12182,7 +12182,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3
 {
@@ -12226,7 +12226,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifacts
 {
@@ -12300,7 +12300,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParametersValueFromConfigMapKeyRef
 {
@@ -12314,13 +12314,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParamete
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParametersValueFrom
 {
@@ -12352,7 +12352,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParamete
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParameters
 {
@@ -12378,7 +12378,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParamete
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArguments
 {
@@ -12389,7 +12389,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArguments
     public IList<V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsContinueOn
 {
@@ -12400,13 +12400,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsContinueOn
     public bool? Failed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArchiveNone
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArchiveTar
 {
@@ -12414,13 +12414,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public int? CompressionLevel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArchiveZip
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArchive
 {
@@ -12434,7 +12434,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArchiveZip? Zip { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactGCPodMetadata
 {
@@ -12445,7 +12445,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactGC
 {
@@ -12459,7 +12459,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactoryPasswordSecret
 {
@@ -12473,7 +12473,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactoryUsernameSecret
 {
@@ -12487,7 +12487,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactory
 {
@@ -12501,7 +12501,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsArtifactoryUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsAzureAccountKeySecret
 {
@@ -12515,7 +12515,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsAzure
 {
@@ -12535,7 +12535,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGcsServiceAccountKeySecret
 {
@@ -12549,7 +12549,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGcs
 {
@@ -12563,7 +12563,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGcsServiceAccountKeySecret? ServiceAccountKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGitPasswordSecret
 {
@@ -12577,7 +12577,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGitSshPrivateKeySecret
 {
@@ -12591,7 +12591,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGitUsernameSecret
 {
@@ -12605,7 +12605,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGit
 {
@@ -12646,7 +12646,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsGitUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHdfsKrbCCacheSecret
 {
@@ -12660,7 +12660,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHdfsKrbConfigConfigMap
 {
@@ -12674,7 +12674,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHdfsKrbKeytabSecret
 {
@@ -12688,7 +12688,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHdfs
 {
@@ -12726,7 +12726,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -12740,7 +12740,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -12754,7 +12754,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthBasicAuth
 {
@@ -12765,7 +12765,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthBasicAuthUsernameSecret? UsernameSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -12779,7 +12779,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -12793,7 +12793,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthClientCert
 {
@@ -12804,7 +12804,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthClientCertClientKeySecret? ClientKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -12818,7 +12818,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -12832,7 +12832,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -12843,7 +12843,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -12857,7 +12857,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2
 {
@@ -12877,7 +12877,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2TokenURLSecret? TokenURLSecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuth
 {
@@ -12891,7 +12891,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpAuthOauth2? Oauth2 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpHeaders
 {
@@ -12902,7 +12902,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttp
 {
@@ -12916,7 +12916,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsOssAccessKeySecret
 {
@@ -12930,7 +12930,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsOssLifecycleRule
 {
@@ -12941,7 +12941,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public int? MarkInfrequentAccessAfterDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsOssSecretKeySecret
 {
@@ -12955,7 +12955,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsOss
 {
@@ -12987,7 +12987,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsPlugin
 {
@@ -13004,7 +13004,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsRaw
 {
@@ -13012,7 +13012,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public required string Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3AccessKeySecret
 {
@@ -13026,7 +13026,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3CaSecret
 {
@@ -13040,7 +13040,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3CreateBucketIfNotPresent
 {
@@ -13048,7 +13048,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? ObjectLocking { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -13062,7 +13062,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3EncryptionOptions
 {
@@ -13079,7 +13079,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret? ServerSideCustomerKeySecret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3SecretKeySecret
 {
@@ -13093,7 +13093,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3SessionTokenSecret
 {
@@ -13107,7 +13107,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3
 {
@@ -13151,7 +13151,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public bool? UseSDKCreds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifacts
 {
@@ -13225,7 +13225,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParametersValueFromConfigMapKeyRef
 {
@@ -13239,13 +13239,13 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsPar
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParametersValueFromSupplied
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParametersValueFrom
 {
@@ -13277,7 +13277,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsPar
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParametersValueFromSupplied? Supplied { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParameters
 {
@@ -13303,7 +13303,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsPar
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParametersValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArguments
 {
@@ -13314,7 +13314,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArguments
     public IList<V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksTemplateRef
 {
@@ -13328,7 +13328,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksTemplateRef
     public string? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooks
 {
@@ -13345,7 +13345,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooks
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksTemplateRef? TemplateRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsTemplateRef
 {
@@ -13359,7 +13359,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsTemplateRef
     public string? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsWithSequence
 {
@@ -13376,7 +13376,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsWithSequence
     public IntOrString? Start { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksStepsSteps
 {
@@ -13417,7 +13417,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsSteps
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsWithSequence? WithSequence { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSteps
 {
@@ -13425,7 +13425,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSteps
     public required IList<V1alpha1WorkflowTaskSetSpecTasksStepsSteps> Steps { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSuspend
 {
@@ -13433,7 +13433,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSuspend
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationMutexes
 {
@@ -13447,7 +13447,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationMutexes
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphoresConfigMapKeyRef
 {
@@ -13461,7 +13461,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphoresCo
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphoresDatabase
 {
@@ -13469,7 +13469,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphoresDa
     public required string Key { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphores
 {
@@ -13483,7 +13483,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphores
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronization
 {
@@ -13494,7 +13494,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSynchronization
     public IList<V1alpha1WorkflowTaskSetSpecTasksSynchronizationSemaphores>? Semaphores { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksTolerations
 {
@@ -13514,7 +13514,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksTolerations
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAwsElasticBlockStore
 {
@@ -13531,7 +13531,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAwsElasticBlockStore
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAzureDisk
 {
@@ -13554,7 +13554,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAzureDisk
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAzureFile
 {
@@ -13568,7 +13568,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesAzureFile
     public required string ShareName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCephfsSecretRef
 {
@@ -13576,7 +13576,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCephfsSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCephfs
 {
@@ -13599,7 +13599,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCephfs
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCinderSecretRef
 {
@@ -13607,7 +13607,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCinderSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCinder
 {
@@ -13624,7 +13624,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCinder
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesConfigMapItems
 {
@@ -13638,7 +13638,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesConfigMapItems
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesConfigMap
 {
@@ -13655,7 +13655,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesConfigMap
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCsiNodePublishSecretRef
 {
@@ -13663,7 +13663,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCsiNodePublishSecret
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCsi
 {
@@ -13683,7 +13683,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesCsi
     public IDictionary<string, string>? VolumeAttributes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItemsFieldRef
 {
@@ -13694,7 +13694,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItemsFiel
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItemsResourceFieldRef
 {
@@ -13708,7 +13708,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItemsReso
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItems
 {
@@ -13725,7 +13725,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItems
     public V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPI
 {
@@ -13736,7 +13736,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPI
     public IList<V1alpha1WorkflowTaskSetSpecTasksVolumesDownwardAPIItems>? Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEmptyDir
 {
@@ -13747,7 +13747,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEmptyDir
     public IntOrString? SizeLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateMetadata
 {
@@ -13770,7 +13770,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpecDataSource
 {
@@ -13784,7 +13784,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpecDataSourceRef
 {
@@ -13801,7 +13801,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpecResources
 {
@@ -13812,7 +13812,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions
 {
@@ -13826,7 +13826,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpecSelector
 {
@@ -13837,7 +13837,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpec
 {
@@ -13869,7 +13869,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public string? VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplate
 {
@@ -13880,7 +13880,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaim
     public required V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplateSpec Spec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeral
 {
@@ -13888,7 +13888,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeral
     public V1alpha1WorkflowTaskSetSpecTasksVolumesEphemeralVolumeClaimTemplate? VolumeClaimTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFc
 {
@@ -13908,7 +13908,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFc
     public IList<string>? Wwids { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlexVolumeSecretRef
 {
@@ -13916,7 +13916,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlexVolumeSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlexVolume
 {
@@ -13936,7 +13936,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlexVolume
     public V1alpha1WorkflowTaskSetSpecTasksVolumesFlexVolumeSecretRef? SecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlocker
 {
@@ -13947,7 +13947,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesFlocker
     public string? DatasetUUID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGcePersistentDisk
 {
@@ -13964,7 +13964,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGcePersistentDisk
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGitRepo
 {
@@ -13978,7 +13978,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGitRepo
     public string? Revision { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGlusterfs
 {
@@ -13992,7 +13992,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesGlusterfs
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesHostPath
 {
@@ -14003,7 +14003,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesHostPath
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesImage
 {
@@ -14014,7 +14014,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesImage
     public string? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesIscsiSecretRef
 {
@@ -14022,7 +14022,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesIscsiSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesIscsi
 {
@@ -14060,7 +14060,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesIscsi
     public required string TargetPortal { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesNfs
 {
@@ -14074,7 +14074,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesNfs
     public required string Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPersistentVolumeClaim
 {
@@ -14085,7 +14085,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPersistentVolumeClai
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPhotonPersistentDisk
 {
@@ -14096,7 +14096,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPhotonPersistentDisk
     public required string PdID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPortworxVolume
 {
@@ -14110,7 +14110,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesPortworxVolume
     public required string VolumeID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClusterTrustBundleLabelSelectorMatchExpressions
 {
@@ -14124,7 +14124,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClus
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClusterTrustBundleLabelSelector
 {
@@ -14135,7 +14135,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClus
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClusterTrustBundle
 {
@@ -14155,7 +14155,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesClus
     public string? SignerName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesConfigMapItems
 {
@@ -14169,7 +14169,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesConf
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesConfigMap
 {
@@ -14183,7 +14183,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesConf
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPIItemsFieldRef
 {
@@ -14194,7 +14194,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDown
     public required string FieldPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef
 {
@@ -14208,7 +14208,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDown
     public required string Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPIItems
 {
@@ -14225,7 +14225,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDown
     public V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPI
 {
@@ -14233,7 +14233,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDown
     public IList<V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPIItems>? Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecretItems
 {
@@ -14247,7 +14247,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecr
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecret
 {
@@ -14261,7 +14261,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecr
     public bool? Optional { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesServiceAccountToken
 {
@@ -14275,7 +14275,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesServ
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSources
 {
@@ -14295,7 +14295,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSources
     public V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjected
 {
@@ -14306,7 +14306,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjected
     public IList<V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesQuobyte
 {
@@ -14329,7 +14329,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesQuobyte
     public required string Volume { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesRbdSecretRef
 {
@@ -14337,7 +14337,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesRbdSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesRbd
 {
@@ -14366,7 +14366,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesRbd
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesScaleIOSecretRef
 {
@@ -14374,7 +14374,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesScaleIOSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesScaleIO
 {
@@ -14409,7 +14409,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesScaleIO
     public string? VolumeName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesSecretItems
 {
@@ -14423,7 +14423,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesSecretItems
     public required string Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesSecret
 {
@@ -14440,7 +14440,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesSecret
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesStorageosSecretRef
 {
@@ -14448,7 +14448,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesStorageosSecretRef
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesStorageos
 {
@@ -14468,7 +14468,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesStorageos
     public string? VolumeNamespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesVsphereVolume
 {
@@ -14485,7 +14485,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesVsphereVolume
     public required string VolumePath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumes
 {
@@ -14583,7 +14583,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumes
     public V1alpha1WorkflowTaskSetSpecTasksVolumesVsphereVolume? VsphereVolume { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasks
 {
@@ -14705,7 +14705,7 @@ public partial class V1alpha1WorkflowTaskSetSpecTasks
     public IList<V1alpha1WorkflowTaskSetSpecTasksVolumes>? Volumes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpec
 {
@@ -14718,14 +14718,14 @@ public partial class V1alpha1WorkflowTaskSetSpec
 /// files. Note that if the artifact is a directory, the artifact driver must support the ability to
 /// save/load the directory appropriately.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchiveNone
 {
 }
 
 /// <summary>TarStrategy will tar and gzip the file or directory when saving</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchiveTar
 {
@@ -14738,14 +14738,14 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchiveTa
 }
 
 /// <summary>ZipStrategy will unzip zipped input artifacts</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchiveZip
 {
 }
 
 /// <summary>Archive controls how the artifact will be saved to the artifact repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchive
 {
@@ -14767,7 +14767,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArchive
 }
 
 /// <summary>PodMetadata is an optional field for specifying the Labels and Annotations that should be assigned to the Pod doing the deletion</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactGCPodMetadata
 {
@@ -14779,7 +14779,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactG
 }
 
 /// <summary>ArtifactGC describes the strategy to use when to deleting an artifact from completed or deleted workflows</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactGC
 {
@@ -14797,7 +14797,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactG
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactoryPasswordSecret
 {
@@ -14821,7 +14821,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifacto
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactoryUsernameSecret
 {
@@ -14845,7 +14845,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifacto
 }
 
 /// <summary>Artifactory contains artifactory artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifactory
 {
@@ -14863,7 +14863,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsArtifacto
 }
 
 /// <summary>AccountKeySecret is the secret selector to the Azure Blob Storage account access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsAzureAccountKeySecret
 {
@@ -14887,7 +14887,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsAzureAcco
 }
 
 /// <summary>Azure contains Azure Storage artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsAzure
 {
@@ -14913,7 +14913,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsAzure
 }
 
 /// <summary>ServiceAccountKeySecret is the secret selector to the bucket&apos;s service account key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGcsServiceAccountKeySecret
 {
@@ -14937,7 +14937,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGcsServic
 }
 
 /// <summary>GCS contains GCS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGcs
 {
@@ -14955,7 +14955,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGcs
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitPasswordSecret
 {
@@ -14979,7 +14979,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitPasswo
 }
 
 /// <summary>SSHPrivateKeySecret is the secret selector to the repository ssh private key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitSshPrivateKeySecret
 {
@@ -15003,7 +15003,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitSshPri
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitUsernameSecret
 {
@@ -15027,7 +15027,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGitUserna
 }
 
 /// <summary>Git contains git artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGit
 {
@@ -15087,7 +15087,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsGit
 /// KrbCCacheSecret is the secret selector for Kerberos ccache
 /// Either ccache or keytab can be set to use Kerberos.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbCCacheSecret
 {
@@ -15114,7 +15114,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbCC
 /// KrbConfig is the configmap selector for Kerberos config as string
 /// It must be set if either ccache or keytab is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbConfigConfigMap
 {
@@ -15141,7 +15141,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbCo
 /// KrbKeytabSecret is the secret selector for Kerberos keytab
 /// Either ccache or keytab can be set to use Kerberos.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbKeytabSecret
 {
@@ -15165,7 +15165,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfsKrbKe
 }
 
 /// <summary>HDFS contains HDFS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfs
 {
@@ -15239,7 +15239,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHdfs
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -15263,7 +15263,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthB
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -15287,7 +15287,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthB
 }
 
 /// <summary>BasicAuth describes the secret selectors required for basic authentication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthBasicAuth
 {
@@ -15301,7 +15301,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthB
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -15325,7 +15325,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthC
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -15349,7 +15349,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthC
 }
 
 /// <summary>ClientCertAuth holds necessary information for client authentication via certificates</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthClientCert
 {
@@ -15363,7 +15363,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthC
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -15387,7 +15387,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -15411,7 +15411,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
 }
 
 /// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -15425,7 +15425,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -15449,7 +15449,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
 }
 
 /// <summary>OAuth2Auth holds all information for client authentication via OAuth2 tokens</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2
 {
@@ -15473,7 +15473,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
 }
 
 /// <summary>Auth contains information for client authentication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuth
 {
@@ -15491,7 +15491,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuth
 }
 
 /// <summary>Header indicate a key-value request header to be used when fetching artifacts over HTTP</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpHeaders
 {
@@ -15505,7 +15505,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpHeade
 }
 
 /// <summary>HTTP contains HTTP artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttp
 {
@@ -15523,7 +15523,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttp
 }
 
 /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssAccessKeySecret
 {
@@ -15547,7 +15547,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssAccess
 }
 
 /// <summary>LifecycleRule specifies how to manage bucket&apos;s lifecycle</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssLifecycleRule
 {
@@ -15561,7 +15561,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssLifecy
 }
 
 /// <summary>SecretKeySecret is the secret selector to the bucket&apos;s secret key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssSecretKeySecret
 {
@@ -15585,7 +15585,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOssSecret
 }
 
 /// <summary>OSS contains OSS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOss
 {
@@ -15627,7 +15627,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsOss
 }
 
 /// <summary>Plugin contains plugin artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsPlugin
 {
@@ -15649,7 +15649,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsPlugin
 }
 
 /// <summary>Raw contains raw artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsRaw
 {
@@ -15659,7 +15659,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsRaw
 }
 
 /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3AccessKeySecret
 {
@@ -15683,7 +15683,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3AccessK
 }
 
 /// <summary>CASecret specifies the secret that contains the CA, used to verify the TLS connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3CaSecret
 {
@@ -15707,7 +15707,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3CaSecre
 }
 
 /// <summary>CreateBucketIfNotPresent tells the driver to attempt to create the S3 bucket for output artifacts, if it doesn&apos;t exist. Setting Enabled Encryption will apply either SSE-S3 to the bucket if KmsKeyId is not set or SSE-KMS if it is.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3CreateBucketIfNotPresent
 {
@@ -15717,7 +15717,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3CreateB
 }
 
 /// <summary>ServerSideCustomerKeySecret tells the driver to encrypt the output artifacts using SSE-C with the specified secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -15741,7 +15741,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3Encrypt
 }
 
 /// <summary>S3EncryptionOptions used to determine encryption options during s3 operations</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3EncryptionOptions
 {
@@ -15763,7 +15763,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3Encrypt
 }
 
 /// <summary>SecretKeySecret is the secret selector to the bucket&apos;s secret key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3SecretKeySecret
 {
@@ -15787,7 +15787,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3SecretK
 }
 
 /// <summary>SessionTokenSecret is used for ephemeral credentials like an IAM assume role or S3 access grant</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3SessionTokenSecret
 {
@@ -15811,7 +15811,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3Session
 }
 
 /// <summary>S3 contains S3 artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3
 {
@@ -15869,7 +15869,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3
 }
 
 /// <summary>Artifact indicates an artifact to place at a specified path</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifacts
 {
@@ -15974,7 +15974,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifacts
 }
 
 /// <summary>ConfigMapKeyRef is configmap selector for input parameter configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParametersValueFromConfigMapKeyRef
 {
@@ -15998,14 +15998,14 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParametersValueFro
 }
 
 /// <summary>Supplied value to be filled in directly, either through the CLI, API, etc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParametersValueFromSupplied
 {
 }
 
 /// <summary>ValueFrom is the source for the output parameter&apos;s value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParametersValueFrom
 {
@@ -16050,7 +16050,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParametersValueFro
 }
 
 /// <summary>Parameter indicate a passed string parameter to a service template with an optional default value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParameters
 {
@@ -16090,7 +16090,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsParameters
 }
 
 /// <summary>Outputs hold parameters, artifacts, and results from a step</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputs
 {
@@ -16111,7 +16111,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputs
     public string? Result { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodes
 {
@@ -16131,7 +16131,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodes
     public string? Progress { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatus
 {
@@ -16139,7 +16139,7 @@ public partial class V1alpha1WorkflowTaskSetStatus
     public IDictionary<string, V1alpha1WorkflowTaskSetStatusNodes>? Nodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkflowTaskSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1WorkflowTaskSetSpec>, IStatus<V1alpha1WorkflowTaskSetStatus?>

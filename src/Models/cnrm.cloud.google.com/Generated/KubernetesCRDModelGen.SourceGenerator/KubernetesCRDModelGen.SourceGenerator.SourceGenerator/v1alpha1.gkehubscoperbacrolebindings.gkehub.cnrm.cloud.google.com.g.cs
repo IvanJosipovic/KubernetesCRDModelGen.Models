@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gkehub.cnrm.cloud.google.com;
 /// <summary>GKEHubScopeRBACRoleBinding is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1GKEHubScopeRBACRoleBinding>
@@ -37,7 +37,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingList : IKubernetesObject<
 }
 
 /// <summary>predefined_role is the Kubernetes default role to use. Possible values: UNKNOWN, ADMIN, EDIT, VIEW, ANTHOS_SUPPORT</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1GKEHubScopeRBACRoleBindingSpecRolePredefinedRoleEnum>))]
 public enum V1alpha1GKEHubScopeRBACRoleBindingSpecRolePredefinedRoleEnum
 {
@@ -54,7 +54,7 @@ public enum V1alpha1GKEHubScopeRBACRoleBindingSpecRolePredefinedRoleEnum
 }
 
 /// <summary>Required. Role to bind to the principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingSpecRole
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingSpecRole
 }
 
 /// <summary>Immutable. The scope that this rbac role binding belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingSpecScopeRef
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingSpecScopeRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingSpec
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingSpec
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusConditions
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusConditions
 }
 
 /// <summary>Output only. Code describes the state of a RBACRoleBinding resource. Possible values: CODE_UNSPECIFIED, CREATING, READY, DELETING, UPDATING</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1GKEHubScopeRBACRoleBindingStatusObservedStateStateCodeEnum>))]
 public enum V1alpha1GKEHubScopeRBACRoleBindingStatusObservedStateStateCodeEnum
 {
@@ -157,7 +157,7 @@ public enum V1alpha1GKEHubScopeRBACRoleBindingStatusObservedStateStateCodeEnum
 }
 
 /// <summary>Output only. State of the rbac role binding resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusObservedStateState
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusObservedStateState
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusObservedState
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingStatusObservedState
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubScopeRBACRoleBindingStatus
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1GKEHubScopeRBACRoleBindingStatus
 }
 
 /// <summary>GKEHubScopeRBACRoleBinding is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEHubScopeRBACRoleBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1GKEHubScopeRBACRoleBindingSpec>, IStatus<V1alpha1GKEHubScopeRBACRoleBindingStatus?>

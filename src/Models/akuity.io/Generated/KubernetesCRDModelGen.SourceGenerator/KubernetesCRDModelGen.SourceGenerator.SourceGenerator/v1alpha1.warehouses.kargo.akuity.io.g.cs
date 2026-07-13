@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kargo.akuity.io;
 /// <summary>Warehouse is a source of Freight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WarehouseList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Warehouse>
@@ -41,7 +41,7 @@ public partial class V1alpha1WarehouseList : IKubernetesObject<V1ListMeta>, IIte
 /// to be created automatically from new artifacts following discovery. This
 /// field has no effect when the FreightCreationPolicy is `Manual`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseSpecFreightCreationCriteria
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1WarehouseSpecFreightCreationCriteria
 ///   is discovered.
 /// - &quot;Manual&quot;: New Freight is never created automatically.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WarehouseSpecFreightCreationPolicyEnum>))]
 public enum V1alpha1WarehouseSpecFreightCreationPolicyEnum
 {
@@ -75,7 +75,7 @@ public enum V1alpha1WarehouseSpecFreightCreationPolicyEnum
 }
 
 /// <summary>Spec describes sources of artifacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseSpec
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1WarehouseSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WarehouseStatusConditionsStatusEnum>))]
 public enum V1alpha1WarehouseStatusConditionsStatusEnum
 {
@@ -145,7 +145,7 @@ public enum V1alpha1WarehouseStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusConditions
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1WarehouseStatusConditions
 /// ChartDiscoveryResult represents the result of a chart discovery operation for
 /// a ChartSubscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsCharts
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsCharts
 /// DiscoveredCommit represents a commit discovered by a Warehouse for a
 /// GitSubscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGitCommits
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGitCommits
 /// GitDiscoveryResult represents the result of a Git discovery operation for a
 /// GitSubscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGit
 {
@@ -305,7 +305,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGit
 /// DiscoveredImageReference represents an image reference discovered by a
 /// Warehouse for an ImageSubscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsImagesReferences
 {
@@ -336,7 +336,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsImagesReferences
 /// ImageDiscoveryResult represents the result of an image discovery operation
 /// for an ImageSubscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsImages
 {
@@ -366,7 +366,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsImages
 }
 
 /// <summary>ArtifactReference is a reference to a specific version of an artifact.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsResultsArtifactReferences
 {
@@ -404,7 +404,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsResultsArtifactRe
 /// DiscoveryResult represents the result of an artifact discovery operation for
 /// some subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifactsResults
 {
@@ -424,7 +424,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsResults
 }
 
 /// <summary>DiscoveredArtifacts holds the artifacts discovered by the Warehouse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatusDiscoveredArtifacts
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifacts
 }
 
 /// <summary>Status describes the Warehouse&apos;s most recently observed state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WarehouseStatus
 {
@@ -498,7 +498,7 @@ public partial class V1alpha1WarehouseStatus
 }
 
 /// <summary>Warehouse is a source of Freight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Warehouse : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1WarehouseSpec>, IStatus<V1alpha1WarehouseStatus?>

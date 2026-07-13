@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
 /// <summary>DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DataTransferConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta2DataTransferConfig>
@@ -45,7 +45,7 @@ public partial class V1beta2DataTransferConfigList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecDeletionPolicyEnum>))]
 public enum V1beta2DataTransferConfigSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2DataTransferConfigSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetI
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate destinationDatasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetI
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate destinationDatasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 {
@@ -207,7 +207,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderDestinationDatasetI
 /// email address of the user who owns this transfer config.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEmailPreferences
 {
@@ -222,7 +222,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEmailPreferences
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicy
 {
@@ -273,7 +273,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigura
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRef
 {
@@ -292,7 +292,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigura
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigura
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelector
 {
@@ -367,7 +367,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigura
 /// Represents the encryption configuration for a transfer.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfiguration
 {
@@ -388,7 +388,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderEncryptionConfigura
 /// Options customizing the data transfer schedule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderScheduleOptions
 {
@@ -423,7 +423,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderScheduleOptions
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderSensitiveParamsSecretAccessKeySecretRef
 {
@@ -449,7 +449,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderSensitiveParamsSecr
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProviderSensitiveParams
 {
@@ -468,7 +468,7 @@ public partial class V1beta2DataTransferConfigSpecForProviderSensitiveParams
     public double? SecretAccessKeyWoVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecForProvider
 {
@@ -599,7 +599,7 @@ public partial class V1beta2DataTransferConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolutionEnum
 {
@@ -615,7 +615,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolveEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicy
 {
@@ -650,7 +650,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDataset
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate destinationDatasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdRef
 {
@@ -669,7 +669,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDataset
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolutionEnum
 {
@@ -685,7 +685,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolveEnum
 {
@@ -696,7 +696,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicy
 {
@@ -720,7 +720,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDataset
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate destinationDatasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDatasetIdSelector
 {
@@ -745,7 +745,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderDestinationDataset
 /// email address of the user who owns this transfer config.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEmailPreferences
 {
@@ -760,7 +760,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEmailPreferences
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
@@ -787,7 +787,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicy
 {
@@ -811,7 +811,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigur
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRef
 {
@@ -830,7 +830,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -846,7 +846,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
@@ -881,7 +881,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigur
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelector
 {
@@ -905,7 +905,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigur
 /// Represents the encryption configuration for a transfer.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfiguration
 {
@@ -926,7 +926,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderEncryptionConfigur
 /// Options customizing the data transfer schedule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderScheduleOptions
 {
@@ -961,7 +961,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderScheduleOptions
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderSensitiveParamsSecretAccessKeySecretRef
 {
@@ -987,7 +987,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderSensitiveParamsSec
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProviderSensitiveParams
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta2DataTransferConfigSpecInitProviderSensitiveParams
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecInitProvider
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta2DataTransferConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecManagementPoliciesEnum>))]
 public enum V1beta2DataTransferConfigSpecManagementPoliciesEnum
 {
@@ -1171,7 +1171,7 @@ public enum V1beta2DataTransferConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1187,7 +1187,7 @@ public enum V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1198,7 +1198,7 @@ public enum V1beta2DataTransferConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecProviderConfigRefPolicy
 {
@@ -1226,7 +1226,7 @@ public partial class V1beta2DataTransferConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecProviderConfigRef
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta2DataTransferConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpecWriteConnectionSecretToRef
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta2DataTransferConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataTransferConfigSpec defines the desired state of DataTransferConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigSpec
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta2DataTransferConfigSpec
 /// email address of the user who owns this transfer config.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusAtProviderEmailPreferences
 {
@@ -1344,7 +1344,7 @@ public partial class V1beta2DataTransferConfigStatusAtProviderEmailPreferences
 /// Represents the encryption configuration for a transfer.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusAtProviderEncryptionConfiguration
 {
@@ -1357,7 +1357,7 @@ public partial class V1beta2DataTransferConfigStatusAtProviderEncryptionConfigur
 /// Options customizing the data transfer schedule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusAtProviderScheduleOptions
 {
@@ -1400,7 +1400,7 @@ public partial class V1beta2DataTransferConfigStatusAtProviderScheduleOptions
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusAtProviderSensitiveParams
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta2DataTransferConfigStatusAtProviderSensitiveParams
     public double? SecretAccessKeyWoVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusAtProvider
 {
@@ -1547,7 +1547,7 @@ public partial class V1beta2DataTransferConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatusConditions
 {
@@ -1590,7 +1590,7 @@ public partial class V1beta2DataTransferConfigStatusConditions
 }
 
 /// <summary>DataTransferConfigStatus defines the observed state of DataTransferConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataTransferConfigStatus
 {
@@ -1611,7 +1611,7 @@ public partial class V1beta2DataTransferConfigStatus
 }
 
 /// <summary>DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DataTransferConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2DataTransferConfigSpec>, IStatus<V1beta2DataTransferConfigStatus?>

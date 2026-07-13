@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.upbound.io;
 /// <summary>ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ProvisioningTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ProvisioningTemplate>
@@ -45,7 +45,7 @@ public partial class V1beta2ProvisioningTemplateList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecDeletionPolicyEnum>))]
 public enum V1beta2ProvisioningTemplateSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2ProvisioningTemplateSpecDeletionPolicyEnum
 }
 
 /// <summary>Creates a pre-provisioning hook template. Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProviderPreProvisioningHook
 {
@@ -75,7 +75,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProviderPreProvisioningHo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleA
 }
 
 /// <summary>Reference to a Role in iam to populate provisioningRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleA
 }
 
 /// <summary>Selector for a Role in iam to populate provisioningRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleA
     public V1beta2ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecForProvider
 {
@@ -265,7 +265,7 @@ public partial class V1beta2ProvisioningTemplateSpecForProvider
 }
 
 /// <summary>Creates a pre-provisioning hook template. Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProviderPreProvisioningHook
 {
@@ -284,7 +284,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProviderPreProvisioningH
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRole
 }
 
 /// <summary>Reference to a Role in iam to populate provisioningRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnRef
 {
@@ -354,7 +354,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRole
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolutionEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolveEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicy
 {
@@ -405,7 +405,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRole
 }
 
 /// <summary>Selector for a Role in iam to populate provisioningRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelector
 {
@@ -437,7 +437,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProviderProvisioningRole
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecInitProvider
 {
@@ -482,7 +482,7 @@ public partial class V1beta2ProvisioningTemplateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecManagementPoliciesEnum>))]
 public enum V1beta2ProvisioningTemplateSpecManagementPoliciesEnum
 {
@@ -506,7 +506,7 @@ public enum V1beta2ProvisioningTemplateSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta2ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecProviderConfigRefPolicy
 {
@@ -561,7 +561,7 @@ public partial class V1beta2ProvisioningTemplateSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecProviderConfigRef
 {
@@ -580,7 +580,7 @@ public partial class V1beta2ProvisioningTemplateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpecWriteConnectionSecretToRef
 {
@@ -594,7 +594,7 @@ public partial class V1beta2ProvisioningTemplateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ProvisioningTemplateSpec defines the desired state of ProvisioningTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateSpec
 {
@@ -662,7 +662,7 @@ public partial class V1beta2ProvisioningTemplateSpec
 }
 
 /// <summary>Creates a pre-provisioning hook template. Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateStatusAtProviderPreProvisioningHook
 {
@@ -675,7 +675,7 @@ public partial class V1beta2ProvisioningTemplateStatusAtProviderPreProvisioningH
     public string? TargetArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateStatusAtProvider
 {
@@ -731,7 +731,7 @@ public partial class V1beta2ProvisioningTemplateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateStatusConditions
 {
@@ -774,7 +774,7 @@ public partial class V1beta2ProvisioningTemplateStatusConditions
 }
 
 /// <summary>ProvisioningTemplateStatus defines the observed state of ProvisioningTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProvisioningTemplateStatus
 {
@@ -795,7 +795,7 @@ public partial class V1beta2ProvisioningTemplateStatus
 }
 
 /// <summary>ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ProvisioningTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ProvisioningTemplateSpec>, IStatus<V1beta2ProvisioningTemplateStatus?>

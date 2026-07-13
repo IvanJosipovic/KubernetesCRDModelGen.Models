@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.m.upbound.io;
 /// <summary>MSSQLDatabaseExtendedAuditingPolicy is the Schema for the MSSQLDatabaseExtendedAuditingPolicys API. Manages a MS SQL Database Extended Auditing Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLDatabaseExtendedAuditingPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyList : IKubernete
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDa
 }
 
 /// <summary>Reference to a MSSQLDatabase in sql to populate databaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDa
 }
 
 /// <summary>Selector for a MSSQLDatabase in sql to populate databaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDatabaseIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderDa
 }
 
 /// <summary>The access key to use for the auditing storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageAccountAccessKeySecretRef
 {
@@ -210,7 +210,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderSt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRefPolicyResolutionEnum
 {
@@ -226,7 +226,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRefPolicyResolveEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRefPolicy
 {
@@ -261,7 +261,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderSt
 }
 
 /// <summary>Reference to a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointRef
 {
@@ -284,7 +284,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderSt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderSt
 }
 
 /// <summary>Selector for a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelector
 {
@@ -359,7 +359,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderSt
     public V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProviderStorageEndpointSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProvider
 {
@@ -409,7 +409,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecForProvider
 }
 
 /// <summary>The access key to use for the auditing storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageAccountAccessKeySecretRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRefPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEnd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRefPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEnd
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRefPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderS
 }
 
 /// <summary>Reference to a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointRef
 {
@@ -501,7 +501,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelectorPolicyResolutionEnum
 {
@@ -517,7 +517,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEnd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelectorPolicyResolveEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEnd
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelectorPolicy
 {
@@ -552,7 +552,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderS
 }
 
 /// <summary>Selector for a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderStorageEndpointSelector
 {
@@ -588,7 +588,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProviderS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProvider
 {
@@ -629,7 +629,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLDatabaseExtendedAuditingPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecManagementPoliciesEnum
 {
@@ -652,7 +652,7 @@ public enum V1beta1MSSQLDatabaseExtendedAuditingPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecProviderConfigRef
 {
@@ -671,7 +671,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecWriteConnectionSecretToRef
 {
@@ -681,7 +681,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpecWriteConnecti
 }
 
 /// <summary>MSSQLDatabaseExtendedAuditingPolicySpec defines the desired state of MSSQLDatabaseExtendedAuditingPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpec
 {
@@ -732,7 +732,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicySpec
     public V1beta1MSSQLDatabaseExtendedAuditingPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatusAtProvider
 {
@@ -766,7 +766,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatusConditions
 {
@@ -809,7 +809,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatusConditions
 }
 
 /// <summary>MSSQLDatabaseExtendedAuditingPolicyStatus defines the observed state of MSSQLDatabaseExtendedAuditingPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatus
 {
@@ -830,7 +830,7 @@ public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicyStatus
 }
 
 /// <summary>MSSQLDatabaseExtendedAuditingPolicy is the Schema for the MSSQLDatabaseExtendedAuditingPolicys API. Manages a MS SQL Database Extended Auditing Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLDatabaseExtendedAuditingPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLDatabaseExtendedAuditingPolicySpec>, IStatus<V1beta1MSSQLDatabaseExtendedAuditingPolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>FirewallPolicyRuleCollectionGroup is the Schema for the FirewallPolicyRuleCollectionGroups API. Manages a Firewall Policy Rule Collection Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FirewallPolicyRuleCollectionGroup>
@@ -45,7 +45,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupList : IKubernetesO
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecDeletionPolicyEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderApplicationRuleCollectionRuleHttpHeaders
 {
@@ -68,7 +68,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderAppl
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderApplicationRuleCollectionRuleProtocols
 {
@@ -81,7 +81,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderAppl
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderApplicationRuleCollectionRule
 {
@@ -134,7 +134,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderAppl
     public IList<string>? WebCategories { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderApplicationRuleCollection
 {
@@ -161,7 +161,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderAppl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRefPolicyResolutionEnum
 {
@@ -177,7 +177,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRefPolicyResolveEnum
 {
@@ -188,7 +188,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRefPolicy
 {
@@ -212,7 +212,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFire
 }
 
 /// <summary>Reference to a FirewallPolicy in network to populate firewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdRef
 {
@@ -231,7 +231,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFire
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicyResolutionEnum
 {
@@ -247,7 +247,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicyResolveEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicy
 {
@@ -282,7 +282,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFire
 }
 
 /// <summary>Selector for a FirewallPolicy in network to populate firewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelector
 {
@@ -302,7 +302,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFire
     public V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderFirewallPolicyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNatRuleCollectionRule
 {
@@ -347,7 +347,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNatR
     public double? TranslatedPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNatRuleCollection
 {
@@ -368,7 +368,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNatR
     public IList<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNatRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNetworkRuleCollectionRule
 {
@@ -409,7 +409,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNetw
     public IList<string>? SourceIpGroups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNetworkRuleCollection
 {
@@ -430,7 +430,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNetw
     public IList<V1beta1FirewallPolicyRuleCollectionGroupSpecForProviderNetworkRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProvider
 {
@@ -463,7 +463,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecForProvider
     public double? Priority { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApplicationRuleCollectionRuleHttpHeaders
 {
@@ -476,7 +476,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApp
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApplicationRuleCollectionRuleProtocols
 {
@@ -489,7 +489,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApplicationRuleCollectionRule
 {
@@ -542,7 +542,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApp
     public IList<string>? WebCategories { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApplicationRuleCollection
 {
@@ -563,7 +563,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApp
     public IList<V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderApplicationRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNatRuleCollectionRule
 {
@@ -608,7 +608,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNat
     public double? TranslatedPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNatRuleCollection
 {
@@ -629,7 +629,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNat
     public IList<V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNatRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNetworkRuleCollectionRule
 {
@@ -670,7 +670,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNet
     public IList<string>? SourceIpGroups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNetworkRuleCollection
 {
@@ -703,7 +703,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProviderNet
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProvider
 {
@@ -728,7 +728,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecManagementPoliciesEnum
 {
@@ -752,7 +752,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyResolveEnum
 {
@@ -779,7 +779,7 @@ public enum V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRefPolicy
 {
@@ -807,7 +807,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigR
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigRef
 {
@@ -826,7 +826,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecWriteConnectionSecretToRef
 {
@@ -840,7 +840,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpecWriteConnection
 }
 
 /// <summary>FirewallPolicyRuleCollectionGroupSpec defines the desired state of FirewallPolicyRuleCollectionGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupSpec
 {
@@ -907,7 +907,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupSpec
     public V1beta1FirewallPolicyRuleCollectionGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApplicationRuleCollectionRuleHttpHeaders
 {
@@ -920,7 +920,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApp
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApplicationRuleCollectionRuleProtocols
 {
@@ -933,7 +933,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApplicationRuleCollectionRule
 {
@@ -986,7 +986,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApp
     public IList<string>? WebCategories { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApplicationRuleCollection
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApp
     public IList<V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderApplicationRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNatRuleCollectionRule
 {
@@ -1052,7 +1052,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNat
     public double? TranslatedPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNatRuleCollection
 {
@@ -1073,7 +1073,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNat
     public IList<V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNatRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNetworkRuleCollectionRule
 {
@@ -1114,7 +1114,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNet
     public IList<string>? SourceIpGroups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNetworkRuleCollection
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNet
     public IList<V1beta1FirewallPolicyRuleCollectionGroupStatusAtProviderNetworkRuleCollectionRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProvider
 {
@@ -1165,7 +1165,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusConditions
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatusConditions
 }
 
 /// <summary>FirewallPolicyRuleCollectionGroupStatus defines the observed state of FirewallPolicyRuleCollectionGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleCollectionGroupStatus
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1FirewallPolicyRuleCollectionGroupStatus
 }
 
 /// <summary>FirewallPolicyRuleCollectionGroup is the Schema for the FirewallPolicyRuleCollectionGroups API. Manages a Firewall Policy Rule Collection Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicyRuleCollectionGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FirewallPolicyRuleCollectionGroupSpec>, IStatus<V1beta1FirewallPolicyRuleCollectionGroupStatus?>

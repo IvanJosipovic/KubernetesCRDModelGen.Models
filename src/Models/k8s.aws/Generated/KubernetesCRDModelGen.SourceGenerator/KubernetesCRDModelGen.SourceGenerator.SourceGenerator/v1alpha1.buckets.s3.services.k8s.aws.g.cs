@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.services.k8s.aws;
 /// <summary>Bucket is the Schema for the Buckets API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BucketList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Bucket>
@@ -37,7 +37,7 @@ public partial class V1alpha1BucketList : IKubernetesObject<V1ListMeta>, IItems<
 }
 
 /// <summary>Container for setting the transfer acceleration state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAccelerate
 {
@@ -46,7 +46,7 @@ public partial class V1alpha1BucketSpecAccelerate
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsFilterAndTags
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1BucketSpecAnalyticsFilterAndTags
 /// metrics filter. The operator must have at least two predicates in any combination,
 /// and an object must match all of the predicates for the filter to apply.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsFilterAnd
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1BucketSpecAnalyticsFilterAnd
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsFilterTag
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1BucketSpecAnalyticsFilterTag
 /// have exactly one prefix, one tag, or one conjunction (AnalyticsAndOperator).
 /// If no filter is provided, all objects will be considered in any analysis.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsFilter
 {
@@ -111,7 +111,7 @@ public partial class V1alpha1BucketSpecAnalyticsFilter
 }
 
 /// <summary>Contains information about where to publish the analytics results.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExportDestinationS3BucketDestination
 {
@@ -129,7 +129,7 @@ public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExportDe
 }
 
 /// <summary>Where to publish the analytics results.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExportDestination
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExportDe
 /// Container for data related to the storage class analysis for an Amazon S3
 /// bucket for export.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExport
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysisDataExport
 /// to analyze the tradeoffs between different storage classes for an Amazon
 /// S3 bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysis
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1BucketSpecAnalyticsStorageClassAnalysis
 /// Specifies the configuration and any analyses for the analytics filter of
 /// an Amazon S3 bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecAnalytics
 {
@@ -200,7 +200,7 @@ public partial class V1alpha1BucketSpecAnalytics
 }
 
 /// <summary>Specifies a cross-origin access rule for an Amazon S3 bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecCorsCorsRules
 {
@@ -229,7 +229,7 @@ public partial class V1alpha1BucketSpecCorsCorsRules
 /// (https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) in the Amazon
 /// S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecCors
 {
@@ -244,7 +244,7 @@ public partial class V1alpha1BucketSpecCors
 /// 
 /// This functionality is only supported by directory buckets.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecCreateBucketConfigurationBucket
 {
@@ -265,7 +265,7 @@ public partial class V1alpha1BucketSpecCreateBucketConfigurationBucket
 /// 
 /// This functionality is only supported by directory buckets.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecCreateBucketConfigurationLocation
 {
@@ -277,7 +277,7 @@ public partial class V1alpha1BucketSpecCreateBucketConfigurationLocation
 }
 
 /// <summary>The configuration information for the bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecCreateBucketConfiguration
 {
@@ -328,7 +328,7 @@ public partial class V1alpha1BucketSpecCreateBucketConfiguration
 ///    * Directory buckets - For directory buckets, there are only two supported
 ///    options for server-side encryption: SSE-S3 and SSE-KMS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecEncryptionRulesApplyServerSideEncryptionByDefault
 {
@@ -352,7 +352,7 @@ public partial class V1alpha1BucketSpecEncryptionRulesApplyServerSideEncryptionB
 ///     for encryption in your directory bucket, only use the key ID or key ARN.
 ///     The key alias format of the KMS key isn&apos;t supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecEncryptionRules
 {
@@ -384,7 +384,7 @@ public partial class V1alpha1BucketSpecEncryptionRules
 }
 
 /// <summary>Specifies the default server-side-encryption configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecEncryption
 {
@@ -393,7 +393,7 @@ public partial class V1alpha1BucketSpecEncryption
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTieringFilterAndTags
 {
@@ -408,7 +408,7 @@ public partial class V1alpha1BucketSpecIntelligentTieringFilterAndTags
 /// A container for specifying S3 Intelligent-Tiering filters. The filters determine
 /// the subset of objects to which the rule applies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTieringFilterAnd
 {
@@ -420,7 +420,7 @@ public partial class V1alpha1BucketSpecIntelligentTieringFilterAnd
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTieringFilterTag
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1BucketSpecIntelligentTieringFilterTag
 /// The Filter is used to identify objects that the S3 Intelligent-Tiering configuration
 /// applies to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTieringFilter
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1BucketSpecIntelligentTieringFilter
 /// costs by automatically moving data to the most cost-effective storage access
 /// tier, without additional operational overhead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTieringTierings
 {
@@ -477,7 +477,7 @@ public partial class V1alpha1BucketSpecIntelligentTieringTierings
 /// class for automatically optimizing frequently and infrequently accessed objects
 /// (https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html#sc-dynamic-data-access).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecIntelligentTiering
 {
@@ -499,7 +499,7 @@ public partial class V1alpha1BucketSpecIntelligentTiering
 }
 
 /// <summary>Specifies the use of SSE-KMS to encrypt delivered inventory reports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestinationEncryptionSseKMS
 {
@@ -511,7 +511,7 @@ public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestinationEn
 /// Contains the type of server-side encryption used to encrypt the S3 Inventory
 /// results.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestinationEncryption
 {
@@ -524,7 +524,7 @@ public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestinationEn
 /// Contains the bucket name, file format, bucket owner (optional), and prefix
 /// (optional) where S3 Inventory results are published.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestination
 {
@@ -549,7 +549,7 @@ public partial class V1alpha1BucketSpecInventoryDestinationS3BucketDestination
 }
 
 /// <summary>Specifies the S3 Inventory configuration for an Amazon S3 bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventoryDestination
 {
@@ -565,7 +565,7 @@ public partial class V1alpha1BucketSpecInventoryDestination
 /// Specifies an S3 Inventory filter. The inventory only includes objects that
 /// meet the filter&apos;s criteria.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventoryFilter
 {
@@ -574,7 +574,7 @@ public partial class V1alpha1BucketSpecInventoryFilter
 }
 
 /// <summary>Specifies the schedule for generating S3 Inventory results.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventorySchedule
 {
@@ -587,7 +587,7 @@ public partial class V1alpha1BucketSpecInventorySchedule
 /// information, see GET Bucket inventory (https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETInventoryConfig.html)
 /// in the Amazon S3 API Reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecInventory
 {
@@ -626,7 +626,7 @@ public partial class V1alpha1BucketSpecInventory
 /// Lifecycle Configuration (https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html#mpu-abort-incomplete-mpu-lifecycle-config)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesAbortIncompleteMultipartUpload
 {
@@ -640,7 +640,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesAbortIncompleteMultipartUpl
 /// For more information see, Managing your storage lifecycle (https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesExpiration
 {
@@ -655,7 +655,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesExpiration
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesFilterAndTags
 {
@@ -671,7 +671,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesFilterAndTags
 /// more predicates. The Lifecycle Rule will apply to any object matching all
 /// of the predicates configured inside the And operator.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesFilterAnd
 {
@@ -689,7 +689,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesFilterAnd
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesFilterTag
 {
@@ -706,7 +706,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesFilterTag
 /// or And specified. If the Filter element is left empty, the Lifecycle Rule
 /// applies to all objects in the bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesFilter
 {
@@ -742,7 +742,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesFilter
 /// This parameter applies to general purpose buckets only. It is not supported
 /// for directory bucket lifecycle configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesNoncurrentVersionExpiration
 {
@@ -762,7 +762,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesNoncurrentVersionExpiration
 /// INTELLIGENT_TIERING, GLACIER_IR, GLACIER, or DEEP_ARCHIVE storage class at
 /// a specific period in the object&apos;s lifetime.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesNoncurrentVersionTransitions
 {
@@ -782,7 +782,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesNoncurrentVersionTransition
 /// Objects Using Amazon S3 Lifecycle (https://docs.aws.amazon.com/AmazonS3/latest/dev/lifecycle-transition-general-considerations.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRulesTransitions
 {
@@ -802,7 +802,7 @@ public partial class V1alpha1BucketSpecLifecycleRulesTransitions
 /// For more information see, Managing your storage lifecycle (https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycleRules
 {
@@ -864,7 +864,7 @@ public partial class V1alpha1BucketSpecLifecycleRules
 }
 
 /// <summary>Container for lifecycle rules. You can add as many as 1,000 rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLifecycle
 {
@@ -873,7 +873,7 @@ public partial class V1alpha1BucketSpecLifecycle
 }
 
 /// <summary>Container for the person being granted permissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetGrantsGrantee
 {
@@ -901,7 +901,7 @@ public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetGrantsGrantee
 /// log delivery (https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-server-access-logging.html#grant-log-delivery-permissions-general)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetGrants
 {
@@ -919,7 +919,7 @@ public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetGrants
 /// (https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html)
 /// in the Amazon S3 API Reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLoggingLoggingEnabled
 {
@@ -934,7 +934,7 @@ public partial class V1alpha1BucketSpecLoggingLoggingEnabled
 }
 
 /// <summary>Container for logging status information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecLogging
 {
@@ -949,7 +949,7 @@ public partial class V1alpha1BucketSpecLogging
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecMetricsFilterAndTags
 {
@@ -965,7 +965,7 @@ public partial class V1alpha1BucketSpecMetricsFilterAndTags
 /// metrics filter. The operator must have at least two predicates, and an object
 /// must match all of the predicates in order for the filter to apply.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecMetricsFilterAnd
 {
@@ -980,7 +980,7 @@ public partial class V1alpha1BucketSpecMetricsFilterAnd
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecMetricsFilterTag
 {
@@ -997,7 +997,7 @@ public partial class V1alpha1BucketSpecMetricsFilterTag
 /// an object tag, an access point ARN, or a conjunction (MetricsAndOperator).
 /// For more information, see PutBucketMetricsConfiguration (https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketMetricsConfiguration.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecMetricsFilter
 {
@@ -1028,7 +1028,7 @@ public partial class V1alpha1BucketSpecMetricsFilter
 /// want to keep, they are erased. For more information, see PutBucketMetricsConfiguration
 /// (https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTMetricConfiguration.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecMetrics
 {
@@ -1056,7 +1056,7 @@ public partial class V1alpha1BucketSpecMetrics
 /// is similar to a prefix, but it is at the end of the object key name instead
 /// of at the beginning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsFilterKeyFilterRules
 {
@@ -1068,7 +1068,7 @@ public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsF
 }
 
 /// <summary>A container for object key name prefix and suffix filtering rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsFilterKey
 {
@@ -1086,7 +1086,7 @@ public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsF
 /// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsFilter
 {
@@ -1096,7 +1096,7 @@ public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurationsF
 }
 
 /// <summary>A container for specifying the configuration for Lambda notifications.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurations
 {
@@ -1134,7 +1134,7 @@ public partial class V1alpha1BucketSpecNotificationLambdaFunctionConfigurations
 /// is similar to a prefix, but it is at the end of the object key name instead
 /// of at the beginning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilterKeyFilterRules
 {
@@ -1146,7 +1146,7 @@ public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilterKeyF
 }
 
 /// <summary>A container for object key name prefix and suffix filtering rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilterKey
 {
@@ -1164,7 +1164,7 @@ public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilterKey
 /// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilter
 {
@@ -1177,7 +1177,7 @@ public partial class V1alpha1BucketSpecNotificationQueueConfigurationsFilter
 /// Specifies the configuration for publishing messages to an Amazon Simple Queue
 /// Service (Amazon SQS) queue when Amazon S3 detects specified events.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationQueueConfigurations
 {
@@ -1215,7 +1215,7 @@ public partial class V1alpha1BucketSpecNotificationQueueConfigurations
 /// is similar to a prefix, but it is at the end of the object key name instead
 /// of at the beginning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilterKeyFilterRules
 {
@@ -1227,7 +1227,7 @@ public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilterKeyF
 }
 
 /// <summary>A container for object key name prefix and suffix filtering rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilterKey
 {
@@ -1245,7 +1245,7 @@ public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilterKey
 /// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilter
 {
@@ -1259,7 +1259,7 @@ public partial class V1alpha1BucketSpecNotificationTopicConfigurationsFilter
 /// to an Amazon Simple Notification Service (Amazon SNS) topic when Amazon S3
 /// detects specified events.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotificationTopicConfigurations
 {
@@ -1290,7 +1290,7 @@ public partial class V1alpha1BucketSpecNotificationTopicConfigurations
 /// A container for specifying the notification configuration of the bucket.
 /// If this element is empty, notifications are turned off for the bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotification
 {
@@ -1313,7 +1313,7 @@ public partial class V1alpha1BucketSpecNotification
 ///    * The DefaultRetention period can be either Days or Years but you must
 ///    select one. You cannot specify Days and Years at the same time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecObjectLockConfigurationRuleDefaultRetention
 {
@@ -1328,7 +1328,7 @@ public partial class V1alpha1BucketSpecObjectLockConfigurationRuleDefaultRetenti
 }
 
 /// <summary>The container element for an Object Lock rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecObjectLockConfigurationRule
 {
@@ -1346,7 +1346,7 @@ public partial class V1alpha1BucketSpecObjectLockConfigurationRule
 }
 
 /// <summary>The Object Lock configuration that you want to apply to the specified bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecObjectLockConfiguration
 {
@@ -1356,7 +1356,7 @@ public partial class V1alpha1BucketSpecObjectLockConfiguration
 }
 
 /// <summary>The container element for an ownership control rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecOwnershipControlsRules
 {
@@ -1395,7 +1395,7 @@ public partial class V1alpha1BucketSpecOwnershipControlsRules
 /// The OwnershipControls (BucketOwnerEnforced, BucketOwnerPreferred, or ObjectWriter)
 /// that you want to apply to this Amazon S3 bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecOwnershipControls
 {
@@ -1410,7 +1410,7 @@ public partial class V1alpha1BucketSpecOwnershipControls
 /// see The Meaning of &quot;Public&quot; (https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html#access-control-block-public-access-policy-status)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecPublicAccessBlock
 {
@@ -1431,7 +1431,7 @@ public partial class V1alpha1BucketSpecPublicAccessBlock
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRoleRefFrom
 {
@@ -1443,7 +1443,7 @@ public partial class V1alpha1BucketSpecReplicationRoleRefFrom
 }
 
 /// <summary>Reference field for Role</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRoleRef
 {
@@ -1470,7 +1470,7 @@ public partial class V1alpha1BucketSpecReplicationRoleRef
 /// S3 handles replication of delete markers differently. For more information,
 /// see Backward Compatibility (https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-add-config.html#replication-backward-compat-considerations).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDeleteMarkerReplication
 {
@@ -1479,7 +1479,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDeleteMarkerReplication
 }
 
 /// <summary>A container for information about access control for replicas.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationAccessControlTranslation
 {
@@ -1497,7 +1497,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationAccessControlT
 /// that&apos;s encrypted with a KMS key that belongs to the requester, and not the
 /// bucket owner.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationEncryptionConfiguration
 {
@@ -1509,7 +1509,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationEncryptionConf
 /// A container specifying the time value for S3 Replication Time Control (S3
 /// RTC) and replication metrics EventThreshold.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationMetricsEventThreshold
 {
@@ -1521,7 +1521,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationMetricsEventTh
 /// A container specifying replication metrics-related settings enabling replication
 /// metrics and events.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationMetrics
 {
@@ -1540,7 +1540,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationMetrics
 /// A container specifying the time value for S3 Replication Time Control (S3
 /// RTC) and replication metrics EventThreshold.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationReplicationTimeTime
 {
@@ -1554,7 +1554,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationReplicationTim
 /// on objects must be replicated. Must be specified together with a Metrics
 /// block.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestinationReplicationTime
 {
@@ -1573,7 +1573,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestinationReplicationTim
 /// Specifies information about where to publish analysis or configuration results
 /// for an Amazon S3 bucket and S3 Replication Time Control (S3 RTC).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesDestination
 {
@@ -1627,7 +1627,7 @@ public partial class V1alpha1BucketSpecReplicationRulesDestination
 /// Replicating existing objects with S3 Batch Replication (https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-batch-replication-batch.html)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesExistingObjectReplication
 {
@@ -1636,7 +1636,7 @@ public partial class V1alpha1BucketSpecReplicationRulesExistingObjectReplication
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesFilterAndTags
 {
@@ -1660,7 +1660,7 @@ public partial class V1alpha1BucketSpecReplicationRulesFilterAndTags
 ///    * If you specify a filter based on multiple tags, wrap the Tag elements
 ///    in an And tag.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesFilterAnd
 {
@@ -1672,7 +1672,7 @@ public partial class V1alpha1BucketSpecReplicationRulesFilterAnd
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesFilterTag
 {
@@ -1687,7 +1687,7 @@ public partial class V1alpha1BucketSpecReplicationRulesFilterTag
 /// A filter that identifies the subset of objects to which the replication rule
 /// applies. A Filter must specify exactly one Prefix, Tag, or an And child element.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesFilter
 {
@@ -1726,7 +1726,7 @@ public partial class V1alpha1BucketSpecReplicationRulesFilter
 /// configuration is the earlier version, V1. In the earlier version, this element
 /// is not allowed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteriaReplicaModifications
 {
@@ -1738,7 +1738,7 @@ public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteriaRe
 /// A container for filter information for the selection of S3 objects encrypted
 /// with Amazon Web Services KMS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteriaSseKMSEncryptedObjects
 {
@@ -1754,7 +1754,7 @@ public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteriaSs
 /// a customer managed key stored in Amazon Web Services Key Management Service
 /// (SSE-KMS).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteria
 {
@@ -1781,7 +1781,7 @@ public partial class V1alpha1BucketSpecReplicationRulesSourceSelectionCriteria
 }
 
 /// <summary>Specifies which Amazon S3 objects to replicate and where to store the replicas.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplicationRules
 {
@@ -1855,7 +1855,7 @@ public partial class V1alpha1BucketSpecReplicationRules
 /// A container for replication rules. You can add up to 1,000 rules. The maximum
 /// size of a replication configuration is 2 MB.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecReplication
 {
@@ -1871,7 +1871,7 @@ public partial class V1alpha1BucketSpecReplication
 }
 
 /// <summary>Container for Payer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecRequestPayment
 {
@@ -1880,7 +1880,7 @@ public partial class V1alpha1BucketSpecRequestPayment
 }
 
 /// <summary>A container of a key value name pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecTaggingTagSet
 {
@@ -1892,7 +1892,7 @@ public partial class V1alpha1BucketSpecTaggingTagSet
 }
 
 /// <summary>Container for the TagSet and Tag elements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecTagging
 {
@@ -1901,7 +1901,7 @@ public partial class V1alpha1BucketSpecTagging
 }
 
 /// <summary>Container for setting the versioning state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecVersioning
 {
@@ -1910,7 +1910,7 @@ public partial class V1alpha1BucketSpecVersioning
 }
 
 /// <summary>The error information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteErrorDocument
 {
@@ -1919,7 +1919,7 @@ public partial class V1alpha1BucketSpecWebsiteErrorDocument
 }
 
 /// <summary>Container for the Suffix element.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteIndexDocument
 {
@@ -1931,7 +1931,7 @@ public partial class V1alpha1BucketSpecWebsiteIndexDocument
 /// Specifies the redirect behavior of all requests to a website endpoint of
 /// an Amazon S3 bucket.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteRedirectAllRequestsTo
 {
@@ -1948,7 +1948,7 @@ public partial class V1alpha1BucketSpecWebsiteRedirectAllRequestsTo
 /// redirect to the /documents folder. 2. If request results in HTTP error 4xx,
 /// redirect request to another host where you might process the error.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteRoutingRulesCondition
 {
@@ -1963,7 +1963,7 @@ public partial class V1alpha1BucketSpecWebsiteRoutingRulesCondition
 /// Specifies how requests are redirected. In the event of an error, you can
 /// specify a different error code to return.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteRoutingRulesRedirect
 {
@@ -1989,7 +1989,7 @@ public partial class V1alpha1BucketSpecWebsiteRoutingRulesRedirect
 /// (https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html#advanced-conditional-redirects)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsiteRoutingRules
 {
@@ -2011,7 +2011,7 @@ public partial class V1alpha1BucketSpecWebsiteRoutingRules
 }
 
 /// <summary>Container for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecWebsite
 {
@@ -2039,7 +2039,7 @@ public partial class V1alpha1BucketSpecWebsite
 /// 
 /// In terms of implementation, a Bucket is a resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpec
 {
@@ -2256,7 +2256,7 @@ public partial class V1alpha1BucketSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketStatusAckResourceMetadata
 {
@@ -2293,7 +2293,7 @@ public partial class V1alpha1BucketStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketStatusConditions
 {
@@ -2319,7 +2319,7 @@ public partial class V1alpha1BucketStatusConditions
 }
 
 /// <summary>BucketStatus defines the observed state of Bucket</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketStatus
 {
@@ -2346,7 +2346,7 @@ public partial class V1alpha1BucketStatus
 }
 
 /// <summary>Bucket is the Schema for the Buckets API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Bucket : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BucketSpec?>, IStatus<V1alpha1BucketStatus?>

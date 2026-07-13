@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.@operator.tigera.io;
 /// The `release` must match the version of the variant that the operator is built to deploy,
 /// this version can be obtained by passing the `--version` flag to the operator binary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageSetList : IKubernetesObject<V1ListMeta>, IItems<V1ImageSet>
@@ -43,7 +43,7 @@ public partial class V1ImageSetList : IKubernetesObject<V1ListMeta>, IItems<V1Im
     public required IList<V1ImageSet> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageSetSpecImages
 {
@@ -68,7 +68,7 @@ public partial class V1ImageSetSpecImages
 }
 
 /// <summary>ImageSetSpec defines the desired state of ImageSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageSetSpec
 {
@@ -88,7 +88,7 @@ public partial class V1ImageSetSpec
 /// The `release` must match the version of the variant that the operator is built to deploy,
 /// this version can be obtained by passing the `--version` flag to the operator binary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1ImageSetSpec?>

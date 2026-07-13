@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>Oauth2CredentialProvider is the Schema for the Oauth2CredentialProviders API. Manages an AWS Bedrock AgentCore OAuth2 Credential Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Oauth2CredentialProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Oauth2CredentialProvider>
@@ -45,7 +45,7 @@ public partial class V1beta1Oauth2CredentialProviderList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1Oauth2CredentialProviderSpecDeletionPolicyEnum>))]
 public enum V1beta1Oauth2CredentialProviderSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1Oauth2CredentialProviderSpecDeletionPolicyEnum
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef
 {
@@ -74,7 +74,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -92,7 +92,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretSecretRef
 {
@@ -110,7 +110,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -128,7 +128,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -150,7 +150,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
@@ -164,7 +164,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
@@ -194,7 +194,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef
 {
@@ -212,7 +212,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -230,7 +230,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretSecretRef
 {
@@ -248,7 +248,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -266,7 +266,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>GitHub OAuth provider configuration. See github below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
@@ -292,7 +292,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef
 {
@@ -310,7 +310,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -328,7 +328,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretSecretRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -364,7 +364,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Google OAuth provider configuration. See google below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
@@ -390,7 +390,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef
 {
@@ -408,7 +408,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretSecretRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -462,7 +462,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Microsoft OAuth provider configuration. See microsoft below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
@@ -488,7 +488,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -524,7 +524,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretSecretRef
 {
@@ -542,7 +542,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -560,7 +560,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Salesforce OAuth provider configuration. See salesforce below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
@@ -586,7 +586,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef
 {
@@ -604,7 +604,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -622,7 +622,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretSecretRef
 {
@@ -640,7 +640,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -658,7 +658,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>Slack OAuth provider configuration. See slack below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
@@ -684,7 +684,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
 }
 
 /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfig
 {
@@ -713,7 +713,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProviderOauth2Provide
     public V1beta1Oauth2CredentialProviderSpecForProviderOauth2ProviderConfigSlackOauth2ProviderConfig? SlackOauth2ProviderConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecForProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecForProvider
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdSecretRef
 {
@@ -756,7 +756,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -774,7 +774,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretSecretRef
 {
@@ -792,7 +792,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -810,7 +810,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -832,7 +832,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
@@ -846,7 +846,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
@@ -876,7 +876,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdSecretRef
 {
@@ -894,7 +894,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -912,7 +912,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretSecretRef
 {
@@ -930,7 +930,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -948,7 +948,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>GitHub OAuth provider configuration. See github below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
@@ -974,7 +974,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdSecretRef
 {
@@ -992,7 +992,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretSecretRef
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Google OAuth provider configuration. See google below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdSecretRef
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretSecretRef
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -1144,7 +1144,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Microsoft OAuth provider configuration. See microsoft below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdSecretRef
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretSecretRef
 {
@@ -1224,7 +1224,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Salesforce OAuth provider configuration. See salesforce below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
@@ -1268,7 +1268,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client ID. Cannot be used with client_id_wo. Must be used together with client_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdSecretRef
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client ID. Cannot be used with client_id. Must be used together with client_secret_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientIdWoSecretRef
 {
@@ -1304,7 +1304,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 client secret. Cannot be used with client_secret_wo. Must be used together with client_id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretSecretRef
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Write-only OAuth2 client secret. Cannot be used with client_secret. Must be used together with client_id_wo and client_credentials_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfigClientSecretWoSecretRef
 {
@@ -1340,7 +1340,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>Slack OAuth provider configuration. See slack below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
@@ -1366,7 +1366,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 }
 
 /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2ProviderConfig
 {
@@ -1407,7 +1407,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProviderOauth2Provid
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecInitProvider
 {
@@ -1428,7 +1428,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1Oauth2CredentialProviderSpecManagementPoliciesEnum>))]
 public enum V1beta1Oauth2CredentialProviderSpecManagementPoliciesEnum
 {
@@ -1452,7 +1452,7 @@ public enum V1beta1Oauth2CredentialProviderSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1468,7 +1468,7 @@ public enum V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1479,7 +1479,7 @@ public enum V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicy
 {
@@ -1507,7 +1507,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecProviderConfigRef
 {
@@ -1526,7 +1526,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpecWriteConnectionSecretToRef
 {
@@ -1540,7 +1540,7 @@ public partial class V1beta1Oauth2CredentialProviderSpecWriteConnectionSecretToR
 }
 
 /// <summary>Oauth2CredentialProviderSpec defines the desired state of Oauth2CredentialProvider</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderSpec
 {
@@ -1607,7 +1607,7 @@ public partial class V1beta1Oauth2CredentialProviderSpec
     public V1beta1Oauth2CredentialProviderSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderClientSecretArn
 {
@@ -1617,7 +1617,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderClientSecret
 }
 
 /// <summary>Manual OAuth2 authorization server metadata configuration. Cannot be used together with discovery_url. See authorization_server_metadata below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>OAuth discovery configuration. See oauth_discovery below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery
 {
@@ -1653,7 +1653,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>Custom OAuth2 provider configuration. See custom below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfig
 {
@@ -1666,7 +1666,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscovery? OauthDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1687,7 +1687,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery
 {
@@ -1701,7 +1701,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>GitHub OAuth provider configuration. See github below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfig
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1735,7 +1735,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery
 {
@@ -1749,7 +1749,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>Google OAuth provider configuration. See google below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfig
 {
@@ -1762,7 +1762,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery
 {
@@ -1797,7 +1797,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>Microsoft OAuth provider configuration. See microsoft below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfig
 {
@@ -1810,7 +1810,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1831,7 +1831,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery
 {
@@ -1845,7 +1845,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>Salesforce OAuth provider configuration. See salesforce below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfig
 {
@@ -1858,7 +1858,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public IList<V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscovery>? OauthDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadata
 {
@@ -1879,7 +1879,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public string? TokenEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscovery
 {
@@ -1893,7 +1893,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>Slack OAuth provider configuration. See slack below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfig
 {
@@ -1907,7 +1907,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
 }
 
 /// <summary>OAuth2 provider configuration. Must contain exactly one provider type. See oauth2_provider_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfig
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProviderOauth2Provid
     public V1beta1Oauth2CredentialProviderStatusAtProviderOauth2ProviderConfigSlackOauth2ProviderConfig? SlackOauth2ProviderConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
 {
@@ -1980,7 +1980,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatusConditions
 {
@@ -2023,7 +2023,7 @@ public partial class V1beta1Oauth2CredentialProviderStatusConditions
 }
 
 /// <summary>Oauth2CredentialProviderStatus defines the observed state of Oauth2CredentialProvider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1Oauth2CredentialProviderStatus
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta1Oauth2CredentialProviderStatus
 }
 
 /// <summary>Oauth2CredentialProvider is the Schema for the Oauth2CredentialProviders API. Manages an AWS Bedrock AgentCore OAuth2 Credential Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Oauth2CredentialProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1Oauth2CredentialProviderSpec>, IStatus<V1beta1Oauth2CredentialProviderStatus?>

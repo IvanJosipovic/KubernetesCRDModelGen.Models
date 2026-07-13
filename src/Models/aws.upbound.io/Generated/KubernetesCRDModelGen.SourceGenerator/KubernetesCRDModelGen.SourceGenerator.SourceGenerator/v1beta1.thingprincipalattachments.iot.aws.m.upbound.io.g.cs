@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.m.upbound.io;
 /// <summary>ThingPrincipalAttachment is the Schema for the ThingPrincipalAttachments API. Provides AWS IoT Thing Principal attachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ThingPrincipalAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ThingPrincipalAttachment>
@@ -42,7 +42,7 @@ public partial class V1beta1ThingPrincipalAttachmentList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRefP
 }
 
 /// <summary>Reference to a Certificate in iot to populate principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSele
 }
 
 /// <summary>Selector for a Certificate in iot to populate principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderPrincipalSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingRefPolic
 }
 
 /// <summary>Reference to a Thing in iot to populate thing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingSelector
 }
 
 /// <summary>Selector for a Thing in iot to populate thing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProviderThingSelector
     public V1beta1ThingPrincipalAttachmentSpecForProviderThingSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecForProvider
 {
@@ -392,7 +392,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRefPolicy
 {
@@ -443,7 +443,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRef
 }
 
 /// <summary>Reference to a Certificate in iot to populate principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRef
 {
@@ -466,7 +466,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPolicyResolutionEnum
 {
@@ -482,7 +482,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPolicyResolveEnum
 {
@@ -493,7 +493,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelectorPolicy
 {
@@ -517,7 +517,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSel
 }
 
 /// <summary>Selector for a Certificate in iot to populate principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSelector
 {
@@ -547,7 +547,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderPrincipalSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolutionEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolveEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingRefPoli
 }
 
 /// <summary>Reference to a Thing in iot to populate thing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyResolutionEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyResolveEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelecto
 }
 
 /// <summary>Selector for a Thing in iot to populate thing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelector
 {
@@ -708,7 +708,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProviderThingSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecInitProvider
 {
@@ -745,7 +745,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ThingPrincipalAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1ThingPrincipalAttachmentSpecManagementPoliciesEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1ThingPrincipalAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecProviderConfigRef
 {
@@ -787,7 +787,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpecWriteConnectionSecretToRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpecWriteConnectionSecretToR
 }
 
 /// <summary>ThingPrincipalAttachmentSpec defines the desired state of ThingPrincipalAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentSpec
 {
@@ -848,7 +848,7 @@ public partial class V1beta1ThingPrincipalAttachmentSpec
     public V1beta1ThingPrincipalAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentStatusAtProvider
 {
@@ -876,7 +876,7 @@ public partial class V1beta1ThingPrincipalAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentStatusConditions
 {
@@ -919,7 +919,7 @@ public partial class V1beta1ThingPrincipalAttachmentStatusConditions
 }
 
 /// <summary>ThingPrincipalAttachmentStatus defines the observed state of ThingPrincipalAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ThingPrincipalAttachmentStatus
 {
@@ -940,7 +940,7 @@ public partial class V1beta1ThingPrincipalAttachmentStatus
 }
 
 /// <summary>ThingPrincipalAttachment is the Schema for the ThingPrincipalAttachments API. Provides AWS IoT Thing Principal attachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ThingPrincipalAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ThingPrincipalAttachmentSpec>, IStatus<V1beta1ThingPrincipalAttachmentStatus?>

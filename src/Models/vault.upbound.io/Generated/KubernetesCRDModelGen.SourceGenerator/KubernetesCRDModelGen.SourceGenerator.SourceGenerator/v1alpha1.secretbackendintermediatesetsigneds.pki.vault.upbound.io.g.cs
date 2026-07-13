@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.pki.vault.upbound.io;
 /// <summary>SecretBackendIntermediateSetSigned is the Schema for the SecretBackendIntermediateSetSigneds API. Submit the PKI CA certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretBackendIntermediateSetSignedList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SecretBackendIntermediateSetSigned>
@@ -45,7 +45,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedList : IKubernete
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecDeletionPolicyEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBa
 }
 
 /// <summary>Reference to a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBa
 }
 
 /// <summary>Selector for a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBackendSelector
 {
@@ -208,7 +208,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderBa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificate
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCe
 }
 
 /// <summary>Reference to a SecretBackendRootSignIntermediate in pki to populate certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateRef
 {
@@ -278,7 +278,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificate
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCe
 }
 
 /// <summary>Selector for a SecretBackendRootSignIntermediate in pki to populate certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelector
 {
@@ -349,7 +349,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCe
     public V1alpha1SecretBackendIntermediateSetSignedSpecForProviderCertificateSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProvider
 {
@@ -402,7 +402,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -418,7 +418,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -429,7 +429,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRefPolicy
 {
@@ -453,7 +453,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderB
 }
 
 /// <summary>Reference to a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendRef
 {
@@ -472,7 +472,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderB
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -488,7 +488,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -499,7 +499,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelectorPolicy
 {
@@ -523,7 +523,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderB
 }
 
 /// <summary>Selector for a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderBackendSelector
 {
@@ -549,7 +549,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderB
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRefPolicyResolutionEnum
 {
@@ -565,7 +565,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRefPolicyResolveEnum
 {
@@ -576,7 +576,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRefPolicy
 {
@@ -600,7 +600,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderC
 }
 
 /// <summary>Reference to a SecretBackendRootSignIntermediate in pki to populate certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateRef
 {
@@ -619,7 +619,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelectorPolicyResolutionEnum
 {
@@ -635,7 +635,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelectorPolicyResolveEnum
 {
@@ -646,7 +646,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelectorPolicy
 {
@@ -670,7 +670,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderC
 }
 
 /// <summary>Selector for a SecretBackendRootSignIntermediate in pki to populate certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderCertificateSelector
 {
@@ -702,7 +702,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProviderC
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProvider
 {
@@ -753,7 +753,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecManagementPoliciesEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -793,7 +793,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolicyResolveEnum
 {
@@ -804,7 +804,7 @@ public enum V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRefPolicy
 {
@@ -832,7 +832,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfi
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfigRef
 {
@@ -851,7 +851,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpecWriteConnectionSecretToRef
 {
@@ -865,7 +865,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpecWriteConnecti
 }
 
 /// <summary>SecretBackendIntermediateSetSignedSpec defines the desired state of SecretBackendIntermediateSetSigned</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedSpec
 {
@@ -932,7 +932,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedSpec
     public V1alpha1SecretBackendIntermediateSetSignedSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedStatusAtProvider
 {
@@ -982,7 +982,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedStatusConditions
 {
@@ -1025,7 +1025,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedStatusConditions
 }
 
 /// <summary>SecretBackendIntermediateSetSignedStatus defines the observed state of SecretBackendIntermediateSetSigned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendIntermediateSetSignedStatus
 {
@@ -1046,7 +1046,7 @@ public partial class V1alpha1SecretBackendIntermediateSetSignedStatus
 }
 
 /// <summary>SecretBackendIntermediateSetSigned is the Schema for the SecretBackendIntermediateSetSigneds API. Submit the PKI CA certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretBackendIntermediateSetSigned : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SecretBackendIntermediateSetSignedSpec>, IStatus<V1alpha1SecretBackendIntermediateSetSignedStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.operationalinsights.azure.m.upbound.io;
 /// <summary>LogAnalyticsQueryPackQuery is the Schema for the LogAnalyticsQueryPackQuerys API. Manages a Log Analytics Query Pack Query.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsQueryPackQueryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LogAnalyticsQueryPackQuery>
@@ -42,7 +42,7 @@ public partial class V1beta1LogAnalyticsQueryPackQueryList : IKubernetesObject<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackId
 }
 
 /// <summary>Reference to a LogAnalyticsQueryPack in operationalinsights to populate queryPackId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackId
 }
 
 /// <summary>Selector for a LogAnalyticsQueryPack in operationalinsights to populate queryPackId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackId
     public V1beta1LogAnalyticsQueryPackQuerySpecForProviderQueryPackIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProvider
 {
@@ -250,7 +250,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackI
 }
 
 /// <summary>Reference to a LogAnalyticsQueryPack in operationalinsights to populate queryPackId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdRef
 {
@@ -324,7 +324,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelectorPolicyResolutionEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelectorPolicyResolveEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelectorPolicy
 {
@@ -375,7 +375,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackI
 }
 
 /// <summary>Selector for a LogAnalyticsQueryPack in operationalinsights to populate queryPackId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackIdSelector
 {
@@ -411,7 +411,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProviderQueryPackI
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProvider
 {
@@ -468,7 +468,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsQueryPackQuerySpecManagementPoliciesEnum>))]
 public enum V1beta1LogAnalyticsQueryPackQuerySpecManagementPoliciesEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1LogAnalyticsQueryPackQuerySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecProviderConfigRef
 {
@@ -510,7 +510,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpecWriteConnectionSecretToRef
 {
@@ -520,7 +520,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpecWriteConnectionSecretT
 }
 
 /// <summary>LogAnalyticsQueryPackQuerySpec defines the desired state of LogAnalyticsQueryPackQuery</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQuerySpec
 {
@@ -571,7 +571,7 @@ public partial class V1beta1LogAnalyticsQueryPackQuerySpec
     public V1beta1LogAnalyticsQueryPackQuerySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQueryStatusAtProvider
 {
@@ -621,7 +621,7 @@ public partial class V1beta1LogAnalyticsQueryPackQueryStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQueryStatusConditions
 {
@@ -664,7 +664,7 @@ public partial class V1beta1LogAnalyticsQueryPackQueryStatusConditions
 }
 
 /// <summary>LogAnalyticsQueryPackQueryStatus defines the observed state of LogAnalyticsQueryPackQuery.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsQueryPackQueryStatus
 {
@@ -685,7 +685,7 @@ public partial class V1beta1LogAnalyticsQueryPackQueryStatus
 }
 
 /// <summary>LogAnalyticsQueryPackQuery is the Schema for the LogAnalyticsQueryPackQuerys API. Manages a Log Analytics Query Pack Query.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsQueryPackQuery : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LogAnalyticsQueryPackQuerySpec>, IStatus<V1beta1LogAnalyticsQueryPackQueryStatus?>

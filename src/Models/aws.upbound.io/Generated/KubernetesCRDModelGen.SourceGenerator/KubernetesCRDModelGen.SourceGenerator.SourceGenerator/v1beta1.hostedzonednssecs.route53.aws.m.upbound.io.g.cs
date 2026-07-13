@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53.aws.m.upbound.io;
 /// <summary>HostedZoneDNSSEC is the Schema for the HostedZoneDNSSECs API. Manages Route 53 Hosted Zone DNSSEC</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedZoneDNSSECList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HostedZoneDNSSEC>
@@ -42,7 +42,7 @@ public partial class V1beta1HostedZoneDNSSECList : IKubernetesObject<V1ListMeta>
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRefPolicy
 }
 
 /// <summary>Reference to a Zone in route53 to populate hostedZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorP
 }
 
 /// <summary>Selector for a Zone in route53 to populate hostedZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelector
     public V1beta1HostedZoneDNSSECSpecForProviderHostedZoneIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecForProvider
 {
@@ -218,7 +218,7 @@ public partial class V1beta1HostedZoneDNSSECSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResolutionEnum
 {
@@ -234,7 +234,7 @@ public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResolveEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolicy
 {
@@ -269,7 +269,7 @@ public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRefPolic
 }
 
 /// <summary>Reference to a Zone in route53 to populate hostedZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRef
 {
@@ -292,7 +292,7 @@ public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyResolutionEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyResolveEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelectorPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelector
 }
 
 /// <summary>Selector for a Zone in route53 to populate hostedZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelector
 {
@@ -379,7 +379,7 @@ public partial class V1beta1HostedZoneDNSSECSpecInitProviderHostedZoneIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecInitProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1HostedZoneDNSSECSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedZoneDNSSECSpecManagementPoliciesEnum>))]
 public enum V1beta1HostedZoneDNSSECSpecManagementPoliciesEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1HostedZoneDNSSECSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecProviderConfigRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1HostedZoneDNSSECSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpecWriteConnectionSecretToRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1HostedZoneDNSSECSpecWriteConnectionSecretToRef
 }
 
 /// <summary>HostedZoneDNSSECSpec defines the desired state of HostedZoneDNSSEC</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECSpec
 {
@@ -507,7 +507,7 @@ public partial class V1beta1HostedZoneDNSSECSpec
     public V1beta1HostedZoneDNSSECSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECStatusAtProvider
 {
@@ -525,7 +525,7 @@ public partial class V1beta1HostedZoneDNSSECStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECStatusConditions
 {
@@ -568,7 +568,7 @@ public partial class V1beta1HostedZoneDNSSECStatusConditions
 }
 
 /// <summary>HostedZoneDNSSECStatus defines the observed state of HostedZoneDNSSEC.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedZoneDNSSECStatus
 {
@@ -589,7 +589,7 @@ public partial class V1beta1HostedZoneDNSSECStatus
 }
 
 /// <summary>HostedZoneDNSSEC is the Schema for the HostedZoneDNSSECs API. Manages Route 53 Hosted Zone DNSSEC</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedZoneDNSSEC : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HostedZoneDNSSECSpec>, IStatus<V1beta1HostedZoneDNSSECStatus?>

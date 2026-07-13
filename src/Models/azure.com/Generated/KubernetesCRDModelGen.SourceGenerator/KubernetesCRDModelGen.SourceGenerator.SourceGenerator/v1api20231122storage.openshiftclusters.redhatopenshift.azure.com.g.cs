@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.redhatopenshift.azure.com;
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/OpenShiftClusters/stable/2023-11-22/redhatopenshift.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/openShiftClusters/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231122storageOpenShiftClusterList : IKubernetesObject<V1ListMeta>, IItems<V1api20231122storageOpenShiftCluster>
@@ -45,7 +45,7 @@ public partial class V1api20231122storageOpenShiftClusterList : IKubernetesObjec
 /// Storage version of v1api20231122.APIServerProfile
 /// APIServerProfile represents an API server profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecApiserverProfile
 {
@@ -64,7 +64,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecApiserverProfile
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecClusterProfilePullSecret
 {
@@ -84,7 +84,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecClusterProfilePullS
 /// Storage version of v1api20231122.ClusterProfile
 /// ClusterProfile represents a cluster profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecClusterProfile
 {
@@ -119,7 +119,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecClusterProfile
 /// Storage version of v1api20231122.IngressProfile
 /// IngressProfile represents an ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecIngressProfiles
 {
@@ -138,7 +138,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecIngressProfiles
 }
 
 /// <summary>DiskEncryptionSetReference: The resource ID of an associated DiskEncryptionSet, if applicable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecMasterProfileDiskEncryptionSetReference
 {
@@ -164,7 +164,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecMasterProfileDiskEn
 }
 
 /// <summary>SubnetReference: The Azure resource ID of the master subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecMasterProfileSubnetReference
 {
@@ -193,7 +193,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecMasterProfileSubnet
 /// Storage version of v1api20231122.MasterProfile
 /// MasterProfile represents a master profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecMasterProfile
 {
@@ -223,7 +223,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecMasterProfile
 /// Storage version of v1api20231122.ManagedOutboundIPs
 /// ManagedOutboundIPs represents the desired managed outbound IPs for the cluster public load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfileLoadBalancerProfileManagedOutboundIps
 {
@@ -242,7 +242,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfileLoadB
 /// Storage version of v1api20231122.LoadBalancerProfile
 /// LoadBalancerProfile represents the profile of the cluster public load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfileLoadBalancerProfile
 {
@@ -265,7 +265,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfileLoadB
 /// Storage version of v1api20231122.NetworkProfile
 /// NetworkProfile represents a network profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfile
 {
@@ -301,7 +301,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecNetworkProfile
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecConfigMapExpressions
 {
@@ -342,7 +342,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecConfigM
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecretExpressions
 {
@@ -383,7 +383,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecretE
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecretsAdminCredentials
 {
@@ -412,7 +412,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecrets
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecretsPassword
 {
@@ -441,7 +441,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecrets
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecretsUsername
 {
@@ -466,7 +466,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecrets
 }
 
 /// <summary>Storage version of v1api20231122.OpenShiftClusterOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecrets
 {
@@ -506,7 +506,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpecSecrets
 /// Storage version of v1api20231122.OpenShiftClusterOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpec
 {
@@ -533,7 +533,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecOwner
 {
@@ -549,7 +549,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecOwner
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalProfileClientIdFromConfig
 {
@@ -569,7 +569,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalPro
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalProfileClientSecret
 {
@@ -589,7 +589,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalPro
 /// Storage version of v1api20231122.ServicePrincipalProfile
 /// ServicePrincipalProfile represents a service principal profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalProfile
 {
@@ -619,7 +619,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecServicePrincipalPro
 }
 
 /// <summary>DiskEncryptionSetReference: The resource ID of an associated DiskEncryptionSet, if applicable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfilesDiskEncryptionSetReference
 {
@@ -645,7 +645,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfilesDiskE
 }
 
 /// <summary>SubnetReference: The Azure resource ID of the worker subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfilesSubnetReference
 {
@@ -674,7 +674,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfilesSubne
 /// Storage version of v1api20231122.WorkerProfile
 /// WorkerProfile represents a worker profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfiles
 {
@@ -710,7 +710,7 @@ public partial class V1api20231122storageOpenShiftClusterSpecWorkerProfiles
 }
 
 /// <summary>Storage version of v1api20231122.OpenShiftCluster_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterSpec
 {
@@ -798,7 +798,7 @@ public partial class V1api20231122storageOpenShiftClusterSpec
 /// Storage version of v1api20231122.APIServerProfile_STATUS
 /// APIServerProfile represents an API server profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusApiserverProfile
 {
@@ -823,7 +823,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusApiserverProfile
 /// Storage version of v1api20231122.ClusterProfile_STATUS
 /// ClusterProfile represents a cluster profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusClusterProfile
 {
@@ -848,7 +848,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusClusterProfile
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusConditions
 {
@@ -897,7 +897,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusConditions
 /// Storage version of v1api20231122.ConsoleProfile_STATUS
 /// ConsoleProfile represents a console profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusConsoleProfile
 {
@@ -916,7 +916,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusConsoleProfile
 /// Storage version of v1api20231122.IngressProfile_STATUS
 /// IngressProfile represents an ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusIngressProfiles
 {
@@ -941,7 +941,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusIngressProfiles
 /// Storage version of v1api20231122.MasterProfile_STATUS
 /// MasterProfile represents a master profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusMasterProfile
 {
@@ -969,7 +969,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusMasterProfile
 /// Storage version of v1api20231122.EffectiveOutboundIP_STATUS
 /// EffectiveOutboundIP represents an effective outbound IP resource of the cluster public load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoadBalancerProfileEffectiveOutboundIps
 {
@@ -988,7 +988,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoa
 /// Storage version of v1api20231122.ManagedOutboundIPs_STATUS
 /// ManagedOutboundIPs represents the desired managed outbound IPs for the cluster public load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoadBalancerProfileManagedOutboundIps
 {
@@ -1007,7 +1007,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoa
 /// Storage version of v1api20231122.LoadBalancerProfile_STATUS
 /// LoadBalancerProfile represents the profile of the cluster public load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoadBalancerProfile
 {
@@ -1033,7 +1033,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfileLoa
 /// Storage version of v1api20231122.NetworkProfile_STATUS
 /// NetworkProfile represents a network profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfile
 {
@@ -1068,7 +1068,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusNetworkProfile
 /// Storage version of v1api20231122.ServicePrincipalProfile_STATUS
 /// ServicePrincipalProfile represents a service principal profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusServicePrincipalProfile
 {
@@ -1087,7 +1087,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusServicePrincipalP
 /// Storage version of v1api20231122.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusSystemData
 {
@@ -1121,7 +1121,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusSystemData
 /// Storage version of v1api20231122.WorkerProfile_STATUS
 /// WorkerProfile represents a worker profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusWorkerProfiles
 {
@@ -1158,7 +1158,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusWorkerProfiles
 /// Storage version of v1api20231122.WorkerProfile_STATUS
 /// WorkerProfile represents a worker profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatusWorkerProfilesStatus
 {
@@ -1195,7 +1195,7 @@ public partial class V1api20231122storageOpenShiftClusterStatusWorkerProfilesSta
 /// Storage version of v1api20231122.OpenShiftCluster_STATUS
 /// OpenShiftCluster represents an Azure Red Hat OpenShift cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231122storageOpenShiftClusterStatus
 {
@@ -1292,7 +1292,7 @@ public partial class V1api20231122storageOpenShiftClusterStatus
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/OpenShiftClusters/stable/2023-11-22/redhatopenshift.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/openShiftClusters/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231122storageOpenShiftCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20231122storageOpenShiftClusterSpec?>, IStatus<V1api20231122storageOpenShiftClusterStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.serviceprincipals.azuread.upbound.io;
 /// <summary>ClaimsMappingPolicyAssignment is the Schema for the ClaimsMappingPolicyAssignments API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClaimsMappingPolicyAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClaimsMappingPolicyAssignment>
@@ -45,7 +45,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentList : IKubernetesObjec
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecDeletionPolicyEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMa
 }
 
 /// <summary>Reference to a ClaimsMappingPolicy in policies to populate claimsMappingPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMa
 }
 
 /// <summary>Selector for a ClaimsMappingPolicy in policies to populate claimsMappingPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMappingPolicyIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderClaimsMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRefPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServiceP
 }
 
 /// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServiceP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServiceP
 }
 
 /// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServiceP
     public V1beta1ClaimsMappingPolicyAssignmentSpecForProviderServicePrincipalIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProvider
 {
@@ -390,7 +390,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRefPolicyResolutionEnum
 {
@@ -406,7 +406,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRefPolicyResolveEnum
 {
@@ -417,7 +417,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRefPolicy
 {
@@ -441,7 +441,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsM
 }
 
 /// <summary>Reference to a ClaimsMappingPolicy in policies to populate claimsMappingPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdRef
 {
@@ -460,7 +460,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelectorPolicyResolutionEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelectorPolicyResolveEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelectorPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsM
 }
 
 /// <summary>Selector for a ClaimsMappingPolicy in policies to populate claimsMappingPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsMappingPolicyIdSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderClaimsM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRefPolicyResolutionEnum
 {
@@ -553,7 +553,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipal
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRefPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRefPolicyResolveEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipal
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRefPolicy
 {
@@ -588,7 +588,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderService
 }
 
 /// <summary>Reference to a Principal in serviceprincipals to populate servicePrincipalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdRef
 {
@@ -607,7 +607,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderService
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelectorPolicyResolutionEnum
 {
@@ -623,7 +623,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipal
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelectorPolicyResolveEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipal
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelectorPolicy
 {
@@ -658,7 +658,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderService
 }
 
 /// <summary>Selector for a Principal in serviceprincipals to populate servicePrincipalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderServicePrincipalIdSelector
 {
@@ -690,7 +690,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProviderService
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProvider
 {
@@ -729,7 +729,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecManagementPoliciesEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecManagementPoliciesEnum
 {
@@ -753,7 +753,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -769,7 +769,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -780,7 +780,7 @@ public enum V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPolicy
 {
@@ -808,7 +808,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRefPo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRef
 {
@@ -827,7 +827,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpecWriteConnectionSecretToRef
 {
@@ -841,7 +841,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpecWriteConnectionSecr
 }
 
 /// <summary>ClaimsMappingPolicyAssignmentSpec defines the desired state of ClaimsMappingPolicyAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentSpec
 {
@@ -908,7 +908,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentSpec
     public V1beta1ClaimsMappingPolicyAssignmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentStatusAtProvider
 {
@@ -932,7 +932,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentStatusConditions
 {
@@ -975,7 +975,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentStatusConditions
 }
 
 /// <summary>ClaimsMappingPolicyAssignmentStatus defines the observed state of ClaimsMappingPolicyAssignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClaimsMappingPolicyAssignmentStatus
 {
@@ -996,7 +996,7 @@ public partial class V1beta1ClaimsMappingPolicyAssignmentStatus
 }
 
 /// <summary>ClaimsMappingPolicyAssignment is the Schema for the ClaimsMappingPolicyAssignments API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClaimsMappingPolicyAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClaimsMappingPolicyAssignmentSpec>, IStatus<V1beta1ClaimsMappingPolicyAssignmentStatus?>

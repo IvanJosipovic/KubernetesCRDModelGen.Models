@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.com;
 /// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240401storageWorkspacesComputeList : IKubernetesObject<V1ListMeta>, IItems<V1api20240401storageWorkspacesCompute>
@@ -42,7 +42,7 @@ public partial class V1api20240401storageWorkspacesComputeList : IKubernetesObje
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecIdentityUserAssignedIdentitiesReference
 {
@@ -71,7 +71,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecIdentityUserAssign
 /// Storage version of v1api20240401.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecIdentityUserAssignedIdentities
 {
@@ -91,7 +91,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecIdentityUserAssign
 /// Storage version of v1api20240401.ManagedServiceIdentity
 /// Managed service identity (system assigned and/or user assigned identities)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecIdentity
 {
@@ -114,7 +114,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpecConfigMapExpressions
 {
@@ -155,7 +155,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpecConfig
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpecSecretExpressions
 {
@@ -195,7 +195,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpecSecret
 /// Storage version of v1api20240401.WorkspacesComputeOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpec
 {
@@ -218,7 +218,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a machinelearningservices.azure.com/Workspace resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecOwner
 {
@@ -231,7 +231,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecOwner
 }
 
 /// <summary>SubnetReference: Virtual network subnet resource ID the compute nodes belong to</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesAksNetworkingConfigurationSubnetReference
 {
@@ -260,7 +260,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 /// Storage version of v1api20240401.AksNetworkingConfiguration
 /// Advance configuration for AKS networking
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesAksNetworkingConfiguration
 {
@@ -286,7 +286,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 }
 
 /// <summary>LoadBalancerSubnetReference: Load Balancer Subnet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesLoadBalancerSubnetReference
 {
@@ -315,7 +315,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesSslConfigurationCert
 {
@@ -335,7 +335,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesSslConfigurationKey
 {
@@ -355,7 +355,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 /// Storage version of v1api20240401.SslConfiguration
 /// The ssl configuration for scoring
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPropertiesSslConfiguration
 {
@@ -394,7 +394,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 }
 
 /// <summary>Storage version of v1api20240401.AKS_Properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksProperties
 {
@@ -440,7 +440,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksPrope
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksResourceReference
 {
@@ -466,7 +466,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAksResou
 }
 
 /// <summary>Storage version of v1api20240401.AKS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAks
 {
@@ -502,7 +502,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAks
 /// Storage version of v1api20240401.ScaleSettings
 /// scale settings for AML Compute
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesScaleSettings
 {
@@ -524,7 +524,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 }
 
 /// <summary>Reference: The ID of the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesSubnetReference
 {
@@ -553,7 +553,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// Storage version of v1api20240401.ResourceId
 /// Represents a resource ID. For example, for a subnet, it is the resource URL for the subnet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesSubnet
 {
@@ -573,7 +573,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesUserAccountCredentialsAdminUserPassword
 {
@@ -593,7 +593,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesUserAccountCredentialsAdminUserSshPublicKey
 {
@@ -613,7 +613,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// Storage version of v1api20240401.UserAccountCredentials
 /// Settings for user account that gets created on each on the nodes of a compute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesUserAccountCredentials
 {
@@ -643,7 +643,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 }
 
 /// <summary>Reference: Virtual Machine image path</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesVirtualMachineImageReference
 {
@@ -672,7 +672,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// Storage version of v1api20240401.VirtualMachineImage
 /// Virtual Machine image for Windows AML Compute
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputePropertiesVirtualMachineImage
 {
@@ -692,7 +692,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// Storage version of v1api20240401.AmlComputeProperties
 /// AML Compute properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputeProperties
 {
@@ -754,7 +754,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlComputeResourceReference
 {
@@ -780,7 +780,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 }
 
 /// <summary>Storage version of v1api20240401.AmlCompute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompute
 {
@@ -819,7 +819,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesAmlCompu
 /// Storage version of v1api20240401.Docker
 /// Docker container configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesDocker
 {
@@ -838,7 +838,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.Endpoint
 /// Describes the endpoint configuration for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesEndpoints
 {
@@ -869,7 +869,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.EnvironmentVariable
 /// Environment Variables for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesEnvironmentVariables
 {
@@ -891,7 +891,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.Image
 /// Describes the Image Specifications
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesImage
 {
@@ -913,7 +913,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.BindOptions
 /// Describes the bind options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesVolumesBind
 {
@@ -938,7 +938,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.TmpfsOptions
 /// Describes the tmpfs options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesVolumesTmpfs
 {
@@ -957,7 +957,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.VolumeOptions
 /// Describes the volume options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesVolumesVolume
 {
@@ -976,7 +976,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.VolumeDefinition
 /// Describes the volume configuration for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServicesVolumes
 {
@@ -1028,7 +1028,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.CustomService
 /// Specifies the custom service configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesCustomServices
 {
@@ -1070,7 +1070,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesPersonalComputeInstanceSettingsAssignedUserObjectIdFromConfig
 {
@@ -1090,7 +1090,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesPersonalComputeInstanceSettingsAssignedUserTenantIdFromConfig
 {
@@ -1110,7 +1110,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.AssignedUser
 /// A user that can be assigned to a compute instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesPersonalComputeInstanceSettingsAssignedUser
 {
@@ -1146,7 +1146,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.PersonalComputeInstanceSettings
 /// Settings for a personal compute instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesPersonalComputeInstanceSettings
 {
@@ -1169,7 +1169,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.Cron
 /// The workflow trigger cron for ComputeStartStop schedule type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStopCron
 {
@@ -1191,7 +1191,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>Storage version of v1api20240401.ComputeRecurrenceSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStopRecurrenceSchedule
 {
@@ -1219,7 +1219,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.Recurrence
 /// The workflow trigger recurrence for ComputeStartStop schedule type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStopRecurrence
 {
@@ -1248,7 +1248,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>Reference: A system assigned id for the schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStopScheduleReference
 {
@@ -1274,7 +1274,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>Storage version of v1api20240401.ScheduleBase</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStopSchedule
 {
@@ -1300,7 +1300,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ComputeStartStopSchedule
 /// Compute start stop schedule properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedulesComputeStartStop
 {
@@ -1343,7 +1343,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ComputeSchedules
 /// The list of schedules to be applied on the computes
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSchedules
 {
@@ -1362,7 +1362,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ScriptReference
 /// Script reference
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSetupScriptsScriptsCreationScript
 {
@@ -1390,7 +1390,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ScriptReference
 /// Script reference
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSetupScriptsScriptsStartupScript
 {
@@ -1418,7 +1418,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ScriptsToExecute
 /// Customized setup scripts
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSetupScriptsScripts
 {
@@ -1448,7 +1448,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.SetupScripts
 /// Details of customized scripts to execute for setting up the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSetupScripts
 {
@@ -1471,7 +1471,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ComputeInstanceSshSettings
 /// Specifies policy and settings for SSH access.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSshSettings
 {
@@ -1490,7 +1490,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>Reference: The ID of the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSubnetReference
 {
@@ -1519,7 +1519,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ResourceId
 /// Represents a resource ID. For example, for a subnet, it is the resource URL for the subnet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstancePropertiesSubnet
 {
@@ -1539,7 +1539,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 /// Storage version of v1api20240401.ComputeInstanceProperties
 /// Compute Instance properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstanceProperties
 {
@@ -1602,7 +1602,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstanceResourceReference
 {
@@ -1628,7 +1628,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>Storage version of v1api20240401.ComputeInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeInstance
 {
@@ -1664,7 +1664,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesComputeI
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataFactoryResourceReference
 {
@@ -1690,7 +1690,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataFact
 }
 
 /// <summary>Storage version of v1api20240401.DataFactory</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataFactory
 {
@@ -1719,7 +1719,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataFact
 }
 
 /// <summary>Storage version of v1api20240401.DataLakeAnalytics_Properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLakeAnalyticsProperties
 {
@@ -1735,7 +1735,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLake
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLakeAnalyticsResourceReference
 {
@@ -1761,7 +1761,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLake
 }
 
 /// <summary>Storage version of v1api20240401.DataLakeAnalytics</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLakeAnalytics
 {
@@ -1797,7 +1797,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDataLake
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabricksPropertiesDatabricksAccessToken
 {
@@ -1817,7 +1817,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabric
 /// Storage version of v1api20240401.DatabricksProperties
 /// Properties of Databricks
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabricksProperties
 {
@@ -1840,7 +1840,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabric
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabricksResourceReference
 {
@@ -1866,7 +1866,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabric
 }
 
 /// <summary>Storage version of v1api20240401.Databricks</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabricks
 {
@@ -1905,7 +1905,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesDatabric
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightPropertiesAdministratorAccountPassword
 {
@@ -1925,7 +1925,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightPropertiesAdministratorAccountPrivateKeyData
 {
@@ -1945,7 +1945,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightPropertiesAdministratorAccountPublicKeyData
 {
@@ -1965,7 +1965,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 /// Storage version of v1api20240401.VirtualMachineSshCredentials
 /// Admin credentials for virtual machine
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightPropertiesAdministratorAccount
 {
@@ -2005,7 +2005,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 /// Storage version of v1api20240401.HDInsightProperties
 /// HDInsight compute properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightProperties
 {
@@ -2031,7 +2031,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsightResourceReference
 {
@@ -2057,7 +2057,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 }
 
 /// <summary>Storage version of v1api20240401.HDInsight</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsight
 {
@@ -2096,7 +2096,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesHdInsigh
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesPropertiesExtensionPrincipalIdFromConfig
 {
@@ -2113,7 +2113,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 }
 
 /// <summary>Storage version of v1api20240401.InstanceTypeSchema_Resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesPropertiesInstanceTypesResources
 {
@@ -2135,7 +2135,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 /// Storage version of v1api20240401.InstanceTypeSchema
 /// Instance type schema.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesPropertiesInstanceTypes
 {
@@ -2158,7 +2158,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesPropertiesRelayConnectionString
 {
@@ -2178,7 +2178,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesPropertiesServiceBusConnectionString
 {
@@ -2198,7 +2198,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 /// Storage version of v1api20240401.KubernetesProperties
 /// Kubernetes properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesProperties
 {
@@ -2250,7 +2250,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetesResourceReference
 {
@@ -2276,7 +2276,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 }
 
 /// <summary>Storage version of v1api20240401.Kubernetes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernetes
 {
@@ -2315,7 +2315,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesKubernet
 /// Storage version of v1api20240401.AutoPauseProperties
 /// Auto pause properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseSparkPropertiesAutoPauseProperties
 {
@@ -2337,7 +2337,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseS
 /// Storage version of v1api20240401.AutoScaleProperties
 /// Auto scale properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseSparkPropertiesAutoScaleProperties
 {
@@ -2359,7 +2359,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseS
 }
 
 /// <summary>Storage version of v1api20240401.SynapseSpark_Properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseSparkProperties
 {
@@ -2410,7 +2410,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseS
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseSparkResourceReference
 {
@@ -2436,7 +2436,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseS
 }
 
 /// <summary>Storage version of v1api20240401.SynapseSpark</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseSpark
 {
@@ -2472,7 +2472,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesSynapseS
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachinePropertiesAdministratorAccountPassword
 {
@@ -2492,7 +2492,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachinePropertiesAdministratorAccountPrivateKeyData
 {
@@ -2512,7 +2512,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachinePropertiesAdministratorAccountPublicKeyData
 {
@@ -2532,7 +2532,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 /// Storage version of v1api20240401.VirtualMachineSshCredentials
 /// Admin credentials for virtual machine
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachinePropertiesAdministratorAccount
 {
@@ -2569,7 +2569,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 }
 
 /// <summary>Storage version of v1api20240401.VirtualMachine_Properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachineProperties
 {
@@ -2604,7 +2604,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 }
 
 /// <summary>ResourceReference: ARM resource id of the underlying compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachineResourceReference
 {
@@ -2630,7 +2630,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 }
 
 /// <summary>Storage version of v1api20240401.VirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualMachine
 {
@@ -2663,7 +2663,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecPropertiesVirtualM
 }
 
 /// <summary>Storage version of v1api20240401.Compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecProperties
 {
@@ -2719,7 +2719,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecProperties
 /// Storage version of v1api20240401.Sku
 /// The resource model definition representing SKU
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpecSku
 {
@@ -2747,7 +2747,7 @@ public partial class V1api20240401storageWorkspacesComputeSpecSku
 }
 
 /// <summary>Storage version of v1api20240401.WorkspacesCompute_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeSpec
 {
@@ -2809,7 +2809,7 @@ public partial class V1api20240401storageWorkspacesComputeSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusConditions
 {
@@ -2858,7 +2858,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusConditions
 /// Storage version of v1api20240401.UserAssignedIdentity_STATUS
 /// User assigned identity properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusIdentityUserAssignedIdentities
 {
@@ -2880,7 +2880,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusIdentityUserAssi
 /// Storage version of v1api20240401.ManagedServiceIdentity_STATUS
 /// Managed service identity (system assigned and/or user assigned identities)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusIdentity
 {
@@ -2908,7 +2908,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusIdentity
 /// Storage version of v1api20240401.AksNetworkingConfiguration_STATUS
 /// Advance configuration for AKS networking
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPropertiesAksNetworkingConfiguration
 {
@@ -2936,7 +2936,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Storage version of v1api20240401.SslConfiguration_STATUS
 /// The ssl configuration for scoring
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPropertiesSslConfiguration
 {
@@ -2964,7 +2964,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Storage version of v1api20240401.SystemService_STATUS
 /// A system service running on a compute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPropertiesSystemServices
 {
@@ -2986,7 +2986,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 }
 
 /// <summary>Storage version of v1api20240401.AKS_Properties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProperties
 {
@@ -3037,7 +3037,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProvisioningErrorsErrorAdditionalInfo
 {
@@ -3059,7 +3059,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -3078,7 +3078,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProvisioningErrorsErrorDetails
 {
@@ -3106,7 +3106,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProvisioningErrorsError
 {
@@ -3138,7 +3138,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksProvisioningErrors
 {
@@ -3158,7 +3158,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAksPro
 }
 
 /// <summary>Storage version of v1api20240401.AKS_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAks
 {
@@ -3208,7 +3208,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAks
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesErrorsErrorAdditionalInfo
 {
@@ -3230,7 +3230,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesErrorsErrorDetailsAdditionalInfo
 {
@@ -3249,7 +3249,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesErrorsErrorDetails
 {
@@ -3277,7 +3277,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesErrorsError
 {
@@ -3309,7 +3309,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesErrors
 {
@@ -3332,7 +3332,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.NodeStateCounts_STATUS
 /// Counts of various compute node states on the amlCompute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesNodeStateCounts
 {
@@ -3366,7 +3366,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ScaleSettings_STATUS
 /// scale settings for AML Compute
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesScaleSettings
 {
@@ -3391,7 +3391,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ResourceId_STATUS
 /// Represents a resource ID. For example, for a subnet, it is the resource URL for the subnet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesSubnet
 {
@@ -3410,7 +3410,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.UserAccountCredentials_STATUS
 /// Settings for user account that gets created on each on the nodes of a compute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesUserAccountCredentials
 {
@@ -3429,7 +3429,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.VirtualMachineImage_STATUS
 /// Virtual Machine image for Windows AML Compute
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputePropertiesVirtualMachineImage
 {
@@ -3448,7 +3448,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.AmlComputeProperties_STATUS
 /// AML Compute properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProperties
 {
@@ -3535,7 +3535,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProvisioningErrorsErrorAdditionalInfo
 {
@@ -3557,7 +3557,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -3576,7 +3576,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProvisioningErrorsErrorDetails
 {
@@ -3604,7 +3604,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProvisioningErrorsError
 {
@@ -3636,7 +3636,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlComputeProvisioningErrors
 {
@@ -3656,7 +3656,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 }
 
 /// <summary>Storage version of v1api20240401.AmlCompute_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCompute
 {
@@ -3709,7 +3709,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesAmlCom
 /// Storage version of v1api20240401.ComputeInstanceApplication_STATUS
 /// Defines an Aml Instance application and its connectivity endpoint URI.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesApplications
 {
@@ -3731,7 +3731,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceConnectivityEndpoints_STATUS
 /// Defines all connectivity endpoints and properties for an ComputeInstance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesConnectivityEndpoints
 {
@@ -3753,7 +3753,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceEnvironmentInfo_STATUS
 /// Environment information
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesContainersEnvironment
 {
@@ -3775,7 +3775,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceContainer_STATUS
 /// Defines an Aml Instance container.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesContainers
 {
@@ -3813,7 +3813,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceCreatedBy_STATUS
 /// Describes information on user who created this ComputeInstance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCreatedBy
 {
@@ -3838,7 +3838,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.Docker_STATUS
 /// Docker container configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesDocker
 {
@@ -3857,7 +3857,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.Endpoint_STATUS
 /// Describes the endpoint configuration for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesEndpoints
 {
@@ -3888,7 +3888,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.EnvironmentVariable_STATUS
 /// Environment Variables for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesEnvironmentVariables
 {
@@ -3910,7 +3910,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.Image_STATUS
 /// Describes the Image Specifications
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesImage
 {
@@ -3932,7 +3932,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.BindOptions_STATUS
 /// Describes the bind options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesVolumesBind
 {
@@ -3957,7 +3957,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.TmpfsOptions_STATUS
 /// Describes the tmpfs options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesVolumesTmpfs
 {
@@ -3976,7 +3976,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.VolumeOptions_STATUS
 /// Describes the volume options for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesVolumesVolume
 {
@@ -3995,7 +3995,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.VolumeDefinition_STATUS
 /// Describes the volume configuration for the container
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServicesVolumes
 {
@@ -4047,7 +4047,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.CustomService_STATUS
 /// Specifies the custom service configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesCustomServices
 {
@@ -4089,7 +4089,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceDataDisk_STATUS
 /// Defines an Aml Instance DataDisk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesDataDisks
 {
@@ -4117,7 +4117,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceDataMount_STATUS
 /// Defines an Aml Instance DataMount.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesDataMounts
 {
@@ -4160,7 +4160,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesErrorsErrorAdditionalInfo
 {
@@ -4182,7 +4182,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesErrorsErrorDetailsAdditionalInfo
 {
@@ -4201,7 +4201,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesErrorsErrorDetails
 {
@@ -4229,7 +4229,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesErrorsError
 {
@@ -4261,7 +4261,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesErrors
 {
@@ -4284,7 +4284,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceLastOperation_STATUS
 /// The last operation on ComputeInstance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesLastOperation
 {
@@ -4312,7 +4312,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ImageMetadata_STATUS
 /// Returns metadata about the operating system image for this compute instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesOsImageMetadata
 {
@@ -4337,7 +4337,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.AssignedUser_STATUS
 /// A user that can be assigned to a compute instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesPersonalComputeInstanceSettingsAssignedUser
 {
@@ -4359,7 +4359,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.PersonalComputeInstanceSettings_STATUS
 /// Settings for a personal compute instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesPersonalComputeInstanceSettings
 {
@@ -4382,7 +4382,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.Cron_STATUS
 /// The workflow trigger cron for ComputeStartStop schedule type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedulesComputeStartStopCron
 {
@@ -4404,7 +4404,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 }
 
 /// <summary>Storage version of v1api20240401.ComputeRecurrenceSchedule_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedulesComputeStartStopRecurrenceSchedule
 {
@@ -4432,7 +4432,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.Recurrence_STATUS
 /// The workflow trigger recurrence for ComputeStartStop schedule type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedulesComputeStartStopRecurrence
 {
@@ -4461,7 +4461,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 }
 
 /// <summary>Storage version of v1api20240401.ScheduleBase_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedulesComputeStartStopSchedule
 {
@@ -4486,7 +4486,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeStartStopSchedule_STATUS
 /// Compute start stop schedule properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedulesComputeStartStop
 {
@@ -4535,7 +4535,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeSchedules_STATUS
 /// The list of schedules to be applied on the computes
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSchedules
 {
@@ -4554,7 +4554,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ScriptReference_STATUS
 /// Script reference
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSetupScriptsScriptsCreationScript
 {
@@ -4582,7 +4582,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ScriptReference_STATUS
 /// Script reference
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSetupScriptsScriptsStartupScript
 {
@@ -4610,7 +4610,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ScriptsToExecute_STATUS
 /// Customized setup scripts
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSetupScriptsScripts
 {
@@ -4640,7 +4640,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.SetupScripts_STATUS
 /// Details of customized scripts to execute for setting up the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSetupScripts
 {
@@ -4663,7 +4663,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceSshSettings_STATUS
 /// Specifies policy and settings for SSH access.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSshSettings
 {
@@ -4691,7 +4691,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ResourceId_STATUS
 /// Represents a resource ID. For example, for a subnet, it is the resource URL for the subnet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesSubnet
 {
@@ -4710,7 +4710,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceVersion_STATUS
 /// Version of computeInstance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstancePropertiesVersions
 {
@@ -4729,7 +4729,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ComputeInstanceProperties_STATUS
 /// Compute Instance properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProperties
 {
@@ -4848,7 +4848,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProvisioningErrorsErrorAdditionalInfo
 {
@@ -4870,7 +4870,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -4889,7 +4889,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProvisioningErrorsErrorDetails
 {
@@ -4917,7 +4917,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProvisioningErrorsError
 {
@@ -4949,7 +4949,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstanceProvisioningErrors
 {
@@ -4969,7 +4969,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 }
 
 /// <summary>Storage version of v1api20240401.ComputeInstance_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComputeInstance
 {
@@ -5022,7 +5022,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesComput
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactoryProvisioningErrorsErrorAdditionalInfo
 {
@@ -5044,7 +5044,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactoryProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -5063,7 +5063,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactoryProvisioningErrorsErrorDetails
 {
@@ -5091,7 +5091,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactoryProvisioningErrorsError
 {
@@ -5123,7 +5123,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactoryProvisioningErrors
 {
@@ -5143,7 +5143,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 }
 
 /// <summary>Storage version of v1api20240401.DataFactory_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFactory
 {
@@ -5186,7 +5186,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataFa
 }
 
 /// <summary>Storage version of v1api20240401.DataLakeAnalytics_Properties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProperties
 {
@@ -5205,7 +5205,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProvisioningErrorsErrorAdditionalInfo
 {
@@ -5227,7 +5227,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -5246,7 +5246,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProvisioningErrorsErrorDetails
 {
@@ -5274,7 +5274,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProvisioningErrorsError
 {
@@ -5306,7 +5306,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalyticsProvisioningErrors
 {
@@ -5326,7 +5326,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 }
 
 /// <summary>Storage version of v1api20240401.DataLakeAnalytics_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLakeAnalytics
 {
@@ -5376,7 +5376,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDataLa
 /// Storage version of v1api20240401.DatabricksProperties_STATUS
 /// Properties of Databricks
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProperties
 {
@@ -5395,7 +5395,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProvisioningErrorsErrorAdditionalInfo
 {
@@ -5417,7 +5417,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -5436,7 +5436,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProvisioningErrorsErrorDetails
 {
@@ -5464,7 +5464,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProvisioningErrorsError
 {
@@ -5496,7 +5496,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricksProvisioningErrors
 {
@@ -5516,7 +5516,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 }
 
 /// <summary>Storage version of v1api20240401.Databricks_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabricks
 {
@@ -5569,7 +5569,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesDatabr
 /// Storage version of v1api20240401.VirtualMachineSshCredentials_STATUS
 /// Admin credentials for virtual machine
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightPropertiesAdministratorAccount
 {
@@ -5588,7 +5588,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 /// Storage version of v1api20240401.HDInsightProperties_STATUS
 /// HDInsight compute properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProperties
 {
@@ -5617,7 +5617,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProvisioningErrorsErrorAdditionalInfo
 {
@@ -5639,7 +5639,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -5658,7 +5658,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProvisioningErrorsErrorDetails
 {
@@ -5686,7 +5686,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProvisioningErrorsError
 {
@@ -5718,7 +5718,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsightProvisioningErrors
 {
@@ -5738,7 +5738,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 }
 
 /// <summary>Storage version of v1api20240401.HDInsight_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsight
 {
@@ -5788,7 +5788,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesHdInsi
 }
 
 /// <summary>Storage version of v1api20240401.InstanceTypeSchema_Resources_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesPropertiesInstanceTypesResources
 {
@@ -5810,7 +5810,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.InstanceTypeSchema_STATUS
 /// Instance type schema.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesPropertiesInstanceTypes
 {
@@ -5833,7 +5833,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.KubernetesProperties_STATUS
 /// Kubernetes properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProperties
 {
@@ -5867,7 +5867,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProvisioningErrorsErrorAdditionalInfo
 {
@@ -5889,7 +5889,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -5908,7 +5908,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProvisioningErrorsErrorDetails
 {
@@ -5936,7 +5936,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProvisioningErrorsError
 {
@@ -5968,7 +5968,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetesProvisioningErrors
 {
@@ -5988,7 +5988,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 }
 
 /// <summary>Storage version of v1api20240401.Kubernetes_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubernetes
 {
@@ -6041,7 +6041,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesKubern
 /// Storage version of v1api20240401.AutoPauseProperties_STATUS
 /// Auto pause properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkPropertiesAutoPauseProperties
 {
@@ -6063,7 +6063,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Storage version of v1api20240401.AutoScaleProperties_STATUS
 /// Auto scale properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkPropertiesAutoScaleProperties
 {
@@ -6085,7 +6085,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 }
 
 /// <summary>Storage version of v1api20240401.SynapseSpark_Properties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProperties
 {
@@ -6139,7 +6139,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProvisioningErrorsErrorAdditionalInfo
 {
@@ -6161,7 +6161,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -6180,7 +6180,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProvisioningErrorsErrorDetails
 {
@@ -6208,7 +6208,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProvisioningErrorsError
 {
@@ -6240,7 +6240,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSparkProvisioningErrors
 {
@@ -6260,7 +6260,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 }
 
 /// <summary>Storage version of v1api20240401.SynapseSpark_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynapseSpark
 {
@@ -6310,7 +6310,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesSynaps
 /// Storage version of v1api20240401.VirtualMachineSshCredentials_STATUS
 /// Admin credentials for virtual machine
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachinePropertiesAdministratorAccount
 {
@@ -6326,7 +6326,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 }
 
 /// <summary>Storage version of v1api20240401.VirtualMachine_Properties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProperties
 {
@@ -6364,7 +6364,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProvisioningErrorsErrorAdditionalInfo
 {
@@ -6386,7 +6386,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 /// Storage version of v1api20240401.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProvisioningErrorsErrorDetailsAdditionalInfo
 {
@@ -6405,7 +6405,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 }
 
 /// <summary>Storage version of v1api20240401.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProvisioningErrorsErrorDetails
 {
@@ -6433,7 +6433,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 /// Storage version of v1api20240401.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProvisioningErrorsError
 {
@@ -6465,7 +6465,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 /// Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also
 /// follows the OData error response format.).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachineProvisioningErrors
 {
@@ -6485,7 +6485,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 }
 
 /// <summary>Storage version of v1api20240401.VirtualMachine_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtualMachine
 {
@@ -6532,7 +6532,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusPropertiesVirtua
 }
 
 /// <summary>Storage version of v1api20240401.Compute_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusProperties
 {
@@ -6588,7 +6588,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusProperties
 /// Storage version of v1api20240401.Sku_STATUS
 /// The resource model definition representing SKU
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusSku
 {
@@ -6619,7 +6619,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusSku
 /// Storage version of v1api20240401.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatusSystemData
 {
@@ -6650,7 +6650,7 @@ public partial class V1api20240401storageWorkspacesComputeStatusSystemData
 }
 
 /// <summary>Storage version of v1api20240401.WorkspacesCompute_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240401storageWorkspacesComputeStatus
 {
@@ -6711,7 +6711,7 @@ public partial class V1api20240401storageWorkspacesComputeStatus
 /// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240401storageWorkspacesCompute : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240401storageWorkspacesComputeSpec?>, IStatus<V1api20240401storageWorkspacesComputeStatus?>

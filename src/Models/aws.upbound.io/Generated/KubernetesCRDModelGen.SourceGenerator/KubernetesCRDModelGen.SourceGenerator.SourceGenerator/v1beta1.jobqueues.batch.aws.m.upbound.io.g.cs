@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.batch.aws.m.upbound.io;
 /// <summary>JobQueue is the Schema for the JobQueues API. Provides a Batch Job Queue resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobQueueList : IKubernetesObject<V1ListMeta>, IItems<V1beta1JobQueue>
@@ -42,7 +42,7 @@ public partial class V1beta1JobQueueList : IKubernetesObject<V1ListMeta>, IItems
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironm
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComput
 }
 
 /// <summary>Reference to a ComputeEnvironment in batch to populate computeEnvironment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComput
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironm
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComput
 }
 
 /// <summary>Selector for a ComputeEnvironment in batch to populate computeEnvironment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComput
     public V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrder
 {
@@ -212,7 +212,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrder
     public double? Order { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderJobStateTimeLimitAction
 {
@@ -239,7 +239,7 @@ public partial class V1beta1JobQueueSpecForProviderJobStateTimeLimitAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolutionEnum
 {
@@ -255,7 +255,7 @@ public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolveEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicy
 {
@@ -290,7 +290,7 @@ public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnRefPolicy
 }
 
 /// <summary>Reference to a SchedulingPolicy in batch to populate schedulingPolicyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnRef
 {
@@ -313,7 +313,7 @@ public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResolutionEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResolveEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicy
 {
@@ -364,7 +364,7 @@ public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPo
 }
 
 /// <summary>Selector for a SchedulingPolicy in batch to populate schedulingPolicyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelector
 {
@@ -388,7 +388,7 @@ public partial class V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelector
     public V1beta1JobQueueSpecForProviderSchedulingPolicyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProvider
 {
@@ -441,7 +441,7 @@ public partial class V1beta1JobQueueSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolutionEnum
 {
@@ -457,7 +457,7 @@ public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnviron
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRefPolicyResolveEnum
 {
@@ -468,7 +468,7 @@ public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnviron
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRefPolicy
 {
@@ -492,7 +492,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderCompu
 }
 
 /// <summary>Reference to a ComputeEnvironment in batch to populate computeEnvironment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentRef
 {
@@ -515,7 +515,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderCompu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolutionEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnviron
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicyResolveEnum
 {
@@ -542,7 +542,7 @@ public enum V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnviron
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicy
 {
@@ -566,7 +566,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderCompu
 }
 
 /// <summary>Selector for a ComputeEnvironment in batch to populate computeEnvironment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelector
 {
@@ -590,7 +590,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderCompu
     public V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderComputeEnvironmentSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder
 {
@@ -611,7 +611,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder
     public double? Order { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderJobStateTimeLimitAction
 {
@@ -638,7 +638,7 @@ public partial class V1beta1JobQueueSpecInitProviderJobStateTimeLimitAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolutionEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolveEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRefPolicy
 }
 
 /// <summary>Reference to a SchedulingPolicy in batch to populate schedulingPolicyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRef
 {
@@ -712,7 +712,7 @@ public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyResolutionEnum
 {
@@ -728,7 +728,7 @@ public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyResolveEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorPolicy
 {
@@ -763,7 +763,7 @@ public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelectorP
 }
 
 /// <summary>Selector for a SchedulingPolicy in batch to populate schedulingPolicyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelector
 {
@@ -799,7 +799,7 @@ public partial class V1beta1JobQueueSpecInitProviderSchedulingPolicyArnSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProvider
 {
@@ -843,7 +843,7 @@ public partial class V1beta1JobQueueSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobQueueSpecManagementPoliciesEnum>))]
 public enum V1beta1JobQueueSpecManagementPoliciesEnum
 {
@@ -866,7 +866,7 @@ public enum V1beta1JobQueueSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecProviderConfigRef
 {
@@ -885,7 +885,7 @@ public partial class V1beta1JobQueueSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecWriteConnectionSecretToRef
 {
@@ -895,7 +895,7 @@ public partial class V1beta1JobQueueSpecWriteConnectionSecretToRef
 }
 
 /// <summary>JobQueueSpec defines the desired state of JobQueue</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpec
 {
@@ -946,7 +946,7 @@ public partial class V1beta1JobQueueSpec
     public V1beta1JobQueueSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder
 {
@@ -959,7 +959,7 @@ public partial class V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder
     public double? Order { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProviderJobStateTimeLimitAction
 {
@@ -980,7 +980,7 @@ public partial class V1beta1JobQueueStatusAtProviderJobStateTimeLimitAction
     public string? State { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProvider
 {
@@ -1031,7 +1031,7 @@ public partial class V1beta1JobQueueStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusConditions
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta1JobQueueStatusConditions
 }
 
 /// <summary>JobQueueStatus defines the observed state of JobQueue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatus
 {
@@ -1095,7 +1095,7 @@ public partial class V1beta1JobQueueStatus
 }
 
 /// <summary>JobQueue is the Schema for the JobQueues API. Provides a Batch Job Queue resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobQueue : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1JobQueueSpec>, IStatus<V1beta1JobQueueStatus?>

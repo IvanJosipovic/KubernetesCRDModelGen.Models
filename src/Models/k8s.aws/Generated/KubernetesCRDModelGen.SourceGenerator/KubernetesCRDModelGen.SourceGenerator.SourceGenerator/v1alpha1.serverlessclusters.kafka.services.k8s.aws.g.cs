@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kafka.services.k8s.aws;
 /// <summary>ServerlessCluster is the Schema for the ServerlessClusters API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServerlessClusterList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ServerlessCluster>
@@ -40,7 +40,7 @@ public partial class V1alpha1ServerlessClusterList : IKubernetesObject<V1ListMet
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecAssociatedSCRAMSecretRefsFrom
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1ServerlessClusterSpecAssociatedSCRAMSecretRefsFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecAssociatedSCRAMSecretRefs
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1ServerlessClusterSpecAssociatedSCRAMSecretRefs
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoClientSubnetRefsFrom
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoClientSubnetRefs
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 }
 
 /// <summary>Public access control for brokers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoPublicAccess
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 }
 
 /// <summary>Information about the broker access configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfo
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoSecurityGroupRefsFrom
 {
@@ -160,7 +160,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoSecurityGroupRefs
 {
@@ -176,7 +176,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 /// Contains information about provisioned throughput for EBS storage volumes
 /// attached to kafka broker nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 /// Contains information about the EBS storage volumes attached to Apache Kafka
 /// broker nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 {
@@ -207,7 +207,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 }
 
 /// <summary>Contains information about storage volumes attached to MSK broker nodes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoStorageInfo
 {
@@ -220,7 +220,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 }
 
 /// <summary>Describes the setup to be used for Apache Kafka broker nodes in the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
 }
 
 /// <summary>Details for IAM access control.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticationSaslIam
 {
@@ -272,7 +272,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
 }
 
 /// <summary>Details for SASL/SCRAM client authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticationSaslScram
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
 }
 
 /// <summary>Details for client authentication using SASL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticationSasl
 {
@@ -295,7 +295,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
 }
 
 /// <summary>Details for client authentication using TLS.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticationTls
 {
@@ -306,7 +306,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticationUnauthenticated
 {
@@ -315,7 +315,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
 }
 
 /// <summary>Includes all client authentication information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthentication
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedClientAuthenticatio
 }
 
 /// <summary>Specifies the configuration to use for the brokers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedConfigurationInfo
 {
@@ -344,7 +344,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedConfigurationInfo
 }
 
 /// <summary>The data-volume encryption details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfoEncryptionAtRest
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfoEncry
 }
 
 /// <summary>The settings for encrypting data in transit.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfoEncryptionInTransit
 {
@@ -370,7 +370,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfoEncry
 /// encrypting data at rest and whether you want MSK to encrypt your data in
 /// transit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfo
 {
@@ -383,7 +383,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedEncryptionInfo
     public V1alpha1ServerlessClusterSpecProvisionedEncryptionInfoEncryptionInTransit? EncryptionInTransit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLogsCloudWatchLogs
 {
@@ -394,7 +394,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLo
     public string? LogGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLogsFirehose
 {
@@ -405,7 +405,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLo
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLogsS3
 {
@@ -419,7 +419,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLo
     public string? Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLogs
 {
@@ -433,7 +433,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLo
     public V1alpha1ServerlessClusterSpecProvisionedLoggingInfoBrokerLogsS3? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfo
 {
@@ -442,7 +442,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedLoggingInfo
 }
 
 /// <summary>Indicates whether you want to turn on or turn off the JMX Exporter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringPrometheusJmxExporter
 {
@@ -451,7 +451,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringProme
 }
 
 /// <summary>Indicates whether you want to turn on or turn off the Node Exporter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringPrometheusNodeExporter
 {
@@ -460,7 +460,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringProme
 }
 
 /// <summary>Prometheus settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringPrometheus
 {
@@ -474,7 +474,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoringProme
 }
 
 /// <summary>JMX and Node monitoring for the MSK cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoring
 {
@@ -490,7 +490,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedOpenMonitoring
 /// up or down. By default, intelligent rebalancing is ACTIVE for all new Express-based
 /// clusters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisionedRebalancing
 {
@@ -503,7 +503,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedRebalancing
 }
 
 /// <summary>Information about the provisioned cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecProvisioned
 {
@@ -565,7 +565,7 @@ public partial class V1alpha1ServerlessClusterSpecProvisioned
 }
 
 /// <summary>Details for IAM access control.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthenticationSaslIam
 {
@@ -574,7 +574,7 @@ public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthentication
 }
 
 /// <summary>Details for client authentication using SASL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthenticationSasl
 {
@@ -584,7 +584,7 @@ public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthentication
 }
 
 /// <summary>Includes all client authentication information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthentication
 {
@@ -594,7 +594,7 @@ public partial class V1alpha1ServerlessClusterSpecServerlessClientAuthentication
 }
 
 /// <summary>The configuration of the Amazon VPCs for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecServerlessVpcConfigs
 {
@@ -606,7 +606,7 @@ public partial class V1alpha1ServerlessClusterSpecServerlessVpcConfigs
 }
 
 /// <summary>Information about the serverless cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpecServerless
 {
@@ -619,7 +619,7 @@ public partial class V1alpha1ServerlessClusterSpecServerless
 }
 
 /// <summary>ServerlessClusterSpec defines the desired state of ServerlessCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterSpec
 {
@@ -651,7 +651,7 @@ public partial class V1alpha1ServerlessClusterSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterStatusAckResourceMetadata
 {
@@ -688,7 +688,7 @@ public partial class V1alpha1ServerlessClusterStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterStatusConditions
 {
@@ -714,7 +714,7 @@ public partial class V1alpha1ServerlessClusterStatusConditions
 }
 
 /// <summary>ServerlessClusterStatus defines the observed state of ServerlessCluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessClusterStatus
 {
@@ -752,7 +752,7 @@ public partial class V1alpha1ServerlessClusterStatus
 }
 
 /// <summary>ServerlessCluster is the Schema for the ServerlessClusters API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServerlessCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ServerlessClusterSpec?>, IStatus<V1alpha1ServerlessClusterStatus?>

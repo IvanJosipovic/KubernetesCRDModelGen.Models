@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataplex.cnrm.cloud.google.com;
 /// <summary>DataplexTask is the Schema for the DataplexTask API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataplexTaskList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DataplexTask>
@@ -37,7 +37,7 @@ public partial class V1alpha1DataplexTaskList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>Optional. The Cloud KMS key to use for encryption, of the form: `projects/{project_number}/locations/{location_id}/keyRings/{key-ring-name}/cryptoKeys/{key-name}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecExecutionSpecKmsKeyRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpecKmsKeyRef
 }
 
 /// <summary>Optional. The project in which jobs are run. By default, the project containing the Lake is used. If a project is provided, the [ExecutionSpec.service_account][google.cloud.dataplex.v1.Task.ExecutionSpec.service_account] must belong to this project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecExecutionSpecProjectRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpecProjectRef
 }
 
 /// <summary>Required. Service account to use to execute a task. If not provided, the default Compute service account for the project is used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecExecutionSpecServiceAccountRef
 {
@@ -95,7 +95,7 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpecServiceAccountRef
 }
 
 /// <summary>Required. Spec related to how a task is executed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecExecutionSpec
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpec
 }
 
 /// <summary>LakeRef defines the resource reference to DataplexLake, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecLakeRef
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1DataplexTaskSpecLakeRef
 }
 
 /// <summary>Compute resources needed for a Task when using Dataproc Serverless.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecBatch
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecBatch
 }
 
 /// <summary>Container Image Runtime Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecContainerImage
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecContainer
 }
 
 /// <summary>Vpc network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecVpcNetwork
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpecVpcNetwor
 }
 
 /// <summary>Optional. Infrastructure specification for the execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpec
 {
@@ -211,7 +211,7 @@ public partial class V1alpha1DataplexTaskSpecNotebookInfrastructureSpec
 }
 
 /// <summary>Config related to running scheduled Notebooks. Exactly one of spark or notebook must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecNotebook
 {
@@ -233,7 +233,7 @@ public partial class V1alpha1DataplexTaskSpecNotebook
 }
 
 /// <summary>Compute resources needed for a Task when using Dataproc Serverless.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecBatch
 {
@@ -247,7 +247,7 @@ public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecBatch
 }
 
 /// <summary>Container Image Runtime Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecContainerImage
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecContainerIma
 }
 
 /// <summary>Vpc network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecVpcNetwork
 {
@@ -287,7 +287,7 @@ public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpecVpcNetwork
 }
 
 /// <summary>Optional. Infrastructure specification for the execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpec
 {
@@ -305,7 +305,7 @@ public partial class V1alpha1DataplexTaskSpecSparkInfrastructureSpec
 }
 
 /// <summary>Config related to running custom Spark tasks. Exactly one of spark or notebook must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecSpark
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1DataplexTaskSpecSpark
 }
 
 /// <summary>Required. Spec related to how often and when a task should be triggered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpecTriggerSpec
 {
@@ -369,7 +369,7 @@ public partial class V1alpha1DataplexTaskSpecTriggerSpec
 }
 
 /// <summary>DataplexTaskSpec defines the desired state of DataplexTask</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskSpec
 {
@@ -406,7 +406,7 @@ public partial class V1alpha1DataplexTaskSpec
     public V1alpha1DataplexTaskSpecTriggerSpec? TriggerSpec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatusConditions
 {
@@ -432,7 +432,7 @@ public partial class V1alpha1DataplexTaskStatusConditions
 }
 
 /// <summary>Output only. Spec related to how a task is executed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatusLatestJobExecutionSpec
 {
@@ -458,7 +458,7 @@ public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatusLates
 }
 
 /// <summary>Output only. latest job execution</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatusLatestJob
 {
@@ -512,7 +512,7 @@ public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatusLates
 }
 
 /// <summary> Status of the task execution (e.g. Jobs).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatus
 {
@@ -526,7 +526,7 @@ public partial class V1alpha1DataplexTaskStatusObservedStateExecutionStatus
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatusObservedState
 {
@@ -552,7 +552,7 @@ public partial class V1alpha1DataplexTaskStatusObservedState
 }
 
 /// <summary>DataplexTaskStatus defines the config connector machine state of DataplexTask</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexTaskStatus
 {
@@ -574,7 +574,7 @@ public partial class V1alpha1DataplexTaskStatus
 }
 
 /// <summary>DataplexTask is the Schema for the DataplexTask API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataplexTask : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DataplexTaskSpec>, IStatus<V1alpha1DataplexTaskStatus?>

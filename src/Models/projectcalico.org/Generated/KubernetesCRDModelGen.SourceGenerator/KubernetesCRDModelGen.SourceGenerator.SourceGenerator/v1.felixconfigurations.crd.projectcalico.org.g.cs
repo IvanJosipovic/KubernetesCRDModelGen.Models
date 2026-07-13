@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
 /// <summary>Felix Configuration contains the configuration for Felix.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FelixConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1FelixConfiguration>
@@ -42,7 +42,7 @@ public partial class V1FelixConfigurationList : IKubernetesObject<V1ListMeta>, I
 /// allows for sending workload traffic without encapsulation within the same AWS subnet.
 /// [Default: DoNothing]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecAwsSrcDstCheckEnum>))]
 public enum V1FelixConfigurationSpecAwsSrcDstCheckEnum
 {
@@ -60,7 +60,7 @@ public enum V1FelixConfigurationSpecAwsSrcDstCheckEnum
 /// `TC` can force the legacy method of attaching via a qdisc. `TCX` falls back to `TC` if `TCX` is not available.
 /// [Default: TCX]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfAttachTypeEnum>))]
 public enum V1FelixConfigurationSpecBpfAttachTypeEnum
 {
@@ -76,7 +76,7 @@ public enum V1FelixConfigurationSpecBpfAttachTypeEnum
 /// and it improves the performance of pod-to-service connections.When set to TCP, connect time load balancing
 /// is available only for services with TCP ports. [Default: TCP]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfConnectTimeLoadBalancingEnum>))]
 public enum V1FelixConfigurationSpecBpfConnectTimeLoadBalancingEnum
 {
@@ -93,7 +93,7 @@ public enum V1FelixConfigurationSpecBpfConnectTimeLoadBalancingEnum
 /// to clean up expired BPF conntrack entries.
 /// [Default: Off].
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfConntrackLogLevelEnum>))]
 public enum V1FelixConfigurationSpecBpfConntrackLogLevelEnum
 {
@@ -112,7 +112,7 @@ public enum V1FelixConfigurationSpecBpfConntrackLogLevelEnum
 /// lru_hash and userspace cleanup is the only mode that is supported.
 /// [Default: Userspace]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfConntrackModeEnum>))]
 public enum V1FelixConfigurationSpecBpfConntrackModeEnum
 {
@@ -136,7 +136,7 @@ public enum V1FelixConfigurationSpecBpfConntrackModeEnum
 /// Unset values are replaced by the default values with a warning log for
 /// incorrect values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecBpfConntrackTimeouts
 {
@@ -213,7 +213,7 @@ public partial class V1FelixConfigurationSpecBpfConntrackTimeouts
 /// BPFHostNetworkedNATWithoutCTLB when in BPF mode, controls whether Felix does a NAT without CTLB. This along with BPFConnectTimeLoadBalancing
 /// determines the CTLB behavior. [Default: Enabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfHostNetworkedNATWithoutCTLBEnum>))]
 public enum V1FelixConfigurationSpecBpfHostNetworkedNATWithoutCTLBEnum
 {
@@ -227,7 +227,7 @@ public enum V1FelixConfigurationSpecBpfHostNetworkedNATWithoutCTLBEnum
 /// BPFProfiling controls profiling of BPF programs. At the monent, it can be
 /// Disabled or Enabled. [Default: Disabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfProfilingEnum>))]
 public enum V1FelixConfigurationSpecBpfProfilingEnum
 {
@@ -244,7 +244,7 @@ public enum V1FelixConfigurationSpecBpfProfilingEnum
 /// which can improve redirection performance but causes the redirected packets to bypass the host‑side ingress path.
 /// As a result, packet‑capture tools on the host side of the workload device (for example, tcpdump) will not see that traffic. [Default: Enabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfRedirectToPeerEnum>))]
 public enum V1FelixConfigurationSpecBpfRedirectToPeerEnum
 {
@@ -255,7 +255,7 @@ public enum V1FelixConfigurationSpecBpfRedirectToPeerEnum
 }
 
 /// <summary>ProtoPort is combination of protocol, port, and CIDR. Protocol and port must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecFailsafeInboundHostPorts
 {
@@ -270,7 +270,7 @@ public partial class V1FelixConfigurationSpecFailsafeInboundHostPorts
 }
 
 /// <summary>ProtoPort is combination of protocol, port, and CIDR. Protocol and port must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecFailsafeOutboundHostPorts
 {
@@ -288,7 +288,7 @@ public partial class V1FelixConfigurationSpecFailsafeOutboundHostPorts
 /// FloatingIPs configures whether or not Felix will program non-OpenStack floating IP addresses.  (OpenStack-derived
 /// floating IPs are always programmed, regardless of this setting.)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecFloatingIPsEnum>))]
 public enum V1FelixConfigurationSpecFloatingIPsEnum
 {
@@ -299,7 +299,7 @@ public enum V1FelixConfigurationSpecFloatingIPsEnum
 }
 
 /// <summary>FlowLogsLocalReporter configures local unix socket for reporting flow data from each node. [Default: Disabled]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecFlowLogsLocalReporterEnum>))]
 public enum V1FelixConfigurationSpecFlowLogsLocalReporterEnum
 {
@@ -316,7 +316,7 @@ public enum V1FelixConfigurationSpecFlowLogsLocalReporterEnum
 /// None - Felix stops evaluating pending traces.
 /// [Default: Continuous]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecFlowLogsPolicyEvaluationModeEnum>))]
 public enum V1FelixConfigurationSpecFlowLogsPolicyEvaluationModeEnum
 {
@@ -326,7 +326,7 @@ public enum V1FelixConfigurationSpecFlowLogsPolicyEvaluationModeEnum
     Continuous
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecHealthTimeoutOverrides
 {
@@ -343,7 +343,7 @@ public partial class V1FelixConfigurationSpecHealthTimeoutOverrides
 /// host protection. In BPF mode, due to a kernel interaction, either IPForwarding must be enabled or BPFEnforceRPF
 /// must be disabled. [Default: Enabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecIpForwardingEnum>))]
 public enum V1FelixConfigurationSpecIpForwardingEnum
 {
@@ -359,7 +359,7 @@ public enum V1FelixConfigurationSpecIpForwardingEnum
 /// Warning: changing this on a running system can leave &quot;orphaned&quot; rules in the &quot;other&quot; backend. These
 /// should be cleaned up to avoid confusing interactions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecIptablesBackendEnum>))]
 public enum V1FelixConfigurationSpecIptablesBackendEnum
 {
@@ -375,7 +375,7 @@ public enum V1FelixConfigurationSpecIptablesBackendEnum
 /// IstioAmbientMode configures Felix to work together with Tigera&apos;s Istio distribution.
 /// [Default: Disabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecIstioAmbientModeEnum>))]
 public enum V1FelixConfigurationSpecIstioAmbientModeEnum
 {
@@ -392,7 +392,7 @@ public enum V1FelixConfigurationSpecIstioAmbientModeEnum
 /// - IPPoolsAndHostIPs: destinations outside of this IP pool and all hosts will be masqueraded.
 /// [Default: IPPoolsOnly]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecNatOutgoingExclusionsEnum>))]
 public enum V1FelixConfigurationSpecNatOutgoingExclusionsEnum
 {
@@ -403,7 +403,7 @@ public enum V1FelixConfigurationSpecNatOutgoingExclusionsEnum
 }
 
 /// <summary>NFTablesMode configures nftables support in Felix. [Default: Auto]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecNftablesModeEnum>))]
 public enum V1FelixConfigurationSpecNftablesModeEnum
 {
@@ -421,7 +421,7 @@ public enum V1FelixConfigurationSpecNftablesModeEnum
 /// it is expected that confd and BIRD will program that route. When ProgramClusterRoutes is Enabled, Felix program that route.
 /// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: Disabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecProgramClusterRoutesEnum>))]
 public enum V1FelixConfigurationSpecProgramClusterRoutesEnum
 {
@@ -436,7 +436,7 @@ public enum V1FelixConfigurationSpecProgramClusterRoutesEnum
 /// Calico programs additional Linux route tables for various purposes.
 /// RouteTableRange specifies the indices of the route tables that Calico should use.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecRouteTableRange
 {
@@ -447,7 +447,7 @@ public partial class V1FelixConfigurationSpecRouteTableRange
     public required int Min { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpecRouteTableRanges
 {
@@ -459,7 +459,7 @@ public partial class V1FelixConfigurationSpecRouteTableRanges
 }
 
 /// <summary>WindowsManageFirewallRules configures whether or not Felix will program Windows Firewall rules (to allow inbound access to its own metrics ports). [Default: Disabled]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecWindowsManageFirewallRulesEnum>))]
 public enum V1FelixConfigurationSpecWindowsManageFirewallRulesEnum
 {
@@ -470,7 +470,7 @@ public enum V1FelixConfigurationSpecWindowsManageFirewallRulesEnum
 }
 
 /// <summary>FelixConfigurationSpec contains the values of the Felix configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FelixConfigurationSpec
 {
@@ -1829,7 +1829,7 @@ public partial class V1FelixConfigurationSpec
 }
 
 /// <summary>Felix Configuration contains the configuration for Felix.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FelixConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1FelixConfigurationSpec?>

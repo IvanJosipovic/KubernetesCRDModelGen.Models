@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.http.m.crossplane.io;
 /// <summary>A DisposableRequest is a namespaced HTTP disposable request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2DisposableRequestList : IKubernetesObject<V1ListMeta>, IItems<V1alpha2DisposableRequest>
@@ -43,7 +43,7 @@ public partial class V1alpha2DisposableRequestList : IKubernetesObject<V1ListMet
 /// - &quot;setEmpty&quot;: sets the value to the empty string
 /// - &quot;delete&quot;: removes the key from the s
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsKeyMappingsMissingFieldStrategyEnum>))]
 public enum V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsKeyMappingsMissingFieldStrategyEnum
 {
@@ -56,7 +56,7 @@ public enum V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsKeyMap
 }
 
 /// <summary>KeyInjection represents the configuration for injecting data into a specific key in a Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsKeyMappings
 {
@@ -80,7 +80,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 }
 
 /// <summary>Metadata contains labels and annotations to apply to the Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsMetadata
 {
@@ -94,7 +94,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 }
 
 /// <summary>SecretRef contains the name and namespace of the Kubernetes secret where the data will be injected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigsSecretRef
 {
@@ -108,7 +108,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 }
 
 /// <summary>SecretInjectionConfig represents the configuration for injecting secret data into a Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConfigs
 {
@@ -147,7 +147,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 /// CACertSecretRef is a reference to a secret containing the CA certificate(s).
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigCaCertSecretRef
 {
@@ -168,7 +168,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigCaCertSecr
 /// ClientCertSecretRef is a reference to a secret containing the client certificate.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigClientCertSecretRef
 {
@@ -189,7 +189,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigClientCert
 /// ClientKeySecretRef is a reference to a secret containing the client private key.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigClientKeySecretRef
 {
@@ -210,7 +210,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderTlsConfigClientKeyS
 /// TLSConfig allows overriding the TLS configuration from ProviderConfig for this specific request.
 /// This field is mutually exclusive with InsecureSkipTLSVerify.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProviderTlsConfig
 {
@@ -251,7 +251,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderTlsConfig
 }
 
 /// <summary>DisposableRequestParameters are the configurable fields of a DisposableRequest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecForProvider
 {
@@ -322,7 +322,7 @@ public partial class V1alpha2DisposableRequestSpecForProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2DisposableRequestSpecManagementPoliciesEnum>))]
 public enum V1alpha2DisposableRequestSpecManagementPoliciesEnum
 {
@@ -345,7 +345,7 @@ public enum V1alpha2DisposableRequestSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecProviderConfigRef
 {
@@ -364,7 +364,7 @@ public partial class V1alpha2DisposableRequestSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpecWriteConnectionSecretToRef
 {
@@ -374,7 +374,7 @@ public partial class V1alpha2DisposableRequestSpecWriteConnectionSecretToRef
 }
 
 /// <summary>A DisposableRequestSpec defines the desired state of a DisposableRequest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestSpec
 {
@@ -412,7 +412,7 @@ public partial class V1alpha2DisposableRequestSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestStatusConditions
 {
@@ -454,7 +454,7 @@ public partial class V1alpha2DisposableRequestStatusConditions
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestStatusRequestDetails
 {
@@ -471,7 +471,7 @@ public partial class V1alpha2DisposableRequestStatusRequestDetails
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestStatusResponse
 {
@@ -486,7 +486,7 @@ public partial class V1alpha2DisposableRequestStatusResponse
 }
 
 /// <summary>A DisposableRequestStatus represents the observed state of a DisposableRequest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2DisposableRequestStatus
 {
@@ -523,7 +523,7 @@ public partial class V1alpha2DisposableRequestStatus
 }
 
 /// <summary>A DisposableRequest is a namespaced HTTP disposable request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2DisposableRequest : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha2DisposableRequestSpec>, IStatus<V1alpha2DisposableRequestStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privilegedaccessmanager.cnrm.cloud.google.com;
 /// <summary>PrivilegedAccessManagerEntitlement is the Schema for the PrivilegedAccessManagerEntitlement API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1PrivilegedAccessManagerEntitlement>
@@ -37,7 +37,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementList : IKubernete
 }
 
 /// <summary>Optional. Additional email addresses to be notified based on actions taken.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecAdditionalNotificationTargets
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecAdditionalNot
 }
 
 /// <summary>AccessControlEntry is used to control who can do some operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkflowManualApprovalsStepsApprovers
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkf
 }
 
 /// <summary>Step represents a logical step in a manual approval workflow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkflowManualApprovalsSteps
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkf
 }
 
 /// <summary>An approval workflow where users designated as approvers review and act on the grants.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkflowManualApprovals
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkf
 }
 
 /// <summary>Optional. The approvals needed before access are granted to a requester. No approvals are needed if this field is null.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkflow
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecApprovalWorkf
 }
 
 /// <summary>AccessControlEntry is used to control who can do some operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecEligibleUsers
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecEligibleUsers
 }
 
 /// <summary>Immutable. The Folder that this resource belongs to. One and only one of &apos;projectRef&apos;, &apos;folderRef&apos;, or &apos;organizationRef&apos; must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecFolderRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecFolderRef
 }
 
 /// <summary>Immutable. The Organization that this resource belongs to. One and only one of &apos;projectRef&apos;, &apos;folderRef&apos;, or &apos;organizationRef&apos; must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecOrganizationRef
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecOrganizationR
 }
 
 /// <summary>RoleBinding represents IAM role bindings that are created after a successful grant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAccessGcpIAMAccessRoleBindings
 {
@@ -164,7 +164,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAcc
 }
 
 /// <summary>Access to a Google Cloud resource through IAM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAccessGcpIAMAccess
 {
@@ -174,7 +174,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAcc
 }
 
 /// <summary>The access granted to a requester on successful approval.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAccess
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecPrivilegedAcc
 }
 
 /// <summary>Immutable. The Project that this resource belongs to. One and only one of &apos;projectRef&apos;, &apos;folderRef&apos;, or &apos;organizationRef&apos; must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecProjectRef
 {
@@ -206,7 +206,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecProjectRef
 }
 
 /// <summary>Required. The manner in which the requester should provide a justification for requesting access.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecRequesterJustificationConfig
 {
@@ -220,7 +220,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpecRequesterJust
 }
 
 /// <summary>PrivilegedAccessManagerEntitlementSpec defines the desired state of PrivilegedAccessManagerEntitlement.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementSpec
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementStatusConditions
 {
@@ -295,7 +295,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementStatusObservedState
 {
@@ -317,7 +317,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementStatusObservedSta
 }
 
 /// <summary>PrivilegedAccessManagerEntitlementStatus defines the config connector machine state of PrivilegedAccessManagerEntitlement.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PrivilegedAccessManagerEntitlementStatus
 {
@@ -339,7 +339,7 @@ public partial class V1alpha1PrivilegedAccessManagerEntitlementStatus
 }
 
 /// <summary>PrivilegedAccessManagerEntitlement is the Schema for the PrivilegedAccessManagerEntitlement API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1PrivilegedAccessManagerEntitlement : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1PrivilegedAccessManagerEntitlementSpec?>, IStatus<V1alpha1PrivilegedAccessManagerEntitlementStatus?>

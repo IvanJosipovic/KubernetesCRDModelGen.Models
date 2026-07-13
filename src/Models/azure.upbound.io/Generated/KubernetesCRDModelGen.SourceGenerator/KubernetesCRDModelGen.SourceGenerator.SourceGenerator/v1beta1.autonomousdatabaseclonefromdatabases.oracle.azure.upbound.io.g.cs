@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.oracle.azure.upbound.io;
 /// <summary>AutonomousDatabaseCloneFromDatabase is the Schema for the AutonomousDatabaseCloneFromDatabases API. Manages an autonomous database clone from database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AutonomousDatabaseCloneFromDatabase>
@@ -45,7 +45,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseList : IKubernete
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecDeletionPolicyEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecDeletionPolicyEnum
 }
 
 /// <summary>The password for the SYS, SYSTEM, and PDB Admin users. The password must be at least 12 characters long, and contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database Clone to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderAdminPasswordSecretRef
 {
@@ -79,7 +79,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderAd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -95,7 +95,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -106,7 +106,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRefPolicy
 {
@@ -130,7 +130,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderRe
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameRef
 {
@@ -149,7 +149,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -165,7 +165,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -176,7 +176,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -200,7 +200,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderRe
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderResourceGroupNameSelector
 {
@@ -226,7 +226,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRefPolicyResolutionEnum
 {
@@ -242,7 +242,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAuton
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRefPolicyResolveEnum
 {
@@ -253,7 +253,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAuton
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRefPolicy
 {
@@ -277,7 +277,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSo
 }
 
 /// <summary>Reference to a AutonomousDatabase in oracle to populate sourceAutonomousDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdRef
 {
@@ -296,7 +296,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAuton
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelectorPolicyResolveEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAuton
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelectorPolicy
 {
@@ -347,7 +347,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSo
 }
 
 /// <summary>Selector for a AutonomousDatabase in oracle to populate sourceAutonomousDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSourceAutonomousDatabaseIdSelector
 {
@@ -373,7 +373,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -389,7 +389,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRefPolicyResolveEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRefPolicy
 {
@@ -424,7 +424,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSu
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdRef
 {
@@ -443,7 +443,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicy
 {
@@ -494,7 +494,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSu
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelector
 {
@@ -514,7 +514,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSu
     public V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProvider
 {
@@ -640,7 +640,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecForProvider
 }
 
 /// <summary>The password for the SYS, SYSTEM, and PDB Admin users. The password must be at least 12 characters long, and contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database Clone to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderAdminPasswordSecretRef
 {
@@ -663,7 +663,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRefPolicyResolutionEnum
 {
@@ -679,7 +679,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAuto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRefPolicyResolveEnum
 {
@@ -690,7 +690,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAuto
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRefPolicy
 {
@@ -714,7 +714,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 }
 
 /// <summary>Reference to a AutonomousDatabase in oracle to populate sourceAutonomousDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdRef
 {
@@ -733,7 +733,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -749,7 +749,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAuto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelectorPolicyResolveEnum
 {
@@ -760,7 +760,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAuto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelectorPolicy
 {
@@ -784,7 +784,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 }
 
 /// <summary>Selector for a AutonomousDatabase in oracle to populate sourceAutonomousDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSourceAutonomousDatabaseIdSelector
 {
@@ -810,7 +810,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -826,7 +826,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
@@ -837,7 +837,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRefPolicy
 {
@@ -861,7 +861,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdRef
 {
@@ -880,7 +880,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -896,7 +896,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -907,7 +907,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -931,7 +931,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderSubnetIdSelector
 {
@@ -963,7 +963,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProviderS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProvider
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecManagementPoliciesEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecManagementPoliciesEnum
 {
@@ -1104,7 +1104,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1120,7 +1120,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1131,7 +1131,7 @@ public enum V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRefPolicy
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfi
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfigRef
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecWriteConnectionSecretToRef
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpecWriteConnecti
 }
 
 /// <summary>AutonomousDatabaseCloneFromDatabaseSpec defines the desired state of AutonomousDatabaseCloneFromDatabase</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpec
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseSpec
     public V1beta1AutonomousDatabaseCloneFromDatabaseSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatusAtProvider
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatusConditions
 {
@@ -1404,7 +1404,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatusConditions
 }
 
 /// <summary>AutonomousDatabaseCloneFromDatabaseStatus defines the observed state of AutonomousDatabaseCloneFromDatabase.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatus
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta1AutonomousDatabaseCloneFromDatabaseStatus
 }
 
 /// <summary>AutonomousDatabaseCloneFromDatabase is the Schema for the AutonomousDatabaseCloneFromDatabases API. Manages an autonomous database clone from database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutonomousDatabaseCloneFromDatabase : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AutonomousDatabaseCloneFromDatabaseSpec>, IStatus<V1beta1AutonomousDatabaseCloneFromDatabaseStatus?>

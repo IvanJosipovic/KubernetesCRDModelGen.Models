@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.upbound.io;
 /// <summary>GatewayRoute is the Schema for the GatewayRoutes API. Provides an AWS App Mesh gateway route resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GatewayRouteList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GatewayRoute>
@@ -45,7 +45,7 @@ public partial class V1beta2GatewayRouteList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecDeletionPolicyEnum>))]
 public enum V1beta2GatewayRouteSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2GatewayRouteSpecDeletionPolicyEnum
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteActionTargetVirtualService
 {
@@ -66,7 +66,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
 {
@@ -80,7 +80,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteAction
 {
@@ -90,7 +90,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteAction
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteMatch
 {
@@ -104,7 +104,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRouteMatch
 }
 
 /// <summary>Specification of a gRPC gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRoute
 {
@@ -118,7 +118,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecGrpcRoute
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewriteHostname
 {
@@ -128,7 +128,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePath
 {
@@ -138,7 +138,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePrefix
 {
@@ -152,7 +152,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewrite
 {
@@ -170,7 +170,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionTargetVirtualService
 {
@@ -180,7 +180,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionTarge
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionTarget
 {
@@ -194,7 +194,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteActionTarge
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteAction
 {
@@ -208,7 +208,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRange
 {
@@ -222,7 +222,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
 {
@@ -247,7 +247,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
 {
@@ -265,7 +265,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHostname
 {
@@ -279,7 +279,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchHostna
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchPath
 {
@@ -293,7 +293,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch
 {
@@ -302,7 +302,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryP
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameter
 {
@@ -316,7 +316,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryP
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatch
 {
@@ -346,7 +346,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2RouteMatch
 }
 
 /// <summary>Specification of an HTTP/2 gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2Route
 {
@@ -360,7 +360,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttp2Route
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewriteHostname
 {
@@ -370,7 +370,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewritePath
 {
@@ -380,7 +380,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewritePrefix
 {
@@ -394,7 +394,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewrite
 {
@@ -417,7 +417,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 }
 
 /// <summary>Reference to a VirtualService in appmesh to populate virtualServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRef
 {
@@ -487,7 +487,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolutionEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolveEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicy
 {
@@ -538,7 +538,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 }
 
 /// <summary>Selector for a VirtualService in appmesh to populate virtualServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelector
 {
@@ -559,7 +559,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualService
 {
@@ -577,7 +577,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 {
@@ -591,7 +591,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteActionTarget
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteAction
 {
@@ -605,7 +605,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderMatchRange
 {
@@ -619,7 +619,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderM
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderMatch
 {
@@ -644,7 +644,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderM
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeader
 {
@@ -662,7 +662,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHeader
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHostname
 {
@@ -676,7 +676,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchHostnam
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchPath
 {
@@ -690,7 +690,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch
 {
@@ -699,7 +699,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchQueryPa
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameter
 {
@@ -713,7 +713,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatchQueryPa
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatch
 {
@@ -743,7 +743,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRouteMatch
 }
 
 /// <summary>Specification of an HTTP gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRoute
 {
@@ -757,7 +757,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpecHttpRoute
 }
 
 /// <summary>Gateway route specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderSpec
 {
@@ -784,7 +784,7 @@ public partial class V1beta2GatewayRouteSpecForProviderSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolutionEnum
 {
@@ -800,7 +800,7 @@ public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolveEnum
 {
@@ -811,7 +811,7 @@ public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPolicy
 {
@@ -835,7 +835,7 @@ public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRefPoli
 }
 
 /// <summary>Reference to a VirtualGateway in appmesh to populate virtualGatewayName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRef
 {
@@ -854,7 +854,7 @@ public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyResolutionEnum
 {
@@ -870,7 +870,7 @@ public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyResolveEnum
 {
@@ -881,7 +881,7 @@ public enum V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicy
 {
@@ -905,7 +905,7 @@ public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelecto
 }
 
 /// <summary>Selector for a VirtualGateway in appmesh to populate virtualGatewayName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelector
 {
@@ -925,7 +925,7 @@ public partial class V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelecto
     public V1beta2GatewayRouteSpecForProviderVirtualGatewayNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecForProvider
 {
@@ -970,7 +970,7 @@ public partial class V1beta2GatewayRouteSpecForProvider
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteActionTargetVirtualService
 {
@@ -980,7 +980,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteActionTarge
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteActionTarget
 {
@@ -994,7 +994,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteActionTarge
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteAction
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteAction
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteMatch
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRouteMatch
 }
 
 /// <summary>Specification of a gRPC gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRoute
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecGrpcRoute
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewriteHostname
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePath
 {
@@ -1052,7 +1052,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePrefix
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewrite
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionTargetVirtualService
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionTarg
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionTarget
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteActionTarg
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteAction
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchRange
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeader
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHostname
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchHostn
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchPath
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchQuery
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameter
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatchQuery
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatch
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2RouteMatch
 }
 
 /// <summary>Specification of an HTTP/2 gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2Route
 {
@@ -1274,7 +1274,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttp2Route
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewriteHostname
 {
@@ -1284,7 +1284,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePath
 {
@@ -1294,7 +1294,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePrefix
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewrite
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolutionEnum
 {
@@ -1347,7 +1347,7 @@ public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicyResolveEnum
 {
@@ -1358,7 +1358,7 @@ public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRefPolicy
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Reference to a VirtualService in appmesh to populate virtualServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameRef
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolutionEnum
 {
@@ -1417,7 +1417,7 @@ public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicyResolveEnum
 {
@@ -1428,7 +1428,7 @@ public enum V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicy
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Selector for a VirtualService in appmesh to populate virtualServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelector
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualService
 {
@@ -1491,7 +1491,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarget
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteAction
 {
@@ -1519,7 +1519,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRange
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
 {
@@ -1558,7 +1558,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHostname
 {
@@ -1590,7 +1590,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchHostna
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchPath
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch
 {
@@ -1613,7 +1613,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryP
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameter
 {
@@ -1627,7 +1627,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryP
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatch
 {
@@ -1657,7 +1657,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRouteMatch
 }
 
 /// <summary>Specification of an HTTP gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRoute
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpecHttpRoute
 }
 
 /// <summary>Gateway route specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderSpec
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolutionEnum
 {
@@ -1714,7 +1714,7 @@ public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolveEnum
 {
@@ -1725,7 +1725,7 @@ public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPolicy
 {
@@ -1749,7 +1749,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRefPol
 }
 
 /// <summary>Reference to a VirtualGateway in appmesh to populate virtualGatewayName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRef
 {
@@ -1768,7 +1768,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyResolutionEnum
 {
@@ -1784,7 +1784,7 @@ public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyResolveEnum
 {
@@ -1795,7 +1795,7 @@ public enum V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelectorPolicy
 {
@@ -1819,7 +1819,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelect
 }
 
 /// <summary>Selector for a VirtualGateway in appmesh to populate virtualGatewayName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelector
 {
@@ -1851,7 +1851,7 @@ public partial class V1beta2GatewayRouteSpecInitProviderVirtualGatewayNameSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecInitProvider
 {
@@ -1892,7 +1892,7 @@ public partial class V1beta2GatewayRouteSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecManagementPoliciesEnum>))]
 public enum V1beta2GatewayRouteSpecManagementPoliciesEnum
 {
@@ -1916,7 +1916,7 @@ public enum V1beta2GatewayRouteSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GatewayRouteSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1932,7 +1932,7 @@ public enum V1beta2GatewayRouteSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GatewayRouteSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GatewayRouteSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1943,7 +1943,7 @@ public enum V1beta2GatewayRouteSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecProviderConfigRefPolicy
 {
@@ -1971,7 +1971,7 @@ public partial class V1beta2GatewayRouteSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecProviderConfigRef
 {
@@ -1990,7 +1990,7 @@ public partial class V1beta2GatewayRouteSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpecWriteConnectionSecretToRef
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta2GatewayRouteSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GatewayRouteSpec defines the desired state of GatewayRoute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteSpec
 {
@@ -2072,7 +2072,7 @@ public partial class V1beta2GatewayRouteSpec
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteActionTargetVirtualService
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteActionTarge
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteActionTarget
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteActionTarge
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteAction
 {
@@ -2106,7 +2106,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteAction
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteMatch
 {
@@ -2120,7 +2120,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRouteMatch
 }
 
 /// <summary>Specification of a gRPC gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRoute
 {
@@ -2134,7 +2134,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecGrpcRoute
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewriteHostname
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePath
 {
@@ -2154,7 +2154,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePrefix
 {
@@ -2168,7 +2168,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewrite
 {
@@ -2186,7 +2186,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionTargetVirtualService
 {
@@ -2196,7 +2196,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionTarg
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionTarget
 {
@@ -2210,7 +2210,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteActionTarg
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteAction
 {
@@ -2224,7 +2224,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchRange
 {
@@ -2238,7 +2238,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
 {
@@ -2263,7 +2263,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeader
 {
@@ -2281,7 +2281,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHostname
 {
@@ -2295,7 +2295,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchHostn
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchPath
 {
@@ -2309,7 +2309,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch
 {
@@ -2318,7 +2318,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchQuery
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameter
 {
@@ -2332,7 +2332,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatchQuery
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatch
 {
@@ -2362,7 +2362,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2RouteMatch
 }
 
 /// <summary>Specification of an HTTP/2 gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2Route
 {
@@ -2376,7 +2376,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttp2Route
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewriteHostname
 {
@@ -2386,7 +2386,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePath
 {
@@ -2396,7 +2396,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Specified beginning characters to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePrefix
 {
@@ -2410,7 +2410,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Gateway route action to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewrite
 {
@@ -2428,7 +2428,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
 }
 
 /// <summary>Virtual service gateway route target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionTargetVirtualService
 {
@@ -2438,7 +2438,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionTarget
 {
@@ -2452,7 +2452,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteActionTarge
 }
 
 /// <summary>Action to take if a match is determined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteAction
 {
@@ -2466,7 +2466,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteAction
 }
 
 /// <summary>Object that specifies the range of numbers that the header value sent by the client must be included in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRange
 {
@@ -2480,7 +2480,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
 {
@@ -2505,7 +2505,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     public string? Suffix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
 }
 
 /// <summary>Host name to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHostname
 {
@@ -2537,7 +2537,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchHostna
 }
 
 /// <summary>Exact path to rewrite.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchPath
 {
@@ -2551,7 +2551,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchPath
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch
 {
@@ -2560,7 +2560,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryP
     public string? Exact { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameter
 {
@@ -2574,7 +2574,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryP
 }
 
 /// <summary>Criteria for determining a request match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatch
 {
@@ -2604,7 +2604,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRouteMatch
 }
 
 /// <summary>Specification of an HTTP gateway route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRoute
 {
@@ -2618,7 +2618,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpecHttpRoute
 }
 
 /// <summary>Gateway route specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProviderSpec
 {
@@ -2639,7 +2639,7 @@ public partial class V1beta2GatewayRouteStatusAtProviderSpec
     public double? Priority { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusAtProvider
 {
@@ -2700,7 +2700,7 @@ public partial class V1beta2GatewayRouteStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatusConditions
 {
@@ -2743,7 +2743,7 @@ public partial class V1beta2GatewayRouteStatusConditions
 }
 
 /// <summary>GatewayRouteStatus defines the observed state of GatewayRoute.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GatewayRouteStatus
 {
@@ -2764,7 +2764,7 @@ public partial class V1beta2GatewayRouteStatus
 }
 
 /// <summary>GatewayRoute is the Schema for the GatewayRoutes API. Provides an AWS App Mesh gateway route resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GatewayRoute : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GatewayRouteSpec>, IStatus<V1beta2GatewayRouteStatus?>

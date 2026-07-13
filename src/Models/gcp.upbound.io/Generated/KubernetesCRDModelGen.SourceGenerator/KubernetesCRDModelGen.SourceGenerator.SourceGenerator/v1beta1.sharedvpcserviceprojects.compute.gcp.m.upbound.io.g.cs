@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>SharedVPCServiceProject is the Schema for the SharedVPCServiceProjects API. Enables the Google Compute Engine Shared VPC feature for a project, assigning it as a service project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedVPCServiceProjectList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SharedVPCServiceProject>
@@ -42,7 +42,7 @@ public partial class V1beta1SharedVPCServiceProjectList : IKubernetesObject<V1Li
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRef
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate hostProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSel
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate hostProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderHostProjectSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProject
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate serviceProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProject
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate serviceProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProviderServiceProject
     public V1beta1SharedVPCServiceProjectSpecForProviderServiceProjectSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecForProvider
 {
@@ -385,7 +385,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyResolutionEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyResolveEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRefPolicy
 {
@@ -436,7 +436,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRe
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate hostProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSe
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate hostProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSelector
 {
@@ -540,7 +540,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderHostProjectSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolicyResolutionEnum
 {
@@ -556,7 +556,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolicyResolveEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRefPolicy
 {
@@ -591,7 +591,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjec
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate serviceProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectRef
 {
@@ -614,7 +614,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelectorPolicyResolutionEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelectorPolicyResolveEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelectorPolicy
 {
@@ -665,7 +665,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjec
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate serviceProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjectSelector
 {
@@ -701,7 +701,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProviderServiceProjec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCServiceProjectSpecManagementPoliciesEnum>))]
 public enum V1beta1SharedVPCServiceProjectSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1SharedVPCServiceProjectSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecProviderConfigRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpecWriteConnectionSecretToRef
 {
@@ -790,7 +790,7 @@ public partial class V1beta1SharedVPCServiceProjectSpecWriteConnectionSecretToRe
 }
 
 /// <summary>SharedVPCServiceProjectSpec defines the desired state of SharedVPCServiceProject</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectSpec
 {
@@ -841,7 +841,7 @@ public partial class V1beta1SharedVPCServiceProjectSpec
     public V1beta1SharedVPCServiceProjectSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectStatusAtProvider
 {
@@ -863,7 +863,7 @@ public partial class V1beta1SharedVPCServiceProjectStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectStatusConditions
 {
@@ -906,7 +906,7 @@ public partial class V1beta1SharedVPCServiceProjectStatusConditions
 }
 
 /// <summary>SharedVPCServiceProjectStatus defines the observed state of SharedVPCServiceProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCServiceProjectStatus
 {
@@ -927,7 +927,7 @@ public partial class V1beta1SharedVPCServiceProjectStatus
 }
 
 /// <summary>SharedVPCServiceProject is the Schema for the SharedVPCServiceProjects API. Enables the Google Compute Engine Shared VPC feature for a project, assigning it as a service project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedVPCServiceProject : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SharedVPCServiceProjectSpec>, IStatus<V1beta1SharedVPCServiceProjectStatus?>

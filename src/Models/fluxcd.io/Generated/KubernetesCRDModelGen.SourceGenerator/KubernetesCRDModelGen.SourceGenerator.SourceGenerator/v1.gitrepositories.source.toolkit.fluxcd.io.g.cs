@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.source.toolkit.fluxcd.io;
 /// <summary>GitRepository is the Schema for the gitrepositories API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1GitRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1GitRepository>
@@ -40,7 +40,7 @@ public partial class V1GitRepositoryList : IKubernetesObject<V1ListMeta>, IItems
 /// GitRepositoryRef specifies the GitRepository which Artifact contents
 /// must be included.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecIncludeRepository
 {
@@ -53,7 +53,7 @@ public partial class V1GitRepositorySpecIncludeRepository
 /// GitRepositoryInclude specifies a local reference to a GitRepository which
 /// Artifact (sub-)contents must be included, and where they should be placed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecInclude
 {
@@ -83,7 +83,7 @@ public partial class V1GitRepositorySpecInclude
 /// Provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;github&apos;, &apos;generic&apos;.
 /// When not specified, defaults to &apos;generic&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GitRepositorySpecProviderEnum>))]
 public enum V1GitRepositorySpecProviderEnum
 {
@@ -101,7 +101,7 @@ public enum V1GitRepositorySpecProviderEnum
 /// ProxySecretRef specifies the Secret containing the proxy configuration
 /// to use while communicating with the Git server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecProxySecretRef
 {
@@ -114,7 +114,7 @@ public partial class V1GitRepositorySpecProxySecretRef
 /// Reference specifies the Git reference to resolve and monitor for
 /// changes, defaults to the &apos;master&apos; branch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecRef
 {
@@ -157,7 +157,7 @@ public partial class V1GitRepositorySpecRef
 /// For SSH repositories the Secret must contain &apos;identity&apos;
 /// and &apos;known_hosts&apos; fields.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecSecretRef
 {
@@ -173,7 +173,7 @@ public partial class V1GitRepositorySpecSecretRef
 /// the commit that the HEAD of the Git repository points to. The variant
 /// &quot;head&quot; solely exists to ensure backwards compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GitRepositorySpecVerifyModeEnum>))]
 public enum V1GitRepositorySpecVerifyModeEnum
 {
@@ -192,7 +192,7 @@ public enum V1GitRepositorySpecVerifyModeEnum
 /// authors. PGP public keys must be stored under keys with the .asc suffix,
 /// and SSH public keys must be stored under keys with the .sshpub suffix.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecVerifySecretRef
 {
@@ -205,7 +205,7 @@ public partial class V1GitRepositorySpecVerifySecretRef
 /// Verification specifies the configuration to verify the Git commit
 /// signature(s).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpecVerify
 {
@@ -232,7 +232,7 @@ public partial class V1GitRepositorySpecVerify
 /// GitRepositorySpec specifies the required configuration to produce an
 /// Artifact for a Git repository.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositorySpec
 {
@@ -337,7 +337,7 @@ public partial class V1GitRepositorySpec
 }
 
 /// <summary>Artifact represents the last successful GitRepository reconciliation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatusArtifact
 {
@@ -385,7 +385,7 @@ public partial class V1GitRepositoryStatusArtifact
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GitRepositoryStatusConditionsStatusEnum>))]
 public enum V1GitRepositoryStatusConditionsStatusEnum
 {
@@ -398,7 +398,7 @@ public enum V1GitRepositoryStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatusConditions
 {
@@ -444,7 +444,7 @@ public partial class V1GitRepositoryStatusConditions
 }
 
 /// <summary>Artifact represents the output of a Source reconciliation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatusIncludedArtifacts
 {
@@ -495,7 +495,7 @@ public partial class V1GitRepositoryStatusIncludedArtifacts
 /// GitRepositoryRef specifies the GitRepository which Artifact contents
 /// must be included.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatusObservedIncludeRepository
 {
@@ -508,7 +508,7 @@ public partial class V1GitRepositoryStatusObservedIncludeRepository
 /// GitRepositoryInclude specifies a local reference to a GitRepository which
 /// Artifact (sub-)contents must be included, and where they should be placed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatusObservedInclude
 {
@@ -535,7 +535,7 @@ public partial class V1GitRepositoryStatusObservedInclude
 }
 
 /// <summary>GitRepositoryStatus records the observed state of a Git repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GitRepositoryStatus
 {
@@ -606,7 +606,7 @@ public partial class V1GitRepositoryStatus
 }
 
 /// <summary>GitRepository is the Schema for the gitrepositories API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1GitRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1GitRepositorySpec?>, IStatus<V1GitRepositoryStatus?>

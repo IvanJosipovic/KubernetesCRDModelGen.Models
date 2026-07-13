@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.rds.aws.upbound.io;
 /// <summary>DBInstanceAutomatedBackupsReplication is the Schema for the DBInstanceAutomatedBackupsReplications API. Enables replication of automated backups to a different AWS Region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DBInstanceAutomatedBackupsReplication>
@@ -45,7 +45,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationList : IKuberne
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecDeletionPolicyEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRefPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRefPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 }
 
 /// <summary>Reference to a Instance in rds to populate sourceDbInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 }
 
 /// <summary>Selector for a Instance in rds to populate sourceDbInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
     public V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderSourceDbInstanceArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 {
@@ -399,7 +399,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRefPolicy
 {
@@ -450,7 +450,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdRef
 {
@@ -469,7 +469,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelectorPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelector
 {
@@ -546,7 +546,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRefPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRefPolicyResolutionEnum
 {
@@ -562,7 +562,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDb
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRefPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRefPolicyResolveEnum
 {
@@ -573,7 +573,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDb
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRefPolicy
 {
@@ -597,7 +597,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 }
 
 /// <summary>Reference to a Instance in rds to populate sourceDbInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnRef
 {
@@ -616,7 +616,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelectorPolicyResolutionEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDb
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelectorPolicyResolveEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDb
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelectorPolicy
 {
@@ -667,7 +667,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 }
 
 /// <summary>Selector for a Instance in rds to populate sourceDbInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderSourceDbInstanceArnSelector
 {
@@ -699,7 +699,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvider
 {
@@ -740,7 +740,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecManagementPoliciesEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecManagementPoliciesEnum
 {
@@ -764,7 +764,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecManagementPoliciesEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -780,7 +780,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -791,7 +791,7 @@ public enum V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRefPolicy
 {
@@ -819,7 +819,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderCon
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderConfigRef
 {
@@ -838,7 +838,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecProviderCon
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecWriteConnectionSecretToRef
 {
@@ -852,7 +852,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecWriteConnec
 }
 
 /// <summary>DBInstanceAutomatedBackupsReplicationSpec defines the desired state of DBInstanceAutomatedBackupsReplication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpec
 {
@@ -919,7 +919,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpec
     public V1beta1DBInstanceAutomatedBackupsReplicationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusAtProvider
 {
@@ -952,7 +952,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusAtProvide
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusConditions
 {
@@ -995,7 +995,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusCondition
 }
 
 /// <summary>DBInstanceAutomatedBackupsReplicationStatus defines the observed state of DBInstanceAutomatedBackupsReplication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatus
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatus
 }
 
 /// <summary>DBInstanceAutomatedBackupsReplication is the Schema for the DBInstanceAutomatedBackupsReplications API. Enables replication of automated backups to a different AWS Region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DBInstanceAutomatedBackupsReplication : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DBInstanceAutomatedBackupsReplicationSpec>, IStatus<V1beta1DBInstanceAutomatedBackupsReplicationStatus?>

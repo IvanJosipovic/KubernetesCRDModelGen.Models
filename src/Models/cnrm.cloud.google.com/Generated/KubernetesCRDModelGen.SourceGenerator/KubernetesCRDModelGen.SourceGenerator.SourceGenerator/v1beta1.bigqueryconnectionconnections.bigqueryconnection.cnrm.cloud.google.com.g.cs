@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigqueryconnection.cnrm.cloud.google.com;
 /// <summary>BigQueryConnectionConnection is the Schema for the BigQueryConnectionConnection API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryConnectionConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BigQueryConnectionConnection>
@@ -37,7 +37,7 @@ public partial class V1beta1BigQueryConnectionConnectionList : IKubernetesObject
 }
 
 /// <summary>Authentication using Google owned service account to assume into customer&apos;s AWS IAM Role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecAwsAccessRole
 {
@@ -47,7 +47,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecAwsAccessRole
 }
 
 /// <summary>Amazon Web Services (AWS) properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecAws
 {
@@ -57,7 +57,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecAws
 }
 
 /// <summary>Azure properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecAzure
 {
@@ -71,14 +71,14 @@ public partial class V1beta1BigQueryConnectionConnectionSpecAzure
 }
 
 /// <summary>Use Cloud Resource properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudResource
 {
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLCredentialSecretRef
 {
@@ -92,7 +92,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLCredentialSe
 }
 
 /// <summary>Cloud SQL credential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLCredential
 {
@@ -102,7 +102,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLCredential
 }
 
 /// <summary>Reference to the SQL Database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLDatabaseRef
 {
@@ -120,7 +120,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLDatabaseRef
 }
 
 /// <summary>Reference to the Cloud SQL instance ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLInstanceRef
 {
@@ -138,7 +138,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQLInstanceRef
 }
 
 /// <summary>Cloud SQL properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQL
 {
@@ -160,7 +160,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSQL
 }
 
 /// <summary>Reference to a spanner database ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSpannerDatabaseRef
 {
@@ -178,7 +178,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSpannerDatabase
 }
 
 /// <summary>Cloud Spanner properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecCloudSpanner
 {
@@ -235,7 +235,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecCloudSpanner
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecProjectRef
 {
@@ -263,7 +263,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecProjectRef
 /// 
 ///  * `projects/[project_id]/locations/[region]/services/[service_id]`
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecSparkMetastoreServiceMetastoreServiceRef
 {
@@ -281,7 +281,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecSparkMetastoreServic
 }
 
 /// <summary>Optional. Dataproc Metastore Service configuration for the connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecSparkMetastoreService
 {
@@ -304,7 +304,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecSparkMetastoreServic
 /// 
 ///  * `projects/[project_id]/regions/[region]/clusters/[cluster_name]`
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecSparkSparkHistoryServerDataprocClusterRef
 {
@@ -322,7 +322,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecSparkSparkHistorySer
 }
 
 /// <summary>Optional. Spark History Server configuration for the connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecSparkSparkHistoryServer
 {
@@ -339,7 +339,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecSparkSparkHistorySer
 }
 
 /// <summary>Spark properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpecSpark
 {
@@ -353,7 +353,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpecSpark
 }
 
 /// <summary>BigQueryConnectionConnectionSpec defines the desired state to connect BigQuery to external resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionSpec
 {
@@ -402,7 +402,7 @@ public partial class V1beta1BigQueryConnectionConnectionSpec
     public V1beta1BigQueryConnectionConnectionSpecSpark? Spark { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusConditions
 {
@@ -427,7 +427,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAwsAccessRole
 {
@@ -436,7 +436,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAwsAc
     public string? Identity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAws
 {
@@ -444,7 +444,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAws
     public V1beta1BigQueryConnectionConnectionStatusObservedStateAwsAccessRole? AccessRole { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAzure
 {
@@ -469,7 +469,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateAzure
     public string? RedirectUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateCloudResource
 {
@@ -490,7 +490,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateCloud
     public string? ServiceAccountID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateCloudSQL
 {
@@ -505,7 +505,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateCloud
     public string? ServiceAccountID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateSpark
 {
@@ -527,7 +527,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedStateSpark
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatusObservedState
 {
@@ -560,7 +560,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatusObservedState
 }
 
 /// <summary>BigQueryConnectionConnectionStatus defines the config connector machine state of BigQueryConnectionConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryConnectionConnectionStatus
 {
@@ -582,7 +582,7 @@ public partial class V1beta1BigQueryConnectionConnectionStatus
 }
 
 /// <summary>BigQueryConnectionConnection is the Schema for the BigQueryConnectionConnection API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryConnectionConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BigQueryConnectionConnectionSpec?>, IStatus<V1beta1BigQueryConnectionConnectionStatus?>

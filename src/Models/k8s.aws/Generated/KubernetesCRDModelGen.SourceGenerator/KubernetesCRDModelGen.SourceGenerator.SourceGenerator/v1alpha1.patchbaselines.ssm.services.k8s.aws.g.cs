@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.services.k8s.aws;
 /// <summary>PatchBaseline is the Schema for the PatchBaselines API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1PatchBaselineList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1PatchBaseline>
@@ -54,7 +54,7 @@ public partial class V1alpha1PatchBaselineList : IKubernetesObject<V1ListMeta>, 
 /// DescribePatchProperties command. For information about which patch properties
 /// can be used with each major operating system, see DescribePatchProperties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRulesPatchFilterGroupPatchFilters
 {
@@ -66,7 +66,7 @@ public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRulesPatchFilter
 }
 
 /// <summary>A set of patch filters, typically used for approval rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRulesPatchFilterGroup
 {
@@ -75,7 +75,7 @@ public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRulesPatchFilter
 }
 
 /// <summary>Defines an approval rule for a patch baseline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRules
 {
@@ -97,7 +97,7 @@ public partial class V1alpha1PatchBaselineSpecApprovalRulesPatchRules
 }
 
 /// <summary>A set of rules used to include patches in the baseline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecApprovalRules
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1PatchBaselineSpecApprovalRules
 /// DescribePatchProperties command. For information about which patch properties
 /// can be used with each major operating system, see DescribePatchProperties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecGlobalFiltersPatchFilters
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1PatchBaselineSpecGlobalFiltersPatchFilters
 /// Amazon Web Services SDK. It can&apos;t be configured from the Patch Manager console,
 /// and its value isn&apos;t displayed in the console.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecGlobalFilters
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1PatchBaselineSpecGlobalFilters
 /// target operating systems and source repository. Applies to Linux managed
 /// nodes only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecSources
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1PatchBaselineSpecSources
 /// tags to Systems Manager documents (SSM documents), managed nodes, maintenance
 /// windows, parameters, patch baselines, OpsItems, and OpsMetadata.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpecTags
 {
@@ -187,7 +187,7 @@ public partial class V1alpha1PatchBaselineSpecTags
 }
 
 /// <summary>PatchBaselineSpec defines the desired state of PatchBaseline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineSpec
 {
@@ -323,7 +323,7 @@ public partial class V1alpha1PatchBaselineSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineStatusAckResourceMetadata
 {
@@ -360,7 +360,7 @@ public partial class V1alpha1PatchBaselineStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineStatusConditions
 {
@@ -386,7 +386,7 @@ public partial class V1alpha1PatchBaselineStatusConditions
 }
 
 /// <summary>PatchBaselineStatus defines the observed state of PatchBaseline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1PatchBaselineStatus
 {
@@ -417,7 +417,7 @@ public partial class V1alpha1PatchBaselineStatus
 }
 
 /// <summary>PatchBaseline is the Schema for the PatchBaselines API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1PatchBaseline : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1PatchBaselineSpec?>, IStatus<V1alpha1PatchBaselineStatus?>

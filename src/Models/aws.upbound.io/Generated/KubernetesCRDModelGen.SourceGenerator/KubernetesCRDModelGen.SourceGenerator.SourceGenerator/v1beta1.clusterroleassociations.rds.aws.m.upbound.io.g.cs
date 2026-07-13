@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.rds.aws.m.upbound.io;
 /// <summary>ClusterRoleAssociation is the Schema for the ClusterRoleAssociations API. Manages a RDS DB Cluster association with an IAM Role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterRoleAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClusterRoleAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1ClusterRoleAssociationList : IKubernetesObject<V1Lis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdenti
 }
 
 /// <summary>Reference to a Cluster in rds to populate dbClusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdenti
 }
 
 /// <summary>Selector for a Cluster in rds to populate dbClusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdentifierSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderDbClusterIdenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnRefPolic
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelector
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelector
     public V1beta1ClusterRoleAssociationSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecForProvider
 {
@@ -392,7 +392,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRefPolicy
 {
@@ -443,7 +443,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdent
 }
 
 /// <summary>Reference to a Cluster in rds to populate dbClusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierRef
 {
@@ -466,7 +466,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdent
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -482,7 +482,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -493,7 +493,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelectorPolicy
 {
@@ -517,7 +517,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdent
 }
 
 /// <summary>Selector for a Cluster in rds to populate dbClusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdentifierSelector
 {
@@ -547,7 +547,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderDbClusterIdent
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRefPoli
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelecto
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelector
 {
@@ -708,7 +708,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProviderRoleArnSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecInitProvider
 {
@@ -745,7 +745,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterRoleAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1ClusterRoleAssociationSpecManagementPoliciesEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1ClusterRoleAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecProviderConfigRef
 {
@@ -787,7 +787,7 @@ public partial class V1beta1ClusterRoleAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpecWriteConnectionSecretToRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1ClusterRoleAssociationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ClusterRoleAssociationSpec defines the desired state of ClusterRoleAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationSpec
 {
@@ -848,7 +848,7 @@ public partial class V1beta1ClusterRoleAssociationSpec
     public V1beta1ClusterRoleAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationStatusAtProvider
 {
@@ -877,7 +877,7 @@ public partial class V1beta1ClusterRoleAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationStatusConditions
 {
@@ -920,7 +920,7 @@ public partial class V1beta1ClusterRoleAssociationStatusConditions
 }
 
 /// <summary>ClusterRoleAssociationStatus defines the observed state of ClusterRoleAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterRoleAssociationStatus
 {
@@ -941,7 +941,7 @@ public partial class V1beta1ClusterRoleAssociationStatus
 }
 
 /// <summary>ClusterRoleAssociation is the Schema for the ClusterRoleAssociations API. Manages a RDS DB Cluster association with an IAM Role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterRoleAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClusterRoleAssociationSpec>, IStatus<V1beta1ClusterRoleAssociationStatus?>

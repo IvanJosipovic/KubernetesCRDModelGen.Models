@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apphub.cnrm.cloud.google.com;
 /// <summary>AppHubServiceProjectAttachment is the Schema for the AppHubServiceProjectAttachment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppHubServiceProjectAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AppHubServiceProjectAttachment>
@@ -37,7 +37,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentList : IKubernetesObj
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentSpecProjectRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentSpecProjectRef
 }
 
 /// <summary>Required. Immutable. Service project name in the format: `&quot;projects/abc&quot;` or `&quot;projects/123&quot;`. As input, project name with either project id or number are accepted. As output, this field will contain project number.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentSpecServiceProjectRef
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentSpecServiceProjectRef
 }
 
 /// <summary>AppHubServiceProjectAttachmentSpec defines the desired state of AppHubServiceProjectAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentSpec
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentSpec
     public required V1alpha1AppHubServiceProjectAttachmentSpecServiceProjectRef ServiceProjectRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentStatusConditions
 {
@@ -128,7 +128,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentStatusObservedState
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentStatusObservedState
 }
 
 /// <summary>AppHubServiceProjectAttachmentStatus defines the config connector machine state of AppHubServiceProjectAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubServiceProjectAttachmentStatus
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1AppHubServiceProjectAttachmentStatus
 }
 
 /// <summary>AppHubServiceProjectAttachment is the Schema for the AppHubServiceProjectAttachment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppHubServiceProjectAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AppHubServiceProjectAttachmentSpec>, IStatus<V1alpha1AppHubServiceProjectAttachmentStatus?>

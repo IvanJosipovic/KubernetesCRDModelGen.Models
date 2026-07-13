@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cosmosdb.azure.m.upbound.io;
 /// <summary>CassandraDatacenter is the Schema for the CassandraDatacenters API. Manages a Cassandra Datacenter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CassandraDatacenterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CassandraDatacenter>
@@ -42,7 +42,7 @@ public partial class V1beta1CassandraDatacenterList : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterId
 }
 
 /// <summary>Reference to a CassandraCluster in cosmosdb to populate cassandraClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterId
 }
 
 /// <summary>Selector for a CassandraCluster in cosmosdb to populate cassandraClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderCassandraClusterId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagemen
 }
 
 /// <summary>Reference to a Subnet in network to populate delegatedManagementSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagemen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagemen
 }
 
 /// <summary>Selector for a Subnet in network to populate delegatedManagementSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1CassandraDatacenterSpecForProviderDelegatedManagemen
     public V1beta1CassandraDatacenterSpecForProviderDelegatedManagementSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecForProvider
 {
@@ -417,7 +417,7 @@ public partial class V1beta1CassandraDatacenterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRefPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRefPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRefPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManageme
 }
 
 /// <summary>Reference to a Subnet in network to populate delegatedManagementSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdRef
 {
@@ -491,7 +491,7 @@ public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManageme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelectorPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelectorPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelectorPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManageme
 }
 
 /// <summary>Selector for a Subnet in network to populate delegatedManagementSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManagementSubnetIdSelector
 {
@@ -578,7 +578,7 @@ public partial class V1beta1CassandraDatacenterSpecInitProviderDelegatedManageme
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecInitProvider
 {
@@ -635,7 +635,7 @@ public partial class V1beta1CassandraDatacenterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CassandraDatacenterSpecManagementPoliciesEnum>))]
 public enum V1beta1CassandraDatacenterSpecManagementPoliciesEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1CassandraDatacenterSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecProviderConfigRef
 {
@@ -677,7 +677,7 @@ public partial class V1beta1CassandraDatacenterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpecWriteConnectionSecretToRef
 {
@@ -687,7 +687,7 @@ public partial class V1beta1CassandraDatacenterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CassandraDatacenterSpec defines the desired state of CassandraDatacenter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterSpec
 {
@@ -738,7 +738,7 @@ public partial class V1beta1CassandraDatacenterSpec
     public V1beta1CassandraDatacenterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterStatusAtProvider
 {
@@ -796,7 +796,7 @@ public partial class V1beta1CassandraDatacenterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterStatusConditions
 {
@@ -839,7 +839,7 @@ public partial class V1beta1CassandraDatacenterStatusConditions
 }
 
 /// <summary>CassandraDatacenterStatus defines the observed state of CassandraDatacenter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CassandraDatacenterStatus
 {
@@ -860,7 +860,7 @@ public partial class V1beta1CassandraDatacenterStatus
 }
 
 /// <summary>CassandraDatacenter is the Schema for the CassandraDatacenters API. Manages a Cassandra Datacenter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CassandraDatacenter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CassandraDatacenterSpec>, IStatus<V1beta1CassandraDatacenterStatus?>

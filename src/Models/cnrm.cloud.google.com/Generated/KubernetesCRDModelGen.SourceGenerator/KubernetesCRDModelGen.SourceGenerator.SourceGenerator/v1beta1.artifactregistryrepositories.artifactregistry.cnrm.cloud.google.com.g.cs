@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.artifactregistry.cnrm.cloud.google.com;
 /// <summary>ArtifactRegistryRepository is the Schema for the ArtifactRegistryRepository API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ArtifactRegistryRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ArtifactRegistryRepository>
@@ -37,7 +37,7 @@ public partial class V1beta1ArtifactRegistryRepositoryList : IKubernetesObject<V
 }
 
 /// <summary>Policy condition for matching versions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPoliciesCondition
 {
@@ -67,7 +67,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPoliciesConditi
 }
 
 /// <summary>Policy condition for retaining a minimum number of versions. May only be specified with a Keep action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPoliciesMostRecentVersions
 {
@@ -80,7 +80,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPoliciesMostRec
     public IList<string>? PackageNamePrefixes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPolicies
 {
@@ -102,7 +102,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecCleanupPolicies
 }
 
 /// <summary>Docker repository config contains repository level configuration for the repositories of docker type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecDockerConfig
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecDockerConfig
 }
 
 /// <summary>The Cloud KMS resource name of the customer managed encryption key that&apos;s used to encrypt the contents of the Repository. Has the form: `projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. This value may not be changed after the Repository has been created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecKmsKeyRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecKmsKeyRef
 }
 
 /// <summary>Maven repository config contains repository level configuration for the repositories of maven type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecMavenConfig
 {
@@ -144,7 +144,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecMavenConfig
 }
 
 /// <summary>Specific settings for a Docker remote repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfigDockerRepository
 {
@@ -154,7 +154,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 }
 
 /// <summary>Specific settings for a Maven remote repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfigMavenRepository
 {
@@ -164,7 +164,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 }
 
 /// <summary>Specific settings for an Npm remote repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfigNpmRepository
 {
@@ -174,7 +174,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 }
 
 /// <summary>Specific settings for a Python remote repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfigPythonRepository
 {
@@ -184,7 +184,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 }
 
 /// <summary>Configuration specific for a Remote Repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 {
@@ -210,7 +210,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecRemoteRepositoryConfig
 }
 
 /// <summary>A reference to the repository resource, for example: `projects/p1/locations/us-central1/repositories/repo1`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfigUpstreamPoliciesRepositoryRef
 {
@@ -227,7 +227,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfi
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfigUpstreamPolicies
 {
@@ -245,7 +245,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfi
 }
 
 /// <summary>Configuration specific for a Virtual Repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfig
 {
@@ -255,7 +255,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfi
 }
 
 /// <summary>ArtifactRegistryRepositorySpec defines the desired state of ArtifactRegistryRepository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositorySpec
 {
@@ -308,7 +308,7 @@ public partial class V1beta1ArtifactRegistryRepositorySpec
     public V1beta1ArtifactRegistryRepositorySpecVirtualRepositoryConfig? VirtualRepositoryConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositoryStatusConditions
 {
@@ -334,7 +334,7 @@ public partial class V1beta1ArtifactRegistryRepositoryStatusConditions
 }
 
 /// <summary>ArtifactRegistryRepositoryStatus defines the config connector machine state of ArtifactRegistryRepository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactRegistryRepositoryStatus
 {
@@ -360,7 +360,7 @@ public partial class V1beta1ArtifactRegistryRepositoryStatus
 }
 
 /// <summary>ArtifactRegistryRepository is the Schema for the ArtifactRegistryRepository API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ArtifactRegistryRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ArtifactRegistryRepositorySpec>, IStatus<V1beta1ArtifactRegistryRepositoryStatus?>

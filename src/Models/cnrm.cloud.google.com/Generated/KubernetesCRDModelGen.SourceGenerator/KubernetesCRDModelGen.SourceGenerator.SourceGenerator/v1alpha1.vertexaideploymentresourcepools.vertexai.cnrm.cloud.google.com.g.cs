@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.cnrm.cloud.google.com;
 /// <summary>VertexAIDeploymentResourcePool is the Schema for the VertexAIDeploymentResourcePool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VertexAIDeploymentResourcePoolList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VertexAIDeploymentResourcePool>
@@ -36,7 +36,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolList : IKubernetesObj
     public required IList<V1alpha1VertexAIDeploymentResourcePool> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResourcesAutoscalingMetricSpecs
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResource
 }
 
 /// <summary>Optional. Immutable. If set, use DWS resource to schedule the deployment workload. reference: (https://cloud.google.com/blog/products/compute/introducing-dynamic-workload-scheduler)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResourcesFlexStart
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResource
 }
 
 /// <summary>Optional. Immutable. Configuration controlling how this resource pool consumes reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResourcesMachineSpecReservationAffinity
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResource
 }
 
 /// <summary>Required. Immutable. The specification of a single machine being used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResourcesMachineSpec
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResource
 }
 
 /// <summary>Required. The underlying DedicatedResources that the DeploymentResourcePool uses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResources
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecDedicatedResource
 }
 
 /// <summary>Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. The key needs to be in the same region as where the compute resource is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecEncryptionSpecKmsKeyRef
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecEncryptionSpecKms
 }
 
 /// <summary>Customer-managed encryption key spec for a DeploymentResourcePool. If set, this DeploymentResourcePool will be secured by this key. Endpoints and the DeploymentResourcePool they deploy in need to have the same EncryptionSpec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecEncryptionSpec
 {
@@ -259,7 +259,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecEncryptionSpec
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecProjectRef
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecProjectRef
 }
 
 /// <summary>The service account that the DeploymentResourcePool&apos;s container(s) run as.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpecServiceAccountRef
 {
@@ -299,7 +299,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpecServiceAccountRef
 }
 
 /// <summary>VertexAIDeploymentResourcePoolSpec defines the desired state of VertexAIDeploymentResourcePool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolSpec
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolSpec
     public V1alpha1VertexAIDeploymentResourcePoolSpecServiceAccountRef? ServiceAccountRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolStatusConditions
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolStatusObservedState
 {
@@ -376,7 +376,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolStatusObservedState
 }
 
 /// <summary>VertexAIDeploymentResourcePoolStatus defines the config connector machine state of VertexAIDeploymentResourcePool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDeploymentResourcePoolStatus
 {
@@ -398,7 +398,7 @@ public partial class V1alpha1VertexAIDeploymentResourcePoolStatus
 }
 
 /// <summary>VertexAIDeploymentResourcePool is the Schema for the VertexAIDeploymentResourcePool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VertexAIDeploymentResourcePool : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VertexAIDeploymentResourcePoolSpec>, IStatus<V1alpha1VertexAIDeploymentResourcePoolStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>ModelExplainabilityJobDefinition is the Schema for the ModelExplainabilityJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelExplainabilityJobDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ModelExplainabilityJobDefinition>
@@ -37,7 +37,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionList : IKubernetesO
 }
 
 /// <summary>Configuration for the cluster used to run model monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecJobResourcesClusterConfig
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecJobResourcesClu
 }
 
 /// <summary>Identifies the resources to deploy for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecJobResources
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecJobResources
 /// Configures the model explainability job to run a specified Docker container
 /// image.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityAppSpecification
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>The constraints resource for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityBaselineConfigConstraintsResource
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>The baseline configuration for a model explainability job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityBaselineConfig
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>Input object for the endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityJobInputEndpointInput
 {
@@ -144,7 +144,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>Inputs for the model explainability job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityJobInput
 {
@@ -157,7 +157,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 /// Information about where and how you want to store the results of a monitoring
 /// job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityJobOutputConfigMonitoringOutputsS3Output
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>The output object for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityJobOutputConfigMonitoringOutputs
 {
@@ -185,7 +185,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 }
 
 /// <summary>The output configuration for monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabilityJobOutputConfig
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecModelExplainabi
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecNetworkConfigVpcConfig
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecNetworkConfigVp
 }
 
 /// <summary>Networking options for a model explainability job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecNetworkConfig
 {
@@ -235,7 +235,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecNetworkConfig
 }
 
 /// <summary>A time limit for how long the monitoring job is allowed to run before stopping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecStoppingCondition
 {
@@ -258,7 +258,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecStoppingConditi
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpecTags
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpecTags
 }
 
 /// <summary>ModelExplainabilityJobDefinitionSpec defines the desired state of ModelExplainabilityJobDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionSpec
 {
@@ -337,7 +337,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionStatusAckResourceMetadata
 {
@@ -374,7 +374,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionStatusAckResourceMe
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionStatusConditions
 {
@@ -400,7 +400,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionStatusConditions
 }
 
 /// <summary>ModelExplainabilityJobDefinitionStatus defines the observed state of ModelExplainabilityJobDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelExplainabilityJobDefinitionStatus
 {
@@ -423,7 +423,7 @@ public partial class V1alpha1ModelExplainabilityJobDefinitionStatus
 }
 
 /// <summary>ModelExplainabilityJobDefinition is the Schema for the ModelExplainabilityJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelExplainabilityJobDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ModelExplainabilityJobDefinitionSpec?>, IStatus<V1alpha1ModelExplainabilityJobDefinitionStatus?>

@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.kargo.akuity.io;
 /// ProjectConfig is a resource type that describes the configuration of a
 /// Project.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProjectConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ProjectConfig>
@@ -43,7 +43,7 @@ public partial class V1alpha1ProjectConfigList : IKubernetesObject<V1ListMeta>, 
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecPromotionPoliciesStageSelectorMatchExpressions
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1ProjectConfigSpecPromotionPoliciesStageSelectorMatc
 /// StageSelector is a selector that matches the Stage resource to which
 /// this policy applies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecPromotionPoliciesStageSelector
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1ProjectConfigSpecPromotionPoliciesStageSelector
 /// PromotionPolicy defines policies governing the promotion of Freight to a
 /// specific Stage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecPromotionPolicies
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1ProjectConfigSpecPromotionPolicies
 /// Artifactory documentation:
 ///   https://jfrog.com/help/r/jfrog-platform-administration-documentation/webhooks
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversArtifactorySecretRef
 {
@@ -178,7 +178,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversArtifactorySecretR
 /// Artifactory contains the configuration for a webhook receiver that is
 /// compatible with JFrog Artifactory payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversArtifactory
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversArtifactory
 ///  Azure DevOps:
 /// 	http://learn.microsoft.com/en-us/azure/devops/service-hooks/services/webhooks?view=azure-devops
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversAzureSecretRef
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversAzureSecretRef
 /// Azure contains the configuration for a webhook receiver that is compatible
 /// with Azure Container Registry (ACR) and Azure DevOps payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversAzure
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversAzure
 /// documentation:
 ///   https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversBitbucketSecretRef
 {
@@ -329,7 +329,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversBitbucketSecretRef
 /// Bitbucket contains the configuration for a webhook receiver that is
 /// compatible with Bitbucket payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversBitbucket
 {
@@ -363,7 +363,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversBitbucket
 /// Docker Hub webhooks, please refer to the Docker documentation:
 ///   https://docs.docker.com/docker-hub/webhooks/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversDockerhubSecretRef
 {
@@ -382,7 +382,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversDockerhubSecretRef
 /// DockerHub contains the configuration for a webhook receiver that is
 /// compatible with DockerHub payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversDockerhub
 {
@@ -406,7 +406,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversDockerhub
 /// ActionType indicates the type of action to be performed. `Refresh` is the
 /// only currently supported action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsActionEnum>))]
 public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsActionEnum
 {
@@ -415,7 +415,7 @@ public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsActionEnum
 }
 
 /// <summary>Key is the key of the index.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaIndexSelectorMatchIndicesKeyEnum>))]
 public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaIndexSelectorMatchIndicesKeyEnum
 {
@@ -429,7 +429,7 @@ public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelecti
 /// IndexSelectorRequirement encapsulates a requirement used to select indexes
 /// based on specific criteria.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaIndexSelectorMatchIndices
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTarg
 /// IndexSelector is a selector used to identify cached target resources by cache key.
 /// If used with LabelSelector and/or Name, the results are the combined (logical AND) of all the criteria.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaIndexSelector
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTarg
 }
 
 /// <summary>Kind is the kind of the target resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaKindEnum>))]
 public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaKindEnum
 {
@@ -481,7 +481,7 @@ public enum V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelecti
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaLabelSelectorMatchExpressions
 {
@@ -510,7 +510,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTarg
 /// LabelSelector is a label selector to identify the target resources.
 /// If used with IndexSelector and/or Name, the results are the combined (logical AND) of all the criteria.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteriaLabelSelector
 {
@@ -533,7 +533,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTarg
 /// however, at least one must be specified. When multiple criteria are specified, the
 /// results are the combined (logical AND) of the criteria.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTargetSelectionCriteria
 {
@@ -567,7 +567,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActionsTarg
 /// GenericWebhookAction describes an action to be performed on a resource
 /// and the conditions under which it should be performed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActions
 {
@@ -613,7 +613,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericActions
 /// Kargo to create a complex, hard-to-guess URL, which implicitly serves as a
 /// shared secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericSecretRef
 {
@@ -629,7 +629,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGenericSecretRef
 }
 
 /// <summary>Generic contains the configuration for a generic webhook receiver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGeneric
 {
@@ -667,7 +667,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGeneric
 /// For more information please refer to the Gitea documentation:
 ///   https://docs.gitea.io/en-us/webhooks/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGiteaSecretRef
 {
@@ -686,7 +686,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGiteaSecretRef
 /// Gitea contains the configuration for a webhook receiver that is compatible
 /// with Gitea payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitea
 {
@@ -720,7 +720,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitea
 /// For more information please refer to GitHub documentation:
 ///   https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGithubSecretRef
 {
@@ -739,7 +739,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGithubSecretRef
 /// GitHub contains the configuration for a webhook receiver that is compatible
 /// with GitHub payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGithub
 {
@@ -773,7 +773,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGithub
 /// information about this token, please refer to the GitLab documentation:
 ///   https://docs.gitlab.com/user/project/integrations/webhooks/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitlabSecretRef
 {
@@ -792,7 +792,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitlabSecretRef
 /// GitLab contains the configuration for a webhook receiver that is compatible
 /// with GitLab payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitlab
 {
@@ -826,7 +826,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversGitlab
 /// information, please refer to the Harbor documentation:
 ///   https://goharbor.io/docs/main/working-with-projects/project-configuration/configure-webhooks/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversHarborSecretRef
 {
@@ -845,7 +845,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversHarborSecretRef
 /// Harbor contains the configuration for a webhook receiver that is compatible
 /// with Harbor payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversHarbor
 {
@@ -881,7 +881,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversHarbor
 /// Quay webhooks, please refer to the Quay documentation:
 ///   https://docs.quay.io/guides/notifications.html
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversQuaySecretRef
 {
@@ -900,7 +900,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversQuaySecretRef
 /// Quay contains the configuration for a webhook receiver that is compatible
 /// with Quay payloads.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceiversQuay
 {
@@ -927,7 +927,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceiversQuay
 /// WebhookReceiverConfig describes the configuration for a single webhook
 /// receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpecWebhookReceivers
 {
@@ -1004,7 +1004,7 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceivers
 }
 
 /// <summary>Spec describes the configuration of a Project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigSpec
 {
@@ -1024,7 +1024,7 @@ public partial class V1alpha1ProjectConfigSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProjectConfigStatusConditionsStatusEnum>))]
 public enum V1alpha1ProjectConfigStatusConditionsStatusEnum
 {
@@ -1037,7 +1037,7 @@ public enum V1alpha1ProjectConfigStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigStatusConditions
 {
@@ -1083,7 +1083,7 @@ public partial class V1alpha1ProjectConfigStatusConditions
 }
 
 /// <summary>WebhookReceiverDetails encapsulates the details of a webhook receiver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigStatusWebhookReceivers
 {
@@ -1101,7 +1101,7 @@ public partial class V1alpha1ProjectConfigStatusWebhookReceivers
 }
 
 /// <summary>Status describes the current status of a ProjectConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ProjectConfigStatus
 {
@@ -1139,7 +1139,7 @@ public partial class V1alpha1ProjectConfigStatus
 /// ProjectConfig is a resource type that describes the configuration of a
 /// Project.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProjectConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ProjectConfigSpec?>, IStatus<V1alpha1ProjectConfigStatus?>

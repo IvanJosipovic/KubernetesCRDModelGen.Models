@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.rds.aws.upbound.io;
 /// <summary>ProxyDefaultTargetGroup is the Schema for the ProxyDefaultTargetGroups API. Manage an RDS DB proxy default target group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ProxyDefaultTargetGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ProxyDefaultTargetGroup>
@@ -45,7 +45,7 @@ public partial class V1beta2ProxyDefaultTargetGroupList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecDeletionPolicyEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecDeletionPolicyEnum
 }
 
 /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderConnectionPoolConfig
 {
@@ -87,7 +87,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderConnectionPool
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyResolutionEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyResolutionEnum
 {
@@ -103,7 +103,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyResolveEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyResolveEnum
 {
@@ -114,7 +114,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRefPolicy
 {
@@ -138,7 +138,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRef
 }
 
 /// <summary>Reference to a Proxy in rds to populate dbProxyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRef
 {
@@ -157,7 +157,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicyResolutionEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicyResolveEnum
 {
@@ -184,7 +184,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicy
 {
@@ -208,7 +208,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSel
 }
 
 /// <summary>Selector for a Proxy in rds to populate dbProxyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelector
 {
@@ -228,7 +228,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSel
     public V1beta2ProxyDefaultTargetGroupSpecForProviderDbProxyNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecForProvider
 {
@@ -257,7 +257,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecForProvider
 }
 
 /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderConnectionPoolConfig
 {
@@ -288,7 +288,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderConnectionPoo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyResolutionEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyResolutionEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyResolveEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyResolveEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRefPolicy
 {
@@ -339,7 +339,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRe
 }
 
 /// <summary>Reference to a Proxy in rds to populate dbProxyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRef
 {
@@ -358,7 +358,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPolicyResolutionEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPolicyResolveEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelectorPolicy
 {
@@ -409,7 +409,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSe
 }
 
 /// <summary>Selector for a Proxy in rds to populate dbProxyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSelector
 {
@@ -441,7 +441,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecInitProvider
 {
@@ -466,7 +466,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecManagementPoliciesEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecManagementPoliciesEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -506,7 +506,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolveEnum
 {
@@ -517,7 +517,7 @@ public enum V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicy
 {
@@ -545,7 +545,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecProviderConfigRef
 {
@@ -564,7 +564,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpecWriteConnectionSecretToRef
 {
@@ -578,7 +578,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpecWriteConnectionSecretToRe
 }
 
 /// <summary>ProxyDefaultTargetGroupSpec defines the desired state of ProxyDefaultTargetGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupSpec
 {
@@ -646,7 +646,7 @@ public partial class V1beta2ProxyDefaultTargetGroupSpec
 }
 
 /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupStatusAtProviderConnectionPoolConfig
 {
@@ -671,7 +671,7 @@ public partial class V1beta2ProxyDefaultTargetGroupStatusAtProviderConnectionPoo
     public IList<string>? SessionPinningFilters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupStatusAtProvider
 {
@@ -704,7 +704,7 @@ public partial class V1beta2ProxyDefaultTargetGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupStatusConditions
 {
@@ -747,7 +747,7 @@ public partial class V1beta2ProxyDefaultTargetGroupStatusConditions
 }
 
 /// <summary>ProxyDefaultTargetGroupStatus defines the observed state of ProxyDefaultTargetGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ProxyDefaultTargetGroupStatus
 {
@@ -768,7 +768,7 @@ public partial class V1beta2ProxyDefaultTargetGroupStatus
 }
 
 /// <summary>ProxyDefaultTargetGroup is the Schema for the ProxyDefaultTargetGroups API. Manage an RDS DB proxy default target group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ProxyDefaultTargetGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ProxyDefaultTargetGroupSpec>, IStatus<V1beta2ProxyDefaultTargetGroupStatus?>

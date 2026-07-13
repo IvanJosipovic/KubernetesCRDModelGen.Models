@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.hub.traefik.io;
 /// ManagedSubscription defines a Subscription managed by the API manager as the result of a pre-negotiation with its
 /// API consumers. This subscription grant consuming access to a set of APIs to a set of Applications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ManagedSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ManagedSubscription>
@@ -40,7 +40,7 @@ public partial class V1alpha1ManagedSubscriptionList : IKubernetesObject<V1ListM
 }
 
 /// <summary>APIBundleReference references an APIBundle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApiBundles
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApiBundles
 }
 
 /// <summary>APIPlan defines which APIPlan will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApiPlan
 {
@@ -63,7 +63,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApiPlan
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApiSelectorMatchExpressions
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApiSelectorMatchExpressions
 /// This field is optional and follows standard label selector semantics.
 /// An empty APISelector matches any API.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApiSelector
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApiSelector
 }
 
 /// <summary>APIReference references an API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApis
 {
@@ -122,7 +122,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApis
 }
 
 /// <summary>ApplicationReference references an Application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecApplications
 {
@@ -135,7 +135,7 @@ public partial class V1alpha1ManagedSubscriptionSpecApplications
 }
 
 /// <summary>ManagedApplicationReference references a ManagedApplication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecManagedApplications
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1ManagedSubscriptionSpecManagedApplications
 /// If not set, all operations are available.
 /// An empty OperationFilter prohibits all operations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpecOperationFilter
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1ManagedSubscriptionSpecOperationFilter
 }
 
 /// <summary>The desired behavior of this ManagedSubscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionSpec
 {
@@ -229,7 +229,7 @@ public partial class V1alpha1ManagedSubscriptionSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ManagedSubscriptionStatusConditionsStatusEnum>))]
 public enum V1alpha1ManagedSubscriptionStatusConditionsStatusEnum
 {
@@ -242,7 +242,7 @@ public enum V1alpha1ManagedSubscriptionStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionStatusConditions
 {
@@ -288,7 +288,7 @@ public partial class V1alpha1ManagedSubscriptionStatusConditions
 }
 
 /// <summary>ResolvedAPIReference references a resolved API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionStatusResolvedApis
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1ManagedSubscriptionStatusResolvedApis
 }
 
 /// <summary>ResolvedAPIReference references a resolved API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionStatusUnresolvedApis
 {
@@ -308,7 +308,7 @@ public partial class V1alpha1ManagedSubscriptionStatusUnresolvedApis
 }
 
 /// <summary>The current status of this ManagedSubscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionStatus
 {
@@ -339,7 +339,7 @@ public partial class V1alpha1ManagedSubscriptionStatus
 /// ManagedSubscription defines a Subscription managed by the API manager as the result of a pre-negotiation with its
 /// API consumers. This subscription grant consuming access to a set of APIs to a set of Applications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ManagedSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ManagedSubscriptionSpec?>, IStatus<V1alpha1ManagedSubscriptionStatus?>

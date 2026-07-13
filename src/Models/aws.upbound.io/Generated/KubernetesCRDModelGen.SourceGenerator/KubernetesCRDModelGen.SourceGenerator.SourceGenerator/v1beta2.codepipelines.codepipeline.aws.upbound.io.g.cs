@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.codepipeline.aws.upbound.io;
 /// <summary>Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CodepipelineList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Codepipeline>
@@ -45,7 +45,7 @@ public partial class V1beta2CodepipelineList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecDeletionPolicyEnum>))]
 public enum V1beta2CodepipelineSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2CodepipelineSpecDeletionPolicyEnum
 }
 
 /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreEncryptionKey
 {
@@ -75,7 +75,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreEncryptionKe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationRefP
 }
 
 /// <summary>Reference to a Bucket in s3 to populate location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationSele
 }
 
 /// <summary>Selector for a Bucket in s3 to populate location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationSele
     public V1beta2CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStore
 {
@@ -251,7 +251,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStore
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -267,7 +267,7 @@ public enum V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta2CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderRoleArnRefPolicy
 {
@@ -302,7 +302,7 @@ public partial class V1beta2CodepipelineSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderRoleArnRef
 {
@@ -321,7 +321,7 @@ public partial class V1beta2CodepipelineSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -337,7 +337,7 @@ public enum V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -348,7 +348,7 @@ public enum V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicy
 {
@@ -372,7 +372,7 @@ public partial class V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderRoleArnSelector
 {
@@ -392,7 +392,7 @@ public partial class V1beta2CodepipelineSpecForProviderRoleArnSelector
     public V1beta2CodepipelineSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageAction
 {
@@ -450,7 +450,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageAction
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryConditionRuleRuleTypeId
 {
@@ -471,7 +471,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryCondition
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryConditionRule
 {
@@ -509,7 +509,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryCondition
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryCondition
 {
@@ -523,7 +523,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryCondition
 }
 
 /// <summary>The method to use when a stage allows entry. For example, configuring this field for conditions will allow entry to the stage when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntry
 {
@@ -533,7 +533,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntry
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRuleRuleTypeId
 {
@@ -554,7 +554,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRu
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRule
 {
@@ -592,7 +592,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRu
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureCondition
 {
@@ -606,7 +606,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailureCondition
 }
 
 /// <summary>The retry configuration specifies automatic retry for a failed stage, along with the configured retry mode. Defined as a retry_configuration block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureRetryConfiguration
 {
@@ -616,7 +616,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailureRetryConfig
 }
 
 /// <summary>The method to use when a stage has not completed successfully. For example, configuring this field for rollback will roll back a failed stage automatically to the last successful pipeline execution in the stage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailure
 {
@@ -634,7 +634,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailure
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRuleRuleTypeId
 {
@@ -655,7 +655,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRu
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRule
 {
@@ -693,7 +693,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRu
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessCondition
 {
@@ -707,7 +707,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessCondition
 }
 
 /// <summary>The method to use when a stage has succeeded. For example, configuring this field for conditions will allow the stage to succeed when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccess
 {
@@ -716,7 +716,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnSuccess
     public V1beta2CodepipelineSpecForProviderStageOnSuccessCondition? Condition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStage
 {
@@ -742,7 +742,7 @@ public partial class V1beta2CodepipelineSpecForProviderStage
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPullRequestBranches
 {
@@ -756,7 +756,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPullRequestFilePaths
 {
@@ -769,7 +769,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPullRequest
 {
@@ -787,7 +787,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPushBranches
 {
@@ -801,7 +801,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPushFilePaths
 {
@@ -815,7 +815,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
 }
 
 /// <summary>Key-value map of resource tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPushTags
 {
@@ -828,7 +828,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPush
 {
@@ -846,7 +846,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfigurationPu
 }
 
 /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfiguration
 {
@@ -863,7 +863,7 @@ public partial class V1beta2CodepipelineSpecForProviderTriggerGitConfiguration
     public string? SourceActionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderTrigger
 {
@@ -876,7 +876,7 @@ public partial class V1beta2CodepipelineSpecForProviderTrigger
     public string? ProviderType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderVariable
 {
@@ -893,7 +893,7 @@ public partial class V1beta2CodepipelineSpecForProviderVariable
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProvider
 {
@@ -946,7 +946,7 @@ public partial class V1beta2CodepipelineSpecForProvider
 }
 
 /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreEncryptionKey
 {
@@ -965,7 +965,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreEncryptionK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolutionEnum
 {
@@ -981,7 +981,7 @@ public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolveEnum
 {
@@ -992,7 +992,7 @@ public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRefPolicy
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRef
 }
 
 /// <summary>Reference to a Bucket in s3 to populate location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRef
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolutionEnum
 {
@@ -1051,7 +1051,7 @@ public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolveEnum
 {
@@ -1062,7 +1062,7 @@ public enum V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicy
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSel
 }
 
 /// <summary>Selector for a Bucket in s3 to populate location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelector
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSel
     public V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStore
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStore
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -1153,7 +1153,7 @@ public enum V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -1164,7 +1164,7 @@ public enum V1beta2CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderRoleArnRefPolicy
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta2CodepipelineSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderRoleArnRef
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta2CodepipelineSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -1223,7 +1223,7 @@ public enum V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -1234,7 +1234,7 @@ public enum V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicy
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderRoleArnSelector
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta2CodepipelineSpecInitProviderRoleArnSelector
     public V1beta2CodepipelineSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageAction
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageAction
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditionRuleRuleTypeId
 {
@@ -1353,7 +1353,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditio
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditionRule
 {
@@ -1387,7 +1387,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditio
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryCondition
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditio
 }
 
 /// <summary>The method to use when a stage allows entry. For example, configuring this field for conditions will allow entry to the stage when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntry
 {
@@ -1411,7 +1411,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntry
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionRuleRuleTypeId
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionR
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionRule
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionR
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureCondition
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureCondition
 }
 
 /// <summary>The retry configuration specifies automatic retry for a failed stage, along with the configured retry mode. Defined as a retry_configuration block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureRetryConfiguration
 {
@@ -1490,7 +1490,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureRetryConfi
 }
 
 /// <summary>The method to use when a stage has not completed successfully. For example, configuring this field for rollback will roll back a failed stage automatically to the last successful pipeline execution in the stage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailure
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailure
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionRuleRuleTypeId
 {
@@ -1529,7 +1529,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionR
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionRule
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionR
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessCondition
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessCondition
 }
 
 /// <summary>The method to use when a stage has succeeded. For example, configuring this field for conditions will allow the stage to succeed when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccess
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccess
     public V1beta2CodepipelineSpecInitProviderStageOnSuccessCondition? Condition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStage
 {
@@ -1612,7 +1612,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStage
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPullRequestBranches
 {
@@ -1626,7 +1626,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPullRequestFilePaths
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPullRequest
 {
@@ -1657,7 +1657,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPushBranches
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPushFilePaths
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
 }
 
 /// <summary>Key-value map of resource tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPushTags
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationPush
 {
@@ -1716,7 +1716,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfigurationP
 }
 
 /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfiguration
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTriggerGitConfiguration
     public string? SourceActionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderTrigger
 {
@@ -1746,7 +1746,7 @@ public partial class V1beta2CodepipelineSpecInitProviderTrigger
     public string? ProviderType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderVariable
 {
@@ -1775,7 +1775,7 @@ public partial class V1beta2CodepipelineSpecInitProviderVariable
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProvider
 {
@@ -1824,7 +1824,7 @@ public partial class V1beta2CodepipelineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecManagementPoliciesEnum>))]
 public enum V1beta2CodepipelineSpecManagementPoliciesEnum
 {
@@ -1848,7 +1848,7 @@ public enum V1beta2CodepipelineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2CodepipelineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1864,7 +1864,7 @@ public enum V1beta2CodepipelineSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CodepipelineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2CodepipelineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1875,7 +1875,7 @@ public enum V1beta2CodepipelineSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecProviderConfigRefPolicy
 {
@@ -1903,7 +1903,7 @@ public partial class V1beta2CodepipelineSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecProviderConfigRef
 {
@@ -1922,7 +1922,7 @@ public partial class V1beta2CodepipelineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecWriteConnectionSecretToRef
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta2CodepipelineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CodepipelineSpec defines the desired state of Codepipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpec
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta2CodepipelineSpec
 }
 
 /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderArtifactStoreEncryptionKey
 {
@@ -2017,7 +2017,7 @@ public partial class V1beta2CodepipelineStatusAtProviderArtifactStoreEncryptionK
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderArtifactStore
 {
@@ -2038,7 +2038,7 @@ public partial class V1beta2CodepipelineStatusAtProviderArtifactStore
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageAction
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageAction
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditionRuleRuleTypeId
 {
@@ -2117,7 +2117,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditio
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditionRule
 {
@@ -2155,7 +2155,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditio
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryCondition
 {
@@ -2169,7 +2169,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditio
 }
 
 /// <summary>The method to use when a stage allows entry. For example, configuring this field for conditions will allow entry to the stage when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntry
 {
@@ -2179,7 +2179,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntry
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionRuleRuleTypeId
 {
@@ -2200,7 +2200,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionR
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionRule
 {
@@ -2238,7 +2238,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionR
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureCondition
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureCondition
 }
 
 /// <summary>The retry configuration specifies automatic retry for a failed stage, along with the configured retry mode. Defined as a retry_configuration block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureRetryConfiguration
 {
@@ -2262,7 +2262,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureRetryConfi
 }
 
 /// <summary>The method to use when a stage has not completed successfully. For example, configuring this field for rollback will roll back a failed stage automatically to the last successful pipeline execution in the stage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailure
 {
@@ -2280,7 +2280,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailure
 }
 
 /// <summary>The ID for the rule type, which is made up of the combined values for category, owner, provider, and version. Defined as an rule_type_id block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionRuleRuleTypeId
 {
@@ -2301,7 +2301,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionR
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionRule
 {
@@ -2339,7 +2339,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionR
 }
 
 /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessCondition
 {
@@ -2353,7 +2353,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessCondition
 }
 
 /// <summary>The method to use when a stage has succeeded. For example, configuring this field for conditions will allow the stage to succeed when the conditions are met.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccess
 {
@@ -2362,7 +2362,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccess
     public V1beta2CodepipelineStatusAtProviderStageOnSuccessCondition? Condition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStage
 {
@@ -2388,7 +2388,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStage
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPullRequestBranches
 {
@@ -2402,7 +2402,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPullRequestFilePaths
 {
@@ -2415,7 +2415,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPullRequest
 {
@@ -2433,7 +2433,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPushBranches
 {
@@ -2447,7 +2447,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
 }
 
 /// <summary>The field that specifies to filter on file paths for the pull request trigger configuration. A file_paths block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPushFilePaths
 {
@@ -2461,7 +2461,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
 }
 
 /// <summary>Key-value map of resource tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPushTags
 {
@@ -2474,7 +2474,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationPush
 {
@@ -2492,7 +2492,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfigurationP
 }
 
 /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfiguration
 {
@@ -2509,7 +2509,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerGitConfiguration
     public string? SourceActionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTrigger
 {
@@ -2522,7 +2522,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTrigger
     public string? ProviderType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequestBranches
 {
@@ -2535,7 +2535,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequestFilePaths
 {
@@ -2548,7 +2548,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequest
 {
@@ -2565,7 +2565,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequestFilePaths>? FilePaths { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPushBranches
 {
@@ -2578,7 +2578,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPushFilePaths
 {
@@ -2591,7 +2591,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPushTags
 {
@@ -2604,7 +2604,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<string>? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPush
 {
@@ -2621,7 +2621,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public IList<V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurationPushTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfiguration
 {
@@ -2638,7 +2638,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAllGitConfigurati
     public string? SourceActionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderTriggerAll
 {
@@ -2651,7 +2651,7 @@ public partial class V1beta2CodepipelineStatusAtProviderTriggerAll
     public string? ProviderType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderVariable
 {
@@ -2668,7 +2668,7 @@ public partial class V1beta2CodepipelineStatusAtProviderVariable
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProvider
 {
@@ -2729,7 +2729,7 @@ public partial class V1beta2CodepipelineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusConditions
 {
@@ -2772,7 +2772,7 @@ public partial class V1beta2CodepipelineStatusConditions
 }
 
 /// <summary>CodepipelineStatus defines the observed state of Codepipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatus
 {
@@ -2793,7 +2793,7 @@ public partial class V1beta2CodepipelineStatus
 }
 
 /// <summary>Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Codepipeline : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CodepipelineSpec>, IStatus<V1beta2CodepipelineStatus?>

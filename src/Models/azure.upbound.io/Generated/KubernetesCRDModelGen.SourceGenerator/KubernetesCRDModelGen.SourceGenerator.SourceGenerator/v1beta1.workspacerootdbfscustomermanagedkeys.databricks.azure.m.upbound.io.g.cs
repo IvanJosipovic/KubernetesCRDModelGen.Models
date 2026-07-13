@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.databricks.azure.m.upbound.io;
 /// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System(DBFS)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkspaceRootDbfsCustomerManagedKey>
@@ -42,7 +42,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyList : IKubernete
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKey
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKey
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKe
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKey
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKey
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKe
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWo
 }
 
 /// <summary>Reference to a Workspace in databricks to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWo
 }
 
 /// <summary>Selector for a Workspace in databricks to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWo
     public V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProvider
 {
@@ -385,7 +385,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicy
 {
@@ -436,7 +436,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderK
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderK
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelector
 {
@@ -546,7 +546,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProviderK
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProvider
 {
@@ -571,7 +571,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceRootDbfsCustomerManagedKeySpecManagementPoliciesEnum>))]
 public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecManagementPoliciesEnum
 {
@@ -594,7 +594,7 @@ public enum V1beta1WorkspaceRootDbfsCustomerManagedKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecProviderConfigRef
 {
@@ -613,7 +613,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecWriteConnectionSecretToRef
 {
@@ -623,7 +623,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecWriteConnecti
 }
 
 /// <summary>WorkspaceRootDbfsCustomerManagedKeySpec defines the desired state of WorkspaceRootDbfsCustomerManagedKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpec
 {
@@ -674,7 +674,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpec
     public V1beta1WorkspaceRootDbfsCustomerManagedKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusAtProvider
 {
@@ -696,7 +696,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusConditions
 {
@@ -739,7 +739,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusConditions
 }
 
 /// <summary>WorkspaceRootDbfsCustomerManagedKeyStatus defines the observed state of WorkspaceRootDbfsCustomerManagedKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatus
 {
@@ -760,7 +760,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatus
 }
 
 /// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System(DBFS)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceRootDbfsCustomerManagedKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkspaceRootDbfsCustomerManagedKeySpec>, IStatus<V1beta1WorkspaceRootDbfsCustomerManagedKeyStatus?>

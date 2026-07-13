@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kendra.aws.upbound.io;
 /// <summary>QuerySuggestionsBlockList is the Schema for the QuerySuggestionsBlockLists API. provider resource for managing an aws kendra block list used for query suggestions for an index</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2QuerySuggestionsBlockListList : IKubernetesObject<V1ListMeta>, IItems<V1beta2QuerySuggestionsBlockList>
@@ -45,7 +45,7 @@ public partial class V1beta2QuerySuggestionsBlockListList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecDeletionPolicyEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRefPo
 }
 
 /// <summary>Reference to a Index in kendra to populate indexId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelec
 }
 
 /// <summary>Selector for a Index in kendra to populate indexId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderIndexIdSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRefPo
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelec
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderRoleArnSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3PathBucketSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
 }
 
 /// <summary>S3 path where your block list text file is located. See details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
 {
@@ -518,7 +518,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProviderSourceS3Path
     public string? Key { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecForProvider
 {
@@ -576,7 +576,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyResolutionEnum
 {
@@ -592,7 +592,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyResolveEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefPolicy
 {
@@ -627,7 +627,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRefP
 }
 
 /// <summary>Reference to a Index in kendra to populate indexId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRef
 {
@@ -646,7 +646,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolicyResolutionEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolicyResolveEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelectorPolicy
 {
@@ -697,7 +697,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSele
 }
 
 /// <summary>Selector for a Index in kendra to populate indexId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSelector
 {
@@ -723,7 +723,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderIndexIdSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefPolicy
 {
@@ -774,7 +774,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRefP
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRef
 {
@@ -793,7 +793,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -809,7 +809,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -820,7 +820,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelectorPolicy
 {
@@ -844,7 +844,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSele
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSelector
 {
@@ -870,7 +870,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderRoleArnSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRefPolicyResolutionEnum
 {
@@ -886,7 +886,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRefPolicyResolveEnum
 {
@@ -897,7 +897,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRefPolicy
 {
@@ -921,7 +921,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketRef
 {
@@ -940,7 +940,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicyResolutionEnum
 {
@@ -956,7 +956,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicyResolveEnum
 {
@@ -967,7 +967,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelectorPolicy
 {
@@ -991,7 +991,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3PathBucketSelector
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
 }
 
 /// <summary>S3 path where your block list text file is located. See details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Path
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProviderSourceS3Pat
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecInitProvider
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecManagementPoliciesEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecManagementPoliciesEnum
 {
@@ -1118,7 +1118,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1134,7 +1134,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1145,7 +1145,7 @@ public enum V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicy
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecProviderConfigRef
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpecWriteConnectionSecretToRef
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpecWriteConnectionSecretTo
 }
 
 /// <summary>QuerySuggestionsBlockListSpec defines the desired state of QuerySuggestionsBlockList</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListSpec
 {
@@ -1274,7 +1274,7 @@ public partial class V1beta2QuerySuggestionsBlockListSpec
 }
 
 /// <summary>S3 path where your block list text file is located. See details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListStatusAtProviderSourceS3Path
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta2QuerySuggestionsBlockListStatusAtProviderSourceS3Pat
     public string? Key { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListStatusAtProvider
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta2QuerySuggestionsBlockListStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListStatusConditions
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta2QuerySuggestionsBlockListStatusConditions
 }
 
 /// <summary>QuerySuggestionsBlockListStatus defines the observed state of QuerySuggestionsBlockList.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2QuerySuggestionsBlockListStatus
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta2QuerySuggestionsBlockListStatus
 }
 
 /// <summary>QuerySuggestionsBlockList is the Schema for the QuerySuggestionsBlockLists API. provider resource for managing an aws kendra block list used for query suggestions for an index</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2QuerySuggestionsBlockList : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2QuerySuggestionsBlockListSpec>, IStatus<V1beta2QuerySuggestionsBlockListStatus?>

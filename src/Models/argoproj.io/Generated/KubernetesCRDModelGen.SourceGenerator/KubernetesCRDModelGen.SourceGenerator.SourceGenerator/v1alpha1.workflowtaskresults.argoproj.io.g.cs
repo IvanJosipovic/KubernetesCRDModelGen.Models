@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.argoproj.io;
 /// more capacity. This is an internal type. Users should never create this resource directly, much like you would
 /// never create a ReplicaSet directly.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkflowTaskResultList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1WorkflowTaskResult>
@@ -45,14 +45,14 @@ public partial class V1alpha1WorkflowTaskResultList : IKubernetesObject<V1ListMe
 /// files. Note that if the artifact is a directory, the artifact driver must support the ability to
 /// save/load the directory appropriately.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchiveNone
 {
 }
 
 /// <summary>TarStrategy will tar and gzip the file or directory when saving</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchiveTar
 {
@@ -65,14 +65,14 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchiveTar
 }
 
 /// <summary>ZipStrategy will unzip zipped input artifacts</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchiveZip
 {
 }
 
 /// <summary>Archive controls how the artifact will be saved to the artifact repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchive
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArchive
 }
 
 /// <summary>PodMetadata is an optional field for specifying the Labels and Annotations that should be assigned to the Pod doing the deletion</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactGCPodMetadata
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactGCPodMeta
 }
 
 /// <summary>ArtifactGC describes the strategy to use when to deleting an artifact from completed or deleted workflows</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactGC
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactGC
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactoryPasswordSecret
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactoryPasswo
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactoryUsernameSecret
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactoryUserna
 }
 
 /// <summary>Artifactory contains artifactory artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactory
 {
@@ -190,7 +190,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsArtifactory
 }
 
 /// <summary>AccountKeySecret is the secret selector to the Azure Blob Storage account access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsAzureAccountKeySecret
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsAzureAccountKeySe
 }
 
 /// <summary>Azure contains Azure Storage artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsAzure
 {
@@ -240,7 +240,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsAzure
 }
 
 /// <summary>ServiceAccountKeySecret is the secret selector to the bucket&apos;s service account key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGcsServiceAccountKeySecret
 {
@@ -264,7 +264,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGcsServiceAccount
 }
 
 /// <summary>GCS contains GCS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGcs
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGcs
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitPasswordSecret
 {
@@ -306,7 +306,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitPasswordSecret
 }
 
 /// <summary>SSHPrivateKeySecret is the secret selector to the repository ssh private key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitSshPrivateKeySecret
 {
@@ -330,7 +330,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitSshPrivateKeyS
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitUsernameSecret
 {
@@ -354,7 +354,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGitUsernameSecret
 }
 
 /// <summary>Git contains git artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGit
 {
@@ -414,7 +414,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsGit
 /// KrbCCacheSecret is the secret selector for Kerberos ccache
 /// Either ccache or keytab can be set to use Kerberos.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbCCacheSecret
 {
@@ -441,7 +441,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbCCacheSecr
 /// KrbConfig is the configmap selector for Kerberos config as string
 /// It must be set if either ccache or keytab is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbConfigConfigMap
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbConfigConf
 /// KrbKeytabSecret is the secret selector for Kerberos keytab
 /// Either ccache or keytab can be set to use Kerberos.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbKeytabSecret
 {
@@ -492,7 +492,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfsKrbKeytabSecr
 }
 
 /// <summary>HDFS contains HDFS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfs
 {
@@ -566,7 +566,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHdfs
 }
 
 /// <summary>PasswordSecret is the secret selector to the repository password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuthPasswordSecret
 {
@@ -590,7 +590,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuth
 }
 
 /// <summary>UsernameSecret is the secret selector to the repository username</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuthUsernameSecret
 {
@@ -614,7 +614,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuth
 }
 
 /// <summary>BasicAuth describes the secret selectors required for basic authentication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuth
 {
@@ -628,7 +628,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthBasicAuth
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCertClientCertSecret
 {
@@ -652,7 +652,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCer
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCertClientKeySecret
 {
@@ -676,7 +676,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCer
 }
 
 /// <summary>ClientCertAuth holds necessary information for client authentication via certificates</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCert
 {
@@ -690,7 +690,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthClientCer
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2ClientIDSecret
 {
@@ -714,7 +714,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2Cli
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2ClientSecretSecret
 {
@@ -738,7 +738,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2Cli
 }
 
 /// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2EndpointParams
 {
@@ -752,7 +752,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2End
 }
 
 /// <summary>SecretKeySelector selects a key of a Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2TokenURLSecret
 {
@@ -776,7 +776,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2Tok
 }
 
 /// <summary>OAuth2Auth holds all information for client authentication via OAuth2 tokens</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2
 {
@@ -800,7 +800,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuthOauth2
 }
 
 /// <summary>Auth contains information for client authentication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuth
 {
@@ -818,7 +818,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpAuth
 }
 
 /// <summary>Header indicate a key-value request header to be used when fetching artifacts over HTTP</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpHeaders
 {
@@ -832,7 +832,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttpHeaders
 }
 
 /// <summary>HTTP contains HTTP artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttp
 {
@@ -850,7 +850,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsHttp
 }
 
 /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssAccessKeySecret
 {
@@ -874,7 +874,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssAccessKeySecre
 }
 
 /// <summary>LifecycleRule specifies how to manage bucket&apos;s lifecycle</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssLifecycleRule
 {
@@ -888,7 +888,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssLifecycleRule
 }
 
 /// <summary>SecretKeySecret is the secret selector to the bucket&apos;s secret key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssSecretKeySecret
 {
@@ -912,7 +912,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOssSecretKeySecre
 }
 
 /// <summary>OSS contains OSS artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOss
 {
@@ -954,7 +954,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsOss
 }
 
 /// <summary>Plugin contains plugin artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsPlugin
 {
@@ -976,7 +976,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsPlugin
 }
 
 /// <summary>Raw contains raw artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsRaw
 {
@@ -986,7 +986,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsRaw
 }
 
 /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3AccessKeySecret
 {
@@ -1010,7 +1010,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3AccessKeySecret
 }
 
 /// <summary>CASecret specifies the secret that contains the CA, used to verify the TLS connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3CaSecret
 {
@@ -1034,7 +1034,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3CaSecret
 }
 
 /// <summary>CreateBucketIfNotPresent tells the driver to attempt to create the S3 bucket for output artifacts, if it doesn&apos;t exist. Setting Enabled Encryption will apply either SSE-S3 to the bucket if KmsKeyId is not set or SSE-KMS if it is.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3CreateBucketIfNotPresent
 {
@@ -1044,7 +1044,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3CreateBucketIfN
 }
 
 /// <summary>ServerSideCustomerKeySecret tells the driver to encrypt the output artifacts using SSE-C with the specified secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3EncryptionOptionsServerSideCustomerKeySecret
 {
@@ -1068,7 +1068,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3EncryptionOptio
 }
 
 /// <summary>S3EncryptionOptions used to determine encryption options during s3 operations</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3EncryptionOptions
 {
@@ -1090,7 +1090,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3EncryptionOptio
 }
 
 /// <summary>SecretKeySecret is the secret selector to the bucket&apos;s secret key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3SecretKeySecret
 {
@@ -1114,7 +1114,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3SecretKeySecret
 }
 
 /// <summary>SessionTokenSecret is used for ephemeral credentials like an IAM assume role or S3 access grant</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3SessionTokenSecret
 {
@@ -1138,7 +1138,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3SessionTokenSec
 }
 
 /// <summary>S3 contains S3 artifact location details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3
 {
@@ -1196,7 +1196,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifactsS3
 }
 
 /// <summary>Artifact indicates an artifact to place at a specified path</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsArtifacts
 {
@@ -1301,7 +1301,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsArtifacts
 }
 
 /// <summary>ConfigMapKeyRef is configmap selector for input parameter configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsParametersValueFromConfigMapKeyRef
 {
@@ -1325,14 +1325,14 @@ public partial class V1alpha1WorkflowTaskResultOutputsParametersValueFromConfigM
 }
 
 /// <summary>Supplied value to be filled in directly, either through the CLI, API, etc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsParametersValueFromSupplied
 {
 }
 
 /// <summary>ValueFrom is the source for the output parameter&apos;s value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsParametersValueFrom
 {
@@ -1377,7 +1377,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsParametersValueFrom
 }
 
 /// <summary>Parameter indicate a passed string parameter to a service template with an optional default value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputsParameters
 {
@@ -1417,7 +1417,7 @@ public partial class V1alpha1WorkflowTaskResultOutputsParameters
 }
 
 /// <summary>Outputs hold parameters, artifacts, and results from a step</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskResultOutputs
 {
@@ -1443,7 +1443,7 @@ public partial class V1alpha1WorkflowTaskResultOutputs
 /// more capacity. This is an internal type. Users should never create this resource directly, much like you would
 /// never create a ReplicaSet directly.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkflowTaskResult : IKubernetesObject<V1ObjectMeta>

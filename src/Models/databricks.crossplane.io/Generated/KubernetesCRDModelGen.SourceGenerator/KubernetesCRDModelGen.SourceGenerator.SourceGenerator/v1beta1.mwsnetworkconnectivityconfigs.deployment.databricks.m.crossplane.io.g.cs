@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deployment.databricks.m.crossplane.io;
 /// <summary>MwsNetworkConnectivityConfig is the Schema for the MwsNetworkConnectivityConfigs API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsNetworkConnectivityConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MwsNetworkConnectivityConfig>
@@ -37,7 +37,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigList : IKubernetesObject
 }
 
 /// <summary>block with information about stable AWS IP CIDR blocks. You can use these to configure the firewall of your resources to allow traffic from your Databricks workspace.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigDefaultRulesAwsStableIpRule
 {
@@ -47,7 +47,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
 }
 
 /// <summary>block with information about stable Azure service endpoints. You can configure the firewall of your Azure resources to allow traffic from your Databricks serverless compute resources.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigDefaultRulesAzureServiceEndpointRule
 {
@@ -65,7 +65,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
 }
 
 /// <summary>block describing network connectivity rules that are applied by default without resource specific configurations.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigDefaultRules
 {
@@ -78,7 +78,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
     public V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigDefaultRulesAzureServiceEndpointRule? AzureServiceEndpointRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigTargetRulesAwsPrivateEndpointRules
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
     public string? VpcEndpointId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigTargetRulesAzurePrivateEndpointRules
 {
@@ -180,7 +180,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
 }
 
 /// <summary>block describing network connectivity rules that configured for each destinations. These rules override default rules.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigTargetRules
 {
@@ -194,7 +194,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
 }
 
 /// <summary>block containing information about network connectivity rules that apply to network traffic from your serverless compute resources. Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfig
 {
@@ -207,7 +207,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressCon
     public V1beta1MwsNetworkConnectivityConfigSpecForProviderEgressConfigTargetRules? TargetRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecForProvider
 {
@@ -241,7 +241,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecForProvider
 }
 
 /// <summary>block with information about stable AWS IP CIDR blocks. You can use these to configure the firewall of your resources to allow traffic from your Databricks workspace.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigDefaultRulesAwsStableIpRule
 {
@@ -251,7 +251,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
 }
 
 /// <summary>block with information about stable Azure service endpoints. You can configure the firewall of your Azure resources to allow traffic from your Databricks serverless compute resources.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigDefaultRulesAzureServiceEndpointRule
 {
@@ -269,7 +269,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
 }
 
 /// <summary>block describing network connectivity rules that are applied by default without resource specific configurations.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigDefaultRules
 {
@@ -282,7 +282,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
     public V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigDefaultRulesAzureServiceEndpointRule? AzureServiceEndpointRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigTargetRulesAwsPrivateEndpointRules
 {
@@ -335,7 +335,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
     public string? VpcEndpointId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigTargetRulesAzurePrivateEndpointRules
 {
@@ -384,7 +384,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
 }
 
 /// <summary>block describing network connectivity rules that configured for each destinations. These rules override default rules.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfigTargetRules
 {
@@ -398,7 +398,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
 }
 
 /// <summary>block containing information about network connectivity rules that apply to network traffic from your serverless compute resources. Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressConfig
 {
@@ -423,7 +423,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProviderEgressCo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProvider
 {
@@ -460,7 +460,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNetworkConnectivityConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1MwsNetworkConnectivityConfigSpecManagementPoliciesEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1MwsNetworkConnectivityConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecProviderConfigRef
 {
@@ -502,7 +502,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpecWriteConnectionSecretToRef
 {
@@ -512,7 +512,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpecWriteConnectionSecre
 }
 
 /// <summary>MwsNetworkConnectivityConfigSpec defines the desired state of MwsNetworkConnectivityConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigSpec
 {
@@ -564,7 +564,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigSpec
 }
 
 /// <summary>block with information about stable AWS IP CIDR blocks. You can use these to configure the firewall of your resources to allow traffic from your Databricks workspace.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigDefaultRulesAwsStableIpRule
 {
@@ -574,7 +574,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
 }
 
 /// <summary>block with information about stable Azure service endpoints. You can configure the firewall of your Azure resources to allow traffic from your Databricks serverless compute resources.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigDefaultRulesAzureServiceEndpointRule
 {
@@ -592,7 +592,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
 }
 
 /// <summary>block describing network connectivity rules that are applied by default without resource specific configurations.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigDefaultRules
 {
@@ -605,7 +605,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
     public V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigDefaultRulesAzureServiceEndpointRule? AzureServiceEndpointRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigTargetRulesAwsPrivateEndpointRules
 {
@@ -658,7 +658,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
     public string? VpcEndpointId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigTargetRulesAzurePrivateEndpointRules
 {
@@ -707,7 +707,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
 }
 
 /// <summary>block describing network connectivity rules that configured for each destinations. These rules override default rules.  Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigTargetRules
 {
@@ -721,7 +721,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
 }
 
 /// <summary>block containing information about network connectivity rules that apply to network traffic from your serverless compute resources. Consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfig
 {
@@ -734,7 +734,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressCo
     public V1beta1MwsNetworkConnectivityConfigStatusAtProviderEgressConfigTargetRules? TargetRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProvider
 {
@@ -772,7 +772,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatusConditions
 {
@@ -815,7 +815,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatusConditions
 }
 
 /// <summary>MwsNetworkConnectivityConfigStatus defines the observed state of MwsNetworkConnectivityConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNetworkConnectivityConfigStatus
 {
@@ -836,7 +836,7 @@ public partial class V1beta1MwsNetworkConnectivityConfigStatus
 }
 
 /// <summary>MwsNetworkConnectivityConfig is the Schema for the MwsNetworkConnectivityConfigs API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsNetworkConnectivityConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MwsNetworkConnectivityConfigSpec>, IStatus<V1beta1MwsNetworkConnectivityConfigStatus?>

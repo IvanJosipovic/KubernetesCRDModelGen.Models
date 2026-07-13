@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.rds.aws.m.upbound.io;
 /// <summary>DBSnapshotCopy is the Schema for the DBSnapshotCopys API. Manages an RDS database instance snapshot copy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DBSnapshotCopyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DBSnapshotCopy>
@@ -42,7 +42,7 @@ public partial class V1beta1DBSnapshotCopyList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentif
 }
 
 /// <summary>Reference to a Snapshot in rds to populate sourceDbSnapshotIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentif
 }
 
 /// <summary>Selector for a Snapshot in rds to populate sourceDbSnapshotIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentif
     public V1beta1DBSnapshotCopySpecForProviderSourceDbSnapshotIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecForProvider
 {
@@ -420,7 +420,7 @@ public partial class V1beta1DBSnapshotCopySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -447,7 +447,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicy
 {
@@ -471,7 +471,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRef
 {
@@ -494,7 +494,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicy
 {
@@ -545,7 +545,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelector
 {
@@ -575,7 +575,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPolicyResolutionEnum
 {
@@ -591,7 +591,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPolicyResolveEnum
 {
@@ -602,7 +602,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRefPolicy
 {
@@ -626,7 +626,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdenti
 }
 
 /// <summary>Reference to a Snapshot in rds to populate sourceDbSnapshotIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierRef
 {
@@ -649,7 +649,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelectorPolicyResolutionEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelectorPolicyResolveEnum
 {
@@ -676,7 +676,7 @@ public enum V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelectorPolicy
 {
@@ -700,7 +700,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdenti
 }
 
 /// <summary>Selector for a Snapshot in rds to populate sourceDbSnapshotIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdentifierSelector
 {
@@ -736,7 +736,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProviderSourceDbSnapshotIdenti
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecInitProvider
 {
@@ -801,7 +801,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DBSnapshotCopySpecManagementPoliciesEnum>))]
 public enum V1beta1DBSnapshotCopySpecManagementPoliciesEnum
 {
@@ -824,7 +824,7 @@ public enum V1beta1DBSnapshotCopySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecProviderConfigRef
 {
@@ -843,7 +843,7 @@ public partial class V1beta1DBSnapshotCopySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpecWriteConnectionSecretToRef
 {
@@ -853,7 +853,7 @@ public partial class V1beta1DBSnapshotCopySpecWriteConnectionSecretToRef
 }
 
 /// <summary>DBSnapshotCopySpec defines the desired state of DBSnapshotCopy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopySpec
 {
@@ -904,7 +904,7 @@ public partial class V1beta1DBSnapshotCopySpec
     public V1beta1DBSnapshotCopySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopyStatusAtProvider
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopyStatusConditions
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta1DBSnapshotCopyStatusConditions
 }
 
 /// <summary>DBSnapshotCopyStatus defines the observed state of DBSnapshotCopy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopyStatus
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta1DBSnapshotCopyStatus
 }
 
 /// <summary>DBSnapshotCopy is the Schema for the DBSnapshotCopys API. Manages an RDS database instance snapshot copy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DBSnapshotCopy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DBSnapshotCopySpec>, IStatus<V1beta1DBSnapshotCopyStatus?>

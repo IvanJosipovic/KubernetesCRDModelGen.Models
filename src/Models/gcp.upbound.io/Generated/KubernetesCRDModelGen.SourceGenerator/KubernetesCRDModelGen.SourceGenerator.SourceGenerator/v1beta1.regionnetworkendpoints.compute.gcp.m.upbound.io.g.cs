@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>RegionNetworkEndpoint is the Schema for the RegionNetworkEndpoints API. A Region network endpoint represents a IP address/FQDN and port combination that is part of a specific network endpoint group (NEG).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionNetworkEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionNetworkEndpoint>
@@ -42,7 +42,7 @@ public partial class V1beta1RegionNetworkEndpointList : IKubernetesObject<V1List
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGrou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEnd
 }
 
 /// <summary>Reference to a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEnd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGrou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEnd
 }
 
 /// <summary>Selector for a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEnd
     public V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProvider
 {
@@ -243,7 +243,7 @@ public partial class V1beta1RegionNetworkEndpointSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRefPolicyResolveEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRefPolicy
 {
@@ -294,7 +294,7 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEn
 }
 
 /// <summary>Reference to a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupRef
 {
@@ -317,7 +317,7 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelectorPolicyResolutionEnum
 {
@@ -333,7 +333,7 @@ public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelectorPolicyResolveEnum
 {
@@ -344,7 +344,7 @@ public enum V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelectorPolicy
 {
@@ -368,7 +368,7 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEn
 }
 
 /// <summary>Selector for a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEndpointGroupSelector
 {
@@ -404,7 +404,7 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEn
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProvider
 {
@@ -454,7 +454,7 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecManagementPoliciesEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecManagementPoliciesEnum
 {
@@ -477,7 +477,7 @@ public enum V1beta1RegionNetworkEndpointSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecProviderConfigRef
 {
@@ -496,7 +496,7 @@ public partial class V1beta1RegionNetworkEndpointSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecWriteConnectionSecretToRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1RegionNetworkEndpointSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RegionNetworkEndpointSpec defines the desired state of RegionNetworkEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpec
 {
@@ -557,7 +557,7 @@ public partial class V1beta1RegionNetworkEndpointSpec
     public V1beta1RegionNetworkEndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointStatusAtProvider
 {
@@ -604,7 +604,7 @@ public partial class V1beta1RegionNetworkEndpointStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointStatusConditions
 {
@@ -647,7 +647,7 @@ public partial class V1beta1RegionNetworkEndpointStatusConditions
 }
 
 /// <summary>RegionNetworkEndpointStatus defines the observed state of RegionNetworkEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointStatus
 {
@@ -668,7 +668,7 @@ public partial class V1beta1RegionNetworkEndpointStatus
 }
 
 /// <summary>RegionNetworkEndpoint is the Schema for the RegionNetworkEndpoints API. A Region network endpoint represents a IP address/FQDN and port combination that is part of a specific network endpoint group (NEG).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionNetworkEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionNetworkEndpointSpec>, IStatus<V1beta1RegionNetworkEndpointStatus?>

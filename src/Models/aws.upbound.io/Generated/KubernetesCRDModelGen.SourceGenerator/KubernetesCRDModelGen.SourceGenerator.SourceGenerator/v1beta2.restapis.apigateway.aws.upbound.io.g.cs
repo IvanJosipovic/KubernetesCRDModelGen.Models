@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigateway.aws.upbound.io;
 /// <summary>RestAPI is the Schema for the RestAPIs API. Manages an API Gateway REST API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2RestAPIList : IKubernetesObject<V1ListMeta>, IItems<V1beta2RestAPI>
@@ -45,7 +45,7 @@ public partial class V1beta2RestAPIList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecDeletionPolicyEnum>))]
 public enum V1beta2RestAPISpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2RestAPISpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolveEnum>))]
 public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefsPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpoi
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsRefs
 {
@@ -131,7 +131,7 @@ public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpoi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpoi
 }
 
 /// <summary>Selector for a list of VPCEndpoint in ec2 to populate vpcEndpointIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpoi
 }
 
 /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProviderEndpointConfiguration
 {
@@ -228,7 +228,7 @@ public partial class V1beta2RestAPISpecForProviderEndpointConfiguration
     public V1beta2RestAPISpecForProviderEndpointConfigurationVpcEndpointIdsSelector? VpcEndpointIdsSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecForProvider
 {
@@ -294,7 +294,7 @@ public partial class V1beta2RestAPISpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolutionEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolveEnum>))]
 public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefsPolicyResolveEnum
 {
@@ -321,7 +321,7 @@ public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefsPolicy
 {
@@ -345,7 +345,7 @@ public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpo
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsRefs
 {
@@ -364,7 +364,7 @@ public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolutionEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelectorPolicyResolveEnum
 {
@@ -391,7 +391,7 @@ public enum V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelectorPolicy
 {
@@ -415,7 +415,7 @@ public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpo
 }
 
 /// <summary>Selector for a list of VPCEndpoint in ec2 to populate vpcEndpointIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpointIdsSelector
 {
@@ -436,7 +436,7 @@ public partial class V1beta2RestAPISpecInitProviderEndpointConfigurationVpcEndpo
 }
 
 /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProviderEndpointConfiguration
 {
@@ -473,7 +473,7 @@ public partial class V1beta2RestAPISpecInitProviderEndpointConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecInitProvider
 {
@@ -530,7 +530,7 @@ public partial class V1beta2RestAPISpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecManagementPoliciesEnum>))]
 public enum V1beta2RestAPISpecManagementPoliciesEnum
 {
@@ -554,7 +554,7 @@ public enum V1beta2RestAPISpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2RestAPISpecProviderConfigRefPolicyResolutionEnum
 {
@@ -570,7 +570,7 @@ public enum V1beta2RestAPISpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RestAPISpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2RestAPISpecProviderConfigRefPolicyResolveEnum
 {
@@ -581,7 +581,7 @@ public enum V1beta2RestAPISpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecProviderConfigRefPolicy
 {
@@ -609,7 +609,7 @@ public partial class V1beta2RestAPISpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecProviderConfigRef
 {
@@ -628,7 +628,7 @@ public partial class V1beta2RestAPISpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpecWriteConnectionSecretToRef
 {
@@ -642,7 +642,7 @@ public partial class V1beta2RestAPISpecWriteConnectionSecretToRef
 }
 
 /// <summary>RestAPISpec defines the desired state of RestAPI</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPISpec
 {
@@ -710,7 +710,7 @@ public partial class V1beta2RestAPISpec
 }
 
 /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPIStatusAtProviderEndpointConfiguration
 {
@@ -727,7 +727,7 @@ public partial class V1beta2RestAPIStatusAtProviderEndpointConfiguration
     public IList<string>? VpcEndpointIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPIStatusAtProvider
 {
@@ -820,7 +820,7 @@ public partial class V1beta2RestAPIStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPIStatusConditions
 {
@@ -863,7 +863,7 @@ public partial class V1beta2RestAPIStatusConditions
 }
 
 /// <summary>RestAPIStatus defines the observed state of RestAPI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RestAPIStatus
 {
@@ -884,7 +884,7 @@ public partial class V1beta2RestAPIStatus
 }
 
 /// <summary>RestAPI is the Schema for the RestAPIs API. Manages an API Gateway REST API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2RestAPI : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2RestAPISpec>, IStatus<V1beta2RestAPIStatus?>

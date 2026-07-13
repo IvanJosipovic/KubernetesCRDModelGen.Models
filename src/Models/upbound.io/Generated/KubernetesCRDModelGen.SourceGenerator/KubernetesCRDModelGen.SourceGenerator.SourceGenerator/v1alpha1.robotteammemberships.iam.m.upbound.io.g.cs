@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.m.upbound.io;
 /// <summary>A RobotTeamMembership is an example API type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RobotTeamMembershipList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RobotTeamMembership>
@@ -42,7 +42,7 @@ public partial class V1alpha1RobotTeamMembershipList : IKubernetesObject<V1ListM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolutionEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolveEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdRefPolicy
 }
 
 /// <summary>RobotIDRef references a Robot to and retrieves its robotId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResolutionEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResolveEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPolicy
 {
@@ -170,7 +170,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelectorPo
 /// RobotIDSelector selects a reference to a Robot in order to retrieve its
 /// robotId.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelector
 {
@@ -200,7 +200,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderRobotIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolutionEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolutionEnum
 {
@@ -216,7 +216,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolveEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolveEnum
 {
@@ -227,7 +227,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicy
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdRefPolicy
 }
 
 /// <summary>TeamIDRef references a Team to and retrieves its teamId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdRef
 {
@@ -274,7 +274,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolutionEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolutionEnum
 {
@@ -290,7 +290,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolveEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolveEnum
 {
@@ -301,7 +301,7 @@ public enum V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPolicy
 {
@@ -328,7 +328,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelectorPol
 /// TeamIDSelector selects a reference to a Team in order to retrieve its
 /// teamId.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelector
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProviderTeamIdSelector
 }
 
 /// <summary>RobotTeamMembershipParameters are the configurable fields of a RobotTeamMembership.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecForProvider
 {
@@ -398,7 +398,7 @@ public partial class V1alpha1RobotTeamMembershipSpecForProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RobotTeamMembershipSpecManagementPoliciesEnum>))]
 public enum V1alpha1RobotTeamMembershipSpecManagementPoliciesEnum
 {
@@ -421,7 +421,7 @@ public enum V1alpha1RobotTeamMembershipSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecProviderConfigRef
 {
@@ -440,7 +440,7 @@ public partial class V1alpha1RobotTeamMembershipSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpecWriteConnectionSecretToRef
 {
@@ -450,7 +450,7 @@ public partial class V1alpha1RobotTeamMembershipSpecWriteConnectionSecretToRef
 }
 
 /// <summary>A RobotTeamMembershipSpec defines the desired state of a RobotTeamMembership.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipSpec
 {
@@ -488,14 +488,14 @@ public partial class V1alpha1RobotTeamMembershipSpec
 }
 
 /// <summary>RobotTeamMembershipObservation are the observable fields of a RobotTeamMembership.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipStatusAtProvider
 {
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipStatusConditions
 {
@@ -538,7 +538,7 @@ public partial class V1alpha1RobotTeamMembershipStatusConditions
 }
 
 /// <summary>A RobotTeamMembershipStatus represents the observed state of a RobotTeamMembership.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RobotTeamMembershipStatus
 {
@@ -560,7 +560,7 @@ public partial class V1alpha1RobotTeamMembershipStatus
 }
 
 /// <summary>A RobotTeamMembership is an example API type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RobotTeamMembership : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RobotTeamMembershipSpec>, IStatus<V1alpha1RobotTeamMembershipStatus?>

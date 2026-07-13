@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identity.vault.upbound.io;
 /// <summary>MfaLoginEnforcement is the Schema for the MfaLoginEnforcements API. Resource for configuring MFA login-enforcement</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MfaLoginEnforcementList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MfaLoginEnforcement>
@@ -45,7 +45,7 @@ public partial class V1alpha1MfaLoginEnforcementList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecDeletionPolicyEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1alpha1MfaLoginEnforcementSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyResolutionEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyResolveEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefsP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefs
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicyResolveEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelec
 }
 
 /// <summary>Selector for a list of MfaDuo in identity to populate mfaMethodIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelector
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelec
     public V1alpha1MfaLoginEnforcementSpecForProviderMfaMethodIdsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecForProvider
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyResolutionEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyResolutionEnum
 {
@@ -286,7 +286,7 @@ public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyResolveEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyResolveEnum
 {
@@ -297,7 +297,7 @@ public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefsPolicy
 {
@@ -321,7 +321,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefs
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefs
 {
@@ -340,7 +340,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolicyResolutionEnum
 {
@@ -356,7 +356,7 @@ public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolicyResolveEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolicyResolveEnum
 {
@@ -367,7 +367,7 @@ public enum V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelectorPolicy
 {
@@ -391,7 +391,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSele
 }
 
 /// <summary>Selector for a list of MfaDuo in identity to populate mfaMethodIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSelector
 {
@@ -423,7 +423,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecInitProviderMfaMethodIdsSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecInitProvider
 {
@@ -489,7 +489,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecManagementPoliciesEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecManagementPoliciesEnum
 {
@@ -513,7 +513,7 @@ public enum V1alpha1MfaLoginEnforcementSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -529,7 +529,7 @@ public enum V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolveEnum
 {
@@ -540,7 +540,7 @@ public enum V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicy
 {
@@ -568,7 +568,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecProviderConfigRef
 {
@@ -587,7 +587,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpecWriteConnectionSecretToRef
 {
@@ -601,7 +601,7 @@ public partial class V1alpha1MfaLoginEnforcementSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MfaLoginEnforcementSpec defines the desired state of MfaLoginEnforcement</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementSpec
 {
@@ -668,7 +668,7 @@ public partial class V1alpha1MfaLoginEnforcementSpec
     public V1alpha1MfaLoginEnforcementSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementStatusAtProvider
 {
@@ -747,7 +747,7 @@ public partial class V1alpha1MfaLoginEnforcementStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementStatusConditions
 {
@@ -790,7 +790,7 @@ public partial class V1alpha1MfaLoginEnforcementStatusConditions
 }
 
 /// <summary>MfaLoginEnforcementStatus defines the observed state of MfaLoginEnforcement.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MfaLoginEnforcementStatus
 {
@@ -811,7 +811,7 @@ public partial class V1alpha1MfaLoginEnforcementStatus
 }
 
 /// <summary>MfaLoginEnforcement is the Schema for the MfaLoginEnforcements API. Resource for configuring MFA login-enforcement</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MfaLoginEnforcement : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MfaLoginEnforcementSpec>, IStatus<V1alpha1MfaLoginEnforcementStatus?>

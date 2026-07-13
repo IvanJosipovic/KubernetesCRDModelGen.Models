@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.settings.databricks.crossplane.io;
 /// <summary>ComplianceSecurityProfileWorkspaceSetting is the Schema for the ComplianceSecurityProfileWorkspaceSettings API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ComplianceSecurityProfileWorkspaceSetting>
@@ -45,7 +45,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingList : IKub
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ComplianceSecurityProfileWorkspaceSettingSpecDeletionPolicyEnum>))]
 public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecDeletionPolicyEn
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProviderComplianceSecurityProfileWorkspace
 {
@@ -66,7 +66,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProv
     public bool? IsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProviderProviderConfig
 {
@@ -74,7 +74,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProv
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProvider
 {
@@ -91,7 +91,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecForProv
     public string? SettingName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitProviderComplianceSecurityProfileWorkspace
 {
@@ -102,7 +102,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitPro
     public bool? IsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitProviderProviderConfig
 {
@@ -122,7 +122,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitPro
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitProvider
 {
@@ -143,7 +143,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecInitPro
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ComplianceSecurityProfileWorkspaceSettingSpecManagementPoliciesEnum>))]
 public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecManagementPoliciesEnum
 {
@@ -167,7 +167,7 @@ public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecManagementPolici
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -183,7 +183,7 @@ public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRefPolicyResolveEnum
 {
@@ -194,7 +194,7 @@ public enum V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRefPolicy
 {
@@ -222,7 +222,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProvide
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProviderConfigRef
 {
@@ -241,7 +241,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecProvide
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecWriteConnectionSecretToRef
 {
@@ -255,7 +255,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpecWriteCo
 }
 
 /// <summary>ComplianceSecurityProfileWorkspaceSettingSpec defines the desired state of ComplianceSecurityProfileWorkspaceSetting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpec
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingSpec
     public V1beta1ComplianceSecurityProfileWorkspaceSettingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtProviderComplianceSecurityProfileWorkspace
 {
@@ -333,7 +333,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtPro
     public bool? IsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtProviderProviderConfig
 {
@@ -341,7 +341,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtPro
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtProvider
 {
@@ -362,7 +362,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusAtPro
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusConditions
 {
@@ -405,7 +405,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatusCondi
 }
 
 /// <summary>ComplianceSecurityProfileWorkspaceSettingStatus defines the observed state of ComplianceSecurityProfileWorkspaceSetting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatus
 {
@@ -426,7 +426,7 @@ public partial class V1beta1ComplianceSecurityProfileWorkspaceSettingStatus
 }
 
 /// <summary>ComplianceSecurityProfileWorkspaceSetting is the Schema for the ComplianceSecurityProfileWorkspaceSettings API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComplianceSecurityProfileWorkspaceSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComplianceSecurityProfileWorkspaceSettingSpec>, IStatus<V1beta1ComplianceSecurityProfileWorkspaceSettingStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.keda.sh;
 /// <summary>ScaledObject is a specification for a ScaledObject resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ScaledObjectList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ScaledObject>
@@ -37,7 +37,7 @@ public partial class V1alpha1ScaledObjectList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>HPAScalingPolicy is a single policy which must hold true for a specified past interval.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfigBehaviorScaleDownPolicies
 {
@@ -66,7 +66,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 /// 300 second stabilization window (i.e., the highest recommendation for
 /// the last 300sec is used).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfigBehaviorScaleDown
 {
@@ -115,7 +115,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 }
 
 /// <summary>HPAScalingPolicy is a single policy which must hold true for a specified past interval.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfigBehaviorScaleUpPolicies
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 ///   * double the number of pods per 60 seconds
 /// No stabilization is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfigBehaviorScaleUp
 {
@@ -197,7 +197,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 /// HorizontalPodAutoscalerBehavior configures the scaling behavior of the target
 /// in both Up and Down directions (scaleUp and scaleDown fields respectively).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfigBehavior
 {
@@ -222,7 +222,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 }
 
 /// <summary>HorizontalPodAutoscalerConfig specifies horizontal scale config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConfig
 {
@@ -241,7 +241,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedHorizontalPodAutoscalerConf
 /// MetricTargetType specifies the type of metric being targeted, and should be either
 /// &quot;Value&quot;, &quot;AverageValue&quot;, or &quot;Utilization&quot;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ScaledObjectSpecAdvancedScalingModifiersMetricTypeEnum>))]
 public enum V1alpha1ScaledObjectSpecAdvancedScalingModifiersMetricTypeEnum
 {
@@ -252,7 +252,7 @@ public enum V1alpha1ScaledObjectSpecAdvancedScalingModifiersMetricTypeEnum
 }
 
 /// <summary>ScalingModifiers describes advanced scaling logic options like formula</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvancedScalingModifiers
 {
@@ -274,7 +274,7 @@ public partial class V1alpha1ScaledObjectSpecAdvancedScalingModifiers
 }
 
 /// <summary>AdvancedConfig specifies advance scaling options</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecAdvanced
 {
@@ -290,7 +290,7 @@ public partial class V1alpha1ScaledObjectSpecAdvanced
     public V1alpha1ScaledObjectSpecAdvancedScalingModifiers? ScalingModifiers { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ScaledObjectSpecFallbackBehaviorEnum>))]
 public enum V1alpha1ScaledObjectSpecFallbackBehaviorEnum
 {
@@ -307,7 +307,7 @@ public enum V1alpha1ScaledObjectSpecFallbackBehaviorEnum
 }
 
 /// <summary>Fallback is the spec for fallback options</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecFallback
 {
@@ -322,7 +322,7 @@ public partial class V1alpha1ScaledObjectSpecFallback
 }
 
 /// <summary>ScaleTarget holds the reference to the scale target Object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecScaleTargetRef
 {
@@ -340,7 +340,7 @@ public partial class V1alpha1ScaledObjectSpecScaleTargetRef
 }
 
 /// <summary>Kind of the resource being referred to. Defaults to TriggerAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ScaledObjectSpecTriggersAuthenticationRefKindEnum>))]
 public enum V1alpha1ScaledObjectSpecTriggersAuthenticationRefKindEnum
 {
@@ -354,7 +354,7 @@ public enum V1alpha1ScaledObjectSpecTriggersAuthenticationRefKindEnum
 /// AuthenticationRef points to the TriggerAuthentication or ClusterTriggerAuthentication object that
 /// is used to authenticate the scaler with the environment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecTriggersAuthenticationRef
 {
@@ -367,7 +367,7 @@ public partial class V1alpha1ScaledObjectSpecTriggersAuthenticationRef
 }
 
 /// <summary>ScaleTriggers reference the scaler that will be used</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpecTriggers
 {
@@ -399,7 +399,7 @@ public partial class V1alpha1ScaledObjectSpecTriggers
 }
 
 /// <summary>ScaledObjectSpec is the spec for a ScaledObject resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectSpec
 {
@@ -438,7 +438,7 @@ public partial class V1alpha1ScaledObjectSpec
 }
 
 /// <summary>Condition to store the condition state</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectStatusConditions
 {
@@ -460,7 +460,7 @@ public partial class V1alpha1ScaledObjectStatusConditions
 }
 
 /// <summary>HealthStatus is the status for a ScaledObject&apos;s health</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectStatusHealth
 {
@@ -473,7 +473,7 @@ public partial class V1alpha1ScaledObjectStatusHealth
 }
 
 /// <summary>GroupVersionKindResource provides unified structure for schema.GroupVersionKind and Resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectStatusScaleTargetGVKR
 {
@@ -491,7 +491,7 @@ public partial class V1alpha1ScaledObjectStatusScaleTargetGVKR
 }
 
 /// <summary>TriggerActivityStatus represents the activity status of an external trigger</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectStatusTriggersActivity
 {
@@ -500,7 +500,7 @@ public partial class V1alpha1ScaledObjectStatusTriggersActivity
 }
 
 /// <summary>ScaledObjectStatus is the status for a ScaledObject resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ScaledObjectStatus
 {
@@ -550,7 +550,7 @@ public partial class V1alpha1ScaledObjectStatus
 }
 
 /// <summary>ScaledObject is a specification for a ScaledObject resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ScaledObject : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ScaledObjectSpec>, IStatus<V1alpha1ScaledObjectStatus?>

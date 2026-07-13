@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.cnrm.cloud.google.com;
 /// <summary>PrivateCACAPool is the Schema for the PrivateCACAPool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateCACAPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateCACAPool>
@@ -37,7 +37,7 @@ public partial class V1beta1PrivateCACAPoolList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>Optional. If specified, then only methods allowed in the [IssuanceModes][google.cloud.security.privateca.v1.CaPool.IssuancePolicy.IssuanceModes] may be used to issue [Certificates][google.cloud.security.privateca.v1.Certificate].</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedIssuanceModes
 {
@@ -51,7 +51,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedIssuanceMode
 }
 
 /// <summary>Represents an allowed Elliptic Curve key type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypesEllipticCurve
 {
@@ -61,7 +61,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypesElli
 }
 
 /// <summary>Represents an allowed RSA key type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypesRsa
 {
@@ -74,7 +74,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypesRsa
     public long? MinModulusSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypes
 {
@@ -88,7 +88,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyAllowedKeyTypes
 }
 
 /// <summary>Required. The OID for this X.509 extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
@@ -98,7 +98,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesAddit
 }
 
 /// <summary>X509Extension</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesAdditionalExtensions
 {
@@ -116,7 +116,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesAddit
 }
 
 /// <summary>Optional. Describes options in this [X509Parameters][google.cloud.security.privateca.v1.X509Parameters] that are relevant in a CA certificate. If not specified, a default basic constraints extension with `is_ca=false` will be added for leaf certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesCaOptions
 {
@@ -134,7 +134,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesCaOpt
 }
 
 /// <summary>Describes high-level ways in which a key may be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
@@ -176,7 +176,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUs
 }
 
 /// <summary>Detailed scenarios in which a key may be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
@@ -205,7 +205,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUs
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
@@ -215,7 +215,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUs
 }
 
 /// <summary>Optional. Indicates the intended use for keys that correspond to a certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUsage
 {
@@ -232,7 +232,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUs
     public IList<V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages>? UnknownExtendedKeyUsages { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesPolicyIds
 {
@@ -242,7 +242,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValuesPolic
 }
 
 /// <summary>Optional. A set of X.509 values that will be applied to all certificates issued through this [CaPool][google.cloud.security.privateca.v1.CaPool]. If a certificate request includes conflicting values for the same properties, they will be overwritten by the values defined here. If a certificate request uses a [CertificateTemplate][google.cloud.security.privateca.v1.CertificateTemplate] that defines conflicting [predefined_values][google.cloud.security.privateca.v1.CertificateTemplate.predefined_values] for the same properties, the certificate issuance request will fail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValues
 {
@@ -268,7 +268,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyBaselineValues
 }
 
 /// <summary>Optional. A CEL expression that may be used to validate the resolved X.509 Subject and/or Subject Alternative Name before a certificate is signed. To see the full allowed syntax and some examples, see https://cloud.google.com/certificate-authority-service/docs/using-cel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyIdentityConstraintsCelExpression
 {
@@ -290,7 +290,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyIdentityConstraints
 }
 
 /// <summary>Optional. Describes constraints on identities that may appear in [Certificates][google.cloud.security.privateca.v1.Certificate] issued through this [CaPool][google.cloud.security.privateca.v1.CaPool]. If this is omitted, then this [CaPool][google.cloud.security.privateca.v1.CaPool] will not add restrictions on a certificate&apos;s identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyIdentityConstraints
 {
@@ -307,7 +307,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyIdentityConstraints
     public V1beta1PrivateCACAPoolSpecIssuancePolicyIdentityConstraintsCelExpression? CelExpression { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyPassthroughExtensionsAdditionalExtensions
 {
@@ -317,7 +317,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyPassthroughExtensio
 }
 
 /// <summary>Optional. Describes the set of X.509 extensions that may appear in a [Certificate][google.cloud.security.privateca.v1.Certificate] issued through this [CaPool][google.cloud.security.privateca.v1.CaPool]. If a certificate request sets extensions that don&apos;t appear in the [passthrough_extensions][google.cloud.security.privateca.v1.CaPool.IssuancePolicy.passthrough_extensions], those extensions will be dropped. If a certificate request uses a [CertificateTemplate][google.cloud.security.privateca.v1.CertificateTemplate] with [predefined_values][google.cloud.security.privateca.v1.CertificateTemplate.predefined_values] that don&apos;t appear here, the certificate issuance request will fail. If this is omitted, then this [CaPool][google.cloud.security.privateca.v1.CaPool] will not add restrictions on a certificate&apos;s X.509 extensions. These constraints do not apply to X.509 extensions set in this [CaPool][google.cloud.security.privateca.v1.CaPool]&apos;s [baseline_values][google.cloud.security.privateca.v1.CaPool.IssuancePolicy.baseline_values].</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyPassthroughExtensions
 {
@@ -331,7 +331,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicyPassthroughExtensio
 }
 
 /// <summary>Optional. The IssuancePolicy to control how Certificates will be issued from this CaPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecIssuancePolicy
 {
@@ -361,7 +361,7 @@ public partial class V1beta1PrivateCACAPoolSpecIssuancePolicy
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecProjectRef
 {
@@ -383,7 +383,7 @@ public partial class V1beta1PrivateCACAPoolSpecProjectRef
 }
 
 /// <summary>Optional. The PublishingOptions to follow when issuing Certificates from any CertificateAuthority in this CaPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpecPublishingOptions
 {
@@ -397,7 +397,7 @@ public partial class V1beta1PrivateCACAPoolSpecPublishingOptions
 }
 
 /// <summary>PrivateCACAPoolSpec defines the desired state of PrivateCACAPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolSpec
 {
@@ -426,7 +426,7 @@ public partial class V1beta1PrivateCACAPoolSpec
     public string? Tier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolStatusConditions
 {
@@ -452,7 +452,7 @@ public partial class V1beta1PrivateCACAPoolStatusConditions
 }
 
 /// <summary>PrivateCACAPoolStatus defines the config connector machine state of PrivateCACAPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACAPoolStatus
 {
@@ -466,7 +466,7 @@ public partial class V1beta1PrivateCACAPoolStatus
 }
 
 /// <summary>PrivateCACAPool is the Schema for the PrivateCACAPool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateCACAPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateCACAPoolSpec>, IStatus<V1beta1PrivateCACAPoolStatus?>

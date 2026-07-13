@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CalicoNodeStatusList : IKubernetesObject<V1ListMeta>, IItems<V1CalicoNodeStatus>
@@ -35,7 +35,7 @@ public partial class V1CalicoNodeStatusList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1CalicoNodeStatus> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusSpecClassesEnum>))]
 public enum V1CalicoNodeStatusSpecClassesEnum
 {
@@ -47,7 +47,7 @@ public enum V1CalicoNodeStatusSpecClassesEnum
     Routes
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusSpec
 {
@@ -61,7 +61,7 @@ public partial class V1CalicoNodeStatusSpec
     public int? UpdatePeriodSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusAgentBirdV4StateEnum>))]
 public enum V1CalicoNodeStatusStatusAgentBirdV4StateEnum
 {
@@ -71,7 +71,7 @@ public enum V1CalicoNodeStatusStatusAgentBirdV4StateEnum
     NotReady
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgentBirdV4
 {
@@ -91,7 +91,7 @@ public partial class V1CalicoNodeStatusStatusAgentBirdV4
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusAgentBirdV6StateEnum>))]
 public enum V1CalicoNodeStatusStatusAgentBirdV6StateEnum
 {
@@ -101,7 +101,7 @@ public enum V1CalicoNodeStatusStatusAgentBirdV6StateEnum
     NotReady
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgentBirdV6
 {
@@ -121,7 +121,7 @@ public partial class V1CalicoNodeStatusStatusAgentBirdV6
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgent
 {
@@ -132,7 +132,7 @@ public partial class V1CalicoNodeStatusStatusAgent
     public V1CalicoNodeStatusStatusAgentBirdV6? BirdV6 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV4StateEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV4StateEnum
 {
@@ -152,7 +152,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV4StateEnum
     Close
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV4TypeEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV4TypeEnum
 {
@@ -164,7 +164,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV4TypeEnum
     GlobalPeer
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgpPeersV4
 {
@@ -181,7 +181,7 @@ public partial class V1CalicoNodeStatusStatusBgpPeersV4
     public V1CalicoNodeStatusStatusBgpPeersV4TypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV6StateEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV6StateEnum
 {
@@ -201,7 +201,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV6StateEnum
     Close
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV6TypeEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV6TypeEnum
 {
@@ -213,7 +213,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV6TypeEnum
     GlobalPeer
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgpPeersV6
 {
@@ -230,7 +230,7 @@ public partial class V1CalicoNodeStatusStatusBgpPeersV6
     public V1CalicoNodeStatusStatusBgpPeersV6TypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgp
 {
@@ -253,7 +253,7 @@ public partial class V1CalicoNodeStatusStatusBgp
     public IList<V1CalicoNodeStatusStatusBgpPeersV6>? PeersV6 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum
 {
@@ -269,7 +269,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum
     BGPPeer
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFrom
 {
@@ -280,7 +280,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFrom
     public V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum? SourceType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum
 {
@@ -290,7 +290,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum
     RIB
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV4
 {
@@ -310,7 +310,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV4
     public V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum
 {
@@ -326,7 +326,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum
     BGPPeer
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFrom
 {
@@ -337,7 +337,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFrom
     public V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum? SourceType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum
 {
@@ -347,7 +347,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum
     RIB
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV6
 {
@@ -367,7 +367,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV6
     public V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutes
 {
@@ -378,7 +378,7 @@ public partial class V1CalicoNodeStatusStatusRoutes
     public IList<V1CalicoNodeStatusStatusRoutesRoutesV6>? RoutesV6 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatus
 {
@@ -395,7 +395,7 @@ public partial class V1CalicoNodeStatusStatus
     public V1CalicoNodeStatusStatusRoutes? Routes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CalicoNodeStatus : IKubernetesObject<V1ObjectMeta>, ISpec<V1CalicoNodeStatusSpec?>, IStatus<V1CalicoNodeStatusStatus?>

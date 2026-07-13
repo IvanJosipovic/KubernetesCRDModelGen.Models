@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.synapse.azure.com;
 /// - Generated from: /synapse/resource-manager/Microsoft.Synapse/stable/2021-06-01/bigDataPool.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Synapse/workspaces/{workspaceName}/bigDataPools/{bigDataPoolName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210601WorkspacesBigDataPoolList : IKubernetesObject<V1ListMeta>, IItems<V1api20210601WorkspacesBigDataPool>
@@ -41,7 +41,7 @@ public partial class V1api20210601WorkspacesBigDataPoolList : IKubernetesObject<
 }
 
 /// <summary>AutoPause: Auto-pausing properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecAutoPause
 {
@@ -55,7 +55,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecAutoPause
 }
 
 /// <summary>AutoScale: Auto-scaling properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecAutoScale
 {
@@ -73,7 +73,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecAutoScale
 }
 
 /// <summary>Library/package information of a Big Data pool powered by Apache Spark</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecCustomLibraries
 {
@@ -95,7 +95,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecCustomLibraries
 }
 
 /// <summary>DynamicExecutorAllocation: Dynamic Executor Allocation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecDynamicExecutorAllocation
 {
@@ -113,7 +113,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecDynamicExecutorAlloca
 }
 
 /// <summary>LibraryRequirements: Library version requirements</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecLibraryRequirements
 {
@@ -127,7 +127,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecLibraryRequirements
 }
 
 /// <summary>NodeSize: The level of compute power that each node in the Big Data pool has.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601WorkspacesBigDataPoolSpecNodeSizeEnum>))]
 public enum V1api20210601WorkspacesBigDataPoolSpecNodeSizeEnum
 {
@@ -148,7 +148,7 @@ public enum V1api20210601WorkspacesBigDataPoolSpecNodeSizeEnum
 }
 
 /// <summary>NodeSizeFamily: The kind of nodes that the Big Data pool provides.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601WorkspacesBigDataPoolSpecNodeSizeFamilyEnum>))]
 public enum V1api20210601WorkspacesBigDataPoolSpecNodeSizeFamilyEnum
 {
@@ -167,7 +167,7 @@ public enum V1api20210601WorkspacesBigDataPoolSpecNodeSizeFamilyEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpecConfigMapExpressions
 {
@@ -208,7 +208,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpecConfigMap
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpecSecretExpressions
 {
@@ -248,7 +248,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpecSecretExp
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpec
 {
@@ -266,7 +266,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a synapse.azure.com/Workspace resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecOwner
 {
@@ -279,7 +279,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecOwner
 }
 
 /// <summary>ConfigurationType: The type of the spark config properties file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601WorkspacesBigDataPoolSpecSparkConfigPropertiesConfigurationTypeEnum>))]
 public enum V1api20210601WorkspacesBigDataPoolSpecSparkConfigPropertiesConfigurationTypeEnum
 {
@@ -290,7 +290,7 @@ public enum V1api20210601WorkspacesBigDataPoolSpecSparkConfigPropertiesConfigura
 }
 
 /// <summary>SparkConfigProperties: Spark configuration file to specify additional properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpecSparkConfigProperties
 {
@@ -307,7 +307,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpecSparkConfigProperties
     public string? Filename { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolSpec
 {
@@ -411,7 +411,7 @@ public partial class V1api20210601WorkspacesBigDataPoolSpec
 }
 
 /// <summary>AutoPause: Auto-pausing properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusAutoPause
 {
@@ -425,7 +425,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusAutoPause
 }
 
 /// <summary>AutoScale: Auto-scaling properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusAutoScale
 {
@@ -443,7 +443,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusAutoScale
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusConditions
 {
@@ -489,7 +489,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusConditions
 }
 
 /// <summary>Library/package information of a Big Data pool powered by Apache Spark</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusCustomLibraries
 {
@@ -523,7 +523,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusCustomLibraries
 }
 
 /// <summary>DynamicExecutorAllocation: Dynamic Executor Allocation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusDynamicExecutorAllocation
 {
@@ -541,7 +541,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusDynamicExecutorAllo
 }
 
 /// <summary>LibraryRequirements: Library version requirements</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusLibraryRequirements
 {
@@ -559,7 +559,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusLibraryRequirements
 }
 
 /// <summary>SparkConfigProperties: Spark configuration file to specify additional properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatusSparkConfigProperties
 {
@@ -580,7 +580,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatusSparkConfigProperti
     public string? Time { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601WorkspacesBigDataPoolStatus
 {
@@ -693,7 +693,7 @@ public partial class V1api20210601WorkspacesBigDataPoolStatus
 /// - Generated from: /synapse/resource-manager/Microsoft.Synapse/stable/2021-06-01/bigDataPool.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Synapse/workspaces/{workspaceName}/bigDataPools/{bigDataPoolName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210601WorkspacesBigDataPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210601WorkspacesBigDataPoolSpec?>, IStatus<V1api20210601WorkspacesBigDataPoolStatus?>

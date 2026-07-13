@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.gateway.networking.k8s.io;
 /// BackendTLSPolicy provides a way to configure how a Gateway
 /// connects to a Backend via TLS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BackendTLSPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1BackendTLSPolicy>
@@ -50,7 +50,7 @@ public partial class V1BackendTLSPolicyList : IKubernetesObject<V1ListMeta>, IIt
 /// to SectionName are actually needed. In all other cases,
 /// LocalPolicyTargetReference should be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicySpecTargetRefs
 {
@@ -93,7 +93,7 @@ public partial class V1BackendTLSPolicySpecTargetRefs
 /// be rejected by the implementation, with appropriate Conditions set
 /// on the containing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicySpecValidationCaCertificateRefs
 {
@@ -118,7 +118,7 @@ public partial class V1BackendTLSPolicySpecValidationCaCertificateRefs
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BackendTLSPolicySpecValidationSubjectAltNamesTypeEnum>))]
 public enum V1BackendTLSPolicySpecValidationSubjectAltNamesTypeEnum
 {
@@ -129,7 +129,7 @@ public enum V1BackendTLSPolicySpecValidationSubjectAltNamesTypeEnum
 }
 
 /// <summary>SubjectAltName represents Subject Alternative Name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicySpecValidationSubjectAltNames
 {
@@ -163,7 +163,7 @@ public partial class V1BackendTLSPolicySpecValidationSubjectAltNames
 }
 
 /// <summary>Validation contains backend TLS validation configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicySpecValidation
 {
@@ -268,7 +268,7 @@ public partial class V1BackendTLSPolicySpecValidation
 }
 
 /// <summary>Spec defines the desired state of BackendTLSPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicySpec
 {
@@ -358,7 +358,7 @@ public partial class V1BackendTLSPolicySpec
 /// AncestorRef corresponds with a ParentRef in the spec that this
 /// PolicyAncestorStatus struct describes the status of.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicyStatusAncestorsAncestorRef
 {
@@ -469,7 +469,7 @@ public partial class V1BackendTLSPolicyStatusAncestorsAncestorRef
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BackendTLSPolicyStatusAncestorsConditionsStatusEnum>))]
 public enum V1BackendTLSPolicyStatusAncestorsConditionsStatusEnum
 {
@@ -482,7 +482,7 @@ public enum V1BackendTLSPolicyStatusAncestorsConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicyStatusAncestorsConditions
 {
@@ -559,7 +559,7 @@ public partial class V1BackendTLSPolicyStatusAncestorsConditions
 /// This struct is intended to be used in a slice that&apos;s effectively a map,
 /// with a composite key made up of the AncestorRef and the ControllerName.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicyStatusAncestors
 {
@@ -594,7 +594,7 @@ public partial class V1BackendTLSPolicyStatusAncestors
 }
 
 /// <summary>Status defines the current state of BackendTLSPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackendTLSPolicyStatus
 {
@@ -637,7 +637,7 @@ public partial class V1BackendTLSPolicyStatus
 /// BackendTLSPolicy provides a way to configure how a Gateway
 /// connects to a Backend via TLS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BackendTLSPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1BackendTLSPolicySpec>, IStatus<V1BackendTLSPolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.policies.azuread.m.upbound.io;
 /// <summary>GroupRoleManagementPolicy is the Schema for the GroupRoleManagementPolicys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GroupRoleManagementPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GroupRoleManagementPolicy>
@@ -36,7 +36,7 @@ public partial class V1beta1GroupRoleManagementPolicyList : IKubernetesObject<V1
     public required IList<V1beta1GroupRoleManagementPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRulesApprovalStagePrimaryApprover
 {
@@ -59,7 +59,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRu
 /// An approval_stage block as defined below.
 /// The approval stages for the activation
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRulesApprovalStage
 {
@@ -75,7 +75,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRu
 /// An activation_rules block as defined below.
 /// The activation rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRules
 {
@@ -133,7 +133,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderActivationRu
 /// An active_assignment_rules block as defined below.
 /// The rules for active assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderActiveAssignmentRules
 {
@@ -177,7 +177,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderActiveAssign
 /// An eligible_assignment_rules block as defined below.
 /// The rules for eligible assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderEligibleAssignmentRules
 {
@@ -202,7 +202,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderEligibleAssi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResolutionEnum
 {
@@ -218,7 +218,7 @@ public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResolveEnum
 {
@@ -229,7 +229,7 @@ public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPolicy
 {
@@ -253,7 +253,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRefPo
 }
 
 /// <summary>Reference to a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRef
 {
@@ -276,7 +276,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicyResolutionEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicyResolveEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelectorPolicy
 {
@@ -327,7 +327,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelec
 }
 
 /// <summary>Selector for a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderGroupIdSelec
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesActiveAssignmentsAdminNotifications
 {
@@ -385,7 +385,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesActiveAssignmentsApproverNotifications
 {
@@ -415,7 +415,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesActiveAssignmentsAssigneeNotifications
 {
@@ -445,7 +445,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_target block as defined below to configure notfications on active role assignments.
 /// Notifications about active assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesActiveAssignments
 {
@@ -475,7 +475,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleActivationsAdminNotifications
 {
@@ -505,7 +505,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleActivationsApproverNotifications
 {
@@ -535,7 +535,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleActivationsAssigneeNotifications
 {
@@ -565,7 +565,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_target block as defined below for configuring notifications on activation of eligible role.
 /// Notifications about activations of eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleActivations
 {
@@ -595,7 +595,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleAssignmentsAdminNotifications
 {
@@ -625,7 +625,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleAssignmentsApproverNotifications
 {
@@ -655,7 +655,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleAssignmentsAssigneeNotifications
 {
@@ -685,7 +685,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_target block as defined below to configure notification on eligible role assignments.
 /// Notifications about eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleAssignments
 {
@@ -715,7 +715,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
 /// A notification_rules block as defined below.
 /// The notification rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotificationRules
 {
@@ -741,7 +741,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProviderNotification
     public V1beta1GroupRoleManagementPolicySpecForProviderNotificationRulesEligibleAssignments? EligibleAssignments { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecForProvider
 {
@@ -796,7 +796,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecForProvider
     public string? RoleId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationRulesApprovalStagePrimaryApprover
 {
@@ -819,7 +819,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationR
 /// An approval_stage block as defined below.
 /// The approval stages for the activation
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationRulesApprovalStage
 {
@@ -835,7 +835,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationR
 /// An activation_rules block as defined below.
 /// The activation rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationRules
 {
@@ -893,7 +893,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActivationR
 /// An active_assignment_rules block as defined below.
 /// The rules for active assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActiveAssignmentRules
 {
@@ -937,7 +937,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderActiveAssig
 /// An eligible_assignment_rules block as defined below.
 /// The rules for eligible assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderEligibleAssignmentRules
 {
@@ -962,7 +962,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderEligibleAss
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyResolutionEnum
 {
@@ -978,7 +978,7 @@ public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyResolveEnum
 {
@@ -989,7 +989,7 @@ public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefPolicy
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRefP
 }
 
 /// <summary>Reference to a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRef
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolicyResolutionEnum
 {
@@ -1052,7 +1052,7 @@ public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolicyResolveEnum
 {
@@ -1063,7 +1063,7 @@ public enum V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelectorPolicy
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSele
 }
 
 /// <summary>Selector for a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSelector
 {
@@ -1115,7 +1115,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderGroupIdSele
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesActiveAssignmentsAdminNotifications
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesActiveAssignmentsApproverNotifications
 {
@@ -1175,7 +1175,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesActiveAssignmentsAssigneeNotifications
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_target block as defined below to configure notfications on active role assignments.
 /// Notifications about active assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesActiveAssignments
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleActivationsAdminNotifications
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleActivationsApproverNotifications
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleActivationsAssigneeNotifications
 {
@@ -1325,7 +1325,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_target block as defined below for configuring notifications on activation of eligible role.
 /// Notifications about activations of eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleActivations
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleAssignmentsAdminNotifications
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleAssignmentsApproverNotifications
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleAssignmentsAssigneeNotifications
 {
@@ -1445,7 +1445,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_target block as defined below to configure notification on eligible role assignments.
 /// Notifications about eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRulesEligibleAssignments
 {
@@ -1475,7 +1475,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// A notification_rules block as defined below.
 /// The notification rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificationRules
 {
@@ -1513,7 +1513,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProviderNotificatio
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecInitProvider
 {
@@ -1572,7 +1572,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GroupRoleManagementPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1GroupRoleManagementPolicySpecManagementPoliciesEnum
 {
@@ -1595,7 +1595,7 @@ public enum V1beta1GroupRoleManagementPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecProviderConfigRef
 {
@@ -1614,7 +1614,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpecWriteConnectionSecretToRef
 {
@@ -1624,7 +1624,7 @@ public partial class V1beta1GroupRoleManagementPolicySpecWriteConnectionSecretTo
 }
 
 /// <summary>GroupRoleManagementPolicySpec defines the desired state of GroupRoleManagementPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicySpec
 {
@@ -1675,7 +1675,7 @@ public partial class V1beta1GroupRoleManagementPolicySpec
     public V1beta1GroupRoleManagementPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationRulesApprovalStagePrimaryApprover
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationR
 /// An approval_stage block as defined below.
 /// The approval stages for the activation
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationRulesApprovalStage
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationR
 /// An activation_rules block as defined below.
 /// The activation rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationRules
 {
@@ -1772,7 +1772,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActivationR
 /// An active_assignment_rules block as defined below.
 /// The rules for active assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActiveAssignmentRules
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderActiveAssig
 /// An eligible_assignment_rules block as defined below.
 /// The rules for eligible assignment of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderEligibleAssignmentRules
 {
@@ -1839,7 +1839,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderEligibleAss
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesActiveAssignmentsAdminNotifications
 {
@@ -1869,7 +1869,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesActiveAssignmentsApproverNotifications
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesActiveAssignmentsAssigneeNotifications
 {
@@ -1929,7 +1929,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_target block as defined below to configure notfications on active role assignments.
 /// Notifications about active assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesActiveAssignments
 {
@@ -1959,7 +1959,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleActivationsAdminNotifications
 {
@@ -1989,7 +1989,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleActivationsApproverNotifications
 {
@@ -2019,7 +2019,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleActivationsAssigneeNotifications
 {
@@ -2049,7 +2049,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_target block as defined below for configuring notifications on activation of eligible role.
 /// Notifications about activations of eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleActivations
 {
@@ -2079,7 +2079,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Admin notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleAssignmentsAdminNotifications
 {
@@ -2109,7 +2109,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Approver notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleAssignmentsApproverNotifications
 {
@@ -2139,7 +2139,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_settings block as defined above.
 /// Assignee notification settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleAssignmentsAssigneeNotifications
 {
@@ -2169,7 +2169,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_target block as defined below to configure notification on eligible role assignments.
 /// Notifications about eligible assignments
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleAssignments
 {
@@ -2199,7 +2199,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
 /// A notification_rules block as defined below.
 /// The notification rules of the policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRules
 {
@@ -2225,7 +2225,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProviderNotificatio
     public V1beta1GroupRoleManagementPolicyStatusAtProviderNotificationRulesEligibleAssignments? EligibleAssignments { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusAtProvider
 {
@@ -2291,7 +2291,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatusConditions
 {
@@ -2334,7 +2334,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatusConditions
 }
 
 /// <summary>GroupRoleManagementPolicyStatus defines the observed state of GroupRoleManagementPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleManagementPolicyStatus
 {
@@ -2355,7 +2355,7 @@ public partial class V1beta1GroupRoleManagementPolicyStatus
 }
 
 /// <summary>GroupRoleManagementPolicy is the Schema for the GroupRoleManagementPolicys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GroupRoleManagementPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GroupRoleManagementPolicySpec>, IStatus<V1beta1GroupRoleManagementPolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.composer.cnrm.cloud.google.com;
 /// <summary>ComposerEnvironment is the Schema for the ComposerEnvironment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComposerEnvironmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ComposerEnvironment>
@@ -37,7 +37,7 @@ public partial class V1beta1ComposerEnvironmentList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>Optional. The retention policy for airflow metadata database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
@@ -51,7 +51,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfigAirf
 }
 
 /// <summary>Optional. The configuration settings for task logs retention</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfigTaskLogsRetentionConfig
 {
@@ -61,7 +61,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfigTask
 }
 
 /// <summary>Optional. The configuration setting for Airflow database data retention mechanism.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfig
 {
@@ -75,7 +75,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigDataRetentionConfig
 }
 
 /// <summary>Optional. The configuration settings for Cloud SQL instance used internally by Apache Airflow software.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigDatabaseConfig
 {
@@ -89,7 +89,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigDatabaseConfig
 }
 
 /// <summary>Optional. Customer-managed Encryption Key available through Google&apos;s Key Management Service. Cannot be updated. If not specified, Google-managed key will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigEncryptionConfigKmsKeyRef
 {
@@ -107,7 +107,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigEncryptionConfigKmsKeyR
 }
 
 /// <summary>Optional. The encryption options for the Cloud Composer environment and its dependencies. Cannot be updated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigEncryptionConfig
 {
@@ -133,7 +133,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigEncryptionConfig
 ///  applied. By default, maintenance windows are from 00:00:00 to 04:00:00
 ///  (GMT) on Friday, Saturday, and Sunday every week.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigMaintenanceWindow
 {
@@ -150,7 +150,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigMaintenanceWindow
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigMasterAuthorizedNetworksConfigCidrBlocks
 {
@@ -164,7 +164,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigMasterAuthorizedNetwork
 }
 
 /// <summary>Optional. The configuration options for GKE cluster master authorized networks. By default master authorized networks feature is: - in case of private environment: enabled with no external networks allowlisted. - in case of public environment: disabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigMasterAuthorizedNetworksConfig
 {
@@ -190,7 +190,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigMasterAuthorizedNetwork
 ///  This field is supported for Cloud Composer environments in versions
 ///  composer-3.*.*-airflow-*.*.* and newer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigComposerNetworkAttachmentRef
 {
@@ -208,7 +208,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigComposerNetwo
 }
 
 /// <summary>Optional. The configuration for controlling how IPs are allocated in the GKE cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigIpAllocationPolicy
 {
@@ -299,7 +299,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigIpAllocationP
 ///  [Shared VPC](/vpc/docs/shared-vpc) subnetwork requirements, see
 ///  `nodeConfig.subnetwork`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigNetworkRef
 {
@@ -317,7 +317,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigNetworkRef
 }
 
 /// <summary>Optional. The Google Cloud Platform Service Account to be used by the node VMs. If a service account is not specified, the &quot;default&quot; Compute Engine service account is used. Cannot be updated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigServiceAccountRef
 {
@@ -345,7 +345,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigServiceAccoun
 ///  and the subnetwork must belong to the enclosing environment&apos;s project and
 ///  location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigSubnetworkRef
 {
@@ -363,7 +363,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfigSubnetworkRef
 }
 
 /// <summary>Optional. The configuration used for the Kubernetes Engine cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfig
 {
@@ -523,7 +523,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigNodeConfig
 }
 
 /// <summary>Optional. When specified, the environment will use Private Service Connect instead of VPC peerings to connect to Cloud SQL in the Tenant Project, and the PSC endpoint in the Customer Project will use an IP address from this subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfigCloudComposerConnectionSubnetworkRef
 {
@@ -541,7 +541,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfi
 }
 
 /// <summary>Optional. Configuration for the network connections configuration in the environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfigNetworkingConfig
 {
@@ -551,7 +551,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfi
 }
 
 /// <summary>Optional. Configuration for the private GKE cluster for a Private IP Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfigPrivateClusterConfig
 {
@@ -565,7 +565,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfi
 }
 
 /// <summary>Optional. The configuration used for the Private IP Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfig
 {
@@ -633,7 +633,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigPrivateEnvironmentConfi
 }
 
 /// <summary>Optional. The configuration for scheduled snapshot creation mechanism.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigRecoveryConfigScheduledSnapshotsConfig
 {
@@ -660,7 +660,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigRecoveryConfigScheduled
 ///  This field is supported for Cloud Composer environments in versions
 ///  composer-2.*.*-airflow-*.*.* and newer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigRecoveryConfig
 {
@@ -670,7 +670,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigRecoveryConfig
 }
 
 /// <summary>Optional. The configuration for Cloud Data Lineage integration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigSoftwareConfigCloudDataLineageIntegration
 {
@@ -680,7 +680,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigSoftwareConfigCloudData
 }
 
 /// <summary>Optional. The configuration settings for software inside the environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigSoftwareConfig
 {
@@ -812,7 +812,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigSoftwareConfig
 }
 
 /// <summary>Optional. The configuration settings for the Airflow web server App Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWebServerConfig
 {
@@ -821,7 +821,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWebServerConfig
     public string? MachineType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWebServerNetworkAccessControlAllowedIPRanges
 {
@@ -844,7 +844,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWebServerNetworkAccessC
 }
 
 /// <summary>Optional. The network-level access control policy for the Airflow web server. If unspecified, no network-level access restrictions will be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWebServerNetworkAccessControl
 {
@@ -859,7 +859,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWebServerNetworkAccessC
 ///  This field is supported for Cloud Composer environments in versions
 ///  composer-3-airflow-*.*.*-build.* and newer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigDagProcessor
 {
@@ -881,7 +881,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigDagProce
 }
 
 /// <summary>Optional. Resources used by Airflow schedulers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigScheduler
 {
@@ -903,7 +903,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigSchedule
 }
 
 /// <summary>Optional. Resources used by Airflow triggerers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigTriggerer
 {
@@ -921,7 +921,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigTriggere
 }
 
 /// <summary>Optional. Resources used by Airflow web server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigWebServer
 {
@@ -939,7 +939,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigWebServe
 }
 
 /// <summary>Optional. Resources used by Airflow workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigWorker
 {
@@ -972,7 +972,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfigWorker
 ///  This field is supported for Cloud Composer environments in versions
 ///  composer-2.*.*-airflow-*.*.* and newer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfig
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfigWorkloadsConfig
 }
 
 /// <summary>Optional. Configuration parameters for this environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecConfig
 {
@@ -1113,7 +1113,7 @@ public partial class V1beta1ComposerEnvironmentSpecConfig
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecProjectRef
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta1ComposerEnvironmentSpecProjectRef
 }
 
 /// <summary>Optional. The name of the Cloud Storage bucket used by the environment. No `gs://` prefix.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecStorageConfigBucketRef
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1ComposerEnvironmentSpecStorageConfigBucketRef
 }
 
 /// <summary>Optional. Storage configuration for this environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpecStorageConfig
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta1ComposerEnvironmentSpecStorageConfig
 }
 
 /// <summary>ComposerEnvironmentSpec defines the desired state of ComposerEnvironment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentSpec
 {
@@ -1201,7 +1201,7 @@ public partial class V1beta1ComposerEnvironmentSpec
     public V1beta1ComposerEnvironmentSpecStorageConfig? StorageConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatusConditions
 {
@@ -1227,7 +1227,7 @@ public partial class V1beta1ComposerEnvironmentStatusConditions
 }
 
 /// <summary>Optional. Configuration for the private GKE cluster for a Private IP Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatusObservedStateConfigPrivateEnvironmentConfigPrivateClusterConfig
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta1ComposerEnvironmentStatusObservedStateConfigPrivateE
 }
 
 /// <summary>Optional. The configuration used for the Private IP Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatusObservedStateConfigPrivateEnvironmentConfig
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta1ComposerEnvironmentStatusObservedStateConfigPrivateE
 }
 
 /// <summary>Optional. Configuration parameters for this environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatusObservedStateConfig
 {
@@ -1292,7 +1292,7 @@ public partial class V1beta1ComposerEnvironmentStatusObservedStateConfig
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatusObservedState
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta1ComposerEnvironmentStatusObservedState
 }
 
 /// <summary>ComposerEnvironmentStatus defines the config connector machine state of ComposerEnvironment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComposerEnvironmentStatus
 {
@@ -1340,7 +1340,7 @@ public partial class V1beta1ComposerEnvironmentStatus
 }
 
 /// <summary>ComposerEnvironment is the Schema for the ComposerEnvironment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComposerEnvironment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComposerEnvironmentSpec>, IStatus<V1beta1ComposerEnvironmentStatus?>

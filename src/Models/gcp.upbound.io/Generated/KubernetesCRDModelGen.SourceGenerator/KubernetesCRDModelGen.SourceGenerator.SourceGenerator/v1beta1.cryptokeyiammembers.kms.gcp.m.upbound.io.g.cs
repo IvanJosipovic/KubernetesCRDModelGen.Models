@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kms.gcp.m.upbound.io;
 /// <summary>CryptoKeyIAMMember is the Schema for the CryptoKeyIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CryptoKeyIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CryptoKeyIAMMember>
@@ -36,7 +36,7 @@ public partial class V1beta1CryptoKeyIAMMemberList : IKubernetesObject<V1ListMet
     public required IList<V1beta1CryptoKeyIAMMember> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCondition
 {
@@ -56,7 +56,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRefPolic
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate cryptoKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelector
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate cryptoKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelector
 {
@@ -205,7 +205,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelector
     public V1beta1CryptoKeyIAMMemberSpecForProviderCryptoKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecForProvider
 {
@@ -230,7 +230,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecForProvider
     public string? Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCondition
 {
@@ -250,7 +250,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRefPoli
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate cryptoKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRef
 {
@@ -324,7 +324,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyResolutionEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyResolveEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelectorPolicy
 {
@@ -375,7 +375,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelecto
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate cryptoKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelector
 {
@@ -411,7 +411,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProviderCryptoKeyIdSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecInitProvider
 {
@@ -440,7 +440,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CryptoKeyIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1CryptoKeyIAMMemberSpecManagementPoliciesEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1CryptoKeyIAMMemberSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecProviderConfigRef
 {
@@ -482,7 +482,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -492,7 +492,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CryptoKeyIAMMemberSpec defines the desired state of CryptoKeyIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberSpec
 {
@@ -543,7 +543,7 @@ public partial class V1beta1CryptoKeyIAMMemberSpec
     public V1beta1CryptoKeyIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberStatusAtProviderCondition
 {
@@ -557,7 +557,7 @@ public partial class V1beta1CryptoKeyIAMMemberStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberStatusAtProvider
 {
@@ -581,7 +581,7 @@ public partial class V1beta1CryptoKeyIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberStatusConditions
 {
@@ -624,7 +624,7 @@ public partial class V1beta1CryptoKeyIAMMemberStatusConditions
 }
 
 /// <summary>CryptoKeyIAMMemberStatus defines the observed state of CryptoKeyIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CryptoKeyIAMMemberStatus
 {
@@ -645,7 +645,7 @@ public partial class V1beta1CryptoKeyIAMMemberStatus
 }
 
 /// <summary>CryptoKeyIAMMember is the Schema for the CryptoKeyIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CryptoKeyIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CryptoKeyIAMMemberSpec>, IStatus<V1beta1CryptoKeyIAMMemberStatus?>

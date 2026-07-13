@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gkehub.cnrm.cloud.google.com;
 /// <summary>GKEHubMembershipBinding is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEHubMembershipBindingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1GKEHubMembershipBinding>
@@ -37,7 +37,7 @@ public partial class V1alpha1GKEHubMembershipBindingList : IKubernetesObject<V1L
 }
 
 /// <summary>Immutable. The membership that this binding belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingSpecMembershipRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1GKEHubMembershipBindingSpecMembershipRef
 }
 
 /// <summary>Immutable. The scope that this binding is bound to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingSpecScopeRef
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1GKEHubMembershipBindingSpecScopeRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingSpec
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1GKEHubMembershipBindingSpec
     public required V1alpha1GKEHubMembershipBindingSpecScopeRef ScopeRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingStatusConditions
 {
@@ -119,7 +119,7 @@ public partial class V1alpha1GKEHubMembershipBindingStatusConditions
 }
 
 /// <summary>Output only. Code describes the state of a MembershipBinding resource. Possible values: CODE_UNSPECIFIED, CREATING, READY, DELETING, UPDATING</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1GKEHubMembershipBindingStatusObservedStateStateCodeEnum>))]
 public enum V1alpha1GKEHubMembershipBindingStatusObservedStateStateCodeEnum
 {
@@ -136,7 +136,7 @@ public enum V1alpha1GKEHubMembershipBindingStatusObservedStateStateCodeEnum
 }
 
 /// <summary>Output only. State of the membershipbinding resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingStatusObservedStateState
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1GKEHubMembershipBindingStatusObservedStateState
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingStatusObservedState
 {
@@ -171,7 +171,7 @@ public partial class V1alpha1GKEHubMembershipBindingStatusObservedState
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEHubMembershipBindingStatus
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1GKEHubMembershipBindingStatus
 }
 
 /// <summary>GKEHubMembershipBinding is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEHubMembershipBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1GKEHubMembershipBindingSpec>, IStatus<V1alpha1GKEHubMembershipBindingStatus?>

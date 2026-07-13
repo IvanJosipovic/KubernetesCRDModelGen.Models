@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>RegionTargetHTTPSProxy is the Schema for the RegionTargetHTTPSProxys API. Represents a RegionTargetHttpsProxy resource, which is used by one or more forwarding rules to route incoming HTTPS requests to a URL map.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionTargetHTTPSProxyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionTargetHTTPSProxy>
@@ -45,7 +45,7 @@ public partial class V1beta1RegionTargetHTTPSProxyList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecDeletionPolicyEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificates
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefs
 {
@@ -131,7 +131,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificates
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificates
 }
 
 /// <summary>Selector for a list of RegionSSLCertificate in compute to populate sslCertificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificates
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRefPolicy
 }
 
 /// <summary>Reference to a RegionURLMap in compute to populate urlMap.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorP
 }
 
 /// <summary>Selector for a RegionURLMap in compute to populate urlMap.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelector
     public V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecForProvider
 {
@@ -453,7 +453,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPolicyResolutionEnum
 {
@@ -469,7 +469,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPolicyResolveEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefsPolicy
 {
@@ -504,7 +504,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificate
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesRefs
 {
@@ -523,7 +523,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificate
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelectorPolicyResolutionEnum
 {
@@ -539,7 +539,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelectorPolicyResolveEnum
 {
@@ -550,7 +550,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelectorPolicy
 {
@@ -574,7 +574,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificate
 }
 
 /// <summary>Selector for a list of RegionSSLCertificate in compute to populate sslCertificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificatesSelector
 {
@@ -600,7 +600,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderSslCertificate
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResolutionEnum
 {
@@ -616,7 +616,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResolveEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolicy
 {
@@ -651,7 +651,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRefPolic
 }
 
 /// <summary>Reference to a RegionURLMap in compute to populate urlMap.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRef
 {
@@ -670,7 +670,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyResolutionEnum
 {
@@ -686,7 +686,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyResolveEnum
 {
@@ -697,7 +697,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelectorPolicy
 {
@@ -721,7 +721,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelector
 }
 
 /// <summary>Selector for a RegionURLMap in compute to populate urlMap.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelector
 {
@@ -753,7 +753,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderUrlMapSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecInitProvider
 {
@@ -848,7 +848,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecManagementPoliciesEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecManagementPoliciesEnum
 {
@@ -872,7 +872,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -888,7 +888,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolveEnum
 {
@@ -899,7 +899,7 @@ public enum V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicy
 {
@@ -927,7 +927,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecProviderConfigRef
 {
@@ -946,7 +946,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpecWriteConnectionSecretToRef
 {
@@ -960,7 +960,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpecWriteConnectionSecretToRef
 }
 
 /// <summary>RegionTargetHTTPSProxySpec defines the desired state of RegionTargetHTTPSProxy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxySpec
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1RegionTargetHTTPSProxySpec
     public V1beta1RegionTargetHTTPSProxySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxyStatusAtProvider
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1RegionTargetHTTPSProxyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxyStatusConditions
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1RegionTargetHTTPSProxyStatusConditions
 }
 
 /// <summary>RegionTargetHTTPSProxyStatus defines the observed state of RegionTargetHTTPSProxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetHTTPSProxyStatus
 {
@@ -1190,7 +1190,7 @@ public partial class V1beta1RegionTargetHTTPSProxyStatus
 }
 
 /// <summary>RegionTargetHTTPSProxy is the Schema for the RegionTargetHTTPSProxys API. Represents a RegionTargetHttpsProxy resource, which is used by one or more forwarding rules to route incoming HTTPS requests to a URL map.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionTargetHTTPSProxy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionTargetHTTPSProxySpec>, IStatus<V1beta1RegionTargetHTTPSProxyStatus?>
