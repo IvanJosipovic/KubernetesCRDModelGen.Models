@@ -2,6 +2,8 @@
   "profiles": {
     "KubernetesCRDModelGen.Sync": {
       "commandName": "Project",
+      "commandLineArgs": "--DocFXGenerator false",
+      "workingDirectory": "..\\..\\",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       },

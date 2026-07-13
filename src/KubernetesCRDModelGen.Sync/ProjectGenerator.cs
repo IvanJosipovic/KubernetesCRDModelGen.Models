@@ -4,12 +4,18 @@ using Microsoft.VisualStudio.SolutionPersistence.Serializer;
 
 namespace KubernetesCRDModelGen.Sync;
 
-internal class ProjectGenerator
+class ProjectGenerator
 {
-    private static string ModelsPath = "src/Models";
+    public static string ModelsPath = "src/Models";
 
-    public static void GenerateProject(string projectName, string rootDirectory)
+    public static string Namespace = "KubernetesCRDModelGen.Models";
+
+    public static string CRDFolderName = "crds";
+
+    public static async Task GenerateProjectAsync(string projectName, string rootDirectory, CancellationToken cancellationToken = default)
     {
+        cancellationToken.ThrowIfCancellationRequested();
+
         var modelDir = Path.Combine(rootDirectory, ModelsPath);
         Directory.CreateDirectory(modelDir);
 
@@ -20,123 +26,21 @@ internal class ProjectGenerator
         GenerateReadme(projectName, projectDir);
 
         GenerateReleasePlease(projectName, rootDirectory);
-        AddProjectsToSolution(projectName, rootDirectory).GetAwaiter().GetResult();
-    }
-
-    public static void GenerateDocFx(IEnumerable<Config> configs, string rootDirectory)
-    {
-        ArgumentNullException.ThrowIfNull(configs);
-
-        var distinctGroups = configs
-            .Select(config => config.Group)
-            .Where(group => !string.IsNullOrWhiteSpace(group))
-            .Distinct(StringComparer.Ordinal)
-            .Order(StringComparer.Ordinal)
-            .ToList();
-
-        var docFxPath = Path.Combine(rootDirectory, "docfx.json");
-
-        if (!File.Exists(docFxPath))
-        {
-            throw new FileNotFoundException("DocFX configuration file was not found.", docFxPath);
-        }
-
-        var docFxConfig = JsonNode.Parse(File.ReadAllText(docFxPath))?.AsObject()
-            ?? throw new InvalidOperationException($"Unable to parse {docFxPath} as a JSON object.");
-
-        if (docFxConfig["metadata"] is not JsonArray metadata)
-        {
-            metadata = [];
-            docFxConfig["metadata"] = metadata;
-        }
-
-        foreach (var group in distinctGroups)
-        {
-            var metadataEntry = BuildDocFxMetadataEntry(group);
-            var projectSrc = metadataEntry["src"]?[0]?["src"]?.GetValue<string>();
-
-            var existingEntry = metadata
-                .OfType<JsonObject>()
-                .FirstOrDefault(entry =>
-                    string.Equals(
-                        entry["src"]?[0]?["src"]?.GetValue<string>(),
-                        projectSrc,
-                        StringComparison.Ordinal));
-
-            if (existingEntry is null)
-            {
-                metadata.Add(metadataEntry);
-            }
-            else
-            {
-                existingEntry["src"] = metadataEntry["src"]?.DeepClone();
-                existingEntry["dest"] = metadataEntry["dest"]?.DeepClone();
-            }
-        }
-
-        var docFxContent = docFxConfig.ToJsonString(new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(docFxPath, docFxContent);
-
-        GenerateApiToc(distinctGroups, rootDirectory);
-    }
-
-    private static JsonObject BuildDocFxMetadataEntry(string projectName)
-    {
-        var projectPath = $"src/Models/{projectName}";
-        var assemblyPath = $"/bin/Release/net10.0/KubernetesCRDModelGen.Models.{projectName}.dll";
-        var destinationPath = $"api/KubernetesCRDModelGen.Models.{projectName}";
-
-        return new JsonObject
-        {
-            ["src"] = new JsonArray
-            {
-                new JsonObject
-                {
-                    ["src"] = projectPath,
-                    ["files"] = new JsonArray(assemblyPath)
-                }
-            },
-            ["dest"] = destinationPath
-        };
-    }
-
-    private static void GenerateApiToc(IEnumerable<string> groups, string rootDirectory)
-    {
-        var apiDirectoryPath = Path.Combine(rootDirectory, "api");
-        Directory.CreateDirectory(apiDirectoryPath);
-
-        var apiTocPath = Path.Combine(apiDirectoryPath, "toc.yml");
-
-        var tocLines = new List<string>
-        {
-            "items:",
-            "- name: API Reference",
-            "  href: index.md",
-            "- name: KubernetesCRDModelGen.Sync",
-            "  href: KubernetesCRDModelGen.Sync/toc.yml",
-        };
-
-        foreach (var group in groups)
-        {
-            tocLines.Add($"- name: KubernetesCRDModelGen.Models.{group}");
-            tocLines.Add($"  href: KubernetesCRDModelGen.Models.{group}/toc.yml");
-        }
-
-        File.WriteAllText(apiTocPath, string.Join(Environment.NewLine, tocLines) + Environment.NewLine);
+        await AddProjectsToSolutionAsync(projectName, rootDirectory, cancellationToken).ConfigureAwait(false);
     }
 
     private static void GenerateReadme(string projectName, string projectDir)
     {
         var readmeContent = $"""
-            # KubernetesCRDModelGen.Models.{projectName}
-            [![Nuget](https://img.shields.io/nuget/vpre/KubernetesCRDModelGen.Models.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.{projectName})[![Nuget)](https://img.shields.io/nuget/dt/KubernetesCRDModelGen.Models.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.{projectName})
+            # {Namespace}.{projectName}
+            [![Nuget](https://img.shields.io/nuget/vpre/{Namespace}.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/{Namespace}.{projectName})[![Nuget)](https://img.shields.io/nuget/dt/{Namespace}.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/{Namespace}.{projectName})
 
             C# models for Kubernetes CRDs in group `{projectName}`.
 
             ## Installation
 
             ```shell
-            dotnet add package KubernetesCRDModelGen.Models.{projectName}
+            dotnet add package {Namespace}.{projectName}
             ```
             """;
 
@@ -149,15 +53,14 @@ internal class ProjectGenerator
             <Project Sdk="Microsoft.NET.Sdk">
                 <PropertyGroup>
                     <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
-                    <PackageId>KubernetesCRDModelGen.Models.{projectName}</PackageId>
-                    <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models</RepositoryUrl>
+                    <PackageId>{Namespace}.{projectName}</PackageId>
+                    <RepositoryUrl>https://github.com/IvanJosipovic/{Namespace}</RepositoryUrl>
                     <Description>C# models for Kubernetes CRDs in group {projectName}</Description>
                     <Authors>Ivan Josipovic</Authors>
                     <PackageTags>Kubernetes CustomResourceDefinition CRD Models</PackageTags>
                     <ImplicitUsings>enable</ImplicitUsings>
                     <Nullable>enable</Nullable>
                     <LangVersion>latest</LangVersion>
-                    <RepositoryType>git</RepositoryType>
                     <PackageLicenseExpression>MIT</PackageLicenseExpression>
                     <PublishRepositoryUrl>true</PublishRepositoryUrl>
                     <IncludeSymbols>true</IncludeSymbols>
@@ -178,7 +81,7 @@ internal class ProjectGenerator
 
                 <ItemGroup>
                     <None Include="README.md" Pack="true" PackagePath="\" />
-                    <AdditionalFiles Include="crds\*.yaml" />
+                    <AdditionalFiles Include="{ProjectGenerator.CRDFolderName}\*.yaml" />
                     <None Include="Generated\**\*.*" />
                 </ItemGroup>
 
@@ -194,7 +97,7 @@ internal class ProjectGenerator
                 </ItemGroup>
             </Project>
             """;
-        File.WriteAllText(Path.Combine(projectDir, $"KubernetesCRDModelGen.Models.{projectName}.csproj"), csprojContent);
+        File.WriteAllText(Path.Combine(projectDir, $"{Namespace}.{projectName}.csproj"), csprojContent);
 
         var versionFileName = "Directory.Build.props";
 
@@ -231,7 +134,7 @@ internal class ProjectGenerator
             releasePleaseConfig["packages"] = packages;
         }
 
-        var packagePath = "src/Models/" + projectName;
+        var packagePath = $"{ModelsPath}/{projectName}";
 
         packages[packagePath] = new JsonObject
         {
@@ -292,10 +195,7 @@ internal class ProjectGenerator
                 .Order(StringComparer.Ordinal)
                 .Select(projectName =>
                 {
-                    var packageId = $"KubernetesCRDModelGen.Models.{projectName}";
-                    var packagePath = $"/{ModelsPath}/{projectName}";
-
-                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/{packageId}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
+                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/{Namespace}/models/{projectName}) | [{Namespace}.{projectName}](https://www.nuget.org/packages/{Namespace}.{projectName}) |";
                 }).Aggregate((current, next) => current + "\n" + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
@@ -308,9 +208,11 @@ internal class ProjectGenerator
         File.WriteAllText(readmePath, replacementContent);
     }
 
-    public static async Task AddProjectsToSolution(string projectName, string rootDirectory, CancellationToken cancellationToken = default)
+    public static async Task AddProjectsToSolutionAsync(string projectName, string rootDirectory, CancellationToken cancellationToken = default)
     {
-        var solutionPath = Path.Combine(rootDirectory, "KubernetesCRDModelGen.Models.slnx");
+        cancellationToken.ThrowIfCancellationRequested();
+
+        var solutionPath = Path.Combine(rootDirectory, $"{Namespace}.slnx");
 
         if (!File.Exists(solutionPath))
         {
@@ -319,10 +221,11 @@ internal class ProjectGenerator
 
         var serializer = SolutionSerializers.GetSerializerByMoniker(solutionPath)
             ?? throw new InvalidOperationException($"Unable to get a solution serializer for '{solutionPath}'.");
+
         var solution = await serializer.OpenAsync(solutionPath, cancellationToken).ConfigureAwait(false)
             ?? throw new InvalidOperationException($"Unable to open solution '{solutionPath}'.");
 
-        var solutionProjectPath = $"{ModelsPath}/{projectName}/KubernetesCRDModelGen.Models.{projectName}.csproj";
+        var solutionProjectPath = $"{ModelsPath}/{projectName}/{Namespace}.{projectName}.csproj";
 
         if (OperatingSystem.IsWindows())
         {
@@ -334,9 +237,9 @@ internal class ProjectGenerator
             return;
         }
 
-        var modelsFolder = solution.FindFolder("/src/Models/")
-            ?? solution.AddFolder("/src/Models/")
-            ?? throw new InvalidOperationException("Unable to find or create '/src/Models/' solution folder.");
+        var modelsFolder = solution.FindFolder($"/{ModelsPath}/")
+            ?? solution.AddFolder($"/{ModelsPath}/")
+            ?? throw new InvalidOperationException($"Unable to find or create '/{ModelsPath}/' solution folder.");
 
         solution.AddProject(solutionProjectPath, projectTypeName: null, modelsFolder);
         await serializer.SaveAsync(solutionPath, solution, cancellationToken).ConfigureAwait(false);

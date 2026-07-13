@@ -4,6 +4,7 @@
     {
       "src": [
         {
+          "group": "Sync",
           "src": "src/KubernetesCRDModelGen.Sync",
           "files": [
             "/bin/Release/net10.0/KubernetesCRDModelGen.Sync.dll"
@@ -21,7 +22,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.Models.akuity.io"
+      "dest": "models/akuity.io"
     },
     {
       "src": [
@@ -32,7 +33,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.Models.aquasecurity.github.io"
+      "dest": "models/aquasecurity.github.io"
     },
     {
       "src": [
@@ -43,7 +44,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.Models.k8s.aws"
+      "dest": "models/k8s.aws"
     }
   ],
   "build": {

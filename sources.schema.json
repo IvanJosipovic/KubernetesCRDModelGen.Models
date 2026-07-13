@@ -64,11 +64,11 @@
         "Url": {
           "type": "string",
           "format": "uri",
-          "description": "Direct URL to the resource."
+          "description": "URL to download the resource from, supports .yaml/.yml files or .zip or .tar.gz archives."
         },
         "ArchivePathRegex": {
           "type": "string",
-          "description": "Regex filter applied to paths within an archive (zip, tar.gz, etc.)."
+          "description": "Regex Filter for Archive Path when extracting from archive (zip, tar.gz, etc.)"
         }
       }
     },
@@ -83,19 +83,23 @@
         "Repo": {
           "type": "string",
           "pattern": "^[^/]+/[^/]+$",
-          "description": "GitHub repository in owner/repository format."
+          "description": "GitHub Repository in the format of \"owner/repo\""
+        },
+        "ReleaseNameRegex": {
+          "type": "string",
+          "description": "Regex Filter for Release Name when selecting releases from a GitHub repository."
         },
         "AssetNameRegex": {
           "type": "string",
-          "description": "Regex filter applied to GitHub release asset names."
+          "description": "Regex Filter for Asset Name when selecting assets from a GitHub release."
         },
         "ArchivePathRegex": {
           "type": "string",
-          "description": "Regex filter applied to paths within an extracted archive."
+          "description": "Regex Filter for Archive Path when extracting from archive (zip, tar.gz, etc.)"
         },
         "PreRelease": {
           "type": "boolean",
-          "description": "Whether pre-release versions should be considered when selecting the latest release."
+          "description": "Whether to include pre-release versions when selecting the latest release. If true, pre-release versions will be considered; if false, only stable versions will be considered. If null, the default behavior is to exclude pre-release versions."
         }
       }
     },
@@ -110,7 +114,7 @@
       "properties": {
         "Repo": {
           "type": "string",
-          "description": "Helm repository URL or OCI registry URL."
+          "description": "Helm Repository URL (e.g., \"https://myrepo.com/charts\") or OCI Registry URL (e.g., \"oci://myregistry.com/myrepo\")"
         },
         "Chart": {
           "type": "string",
@@ -118,11 +122,11 @@
         },
         "PreRelease": {
           "type": "boolean",
-          "description": "Whether pre-release chart versions should be considered."
+          "description": "Whether to include pre-release versions when selecting the latest release. If true, pre-release versions will be considered; if false, only stable versions will be considered. If null, the default behavior is to exclude pre-release versions."
         },
-        "CMD": {
+        "AppendArgs": {
           "type": "string",
-          "description": "Optional command to execute after retrieving the chart."
+          "description": "Custom arguments to append to the Helm Template command."
         }
       }
     },
@@ -136,11 +140,11 @@
       "properties": {
         "Image": {
           "type": "string",
-          "description": "OCI image reference."
+          "description": "Image reference."
         },
         "PreRelease": {
           "type": "boolean",
-          "description": "Whether pre-release tags should be considered when selecting the latest tag."
+          "description": "Whether to include pre-release versions when selecting the latest tag. If true, pre-release versions will be considered; if false, only stable versions will be considered. If null, the default behavior is to exclude pre-release versions."
         }
       }
     }

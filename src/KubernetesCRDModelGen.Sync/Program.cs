@@ -1,17 +1,17 @@
 using KubernetesCRDModelGen.Sync.CRD;
 using Microsoft.Extensions.Options;
+using System.ComponentModel;
 
 namespace KubernetesCRDModelGen.Sync;
 
+[EditorBrowsable(EditorBrowsableState.Never)]
 public class Program
 {
     public static void Main(string[] args)
     {
         var builder = Host.CreateApplicationBuilder(args);
 
-        var rootDirectory = builder.Configuration.GetValue<string>("RootDirectory");
-
-        builder.Configuration.AddJsonFile(Path.Combine(rootDirectory, "sources.json"), optional: false);
+        builder.Configuration.AddJsonFile("sources.json", optional: false);
 
         builder.Services.AddSingleton<CRDDownloader>();
         builder.Services.AddHostedService<Worker>();

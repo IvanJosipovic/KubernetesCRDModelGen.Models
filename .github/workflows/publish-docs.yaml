@@ -32,6 +32,8 @@ jobs:
 
     - run: dotnet build -c Release
 
+    - run: dotnet run -c Release --project src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj -- --contentRoot $PWD --DocFXGenerator true
+
     - run: dotnet tool update -g docfx
     - run: docfx docfx.json
 

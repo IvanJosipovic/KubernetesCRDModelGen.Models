@@ -4,17 +4,15 @@ Generated C# model packages for Kubernetes CustomResourceDefinitions (CRDs).
 
 This repository uses [`KubernetesCRDModelGen.SourceGenerator`](https://www.nuget.org/packages/KubernetesCRDModelGen.SourceGenerator) to generate strongly typed .NET models from CRD YAML files. Each CRD API group is published as its own NuGet package under the [`KubernetesCRDModelGen.Models.*`](https://www.nuget.org/packages?q=KubernetesCRDModelGen.Models.) package namespace.
 
-## Packages
+[Documentation](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/)
 
-Generated packages follow this layout:
+## Generated Packages
 <!-- StartOfReplace -->
 | CRD group | Project docs | NuGet package |
 | --- | --- | --- |
-| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
-| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
-| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.k8s.aws) | [KubernetesCRDModelGen.Models.k8s.aws](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
-
-New groups are generated into `src/Models/{group}` and are automatically added to the solution, release-please configuration, and release-please manifest.
+| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
+| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
+| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/k8s.aws) | [KubernetesCRDModelGen.Models.k8s.aws](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
 
 ## Using a generated package
 
@@ -31,50 +29,86 @@ Then reference the generated model types from your application alongside the off
 ```text
 .
 ├── sources.json                                             # CRD source configuration
-├── release-please-config.json                               # release-please package configuration
-├── .release-please-manifest.json                            # release-please package versions
 ├── src/
-│   ├── KubernetesCRDModelGen.Sync/                          # Worker service that generates projects and CRD inputs
+│   ├── KubernetesCRDModelGen.Sync/                          # Worker service that generates projects sync CRDs
 │   └── Models/                                              # Generated model package projects
 │       └── {group}/
 │           ├── crds/                                        # CRD YAML inputs
+|           ├── Generated/                                   # Generated C# Models
 │           ├── Directory.Build.props                        # Package version
 │           ├── KubernetesCRDModelGen.Models.{group}.csproj  # Group C# Project
 │           └── README.md                                    # Group Project Readme
 ```
 
-## Updating generated projects
-
-The sync worker reads `sources.json`, creates package projects for configured CRD groups, updates release-please files, and adds generated projects to `KubernetesCRDModelGen.Models.slnx`.
-
-Run the worker from the repository root:
-
-```shell
-dotnet run --project src/KubernetesCRDModelGen.Sync -- --RootDirectory "C:\repos\KubernetesCRDModelGen.Models"
-```
-
-The `RootDirectory` value should point to this repository root.
-
 ## Source configuration
 
-CRD sources are configured in `sources.json`. Each entry represents one CRD API group and can use direct URLs, GitHub releases, Helm charts, or OCI artifacts depending on the source.
+CRD sources are configured in `sources.json`. Each entry in the `Config` array represents one CRD API group and can use direct URLs, GitHub releases, Helm charts, or OCI artifacts depending on the source.
+
+The current file includes examples like these:
 
 ```json
 {
-  "RootDirectory": "C:\\repos\\KubernetesCRDModelGen.Models",
   "Config": [
     {
-      "group": "aquasecurity.github.io",
-      "helm": [
+      "Group": "cnrm.cloud.google.com",
+      "DirectUrl": [
         {
-          "repo": "https://aquasecurity.github.io/helm-charts/",
-          "chart": "trivy-operator"
+          "Url": "https://github.com/GoogleCloudPlatform/k8s-config-connector/archive/refs/heads/master.zip",
+          "ArchivePathRegex": "k8s-config-connector-master/config/crds/resources/"
+        }
+      ]
+    },
+    {
+      "Group": "knative.dev",
+      "GitHub": [
+        {
+          "Repo": "knative/serving",
+          "AssetNameRegex": "serving-crds\\.yaml"
+        },
+        {
+          "Repo": "knative/eventing",
+          "AssetNameRegex": "eventing-crds\\.yaml"
+        }
+      ]
+    },
+    {
+      "Group": "aquasecurity.github.io",
+      "Helm": [
+        {
+          "Chart": "trivy-operator",
+          "Repo": "https://aquasecurity.github.io/helm-charts/"
+        }
+      ]
+    },
+    {
+      "Group": "databricks.upbound.io",
+      "OCI": [
+        {
+          "Image": "xpkg.upbound.io/upbound/provider-databricks"
         }
       ]
     }
   ]
 }
 ```
+
+For a live source file, see [sources.json](sources.json).
+
+## To add a new Source
+
+Update `sources.json' with the required configuration. See `sources.schema.json` and Pr the changes to main.
+
+## Manually Updating generated projects
+
+The sync worker reads `sources.json`, creates package projects for configured CRD groups, updates release-please files, updates the README package table, and generates the DocFX API landing pages.
+
+Run the worker from the repository root:
+
+```shell
+dotnet run --project .\src\KubernetesCRDModelGen.Sync\KubernetesCRDModelGen.Sync.csproj -- --contentRoot $PWD
+```
+
+The `contentRoot` value should point to this repository root.
 
 ## Building
 

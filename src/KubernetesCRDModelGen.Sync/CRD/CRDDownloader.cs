@@ -15,42 +15,45 @@ using YamlDotNet.Serialization;
 
 namespace KubernetesCRDModelGen.Sync.CRD;
 
-internal class CRDDownloader
+class CRDDownloader
 {
     private readonly ILogger<CRDDownloader> _logger;
 
     private readonly IConfiguration configuration;
 
+    private readonly IHostEnvironment environment;
+
     private readonly IHttpClientFactory httpClientFactory;
 
     private readonly IDeserializer deserializer;
 
-    public CRDDownloader(ILogger<CRDDownloader> logger, IConfiguration configuration, IHttpClientFactory httpClientFactory)
+    public CRDDownloader(ILogger<CRDDownloader> logger, IConfiguration configuration, IHostEnvironment environment, IHttpClientFactory httpClientFactory)
     {
         _logger = logger;
         this.configuration = configuration;
+        this.environment = environment;
         this.httpClientFactory = httpClientFactory;
         deserializer = GetDeserializer();
     }
 
-    public async Task ProcessOCI(Config.OCIConfig item, string projectName)
+    public async Task ProcessOCIAsync(OCIConfig item, string projectName, CancellationToken cancellationToken = default)
     {
-        var streams = await OCIClient.GetYamlStreams(item);
+        var streams = await OCIClient.GetYamlStreamsAsync(item, cancellationToken).ConfigureAwait(false);
 
-        SaveYamlStreams(streams, projectName);
+        SaveYamlStreams(streams, projectName, cancellationToken);
     }
 
-    public async Task ProcessHelmChart(Config.HelmConfig config, string projectName)
+    public async Task ProcessHelmChartAsync(HelmConfig config, string projectName, CancellationToken cancellationToken = default)
     {
         using var stream = new MemoryStream();
         var errors = new StringBuilder();
-        var args = $"template {config.Chart}{(config.IsOCI ? "" : " --repo")} {config.Repo} --include-crds{(config.PreRelease.GetValueOrDefault() ? " --devel" : "")} {config.CMD}".TrimEnd();
+        var args = $"template {config.Chart}{(config.IsOCI ? "" : " --repo")} {config.Repo} --include-crds{(config.PreRelease.GetValueOrDefault() ? " --devel" : "")} {config.AppendArgs}".TrimEnd();
 
         var cmd = await Cli.Wrap("helm")
             .WithArguments(args)
             .WithStandardOutputPipe(PipeTarget.ToStream(stream))
             .WithStandardErrorPipe(PipeTarget.ToStringBuilder(errors))
-            .ExecuteBufferedAsync();
+            .ExecuteBufferedAsync(cancellationToken).ConfigureAwait(false);
 
         if (!cmd.IsSuccess && errors.Length > 0)
         {
@@ -59,56 +62,68 @@ internal class CRDDownloader
 
         stream.Position = 0;
 
-        SaveYamlStream(stream, projectName);
+        SaveYamlStream(stream, projectName, cancellationToken);
     }
 
-    public async Task ProcessDirectUrl(Config.DirectUrlConfig config, string projectName)
+    public async Task ProcessDirectUrlAsync(DirectUrlConfig config, string projectName, CancellationToken cancellationToken = default)
     {
         using var client = httpClientFactory.CreateClient();
 
-        using var httpStream = await client.GetStreamAsync(config.Url);
+        using var httpStream = await client.GetStreamAsync(config.Url, cancellationToken).ConfigureAwait(false);
         using var stream = new MemoryStream();
-        await httpStream.CopyToAsync(stream);
+        await httpStream.CopyToAsync(stream, cancellationToken).ConfigureAwait(false);
         stream.Position = 0;
 
         var ext = Path.GetExtension(config.Url);
 
         if (ext == ".yaml" || ext == ".yml")
         {
-            SaveYamlStream(stream, projectName);
+            SaveYamlStream(stream, projectName, cancellationToken);
         }
         else if (config.Url.EndsWith(".zip"))
         {
-            SaveYamlStream(stream, CompressionType.Zip, projectName, config.ArchivePathRegex);
+            SaveYamlStream(stream, CompressionType.Zip, projectName, config.ArchivePathRegex, cancellationToken);
         }
         else if (config.Url.EndsWith(".tar.gz"))
         {
-            SaveYamlStream(stream, CompressionType.TarGz, projectName, config.ArchivePathRegex);
+            SaveYamlStream(stream, CompressionType.TarGz, projectName, config.ArchivePathRegex, cancellationToken);
         }
     }
 
-    public async Task ProcessGitHub(Config.GitHubConfig config, string projectName)
+    public async Task ProcessGitHubAsync(GitHubConfig config, string projectName, CancellationToken cancellationToken = default)
     {
         using var client = httpClientFactory.CreateClient();
         client.DefaultRequestHeaders.UserAgent.TryParseAdd("KubernetesCRDModelGen");
 
-        var gitHubReleases = await client.GetFromJsonAsync<List<GitHubReleaseModel>>($"https://api.github.com/repos/{config.Repo}/releases");
+        var gitHubReleases = await client.GetFromJsonAsync<List<GitHubReleaseModel>>($"https://api.github.com/repos/{config.Repo}/releases", cancellationToken).ConfigureAwait(false);
+
+        if (gitHubReleases == null)
+        {
+            throw new Exception("Failed to get releases from GitHub for repo " + config.Repo);
+        }
+
+        var releaseNameRegex = config.ReleaseNameRegex != null ? new Regex(config.ReleaseNameRegex, RegexOptions.IgnoreCase) : null;
 
         var release = gitHubReleases
             .Where(x => x.assets.Length != 0)
+            .Where(x => releaseNameRegex == null || releaseNameRegex.IsMatch(x.name))
             .Select(x => new { Release = x, Version = SemVersion.TryParse(x.name, SemVersionStyles.Any, out var ver) ? ver : null })
             .Where(x => x.Version is not null && (config.PreRelease == true || (!x.Version.IsPrerelease && !x.Release.prerelease)))
             .OrderByDescending(x => x.Version!, SemVersion.SortOrderComparer)
             .First().Release;
 
-        var regex = config.AssetNameRegex != null ? new Regex(config.AssetNameRegex, RegexOptions.IgnoreCase) : null;
+        var assetNameRegex = config.AssetNameRegex != null ? new Regex(config.AssetNameRegex, RegexOptions.IgnoreCase) : null;
 
         foreach (var item in release.assets)
         {
-            if (regex != null && regex.IsMatch(item.name))
+            cancellationToken.ThrowIfCancellationRequested();
+
+            if (assetNameRegex != null && !assetNameRegex.IsMatch(item.name))
             {
-                await ProcessDirectUrl(new Config.DirectUrlConfig { Url = item.browser_download_url, ArchivePathRegex = config.ArchivePathRegex }, projectName);
+                continue;
             }
+
+            await ProcessDirectUrlAsync(new DirectUrlConfig { Url = item.browser_download_url, ArchivePathRegex = config.ArchivePathRegex }, projectName, cancellationToken).ConfigureAwait(false);
         }
     }
 
@@ -118,11 +133,11 @@ internal class CRDDownloader
         TarGz
     }
 
-    internal static List<Stream> ExtractAllYaml(Stream stream, CompressionType compressionType, string? regexFilter = null)
+    internal static List<Stream> ExtractAllYaml(Stream stream, CompressionType compressionType, string? assetNameRegexPattern = null, CancellationToken cancellationToken = default)
     {
         var result = new List<Stream>();
 
-        var filter = regexFilter != null ? new Regex(regexFilter, RegexOptions.IgnoreCase) : null;
+        var assetNameRegex = assetNameRegexPattern != null ? new Regex(assetNameRegexPattern, RegexOptions.IgnoreCase) : null;
 
         switch (compressionType)
         {
@@ -131,11 +146,13 @@ internal class CRDDownloader
 
                 foreach (var entry in zip.Entries)
                 {
+                    cancellationToken.ThrowIfCancellationRequested();
+
                     if (entry.FullName.EndsWith(".yaml", StringComparison.OrdinalIgnoreCase) ||
                         entry.FullName.EndsWith(".yml", StringComparison.OrdinalIgnoreCase))
                     {
 
-                        if (filter != null && !filter.IsMatch(entry.FullName))
+                        if (assetNameRegex != null && !assetNameRegex.IsMatch(entry.FullName))
                         {
                             continue;
                         }
@@ -155,6 +172,8 @@ internal class CRDDownloader
 
                 while (reader.GetNextEntry() is TarEntry entry)
                 {
+                    cancellationToken.ThrowIfCancellationRequested();
+
                     string name = entry.Name;
 
                     if (entry.EntryType == TarEntryType.RegularFile &&
@@ -166,7 +185,7 @@ internal class CRDDownloader
                             continue;
                         }
 
-                        if (filter != null && !filter.IsMatch(name))
+                        if (assetNameRegex != null && !assetNameRegex.IsMatch(name))
                         {
                             continue;
                         }
@@ -187,38 +206,48 @@ internal class CRDDownloader
         return result;
     }
 
-    private void SaveYamlStreams(List<Stream> streams, string projectName)
+    private void SaveYamlStreams(List<Stream> streams, string projectName, CancellationToken cancellationToken = default)
     {
         foreach (var stream in streams)
         {
-            SaveYamlStream(stream, projectName);
+            cancellationToken.ThrowIfCancellationRequested();
+
+            SaveYamlStream(stream, projectName, cancellationToken);
         }
     }
 
-    private void SaveYamlStream(Stream stream, CompressionType compressionType, string projectName, string? regexFilter = null)
+    private void SaveYamlStream(Stream stream, CompressionType compressionType, string projectName, string? assetNameRegexPattern = null, CancellationToken cancellationToken = default)
     {
-        var streams = ExtractAllYaml(stream, compressionType, regexFilter);
-        SaveYamlStreams(streams, projectName);
+        var streams = ExtractAllYaml(stream, compressionType, assetNameRegexPattern, cancellationToken);
+        SaveYamlStreams(streams, projectName, cancellationToken);
     }
 
-    private void SaveYamlStream(Stream stream, string projectName)
+    private void SaveYamlStream(Stream stream, string projectName, CancellationToken cancellationToken = default)
     {
         try
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             var crds = LoadCRDFromStream(stream);
 
-            var projDirctory = Path.Combine(configuration.GetValue<string>("RootDirectory"), "src", "Models", projectName);
+            var projDirectory = Path.Combine(environment.ContentRootPath, ProjectGenerator.ModelsPath, projectName);
 
-            var crdDirectory = Path.Combine(projDirctory, "crds");
+            var crdDirectory = Path.Combine(projDirectory, ProjectGenerator.CRDFolderName);
 
             Directory.CreateDirectory(crdDirectory);
 
             foreach (var crd in crds)
             {
+                cancellationToken.ThrowIfCancellationRequested();
+
                 var filePath = Path.Combine(crdDirectory, crd.Name() + ".yaml");
 
                 File.WriteAllText(filePath, KubernetesYaml.Serialize(crd));
             }
+        }
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+        {
+            throw;
         }
         catch (Exception ex)
         {

@@ -2,7 +2,7 @@ using KubernetesCRDModelGen.Sync.CRD;
 
 namespace KubernetesCRDModelGen.Sync;
 
-internal class Worker : BackgroundService
+class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
 
@@ -11,12 +11,14 @@ internal class Worker : BackgroundService
     private readonly IHostApplicationLifetime _lifeTime;
 
     private readonly CRDDownloader _CRDDownloader;
+    private readonly IHostEnvironment _environment;
 
-    public Worker(ILogger<Worker> logger, IConfiguration configuration, IHostApplicationLifetime lifeTime, CRDDownloader cRDDownloader)
+    public Worker(ILogger<Worker> logger, IConfiguration configuration, IHostApplicationLifetime lifeTime, IHostEnvironment environment, CRDDownloader cRDDownloader)
     {
         _logger = logger;
         this.configuration = configuration;
         _lifeTime = lifeTime;
+        _environment = environment;
         this._CRDDownloader = cRDDownloader;
     }
 
@@ -26,26 +28,29 @@ internal class Worker : BackgroundService
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-            var rootDirectory = configuration.GetValue<string>("RootDirectory");
-
-            if (string.IsNullOrWhiteSpace(rootDirectory))
-            {
-                throw new InvalidOperationException("RootDirectory configuration value is required.");
-            }
-
-            _logger.LogInformation("Root Directory: {dir}", rootDirectory);
+            var rootDirectory = _environment.ContentRootPath;
 
             var configs = configuration.GetSection("Config").Get<List<Config>>()!
                 ?? throw new InvalidOperationException("Config section is required.");
 
+            if (configuration.GetValue<object>("DocFXGenerator") != null)
+            {
+                DocFXGenerator.GenerateDocFx(configs, rootDirectory);
+                _lifeTime.StopApplication();
+                return;
+            }
+
+            stoppingToken.ThrowIfCancellationRequested();
+
             ProjectGenerator.UpdateRootReadmePackageList(configs, rootDirectory);
-            ProjectGenerator.GenerateDocFx(configs, rootDirectory);
 
             foreach (var item in configs)
             {
+                stoppingToken.ThrowIfCancellationRequested();
+
                 _logger.LogInformation("Processing: {group}", item.Group);
 
-                ProjectGenerator.GenerateProject(item.Group, rootDirectory);
+                await ProjectGenerator.GenerateProjectAsync(item.Group, rootDirectory, stoppingToken);
 
                 try
                 {
@@ -53,30 +58,34 @@ internal class Worker : BackgroundService
                     {
                         foreach (var directUrl in item.DirectUrl)
                         {
-                            await _CRDDownloader.ProcessDirectUrl(directUrl, item.Group);
+                            await _CRDDownloader.ProcessDirectUrlAsync(directUrl, item.Group, stoppingToken);
                         }
                     }
                     if (item.GitHub != null && item.GitHub.Length > 0)
                     {
                         foreach (var github in item.GitHub)
                         {
-                            await _CRDDownloader.ProcessGitHub(github, item.Group);
+                            await _CRDDownloader.ProcessGitHubAsync(github, item.Group, stoppingToken);
                         }
                     }
                     if (item.Helm != null && item.Helm.Length > 0)
                     {
                         foreach (var helm in item.Helm)
                         {
-                            await _CRDDownloader.ProcessHelmChart(helm, item.Group);
+                            await _CRDDownloader.ProcessHelmChartAsync(helm, item.Group, stoppingToken);
                         }
                     }
                     if (item.OCI != null && item.OCI.Length > 0)
                     {
                         foreach (var oci in item.OCI)
                         {
-                            await _CRDDownloader.ProcessOCI(oci, item.Group);
+                            await _CRDDownloader.ProcessOCIAsync(oci, item.Group, stoppingToken);
                         }
                     }
+                }
+                catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+                {
+                    throw;
                 }
                 catch (Exception ex)
                 {
@@ -84,6 +93,11 @@ internal class Worker : BackgroundService
                     throw;
                 }
             }
+        }
+        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        {
+            _logger.LogInformation("Worker cancellation requested.");
+            Environment.ExitCode = 130;
         }
         catch (Exception ex)
         {

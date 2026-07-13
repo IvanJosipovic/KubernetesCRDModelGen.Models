@@ -1,4 +1,7 @@
-- name: Introduction
-  href: introduction.md
+items:
+- name: Index
+  href: index.md
+- name: Config
+  href: /api/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.Config.html
 - name: Getting Started
   href: getting-started.md

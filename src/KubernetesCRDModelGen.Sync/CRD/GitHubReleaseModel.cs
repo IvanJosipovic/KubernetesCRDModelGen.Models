@@ -1,18 +1,18 @@
 ﻿namespace KubernetesCRDModelGen.Sync.CRD;
 
-internal class GitHubReleaseModel
+class GitHubReleaseModel
 {
-    public string tag_name { get; set; }
-    public string name { get; set; }
-    public bool draft { get; set; }
-    public bool prerelease { get; set; }
-    public Asset[] assets { get; set; }
-    public string tarball_url { get; set; }
-    public string zipball_url { get; set; }
+    //public string tag_name { get; set; }
+    internal string name { get; set; } = default!;
+    //public bool draft { get; set; }
+    internal bool prerelease { get; set; } = default!;
+    internal Asset[] assets { get; set; } = default!;
+    //public string tarball_url { get; set; }
+    //public string zipball_url { get; set; }
 
     internal class Asset
     {
-        public string name { get; set; }
-        public string browser_download_url { get; set; }
+        internal string name { get; set; } = default!;
+        internal string browser_download_url { get; set; } = default!;
     }
 }

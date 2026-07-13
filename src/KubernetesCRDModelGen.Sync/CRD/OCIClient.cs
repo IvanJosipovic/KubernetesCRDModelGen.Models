@@ -5,9 +5,9 @@ using static KubernetesCRDModelGen.Sync.CRD.CRDDownloader;
 
 namespace KubernetesCRDModelGen.Sync.CRD;
 
-internal static partial class OCIClient
+static class OCIClient
 {
-    public static async Task<List<Stream>> GetYamlStreams(Config.OCIConfig config)
+    internal static async Task<List<Stream>> GetYamlStreamsAsync(OCIConfig config, CancellationToken cancellationToken = default)
     {
         var registryUri = config.Image.Contains("://")
             ? new Uri(config.Image)
@@ -18,7 +18,7 @@ internal static partial class OCIClient
 
         var client = new RegistryClient(registry);
 
-        var tags = await client.Tags.GetAllAsync(repositoryName);
+        var tags = await client.Tags.GetAllAsync(repositoryName, cancellationToken).ConfigureAwait(false);
 
         var latestVersion = tags
             .Select(tag => new { Tag = tag, Version = SemVersion.TryParse(tag, SemVersionStyles.Any, out var ver) ? ver : null })
@@ -31,14 +31,16 @@ internal static partial class OCIClient
             throw new Exception($"No tags match for {config.Image}");
         }
 
-        var manifest = await client.Manifests.GetAsync(repositoryName, latestVersion.Tag);
+        cancellationToken.ThrowIfCancellationRequested();
 
-        var yamls = await ProcessManifests(client, repositoryName, manifest.Manifest);
+        var manifest = await client.Manifests.GetAsync(repositoryName, latestVersion.Tag, cancellationToken).ConfigureAwait(false);
+
+        var yamls = await ProcessManifestsAsync(client, repositoryName, manifest.Manifest, cancellationToken).ConfigureAwait(false);
 
         return yamls;
     }
 
-    private static async Task<List<Stream>> ProcessManifests(RegistryClient client, string repositoryName, IManifest manifest)
+    private static async Task<List<Stream>> ProcessManifestsAsync(RegistryClient client, string repositoryName, IManifest manifest, CancellationToken cancellationToken = default)
     {
         var yamls = new List<Stream>();
 
@@ -46,9 +48,11 @@ internal static partial class OCIClient
         {
             foreach (var manifestReference in manifestList.Manifests)
             {
-                var manifestInfo = await client.Manifests.GetAsync(repositoryName, manifestReference.Digest);
+                cancellationToken.ThrowIfCancellationRequested();
 
-                var newYamls = await ProcessManifests(client, repositoryName, manifestInfo.Manifest);
+                var manifestInfo = await client.Manifests.GetAsync(repositoryName, manifestReference.Digest, cancellationToken).ConfigureAwait(false);
+
+                var newYamls = await ProcessManifestsAsync(client, repositoryName, manifestInfo.Manifest, cancellationToken).ConfigureAwait(false);
                 yamls.AddRange(newYamls);
             }
         }
@@ -56,13 +60,15 @@ internal static partial class OCIClient
         {
             foreach (var layer in imageManifest.Layers)
             {
-                using var stream = await client.Blobs.GetAsync(repositoryName, layer.Digest);
+                cancellationToken.ThrowIfCancellationRequested();
+
+                using var stream = await client.Blobs.GetAsync(repositoryName, layer.Digest, cancellationToken).ConfigureAwait(false);
 
                 using var copy = new MemoryStream();
-                await stream.CopyToAsync(copy);
+                await stream.CopyToAsync(copy, cancellationToken).ConfigureAwait(false);
                 copy.Position = 0;
 
-                var newYamls = CRDDownloader.ExtractAllYaml(copy, CompressionType.TarGz);
+                var newYamls = CRDDownloader.ExtractAllYaml(copy, CompressionType.TarGz, cancellationToken: cancellationToken);
                 yamls.AddRange(newYamls);
             }
         }
@@ -75,18 +81,22 @@ internal static partial class OCIClient
     }
 }
 
-public static class Extensions
+static class Extensions
 {
-    public static async Task<string[]> GetAllAsync(this ITagOperations client, string repositoryName)
+    internal static async Task<string[]> GetAllAsync(this ITagOperations client, string repositoryName, CancellationToken cancellationToken = default)
     {
         List<string> allTags = [];
 
-        var tagsPage = await client.GetAsync(repositoryName);
+        cancellationToken.ThrowIfCancellationRequested();
+
+        var tagsPage = await client.GetAsync(repositoryName, cancellationToken: cancellationToken).ConfigureAwait(false);
         allTags.AddRange(tagsPage.Value.Tags);
 
         while (!string.IsNullOrEmpty(tagsPage.NextPageLink))
         {
-            tagsPage = await client.GetNextAsync(tagsPage.NextPageLink);
+            cancellationToken.ThrowIfCancellationRequested();
+
+            tagsPage = await client.GetNextAsync(tagsPage.NextPageLink, cancellationToken).ConfigureAwait(false);
             allTags.AddRange(tagsPage.Value.Tags);
         }
 

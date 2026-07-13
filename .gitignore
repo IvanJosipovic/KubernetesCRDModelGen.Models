@@ -429,3 +429,8 @@ FodyWeavers.xsd
 *.msp
 
 *.lscache
+
+# DocFX
+_site/
+models/
+api/

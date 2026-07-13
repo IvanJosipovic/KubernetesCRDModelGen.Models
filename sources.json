@@ -233,7 +233,7 @@
         {
           "Chart": "kargo",
           "Repo": "oci://ghcr.io/akuity/kargo-charts/kargo",
-          "CMD": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test"
+          "AppendArgs": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test"
         }
       ]
     },
@@ -243,7 +243,7 @@
     //     {
     //       "Chart": "argo-cd",
     //       "Repo": "https://argoproj.github.io/argo-helm",
-    //       "CMD": "--set extensions.enabled=true"
+    //       "AppendArgs": "--set extensions.enabled=true"
     //     },
     //     {
     //       "Chart": "argo-events",
@@ -454,7 +454,7 @@
     //     {
     //       "Chart": "cert-manager",
     //       "Repo": "https://charts.jetstack.io",
-    //       "CMD": "--set installCRDs=true"
+    //       "AppendArgs": "--set installCRDs=true"
     //     }
     //   ]
     // },
