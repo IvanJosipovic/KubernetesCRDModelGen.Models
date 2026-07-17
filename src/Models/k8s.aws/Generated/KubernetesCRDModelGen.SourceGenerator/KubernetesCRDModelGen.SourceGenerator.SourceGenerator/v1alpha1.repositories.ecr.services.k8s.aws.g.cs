@@ -37,6 +37,34 @@ public partial class V1alpha1RepositoryList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecEncryptionConfigurationKmsKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for KMSKey</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecEncryptionConfigurationKmsKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1RepositorySpecEncryptionConfigurationKmsKeyRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// The encryption configuration for the repository. This determines how the
 /// contents of your repository are encrypted at rest.
 /// </summary>
@@ -49,6 +77,10 @@ public partial class V1alpha1RepositorySpecEncryptionConfiguration
 
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
+
+    /// <summary>Reference field for KMSKey</summary>
+    [JsonPropertyName("kmsKeyRef")]
+    public V1alpha1RepositorySpecEncryptionConfigurationKmsKeyRef? KmsKeyRef { get; set; }
 }
 
 /// <summary>

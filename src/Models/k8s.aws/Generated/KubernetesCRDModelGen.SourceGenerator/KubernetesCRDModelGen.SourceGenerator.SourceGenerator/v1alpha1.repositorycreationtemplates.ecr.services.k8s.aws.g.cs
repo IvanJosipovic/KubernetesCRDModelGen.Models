@@ -72,6 +72,34 @@ public partial class V1alpha1RepositoryCreationTemplateSpecCustomRoleRef
     public V1alpha1RepositoryCreationTemplateSpecCustomRoleRefFrom? From { get; set; }
 }
 
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCreationTemplateSpecEncryptionConfigurationKmsKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for KMSKey</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCreationTemplateSpecEncryptionConfigurationKmsKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1RepositoryCreationTemplateSpecEncryptionConfigurationKmsKeyRefFrom? From { get; set; }
+}
+
 /// <summary>The encryption configuration to use for repositories created using the template.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -82,6 +110,10 @@ public partial class V1alpha1RepositoryCreationTemplateSpecEncryptionConfigurati
 
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
+
+    /// <summary>Reference field for KMSKey</summary>
+    [JsonPropertyName("kmsKeyRef")]
+    public V1alpha1RepositoryCreationTemplateSpecEncryptionConfigurationKmsKeyRef? KmsKeyRef { get; set; }
 }
 
 /// <summary>
