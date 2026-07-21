@@ -54,28 +54,6 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpecKmsKeyRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>Optional. The project in which jobs are run. By default, the project containing the Lake is used. If a project is provided, the [ExecutionSpec.service_account][google.cloud.dataplex.v1.Task.ExecutionSpec.service_account] must belong to this project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1DataplexTaskSpecExecutionSpecProjectRef
-{
-    /// <summary>The `projectID` field of a project, when not managed by Config Connector.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The kind of the Project resource; optional but must be `Project` if provided.</summary>
-    [JsonPropertyName("kind")]
-    public string? Kind { get; set; }
-
-    /// <summary>The `name` field of a `Project` resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The `namespace` field of a `Project` resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>Required. Service account to use to execute a task. If not provided, the default Compute service account for the project is used.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -112,8 +90,8 @@ public partial class V1alpha1DataplexTaskSpecExecutionSpec
     public string? MaxJobExecutionLifetime { get; set; }
 
     /// <summary>Optional. The project in which jobs are run. By default, the project containing the Lake is used. If a project is provided, the [ExecutionSpec.service_account][google.cloud.dataplex.v1.Task.ExecutionSpec.service_account] must belong to this project.</summary>
-    [JsonPropertyName("projectRef")]
-    public V1alpha1DataplexTaskSpecExecutionSpecProjectRef? ProjectRef { get; set; }
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
 
     /// <summary>Required. Service account to use to execute a task. If not provided, the default Compute service account for the project is used.</summary>
     [JsonPropertyName("serviceAccountRef")]
@@ -365,7 +343,7 @@ public partial class V1alpha1DataplexTaskSpecTriggerSpec
 
     /// <summary>Required. Immutable. Trigger type of the user-specified Task.</summary>
     [JsonPropertyName("type")]
-    public string? Type { get; set; }
+    public required string Type { get; set; }
 }
 
 /// <summary>DataplexTaskSpec defines the desired state of DataplexTask</summary>
@@ -385,6 +363,10 @@ public partial class V1alpha1DataplexTaskSpec
     [JsonPropertyName("executionSpec")]
     public required V1alpha1DataplexTaskSpecExecutionSpec ExecutionSpec { get; set; }
 
+    /// <summary>Optional. User-defined labels for the task.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
     /// <summary>LakeRef defines the resource reference to DataplexLake, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
     [JsonPropertyName("lakeRef")]
     public V1alpha1DataplexTaskSpecLakeRef? LakeRef { get; set; }
@@ -403,7 +385,7 @@ public partial class V1alpha1DataplexTaskSpec
 
     /// <summary>Required. Spec related to how often and when a task should be triggered.</summary>
     [JsonPropertyName("triggerSpec")]
-    public V1alpha1DataplexTaskSpecTriggerSpec? TriggerSpec { get; set; }
+    public required V1alpha1DataplexTaskSpecTriggerSpec TriggerSpec { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -185,24 +185,6 @@ public partial class V1beta1ContainerNodePoolSpecNetworkConfigPodCidrOverprovisi
     public required bool Disabled { get; set; }
 }
 
-/// <summary>Immutable. The subnetwork path for the node pool. Format: projects/{project}/regions/{region}/subnetworks/{subnetwork}. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1ContainerNodePoolSpecNetworkConfigSubnetworkRef
-{
-    /// <summary>Allowed value: The `selfLink` field of a `ComputeSubnetwork` resource.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>Networking configuration for this NodePool. If specified, it overrides the cluster-level defaults.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -235,10 +217,6 @@ public partial class V1beta1ContainerNodePoolSpecNetworkConfig
     /// <summary>Immutable. The ID of the secondary range for pod IPs. If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.</summary>
     [JsonPropertyName("podRange")]
     public string? PodRange { get; set; }
-
-    /// <summary>Immutable. The subnetwork path for the node pool. Format: projects/{project}/regions/{region}/subnetworks/{subnetwork}. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.</summary>
-    [JsonPropertyName("subnetworkRef")]
-    public V1beta1ContainerNodePoolSpecNetworkConfigSubnetworkRef? SubnetworkRef { get; set; }
 }
 
 /// <summary>Immutable. Specifies options for controlling advanced machine features.</summary>
@@ -246,13 +224,9 @@ public partial class V1beta1ContainerNodePoolSpecNetworkConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerNodePoolSpecNodeConfigAdvancedMachineFeatures
 {
-    /// <summary>Immutable. Whether or not to enable nested virtualization (defaults to false).</summary>
-    [JsonPropertyName("enableNestedVirtualization")]
-    public bool? EnableNestedVirtualization { get; set; }
-
     /// <summary>Immutable. The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.</summary>
     [JsonPropertyName("threadsPerCore")]
-    public int? ThreadsPerCore { get; set; }
+    public required int ThreadsPerCore { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -297,10 +271,6 @@ public partial class V1beta1ContainerNodePoolSpecNodeConfigEphemeralStorageConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerNodePoolSpecNodeConfigEphemeralStorageLocalSsdConfig
 {
-    /// <summary>Immutable. Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.</summary>
-    [JsonPropertyName("dataCacheCount")]
-    public int? DataCacheCount { get; set; }
-
     /// <summary>Immutable. Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.</summary>
     [JsonPropertyName("localSsdCount")]
     public required int LocalSsdCount { get; set; }

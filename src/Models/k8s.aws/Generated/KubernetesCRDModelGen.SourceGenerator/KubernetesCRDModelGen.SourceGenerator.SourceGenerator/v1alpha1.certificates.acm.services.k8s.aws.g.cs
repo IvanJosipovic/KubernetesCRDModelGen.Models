@@ -151,12 +151,15 @@ public partial class V1alpha1CertificateSpecExportTo
 }
 
 /// <summary>
-/// Currently, you can use this parameter to specify whether to add the certificate
-/// to a certificate transparency log. Certificate transparency makes it possible
-/// to detect SSL/TLS certificates that have been mistakenly or maliciously issued.
-/// Certificates that have not been logged typically produce an error message
-/// in a browser. For more information, see Opting Out of Certificate Transparency
-/// Logging (https://docs.aws.amazon.com/acm/latest/userguide/acm-bestpractices.html#best-practices-transparency).
+/// You can use this parameter to specify whether to export your certificate.
+/// 
+/// Certificate transparency logging opt-out is no longer available. All public
+/// certificates are recorded in a certificate transparency log. For more information,
+/// see Certificate Transparency Logging (https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency).
+/// 
+/// You can export public ACM certificates to use with Amazon Web Services services
+/// as well as outside the Amazon Web Services Cloud. For more information, see
+/// Certificate Manager exportable public certificate (https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html).
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -164,6 +167,9 @@ public partial class V1alpha1CertificateSpecOptions
 {
     [JsonPropertyName("certificateTransparencyLoggingPreference")]
     public string? CertificateTransparencyLoggingPreference { get; set; }
+
+    [JsonPropertyName("export")]
+    public string? Export { get; set; }
 }
 
 /// <summary>
@@ -293,7 +299,7 @@ public partial class V1alpha1CertificateSpec
     /// others allow the use of either RSA and ECDSA keys to ensure that compatibility
     /// is not broken. Check the requirements for the Amazon Web Services service
     /// where you plan to deploy your certificate. For more information about selecting
-    /// an algorithm, see Key algorithms (https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate.html#algorithms).
+    /// an algorithm, see Key algorithms (https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-characteristics.html#algorithms-term).
     /// 
     /// Algorithms supported for an ACM certificate request include:
     /// 
@@ -315,12 +321,22 @@ public partial class V1alpha1CertificateSpec
     public string? KeyAlgorithm { get; set; }
 
     /// <summary>
-    /// Currently, you can use this parameter to specify whether to add the certificate
-    /// to a certificate transparency log. Certificate transparency makes it possible
-    /// to detect SSL/TLS certificates that have been mistakenly or maliciously issued.
-    /// Certificates that have not been logged typically produce an error message
-    /// in a browser. For more information, see Opting Out of Certificate Transparency
-    /// Logging (https://docs.aws.amazon.com/acm/latest/userguide/acm-bestpractices.html#best-practices-transparency).
+    /// Identifies the Amazon Web Services service that manages the certificate issued
+    /// by ACM.
+    /// </summary>
+    [JsonPropertyName("managedBy")]
+    public string? ManagedBy { get; set; }
+
+    /// <summary>
+    /// You can use this parameter to specify whether to export your certificate.
+    /// 
+    /// Certificate transparency logging opt-out is no longer available. All public
+    /// certificates are recorded in a certificate transparency log. For more information,
+    /// see Certificate Transparency Logging (https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency).
+    /// 
+    /// You can export public ACM certificates to use with Amazon Web Services services
+    /// as well as outside the Amazon Web Services Cloud. For more information, see
+    /// Certificate Manager exportable public certificate (https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html).
     /// </summary>
     [JsonPropertyName("options")]
     public V1alpha1CertificateSpecOptions? Options { get; set; }
@@ -432,6 +448,22 @@ public partial class V1alpha1CertificateStatusConditions
 }
 
 /// <summary>
+/// Contains information for HTTP-based domain validation of certificates requested
+/// through Amazon CloudFront and issued by ACM. This field exists only when
+/// the certificate type is AMAZON_ISSUED and the validation method is HTTP.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateStatusDomainValidationsHttpRedirect
+{
+    [JsonPropertyName("redirectFrom")]
+    public string? RedirectFrom { get; set; }
+
+    [JsonPropertyName("redirectTo")]
+    public string? RedirectTo { get; set; }
+}
+
+/// <summary>
 /// Contains a DNS record value that you can use to validate ownership or control
 /// of a domain. This is used by the DescribeCertificate action.
 /// </summary>
@@ -456,6 +488,14 @@ public partial class V1alpha1CertificateStatusDomainValidations
 {
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
+
+    /// <summary>
+    /// Contains information for HTTP-based domain validation of certificates requested
+    /// through Amazon CloudFront and issued by ACM. This field exists only when
+    /// the certificate type is AMAZON_ISSUED and the validation method is HTTP.
+    /// </summary>
+    [JsonPropertyName("httpRedirect")]
+    public V1alpha1CertificateStatusDomainValidationsHttpRedirect? HttpRedirect { get; set; }
 
     /// <summary>
     /// Contains a DNS record value that you can use to validate ownership or control
@@ -506,6 +546,22 @@ public partial class V1alpha1CertificateStatusKeyUsages
 }
 
 /// <summary>
+/// Contains information for HTTP-based domain validation of certificates requested
+/// through Amazon CloudFront and issued by ACM. This field exists only when
+/// the certificate type is AMAZON_ISSUED and the validation method is HTTP.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CertificateStatusRenewalSummaryDomainValidationOptionsHttpRedirect
+{
+    [JsonPropertyName("redirectFrom")]
+    public string? RedirectFrom { get; set; }
+
+    [JsonPropertyName("redirectTo")]
+    public string? RedirectTo { get; set; }
+}
+
+/// <summary>
 /// Contains a DNS record value that you can use to validate ownership or control
 /// of a domain. This is used by the DescribeCertificate action.
 /// </summary>
@@ -530,6 +586,14 @@ public partial class V1alpha1CertificateStatusRenewalSummaryDomainValidationOpti
 {
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
+
+    /// <summary>
+    /// Contains information for HTTP-based domain validation of certificates requested
+    /// through Amazon CloudFront and issued by ACM. This field exists only when
+    /// the certificate type is AMAZON_ISSUED and the validation method is HTTP.
+    /// </summary>
+    [JsonPropertyName("httpRedirect")]
+    public V1alpha1CertificateStatusRenewalSummaryDomainValidationOptionsHttpRedirect? HttpRedirect { get; set; }
 
     /// <summary>
     /// Contains a DNS record value that you can use to validate ownership or control

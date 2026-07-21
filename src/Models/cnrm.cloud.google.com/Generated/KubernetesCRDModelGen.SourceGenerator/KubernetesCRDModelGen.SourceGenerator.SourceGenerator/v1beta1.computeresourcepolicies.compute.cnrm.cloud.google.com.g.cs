@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-/// <summary>ComputeResourcePolicy is the Schema for the ComputeResourcePolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -51,11 +50,19 @@ public partial class V1beta1ComputeResourcePolicySpecDiskConsistencyGroupPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecGroupPlacementPolicy
 {
-    /// <summary>Immutable. The number of availability domains instances will be spread across. If two instances are in different availability domain, they will not be put in the same low latency network.</summary>
+    /// <summary>
+    /// Immutable. The number of availability domains instances will be spread across. If two instances are in different
+    /// availability domain, they will not be put in the same low latency network.
+    /// </summary>
     [JsonPropertyName("availabilityDomainCount")]
     public int? AvailabilityDomainCount { get; set; }
 
-    /// <summary>Immutable. Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network. Specify &apos;COLLOCATED&apos; to enable collocation. Can only be specified with &apos;vm_count&apos;. If compute instances are created with a COLLOCATED policy, then exactly &apos;vm_count&apos; instances must be created at the same time with the resource policy attached. Possible values: [&quot;COLLOCATED&quot;].</summary>
+    /// <summary>
+    /// Immutable. Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network.
+    /// Specify &apos;COLLOCATED&apos; to enable collocation. Can only be specified with &apos;vm_count&apos;. If compute instances are created
+    /// with a COLLOCATED policy, then exactly &apos;vm_count&apos; instances must be created at the same time with the resource policy
+    /// attached. Possible values: [&quot;COLLOCATED&quot;].
+    /// </summary>
     [JsonPropertyName("collocation")]
     public string? Collocation { get; set; }
 
@@ -63,7 +70,11 @@ public partial class V1beta1ComputeResourcePolicySpecGroupPlacementPolicy
     [JsonPropertyName("maxDistance")]
     public int? MaxDistance { get; set; }
 
-    /// <summary>Immutable. Number of VMs in this placement group. Google does not recommend that you use this field unless you use a compact policy and you want your policy to work only if it contains this exact number of VMs.</summary>
+    /// <summary>
+    /// Immutable. Number of VMs in this placement group. Google does not recommend that you use this field
+    /// unless you use a compact policy and you want your policy to work only if it contains this
+    /// exact number of VMs.
+    /// </summary>
     [JsonPropertyName("vmCount")]
     public int? VmCount { get; set; }
 }
@@ -101,7 +112,10 @@ public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicy
     [JsonPropertyName("startTime")]
     public string? StartTime { get; set; }
 
-    /// <summary>Immutable. Specifies the time zone to be used in interpreting the schedule. The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.</summary>
+    /// <summary>
+    /// Immutable. Specifies the time zone to be used in interpreting the schedule. The value of this field must be a time zone name
+    /// from the tz database: http://en.wikipedia.org/wiki/Tz_database.
+    /// </summary>
     [JsonPropertyName("timeZone")]
     public required string TimeZone { get; set; }
 
@@ -123,7 +137,10 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyReten
     [JsonPropertyName("maxRetentionDays")]
     public required int MaxRetentionDays { get; set; }
 
-    /// <summary>Immutable. Specifies the behavior to apply to scheduled snapshots when the source disk is deleted. Default value: &quot;KEEP_AUTO_SNAPSHOTS&quot; Possible values: [&quot;KEEP_AUTO_SNAPSHOTS&quot;, &quot;APPLY_RETENTION_POLICY&quot;].</summary>
+    /// <summary>
+    /// Immutable. Specifies the behavior to apply to scheduled snapshots when
+    /// the source disk is deleted. Default value: &quot;KEEP_AUTO_SNAPSHOTS&quot; Possible values: [&quot;KEEP_AUTO_SNAPSHOTS&quot;, &quot;APPLY_RETENTION_POLICY&quot;].
+    /// </summary>
     [JsonPropertyName("onSourceDiskDelete")]
     public string? OnSourceDiskDelete { get; set; }
 }
@@ -137,7 +154,11 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
     [JsonPropertyName("daysInCycle")]
     public required int DaysInCycle { get; set; }
 
-    /// <summary>Immutable. This must be in UTC format that resolves to one of 00:00, 04:00, 08:00, 12:00, 16:00, or 20:00. For example, both 13:00-5 and 08:00 are valid.</summary>
+    /// <summary>
+    /// Immutable. This must be in UTC format that resolves to one of
+    /// 00:00, 04:00, 08:00, 12:00, 16:00, or 20:00. For example,
+    /// both 13:00-5 and 08:00 are valid.
+    /// </summary>
     [JsonPropertyName("startTime")]
     public required string StartTime { get; set; }
 }
@@ -151,7 +172,12 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
     [JsonPropertyName("hoursInCycle")]
     public required int HoursInCycle { get; set; }
 
-    /// <summary>Immutable. Time within the window to start the operations. It must be in an hourly format &quot;HH:MM&quot;, where HH : [00-23] and MM : [00] GMT. eg: 21:00.</summary>
+    /// <summary>
+    /// Immutable. Time within the window to start the operations.
+    /// It must be in an hourly format &quot;HH:MM&quot;,
+    /// where HH : [00-23] and MM : [00] GMT.
+    /// eg: 21:00.
+    /// </summary>
     [JsonPropertyName("startTime")]
     public required string StartTime { get; set; }
 }
@@ -164,7 +190,10 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
     [JsonPropertyName("day")]
     public required string Day { get; set; }
 
-    /// <summary>Immutable. Time within the window to start the operations. It must be in format &quot;HH:MM&quot;, where HH : [00-23] and MM : [00-00] GMT.</summary>
+    /// <summary>
+    /// Immutable. Time within the window to start the operations.
+    /// It must be in format &quot;HH:MM&quot;, where HH : [00-23] and MM : [00-00] GMT.
+    /// </summary>
     [JsonPropertyName("startTime")]
     public required string StartTime { get; set; }
 }
@@ -202,7 +231,11 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnapshotProperties
 {
-    /// <summary>Immutable. Chain name that the snapshot is created in.</summary>
+    /// <summary>
+    /// Immutable. Creates the new snapshot in the snapshot chain labeled with the
+    /// specified name. The chain name must be 1-63 characters long and comply
+    /// with RFC1035.
+    /// </summary>
     [JsonPropertyName("chainName")]
     public string? ChainName { get; set; }
 
@@ -214,7 +247,10 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnaps
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
-    /// <summary>Immutable. Cloud Storage bucket location to store the auto snapshot (regional or multi-regional).</summary>
+    /// <summary>
+    /// Immutable. Cloud Storage bucket location to store the auto snapshot
+    /// (regional or multi-regional).
+    /// </summary>
     [JsonPropertyName("storageLocations")]
     public IList<string>? StorageLocations { get; set; }
 }
@@ -237,7 +273,6 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicy
     public V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnapshotProperties? SnapshotProperties { get; set; }
 }
 
-/// <summary>ComputeResourcePolicySpec defines the desired state of ComputeResourcePolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpec
@@ -296,51 +331,22 @@ public partial class V1beta1ComputeResourcePolicyStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1ComputeResourcePolicyStatusObservedState
-{
-    /// <summary>[Output Only] Creation timestamp in RFC3339 text format.</summary>
-    [JsonPropertyName("creationTimestamp")]
-    public string? CreationTimestamp { get; set; }
-
-    /// <summary>[Output Only] The unique identifier for the resource. This identifier is defined by the server.</summary>
-    [JsonPropertyName("id")]
-    public long? Id { get; set; }
-
-    /// <summary>[Output Only] The status of resource policy creation.</summary>
-    [JsonPropertyName("status")]
-    public string? Status { get; set; }
-}
-
-/// <summary>ComputeResourcePolicyStatus defines the config connector machine state of ComputeResourcePolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicyStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeResourcePolicyStatusConditions>? Conditions { get; set; }
-
-    /// <summary>A unique specifier for the ComputeResourcePolicy resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
     public int? ObservedGeneration { get; set; }
 
-    /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-    [JsonPropertyName("observedState")]
-    public V1beta1ComputeResourcePolicyStatusObservedState? ObservedState { get; set; }
-
-    /// <summary>The server-defined URL of this resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
 }
 
-/// <summary>ComputeResourcePolicy is the Schema for the ComputeResourcePolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -362,11 +368,9 @@ public partial class V1beta1ComputeResourcePolicy : IKubernetesObject<V1ObjectMe
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>ComputeResourcePolicySpec defines the desired state of ComputeResourcePolicy</summary>
     [JsonPropertyName("spec")]
     public required V1beta1ComputeResourcePolicySpec Spec { get; set; }
 
-    /// <summary>ComputeResourcePolicyStatus defines the config connector machine state of ComputeResourcePolicy</summary>
     [JsonPropertyName("status")]
     public V1beta1ComputeResourcePolicyStatus? Status { get; set; }
 }

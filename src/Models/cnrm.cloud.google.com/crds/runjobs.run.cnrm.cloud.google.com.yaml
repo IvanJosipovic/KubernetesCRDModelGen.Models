@@ -160,11 +160,6 @@ spec:
                               items:
                                 type: string
                               type: array
-                            dependsOn:
-                              description: Names of the containers that must start before this container.
-                              items:
-                                type: string
-                              type: array
                             env:
                               description: List of environment variables to set in the container.
                               items:
@@ -267,10 +262,6 @@ spec:
                                     path:
                                       description: Optional. Path to access on the HTTP server. Defaults to '/'.
                                       type: string
-                                    port:
-                                      description: Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
-                                      format: int32
-                                      type: integer
                                   type: object
                                 initialDelaySeconds:
                                   description: Optional. Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
@@ -357,10 +348,6 @@ spec:
                                     path:
                                       description: Optional. Path to access on the HTTP server. Defaults to '/'.
                                       type: string
-                                    port:
-                                      description: Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
-                                      format: int32
-                                      type: integer
                                   type: object
                                 initialDelaySeconds:
                                   description: Optional. Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
@@ -511,61 +498,9 @@ spec:
                                   description: 'Limit on the storage usable by this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers. The default is nil which means that the limit is undefined. More info: https://cloud.google.com/run/docs/configuring/in-memory-volumes#configure-volume. Info in Kubernetes: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir'
                                   type: string
                               type: object
-                            gcs:
-                              description: Persistent storage backed by a Google Cloud Storage bucket.
-                              properties:
-                                bucketRef:
-                                  description: Cloud Storage Bucket name.
-                                  oneOf:
-                                  - not:
-                                      required:
-                                      - external
-                                    required:
-                                    - name
-                                  - not:
-                                      anyOf:
-                                      - required:
-                                        - name
-                                      - required:
-                                        - namespace
-                                    required:
-                                    - external
-                                  properties:
-                                    external:
-                                      description: A reference to an externally-managed StorageBucket resource.
-                                      type: string
-                                    name:
-                                      description: The name of a StorageBucket resource.
-                                      type: string
-                                    namespace:
-                                      description: The namespace of a StorageBucket resource.
-                                      type: string
-                                  type: object
-                                mountOptions:
-                                  description: A list of additional flags to pass to the gcsfuse CLI. Options should be specified without the leading "--".
-                                  items:
-                                    type: string
-                                  type: array
-                                readOnly:
-                                  description: If true, the volume will be mounted as read only for all mounts.
-                                  type: boolean
-                              type: object
                             name:
                               description: Required. Volume's name.
                               type: string
-                            nfs:
-                              description: For Nfs Volumes, contains the path to the nfs Volume
-                              properties:
-                                path:
-                                  description: Path that is exported by the NFS server.
-                                  type: string
-                                readOnly:
-                                  description: If true, the volume will be mounted as read only for all mounts.
-                                  type: boolean
-                                server:
-                                  description: Hostname or IP address of the NFS server
-                                  type: string
-                              type: object
                             secret:
                               description: Secret represents a secret that should populate this volume.
                               properties:
@@ -729,13 +664,13 @@ spec:
                                     - external
                                   properties:
                                     external:
-                                      description: The value of an externally managed ComputeNetwork resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}" or "projects/{{projectId}}/global/networks/{{networkId}}"
+                                      description: A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
                                       type: string
                                     name:
-                                      description: The name of a ComputeNetwork resource.
+                                      description: The `name` field of a `ComputeNetwork` resource.
                                       type: string
                                     namespace:
-                                      description: The namespace of a ComputeNetwork resource.
+                                      description: The `namespace` field of a `ComputeNetwork` resource.
                                       type: string
                                   type: object
                                 subnetworkRef:

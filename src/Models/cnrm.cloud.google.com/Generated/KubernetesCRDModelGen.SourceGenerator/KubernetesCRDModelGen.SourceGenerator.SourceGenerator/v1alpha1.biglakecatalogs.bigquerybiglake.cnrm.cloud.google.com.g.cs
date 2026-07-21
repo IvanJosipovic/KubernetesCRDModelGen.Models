@@ -63,7 +63,6 @@ public partial class V1alpha1BigLakeCatalogSpecProjectRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigLakeCatalogSpec
 {
-    /// <summary>The location that this resource belongs to.</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 

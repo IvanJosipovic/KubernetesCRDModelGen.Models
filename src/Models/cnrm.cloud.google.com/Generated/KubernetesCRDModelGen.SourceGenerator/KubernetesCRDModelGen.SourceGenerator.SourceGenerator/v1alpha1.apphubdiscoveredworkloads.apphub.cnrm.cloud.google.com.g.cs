@@ -36,7 +36,7 @@ public partial class V1alpha1AppHubDiscoveredWorkloadList : IKubernetesObject<V1
     public required IList<V1alpha1AppHubDiscoveredWorkload> Items { get; set; }
 }
 
-/// <summary>Required. The host project of the resource.</summary>
+/// <summary>Required. The host project of the application.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredWorkloadSpecProjectRef
@@ -63,11 +63,11 @@ public partial class V1alpha1AppHubDiscoveredWorkloadSpecProjectRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredWorkloadSpec
 {
-    /// <summary>Required. The location of the resource.</summary>
+    /// <summary>Required. The location of the application.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Required. The host project of the resource.</summary>
+    /// <summary>Required. The host project of the application.</summary>
     [JsonPropertyName("projectRef")]
     public V1alpha1AppHubDiscoveredWorkloadSpecProjectRef? ProjectRef { get; set; }
 
@@ -106,15 +106,15 @@ public partial class V1alpha1AppHubDiscoveredWorkloadStatusConditions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredWorkloadStatusObservedStateWorkloadProperties
 {
-    /// <summary>Output only. The service project identifier that the underlying cloud resource resides in. Empty for non-cloud resources.</summary>
+    /// <summary>Output only. The service project identifier that the underlying cloud resource resides in. Empty for non cloud resources.</summary>
     [JsonPropertyName("gcpProject")]
     public string? GcpProject { get; set; }
 
-    /// <summary>Output only. The location that the underlying compute resource resides in (for example, us-west1).</summary>
+    /// <summary>Output only. The location that the underlying compute resource resides in (e.g us-west1).</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Output only. The location that the underlying compute resource resides in if it is zonal (for example, us-west1-a).</summary>
+    /// <summary>Output only. The location that the underlying compute resource resides in if it is zonal (e.g us-west1-a).</summary>
     [JsonPropertyName("zone")]
     public string? Zone { get; set; }
 }

@@ -75,7 +75,7 @@ spec:
                     description: 'Immutable. Resource path as an URI of the source resource, for example a subnet. The project for the source resource should match the project for the InternalRange. An example: /projects/{project}/regions/{region}/subnetworks/{subnet}'
                     type: string
                   target:
-                    description: 'Immutable. Resource path of the target resource. The target project can be different, as in the cases when migrating to peer networks. For example: /projects/{project}/regions/{region}/subnetworks/{subnet}'
+                    description: 'Immutable. Resource path of the target resource. The target project can be different, as in the cases when migrating to peer networks. The resource For example: /projects/{project}/regions/{region}/subnetworks/{subnet}'
                     type: string
                 type: object
               networkRef:
@@ -96,13 +96,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The value of an externally managed ComputeNetwork resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}" or "projects/{{projectId}}/global/networks/{{networkId}}"
+                    description: A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
                     type: string
                   name:
-                    description: The name of a ComputeNetwork resource.
+                    description: The `name` field of a `ComputeNetwork` resource.
                     type: string
                   namespace:
-                    description: The namespace of a ComputeNetwork resource.
+                    description: The `namespace` field of a `ComputeNetwork` resource.
                     type: string
                 type: object
               overlaps:

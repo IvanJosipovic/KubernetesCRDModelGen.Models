@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apikeys.cnrm.cloud.google.com;
-/// <summary>APIKeysKey is the Schema for the APIKeysKey API</summary>
+/// <summary>APIKeysKey is the Schema for the APIKeys Key resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -64,11 +64,11 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsAndroidKeyRestrictionsAll
 {
     /// <summary>The package name of the application.</summary>
     [JsonPropertyName("packageName")]
-    public string? PackageName { get; set; }
+    public required string PackageName { get; set; }
 
     /// <summary>The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.</summary>
     [JsonPropertyName("sha1Fingerprint")]
-    public string? Sha1Fingerprint { get; set; }
+    public required string Sha1Fingerprint { get; set; }
 }
 
 /// <summary>The Android apps that are allowed to use the key.</summary>
@@ -78,7 +78,7 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsAndroidKeyRestrictions
 {
     /// <summary>A list of Android applications that are allowed to make API calls with this key.</summary>
     [JsonPropertyName("allowedApplications")]
-    public IList<V1alpha1APIKeysKeySpecRestrictionsAndroidKeyRestrictionsAllowedApplications>? AllowedApplications { get; set; }
+    public required IList<V1alpha1APIKeysKeySpecRestrictionsAndroidKeyRestrictionsAllowedApplications> AllowedApplications { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -91,7 +91,7 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsApiTargets
 
     /// <summary>The service for this restriction. It should be the canonical service name, for example: `translate.googleapis.com`. You can use [`gcloud services list`](/sdk/gcloud/reference/services/list) to get a list of services that are enabled in the project.</summary>
     [JsonPropertyName("service")]
-    public string? Service { get; set; }
+    public required string Service { get; set; }
 }
 
 /// <summary>The HTTP referrers (websites) that are allowed to use the key.</summary>
@@ -101,7 +101,7 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsBrowserKeyRestrictions
 {
     /// <summary>A list of regular expressions for the referrer URLs that are allowed to make API calls with this key.</summary>
     [JsonPropertyName("allowedReferrers")]
-    public IList<string>? AllowedReferrers { get; set; }
+    public required IList<string> AllowedReferrers { get; set; }
 }
 
 /// <summary>The iOS apps that are allowed to use the key.</summary>
@@ -111,7 +111,7 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsIosKeyRestrictions
 {
     /// <summary>A list of bundle IDs that are allowed when making API calls with this key.</summary>
     [JsonPropertyName("allowedBundleIds")]
-    public IList<string>? AllowedBundleIds { get; set; }
+    public required IList<string> AllowedBundleIds { get; set; }
 }
 
 /// <summary>The IP addresses of callers that are allowed to use the key.</summary>
@@ -121,7 +121,7 @@ public partial class V1alpha1APIKeysKeySpecRestrictionsServerKeyRestrictions
 {
     /// <summary>A list of the caller IP addresses that are allowed to make API calls with this key.</summary>
     [JsonPropertyName("allowedIps")]
-    public IList<string>? AllowedIps { get; set; }
+    public required IList<string> AllowedIps { get; set; }
 }
 
 /// <summary>Key restrictions.</summary>
@@ -150,7 +150,6 @@ public partial class V1alpha1APIKeysKeySpecRestrictions
     public V1alpha1APIKeysKeySpecRestrictionsServerKeyRestrictions? ServerKeyRestrictions { get; set; }
 }
 
-/// <summary>APIKeysKeySpec defines the desired state of APIKeysKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIKeysKeySpec
@@ -207,7 +206,6 @@ public partial class V1alpha1APIKeysKeyStatusObservedState
     public string? Uid { get; set; }
 }
 
-/// <summary>APIKeysKeyStatus defines the config connector machine state of APIKeysKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIKeysKeyStatus
@@ -215,10 +213,6 @@ public partial class V1alpha1APIKeysKeyStatus
     /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1APIKeysKeyStatusConditions>? Conditions { get; set; }
-
-    /// <summary>A unique specifier for the APIKeysKey resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
@@ -229,7 +223,7 @@ public partial class V1alpha1APIKeysKeyStatus
     public V1alpha1APIKeysKeyStatusObservedState? ObservedState { get; set; }
 }
 
-/// <summary>APIKeysKey is the Schema for the APIKeysKey API</summary>
+/// <summary>APIKeysKey is the Schema for the APIKeys Key resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -251,11 +245,9 @@ public partial class V1alpha1APIKeysKey : IKubernetesObject<V1ObjectMeta>, ISpec
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>APIKeysKeySpec defines the desired state of APIKeysKey</summary>
     [JsonPropertyName("spec")]
     public required V1alpha1APIKeysKeySpec Spec { get; set; }
 
-    /// <summary>APIKeysKeyStatus defines the config connector machine state of APIKeysKey</summary>
     [JsonPropertyName("status")]
     public V1alpha1APIKeysKeyStatus? Status { get; set; }
 }

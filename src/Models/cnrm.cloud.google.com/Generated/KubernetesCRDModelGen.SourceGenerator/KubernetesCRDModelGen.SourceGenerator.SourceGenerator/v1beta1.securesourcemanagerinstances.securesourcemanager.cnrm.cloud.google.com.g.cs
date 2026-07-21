@@ -168,7 +168,7 @@ public partial class V1beta1SecureSourceManagerInstanceStatusConditions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecureSourceManagerInstanceStatusObservedStateHostConfig
 {
-    /// <summary>Output only. API hostname.</summary>
+    /// <summary>Output only. API hostname. This is the hostname to use for **Host: Data Plane** endpoints.</summary>
     [JsonPropertyName("api")]
     public string? Api { get; set; }
 

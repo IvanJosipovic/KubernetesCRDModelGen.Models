@@ -36,24 +36,6 @@ public partial class V1alpha1FirestoreFieldList : IKubernetesObject<V1ListMeta>,
     public required IList<V1alpha1FirestoreField> Items { get; set; }
 }
 
-/// <summary>The FirestoreDatabase containing the collection group for this field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1FirestoreFieldSpecDatabaseRef
-{
-    /// <summary>A reference to an externally managed Firestore database resource. Should be in the format &quot;projects/{{projectID}}/databases/{{databaseID}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a FirestoreDatabase resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a FirestoreDatabase resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>Indicates the vector index is a flat index.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -169,16 +151,6 @@ public partial class V1alpha1FirestoreFieldSpecIndexConfig
     public IList<V1alpha1FirestoreFieldSpecIndexConfigIndexes>? Indexes { get; set; }
 }
 
-/// <summary>The TTL configuration for this `Field`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1FirestoreFieldSpecTtlConfig
-{
-    /// <summary>Whether to enable TTL for documents based on this field.</summary>
-    [JsonPropertyName("enabled")]
-    public bool? Enabled { get; set; }
-}
-
 /// <summary>FirestoreFieldSpec defines the desired state of FirestoreField</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -188,10 +160,6 @@ public partial class V1alpha1FirestoreFieldSpec
     [JsonPropertyName("collectionGroup")]
     public required string CollectionGroup { get; set; }
 
-    /// <summary>The FirestoreDatabase containing the collection group for this field.</summary>
-    [JsonPropertyName("databaseRef")]
-    public required V1alpha1FirestoreFieldSpecDatabaseRef DatabaseRef { get; set; }
-
     /// <summary>The index configuration for this field. If unset, field indexing will revert to the configuration defined by the `ancestor_field`. To explicitly remove all indexes for this field, specify an index config with an empty list of indexes.</summary>
     [JsonPropertyName("indexConfig")]
     public V1alpha1FirestoreFieldSpecIndexConfig? IndexConfig { get; set; }
@@ -199,10 +167,6 @@ public partial class V1alpha1FirestoreFieldSpec
     /// <summary>The FirestoreField name. If not given, the metadata.name will be used.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
-
-    /// <summary>The TTL configuration for this `Field`.</summary>
-    [JsonPropertyName("ttlConfig")]
-    public V1alpha1FirestoreFieldSpecTtlConfig? TtlConfig { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

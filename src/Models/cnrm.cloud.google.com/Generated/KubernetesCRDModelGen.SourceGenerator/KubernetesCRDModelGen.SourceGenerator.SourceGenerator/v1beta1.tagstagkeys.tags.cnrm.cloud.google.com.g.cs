@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.tags.cnrm.cloud.google.com;
-/// <summary>TagsTagKey is the Schema for the TagsTagKey API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,41 +35,30 @@ public partial class V1beta1TagsTagKeyList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1TagsTagKey> Items { get; set; }
 }
 
-/// <summary>TagsTagKeySpec defines the desired state of TagsTagKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagKeySpec
 {
-    /// <summary>
-    /// Optional. User-assigned description of the TagKey. Must not exceed 256
-    ///  characters.
-    /// 
-    ///  Read-write.
-    /// </summary>
+    /// <summary>User-assigned description of the TagKey. Must not exceed 256 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Immutable. The resource name of the TagKey&apos;s parent. A TagKey can be parented by an Organization or a Project. For a TagKey parented by an Organization, its parent must be in the form `organizations/{org_id}`. For a TagKey parented by a Project, its parent can be in the form `projects/{project_id}` or `projects/{project_number}`.</summary>
+    /// <summary>Immutable. Input only. The resource name of the new TagKey&apos;s parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.</summary>
     [JsonPropertyName("parent")]
     public required string Parent { get; set; }
 
     /// <summary>
-    /// Optional. A purpose denotes that this Tag is intended for use in policies
-    ///  of a specific policy engine, and will involve that policy engine in
-    ///  management operations involving this Tag. A purpose does not grant a
-    ///  policy engine exclusive rights to the Tag, and it may be referenced by
-    ///  other policy engines.
+    /// Immutable. Optional. A purpose cannot be changed once set.
     /// 
-    ///  A purpose cannot be changed once set.
+    /// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: [&quot;GCE_FIREWALL&quot;].
     /// </summary>
     [JsonPropertyName("purpose")]
     public string? Purpose { get; set; }
 
     /// <summary>
-    /// Optional. Purpose data corresponds to the policy system that the tag is
-    ///  intended for. See documentation for `Purpose` for formatting of this field.
+    /// Immutable. Optional. Purpose data cannot be changed once set.
     /// 
-    ///  Purpose data cannot be changed once set.
+    /// Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: &apos;network = &quot; &lt;project-name&gt;/&lt;vpc-name&gt; &quot; &apos;.
     /// </summary>
     [JsonPropertyName("purposeData")]
     public IDictionary<string, string>? PurposeData { get; set; }
@@ -80,12 +68,9 @@ public partial class V1beta1TagsTagKeySpec
     public string? ResourceID { get; set; }
 
     /// <summary>
-    /// Required. Immutable. The user friendly name for a TagKey. The short name
-    ///  should be unique for TagKeys within the same tag namespace.
+    /// Immutable. Input only. The user friendly name for a TagKey. The short name should be unique for TagKeys within the same tag namespace.
     /// 
-    ///  The short name must be 1-63 characters, beginning and ending with
-    ///  an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_),
-    ///  dots (.), and alphanumerics between.
+    /// The short name must be 1-63 characters, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
     /// </summary>
     [JsonPropertyName("shortName")]
     public required string ShortName { get; set; }
@@ -116,41 +101,43 @@ public partial class V1beta1TagsTagKeyStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>TagsTagKeyStatus defines the config connector machine state of TagsTagKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagKeyStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TagsTagKeyStatusConditions>? Conditions { get; set; }
 
-    /// <summary>Output only. Creation time.</summary>
+    /// <summary>
+    /// Output only. Creation time.
+    /// 
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
-
-    /// <summary>A unique specifier for the TagsTagKey resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
 
     /// <summary>The generated numeric id for the TagKey.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Output only. Immutable. Namespaced name of the TagKey.</summary>
+    /// <summary>Output only. Namespaced name of the TagKey.</summary>
     [JsonPropertyName("namespacedName")]
     public string? NamespacedName { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
-    /// <summary>Output only. Update time.</summary>
+    /// <summary>
+    /// Output only. Update time.
+    /// 
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
     [JsonPropertyName("updateTime")]
     public string? UpdateTime { get; set; }
 }
 
-/// <summary>TagsTagKey is the Schema for the TagsTagKey API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -172,11 +159,9 @@ public partial class V1beta1TagsTagKey : IKubernetesObject<V1ObjectMeta>, ISpec<
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>TagsTagKeySpec defines the desired state of TagsTagKey</summary>
     [JsonPropertyName("spec")]
     public required V1beta1TagsTagKeySpec Spec { get; set; }
 
-    /// <summary>TagsTagKeyStatus defines the config connector machine state of TagsTagKey</summary>
     [JsonPropertyName("status")]
     public V1beta1TagsTagKeyStatus? Status { get; set; }
 }

@@ -105,15 +105,15 @@ public partial class V1beta1RedisClusterSpecProjectRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisClusterSpecPscConfigsNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -255,29 +255,25 @@ public partial class V1beta1RedisClusterStatusObservedStateDiscoveryEndpoints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisClusterStatusObservedStatePscConnections
 {
-    /// <summary>Required. The IP allocated on the consumer network for the PSC forwarding rule.</summary>
+    /// <summary>Output only. The IP allocated on the consumer network for the PSC forwarding rule.</summary>
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>Required. The URI of the consumer side forwarding rule. Example: projects/{projectNumOrId}/regions/us-east1/forwardingRules/{resourceId}.</summary>
+    /// <summary>Output only. The URI of the consumer side forwarding rule. Example: projects/{projectNumOrId}/regions/us-east1/forwardingRules/{resourceId}.</summary>
     [JsonPropertyName("forwardingRule")]
     public string? ForwardingRule { get; set; }
 
-    /// <summary>Required. The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
+    /// <summary>The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
 
-    /// <summary>Optional. Project ID of the consumer project where the forwarding rule is created in.</summary>
+    /// <summary>Output only. The consumer project_id where the forwarding rule is created from.</summary>
     [JsonPropertyName("projectID")]
     public string? ProjectID { get; set; }
 
-    /// <summary>Required. The PSC connection id of the forwarding rule connected to the service attachment.</summary>
+    /// <summary>Output only. The PSC connection id of the forwarding rule connected to the service attachment.</summary>
     [JsonPropertyName("pscConnectionID")]
     public string? PscConnectionID { get; set; }
-
-    /// <summary>Required. The service attachment which is the target of the PSC connection, in the form of projects/{project-id}/regions/{region}/serviceAttachments/{service-attachment-id}.</summary>
-    [JsonPropertyName("serviceAttachment")]
-    public string? ServiceAttachment { get; set; }
 }
 
 /// <summary>Describes ongoing update on the cluster when cluster state is UPDATING.</summary>

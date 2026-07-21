@@ -68,7 +68,7 @@ public partial class V1alpha1DataplexEntryTypeSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>A reference to an externally managed DataplexAspectType resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/aspectTypes/{{aspecttypeID}}&quot;.</summary>
+/// <summary>Required aspect type for the entry type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexEntryTypeSpecRequiredAspectsTypeRef
@@ -82,7 +82,7 @@ public partial class V1alpha1DataplexEntryTypeSpecRequiredAspectsTypeRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataplexEntryTypeSpecRequiredAspects
 {
-    /// <summary>A reference to an externally managed DataplexAspectType resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/aspectTypes/{{aspecttypeID}}&quot;.</summary>
+    /// <summary>Required aspect type for the entry type.</summary>
     [JsonPropertyName("typeRef")]
     public required V1alpha1DataplexEntryTypeSpecRequiredAspectsTypeRef TypeRef { get; set; }
 }
@@ -104,7 +104,10 @@ public partial class V1alpha1DataplexEntryTypeSpec
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
-    /// <summary>The location that this resource belongs to.</summary>
+    /// <summary>Optional. User-defined labels for the EntryType.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 

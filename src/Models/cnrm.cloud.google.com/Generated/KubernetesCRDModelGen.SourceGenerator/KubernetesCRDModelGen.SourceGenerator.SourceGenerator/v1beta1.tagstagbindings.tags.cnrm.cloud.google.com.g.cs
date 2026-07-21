@@ -45,10 +45,6 @@ public partial class V1beta1TagsTagBindingSpecParentRef
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>Kind to which we are binding the tag.  Defaults to Project if not specified.</summary>
-    [JsonPropertyName("kind")]
-    public string? Kind { get; set; }
-
     /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -63,15 +59,15 @@ public partial class V1beta1TagsTagBindingSpecParentRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagBindingSpecTagValueRef
 {
-    /// <summary>A reference to an externally managed TagsTagValue resource. Should be in the format &quot;tagValues/{{tagValueID}}&quot;.</summary>
+    /// <summary>Allowed value: string of the format `tagValues/{{value}}`, where {{value}} is the `name` field of a `TagsTagValue` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a TagsTagValue resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a TagsTagValue resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }

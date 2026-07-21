@@ -54,20 +54,6 @@ public partial class V1alpha1AlloyDBInstanceSpecClusterRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>Configuration for Managed Connection Pool (MCP).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceSpecConnectionPoolConfig
-{
-    /// <summary>Optional. Whether to enable Managed Connection Pool (MCP).</summary>
-    [JsonPropertyName("enabled")]
-    public bool? Enabled { get; set; }
-
-    /// <summary>Optional. Connection Pool flags, as a list of &quot;key&quot;: &quot;value&quot; pairs.</summary>
-    [JsonPropertyName("flags")]
-    public IDictionary<string, string>? Flags { get; set; }
-}
-
 /// <summary>
 /// The type of instance.
 /// Possible values: [&quot;PRIMARY&quot;, &quot;READ_POOL&quot;, &quot;SECONDARY&quot;]
@@ -143,68 +129,6 @@ public partial class V1alpha1AlloyDBInstanceSpecNetworkConfig
     public bool? EnablePublicIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceSpecObservabilityConfig
-{
-    /// <summary>Whether assistive experiences are enabled for this AlloyDB instance.</summary>
-    [JsonPropertyName("assistiveExperiencesEnabled")]
-    public bool? AssistiveExperiencesEnabled { get; set; }
-
-    /// <summary>Observability feature status for an instance. This flag is turned &quot;off&quot; by default.</summary>
-    [JsonPropertyName("enabled")]
-    public bool? Enabled { get; set; }
-
-    /// <summary>Query string length. The default value is 10k.</summary>
-    [JsonPropertyName("maxQueryStringLength")]
-    public int? MaxQueryStringLength { get; set; }
-
-    /// <summary>Preserve comments in query string for an instance. This flag is turned &quot;off&quot; by default.</summary>
-    [JsonPropertyName("preserveComments")]
-    public bool? PreserveComments { get; set; }
-
-    /// <summary>Number of query execution plans captured by Insights per minute for all queries combined. The default value is 200. Any integer between 0 to 200 is considered valid.</summary>
-    [JsonPropertyName("queryPlansPerMinute")]
-    public int? QueryPlansPerMinute { get; set; }
-
-    /// <summary>Record application tags for an instance. This flag is turned &quot;off&quot; by default.</summary>
-    [JsonPropertyName("recordApplicationTags")]
-    public bool? RecordApplicationTags { get; set; }
-
-    /// <summary>Track actively running queries on the instance. If not set, this flag is &quot;off&quot; by default.</summary>
-    [JsonPropertyName("trackActiveQueries")]
-    public bool? TrackActiveQueries { get; set; }
-
-    /// <summary>Track client address for an instance. If not set, default value is &quot;off&quot;.</summary>
-    [JsonPropertyName("trackClientAddress")]
-    public bool? TrackClientAddress { get; set; }
-
-    /// <summary>Track wait events during query execution for an instance. This flag is turned &quot;on&quot; by default but tracking is enabled only after observability enabled flag is also turned on.</summary>
-    [JsonPropertyName("trackWaitEvents")]
-    public bool? TrackWaitEvents { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceSpecQueryInsightsConfig
-{
-    /// <summary>Number of query execution plans captured by Insights per minute for all queries combined. The default value is 5. Any integer between 0 and 20 is considered valid.</summary>
-    [JsonPropertyName("queryPlansPerMinute")]
-    public int? QueryPlansPerMinute { get; set; }
-
-    /// <summary>Query string length. The default value is 1024. Any integer between 256 and 4500 is considered valid.</summary>
-    [JsonPropertyName("queryStringLength")]
-    public int? QueryStringLength { get; set; }
-
-    /// <summary>Record application tags for an instance. This flag is turned &quot;on&quot; by default.</summary>
-    [JsonPropertyName("recordApplicationTags")]
-    public bool? RecordApplicationTags { get; set; }
-
-    /// <summary>Record client address for an instance. Client address is PII information. This flag is turned &quot;on&quot; by default.</summary>
-    [JsonPropertyName("recordClientAddress")]
-    public bool? RecordClientAddress { get; set; }
-}
-
 /// <summary>Read pool specific config. If the instance type is READ_POOL, this configuration must be provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -238,10 +162,6 @@ public partial class V1alpha1AlloyDBInstanceSpec
     /// <summary>The AlloyDBInstance cluster that this resource belongs to.</summary>
     [JsonPropertyName("clusterRef")]
     public required V1alpha1AlloyDBInstanceSpecClusterRef ClusterRef { get; set; }
-
-    /// <summary>Configuration for Managed Connection Pool (MCP).</summary>
-    [JsonPropertyName("connectionPoolConfig")]
-    public V1alpha1AlloyDBInstanceSpecConnectionPoolConfig? ConnectionPoolConfig { get; set; }
 
     /// <summary>Database flags. Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.</summary>
     [JsonPropertyName("databaseFlags")]
@@ -287,12 +207,6 @@ public partial class V1alpha1AlloyDBInstanceSpec
     [JsonPropertyName("networkConfig")]
     public V1alpha1AlloyDBInstanceSpecNetworkConfig? NetworkConfig { get; set; }
 
-    [JsonPropertyName("observabilityConfig")]
-    public V1alpha1AlloyDBInstanceSpecObservabilityConfig? ObservabilityConfig { get; set; }
-
-    [JsonPropertyName("queryInsightsConfig")]
-    public V1alpha1AlloyDBInstanceSpecQueryInsightsConfig? QueryInsightsConfig { get; set; }
-
     /// <summary>Read pool specific config. If the instance type is READ_POOL, this configuration must be provided.</summary>
     [JsonPropertyName("readPoolConfig")]
     public V1alpha1AlloyDBInstanceSpecReadPoolConfig? ReadPoolConfig { get; set; }
@@ -327,40 +241,6 @@ public partial class V1alpha1AlloyDBInstanceStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>Output for Managed Connection Pool (MCP).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceStatusObservedStateConnectionPoolConfig
-{
-    /// <summary>Output only. The number of running poolers per instance.</summary>
-    [JsonPropertyName("poolerCount")]
-    public int? PoolerCount { get; set; }
-}
-
-/// <summary>Observability feature status for an instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceStatusObservedStateObservabilityConfig
-{
-    /// <summary>Output only. Track wait event types during query execution for an instance. This flag is turned &quot;on&quot; by default but tracking is enabled only after observability enabled flag is also turned on. This is read-only flag and only modifiable by internal API.</summary>
-    [JsonPropertyName("trackWaitEventTypes")]
-    public bool? TrackWaitEventTypes { get; set; }
-}
-
-/// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1AlloyDBInstanceStatusObservedState
-{
-    /// <summary>Output for Managed Connection Pool (MCP).</summary>
-    [JsonPropertyName("connectionPoolConfig")]
-    public V1alpha1AlloyDBInstanceStatusObservedStateConnectionPoolConfig? ConnectionPoolConfig { get; set; }
-
-    /// <summary>Observability feature status for an instance.</summary>
-    [JsonPropertyName("observabilityConfig")]
-    public V1alpha1AlloyDBInstanceStatusObservedStateObservabilityConfig? ObservabilityConfig { get; set; }
-}
-
 /// <summary>AlloyDBInstanceStatus defines the config connector machine state of AlloyDBInstance</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -389,10 +269,6 @@ public partial class V1alpha1AlloyDBInstanceStatus
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
     public long? ObservedGeneration { get; set; }
-
-    /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-    [JsonPropertyName("observedState")]
-    public V1alpha1AlloyDBInstanceStatusObservedState? ObservedState { get; set; }
 
     /// <summary>The outbound public IP addresses for the instance. This is available ONLY when networkConfig.enableOutboundPublicIp is set to true. These IP addresses are used for outbound connections.</summary>
     [JsonPropertyName("outboundPublicIpAddresses")]

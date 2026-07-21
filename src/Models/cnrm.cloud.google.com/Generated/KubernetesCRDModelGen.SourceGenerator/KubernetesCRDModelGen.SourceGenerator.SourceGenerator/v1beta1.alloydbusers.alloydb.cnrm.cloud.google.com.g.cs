@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.alloydb.cnrm.cloud.google.com;
-/// <summary>AlloyDBUser is the Schema for the AlloyDBUser API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,20 +35,19 @@ public partial class V1beta1AlloyDBUserList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1beta1AlloyDBUser> Items { get; set; }
 }
 
-/// <summary>Immutable.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlloyDBUserSpecClusterRef
 {
-    /// <summary>A reference to an externally managed AlloyDBCluster resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/clusters/{{clusterID}}&quot;.</summary>
+    /// <summary>Allowed value: The `name` field of an `AlloyDBCluster` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a AlloyDBCluster resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a AlloyDBCluster resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -92,12 +90,10 @@ public partial class V1beta1AlloyDBUserSpecPassword
     public V1beta1AlloyDBUserSpecPasswordValueFrom? ValueFrom { get; set; }
 }
 
-/// <summary>AlloyDBUserSpec defines the desired state of AlloyDBUser</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlloyDBUserSpec
 {
-    /// <summary>Immutable.</summary>
     [JsonPropertyName("clusterRef")]
     public required V1beta1AlloyDBUserSpecClusterRef ClusterRef { get; set; }
 
@@ -143,12 +139,11 @@ public partial class V1beta1AlloyDBUserStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>AlloyDBUserStatus defines the config connector machine state of AlloyDBUser</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlloyDBUserStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AlloyDBUserStatusConditions>? Conditions { get; set; }
 
@@ -161,7 +156,6 @@ public partial class V1beta1AlloyDBUserStatus
     public int? ObservedGeneration { get; set; }
 }
 
-/// <summary>AlloyDBUser is the Schema for the AlloyDBUser API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -183,11 +177,9 @@ public partial class V1beta1AlloyDBUser : IKubernetesObject<V1ObjectMeta>, ISpec
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>AlloyDBUserSpec defines the desired state of AlloyDBUser</summary>
     [JsonPropertyName("spec")]
     public required V1beta1AlloyDBUserSpec Spec { get; set; }
 
-    /// <summary>AlloyDBUserStatus defines the config connector machine state of AlloyDBUser</summary>
     [JsonPropertyName("status")]
     public V1beta1AlloyDBUserStatus? Status { get; set; }
 }

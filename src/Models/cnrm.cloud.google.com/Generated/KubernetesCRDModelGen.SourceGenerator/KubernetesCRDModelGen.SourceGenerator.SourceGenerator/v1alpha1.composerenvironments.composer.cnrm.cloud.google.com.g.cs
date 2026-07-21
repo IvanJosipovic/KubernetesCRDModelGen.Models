@@ -303,15 +303,15 @@ public partial class V1alpha1ComposerEnvironmentSpecConfigNodeConfigIpAllocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComposerEnvironmentSpecConfigNodeConfigNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -1112,7 +1112,7 @@ public partial class V1alpha1ComposerEnvironmentSpecConfig
     public V1alpha1ComposerEnvironmentSpecConfigWorkloadsConfig? WorkloadsConfig { get; set; }
 }
 
-/// <summary>The Project that this resource belongs to.</summary>
+/// <summary>Immutable. The Project that this resource belongs to.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComposerEnvironmentSpecProjectRef
@@ -1184,11 +1184,11 @@ public partial class V1alpha1ComposerEnvironmentSpec
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
-    /// <summary>The location that this resource belongs to.</summary>
+    /// <summary>Immutable. The name of the location where the Environment will be created. Required.</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 
-    /// <summary>The Project that this resource belongs to.</summary>
+    /// <summary>Immutable. The Project that this resource belongs to.</summary>
     [JsonPropertyName("projectRef")]
     public required V1alpha1ComposerEnvironmentSpecProjectRef ProjectRef { get; set; }
 

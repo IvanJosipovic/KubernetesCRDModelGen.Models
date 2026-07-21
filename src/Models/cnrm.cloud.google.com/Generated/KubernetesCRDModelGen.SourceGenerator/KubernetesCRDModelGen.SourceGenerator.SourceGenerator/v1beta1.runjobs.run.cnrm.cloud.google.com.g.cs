@@ -174,10 +174,6 @@ public partial class V1beta1RunJobSpecTemplateTemplateContainersLivenessProbeHtt
     /// <summary>Optional. Path to access on the HTTP server. Defaults to &apos;/&apos;.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
-
-    /// <summary>Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.</summary>
-    [JsonPropertyName("port")]
-    public int? Port { get; set; }
 }
 
 /// <summary>Optional. TCPSocket specifies an action involving a TCP port. Exactly one of httpGet, tcpSocket, or grpc must be specified.</summary>
@@ -277,10 +273,6 @@ public partial class V1beta1RunJobSpecTemplateTemplateContainersStartupProbeHttp
     /// <summary>Optional. Path to access on the HTTP server. Defaults to &apos;/&apos;.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
-
-    /// <summary>Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.</summary>
-    [JsonPropertyName("port")]
-    public int? Port { get; set; }
 }
 
 /// <summary>Optional. TCPSocket specifies an action involving a TCP port. Exactly one of httpGet, tcpSocket, or grpc must be specified.</summary>
@@ -347,10 +339,6 @@ public partial class V1beta1RunJobSpecTemplateTemplateContainers
     /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
-
-    /// <summary>Names of the containers that must start before this container.</summary>
-    [JsonPropertyName("dependsOn")]
-    public IList<string>? DependsOn { get; set; }
 
     /// <summary>List of environment variables to set in the container.</summary>
     [JsonPropertyName("env")]
@@ -473,60 +461,6 @@ public partial class V1beta1RunJobSpecTemplateTemplateVolumesEmptyDir
     public string? SizeLimit { get; set; }
 }
 
-/// <summary>Cloud Storage Bucket name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1RunJobSpecTemplateTemplateVolumesGcsBucketRef
-{
-    /// <summary>A reference to an externally-managed StorageBucket resource.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a StorageBucket resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a StorageBucket resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
-/// <summary>Persistent storage backed by a Google Cloud Storage bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1RunJobSpecTemplateTemplateVolumesGcs
-{
-    /// <summary>Cloud Storage Bucket name.</summary>
-    [JsonPropertyName("bucketRef")]
-    public V1beta1RunJobSpecTemplateTemplateVolumesGcsBucketRef? BucketRef { get; set; }
-
-    /// <summary>A list of additional flags to pass to the gcsfuse CLI. Options should be specified without the leading &quot;--&quot;.</summary>
-    [JsonPropertyName("mountOptions")]
-    public IList<string>? MountOptions { get; set; }
-
-    /// <summary>If true, the volume will be mounted as read only for all mounts.</summary>
-    [JsonPropertyName("readOnly")]
-    public bool? ReadOnly { get; set; }
-}
-
-/// <summary>For Nfs Volumes, contains the path to the nfs Volume</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1RunJobSpecTemplateTemplateVolumesNfs
-{
-    /// <summary>Path that is exported by the NFS server.</summary>
-    [JsonPropertyName("path")]
-    public string? Path { get; set; }
-
-    /// <summary>If true, the volume will be mounted as read only for all mounts.</summary>
-    [JsonPropertyName("readOnly")]
-    public bool? ReadOnly { get; set; }
-
-    /// <summary>Hostname or IP address of the NFS server</summary>
-    [JsonPropertyName("server")]
-    public string? Server { get; set; }
-}
-
 /// <summary>The Cloud Secret Manager secret version. Can be &apos;latest&apos; for the latest value, or an integer or a secret alias for a specific version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -643,17 +577,9 @@ public partial class V1beta1RunJobSpecTemplateTemplateVolumes
     [JsonPropertyName("emptyDir")]
     public V1beta1RunJobSpecTemplateTemplateVolumesEmptyDir? EmptyDir { get; set; }
 
-    /// <summary>Persistent storage backed by a Google Cloud Storage bucket.</summary>
-    [JsonPropertyName("gcs")]
-    public V1beta1RunJobSpecTemplateTemplateVolumesGcs? Gcs { get; set; }
-
     /// <summary>Required. Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
-
-    /// <summary>For Nfs Volumes, contains the path to the nfs Volume</summary>
-    [JsonPropertyName("nfs")]
-    public V1beta1RunJobSpecTemplateTemplateVolumesNfs? Nfs { get; set; }
 
     /// <summary>Secret represents a secret that should populate this volume.</summary>
     [JsonPropertyName("secret")]
@@ -683,15 +609,15 @@ public partial class V1beta1RunJobSpecTemplateTemplateVpcAccessConnectorRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RunJobSpecTemplateTemplateVpcAccessNetworkInterfacesNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }

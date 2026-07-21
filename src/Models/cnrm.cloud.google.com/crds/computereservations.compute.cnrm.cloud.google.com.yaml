@@ -15,7 +15,6 @@ spec:
     kind: ComputeReservation
     categories:
     - gcp
-    listKind: ComputeReservationList
     plural: computereservations
     shortNames:
     - gcpcomputereservation
@@ -43,18 +42,16 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: ComputeReservation is the Schema for the ComputeReservation API
         properties:
           apiVersion:
-            description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            description: 'apiVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
             type: string
           kind:
-            description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            description: 'kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
             type: string
           metadata:
             type: object
           spec:
-            description: ComputeReservationSpec defines the desired state of ComputeReservation
             properties:
               description:
                 description: Immutable. An optional description of this resource.
@@ -62,95 +59,14 @@ spec:
               resourceID:
                 description: Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.
                 type: string
-              shareSettings:
-                description: The share setting for reservations and sole tenancy node groups.
-                properties:
-                  projectMap:
-                    description: A map of key(i.e. project or other shared resources) and associated project config. This is only valid when shareType's value is SPECIFIC_PROJECTS.
-                    items:
-                      properties:
-                        keyRef:
-                          description: The resource reference that defaults to Project if Kind is not specified.
-                          oneOf:
-                          - not:
-                              required:
-                              - external
-                            required:
-                            - name
-                          - not:
-                              anyOf:
-                              - required:
-                                - name
-                              - required:
-                                - namespace
-                            required:
-                            - external
-                          properties:
-                            apiVersion:
-                              description: APIVersion of the referenced resource
-                              type: string
-                            external:
-                              description: The external name of the referenced resource
-                              type: string
-                            kind:
-                              description: Kind of the referenced resource
-                              type: string
-                            name:
-                              type: string
-                            namespace:
-                              type: string
-                          type: object
-                        value:
-                          properties:
-                            projectIDRef:
-                              description: The project ID, should be same as the key of this project config in the parent map.
-                              oneOf:
-                              - not:
-                                  required:
-                                  - external
-                                required:
-                                - name
-                              - not:
-                                  anyOf:
-                                  - required:
-                                    - name
-                                  - required:
-                                    - namespace
-                                required:
-                                - external
-                              properties:
-                                external:
-                                  description: The `projectID` field of a project, when not managed by Config Connector.
-                                  type: string
-                                kind:
-                                  description: The kind of the Project resource; optional but must be `Project` if provided.
-                                  type: string
-                                name:
-                                  description: The `name` field of a `Project` resource.
-                                  type: string
-                                namespace:
-                                  description: The `namespace` field of a `Project` resource.
-                                  type: string
-                              type: object
-                          type: object
-                      required:
-                      - keyRef
-                      type: object
-                    type: array
-                  shareType:
-                    description: Immutable. Type of sharing for this shared-reservation Check the ShareType enum for the list of possible values.
-                    type: string
-                type: object
               specificReservation:
                 description: Reservation for instances with specific machine shapes.
                 properties:
                   count:
                     description: The number of resources that are allocated.
-                    format: int32
                     type: integer
                   inUseCount:
                     description: How many instances are in use.
-                    format: int32
                     type: integer
                   instanceProperties:
                     description: Immutable. The instance properties for the reservation.
@@ -160,11 +76,17 @@ spec:
                         items:
                           properties:
                             acceleratorCount:
-                              description: Immutable. The number of the guest accelerator cards exposed to this instance.
-                              format: int32
+                              description: |-
+                                Immutable. The number of the guest accelerator cards exposed to
+                                this instance.
                               type: integer
                             acceleratorType:
-                              description: "Immutable. The full or partial URL of the accelerator type to attach to this instance. For example: 'projects/my-project/zones/us-central1-c/acceleratorTypes/nvidia-tesla-p100' If you are creating an instance template, specify only the accelerator name."
+                              description: |-
+                                Immutable. The full or partial URL of the accelerator type to
+                                attach to this instance. For example:
+                                'projects/my-project/zones/us-central1-c/acceleratorTypes/nvidia-tesla-p100'
+
+                                If you are creating an instance template, specify only the accelerator name.
                               type: string
                           required:
                           - acceleratorCount
@@ -172,12 +94,13 @@ spec:
                           type: object
                         type: array
                       localSsds:
-                        description: Immutable. The amount of local ssd to reserve with each instance. This reserves disks of type 'local-ssd'.
+                        description: |-
+                          Immutable. The amount of local ssd to reserve with each instance. This
+                          reserves disks of type 'local-ssd'.
                         items:
                           properties:
                             diskSizeGb:
                               description: Immutable. The size of the disk in base-2 GB.
-                              format: int32
                               type: integer
                             interface:
                               description: 'Immutable. The disk interface to use for attaching this disk. Default value: "SCSI" Possible values: ["SCSI", "NVME"].'
@@ -190,7 +113,11 @@ spec:
                         description: Immutable. The name of the machine type to reserve.
                         type: string
                       minCpuPlatform:
-                        description: Immutable. The minimum CPU platform for the reservation. For example, '"Intel Skylake"'. See the CPU platform availability reference](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform#availablezones) for information on available CPU platforms.
+                        description: |-
+                          Immutable. The minimum CPU platform for the reservation. For example,
+                          '"Intel Skylake"'. See
+                          the CPU platform availability reference](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform#availablezones)
+                          for information on available CPU platforms.
                         type: string
                     required:
                     - machineType
@@ -200,7 +127,10 @@ spec:
                 - instanceProperties
                 type: object
               specificReservationRequired:
-                description: Immutable. When set to true, only VMs that target this reservation by name can consume this reservation. Otherwise, it can be consumed by VMs with affinity for any reservation. Defaults to false.
+                description: |-
+                  Immutable. When set to true, only VMs that target this reservation by name can
+                  consume this reservation. Otherwise, it can be consumed by VMs with
+                  affinity for any reservation. Defaults to false.
                 type: boolean
               zone:
                 description: Immutable. The zone where the reservation is made.
@@ -210,13 +140,14 @@ spec:
             - zone
             type: object
           status:
-            description: ComputeReservationStatus defines the config connector machine state of ComputeReservation
             properties:
               commitment:
-                description: Full or partial URL to a parent commitment. This field displays for reservations that are tied to a commitment.
+                description: |-
+                  Full or partial URL to a parent commitment. This field displays for
+                  reservations that are tied to a commitment.
                 type: string
               conditions:
-                description: Conditions represent the latest available observations of the object's current state.
+                description: Conditions represent the latest available observation of the resource's current state.
                 items:
                   properties:
                     lastTransitionTime:
@@ -239,15 +170,10 @@ spec:
               creationTimestamp:
                 description: Creation timestamp in RFC3339 text format.
                 type: string
-              externalRef:
-                description: A unique specifier for the ComputeReservation resource in GCP.
-                type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
-                format: int64
                 type: integer
               selfLink:
-                description: Server-defined URL for the resource.
                 type: string
               status:
                 description: The status of the reservation.
@@ -260,3 +186,9 @@ spec:
     storage: true
     subresources:
       status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

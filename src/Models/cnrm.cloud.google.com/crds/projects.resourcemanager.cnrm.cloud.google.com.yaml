@@ -15,7 +15,6 @@ spec:
     kind: Project
     categories:
     - gcp
-    listKind: ProjectList
     plural: projects
     shortNames:
     - gcpproject
@@ -43,18 +42,16 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: Project is the Schema for the Project API
         properties:
           apiVersion:
-            description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            description: 'apiVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
             type: string
           kind:
-            description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            description: 'kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
             type: string
           metadata:
             type: object
           spec:
-            description: ProjectSpec defines the desired state of Project
             oneOf:
             - required:
               - folderRef
@@ -68,7 +65,6 @@ spec:
                   - organizationRef
             properties:
               billingAccountRef:
-                description: The billing account of the project.
                 oneOf:
                 - not:
                     required:
@@ -85,17 +81,20 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally managed BillingAccount resource. Should be in the format "billingAccounts/{billingAccountID}".
+                    description: 'Allowed value: The `name` field of a `BillingAccount` resource.'
                     type: string
                   name:
-                    description: The name of a BillingAccount resource.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The namespace of a BillingAccount resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
               folderRef:
-                description: The folder that this resource belongs to. Changing this forces the resource to be migrated to the newly specified folder. Only one of folderRef or organizationRef may be specified.
+                description: |-
+                  The folder that this resource belongs to. Changing this forces the
+                  resource to be migrated to the newly specified folder. Only one of
+                  folderRef or organizationRef may be specified.
                 oneOf:
                 - not:
                     required:
@@ -112,20 +111,24 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The 'name' field of a folder, when not managed by Config Connector. This field must be set when 'name' field is not set.
+                    description: 'Allowed value: The `folderId` field of a `Folder` resource.'
                     type: string
                   name:
-                    description: The 'name' field of a 'Folder' resource. This field must be set when 'external' field is not set.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The 'namespace' field of a 'Folder' resource. If unset, the namespace is defaulted to the namespace of the referencer resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
               name:
                 description: The display name of the project.
                 type: string
               organizationRef:
-                description: The organization that this resource belongs to. Changing this forces the resource to be migrated to the newly specified organization. Only one of folderRef or organizationRef may be specified.
+                description: |-
+                  The organization that this resource belongs to. Changing this
+                  forces the resource to be migrated to the newly specified
+                  organization. Only one of folderRef or organizationRef may be
+                  specified.
                 oneOf:
                 - not:
                     required:
@@ -142,13 +145,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The 'name' field of an organization, when not managed by Config Connector.
+                    description: 'Allowed value: The `name` field of an `Organization` resource.'
                     type: string
                   name:
-                    description: The 'name' field of an 'Organization' resource.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The 'namespace' field of an 'Organization' resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
               resourceID:
@@ -158,10 +161,9 @@ spec:
             - name
             type: object
           status:
-            description: ProjectStatus defines the config connector machine state of Project
             properties:
               conditions:
-                description: Conditions represent the latest available observations of the object's current state.
+                description: Conditions represent the latest available observation of the resource's current state.
                 items:
                   properties:
                     lastTransitionTime:
@@ -186,7 +188,6 @@ spec:
                 type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
-                format: int64
                 type: integer
             type: object
         required:
@@ -196,3 +197,9 @@ spec:
     storage: true
     subresources:
       status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

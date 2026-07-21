@@ -87,15 +87,15 @@ public partial class V1alpha1NotebookInstanceSpecKmsKeyRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceSpecNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -586,6 +586,10 @@ public partial class V1alpha1NotebookInstanceStatusObservedState
     /// <summary>Output only. Attached disks to notebook instance.</summary>
     [JsonPropertyName("disks")]
     public IList<V1alpha1NotebookInstanceStatusObservedStateDisks>? Disks { get; set; }
+
+    /// <summary>Output only. The name of this notebook instance. Format: `projects/{project_id}/locations/{location}/instances/{instance_id}`</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Output only. The proxy endpoint that is used to access the Jupyter notebook.</summary>
     [JsonPropertyName("proxyURI")]

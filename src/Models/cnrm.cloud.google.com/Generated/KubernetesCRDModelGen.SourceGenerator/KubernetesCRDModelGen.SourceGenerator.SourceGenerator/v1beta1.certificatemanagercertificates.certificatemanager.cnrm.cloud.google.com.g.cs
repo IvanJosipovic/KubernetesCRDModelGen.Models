@@ -413,87 +413,6 @@ public partial class V1beta1CertificateManagerCertificateStatusConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CertificateManagerCertificateStatusObservedStateManagedAuthorizationAttemptInfo
-{
-    /// <summary>
-    /// Human readable explanation for reaching the state. Provided to help
-    /// address the configuration issues.
-    /// Not guaranteed to be stable. For programmatic access use &apos;failure_reason&apos; field.
-    /// </summary>
-    [JsonPropertyName("details")]
-    public string? Details { get; set; }
-
-    /// <summary>Domain name of the authorization attempt.</summary>
-    [JsonPropertyName("domain")]
-    public string? Domain { get; set; }
-
-    /// <summary>Reason for failure of the authorization attempt for the domain.</summary>
-    [JsonPropertyName("failureReason")]
-    public string? FailureReason { get; set; }
-
-    /// <summary>State of the domain for managed certificate issuance.</summary>
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CertificateManagerCertificateStatusObservedStateManagedProvisioningIssue
-{
-    /// <summary>
-    /// Human readable explanation about the issue. Provided to help address
-    /// the configuration issues.
-    /// Not guaranteed to be stable. For programmatic access use &apos;reason&apos; field.
-    /// </summary>
-    [JsonPropertyName("details")]
-    public string? Details { get; set; }
-
-    /// <summary>Reason for provisioning failures.</summary>
-    [JsonPropertyName("reason")]
-    public string? Reason { get; set; }
-}
-
-/// <summary>
-/// Immutable. Configuration and state of a Managed Certificate.
-/// Certificate Manager provisions and renews Managed Certificates
-/// automatically, for as long as it&apos;s authorized to do so.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CertificateManagerCertificateStatusObservedStateManaged
-{
-    /// <summary>
-    /// Detailed state of the latest authorization attempt for each domain
-    /// specified for this Managed Certificate.
-    /// </summary>
-    [JsonPropertyName("authorizationAttemptInfo")]
-    public IList<V1beta1CertificateManagerCertificateStatusObservedStateManagedAuthorizationAttemptInfo>? AuthorizationAttemptInfo { get; set; }
-
-    /// <summary>Information about issues with provisioning this Managed Certificate.</summary>
-    [JsonPropertyName("provisioningIssue")]
-    public IList<V1beta1CertificateManagerCertificateStatusObservedStateManagedProvisioningIssue>? ProvisioningIssue { get; set; }
-
-    /// <summary>A state of this Managed Certificate.</summary>
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-}
-
-/// <summary>The observed state of the underlying GCP resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CertificateManagerCertificateStatusObservedState
-{
-    /// <summary>
-    /// Immutable. Configuration and state of a Managed Certificate.
-    /// Certificate Manager provisions and renews Managed Certificates
-    /// automatically, for as long as it&apos;s authorized to do so.
-    /// </summary>
-    [JsonPropertyName("managed")]
-    public V1beta1CertificateManagerCertificateStatusObservedStateManaged? Managed { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateManagerCertificateStatus
 {
     /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
@@ -503,10 +422,6 @@ public partial class V1beta1CertificateManagerCertificateStatus
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
     public int? ObservedGeneration { get; set; }
-
-    /// <summary>The observed state of the underlying GCP resource.</summary>
-    [JsonPropertyName("observedState")]
-    public V1beta1CertificateManagerCertificateStatusObservedState? ObservedState { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

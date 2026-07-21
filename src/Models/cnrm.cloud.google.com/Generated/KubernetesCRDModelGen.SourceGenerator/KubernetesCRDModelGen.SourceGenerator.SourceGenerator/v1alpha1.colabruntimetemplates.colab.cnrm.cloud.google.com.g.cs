@@ -134,25 +134,6 @@ public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpec
     public string? AcceleratorType { get; set; }
 
     /// <summary>
-    /// Optional. Immutable. The Nvidia GPU partition size.
-    /// 
-    ///  When specified, the requested accelerators will be partitioned into
-    ///  smaller GPU partitions. For example, if the request is for 8 units of
-    ///  NVIDIA A100 GPUs, and gpu_partition_size=&quot;1g.10gb&quot;, the service will
-    ///  create 8 * 7 = 56 partitioned MIG instances.
-    /// 
-    ///  The partition size must be a value supported by the requested accelerator.
-    ///  Refer to
-    ///  [Nvidia GPU
-    ///  Partitioning](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-multi#multi-instance_gpu_partitions)
-    ///  for the available partition sizes.
-    /// 
-    ///  If set, the accelerator_count should be set to 1.
-    /// </summary>
-    [JsonPropertyName("gpuPartitionSize")]
-    public string? GpuPartitionSize { get; set; }
-
-    /// <summary>
     /// Immutable. The type of the machine.
     /// 
     ///  See the [list of machine types supported for
@@ -170,10 +151,6 @@ public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpec
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
-    /// <summary>Optional. Immutable. The number of nodes per replica for multihost GPU deployments.</summary>
-    [JsonPropertyName("multihostGpuNodeCount")]
-    public int? MultihostGpuNodeCount { get; set; }
-
     /// <summary>Optional. Immutable. Configuration controlling how this resource pool consumes reservation.</summary>
     [JsonPropertyName("reservationAffinity")]
     public V1alpha1ColabRuntimeTemplateSpecMachineSpecReservationAffinity? ReservationAffinity { get; set; }
@@ -188,15 +165,15 @@ public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpecNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }

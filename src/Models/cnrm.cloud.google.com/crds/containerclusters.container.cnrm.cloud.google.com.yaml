@@ -15,7 +15,6 @@ spec:
     kind: ContainerCluster
     categories:
     - gcp
-    listKind: ContainerClusterList
     plural: containerclusters
     shortNames:
     - gcpcontainercluster
@@ -43,13 +42,12 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: ContainerCluster is the Schema for the ContainerCluster API
         properties:
           apiVersion:
-            description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            description: 'apiVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
             type: string
           kind:
-            description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            description: 'kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
             type: string
           metadata:
             type: object
@@ -101,7 +99,7 @@ spec:
                     - enabled
                     type: object
                   gcsFuseCsiDriverConfig:
-                    description: The status of the GCS Fuse CSI driver addon, which allows the usage of GCS bucket as volumes. Defaults to disabled; set enabled = true to enable.
+                    description: The status of the GCS Fuse CSI driver addon, which allows the usage of gcs bucket as volumes. Defaults to disabled; set enabled = true to enable.
                     properties:
                       enabled:
                         type: boolean
@@ -190,7 +188,9 @@ spec:
                     description: Contains defaults for a node pool created by NAP.
                     properties:
                       bootDiskKMSKeyRef:
-                        description: Immutable. The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
+                        description: |-
+                          Immutable. The Customer Managed Encryption Key used to encrypt the
+                          boot disk attached to each node in the node pool.
                         oneOf:
                         - not:
                             required:
@@ -207,13 +207,13 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally managed KMSCryptoKey. Should be in the format `projects/[kms_project_id]/locations/[region]/keyRings/[key_ring_id]/cryptoKeys/[key]`.
+                            description: 'Allowed value: The `selfLink` field of a `KMSCryptoKey` resource.'
                             type: string
                           name:
-                            description: The `name` of a `KMSCryptoKey` resource.
+                            description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                             type: string
                           namespace:
-                            description: The `namespace` of a `KMSCryptoKey` resource.
+                            description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                             type: string
                         type: object
                       diskSize:
@@ -269,7 +269,7 @@ spec:
                           - external
                         properties:
                           external:
-                            description: The `email` field of an `IAMServiceAccount` resource.
+                            description: 'Allowed value: The `email` field of an `IAMServiceAccount` resource.'
                             type: string
                           name:
                             description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
@@ -282,10 +282,10 @@ spec:
                         description: Shielded Instance options.
                         properties:
                           enableIntegrityMonitoring:
-                            description: Immutable. Defines whether the instance has integrity monitoring enabled.
+                            description: Defines whether the instance has integrity monitoring enabled.
                             type: boolean
                           enableSecureBoot:
-                            description: Immutable. Defines whether the instance has Secure Boot enabled.
+                            description: Defines whether the instance has Secure Boot enabled.
                             type: boolean
                         type: object
                       upgradeSettings:
@@ -298,7 +298,7 @@ spec:
                                 description: |-
                                   Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
 
-                                  A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+                                  																A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
                                 type: string
                               standardRolloutPolicy:
                                 description: Standard policy for the blue-green upgrade.
@@ -310,7 +310,10 @@ spec:
                                     description: Percentage of the bool pool nodes to drain in a batch. The range of this field should be (0.0, 1.0].
                                     type: number
                                   batchSoakDuration:
-                                    description: "Soak time after each batch gets drained. A duration in seconds with up to nine fractional digits, ending with 's'. Example: \"3.5s\"."
+                                    description: |-
+                                      Soak time after each batch gets drained.
+
+                                      																			A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
                                     type: string
                                 type: object
                             type: object
@@ -328,15 +331,6 @@ spec:
                   autoscalingProfile:
                     description: Configuration options for the Autoscaling profile feature, which lets you choose whether the cluster autoscaler should optimize for resource utilization or resource availability when deciding to remove nodes from a cluster. Can be BALANCED or OPTIMIZE_UTILIZATION. Defaults to BALANCED.
                     type: string
-                  defaultComputeClassConfig:
-                    description: Default compute class is a configuration for default compute class.
-                    properties:
-                      enabled:
-                        description: Enables default compute class.
-                        type: boolean
-                    required:
-                    - enabled
-                    type: object
                   enabled:
                     description: Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning.
                     type: boolean
@@ -374,7 +368,7 @@ spec:
                 description: "Immutable. Configuration for the confidential nodes feature, which makes nodes run on confidential VMs. Warning: This configuration can't be changed (or added/removed) after cluster creation without deleting and recreating the entire cluster."
                 properties:
                   enabled:
-                    description: Immutable. Whether Confidential Nodes feature is enabled for all nodes in this pool.
+                    description: Immutable. Whether Confidential Nodes feature is enabled for all nodes in this cluster.
                     type: boolean
                 required:
                 - enabled
@@ -387,9 +381,6 @@ spec:
                     properties:
                       allowExternalTraffic:
                         description: Controls whether user traffic is allowed over this endpoint. Note that GCP-managed services may still use the endpoint even if this is false.
-                        type: boolean
-                      enableK8sTokensViaDns:
-                        description: Controls whether the k8s token auth is allowed via DNS.
                         type: boolean
                     type: object
                   ipEndpointsConfig:
@@ -416,7 +407,7 @@ spec:
                     description: The key to use to encrypt/decrypt secrets.
                     type: string
                   state:
-                    description: ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
+                    description: ENCRYPTED or DECRYPTED.
                     type: string
                 required:
                 - state
@@ -457,9 +448,6 @@ spec:
                 type: boolean
               enableBinaryAuthorization:
                 description: DEPRECATED. Deprecated in favor of binary_authorization. Enable Binary Authorization for this cluster. If enabled, all container images will be validated by Google Binary Authorization.
-                type: boolean
-              enableCiliumClusterwideNetworkPolicy:
-                description: Whether Cilium cluster-wide network policy is enabled on this cluster.
                 type: boolean
               enableFqdnNetworkPolicy:
                 description: Whether FQDN Network Policy is enabled on this cluster.
@@ -518,49 +506,6 @@ spec:
               ipAllocationPolicy:
                 description: Immutable. Configuration of cluster IP allocation for VPC-native clusters. Adding this block enables IP aliasing, making the cluster VPC-native instead of routes-based.
                 properties:
-                  additionalIpRangesConfigs:
-                    description: AdditionalIPRangesConfig is the configuration for additional pod secondary ranges supporting the ClusterUpdate message. Each AdditionalIPRangesConfig corresponds to a single subnetwork.
-                    items:
-                      properties:
-                        podIpv4RangeNames:
-                          description: List of secondary ranges names within this subnetwork that can be used for pod IPs.
-                          items:
-                            type: string
-                          type: array
-                        status:
-                          description: Status of the subnetwork, If in draining status, subnet will not be selected for new node pools.
-                          type: string
-                        subnetworkRef:
-                          description: 'The subnetwork path for the additional IP range. Format: projects/{project}/regions/{region}/subnetworks/{subnetwork}.'
-                          oneOf:
-                          - not:
-                              required:
-                              - external
-                            required:
-                            - name
-                          - not:
-                              anyOf:
-                              - required:
-                                - name
-                              - required:
-                                - namespace
-                            required:
-                            - external
-                          properties:
-                            external:
-                              description: The ComputeSubnetwork selflink of form "projects/{{project}}/regions/{{region}}/subnetworks/{{name}}", when not managed by Config Connector.
-                              type: string
-                            name:
-                              description: The `name` field of a `ComputeSubnetwork` resource.
-                              type: string
-                            namespace:
-                              description: The `namespace` field of a `ComputeSubnetwork` resource.
-                              type: string
-                          type: object
-                      required:
-                      - subnetworkRef
-                      type: object
-                    type: array
                   additionalPodRangesConfig:
                     description: AdditionalPodRangesConfig is the configuration for additional pod secondary ranges supporting the ClusterUpdate message.
                     properties:
@@ -617,7 +562,7 @@ spec:
                 description: The maintenance policy to use for the cluster.
                 properties:
                   dailyMaintenanceWindow:
-                    description: 'Time window specified for daily maintenance operations. Specify start_time in RFC3339 format "HH:MM", where HH : [00-23] and MM : [00-59] GMT.'
+                    description: 'Time window specified for daily maintenance operations. Specify start_time in RFC3339 format "HH:MM”, where HH : [00-23] and MM : [00-59] GMT.'
                     properties:
                       duration:
                         type: string
@@ -717,8 +662,8 @@ spec:
                                 description: Name of the Secret to extract a value from.
                                 type: string
                             required:
-                            - key
                             - name
+                            - key
                             type: object
                         type: object
                     type: object
@@ -744,7 +689,7 @@ spec:
                       type: object
                     type: array
                   gcpPublicCidrsAccessEnabled:
-                    description: Whether master is accessible via Google Compute Engine Public IP addresses.
+                    description: Whether master is accessbile via Google Compute Engine Public IP addresses.
                     type: boolean
                 type: object
               meshCertificates:
@@ -823,13 +768,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The value of an externally managed ComputeNetwork resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}" or "projects/{{projectId}}/global/networks/{{networkId}}"
+                    description: 'Allowed value: The `selfLink` field of a `ComputeNetwork` resource.'
                     type: string
                   name:
-                    description: The name of a ComputeNetwork resource.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The namespace of a ComputeNetwork resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
               networkingMode:
@@ -841,12 +786,11 @@ spec:
                   advancedMachineFeatures:
                     description: Immutable. Specifies options for controlling advanced machine features.
                     properties:
-                      enableNestedVirtualization:
-                        description: Immutable. Whether or not to enable nested virtualization (defaults to false).
-                        type: boolean
                       threadsPerCore:
                         description: Immutable. The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
                         type: integer
+                    required:
+                    - threadsPerCore
                     type: object
                   bootDiskKMSCryptoKeyRef:
                     oneOf:
@@ -865,13 +809,13 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally managed KMSCryptoKey. Should be in the format `projects/[kms_project_id]/locations/[region]/keyRings/[key_ring_id]/cryptoKeys/[key]`.
+                        description: 'Allowed value: The `selfLink` field of a `KMSCryptoKey` resource.'
                         type: string
                       name:
-                        description: The `name` of a `KMSCryptoKey` resource.
+                        description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                         type: string
                       namespace:
-                        description: The `namespace` of a `KMSCryptoKey` resource.
+                        description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                         type: string
                     type: object
                   confidentialNodes:
@@ -901,9 +845,6 @@ spec:
                   ephemeralStorageLocalSsdConfig:
                     description: Immutable. Parameters for the ephemeral storage filesystem. If unspecified, ephemeral storage is backed by the boot disk.
                     properties:
-                      dataCacheCount:
-                        description: Immutable. Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
-                        type: integer
                       localSsdCount:
                         description: Immutable. Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
                         type: integer
@@ -923,7 +864,7 @@ spec:
                     description: Immutable. GCFS configuration for this node.
                     properties:
                       enabled:
-                        description: Whether or not GCFS is enabled.
+                        description: Immutable. Whether or not GCFS is enabled.
                         type: boolean
                     required:
                     - enabled
@@ -1051,7 +992,10 @@ spec:
                     description: Immutable. Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or newer CPU platform.
                     type: string
                   nodeGroupRef:
-                    description: Immutable. Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on sole tenant nodes.
+                    description: |-
+                      Immutable. Setting this field will assign instances
+                      of this pool to run on the specified node group. This is useful
+                      for running workloads on sole tenant nodes.
                     oneOf:
                     - not:
                         required:
@@ -1068,13 +1012,13 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally managed ComputeNodeGroup resource. Should be in the format "projects/{{projectID}}/zones/{{zone}}/nodeGroups/{{nodeGroupID}}".
+                        description: 'Allowed value: The `name` field of a `ComputeNodeGroup` resource.'
                         type: string
                       name:
-                        description: The name of a ComputeNodeGroup resource.
+                        description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                         type: string
                       namespace:
-                        description: The namespace of a ComputeNodeGroup resource.
+                        description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                         type: string
                     type: object
                   oauthScopes:
@@ -1133,7 +1077,7 @@ spec:
                       - external
                     properties:
                       external:
-                        description: The `email` field of an `IAMServiceAccount` resource.
+                        description: 'Allowed value: The `email` field of an `IAMServiceAccount` resource.'
                         type: string
                       name:
                         description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
@@ -1295,13 +1239,13 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally managed PubSubTopic resource. Should be in the format "projects/{{projectID}}/topics/{{topicID}}".
+                            description: 'Allowed value: string of the format `projects/{{project}}/topics/{{value}}`, where {{value}} is the `name` field of a `PubSubTopic` resource.'
                             type: string
                           name:
-                            description: The name of a PubSubTopic resource.
+                            description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                             type: string
                           namespace:
-                            description: The namespace of a PubSubTopic resource.
+                            description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                             type: string
                         type: object
                     required:
@@ -1347,7 +1291,9 @@ spec:
                     description: The internal IP address of this cluster's master endpoint.
                     type: string
                   privateEndpointSubnetworkRef:
-                    description: Immutable. Subnetwork in cluster's network where master's endpoint will be provisioned.
+                    description: |-
+                      Immutable. Subnetwork in cluster's network where master's endpoint
+                      will be provisioned.
                     oneOf:
                     - not:
                         required:
@@ -1364,13 +1310,13 @@ spec:
                       - external
                     properties:
                       external:
-                        description: The ComputeSubnetwork selflink of form "projects/{{project}}/regions/{{region}}/subnetworks/{{name}}", when not managed by Config Connector.
+                        description: 'Allowed value: The `selfLink` field of a `ComputeSubnetwork` resource.'
                         type: string
                       name:
-                        description: The `name` field of a `ComputeSubnetwork` resource.
+                        description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeSubnetwork` resource.
+                        description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                         type: string
                     type: object
                   publicEndpoint:
@@ -1400,7 +1346,12 @@ spec:
                 description: Configuration options for the Release channel feature, which provide more control over automatic upgrades of your GKE clusters. Note that removing this field from your config will not unenroll it. Instead, use the "UNSPECIFIED" channel.
                 properties:
                   channel:
-                    description: 'The selected release channel. Accepted values are: * UNSPECIFIED: Not set. * RAPID: Weekly upgrade cadence; Early testers and developers who requires new features. * REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel. * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.'
+                    description: |-
+                      The selected release channel. Accepted values are:
+                      * UNSPECIFIED: Not set.
+                      * RAPID: Weekly upgrade cadence; Early testers and developers who requires new features.
+                      * REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel.
+                      * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
                     type: string
                 required:
                 - channel
@@ -1465,13 +1416,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The ComputeSubnetwork selflink of form "projects/{{project}}/regions/{{region}}/subnetworks/{{name}}", when not managed by Config Connector.
+                    description: 'Allowed value: The `selfLink` field of a `ComputeSubnetwork` resource.'
                     type: string
                   name:
-                    description: The `name` field of a `ComputeSubnetwork` resource.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeSubnetwork` resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
               verticalPodAutoscaling:
@@ -1487,7 +1438,9 @@ spec:
                 description: Configuration for the use of Kubernetes Service Accounts in GCP IAM policies.
                 properties:
                   identityNamespace:
-                    description: DEPRECATED. This field will be removed in a future major release as it has been deprecated in the API. Use `workloadPool` instead; `workloadPool` field will supersede this field. Enables workload identity.
+                    description: |-
+                      DEPRECATED. This field will be removed in a future major release as it has been deprecated in the API. Use `workloadPool` instead; `workloadPool` field will supersede this field.
+                      Enables workload identity.
                     type: string
                   workloadPool:
                     description: The workload pool to attach all Kubernetes service accounts to.
@@ -1499,7 +1452,7 @@ spec:
           status:
             properties:
               conditions:
-                description: Conditions represent the latest available observations of the ContainerCluster's current state.
+                description: Conditions represent the latest available observation of the resource's current state.
                 items:
                   properties:
                     lastTransitionTime:
@@ -1530,7 +1483,6 @@ spec:
                 type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
-                format: int64
                 type: integer
               observedState:
                 description: The observed state of the underlying GCP resource.
@@ -1586,3 +1538,9 @@ spec:
     storage: true
     subresources:
       status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

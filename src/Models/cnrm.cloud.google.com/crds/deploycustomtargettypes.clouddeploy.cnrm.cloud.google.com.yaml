@@ -6,19 +6,19 @@ metadata:
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
     cnrm.cloud.google.com/system: "true"
-  name: clouddeploycustomtargettypes.clouddeploy.cnrm.cloud.google.com
+  name: deploycustomtargettypes.clouddeploy.cnrm.cloud.google.com
 spec:
   group: clouddeploy.cnrm.cloud.google.com
   names:
-    kind: CloudDeployCustomTargetType
+    kind: DeployCustomTargetType
     categories:
     - gcp
-    listKind: CloudDeployCustomTargetTypeList
-    plural: clouddeploycustomtargettypes
+    listKind: DeployCustomTargetTypeList
+    plural: deploycustomtargettypes
     shortNames:
-    - gcpclouddeploycustomtargettype
-    - gcpclouddeploycustomtargettypes
-    singular: clouddeploycustomtargettype
+    - gcpdeploycustomtargettype
+    - gcpdeploycustomtargettypes
+    singular: deploycustomtargettype
   preserveUnknownFields: false
   scope: Namespaced
   versions:
@@ -41,7 +41,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: CloudDeployCustomTargetType is the Schema for the CloudDeployCustomTargetType API
+        description: DeployCustomTargetType is the Schema for the DeployCustomTargetType API
         properties:
           apiVersion:
             description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
@@ -52,7 +52,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: CustomTargetTypeSpec defines the desired state of CloudDeployCustomTargetType
+            description: CustomTargetTypeSpec defines the desired state of DeployCustomTargetType
             properties:
               customActions:
                 description: Configures render and deploy for the `CustomTargetType` using Skaffold custom actions.
@@ -171,14 +171,14 @@ spec:
                     type: string
                 type: object
               resourceID:
-                description: The CloudDeployCustomTargetType name. If not given, the metadata.name will be used.
+                description: The DeployCustomTargetType name. If not given, the metadata.name will be used.
                 type: string
             required:
             - location
             - projectRef
             type: object
           status:
-            description: CustomTargetTypeStatus defines the config connector machine state of CloudDeployCustomTargetType
+            description: CustomTargetTypeStatus defines the config connector machine state of DeployCustomTargetType
             properties:
               conditions:
                 description: Conditions represent the latest available observations of the object's current state.
@@ -202,7 +202,7 @@ spec:
                   type: object
                 type: array
               externalRef:
-                description: A unique specifier for the CloudDeployCustomTargetType resource in GCP.
+                description: A unique specifier for the DeployCustomTargetType resource in GCP.
                 type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.

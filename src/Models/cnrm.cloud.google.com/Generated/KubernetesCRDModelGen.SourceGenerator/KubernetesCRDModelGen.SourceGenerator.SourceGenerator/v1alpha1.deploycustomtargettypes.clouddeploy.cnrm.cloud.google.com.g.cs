@@ -9,37 +9,37 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddeploy.cnrm.cloud.google.com;
-/// <summary>CloudDeployCustomTargetType is the Schema for the CloudDeployCustomTargetType API</summary>
+/// <summary>DeployCustomTargetType is the Schema for the DeployCustomTargetType API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
-public partial class V1alpha1CloudDeployCustomTargetTypeList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudDeployCustomTargetType>
+public partial class V1alpha1DeployCustomTargetTypeList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DeployCustomTargetType>
 {
     public const string KubeApiVersion = "v1alpha1";
-    public const string KubeKind = "CloudDeployCustomTargetTypeList";
+    public const string KubeKind = "DeployCustomTargetTypeList";
     public const string KubeGroup = "clouddeploy.cnrm.cloud.google.com";
-    public const string KubePluralName = "clouddeploycustomtargettypes";
+    public const string KubePluralName = "deploycustomtargettypes";
     /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
     [JsonPropertyName("apiVersion")]
     public string ApiVersion { get; set; } = "clouddeploy.cnrm.cloud.google.com/v1alpha1";
 
     /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
     [JsonPropertyName("kind")]
-    public string Kind { get; set; } = "CloudDeployCustomTargetTypeList";
+    public string Kind { get; set; } = "DeployCustomTargetTypeList";
 
     /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
     [JsonPropertyName("metadata")]
     public V1ListMeta? Metadata { get; set; }
 
-    /// <summary>List of V1alpha1CloudDeployCustomTargetType objects.</summary>
+    /// <summary>List of V1alpha1DeployCustomTargetType objects.</summary>
     [JsonPropertyName("items")]
-    public required IList<V1alpha1CloudDeployCustomTargetType> Items { get; set; }
+    public required IList<V1alpha1DeployCustomTargetType> Items { get; set; }
 }
 
 /// <summary>Optional. Remote git repository containing the Skaffold Config modules.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGit
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGit
 {
     /// <summary>Optional. Relative path from the repository root to the Skaffold file.</summary>
     [JsonPropertyName("path")]
@@ -57,7 +57,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsInclude
 /// <summary>Required. Name of the Cloud Build V2 RepositoryRef. Format is projects/{project}/locations/{location}/connections/{connection}/repositories/{repository}.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoRepositoryRef
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoRepositoryRef
 {
     /// <summary>A reference to an externally managed CloudBuildRepository resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/connections/{{connectionID}}/repositories/{{RepositoryID}}&quot;.</summary>
     [JsonPropertyName("external")]
@@ -75,7 +75,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsInclude
 /// <summary>Optional. Cloud Build V2 repository containing the Skaffold Config modules.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo
 {
     /// <summary>Optional. Relative path from the repository root to the Skaffold Config file.</summary>
     [JsonPropertyName("path")]
@@ -87,13 +87,13 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsInclude
 
     /// <summary>Required. Name of the Cloud Build V2 RepositoryRef. Format is projects/{project}/locations/{location}/connections/{connection}/repositories/{repository}.</summary>
     [JsonPropertyName("repositoryRef")]
-    public V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoRepositoryRef? RepositoryRef { get; set; }
+    public V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoRepositoryRef? RepositoryRef { get; set; }
 }
 
 /// <summary>Optional. Cloud Storage bucket containing the Skaffold Config modules.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudStorage
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudStorage
 {
     /// <summary>Optional. Relative path from the source to the Skaffold file.</summary>
     [JsonPropertyName("path")]
@@ -106,7 +106,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsInclude
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModules
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModules
 {
     /// <summary>Optional. The Skaffold Config modules to use from the specified source.</summary>
     [JsonPropertyName("configs")]
@@ -114,21 +114,21 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsInclude
 
     /// <summary>Optional. Remote git repository containing the Skaffold Config modules.</summary>
     [JsonPropertyName("git")]
-    public V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGit? Git { get; set; }
+    public V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGit? Git { get; set; }
 
     /// <summary>Optional. Cloud Build V2 repository containing the Skaffold Config modules.</summary>
     [JsonPropertyName("googleCloudBuildRepo")]
-    public V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo? GoogleCloudBuildRepo { get; set; }
+    public V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo? GoogleCloudBuildRepo { get; set; }
 
     /// <summary>Optional. Cloud Storage bucket containing the Skaffold Config modules.</summary>
     [JsonPropertyName("googleCloudStorage")]
-    public V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudStorage? GoogleCloudStorage { get; set; }
+    public V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudStorage? GoogleCloudStorage { get; set; }
 }
 
 /// <summary>Configures render and deploy for the `CustomTargetType` using Skaffold custom actions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActions
+public partial class V1alpha1DeployCustomTargetTypeSpecCustomActions
 {
     /// <summary>Required. The Skaffold custom action responsible for deploy operations.</summary>
     [JsonPropertyName("deployAction")]
@@ -136,7 +136,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActions
 
     /// <summary>Optional. List of Skaffold modules Cloud Deploy will include in the Skaffold Config as required before performing diagnose.</summary>
     [JsonPropertyName("includeSkaffoldModules")]
-    public IList<V1alpha1CloudDeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModules>? IncludeSkaffoldModules { get; set; }
+    public IList<V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModules>? IncludeSkaffoldModules { get; set; }
 
     /// <summary>Optional. The Skaffold custom action responsible for render operations. If not provided then Cloud Deploy will perform the render operations via `skaffold render`.</summary>
     [JsonPropertyName("renderAction")]
@@ -146,7 +146,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecCustomActions
 /// <summary>The project that this resource belongs to.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpecProjectRef
+public partial class V1alpha1DeployCustomTargetTypeSpecProjectRef
 {
     /// <summary>The `projectID` field of a project, when not managed by Config Connector.</summary>
     [JsonPropertyName("external")]
@@ -165,14 +165,14 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>CustomTargetTypeSpec defines the desired state of CloudDeployCustomTargetType</summary>
+/// <summary>CustomTargetTypeSpec defines the desired state of DeployCustomTargetType</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeSpec
+public partial class V1alpha1DeployCustomTargetTypeSpec
 {
     /// <summary>Configures render and deploy for the `CustomTargetType` using Skaffold custom actions.</summary>
     [JsonPropertyName("customActions")]
-    public V1alpha1CloudDeployCustomTargetTypeSpecCustomActions? CustomActions { get; set; }
+    public V1alpha1DeployCustomTargetTypeSpecCustomActions? CustomActions { get; set; }
 
     /// <summary>Optional. Description of the `CustomTargetType`. Max length is 255 characters.</summary>
     [JsonPropertyName("description")]
@@ -183,16 +183,16 @@ public partial class V1alpha1CloudDeployCustomTargetTypeSpec
 
     /// <summary>The project that this resource belongs to.</summary>
     [JsonPropertyName("projectRef")]
-    public required V1alpha1CloudDeployCustomTargetTypeSpecProjectRef ProjectRef { get; set; }
+    public required V1alpha1DeployCustomTargetTypeSpecProjectRef ProjectRef { get; set; }
 
-    /// <summary>The CloudDeployCustomTargetType name. If not given, the metadata.name will be used.</summary>
+    /// <summary>The DeployCustomTargetType name. If not given, the metadata.name will be used.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeStatusConditions
+public partial class V1alpha1DeployCustomTargetTypeStatusConditions
 {
     /// <summary>Last time the condition transitioned from one status to another.</summary>
     [JsonPropertyName("lastTransitionTime")]
@@ -218,7 +218,7 @@ public partial class V1alpha1CloudDeployCustomTargetTypeStatusConditions
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeStatusObservedState
+public partial class V1alpha1DeployCustomTargetTypeStatusObservedState
 {
     /// <summary>Output only. Time at which the `CustomTargetType` was created.</summary>
     [JsonPropertyName("createTime")]
@@ -237,16 +237,16 @@ public partial class V1alpha1CloudDeployCustomTargetTypeStatusObservedState
     public string? UpdateTime { get; set; }
 }
 
-/// <summary>CustomTargetTypeStatus defines the config connector machine state of CloudDeployCustomTargetType</summary>
+/// <summary>CustomTargetTypeStatus defines the config connector machine state of DeployCustomTargetType</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployCustomTargetTypeStatus
+public partial class V1alpha1DeployCustomTargetTypeStatus
 {
     /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
-    public IList<V1alpha1CloudDeployCustomTargetTypeStatusConditions>? Conditions { get; set; }
+    public IList<V1alpha1DeployCustomTargetTypeStatusConditions>? Conditions { get; set; }
 
-    /// <summary>A unique specifier for the CloudDeployCustomTargetType resource in GCP.</summary>
+    /// <summary>A unique specifier for the DeployCustomTargetType resource in GCP.</summary>
     [JsonPropertyName("externalRef")]
     public string? ExternalRef { get; set; }
 
@@ -256,36 +256,36 @@ public partial class V1alpha1CloudDeployCustomTargetTypeStatus
 
     /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
     [JsonPropertyName("observedState")]
-    public V1alpha1CloudDeployCustomTargetTypeStatusObservedState? ObservedState { get; set; }
+    public V1alpha1DeployCustomTargetTypeStatusObservedState? ObservedState { get; set; }
 }
 
-/// <summary>CloudDeployCustomTargetType is the Schema for the CloudDeployCustomTargetType API</summary>
+/// <summary>DeployCustomTargetType is the Schema for the DeployCustomTargetType API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
-public partial class V1alpha1CloudDeployCustomTargetType : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudDeployCustomTargetTypeSpec>, IStatus<V1alpha1CloudDeployCustomTargetTypeStatus?>
+public partial class V1alpha1DeployCustomTargetType : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DeployCustomTargetTypeSpec>, IStatus<V1alpha1DeployCustomTargetTypeStatus?>
 {
     public const string KubeApiVersion = "v1alpha1";
-    public const string KubeKind = "CloudDeployCustomTargetType";
+    public const string KubeKind = "DeployCustomTargetType";
     public const string KubeGroup = "clouddeploy.cnrm.cloud.google.com";
-    public const string KubePluralName = "clouddeploycustomtargettypes";
+    public const string KubePluralName = "deploycustomtargettypes";
     /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
     [JsonPropertyName("apiVersion")]
     public string ApiVersion { get; set; } = "clouddeploy.cnrm.cloud.google.com/v1alpha1";
 
     /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
     [JsonPropertyName("kind")]
-    public string Kind { get; set; } = "CloudDeployCustomTargetType";
+    public string Kind { get; set; } = "DeployCustomTargetType";
 
     /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>CustomTargetTypeSpec defines the desired state of CloudDeployCustomTargetType</summary>
+    /// <summary>CustomTargetTypeSpec defines the desired state of DeployCustomTargetType</summary>
     [JsonPropertyName("spec")]
-    public required V1alpha1CloudDeployCustomTargetTypeSpec Spec { get; set; }
+    public required V1alpha1DeployCustomTargetTypeSpec Spec { get; set; }
 
-    /// <summary>CustomTargetTypeStatus defines the config connector machine state of CloudDeployCustomTargetType</summary>
+    /// <summary>CustomTargetTypeStatus defines the config connector machine state of DeployCustomTargetType</summary>
     [JsonPropertyName("status")]
-    public V1alpha1CloudDeployCustomTargetTypeStatus? Status { get; set; }
+    public V1alpha1DeployCustomTargetTypeStatus? Status { get; set; }
 }

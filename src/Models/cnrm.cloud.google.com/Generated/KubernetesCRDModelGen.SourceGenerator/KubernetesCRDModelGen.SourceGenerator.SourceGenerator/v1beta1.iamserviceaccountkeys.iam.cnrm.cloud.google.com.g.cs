@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.cnrm.cloud.google.com;
-/// <summary>IAMServiceAccountKey is the Schema for the IAMServiceAccountKey API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,12 +35,11 @@ public partial class V1beta1IAMServiceAccountKeyList : IKubernetesObject<V1ListM
     public required IList<V1beta1IAMServiceAccountKey> Items { get; set; }
 }
 
-/// <summary>Immutable. The Service Account to create a key for.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeySpecServiceAccountRef
 {
-    /// <summary>The `email` field of an `IAMServiceAccount` resource.</summary>
+    /// <summary>Allowed value: The `email` field of an `IAMServiceAccount` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
@@ -54,7 +52,6 @@ public partial class V1beta1IAMServiceAccountKeySpecServiceAccountRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>IAMServiceAccountKeySpec defines the desired state of IAMServiceAccountKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeySpec
@@ -63,7 +60,7 @@ public partial class V1beta1IAMServiceAccountKeySpec
     [JsonPropertyName("keyAlgorithm")]
     public string? KeyAlgorithm { get; set; }
 
-    /// <summary>Immutable. The output format of the private key. TYPE_GOOGLE_CREDENTIALS_FILE is the default output format.</summary>
+    /// <summary>Immutable.</summary>
     [JsonPropertyName("privateKeyType")]
     public string? PrivateKeyType { get; set; }
 
@@ -71,11 +68,10 @@ public partial class V1beta1IAMServiceAccountKeySpec
     [JsonPropertyName("publicKeyData")]
     public string? PublicKeyData { get; set; }
 
-    /// <summary>Immutable. The output format for the public key. TYPE_NONE is the default for public key output.</summary>
+    /// <summary>Immutable.</summary>
     [JsonPropertyName("publicKeyType")]
     public string? PublicKeyType { get; set; }
 
-    /// <summary>Immutable. The Service Account to create a key for.</summary>
     [JsonPropertyName("serviceAccountRef")]
     public required V1beta1IAMServiceAccountKeySpecServiceAccountRef ServiceAccountRef { get; set; }
 }
@@ -105,12 +101,11 @@ public partial class V1beta1IAMServiceAccountKeyStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>IAMServiceAccountKeyStatus defines the config connector machine state of IAMServiceAccountKey</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IAMServiceAccountKeyStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1IAMServiceAccountKeyStatusConditions>? Conditions { get; set; }
 
@@ -120,7 +115,7 @@ public partial class V1beta1IAMServiceAccountKeyStatus
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
     /// <summary>The private key in JSON format, base64 encoded. This is what you normally get as a file when creating service account keys through the CLI or web console. This is only populated when creating a new key.</summary>
     [JsonPropertyName("privateKey")]
@@ -139,7 +134,6 @@ public partial class V1beta1IAMServiceAccountKeyStatus
     public string? ValidBefore { get; set; }
 }
 
-/// <summary>IAMServiceAccountKey is the Schema for the IAMServiceAccountKey API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -161,11 +155,9 @@ public partial class V1beta1IAMServiceAccountKey : IKubernetesObject<V1ObjectMet
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>IAMServiceAccountKeySpec defines the desired state of IAMServiceAccountKey</summary>
     [JsonPropertyName("spec")]
     public required V1beta1IAMServiceAccountKeySpec Spec { get; set; }
 
-    /// <summary>IAMServiceAccountKeyStatus defines the config connector machine state of IAMServiceAccountKey</summary>
     [JsonPropertyName("status")]
     public V1beta1IAMServiceAccountKeyStatus? Status { get; set; }
 }

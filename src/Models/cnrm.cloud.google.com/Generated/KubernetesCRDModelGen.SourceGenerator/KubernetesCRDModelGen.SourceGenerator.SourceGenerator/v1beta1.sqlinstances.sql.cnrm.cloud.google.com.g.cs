@@ -212,34 +212,6 @@ public partial class V1beta1SQLInstanceSpecReplicaConfiguration
     public bool? VerifyServerCertificate { get; set; }
 }
 
-/// <summary>Optional. If the instance is a primary instance, then this field identifies the disaster recovery (DR) replica. A DR replica is an optional configuration for Enterprise Plus edition instances. If the instance is a read replica, then the field is not set. Set this field to a replica name to designate a DR replica for a primary instance. Remove the replica name to remove the DR replica designation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1SQLInstanceSpecReplicationClusterFailoverDrReplicaRef
-{
-    /// <summary>The SQLInstance selfLink, when not managed by Config Connector.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The `name` field of a `SQLInstance` resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The `namespace` field of a `SQLInstance` resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
-/// <summary>The configuration for the replication cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1SQLInstanceSpecReplicationCluster
-{
-    /// <summary>Optional. If the instance is a primary instance, then this field identifies the disaster recovery (DR) replica. A DR replica is an optional configuration for Enterprise Plus edition instances. If the instance is a read replica, then the field is not set. Set this field to a replica name to designate a DR replica for a primary instance. Remove the replica name to remove the DR replica designation.</summary>
-    [JsonPropertyName("failoverDrReplicaRef")]
-    public V1beta1SQLInstanceSpecReplicationClusterFailoverDrReplicaRef? FailoverDrReplicaRef { get; set; }
-}
-
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -425,15 +397,15 @@ public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationAuthorizedNetw
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationPrivateNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -727,10 +699,6 @@ public partial class V1beta1SQLInstanceSpec
     [JsonPropertyName("replicaConfiguration")]
     public V1beta1SQLInstanceSpecReplicaConfiguration? ReplicaConfiguration { get; set; }
 
-    /// <summary>The configuration for the replication cluster.</summary>
-    [JsonPropertyName("replicationCluster")]
-    public V1beta1SQLInstanceSpecReplicationCluster? ReplicationCluster { get; set; }
-
     /// <summary>Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
@@ -781,30 +749,6 @@ public partial class V1beta1SQLInstanceStatusIpAddress
 
     [JsonPropertyName("type")]
     public string? Type { get; set; }
-}
-
-/// <summary>The configuration for the replication cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1SQLInstanceStatusObservedStateReplicationCluster
-{
-    /// <summary>Output only. Read-only field that indicates whether the replica is a DR replica. This field is not set if the instance is a primary instance.</summary>
-    [JsonPropertyName("drReplica")]
-    public bool? DrReplica { get; set; }
-
-    /// <summary>Output only. If set, it indicates this instance has a private service access (PSA) dns endpoint that is pointing to the primary instance of the cluster. If this instance is the primary, the dns should be pointing to this instance. After Switchover or Replica failover, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance does not yet have a replica, or had a DR replica that was deleted.</summary>
-    [JsonPropertyName("psaWriteEndpoint")]
-    public string? PsaWriteEndpoint { get; set; }
-}
-
-/// <summary>The observed state of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1SQLInstanceStatusObservedState
-{
-    /// <summary>The configuration for the replication cluster.</summary>
-    [JsonPropertyName("replicationCluster")]
-    public V1beta1SQLInstanceStatusObservedStateReplicationCluster? ReplicationCluster { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -865,10 +809,6 @@ public partial class V1beta1SQLInstanceStatus
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
     public long? ObservedGeneration { get; set; }
-
-    /// <summary>The observed state of the resource.</summary>
-    [JsonPropertyName("observedState")]
-    public V1beta1SQLInstanceStatusObservedState? ObservedState { get; set; }
 
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }

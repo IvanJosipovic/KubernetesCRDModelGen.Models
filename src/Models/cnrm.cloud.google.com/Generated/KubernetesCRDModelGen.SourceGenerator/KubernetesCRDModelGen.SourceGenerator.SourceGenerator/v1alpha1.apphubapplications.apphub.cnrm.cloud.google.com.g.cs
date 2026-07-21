@@ -121,7 +121,7 @@ public partial class V1alpha1AppHubApplicationSpecAttributes
     public IList<V1alpha1AppHubApplicationSpecAttributesOperatorOwners>? OperatorOwners { get; set; }
 }
 
-/// <summary>Required. The host project of the resource.</summary>
+/// <summary>Required. The host project of the application.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubApplicationSpecProjectRef
@@ -170,11 +170,11 @@ public partial class V1alpha1AppHubApplicationSpec
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
-    /// <summary>Required. Defines the parent path of the resource.</summary>
+    /// <summary>Required. The location of the application.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Required. The host project of the resource.</summary>
+    /// <summary>Required. The host project of the application.</summary>
     [JsonPropertyName("projectRef")]
     public V1alpha1AppHubApplicationSpecProjectRef? ProjectRef { get; set; }
 
@@ -243,7 +243,7 @@ public partial class V1alpha1AppHubApplicationStatus
     [JsonPropertyName("conditions")]
     public IList<V1alpha1AppHubApplicationStatusConditions>? Conditions { get; set; }
 
-    /// <summary>A unique specifier for the AppHubApplication resource in Google Cloud .</summary>
+    /// <summary>A unique specifier for the AppHubApplication resource in Google Cloud.</summary>
     [JsonPropertyName("externalRef")]
     public string? ExternalRef { get; set; }
 

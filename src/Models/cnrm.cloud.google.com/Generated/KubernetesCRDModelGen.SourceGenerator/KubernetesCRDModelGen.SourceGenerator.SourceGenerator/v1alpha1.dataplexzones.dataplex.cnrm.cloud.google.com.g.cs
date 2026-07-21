@@ -97,18 +97,7 @@ public partial class V1alpha1DataplexZoneSpecDiscoverySpec
     [JsonPropertyName("jsonOptions")]
     public V1alpha1DataplexZoneSpecDiscoverySpecJsonOptions? JsonOptions { get; set; }
 
-    /// <summary>
-    /// Optional. Cron schedule (https://en.wikipedia.org/wiki/Cron) for
-    ///  running discovery periodically. Successive discovery runs must be
-    ///  scheduled at least 60 minutes apart. The default value is to run
-    ///  discovery every 60 minutes.
-    /// 
-    ///  To explicitly set a timezone to the cron tab, apply a prefix in the
-    ///  cron tab: &quot;CRON_TZ=${IANA_TIME_ZONE}&quot; or TZ=${IANA_TIME_ZONE}&quot;.
-    ///  The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone
-    ///  database. For example, `CRON_TZ=America/New_York 1 * * * *`, or
-    ///  `TZ=America/New_York 1 * * * *`.
-    /// </summary>
+    /// <summary>Optional. Cron schedule (https://en.wikipedia.org/wiki/Cron) for running discovery periodically. Successive discovery runs must be scheduled at least 60 minutes apart. The default value is to run discovery every 60 minutes. To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: &quot;CRON_TZ=${IANA_TIME_ZONE}&quot; or TZ=${IANA_TIME_ZONE}&quot;. The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone database. For example, `CRON_TZ=America/New_York 1 * * * *`, or `TZ=America/New_York 1 * * * *`.</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
 }
@@ -157,6 +146,10 @@ public partial class V1alpha1DataplexZoneSpec
     /// <summary>Optional. User friendly display name.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
+
+    /// <summary>Optional. User defined labels for the zone.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>Reference to the parent DataplexLake that owns this Zone.</summary>
     [JsonPropertyName("lakeRef")]

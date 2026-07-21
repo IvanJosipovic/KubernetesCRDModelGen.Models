@@ -286,13 +286,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The value of an externally managed ComputeNetwork resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}" or "projects/{{projectId}}/global/networks/{{networkId}}"
+                    description: A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
                     type: string
                   name:
-                    description: The name of a ComputeNetwork resource.
+                    description: The `name` field of a `ComputeNetwork` resource.
                     type: string
                   namespace:
-                    description: The namespace of a ComputeNetwork resource.
+                    description: The `namespace` field of a `ComputeNetwork` resource.
                     type: string
                 type: object
               networkTier:
@@ -439,42 +439,6 @@ spec:
                 properties:
                   googleAPIsBundle:
                     type: string
-                  memorystoreInstanceServiceAttachment:
-                    description: Target a serviceAttachment for a Memorystore for Valkey instance.
-                    properties:
-                      connectionType:
-                        description: The connection type of the serviceAttachment. A memorystore instance has multiple serviceAttachments, each with a different connection type. Use connectionType to control which serviceAttachment to target. The empty value matches a serviceAttachment with an empty connectionType.
-                        type: string
-                      memorystoreInstanceRef:
-                        description: A reference to a MemorystoreInstance resource.
-                        oneOf:
-                        - not:
-                            required:
-                            - external
-                          required:
-                          - name
-                        - not:
-                            anyOf:
-                            - required:
-                              - name
-                            - required:
-                              - namespace
-                          required:
-                          - external
-                        properties:
-                          external:
-                            description: A reference to an externally managed MemorystoreInstance resource. Should be in the format "projects/{{projectID}}/locations/{{location}}/instances/{{instanceID}}".
-                            type: string
-                          name:
-                            description: The name of a MemorystoreInstance resource.
-                            type: string
-                          namespace:
-                            description: The namespace of a MemorystoreInstance resource.
-                            type: string
-                        type: object
-                    required:
-                    - memorystoreInstanceRef
-                    type: object
                   serviceAttachmentRef:
                     oneOf:
                     - not:
@@ -709,10 +673,10 @@ spec:
               selfLink:
                 type: string
               serviceName:
-                description: The internal fully qualified service name for this Forwarding Rule. This field is only used for INTERNAL load balancing.
-                type: string
-              target:
-                description: The target resource to receive the matched traffic.
+                description: |-
+                  The internal fully qualified service name for this Forwarding Rule.
+
+                  This field is only used for INTERNAL load balancing.
                 type: string
             type: object
         type: object
