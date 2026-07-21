@@ -1,10 +1,10 @@
 {
-  "src/Models/k8s.aws": "1.37.0",
+  "src/Models/k8s.aws": "1.38.0",
   "src/Models/aquasecurity.github.io": "1.8.0",
   "src/Models/akuity.io": "1.2.0",
   "src/Models/argoproj.io": "1.14.0",
   "src/Models/azure.com": "1.17.0",
-  "src/Models/cnrm.cloud.google.com": "1.286.1",
+  "src/Models/cnrm.cloud.google.com": "1.287.0",
   "src/Models/aws.upbound.io": "1.43.0",
   "src/Models/azapi.upbound.io": "1.12.0",
   "src/Models/azure.upbound.io": "1.53.1",
