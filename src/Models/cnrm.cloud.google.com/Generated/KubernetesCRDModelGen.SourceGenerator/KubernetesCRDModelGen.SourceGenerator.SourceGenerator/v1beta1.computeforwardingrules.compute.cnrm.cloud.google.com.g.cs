@@ -147,15 +147,15 @@ public partial class V1beta1ComputeForwardingRuleSpecMetadataFilters
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeForwardingRuleSpecNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -197,38 +197,6 @@ public partial class V1beta1ComputeForwardingRuleSpecSubnetworkRef
     /// <summary>The `namespace` field of a `ComputeSubnetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
-}
-
-/// <summary>A reference to a MemorystoreInstance resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1ComputeForwardingRuleSpecTargetMemorystoreInstanceServiceAttachmentMemorystoreInstanceRef
-{
-    /// <summary>A reference to an externally managed MemorystoreInstance resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/instances/{{instanceID}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a MemorystoreInstance resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a MemorystoreInstance resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
-/// <summary>Target a serviceAttachment for a Memorystore for Valkey instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1ComputeForwardingRuleSpecTargetMemorystoreInstanceServiceAttachment
-{
-    /// <summary>The connection type of the serviceAttachment. A memorystore instance has multiple serviceAttachments, each with a different connection type. Use connectionType to control which serviceAttachment to target. The empty value matches a serviceAttachment with an empty connectionType.</summary>
-    [JsonPropertyName("connectionType")]
-    public string? ConnectionType { get; set; }
-
-    /// <summary>A reference to a MemorystoreInstance resource.</summary>
-    [JsonPropertyName("memorystoreInstanceRef")]
-    public required V1beta1ComputeForwardingRuleSpecTargetMemorystoreInstanceServiceAttachmentMemorystoreInstanceRef MemorystoreInstanceRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -357,10 +325,6 @@ public partial class V1beta1ComputeForwardingRuleSpecTarget
 {
     [JsonPropertyName("googleAPIsBundle")]
     public string? GoogleAPIsBundle { get; set; }
-
-    /// <summary>Target a serviceAttachment for a Memorystore for Valkey instance.</summary>
-    [JsonPropertyName("memorystoreInstanceServiceAttachment")]
-    public V1beta1ComputeForwardingRuleSpecTargetMemorystoreInstanceServiceAttachment? MemorystoreInstanceServiceAttachment { get; set; }
 
     [JsonPropertyName("serviceAttachmentRef")]
     public V1beta1ComputeForwardingRuleSpecTargetServiceAttachmentRef? ServiceAttachmentRef { get; set; }
@@ -723,13 +687,13 @@ public partial class V1beta1ComputeForwardingRuleStatus
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
 
-    /// <summary>The internal fully qualified service name for this Forwarding Rule. This field is only used for INTERNAL load balancing.</summary>
+    /// <summary>
+    /// The internal fully qualified service name for this Forwarding Rule.
+    /// 
+    /// This field is only used for INTERNAL load balancing.
+    /// </summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
-
-    /// <summary>The target resource to receive the matched traffic.</summary>
-    [JsonPropertyName("target")]
-    public string? Target { get; set; }
 }
 
 /// <summary>ComputeForwardingRule is the Schema for the compute API</summary>

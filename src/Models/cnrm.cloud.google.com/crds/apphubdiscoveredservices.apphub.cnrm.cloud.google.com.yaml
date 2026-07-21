@@ -55,10 +55,10 @@ spec:
             description: AppHubDiscoveredServiceSpec defines the desired state of AppHubDiscoveredService
             properties:
               location:
-                description: Required. The location of the resource.
+                description: Required. The location of the application.
                 type: string
               projectRef:
-                description: Required. The host project of the resource.
+                description: Required. The host project of the application.
                 oneOf:
                 - not:
                     required:

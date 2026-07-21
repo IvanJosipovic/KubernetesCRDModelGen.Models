@@ -15,7 +15,6 @@ spec:
     kind: ComputeNodeTemplate
     categories:
     - gcp
-    listKind: ComputeNodeTemplateList
     plural: computenodetemplates
     shortNames:
     - gcpcomputenodetemplate
@@ -43,18 +42,16 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: ComputeNodeTemplate is the Schema for the ComputeNodeTemplate API
         properties:
           apiVersion:
-            description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            description: 'apiVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
             type: string
           kind:
-            description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            description: 'kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
             type: string
           metadata:
             type: object
           spec:
-            description: ComputeNodeTemplateSpec defines the desired state of ComputeNodeTemplate
             properties:
               cpuOvercommitType:
                 description: 'Immutable. CPU overcommit. Default value: "NONE" Possible values: ["ENABLED", "NONE"].'
@@ -63,10 +60,16 @@ spec:
                 description: Immutable. An optional textual description of the resource.
                 type: string
               nodeType:
-                description: Immutable. Node type to use for nodes group that are created from this template. Only one of nodeTypeFlexibility and nodeType can be specified.
+                description: |-
+                  Immutable. Node type to use for nodes group that are created from this template.
+                  Only one of nodeTypeFlexibility and nodeType can be specified.
                 type: string
               nodeTypeFlexibility:
-                description: Immutable. Flexible properties for the desired node type. Node groups that use this node template will create nodes of a type that matches these properties. Only one of nodeTypeFlexibility and nodeType can be specified.
+                description: |-
+                  Immutable. Flexible properties for the desired node type. Node groups that
+                  use this node template will create nodes of a type that matches
+                  these properties. Only one of nodeTypeFlexibility and nodeType can
+                  be specified.
                 properties:
                   cpus:
                     description: Immutable. Number of virtual CPUs to use.
@@ -79,13 +82,17 @@ spec:
                     type: string
                 type: object
               region:
-                description: Immutable. Region where nodes using the node template will be created.
+                description: |-
+                  Immutable. Region where nodes using the node template will be created.
+                  If it is not provided, the provider region is used.
                 type: string
               resourceID:
                 description: Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.
                 type: string
               serverBinding:
-                description: Immutable. The server binding policy for nodes using this template. Determines where the nodes should restart following a maintenance event.
+                description: |-
+                  Immutable. The server binding policy for nodes using this template. Determines
+                  where the nodes should restart following a maintenance event.
                 properties:
                   type:
                     description: |-
@@ -109,10 +116,9 @@ spec:
             - region
             type: object
           status:
-            description: ComputeNodeTemplateStatus defines the config connector machine state of ComputeNodeTemplate
             properties:
               conditions:
-                description: Conditions represent the latest available observations of the object's current state.
+                description: Conditions represent the latest available observation of the resource's current state.
                 items:
                   properties:
                     lastTransitionTime:
@@ -135,14 +141,10 @@ spec:
               creationTimestamp:
                 description: Creation timestamp in RFC3339 text format.
                 type: string
-              externalRef:
-                description: A unique specifier for the ComputeNodeTemplate resource in GCP.
-                type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
                 type: integer
               selfLink:
-                description: Server-defined URL for the resource.
                 type: string
             type: object
         required:
@@ -152,3 +154,9 @@ spec:
     storage: true
     subresources:
       status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

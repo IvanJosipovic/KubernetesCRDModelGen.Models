@@ -36,122 +36,20 @@ public partial class V1alpha1MemorystoreInstanceList : IKubernetesObject<V1ListM
     public required IList<V1alpha1MemorystoreInstance> Items { get; set; }
 }
 
-/// <summary>Required. The start time of every automated backup in UTC. It must be set to the start of an hour. This field is required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecAutomatedBackupConfigFixedFrequencyScheduleStartTime
-{
-    /// <summary>Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value &quot;24:00:00&quot; for scenarios like business closing time.</summary>
-    [JsonPropertyName("hours")]
-    public int? Hours { get; set; }
-
-    /// <summary>Minutes of hour of day. Must be from 0 to 59.</summary>
-    [JsonPropertyName("minutes")]
-    public int? Minutes { get; set; }
-
-    /// <summary>Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.</summary>
-    [JsonPropertyName("nanos")]
-    public int? Nanos { get; set; }
-
-    /// <summary>Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.</summary>
-    [JsonPropertyName("seconds")]
-    public int? Seconds { get; set; }
-}
-
-/// <summary>Optional. Trigger automated backups at a fixed frequency.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecAutomatedBackupConfigFixedFrequencySchedule
-{
-    /// <summary>Required. The start time of every automated backup in UTC. It must be set to the start of an hour. This field is required.</summary>
-    [JsonPropertyName("startTime")]
-    public V1alpha1MemorystoreInstanceSpecAutomatedBackupConfigFixedFrequencyScheduleStartTime? StartTime { get; set; }
-}
-
-/// <summary>Optional. The automated backup config for the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecAutomatedBackupConfig
-{
-    /// <summary>Optional. The automated backup mode. If the mode is disabled, the other fields will be ignored.</summary>
-    [JsonPropertyName("automatedBackupMode")]
-    public string? AutomatedBackupMode { get; set; }
-
-    /// <summary>Optional. Trigger automated backups at a fixed frequency.</summary>
-    [JsonPropertyName("fixedFrequencySchedule")]
-    public V1alpha1MemorystoreInstanceSpecAutomatedBackupConfigFixedFrequencySchedule? FixedFrequencySchedule { get; set; }
-
-    /// <summary>Optional. How long to keep automated backups before the backups are deleted. The value should be between 1 day and 365 days. If not specified, the default value is 35 days.</summary>
-    [JsonPropertyName("retention")]
-    public string? Retention { get; set; }
-}
-
-/// <summary>Optional. The full resource path of the remote instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfigPrimaryInstanceInstanceRef
-{
-    /// <summary>A reference to an externally managed MemorystoreInstance resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/instances/{{instanceID}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a MemorystoreInstance resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a MemorystoreInstance resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
-/// <summary>
-/// Optional. Details of the primary instance that is used as the replication
-///  source for this secondary instance.
-/// 
-///  This field is only set for a secondary instance.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfigPrimaryInstance
-{
-    /// <summary>Optional. The full resource path of the remote instance.</summary>
-    [JsonPropertyName("instanceRef")]
-    public V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfigPrimaryInstanceInstanceRef? InstanceRef { get; set; }
-}
-
-/// <summary>Optional. The cross instance replication config for the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfig
-{
-    /// <summary>Required. The role of the instance in cross instance replication.</summary>
-    [JsonPropertyName("instanceRole")]
-    public string? InstanceRole { get; set; }
-
-    /// <summary>
-    /// Optional. Details of the primary instance that is used as the replication
-    ///  source for this secondary instance.
-    /// 
-    ///  This field is only set for a secondary instance.
-    /// </summary>
-    [JsonPropertyName("primaryInstance")]
-    public V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfigPrimaryInstance? PrimaryInstance { get; set; }
-}
-
 /// <summary>Required. The network where the PSC endpoints are created, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnectionNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -192,6 +90,64 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoC
     public required V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnectionProjectRef ProjectRef { get; set; }
 }
 
+/// <summary>Required. The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionNetworkRef
+{
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
+    [JsonPropertyName("external")]
+    public string? External { get; set; }
+
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Required. The service attachment which is the target of the PSC connection, in the form of projects/{project-id}/regions/{region}/serviceAttachments/{service-attachment-id}.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionServiceAttachmentRef
+{
+    /// <summary>The ComputeServiceAttachment selflink in the form &quot;projects/{{project}}/regions/{{region}}/serviceAttachments/{{name}}&quot; when not managed by Config Connector.</summary>
+    [JsonPropertyName("external")]
+    public string? External { get; set; }
+
+    /// <summary>The `name` field of a `ComputeServiceAttachment` resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The `namespace` field of a `ComputeServiceAttachment` resource.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Detailed information of a PSC connection that is created by the user.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnection
+{
+    /// <summary>Required. The IP allocated on the consumer network for the PSC forwarding rule.</summary>
+    [JsonPropertyName("ipAddress")]
+    public required string IpAddress { get; set; }
+
+    /// <summary>Required. The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
+    [JsonPropertyName("networkRef")]
+    public required V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionNetworkRef NetworkRef { get; set; }
+
+    /// <summary>Required. The PSC connection id of the forwarding rule connected to the service attachment.</summary>
+    [JsonPropertyName("pscConnectionID")]
+    public string? PscConnectionID { get; set; }
+
+    /// <summary>Required. The service attachment which is the target of the PSC connection, in the form of projects/{project-id}/regions/{region}/serviceAttachments/{service-attachment-id}.</summary>
+    [JsonPropertyName("serviceAttachmentRef")]
+    public required V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionServiceAttachmentRef ServiceAttachmentRef { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnections
@@ -199,6 +155,10 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnections
     /// <summary>Detailed information of a PSC connection that is created through service connectivity automation.</summary>
     [JsonPropertyName("pscAutoConnection")]
     public V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnection? PscAutoConnection { get; set; }
+
+    /// <summary>Detailed information of a PSC connection that is created by the user.</summary>
+    [JsonPropertyName("pscConnection")]
+    public V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -297,14 +257,6 @@ public partial class V1alpha1MemorystoreInstanceSpec
     [JsonPropertyName("authorizationMode")]
     public string? AuthorizationMode { get; set; }
 
-    /// <summary>Optional. The automated backup config for the instance.</summary>
-    [JsonPropertyName("automatedBackupConfig")]
-    public V1alpha1MemorystoreInstanceSpecAutomatedBackupConfig? AutomatedBackupConfig { get; set; }
-
-    /// <summary>Optional. The cross instance replication config for the instance.</summary>
-    [JsonPropertyName("crossInstanceReplicationConfig")]
-    public V1alpha1MemorystoreInstanceSpecCrossInstanceReplicationConfig? CrossInstanceReplicationConfig { get; set; }
-
     /// <summary>Optional. If set to true deletion of the instance will fail.</summary>
     [JsonPropertyName("deletionProtectionEnabled")]
     public bool? DeletionProtectionEnabled { get; set; }
@@ -328,10 +280,6 @@ public partial class V1alpha1MemorystoreInstanceSpec
     /// <summary>Immutable.</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
-
-    /// <summary>Optional. The maintenance version of the instance.</summary>
-    [JsonPropertyName("maintenanceVersion")]
-    public string? MaintenanceVersion { get; set; }
 
     /// <summary>Optional. The mode config for the instance.</summary>
     [JsonPropertyName("mode")]
@@ -395,107 +343,6 @@ public partial class V1alpha1MemorystoreInstanceStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>Output only. The primary instance that acts as the source of replication for the secondary instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembershipPrimaryInstance
-{
-    /// <summary>Optional. The full resource path of the remote instance.</summary>
-    [JsonPropertyName("instance")]
-    public string? Instance { get; set; }
-
-    /// <summary>Output only. The unique identifier of the remote instance.</summary>
-    [JsonPropertyName("uid")]
-    public string? Uid { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembershipSecondaryInstances
-{
-    /// <summary>Optional. The full resource path of the remote instance.</summary>
-    [JsonPropertyName("instance")]
-    public string? Instance { get; set; }
-
-    /// <summary>Output only. The unique identifier of the remote instance.</summary>
-    [JsonPropertyName("uid")]
-    public string? Uid { get; set; }
-}
-
-/// <summary>Output only. An output only view of all the member instances participating in the cross instance replication. This view will be provided by every member instance irrespective of its instance role(primary or secondary).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembership
-{
-    /// <summary>Output only. The primary instance that acts as the source of replication for the secondary instances.</summary>
-    [JsonPropertyName("primaryInstance")]
-    public V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembershipPrimaryInstance? PrimaryInstance { get; set; }
-
-    /// <summary>Output only. The list of secondary instances replicating from the primary instance.</summary>
-    [JsonPropertyName("secondaryInstances")]
-    public IList<V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembershipSecondaryInstances>? SecondaryInstances { get; set; }
-}
-
-/// <summary>
-/// Optional. Details of the primary instance that is used as the replication
-///  source for this secondary instance.
-/// 
-///  This field is only set for a secondary instance.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigPrimaryInstance
-{
-    /// <summary>Optional. The full resource path of the remote instance.</summary>
-    [JsonPropertyName("instance")]
-    public string? Instance { get; set; }
-
-    /// <summary>Output only. The unique identifier of the remote instance.</summary>
-    [JsonPropertyName("uid")]
-    public string? Uid { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigSecondaryInstances
-{
-    /// <summary>Optional. The full resource path of the remote instance.</summary>
-    [JsonPropertyName("instance")]
-    public string? Instance { get; set; }
-
-    /// <summary>Output only. The unique identifier of the remote instance.</summary>
-    [JsonPropertyName("uid")]
-    public string? Uid { get; set; }
-}
-
-/// <summary>Optional. The cross instance replication config for the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfig
-{
-    /// <summary>Output only. An output only view of all the member instances participating in the cross instance replication. This view will be provided by every member instance irrespective of its instance role(primary or secondary).</summary>
-    [JsonPropertyName("membership")]
-    public V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigMembership? Membership { get; set; }
-
-    /// <summary>
-    /// Optional. Details of the primary instance that is used as the replication
-    ///  source for this secondary instance.
-    /// 
-    ///  This field is only set for a secondary instance.
-    /// </summary>
-    [JsonPropertyName("primaryInstance")]
-    public V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigPrimaryInstance? PrimaryInstance { get; set; }
-
-    /// <summary>
-    /// Optional. List of secondary instances that are replicating from this
-    ///  primary instance.
-    /// 
-    ///  This field is only set for a primary instance.
-    /// </summary>
-    [JsonPropertyName("secondaryInstances")]
-    public IList<V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfigSecondaryInstances>? SecondaryInstances { get; set; }
-}
-
 /// <summary>Detailed information of a PSC connection that is created through service connectivity automation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -530,6 +377,24 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConn
     public string? ServiceAttachment { get; set; }
 }
 
+/// <summary>Detailed information of a PSC connection that is created by the user.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscConnection
+{
+    /// <summary>Output only. Type of the PSC connection.</summary>
+    [JsonPropertyName("connectionType")]
+    public string? ConnectionType { get; set; }
+
+    /// <summary>Output only. The consumer project_id where the forwarding rule is created from.</summary>
+    [JsonPropertyName("projectID")]
+    public string? ProjectID { get; set; }
+
+    /// <summary>Output only. The status of the PSC connection: whether a connection exists and ACTIVE or it no longer exists. Please note that this value is updated periodically. Please use Private Service Connect APIs for the latest status.</summary>
+    [JsonPropertyName("pscConnectionStatus")]
+    public string? PscConnectionStatus { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnections
@@ -537,6 +402,10 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConn
     /// <summary>Detailed information of a PSC connection that is created through service connectivity automation.</summary>
     [JsonPropertyName("pscAutoConnection")]
     public V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscAutoConnection? PscAutoConnection { get; set; }
+
+    /// <summary>Detailed information of a PSC connection that is created by the user.</summary>
+    [JsonPropertyName("pscConnection")]
+    public V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -558,31 +427,11 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateNodeConfig
     public double? SizeGB { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1MemorystoreInstanceStatusObservedStatePscAttachmentDetails
-{
-    /// <summary>Output only. Type of Psc endpoint.</summary>
-    [JsonPropertyName("connectionType")]
-    public string? ConnectionType { get; set; }
-
-    /// <summary>Output only. Service attachment URI which your self-created PscConnection should use as target.</summary>
-    [JsonPropertyName("serviceAttachment")]
-    public string? ServiceAttachment { get; set; }
-}
-
 /// <summary>Output only. Describes ongoing update when instance state is UPDATING.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateStateInfoUpdateInfo
 {
-    /// <summary>Output only. Target number of replica nodes per shard for the instance.</summary>
-    [JsonPropertyName("targetReplicaCount")]
-    public int? TargetReplicaCount { get; set; }
-
-    /// <summary>Output only. Target number of shards for the instance.</summary>
-    [JsonPropertyName("targetShardCount")]
-    public int? TargetShardCount { get; set; }
 }
 
 /// <summary>Output only. Additional information about the state of the instance.</summary>
@@ -600,21 +449,9 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateStateInfo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedState
 {
-    /// <summary>Output only. The list of available maintenance versions for the instance.</summary>
-    [JsonPropertyName("availableMaintenanceVersions")]
-    public IList<string>? AvailableMaintenanceVersions { get; set; }
-
     /// <summary>Output only. Creation timestamp of the instance.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
-
-    /// <summary>Optional. The cross instance replication config for the instance.</summary>
-    [JsonPropertyName("crossInstanceReplicationConfig")]
-    public V1alpha1MemorystoreInstanceStatusObservedStateCrossInstanceReplicationConfig? CrossInstanceReplicationConfig { get; set; }
-
-    /// <summary>Output only. The current version of the maintenance schedule.</summary>
-    [JsonPropertyName("effectiveMaintenanceVersion")]
-    public string? EffectiveMaintenanceVersion { get; set; }
 
     /// <summary>Optional. Endpoints for the instance.</summary>
     [JsonPropertyName("endpoints")]
@@ -623,10 +460,6 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedState
     /// <summary>Output only. Configuration of individual nodes of the instance.</summary>
     [JsonPropertyName("nodeConfig")]
     public V1alpha1MemorystoreInstanceStatusObservedStateNodeConfig? NodeConfig { get; set; }
-
-    /// <summary>Output only. List of PSC connections for the instance.</summary>
-    [JsonPropertyName("pscAttachmentDetails")]
-    public IList<V1alpha1MemorystoreInstanceStatusObservedStatePscAttachmentDetails>? PscAttachmentDetails { get; set; }
 
     /// <summary>Output only. Current state of the instance.</summary>
     [JsonPropertyName("state")]

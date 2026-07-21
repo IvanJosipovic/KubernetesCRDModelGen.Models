@@ -65,32 +65,6 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyAccelera
     public string? Type { get; set; }
 }
 
-/// <summary>
-/// URL for a VM image to use as the data source for this disk.
-///  For example, the following are all valid URLs:
-/// 
-///  * Specify the image by its family name:
-///  projects/{project}/global/images/family/{image_family}
-///  * Specify the image version:
-///  projects/{project}/global/images/{image_version}
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDiskImageRef
-{
-    /// <summary>A reference to an externally managed ComputeImage resource. Should be in the format &quot;projects/{{project}}/global/images/{{name}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a ComputeImage resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a ComputeImage resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>Boot disk to be created and attached to each VM by this InstancePolicy. Boot disk will be deleted when the VM is deleted. Batch API now only supports booting from image.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -108,9 +82,16 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDisk
     ///  projects/{project}/global/images/family/{image_family}
     ///  * Specify the image version:
     ///  projects/{project}/global/images/{image_version}
+    /// 
+    ///  You can also use Batch customized image in short names.
+    ///  The following image values are supported for a boot disk:
+    /// 
+    ///  * `batch-debian`: use Batch Debian images.
+    ///  * `batch-cos`: use Batch Container-Optimized images.
+    ///  * `batch-hpc-rocky`: use Batch HPC Rocky Linux images.
     /// </summary>
-    [JsonPropertyName("imageRef")]
-    public V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDiskImageRef? ImageRef { get; set; }
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
 
     /// <summary>
     /// Disk size in GB.
@@ -145,32 +126,6 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDisk
     public string? Type { get; set; }
 }
 
-/// <summary>
-/// URL for a VM image to use as the data source for this disk.
-///  For example, the following are all valid URLs:
-/// 
-///  * Specify the image by its family name:
-///  projects/{project}/global/images/family/{image_family}
-///  * Specify the image version:
-///  projects/{project}/global/images/{image_version}
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNewDiskImageRef
-{
-    /// <summary>A reference to an externally managed ComputeImage resource. Should be in the format &quot;projects/{{project}}/global/images/{{name}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a ComputeImage resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a ComputeImage resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNewDisk
@@ -187,9 +142,16 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNew
     ///  projects/{project}/global/images/family/{image_family}
     ///  * Specify the image version:
     ///  projects/{project}/global/images/{image_version}
+    /// 
+    ///  You can also use Batch customized image in short names.
+    ///  The following image values are supported for a boot disk:
+    /// 
+    ///  * `batch-debian`: use Batch Debian images.
+    ///  * `batch-cos`: use Batch Container-Optimized images.
+    ///  * `batch-hpc-rocky`: use Batch HPC Rocky Linux images.
     /// </summary>
-    [JsonPropertyName("imageRef")]
-    public V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNewDiskImageRef? ImageRef { get; set; }
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
 
     /// <summary>
     /// Disk size in GB.
@@ -373,15 +335,15 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterfacesNetworkRef
 {
-    /// <summary>The value of an externally managed ComputeNetwork resource. Should be in the format &quot;https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}&quot; or &quot;projects/{{projectId}}/global/networks/{{networkId}}&quot;</summary>
+    /// <summary>A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a ComputeNetwork resource.</summary>
+    /// <summary>The `name` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a ComputeNetwork resource.</summary>
+    /// <summary>The `namespace` field of a `ComputeNetwork` resource.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -493,7 +455,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyPlacement
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1BatchJobSpecAllocationPolicyServiceAccountRef
+public partial class V1alpha1BatchJobSpecAllocationPolicyServiceAccount
 {
     /// <summary>The `email` field of an `IAMServiceAccount` resource.</summary>
     [JsonPropertyName("external")]
@@ -564,8 +526,8 @@ public partial class V1alpha1BatchJobSpecAllocationPolicy
     ///   * scopes: Additional OAuth scopes to grant the service account, beyond the
     ///   default cloud-platform scope. (list of strings)
     /// </summary>
-    [JsonPropertyName("serviceAccountRef")]
-    public V1alpha1BatchJobSpecAllocationPolicyServiceAccountRef? ServiceAccountRef { get; set; }
+    [JsonPropertyName("serviceAccount")]
+    public V1alpha1BatchJobSpecAllocationPolicyServiceAccount? ServiceAccount { get; set; }
 
     /// <summary>
     /// Optional. Tags applied to the VM instances.
@@ -1296,7 +1258,6 @@ public partial class V1alpha1BatchJobSpec
     [JsonPropertyName("allocationPolicy")]
     public V1alpha1BatchJobSpecAllocationPolicy? AllocationPolicy { get; set; }
 
-    /// <summary>The location that this resource belongs to.</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 

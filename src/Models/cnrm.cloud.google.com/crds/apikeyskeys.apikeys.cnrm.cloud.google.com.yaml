@@ -43,7 +43,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: APIKeysKey is the Schema for the APIKeysKey API
+        description: APIKeysKey is the Schema for the APIKeys Key resource.
         properties:
           apiVersion:
             description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
@@ -54,7 +54,6 @@ spec:
           metadata:
             type: object
           spec:
-            description: APIKeysKeySpec defines the desired state of APIKeysKey
             properties:
               displayName:
                 description: Human-readable display name of this key that you can modify. The maximum length is 63 characters.
@@ -108,8 +107,13 @@ spec:
                             sha1Fingerprint:
                               description: 'The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.'
                               type: string
+                          required:
+                          - packageName
+                          - sha1Fingerprint
                           type: object
                         type: array
+                    required:
+                    - allowedApplications
                     type: object
                   apiTargets:
                     description: A restriction for a specific service and optionally one or more specific methods. Requests are allowed if they match any of these restrictions. If no restrictions are specified, all targets are allowed.
@@ -123,6 +127,8 @@ spec:
                         service:
                           description: 'The service for this restriction. It should be the canonical service name, for example: `translate.googleapis.com`. You can use [`gcloud services list`](/sdk/gcloud/reference/services/list) to get a list of services that are enabled in the project.'
                           type: string
+                      required:
+                      - service
                       type: object
                     type: array
                   browserKeyRestrictions:
@@ -133,6 +139,8 @@ spec:
                         items:
                           type: string
                         type: array
+                    required:
+                    - allowedReferrers
                     type: object
                   iosKeyRestrictions:
                     description: The iOS apps that are allowed to use the key.
@@ -142,6 +150,8 @@ spec:
                         items:
                           type: string
                         type: array
+                    required:
+                    - allowedBundleIds
                     type: object
                   serverKeyRestrictions:
                     description: The IP addresses of callers that are allowed to use the key.
@@ -151,13 +161,14 @@ spec:
                         items:
                           type: string
                         type: array
+                    required:
+                    - allowedIps
                     type: object
                 type: object
             required:
             - projectRef
             type: object
           status:
-            description: APIKeysKeyStatus defines the config connector machine state of APIKeysKey
             properties:
               conditions:
                 description: Conditions represent the latest available observations of the object's current state.
@@ -180,9 +191,6 @@ spec:
                       type: string
                   type: object
                 type: array
-              externalRef:
-                description: A unique specifier for the APIKeysKey resource in GCP.
-                type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
                 format: int64

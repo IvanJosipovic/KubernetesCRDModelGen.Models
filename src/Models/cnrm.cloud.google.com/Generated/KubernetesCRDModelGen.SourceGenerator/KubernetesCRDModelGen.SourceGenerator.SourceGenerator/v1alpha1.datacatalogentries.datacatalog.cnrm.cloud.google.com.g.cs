@@ -147,7 +147,7 @@ public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpec
     public V1alpha1DataCatalogEntrySpecDataSourceConnectionSpecBigqueryConnectionSpec? BigqueryConnectionSpec { get; set; }
 }
 
-/// <summary>Spec what applies to tables that are actually views. Not set for &quot;real&quot; tables.</summary>
+/// <summary>Spec what aplies to tables that are actually views. Not set for &quot;real&quot; tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpecDatabaseViewSpec
@@ -170,7 +170,7 @@ public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpecDatabaseViewSp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpec
 {
-    /// <summary>Spec what applies to tables that are actually views. Not set for &quot;real&quot; tables.</summary>
+    /// <summary>Spec what aplies to tables that are actually views. Not set for &quot;real&quot; tables.</summary>
     [JsonPropertyName("databaseViewSpec")]
     public V1alpha1DataCatalogEntrySpecDatabaseTableSpecDatabaseViewSpec? DatabaseViewSpec { get; set; }
 
@@ -360,7 +360,7 @@ public partial class V1alpha1DataCatalogEntrySpecGcsFilesetSpec
     /// Required. Patterns to identify a set of files in Google Cloud Storage.
     /// 
     ///  For more information, see [Wildcard Names]
-    ///  (https://cloud.google.com/storage/docs/wildcards).
+    ///  (https://cloud.google.com/storage/docs/gsutil/addlhelp/WildcardNames).
     /// 
     ///  Note: Currently, bucket wildcards are not supported.
     /// 
@@ -388,7 +388,7 @@ public partial class V1alpha1DataCatalogEntrySpecGcsFilesetSpec
     ///  `gs://bucket_name/[a-m]??.j*g`
     /// </summary>
     [JsonPropertyName("filePatterns")]
-    public IList<string>? FilePatterns { get; set; }
+    public required IList<string> FilePatterns { get; set; }
 }
 
 /// <summary>Specification that applies to Looker sysstem. Only settable when `user_specified_system` is equal to `LOOKER`</summary>
@@ -551,7 +551,7 @@ public partial class V1alpha1DataCatalogEntrySpecSchemaColumnsRangeElementType
 {
     /// <summary>Required. The type of a field element. See [ColumnSchema.type][google.cloud.datacatalog.v1.ColumnSchema.type].</summary>
     [JsonPropertyName("type")]
-    public string? Type { get; set; }
+    public required string Type { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1230,7 +1230,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateFeatureOnlineStoreSpec
 {
-    /// <summary>Output only. Type of underlying storage for the FeatureOnlineStore.</summary>
+    /// <summary>Output only. Type of underelaying storage for the FeatureOnlineStore.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 }
@@ -1241,7 +1241,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateGcsFilesetSpecSa
 {
     /// <summary>Required. Full file path. Example: `gs://bucket_name/a/b.txt`.</summary>
     [JsonPropertyName("filePath")]
-    public string? FilePath { get; set; }
+    public required string FilePath { get; set; }
 }
 
 /// <summary>Specification that applies to a Cloud Storage fileset. Valid only for entries with the `FILESET` type.</summary>

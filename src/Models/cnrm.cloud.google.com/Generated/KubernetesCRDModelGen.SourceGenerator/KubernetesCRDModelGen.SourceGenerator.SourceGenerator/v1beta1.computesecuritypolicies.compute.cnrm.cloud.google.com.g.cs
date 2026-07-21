@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-/// <summary>ComputeSecurityPolicy is the Schema for the ComputeSecurityPolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,7 +35,7 @@ public partial class V1beta1ComputeSecurityPolicyList : IKubernetesObject<V1List
     public required IList<V1beta1ComputeSecurityPolicy> Items { get; set; }
 }
 
-/// <summary>Auto Deploy Config of this security policy</summary>
+/// <summary>Auto Deploy Config of this security policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigAutoDeployConfig
@@ -58,7 +57,7 @@ public partial class V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigAut
     public double? LoadThreshold { get; set; }
 }
 
-/// <summary>Layer 7 DDoS Defense Config of this security policy</summary>
+/// <summary>Layer 7 DDoS Defense Config of this security policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigLayer7DdosDefenseConfig
@@ -72,42 +71,44 @@ public partial class V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigLay
     public string? RuleVisibility { get; set; }
 }
 
+/// <summary>Adaptive Protection Config of this security policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfig
 {
-    /// <summary>Auto Deploy Config of this security policy</summary>
+    /// <summary>Auto Deploy Config of this security policy.</summary>
     [JsonPropertyName("autoDeployConfig")]
     public V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigAutoDeployConfig? AutoDeployConfig { get; set; }
 
-    /// <summary>Layer 7 DDoS Defense Config of this security policy</summary>
+    /// <summary>Layer 7 DDoS Defense Config of this security policy.</summary>
     [JsonPropertyName("layer7DdosDefenseConfig")]
     public V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfigLayer7DdosDefenseConfig? Layer7DdosDefenseConfig { get; set; }
 }
 
-/// <summary>Custom configuration to apply the JSON parsing. Only applicable when json_parsing is set to STANDARD.</summary>
+/// <summary>Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecAdvancedOptionsConfigJsonCustomConfig
 {
-    /// <summary>A list of custom Content-Type header values to apply the JSON parsing. As per RFC 1341, a Content-Type header value has the following format: Content-Type := type &quot;/&quot; subtype *[&quot;;&quot; parameter] When configuring a custom Content-Type header value, only the type/subtype needs to be specified, and the parameters should be excluded.</summary>
+    /// <summary>A list of custom Content-Type header values to apply the JSON parsing.</summary>
     [JsonPropertyName("contentTypes")]
     public required IList<string> ContentTypes { get; set; }
 }
 
+/// <summary>Advanced Options Config of this security policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecAdvancedOptionsConfig
 {
-    /// <summary>Custom configuration to apply the JSON parsing. Only applicable when json_parsing is set to STANDARD.</summary>
+    /// <summary>Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.</summary>
     [JsonPropertyName("jsonCustomConfig")]
     public V1beta1ComputeSecurityPolicySpecAdvancedOptionsConfigJsonCustomConfig? JsonCustomConfig { get; set; }
 
-    /// <summary>Check the JsonParsing enum for the list of possible values.</summary>
+    /// <summary>JSON body parsing. Supported values include: &quot;DISABLED&quot;, &quot;STANDARD&quot;.</summary>
     [JsonPropertyName("jsonParsing")]
     public string? JsonParsing { get; set; }
 
-    /// <summary>Check the LogLevel enum for the list of possible values.</summary>
+    /// <summary>Logging level. Supported values include: &quot;NORMAL&quot;, &quot;VERBOSE&quot;.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
@@ -116,27 +117,44 @@ public partial class V1beta1ComputeSecurityPolicySpecAdvancedOptionsConfig
     public IList<string>? UserIpRequestHeaders { get; set; }
 }
 
+/// <summary>
+/// A field to supply a reCAPTCHA site key to be used for all the rules
+/// using the redirect action with the type of GOOGLE_RECAPTCHA under
+/// the security policy. The specified site key needs to be created from
+/// the reCAPTCHA API. The user is responsible for the validity of the
+/// specified site key. If not specified, a Google-managed site key is
+/// used.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRecaptchaOptionsConfigRedirectSiteKeyRef
 {
-    /// <summary>The value of an externally managed RecaptchaEnterpriseKey resource.</summary>
+    /// <summary>Allowed value: The `name` field of a `RecaptchaEnterpriseKey` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a RecaptchaEnterpriseKey resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a RecaptchaEnterpriseKey resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
+/// <summary>reCAPTCHA configuration options to be applied for the security policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRecaptchaOptionsConfig
 {
+    /// <summary>
+    /// A field to supply a reCAPTCHA site key to be used for all the rules
+    /// using the redirect action with the type of GOOGLE_RECAPTCHA under
+    /// the security policy. The specified site key needs to be created from
+    /// the reCAPTCHA API. The user is responsible for the validity of the
+    /// specified site key. If not specified, a Google-managed site key is
+    /// used.
+    /// </summary>
     [JsonPropertyName("redirectSiteKeyRef")]
     public required V1beta1ComputeSecurityPolicySpecRecaptchaOptionsConfigRedirectSiteKeyRef RedirectSiteKeyRef { get; set; }
 }
@@ -147,21 +165,21 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleHeaderActionRequestHead
 {
     /// <summary>The name of the header to set.</summary>
     [JsonPropertyName("headerName")]
-    public string? HeaderName { get; set; }
+    public required string HeaderName { get; set; }
 
     /// <summary>The value to set the named header to.</summary>
     [JsonPropertyName("headerValue")]
     public string? HeaderValue { get; set; }
 }
 
-/// <summary>Optional, additional actions that are performed on headers. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+/// <summary>Additional actions that are performed on headers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleHeaderAction
 {
     /// <summary>The list of request headers to add or overwrite if they&apos;re already present.</summary>
     [JsonPropertyName("requestHeadersToAdds")]
-    public IList<V1beta1ComputeSecurityPolicySpecRuleHeaderActionRequestHeadersToAdds>? RequestHeadersToAdds { get; set; }
+    public required IList<V1beta1ComputeSecurityPolicySpecRuleHeaderActionRequestHeadersToAdds> RequestHeadersToAdds { get; set; }
 }
 
 /// <summary>The configuration options available when specifying versioned_expr. This field must be specified if versioned_expr is specified and cannot be specified if versioned_expr is not specified.</summary>
@@ -169,22 +187,22 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleHeaderAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleMatchConfig
 {
-    /// <summary>CIDR IP address range. Maximum number of src_ip_ranges allowed is 10.</summary>
+    /// <summary>Set of IP addresses or ranges (IPV4 or IPV6) in CIDR notation to match against inbound traffic. There is a limit of 10 IP ranges per rule. A value of &apos;*&apos; matches all IPs (can be used to override the default behavior).</summary>
     [JsonPropertyName("srcIpRanges")]
     public required IList<string> SrcIpRanges { get; set; }
 }
 
-/// <summary>User defined CEVAL expression. A CEVAL expression is used to specify match criteria such as origin.ip, source.region_code and contents in the request header. Expressions containing `evaluateThreatIntelligence` require Cloud Armor Managed Protection Plus tier and are not supported in Edge Policies nor in Regional Policies. Expressions containing `evaluatePreconfiguredExpr(&apos;sourceiplist-*&apos;)` require Cloud Armor Managed Protection Plus tier and are only supported in Global Security Policies.</summary>
+/// <summary>User defined CEVAL expression. A CEVAL expression is used to specify match criteria such as origin.ip, source.region_code and contents in the request header.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleMatchExpr
 {
-    /// <summary>Textual representation of an expression in Common Expression Language syntax.</summary>
+    /// <summary>Textual representation of an expression in Common Expression Language syntax. The application context of the containing message determines which well-known feature set of CEL is supported.</summary>
     [JsonPropertyName("expression")]
-    public string? Expression { get; set; }
+    public required string Expression { get; set; }
 }
 
-/// <summary>A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding &apos;action&apos; is enforced.</summary>
+/// <summary>A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding action is enforced.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleMatch
@@ -193,11 +211,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleMatch
     [JsonPropertyName("config")]
     public V1beta1ComputeSecurityPolicySpecRuleMatchConfig? Config { get; set; }
 
-    /// <summary>User defined CEVAL expression. A CEVAL expression is used to specify match criteria such as origin.ip, source.region_code and contents in the request header. Expressions containing `evaluateThreatIntelligence` require Cloud Armor Managed Protection Plus tier and are not supported in Edge Policies nor in Regional Policies. Expressions containing `evaluatePreconfiguredExpr(&apos;sourceiplist-*&apos;)` require Cloud Armor Managed Protection Plus tier and are only supported in Global Security Policies.</summary>
+    /// <summary>User defined CEVAL expression. A CEVAL expression is used to specify match criteria such as origin.ip, source.region_code and contents in the request header.</summary>
     [JsonPropertyName("expr")]
     public V1beta1ComputeSecurityPolicySpecRuleMatchExpr? Expr { get; set; }
 
-    /// <summary>Preconfigured versioned expression. If this field is specified, config must also be specified. Available preconfigured expressions along with their requirements are: SRC_IPS_V1 - must specify the corresponding src_ip_range field in config. Check the VersionedExpr enum for the list of possible values.</summary>
+    /// <summary>Predefined rule expression. If this field is specified, config must also be specified. Available options:   SRC_IPS_V1: Must specify the corresponding src_ip_ranges field in config.</summary>
     [JsonPropertyName("versionedExpr")]
     public string? VersionedExpr { get; set; }
 }
@@ -206,11 +224,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestCookie
 {
-    /// <summary>The match operator for the field. Check the Op enum for the list of possible values.</summary>
+    /// <summary>You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.</summary>
     [JsonPropertyName("operator")]
-    public string? Operator { get; set; }
+    public required string Operator { get; set; }
 
-    /// <summary>The value of the field.</summary>
+    /// <summary>A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -219,11 +237,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestHeader
 {
-    /// <summary>The match operator for the field. Check the Op enum for the list of possible values.</summary>
+    /// <summary>You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.</summary>
     [JsonPropertyName("operator")]
-    public string? Operator { get; set; }
+    public required string Operator { get; set; }
 
-    /// <summary>The value of the field.</summary>
+    /// <summary>A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -232,11 +250,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
-    /// <summary>The match operator for the field. Check the Op enum for the list of possible values.</summary>
+    /// <summary>You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.</summary>
     [JsonPropertyName("operator")]
-    public string? Operator { get; set; }
+    public required string Operator { get; set; }
 
-    /// <summary>The value of the field.</summary>
+    /// <summary>A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -245,11 +263,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestUri
 {
-    /// <summary>The match operator for the field. Check the Op enum for the list of possible values.</summary>
+    /// <summary>You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.</summary>
     [JsonPropertyName("operator")]
-    public string? Operator { get; set; }
+    public required string Operator { get; set; }
 
-    /// <summary>The value of the field.</summary>
+    /// <summary>A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -258,19 +276,19 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusion
 {
-    /// <summary>A list of request cookie names whose value will be excluded from inspection during preconfigured WAF evaluation.</summary>
+    /// <summary>Request cookie whose value will be excluded from inspection during preconfigured WAF evaluation.</summary>
     [JsonPropertyName("requestCookie")]
     public IList<V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestCookie>? RequestCookie { get; set; }
 
-    /// <summary>A list of request header names whose value will be excluded from inspection during preconfigured WAF evaluation.</summary>
+    /// <summary>Request header whose value will be excluded from inspection during preconfigured WAF evaluation.</summary>
     [JsonPropertyName("requestHeader")]
     public IList<V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestHeader>? RequestHeader { get; set; }
 
-    /// <summary>A list of request query parameter names whose value will be excluded from inspection during preconfigured WAF evaluation. Note that the parameter can be in the query string or in the POST body.</summary>
+    /// <summary>Request query parameter whose value will be excluded from inspection during preconfigured WAF evaluation.  Note that the parameter can be in the query string or in the POST body.</summary>
     [JsonPropertyName("requestQueryParam")]
     public IList<V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestQueryParam>? RequestQueryParam { get; set; }
 
-    /// <summary>A list of request URIs from the request line to be excluded from inspection during preconfigured WAF evaluation. When specifying this field, the query or fragment part should be excluded.</summary>
+    /// <summary>Request URI from the request line to be excluded from inspection during preconfigured WAF evaluation. When specifying this field, the query or fragment part should be excluded.</summary>
     [JsonPropertyName("requestUri")]
     public IList<V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusionRequestUri>? RequestUri { get; set; }
 
@@ -280,7 +298,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 
     /// <summary>Target WAF rule set to apply the preconfigured WAF exclusion.</summary>
     [JsonPropertyName("targetRuleSet")]
-    public string? TargetRuleSet { get; set; }
+    public required string TargetRuleSet { get; set; }
 }
 
 /// <summary>Preconfigured WAF configuration to be applied for the rule. If the rule does not evaluate preconfigured WAF rules, i.e., if evaluatePreconfiguredWaf() is not used, this field will have no effect.</summary>
@@ -288,12 +306,12 @@ public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfig
 {
-    /// <summary>A list of exclusions to apply during preconfigured WAF evaluation.</summary>
+    /// <summary>An exclusion to apply during preconfigured WAF evaluation.</summary>
     [JsonPropertyName("exclusion")]
     public IList<V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfigExclusion>? Exclusion { get; set; }
 }
 
-/// <summary>Can only be specified if the action for the rule is &quot;rate_based_ban&quot;. If specified, the key will be banned for the configured &apos;ban_duration_sec&apos; when the number of requests that exceed the &apos;rate_limit_threshold&apos; also exceed this &apos;ban_threshold&apos;.</summary>
+/// <summary>Can only be specified if the action for the rule is &quot;rate_based_ban&quot;. If specified, the key will be banned for the configured &apos;banDurationSec&apos; when the number of requests that exceed the &apos;rateLimitThreshold&apos; also exceed this &apos;banThreshold&apos;.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsBanThreshold
@@ -315,12 +333,12 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsEnforce
     [JsonPropertyName("enforceOnKeyName")]
     public string? EnforceOnKeyName { get; set; }
 
-    /// <summary>Determines the key to enforce the rate_limit_threshold on. Possible values are: - ALL: A single rate limit threshold is applied to all the requests matching this rule. This is the default value if &quot;enforceOnKeyConfigs&quot; is not configured. - IP: The source IP address of the request is the key. Each IP has this limit enforced separately. - HTTP_HEADER: The value of the HTTP header whose name is configured under &quot;enforceOnKeyName&quot;. The key value is truncated to the first 128 bytes of the header value. If no such header is present in the request, the key type defaults to ALL. - XFF_IP: The first IP address (i.e. the originating client IP address) specified in the list of IPs under X-Forwarded-For HTTP header. If no such header is present or the value is not a valid IP, the key defaults to the source IP address of the request i.e. key type IP. - HTTP_COOKIE: The value of the HTTP cookie whose name is configured under &quot;enforceOnKeyName&quot;. The key value is truncated to the first 128 bytes of the cookie value. If no such cookie is present in the request, the key type defaults to ALL. - HTTP_PATH: The URL path of the HTTP request. The key value is truncated to the first 128 bytes. - SNI: Server name indication in the TLS session of the HTTPS request. The key value is truncated to the first 128 bytes. The key type defaults to ALL on a HTTP session. - REGION_CODE: The country/region from which the request originates. - TLS_JA3_FINGERPRINT: JA3 TLS/SSL fingerprint if the client connects using HTTPS, HTTP/2 or HTTP/3. If not available, the key type defaults to ALL. - USER_IP: The IP address of the originating client, which is resolved based on &quot;userIpRequestHeaders&quot; configured with the security policy. If there is no &quot;userIpRequestHeaders&quot; configuration or an IP address cannot be resolved from it, the key type defaults to IP. - TLS_JA4_FINGERPRINT: JA4 TLS/SSL fingerprint if the client connects using HTTPS, HTTP/2 or HTTP/3. If not available, the key type defaults to ALL. Check the EnforceOnKeyType enum for the list of possible values.</summary>
+    /// <summary>Determines the key to enforce the rate_limit_threshold on.</summary>
     [JsonPropertyName("enforceOnKeyType")]
     public string? EnforceOnKeyType { get; set; }
 }
 
-/// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+/// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsExceedRedirectOptions
@@ -329,7 +347,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsExceedR
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Type of the redirect action. Possible values are: - GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual challenge assessment. - EXTERNAL_302: redirect to a different URL via a 302 response. Check the Type enum for the list of possible values.</summary>
+    /// <summary>Type of the redirect action.</summary>
     [JsonPropertyName("type")]
     public required string Type { get; set; }
 }
@@ -348,7 +366,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsRateLim
     public required int IntervalSec { get; set; }
 }
 
-/// <summary>Must be specified if the action is &quot;rate_based_ban&quot; or &quot;throttle&quot;. Cannot be specified for any other actions.</summary>
+/// <summary>Rate limit threshold for this security policy. Must be specified if the action is &quot;rate_based_ban&quot; or &quot;throttle&quot;. Cannot be specified for any other actions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions
@@ -357,7 +375,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions
     [JsonPropertyName("banDurationSec")]
     public int? BanDurationSec { get; set; }
 
-    /// <summary>Can only be specified if the action for the rule is &quot;rate_based_ban&quot;. If specified, the key will be banned for the configured &apos;ban_duration_sec&apos; when the number of requests that exceed the &apos;rate_limit_threshold&apos; also exceed this &apos;ban_threshold&apos;.</summary>
+    /// <summary>Can only be specified if the action for the rule is &quot;rate_based_ban&quot;. If specified, the key will be banned for the configured &apos;banDurationSec&apos; when the number of requests that exceed the &apos;rateLimitThreshold&apos; also exceed this &apos;banThreshold&apos;.</summary>
     [JsonPropertyName("banThreshold")]
     public V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsBanThreshold? BanThreshold { get; set; }
 
@@ -365,11 +383,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions
     [JsonPropertyName("conformAction")]
     public required string ConformAction { get; set; }
 
-    /// <summary>Determines the key to enforce the rate_limit_threshold on. Possible values are: - ALL: A single rate limit threshold is applied to all the requests matching this rule. This is the default value if &quot;enforceOnKey&quot; is not configured. - IP: The source IP address of the request is the key. Each IP has this limit enforced separately. - HTTP_HEADER: The value of the HTTP header whose name is configured under &quot;enforceOnKeyName&quot;. The key value is truncated to the first 128 bytes of the header value. If no such header is present in the request, the key type defaults to ALL. - XFF_IP: The first IP address (i.e. the originating client IP address) specified in the list of IPs under X-Forwarded-For HTTP header. If no such header is present or the value is not a valid IP, the key defaults to the source IP address of the request i.e. key type IP. - HTTP_COOKIE: The value of the HTTP cookie whose name is configured under &quot;enforceOnKeyName&quot;. The key value is truncated to the first 128 bytes of the cookie value. If no such cookie is present in the request, the key type defaults to ALL. - HTTP_PATH: The URL path of the HTTP request. The key value is truncated to the first 128 bytes. - SNI: Server name indication in the TLS session of the HTTPS request. The key value is truncated to the first 128 bytes. The key type defaults to ALL on a HTTP session. - REGION_CODE: The country/region from which the request originates. - TLS_JA3_FINGERPRINT: JA3 TLS/SSL fingerprint if the client connects using HTTPS, HTTP/2 or HTTP/3. If not available, the key type defaults to ALL. - USER_IP: The IP address of the originating client, which is resolved based on &quot;userIpRequestHeaders&quot; configured with the security policy. If there is no &quot;userIpRequestHeaders&quot; configuration or an IP address cannot be resolved from it, the key type defaults to IP. - TLS_JA4_FINGERPRINT: JA4 TLS/SSL fingerprint if the client connects using HTTPS, HTTP/2 or HTTP/3. If not available, the key type defaults to ALL. Check the EnforceOnKey enum for the list of possible values.</summary>
+    /// <summary>Determines the key to enforce the rateLimitThreshold on.</summary>
     [JsonPropertyName("enforceOnKey")]
     public string? EnforceOnKey { get; set; }
 
-    /// <summary>If specified, any combination of values of enforce_on_key_type/enforce_on_key_name is treated as the key on which ratelimit threshold/action is enforced. You can specify up to 3 enforce_on_key_configs. If enforce_on_key_configs is specified, enforce_on_key must not be specified.</summary>
+    /// <summary>Enforce On Key Config of this security policy.</summary>
     [JsonPropertyName("enforceOnKeyConfigs")]
     public IList<V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsEnforceOnKeyConfigs>? EnforceOnKeyConfigs { get; set; }
 
@@ -377,11 +395,11 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions
     [JsonPropertyName("enforceOnKeyName")]
     public string? EnforceOnKeyName { get; set; }
 
-    /// <summary>Action to take for requests that are above the configured rate limit threshold, to either deny with a specified HTTP response code, or redirect to a different endpoint. Valid options are `deny(STATUS)`, where valid values for `STATUS` are 403, 404, 429, and 502, and `redirect`, where the redirect parameters come from `exceedRedirectOptions` below. The `redirect` action is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+    /// <summary>Action to take for requests that are above the configured rate limit threshold, to either deny with a specified HTTP response code, or redirect to a different endpoint. Valid options are &quot;deny()&quot; where valid values for status are 403, 404, 429, and 502, and &quot;redirect&quot; where the redirect parameters come from exceedRedirectOptions below.</summary>
     [JsonPropertyName("exceedAction")]
     public required string ExceedAction { get; set; }
 
-    /// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+    /// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect.</summary>
     [JsonPropertyName("exceedRedirectOptions")]
     public V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsExceedRedirectOptions? ExceedRedirectOptions { get; set; }
 
@@ -390,7 +408,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions
     public required V1beta1ComputeSecurityPolicySpecRuleRateLimitOptionsRateLimitThreshold RateLimitThreshold { get; set; }
 }
 
-/// <summary>Parameters defining the redirect action. Cannot be specified for any other actions. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+/// <summary>Parameters defining the redirect action. Cannot be specified for any other actions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRuleRedirectOptions
@@ -399,7 +417,7 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRedirectOptions
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Type of the redirect action. Possible values are: - GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual challenge assessment. - EXTERNAL_302: redirect to a different URL via a 302 response. Check the Type enum for the list of possible values.</summary>
+    /// <summary>Type of the redirect action. Available options: EXTERNAL_302: Must specify the corresponding target field in config. GOOGLE_RECAPTCHA: Cannot specify target field in config.</summary>
     [JsonPropertyName("type")]
     public required string Type { get; set; }
 }
@@ -408,19 +426,19 @@ public partial class V1beta1ComputeSecurityPolicySpecRuleRedirectOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpecRule
 {
-    /// <summary>The Action to perform when the rule is matched. The following are the valid actions: - allow: allow access to target. - deny(STATUS): deny access to target, returns the HTTP response code specified. Valid values for `STATUS` are 403, 404, and 502. - rate_based_ban: limit client traffic to the configured threshold and ban the client if the traffic exceeds the threshold. Configure parameters for this action in RateLimitOptions. Requires rate_limit_options to be set. - redirect: redirect to a different target. This can either be an internal reCAPTCHA redirect, or an external URL-based redirect via a 302 response. Parameters for this action can be configured via redirectOptions. This action is only supported in Global Security Policies of type CLOUD_ARMOR. - throttle: limit client traffic to the configured threshold. Configure parameters for this action in rateLimitOptions. Requires rate_limit_options to be set for this.</summary>
+    /// <summary>Action to take when match matches the request.</summary>
     [JsonPropertyName("action")]
     public required string Action { get; set; }
 
-    /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
+    /// <summary>An optional description of this rule. Max size is 64.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Optional, additional actions that are performed on headers. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+    /// <summary>Additional actions that are performed on headers.</summary>
     [JsonPropertyName("headerAction")]
     public V1beta1ComputeSecurityPolicySpecRuleHeaderAction? HeaderAction { get; set; }
 
-    /// <summary>A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding &apos;action&apos; is enforced.</summary>
+    /// <summary>A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding action is enforced.</summary>
     [JsonPropertyName("match")]
     public required V1beta1ComputeSecurityPolicySpecRuleMatch Match { get; set; }
 
@@ -428,19 +446,19 @@ public partial class V1beta1ComputeSecurityPolicySpecRule
     [JsonPropertyName("preconfiguredWafConfig")]
     public V1beta1ComputeSecurityPolicySpecRulePreconfiguredWafConfig? PreconfiguredWafConfig { get; set; }
 
-    /// <summary>If set to true, the specified action is not enforced.</summary>
+    /// <summary>When set to true, the action specified above is not enforced. Stackdriver logs for requests that trigger a preview action are annotated as such.</summary>
     [JsonPropertyName("preview")]
     public bool? Preview { get; set; }
 
-    /// <summary>An integer indicating the priority of a rule in the list. The priority must be a positive value between 0 and 2147483647. Rules are evaluated from highest to lowest priority where 0 is the highest priority and 2147483647 is the lowest priority.</summary>
+    /// <summary>An unique positive integer indicating the priority of evaluation for a rule. Rules are evaluated from highest priority (lowest numerically) to lowest priority (highest numerically) in order.</summary>
     [JsonPropertyName("priority")]
     public required int Priority { get; set; }
 
-    /// <summary>Must be specified if the action is &quot;rate_based_ban&quot; or &quot;throttle&quot;. Cannot be specified for any other actions.</summary>
+    /// <summary>Rate limit threshold for this security policy. Must be specified if the action is &quot;rate_based_ban&quot; or &quot;throttle&quot;. Cannot be specified for any other actions.</summary>
     [JsonPropertyName("rateLimitOptions")]
     public V1beta1ComputeSecurityPolicySpecRuleRateLimitOptions? RateLimitOptions { get; set; }
 
-    /// <summary>Parameters defining the redirect action. Cannot be specified for any other actions. This field is only supported in Global Security Policies of type CLOUD_ARMOR.</summary>
+    /// <summary>Parameters defining the redirect action. Cannot be specified for any other actions.</summary>
     [JsonPropertyName("redirectOptions")]
     public V1beta1ComputeSecurityPolicySpecRuleRedirectOptions? RedirectOptions { get; set; }
 }
@@ -449,25 +467,31 @@ public partial class V1beta1ComputeSecurityPolicySpecRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicySpec
 {
+    /// <summary>Adaptive Protection Config of this security policy.</summary>
     [JsonPropertyName("adaptiveProtectionConfig")]
     public V1beta1ComputeSecurityPolicySpecAdaptiveProtectionConfig? AdaptiveProtectionConfig { get; set; }
 
+    /// <summary>Advanced Options Config of this security policy.</summary>
     [JsonPropertyName("advancedOptionsConfig")]
     public V1beta1ComputeSecurityPolicySpecAdvancedOptionsConfig? AdvancedOptionsConfig { get; set; }
 
+    /// <summary>An optional description of this security policy. Max size is 2048.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>reCAPTCHA configuration options to be applied for the security policy.</summary>
     [JsonPropertyName("recaptchaOptionsConfig")]
     public V1beta1ComputeSecurityPolicySpecRecaptchaOptionsConfig? RecaptchaOptionsConfig { get; set; }
 
-    /// <summary>The ComputeSecurityPolicy name. If not given, the metadata.name will be used.</summary>
+    /// <summary>Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
+    /// <summary>The set of rules that belong to this policy. There must always be a default rule (rule with priority 2147483647 and match &quot;*&quot;). If no rules are provided when creating a security policy, a default rule with action &quot;allow&quot; will be added.</summary>
     [JsonPropertyName("rule")]
     public IList<V1beta1ComputeSecurityPolicySpecRule>? Rule { get; set; }
 
+    /// <summary>The type indicates the intended use of the security policy. CLOUD_ARMOR - Cloud Armor backend security policies can be configured to filter incoming HTTP requests targeting backend services. They filter requests before they hit the origin servers. CLOUD_ARMOR_EDGE - Cloud Armor edge security policies can be configured to filter incoming HTTP requests targeting backend services (including Cloud CDN-enabled) as well as backend buckets (Cloud Storage). They filter requests before the request is served from Google&apos;s cache.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -497,31 +521,31 @@ public partial class V1beta1ComputeSecurityPolicyStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>ComputeSecurityPolicyStatus defines the config connector machine state of ComputeSecurityPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSecurityPolicyStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeSecurityPolicyStatusConditions>? Conditions { get; set; }
 
+    /// <summary>Fingerprint of this resource.</summary>
     [JsonPropertyName("fingerprint")]
     public string? Fingerprint { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
+    /// <summary>The URI of the created resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
 }
 
-/// <summary>ComputeSecurityPolicy is the Schema for the ComputeSecurityPolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
-public partial class V1beta1ComputeSecurityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComputeSecurityPolicySpec>, IStatus<V1beta1ComputeSecurityPolicyStatus?>
+public partial class V1beta1ComputeSecurityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComputeSecurityPolicySpec?>, IStatus<V1beta1ComputeSecurityPolicyStatus?>
 {
     public const string KubeApiVersion = "v1beta1";
     public const string KubeKind = "ComputeSecurityPolicy";
@@ -540,9 +564,8 @@ public partial class V1beta1ComputeSecurityPolicy : IKubernetesObject<V1ObjectMe
     public V1ObjectMeta Metadata { get; set; }
 
     [JsonPropertyName("spec")]
-    public required V1beta1ComputeSecurityPolicySpec Spec { get; set; }
+    public V1beta1ComputeSecurityPolicySpec? Spec { get; set; }
 
-    /// <summary>ComputeSecurityPolicyStatus defines the config connector machine state of ComputeSecurityPolicy</summary>
     [JsonPropertyName("status")]
     public V1beta1ComputeSecurityPolicyStatus? Status { get; set; }
 }

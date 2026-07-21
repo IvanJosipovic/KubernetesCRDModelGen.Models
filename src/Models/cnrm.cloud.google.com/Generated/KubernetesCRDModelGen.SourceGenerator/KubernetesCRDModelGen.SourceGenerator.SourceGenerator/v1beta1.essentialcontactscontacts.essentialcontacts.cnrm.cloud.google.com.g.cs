@@ -115,7 +115,7 @@ public partial class V1beta1EssentialContactsContactSpec
     [JsonPropertyName("projectRef")]
     public V1beta1EssentialContactsContactSpecProjectRef? ProjectRef { get; set; }
 
-    /// <summary>Immutable. Optional. The service-generated name of the resource. Used for acquisition only. Leave unset to create a new resource.</summary>
+    /// <summary>The EssentialContactsContact name. If not given, the metadata.name will be used.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 }

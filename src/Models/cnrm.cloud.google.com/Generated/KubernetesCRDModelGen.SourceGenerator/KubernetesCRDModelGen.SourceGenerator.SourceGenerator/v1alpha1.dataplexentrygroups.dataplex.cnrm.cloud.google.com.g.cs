@@ -71,7 +71,10 @@ public partial class V1alpha1DataplexEntryGroupSpec
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
-    /// <summary>The location that this resource belongs to.</summary>
+    /// <summary>Optional. User-defined labels for the EntryGroup.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 

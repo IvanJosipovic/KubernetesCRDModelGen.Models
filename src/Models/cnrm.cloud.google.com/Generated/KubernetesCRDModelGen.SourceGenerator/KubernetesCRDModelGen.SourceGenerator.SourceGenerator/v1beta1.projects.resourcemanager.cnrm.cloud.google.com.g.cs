@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resourcemanager.cnrm.cloud.google.com;
-/// <summary>Project is the Schema for the Project API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,70 +35,80 @@ public partial class V1beta1ProjectList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1beta1Project> Items { get; set; }
 }
 
-/// <summary>The billing account of the project.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectSpecBillingAccountRef
 {
-    /// <summary>A reference to an externally managed BillingAccount resource. Should be in the format &quot;billingAccounts/{billingAccountID}&quot;.</summary>
+    /// <summary>Allowed value: The `name` field of a `BillingAccount` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a BillingAccount resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a BillingAccount resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>The folder that this resource belongs to. Changing this forces the resource to be migrated to the newly specified folder. Only one of folderRef or organizationRef may be specified.</summary>
+/// <summary>
+/// The folder that this resource belongs to. Changing this forces the
+/// resource to be migrated to the newly specified folder. Only one of
+/// folderRef or organizationRef may be specified.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectSpecFolderRef
 {
-    /// <summary>The &apos;name&apos; field of a folder, when not managed by Config Connector. This field must be set when &apos;name&apos; field is not set.</summary>
+    /// <summary>Allowed value: The `folderId` field of a `Folder` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The &apos;name&apos; field of a &apos;Folder&apos; resource. This field must be set when &apos;external&apos; field is not set.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The &apos;namespace&apos; field of a &apos;Folder&apos; resource. If unset, the namespace is defaulted to the namespace of the referencer resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>The organization that this resource belongs to. Changing this forces the resource to be migrated to the newly specified organization. Only one of folderRef or organizationRef may be specified.</summary>
+/// <summary>
+/// The organization that this resource belongs to. Changing this
+/// forces the resource to be migrated to the newly specified
+/// organization. Only one of folderRef or organizationRef may be
+/// specified.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectSpecOrganizationRef
 {
-    /// <summary>The &apos;name&apos; field of an organization, when not managed by Config Connector.</summary>
+    /// <summary>Allowed value: The `name` field of an `Organization` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The &apos;name&apos; field of an &apos;Organization&apos; resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The &apos;namespace&apos; field of an &apos;Organization&apos; resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>ProjectSpec defines the desired state of Project</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectSpec
 {
-    /// <summary>The billing account of the project.</summary>
     [JsonPropertyName("billingAccountRef")]
     public V1beta1ProjectSpecBillingAccountRef? BillingAccountRef { get; set; }
 
-    /// <summary>The folder that this resource belongs to. Changing this forces the resource to be migrated to the newly specified folder. Only one of folderRef or organizationRef may be specified.</summary>
+    /// <summary>
+    /// The folder that this resource belongs to. Changing this forces the
+    /// resource to be migrated to the newly specified folder. Only one of
+    /// folderRef or organizationRef may be specified.
+    /// </summary>
     [JsonPropertyName("folderRef")]
     public V1beta1ProjectSpecFolderRef? FolderRef { get; set; }
 
@@ -107,7 +116,12 @@ public partial class V1beta1ProjectSpec
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
-    /// <summary>The organization that this resource belongs to. Changing this forces the resource to be migrated to the newly specified organization. Only one of folderRef or organizationRef may be specified.</summary>
+    /// <summary>
+    /// The organization that this resource belongs to. Changing this
+    /// forces the resource to be migrated to the newly specified
+    /// organization. Only one of folderRef or organizationRef may be
+    /// specified.
+    /// </summary>
     [JsonPropertyName("organizationRef")]
     public V1beta1ProjectSpecOrganizationRef? OrganizationRef { get; set; }
 
@@ -141,12 +155,11 @@ public partial class V1beta1ProjectStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>ProjectStatus defines the config connector machine state of Project</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ProjectStatusConditions>? Conditions { get; set; }
 
@@ -156,10 +169,9 @@ public partial class V1beta1ProjectStatus
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 }
 
-/// <summary>Project is the Schema for the Project API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -181,11 +193,9 @@ public partial class V1beta1Project : IKubernetesObject<V1ObjectMeta>, ISpec<V1b
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>ProjectSpec defines the desired state of Project</summary>
     [JsonPropertyName("spec")]
     public required V1beta1ProjectSpec Spec { get; set; }
 
-    /// <summary>ProjectStatus defines the config connector machine state of Project</summary>
     [JsonPropertyName("status")]
     public V1beta1ProjectStatus? Status { get; set; }
 }

@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.tags.cnrm.cloud.google.com;
-/// <summary>TagsLocationTagBinding is the Schema for the TagsLocationTagBinding API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,7 +35,6 @@ public partial class V1alpha1TagsLocationTagBindingList : IKubernetesObject<V1Li
     public required IList<V1alpha1TagsLocationTagBinding> Items { get; set; }
 }
 
-/// <summary>ParentRef is a reference to a parent resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpecParentRef
@@ -44,10 +42,6 @@ public partial class V1alpha1TagsLocationTagBindingSpecParentRef
     /// <summary>Allowed value: string of the format `//cloudresourcemanager.googleapis.com/projects/{{value}}`, where {{value}} is the `number` field of a `Project` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
-
-    /// <summary>Kind to which we are binding the tag.  Defaults to Project if not specified.</summary>
-    [JsonPropertyName("kind")]
-    public string? Kind { get; set; }
 
     /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
@@ -58,42 +52,41 @@ public partial class V1alpha1TagsLocationTagBindingSpecParentRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>TagsTagValueRef is a reference to a TagsTagValue resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpecTagValueRef
 {
-    /// <summary>A reference to an externally managed TagsTagValue resource. Should be in the format &quot;tagValues/{{tagValueID}}&quot;.</summary>
+    /// <summary>Allowed value: string of the format `tagValues/{{value}}`, where {{value}} is the `name` field of a `TagsTagValue` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a TagsTagValue resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a TagsTagValue resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>TagsLocationTagBindingSpec defines the desired state of TagsLocationTagBinding</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpec
 {
-    /// <summary>The location for the resource being tagged.</summary>
+    /// <summary>
+    /// Immutable. The geographic location where the transfer config should reside.
+    /// Examples: US, EU, asia-northeast1. The default value is US.
+    /// </summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 
-    /// <summary>ParentRef is a reference to a parent resource.</summary>
     [JsonPropertyName("parentRef")]
     public required V1alpha1TagsLocationTagBindingSpecParentRef ParentRef { get; set; }
 
-    /// <summary>The service-generated name of the resource. Used for acquisition only. Leave unset to create a new resource.</summary>
+    /// <summary>Immutable. Optional. The service-generated name of the resource. Used for acquisition only. Leave unset to create a new resource.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
-    /// <summary>TagsTagValueRef is a reference to a TagsTagValue resource.</summary>
     [JsonPropertyName("tagValueRef")]
     public required V1alpha1TagsLocationTagBindingSpecTagValueRef TagValueRef { get; set; }
 }
@@ -123,29 +116,23 @@ public partial class V1alpha1TagsLocationTagBindingStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>TagsLocationTagBindingStatus defines the config connector machine state of TagsLocationTagBinding</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1TagsLocationTagBindingStatusConditions>? Conditions { get; set; }
 
-    /// <summary>A unique specifier for the TagsLocationTagBinding resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
-
-    /// <summary>The generated id for the TagBinding. This is a string of the form: tagBindings/{full-resource-name}/{tag-value-name}.</summary>
+    /// <summary>The generated id for the TagBinding. This is a string of the form: &apos;tagBindings/{full-resource-name}/{tag-value-name}&apos;.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 }
 
-/// <summary>TagsLocationTagBinding is the Schema for the TagsLocationTagBinding API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -167,11 +154,9 @@ public partial class V1alpha1TagsLocationTagBinding : IKubernetesObject<V1Object
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>TagsLocationTagBindingSpec defines the desired state of TagsLocationTagBinding</summary>
     [JsonPropertyName("spec")]
     public required V1alpha1TagsLocationTagBindingSpec Spec { get; set; }
 
-    /// <summary>TagsLocationTagBindingStatus defines the config connector machine state of TagsLocationTagBinding</summary>
     [JsonPropertyName("status")]
     public V1alpha1TagsLocationTagBindingStatus? Status { get; set; }
 }

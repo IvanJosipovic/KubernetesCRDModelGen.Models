@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networksecurity.cnrm.cloud.google.com;
-/// <summary>NetworkSecurityClientTLSPolicy is the Schema for the NetworkSecurityClientTLSPolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,7 +35,7 @@ public partial class V1beta1NetworkSecurityClientTLSPolicyList : IKubernetesObje
     public required IList<V1beta1NetworkSecurityClientTLSPolicy> Items { get; set; }
 }
 
-/// <summary>Optional. The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
+/// <summary>The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateCertificateProviderInstance
@@ -46,12 +45,12 @@ public partial class V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateC
     public required string PluginInstance { get; set; }
 }
 
-/// <summary>Optional. gRPC specific configuration to access the gRPC server to obtain the cert and private key.</summary>
+/// <summary>gRPC specific configuration to access the gRPC server to obtain the cert and private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateGrpcEndpoint
 {
-    /// <summary>Required. The target URI of the gRPC endpoint. Only UDS path is supported, and should start with &quot;unix:&quot;.</summary>
+    /// <summary>Required. The target URI of the gRPC endpoint. Only UDS path is supported, and should start with “unix:”.</summary>
     [JsonPropertyName("targetUri")]
     public required string TargetUri { get; set; }
 }
@@ -61,38 +60,38 @@ public partial class V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateG
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecClientCertificate
 {
-    /// <summary>Optional. The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
+    /// <summary>The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
     [JsonPropertyName("certificateProviderInstance")]
     public V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateCertificateProviderInstance? CertificateProviderInstance { get; set; }
 
-    /// <summary>Optional. gRPC specific configuration to access the gRPC server to obtain the cert and private key.</summary>
+    /// <summary>gRPC specific configuration to access the gRPC server to obtain the cert and private key.</summary>
     [JsonPropertyName("grpcEndpoint")]
     public V1beta1NetworkSecurityClientTLSPolicySpecClientCertificateGrpcEndpoint? GrpcEndpoint { get; set; }
 }
 
-/// <summary>The project that this resource belongs to.</summary>
+/// <summary>Immutable. The Project that this resource belongs to.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecProjectRef
 {
-    /// <summary>The `projectID` field of a project, when not managed by Config Connector.</summary>
+    /// <summary>
+    /// The project for the resource
+    /// 
+    /// Allowed value: The Google Cloud resource name of a `Project` resource (format: `projects/{{name}}`).
+    /// </summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The kind of the Project resource; optional but must be `Project` if provided.</summary>
-    [JsonPropertyName("kind")]
-    public string? Kind { get; set; }
-
-    /// <summary>The `name` field of a `Project` resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The `namespace` field of a `Project` resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>Optional. The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
+/// <summary>The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCaCertificateProviderInstance
@@ -102,12 +101,12 @@ public partial class V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCa
     public required string PluginInstance { get; set; }
 }
 
-/// <summary>Optional. gRPC specific configuration to access the gRPC server to obtain the CA certificate.</summary>
+/// <summary>gRPC specific configuration to access the gRPC server to obtain the CA certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCaGrpcEndpoint
 {
-    /// <summary>Required. The target URI of the gRPC endpoint. Only UDS path is supported, and should start with &quot;unix:&quot;.</summary>
+    /// <summary>Required. The target URI of the gRPC endpoint. Only UDS path is supported, and should start with “unix:”.</summary>
     [JsonPropertyName("targetUri")]
     public required string TargetUri { get; set; }
 }
@@ -116,16 +115,15 @@ public partial class V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCa
 {
-    /// <summary>Optional. The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
+    /// <summary>The certificate provider instance specification that will be passed to the data plane, which will be used to load necessary credential information.</summary>
     [JsonPropertyName("certificateProviderInstance")]
     public V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCaCertificateProviderInstance? CertificateProviderInstance { get; set; }
 
-    /// <summary>Optional. gRPC specific configuration to access the gRPC server to obtain the CA certificate.</summary>
+    /// <summary>gRPC specific configuration to access the gRPC server to obtain the CA certificate.</summary>
     [JsonPropertyName("grpcEndpoint")]
     public V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCaGrpcEndpoint? GrpcEndpoint { get; set; }
 }
 
-/// <summary>NetworkSecurityClientTLSPolicySpec defines the desired state of NetworkSecurityClientTLSPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicySpec
@@ -138,19 +136,19 @@ public partial class V1beta1NetworkSecurityClientTLSPolicySpec
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The location of this resource.</summary>
+    /// <summary>Immutable. The location for the resource</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 
-    /// <summary>The project that this resource belongs to.</summary>
+    /// <summary>Immutable. The Project that this resource belongs to.</summary>
     [JsonPropertyName("projectRef")]
     public V1beta1NetworkSecurityClientTLSPolicySpecProjectRef? ProjectRef { get; set; }
 
-    /// <summary>The NetworkSecurityClientTLSPolicy name. If not given, the metadata.name will be used.</summary>
+    /// <summary>Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
-    /// <summary>Optional. Defines the mechanism to obtain the Certificate Authority certificate to validate the server certificate. If empty, client does not validate the server certificate.</summary>
+    /// <summary>Required. Defines the mechanism to obtain the Certificate Authority certificate to validate the server certificate.</summary>
     [JsonPropertyName("serverValidationCa")]
     public IList<V1beta1NetworkSecurityClientTLSPolicySpecServerValidationCa>? ServerValidationCa { get; set; }
 
@@ -184,12 +182,11 @@ public partial class V1beta1NetworkSecurityClientTLSPolicyStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>NetworkSecurityClientTLSPolicyStatus defines the config connector machine state of NetworkSecurityClientTLSPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkSecurityClientTLSPolicyStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkSecurityClientTLSPolicyStatusConditions>? Conditions { get; set; }
 
@@ -199,14 +196,13 @@ public partial class V1beta1NetworkSecurityClientTLSPolicyStatus
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
     /// <summary>Output only. The timestamp when the resource was updated.</summary>
     [JsonPropertyName("updateTime")]
     public DateTime? UpdateTime { get; set; }
 }
 
-/// <summary>NetworkSecurityClientTLSPolicy is the Schema for the NetworkSecurityClientTLSPolicy API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -228,11 +224,9 @@ public partial class V1beta1NetworkSecurityClientTLSPolicy : IKubernetesObject<V
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>NetworkSecurityClientTLSPolicySpec defines the desired state of NetworkSecurityClientTLSPolicy</summary>
     [JsonPropertyName("spec")]
     public required V1beta1NetworkSecurityClientTLSPolicySpec Spec { get; set; }
 
-    /// <summary>NetworkSecurityClientTLSPolicyStatus defines the config connector machine state of NetworkSecurityClientTLSPolicy</summary>
     [JsonPropertyName("status")]
     public V1beta1NetworkSecurityClientTLSPolicyStatus? Status { get; set; }
 }

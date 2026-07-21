@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.cnrm.cloud.google.com;
-/// <summary>StorageBucket is the Schema for the StorageBucket API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -77,20 +76,19 @@ public partial class V1beta1StorageBucketSpecCustomPlacementConfig
     public required IList<string> DataLocations { get; set; }
 }
 
-/// <summary>A reference to the KMS Crypto Key that will be used to encrypt objects inserted into this bucket.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageBucketSpecEncryptionKmsKeyRef
 {
-    /// <summary>A reference to an externally managed KMSCryptoKey. Should be in the format `projects/[kms_project_id]/locations/[region]/keyRings/[key_ring_id]/cryptoKeys/[key]`.</summary>
+    /// <summary>Allowed value: The `selfLink` field of a `KMSCryptoKey` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The `name` of a `KMSCryptoKey` resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The `namespace` of a `KMSCryptoKey` resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -100,7 +98,6 @@ public partial class V1beta1StorageBucketSpecEncryptionKmsKeyRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageBucketSpecEncryption
 {
-    /// <summary>A reference to the KMS Crypto Key that will be used to encrypt objects inserted into this bucket.</summary>
     [JsonPropertyName("kmsKeyRef")]
     public required V1beta1StorageBucketSpecEncryptionKmsKeyRef KmsKeyRef { get; set; }
 }
@@ -140,7 +137,10 @@ public partial class V1beta1StorageBucketSpecLifecycleRuleCondition
     [JsonPropertyName("daysSinceCustomTime")]
     public int? DaysSinceCustomTime { get; set; }
 
-    /// <summary>Number of days elapsed since the noncurrent timestamp of an object. This condition is relevant only for versioned objects.</summary>
+    /// <summary>
+    /// Number of days elapsed since the noncurrent timestamp of an object. This
+    /// 										condition is relevant only for versioned objects.
+    /// </summary>
     [JsonPropertyName("daysSinceNoncurrentTime")]
     public int? DaysSinceNoncurrentTime { get; set; }
 
@@ -244,7 +244,6 @@ public partial class V1beta1StorageBucketSpecWebsite
     public string? NotFoundPage { get; set; }
 }
 
-/// <summary>StorageBucketSpec defines the desired state of StorageBucket</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageBucketSpec
@@ -253,7 +252,10 @@ public partial class V1beta1StorageBucketSpec
     [JsonPropertyName("autoclass")]
     public V1beta1StorageBucketSpecAutoclass? Autoclass { get; set; }
 
-    /// <summary>DEPRECATED. Please use the `uniformBucketLevelAccess` field as this field has been renamed by Google. The `uniformBucketLevelAccess` field will supersede this field. Enables Bucket PolicyOnly access to a bucket.</summary>
+    /// <summary>
+    /// DEPRECATED. Please use the `uniformBucketLevelAccess` field as this field has been renamed by Google. The `uniformBucketLevelAccess` field will supersede this field.
+    /// Enables Bucket PolicyOnly access to a bucket.
+    /// </summary>
     [JsonPropertyName("bucketPolicyOnly")]
     public bool? BucketPolicyOnly { get; set; }
 
@@ -358,10 +360,10 @@ public partial class V1beta1StorageBucketStatusObservedStateSoftDeletePolicy
 
     /// <summary>The duration in seconds that soft-deleted objects in the bucket will be retained and cannot be permanently deleted. Default value is 604800.</summary>
     [JsonPropertyName("retentionDurationSeconds")]
-    public long? RetentionDurationSeconds { get; set; }
+    public int? RetentionDurationSeconds { get; set; }
 }
 
-/// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
+/// <summary>The observed state of the underlying GCP resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageBucketStatusObservedState
@@ -371,20 +373,19 @@ public partial class V1beta1StorageBucketStatusObservedState
     public V1beta1StorageBucketStatusObservedStateSoftDeletePolicy? SoftDeletePolicy { get; set; }
 }
 
-/// <summary>StorageBucketStatus defines the config connector machine state of StorageBucket</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageBucketStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1StorageBucketStatusConditions>? Conditions { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
-    /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
+    /// <summary>The observed state of the underlying GCP resource.</summary>
     [JsonPropertyName("observedState")]
     public V1beta1StorageBucketStatusObservedState? ObservedState { get; set; }
 
@@ -397,7 +398,6 @@ public partial class V1beta1StorageBucketStatus
     public string? Url { get; set; }
 }
 
-/// <summary>StorageBucket is the Schema for the StorageBucket API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -419,11 +419,9 @@ public partial class V1beta1StorageBucket : IKubernetesObject<V1ObjectMeta>, ISp
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>StorageBucketSpec defines the desired state of StorageBucket</summary>
     [JsonPropertyName("spec")]
     public V1beta1StorageBucketSpec? Spec { get; set; }
 
-    /// <summary>StorageBucketStatus defines the config connector machine state of StorageBucket</summary>
     [JsonPropertyName("status")]
     public V1beta1StorageBucketStatus? Status { get; set; }
 }

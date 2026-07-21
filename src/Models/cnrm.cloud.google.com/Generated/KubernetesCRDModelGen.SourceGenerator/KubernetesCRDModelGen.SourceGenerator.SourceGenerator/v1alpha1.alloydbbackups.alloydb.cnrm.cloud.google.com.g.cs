@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.alloydb.cnrm.cloud.google.com;
-/// <summary>AlloyDBBackup is the Schema for the AlloyDBBackup API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -41,15 +40,15 @@ public partial class V1alpha1AlloyDBBackupList : IKubernetesObject<V1ListMeta>, 
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBBackupSpecClusterNameRef
 {
-    /// <summary>A reference to an externally managed AlloyDBCluster resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/clusters/{{clusterID}}&quot;.</summary>
+    /// <summary>Allowed value: The `name` field of an `AlloyDBCluster` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a AlloyDBCluster resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a AlloyDBCluster resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
@@ -69,20 +68,19 @@ public partial class V1alpha1AlloyDBBackupSpecEncryptionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBBackupSpecProjectRef
 {
-    /// <summary>The `projectID` field of a project, when not managed by Config Connector.</summary>
+    /// <summary>Allowed value: The `name` field of a `Project` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The `name` field of a `Project` resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The `namespace` field of a `Project` resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>AlloyDBBackupSpec defines the desired state of AlloyDBBackup</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBBackupSpec
@@ -150,12 +148,11 @@ public partial class V1alpha1AlloyDBBackupStatusEncryptionInfo
     public IList<string>? KmsKeyVersions { get; set; }
 }
 
-/// <summary>AlloyDBBackupStatus defines the config connector machine state of AlloyDBBackup</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBBackupStatus
 {
-    /// <summary>Conditions represent the latest available observations of the AlloyDBBackup&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1AlloyDBBackupStatusConditions>? Conditions { get; set; }
 
@@ -171,17 +168,13 @@ public partial class V1alpha1AlloyDBBackupStatus
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
-    /// <summary>A unique specifier for the AlloyDBBackup resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
-
     /// <summary>Output only. The name of the backup resource with the format: * projects/{project}/locations/{region}/backups/{backupId}.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
     /// <summary>If true, indicates that the service is actively updating the resource. This can happen due to user-triggered updates or system actions like failover or maintenance.</summary>
     [JsonPropertyName("reconciling")]
@@ -200,7 +193,6 @@ public partial class V1alpha1AlloyDBBackupStatus
     public string? UpdateTime { get; set; }
 }
 
-/// <summary>AlloyDBBackup is the Schema for the AlloyDBBackup API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -222,11 +214,9 @@ public partial class V1alpha1AlloyDBBackup : IKubernetesObject<V1ObjectMeta>, IS
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>AlloyDBBackupSpec defines the desired state of AlloyDBBackup</summary>
     [JsonPropertyName("spec")]
     public required V1alpha1AlloyDBBackupSpec Spec { get; set; }
 
-    /// <summary>AlloyDBBackupStatus defines the config connector machine state of AlloyDBBackup</summary>
     [JsonPropertyName("status")]
     public V1alpha1AlloyDBBackupStatus? Status { get; set; }
 }

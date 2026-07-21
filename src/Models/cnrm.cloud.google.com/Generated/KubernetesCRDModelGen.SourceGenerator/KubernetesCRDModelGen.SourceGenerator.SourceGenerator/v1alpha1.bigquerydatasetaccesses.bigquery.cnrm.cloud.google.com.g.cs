@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.cnrm.cloud.google.com;
-/// <summary>BigQueryDatasetAccess is the Schema for the BigQueryDatasetAccess API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -59,7 +58,10 @@ public partial class V1alpha1BigQueryDatasetAccessSpecDataset
     [JsonPropertyName("dataset")]
     public required V1alpha1BigQueryDatasetAccessSpecDatasetDataset Dataset { get; set; }
 
-    /// <summary>Immutable. Which resources in the dataset this entry applies to. Currently, only views are supported, but additional target types may be added in the future. Possible values: VIEWS.</summary>
+    /// <summary>
+    /// Immutable. Which resources in the dataset this entry applies to. Currently, only views are supported,
+    /// but additional target types may be added in the future. Possible values: VIEWS.
+    /// </summary>
     [JsonPropertyName("targetTypes")]
     public required IList<string> TargetTypes { get; set; }
 }
@@ -69,20 +71,26 @@ public partial class V1alpha1BigQueryDatasetAccessSpecDataset
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryDatasetAccessSpecProjectRef
 {
-    /// <summary>The `projectID` field of a project, when not managed by Config Connector.</summary>
+    /// <summary>Allowed value: The `name` field of a `Project` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The `name` field of a `Project` resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The `namespace` field of a `Project` resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>Immutable. A view from a different dataset to grant access to. Queries executed against that view will have read access to tables in this dataset. The role field is not required when this field is set. If that view is updated by any user, access to the view needs to be granted again via an update operation.</summary>
+/// <summary>
+/// Immutable. A view from a different dataset to grant access to. Queries
+/// executed against that view will have read access to tables in
+/// this dataset. The role field is not required when this field is
+/// set. If that view is updated by any user, access to the view
+/// needs to be granted again via an update operation.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryDatasetAccessSpecView
@@ -95,12 +103,15 @@ public partial class V1alpha1BigQueryDatasetAccessSpecView
     [JsonPropertyName("projectId")]
     public required string ProjectId { get; set; }
 
-    /// <summary>Immutable. The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</summary>
+    /// <summary>
+    /// Immutable. The ID of the table. The ID must contain only letters (a-z,
+    /// A-Z), numbers (0-9), or underscores (_). The maximum length
+    /// is 1,024 characters.
+    /// </summary>
     [JsonPropertyName("tableId")]
     public required string TableId { get; set; }
 }
 
-/// <summary>BigQueryDatasetAccessSpec defines the desired state of BigQueryDatasetAccess</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryDatasetAccessSpec
@@ -109,11 +120,18 @@ public partial class V1alpha1BigQueryDatasetAccessSpec
     [JsonPropertyName("dataset")]
     public V1alpha1BigQueryDatasetAccessSpecDataset? Dataset { get; set; }
 
-    /// <summary>Immutable. A unique ID for this dataset, without the project name. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</summary>
+    /// <summary>
+    /// Immutable. A unique ID for this dataset, without the project name. The ID
+    /// must contain only letters (a-z, A-Z), numbers (0-9), or
+    /// underscores (_). The maximum length is 1,024 characters.
+    /// </summary>
     [JsonPropertyName("datasetId")]
     public required string DatasetId { get; set; }
 
-    /// <summary>Immutable. A domain to grant access to. Any users signed in with the domain specified will be granted the specified access.</summary>
+    /// <summary>
+    /// Immutable. A domain to grant access to. Any users signed in with the
+    /// domain specified will be granted the specified access.
+    /// </summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
@@ -121,7 +139,10 @@ public partial class V1alpha1BigQueryDatasetAccessSpec
     [JsonPropertyName("groupByEmail")]
     public string? GroupByEmail { get; set; }
 
-    /// <summary>Immutable. Some other type of member that appears in the IAM Policy but isn&apos;t a user, group, domain, or special group. For example: &apos;allUsers&apos;.</summary>
+    /// <summary>
+    /// Immutable. Some other type of member that appears in the IAM Policy but isn&apos;t a user,
+    /// group, domain, or special group. For example: &apos;allUsers&apos;.
+    /// </summary>
     [JsonPropertyName("iamMember")]
     public string? IamMember { get; set; }
 
@@ -129,33 +150,53 @@ public partial class V1alpha1BigQueryDatasetAccessSpec
     [JsonPropertyName("projectRef")]
     public required V1alpha1BigQueryDatasetAccessSpecProjectRef ProjectRef { get; set; }
 
-    /// <summary>Immutable. Optional. The name of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.</summary>
+    /// <summary>Immutable. Optional. The routine of the resource. Used for creation and acquisition. When unset, the value of `metadata.name` is used as the default.</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
-    /// <summary>Immutable. Describes the rights granted to the user specified by the other member of the access object. Basic, predefined, and custom roles are supported. Predefined roles that have equivalent basic roles are swapped by the API to their basic counterparts, and will show a diff post-create. See [official docs](https://cloud.google.com/bigquery/docs/access-control).</summary>
+    /// <summary>
+    /// Immutable. Describes the rights granted to the user specified by the other
+    /// member of the access object. Basic, predefined, and custom roles are
+    /// supported. Predefined roles that have equivalent basic roles are
+    /// swapped by the API to their basic counterparts, and will show a diff
+    /// post-create. See
+    /// [official docs](https://cloud.google.com/bigquery/docs/access-control).
+    /// </summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
     /// <summary>
     /// Immutable. A special group to grant access to. Possible values include:
     /// 
+    /// 
     /// * &apos;projectOwners&apos;: Owners of the enclosing project.
+    /// 
     /// 
     /// * &apos;projectReaders&apos;: Readers of the enclosing project.
     /// 
+    /// 
     /// * &apos;projectWriters&apos;: Writers of the enclosing project.
+    /// 
     /// 
     /// * &apos;allAuthenticatedUsers&apos;: All authenticated BigQuery users.
     /// </summary>
     [JsonPropertyName("specialGroup")]
     public string? SpecialGroup { get; set; }
 
-    /// <summary>Immutable. An email address of a user to grant access to. For example: fred@example.com.</summary>
+    /// <summary>
+    /// Immutable. An email address of a user to grant access to. For example:
+    /// fred@example.com.
+    /// </summary>
     [JsonPropertyName("userByEmail")]
     public string? UserByEmail { get; set; }
 
-    /// <summary>Immutable. A view from a different dataset to grant access to. Queries executed against that view will have read access to tables in this dataset. The role field is not required when this field is set. If that view is updated by any user, access to the view needs to be granted again via an update operation.</summary>
+    /// <summary>
+    /// Immutable. A view from a different dataset to grant access to. Queries
+    /// executed against that view will have read access to tables in
+    /// this dataset. The role field is not required when this field is
+    /// set. If that view is updated by any user, access to the view
+    /// needs to be granted again via an update operation.
+    /// </summary>
     [JsonPropertyName("view")]
     public V1alpha1BigQueryDatasetAccessSpecView? View { get; set; }
 }
@@ -185,7 +226,6 @@ public partial class V1alpha1BigQueryDatasetAccessStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>BigQueryDatasetAccessStatus defines the config connector machine state of BigQueryDatasetAccess</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryDatasetAccessStatus
@@ -194,16 +234,15 @@ public partial class V1alpha1BigQueryDatasetAccessStatus
     [JsonPropertyName("apiUpdatedMember")]
     public bool? ApiUpdatedMember { get; set; }
 
-    /// <summary>Conditions represent the latest available observations of the resource&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1BigQueryDatasetAccessStatusConditions>? Conditions { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 }
 
-/// <summary>BigQueryDatasetAccess is the Schema for the BigQueryDatasetAccess API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -225,11 +264,9 @@ public partial class V1alpha1BigQueryDatasetAccess : IKubernetesObject<V1ObjectM
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>BigQueryDatasetAccessSpec defines the desired state of BigQueryDatasetAccess</summary>
     [JsonPropertyName("spec")]
     public required V1alpha1BigQueryDatasetAccessSpec Spec { get; set; }
 
-    /// <summary>BigQueryDatasetAccessStatus defines the config connector machine state of BigQueryDatasetAccess</summary>
     [JsonPropertyName("status")]
     public V1alpha1BigQueryDatasetAccessStatus? Status { get; set; }
 }

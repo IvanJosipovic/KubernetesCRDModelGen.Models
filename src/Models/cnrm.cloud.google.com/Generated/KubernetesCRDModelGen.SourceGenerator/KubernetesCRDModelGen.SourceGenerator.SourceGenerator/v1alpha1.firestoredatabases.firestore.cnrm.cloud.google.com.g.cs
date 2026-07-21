@@ -67,10 +67,6 @@ public partial class V1alpha1FirestoreDatabaseSpec
     [JsonPropertyName("concurrencyMode")]
     public string? ConcurrencyMode { get; set; }
 
-    /// <summary>State of delete protection for the database.</summary>
-    [JsonPropertyName("deleteProtectionState")]
-    public string? DeleteProtectionState { get; set; }
-
     /// <summary>The location of the database. Available locations are listed at https://cloud.google.com/firestore/docs/locations.</summary>
     [JsonPropertyName("locationID")]
     public string? LocationID { get; set; }

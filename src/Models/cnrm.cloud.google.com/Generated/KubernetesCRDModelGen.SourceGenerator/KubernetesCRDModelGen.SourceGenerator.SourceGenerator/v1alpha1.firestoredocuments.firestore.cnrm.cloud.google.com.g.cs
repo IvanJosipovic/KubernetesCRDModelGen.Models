@@ -36,37 +36,11 @@ public partial class V1alpha1FirestoreDocumentList : IKubernetesObject<V1ListMet
     public required IList<V1alpha1FirestoreDocument> Items { get; set; }
 }
 
-/// <summary>DatabaseRef references the FirestoreDatabase in which to create the document.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1FirestoreDocumentSpecDatabaseRef
-{
-    /// <summary>A reference to an externally managed Firestore database resource. Should be in the format &quot;projects/{{projectID}}/databases/{{databaseID}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a FirestoreDatabase resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a FirestoreDatabase resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>FirestoreDocumentSpec defines the desired state of FirestoreDocument</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreDocumentSpec
 {
-    /// <summary>Collection is the identity of the firestore collection in which to create the document.</summary>
-    [JsonPropertyName("collection")]
-    public string? Collection { get; set; }
-
-    /// <summary>DatabaseRef references the FirestoreDatabase in which to create the document.</summary>
-    [JsonPropertyName("databaseRef")]
-    public required V1alpha1FirestoreDocumentSpecDatabaseRef DatabaseRef { get; set; }
-
     /// <summary>Fields holds the field values; values follow JSON typing conventions.</summary>
     [JsonPropertyName("fields")]
     public IDictionary<string, JsonNode>? Fields { get; set; }

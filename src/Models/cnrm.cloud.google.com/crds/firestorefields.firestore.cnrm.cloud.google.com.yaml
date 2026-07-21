@@ -57,33 +57,6 @@ spec:
               collectionGroup:
                 description: The collectionGroup of which this field is a part.
                 type: string
-              databaseRef:
-                description: The FirestoreDatabase containing the collection group for this field.
-                oneOf:
-                - not:
-                    required:
-                    - external
-                  required:
-                  - name
-                - not:
-                    anyOf:
-                    - required:
-                      - name
-                    - required:
-                      - namespace
-                  required:
-                  - external
-                properties:
-                  external:
-                    description: A reference to an externally managed Firestore database resource. Should be in the format "projects/{{projectID}}/databases/{{databaseID}}".
-                    type: string
-                  name:
-                    description: The name of a FirestoreDatabase resource.
-                    type: string
-                  namespace:
-                    description: The namespace of a FirestoreDatabase resource.
-                    type: string
-                type: object
               indexConfig:
                 description: The index configuration for this field. If unset, field indexing will revert to the configuration defined by the `ancestor_field`. To explicitly remove all indexes for this field, specify an index config with an empty list of indexes.
                 properties:
@@ -169,16 +142,8 @@ spec:
               resourceID:
                 description: The FirestoreField name. If not given, the metadata.name will be used.
                 type: string
-              ttlConfig:
-                description: The TTL configuration for this `Field`.
-                properties:
-                  enabled:
-                    description: Whether to enable TTL for documents based on this field.
-                    type: boolean
-                type: object
             required:
             - collectionGroup
-            - databaseRef
             type: object
           status:
             description: FirestoreFieldStatus defines the config connector machine state of FirestoreField

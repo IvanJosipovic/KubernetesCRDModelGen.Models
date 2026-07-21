@@ -109,7 +109,7 @@ public partial class V1beta1SecretManagerSecretVersionSpec
     [JsonPropertyName("isSecretDataBase64")]
     public bool? IsSecretDataBase64 { get; set; }
 
-    /// <summary>The service-generated SecretVersion number. If given, Config Connector acquires the resource from the Secret Manager service. If not given, Config Connector adds a new secret version to the GCP service, and you can find out the version number from `status.observedState.version`</summary>
+    /// <summary>The SecretVersion number. If given, Config Connector acquires the resource from the Secret Manager service. If not given, Config Connector adds a new secret version to the GCP service, and you can find out the version number from `status.observedState.version`</summary>
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 

@@ -289,36 +289,24 @@ public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsDeliveryPipelin
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-/// <summary>Optional. The Target to which the rule applies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsTargetTargetRef
-{
-    /// <summary>A reference to an externally managed CloudDeployTarget resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/targets/{{targetID}}&quot;.</summary>
-    [JsonPropertyName("external")]
-    public string? External { get; set; }
-
-    /// <summary>The name of a CloudDeployTarget resource.</summary>
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    /// <summary>The namespace of a CloudDeployTarget resource.</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
 /// <summary>Optional. Contains attributes about a target.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsTarget
 {
+    /// <summary>
+    /// Optional. ID of the `Target`. The value of this field could be one of the
+    ///  following:
+    /// 
+    ///  * The last segment of a target name
+    ///  * &quot;*&quot;, all targets in a location
+    /// </summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
     /// <summary>Target labels.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
-
-    /// <summary>Optional. The Target to which the rule applies.</summary>
-    [JsonPropertyName("targetRef")]
-    public V1alpha1CloudDeployDeployPolicySpecSelectorsTargetTargetRef? TargetRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

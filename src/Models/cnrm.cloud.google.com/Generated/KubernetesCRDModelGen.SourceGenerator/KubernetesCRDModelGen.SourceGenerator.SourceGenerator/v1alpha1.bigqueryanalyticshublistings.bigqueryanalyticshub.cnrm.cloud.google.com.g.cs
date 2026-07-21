@@ -41,7 +41,7 @@ public partial class V1alpha1BigQueryAnalyticsHubListingList : IKubernetesObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryAnalyticsHubListingSpecDataExchangeRef
 {
-    /// <summary>A reference to an externally managed BigQueryAnalyticsHubDataExchange resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/dataExchanges/{{dataExchangeID}}&quot;.</summary>
+    /// <summary>A reference to an externally managed BigQueryAnalyticsHubDataExchange resource. Should be in the format &quot;projects/{{projectID}}/locations/{{location}}/dataexchanges/{{dataexchangeID}}&quot;.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
@@ -145,7 +145,7 @@ public partial class V1alpha1BigQueryAnalyticsHubListingSpecSourceBigQueryDatase
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceSelectedResourcesTableRef
 {
-    /// <summary>A reference to an externally-managed BigQueryTable resource. Should be in the format &quot;projects/{{projectID}}/datasets/{{datasetID}}/tables/{{tableID}}&quot;.</summary>
+    /// <summary>A reference to an externally-managed BigQueryTable resource. Should be in the format &quot;projects/{{projectID}}/datasets/{{datasetsID}}/tables/{{tableID}}&quot;.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 

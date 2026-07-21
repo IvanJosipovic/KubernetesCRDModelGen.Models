@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-/// <summary>ComputeNodeTemplate is the Schema for the ComputeNodeTemplate API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,7 +35,12 @@ public partial class V1beta1ComputeNodeTemplateList : IKubernetesObject<V1ListMe
     public required IList<V1beta1ComputeNodeTemplate> Items { get; set; }
 }
 
-/// <summary>Immutable. Flexible properties for the desired node type. Node groups that use this node template will create nodes of a type that matches these properties. Only one of nodeTypeFlexibility and nodeType can be specified.</summary>
+/// <summary>
+/// Immutable. Flexible properties for the desired node type. Node groups that
+/// use this node template will create nodes of a type that matches
+/// these properties. Only one of nodeTypeFlexibility and nodeType can
+/// be specified.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeNodeTemplateSpecNodeTypeFlexibility
@@ -54,7 +58,10 @@ public partial class V1beta1ComputeNodeTemplateSpecNodeTypeFlexibility
     public string? Memory { get; set; }
 }
 
-/// <summary>Immutable. The server binding policy for nodes using this template. Determines where the nodes should restart following a maintenance event.</summary>
+/// <summary>
+/// Immutable. The server binding policy for nodes using this template. Determines
+/// where the nodes should restart following a maintenance event.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeNodeTemplateSpecServerBinding
@@ -77,7 +84,6 @@ public partial class V1beta1ComputeNodeTemplateSpecServerBinding
     public required string Type { get; set; }
 }
 
-/// <summary>ComputeNodeTemplateSpec defines the desired state of ComputeNodeTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeNodeTemplateSpec
@@ -90,15 +96,26 @@ public partial class V1beta1ComputeNodeTemplateSpec
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Immutable. Node type to use for nodes group that are created from this template. Only one of nodeTypeFlexibility and nodeType can be specified.</summary>
+    /// <summary>
+    /// Immutable. Node type to use for nodes group that are created from this template.
+    /// Only one of nodeTypeFlexibility and nodeType can be specified.
+    /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
 
-    /// <summary>Immutable. Flexible properties for the desired node type. Node groups that use this node template will create nodes of a type that matches these properties. Only one of nodeTypeFlexibility and nodeType can be specified.</summary>
+    /// <summary>
+    /// Immutable. Flexible properties for the desired node type. Node groups that
+    /// use this node template will create nodes of a type that matches
+    /// these properties. Only one of nodeTypeFlexibility and nodeType can
+    /// be specified.
+    /// </summary>
     [JsonPropertyName("nodeTypeFlexibility")]
     public V1beta1ComputeNodeTemplateSpecNodeTypeFlexibility? NodeTypeFlexibility { get; set; }
 
-    /// <summary>Immutable. Region where nodes using the node template will be created.</summary>
+    /// <summary>
+    /// Immutable. Region where nodes using the node template will be created.
+    /// If it is not provided, the provider region is used.
+    /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
@@ -106,7 +123,10 @@ public partial class V1beta1ComputeNodeTemplateSpec
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
-    /// <summary>Immutable. The server binding policy for nodes using this template. Determines where the nodes should restart following a maintenance event.</summary>
+    /// <summary>
+    /// Immutable. The server binding policy for nodes using this template. Determines
+    /// where the nodes should restart following a maintenance event.
+    /// </summary>
     [JsonPropertyName("serverBinding")]
     public V1beta1ComputeNodeTemplateSpecServerBinding? ServerBinding { get; set; }
 }
@@ -136,12 +156,11 @@ public partial class V1beta1ComputeNodeTemplateStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>ComputeNodeTemplateStatus defines the config connector machine state of ComputeNodeTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeNodeTemplateStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeNodeTemplateStatusConditions>? Conditions { get; set; }
 
@@ -149,20 +168,14 @@ public partial class V1beta1ComputeNodeTemplateStatus
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
 
-    /// <summary>A unique specifier for the ComputeNodeTemplate resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
-
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
     public int? ObservedGeneration { get; set; }
 
-    /// <summary>Server-defined URL for the resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
 }
 
-/// <summary>ComputeNodeTemplate is the Schema for the ComputeNodeTemplate API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -184,11 +197,9 @@ public partial class V1beta1ComputeNodeTemplate : IKubernetesObject<V1ObjectMeta
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>ComputeNodeTemplateSpec defines the desired state of ComputeNodeTemplate</summary>
     [JsonPropertyName("spec")]
     public required V1beta1ComputeNodeTemplateSpec Spec { get; set; }
 
-    /// <summary>ComputeNodeTemplateStatus defines the config connector machine state of ComputeNodeTemplate</summary>
     [JsonPropertyName("status")]
     public V1beta1ComputeNodeTemplateStatus? Status { get; set; }
 }

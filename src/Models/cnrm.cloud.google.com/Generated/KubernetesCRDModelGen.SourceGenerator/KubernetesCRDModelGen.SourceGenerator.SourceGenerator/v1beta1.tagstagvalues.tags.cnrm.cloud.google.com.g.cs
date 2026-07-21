@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.tags.cnrm.cloud.google.com;
-/// <summary>TagsTagValue is the Schema for the TagsTagValue API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,39 +35,31 @@ public partial class V1beta1TagsTagValueList : IKubernetesObject<V1ListMeta>, II
     public required IList<V1beta1TagsTagValue> Items { get; set; }
 }
 
-/// <summary>Immutable. The TagValue&apos;s parent TagKey.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagValueSpecParentRef
 {
-    /// <summary>A reference to an externally managed TagsTagKey resource. Should be in the format &quot;tagKeys/{{tagKeyID}}&quot;.</summary>
+    /// <summary>Allowed value: string of the format `tagKeys/{{value}}`, where {{value}} is the `name` field of a `TagsTagKey` resource.</summary>
     [JsonPropertyName("external")]
     public string? External { get; set; }
 
-    /// <summary>The name of a TagsTagKey resource.</summary>
+    /// <summary>Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The namespace of a TagsTagKey resource.</summary>
+    /// <summary>Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 }
 
-/// <summary>TagsTagValueSpec defines the desired state of TagsTagValue</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagValueSpec
 {
-    /// <summary>
-    /// Optional. User-assigned description of the TagValue.
-    ///  Must not exceed 256 characters.
-    /// 
-    ///  Read-write.
-    /// </summary>
+    /// <summary>User-assigned description of the TagValue. Must not exceed 256 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Immutable. The TagValue&apos;s parent TagKey.</summary>
     [JsonPropertyName("parentRef")]
     public required V1beta1TagsTagValueSpecParentRef ParentRef { get; set; }
 
@@ -77,12 +68,9 @@ public partial class V1beta1TagsTagValueSpec
     public string? ResourceID { get; set; }
 
     /// <summary>
-    /// Required. Immutable. User-assigned short name for TagValue. The short name
-    ///  should be unique for TagValues within the same parent TagKey.
+    /// Immutable. Input only. User-assigned short name for TagValue. The short name should be unique for TagValues within the same parent TagKey.
     /// 
-    ///  The short name must be 63 characters or less, beginning and ending with
-    ///  an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_),
-    ///  dots (.), and alphanumerics between.
+    /// The short name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
     /// </summary>
     [JsonPropertyName("shortName")]
     public required string ShortName { get; set; }
@@ -113,41 +101,42 @@ public partial class V1beta1TagsTagValueStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>TagsTagValueStatus defines the config connector machine state of TagsTagValue</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagsTagValueStatus
 {
-    /// <summary>Conditions represent the latest available observations of the object&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TagsTagValueStatusConditions>? Conditions { get; set; }
 
-    /// <summary>Output only. Creation time.</summary>
+    /// <summary>
+    /// Output only. Creation time.
+    /// 
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
-    /// <summary>A unique specifier for the TagsTagValue resource in GCP.</summary>
-    [JsonPropertyName("externalRef")]
-    public string? ExternalRef { get; set; }
-
-    /// <summary>Immutable. Resource name for TagValue in the format `tagValues/456`.</summary>
+    /// <summary>The generated numeric id for the TagValue.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Output only. The namespaced name of the TagValue. Can be in the form `{organization_id}/{tag_key_short_name}/{tag_value_short_name}` or `{project_id}/{tag_key_short_name}/{tag_value_short_name}` or `{project_number}/{tag_key_short_name}/{tag_value_short_name}`.</summary>
+    /// <summary>Output only. Namespaced name of the TagValue. Will be in the format {parentNamespace}/{tagKeyShortName}/{shortName}.</summary>
     [JsonPropertyName("namespacedName")]
     public string? NamespacedName { get; set; }
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
-    /// <summary>Output only. Update time.</summary>
+    /// <summary>
+    /// Output only. Update time.
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
     [JsonPropertyName("updateTime")]
     public string? UpdateTime { get; set; }
 }
 
-/// <summary>TagsTagValue is the Schema for the TagsTagValue API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -169,11 +158,9 @@ public partial class V1beta1TagsTagValue : IKubernetesObject<V1ObjectMeta>, ISpe
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>TagsTagValueSpec defines the desired state of TagsTagValue</summary>
     [JsonPropertyName("spec")]
     public required V1beta1TagsTagValueSpec Spec { get; set; }
 
-    /// <summary>TagsTagValueStatus defines the config connector machine state of TagsTagValue</summary>
     [JsonPropertyName("status")]
     public V1beta1TagsTagValueStatus? Status { get; set; }
 }

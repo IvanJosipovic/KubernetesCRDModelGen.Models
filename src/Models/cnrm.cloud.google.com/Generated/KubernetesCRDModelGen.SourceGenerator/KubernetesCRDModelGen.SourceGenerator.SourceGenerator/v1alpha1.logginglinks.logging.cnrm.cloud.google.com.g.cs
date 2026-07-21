@@ -36,7 +36,7 @@ public partial class V1alpha1LoggingLinkList : IKubernetesObject<V1ListMeta>, II
     public required IList<V1alpha1LoggingLink> Items { get; set; }
 }
 
-/// <summary>Required. The LoggingLogBucket that this Link is associated with.</summary>
+/// <summary>The LoggingLogBucket that this Link is associated with</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LoggingLinkSpecLoggingLogBucketRef
@@ -59,15 +59,11 @@ public partial class V1alpha1LoggingLinkSpecLoggingLogBucketRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LoggingLinkSpec
 {
-    /// <summary>
-    /// Describes this link.
-    /// 
-    ///  The maximum length of the description is 8000 characters.
-    /// </summary>
+    /// <summary>Describes this link. The maximum length of the description is 8000 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Required. The LoggingLogBucket that this Link is associated with.</summary>
+    /// <summary>The LoggingLogBucket that this Link is associated with</summary>
     [JsonPropertyName("loggingLogBucketRef")]
     public V1alpha1LoggingLinkSpecLoggingLogBucketRef? LoggingLogBucketRef { get; set; }
 

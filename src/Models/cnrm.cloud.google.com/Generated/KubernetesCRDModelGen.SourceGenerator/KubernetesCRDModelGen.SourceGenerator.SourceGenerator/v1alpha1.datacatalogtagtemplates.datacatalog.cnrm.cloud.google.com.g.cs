@@ -49,7 +49,7 @@ public partial class V1alpha1DataCatalogTagTemplateSpecFieldsTypeEnumTypeAllowed
     ///  maximum length is 200 characters.
     /// </summary>
     [JsonPropertyName("displayName")]
-    public string? DisplayName { get; set; }
+    public required string DisplayName { get; set; }
 }
 
 /// <summary>An enum type.</summary>
@@ -110,9 +110,6 @@ public partial class V1alpha1DataCatalogTagTemplateSpecFields
 
     /// <summary>
     /// Identifier. The resource name of the tag template field in URL format.
-    ///  Example:
-    /// 
-    ///  `projects/{PROJECT_ID}/locations/{LOCATION}/tagTemplates/{TAG_TEMPLATE}/fields/{FIELD}`
     /// 
     ///  Note: The tag template field itself might not be stored in the location
     ///  specified in its name.
@@ -137,7 +134,7 @@ public partial class V1alpha1DataCatalogTagTemplateSpecFields
 
     /// <summary>Required. The type of value this tag field can contain.</summary>
     [JsonPropertyName("type")]
-    public V1alpha1DataCatalogTagTemplateSpecFieldsType? Type { get; set; }
+    public required V1alpha1DataCatalogTagTemplateSpecFieldsType Type { get; set; }
 }
 
 /// <summary>The Project that this resource belongs to.</summary>

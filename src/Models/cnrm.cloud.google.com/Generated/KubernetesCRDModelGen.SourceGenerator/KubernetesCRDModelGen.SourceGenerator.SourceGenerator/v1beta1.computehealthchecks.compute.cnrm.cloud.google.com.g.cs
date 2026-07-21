@@ -9,7 +9,6 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-/// <summary>ComputeHealthCheck is the Schema for the ComputeHealthCheck API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,122 +35,259 @@ public partial class V1beta1ComputeHealthCheckList : IKubernetesObject<V1ListMet
     public required IList<V1beta1ComputeHealthCheck> Items { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecGrpcHealthCheck
 {
-    /// <summary>The gRPC service name for the health check. The value of grpcServiceName has the following meanings by convention: - Empty serviceName means the overall status of all services at the backend. - Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service. The grpcServiceName can only be ASCII.</summary>
+    /// <summary>
+    /// The gRPC service name for the health check.
+    /// The value of grpcServiceName has the following meanings by convention:
+    ///   - Empty serviceName means the overall status of all services at the backend.
+    ///   - Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service.
+    /// The grpcServiceName can only be ASCII.
+    /// </summary>
     [JsonPropertyName("grpcServiceName")]
     public string? GrpcServiceName { get; set; }
 
-    /// <summary>The port number for the health check request. Must be specified if portName and portSpecification are not set or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.</summary>
+    /// <summary>
+    /// The port number for the health check request.
+    /// Must be specified if portName and portSpecification are not set
+    /// or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, gRPC health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, gRPC health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecHttp2HealthCheck
 {
-    /// <summary>The value of the host header in the HTTP2 health check request. If left empty (default value), the public IP on behalf of which this health check is performed will be used.</summary>
+    /// <summary>
+    /// The value of the host header in the HTTP2 health check request.
+    /// If left empty (default value), the public IP on behalf of which this health
+    /// check is performed will be used.
+    /// </summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The TCP port number for the HTTP2 health check request. The default value is 443.</summary>
+    /// <summary>
+    /// The TCP port number for the HTTP2 health check request.
+    /// The default value is 443.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, HTTP2 health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, HTTP2 health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 
-    /// <summary>Specifies the type of proxy header to append before sending data to the backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].</summary>
+    /// <summary>
+    /// Specifies the type of proxy header to append before sending data to the
+    /// backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].
+    /// </summary>
     [JsonPropertyName("proxyHeader")]
     public string? ProxyHeader { get; set; }
 
-    /// <summary>The request path of the HTTP2 health check request. The default value is /.</summary>
+    /// <summary>
+    /// The request path of the HTTP2 health check request.
+    /// The default value is /.
+    /// </summary>
     [JsonPropertyName("requestPath")]
     public string? RequestPath { get; set; }
 
-    /// <summary>The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.</summary>
+    /// <summary>
+    /// The bytes to match against the beginning of the response data. If left empty
+    /// (the default value), any response will indicate health. The response data
+    /// can only be ASCII.
+    /// </summary>
     [JsonPropertyName("response")]
     public string? Response { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecHttpHealthCheck
 {
-    /// <summary>The value of the host header in the HTTP health check request. If left empty (default value), the public IP on behalf of which this health check is performed will be used.</summary>
+    /// <summary>
+    /// The value of the host header in the HTTP health check request.
+    /// If left empty (default value), the public IP on behalf of which this health
+    /// check is performed will be used.
+    /// </summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The TCP port number for the HTTP health check request. The default value is 80.</summary>
+    /// <summary>
+    /// The TCP port number for the HTTP health check request.
+    /// The default value is 80.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, HTTP health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, HTTP health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 
-    /// <summary>Specifies the type of proxy header to append before sending data to the backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].</summary>
+    /// <summary>
+    /// Specifies the type of proxy header to append before sending data to the
+    /// backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].
+    /// </summary>
     [JsonPropertyName("proxyHeader")]
     public string? ProxyHeader { get; set; }
 
-    /// <summary>The request path of the HTTP health check request. The default value is /.</summary>
+    /// <summary>
+    /// The request path of the HTTP health check request.
+    /// The default value is /.
+    /// </summary>
     [JsonPropertyName("requestPath")]
     public string? RequestPath { get; set; }
 
-    /// <summary>The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.</summary>
+    /// <summary>
+    /// The bytes to match against the beginning of the response data. If left empty
+    /// (the default value), any response will indicate health. The response data
+    /// can only be ASCII.
+    /// </summary>
     [JsonPropertyName("response")]
     public string? Response { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecHttpsHealthCheck
 {
-    /// <summary>The value of the host header in the HTTPS health check request. If left empty (default value), the public IP on behalf of which this health check is performed will be used.</summary>
+    /// <summary>
+    /// The value of the host header in the HTTPS health check request.
+    /// If left empty (default value), the public IP on behalf of which this health
+    /// check is performed will be used.
+    /// </summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The TCP port number for the HTTPS health check request. The default value is 443.</summary>
+    /// <summary>
+    /// The TCP port number for the HTTPS health check request.
+    /// The default value is 443.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, HTTPS health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, HTTPS health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 
-    /// <summary>Specifies the type of proxy header to append before sending data to the backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].</summary>
+    /// <summary>
+    /// Specifies the type of proxy header to append before sending data to the
+    /// backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].
+    /// </summary>
     [JsonPropertyName("proxyHeader")]
     public string? ProxyHeader { get; set; }
 
-    /// <summary>The request path of the HTTPS health check request. The default value is /.</summary>
+    /// <summary>
+    /// The request path of the HTTPS health check request.
+    /// The default value is /.
+    /// </summary>
     [JsonPropertyName("requestPath")]
     public string? RequestPath { get; set; }
 
-    /// <summary>The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.</summary>
+    /// <summary>
+    /// The bytes to match against the beginning of the response data. If left empty
+    /// (the default value), any response will indicate health. The response data
+    /// can only be ASCII.
+    /// </summary>
     [JsonPropertyName("response")]
     public string? Response { get; set; }
 }
@@ -161,95 +297,178 @@ public partial class V1beta1ComputeHealthCheckSpecHttpsHealthCheck
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecLogConfig
 {
-    /// <summary>Indicates whether or not to export logs. This is false by default, which means no health check logging will be done.</summary>
+    /// <summary>
+    /// Indicates whether or not to export logs. This is false by default,
+    /// which means no health check logging will be done.
+    /// </summary>
     [JsonPropertyName("enable")]
     public bool? Enable { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecSslHealthCheck
 {
-    /// <summary>The TCP port number for the SSL health check request. The default value is 443.</summary>
+    /// <summary>
+    /// The TCP port number for the SSL health check request.
+    /// The default value is 443.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, SSL health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, SSL health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 
-    /// <summary>Specifies the type of proxy header to append before sending data to the backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].</summary>
+    /// <summary>
+    /// Specifies the type of proxy header to append before sending data to the
+    /// backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].
+    /// </summary>
     [JsonPropertyName("proxyHeader")]
     public string? ProxyHeader { get; set; }
 
-    /// <summary>The application data to send once the SSL connection has been established (default value is empty). If both request and response are empty, the connection establishment alone will indicate health. The request data can only be ASCII.</summary>
+    /// <summary>
+    /// The application data to send once the SSL connection has been
+    /// established (default value is empty). If both request and response are
+    /// empty, the connection establishment alone will indicate health. The request
+    /// data can only be ASCII.
+    /// </summary>
     [JsonPropertyName("request")]
     public string? Request { get; set; }
 
-    /// <summary>The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.</summary>
+    /// <summary>
+    /// The bytes to match against the beginning of the response data. If left empty
+    /// (the default value), any response will indicate health. The response data
+    /// can only be ASCII.
+    /// </summary>
     [JsonPropertyName("response")]
     public string? Response { get; set; }
 }
 
+/// <summary>A nested object resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpecTcpHealthCheck
 {
-    /// <summary>The TCP port number for the TCP health check request. The default value is 443.</summary>
+    /// <summary>
+    /// The TCP port number for the TCP health check request.
+    /// The default value is 443.
+    /// </summary>
     [JsonPropertyName("port")]
     public int? Port { get; set; }
 
-    /// <summary>Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.</summary>
+    /// <summary>
+    /// Port name as defined in InstanceGroup#NamedPort#name. If both port and
+    /// port_name are defined, port takes precedence.
+    /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>Specifies how port is selected for health checking, can be one of the following values: * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking. * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking. * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each network endpoint is used for health checking. For other backends, the port or named port specified in the Backend Service is used for health checking. If not specified, TCP health check follows behavior specified in &apos;port&apos; and &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].</summary>
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// 
+    ///   * &apos;USE_FIXED_PORT&apos;: The port number in &apos;port&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_NAMED_PORT&apos;: The &apos;portName&apos; is used for health checking.
+    /// 
+    ///   * &apos;USE_SERVING_PORT&apos;: For NetworkEndpointGroup, the port specified for each
+    ///   network endpoint is used for health checking. For other backends, the
+    ///   port or named port specified in the Backend Service is used for health
+    ///   checking.
+    /// 
+    /// If not specified, TCP health check follows behavior specified in &apos;port&apos; and
+    /// &apos;portName&apos; fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;].
+    /// </summary>
     [JsonPropertyName("portSpecification")]
     public string? PortSpecification { get; set; }
 
-    /// <summary>Specifies the type of proxy header to append before sending data to the backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].</summary>
+    /// <summary>
+    /// Specifies the type of proxy header to append before sending data to the
+    /// backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;].
+    /// </summary>
     [JsonPropertyName("proxyHeader")]
     public string? ProxyHeader { get; set; }
 
-    /// <summary>The application data to send once the TCP connection has been established (default value is empty). If both request and response are empty, the connection establishment alone will indicate health. The request data can only be ASCII.</summary>
+    /// <summary>
+    /// The application data to send once the TCP connection has been
+    /// established (default value is empty). If both request and response are
+    /// empty, the connection establishment alone will indicate health. The request
+    /// data can only be ASCII.
+    /// </summary>
     [JsonPropertyName("request")]
     public string? Request { get; set; }
 
-    /// <summary>The bytes to match against the beginning of the response data. If left empty (the default value), any response will indicate health. The response data can only be ASCII.</summary>
+    /// <summary>
+    /// The bytes to match against the beginning of the response data. If left empty
+    /// (the default value), any response will indicate health. The response data
+    /// can only be ASCII.
+    /// </summary>
     [JsonPropertyName("response")]
     public string? Response { get; set; }
 }
 
-/// <summary>ComputeHealthCheckSpec defines the desired state of ComputeHealthCheck</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckSpec
 {
-    /// <summary>How often (in seconds) to send a health check. The default value is 5 seconds.</summary>
+    /// <summary>
+    /// How often (in seconds) to send a health check. The default value is 5
+    /// seconds.
+    /// </summary>
     [JsonPropertyName("checkIntervalSec")]
     public int? CheckIntervalSec { get; set; }
 
-    /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
+    /// <summary>
+    /// An optional description of this resource. Provide this property when
+    /// you create the resource.
+    /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("grpcHealthCheck")]
     public V1beta1ComputeHealthCheckSpecGrpcHealthCheck? GrpcHealthCheck { get; set; }
 
-    /// <summary>A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.</summary>
+    /// <summary>
+    /// A so-far unhealthy instance will be marked healthy after this many
+    /// consecutive successes. The default value is 2.
+    /// </summary>
     [JsonPropertyName("healthyThreshold")]
     public int? HealthyThreshold { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("http2HealthCheck")]
     public V1beta1ComputeHealthCheckSpecHttp2HealthCheck? Http2HealthCheck { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("httpHealthCheck")]
     public V1beta1ComputeHealthCheckSpecHttpHealthCheck? HttpHealthCheck { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("httpsHealthCheck")]
     public V1beta1ComputeHealthCheckSpecHttpsHealthCheck? HttpsHealthCheck { get; set; }
 
@@ -265,17 +484,26 @@ public partial class V1beta1ComputeHealthCheckSpec
     [JsonPropertyName("resourceID")]
     public string? ResourceID { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("sslHealthCheck")]
     public V1beta1ComputeHealthCheckSpecSslHealthCheck? SslHealthCheck { get; set; }
 
+    /// <summary>A nested object resource.</summary>
     [JsonPropertyName("tcpHealthCheck")]
     public V1beta1ComputeHealthCheckSpecTcpHealthCheck? TcpHealthCheck { get; set; }
 
-    /// <summary>How long (in seconds) to wait before claiming failure. The default value is 5 seconds. It is invalid for timeoutSec to have greater value than checkIntervalSec.</summary>
+    /// <summary>
+    /// How long (in seconds) to wait before claiming failure.
+    /// The default value is 5 seconds.  It is invalid for timeoutSec to have
+    /// greater value than checkIntervalSec.
+    /// </summary>
     [JsonPropertyName("timeoutSec")]
     public int? TimeoutSec { get; set; }
 
-    /// <summary>A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.</summary>
+    /// <summary>
+    /// A so-far healthy instance will be marked unhealthy after this many
+    /// consecutive failures. The default value is 2.
+    /// </summary>
     [JsonPropertyName("unhealthyThreshold")]
     public int? UnhealthyThreshold { get; set; }
 }
@@ -305,12 +533,11 @@ public partial class V1beta1ComputeHealthCheckStatusConditions
     public string? Type { get; set; }
 }
 
-/// <summary>ComputeHealthCheckStatus defines the config connector machine state of ComputeHealthCheck</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeHealthCheckStatus
 {
-    /// <summary>Conditions represent the latest available observations of the ComputeHealthCheck&apos;s current state.</summary>
+    /// <summary>Conditions represent the latest available observation of the resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeHealthCheckStatusConditions>? Conditions { get; set; }
 
@@ -320,9 +547,8 @@ public partial class V1beta1ComputeHealthCheckStatus
 
     /// <summary>ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.</summary>
     [JsonPropertyName("observedGeneration")]
-    public long? ObservedGeneration { get; set; }
+    public int? ObservedGeneration { get; set; }
 
-    /// <summary>Server-defined URL for the resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
 
@@ -331,7 +557,6 @@ public partial class V1beta1ComputeHealthCheckStatus
     public string? Type { get; set; }
 }
 
-/// <summary>ComputeHealthCheck is the Schema for the ComputeHealthCheck API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -353,11 +578,9 @@ public partial class V1beta1ComputeHealthCheck : IKubernetesObject<V1ObjectMeta>
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>ComputeHealthCheckSpec defines the desired state of ComputeHealthCheck</summary>
     [JsonPropertyName("spec")]
     public required V1beta1ComputeHealthCheckSpec Spec { get; set; }
 
-    /// <summary>ComputeHealthCheckStatus defines the config connector machine state of ComputeHealthCheck</summary>
     [JsonPropertyName("status")]
     public V1beta1ComputeHealthCheckStatus? Status { get; set; }
 }

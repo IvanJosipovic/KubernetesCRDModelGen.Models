@@ -5,7 +5,7 @@ metadata:
     cnrm.cloud.google.com/version: 0.0.0-dev
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
-    cnrm.cloud.google.com/stability-level: stable
+    cnrm.cloud.google.com/stability-level: alpha
     cnrm.cloud.google.com/system: "true"
     cnrm.cloud.google.com/tf2crd: "true"
   name: tagstagbindings.tags.cnrm.cloud.google.com
@@ -76,9 +76,6 @@ spec:
                   external:
                     description: 'Allowed value: string of the format `//cloudresourcemanager.googleapis.com/projects/{{value}}`, where {{value}} is the `number` field of a `Project` resource.'
                     type: string
-                  kind:
-                    description: Kind to which we are binding the tag.  Defaults to Project if not specified.
-                    type: string
                   name:
                     description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
@@ -107,13 +104,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally managed TagsTagValue resource. Should be in the format "tagValues/{{tagValueID}}".
+                    description: 'Allowed value: string of the format `tagValues/{{value}}`, where {{value}} is the `name` field of a `TagsTagValue` resource.'
                     type: string
                   name:
-                    description: The name of a TagsTagValue resource.
+                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
                     type: string
                   namespace:
-                    description: The namespace of a TagsTagValue resource.
+                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
                     type: string
                 type: object
             required:

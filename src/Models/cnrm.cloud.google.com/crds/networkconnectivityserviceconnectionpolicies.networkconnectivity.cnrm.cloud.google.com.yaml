@@ -75,13 +75,13 @@ spec:
                   - external
                 properties:
                   external:
-                    description: The value of an externally managed ComputeNetwork resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}" or "projects/{{projectId}}/global/networks/{{networkId}}"
+                    description: A reference to an externally-managed Compute Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
                     type: string
                   name:
-                    description: The name of a ComputeNetwork resource.
+                    description: The `name` field of a `ComputeNetwork` resource.
                     type: string
                   namespace:
-                    description: The namespace of a ComputeNetwork resource.
+                    description: The `namespace` field of a `ComputeNetwork` resource.
                     type: string
                 type: object
               projectRef:
@@ -221,7 +221,7 @@ spec:
                           description: The project where the PSC connection is created.
                           type: string
                         error:
-                          description: The most recent error during operating this connection. Deprecated, please use error_info instead.
+                          description: The most recent error during operating this connection.
                           properties:
                             code:
                               description: The status code, which should be an enum value of google.rpc.Code.
@@ -240,7 +240,7 @@ spec:
                             metadata:
                               additionalProperties:
                                 type: string
-                              description: 'Additional structured details about this error. Keys must match a regular expression of `a-z+` but should ideally be lowerCamelCase. Also, they must be limited to 64 characters in length. When identifying the current value of an exceeded limit, the units should be contained in the key, not the value. For example, rather than `{"instanceLimit": "100/request"}`, should be returned as, `{"instanceLimitPerRequest": "100"}`, if the client exceeds the number of instances that can be created in a single (batch) request.'
+                              description: 'Additional structured details about this error. Keys must match /a-z+/ but should ideally be lowerCamelCase. Also they must be limited to 64 characters in length. When identifying the current value of an exceeded limit, the units should be contained in the key, not the value. For example, rather than {"instanceLimit": "100/request"}, should be returned as, {"instanceLimitPerRequest": "100"}, if the client exceeds the number of instances that can be created in a single (batch) request.'
                               type: object
                             reason:
                               description: The reason of the error. This is a constant value that identifies the proximate cause of the error. Error reasons are unique within a particular domain of errors. This should be at most 63 characters and match a regular expression of `A-Z+[A-Z0-9]`, which represents UPPER_SNAKE_CASE.
@@ -253,7 +253,7 @@ spec:
                           description: The last Compute Engine operation to setup PSC connection.
                           type: string
                         producerInstanceID:
-                          description: Immutable. Deprecated. Use producer_instance_metadata instead. An immutable identifier for the producer instance.
+                          description: Immutable. An immutable identifier for the producer instance.
                           type: string
                         pscConnectionID:
                           description: The PSC connection id of the PSC forwarding rule.
