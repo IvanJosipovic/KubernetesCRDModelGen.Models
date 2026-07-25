@@ -40,6 +40,71 @@ public partial class V1alpha1ProjectConfigList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>
+/// DeepLink defines a configurable external link that is rendered in the UI
+/// when viewing a Freight or Stage resource. The URL is an expression evaluated
+/// against the resource. The optional If field is an expression condition;
+/// when set, the link is only shown when the expression evaluates to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ProjectConfigSpecFreightLinks
+{
+    /// <summary>
+    /// Description is an optional human-readable summary shown alongside the
+    /// link.
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If is an optional expression condition. When set, the link is only shown
+    /// when the expression evaluates to true.
+    /// </summary>
+    [JsonPropertyName("if")]
+    public string? If { get; set; }
+
+    /// <summary>Title is the display label for the link.</summary>
+    [JsonPropertyName("title")]
+    public required string Title { get; set; }
+
+    /// <summary>URL is an expression that resolves to the link&apos;s href.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
+}
+
+/// <summary>
+/// AutoRollback describes the conditions under which this Stage should
+/// automatically roll back to the last known-good (verified) Freight. When
+/// nil, auto-rollback is disabled.
+/// 
+/// Kargo Enterprise only: This field is ignored in Kargo OSS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ProjectConfigSpecPromotionPoliciesAutoRollback
+{
+    /// <summary>
+    /// OnPromotion is the list of terminal Promotion phases that should trigger
+    /// an automated rollback. Only Failed and Errored are accepted. Note that
+    /// unsuccessful promotions (as opposed to unsuccessful verifications) may not
+    /// necessarily indicate a problem with the Freight, since promotions might fail
+    /// due to transient issues with the deployment itself (network, credential
+    /// expirations, etc...). Defaults to [].
+    /// </summary>
+    [JsonPropertyName("onPromotion")]
+    public IList<string>? OnPromotion { get; set; }
+
+    /// <summary>
+    /// OnVerification is the list of terminal verification phases that should
+    /// trigger an automated rollback. Only Failed and Error are accepted (note:
+    /// &quot;Error&quot;, not &quot;Errored&quot; as in onPromotion). When absent or empty,
+    /// defaults to [Failed].
+    /// </summary>
+    [JsonPropertyName("onVerification")]
+    public IList<string>? OnVerification { get; set; }
+}
+
+/// <summary>
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
@@ -130,6 +195,16 @@ public partial class V1alpha1ProjectConfigSpecPromotionPolicies
     public bool? AutoPromotionEnabled { get; set; }
 
     /// <summary>
+    /// AutoRollback describes the conditions under which this Stage should
+    /// automatically roll back to the last known-good (verified) Freight. When
+    /// nil, auto-rollback is disabled.
+    /// 
+    /// Kargo Enterprise only: This field is ignored in Kargo OSS.
+    /// </summary>
+    [JsonPropertyName("autoRollback")]
+    public V1alpha1ProjectConfigSpecPromotionPoliciesAutoRollback? AutoRollback { get; set; }
+
+    /// <summary>
     /// Stage is the name of the Stage to which this policy applies.
     /// 
     /// Deprecated: Use StageSelector instead.
@@ -143,6 +218,39 @@ public partial class V1alpha1ProjectConfigSpecPromotionPolicies
     /// </summary>
     [JsonPropertyName("stageSelector")]
     public V1alpha1ProjectConfigSpecPromotionPoliciesStageSelector? StageSelector { get; set; }
+}
+
+/// <summary>
+/// DeepLink defines a configurable external link that is rendered in the UI
+/// when viewing a Freight or Stage resource. The URL is an expression evaluated
+/// against the resource. The optional If field is an expression condition;
+/// when set, the link is only shown when the expression evaluates to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ProjectConfigSpecStageLinks
+{
+    /// <summary>
+    /// Description is an optional human-readable summary shown alongside the
+    /// link.
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If is an optional expression condition. When set, the link is only shown
+    /// when the expression evaluates to true.
+    /// </summary>
+    [JsonPropertyName("if")]
+    public string? If { get; set; }
+
+    /// <summary>Title is the display label for the link.</summary>
+    [JsonPropertyName("title")]
+    public required string Title { get; set; }
+
+    /// <summary>URL is an expression that resolves to the link&apos;s href.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
 }
 
 /// <summary>
@@ -1009,11 +1117,27 @@ public partial class V1alpha1ProjectConfigSpecWebhookReceivers
 public partial class V1alpha1ProjectConfigSpec
 {
     /// <summary>
+    /// FreightLinks defines deep links shown when viewing Freight resources
+    /// within this project. These are shown in addition to any cluster-level
+    /// FreightLinks defined in ClusterConfig.
+    /// </summary>
+    [JsonPropertyName("freightLinks")]
+    public IList<V1alpha1ProjectConfigSpecFreightLinks>? FreightLinks { get; set; }
+
+    /// <summary>
     /// PromotionPolicies defines policies governing the promotion of Freight to
     /// specific Stages within the Project.
     /// </summary>
     [JsonPropertyName("promotionPolicies")]
     public IList<V1alpha1ProjectConfigSpecPromotionPolicies>? PromotionPolicies { get; set; }
+
+    /// <summary>
+    /// StageLinks defines deep links shown when viewing Stage resources within
+    /// this project. These are shown in addition to any cluster-level
+    /// StageLinks defined in ClusterConfig.
+    /// </summary>
+    [JsonPropertyName("stageLinks")]
+    public IList<V1alpha1ProjectConfigSpecStageLinks>? StageLinks { get; set; }
 
     /// <summary>
     /// WebhookReceivers describes Project-specific webhook receivers used for

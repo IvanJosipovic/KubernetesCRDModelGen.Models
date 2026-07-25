@@ -39,6 +39,43 @@ public partial class V1alpha1PromotionList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1alpha1Promotion> Items { get; set; }
 }
 
+/// <summary>
+/// Kind is the kind of resource from which Freight may have originated. At
+/// present, this can only be &quot;Warehouse&quot;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1PromotionSpecOriginKindEnum>))]
+public enum V1alpha1PromotionSpecOriginKindEnum
+{
+    [EnumMember(Value = "Warehouse"), JsonStringEnumMemberName("Warehouse")]
+    Warehouse
+}
+
+/// <summary>
+/// Origin, when set, identifies the FreightOrigin whose auto-promotion
+/// candidate should be promoted. The mutating webhook resolves this to the
+/// candidate Freight for that origin and fills Freight before the Promotion
+/// is persisted. Exactly one of Freight or Origin must be set.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1PromotionSpecOrigin
+{
+    /// <summary>
+    /// Kind is the kind of resource from which Freight may have originated. At
+    /// present, this can only be &quot;Warehouse&quot;.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public required V1alpha1PromotionSpecOriginKindEnum Kind { get; set; }
+
+    /// <summary>
+    /// Name is the name of the resource of the kind indicated by the Kind field
+    /// from which Freight may originate.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>Retry is the retry policy for this step.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -241,11 +278,20 @@ public partial class V1alpha1PromotionSpecVars
 public partial class V1alpha1PromotionSpec
 {
     /// <summary>
-    /// Freight specifies the piece of Freight to be promoted into the Stage
-    /// referenced by the Stage field.
+    /// Freight specifies the piece of Freight to be promoted into the Stage.
+    /// Exactly one of Freight or Origin must be set.
     /// </summary>
     [JsonPropertyName("freight")]
-    public required string Freight { get; set; }
+    public string? Freight { get; set; }
+
+    /// <summary>
+    /// Origin, when set, identifies the FreightOrigin whose auto-promotion
+    /// candidate should be promoted. The mutating webhook resolves this to the
+    /// candidate Freight for that origin and fills Freight before the Promotion
+    /// is persisted. Exactly one of Freight or Origin must be set.
+    /// </summary>
+    [JsonPropertyName("origin")]
+    public V1alpha1PromotionSpecOrigin? Origin { get; set; }
 
     /// <summary>
     /// Stage specifies the name of the Stage to which this Promotion

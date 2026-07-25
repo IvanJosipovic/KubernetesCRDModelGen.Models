@@ -331,6 +331,13 @@ public partial class V1alpha1Freight : IKubernetesObject<V1ObjectMeta>, IStatus<
     [JsonPropertyName("commits")]
     public IList<V1alpha1FreightCommits>? Commits { get; set; }
 
+    /// <summary>
+    /// DiscoveredAt is the time at which this Freight was discovered/created.
+    /// A defaulting webhook initializes this to the creation time of the Freight.
+    /// </summary>
+    [JsonPropertyName("discoveredAt")]
+    public DateTime? DiscoveredAt { get; set; }
+
     /// <summary>Images describes specific versions of specific container images.</summary>
     [JsonPropertyName("images")]
     public IList<V1alpha1FreightImages>? Images { get; set; }

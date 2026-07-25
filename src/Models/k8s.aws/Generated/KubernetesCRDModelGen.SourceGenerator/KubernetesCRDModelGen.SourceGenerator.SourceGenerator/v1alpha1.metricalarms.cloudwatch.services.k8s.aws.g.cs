@@ -58,6 +58,122 @@ public partial class V1alpha1MetricAlarmSpecDimensions
 }
 
 /// <summary>
+/// Contains the configuration that determines how a PromQL alarm evaluates its
+/// contributors, including the query to run and the durations that define when
+/// contributors transition between states.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MetricAlarmSpecEvaluationCriteriaPromQLCriteria
+{
+    [JsonPropertyName("pendingPeriod")]
+    public long? PendingPeriod { get; set; }
+
+    [JsonPropertyName("query")]
+    public string? Query { get; set; }
+
+    [JsonPropertyName("recoveryPeriod")]
+    public long? RecoveryPeriod { get; set; }
+}
+
+/// <summary>
+/// The evaluation criteria for the alarm. For each PutMetricAlarm operation,
+/// you must specify either MetricName, a Metrics array, or an EvaluationCriteria.
+/// 
+/// If you use the EvaluationCriteria parameter, you cannot include the Namespace,
+/// MetricName, Dimensions, Period, Unit, Statistic, ExtendedStatistic, Metrics,
+/// Threshold, ComparisonOperator, ThresholdMetricId, EvaluationPeriods, or DatapointsToAlarm
+/// parameters of PutMetricAlarm in the same operation. Instead, all evaluation
+/// parameters are defined within this structure.
+/// 
+/// For an example of how to use this parameter, see the PromQL alarm example
+/// on this page.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MetricAlarmSpecEvaluationCriteria
+{
+    /// <summary>
+    /// Contains the configuration that determines how a PromQL alarm evaluates its
+    /// contributors, including the query to run and the durations that define when
+    /// contributors transition between states.
+    /// </summary>
+    [JsonPropertyName("promQLCriteria")]
+    public V1alpha1MetricAlarmSpecEvaluationCriteriaPromQLCriteria? PromQLCriteria { get; set; }
+}
+
+/// <summary>
+/// An evaluation window that aligns the evaluated range to fixed clock boundaries
+/// that match the alarm&apos;s period, such as the top of the hour, midnight, or
+/// the start of the calendar week, optionally in a specific time zone.
+/// 
+/// When you use a wall clock window, the alarm&apos;s period must be 1 minute (60
+/// seconds), 5 minutes (300 seconds), 1 hour (3,600 seconds), 1 day (86,400
+/// seconds), or 1 week (604,800 seconds). Other period values aren&apos;t supported
+/// with a wall clock window.
+/// 
+/// Choose a wall clock window when your monitoring is tied to a business or
+/// calendar period, such as daily reports, batch jobs, or backups, or when you
+/// want alarm evaluations to match the periods shown on a metric dashboard.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MetricAlarmSpecEvaluationWindowWallClockWindow
+{
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>
+/// The evaluation window that the alarm uses to select the range of metric data
+/// that it evaluates. Specify either a sliding window or a wall clock window.
+/// If you omit this parameter, the alarm uses a sliding window.
+/// 
+/// A sliding window advances each time the alarm is evaluated, forming a rolling
+/// time window. A wall clock window aligns the evaluated range to fixed clock
+/// boundaries, such as the top of the hour or the start of the day.
+/// 
+/// You can use EvaluationWindow with any type of metric alarm except alarms
+/// that are based on a PromQL query.
+/// 
+/// For more information, see Alarm evaluation windows (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-evaluation-window.html)
+/// in the CloudWatch User Guide.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MetricAlarmSpecEvaluationWindow
+{
+    /// <summary>
+    /// An evaluation window that advances each time the alarm is evaluated, forming
+    /// a rolling time window. This is the default evaluation window. A sliding window
+    /// has no additional configuration options.
+    /// 
+    /// Choose a sliding window when you need the fastest detection and the calendar
+    /// boundaries of the data don&apos;t matter, such as for continuous performance,
+    /// latency, or resource-exhaustion monitoring.
+    /// </summary>
+    [JsonPropertyName("slidingWindow")]
+    public IDictionary<string, string>? SlidingWindow { get; set; }
+
+    /// <summary>
+    /// An evaluation window that aligns the evaluated range to fixed clock boundaries
+    /// that match the alarm&apos;s period, such as the top of the hour, midnight, or
+    /// the start of the calendar week, optionally in a specific time zone.
+    /// 
+    /// When you use a wall clock window, the alarm&apos;s period must be 1 minute (60
+    /// seconds), 5 minutes (300 seconds), 1 hour (3,600 seconds), 1 day (86,400
+    /// seconds), or 1 week (604,800 seconds). Other period values aren&apos;t supported
+    /// with a wall clock window.
+    /// 
+    /// Choose a wall clock window when your monitoring is tied to a business or
+    /// calendar period, such as daily reports, batch jobs, or backups, or when you
+    /// want alarm evaluations to match the periods shown on a metric dashboard.
+    /// </summary>
+    [JsonPropertyName("wallClockWindow")]
+    public V1alpha1MetricAlarmSpecEvaluationWindowWallClockWindow? WallClockWindow { get; set; }
+}
+
+/// <summary>
 /// A dimension is a name/value pair that is part of the identity of a metric.
 /// Because dimensions are part of the unique identifier for a metric, whenever
 /// you add a unique name/value pair to one of your metrics, you are creating
@@ -247,7 +363,7 @@ public partial class V1alpha1MetricAlarmSpec
     /// 
     /// # Start a Amazon Q Developer operational investigation
     /// 
-    /// arn:aws:aiops:region:account-id:investigation-group:ingestigation-group-id
+    /// arn:aws:aiops:region:account-id:investigation-group:investigation-group-id
     /// </summary>
     [JsonPropertyName("alarmActions")]
     public IList<string>? AlarmActions { get; set; }
@@ -265,7 +381,7 @@ public partial class V1alpha1MetricAlarmSpec
     /// models.
     /// </summary>
     [JsonPropertyName("comparisonOperator")]
-    public required string ComparisonOperator { get; set; }
+    public string? ComparisonOperator { get; set; }
 
     /// <summary>
     /// The number of data points that must be breaching to trigger the alarm. This
@@ -294,16 +410,57 @@ public partial class V1alpha1MetricAlarmSpec
     public string? EvaluateLowSampleCountPercentile { get; set; }
 
     /// <summary>
+    /// The evaluation criteria for the alarm. For each PutMetricAlarm operation,
+    /// you must specify either MetricName, a Metrics array, or an EvaluationCriteria.
+    /// 
+    /// If you use the EvaluationCriteria parameter, you cannot include the Namespace,
+    /// MetricName, Dimensions, Period, Unit, Statistic, ExtendedStatistic, Metrics,
+    /// Threshold, ComparisonOperator, ThresholdMetricId, EvaluationPeriods, or DatapointsToAlarm
+    /// parameters of PutMetricAlarm in the same operation. Instead, all evaluation
+    /// parameters are defined within this structure.
+    /// 
+    /// For an example of how to use this parameter, see the PromQL alarm example
+    /// on this page.
+    /// </summary>
+    [JsonPropertyName("evaluationCriteria")]
+    public V1alpha1MetricAlarmSpecEvaluationCriteria? EvaluationCriteria { get; set; }
+
+    /// <summary>
+    /// The frequency, in seconds, at which the alarm is evaluated. Valid values
+    /// are 10, 20, 30, and any multiple of 60.
+    /// 
+    /// This parameter is required for alarms that use EvaluationCriteria, and cannot
+    /// be specified for alarms configured with MetricName or Metrics.
+    /// </summary>
+    [JsonPropertyName("evaluationInterval")]
+    public long? EvaluationInterval { get; set; }
+
+    /// <summary>
     /// The number of periods over which data is compared to the specified threshold.
     /// If you are setting an alarm that requires that a number of consecutive data
     /// points be breaching to trigger the alarm, this value specifies that number.
     /// If you are setting an &quot;M out of N&quot; alarm, this value is the N.
-    /// 
-    /// An alarm&apos;s total current evaluation period can be no longer than one day,
-    /// so this number multiplied by Period cannot be more than 86,400 seconds.
     /// </summary>
     [JsonPropertyName("evaluationPeriods")]
-    public required long EvaluationPeriods { get; set; }
+    public long? EvaluationPeriods { get; set; }
+
+    /// <summary>
+    /// The evaluation window that the alarm uses to select the range of metric data
+    /// that it evaluates. Specify either a sliding window or a wall clock window.
+    /// If you omit this parameter, the alarm uses a sliding window.
+    /// 
+    /// A sliding window advances each time the alarm is evaluated, forming a rolling
+    /// time window. A wall clock window aligns the evaluated range to fixed clock
+    /// boundaries, such as the top of the hour or the start of the day.
+    /// 
+    /// You can use EvaluationWindow with any type of metric alarm except alarms
+    /// that are based on a PromQL query.
+    /// 
+    /// For more information, see Alarm evaluation windows (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-evaluation-window.html)
+    /// in the CloudWatch User Guide.
+    /// </summary>
+    [JsonPropertyName("evaluationWindow")]
+    public V1alpha1MetricAlarmSpecEvaluationWindow? EvaluationWindow { get; set; }
 
     /// <summary>
     /// The extended statistic for the metric specified in MetricName. When you call
@@ -390,7 +547,7 @@ public partial class V1alpha1MetricAlarmSpec
 
     /// <summary>
     /// The name for the metric associated with the alarm. For each PutMetricAlarm
-    /// operation, you must specify either MetricName or a Metrics array.
+    /// operation, you must specify either MetricName, a Metrics array, or an EvaluationCriteria.
     /// 
     /// If you are creating an alarm based on a math expression, you cannot specify
     /// this parameter, or any of the Namespace, Dimensions, Period, Unit, Statistic,
@@ -403,7 +560,7 @@ public partial class V1alpha1MetricAlarmSpec
     /// <summary>
     /// An array of MetricDataQuery structures that enable you to create an alarm
     /// based on the result of a metric math expression. For each PutMetricAlarm
-    /// operation, you must specify either MetricName or a Metrics array.
+    /// operation, you must specify either MetricName, a Metrics array, or an EvaluationCriteria.
     /// 
     /// Each item in the Metrics array either retrieves a metric or performs a math
     /// expression.
@@ -487,24 +644,26 @@ public partial class V1alpha1MetricAlarmSpec
 
     /// <summary>
     /// The length, in seconds, used each time the metric specified in MetricName
-    /// is evaluated. Valid values are 10, 30, and any multiple of 60.
+    /// is evaluated. Valid values are 10, 20, 30, and any multiple of 60.
     /// 
     /// Period is required for alarms based on static thresholds. If you are creating
     /// an alarm based on a metric math expression, you specify the period for each
     /// metric within the objects in the Metrics array.
     /// 
-    /// Be sure to specify 10 or 30 only for metrics that are stored by a PutMetricData
-    /// call with a StorageResolution of 1. If you specify a period of 10 or 30 for
-    /// a metric that does not have sub-minute resolution, the alarm still attempts
-    /// to gather data at the period rate that you specify. In this case, it does
-    /// not receive data for the attempts that do not correspond to a one-minute
+    /// Be sure to specify 10, 20, or 30 only for metrics that are stored by a PutMetricData
+    /// call with a StorageResolution of 1. If you specify a period of 10, 20, or
+    /// 30 for a metric that does not have sub-minute resolution, the alarm still
+    /// attempts to gather data at the period rate that you specify. In this case,
+    /// it does not receive data for the attempts that do not correspond to a one-minute
     /// data resolution, and the alarm might often lapse into INSUFFICENT_DATA status.
-    /// Specifying 10 or 30 also sets this alarm as a high-resolution alarm, which
-    /// has a higher charge than other alarms. For more information about pricing,
+    /// Specifying 10, 20, or 30 also sets this alarm as a high-resolution alarm,
+    /// which has a higher charge than other alarms. For more information about pricing,
     /// see Amazon CloudWatch Pricing (https://aws.amazon.com/cloudwatch/pricing/).
     /// 
-    /// An alarm&apos;s total current evaluation period can be no longer than one day,
-    /// so Period multiplied by EvaluationPeriods cannot be more than 86,400 seconds.
+    /// An alarm&apos;s total current evaluation period can be no longer than seven days,
+    /// so Period multiplied by EvaluationPeriods can&apos;t be more than 604,800 seconds.
+    /// For alarms with a period of less than one hour (3,600 seconds), the total
+    /// evaluation period can&apos;t be longer than one day (86,400 seconds).
     /// </summary>
     [JsonPropertyName("period")]
     public long? Period { get; set; }
@@ -571,6 +730,8 @@ public partial class V1alpha1MetricAlarmSpec
     /// missing data even if you choose a different option for TreatMissingData.
     /// When an AWS/DynamoDB metric has missing data, alarms that evaluate that metric
     /// remain in their current state.
+    /// 
+    /// This parameter is not applicable to PromQL alarms.
     /// </summary>
     [JsonPropertyName("treatMissingData")]
     public string? TreatMissingData { get; set; }

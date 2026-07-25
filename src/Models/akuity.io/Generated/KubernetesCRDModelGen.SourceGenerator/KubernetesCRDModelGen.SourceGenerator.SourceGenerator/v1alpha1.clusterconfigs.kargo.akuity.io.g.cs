@@ -40,6 +40,39 @@ public partial class V1alpha1ClusterConfigList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>
+/// DeepLink defines a configurable external link that is rendered in the UI
+/// when viewing a Freight or Stage resource. The URL is an expression evaluated
+/// against the resource. The optional If field is an expression condition;
+/// when set, the link is only shown when the expression evaluates to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecFreightLinks
+{
+    /// <summary>
+    /// Description is an optional human-readable summary shown alongside the
+    /// link.
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If is an optional expression condition. When set, the link is only shown
+    /// when the expression evaluates to true.
+    /// </summary>
+    [JsonPropertyName("if")]
+    public string? If { get; set; }
+
+    /// <summary>Title is the display label for the link.</summary>
+    [JsonPropertyName("title")]
+    public required string Title { get; set; }
+
+    /// <summary>URL is an expression that resolves to the link&apos;s href.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
+}
+
+/// <summary>
 /// SigningKeySecret references a Secret in the system namespace containing
 /// a GPG signing key for commit signing. The Secret must contain a data
 /// key named &quot;signingKey&quot; with the GPG private key material.
@@ -84,6 +117,39 @@ public partial class V1alpha1ClusterConfigSpecGitClient
     /// </summary>
     [JsonPropertyName("signingKeySecret")]
     public V1alpha1ClusterConfigSpecGitClientSigningKeySecret? SigningKeySecret { get; set; }
+}
+
+/// <summary>
+/// DeepLink defines a configurable external link that is rendered in the UI
+/// when viewing a Freight or Stage resource. The URL is an expression evaluated
+/// against the resource. The optional If field is an expression condition;
+/// when set, the link is only shown when the expression evaluates to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecStageLinks
+{
+    /// <summary>
+    /// Description is an optional human-readable summary shown alongside the
+    /// link.
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// If is an optional expression condition. When set, the link is only shown
+    /// when the expression evaluates to true.
+    /// </summary>
+    [JsonPropertyName("if")]
+    public string? If { get; set; }
+
+    /// <summary>Title is the display label for the link.</summary>
+    [JsonPropertyName("title")]
+    public required string Title { get; set; }
+
+    /// <summary>URL is an expression that resolves to the link&apos;s href.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
 }
 
 /// <summary>
@@ -950,6 +1016,14 @@ public partial class V1alpha1ClusterConfigSpecWebhookReceivers
 public partial class V1alpha1ClusterConfigSpec
 {
     /// <summary>
+    /// FreightLinks defines deep links shown when viewing any Freight resource
+    /// across all projects in the cluster. Project-level FreightLinks defined
+    /// in ProjectConfig are shown in addition to these.
+    /// </summary>
+    [JsonPropertyName("freightLinks")]
+    public IList<V1alpha1ClusterConfigSpecFreightLinks>? FreightLinks { get; set; }
+
+    /// <summary>
     /// GitClient describes cluster-level configuration for Kargo&apos;s Git client,
     /// including committer identity and an optional signing key. If set, these
     /// values take precedence over any configuration provided at install time
@@ -957,6 +1031,14 @@ public partial class V1alpha1ClusterConfigSpec
     /// </summary>
     [JsonPropertyName("gitClient")]
     public V1alpha1ClusterConfigSpecGitClient? GitClient { get; set; }
+
+    /// <summary>
+    /// StageLinks defines deep links shown when viewing any Stage resource
+    /// across all projects in the cluster. Project-level StageLinks defined in
+    /// ProjectConfig are shown in addition to these.
+    /// </summary>
+    [JsonPropertyName("stageLinks")]
+    public IList<V1alpha1ClusterConfigSpecStageLinks>? StageLinks { get; set; }
 
     /// <summary>
     /// WebhookReceivers describes cluster-scoped webhook receivers used for

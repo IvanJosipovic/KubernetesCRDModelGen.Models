@@ -47,7 +47,7 @@ public partial class V1alpha1DashboardSpec
     /// required.
     /// 
     /// For more information about the syntax, see Dashboard Body Structure and Syntax
-    /// (https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
+    /// (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Dashboard-Body-Structure.html).
     /// </summary>
     [JsonPropertyName("dashboardBody")]
     public required string DashboardBody { get; set; }
