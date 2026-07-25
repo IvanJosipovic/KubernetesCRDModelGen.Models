@@ -277,6 +277,65 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGitCommits
     public string? Tag { get; set; }
 }
 
+/// <summary>DiscoveredRef pairs a Git ref name with the ID of the object it resolves to.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGitObservedRefsTags
+{
+    /// <summary>
+    /// ID is the identifier of the object the ref points to, typically a SHA-1
+    /// hash. For an annotated tag this is the tag object&apos;s ID, not the commit it
+    /// dereferences to, because the value is obtained via git ls-remote --refs.
+    /// This is immaterial to its sole use -- change detection -- since the value
+    /// moves whenever the ref is re-pointed and is only ever compared against
+    /// other values obtained the same way.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public required string Id { get; set; }
+
+    /// <summary>
+    /// Name is the short name of the ref (e.g. a tag name such as &quot;v1.2.3&quot;),
+    /// without its &quot;refs/tags/&quot; or &quot;refs/heads/&quot; prefix.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// ObservedRefs records the raw remote ref state observed at the most recent
+/// successful discovery, after name-based filtering but before path filtering
+/// or commit selection. The Warehouse uses it to short-circuit discovery: at
+/// the start of a reconcile, a single git ls-remote call yields the current
+/// ref state, and if it matches this field, nothing relevant has moved and the
+/// previously selected Commits remain valid -- so an expensive clone and
+/// history walk can be skipped entirely. This field is optional; when absent
+/// (e.g. on a Warehouse that predates this feature), discovery falls through to
+/// a full clone and repopulates it.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGitObservedRefs
+{
+    /// <summary>
+    /// BranchHead is the unfiltered commit ID at the tip of the subscribed branch.
+    /// It is populated for branch-based selection strategies (NewestFromBranch).
+    /// Because it records the branch tip before any path filtering, an unchanged
+    /// value guarantees the path-filtered selection cannot have changed either.
+    /// </summary>
+    [JsonPropertyName("branchHead")]
+    public string? BranchHead { get; set; }
+
+    /// <summary>
+    /// Tags is the set of tags that satisfied the GitSubscription&apos;s name-based
+    /// filters (semver and/or regex), paired with the commit IDs they reference,
+    /// sorted by tag name for a stable comparison. It is populated for tag-based
+    /// selection strategies (NewestTag, SemVer, Lexical). Path filtering is
+    /// applied later, during selection, and does not affect this set.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IList<V1alpha1WarehouseStatusDiscoveredArtifactsGitObservedRefsTags>? Tags { get; set; }
+}
+
 /// <summary>
 /// GitDiscoveryResult represents the result of a Git discovery operation for a
 /// GitSubscription.
@@ -292,6 +351,20 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGit
     /// </summary>
     [JsonPropertyName("commits")]
     public IList<V1alpha1WarehouseStatusDiscoveredArtifactsGitCommits>? Commits { get; set; }
+
+    /// <summary>
+    /// ObservedRefs records the raw remote ref state observed at the most recent
+    /// successful discovery, after name-based filtering but before path filtering
+    /// or commit selection. The Warehouse uses it to short-circuit discovery: at
+    /// the start of a reconcile, a single git ls-remote call yields the current
+    /// ref state, and if it matches this field, nothing relevant has moved and the
+    /// previously selected Commits remain valid -- so an expensive clone and
+    /// history walk can be skipped entirely. This field is optional; when absent
+    /// (e.g. on a Warehouse that predates this feature), discovery falls through to
+    /// a full clone and repopulates it.
+    /// </summary>
+    [JsonPropertyName("observedRefs")]
+    public V1alpha1WarehouseStatusDiscoveredArtifactsGitObservedRefs? ObservedRefs { get; set; }
 
     /// <summary>
     /// RepoURL is the repository URL of the GitSubscription.

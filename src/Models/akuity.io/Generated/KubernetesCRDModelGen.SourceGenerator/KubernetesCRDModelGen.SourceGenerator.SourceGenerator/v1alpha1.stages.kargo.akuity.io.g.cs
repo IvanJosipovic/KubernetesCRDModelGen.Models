@@ -618,6 +618,79 @@ public partial class V1alpha1StageSpec
     public V1alpha1StageSpecVerification? Verification { get; set; }
 }
 
+/// <summary>
+/// Kind is the kind of resource from which Freight may have originated. At
+/// present, this can only be &quot;Warehouse&quot;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1StageStatusAutoPromotionHoldsOriginKindEnum>))]
+public enum V1alpha1StageStatusAutoPromotionHoldsOriginKindEnum
+{
+    [EnumMember(Value = "Warehouse"), JsonStringEnumMemberName("Warehouse")]
+    Warehouse
+}
+
+/// <summary>
+/// Origin describes the FreightOrigin pinned by this hold. It matches the
+/// enclosing map key.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusAutoPromotionHoldsOrigin
+{
+    /// <summary>
+    /// Kind is the kind of resource from which Freight may have originated. At
+    /// present, this can only be &quot;Warehouse&quot;.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public required V1alpha1StageStatusAutoPromotionHoldsOriginKindEnum Kind { get; set; }
+
+    /// <summary>
+    /// Name is the name of the resource of the kind indicated by the Kind field
+    /// from which Freight may originate.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AutoPromotionHold is a value in the AutoPromotionHolds map. It records the
+/// details of the Promotion that established the hold.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusAutoPromotionHolds
+{
+    /// <summary>Actor identifies the user who triggered the hold.</summary>
+    [JsonPropertyName("actor")]
+    public string? Actor { get; set; }
+
+    /// <summary>
+    /// CreatedAt is the creation timestamp of the Promotion that established this
+    /// hold.
+    /// </summary>
+    [JsonPropertyName("createdAt")]
+    public DateTime? CreatedAt { get; set; }
+
+    /// <summary>FreightName is the name of the Freight selected when the hold was created.</summary>
+    [JsonPropertyName("freightName")]
+    public required string FreightName { get; set; }
+
+    /// <summary>
+    /// Origin describes the FreightOrigin pinned by this hold. It matches the
+    /// enclosing map key.
+    /// </summary>
+    [JsonPropertyName("origin")]
+    public required V1alpha1StageStatusAutoPromotionHoldsOrigin Origin { get; set; }
+
+    /// <summary>
+    /// PromotionName is the name of the Promotion that established this hold.
+    /// Stored here as a paper trail that survives Promotion garbage collection.
+    /// </summary>
+    [JsonPropertyName("promotionName")]
+    public string? PromotionName { get; set; }
+}
+
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1StageStatusConditionsStatusEnum>))]
@@ -2760,6 +2833,18 @@ public partial class V1alpha1StageStatus
     /// </summary>
     [JsonPropertyName("autoPromotionEnabled")]
     public bool? AutoPromotionEnabled { get; set; }
+
+    /// <summary>
+    /// AutoPromotionHolds records active auto-promotion holds for this Stage. A
+    /// hold is established when a Promotion selects Freight other than the
+    /// auto-promotion candidate for that origin, pausing auto-promotion for that
+    /// origin until explicitly released. Auto-promotions themselves never
+    /// establish holds. Keys are string representations of FreightOrigins (e.g.
+    /// &quot;Warehouse/my-warehouse&quot;); values describe the Promotion that established
+    /// the hold.
+    /// </summary>
+    [JsonPropertyName("autoPromotionHolds")]
+    public IDictionary<string, V1alpha1StageStatusAutoPromotionHolds>? AutoPromotionHolds { get; set; }
 
     /// <summary>
     /// Conditions contains the last observations of the Stage&apos;s current

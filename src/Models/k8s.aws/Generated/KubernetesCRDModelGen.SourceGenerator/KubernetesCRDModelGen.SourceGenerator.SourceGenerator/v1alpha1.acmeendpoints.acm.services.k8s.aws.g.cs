@@ -1,0 +1,287 @@
+﻿#nullable enable
+using k8s;
+using k8s.Models;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+
+namespace KubernetesCRDModelGen.Models.acm.services.k8s.aws;
+/// <summary>AcmeEndpoint is the Schema for the AcmeEndpoints API</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1AcmeEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AcmeEndpoint>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "AcmeEndpointList";
+    public const string KubeGroup = "acm.services.k8s.aws";
+    public const string KubePluralName = "acmeendpoints";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "acm.services.k8s.aws/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "AcmeEndpointList";
+
+    /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
+    [JsonPropertyName("metadata")]
+    public V1ListMeta? Metadata { get; set; }
+
+    /// <summary>List of V1alpha1AcmeEndpoint objects.</summary>
+    [JsonPropertyName("items")]
+    public required IList<V1alpha1AcmeEndpoint> Items { get; set; }
+}
+
+/// <summary>Configuration for a public certificate authority.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointSpecCertificateAuthorityPublicCertificateAuthority
+{
+    [JsonPropertyName("allowedKeyAlgorithms")]
+    public IList<string>? AllowedKeyAlgorithms { get; set; }
+}
+
+/// <summary>
+/// The certificate authority to use for issuing certificates through this endpoint.
+/// Currently only PublicCertificateAuthority (Amazon Trust Services) is supported.
+/// Optionally specify AllowedKeyAlgorithms to restrict key algorithms for issued certificates.
+/// 
+/// The type of certificate authority to use for issuing certificates through
+/// this ACME endpoint.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointSpecCertificateAuthority
+{
+    /// <summary>Configuration for a public certificate authority.</summary>
+    [JsonPropertyName("publicCertificateAuthority")]
+    public V1alpha1AcmeEndpointSpecCertificateAuthorityPublicCertificateAuthority? PublicCertificateAuthority { get; set; }
+}
+
+/// <summary>A key-value pair that identifies or specifies metadata about an ACM resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointSpecCertificateTags
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A key-value pair that identifies or specifies metadata about an ACM resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointSpecTags
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// AcmeEndpointSpec defines the desired state of AcmeEndpoint.
+/// 
+/// Contains detailed information about an ACME endpoint.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointSpec
+{
+    /// <summary>
+    /// The authorization behavior for the ACME endpoint. Valid values: PRE_APPROVED.
+    /// 
+    /// The authorization behavior for the ACME endpoint.
+    /// </summary>
+    [JsonPropertyName("authorizationBehavior")]
+    public required string AuthorizationBehavior { get; set; }
+
+    /// <summary>
+    /// The certificate authority to use for issuing certificates through this endpoint.
+    /// Currently only PublicCertificateAuthority (Amazon Trust Services) is supported.
+    /// Optionally specify AllowedKeyAlgorithms to restrict key algorithms for issued certificates.
+    /// 
+    /// The type of certificate authority to use for issuing certificates through
+    /// this ACME endpoint.
+    /// </summary>
+    [JsonPropertyName("certificateAuthority")]
+    public required V1alpha1AcmeEndpointSpecCertificateAuthority CertificateAuthority { get; set; }
+
+    /// <summary>Tags to apply to certificates issued through this ACME endpoint.</summary>
+    [JsonPropertyName("certificateTags")]
+    public IList<V1alpha1AcmeEndpointSpecCertificateTags>? CertificateTags { get; set; }
+
+    /// <summary>
+    /// Whether ACME clients must provide contact information during account registration.
+    /// Valid values: REQUIRED, NOT_REQUIRED.
+    /// 
+    /// Specifies whether ACME clients must provide contact information during account
+    /// registration.
+    /// </summary>
+    [JsonPropertyName("contact")]
+    public string? Contact { get; set; }
+
+    /// <summary>One or more tags to associate with the ACME endpoint.</summary>
+    [JsonPropertyName("tags")]
+    public IList<V1alpha1AcmeEndpointSpecTags>? Tags { get; set; }
+}
+
+/// <summary>
+/// All CRs managed by ACK have a common `Status.ACKResourceMetadata` member
+/// that is used to contain resource sync state, account ownership,
+/// constructed ARN for the resource
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointStatusAckResourceMetadata
+{
+    /// <summary>
+    /// ARN is the Amazon Resource Name for the resource. This is a
+    /// globally-unique identifier and is set only by the ACK service controller
+    /// once the controller has orchestrated the creation of the resource OR
+    /// when it has verified that an &quot;adopted&quot; resource (a resource where the
+    /// ARN annotation was set by the Kubernetes user on the CR) exists and
+    /// matches the supplied CR&apos;s Spec field values.
+    /// https://github.com/aws/aws-controllers-k8s/issues/270
+    /// </summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>
+    /// OwnerAccountID is the AWS Account ID of the account that owns the
+    /// backend AWS service API resource.
+    /// </summary>
+    [JsonPropertyName("ownerAccountID")]
+    public required string OwnerAccountID { get; set; }
+
+    /// <summary>Partition is the AWS partition in which the resource exists or will exist</summary>
+    [JsonPropertyName("partition")]
+    public string? Partition { get; set; }
+
+    /// <summary>Region is the AWS region in which the resource exists or will exist.</summary>
+    [JsonPropertyName("region")]
+    public required string Region { get; set; }
+}
+
+/// <summary>
+/// Condition is the common struct used by all CRDs managed by ACK service
+/// controllers to indicate terminal states  of the CR and its backend AWS
+/// service API resource
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointStatusConditions
+{
+    /// <summary>Last time the condition transitioned from one status to another.</summary>
+    [JsonPropertyName("lastTransitionTime")]
+    public DateTime? LastTransitionTime { get; set; }
+
+    /// <summary>A human readable message indicating details about the transition.</summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
+
+    /// <summary>The reason for the condition&apos;s last transition.</summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
+    /// <summary>Status of the condition, one of True, False, Unknown.</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; set; }
+
+    /// <summary>Type is the type of the Condition</summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>AcmeEndpointStatus defines the observed state of AcmeEndpoint</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AcmeEndpointStatus
+{
+    /// <summary>
+    /// All CRs managed by ACK have a common `Status.ACKResourceMetadata` member
+    /// that is used to contain resource sync state, account ownership,
+    /// constructed ARN for the resource
+    /// </summary>
+    [JsonPropertyName("ackResourceMetadata")]
+    public V1alpha1AcmeEndpointStatusAckResourceMetadata? AckResourceMetadata { get; set; }
+
+    /// <summary>
+    /// The Amazon Resource Name (ARN) of the ACME endpoint.
+    /// 
+    /// Regex Pattern: `^arn:aws[a-z-]*:acm:[a-z0-9-]+:[0-9]{12}:acme-endpoint/[a-zA-Z0-9-]+$`
+    /// </summary>
+    [JsonPropertyName("acmeEndpointARN")]
+    public string? AcmeEndpointARN { get; set; }
+
+    /// <summary>
+    /// All CRs managed by ACK have a common `Status.Conditions` member that
+    /// contains a collection of `ackv1alpha1.Condition` objects that describe
+    /// the various terminal states of the CR and its backend AWS service API
+    /// resource
+    /// </summary>
+    [JsonPropertyName("conditions")]
+    public IList<V1alpha1AcmeEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>The time at which the ACME endpoint was created.</summary>
+    [JsonPropertyName("createdAt")]
+    public DateTime? CreatedAt { get; set; }
+
+    /// <summary>The URL of the ACME endpoint.</summary>
+    [JsonPropertyName("endpointURL")]
+    public string? EndpointURL { get; set; }
+
+    /// <summary>The reason the ACME endpoint failed, if applicable.</summary>
+    [JsonPropertyName("failureReason")]
+    public string? FailureReason { get; set; }
+
+    /// <summary>The status of the ACME endpoint.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    /// <summary>The time at which the ACME endpoint was last updated.</summary>
+    [JsonPropertyName("updatedAt")]
+    public DateTime? UpdatedAt { get; set; }
+}
+
+/// <summary>AcmeEndpoint is the Schema for the AcmeEndpoints API</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
+public partial class V1alpha1AcmeEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AcmeEndpointSpec?>, IStatus<V1alpha1AcmeEndpointStatus?>
+{
+    public const string KubeApiVersion = "v1alpha1";
+    public const string KubeKind = "AcmeEndpoint";
+    public const string KubeGroup = "acm.services.k8s.aws";
+    public const string KubePluralName = "acmeendpoints";
+    /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
+    [JsonPropertyName("apiVersion")]
+    public string ApiVersion { get; set; } = "acm.services.k8s.aws/v1alpha1";
+
+    /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
+    [JsonPropertyName("kind")]
+    public string Kind { get; set; } = "AcmeEndpoint";
+
+    /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
+    [JsonPropertyName("metadata")]
+    public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>
+    /// AcmeEndpointSpec defines the desired state of AcmeEndpoint.
+    /// 
+    /// Contains detailed information about an ACME endpoint.
+    /// </summary>
+    [JsonPropertyName("spec")]
+    public V1alpha1AcmeEndpointSpec? Spec { get; set; }
+
+    /// <summary>AcmeEndpointStatus defines the observed state of AcmeEndpoint</summary>
+    [JsonPropertyName("status")]
+    public V1alpha1AcmeEndpointStatus? Status { get; set; }
+}
