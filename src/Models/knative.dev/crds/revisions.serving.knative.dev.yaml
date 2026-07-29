@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   labels:
     app.kubernetes.io/name: knative-serving
-    app.kubernetes.io/version: 1.22.1
+    app.kubernetes.io/version: 1.23.0
     knative.dev/crd-install: "true"
   name: revisions.serving.knative.dev
 spec:
@@ -1104,6 +1104,10 @@ spec:
                       x-kubernetes-preserve-unknown-fields: true
                     emptyDir:
                       description: This is accessible behind a feature flag - kubernetes.podspec-volumes-emptydir
+                      type: object
+                      x-kubernetes-preserve-unknown-fields: true
+                    ephemeral:
+                      description: This is accessible behind a feature flag - kubernetes.podspec-volumes-ephemeral
                       type: object
                       x-kubernetes-preserve-unknown-fields: true
                     hostPath:
