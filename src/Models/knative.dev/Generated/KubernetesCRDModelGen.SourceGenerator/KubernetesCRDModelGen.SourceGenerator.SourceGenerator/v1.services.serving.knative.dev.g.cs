@@ -1574,6 +1574,10 @@ public partial class V1ServiceSpecTemplateSpecVolumes
     [JsonPropertyName("emptyDir")]
     public JsonNode? EmptyDir { get; set; }
 
+    /// <summary>This is accessible behind a feature flag - kubernetes.podspec-volumes-ephemeral</summary>
+    [JsonPropertyName("ephemeral")]
+    public JsonNode? Ephemeral { get; set; }
+
     /// <summary>This is accessible behind a feature flag - kubernetes.podspec-volumes-hostpath</summary>
     [JsonPropertyName("hostPath")]
     public JsonNode? HostPath { get; set; }
