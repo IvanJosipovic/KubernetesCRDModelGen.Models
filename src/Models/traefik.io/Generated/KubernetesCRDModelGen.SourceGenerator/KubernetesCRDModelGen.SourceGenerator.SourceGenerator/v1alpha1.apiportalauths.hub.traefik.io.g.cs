@@ -185,6 +185,14 @@ public partial class V1alpha1APIPortalAuthSpecOidcClaims
     [JsonPropertyName("lastname")]
     public string? Lastname { get; set; }
 
+    /// <summary>OrganizationID is the JWT claim for the ID of the organization the user belongs to.</summary>
+    [JsonPropertyName("organizationId")]
+    public string? OrganizationId { get; set; }
+
+    /// <summary>OrganizationName is the JWT claim for the name of the organization the user belongs to.</summary>
+    [JsonPropertyName("organizationName")]
+    public string? OrganizationName { get; set; }
+
     /// <summary>UserID is the JWT claim for user ID mapping.</summary>
     [JsonPropertyName("userId")]
     public string? UserId { get; set; }
