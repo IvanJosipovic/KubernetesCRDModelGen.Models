@@ -204,6 +204,13 @@ public partial class V1alpha1APIAuthSpecJwt
     public IList<V1alpha1APIAuthSpecJwtTrustedIssuers>? TrustedIssuers { get; set; }
 }
 
+/// <summary>Keyless configures keyless authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1APIAuthSpecKeyless
+{
+}
+
 /// <summary>LDAP configures LDAP authentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -281,6 +288,10 @@ public partial class V1alpha1APIAuthSpec
     /// <summary>JWT configures JWT authentication.</summary>
     [JsonPropertyName("jwt")]
     public V1alpha1APIAuthSpecJwt? Jwt { get; set; }
+
+    /// <summary>Keyless configures keyless authentication.</summary>
+    [JsonPropertyName("keyless")]
+    public V1alpha1APIAuthSpecKeyless? Keyless { get; set; }
 
     /// <summary>LDAP configures LDAP authentication.</summary>
     [JsonPropertyName("ldap")]

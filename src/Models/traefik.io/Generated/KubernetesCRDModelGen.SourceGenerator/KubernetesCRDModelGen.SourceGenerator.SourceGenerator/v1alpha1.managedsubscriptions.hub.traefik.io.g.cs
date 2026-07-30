@@ -134,6 +134,58 @@ public partial class V1alpha1ManagedSubscriptionSpecApplications
     public required string AppId { get; set; }
 }
 
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ManagedSubscriptionSpecManagedApplicationSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// ManagedApplicationSelector selects the ManagedApplications that will gain access to the specified APIs.
+/// Multiple ManagedSubscriptions can select the same ManagedApplication.
+/// This field is optional and follows standard label selector semantics.
+/// An empty ManagedApplicationSelector matches any ManagedApplication.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ManagedSubscriptionSpecManagedApplicationSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1ManagedSubscriptionSpecManagedApplicationSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
 /// <summary>ManagedApplicationReference references a ManagedApplication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -203,6 +255,15 @@ public partial class V1alpha1ManagedSubscriptionSpec
     /// <summary>Claims specifies an expression that validate claims in order to authorize the request.</summary>
     [JsonPropertyName("claims")]
     public string? Claims { get; set; }
+
+    /// <summary>
+    /// ManagedApplicationSelector selects the ManagedApplications that will gain access to the specified APIs.
+    /// Multiple ManagedSubscriptions can select the same ManagedApplication.
+    /// This field is optional and follows standard label selector semantics.
+    /// An empty ManagedApplicationSelector matches any ManagedApplication.
+    /// </summary>
+    [JsonPropertyName("managedApplicationSelector")]
+    public V1alpha1ManagedSubscriptionSpecManagedApplicationSelector? ManagedApplicationSelector { get; set; }
 
     /// <summary>
     /// ManagedApplications references the ManagedApplications that will gain access to the specified APIs.
@@ -297,12 +358,32 @@ public partial class V1alpha1ManagedSubscriptionStatusResolvedApis
     public required string Name { get; set; }
 }
 
+/// <summary>ResolvedManagedApplicationReference references a resolved ManagedApplication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ManagedSubscriptionStatusResolvedManagedApplications
+{
+    /// <summary>Name of the ManagedApplication.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>ResolvedAPIReference references a resolved API.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ManagedSubscriptionStatusUnresolvedApis
 {
     /// <summary>Name of the API.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>ResolvedManagedApplicationReference references a resolved ManagedApplication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ManagedSubscriptionStatusUnresolvedManagedApplications
+{
+    /// <summary>Name of the ManagedApplication.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 }
@@ -324,12 +405,20 @@ public partial class V1alpha1ManagedSubscriptionStatus
     [JsonPropertyName("resolvedApis")]
     public IList<V1alpha1ManagedSubscriptionStatusResolvedApis>? ResolvedApis { get; set; }
 
+    /// <summary>ResolvedManagedApplications is the list of ManagedApplications that were successfully resolved.</summary>
+    [JsonPropertyName("resolvedManagedApplications")]
+    public IList<V1alpha1ManagedSubscriptionStatusResolvedManagedApplications>? ResolvedManagedApplications { get; set; }
+
     [JsonPropertyName("syncedAt")]
     public DateTime? SyncedAt { get; set; }
 
     /// <summary>UnresolvedAPIs is the list of APIs that could not be resolved.</summary>
     [JsonPropertyName("unresolvedApis")]
     public IList<V1alpha1ManagedSubscriptionStatusUnresolvedApis>? UnresolvedApis { get; set; }
+
+    /// <summary>UnresolvedManagedApplications is the list of ManagedApplications that could not be resolved.</summary>
+    [JsonPropertyName("unresolvedManagedApplications")]
+    public IList<V1alpha1ManagedSubscriptionStatusUnresolvedManagedApplications>? UnresolvedManagedApplications { get; set; }
 
     [JsonPropertyName("version")]
     public string? Version { get; set; }
