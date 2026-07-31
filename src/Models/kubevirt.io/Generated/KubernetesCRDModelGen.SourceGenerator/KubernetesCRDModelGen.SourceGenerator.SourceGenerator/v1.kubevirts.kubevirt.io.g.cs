@@ -417,6 +417,40 @@ public partial class V1KubeVirtSpecConfigurationCommonInstancetypesDeployment
     public bool? Enabled { get; set; }
 }
 
+/// <summary>QGSConfiguration holds QGS configuration</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KubeVirtSpecConfigurationConfidentialComputeTdxAttestation
+{
+    /// <summary>Indicates whether TDX VM should enforce the existence of QGS (required for attestation) to be scheduled</summary>
+    [JsonPropertyName("enforced")]
+    public bool? Enforced { get; set; }
+
+    /// <summary>Socket path pointing to the Quote Generation Service</summary>
+    [JsonPropertyName("qgsSocketPath")]
+    public string? QgsSocketPath { get; set; }
+}
+
+/// <summary>TDX configuration for attestation on the Intel TDX Platform</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KubeVirtSpecConfigurationConfidentialComputeTdx
+{
+    /// <summary>QGSConfiguration holds QGS configuration</summary>
+    [JsonPropertyName("attestation")]
+    public V1KubeVirtSpecConfigurationConfidentialComputeTdxAttestation? Attestation { get; set; }
+}
+
+/// <summary>QGS configuration for attestation on the Intel TDX Platform</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KubeVirtSpecConfigurationConfidentialCompute
+{
+    /// <summary>TDX configuration for attestation on the Intel TDX Platform</summary>
+    [JsonPropertyName("tdx")]
+    public V1KubeVirtSpecConfigurationConfidentialComputeTdx? Tdx { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeVirtSpecConfigurationControllerConfigurationRestClientRateLimiterTokenBucketRateLimiter
@@ -911,6 +945,13 @@ public partial class V1KubeVirtSpecConfigurationMigrations
     public bool? MatchSELinuxLevelOnMigration { get; set; }
 
     /// <summary>
+    /// MaxDowntimeMs specifies the maximum tolerable downtime (in milliseconds) during switchover.
+    /// Defaults to 900
+    /// </summary>
+    [JsonPropertyName("maxDowntimeMs")]
+    public long? MaxDowntimeMs { get; set; }
+
+    /// <summary>
     /// Network is the name of the CNI network to use for live migrations. By default, migrations go
     /// through the pod network.
     /// </summary>
@@ -1166,13 +1207,26 @@ public partial class V1KubeVirtSpecConfigurationPermittedHostDevices
     public IList<V1KubeVirtSpecConfigurationPermittedHostDevicesUsb>? Usb { get; set; }
 }
 
+/// <summary>PersistentReservationConfiguration controls the deployment of additional resources required for using SCSI persistent reservation in VMs</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KubeVirtSpecConfigurationPersistentReservationConfiguration
+{
+    /// <summary>
+    /// Enabled controls the deployment of additional resources like the pr-helper container
+    /// for enabling the use of the SCSI persistent reservation VMs, defaults to False.
+    /// </summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>
 /// RoleAggregationStrategy controls whether RBAC cluster roles should be aggregated
 /// to the default Kubernetes roles (admin, edit, view).
 /// When set to &quot;AggregateToDefault&quot; (default) or not specified, the aggregate-to-* labels are added to the cluster roles.
 /// When set to &quot;Manual&quot;, the labels are not added, and roles will not be aggregated to the default roles.
-/// Setting this field to &quot;Manual&quot; requires the OptOutRoleAggregation feature gate to be enabled.
-/// This is an Alpha feature and subject to change.
+/// Setting RoleAggregationStrategy to &quot;Manual&quot; requires the OptOutRoleAggregation feature gate
+/// to be enabled (Beta, enabled by default since v1.9.0).
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeVirtSpecConfigurationRoleAggregationStrategyEnum>))]
@@ -1491,6 +1545,10 @@ public partial class V1KubeVirtSpecConfiguration
     [JsonPropertyName("commonInstancetypesDeployment")]
     public V1KubeVirtSpecConfigurationCommonInstancetypesDeployment? CommonInstancetypesDeployment { get; set; }
 
+    /// <summary>QGS configuration for attestation on the Intel TDX Platform</summary>
+    [JsonPropertyName("confidentialCompute")]
+    public V1KubeVirtSpecConfigurationConfidentialCompute? ConfidentialCompute { get; set; }
+
     /// <summary>
     /// ReloadableComponentConfiguration holds all generic k8s configuration options which can
     /// be reloaded by components without requiring a restart.
@@ -1534,7 +1592,11 @@ public partial class V1KubeVirtSpecConfiguration
     [JsonPropertyName("hypervisors")]
     public IList<V1KubeVirtSpecConfigurationHypervisors>? Hypervisors { get; set; }
 
-    /// <summary>PullPolicy describes a policy for if/when to pull a container image</summary>
+    /// <summary>
+    /// The ImagePullPolicy to use for user workload pods and their containers
+    /// (launcher pods, exporter pods, etc.).
+    /// For KubeVirt infrastructure images, use spec.imagePullPolicy instead.
+    /// </summary>
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
@@ -1588,13 +1650,17 @@ public partial class V1KubeVirtSpecConfiguration
     [JsonPropertyName("permittedHostDevices")]
     public V1KubeVirtSpecConfigurationPermittedHostDevices? PermittedHostDevices { get; set; }
 
+    /// <summary>PersistentReservationConfiguration controls the deployment of additional resources required for using SCSI persistent reservation in VMs</summary>
+    [JsonPropertyName("persistentReservationConfiguration")]
+    public V1KubeVirtSpecConfigurationPersistentReservationConfiguration? PersistentReservationConfiguration { get; set; }
+
     /// <summary>
     /// RoleAggregationStrategy controls whether RBAC cluster roles should be aggregated
     /// to the default Kubernetes roles (admin, edit, view).
     /// When set to &quot;AggregateToDefault&quot; (default) or not specified, the aggregate-to-* labels are added to the cluster roles.
     /// When set to &quot;Manual&quot;, the labels are not added, and roles will not be aggregated to the default roles.
-    /// Setting this field to &quot;Manual&quot; requires the OptOutRoleAggregation feature gate to be enabled.
-    /// This is an Alpha feature and subject to change.
+    /// Setting RoleAggregationStrategy to &quot;Manual&quot; requires the OptOutRoleAggregation feature gate
+    /// to be enabled (Beta, enabled by default since v1.9.0).
     /// </summary>
     [JsonPropertyName("roleAggregationStrategy")]
     public V1KubeVirtSpecConfigurationRoleAggregationStrategyEnum? RoleAggregationStrategy { get; set; }
@@ -4048,7 +4114,12 @@ public partial class V1KubeVirtSpec
     [JsonPropertyName("customizeComponents")]
     public V1KubeVirtSpecCustomizeComponents? CustomizeComponents { get; set; }
 
-    /// <summary>The ImagePullPolicy to use.</summary>
+    /// <summary>
+    /// The ImagePullPolicy to use for KubeVirt operator-managed infrastructure
+    /// images (virt-api, virt-controller, virt-handler, virt-exportproxy, etc.).
+    /// For pull policy of user workload pods, see
+    /// spec.configuration.imagePullPolicy.
+    /// </summary>
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
