@@ -280,30 +280,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefSuccessPolicy
 }
 
 /// <summary>
-/// Standard object&apos;s metadata.
-/// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateMetadata
-{
-    [JsonPropertyName("annotations")]
-    public IDictionary<string, string>? Annotations { get; set; }
-
-    [JsonPropertyName("finalizers")]
-    public IList<string>? Finalizers { get; set; }
-
-    [JsonPropertyName("labels")]
-    public IDictionary<string, string>? Labels { get; set; }
-
-    [JsonPropertyName("name")]
-    public string? Name { get; set; }
-
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-}
-
-/// <summary>
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
@@ -10874,7 +10850,7 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplate
     /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     /// </summary>
     [JsonPropertyName("metadata")]
-    public V1alpha1ScaledJobSpecJobTargetRefTemplateMetadata? Metadata { get; set; }
+    public JsonNode? Metadata { get; set; }
 
     /// <summary>
     /// Specification of the desired behavior of the pod.
@@ -11146,6 +11122,8 @@ public enum V1alpha1ScaledJobSpecScalingStrategyMultipleScalersCalculationEnum
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ScaledJobSpecScalingStrategyStrategyEnum>))]
 public enum V1alpha1ScaledJobSpecScalingStrategyStrategyEnum
 {
+    [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
+    Default,
     [EnumMember(Value = "custom"), JsonStringEnumMemberName("custom")]
     Custom,
     [EnumMember(Value = "accurate"), JsonStringEnumMemberName("accurate")]
@@ -11216,13 +11194,6 @@ public partial class V1alpha1ScaledJobSpecTriggers
 
     [JsonPropertyName("metadata")]
     public required IDictionary<string, string> Metadata { get; set; }
-
-    /// <summary>
-    /// MetricTargetType specifies the type of metric being targeted, and should be either
-    /// &quot;Value&quot;, &quot;AverageValue&quot;, or &quot;Utilization&quot;
-    /// </summary>
-    [JsonPropertyName("metricType")]
-    public string? MetricType { get; set; }
 
     [JsonPropertyName("name")]
     public string? Name { get; set; }
