@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/traefik.io-v1.17.1...traefik.io-v1.18.0) (2026-08-03)
+
+
+### Features
+
+* Sync ([#48](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/48)) ([be8368c](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/be8368c1fed82be0124137ece0352922c6b644d5))
+
 ## [1.17.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/traefik.io-v1.17.0...traefik.io-v1.17.1) (2026-07-13)
 
 
