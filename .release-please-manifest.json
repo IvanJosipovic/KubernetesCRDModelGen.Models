@@ -1,5 +1,5 @@
 {
-  "src/Models/k8s.aws": "1.39.0",
+  "src/Models/k8s.aws": "1.40.0",
   "src/Models/aquasecurity.github.io": "1.8.0",
   "src/Models/akuity.io": "1.3.0",
   "src/Models/argoproj.io": "1.15.0",
@@ -8,11 +8,11 @@
   "src/Models/aws.upbound.io": "1.43.0",
   "src/Models/azapi.upbound.io": "1.12.0",
   "src/Models/azure.upbound.io": "1.53.1",
-  "src/Models/azuread.upbound.io": "1.14.1",
+  "src/Models/azuread.upbound.io": "1.15.0",
   "src/Models/crossplane.io": "1.17.1",
   "src/Models/databricks.crossplane.io": "1.13.1",
   "src/Models/databricks.upbound.io": "1.10.1",
-  "src/Models/gcp.upbound.io": "1.24.1",
+  "src/Models/gcp.upbound.io": "1.25.0",
   "src/Models/github.upbound.io": "1.10.1",
   "src/Models/helm.crossplane.io": "1.17.1",
   "src/Models/http.crossplane.io": "1.12.1",
@@ -25,9 +25,9 @@
   "src/Models/gateway.networking.k8s.io": "1.54.0",
   "src/Models/istio.io": "1.20.0",
   "src/Models/jetstack.io": "1.19.0",
-  "src/Models/keda.sh": "1.14.1",
+  "src/Models/keda.sh": "1.15.0",
   "src/Models/knative.dev": "1.27.0",
-  "src/Models/kubevirt.io": "1.10.1",
+  "src/Models/kubevirt.io": "1.11.0",
   "src/Models/kyverno.io": "1.2.1",
   "src/Models/longhorn.io": "1.5.1",
   "src/Models/postgresql.cnpg.io": "1.12.1",
@@ -36,5 +36,5 @@
   "src/Models/storage.k8s.io": "1.8.1",
   "src/Models/strimzi.io": "1.2.1",
   "src/Models/temporal.io": "1.1.1",
-  "src/Models/traefik.io": "1.17.1"
+  "src/Models/traefik.io": "1.18.0"
 }

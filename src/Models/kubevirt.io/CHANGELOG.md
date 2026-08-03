@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/kubevirt.io-v1.10.1...kubevirt.io-v1.11.0) (2026-08-03)
+
+
+### Features
+
+* Sync ([#50](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/50)) ([71676f8](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/71676f814e71cf21ac23739b5eee7e64d45a2d0c))
+
 ## [1.10.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/kubevirt.io-v1.10.0...kubevirt.io-v1.10.1) (2026-07-13)
 
 
