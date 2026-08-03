@@ -127,6 +127,247 @@ public partial class V1beta1ConnectionProfileSpecForProviderGcsProfile
     public string? RootPath { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileHostAddresses
+{
+    /// <summary>Hostname for the SQL Server connection.</summary>
+    [JsonPropertyName("hostname")]
+    public string? Hostname { get; set; }
+
+    /// <summary>Port for the SQL Server connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Password for the MongoDB connection. Mutually exclusive with
+/// secretManagerStoredPassword.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfilePasswordSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Srv connection format. Mutually exclusive with
+/// standard_connection_Format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSrvConnectionFormat
+{
+}
+
+/// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate that will be used by the replica to
+/// authenticate against the source database server. If this field
+/// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+/// mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigClientCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded private key associated with the Client Certificate.
+/// If this field is used then the &apos;client_certificate&apos; and the
+/// &apos;ca_certificate&apos; fields are mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a Secret Manager resource name storing the
+/// PEM-encoded private key. Mutually exclusive with clientKey.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigSecretManagerStoredClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// SSL configuration for the MongoDB connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfig
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded certificate that will be used by the replica to
+    /// authenticate against the source database server. If this field
+    /// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+    /// mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigClientCertificateSecretRef? ClientCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded private key associated with the Client Certificate.
+    /// If this field is used then the &apos;client_certificate&apos; and the
+    /// &apos;ca_certificate&apos; fields are mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigClientKeySecretRef? ClientKeySecretRef { get; set; }
+
+    /// <summary>
+    /// A reference to a Secret Manager resource name storing the
+    /// PEM-encoded private key. Mutually exclusive with clientKey.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("secretManagerStoredClientKeySecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfigSecretManagerStoredClientKeySecretRef? SecretManagerStoredClientKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Standard connection format. Mutually exclusive with
+/// srv_connection_format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfileStandardConnectionFormat
+{
+    /// <summary>
+    /// Specifies whether the client connects directly to the
+    /// host[:port] in the connection URI.
+    /// </summary>
+    [JsonPropertyName("directConnection")]
+    public bool? DirectConnection { get; set; }
+}
+
+/// <summary>
+/// Configuration for connecting to a MongoDB database.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderMongodbProfile
+{
+    /// <summary>
+    /// A map of additional options for the MongoDB connection.
+    /// Keys are case-sensitive and should match the official
+    /// MongoDB connection string options: https://www.mongodb.com/docs/manual/reference/connection-string-options/
+    /// </summary>
+    [JsonPropertyName("additionalOptions")]
+    public IDictionary<string, string>? AdditionalOptions { get; set; }
+
+    /// <summary>
+    /// List of host addresses for a MongoDB cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("hostAddresses")]
+    public IList<V1beta1ConnectionProfileSpecForProviderMongodbProfileHostAddresses>? HostAddresses { get; set; }
+
+    /// <summary>
+    /// Password for the MongoDB connection. Mutually exclusive with
+    /// secretManagerStoredPassword.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfilePasswordSecretRef? PasswordSecretRef { get; set; }
+
+    /// <summary>Name of the replica set.</summary>
+    [JsonPropertyName("replicaSet")]
+    public string? ReplicaSet { get; set; }
+
+    /// <summary>
+    /// A reference to a Secret Manager resource name storing the MongoDB
+    /// connection password. Mutually exclusive with password.
+    /// </summary>
+    [JsonPropertyName("secretManagerStoredPassword")]
+    public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// Srv connection format. Mutually exclusive with
+    /// standard_connection_Format.
+    /// </summary>
+    [JsonPropertyName("srvConnectionFormat")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSrvConnectionFormat? SrvConnectionFormat { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the MongoDB connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileSslConfig? SslConfig { get; set; }
+
+    /// <summary>
+    /// Standard connection format. Mutually exclusive with
+    /// srv_connection_format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("standardConnectionFormat")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfileStandardConnectionFormat? StandardConnectionFormat { get; set; }
+
+    /// <summary>Username for the MongoDB connection.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
 /// <summary>
 /// Password for the MySQL connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
@@ -655,6 +896,157 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfilePas
 }
 
 /// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate that will be used by the replica to
+/// authenticate against the source database server. If this field
+/// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+/// mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded private key associated with the Client Certificate.
+/// If this field is used then the &apos;client_certificate&apos; and the
+/// &apos;ca_certificate&apos; fields are mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and both the server identity and the client identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded certificate that will be used by the replica to
+    /// authenticate against the source database server. If this field
+    /// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+    /// mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef? ClientCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded private key associated with the Client Certificate.
+    /// If this field is used then the &apos;client_certificate&apos; and the
+    /// &apos;ca_certificate&apos; fields are mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef? ClientKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and the server identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+}
+
+/// <summary>
+/// SSL configuration for the PostgreSQL connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfig
+{
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and both the server identity and the client identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverAndClientVerification")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerAndClientVerification? ServerAndClientVerification { get; set; }
+
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and the server identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverVerification")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfigServerVerification? ServerVerification { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -855,6 +1247,13 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfile
     /// <summary>A reference to a Secret Manager resource name storing the user&apos;s password.</summary>
     [JsonPropertyName("secretManagerStoredPassword")]
     public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the PostgreSQL connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileSslConfig? SslConfig { get; set; }
 
     /// <summary>Username for the PostgreSQL connection.</summary>
     [JsonPropertyName("username")]
@@ -1629,6 +2028,13 @@ public partial class V1beta1ConnectionProfileSpecForProvider
     public required string Location { get; set; }
 
     /// <summary>
+    /// Configuration for connecting to a MongoDB database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbProfile")]
+    public V1beta1ConnectionProfileSpecForProviderMongodbProfile? MongodbProfile { get; set; }
+
+    /// <summary>
     /// MySQL database profile.
     /// Structure is documented below.
     /// </summary>
@@ -1760,6 +2166,247 @@ public partial class V1beta1ConnectionProfileSpecInitProviderGcsProfile
     /// <summary>The root path inside the Cloud Storage bucket.</summary>
     [JsonPropertyName("rootPath")]
     public string? RootPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileHostAddresses
+{
+    /// <summary>Hostname for the SQL Server connection.</summary>
+    [JsonPropertyName("hostname")]
+    public string? Hostname { get; set; }
+
+    /// <summary>Port for the SQL Server connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Password for the MongoDB connection. Mutually exclusive with
+/// secretManagerStoredPassword.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfilePasswordSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Srv connection format. Mutually exclusive with
+/// standard_connection_Format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSrvConnectionFormat
+{
+}
+
+/// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate that will be used by the replica to
+/// authenticate against the source database server. If this field
+/// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+/// mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigClientCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded private key associated with the Client Certificate.
+/// If this field is used then the &apos;client_certificate&apos; and the
+/// &apos;ca_certificate&apos; fields are mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// A reference to a Secret Manager resource name storing the
+/// PEM-encoded private key. Mutually exclusive with clientKey.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigSecretManagerStoredClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// SSL configuration for the MongoDB connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfig
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded certificate that will be used by the replica to
+    /// authenticate against the source database server. If this field
+    /// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+    /// mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSecretRef")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigClientCertificateSecretRef? ClientCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded private key associated with the Client Certificate.
+    /// If this field is used then the &apos;client_certificate&apos; and the
+    /// &apos;ca_certificate&apos; fields are mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigClientKeySecretRef? ClientKeySecretRef { get; set; }
+
+    /// <summary>
+    /// A reference to a Secret Manager resource name storing the
+    /// PEM-encoded private key. Mutually exclusive with clientKey.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("secretManagerStoredClientKeySecretRef")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfigSecretManagerStoredClientKeySecretRef? SecretManagerStoredClientKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Standard connection format. Mutually exclusive with
+/// srv_connection_format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfileStandardConnectionFormat
+{
+    /// <summary>
+    /// Specifies whether the client connects directly to the
+    /// host[:port] in the connection URI.
+    /// </summary>
+    [JsonPropertyName("directConnection")]
+    public bool? DirectConnection { get; set; }
+}
+
+/// <summary>
+/// Configuration for connecting to a MongoDB database.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderMongodbProfile
+{
+    /// <summary>
+    /// A map of additional options for the MongoDB connection.
+    /// Keys are case-sensitive and should match the official
+    /// MongoDB connection string options: https://www.mongodb.com/docs/manual/reference/connection-string-options/
+    /// </summary>
+    [JsonPropertyName("additionalOptions")]
+    public IDictionary<string, string>? AdditionalOptions { get; set; }
+
+    /// <summary>
+    /// List of host addresses for a MongoDB cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("hostAddresses")]
+    public IList<V1beta1ConnectionProfileSpecInitProviderMongodbProfileHostAddresses>? HostAddresses { get; set; }
+
+    /// <summary>
+    /// Password for the MongoDB connection. Mutually exclusive with
+    /// secretManagerStoredPassword.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfilePasswordSecretRef? PasswordSecretRef { get; set; }
+
+    /// <summary>Name of the replica set.</summary>
+    [JsonPropertyName("replicaSet")]
+    public string? ReplicaSet { get; set; }
+
+    /// <summary>
+    /// A reference to a Secret Manager resource name storing the MongoDB
+    /// connection password. Mutually exclusive with password.
+    /// </summary>
+    [JsonPropertyName("secretManagerStoredPassword")]
+    public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// Srv connection format. Mutually exclusive with
+    /// standard_connection_Format.
+    /// </summary>
+    [JsonPropertyName("srvConnectionFormat")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSrvConnectionFormat? SrvConnectionFormat { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the MongoDB connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileSslConfig? SslConfig { get; set; }
+
+    /// <summary>
+    /// Standard connection format. Mutually exclusive with
+    /// srv_connection_format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("standardConnectionFormat")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfileStandardConnectionFormat? StandardConnectionFormat { get; set; }
+
+    /// <summary>Username for the MongoDB connection.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
 }
 
 /// <summary>
@@ -2290,6 +2937,157 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfilePa
 }
 
 /// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate that will be used by the replica to
+/// authenticate against the source database server. If this field
+/// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+/// mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded private key associated with the Client Certificate.
+/// If this field is used then the &apos;client_certificate&apos; and the
+/// &apos;ca_certificate&apos; fields are mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and both the server identity and the client identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public required V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef CaCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded certificate that will be used by the replica to
+    /// authenticate against the source database server. If this field
+    /// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+    /// mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSecretRef")]
+    public required V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef ClientCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded private key associated with the Client Certificate.
+    /// If this field is used then the &apos;client_certificate&apos; and the
+    /// &apos;ca_certificate&apos; fields are mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public required V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef ClientKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and the server identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public required V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef CaCertificateSecretRef { get; set; }
+}
+
+/// <summary>
+/// SSL configuration for the PostgreSQL connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfig
+{
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and both the server identity and the client identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverAndClientVerification")]
+    public V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerAndClientVerification? ServerAndClientVerification { get; set; }
+
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and the server identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverVerification")]
+    public V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfigServerVerification? ServerVerification { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -2490,6 +3288,13 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfile
     /// <summary>A reference to a Secret Manager resource name storing the user&apos;s password.</summary>
     [JsonPropertyName("secretManagerStoredPassword")]
     public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the PostgreSQL connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileSslConfig? SslConfig { get; set; }
 
     /// <summary>Username for the PostgreSQL connection.</summary>
     [JsonPropertyName("username")]
@@ -3272,6 +4077,13 @@ public partial class V1beta1ConnectionProfileSpecInitProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// Configuration for connecting to a MongoDB database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbProfile")]
+    public V1beta1ConnectionProfileSpecInitProviderMongodbProfile? MongodbProfile { get; set; }
+
+    /// <summary>
     /// MySQL database profile.
     /// Structure is documented below.
     /// </summary>
@@ -3466,6 +4278,137 @@ public partial class V1beta1ConnectionProfileStatusAtProviderGcsProfile
     public string? RootPath { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderMongodbProfileHostAddresses
+{
+    /// <summary>Hostname for the SQL Server connection.</summary>
+    [JsonPropertyName("hostname")]
+    public string? Hostname { get; set; }
+
+    /// <summary>Port for the SQL Server connection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Srv connection format. Mutually exclusive with
+/// standard_connection_Format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderMongodbProfileSrvConnectionFormat
+{
+}
+
+/// <summary>
+/// SSL configuration for the MongoDB connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderMongodbProfileSslConfig
+{
+    /// <summary>
+    /// (Output)
+    /// Indicates whether the clientKey field is set.
+    /// </summary>
+    [JsonPropertyName("caCertificateSet")]
+    public bool? CaCertificateSet { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Indicates whether the clientCertificate field is set.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSet")]
+    public bool? ClientCertificateSet { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Indicates whether the clientKey field is set.
+    /// </summary>
+    [JsonPropertyName("clientKeySet")]
+    public bool? ClientKeySet { get; set; }
+}
+
+/// <summary>
+/// Standard connection format. Mutually exclusive with
+/// srv_connection_format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderMongodbProfileStandardConnectionFormat
+{
+    /// <summary>
+    /// Specifies whether the client connects directly to the
+    /// host[:port] in the connection URI.
+    /// </summary>
+    [JsonPropertyName("directConnection")]
+    public bool? DirectConnection { get; set; }
+}
+
+/// <summary>
+/// Configuration for connecting to a MongoDB database.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderMongodbProfile
+{
+    /// <summary>
+    /// A map of additional options for the MongoDB connection.
+    /// Keys are case-sensitive and should match the official
+    /// MongoDB connection string options: https://www.mongodb.com/docs/manual/reference/connection-string-options/
+    /// </summary>
+    [JsonPropertyName("additionalOptions")]
+    public IDictionary<string, string>? AdditionalOptions { get; set; }
+
+    /// <summary>
+    /// List of host addresses for a MongoDB cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("hostAddresses")]
+    public IList<V1beta1ConnectionProfileStatusAtProviderMongodbProfileHostAddresses>? HostAddresses { get; set; }
+
+    /// <summary>Name of the replica set.</summary>
+    [JsonPropertyName("replicaSet")]
+    public string? ReplicaSet { get; set; }
+
+    /// <summary>
+    /// A reference to a Secret Manager resource name storing the MongoDB
+    /// connection password. Mutually exclusive with password.
+    /// </summary>
+    [JsonPropertyName("secretManagerStoredPassword")]
+    public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// Srv connection format. Mutually exclusive with
+    /// standard_connection_Format.
+    /// </summary>
+    [JsonPropertyName("srvConnectionFormat")]
+    public V1beta1ConnectionProfileStatusAtProviderMongodbProfileSrvConnectionFormat? SrvConnectionFormat { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the MongoDB connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileStatusAtProviderMongodbProfileSslConfig? SslConfig { get; set; }
+
+    /// <summary>
+    /// Standard connection format. Mutually exclusive with
+    /// srv_connection_format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("standardConnectionFormat")]
+    public V1beta1ConnectionProfileStatusAtProviderMongodbProfileStandardConnectionFormat? StandardConnectionFormat { get; set; }
+
+    /// <summary>Username for the MongoDB connection.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
 /// <summary>
 /// SSL configuration for the MySQL connection.
 /// Structure is documented below.
@@ -3562,6 +4505,157 @@ public partial class V1beta1ConnectionProfileStatusAtProviderOracleProfile
 }
 
 /// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate that will be used by the replica to
+/// authenticate against the source database server. If this field
+/// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+/// mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded private key associated with the Client Certificate.
+/// If this field is used then the &apos;client_certificate&apos; and the
+/// &apos;ca_certificate&apos; fields are mandatory.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and both the server identity and the client identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded certificate that will be used by the replica to
+    /// authenticate against the source database server. If this field
+    /// is used then the &apos;clientKey&apos; and the &apos;caCertificate&apos; fields are
+    /// mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSecretRef")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationClientCertificateSecretRef? ClientCertificateSecretRef { get; set; }
+
+    /// <summary>
+    /// PEM-encoded private key associated with the Client Certificate.
+    /// If this field is used then the &apos;client_certificate&apos; and the
+    /// &apos;ca_certificate&apos; fields are mandatory.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("clientKeySecretRef")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerificationClientKeySecretRef? ClientKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// PEM-encoded certificate of the CA that signed the source database
+/// server&apos;s certificate.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// If this field is set, the communication will be encrypted with TLS encryption
+/// and the server identity will be authenticated.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerVerification
+{
+    /// <summary>
+    /// PEM-encoded certificate of the CA that signed the source database
+    /// server&apos;s certificate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("caCertificateSecretRef")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerVerificationCaCertificateSecretRef? CaCertificateSecretRef { get; set; }
+}
+
+/// <summary>
+/// SSL configuration for the PostgreSQL connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfig
+{
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and both the server identity and the client identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverAndClientVerification")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerAndClientVerification? ServerAndClientVerification { get; set; }
+
+    /// <summary>
+    /// If this field is set, the communication will be encrypted with TLS encryption
+    /// and the server identity will be authenticated.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serverVerification")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfigServerVerification? ServerVerification { get; set; }
+}
+
+/// <summary>
 /// PostgreSQL database profile.
 /// Structure is documented below.
 /// </summary>
@@ -3584,6 +4678,13 @@ public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfile
     /// <summary>A reference to a Secret Manager resource name storing the user&apos;s password.</summary>
     [JsonPropertyName("secretManagerStoredPassword")]
     public string? SecretManagerStoredPassword { get; set; }
+
+    /// <summary>
+    /// SSL configuration for the PostgreSQL connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sslConfig")]
+    public V1beta1ConnectionProfileStatusAtProviderPostgresqlProfileSslConfig? SslConfig { get; set; }
 
     /// <summary>Username for the PostgreSQL connection.</summary>
     [JsonPropertyName("username")]
@@ -3644,6 +4745,13 @@ public partial class V1beta1ConnectionProfileStatusAtProvider
     [JsonPropertyName("createWithoutValidation")]
     public bool? CreateWithoutValidation { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Display name.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -3680,6 +4788,13 @@ public partial class V1beta1ConnectionProfileStatusAtProvider
     /// <summary>The name of the location this connection profile is located in.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>
+    /// Configuration for connecting to a MongoDB database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbProfile")]
+    public V1beta1ConnectionProfileStatusAtProviderMongodbProfile? MongodbProfile { get; set; }
 
     /// <summary>
     /// MySQL database profile.
@@ -3789,6 +4904,15 @@ public partial class V1beta1ConnectionProfileStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectionProfileStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

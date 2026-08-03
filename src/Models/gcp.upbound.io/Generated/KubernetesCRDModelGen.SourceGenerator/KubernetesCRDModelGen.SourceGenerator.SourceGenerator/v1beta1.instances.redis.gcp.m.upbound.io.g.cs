@@ -507,6 +507,10 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("customerManagedKeySelector")]
     public V1beta1InstanceSpecForProviderCustomerManagedKeySelector? CustomerManagedKeySelector { get; set; }
 
+    /// <summary>When the field is set to false, deleting the instance is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
     /// <summary>An arbitrary and optional user-provided name for the instance.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -1105,6 +1109,10 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("customerManagedKeySelector")]
     public V1beta1InstanceSpecInitProviderCustomerManagedKeySelector? CustomerManagedKeySelector { get; set; }
 
+    /// <summary>When the field is set to false, deleting the instance is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
     /// <summary>An arbitrary and optional user-provided name for the instance.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -1615,6 +1623,17 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("customerManagedKey")]
     public string? CustomerManagedKey { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>When the field is set to false, deleting the instance is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
     /// <summary>An arbitrary and optional user-provided name for the instance.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -1864,6 +1883,15 @@ public partial class V1beta1InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

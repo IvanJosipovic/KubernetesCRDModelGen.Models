@@ -533,6 +533,220 @@ public partial class V1beta1TopicSpecForProviderMessageStoragePolicy
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// The service account to use to make prediction requests against
+    /// endpoints.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -558,6 +772,15 @@ public partial class V1beta1TopicSpecForProviderMessageTransformsJavascriptUdf
 public partial class V1beta1TopicSpecForProviderMessageTransforms
 {
     /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1TopicSpecForProviderMessageTransformsAiInference? AiInference { get; set; }
+
+    /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
     /// </summary>
@@ -571,6 +794,316 @@ public partial class V1beta1TopicSpecForProviderMessageTransforms
     /// </summary>
     [JsonPropertyName("javascriptUdf")]
     public V1beta1TopicSpecForProviderMessageTransformsJavascriptUdf? JavascriptUdf { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Schema in pubsub to populate firstRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Schema in pubsub to populate firstRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Schema in pubsub to populate lastRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Schema in pubsub to populate lastRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -588,6 +1121,30 @@ public partial class V1beta1TopicSpecForProviderSchemaSettings
     /// </summary>
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
+
+    /// <summary>The minimum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against last_revision or any revision created before.</summary>
+    [JsonPropertyName("firstRevisionId")]
+    public string? FirstRevisionId { get; set; }
+
+    /// <summary>Reference to a Schema in pubsub to populate firstRevisionId.</summary>
+    [JsonPropertyName("firstRevisionIdRef")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdRef? FirstRevisionIdRef { get; set; }
+
+    /// <summary>Selector for a Schema in pubsub to populate firstRevisionId.</summary>
+    [JsonPropertyName("firstRevisionIdSelector")]
+    public V1beta1TopicSpecForProviderSchemaSettingsFirstRevisionIdSelector? FirstRevisionIdSelector { get; set; }
+
+    /// <summary>The maximum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against first_revision or any revision created after.</summary>
+    [JsonPropertyName("lastRevisionId")]
+    public string? LastRevisionId { get; set; }
+
+    /// <summary>Reference to a Schema in pubsub to populate lastRevisionId.</summary>
+    [JsonPropertyName("lastRevisionIdRef")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdRef? LastRevisionIdRef { get; set; }
+
+    /// <summary>Selector for a Schema in pubsub to populate lastRevisionId.</summary>
+    [JsonPropertyName("lastRevisionIdSelector")]
+    public V1beta1TopicSpecForProviderSchemaSettingsLastRevisionIdSelector? LastRevisionIdSelector { get; set; }
 
     /// <summary>
     /// The name of the schema that messages published should be
@@ -675,6 +1232,19 @@ public partial class V1beta1TopicSpecForProvider
     /// </summary>
     [JsonPropertyName("schemaSettings")]
     public V1beta1TopicSpecForProviderSchemaSettings? SchemaSettings { get; set; }
+
+    /// <summary>
+    /// Input only. Resource manager tags to be bound to the topic. Tag keys and
+    /// values have the same definition as resource manager tags. Keys must be in
+    /// the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -1174,6 +1744,220 @@ public partial class V1beta1TopicSpecInitProviderMessageStoragePolicy
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// The service account to use to make prediction requests against
+    /// endpoints.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -1199,6 +1983,15 @@ public partial class V1beta1TopicSpecInitProviderMessageTransformsJavascriptUdf
 public partial class V1beta1TopicSpecInitProviderMessageTransforms
 {
     /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1TopicSpecInitProviderMessageTransformsAiInference? AiInference { get; set; }
+
+    /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
     /// </summary>
@@ -1212,6 +2005,316 @@ public partial class V1beta1TopicSpecInitProviderMessageTransforms
     /// </summary>
     [JsonPropertyName("javascriptUdf")]
     public V1beta1TopicSpecInitProviderMessageTransformsJavascriptUdf? JavascriptUdf { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Schema in pubsub to populate firstRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Schema in pubsub to populate firstRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Schema in pubsub to populate lastRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum>))]
+public enum V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Schema in pubsub to populate lastRevisionId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -1229,6 +2332,30 @@ public partial class V1beta1TopicSpecInitProviderSchemaSettings
     /// </summary>
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
+
+    /// <summary>The minimum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against last_revision or any revision created before.</summary>
+    [JsonPropertyName("firstRevisionId")]
+    public string? FirstRevisionId { get; set; }
+
+    /// <summary>Reference to a Schema in pubsub to populate firstRevisionId.</summary>
+    [JsonPropertyName("firstRevisionIdRef")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdRef? FirstRevisionIdRef { get; set; }
+
+    /// <summary>Selector for a Schema in pubsub to populate firstRevisionId.</summary>
+    [JsonPropertyName("firstRevisionIdSelector")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsFirstRevisionIdSelector? FirstRevisionIdSelector { get; set; }
+
+    /// <summary>The maximum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against first_revision or any revision created after.</summary>
+    [JsonPropertyName("lastRevisionId")]
+    public string? LastRevisionId { get; set; }
+
+    /// <summary>Reference to a Schema in pubsub to populate lastRevisionId.</summary>
+    [JsonPropertyName("lastRevisionIdRef")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdRef? LastRevisionIdRef { get; set; }
+
+    /// <summary>Selector for a Schema in pubsub to populate lastRevisionId.</summary>
+    [JsonPropertyName("lastRevisionIdSelector")]
+    public V1beta1TopicSpecInitProviderSchemaSettingsLastRevisionIdSelector? LastRevisionIdSelector { get; set; }
 
     /// <summary>
     /// The name of the schema that messages published should be
@@ -1328,6 +2455,19 @@ public partial class V1beta1TopicSpecInitProvider
     /// </summary>
     [JsonPropertyName("schemaSettings")]
     public V1beta1TopicSpecInitProviderSchemaSettings? SchemaSettings { get; set; }
+
+    /// <summary>
+    /// Input only. Resource manager tags to be bound to the topic. Tag keys and
+    /// values have the same definition as resource manager tags. Keys must be in
+    /// the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -1779,6 +2919,57 @@ public partial class V1beta1TopicStatusAtProviderMessageStoragePolicy
 }
 
 /// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicStatusAtProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TopicStatusAtProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// The service account to use to make prediction requests against
+    /// endpoints.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1TopicStatusAtProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -1803,6 +2994,15 @@ public partial class V1beta1TopicStatusAtProviderMessageTransformsJavascriptUdf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicStatusAtProviderMessageTransforms
 {
+    /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1TopicStatusAtProviderMessageTransformsAiInference? AiInference { get; set; }
+
     /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
@@ -1835,6 +3035,14 @@ public partial class V1beta1TopicStatusAtProviderSchemaSettings
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
 
+    /// <summary>The minimum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against last_revision or any revision created before.</summary>
+    [JsonPropertyName("firstRevisionId")]
+    public string? FirstRevisionId { get; set; }
+
+    /// <summary>The maximum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against first_revision or any revision created after.</summary>
+    [JsonPropertyName("lastRevisionId")]
+    public string? LastRevisionId { get; set; }
+
     /// <summary>
     /// The name of the schema that messages published should be
     /// validated against. Format is projects/{project}/schemas/{schema}.
@@ -1849,6 +3057,13 @@ public partial class V1beta1TopicStatusAtProviderSchemaSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>for all of the labels present on the resource.</summary>
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
@@ -1923,6 +3138,19 @@ public partial class V1beta1TopicStatusAtProvider
     public V1beta1TopicStatusAtProviderSchemaSettings? SchemaSettings { get; set; }
 
     /// <summary>
+    /// Input only. Resource manager tags to be bound to the topic. Tag keys and
+    /// values have the same definition as resource manager tags. Keys must be in
+    /// the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// The combination of labels configured directly on the resource
     /// and default labels configured on the provider.
     /// </summary>
@@ -1984,6 +3212,15 @@ public partial class V1beta1TopicStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TopicStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

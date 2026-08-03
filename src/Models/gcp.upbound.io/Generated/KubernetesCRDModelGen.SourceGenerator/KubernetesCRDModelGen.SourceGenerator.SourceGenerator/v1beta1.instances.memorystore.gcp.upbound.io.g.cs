@@ -686,6 +686,153 @@ public partial class V1beta1InstanceSpecForProviderPersistenceConfig
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolutionEnum>))]
+public enum V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolveEnum>))]
+public enum V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecForProviderServerCaPoolRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1InstanceSpecForProviderServerCaPoolRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecForProviderServerCaPoolRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1InstanceSpecForProviderServerCaPoolRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolutionEnum>))]
+public enum V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolveEnum>))]
+public enum V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecForProviderServerCaPoolSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1InstanceSpecForProviderServerCaPoolSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Zone distribution configuration for allocation of instance resources.
 /// Structure is documented below.
 /// </summary>
@@ -745,7 +892,6 @@ public partial class V1beta1InstanceSpecForProvider
     [JsonPropertyName("desiredAutoCreatedEndpoints")]
     public IList<V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpoints>? DesiredAutoCreatedEndpoints { get; set; }
 
-    /// <summary>desired_psc_auto_connections is deprecated  Use desired_auto_created_endpoints instead.</summary>
     [JsonPropertyName("desiredPscAutoConnections")]
     public IList<V1beta1InstanceSpecForProviderDesiredPscAutoConnections>? DesiredPscAutoConnections { get; set; }
 
@@ -788,6 +934,13 @@ public partial class V1beta1InstanceSpecForProvider
     public V1beta1InstanceSpecForProviderMaintenancePolicy? MaintenancePolicy { get; set; }
 
     /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
+
+    /// <summary>
     /// Managed backup source for the instance.
     /// Structure is documented below.
     /// </summary>
@@ -808,9 +961,15 @@ public partial class V1beta1InstanceSpecForProvider
     /// Optional. Machine type for individual nodes of the instance.
     /// Possible values:
     /// SHARED_CORE_NANO
+    /// CUSTOM_PICO
+    /// CUSTOM_MICRO
+    /// CUSTOM_MINI
     /// HIGHMEM_MEDIUM
+    /// HIGHCPU_MEDIUM
     /// HIGHMEM_XLARGE
     /// STANDARD_SMALL
+    /// STANDARD_LARGE
+    /// HIGHMEM_2XLARGE
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -832,6 +991,30 @@ public partial class V1beta1InstanceSpecForProvider
     /// <summary>Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
+
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Memorystore instance.
+    /// If not provided, GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: GOOGLE_MANAGED_PER_INSTANCE_CA, GOOGLE_MANAGED_SHARED_CA, CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
+
+    /// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolRef")]
+    public V1beta1InstanceSpecForProviderServerCaPoolRef? ServerCaPoolRef { get; set; }
+
+    /// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolSelector")]
+    public V1beta1InstanceSpecForProviderServerCaPoolSelector? ServerCaPoolSelector { get; set; }
 
     /// <summary>Required. Number of shards for the instance.</summary>
     [JsonPropertyName("shardCount")]
@@ -1485,6 +1668,153 @@ public partial class V1beta1InstanceSpecInitProviderPersistenceConfig
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolutionEnum>))]
+public enum V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolveEnum>))]
+public enum V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecInitProviderServerCaPoolRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecInitProviderServerCaPoolRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum>))]
+public enum V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolveEnum>))]
+public enum V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecInitProviderServerCaPoolSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Zone distribution configuration for allocation of instance resources.
 /// Structure is documented below.
 /// </summary>
@@ -1556,7 +1886,6 @@ public partial class V1beta1InstanceSpecInitProvider
     [JsonPropertyName("desiredAutoCreatedEndpoints")]
     public IList<V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpoints>? DesiredAutoCreatedEndpoints { get; set; }
 
-    /// <summary>desired_psc_auto_connections is deprecated  Use desired_auto_created_endpoints instead.</summary>
     [JsonPropertyName("desiredPscAutoConnections")]
     public IList<V1beta1InstanceSpecInitProviderDesiredPscAutoConnections>? DesiredPscAutoConnections { get; set; }
 
@@ -1595,6 +1924,13 @@ public partial class V1beta1InstanceSpecInitProvider
     public V1beta1InstanceSpecInitProviderMaintenancePolicy? MaintenancePolicy { get; set; }
 
     /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
+
+    /// <summary>
     /// Managed backup source for the instance.
     /// Structure is documented below.
     /// </summary>
@@ -1615,9 +1951,15 @@ public partial class V1beta1InstanceSpecInitProvider
     /// Optional. Machine type for individual nodes of the instance.
     /// Possible values:
     /// SHARED_CORE_NANO
+    /// CUSTOM_PICO
+    /// CUSTOM_MICRO
+    /// CUSTOM_MINI
     /// HIGHMEM_MEDIUM
+    /// HIGHCPU_MEDIUM
     /// HIGHMEM_XLARGE
     /// STANDARD_SMALL
+    /// STANDARD_LARGE
+    /// HIGHMEM_2XLARGE
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -1639,6 +1981,30 @@ public partial class V1beta1InstanceSpecInitProvider
     /// <summary>Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
+
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Memorystore instance.
+    /// If not provided, GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: GOOGLE_MANAGED_PER_INSTANCE_CA, GOOGLE_MANAGED_SHARED_CA, CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
+
+    /// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolRef")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolRef? ServerCaPoolRef { get; set; }
+
+    /// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolSelector")]
+    public V1beta1InstanceSpecInitProviderServerCaPoolSelector? ServerCaPoolSelector { get; set; }
 
     /// <summary>Required. Number of shards for the instance.</summary>
     [JsonPropertyName("shardCount")]
@@ -2646,6 +3012,10 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("automatedBackupConfig")]
     public V1beta1InstanceStatusAtProviderAutomatedBackupConfig? AutomatedBackupConfig { get; set; }
 
+    /// <summary>This field is used to determine the available maintenance versions for the self service update.</summary>
+    [JsonPropertyName("availableMaintenanceVersions")]
+    public IList<string>? AvailableMaintenanceVersions { get; set; }
+
     /// <summary>
     /// The backup collection full resource name.
     /// Example: projects/{project}/locations/{location}/backupCollections/{collection}
@@ -2664,6 +3034,13 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("crossInstanceReplicationConfig")]
     public V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfig? CrossInstanceReplicationConfig { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Optional. If set to true deletion of the instance will fail.</summary>
     [JsonPropertyName("deletionProtectionEnabled")]
     public bool? DeletionProtectionEnabled { get; set; }
@@ -2672,7 +3049,6 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("desiredAutoCreatedEndpoints")]
     public IList<V1beta1InstanceStatusAtProviderDesiredAutoCreatedEndpoints>? DesiredAutoCreatedEndpoints { get; set; }
 
-    /// <summary>desired_psc_auto_connections is deprecated  Use desired_auto_created_endpoints instead.</summary>
     [JsonPropertyName("desiredPscAutoConnections")]
     public IList<V1beta1InstanceStatusAtProviderDesiredPscAutoConnections>? DesiredPscAutoConnections { get; set; }
 
@@ -2686,6 +3062,10 @@ public partial class V1beta1InstanceStatusAtProvider
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>This field represents the actual maintenance version of the cluster.</summary>
+    [JsonPropertyName("effectiveMaintenanceVersion")]
+    public string? EffectiveMaintenanceVersion { get; set; }
 
     /// <summary>
     /// Endpoints for the instance.
@@ -2744,6 +3124,13 @@ public partial class V1beta1InstanceStatusAtProvider
     public IList<V1beta1InstanceStatusAtProviderMaintenanceSchedule>? MaintenanceSchedule { get; set; }
 
     /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
+
+    /// <summary>
     /// Managed backup source for the instance.
     /// Structure is documented below.
     /// </summary>
@@ -2785,9 +3172,15 @@ public partial class V1beta1InstanceStatusAtProvider
     /// Optional. Machine type for individual nodes of the instance.
     /// Possible values:
     /// SHARED_CORE_NANO
+    /// CUSTOM_PICO
+    /// CUSTOM_MICRO
+    /// CUSTOM_MINI
     /// HIGHMEM_MEDIUM
+    /// HIGHCPU_MEDIUM
     /// HIGHMEM_XLARGE
     /// STANDARD_SMALL
+    /// STANDARD_LARGE
+    /// HIGHMEM_2XLARGE
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -2824,6 +3217,22 @@ public partial class V1beta1InstanceStatusAtProvider
     /// <summary>Optional. Number of replica nodes per shard. If omitted the default is 0 replicas.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
+
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Memorystore instance.
+    /// If not provided, GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: GOOGLE_MANAGED_PER_INSTANCE_CA, GOOGLE_MANAGED_SHARED_CA, CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
 
     /// <summary>Required. Number of shards for the instance.</summary>
     [JsonPropertyName("shardCount")]
@@ -2933,6 +3342,15 @@ public partial class V1beta1InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

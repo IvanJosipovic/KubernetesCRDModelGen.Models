@@ -126,8 +126,8 @@ public partial class V1beta1ConnectionSpecForProviderCloudSpanner
 }
 
 /// <summary>
-/// Password for database.
-/// Note: This property is sensitive and will not be displayed in the plan.
+/// Password configuration for the connector.
+/// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -305,13 +305,13 @@ public partial class V1beta1ConnectionSpecForProviderCloudSqlCredentialUsernameS
 public partial class V1beta1ConnectionSpecForProviderCloudSqlCredential
 {
     /// <summary>
-    /// Password for database.
-    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// Password configuration for the connector.
+    /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1ConnectionSpecForProviderCloudSqlCredentialPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>Username for database.</summary>
+    /// <summary>Username for the connector.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 
@@ -682,6 +682,186 @@ public partial class V1beta1ConnectionSpecForProviderCloudSql
 }
 
 /// <summary>
+/// Asset configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationAsset
+{
+    /// <summary>Database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>
+    /// The full resource name of the Google Cloud resource.
+    /// For AlloyDB, this is in the format of
+    /// //alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}.
+    /// </summary>
+    [JsonPropertyName("googleCloudResource")]
+    public string? GoogleCloudResource { get; set; }
+}
+
+/// <summary>
+/// The plaintext password.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Password configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPassword
+{
+    /// <summary>
+    /// The plaintext password.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("plaintextSecretRef")]
+    public V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef? PlaintextSecretRef { get; set; }
+}
+
+/// <summary>
+/// Username/password authentication configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePassword
+{
+    /// <summary>
+    /// Password configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("password")]
+    public V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPassword? Password { get; set; }
+
+    /// <summary>Username for the connector.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Authentication configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationAuthentication
+{
+    /// <summary>
+    /// Username/password authentication configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("usernamePassword")]
+    public V1beta1ConnectionSpecForProviderConfigurationAuthenticationUsernamePassword? UsernamePassword { get; set; }
+}
+
+/// <summary>
+/// Endpoint configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationEndpoint
+{
+    /// <summary>Host and port in the format of host:port for the connector endpoint.</summary>
+    [JsonPropertyName("hostPort")]
+    public string? HostPort { get; set; }
+}
+
+/// <summary>
+/// Private Service Connect configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationNetworkPrivateServiceConnect
+{
+    /// <summary>
+    /// The resource name of a network attachment in the format of
+    /// projects/{project}/regions/{region}/networkAttachments/{networkAttachment}.
+    /// </summary>
+    [JsonPropertyName("networkAttachment")]
+    public string? NetworkAttachment { get; set; }
+}
+
+/// <summary>
+/// Network configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfigurationNetwork
+{
+    /// <summary>
+    /// Private Service Connect configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("privateServiceConnect")]
+    public V1beta1ConnectionSpecForProviderConfigurationNetworkPrivateServiceConnect? PrivateServiceConnect { get; set; }
+}
+
+/// <summary>
+/// Connector configuration. This is a generic configuration that is used to connect to
+/// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+/// Connector framework.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecForProviderConfiguration
+{
+    /// <summary>
+    /// Asset configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("asset")]
+    public V1beta1ConnectionSpecForProviderConfigurationAsset? Asset { get; set; }
+
+    /// <summary>
+    /// Authentication configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("authentication")]
+    public V1beta1ConnectionSpecForProviderConfigurationAuthentication? Authentication { get; set; }
+
+    /// <summary>
+    /// The ID of the connector. Possible values include google-alloydb, google-cloudsql-mysql,
+    /// google-cloudsql-postgres, and other connector IDs supported by the BigQuery Connector framework.
+    /// </summary>
+    [JsonPropertyName("connectorId")]
+    public string? ConnectorId { get; set; }
+
+    /// <summary>
+    /// Endpoint configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public V1beta1ConnectionSpecForProviderConfigurationEndpoint? Endpoint { get; set; }
+
+    /// <summary>
+    /// Network configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public V1beta1ConnectionSpecForProviderConfigurationNetwork? Network { get; set; }
+}
+
+/// <summary>
 /// Dataproc Metastore Service configuration for the connection.
 /// Structure is documented below.
 /// </summary>
@@ -932,6 +1112,15 @@ public partial class V1beta1ConnectionSpecForProvider
     [JsonPropertyName("cloudSql")]
     public V1beta1ConnectionSpecForProviderCloudSql? CloudSql { get; set; }
 
+    /// <summary>
+    /// Connector configuration. This is a generic configuration that is used to connect to
+    /// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+    /// Connector framework.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("configuration")]
+    public V1beta1ConnectionSpecForProviderConfiguration? Configuration { get; set; }
+
     /// <summary>Optional connection id that should be assigned to the created connection.</summary>
     [JsonPropertyName("connectionId")]
     public string? ConnectionId { get; set; }
@@ -1068,8 +1257,8 @@ public partial class V1beta1ConnectionSpecInitProviderCloudSpanner
 }
 
 /// <summary>
-/// Password for database.
-/// Note: This property is sensitive and will not be displayed in the plan.
+/// Password configuration for the connector.
+/// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1247,13 +1436,13 @@ public partial class V1beta1ConnectionSpecInitProviderCloudSqlCredentialUsername
 public partial class V1beta1ConnectionSpecInitProviderCloudSqlCredential
 {
     /// <summary>
-    /// Password for database.
-    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// Password configuration for the connector.
+    /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public required V1beta1ConnectionSpecInitProviderCloudSqlCredentialPasswordSecretRef PasswordSecretRef { get; set; }
 
-    /// <summary>Username for database.</summary>
+    /// <summary>Username for the connector.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 
@@ -1624,6 +1813,186 @@ public partial class V1beta1ConnectionSpecInitProviderCloudSql
 }
 
 /// <summary>
+/// Asset configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationAsset
+{
+    /// <summary>Database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>
+    /// The full resource name of the Google Cloud resource.
+    /// For AlloyDB, this is in the format of
+    /// //alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}.
+    /// </summary>
+    [JsonPropertyName("googleCloudResource")]
+    public string? GoogleCloudResource { get; set; }
+}
+
+/// <summary>
+/// The plaintext password.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Password configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPassword
+{
+    /// <summary>
+    /// The plaintext password.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("plaintextSecretRef")]
+    public required V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef PlaintextSecretRef { get; set; }
+}
+
+/// <summary>
+/// Username/password authentication configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePassword
+{
+    /// <summary>
+    /// Password configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("password")]
+    public V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPassword? Password { get; set; }
+
+    /// <summary>Username for the connector.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Authentication configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationAuthentication
+{
+    /// <summary>
+    /// Username/password authentication configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("usernamePassword")]
+    public V1beta1ConnectionSpecInitProviderConfigurationAuthenticationUsernamePassword? UsernamePassword { get; set; }
+}
+
+/// <summary>
+/// Endpoint configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationEndpoint
+{
+    /// <summary>Host and port in the format of host:port for the connector endpoint.</summary>
+    [JsonPropertyName("hostPort")]
+    public string? HostPort { get; set; }
+}
+
+/// <summary>
+/// Private Service Connect configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationNetworkPrivateServiceConnect
+{
+    /// <summary>
+    /// The resource name of a network attachment in the format of
+    /// projects/{project}/regions/{region}/networkAttachments/{networkAttachment}.
+    /// </summary>
+    [JsonPropertyName("networkAttachment")]
+    public string? NetworkAttachment { get; set; }
+}
+
+/// <summary>
+/// Network configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfigurationNetwork
+{
+    /// <summary>
+    /// Private Service Connect configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("privateServiceConnect")]
+    public V1beta1ConnectionSpecInitProviderConfigurationNetworkPrivateServiceConnect? PrivateServiceConnect { get; set; }
+}
+
+/// <summary>
+/// Connector configuration. This is a generic configuration that is used to connect to
+/// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+/// Connector framework.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderConfiguration
+{
+    /// <summary>
+    /// Asset configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("asset")]
+    public V1beta1ConnectionSpecInitProviderConfigurationAsset? Asset { get; set; }
+
+    /// <summary>
+    /// Authentication configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("authentication")]
+    public V1beta1ConnectionSpecInitProviderConfigurationAuthentication? Authentication { get; set; }
+
+    /// <summary>
+    /// The ID of the connector. Possible values include google-alloydb, google-cloudsql-mysql,
+    /// google-cloudsql-postgres, and other connector IDs supported by the BigQuery Connector framework.
+    /// </summary>
+    [JsonPropertyName("connectorId")]
+    public string? ConnectorId { get; set; }
+
+    /// <summary>
+    /// Endpoint configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public V1beta1ConnectionSpecInitProviderConfigurationEndpoint? Endpoint { get; set; }
+
+    /// <summary>
+    /// Network configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public V1beta1ConnectionSpecInitProviderConfigurationNetwork? Network { get; set; }
+}
+
+/// <summary>
 /// Dataproc Metastore Service configuration for the connection.
 /// Structure is documented below.
 /// </summary>
@@ -1885,6 +2254,15 @@ public partial class V1beta1ConnectionSpecInitProvider
     /// </summary>
     [JsonPropertyName("cloudSql")]
     public V1beta1ConnectionSpecInitProviderCloudSql? CloudSql { get; set; }
+
+    /// <summary>
+    /// Connector configuration. This is a generic configuration that is used to connect to
+    /// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+    /// Connector framework.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("configuration")]
+    public V1beta1ConnectionSpecInitProviderConfiguration? Configuration { get; set; }
 
     /// <summary>Optional connection id that should be assigned to the created connection.</summary>
     [JsonPropertyName("connectionId")]
@@ -2184,7 +2562,7 @@ public partial class V1beta1ConnectionStatusAtProviderCloudSpanner
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProviderCloudSqlCredential
 {
-    /// <summary>Username for database.</summary>
+    /// <summary>Username for the connector.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -2225,6 +2603,177 @@ public partial class V1beta1ConnectionStatusAtProviderCloudSql
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+}
+
+/// <summary>
+/// Asset configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationAsset
+{
+    /// <summary>Database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>
+    /// The full resource name of the Google Cloud resource.
+    /// For AlloyDB, this is in the format of
+    /// //alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}.
+    /// </summary>
+    [JsonPropertyName("googleCloudResource")]
+    public string? GoogleCloudResource { get; set; }
+}
+
+/// <summary>
+/// Password configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationAuthenticationUsernamePasswordPassword
+{
+    /// <summary>
+    /// (Output)
+    /// Output only. The type of the secret.
+    /// </summary>
+    [JsonPropertyName("secretType")]
+    public string? SecretType { get; set; }
+}
+
+/// <summary>
+/// Username/password authentication configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationAuthenticationUsernamePassword
+{
+    /// <summary>
+    /// Password configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("password")]
+    public V1beta1ConnectionStatusAtProviderConfigurationAuthenticationUsernamePasswordPassword? Password { get; set; }
+
+    /// <summary>Username for the connector.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Authentication configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationAuthentication
+{
+    /// <summary>
+    /// (Output)
+    /// Output only. The service account used for authenticating with the connector.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    /// <summary>
+    /// Username/password authentication configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("usernamePassword")]
+    public V1beta1ConnectionStatusAtProviderConfigurationAuthenticationUsernamePassword? UsernamePassword { get; set; }
+}
+
+/// <summary>
+/// Endpoint configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationEndpoint
+{
+    /// <summary>Host and port in the format of host:port for the connector endpoint.</summary>
+    [JsonPropertyName("hostPort")]
+    public string? HostPort { get; set; }
+}
+
+/// <summary>
+/// Private Service Connect configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationNetworkPrivateServiceConnect
+{
+    /// <summary>
+    /// The resource name of a network attachment in the format of
+    /// projects/{project}/regions/{region}/networkAttachments/{networkAttachment}.
+    /// </summary>
+    [JsonPropertyName("networkAttachment")]
+    public string? NetworkAttachment { get; set; }
+}
+
+/// <summary>
+/// Network configuration for the connector.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfigurationNetwork
+{
+    /// <summary>
+    /// Private Service Connect configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("privateServiceConnect")]
+    public V1beta1ConnectionStatusAtProviderConfigurationNetworkPrivateServiceConnect? PrivateServiceConnect { get; set; }
+}
+
+/// <summary>
+/// Connector configuration. This is a generic configuration that is used to connect to
+/// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+/// Connector framework.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderConfiguration
+{
+    /// <summary>
+    /// Asset configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("asset")]
+    public V1beta1ConnectionStatusAtProviderConfigurationAsset? Asset { get; set; }
+
+    /// <summary>
+    /// Authentication configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("authentication")]
+    public V1beta1ConnectionStatusAtProviderConfigurationAuthentication? Authentication { get; set; }
+
+    /// <summary>
+    /// The ID of the connector. Possible values include google-alloydb, google-cloudsql-mysql,
+    /// google-cloudsql-postgres, and other connector IDs supported by the BigQuery Connector framework.
+    /// </summary>
+    [JsonPropertyName("connectorId")]
+    public string? ConnectorId { get; set; }
+
+    /// <summary>
+    /// Endpoint configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public V1beta1ConnectionStatusAtProviderConfigurationEndpoint? Endpoint { get; set; }
+
+    /// <summary>
+    /// Network configuration for the connector.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public V1beta1ConnectionStatusAtProviderConfigurationNetwork? Network { get; set; }
 }
 
 /// <summary>
@@ -2322,9 +2871,25 @@ public partial class V1beta1ConnectionStatusAtProvider
     [JsonPropertyName("cloudSql")]
     public V1beta1ConnectionStatusAtProviderCloudSql? CloudSql { get; set; }
 
+    /// <summary>
+    /// Connector configuration. This is a generic configuration that is used to connect to
+    /// external data sources such as AlloyDB, MySQL, and PostgreSQL using the BigQuery
+    /// Connector framework.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("configuration")]
+    public V1beta1ConnectionStatusAtProviderConfiguration? Configuration { get; set; }
+
     /// <summary>Optional connection id that should be assigned to the created connection.</summary>
     [JsonPropertyName("connectionId")]
     public string? ConnectionId { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>A descriptive description for the connection</summary>
     [JsonPropertyName("description")]
@@ -2437,6 +3002,15 @@ public partial class V1beta1ConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

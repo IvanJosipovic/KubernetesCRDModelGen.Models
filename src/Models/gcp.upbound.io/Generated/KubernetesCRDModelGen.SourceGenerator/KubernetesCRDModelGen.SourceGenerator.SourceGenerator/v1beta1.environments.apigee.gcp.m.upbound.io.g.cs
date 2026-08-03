@@ -752,6 +752,13 @@ public partial class V1beta1EnvironmentStatusAtProvider
     public V1beta1EnvironmentStatusAtProviderClientIpResolutionConfig? ClientIpResolutionConfig { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Optional. Deployment type supported by the environment. The deployment type can be
     /// set when creating the environment and cannot be changed. When you enable archive
     /// deployment, you will be prevented from performing a subset of actions within the
@@ -866,6 +873,15 @@ public partial class V1beta1EnvironmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EnvironmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -624,6 +624,153 @@ public partial class V1beta1ClusterSpecForProviderPscConfigs
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderServerCaPoolRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecForProviderServerCaPoolRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderServerCaPoolRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecForProviderServerCaPoolRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderServerCaPoolSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecForProviderServerCaPoolSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Immutable. Zone distribution config for Memorystore Redis cluster.
 /// Structure is documented below.
 /// </summary>
@@ -648,15 +795,6 @@ public partial class V1beta1ClusterSpecForProviderZoneDistributionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProvider
 {
-    /// <summary>
-    /// Allows customers to specify if they are okay with deploying a multi-zone
-    /// cluster in less than 3 zones. Once set, if there is a zonal outage during
-    /// the cluster creation, the cluster will only be deployed in 2 zones, and
-    /// stay within the 2 zones for its lifecycle.
-    /// </summary>
-    [JsonPropertyName("allowFewerZonesDeployment")]
-    public bool? AllowFewerZonesDeployment { get; set; }
-
     /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
@@ -696,11 +834,26 @@ public partial class V1beta1ClusterSpecForProvider
     public string? KmsKey { get; set; }
 
     /// <summary>
+    /// Resource labels to represent user provided metadata.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// Maintenance policy for a cluster
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("maintenancePolicy")]
     public V1beta1ClusterSpecForProviderMaintenancePolicy? MaintenancePolicy { get; set; }
+
+    /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
 
     /// <summary>
     /// Backups that generated and managed by memorystore.
@@ -712,7 +865,7 @@ public partial class V1beta1ClusterSpecForProvider
     /// <summary>
     /// The nodeType for the Redis cluster.
     /// If not provided, REDIS_HIGHMEM_MEDIUM will be used as default
-    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHMEM_XLARGE, REDIS_STANDARD_SMALL.
+    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHCPU_MEDIUM, REDIS_STANDARD_LARGE, REDIS_HIGHMEM_XLARGE, REDIS_HIGHMEM_2XLARGE, REDIS_STANDARD_SMALL.
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -755,6 +908,30 @@ public partial class V1beta1ClusterSpecForProvider
     /// <summary>Optional. The number of replica nodes per shard.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
+
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Redis cluster.
+    /// If not provided, SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA, SERVER_CA_MODE_GOOGLE_MANAGED_SHARED_CA, SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
+
+    /// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolRef")]
+    public V1beta1ClusterSpecForProviderServerCaPoolRef? ServerCaPoolRef { get; set; }
+
+    /// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolSelector")]
+    public V1beta1ClusterSpecForProviderServerCaPoolSelector? ServerCaPoolSelector { get; set; }
 
     /// <summary>Required. Number of shards for the Redis cluster.</summary>
     [JsonPropertyName("shardCount")]
@@ -1346,6 +1523,153 @@ public partial class V1beta1ClusterSpecInitProviderPscConfigs
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderServerCaPoolRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderServerCaPoolRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderServerCaPoolSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Immutable. Zone distribution config for Memorystore Redis cluster.
 /// Structure is documented below.
 /// </summary>
@@ -1382,15 +1706,6 @@ public partial class V1beta1ClusterSpecInitProviderZoneDistributionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProvider
 {
-    /// <summary>
-    /// Allows customers to specify if they are okay with deploying a multi-zone
-    /// cluster in less than 3 zones. Once set, if there is a zonal outage during
-    /// the cluster creation, the cluster will only be deployed in 2 zones, and
-    /// stay within the 2 zones for its lifecycle.
-    /// </summary>
-    [JsonPropertyName("allowFewerZonesDeployment")]
-    public bool? AllowFewerZonesDeployment { get; set; }
-
     /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
@@ -1430,11 +1745,26 @@ public partial class V1beta1ClusterSpecInitProvider
     public string? KmsKey { get; set; }
 
     /// <summary>
+    /// Resource labels to represent user provided metadata.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// Maintenance policy for a cluster
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("maintenancePolicy")]
     public V1beta1ClusterSpecInitProviderMaintenancePolicy? MaintenancePolicy { get; set; }
+
+    /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
 
     /// <summary>
     /// Backups that generated and managed by memorystore.
@@ -1446,7 +1776,7 @@ public partial class V1beta1ClusterSpecInitProvider
     /// <summary>
     /// The nodeType for the Redis cluster.
     /// If not provided, REDIS_HIGHMEM_MEDIUM will be used as default
-    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHMEM_XLARGE, REDIS_STANDARD_SMALL.
+    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHCPU_MEDIUM, REDIS_STANDARD_LARGE, REDIS_HIGHMEM_XLARGE, REDIS_HIGHMEM_2XLARGE, REDIS_STANDARD_SMALL.
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -1485,6 +1815,30 @@ public partial class V1beta1ClusterSpecInitProvider
     /// <summary>Optional. The number of replica nodes per shard.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
+
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Redis cluster.
+    /// If not provided, SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA, SERVER_CA_MODE_GOOGLE_MANAGED_SHARED_CA, SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
+
+    /// <summary>Reference to a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolRef")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolRef? ServerCaPoolRef { get; set; }
+
+    /// <summary>Selector for a CAPool in privateca to populate serverCaPool.</summary>
+    [JsonPropertyName("serverCaPoolSelector")]
+    public V1beta1ClusterSpecInitProviderServerCaPoolSelector? ServerCaPoolSelector { get; set; }
 
     /// <summary>Required. Number of shards for the Redis cluster.</summary>
     [JsonPropertyName("shardCount")]
@@ -2238,15 +2592,6 @@ public partial class V1beta1ClusterStatusAtProviderZoneDistributionConfig
 public partial class V1beta1ClusterStatusAtProvider
 {
     /// <summary>
-    /// Allows customers to specify if they are okay with deploying a multi-zone
-    /// cluster in less than 3 zones. Once set, if there is a zonal outage during
-    /// the cluster creation, the cluster will only be deployed in 2 zones, and
-    /// stay within the 2 zones for its lifecycle.
-    /// </summary>
-    [JsonPropertyName("allowFewerZonesDeployment")]
-    public bool? AllowFewerZonesDeployment { get; set; }
-
-    /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
     /// Possible values are: AUTH_MODE_UNSPECIFIED, AUTH_MODE_IAM_AUTH, AUTH_MODE_DISABLED.
@@ -2260,6 +2605,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("automatedBackupConfig")]
     public V1beta1ClusterStatusAtProviderAutomatedBackupConfig? AutomatedBackupConfig { get; set; }
+
+    /// <summary>This field is used to determine the available maintenance versions for the self service update.</summary>
+    [JsonPropertyName("availableMaintenanceVersions")]
+    public IList<string>? AvailableMaintenanceVersions { get; set; }
 
     /// <summary>
     /// The backup collection full resource name.
@@ -2281,6 +2630,13 @@ public partial class V1beta1ClusterStatusAtProvider
     public V1beta1ClusterStatusAtProviderCrossClusterReplicationConfig? CrossClusterReplicationConfig { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Optional. Indicates if the cluster is deletion protected or not.
     /// If the value if set to true, any delete cluster operation will fail.
     /// Default value is true.
@@ -2296,6 +2652,13 @@ public partial class V1beta1ClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("discoveryEndpoints")]
     public IList<V1beta1ClusterStatusAtProviderDiscoveryEndpoints>? DiscoveryEndpoints { get; set; }
+
+    [JsonPropertyName("effectiveLabels")]
+    public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>This field represents the actual maintenance version of the cluster.</summary>
+    [JsonPropertyName("effectiveMaintenanceVersion")]
+    public string? EffectiveMaintenanceVersion { get; set; }
 
     /// <summary>
     /// Backups stored in Cloud Storage buckets. The Cloud Storage buckets need to be the same region as the clusters.
@@ -2313,6 +2676,14 @@ public partial class V1beta1ClusterStatusAtProvider
     public string? KmsKey { get; set; }
 
     /// <summary>
+    /// Resource labels to represent user provided metadata.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// Maintenance policy for a cluster
     /// Structure is documented below.
     /// </summary>
@@ -2325,6 +2696,13 @@ public partial class V1beta1ClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("maintenanceSchedule")]
     public IList<V1beta1ClusterStatusAtProviderMaintenanceSchedule>? MaintenanceSchedule { get; set; }
+
+    /// <summary>
+    /// This field can be used to trigger self service update to indicate the desired maintenance version. The input to this field can be determined by the available_maintenance_versions field.
+    /// Note: This field can only be specified when updating an existing cluster to a newer version. Downgrades are currently not supported!
+    /// </summary>
+    [JsonPropertyName("maintenanceVersion")]
+    public string? MaintenanceVersion { get; set; }
 
     /// <summary>
     /// Backups that generated and managed by memorystore.
@@ -2343,7 +2721,7 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>
     /// The nodeType for the Redis cluster.
     /// If not provided, REDIS_HIGHMEM_MEDIUM will be used as default
-    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHMEM_XLARGE, REDIS_STANDARD_SMALL.
+    /// Possible values are: REDIS_SHARED_CORE_NANO, REDIS_HIGHMEM_MEDIUM, REDIS_HIGHCPU_MEDIUM, REDIS_STANDARD_LARGE, REDIS_HIGHMEM_XLARGE, REDIS_HIGHMEM_2XLARGE, REDIS_STANDARD_SMALL.
     /// </summary>
     [JsonPropertyName("nodeType")]
     public string? NodeType { get; set; }
@@ -2405,6 +2783,22 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
 
+    /// <summary>
+    /// The serverCaMode for the TLS enabled Redis cluster.
+    /// If not provided, SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA will be used as default
+    /// Possible values are: SERVER_CA_MODE_GOOGLE_MANAGED_PER_INSTANCE_CA, SERVER_CA_MODE_GOOGLE_MANAGED_SHARED_CA, SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA, SERVER_CA_MODE_UNSPECIFIED.
+    /// </summary>
+    [JsonPropertyName("serverCaMode")]
+    public string? ServerCaMode { get; set; }
+
+    /// <summary>
+    /// The resource name of the server CA pool for an instance with SERVER_CA_MODE_CUSTOMER_MANAGED_CAS_CA
+    /// as the server_ca_mode.
+    /// Format: projects/{project}/locations/{region}/caPools/{caPoolId}
+    /// </summary>
+    [JsonPropertyName("serverCaPool")]
+    public string? ServerCaPool { get; set; }
+
     /// <summary>Required. Number of shards for the Redis cluster.</summary>
     [JsonPropertyName("shardCount")]
     public double? ShardCount { get; set; }
@@ -2423,6 +2817,13 @@ public partial class V1beta1ClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("stateInfo")]
     public IList<V1beta1ClusterStatusAtProviderStateInfo>? StateInfo { get; set; }
+
+    /// <summary>
+    /// The combination of labels configured directly on the resource
+    /// and default labels configured on the provider.
+    /// </summary>
+    [JsonPropertyName("terraformLabels")]
+    public IDictionary<string, string>? TerraformLabels { get; set; }
 
     /// <summary>
     /// Optional. The in-transit encryption for the Redis cluster.
@@ -2499,6 +2900,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

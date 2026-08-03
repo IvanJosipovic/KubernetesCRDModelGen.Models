@@ -808,6 +808,13 @@ public partial class V1beta2ProjectSinkStatusAtProvider
     [JsonPropertyName("customWriterIdentity")]
     public string? CustomWriterIdentity { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>A description of this sink. The maximum length of the description is 8000 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -913,6 +920,15 @@ public partial class V1beta2ProjectSinkStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ProjectSinkStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

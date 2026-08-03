@@ -56,6 +56,53 @@ public enum V1beta1RegionSecurityPolicySpecDeletionPolicyEnum
 }
 
 /// <summary>
+/// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicySpecForProviderAdvancedOptionsConfigJsonCustomConfig
+{
+    /// <summary>A list of custom Content-Type header values to apply the JSON parsing.</summary>
+    [JsonPropertyName("contentTypes")]
+    public IList<string>? ContentTypes { get; set; }
+}
+
+/// <summary>
+/// Advanced Options Config of this security policy.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicySpecForProviderAdvancedOptionsConfig
+{
+    /// <summary>
+    /// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("jsonCustomConfig")]
+    public V1beta1RegionSecurityPolicySpecForProviderAdvancedOptionsConfigJsonCustomConfig? JsonCustomConfig { get; set; }
+
+    /// <summary>
+    /// JSON body parsing. Supported values include: &quot;DISABLED&quot;, &quot;STANDARD&quot;, &quot;STANDARD_WITH_GRAPHQL&quot;.
+    /// Possible values are: DISABLED, STANDARD, STANDARD_WITH_GRAPHQL.
+    /// </summary>
+    [JsonPropertyName("jsonParsing")]
+    public string? JsonParsing { get; set; }
+
+    /// <summary>
+    /// Logging level. Supported values include: &quot;NORMAL&quot;, &quot;VERBOSE&quot;.
+    /// Possible values are: NORMAL, VERBOSE.
+    /// </summary>
+    [JsonPropertyName("logLevel")]
+    public string? LogLevel { get; set; }
+
+    /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
+    [JsonPropertyName("userIpRequestHeaders")]
+    public IList<string>? UserIpRequestHeaders { get; set; }
+}
+
+/// <summary>
 /// Configuration for Google Cloud Armor DDOS Proctection Config.
 /// Structure is documented below.
 /// </summary>
@@ -571,6 +618,13 @@ public partial class V1beta1RegionSecurityPolicySpecForProviderUserDefinedFields
 public partial class V1beta1RegionSecurityPolicySpecForProvider
 {
     /// <summary>
+    /// Advanced Options Config of this security policy.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("advancedOptionsConfig")]
+    public V1beta1RegionSecurityPolicySpecForProviderAdvancedOptionsConfig? AdvancedOptionsConfig { get; set; }
+
+    /// <summary>
     /// Configuration for Google Cloud Armor DDOS Proctection Config.
     /// Structure is documented below.
     /// </summary>
@@ -614,6 +668,53 @@ public partial class V1beta1RegionSecurityPolicySpecForProvider
     /// </summary>
     [JsonPropertyName("userDefinedFields")]
     public IList<V1beta1RegionSecurityPolicySpecForProviderUserDefinedFields>? UserDefinedFields { get; set; }
+}
+
+/// <summary>
+/// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicySpecInitProviderAdvancedOptionsConfigJsonCustomConfig
+{
+    /// <summary>A list of custom Content-Type header values to apply the JSON parsing.</summary>
+    [JsonPropertyName("contentTypes")]
+    public IList<string>? ContentTypes { get; set; }
+}
+
+/// <summary>
+/// Advanced Options Config of this security policy.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicySpecInitProviderAdvancedOptionsConfig
+{
+    /// <summary>
+    /// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("jsonCustomConfig")]
+    public V1beta1RegionSecurityPolicySpecInitProviderAdvancedOptionsConfigJsonCustomConfig? JsonCustomConfig { get; set; }
+
+    /// <summary>
+    /// JSON body parsing. Supported values include: &quot;DISABLED&quot;, &quot;STANDARD&quot;, &quot;STANDARD_WITH_GRAPHQL&quot;.
+    /// Possible values are: DISABLED, STANDARD, STANDARD_WITH_GRAPHQL.
+    /// </summary>
+    [JsonPropertyName("jsonParsing")]
+    public string? JsonParsing { get; set; }
+
+    /// <summary>
+    /// Logging level. Supported values include: &quot;NORMAL&quot;, &quot;VERBOSE&quot;.
+    /// Possible values are: NORMAL, VERBOSE.
+    /// </summary>
+    [JsonPropertyName("logLevel")]
+    public string? LogLevel { get; set; }
+
+    /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
+    [JsonPropertyName("userIpRequestHeaders")]
+    public IList<string>? UserIpRequestHeaders { get; set; }
 }
 
 /// <summary>
@@ -1144,6 +1245,13 @@ public partial class V1beta1RegionSecurityPolicySpecInitProviderUserDefinedField
 public partial class V1beta1RegionSecurityPolicySpecInitProvider
 {
     /// <summary>
+    /// Advanced Options Config of this security policy.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("advancedOptionsConfig")]
+    public V1beta1RegionSecurityPolicySpecInitProviderAdvancedOptionsConfig? AdvancedOptionsConfig { get; set; }
+
+    /// <summary>
     /// Configuration for Google Cloud Armor DDOS Proctection Config.
     /// Structure is documented below.
     /// </summary>
@@ -1363,6 +1471,53 @@ public partial class V1beta1RegionSecurityPolicySpec
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
     public V1beta1RegionSecurityPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>
+/// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicyStatusAtProviderAdvancedOptionsConfigJsonCustomConfig
+{
+    /// <summary>A list of custom Content-Type header values to apply the JSON parsing.</summary>
+    [JsonPropertyName("contentTypes")]
+    public IList<string>? ContentTypes { get; set; }
+}
+
+/// <summary>
+/// Advanced Options Config of this security policy.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionSecurityPolicyStatusAtProviderAdvancedOptionsConfig
+{
+    /// <summary>
+    /// Custom configuration to apply the JSON parsing. Only applicable when JSON parsing is set to STANDARD.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("jsonCustomConfig")]
+    public V1beta1RegionSecurityPolicyStatusAtProviderAdvancedOptionsConfigJsonCustomConfig? JsonCustomConfig { get; set; }
+
+    /// <summary>
+    /// JSON body parsing. Supported values include: &quot;DISABLED&quot;, &quot;STANDARD&quot;, &quot;STANDARD_WITH_GRAPHQL&quot;.
+    /// Possible values are: DISABLED, STANDARD, STANDARD_WITH_GRAPHQL.
+    /// </summary>
+    [JsonPropertyName("jsonParsing")]
+    public string? JsonParsing { get; set; }
+
+    /// <summary>
+    /// Logging level. Supported values include: &quot;NORMAL&quot;, &quot;VERBOSE&quot;.
+    /// Possible values are: NORMAL, VERBOSE.
+    /// </summary>
+    [JsonPropertyName("logLevel")]
+    public string? LogLevel { get; set; }
+
+    /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
+    [JsonPropertyName("userIpRequestHeaders")]
+    public IList<string>? UserIpRequestHeaders { get; set; }
 }
 
 /// <summary>
@@ -1881,11 +2036,25 @@ public partial class V1beta1RegionSecurityPolicyStatusAtProviderUserDefinedField
 public partial class V1beta1RegionSecurityPolicyStatusAtProvider
 {
     /// <summary>
+    /// Advanced Options Config of this security policy.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("advancedOptionsConfig")]
+    public V1beta1RegionSecurityPolicyStatusAtProviderAdvancedOptionsConfig? AdvancedOptionsConfig { get; set; }
+
+    /// <summary>
     /// Configuration for Google Cloud Armor DDOS Proctection Config.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("ddosProtectionConfig")]
     public V1beta1RegionSecurityPolicyStatusAtProviderDdosProtectionConfig? DdosProtectionConfig { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
     [JsonPropertyName("description")]
@@ -2003,6 +2172,15 @@ public partial class V1beta1RegionSecurityPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionSecurityPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

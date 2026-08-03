@@ -195,7 +195,10 @@ public partial class V1beta1TargetTCPProxySpecForProviderBackendServiceSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetTCPProxySpecForProvider
 {
-    /// <summary>A reference to the BackendService resource.</summary>
+    /// <summary>
+    /// A reference to the BackendService resource. This field is optional when
+    /// the loadBalancingScheme (available in beta) is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("backendService")]
     public string? BackendService { get; set; }
 
@@ -406,7 +409,10 @@ public partial class V1beta1TargetTCPProxySpecInitProviderBackendServiceSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetTCPProxySpecInitProvider
 {
-    /// <summary>A reference to the BackendService resource.</summary>
+    /// <summary>
+    /// A reference to the BackendService resource. This field is optional when
+    /// the loadBalancingScheme (available in beta) is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("backendService")]
     public string? BackendService { get; set; }
 
@@ -557,13 +563,23 @@ public partial class V1beta1TargetTCPProxySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetTCPProxyStatusAtProvider
 {
-    /// <summary>A reference to the BackendService resource.</summary>
+    /// <summary>
+    /// A reference to the BackendService resource. This field is optional when
+    /// the loadBalancingScheme (available in beta) is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("backendService")]
     public string? BackendService { get; set; }
 
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -659,6 +675,15 @@ public partial class V1beta1TargetTCPProxyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TargetTCPProxyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

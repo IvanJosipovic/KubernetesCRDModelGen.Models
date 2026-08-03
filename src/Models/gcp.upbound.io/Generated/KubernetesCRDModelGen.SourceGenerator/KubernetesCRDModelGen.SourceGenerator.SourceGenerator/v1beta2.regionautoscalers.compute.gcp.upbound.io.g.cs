@@ -324,6 +324,16 @@ public partial class V1beta2RegionAutoscalerSpecForProviderAutoscalingPolicy
     /// </summary>
     [JsonPropertyName("scalingSchedules")]
     public IList<V1beta2RegionAutoscalerSpecForProviderAutoscalingPolicyScalingSchedules>? ScalingSchedules { get; set; }
+
+    /// <summary>
+    /// The number of seconds that the autoscaler waits for load stabilization
+    /// before making scale-in decisions.
+    /// This might appear as a delay in scaling in but it is an important mechanism
+    /// for your application to not have fluctuating size due to short term load
+    /// fluctuations.
+    /// </summary>
+    [JsonPropertyName("stabilizationPeriod")]
+    public double? StabilizationPeriod { get; set; }
 }
 
 /// <summary>
@@ -785,6 +795,16 @@ public partial class V1beta2RegionAutoscalerSpecInitProviderAutoscalingPolicy
     /// </summary>
     [JsonPropertyName("scalingSchedules")]
     public IList<V1beta2RegionAutoscalerSpecInitProviderAutoscalingPolicyScalingSchedules>? ScalingSchedules { get; set; }
+
+    /// <summary>
+    /// The number of seconds that the autoscaler waits for load stabilization
+    /// before making scale-in decisions.
+    /// This might appear as a delay in scaling in but it is an important mechanism
+    /// for your application to not have fluctuating size due to short term load
+    /// fluctuations.
+    /// </summary>
+    [JsonPropertyName("stabilizationPeriod")]
+    public double? StabilizationPeriod { get; set; }
 }
 
 /// <summary>
@@ -1437,6 +1457,16 @@ public partial class V1beta2RegionAutoscalerStatusAtProviderAutoscalingPolicy
     /// </summary>
     [JsonPropertyName("scalingSchedules")]
     public IList<V1beta2RegionAutoscalerStatusAtProviderAutoscalingPolicyScalingSchedules>? ScalingSchedules { get; set; }
+
+    /// <summary>
+    /// The number of seconds that the autoscaler waits for load stabilization
+    /// before making scale-in decisions.
+    /// This might appear as a delay in scaling in but it is an important mechanism
+    /// for your application to not have fluctuating size due to short term load
+    /// fluctuations.
+    /// </summary>
+    [JsonPropertyName("stabilizationPeriod")]
+    public double? StabilizationPeriod { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1457,6 +1487,13 @@ public partial class V1beta2RegionAutoscalerStatusAtProvider
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -1540,6 +1577,15 @@ public partial class V1beta2RegionAutoscalerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2RegionAutoscalerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

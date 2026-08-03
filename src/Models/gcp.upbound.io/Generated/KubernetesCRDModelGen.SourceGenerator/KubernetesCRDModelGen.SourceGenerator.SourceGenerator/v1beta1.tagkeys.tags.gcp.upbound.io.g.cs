@@ -59,6 +59,10 @@ public enum V1beta1TagKeySpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagKeySpecForProvider
 {
+    /// <summary>Regular expression constraint for dynamic tag values, follows RE2 syntax. If present, it implicitly allows dynamic values (constrained by the regex).</summary>
+    [JsonPropertyName("allowedValuesRegex")]
+    public string? AllowedValuesRegex { get; set; }
+
     /// <summary>User-assigned description of the TagKey. Must not exceed 256 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -70,7 +74,7 @@ public partial class V1beta1TagKeySpecForProvider
     /// <summary>
     /// Optional. A purpose cannot be changed once set.
     /// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag.
-    /// Possible values are: GCE_FIREWALL.
+    /// Possible values are: GCE_FIREWALL, DATA_GOVERNANCE.
     /// </summary>
     [JsonPropertyName("purpose")]
     public string? Purpose { get; set; }
@@ -106,6 +110,10 @@ public partial class V1beta1TagKeySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagKeySpecInitProvider
 {
+    /// <summary>Regular expression constraint for dynamic tag values, follows RE2 syntax. If present, it implicitly allows dynamic values (constrained by the regex).</summary>
+    [JsonPropertyName("allowedValuesRegex")]
+    public string? AllowedValuesRegex { get; set; }
+
     /// <summary>User-assigned description of the TagKey. Must not exceed 256 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -117,7 +125,7 @@ public partial class V1beta1TagKeySpecInitProvider
     /// <summary>
     /// Optional. A purpose cannot be changed once set.
     /// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag.
-    /// Possible values are: GCE_FIREWALL.
+    /// Possible values are: GCE_FIREWALL, DATA_GOVERNANCE.
     /// </summary>
     [JsonPropertyName("purpose")]
     public string? Purpose { get; set; }
@@ -324,12 +332,23 @@ public partial class V1beta1TagKeySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagKeyStatusAtProvider
 {
+    /// <summary>Regular expression constraint for dynamic tag values, follows RE2 syntax. If present, it implicitly allows dynamic values (constrained by the regex).</summary>
+    [JsonPropertyName("allowedValuesRegex")]
+    public string? AllowedValuesRegex { get; set; }
+
     /// <summary>
     /// Output only. Creation time.
     /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.
     /// </summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>User-assigned description of the TagKey. Must not exceed 256 characters.</summary>
     [JsonPropertyName("description")]
@@ -354,7 +373,7 @@ public partial class V1beta1TagKeyStatusAtProvider
     /// <summary>
     /// Optional. A purpose cannot be changed once set.
     /// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag.
-    /// Possible values are: GCE_FIREWALL.
+    /// Possible values are: GCE_FIREWALL, DATA_GOVERNANCE.
     /// </summary>
     [JsonPropertyName("purpose")]
     public string? Purpose { get; set; }
@@ -435,6 +454,15 @@ public partial class V1beta1TagKeyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TagKeyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

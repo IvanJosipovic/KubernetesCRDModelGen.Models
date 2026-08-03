@@ -487,6 +487,23 @@ public partial class V1beta2BackendBucketSpecForProviderEdgeSecurityPolicySelect
     public V1beta2BackendBucketSpecForProviderEdgeSecurityPolicySelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendBucketSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend bucket. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackendBucketSpecForProvider
@@ -540,17 +557,28 @@ public partial class V1beta2BackendBucketSpecForProvider
     [JsonPropertyName("edgeSecurityPolicySelector")]
     public V1beta2BackendBucketSpecForProviderEdgeSecurityPolicySelector? EdgeSecurityPolicySelector { get; set; }
 
-    /// <summary>If true, enable Cloud CDN for this BackendBucket.</summary>
+    /// <summary>
+    /// If true, enable Cloud CDN for this BackendBucket.
+    /// Note: This cannot be set to true when loadBalancingScheme is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("enableCdn")]
     public bool? EnableCdn { get; set; }
 
     /// <summary>
     /// The value can only be INTERNAL_MANAGED for cross-region internal layer 7 load balancer.
     /// If loadBalancingScheme is not specified, the backend bucket can be used by classic global external load balancers, or global application external load balancers, or both.
+    /// Important: CDN cannot be enabled (enableCdn cannot be set to true) when loadBalancingScheme is set to INTERNAL_MANAGED.
     /// Possible values are: INTERNAL_MANAGED.
     /// </summary>
     [JsonPropertyName("loadBalancingScheme")]
     public string? LoadBalancingScheme { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendBucketSpecForProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -993,6 +1021,23 @@ public partial class V1beta2BackendBucketSpecInitProviderEdgeSecurityPolicySelec
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendBucketSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend bucket. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -1057,17 +1102,28 @@ public partial class V1beta2BackendBucketSpecInitProvider
     [JsonPropertyName("edgeSecurityPolicySelector")]
     public V1beta2BackendBucketSpecInitProviderEdgeSecurityPolicySelector? EdgeSecurityPolicySelector { get; set; }
 
-    /// <summary>If true, enable Cloud CDN for this BackendBucket.</summary>
+    /// <summary>
+    /// If true, enable Cloud CDN for this BackendBucket.
+    /// Note: This cannot be set to true when loadBalancingScheme is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("enableCdn")]
     public bool? EnableCdn { get; set; }
 
     /// <summary>
     /// The value can only be INTERNAL_MANAGED for cross-region internal layer 7 load balancer.
     /// If loadBalancingScheme is not specified, the backend bucket can be used by classic global external load balancers, or global application external load balancers, or both.
+    /// Important: CDN cannot be enabled (enableCdn cannot be set to true) when loadBalancingScheme is set to INTERNAL_MANAGED.
     /// Possible values are: INTERNAL_MANAGED.
     /// </summary>
     [JsonPropertyName("loadBalancingScheme")]
     public string? LoadBalancingScheme { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendBucketSpecInitProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -1398,6 +1454,23 @@ public partial class V1beta2BackendBucketStatusAtProviderCdnPolicy
     public double? SignedUrlCacheMaxAgeSec { get; set; }
 }
 
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendBucketStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend bucket. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackendBucketStatusAtProvider
@@ -1429,6 +1502,13 @@ public partial class V1beta2BackendBucketStatusAtProvider
     public IList<string>? CustomResponseHeaders { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional textual description of the resource; provided by the
     /// client when the resource is created.
     /// </summary>
@@ -1439,7 +1519,10 @@ public partial class V1beta2BackendBucketStatusAtProvider
     [JsonPropertyName("edgeSecurityPolicy")]
     public string? EdgeSecurityPolicy { get; set; }
 
-    /// <summary>If true, enable Cloud CDN for this BackendBucket.</summary>
+    /// <summary>
+    /// If true, enable Cloud CDN for this BackendBucket.
+    /// Note: This cannot be set to true when loadBalancingScheme is set to INTERNAL_MANAGED.
+    /// </summary>
     [JsonPropertyName("enableCdn")]
     public bool? EnableCdn { get; set; }
 
@@ -1450,10 +1533,18 @@ public partial class V1beta2BackendBucketStatusAtProvider
     /// <summary>
     /// The value can only be INTERNAL_MANAGED for cross-region internal layer 7 load balancer.
     /// If loadBalancingScheme is not specified, the backend bucket can be used by classic global external load balancers, or global application external load balancers, or both.
+    /// Important: CDN cannot be enabled (enableCdn cannot be set to true) when loadBalancingScheme is set to INTERNAL_MANAGED.
     /// Possible values are: INTERNAL_MANAGED.
     /// </summary>
     [JsonPropertyName("loadBalancingScheme")]
     public string? LoadBalancingScheme { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendBucketStatusAtProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -1521,6 +1612,15 @@ public partial class V1beta2BackendBucketStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2BackendBucketStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

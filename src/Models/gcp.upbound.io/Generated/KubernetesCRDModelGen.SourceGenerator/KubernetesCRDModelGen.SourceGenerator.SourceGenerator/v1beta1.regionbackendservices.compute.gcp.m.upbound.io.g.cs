@@ -548,6 +548,62 @@ public partial class V1beta1RegionBackendServiceSpecForProviderCircuitBreakers
 }
 
 /// <summary>
+/// Connection Tracking configuration for this BackendService.
+/// This is available only for Layer 4 Internal Load Balancing and
+/// Network Load Balancing.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderConnectionTrackingPolicy
+{
+    /// <summary>
+    /// Specifies connection persistence when backends are unhealthy.
+    /// If set to DEFAULT_FOR_PROTOCOL, the existing connections persist on
+    /// unhealthy backends only for connection-oriented protocols (TCP and SCTP)
+    /// and only if the Tracking Mode is PER_CONNECTION (default tracking mode)
+    /// or the Session Affinity is configured for 5-tuple. They do not persist
+    /// for UDP.
+    /// If set to NEVER_PERSIST, after a backend becomes unhealthy, the existing
+    /// connections on the unhealthy backend are never persisted on the unhealthy
+    /// backend. They are always diverted to newly selected healthy backends
+    /// (unless all backends are unhealthy).
+    /// If set to ALWAYS_PERSIST, existing connections always persist on
+    /// unhealthy backends regardless of protocol and session affinity. It is
+    /// generally not recommended to use this mode overriding the default.
+    /// Default value is DEFAULT_FOR_PROTOCOL.
+    /// Possible values are: DEFAULT_FOR_PROTOCOL, NEVER_PERSIST, ALWAYS_PERSIST.
+    /// </summary>
+    [JsonPropertyName("connectionPersistenceOnUnhealthyBackends")]
+    public string? ConnectionPersistenceOnUnhealthyBackends { get; set; }
+
+    /// <summary>Enable Strong Session Affinity for Network Load Balancing. This option is not available publicly.</summary>
+    [JsonPropertyName("enableStrongAffinity")]
+    public bool? EnableStrongAffinity { get; set; }
+
+    /// <summary>
+    /// Specifies how long to keep a Connection Tracking entry while there is
+    /// no matching traffic (in seconds).
+    /// For L4 ILB the minimum(default) is 10 minutes and maximum is 16 hours.
+    /// For NLB the minimum(default) is 60 seconds and the maximum is 16 hours.
+    /// </summary>
+    [JsonPropertyName("idleTimeoutSec")]
+    public double? IdleTimeoutSec { get; set; }
+
+    /// <summary>
+    /// Specifies the key used for connection tracking. There are two options:
+    /// PER_CONNECTION: The Connection Tracking is performed as per the
+    /// Connection Key (default Hash Method) for the specific protocol.
+    /// PER_SESSION: The Connection Tracking is performed as per the
+    /// configured Session Affinity. It matches the configured Session Affinity.
+    /// Default value is PER_CONNECTION.
+    /// Possible values are: PER_CONNECTION, PER_SESSION.
+    /// </summary>
+    [JsonPropertyName("trackingMode")]
+    public string? TrackingMode { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -709,6 +765,403 @@ public partial class V1beta1RegionBackendServiceSpecForProviderFailoverPolicy
     /// </summary>
     [JsonPropertyName("failoverRatio")]
     public double? FailoverRatio { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// The network endpoint within the leader.backendGroup that is designated as the leader.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpoint
+{
+    /// <summary>
+    /// The name of the VM instance of the leader network endpoint. The instance must
+    /// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
+
+    /// <summary>Reference to a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceRef")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceRef? InstanceRef { get; set; }
+
+    /// <summary>Selector for a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceSelector")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpointInstanceSelector? InstanceSelector { get; set; }
+}
+
+/// <summary>
+/// Selects one of the network endpoints attached to the backend NEGs of this service as the
+/// active endpoint (the leader) that receives all traffic.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicyLeader
+{
+    /// <summary>
+    /// A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
+    /// attached to.
+    /// </summary>
+    [JsonPropertyName("backendGroup")]
+    public string? BackendGroup { get; set; }
+
+    /// <summary>Reference to a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+    [JsonPropertyName("backendGroupRef")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupRef? BackendGroupRef { get; set; }
+
+    /// <summary>Selector for a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+    [JsonPropertyName("backendGroupSelector")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderBackendGroupSelector? BackendGroupSelector { get; set; }
+
+    /// <summary>
+    /// The network endpoint within the leader.backendGroup that is designated as the leader.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkEndpoint")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeaderNetworkEndpoint? NetworkEndpoint { get; set; }
+}
+
+/// <summary>
+/// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+/// The backends of this regional backend service must only specify zonal network endpoint groups
+/// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+/// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+/// requires customers to be responsible for tracking backend endpoint health and electing a
+/// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+/// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+/// Passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderHaPolicy
+{
+    /// <summary>
+    /// Specifies whether fast IP move is enabled, and if so, the mechanism to achieve it.
+    /// Supported values are:
+    /// </summary>
+    [JsonPropertyName("fastIpMove")]
+    public string? FastIpMove { get; set; }
+
+    /// <summary>
+    /// Selects one of the network endpoints attached to the backend NEGs of this service as the
+    /// active endpoint (the leader) that receives all traffic.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("leader")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicyLeader? Leader { get; set; }
 }
 
 /// <summary>
@@ -943,6 +1396,204 @@ public partial class V1beta1RegionBackendServiceSpecForProviderLogConfig
 }
 
 /// <summary>
+/// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkPassThroughLbTrafficPolicyZonalAffinity
+{
+    /// <summary>
+    /// This field indicates whether zonal affinity is enabled or not.
+    /// Default value is ZONAL_AFFINITY_DISABLED.
+    /// Possible values are: ZONAL_AFFINITY_DISABLED, ZONAL_AFFINITY_SPILL_CROSS_ZONE, ZONAL_AFFINITY_STAY_WITHIN_ZONE.
+    /// </summary>
+    [JsonPropertyName("spillover")]
+    public string? Spillover { get; set; }
+
+    /// <summary>
+    /// The value of the field must be in [0, 1]. When the ratio of the count of healthy backend endpoints in a zone
+    /// to the count of backend endpoints in that same zone is equal to or above this threshold, the load balancer
+    /// distributes new connections to all healthy endpoints in the local zone only. When the ratio of the count
+    /// of healthy backend endpoints in a zone to the count of backend endpoints in that same zone is below this
+    /// threshold, the load balancer distributes all new connections to all healthy endpoints across all zones.
+    /// </summary>
+    [JsonPropertyName("spilloverRatio")]
+    public double? SpilloverRatio { get; set; }
+}
+
+/// <summary>
+/// Configures traffic steering properties of internal passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkPassThroughLbTrafficPolicy
+{
+    /// <summary>
+    /// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("zonalAffinity")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkPassThroughLbTrafficPolicyZonalAffinity? ZonalAffinity { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Network in compute to populate network.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Network in compute to populate network.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderNetworkSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// The base time that a host is ejected for. The real time is equal to the base
 /// time multiplied by the number of times the host has been ejected. Defaults to
 /// 30000ms or 30s.
@@ -1101,6 +1752,178 @@ public partial class V1beta1RegionBackendServiceSpecForProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the region backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -1151,6 +1974,56 @@ public partial class V1beta1RegionBackendServiceSpecForProviderStrongSessionAffi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderTlsSettingsSubjectAltNames
+{
+    /// <summary>The SAN specified as a DNS Name.</summary>
+    [JsonPropertyName("dnsName")]
+    public string? DnsName { get; set; }
+
+    /// <summary>The SAN specified as a URI.</summary>
+    [JsonPropertyName("uniformResourceIdentifier")]
+    public string? UniformResourceIdentifier { get; set; }
+}
+
+/// <summary>
+/// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecForProviderTlsSettings
+{
+    /// <summary>
+    /// Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace.
+    /// Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field.
+    /// Can only be specified if authenticationMode is not NONE.
+    /// </summary>
+    [JsonPropertyName("authenticationConfig")]
+    public string? AuthenticationConfig { get; set; }
+
+    /// <summary>
+    /// Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the
+    /// TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend&apos;s
+    /// server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it
+    /// regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
+    /// </summary>
+    [JsonPropertyName("sni")]
+    public string? Sni { get; set; }
+
+    /// <summary>
+    /// A list of Subject Alternative Names (SANs) that the Load Balancer verifies during a TLS handshake with the backend.
+    /// When the server presents its X.509 certificate to the Load Balancer, the Load Balancer inspects the certificate&apos;s SAN field,
+    /// and requires that at least one SAN match one of the subjectAltNames in the list. This field is limited to 5 entries.
+    /// When both sni and subjectAltNames are specified, the load balancer matches the backend certificate&apos;s SAN only to
+    /// subjectAltNames.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("subjectAltNames")]
+    public IList<V1beta1RegionBackendServiceSpecForProviderTlsSettingsSubjectAltNames>? SubjectAltNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionBackendServiceSpecForProvider
 {
     /// <summary>
@@ -1194,6 +2067,15 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
     public double? ConnectionDrainingTimeoutSec { get; set; }
 
     /// <summary>
+    /// Connection Tracking configuration for this BackendService.
+    /// This is available only for Layer 4 Internal Load Balancing and
+    /// Network Load Balancing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionTrackingPolicy")]
+    public V1beta1RegionBackendServiceSpecForProviderConnectionTrackingPolicy? ConnectionTrackingPolicy { get; set; }
+
+    /// <summary>
     /// Consistent Hash-based load balancing can be used to provide soft session
     /// affinity based on HTTP headers, cookies or other properties. This load balancing
     /// policy is applicable only for HTTP connections. The affinity to a particular
@@ -1226,6 +2108,20 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
     /// </summary>
     [JsonPropertyName("failoverPolicy")]
     public V1beta1RegionBackendServiceSpecForProviderFailoverPolicy? FailoverPolicy { get; set; }
+
+    /// <summary>
+    /// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+    /// The backends of this regional backend service must only specify zonal network endpoint groups
+    /// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+    /// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+    /// requires customers to be responsible for tracking backend endpoint health and electing a
+    /// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+    /// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+    /// Passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("haPolicy")]
+    public V1beta1RegionBackendServiceSpecForProviderHaPolicy? HaPolicy { get; set; }
 
     /// <summary>
     /// The set of URLs to HealthCheck resources for health checking
@@ -1281,10 +2177,27 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
 
     /// <summary>
     /// The URL of the network to which this backend service belongs.
-    /// This field can only be specified when the load balancing scheme is set to INTERNAL.
+    /// This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+    /// This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+    /// Changes to this field force recreation of the resource.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Configures traffic steering properties of internal passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkPassThroughLbTrafficPolicy")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkPassThroughLbTrafficPolicy? NetworkPassThroughLbTrafficPolicy { get; set; }
+
+    /// <summary>Reference to a Network in compute to populate network.</summary>
+    [JsonPropertyName("networkRef")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkRef? NetworkRef { get; set; }
+
+    /// <summary>Selector for a Network in compute to populate network.</summary>
+    [JsonPropertyName("networkSelector")]
+    public V1beta1RegionBackendServiceSpecForProviderNetworkSelector? NetworkSelector { get; set; }
 
     /// <summary>
     /// Settings controlling eviction of unhealthy hosts from the load balancing pool.
@@ -1294,6 +2207,13 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
     /// </summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta1RegionBackendServiceSpecForProviderOutlierDetection? OutlierDetection { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RegionBackendServiceSpecForProviderParams? Params { get; set; }
 
     /// <summary>
     /// A named port on a backend instance group representing the port for
@@ -1325,6 +2245,18 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>The security policy associated with this backend service.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
+
+    /// <summary>Reference to a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+    [JsonPropertyName("securityPolicyRef")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicyRef? SecurityPolicyRef { get; set; }
+
+    /// <summary>Selector for a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+    [JsonPropertyName("securityPolicySelector")]
+    public V1beta1RegionBackendServiceSpecForProviderSecurityPolicySelector? SecurityPolicySelector { get; set; }
+
     /// <summary>
     /// Type of session affinity to use. The default is NONE. Session affinity is
     /// not applicable if the protocol is UDP.
@@ -1348,6 +2280,13 @@ public partial class V1beta1RegionBackendServiceSpecForProvider
     /// </summary>
     [JsonPropertyName("timeoutSec")]
     public double? TimeoutSec { get; set; }
+
+    /// <summary>
+    /// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tlsSettings")]
+    public V1beta1RegionBackendServiceSpecForProviderTlsSettings? TlsSettings { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1862,6 +2801,62 @@ public partial class V1beta1RegionBackendServiceSpecInitProviderCircuitBreakers
 }
 
 /// <summary>
+/// Connection Tracking configuration for this BackendService.
+/// This is available only for Layer 4 Internal Load Balancing and
+/// Network Load Balancing.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderConnectionTrackingPolicy
+{
+    /// <summary>
+    /// Specifies connection persistence when backends are unhealthy.
+    /// If set to DEFAULT_FOR_PROTOCOL, the existing connections persist on
+    /// unhealthy backends only for connection-oriented protocols (TCP and SCTP)
+    /// and only if the Tracking Mode is PER_CONNECTION (default tracking mode)
+    /// or the Session Affinity is configured for 5-tuple. They do not persist
+    /// for UDP.
+    /// If set to NEVER_PERSIST, after a backend becomes unhealthy, the existing
+    /// connections on the unhealthy backend are never persisted on the unhealthy
+    /// backend. They are always diverted to newly selected healthy backends
+    /// (unless all backends are unhealthy).
+    /// If set to ALWAYS_PERSIST, existing connections always persist on
+    /// unhealthy backends regardless of protocol and session affinity. It is
+    /// generally not recommended to use this mode overriding the default.
+    /// Default value is DEFAULT_FOR_PROTOCOL.
+    /// Possible values are: DEFAULT_FOR_PROTOCOL, NEVER_PERSIST, ALWAYS_PERSIST.
+    /// </summary>
+    [JsonPropertyName("connectionPersistenceOnUnhealthyBackends")]
+    public string? ConnectionPersistenceOnUnhealthyBackends { get; set; }
+
+    /// <summary>Enable Strong Session Affinity for Network Load Balancing. This option is not available publicly.</summary>
+    [JsonPropertyName("enableStrongAffinity")]
+    public bool? EnableStrongAffinity { get; set; }
+
+    /// <summary>
+    /// Specifies how long to keep a Connection Tracking entry while there is
+    /// no matching traffic (in seconds).
+    /// For L4 ILB the minimum(default) is 10 minutes and maximum is 16 hours.
+    /// For NLB the minimum(default) is 60 seconds and the maximum is 16 hours.
+    /// </summary>
+    [JsonPropertyName("idleTimeoutSec")]
+    public double? IdleTimeoutSec { get; set; }
+
+    /// <summary>
+    /// Specifies the key used for connection tracking. There are two options:
+    /// PER_CONNECTION: The Connection Tracking is performed as per the
+    /// Connection Key (default Hash Method) for the specific protocol.
+    /// PER_SESSION: The Connection Tracking is performed as per the
+    /// configured Session Affinity. It matches the configured Session Affinity.
+    /// Default value is PER_CONNECTION.
+    /// Possible values are: PER_CONNECTION, PER_SESSION.
+    /// </summary>
+    [JsonPropertyName("trackingMode")]
+    public string? TrackingMode { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -2023,6 +3018,403 @@ public partial class V1beta1RegionBackendServiceSpecInitProviderFailoverPolicy
     /// </summary>
     [JsonPropertyName("failoverRatio")]
     public double? FailoverRatio { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// The network endpoint within the leader.backendGroup that is designated as the leader.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpoint
+{
+    /// <summary>
+    /// The name of the VM instance of the leader network endpoint. The instance must
+    /// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
+
+    /// <summary>Reference to a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceRef")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceRef? InstanceRef { get; set; }
+
+    /// <summary>Selector for a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceSelector")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpointInstanceSelector? InstanceSelector { get; set; }
+}
+
+/// <summary>
+/// Selects one of the network endpoints attached to the backend NEGs of this service as the
+/// active endpoint (the leader) that receives all traffic.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeader
+{
+    /// <summary>
+    /// A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
+    /// attached to.
+    /// </summary>
+    [JsonPropertyName("backendGroup")]
+    public string? BackendGroup { get; set; }
+
+    /// <summary>Reference to a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+    [JsonPropertyName("backendGroupRef")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupRef? BackendGroupRef { get; set; }
+
+    /// <summary>Selector for a NetworkEndpointGroup in compute to populate backendGroup.</summary>
+    [JsonPropertyName("backendGroupSelector")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderBackendGroupSelector? BackendGroupSelector { get; set; }
+
+    /// <summary>
+    /// The network endpoint within the leader.backendGroup that is designated as the leader.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkEndpoint")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeaderNetworkEndpoint? NetworkEndpoint { get; set; }
+}
+
+/// <summary>
+/// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+/// The backends of this regional backend service must only specify zonal network endpoint groups
+/// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+/// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+/// requires customers to be responsible for tracking backend endpoint health and electing a
+/// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+/// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+/// Passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderHaPolicy
+{
+    /// <summary>
+    /// Specifies whether fast IP move is enabled, and if so, the mechanism to achieve it.
+    /// Supported values are:
+    /// </summary>
+    [JsonPropertyName("fastIpMove")]
+    public string? FastIpMove { get; set; }
+
+    /// <summary>
+    /// Selects one of the network endpoints attached to the backend NEGs of this service as the
+    /// active endpoint (the leader) that receives all traffic.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("leader")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicyLeader? Leader { get; set; }
 }
 
 /// <summary>
@@ -2257,6 +3649,204 @@ public partial class V1beta1RegionBackendServiceSpecInitProviderLogConfig
 }
 
 /// <summary>
+/// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkPassThroughLbTrafficPolicyZonalAffinity
+{
+    /// <summary>
+    /// This field indicates whether zonal affinity is enabled or not.
+    /// Default value is ZONAL_AFFINITY_DISABLED.
+    /// Possible values are: ZONAL_AFFINITY_DISABLED, ZONAL_AFFINITY_SPILL_CROSS_ZONE, ZONAL_AFFINITY_STAY_WITHIN_ZONE.
+    /// </summary>
+    [JsonPropertyName("spillover")]
+    public string? Spillover { get; set; }
+
+    /// <summary>
+    /// The value of the field must be in [0, 1]. When the ratio of the count of healthy backend endpoints in a zone
+    /// to the count of backend endpoints in that same zone is equal to or above this threshold, the load balancer
+    /// distributes new connections to all healthy endpoints in the local zone only. When the ratio of the count
+    /// of healthy backend endpoints in a zone to the count of backend endpoints in that same zone is below this
+    /// threshold, the load balancer distributes all new connections to all healthy endpoints across all zones.
+    /// </summary>
+    [JsonPropertyName("spilloverRatio")]
+    public double? SpilloverRatio { get; set; }
+}
+
+/// <summary>
+/// Configures traffic steering properties of internal passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkPassThroughLbTrafficPolicy
+{
+    /// <summary>
+    /// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("zonalAffinity")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkPassThroughLbTrafficPolicyZonalAffinity? ZonalAffinity { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Network in compute to populate network.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Network in compute to populate network.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderNetworkSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// The base time that a host is ejected for. The real time is equal to the base
 /// time multiplied by the number of times the host has been ejected. Defaults to
 /// 30000ms or 30s.
@@ -2415,6 +4005,178 @@ public partial class V1beta1RegionBackendServiceSpecInitProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the region backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolveEnum>))]
+public enum V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -2461,6 +4223,56 @@ public partial class V1beta1RegionBackendServiceSpecInitProviderStrongSessionAff
     /// </summary>
     [JsonPropertyName("ttl")]
     public V1beta1RegionBackendServiceSpecInitProviderStrongSessionAffinityCookieTtl? Ttl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderTlsSettingsSubjectAltNames
+{
+    /// <summary>The SAN specified as a DNS Name.</summary>
+    [JsonPropertyName("dnsName")]
+    public string? DnsName { get; set; }
+
+    /// <summary>The SAN specified as a URI.</summary>
+    [JsonPropertyName("uniformResourceIdentifier")]
+    public string? UniformResourceIdentifier { get; set; }
+}
+
+/// <summary>
+/// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceSpecInitProviderTlsSettings
+{
+    /// <summary>
+    /// Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace.
+    /// Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field.
+    /// Can only be specified if authenticationMode is not NONE.
+    /// </summary>
+    [JsonPropertyName("authenticationConfig")]
+    public string? AuthenticationConfig { get; set; }
+
+    /// <summary>
+    /// Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the
+    /// TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend&apos;s
+    /// server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it
+    /// regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
+    /// </summary>
+    [JsonPropertyName("sni")]
+    public string? Sni { get; set; }
+
+    /// <summary>
+    /// A list of Subject Alternative Names (SANs) that the Load Balancer verifies during a TLS handshake with the backend.
+    /// When the server presents its X.509 certificate to the Load Balancer, the Load Balancer inspects the certificate&apos;s SAN field,
+    /// and requires that at least one SAN match one of the subjectAltNames in the list. This field is limited to 5 entries.
+    /// When both sni and subjectAltNames are specified, the load balancer matches the backend certificate&apos;s SAN only to
+    /// subjectAltNames.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("subjectAltNames")]
+    public IList<V1beta1RegionBackendServiceSpecInitProviderTlsSettingsSubjectAltNames>? SubjectAltNames { get; set; }
 }
 
 /// <summary>
@@ -2520,6 +4332,15 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
     public double? ConnectionDrainingTimeoutSec { get; set; }
 
     /// <summary>
+    /// Connection Tracking configuration for this BackendService.
+    /// This is available only for Layer 4 Internal Load Balancing and
+    /// Network Load Balancing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionTrackingPolicy")]
+    public V1beta1RegionBackendServiceSpecInitProviderConnectionTrackingPolicy? ConnectionTrackingPolicy { get; set; }
+
+    /// <summary>
     /// Consistent Hash-based load balancing can be used to provide soft session
     /// affinity based on HTTP headers, cookies or other properties. This load balancing
     /// policy is applicable only for HTTP connections. The affinity to a particular
@@ -2552,6 +4373,20 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
     /// </summary>
     [JsonPropertyName("failoverPolicy")]
     public V1beta1RegionBackendServiceSpecInitProviderFailoverPolicy? FailoverPolicy { get; set; }
+
+    /// <summary>
+    /// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+    /// The backends of this regional backend service must only specify zonal network endpoint groups
+    /// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+    /// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+    /// requires customers to be responsible for tracking backend endpoint health and electing a
+    /// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+    /// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+    /// Passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("haPolicy")]
+    public V1beta1RegionBackendServiceSpecInitProviderHaPolicy? HaPolicy { get; set; }
 
     /// <summary>
     /// The set of URLs to HealthCheck resources for health checking
@@ -2607,10 +4442,27 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
 
     /// <summary>
     /// The URL of the network to which this backend service belongs.
-    /// This field can only be specified when the load balancing scheme is set to INTERNAL.
+    /// This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+    /// This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+    /// Changes to this field force recreation of the resource.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Configures traffic steering properties of internal passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkPassThroughLbTrafficPolicy")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkPassThroughLbTrafficPolicy? NetworkPassThroughLbTrafficPolicy { get; set; }
+
+    /// <summary>Reference to a Network in compute to populate network.</summary>
+    [JsonPropertyName("networkRef")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkRef? NetworkRef { get; set; }
+
+    /// <summary>Selector for a Network in compute to populate network.</summary>
+    [JsonPropertyName("networkSelector")]
+    public V1beta1RegionBackendServiceSpecInitProviderNetworkSelector? NetworkSelector { get; set; }
 
     /// <summary>
     /// Settings controlling eviction of unhealthy hosts from the load balancing pool.
@@ -2620,6 +4472,13 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
     /// </summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta1RegionBackendServiceSpecInitProviderOutlierDetection? OutlierDetection { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RegionBackendServiceSpecInitProviderParams? Params { get; set; }
 
     /// <summary>
     /// A named port on a backend instance group representing the port for
@@ -2644,6 +4503,18 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
+    /// <summary>The security policy associated with this backend service.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
+
+    /// <summary>Reference to a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+    [JsonPropertyName("securityPolicyRef")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicyRef? SecurityPolicyRef { get; set; }
+
+    /// <summary>Selector for a RegionSecurityPolicy in compute to populate securityPolicy.</summary>
+    [JsonPropertyName("securityPolicySelector")]
+    public V1beta1RegionBackendServiceSpecInitProviderSecurityPolicySelector? SecurityPolicySelector { get; set; }
+
     /// <summary>
     /// Type of session affinity to use. The default is NONE. Session affinity is
     /// not applicable if the protocol is UDP.
@@ -2667,6 +4538,13 @@ public partial class V1beta1RegionBackendServiceSpecInitProvider
     /// </summary>
     [JsonPropertyName("timeoutSec")]
     public double? TimeoutSec { get; set; }
+
+    /// <summary>
+    /// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tlsSettings")]
+    public V1beta1RegionBackendServiceSpecInitProviderTlsSettings? TlsSettings { get; set; }
 }
 
 /// <summary>
@@ -3125,6 +5003,62 @@ public partial class V1beta1RegionBackendServiceStatusAtProviderCircuitBreakers
 }
 
 /// <summary>
+/// Connection Tracking configuration for this BackendService.
+/// This is available only for Layer 4 Internal Load Balancing and
+/// Network Load Balancing.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderConnectionTrackingPolicy
+{
+    /// <summary>
+    /// Specifies connection persistence when backends are unhealthy.
+    /// If set to DEFAULT_FOR_PROTOCOL, the existing connections persist on
+    /// unhealthy backends only for connection-oriented protocols (TCP and SCTP)
+    /// and only if the Tracking Mode is PER_CONNECTION (default tracking mode)
+    /// or the Session Affinity is configured for 5-tuple. They do not persist
+    /// for UDP.
+    /// If set to NEVER_PERSIST, after a backend becomes unhealthy, the existing
+    /// connections on the unhealthy backend are never persisted on the unhealthy
+    /// backend. They are always diverted to newly selected healthy backends
+    /// (unless all backends are unhealthy).
+    /// If set to ALWAYS_PERSIST, existing connections always persist on
+    /// unhealthy backends regardless of protocol and session affinity. It is
+    /// generally not recommended to use this mode overriding the default.
+    /// Default value is DEFAULT_FOR_PROTOCOL.
+    /// Possible values are: DEFAULT_FOR_PROTOCOL, NEVER_PERSIST, ALWAYS_PERSIST.
+    /// </summary>
+    [JsonPropertyName("connectionPersistenceOnUnhealthyBackends")]
+    public string? ConnectionPersistenceOnUnhealthyBackends { get; set; }
+
+    /// <summary>Enable Strong Session Affinity for Network Load Balancing. This option is not available publicly.</summary>
+    [JsonPropertyName("enableStrongAffinity")]
+    public bool? EnableStrongAffinity { get; set; }
+
+    /// <summary>
+    /// Specifies how long to keep a Connection Tracking entry while there is
+    /// no matching traffic (in seconds).
+    /// For L4 ILB the minimum(default) is 10 minutes and maximum is 16 hours.
+    /// For NLB the minimum(default) is 60 seconds and the maximum is 16 hours.
+    /// </summary>
+    [JsonPropertyName("idleTimeoutSec")]
+    public double? IdleTimeoutSec { get; set; }
+
+    /// <summary>
+    /// Specifies the key used for connection tracking. There are two options:
+    /// PER_CONNECTION: The Connection Tracking is performed as per the
+    /// Connection Key (default Hash Method) for the specific protocol.
+    /// PER_SESSION: The Connection Tracking is performed as per the
+    /// configured Session Affinity. It matches the configured Session Affinity.
+    /// Default value is PER_CONNECTION.
+    /// Possible values are: PER_CONNECTION, PER_SESSION.
+    /// </summary>
+    [JsonPropertyName("trackingMode")]
+    public string? TrackingMode { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -3289,6 +5223,77 @@ public partial class V1beta1RegionBackendServiceStatusAtProviderFailoverPolicy
 }
 
 /// <summary>
+/// The network endpoint within the leader.backendGroup that is designated as the leader.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderHaPolicyLeaderNetworkEndpoint
+{
+    /// <summary>
+    /// The name of the VM instance of the leader network endpoint. The instance must
+    /// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
+}
+
+/// <summary>
+/// Selects one of the network endpoints attached to the backend NEGs of this service as the
+/// active endpoint (the leader) that receives all traffic.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderHaPolicyLeader
+{
+    /// <summary>
+    /// A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
+    /// attached to.
+    /// </summary>
+    [JsonPropertyName("backendGroup")]
+    public string? BackendGroup { get; set; }
+
+    /// <summary>
+    /// The network endpoint within the leader.backendGroup that is designated as the leader.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkEndpoint")]
+    public V1beta1RegionBackendServiceStatusAtProviderHaPolicyLeaderNetworkEndpoint? NetworkEndpoint { get; set; }
+}
+
+/// <summary>
+/// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+/// The backends of this regional backend service must only specify zonal network endpoint groups
+/// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+/// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+/// requires customers to be responsible for tracking backend endpoint health and electing a
+/// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+/// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+/// Passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderHaPolicy
+{
+    /// <summary>
+    /// Specifies whether fast IP move is enabled, and if so, the mechanism to achieve it.
+    /// Supported values are:
+    /// </summary>
+    [JsonPropertyName("fastIpMove")]
+    public string? FastIpMove { get; set; }
+
+    /// <summary>
+    /// Selects one of the network endpoints attached to the backend NEGs of this service as the
+    /// active endpoint (the leader) that receives all traffic.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("leader")]
+    public V1beta1RegionBackendServiceStatusAtProviderHaPolicyLeader? Leader { get; set; }
+}
+
+/// <summary>
 /// Settings for enabling Cloud Identity Aware Proxy.
 /// If OAuth client is not set, Google-managed OAuth client is used.
 /// Structure is documented below.
@@ -3339,6 +5344,49 @@ public partial class V1beta1RegionBackendServiceStatusAtProviderLogConfig
     /// </summary>
     [JsonPropertyName("sampleRate")]
     public double? SampleRate { get; set; }
+}
+
+/// <summary>
+/// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderNetworkPassThroughLbTrafficPolicyZonalAffinity
+{
+    /// <summary>
+    /// This field indicates whether zonal affinity is enabled or not.
+    /// Default value is ZONAL_AFFINITY_DISABLED.
+    /// Possible values are: ZONAL_AFFINITY_DISABLED, ZONAL_AFFINITY_SPILL_CROSS_ZONE, ZONAL_AFFINITY_STAY_WITHIN_ZONE.
+    /// </summary>
+    [JsonPropertyName("spillover")]
+    public string? Spillover { get; set; }
+
+    /// <summary>
+    /// The value of the field must be in [0, 1]. When the ratio of the count of healthy backend endpoints in a zone
+    /// to the count of backend endpoints in that same zone is equal to or above this threshold, the load balancer
+    /// distributes new connections to all healthy endpoints in the local zone only. When the ratio of the count
+    /// of healthy backend endpoints in a zone to the count of backend endpoints in that same zone is below this
+    /// threshold, the load balancer distributes all new connections to all healthy endpoints across all zones.
+    /// </summary>
+    [JsonPropertyName("spilloverRatio")]
+    public double? SpilloverRatio { get; set; }
+}
+
+/// <summary>
+/// Configures traffic steering properties of internal passthrough Network Load Balancers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderNetworkPassThroughLbTrafficPolicy
+{
+    /// <summary>
+    /// When configured, new connections are load balanced across healthy backend endpoints in the local zone.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("zonalAffinity")]
+    public V1beta1RegionBackendServiceStatusAtProviderNetworkPassThroughLbTrafficPolicyZonalAffinity? ZonalAffinity { get; set; }
 }
 
 /// <summary>
@@ -3500,6 +5548,23 @@ public partial class V1beta1RegionBackendServiceStatusAtProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the region backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Lifetime of the cookie.
 /// Structure is documented below.
 /// </summary>
@@ -3550,6 +5615,56 @@ public partial class V1beta1RegionBackendServiceStatusAtProviderStrongSessionAff
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderTlsSettingsSubjectAltNames
+{
+    /// <summary>The SAN specified as a DNS Name.</summary>
+    [JsonPropertyName("dnsName")]
+    public string? DnsName { get; set; }
+
+    /// <summary>The SAN specified as a URI.</summary>
+    [JsonPropertyName("uniformResourceIdentifier")]
+    public string? UniformResourceIdentifier { get; set; }
+}
+
+/// <summary>
+/// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionBackendServiceStatusAtProviderTlsSettings
+{
+    /// <summary>
+    /// Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace.
+    /// Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field.
+    /// Can only be specified if authenticationMode is not NONE.
+    /// </summary>
+    [JsonPropertyName("authenticationConfig")]
+    public string? AuthenticationConfig { get; set; }
+
+    /// <summary>
+    /// Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the
+    /// TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend&apos;s
+    /// server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it
+    /// regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
+    /// </summary>
+    [JsonPropertyName("sni")]
+    public string? Sni { get; set; }
+
+    /// <summary>
+    /// A list of Subject Alternative Names (SANs) that the Load Balancer verifies during a TLS handshake with the backend.
+    /// When the server presents its X.509 certificate to the Load Balancer, the Load Balancer inspects the certificate&apos;s SAN field,
+    /// and requires that at least one SAN match one of the subjectAltNames in the list. This field is limited to 5 entries.
+    /// When both sni and subjectAltNames are specified, the load balancer matches the backend certificate&apos;s SAN only to
+    /// subjectAltNames.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("subjectAltNames")]
+    public IList<V1beta1RegionBackendServiceStatusAtProviderTlsSettingsSubjectAltNames>? SubjectAltNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionBackendServiceStatusAtProvider
 {
     /// <summary>
@@ -3593,6 +5708,15 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     public double? ConnectionDrainingTimeoutSec { get; set; }
 
     /// <summary>
+    /// Connection Tracking configuration for this BackendService.
+    /// This is available only for Layer 4 Internal Load Balancing and
+    /// Network Load Balancing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionTrackingPolicy")]
+    public V1beta1RegionBackendServiceStatusAtProviderConnectionTrackingPolicy? ConnectionTrackingPolicy { get; set; }
+
+    /// <summary>
     /// Consistent Hash-based load balancing can be used to provide soft session
     /// affinity based on HTTP headers, cookies or other properties. This load balancing
     /// policy is applicable only for HTTP connections. The affinity to a particular
@@ -3614,6 +5738,13 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     /// </summary>
     [JsonPropertyName("customMetrics")]
     public IList<V1beta1RegionBackendServiceStatusAtProviderCustomMetrics>? CustomMetrics { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -3640,6 +5771,20 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     /// <summary>The unique identifier for the resource. This identifier is defined by the server.</summary>
     [JsonPropertyName("generatedId")]
     public double? GeneratedId { get; set; }
+
+    /// <summary>
+    /// Configures self-managed High Availability (HA) for External and Internal Protocol Forwarding.
+    /// The backends of this regional backend service must only specify zonal network endpoint groups
+    /// (NEGs) of type GCE_VM_IP. Note that haPolicy is not for load balancing, and therefore cannot
+    /// be specified with sessionAffinity, connectionTrackingPolicy, and failoverPolicy. haPolicy
+    /// requires customers to be responsible for tracking backend endpoint health and electing a
+    /// leader among the healthy endpoints. Therefore, haPolicy cannot be specified with healthChecks.
+    /// haPolicy can only be specified for External Passthrough Network Load Balancers and Internal
+    /// Passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("haPolicy")]
+    public V1beta1RegionBackendServiceStatusAtProviderHaPolicy? HaPolicy { get; set; }
 
     /// <summary>
     /// The set of URLs to HealthCheck resources for health checking
@@ -3691,10 +5836,19 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
 
     /// <summary>
     /// The URL of the network to which this backend service belongs.
-    /// This field can only be specified when the load balancing scheme is set to INTERNAL.
+    /// This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+    /// This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+    /// Changes to this field force recreation of the resource.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Configures traffic steering properties of internal passthrough Network Load Balancers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("networkPassThroughLbTrafficPolicy")]
+    public V1beta1RegionBackendServiceStatusAtProviderNetworkPassThroughLbTrafficPolicy? NetworkPassThroughLbTrafficPolicy { get; set; }
 
     /// <summary>
     /// Settings controlling eviction of unhealthy hosts from the load balancing pool.
@@ -3704,6 +5858,13 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     /// </summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta1RegionBackendServiceStatusAtProviderOutlierDetection? OutlierDetection { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RegionBackendServiceStatusAtProviderParams? Params { get; set; }
 
     /// <summary>
     /// A named port on a backend instance group representing the port for
@@ -3735,6 +5896,10 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>The security policy associated with this backend service.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
+
     /// <summary>The URI of the created resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
@@ -3762,6 +5927,13 @@ public partial class V1beta1RegionBackendServiceStatusAtProvider
     /// </summary>
     [JsonPropertyName("timeoutSec")]
     public double? TimeoutSec { get; set; }
+
+    /// <summary>
+    /// Configuration for Backend Authenticated TLS and mTLS. May only be specified when the backend protocol is SSL, HTTPS or HTTP2.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tlsSettings")]
+    public V1beta1RegionBackendServiceStatusAtProviderTlsSettings? TlsSettings { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -3818,6 +5990,15 @@ public partial class V1beta1RegionBackendServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionBackendServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

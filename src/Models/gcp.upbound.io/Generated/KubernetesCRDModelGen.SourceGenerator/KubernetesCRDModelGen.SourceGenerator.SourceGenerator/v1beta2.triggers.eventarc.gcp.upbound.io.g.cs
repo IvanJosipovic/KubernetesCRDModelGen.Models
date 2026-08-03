@@ -345,6 +345,23 @@ public partial class V1beta2TriggerSpecForProviderMatchingCriteria
 }
 
 /// <summary>
+/// The retry policy configuration for the Trigger.
+/// Can only be set with Cloud Run destinations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecForProviderRetryPolicy
+{
+    /// <summary>
+    /// The maximum number of delivery attempts for any message. The only valid
+    /// value is 1.
+    /// </summary>
+    [JsonPropertyName("maxAttempts")]
+    public double? MaxAttempts { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -572,6 +589,14 @@ public partial class V1beta2TriggerSpecForProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// The retry policy configuration for the Trigger.
+    /// Can only be set with Cloud Run destinations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("retryPolicy")]
+    public V1beta2TriggerSpecForProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>Optional. The IAM service account email associated with the trigger. The service account represents the identity of the trigger. The principal who calls this API must have iam.serviceAccounts.actAs permission in the service account. See https://cloud.google.com/iam/docs/understanding-service-accounts#sa_common for more information. For Cloud Run destinations, this service account is used to generate identity tokens when invoking the service. See https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account for information on how to invoke authenticated Cloud Run services. In order to create Audit Log triggers, the service account should also have roles/eventarc.eventReceiver IAM role.</summary>
     [JsonPropertyName("serviceAccount")]
@@ -871,6 +896,23 @@ public partial class V1beta2TriggerSpecInitProviderMatchingCriteria
 }
 
 /// <summary>
+/// The retry policy configuration for the Trigger.
+/// Can only be set with Cloud Run destinations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecInitProviderRetryPolicy
+{
+    /// <summary>
+    /// The maximum number of delivery attempts for any message. The only valid
+    /// value is 1.
+    /// </summary>
+    [JsonPropertyName("maxAttempts")]
+    public double? MaxAttempts { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -1106,6 +1148,14 @@ public partial class V1beta2TriggerSpecInitProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// The retry policy configuration for the Trigger.
+    /// Can only be set with Cloud Run destinations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("retryPolicy")]
+    public V1beta2TriggerSpecInitProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>Optional. The IAM service account email associated with the trigger. The service account represents the identity of the trigger. The principal who calls this API must have iam.serviceAccounts.actAs permission in the service account. See https://cloud.google.com/iam/docs/understanding-service-accounts#sa_common for more information. For Cloud Run destinations, this service account is used to generate identity tokens when invoking the service. See https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account for information on how to invoke authenticated Cloud Run services. In order to create Audit Log triggers, the service account should also have roles/eventarc.eventReceiver IAM role.</summary>
     [JsonPropertyName("serviceAccount")]
@@ -1444,6 +1494,23 @@ public partial class V1beta2TriggerStatusAtProviderMatchingCriteria
 }
 
 /// <summary>
+/// The retry policy configuration for the Trigger.
+/// Can only be set with Cloud Run destinations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerStatusAtProviderRetryPolicy
+{
+    /// <summary>
+    /// The maximum number of delivery attempts for any message. The only valid
+    /// value is 1.
+    /// </summary>
+    [JsonPropertyName("maxAttempts")]
+    public double? MaxAttempts { get; set; }
+}
+
+/// <summary>
 /// The Pub/Sub topic and subscription used by Eventarc as delivery intermediary.
 /// Structure is documented below.
 /// </summary>
@@ -1496,6 +1563,13 @@ public partial class V1beta2TriggerStatusAtProvider
     public string? CreateTime { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Required. Destination specifies where the events should be sent to.
     /// Structure is documented below.
     /// </summary>
@@ -1542,6 +1616,14 @@ public partial class V1beta2TriggerStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// The retry policy configuration for the Trigger.
+    /// Can only be set with Cloud Run destinations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("retryPolicy")]
+    public V1beta2TriggerStatusAtProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>Optional. The IAM service account email associated with the trigger. The service account represents the identity of the trigger. The principal who calls this API must have iam.serviceAccounts.actAs permission in the service account. See https://cloud.google.com/iam/docs/understanding-service-accounts#sa_common for more information. For Cloud Run destinations, this service account is used to generate identity tokens when invoking the service. See https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account for information on how to invoke authenticated Cloud Run services. In order to create Audit Log triggers, the service account should also have roles/eventarc.eventReceiver IAM role.</summary>
     [JsonPropertyName("serviceAccount")]
@@ -1624,6 +1706,15 @@ public partial class V1beta2TriggerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2TriggerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

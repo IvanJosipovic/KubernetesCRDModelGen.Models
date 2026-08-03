@@ -1011,6 +1011,96 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConf
     public string? WebhookSecretSecretVersion { get; set; }
 }
 
+/// <summary>
+/// Basic authentication with username and password.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBasicAuthentication
+{
+    /// <summary>The password SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("passwordSecretVersion")]
+    public string? PasswordSecretVersion { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Output only. The username associated with this token.
+    /// </summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Bearer token authentication with a token.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBearerTokenAuthentication
+{
+    /// <summary>The token SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("tokenSecretVersion")]
+    public string? TokenSecretVersion { get; set; }
+}
+
+/// <summary>
+/// ServiceDirectoryConfig represents Service Directory configuration for a
+/// connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigServiceDirectoryConfig
+{
+    /// <summary>
+    /// Required. The Service Directory service name.
+    /// Format:
+    /// projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// Configuration for connections to an HTTP service provider.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecForProviderHttpConfig
+{
+    /// <summary>
+    /// Basic authentication with username and password.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("basicAuthentication")]
+    public V1beta1ConnectConnectionSpecForProviderHttpConfigBasicAuthentication? BasicAuthentication { get; set; }
+
+    /// <summary>
+    /// Bearer token authentication with a token.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bearerTokenAuthentication")]
+    public V1beta1ConnectConnectionSpecForProviderHttpConfigBearerTokenAuthentication? BearerTokenAuthentication { get; set; }
+
+    /// <summary>The service provider&apos;s https endpoint.</summary>
+    [JsonPropertyName("hostUri")]
+    public string? HostUri { get; set; }
+
+    /// <summary>
+    /// ServiceDirectoryConfig represents Service Directory configuration for a
+    /// connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceDirectoryConfig")]
+    public V1beta1ConnectConnectionSpecForProviderHttpConfigServiceDirectoryConfig? ServiceDirectoryConfig { get; set; }
+
+    /// <summary>The SSL certificate to use for requests to the HTTP service provider.</summary>
+    [JsonPropertyName("sslCaCertificate")]
+    public string? SslCaCertificate { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProvider
@@ -1088,6 +1178,13 @@ public partial class V1beta1ConnectConnectionSpecForProvider
     /// </summary>
     [JsonPropertyName("gitlabEnterpriseConfig")]
     public V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConfig? GitlabEnterpriseConfig { get; set; }
+
+    /// <summary>
+    /// Configuration for connections to an HTTP service provider.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpConfig")]
+    public V1beta1ConnectConnectionSpecForProviderHttpConfig? HttpConfig { get; set; }
 
     /// <summary>
     /// Optional. Labels as key value pairs
@@ -2085,6 +2182,96 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseCon
 }
 
 /// <summary>
+/// Basic authentication with username and password.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBasicAuthentication
+{
+    /// <summary>The password SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("passwordSecretVersion")]
+    public string? PasswordSecretVersion { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Output only. The username associated with this token.
+    /// </summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Bearer token authentication with a token.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBearerTokenAuthentication
+{
+    /// <summary>The token SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("tokenSecretVersion")]
+    public string? TokenSecretVersion { get; set; }
+}
+
+/// <summary>
+/// ServiceDirectoryConfig represents Service Directory configuration for a
+/// connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigServiceDirectoryConfig
+{
+    /// <summary>
+    /// Required. The Service Directory service name.
+    /// Format:
+    /// projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// Configuration for connections to an HTTP service provider.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfig
+{
+    /// <summary>
+    /// Basic authentication with username and password.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("basicAuthentication")]
+    public V1beta1ConnectConnectionSpecInitProviderHttpConfigBasicAuthentication? BasicAuthentication { get; set; }
+
+    /// <summary>
+    /// Bearer token authentication with a token.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bearerTokenAuthentication")]
+    public V1beta1ConnectConnectionSpecInitProviderHttpConfigBearerTokenAuthentication? BearerTokenAuthentication { get; set; }
+
+    /// <summary>The service provider&apos;s https endpoint.</summary>
+    [JsonPropertyName("hostUri")]
+    public string? HostUri { get; set; }
+
+    /// <summary>
+    /// ServiceDirectoryConfig represents Service Directory configuration for a
+    /// connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceDirectoryConfig")]
+    public V1beta1ConnectConnectionSpecInitProviderHttpConfigServiceDirectoryConfig? ServiceDirectoryConfig { get; set; }
+
+    /// <summary>The SSL certificate to use for requests to the HTTP service provider.</summary>
+    [JsonPropertyName("sslCaCertificate")]
+    public string? SslCaCertificate { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -2173,6 +2360,13 @@ public partial class V1beta1ConnectConnectionSpecInitProvider
     /// </summary>
     [JsonPropertyName("gitlabEnterpriseConfig")]
     public V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseConfig? GitlabEnterpriseConfig { get; set; }
+
+    /// <summary>
+    /// Configuration for connections to an HTTP service provider.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpConfig")]
+    public V1beta1ConnectConnectionSpecInitProviderHttpConfig? HttpConfig { get; set; }
 
     /// <summary>
     /// Optional. Labels as key value pairs
@@ -2890,6 +3084,96 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseCon
     public string? WebhookSecretSecretVersion { get; set; }
 }
 
+/// <summary>
+/// Basic authentication with username and password.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBasicAuthentication
+{
+    /// <summary>The password SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("passwordSecretVersion")]
+    public string? PasswordSecretVersion { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Output only. The username associated with this token.
+    /// </summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>
+/// Bearer token authentication with a token.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBearerTokenAuthentication
+{
+    /// <summary>The token SecretManager secret version to authenticate as.</summary>
+    [JsonPropertyName("tokenSecretVersion")]
+    public string? TokenSecretVersion { get; set; }
+}
+
+/// <summary>
+/// ServiceDirectoryConfig represents Service Directory configuration for a
+/// connection.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigServiceDirectoryConfig
+{
+    /// <summary>
+    /// Required. The Service Directory service name.
+    /// Format:
+    /// projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// Configuration for connections to an HTTP service provider.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfig
+{
+    /// <summary>
+    /// Basic authentication with username and password.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("basicAuthentication")]
+    public V1beta1ConnectConnectionStatusAtProviderHttpConfigBasicAuthentication? BasicAuthentication { get; set; }
+
+    /// <summary>
+    /// Bearer token authentication with a token.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bearerTokenAuthentication")]
+    public V1beta1ConnectConnectionStatusAtProviderHttpConfigBearerTokenAuthentication? BearerTokenAuthentication { get; set; }
+
+    /// <summary>The service provider&apos;s https endpoint.</summary>
+    [JsonPropertyName("hostUri")]
+    public string? HostUri { get; set; }
+
+    /// <summary>
+    /// ServiceDirectoryConfig represents Service Directory configuration for a
+    /// connection.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceDirectoryConfig")]
+    public V1beta1ConnectConnectionStatusAtProviderHttpConfigServiceDirectoryConfig? ServiceDirectoryConfig { get; set; }
+
+    /// <summary>The SSL certificate to use for requests to the HTTP service provider.</summary>
+    [JsonPropertyName("sslCaCertificate")]
+    public string? SslCaCertificate { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderInstallationState
@@ -2965,6 +3249,13 @@ public partial class V1beta1ConnectConnectionStatusAtProvider
     public string? DeleteTime { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Optional. If disabled is set to true, functionality is disabled for this connection.
     /// Repository based API methods and webhooks processing for repositories in
     /// this connection will be disabled.
@@ -3013,6 +3304,13 @@ public partial class V1beta1ConnectConnectionStatusAtProvider
     /// </summary>
     [JsonPropertyName("gitlabEnterpriseConfig")]
     public V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseConfig? GitlabEnterpriseConfig { get; set; }
+
+    /// <summary>
+    /// Configuration for connections to an HTTP service provider.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpConfig")]
+    public V1beta1ConnectConnectionStatusAtProviderHttpConfig? HttpConfig { get; set; }
 
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/connections/{{connection_id}}</summary>
     [JsonPropertyName("id")]
@@ -3130,6 +3428,15 @@ public partial class V1beta1ConnectConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

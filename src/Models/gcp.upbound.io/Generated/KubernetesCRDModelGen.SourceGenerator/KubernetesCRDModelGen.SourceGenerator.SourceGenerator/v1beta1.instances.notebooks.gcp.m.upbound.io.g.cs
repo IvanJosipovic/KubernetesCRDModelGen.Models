@@ -1004,6 +1004,13 @@ public partial class V1beta1InstanceStatusAtProvider
     [JsonPropertyName("dataDiskType")]
     public string? DataDiskType { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Desired state of the Notebook Instance. Set this field to ACTIVE to start the Instance, and STOPPED to stop the Instance.</summary>
     [JsonPropertyName("desiredState")]
     public string? DesiredState { get; set; }
@@ -1238,6 +1245,15 @@ public partial class V1beta1InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

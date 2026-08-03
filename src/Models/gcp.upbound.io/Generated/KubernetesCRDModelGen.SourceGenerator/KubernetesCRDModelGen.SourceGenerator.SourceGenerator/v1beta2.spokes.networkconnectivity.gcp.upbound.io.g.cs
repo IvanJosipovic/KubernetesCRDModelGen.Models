@@ -504,9 +504,21 @@ public partial class V1beta2SpokeSpecForProviderLinkedInterconnectAttachmentsUri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecForProviderLinkedInterconnectAttachments
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -1039,9 +1051,21 @@ public partial class V1beta2SpokeSpecForProviderLinkedRouterApplianceInstancesIn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecForProviderLinkedRouterApplianceInstances
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -1389,9 +1413,21 @@ public partial class V1beta2SpokeSpecForProviderLinkedVpnTunnelsUrisSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecForProviderLinkedVpnTunnels
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -1953,9 +1989,21 @@ public partial class V1beta2SpokeSpecInitProviderLinkedInterconnectAttachmentsUr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecInitProviderLinkedInterconnectAttachments
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -2488,9 +2536,21 @@ public partial class V1beta2SpokeSpecInitProviderLinkedRouterApplianceInstancesI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecInitProviderLinkedRouterApplianceInstances
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -2838,9 +2898,21 @@ public partial class V1beta2SpokeSpecInitProviderLinkedVpnTunnelsUrisSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeSpecInitProviderLinkedVpnTunnels
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -3156,9 +3228,21 @@ public partial class V1beta2SpokeSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeStatusAtProviderLinkedInterconnectAttachments
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -3225,9 +3309,21 @@ public partial class V1beta2SpokeStatusAtProviderLinkedRouterApplianceInstancesI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeStatusAtProviderLinkedRouterApplianceInstances
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -3273,9 +3369,21 @@ public partial class V1beta2SpokeStatusAtProviderLinkedVpcNetwork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpokeStatusAtProviderLinkedVpnTunnels
 {
+    /// <summary>Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.</summary>
+    [JsonPropertyName("excludeExportRanges")]
+    public IList<string>? ExcludeExportRanges { get; set; }
+
+    /// <summary>Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.</summary>
+    [JsonPropertyName("excludeImportRanges")]
+    public IList<string>? ExcludeImportRanges { get; set; }
+
+    /// <summary>Dynamic routes fully encompassed by include export ranges are included during export to hub.</summary>
+    [JsonPropertyName("includeExportRanges")]
+    public IList<string>? IncludeExportRanges { get; set; }
+
     /// <summary>
-    /// IP ranges allowed to be included during import from hub (does not control transit connectivity).
-    /// The only allowed value for now is &quot;ALL_IPV4_RANGES&quot;.
+    /// Hub routes fully encompassed by include import ranges are included during import from hub.
+    /// &quot;ALL_IPV4_RANGES&quot; or IPv4 CIDR ranges are allowed.
     /// </summary>
     [JsonPropertyName("includeImportRanges")]
     public IList<string>? IncludeImportRanges { get; set; }
@@ -3313,6 +3421,13 @@ public partial class V1beta2SpokeStatusAtProvider
     /// <summary>Output only. The time the spoke was created.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of the spoke.</summary>
     [JsonPropertyName("description")]
@@ -3472,6 +3587,15 @@ public partial class V1beta2SpokeStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2SpokeStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

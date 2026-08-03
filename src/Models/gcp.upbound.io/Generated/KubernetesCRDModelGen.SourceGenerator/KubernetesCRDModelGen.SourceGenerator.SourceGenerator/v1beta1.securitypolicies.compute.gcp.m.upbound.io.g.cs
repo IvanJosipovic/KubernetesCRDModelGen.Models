@@ -163,6 +163,10 @@ public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfig
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
 
+    /// <summary>The maximum request size chosen by the customer with Waf enabled. Values supported are &quot;8KB&quot;, &quot;16KB, &quot;32KB&quot;, &quot;48KB&quot; and &quot;64KB&quot;. Values are case insensitive.</summary>
+    [JsonPropertyName("requestBodyInspectionSize")]
+    public string? RequestBodyInspectionSize { get; set; }
+
     /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
     [JsonPropertyName("userIpRequestHeaders")]
     public IList<string>? UserIpRequestHeaders { get; set; }
@@ -594,6 +598,14 @@ public partial class V1beta1SecurityPolicySpecForProvider
     public string? Description { get; set; }
 
     /// <summary>
+    /// Labels to apply to this address. A list of key-&gt;value pairs.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// The project in which the resource belongs. If it
     /// is not provided, the provider project is used.
     /// </summary>
@@ -743,6 +755,10 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfig
     /// <summary>Log level to use. Defaults to NORMAL.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
+
+    /// <summary>The maximum request size chosen by the customer with Waf enabled. Values supported are &quot;8KB&quot;, &quot;16KB, &quot;32KB&quot;, &quot;48KB&quot; and &quot;64KB&quot;. Values are case insensitive.</summary>
+    [JsonPropertyName("requestBodyInspectionSize")]
+    public string? RequestBodyInspectionSize { get; set; }
 
     /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
     [JsonPropertyName("userIpRequestHeaders")]
@@ -1187,6 +1203,14 @@ public partial class V1beta1SecurityPolicySpecInitProvider
     public string? Description { get; set; }
 
     /// <summary>
+    /// Labels to apply to this address. A list of key-&gt;value pairs.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// The project in which the resource belongs. If it
     /// is not provided, the provider project is used.
     /// </summary>
@@ -1443,6 +1467,10 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig
     /// <summary>Log level to use. Defaults to NORMAL.</summary>
     [JsonPropertyName("logLevel")]
     public string? LogLevel { get; set; }
+
+    /// <summary>The maximum request size chosen by the customer with Waf enabled. Values supported are &quot;8KB&quot;, &quot;16KB, &quot;32KB&quot;, &quot;48KB&quot; and &quot;64KB&quot;. Values are case insensitive.</summary>
+    [JsonPropertyName("requestBodyInspectionSize")]
+    public string? RequestBodyInspectionSize { get; set; }
 
     /// <summary>An optional list of case-insensitive request header names to use for resolving the callers client IP address.</summary>
     [JsonPropertyName("userIpRequestHeaders")]
@@ -1870,9 +1898,19 @@ public partial class V1beta1SecurityPolicyStatusAtProvider
     [JsonPropertyName("advancedOptionsConfig")]
     public V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig? AdvancedOptionsConfig { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this security policy. Max size is 2048.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    [JsonPropertyName("effectiveLabels")]
+    public IDictionary<string, string>? EffectiveLabels { get; set; }
 
     /// <summary>Fingerprint of this resource.</summary>
     [JsonPropertyName("fingerprint")]
@@ -1881,6 +1919,18 @@ public partial class V1beta1SecurityPolicyStatusAtProvider
     /// <summary>an identifier for the resource with format projects/{{project}}/global/securityPolicies/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The unique fingerprint of the labels.</summary>
+    [JsonPropertyName("labelFingerprint")]
+    public string? LabelFingerprint { get; set; }
+
+    /// <summary>
+    /// Labels to apply to this address. A list of key-&gt;value pairs.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
     /// The project in which the resource belongs. If it
@@ -1904,6 +1954,10 @@ public partial class V1beta1SecurityPolicyStatusAtProvider
     /// <summary>The URI of the created resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
+
+    /// <summary>The combination of labels configured directly on the resource and default labels configured on the provider.</summary>
+    [JsonPropertyName("terraformLabels")]
+    public IDictionary<string, string>? TerraformLabels { get; set; }
 
     /// <summary>The type indicates the intended use of the security policy. This field can be set only at resource creation time.</summary>
     [JsonPropertyName("type")]
@@ -1964,6 +2018,15 @@ public partial class V1beta1SecurityPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SecurityPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

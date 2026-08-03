@@ -237,7 +237,7 @@ public partial class V1beta2BackendServiceSpecForProviderBackend
     /// See the Backend Services Overview
     /// for an explanation of load balancing modes.
     /// Default value is UTILIZATION.
-    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS.
+    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS, IN_FLIGHT.
     /// </summary>
     [JsonPropertyName("balancingMode")]
     public string? BalancingMode { get; set; }
@@ -1181,6 +1181,23 @@ public partial class V1beta2BackendServiceSpecForProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendServiceSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// The access key used for s3 bucket authentication.
 /// Required for updating or creating a backend that uses AWS v4 signature authentication, but will not be returned as part of the configuration when queried with a REST API GET request.
 /// Note: This property is sensitive and will not be displayed in the plan.
@@ -1589,6 +1606,13 @@ public partial class V1beta2BackendServiceSpecForProvider
     public V1beta2BackendServiceSpecForProviderOutlierDetection? OutlierDetection { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendServiceSpecForProviderParams? Params { get; set; }
+
+    /// <summary>
     /// Name of backend port. The same name should appear in the instance
     /// groups referenced by this service. Required when the load balancing
     /// scheme is EXTERNAL.
@@ -1849,7 +1873,7 @@ public partial class V1beta2BackendServiceSpecInitProviderBackend
     /// See the Backend Services Overview
     /// for an explanation of load balancing modes.
     /// Default value is UTILIZATION.
-    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS.
+    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS, IN_FLIGHT.
     /// </summary>
     [JsonPropertyName("balancingMode")]
     public string? BalancingMode { get; set; }
@@ -2793,6 +2817,23 @@ public partial class V1beta2BackendServiceSpecInitProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendServiceSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// The access key used for s3 bucket authentication.
 /// Required for updating or creating a backend that uses AWS v4 signature authentication, but will not be returned as part of the configuration when queried with a REST API GET request.
 /// Note: This property is sensitive and will not be displayed in the plan.
@@ -3213,6 +3254,13 @@ public partial class V1beta2BackendServiceSpecInitProvider
     public V1beta2BackendServiceSpecInitProviderOutlierDetection? OutlierDetection { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendServiceSpecInitProviderParams? Params { get; set; }
+
+    /// <summary>
     /// Name of backend port. The same name should appear in the instance
     /// groups referenced by this service. Required when the load balancing
     /// scheme is EXTERNAL.
@@ -3509,7 +3557,7 @@ public partial class V1beta2BackendServiceStatusAtProviderBackend
     /// See the Backend Services Overview
     /// for an explanation of load balancing modes.
     /// Default value is UTILIZATION.
-    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS.
+    /// Possible values are: UTILIZATION, RATE, CONNECTION, CUSTOM_METRICS, IN_FLIGHT.
     /// </summary>
     [JsonPropertyName("balancingMode")]
     public string? BalancingMode { get; set; }
@@ -4270,6 +4318,23 @@ public partial class V1beta2BackendServiceStatusAtProviderOutlierDetection
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BackendServiceStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the backend service. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// The configuration needed to generate a signature for access to private storage buckets that support AWS&apos;s Signature Version 4 for authentication.
 /// Allowed only for INTERNET_IP_PORT and INTERNET_FQDN_PORT NEG backends.
 /// Structure is documented below.
@@ -4518,6 +4583,13 @@ public partial class V1beta2BackendServiceStatusAtProvider
     [JsonPropertyName("customResponseHeaders")]
     public IList<string>? CustomResponseHeaders { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -4659,6 +4731,13 @@ public partial class V1beta2BackendServiceStatusAtProvider
     public V1beta2BackendServiceStatusAtProviderOutlierDetection? OutlierDetection { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta2BackendServiceStatusAtProviderParams? Params { get; set; }
+
+    /// <summary>
     /// Name of backend port. The same name should appear in the instance
     /// groups referenced by this service. Required when the load balancing
     /// scheme is EXTERNAL.
@@ -4795,6 +4874,15 @@ public partial class V1beta2BackendServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2BackendServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

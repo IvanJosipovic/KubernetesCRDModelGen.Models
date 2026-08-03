@@ -920,6 +920,13 @@ public partial class V1beta1AttachedDiskSpec
 public partial class V1beta1AttachedDiskStatusAtProvider
 {
     /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Specifies a unique device name of your choice that is
     /// reflected into the /dev/disk/by-id/google-* tree of a Linux operating
     /// system running within the instance. This name can be used to
@@ -1027,6 +1034,15 @@ public partial class V1beta1AttachedDiskStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AttachedDiskStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: regioninstancegroupmanagers.compute.gcp.m.upbound.io
 spec:
   group: compute.gcp.m.upbound.io
@@ -224,6 +224,9 @@ spec:
                       forceUpdateOnRepair:
                         description: ", Specifies whether to apply the group's latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group's instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group's update policy type."
                         type: string
+                      onFailedHealthCheck:
+                        description: ', Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.'
+                        type: string
                     type: object
                   listManagedInstancesResults:
                     description: |-
@@ -263,6 +266,13 @@ spec:
                   region:
                     description: The region where the managed instance group resides. If not provided, the provider region is used.
                     type: string
+                  resourcePolicies:
+                    description: Resource policies for this managed instance group. Structure is documented below.
+                    properties:
+                      workloadPolicy:
+                        description: The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.
+                        type: string
+                    type: object
                   standbyPolicy:
                     description: The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.
                     properties:
@@ -407,6 +417,15 @@ spec:
                       when using one. If a value is required, such as to specify a creation-time target size for the MIG,
                       lifecycle. Defaults to 0.
                     type: number
+                  targetSizePolicy:
+                    description: The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.
+                    items:
+                      properties:
+                        mode:
+                          description: 'The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: "BULK", "INDIVIDUAL".'
+                          type: string
+                      type: object
+                    type: array
                   targetStoppedSize:
                     description: The target number of stopped instances for this managed instance group.
                     type: number
@@ -744,6 +763,9 @@ spec:
                       forceUpdateOnRepair:
                         description: ", Specifies whether to apply the group's latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group's instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group's update policy type."
                         type: string
+                      onFailedHealthCheck:
+                        description: ', Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.'
+                        type: string
                     type: object
                   listManagedInstancesResults:
                     description: |-
@@ -783,6 +805,13 @@ spec:
                   region:
                     description: The region where the managed instance group resides. If not provided, the provider region is used.
                     type: string
+                  resourcePolicies:
+                    description: Resource policies for this managed instance group. Structure is documented below.
+                    properties:
+                      workloadPolicy:
+                        description: The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.
+                        type: string
+                    type: object
                   standbyPolicy:
                     description: The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.
                     properties:
@@ -927,6 +956,15 @@ spec:
                       when using one. If a value is required, such as to specify a creation-time target size for the MIG,
                       lifecycle. Defaults to 0.
                     type: number
+                  targetSizePolicy:
+                    description: The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.
+                    items:
+                      properties:
+                        mode:
+                          description: 'The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: "BULK", "INDIVIDUAL".'
+                          type: string
+                      type: object
+                    type: array
                   targetStoppedSize:
                     description: The target number of stopped instances for this managed instance group.
                     type: number
@@ -1201,6 +1239,11 @@ spec:
                   creationTimestamp:
                     description: Creation timestamp in RFC3339 text format.
                     type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to "DELETE".
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   description:
                     description: |-
                       An optional textual description of the instance
@@ -1259,6 +1302,9 @@ spec:
                       forceUpdateOnRepair:
                         description: ", Specifies whether to apply the group's latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group's instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group's update policy type."
                         type: string
+                      onFailedHealthCheck:
+                        description: ', Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.'
+                        type: string
                     type: object
                   listManagedInstancesResults:
                     description: |-
@@ -1298,6 +1344,13 @@ spec:
                   region:
                     description: The region where the managed instance group resides. If not provided, the provider region is used.
                     type: string
+                  resourcePolicies:
+                    description: Resource policies for this managed instance group. Structure is documented below.
+                    properties:
+                      workloadPolicy:
+                        description: The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.
+                        type: string
+                    type: object
                   selfLink:
                     description: The URL of the created resource.
                     type: string
@@ -1409,6 +1462,15 @@ spec:
                       when using one. If a value is required, such as to specify a creation-time target size for the MIG,
                       lifecycle. Defaults to 0.
                     type: number
+                  targetSizePolicy:
+                    description: The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.
+                    items:
+                      properties:
+                        mode:
+                          description: 'The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: "BULK", "INDIVIDUAL".'
+                          type: string
+                      type: object
+                    type: array
                   targetStoppedSize:
                     description: The target number of stopped instances for this managed instance group.
                     type: number
@@ -1531,6 +1593,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

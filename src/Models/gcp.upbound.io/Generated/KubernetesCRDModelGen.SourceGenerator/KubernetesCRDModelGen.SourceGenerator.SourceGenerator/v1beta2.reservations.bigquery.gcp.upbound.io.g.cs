@@ -109,6 +109,10 @@ public partial class V1beta2ReservationSpecForProvider
     [JsonPropertyName("project")]
     public string? Project { get; set; }
 
+    /// <summary>The reservation group that this reservation belongs to.</summary>
+    [JsonPropertyName("reservationGroup")]
+    public string? ReservationGroup { get; set; }
+
     /// <summary>
     /// The current location of the reservation&apos;s secondary replica. This field is only set for
     /// reservations using the managed disaster recovery feature. Users can set this in create
@@ -177,6 +181,10 @@ public partial class V1beta2ReservationSpecInitProvider
     /// </summary>
     [JsonPropertyName("ignoreIdleSlots")]
     public bool? IgnoreIdleSlots { get; set; }
+
+    /// <summary>The reservation group that this reservation belongs to.</summary>
+    [JsonPropertyName("reservationGroup")]
+    public string? ReservationGroup { get; set; }
 
     /// <summary>
     /// The current location of the reservation&apos;s secondary replica. This field is only set for
@@ -463,6 +471,13 @@ public partial class V1beta2ReservationStatusAtProvider
     [JsonPropertyName("concurrency")]
     public double? Concurrency { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS</summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
@@ -519,6 +534,10 @@ public partial class V1beta2ReservationStatusAtProvider
     /// </summary>
     [JsonPropertyName("replicationStatus")]
     public IList<V1beta2ReservationStatusAtProviderReplicationStatus>? ReplicationStatus { get; set; }
+
+    /// <summary>The reservation group that this reservation belongs to.</summary>
+    [JsonPropertyName("reservationGroup")]
+    public string? ReservationGroup { get; set; }
 
     /// <summary>
     /// The current location of the reservation&apos;s secondary replica. This field is only set for
@@ -591,6 +610,15 @@ public partial class V1beta2ReservationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ReservationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

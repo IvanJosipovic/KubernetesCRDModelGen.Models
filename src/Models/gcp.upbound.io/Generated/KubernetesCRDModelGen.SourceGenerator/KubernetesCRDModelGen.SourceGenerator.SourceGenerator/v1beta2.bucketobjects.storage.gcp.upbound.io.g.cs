@@ -202,6 +202,29 @@ public partial class V1beta2BucketObjectSpecForProviderBucketSelector
     public V1beta2BucketObjectSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectSpecForProviderContextsCustom
+{
+    /// <summary>An individual object context. Context keys and their corresponding values must start with an alphanumeric character.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value associated with this context. This field holds the primary information for the given context key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectSpecForProviderContexts
+{
+    /// <summary>User-provided object contexts. Structure is documented below.</summary>
+    [JsonPropertyName("custom")]
+    public IList<V1beta2BucketObjectSpecForProviderContextsCustom>? Custom { get; set; }
+}
+
 /// <summary>Base64 encoded Customer-Supplied Encryption Key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -294,6 +317,10 @@ public partial class V1beta2BucketObjectSpecForProvider
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
+    /// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+    [JsonPropertyName("contexts")]
+    public V1beta2BucketObjectSpecForProviderContexts? Contexts { get; set; }
+
     /// <summary>
     /// Enables object encryption with Customer-Supplied Encryption Key (CSEK). [Google documentation about CSEK.](https://cloud.google.com/storage/docs/encryption/customer-supplied-keys)
     /// Structure is documented below.
@@ -301,7 +328,10 @@ public partial class V1beta2BucketObjectSpecForProvider
     [JsonPropertyName("customerEncryption")]
     public V1beta2BucketObjectSpecForProviderCustomerEncryption? CustomerEncryption { get; set; }
 
-    /// <summary>When set to ABANDON, the object won&apos;t be deleted from storage bucket.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -504,6 +534,29 @@ public partial class V1beta2BucketObjectSpecInitProviderBucketSelector
     public V1beta2BucketObjectSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectSpecInitProviderContextsCustom
+{
+    /// <summary>An individual object context. Context keys and their corresponding values must start with an alphanumeric character.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value associated with this context. This field holds the primary information for the given context key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectSpecInitProviderContexts
+{
+    /// <summary>User-provided object contexts. Structure is documented below.</summary>
+    [JsonPropertyName("custom")]
+    public IList<V1beta2BucketObjectSpecInitProviderContextsCustom>? Custom { get; set; }
+}
+
 /// <summary>Base64 encoded Customer-Supplied Encryption Key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -608,6 +661,10 @@ public partial class V1beta2BucketObjectSpecInitProvider
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
+    /// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+    [JsonPropertyName("contexts")]
+    public V1beta2BucketObjectSpecInitProviderContexts? Contexts { get; set; }
+
     /// <summary>
     /// Enables object encryption with Customer-Supplied Encryption Key (CSEK). [Google documentation about CSEK.](https://cloud.google.com/storage/docs/encryption/customer-supplied-keys)
     /// Structure is documented below.
@@ -615,7 +672,10 @@ public partial class V1beta2BucketObjectSpecInitProvider
     [JsonPropertyName("customerEncryption")]
     public V1beta2BucketObjectSpecInitProviderCustomerEncryption? CustomerEncryption { get; set; }
 
-    /// <summary>When set to ABANDON, the object won&apos;t be deleted from storage bucket.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -854,6 +914,37 @@ public partial class V1beta2BucketObjectSpec
     public V1beta2BucketObjectSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectStatusAtProviderContextsCustom
+{
+    /// <summary>(Computed) The time when context was first added to the storage object in RFC 3399 format.</summary>
+    [JsonPropertyName("createTime")]
+    public string? CreateTime { get; set; }
+
+    /// <summary>An individual object context. Context keys and their corresponding values must start with an alphanumeric character.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>(Computed) The time when context was last updated in RFC 3399 format.</summary>
+    [JsonPropertyName("updateTime")]
+    public string? UpdateTime { get; set; }
+
+    /// <summary>The value associated with this context. This field holds the primary information for the given context key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2BucketObjectStatusAtProviderContexts
+{
+    /// <summary>User-provided object contexts. Structure is documented below.</summary>
+    [JsonPropertyName("custom")]
+    public IList<V1beta2BucketObjectStatusAtProviderContextsCustom>? Custom { get; set; }
+}
+
 /// <summary>
 /// Enables object encryption with Customer-Supplied Encryption Key (CSEK). [Google documentation about CSEK.](https://cloud.google.com/storage/docs/encryption/customer-supplied-keys)
 /// Structure is documented below.
@@ -916,6 +1007,10 @@ public partial class V1beta2BucketObjectStatusAtProvider
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
+    /// <summary>Contexts attached to an object, in key-value pairs. For more information about object contexts, see Object contexts overview. Structure is documented below.</summary>
+    [JsonPropertyName("contexts")]
+    public V1beta2BucketObjectStatusAtProviderContexts? Contexts { get; set; }
+
     /// <summary>(Computed) Base 64 CRC32 hash of the uploaded data.</summary>
     [JsonPropertyName("crc32c")]
     public string? Crc32c { get; set; }
@@ -927,7 +1022,10 @@ public partial class V1beta2BucketObjectStatusAtProvider
     [JsonPropertyName("customerEncryption")]
     public V1beta2BucketObjectStatusAtProviderCustomerEncryption? CustomerEncryption { get; set; }
 
-    /// <summary>When set to ABANDON, the object won&apos;t be deleted from storage bucket.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -1067,6 +1165,15 @@ public partial class V1beta2BucketObjectStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2BucketObjectStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -384,7 +384,7 @@ public partial class V1beta1NetworkEndpointGroupSpecForProvider
     /// CONNECTION balancing modes.
     /// Possible values include: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, and PRIVATE_SERVICE_CONNECT.
     /// Default value is GCE_VM_IP_PORT.
-    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT.
+    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT, GCE_VM_IP_DEDICATED_BACKEND.
     /// </summary>
     [JsonPropertyName("networkEndpointType")]
     public string? NetworkEndpointType { get; set; }
@@ -762,7 +762,7 @@ public partial class V1beta1NetworkEndpointGroupSpecInitProvider
     /// CONNECTION balancing modes.
     /// Possible values include: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, and PRIVATE_SERVICE_CONNECT.
     /// Default value is GCE_VM_IP_PORT.
-    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT.
+    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT, GCE_VM_IP_DEDICATED_BACKEND.
     /// </summary>
     [JsonPropertyName("networkEndpointType")]
     public string? NetworkEndpointType { get; set; }
@@ -990,6 +990,13 @@ public partial class V1beta1NetworkEndpointGroupStatusAtProvider
     public double? DefaultPort { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource.
     /// </summary>
@@ -1021,7 +1028,7 @@ public partial class V1beta1NetworkEndpointGroupStatusAtProvider
     /// CONNECTION balancing modes.
     /// Possible values include: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, and PRIVATE_SERVICE_CONNECT.
     /// Default value is GCE_VM_IP_PORT.
-    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT.
+    /// Possible values are: GCE_VM_IP, GCE_VM_IP_PORT, NON_GCP_PRIVATE_IP_PORT, INTERNET_IP_PORT, INTERNET_FQDN_PORT, SERVERLESS, PRIVATE_SERVICE_CONNECT, GCE_VM_IP_DEDICATED_BACKEND.
     /// </summary>
     [JsonPropertyName("networkEndpointType")]
     public string? NetworkEndpointType { get; set; }
@@ -1104,6 +1111,15 @@ public partial class V1beta1NetworkEndpointGroupStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkEndpointGroupStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

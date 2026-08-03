@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: gateways.networkservices.gcp.upbound.io
 spec:
   group: networkservices.gcp.upbound.io
@@ -80,6 +80,13 @@ spec:
                     items:
                       type: string
                     type: array
+                  allPorts:
+                    description: |-
+                      Configures this gateway to ​listen on all ports.
+                      By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+                      it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+                      This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+                    type: boolean
                   certificateUrls:
                     description: |-
                       A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
@@ -355,7 +362,7 @@ spec:
                   ports:
                     description: |-
                       One or more port numbers (1-65535), on which the Gateway will receive traffic.
-                      The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are limited to 1 port.
+                      The proxy binds to the specified ports.
                       Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
                     items:
                       type: number
@@ -368,7 +375,7 @@ spec:
                   routingMode:
                     description: |-
                       The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-                      Possible values are: NEXT_HOP_ROUTING_MODE.
+                      Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
                     type: string
                   scope:
                     description: |-
@@ -486,6 +493,13 @@ spec:
                     items:
                       type: string
                     type: array
+                  allPorts:
+                    description: |-
+                      Configures this gateway to ​listen on all ports.
+                      By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+                      it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+                      This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+                    type: boolean
                   certificateUrls:
                     description: |-
                       A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
@@ -756,7 +770,7 @@ spec:
                   ports:
                     description: |-
                       One or more port numbers (1-65535), on which the Gateway will receive traffic.
-                      The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are limited to 1 port.
+                      The proxy binds to the specified ports.
                       Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
                     items:
                       type: number
@@ -769,7 +783,7 @@ spec:
                   routingMode:
                     description: |-
                       The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-                      Possible values are: NEXT_HOP_ROUTING_MODE.
+                      Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
                     type: string
                   scope:
                     description: |-
@@ -952,8 +966,6 @@ spec:
             - forProvider
             type: object
             x-kubernetes-validations:
-            - message: spec.forProvider.ports is a required parameter
-              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.ports) || (has(self.initProvider) && has(self.initProvider.ports))"
             - message: spec.forProvider.type is a required parameter
               rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.type) || (has(self.initProvider) && has(self.initProvider.type))"
           status:
@@ -970,6 +982,13 @@ spec:
                     items:
                       type: string
                     type: array
+                  allPorts:
+                    description: |-
+                      Configures this gateway to ​listen on all ports.
+                      By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+                      it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+                      This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+                    type: boolean
                   certificateUrls:
                     description: |-
                       A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
@@ -985,6 +1004,11 @@ spec:
                       When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will also delete auto generated router by the gateway creation.
                       If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
                     type: boolean
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   description:
                     description: A free-text description of the resource. Max length 1024 characters.
                     type: string
@@ -1035,7 +1059,7 @@ spec:
                   ports:
                     description: |-
                       One or more port numbers (1-65535), on which the Gateway will receive traffic.
-                      The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are limited to 1 port.
+                      The proxy binds to the specified ports.
                       Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
                     items:
                       type: number
@@ -1048,7 +1072,7 @@ spec:
                   routingMode:
                     description: |-
                       The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-                      Possible values are: NEXT_HOP_ROUTING_MODE.
+                      Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
                     type: string
                   scope:
                     description: |-
@@ -1129,6 +1153,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

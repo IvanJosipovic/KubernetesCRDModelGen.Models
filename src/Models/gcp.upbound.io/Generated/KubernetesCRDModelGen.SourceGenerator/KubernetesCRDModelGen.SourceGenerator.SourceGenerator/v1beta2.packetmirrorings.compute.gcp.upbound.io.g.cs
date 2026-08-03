@@ -418,6 +418,153 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
     public V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelector? UrlSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum>))]
+public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum>))]
+public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnetwork in compute to populate url.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum>))]
+public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum>))]
+public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnetwork in compute to populate url.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworks
@@ -425,6 +572,14 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubne
     /// <summary>The URL of the subnetwork where this rule should be active.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
+
+    /// <summary>Reference to a Subnetwork in compute to populate url.</summary>
+    [JsonPropertyName("urlRef")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlRef? UrlRef { get; set; }
+
+    /// <summary>Selector for a Subnetwork in compute to populate url.</summary>
+    [JsonPropertyName("urlSelector")]
+    public V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworksUrlSelector? UrlSelector { get; set; }
 }
 
 /// <summary>
@@ -641,6 +796,14 @@ public partial class V1beta2PacketMirroringSpecForProvider
     /// <summary>A human-readable description of the rule.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring
+    /// policy will not be enforced on the network. The default is TRUE.
+    /// Possible values are: TRUE, FALSE.
+    /// </summary>
+    [JsonPropertyName("enable")]
+    public string? Enable { get; set; }
 
     /// <summary>
     /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
@@ -1051,6 +1214,153 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
     public V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelector? UrlSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum>))]
+public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum>))]
+public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Subnetwork in compute to populate url.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum>))]
+public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum>))]
+public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Subnetwork in compute to populate url.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworks
@@ -1058,6 +1368,14 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubn
     /// <summary>The URL of the subnetwork where this rule should be active.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
+
+    /// <summary>Reference to a Subnetwork in compute to populate url.</summary>
+    [JsonPropertyName("urlRef")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlRef? UrlRef { get; set; }
+
+    /// <summary>Selector for a Subnetwork in compute to populate url.</summary>
+    [JsonPropertyName("urlSelector")]
+    public V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworksUrlSelector? UrlSelector { get; set; }
 }
 
 /// <summary>
@@ -1286,6 +1604,14 @@ public partial class V1beta2PacketMirroringSpecInitProvider
     /// <summary>A human-readable description of the rule.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring
+    /// policy will not be enforced on the network. The default is TRUE.
+    /// Possible values are: TRUE, FALSE.
+    /// </summary>
+    [JsonPropertyName("enable")]
+    public string? Enable { get; set; }
 
     /// <summary>
     /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
@@ -1627,9 +1953,24 @@ public partial class V1beta2PacketMirroringStatusAtProvider
     [JsonPropertyName("collectorIlb")]
     public V1beta2PacketMirroringStatusAtProviderCollectorIlb? CollectorIlb { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>A human-readable description of the rule.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring
+    /// policy will not be enforced on the network. The default is TRUE.
+    /// Possible values are: TRUE, FALSE.
+    /// </summary>
+    [JsonPropertyName("enable")]
+    public string? Enable { get; set; }
 
     /// <summary>
     /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
@@ -1735,6 +2076,15 @@ public partial class V1beta2PacketMirroringStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2PacketMirroringStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

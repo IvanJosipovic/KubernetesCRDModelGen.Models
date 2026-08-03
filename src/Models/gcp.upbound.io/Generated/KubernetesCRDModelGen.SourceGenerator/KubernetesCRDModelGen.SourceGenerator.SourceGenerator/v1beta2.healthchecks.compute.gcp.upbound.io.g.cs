@@ -99,6 +99,36 @@ public partial class V1beta2HealthCheckSpecForProviderGrpcHealthCheck
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2HealthCheckSpecForProviderGrpcTlsHealthCheck
+{
+    /// <summary>
+    /// The gRPC service name for the health check.
+    /// The value of grpcServiceName has the following meanings by convention:
+    /// </summary>
+    [JsonPropertyName("grpcServiceName")]
+    public string? GrpcServiceName { get; set; }
+
+    /// <summary>
+    /// The port number for the health check request.
+    /// Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// </summary>
+    [JsonPropertyName("portSpecification")]
+    public string? PortSpecification { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthCheckSpecForProviderHttp2HealthCheck
 {
     /// <summary>
@@ -433,6 +463,13 @@ public partial class V1beta2HealthCheckSpecForProvider
     public V1beta2HealthCheckSpecForProviderGrpcHealthCheck? GrpcHealthCheck { get; set; }
 
     /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpcTlsHealthCheck")]
+    public V1beta2HealthCheckSpecForProviderGrpcTlsHealthCheck? GrpcTlsHealthCheck { get; set; }
+
+    /// <summary>
     /// A so-far unhealthy instance will be marked healthy after this many
     /// consecutive successes. The default value is 2.
     /// </summary>
@@ -544,6 +581,36 @@ public partial class V1beta2HealthCheckSpecInitProviderGrpcHealthCheck
     /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
+
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// </summary>
+    [JsonPropertyName("portSpecification")]
+    public string? PortSpecification { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2HealthCheckSpecInitProviderGrpcTlsHealthCheck
+{
+    /// <summary>
+    /// The gRPC service name for the health check.
+    /// The value of grpcServiceName has the following meanings by convention:
+    /// </summary>
+    [JsonPropertyName("grpcServiceName")]
+    public string? GrpcServiceName { get; set; }
+
+    /// <summary>
+    /// The port number for the health check request.
+    /// Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
 
     /// <summary>
     /// Specifies how port is selected for health checking, can be one of the
@@ -905,6 +972,13 @@ public partial class V1beta2HealthCheckSpecInitProvider
     public V1beta2HealthCheckSpecInitProviderGrpcHealthCheck? GrpcHealthCheck { get; set; }
 
     /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpcTlsHealthCheck")]
+    public V1beta2HealthCheckSpecInitProviderGrpcTlsHealthCheck? GrpcTlsHealthCheck { get; set; }
+
+    /// <summary>
     /// A so-far unhealthy instance will be marked healthy after this many
     /// consecutive successes. The default value is 2.
     /// </summary>
@@ -1199,6 +1273,36 @@ public partial class V1beta2HealthCheckStatusAtProviderGrpcHealthCheck
     /// </summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
+
+    /// <summary>
+    /// Specifies how port is selected for health checking, can be one of the
+    /// following values:
+    /// </summary>
+    [JsonPropertyName("portSpecification")]
+    public string? PortSpecification { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2HealthCheckStatusAtProviderGrpcTlsHealthCheck
+{
+    /// <summary>
+    /// The gRPC service name for the health check.
+    /// The value of grpcServiceName has the following meanings by convention:
+    /// </summary>
+    [JsonPropertyName("grpcServiceName")]
+    public string? GrpcServiceName { get; set; }
+
+    /// <summary>
+    /// The port number for the health check request.
+    /// Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
 
     /// <summary>
     /// Specifies how port is selected for health checking, can be one of the
@@ -1538,6 +1642,13 @@ public partial class V1beta2HealthCheckStatusAtProvider
     public string? CreationTimestamp { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource.
     /// </summary>
@@ -1550,6 +1661,13 @@ public partial class V1beta2HealthCheckStatusAtProvider
     /// </summary>
     [JsonPropertyName("grpcHealthCheck")]
     public V1beta2HealthCheckStatusAtProviderGrpcHealthCheck? GrpcHealthCheck { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpcTlsHealthCheck")]
+    public V1beta2HealthCheckStatusAtProviderGrpcTlsHealthCheck? GrpcTlsHealthCheck { get; set; }
 
     /// <summary>
     /// A so-far unhealthy instance will be marked healthy after this many
@@ -1700,6 +1818,15 @@ public partial class V1beta2HealthCheckStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2HealthCheckStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

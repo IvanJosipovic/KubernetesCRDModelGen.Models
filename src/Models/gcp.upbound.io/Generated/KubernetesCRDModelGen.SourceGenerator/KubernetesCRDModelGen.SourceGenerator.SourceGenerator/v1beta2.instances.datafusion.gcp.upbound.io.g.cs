@@ -415,6 +415,75 @@ public partial class V1beta2InstanceSpecForProviderEventPublishConfig
 }
 
 /// <summary>
+/// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow
+{
+    /// <summary>The end time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    /// <summary>The start time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+}
+
+/// <summary>
+/// The recurring time window of the maintenance window.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow
+{
+    /// <summary>An RRULE with format RFC-5545 for how this window reccurs. They go on for the span of time between the start and end time. The only supported FREQ value is &quot;WEEKLY&quot;. To have something repeat every weekday, use: &quot;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR&quot;.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>
+    /// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("window")]
+    public V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow? Window { get; set; }
+}
+
+/// <summary>
+/// The maintenance window of the instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindow
+{
+    /// <summary>
+    /// The recurring time window of the maintenance window.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("recurringTimeWindow")]
+    public V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow? RecurringTimeWindow { get; set; }
+}
+
+/// <summary>
+/// Configure the maintenance policy for this instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderMaintenancePolicy
+{
+    /// <summary>
+    /// The maintenance window of the instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenanceWindow")]
+    public V1beta2InstanceSpecForProviderMaintenancePolicyMaintenanceWindow? MaintenanceWindow { get; set; }
+}
+
+/// <summary>
 /// Optional. Configuration for Private Service Connect.
 /// This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
 /// Structure is documented below.
@@ -541,6 +610,13 @@ public partial class V1beta2InstanceSpecForProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// Configure the maintenance policy for this instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public V1beta2InstanceSpecForProviderMaintenancePolicy? MaintenancePolicy { get; set; }
+
+    /// <summary>
     /// Network configuration options. These are required when a private Data Fusion instance is to be created.
     /// Structure is documented below.
     /// </summary>
@@ -550,6 +626,10 @@ public partial class V1beta2InstanceSpecForProvider
     /// <summary>Map of additional options used to configure the behavior of Data Fusion instance.</summary>
     [JsonPropertyName("options")]
     public IDictionary<string, string>? Options { get; set; }
+
+    /// <summary>Current patch revision of the Data Fusion.</summary>
+    [JsonPropertyName("patchRevision")]
+    public string? PatchRevision { get; set; }
 
     /// <summary>
     /// Specifies whether the Data Fusion instance should be private. If set to
@@ -955,6 +1035,75 @@ public partial class V1beta2InstanceSpecInitProviderEventPublishConfig
 }
 
 /// <summary>
+/// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow
+{
+    /// <summary>The end time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    /// <summary>The start time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+}
+
+/// <summary>
+/// The recurring time window of the maintenance window.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow
+{
+    /// <summary>An RRULE with format RFC-5545 for how this window reccurs. They go on for the span of time between the start and end time. The only supported FREQ value is &quot;WEEKLY&quot;. To have something repeat every weekday, use: &quot;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR&quot;.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>
+    /// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("window")]
+    public V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow? Window { get; set; }
+}
+
+/// <summary>
+/// The maintenance window of the instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindow
+{
+    /// <summary>
+    /// The recurring time window of the maintenance window.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("recurringTimeWindow")]
+    public V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow? RecurringTimeWindow { get; set; }
+}
+
+/// <summary>
+/// Configure the maintenance policy for this instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderMaintenancePolicy
+{
+    /// <summary>
+    /// The maintenance window of the instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenanceWindow")]
+    public V1beta2InstanceSpecInitProviderMaintenancePolicyMaintenanceWindow? MaintenanceWindow { get; set; }
+}
+
+/// <summary>
 /// Optional. Configuration for Private Service Connect.
 /// This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
 /// Structure is documented below.
@@ -1093,6 +1242,13 @@ public partial class V1beta2InstanceSpecInitProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// Configure the maintenance policy for this instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public V1beta2InstanceSpecInitProviderMaintenancePolicy? MaintenancePolicy { get; set; }
+
+    /// <summary>
     /// Network configuration options. These are required when a private Data Fusion instance is to be created.
     /// Structure is documented below.
     /// </summary>
@@ -1102,6 +1258,10 @@ public partial class V1beta2InstanceSpecInitProvider
     /// <summary>Map of additional options used to configure the behavior of Data Fusion instance.</summary>
     [JsonPropertyName("options")]
     public IDictionary<string, string>? Options { get; set; }
+
+    /// <summary>Current patch revision of the Data Fusion.</summary>
+    [JsonPropertyName("patchRevision")]
+    public string? PatchRevision { get; set; }
 
     /// <summary>
     /// Specifies whether the Data Fusion instance should be private. If set to
@@ -1375,6 +1535,101 @@ public partial class V1beta2InstanceStatusAtProviderEventPublishConfig
     public string? Topic { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderMaintenanceEvents
+{
+    /// <summary>
+    /// (Output)
+    /// The end time of the maintenance event provided in RFC 3339 format.
+    /// </summary>
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The start time of the maintenance event provided in RFC 3339 format.
+    /// </summary>
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The state of the maintenance event.
+    /// </summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+/// <summary>
+/// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow
+{
+    /// <summary>The end time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    /// <summary>The start time of the time window provided in RFC 3339 format.</summary>
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+}
+
+/// <summary>
+/// The recurring time window of the maintenance window.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow
+{
+    /// <summary>An RRULE with format RFC-5545 for how this window reccurs. They go on for the span of time between the start and end time. The only supported FREQ value is &quot;WEEKLY&quot;. To have something repeat every weekday, use: &quot;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR&quot;.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>
+    /// The window representing the start and end time of recurrences. This field ignores the date components of the provided timestamps. Only the time of day and duration between start and end time are relevant.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("window")]
+    public V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow? Window { get; set; }
+}
+
+/// <summary>
+/// The maintenance window of the instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindow
+{
+    /// <summary>
+    /// The recurring time window of the maintenance window.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("recurringTimeWindow")]
+    public V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindowRecurringTimeWindow? RecurringTimeWindow { get; set; }
+}
+
+/// <summary>
+/// Configure the maintenance policy for this instance.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderMaintenancePolicy
+{
+    /// <summary>
+    /// The maintenance window of the instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenanceWindow")]
+    public V1beta2InstanceStatusAtProviderMaintenancePolicyMaintenanceWindow? MaintenanceWindow { get; set; }
+}
+
 /// <summary>
 /// Optional. Configuration for Private Service Connect.
 /// This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
@@ -1483,6 +1738,13 @@ public partial class V1beta2InstanceStatusAtProvider
     [JsonPropertyName("dataprocServiceAccount")]
     public string? DataprocServiceAccount { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of the instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1530,6 +1792,20 @@ public partial class V1beta2InstanceStatusAtProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// The maintenance events for this instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenanceEvents")]
+    public IList<V1beta2InstanceStatusAtProviderMaintenanceEvents>? MaintenanceEvents { get; set; }
+
+    /// <summary>
+    /// Configure the maintenance policy for this instance.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public V1beta2InstanceStatusAtProviderMaintenancePolicy? MaintenancePolicy { get; set; }
+
+    /// <summary>
     /// Network configuration options. These are required when a private Data Fusion instance is to be created.
     /// Structure is documented below.
     /// </summary>
@@ -1543,6 +1819,10 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>P4 service account for the customer project.</summary>
     [JsonPropertyName("p4ServiceAccount")]
     public string? P4ServiceAccount { get; set; }
+
+    /// <summary>Current patch revision of the Data Fusion.</summary>
+    [JsonPropertyName("patchRevision")]
+    public string? PatchRevision { get; set; }
 
     /// <summary>
     /// Specifies whether the Data Fusion instance should be private. If set to
@@ -1669,6 +1949,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

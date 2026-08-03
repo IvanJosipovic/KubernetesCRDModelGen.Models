@@ -533,7 +533,7 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -1114,7 +1114,7 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -1532,6 +1532,13 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("buildWorkerPool")]
     public string? BuildWorkerPool { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Description of the function.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1582,7 +1589,7 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -1722,6 +1729,15 @@ public partial class V1beta2FunctionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2FunctionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

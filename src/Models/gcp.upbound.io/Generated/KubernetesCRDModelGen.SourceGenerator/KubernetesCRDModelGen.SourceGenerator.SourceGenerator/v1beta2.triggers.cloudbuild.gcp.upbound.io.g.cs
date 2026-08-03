@@ -841,6 +841,90 @@ public partial class V1beta2TriggerSpecForProviderBuild
 }
 
 /// <summary>
+/// Filter to match changes in pull requests.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecForProviderDeveloperConnectEventConfigPullRequest
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>
+    /// Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+    /// Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+    /// </summary>
+    [JsonPropertyName("commentControl")]
+    public string? CommentControl { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+}
+
+/// <summary>
+/// Filter to match changes in refs like branches and tags.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecForProviderDeveloperConnectEventConfigPush
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+
+    /// <summary>
+    /// Regex of tags to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
+/// <summary>
+/// Configuration for triggers that respond to Developer Connect events.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecForProviderDeveloperConnectEventConfig
+{
+    /// <summary>The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.</summary>
+    [JsonPropertyName("gitRepositoryLink")]
+    public string? GitRepositoryLink { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in pull requests.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pullRequest")]
+    public V1beta2TriggerSpecForProviderDeveloperConnectEventConfigPullRequest? PullRequest { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in refs like branches and tags.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("push")]
+    public V1beta2TriggerSpecForProviderDeveloperConnectEventConfigPush? Push { get; set; }
+}
+
+/// <summary>
 /// The file source describing the local or remote Build template.
 /// Structure is documented below.
 /// </summary>
@@ -956,7 +1040,6 @@ public partial class V1beta2TriggerSpecForProviderGithubPush
 
 /// <summary>
 /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-/// One of trigger_template, github, pubsub_config or webhook_config must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1149,7 +1232,6 @@ public partial class V1beta2TriggerSpecForProviderPubsubConfigTopicSelector
 /// <summary>
 /// PubsubConfig describes the configuration of a trigger that creates
 /// a build whenever a Pub/Sub message is published.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1409,7 +1491,6 @@ public partial class V1beta2TriggerSpecForProviderServiceAccountSelector
 /// This field is used only for those triggers that do not respond to SCM events.
 /// Triggers that respond to such events build source at whatever commit caused the event.
 /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1459,7 +1540,6 @@ public partial class V1beta2TriggerSpecForProviderSourceToBuild
 /// Branch and tag names in trigger templates are interpreted as regular
 /// expressions. Any branch or tag change that matches that regular
 /// expression will trigger a build.
-/// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1659,7 +1739,6 @@ public partial class V1beta2TriggerSpecForProviderWebhookConfigSecretSelector
 /// <summary>
 /// WebhookConfig describes the configuration of a trigger that creates
 /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1710,6 +1789,13 @@ public partial class V1beta2TriggerSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// Configuration for triggers that respond to Developer Connect events.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("developerConnectEventConfig")]
+    public V1beta2TriggerSpecForProviderDeveloperConnectEventConfig? DeveloperConnectEventConfig { get; set; }
+
     /// <summary>Whether the trigger is disabled or not. If true, the trigger will never result in a build.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
@@ -1735,7 +1821,6 @@ public partial class V1beta2TriggerSpecForProvider
 
     /// <summary>
     /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-    /// One of trigger_template, github, pubsub_config or webhook_config must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("github")]
@@ -1797,7 +1882,6 @@ public partial class V1beta2TriggerSpecForProvider
     /// <summary>
     /// PubsubConfig describes the configuration of a trigger that creates
     /// a build whenever a Pub/Sub message is published.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("pubsubConfig")]
@@ -1833,7 +1917,6 @@ public partial class V1beta2TriggerSpecForProvider
     /// This field is used only for those triggers that do not respond to SCM events.
     /// Triggers that respond to such events build source at whatever commit caused the event.
     /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("sourceToBuild")]
@@ -1852,7 +1935,6 @@ public partial class V1beta2TriggerSpecForProvider
     /// Branch and tag names in trigger templates are interpreted as regular
     /// expressions. Any branch or tag change that matches that regular
     /// expression will trigger a build.
-    /// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("triggerTemplate")]
@@ -1861,7 +1943,6 @@ public partial class V1beta2TriggerSpecForProvider
     /// <summary>
     /// WebhookConfig describes the configuration of a trigger that creates
     /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("webhookConfig")]
@@ -2654,6 +2735,90 @@ public partial class V1beta2TriggerSpecInitProviderBuild
 }
 
 /// <summary>
+/// Filter to match changes in pull requests.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecInitProviderDeveloperConnectEventConfigPullRequest
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>
+    /// Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+    /// Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+    /// </summary>
+    [JsonPropertyName("commentControl")]
+    public string? CommentControl { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+}
+
+/// <summary>
+/// Filter to match changes in refs like branches and tags.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecInitProviderDeveloperConnectEventConfigPush
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+
+    /// <summary>
+    /// Regex of tags to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
+/// <summary>
+/// Configuration for triggers that respond to Developer Connect events.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerSpecInitProviderDeveloperConnectEventConfig
+{
+    /// <summary>The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.</summary>
+    [JsonPropertyName("gitRepositoryLink")]
+    public string? GitRepositoryLink { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in pull requests.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pullRequest")]
+    public V1beta2TriggerSpecInitProviderDeveloperConnectEventConfigPullRequest? PullRequest { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in refs like branches and tags.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("push")]
+    public V1beta2TriggerSpecInitProviderDeveloperConnectEventConfigPush? Push { get; set; }
+}
+
+/// <summary>
 /// The file source describing the local or remote Build template.
 /// Structure is documented below.
 /// </summary>
@@ -2769,7 +2934,6 @@ public partial class V1beta2TriggerSpecInitProviderGithubPush
 
 /// <summary>
 /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-/// One of trigger_template, github, pubsub_config or webhook_config must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2962,7 +3126,6 @@ public partial class V1beta2TriggerSpecInitProviderPubsubConfigTopicSelector
 /// <summary>
 /// PubsubConfig describes the configuration of a trigger that creates
 /// a build whenever a Pub/Sub message is published.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3222,7 +3385,6 @@ public partial class V1beta2TriggerSpecInitProviderServiceAccountSelector
 /// This field is used only for those triggers that do not respond to SCM events.
 /// Triggers that respond to such events build source at whatever commit caused the event.
 /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3272,7 +3434,6 @@ public partial class V1beta2TriggerSpecInitProviderSourceToBuild
 /// Branch and tag names in trigger templates are interpreted as regular
 /// expressions. Any branch or tag change that matches that regular
 /// expression will trigger a build.
-/// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3472,7 +3633,6 @@ public partial class V1beta2TriggerSpecInitProviderWebhookConfigSecretSelector
 /// <summary>
 /// WebhookConfig describes the configuration of a trigger that creates
 /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3535,6 +3695,13 @@ public partial class V1beta2TriggerSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// Configuration for triggers that respond to Developer Connect events.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("developerConnectEventConfig")]
+    public V1beta2TriggerSpecInitProviderDeveloperConnectEventConfig? DeveloperConnectEventConfig { get; set; }
+
     /// <summary>Whether the trigger is disabled or not. If true, the trigger will never result in a build.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
@@ -3560,7 +3727,6 @@ public partial class V1beta2TriggerSpecInitProvider
 
     /// <summary>
     /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-    /// One of trigger_template, github, pubsub_config or webhook_config must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("github")]
@@ -3622,7 +3788,6 @@ public partial class V1beta2TriggerSpecInitProvider
     /// <summary>
     /// PubsubConfig describes the configuration of a trigger that creates
     /// a build whenever a Pub/Sub message is published.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("pubsubConfig")]
@@ -3658,7 +3823,6 @@ public partial class V1beta2TriggerSpecInitProvider
     /// This field is used only for those triggers that do not respond to SCM events.
     /// Triggers that respond to such events build source at whatever commit caused the event.
     /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("sourceToBuild")]
@@ -3677,7 +3841,6 @@ public partial class V1beta2TriggerSpecInitProvider
     /// Branch and tag names in trigger templates are interpreted as regular
     /// expressions. Any branch or tag change that matches that regular
     /// expression will trigger a build.
-    /// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("triggerTemplate")]
@@ -3686,7 +3849,6 @@ public partial class V1beta2TriggerSpecInitProvider
     /// <summary>
     /// WebhookConfig describes the configuration of a trigger that creates
     /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("webhookConfig")]
@@ -4690,6 +4852,97 @@ public partial class V1beta2TriggerStatusAtProviderBuild
 }
 
 /// <summary>
+/// Filter to match changes in pull requests.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerStatusAtProviderDeveloperConnectEventConfigPullRequest
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>
+    /// Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+    /// Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+    /// </summary>
+    [JsonPropertyName("commentControl")]
+    public string? CommentControl { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+}
+
+/// <summary>
+/// Filter to match changes in refs like branches and tags.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerStatusAtProviderDeveloperConnectEventConfigPush
+{
+    /// <summary>
+    /// Regex of branches to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Only trigger a build if the revision regex does NOT match the revision regex.</summary>
+    [JsonPropertyName("invertRegex")]
+    public bool? InvertRegex { get; set; }
+
+    /// <summary>
+    /// Regex of tags to match.
+    /// The syntax of the regular expressions accepted is the syntax accepted by
+    /// RE2 and described at https://github.com/google/re2/wiki/Syntax
+    /// </summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
+/// <summary>
+/// Configuration for triggers that respond to Developer Connect events.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2TriggerStatusAtProviderDeveloperConnectEventConfig
+{
+    /// <summary>The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.</summary>
+    [JsonPropertyName("gitRepositoryLink")]
+    public string? GitRepositoryLink { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The type of DeveloperConnect GitRepositoryLink.
+    /// </summary>
+    [JsonPropertyName("gitRepositoryLinkType")]
+    public string? GitRepositoryLinkType { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in pull requests.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pullRequest")]
+    public V1beta2TriggerStatusAtProviderDeveloperConnectEventConfigPullRequest? PullRequest { get; set; }
+
+    /// <summary>
+    /// Filter to match changes in refs like branches and tags.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("push")]
+    public V1beta2TriggerStatusAtProviderDeveloperConnectEventConfigPush? Push { get; set; }
+}
+
+/// <summary>
 /// The file source describing the local or remote Build template.
 /// Structure is documented below.
 /// </summary>
@@ -4805,7 +5058,6 @@ public partial class V1beta2TriggerStatusAtProviderGithubPush
 
 /// <summary>
 /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-/// One of trigger_template, github, pubsub_config or webhook_config must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -4851,7 +5103,6 @@ public partial class V1beta2TriggerStatusAtProviderGithub
 /// <summary>
 /// PubsubConfig describes the configuration of a trigger that creates
 /// a build whenever a Pub/Sub message is published.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -4971,7 +5222,6 @@ public partial class V1beta2TriggerStatusAtProviderRepositoryEventConfig
 /// This field is used only for those triggers that do not respond to SCM events.
 /// Triggers that respond to such events build source at whatever commit caused the event.
 /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5021,7 +5271,6 @@ public partial class V1beta2TriggerStatusAtProviderSourceToBuild
 /// Branch and tag names in trigger templates are interpreted as regular
 /// expressions. Any branch or tag change that matches that regular
 /// expression will trigger a build.
-/// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5074,7 +5323,6 @@ public partial class V1beta2TriggerStatusAtProviderTriggerTemplate
 /// <summary>
 /// WebhookConfig describes the configuration of a trigger that creates
 /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-/// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5125,9 +5373,23 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Human-readable description of the trigger.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Configuration for triggers that respond to Developer Connect events.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("developerConnectEventConfig")]
+    public V1beta2TriggerStatusAtProviderDeveloperConnectEventConfig? DeveloperConnectEventConfig { get; set; }
 
     /// <summary>Whether the trigger is disabled or not. If true, the trigger will never result in a build.</summary>
     [JsonPropertyName("disabled")]
@@ -5154,7 +5416,6 @@ public partial class V1beta2TriggerStatusAtProvider
 
     /// <summary>
     /// Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-    /// One of trigger_template, github, pubsub_config or webhook_config must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("github")]
@@ -5220,7 +5481,6 @@ public partial class V1beta2TriggerStatusAtProvider
     /// <summary>
     /// PubsubConfig describes the configuration of a trigger that creates
     /// a build whenever a Pub/Sub message is published.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("pubsubConfig")]
@@ -5248,7 +5508,6 @@ public partial class V1beta2TriggerStatusAtProvider
     /// This field is used only for those triggers that do not respond to SCM events.
     /// Triggers that respond to such events build source at whatever commit caused the event.
     /// This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("sourceToBuild")]
@@ -5271,7 +5530,6 @@ public partial class V1beta2TriggerStatusAtProvider
     /// Branch and tag names in trigger templates are interpreted as regular
     /// expressions. Any branch or tag change that matches that regular
     /// expression will trigger a build.
-    /// One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("triggerTemplate")]
@@ -5280,7 +5538,6 @@ public partial class V1beta2TriggerStatusAtProvider
     /// <summary>
     /// WebhookConfig describes the configuration of a trigger that creates
     /// a build whenever a webhook is sent to a trigger&apos;s webhook URL.
-    /// One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("webhookConfig")]
@@ -5341,6 +5598,15 @@ public partial class V1beta2TriggerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2TriggerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

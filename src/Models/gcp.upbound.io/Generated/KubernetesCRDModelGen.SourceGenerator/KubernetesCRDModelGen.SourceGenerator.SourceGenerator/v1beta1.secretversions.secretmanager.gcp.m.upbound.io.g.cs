@@ -211,7 +211,7 @@ public partial class V1beta1SecretVersionSpecForProvider
     /// <summary>
     /// The deletion policy for the secret version. Setting ABANDON allows the resource
     /// to be abandoned rather than deleted. Setting DISABLE allows the resource to be
-    /// disabled rather than deleted. Default is DELETE. Possible values are:
+    /// disabled rather than deleted.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -224,6 +224,13 @@ public partial class V1beta1SecretVersionSpecForProvider
     [JsonPropertyName("isSecretDataBase64")]
     public bool? IsSecretDataBase64 { get; set; }
 
+    /// <summary>
+    /// The ID of the project in which the resource belongs. If it is not provided,
+    /// the provider project is used
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
     /// <summary>Secret Manager secret resource</summary>
     [JsonPropertyName("secret")]
     public string? Secret { get; set; }
@@ -231,17 +238,6 @@ public partial class V1beta1SecretVersionSpecForProvider
     /// <summary>The secret data. Must be no larger than 64KiB.</summary>
     [JsonPropertyName("secretDataSecretRef")]
     public V1beta1SecretVersionSpecForProviderSecretDataSecretRef? SecretDataSecretRef { get; set; }
-
-    /// <summary>
-    /// The secret data. Must be no larger than 64KiB. For more info see updating write-only attributes
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("secretDataWo")]
-    public string? SecretDataWo { get; set; }
-
-    /// <summary>Triggers update of secret data write-only. For more info see updating write-only attributes</summary>
-    [JsonPropertyName("secretDataWoVersion")]
-    public double? SecretDataWoVersion { get; set; }
 
     /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
     [JsonPropertyName("secretRef")]
@@ -439,7 +435,7 @@ public partial class V1beta1SecretVersionSpecInitProvider
     /// <summary>
     /// The deletion policy for the secret version. Setting ABANDON allows the resource
     /// to be abandoned rather than deleted. Setting DISABLE allows the resource to be
-    /// disabled rather than deleted. Default is DELETE. Possible values are:
+    /// disabled rather than deleted.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -452,6 +448,13 @@ public partial class V1beta1SecretVersionSpecInitProvider
     [JsonPropertyName("isSecretDataBase64")]
     public bool? IsSecretDataBase64 { get; set; }
 
+    /// <summary>
+    /// The ID of the project in which the resource belongs. If it is not provided,
+    /// the provider project is used
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
     /// <summary>Secret Manager secret resource</summary>
     [JsonPropertyName("secret")]
     public string? Secret { get; set; }
@@ -459,17 +462,6 @@ public partial class V1beta1SecretVersionSpecInitProvider
     /// <summary>The secret data. Must be no larger than 64KiB.</summary>
     [JsonPropertyName("secretDataSecretRef")]
     public V1beta1SecretVersionSpecInitProviderSecretDataSecretRef? SecretDataSecretRef { get; set; }
-
-    /// <summary>
-    /// The secret data. Must be no larger than 64KiB. For more info see updating write-only attributes
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("secretDataWo")]
-    public string? SecretDataWo { get; set; }
-
-    /// <summary>Triggers update of secret data write-only. For more info see updating write-only attributes</summary>
-    [JsonPropertyName("secretDataWoVersion")]
-    public double? SecretDataWoVersion { get; set; }
 
     /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
     [JsonPropertyName("secretRef")]
@@ -598,7 +590,7 @@ public partial class V1beta1SecretVersionStatusAtProvider
     /// <summary>
     /// The deletion policy for the secret version. Setting ABANDON allows the resource
     /// to be abandoned rather than deleted. Setting DISABLE allows the resource to be
-    /// disabled rather than deleted. Default is DELETE. Possible values are:
+    /// disabled rather than deleted.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -626,20 +618,16 @@ public partial class V1beta1SecretVersionStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>
+    /// The ID of the project in which the resource belongs. If it is not provided,
+    /// the provider project is used
+    /// </summary>
+    [JsonPropertyName("project")]
+    public string? Project { get; set; }
+
     /// <summary>Secret Manager secret resource</summary>
     [JsonPropertyName("secret")]
     public string? Secret { get; set; }
-
-    /// <summary>
-    /// The secret data. Must be no larger than 64KiB. For more info see updating write-only attributes
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("secretDataWo")]
-    public string? SecretDataWo { get; set; }
-
-    /// <summary>Triggers update of secret data write-only. For more info see updating write-only attributes</summary>
-    [JsonPropertyName("secretDataWoVersion")]
-    public double? SecretDataWoVersion { get; set; }
 
     /// <summary>The version of the Secret.</summary>
     [JsonPropertyName("version")]
@@ -700,6 +688,15 @@ public partial class V1beta1SecretVersionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SecretVersionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

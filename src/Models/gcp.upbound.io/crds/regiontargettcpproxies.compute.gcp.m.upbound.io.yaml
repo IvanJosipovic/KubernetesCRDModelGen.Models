@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: regiontargettcpproxies.compute.gcp.m.upbound.io
 spec:
   group: compute.gcp.m.upbound.io
@@ -58,7 +58,9 @@ spec:
               forProvider:
                 properties:
                   backendService:
-                    description: A reference to the BackendService resource.
+                    description: |-
+                      A reference to the BackendService resource. This field is optional when
+                      the loadBalancingScheme (available in beta) is specified.
                     type: string
                   backendServiceRef:
                     description: Reference to a RegionBackendService in compute to populate backendService.
@@ -181,7 +183,9 @@ spec:
                   autoscaler.
                 properties:
                   backendService:
-                    description: A reference to the BackendService resource.
+                    description: |-
+                      A reference to the BackendService resource. This field is optional when
+                      the loadBalancingScheme (available in beta) is specified.
                     type: string
                   backendServiceRef:
                     description: Reference to a RegionBackendService in compute to populate backendService.
@@ -347,10 +351,17 @@ spec:
               atProvider:
                 properties:
                   backendService:
-                    description: A reference to the BackendService resource.
+                    description: |-
+                      A reference to the BackendService resource. This field is optional when
+                      the loadBalancingScheme (available in beta) is specified.
                     type: string
                   creationTimestamp:
                     description: Creation timestamp in RFC3339 text format.
+                    type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
                     type: string
                   description:
                     description: An optional description of this resource.
@@ -431,6 +442,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

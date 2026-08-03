@@ -316,6 +316,15 @@ public partial class V1beta2SubnetworkSpecForProviderSecondaryIpRange
 public partial class V1beta2SubnetworkSpecForProvider
 {
     /// <summary>
+    /// Typically packets destined to IPs within the subnetwork range that do not match
+    /// existing resources are dropped and prevented from leaving the VPC.
+    /// Setting this field to true will allow these packets to match dynamic routes injected
+    /// via BGP even if their destinations match existing subnet ranges.
+    /// </summary>
+    [JsonPropertyName("allowSubnetCidrRoutesOverlap")]
+    public bool? AllowSubnetCidrRoutesOverlap { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource. This field can be set only at resource
     /// creation time.
@@ -323,18 +332,13 @@ public partial class V1beta2SubnetworkSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// Whether to enable flow logging for this subnetwork. If this field is not explicitly set,
-    /// it will not appear in get listings. If not set the default behavior is determined by the
-    /// org policy, if there is no org policy specified, then it will default to disabled.
-    /// This field isn&apos;t supported if the subnet purpose field is set to REGIONAL_MANAGED_PROXY.
-    /// </summary>
-    [JsonPropertyName("enableFlowLogs")]
-    public bool? EnableFlowLogs { get; set; }
-
     /// <summary>The range of external IPv6 addresses that are owned by this subnetwork.</summary>
     [JsonPropertyName("externalIpv6Prefix")]
     public string? ExternalIpv6Prefix { get; set; }
+
+    /// <summary>The internal IPv6 address range that is assigned to this subnetwork.</summary>
+    [JsonPropertyName("internalIpv6Prefix")]
+    public string? InternalIpv6Prefix { get; set; }
 
     /// <summary>
     /// The range of internal addresses that are owned by this subnetwork.
@@ -348,9 +352,9 @@ public partial class V1beta2SubnetworkSpecForProvider
 
     /// <summary>
     /// Resource reference of a PublicDelegatedPrefix. The PDP must be a sub-PDP
-    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION mode.
-    /// Use one of the following formats to specify a sub-PDP when creating an
-    /// IPv6 NetLB forwarding rule using BYOIP:
+    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION or INTERNAL_IPV6_SUBNETWORK_CREATION
+    /// mode. Use one of the following formats to specify a sub-PDP when creating
+    /// a dual stack or IPv6-only subnetwork using BYOIP:
     /// Full resource URL, as in:
     /// </summary>
     [JsonPropertyName("ipCollection")]
@@ -438,6 +442,13 @@ public partial class V1beta2SubnetworkSpecForProvider
     /// </summary>
     [JsonPropertyName("reservedInternalRange")]
     public string? ReservedInternalRange { get; set; }
+
+    /// <summary>
+    /// &apos;Configures subnet mask resolution for this subnetwork.&apos;
+    /// Possible values are: ARP_ALL_RANGES, ARP_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE_WITH_LEARNING.
+    /// </summary>
+    [JsonPropertyName("resolveSubnetMask")]
+    public string? ResolveSubnetMask { get; set; }
 
     /// <summary>
     /// The role of subnetwork.
@@ -756,6 +767,15 @@ public partial class V1beta2SubnetworkSpecInitProviderSecondaryIpRange
 public partial class V1beta2SubnetworkSpecInitProvider
 {
     /// <summary>
+    /// Typically packets destined to IPs within the subnetwork range that do not match
+    /// existing resources are dropped and prevented from leaving the VPC.
+    /// Setting this field to true will allow these packets to match dynamic routes injected
+    /// via BGP even if their destinations match existing subnet ranges.
+    /// </summary>
+    [JsonPropertyName("allowSubnetCidrRoutesOverlap")]
+    public bool? AllowSubnetCidrRoutesOverlap { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource. This field can be set only at resource
     /// creation time.
@@ -763,18 +783,13 @@ public partial class V1beta2SubnetworkSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// Whether to enable flow logging for this subnetwork. If this field is not explicitly set,
-    /// it will not appear in get listings. If not set the default behavior is determined by the
-    /// org policy, if there is no org policy specified, then it will default to disabled.
-    /// This field isn&apos;t supported if the subnet purpose field is set to REGIONAL_MANAGED_PROXY.
-    /// </summary>
-    [JsonPropertyName("enableFlowLogs")]
-    public bool? EnableFlowLogs { get; set; }
-
     /// <summary>The range of external IPv6 addresses that are owned by this subnetwork.</summary>
     [JsonPropertyName("externalIpv6Prefix")]
     public string? ExternalIpv6Prefix { get; set; }
+
+    /// <summary>The internal IPv6 address range that is assigned to this subnetwork.</summary>
+    [JsonPropertyName("internalIpv6Prefix")]
+    public string? InternalIpv6Prefix { get; set; }
 
     /// <summary>
     /// The range of internal addresses that are owned by this subnetwork.
@@ -788,9 +803,9 @@ public partial class V1beta2SubnetworkSpecInitProvider
 
     /// <summary>
     /// Resource reference of a PublicDelegatedPrefix. The PDP must be a sub-PDP
-    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION mode.
-    /// Use one of the following formats to specify a sub-PDP when creating an
-    /// IPv6 NetLB forwarding rule using BYOIP:
+    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION or INTERNAL_IPV6_SUBNETWORK_CREATION
+    /// mode. Use one of the following formats to specify a sub-PDP when creating
+    /// a dual stack or IPv6-only subnetwork using BYOIP:
     /// Full resource URL, as in:
     /// </summary>
     [JsonPropertyName("ipCollection")]
@@ -874,6 +889,13 @@ public partial class V1beta2SubnetworkSpecInitProvider
     /// </summary>
     [JsonPropertyName("reservedInternalRange")]
     public string? ReservedInternalRange { get; set; }
+
+    /// <summary>
+    /// &apos;Configures subnet mask resolution for this subnetwork.&apos;
+    /// Possible values are: ARP_ALL_RANGES, ARP_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE_WITH_LEARNING.
+    /// </summary>
+    [JsonPropertyName("resolveSubnetMask")]
+    public string? ResolveSubnetMask { get; set; }
 
     /// <summary>
     /// The role of subnetwork.
@@ -1215,9 +1237,25 @@ public partial class V1beta2SubnetworkStatusAtProviderSecondaryIpRange
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SubnetworkStatusAtProvider
 {
+    /// <summary>
+    /// Typically packets destined to IPs within the subnetwork range that do not match
+    /// existing resources are dropped and prevented from leaving the VPC.
+    /// Setting this field to true will allow these packets to match dynamic routes injected
+    /// via BGP even if their destinations match existing subnet ranges.
+    /// </summary>
+    [JsonPropertyName("allowSubnetCidrRoutesOverlap")]
+    public bool? AllowSubnetCidrRoutesOverlap { get; set; }
+
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// An optional description of this resource. Provide this property when
@@ -1226,15 +1264,6 @@ public partial class V1beta2SubnetworkStatusAtProvider
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
-
-    /// <summary>
-    /// Whether to enable flow logging for this subnetwork. If this field is not explicitly set,
-    /// it will not appear in get listings. If not set the default behavior is determined by the
-    /// org policy, if there is no org policy specified, then it will default to disabled.
-    /// This field isn&apos;t supported if the subnet purpose field is set to REGIONAL_MANAGED_PROXY.
-    /// </summary>
-    [JsonPropertyName("enableFlowLogs")]
-    public bool? EnableFlowLogs { get; set; }
 
     /// <summary>The range of external IPv6 addresses that are owned by this subnetwork.</summary>
     [JsonPropertyName("externalIpv6Prefix")]
@@ -1270,9 +1299,9 @@ public partial class V1beta2SubnetworkStatusAtProvider
 
     /// <summary>
     /// Resource reference of a PublicDelegatedPrefix. The PDP must be a sub-PDP
-    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION mode.
-    /// Use one of the following formats to specify a sub-PDP when creating an
-    /// IPv6 NetLB forwarding rule using BYOIP:
+    /// in EXTERNAL_IPV6_SUBNETWORK_CREATION or INTERNAL_IPV6_SUBNETWORK_CREATION
+    /// mode. Use one of the following formats to specify a sub-PDP when creating
+    /// a dual stack or IPv6-only subnetwork using BYOIP:
     /// Full resource URL, as in:
     /// </summary>
     [JsonPropertyName("ipCollection")]
@@ -1360,6 +1389,13 @@ public partial class V1beta2SubnetworkStatusAtProvider
     /// </summary>
     [JsonPropertyName("reservedInternalRange")]
     public string? ReservedInternalRange { get; set; }
+
+    /// <summary>
+    /// &apos;Configures subnet mask resolution for this subnetwork.&apos;
+    /// Possible values are: ARP_ALL_RANGES, ARP_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE, ARP_BROADCAST_PRIMARY_RANGE_WITH_LEARNING.
+    /// </summary>
+    [JsonPropertyName("resolveSubnetMask")]
+    public string? ResolveSubnetMask { get; set; }
 
     /// <summary>
     /// The role of subnetwork.
@@ -1476,6 +1512,15 @@ public partial class V1beta2SubnetworkStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2SubnetworkStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

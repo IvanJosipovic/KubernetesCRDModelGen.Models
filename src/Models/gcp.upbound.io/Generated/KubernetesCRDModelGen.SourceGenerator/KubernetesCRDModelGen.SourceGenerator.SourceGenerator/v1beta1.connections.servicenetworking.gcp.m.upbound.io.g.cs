@@ -350,7 +350,10 @@ public partial class V1beta1ConnectionSpecForProviderReservedPeeringRangesSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProvider
 {
-    /// <summary>The deletion policy for the service networking connection. Setting to ABANDON allows the resource to be abandoned rather than deleted. Use with care as it can lead to dangling resources.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot; or any other value, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -721,7 +724,10 @@ public partial class V1beta1ConnectionSpecInitProviderReservedPeeringRangesSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProvider
 {
-    /// <summary>The deletion policy for the service networking connection. Setting to ABANDON allows the resource to be abandoned rather than deleted. Use with care as it can lead to dangling resources.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot; or any other value, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -877,7 +883,10 @@ public partial class V1beta1ConnectionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProvider
 {
-    /// <summary>The deletion policy for the service networking connection. Setting to ABANDON allows the resource to be abandoned rather than deleted. Use with care as it can lead to dangling resources.</summary>
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot; or any other value, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -967,6 +976,15 @@ public partial class V1beta1ConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

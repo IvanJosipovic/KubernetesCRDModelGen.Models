@@ -81,18 +81,60 @@ public partial class V1beta1BucketSpecForProviderCustomPlacementConfig
     public IList<string>? DataLocations { get; set; }
 }
 
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecForProviderEncryptionCustomerManagedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecForProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecForProviderEncryptionGoogleManagedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
 /// <summary>The bucket&apos;s encryption configuration. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecForProviderEncryption
 {
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecForProviderEncryptionCustomerManagedEncryptionEnforcementConfig? CustomerManagedEncryptionEnforcementConfig { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerSuppliedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecForProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig? CustomerSuppliedEncryptionEnforcementConfig { get; set; }
+
     /// <summary>
-    /// : The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
+    /// The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
     /// You must pay attention to whether the crypto key is available in the location that this bucket is created in.
     /// See the docs for more details.
     /// </summary>
     [JsonPropertyName("defaultKmsKeyName")]
     public string? DefaultKmsKeyName { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("googleManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecForProviderEncryptionGoogleManagedEncryptionEnforcementConfig? GoogleManagedEncryptionEnforcementConfig { get; set; }
 }
 
 /// <summary>The bucket&apos;s hierarchical namespace policy, which defines the bucket capability to handle folders in logical structure. Structure is documented below. To use this configuration, uniform_bucket_level_access must be enabled on bucket.</summary>
@@ -228,6 +270,14 @@ public partial class V1beta1BucketSpecForProviderLifecycleRuleCondition
     /// <summary>While set true, num_newer_versions value will be sent in the request even for zero value of the field. This field is only useful for setting 0 value to the num_newer_versions field. It can be used alone or together with num_newer_versions.</summary>
     [JsonPropertyName("sendNumNewerVersionsIfZero")]
     public bool? SendNumNewerVersionsIfZero { get; set; }
+
+    /// <summary>Objects having a size greater than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeAboveBytes")]
+    public double? SizeAboveBytes { get; set; }
+
+    /// <summary>Objects having a size smaller than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeBelowBytes")]
+    public double? SizeBelowBytes { get; set; }
 
     /// <summary>Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: &quot;LIVE&quot;, &quot;ARCHIVED&quot;, &quot;ANY&quot;.</summary>
     [JsonPropertyName("withState")]
@@ -466,18 +516,60 @@ public partial class V1beta1BucketSpecInitProviderCustomPlacementConfig
     public IList<string>? DataLocations { get; set; }
 }
 
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecInitProviderEncryptionCustomerManagedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecInitProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketSpecInitProviderEncryptionGoogleManagedEncryptionEnforcementConfig
+{
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
 /// <summary>The bucket&apos;s encryption configuration. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecInitProviderEncryption
 {
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecInitProviderEncryptionCustomerManagedEncryptionEnforcementConfig? CustomerManagedEncryptionEnforcementConfig { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerSuppliedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecInitProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig? CustomerSuppliedEncryptionEnforcementConfig { get; set; }
+
     /// <summary>
-    /// : The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
+    /// The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
     /// You must pay attention to whether the crypto key is available in the location that this bucket is created in.
     /// See the docs for more details.
     /// </summary>
     [JsonPropertyName("defaultKmsKeyName")]
     public string? DefaultKmsKeyName { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("googleManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketSpecInitProviderEncryptionGoogleManagedEncryptionEnforcementConfig? GoogleManagedEncryptionEnforcementConfig { get; set; }
 }
 
 /// <summary>The bucket&apos;s hierarchical namespace policy, which defines the bucket capability to handle folders in logical structure. Structure is documented below. To use this configuration, uniform_bucket_level_access must be enabled on bucket.</summary>
@@ -613,6 +705,14 @@ public partial class V1beta1BucketSpecInitProviderLifecycleRuleCondition
     /// <summary>While set true, num_newer_versions value will be sent in the request even for zero value of the field. This field is only useful for setting 0 value to the num_newer_versions field. It can be used alone or together with num_newer_versions.</summary>
     [JsonPropertyName("sendNumNewerVersionsIfZero")]
     public bool? SendNumNewerVersionsIfZero { get; set; }
+
+    /// <summary>Objects having a size greater than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeAboveBytes")]
+    public double? SizeAboveBytes { get; set; }
+
+    /// <summary>Objects having a size smaller than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeBelowBytes")]
+    public double? SizeBelowBytes { get; set; }
 
     /// <summary>Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: &quot;LIVE&quot;, &quot;ARCHIVED&quot;, &quot;ANY&quot;.</summary>
     [JsonPropertyName("withState")]
@@ -970,18 +1070,72 @@ public partial class V1beta1BucketStatusAtProviderCustomPlacementConfig
     public IList<string>? DataLocations { get; set; }
 }
 
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketStatusAtProviderEncryptionCustomerManagedEncryptionEnforcementConfig
+{
+    /// <summary>(Computed) Server-determined value that indicates the time from which the policy, or one with a greater retention, was effective. This value is in RFC 3339 format.</summary>
+    [JsonPropertyName("effectiveTime")]
+    public string? EffectiveTime { get; set; }
+
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketStatusAtProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig
+{
+    /// <summary>(Computed) Server-determined value that indicates the time from which the policy, or one with a greater retention, was effective. This value is in RFC 3339 format.</summary>
+    [JsonPropertyName("effectiveTime")]
+    public string? EffectiveTime { get; set; }
+
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
+/// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BucketStatusAtProviderEncryptionGoogleManagedEncryptionEnforcementConfig
+{
+    /// <summary>(Computed) Server-determined value that indicates the time from which the policy, or one with a greater retention, was effective. This value is in RFC 3339 format.</summary>
+    [JsonPropertyName("effectiveTime")]
+    public string? EffectiveTime { get; set; }
+
+    /// <summary>Whether Google Managed Encryption (GMEK) is restricted for new objects within the bucket. If FullyRestricted, new objects can&apos;t be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.</summary>
+    [JsonPropertyName("restrictionMode")]
+    public string? RestrictionMode { get; set; }
+}
+
 /// <summary>The bucket&apos;s encryption configuration. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderEncryption
 {
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketStatusAtProviderEncryptionCustomerManagedEncryptionEnforcementConfig? CustomerManagedEncryptionEnforcementConfig { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("customerSuppliedEncryptionEnforcementConfig")]
+    public V1beta1BucketStatusAtProviderEncryptionCustomerSuppliedEncryptionEnforcementConfig? CustomerSuppliedEncryptionEnforcementConfig { get; set; }
+
     /// <summary>
-    /// : The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
+    /// The id of a Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.
     /// You must pay attention to whether the crypto key is available in the location that this bucket is created in.
     /// See the docs for more details.
     /// </summary>
     [JsonPropertyName("defaultKmsKeyName")]
     public string? DefaultKmsKeyName { get; set; }
+
+    /// <summary>type is allowed. If set, then new objects created in this bucket must comply with enforcement config. Changing this has no effect on existing objects; it applies to new objects only, Structure is documented below documented below.</summary>
+    [JsonPropertyName("googleManagedEncryptionEnforcementConfig")]
+    public V1beta1BucketStatusAtProviderEncryptionGoogleManagedEncryptionEnforcementConfig? GoogleManagedEncryptionEnforcementConfig { get; set; }
 }
 
 /// <summary>The bucket&apos;s hierarchical namespace policy, which defines the bucket capability to handle folders in logical structure. Structure is documented below. To use this configuration, uniform_bucket_level_access must be enabled on bucket.</summary>
@@ -1117,6 +1271,14 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleCondition
     /// <summary>While set true, num_newer_versions value will be sent in the request even for zero value of the field. This field is only useful for setting 0 value to the num_newer_versions field. It can be used alone or together with num_newer_versions.</summary>
     [JsonPropertyName("sendNumNewerVersionsIfZero")]
     public bool? SendNumNewerVersionsIfZero { get; set; }
+
+    /// <summary>Objects having a size greater than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeAboveBytes")]
+    public double? SizeAboveBytes { get; set; }
+
+    /// <summary>Objects having a size smaller than this value in bytes will be matched.</summary>
+    [JsonPropertyName("sizeBelowBytes")]
+    public double? SizeBelowBytes { get; set; }
 
     /// <summary>Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: &quot;LIVE&quot;, &quot;ARCHIVED&quot;, &quot;ANY&quot;.</summary>
     [JsonPropertyName("withState")]
@@ -1398,6 +1560,15 @@ public partial class V1beta1BucketStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BucketStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

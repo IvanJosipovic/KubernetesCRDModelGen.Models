@@ -785,6 +785,14 @@ public partial class V1beta2MetastoreServiceSpecForProvider
     public V1beta2MetastoreServiceSpecForProviderScheduledBackup? ScheduledBackup { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
     /// Structure is documented below.
     /// </summary>
@@ -1534,6 +1542,14 @@ public partial class V1beta2MetastoreServiceSpecInitProvider
     public V1beta2MetastoreServiceSpecInitProviderScheduledBackup? ScheduledBackup { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
     /// Structure is documented below.
     /// </summary>
@@ -2072,6 +2088,13 @@ public partial class V1beta2MetastoreServiceStatusAtProvider
     [JsonPropertyName("databaseType")]
     public string? DatabaseType { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Indicates if the dataproc metastore should be protected against accidental deletions.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
@@ -2193,6 +2216,14 @@ public partial class V1beta2MetastoreServiceStatusAtProvider
     public string? StateMessage { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
     /// Structure is documented below.
     /// </summary>
@@ -2276,6 +2307,15 @@ public partial class V1beta2MetastoreServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2MetastoreServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

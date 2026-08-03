@@ -2407,6 +2407,13 @@ public partial class V1beta2RouterPeerStatusAtProvider
     public double? CustomLearnedRoutePriority { get; set; }
 
     /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// The status of the BGP peer connection. If set to false, any active session
     /// with the peer is terminated and all associated routing information is removed.
     /// If set to true, the peer connection can be established with routing information.
@@ -2605,6 +2612,15 @@ public partial class V1beta2RouterPeerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2RouterPeerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

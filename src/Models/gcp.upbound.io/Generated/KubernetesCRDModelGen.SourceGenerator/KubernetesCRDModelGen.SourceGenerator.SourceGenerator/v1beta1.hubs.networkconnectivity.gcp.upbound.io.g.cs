@@ -88,7 +88,7 @@ public partial class V1beta1HubSpecForProvider
 
     /// <summary>
     /// Optional. The topology implemented in this hub. Currently, this field is only used when policyMode = PRESET. The available preset topologies are MESH and STAR. If presetTopology is unspecified and policyMode = PRESET, the presetTopology defaults to MESH. When policyMode = CUSTOM, the presetTopology is set to PRESET_TOPOLOGY_UNSPECIFIED.
-    /// Possible values are: MESH, STAR.
+    /// Possible values are: MESH, STAR, HYBRID_INSPECTION.
     /// </summary>
     [JsonPropertyName("presetTopology")]
     public string? PresetTopology { get; set; }
@@ -146,7 +146,7 @@ public partial class V1beta1HubSpecInitProvider
 
     /// <summary>
     /// Optional. The topology implemented in this hub. Currently, this field is only used when policyMode = PRESET. The available preset topologies are MESH and STAR. If presetTopology is unspecified and policyMode = PRESET, the presetTopology defaults to MESH. When policyMode = CUSTOM, the presetTopology is set to PRESET_TOPOLOGY_UNSPECIFIED.
-    /// Possible values are: MESH, STAR.
+    /// Possible values are: MESH, STAR, HYBRID_INSPECTION.
     /// </summary>
     [JsonPropertyName("presetTopology")]
     public string? PresetTopology { get; set; }
@@ -359,6 +359,13 @@ public partial class V1beta1HubStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of the hub.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -395,7 +402,7 @@ public partial class V1beta1HubStatusAtProvider
 
     /// <summary>
     /// Optional. The topology implemented in this hub. Currently, this field is only used when policyMode = PRESET. The available preset topologies are MESH and STAR. If presetTopology is unspecified and policyMode = PRESET, the presetTopology defaults to MESH. When policyMode = CUSTOM, the presetTopology is set to PRESET_TOPOLOGY_UNSPECIFIED.
-    /// Possible values are: MESH, STAR.
+    /// Possible values are: MESH, STAR, HYBRID_INSPECTION.
     /// </summary>
     [JsonPropertyName("presetTopology")]
     public string? PresetTopology { get; set; }
@@ -488,6 +495,15 @@ public partial class V1beta1HubStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1HubStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -69,6 +69,14 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -479,6 +487,14 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfig
     public V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags to add to all instances.
+    /// Keys must be in the format tagKeys/{tag_key_id} and values in the format tagValues/{tag_value_id}
+    /// (see Secure tags).
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    /// <summary>
     /// The service account to be used by the Node VMs.
     /// If not specified, the &quot;default&quot; service account is used.
     /// </summary>
@@ -571,11 +587,26 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigLifecycleConfig
     public string? AutoDeleteTime { get; set; }
 
     /// <summary>
+    /// The time when cluster will be auto-stopped.
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds.
+    /// Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
+    [JsonPropertyName("autoStopTime")]
+    public string? AutoStopTime { get; set; }
+
+    /// <summary>
     /// The duration to keep the cluster alive while idling
-    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
+    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [300s, 1209600s].
     /// </summary>
     [JsonPropertyName("idleDeleteTtl")]
     public string? IdleDeleteTtl { get; set; }
+
+    /// <summary>
+    /// The duration to keep the cluster alive while idling
+    /// (no jobs running). After this TTL, the cluster will be stopped. Valid range: [10m, 14d].
+    /// </summary>
+    [JsonPropertyName("idleStopTtl")]
+    public string? IdleStopTtl { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -596,6 +627,14 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigAccel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -630,6 +669,29 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskC
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the master instances
 /// in a cluster. Structure defined below.
@@ -652,6 +714,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// The name of a Google Compute Engine machine type
@@ -696,6 +762,14 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMetastoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -997,6 +1071,14 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigAccel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -1031,6 +1113,29 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskC
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the worker instances
 /// in a cluster. Structure defined below.
@@ -1053,6 +1158,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// The name of a Google Compute Engine machine type
@@ -1116,6 +1225,9 @@ public partial class V1beta1ClusterSpecForProviderClusterConfig
     [JsonPropertyName("clusterTier")]
     public string? ClusterTier { get; set; }
 
+    [JsonPropertyName("clusterType")]
+    public string? ClusterType { get; set; }
+
     /// <summary>
     /// The Compute Engine accelerator (GPU) configuration for these instances. Can be specified multiple times.
     /// Structure defined below.
@@ -1136,6 +1248,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfig
     /// </summary>
     [JsonPropertyName("endpointConfig")]
     public V1beta1ClusterSpecForProviderClusterConfigEndpointConfig? EndpointConfig { get; set; }
+
+    /// <summary>The cluster engine.</summary>
+    [JsonPropertyName("engine")]
+    public string? Engine { get; set; }
 
     /// <summary>
     /// Common config settings for resources of Google Compute Engine cluster
@@ -1560,6 +1676,14 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -1970,6 +2094,14 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags to add to all instances.
+    /// Keys must be in the format tagKeys/{tag_key_id} and values in the format tagValues/{tag_value_id}
+    /// (see Secure tags).
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    /// <summary>
     /// The service account to be used by the Node VMs.
     /// If not specified, the &quot;default&quot; service account is used.
     /// </summary>
@@ -2062,11 +2194,26 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigLifecycleConfig
     public string? AutoDeleteTime { get; set; }
 
     /// <summary>
+    /// The time when cluster will be auto-stopped.
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds.
+    /// Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
+    [JsonPropertyName("autoStopTime")]
+    public string? AutoStopTime { get; set; }
+
+    /// <summary>
     /// The duration to keep the cluster alive while idling
-    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
+    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [300s, 1209600s].
     /// </summary>
     [JsonPropertyName("idleDeleteTtl")]
     public string? IdleDeleteTtl { get; set; }
+
+    /// <summary>
+    /// The duration to keep the cluster alive while idling
+    /// (no jobs running). After this TTL, the cluster will be stopped. Valid range: [10m, 14d].
+    /// </summary>
+    [JsonPropertyName("idleStopTtl")]
+    public string? IdleStopTtl { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2087,6 +2234,14 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -2121,6 +2276,29 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the master instances
 /// in a cluster. Structure defined below.
@@ -2143,6 +2321,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// The name of a Google Compute Engine machine type
@@ -2187,6 +2369,14 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMetastoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -2488,6 +2678,14 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -2522,6 +2720,29 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the worker instances
 /// in a cluster. Structure defined below.
@@ -2544,6 +2765,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// The name of a Google Compute Engine machine type
@@ -2607,6 +2832,9 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfig
     [JsonPropertyName("clusterTier")]
     public string? ClusterTier { get; set; }
 
+    [JsonPropertyName("clusterType")]
+    public string? ClusterType { get; set; }
+
     /// <summary>
     /// The Compute Engine accelerator (GPU) configuration for these instances. Can be specified multiple times.
     /// Structure defined below.
@@ -2627,6 +2855,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfig
     /// </summary>
     [JsonPropertyName("endpointConfig")]
     public V1beta1ClusterSpecInitProviderClusterConfigEndpointConfig? EndpointConfig { get; set; }
+
+    /// <summary>The cluster engine.</summary>
+    [JsonPropertyName("engine")]
+    public string? Engine { get; set; }
 
     /// <summary>
     /// Common config settings for resources of Google Compute Engine cluster
@@ -3170,6 +3402,14 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -3446,6 +3686,14 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
     /// <summary>
+    /// A map of resource manager tags to add to all instances.
+    /// Keys must be in the format tagKeys/{tag_key_id} and values in the format tagValues/{tag_value_id}
+    /// (see Secure tags).
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    /// <summary>
     /// The service account to be used by the Node VMs.
     /// If not specified, the &quot;default&quot; service account is used.
     /// </summary>
@@ -3530,8 +3778,16 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigLifecycleConfig
     public string? AutoDeleteTime { get; set; }
 
     /// <summary>
+    /// The time when cluster will be auto-stopped.
+    /// A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds.
+    /// Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.
+    /// </summary>
+    [JsonPropertyName("autoStopTime")]
+    public string? AutoStopTime { get; set; }
+
+    /// <summary>
     /// The duration to keep the cluster alive while idling
-    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
+    /// (no jobs running). After this TTL, the cluster will be deleted. Valid range: [300s, 1209600s].
     /// </summary>
     [JsonPropertyName("idleDeleteTtl")]
     public string? IdleDeleteTtl { get; set; }
@@ -3542,6 +3798,13 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigLifecycleConfig
     /// </summary>
     [JsonPropertyName("idleStartTime")]
     public string? IdleStartTime { get; set; }
+
+    /// <summary>
+    /// The duration to keep the cluster alive while idling
+    /// (no jobs running). After this TTL, the cluster will be stopped. Valid range: [10m, 14d].
+    /// </summary>
+    [JsonPropertyName("idleStopTtl")]
+    public string? IdleStopTtl { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3562,6 +3825,14 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -3596,6 +3867,44 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionResults
+{
+    /// <summary>The name of a Compute Engine machine type.</summary>
+    [JsonPropertyName("machineType")]
+    public string? MachineType { get; set; }
+
+    [JsonPropertyName("vmCount")]
+    public double? VmCount { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+
+    [JsonPropertyName("instanceSelectionResults")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionResults>? InstanceSelectionResults { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the master instances
 /// in a cluster. Structure defined below.
@@ -3618,6 +3927,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// List of worker instance names which have been assigned
@@ -3669,6 +3982,14 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMetastoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -3999,6 +4320,14 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
     /// <summary>
     /// Size of the primary disk attached to each node, specified
     /// in GB. The primary disk contains the boot volume and system libraries, and the
@@ -4033,6 +4362,44 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
+{
+    /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
+    [JsonPropertyName("machineTypes")]
+    public IList<string>? MachineTypes { get; set; }
+
+    /// <summary>Preference of this instance selection. A lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults
+{
+    /// <summary>The name of a Compute Engine machine type.</summary>
+    [JsonPropertyName("machineType")]
+    public string? MachineType { get; set; }
+
+    [JsonPropertyName("vmCount")]
+    public double? VmCount { get; set; }
+}
+
+/// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy
+{
+    /// <summary>List of instance selection options that the group will use when creating new VMs.</summary>
+    [JsonPropertyName("instanceSelectionList")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList>? InstanceSelectionList { get; set; }
+
+    [JsonPropertyName("instanceSelectionResults")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults>? InstanceSelectionResults { get; set; }
+}
+
 /// <summary>
 /// The Google Compute Engine config settings for the worker instances
 /// in a cluster. Structure defined below.
@@ -4055,6 +4422,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfig
     /// </summary>
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
+
+    /// <summary>Instance flexibility Policy allowing a mixture of VM shapes.</summary>
+    [JsonPropertyName("instanceFlexibilityPolicy")]
+    public V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicy? InstanceFlexibilityPolicy { get; set; }
 
     /// <summary>
     /// List of worker instance names which have been assigned
@@ -4133,6 +4504,9 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfig
     [JsonPropertyName("clusterTier")]
     public string? ClusterTier { get; set; }
 
+    [JsonPropertyName("clusterType")]
+    public string? ClusterType { get; set; }
+
     /// <summary>
     /// The Compute Engine accelerator (GPU) configuration for these instances. Can be specified multiple times.
     /// Structure defined below.
@@ -4153,6 +4527,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfig
     /// </summary>
     [JsonPropertyName("endpointConfig")]
     public V1beta1ClusterStatusAtProviderClusterConfigEndpointConfig? EndpointConfig { get; set; }
+
+    /// <summary>The cluster engine.</summary>
+    [JsonPropertyName("engine")]
+    public string? Engine { get; set; }
 
     /// <summary>
     /// Common config settings for resources of Google Compute Engine cluster
@@ -4500,6 +4878,13 @@ public partial class V1beta1ClusterStatusAtProvider
     public V1beta1ClusterStatusAtProviderClusterConfig? ClusterConfig { get; set; }
 
     /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// (Computed) The list of labels (key/value pairs) to be applied to
     /// instances in the cluster. GCP generates some itself including goog-dataproc-cluster-name
     /// which is the name of the cluster.
@@ -4613,6 +4998,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

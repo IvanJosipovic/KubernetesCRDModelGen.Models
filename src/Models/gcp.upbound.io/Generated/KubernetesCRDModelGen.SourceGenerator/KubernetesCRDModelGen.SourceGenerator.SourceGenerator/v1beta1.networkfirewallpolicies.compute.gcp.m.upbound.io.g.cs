@@ -45,6 +45,15 @@ public partial class V1beta1NetworkFirewallPolicySpecForProvider
     public string? Description { get; set; }
 
     /// <summary>
+    /// Policy type is used to determine which resources (networks) the policy can be associated with.
+    /// A policy can be associated with a network only if the network has the matching policyType in its network profile.
+    /// Different policy types may support some of the Firewall Rules features.
+    /// Possible values are: VPC_POLICY.
+    /// </summary>
+    [JsonPropertyName("policyType")]
+    public string? PolicyType { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -71,6 +80,15 @@ public partial class V1beta1NetworkFirewallPolicySpecInitProvider
     /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Policy type is used to determine which resources (networks) the policy can be associated with.
+    /// A policy can be associated with a network only if the network has the matching policyType in its network profile.
+    /// Different policy types may support some of the Firewall Rules features.
+    /// Possible values are: VPC_POLICY.
+    /// </summary>
+    [JsonPropertyName("policyType")]
+    public string? PolicyType { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -195,6 +213,13 @@ public partial class V1beta1NetworkFirewallPolicyStatusAtProvider
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -210,6 +235,15 @@ public partial class V1beta1NetworkFirewallPolicyStatusAtProvider
     /// <summary>The unique identifier for the resource. This identifier is defined by the server.</summary>
     [JsonPropertyName("networkFirewallPolicyId")]
     public string? NetworkFirewallPolicyId { get; set; }
+
+    /// <summary>
+    /// Policy type is used to determine which resources (networks) the policy can be associated with.
+    /// A policy can be associated with a network only if the network has the matching policyType in its network profile.
+    /// Different policy types may support some of the Firewall Rules features.
+    /// Possible values are: VPC_POLICY.
+    /// </summary>
+    [JsonPropertyName("policyType")]
+    public string? PolicyType { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -285,6 +319,15 @@ public partial class V1beta1NetworkFirewallPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkFirewallPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

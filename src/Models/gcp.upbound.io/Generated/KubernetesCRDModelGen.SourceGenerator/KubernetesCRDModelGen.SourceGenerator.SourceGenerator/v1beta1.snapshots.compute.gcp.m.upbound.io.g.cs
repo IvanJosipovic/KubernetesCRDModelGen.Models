@@ -37,6 +37,23 @@ public partial class V1beta1SnapshotList : IKubernetesObject<V1ListMeta>, IItems
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SnapshotSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the snapshot. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Specifies a 256-bit customer-supplied encryption key, encoded in
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
@@ -370,6 +387,13 @@ public partial class V1beta1SnapshotSpecForProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1SnapshotSpecForProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -392,6 +416,13 @@ public partial class V1beta1SnapshotSpecForProvider
     [JsonPropertyName("snapshotEncryptionKey")]
     public V1beta1SnapshotSpecForProviderSnapshotEncryptionKey? SnapshotEncryptionKey { get; set; }
 
+    /// <summary>
+    /// Indicates the type of the snapshot.
+    /// Possible values are: ARCHIVE, STANDARD.
+    /// </summary>
+    [JsonPropertyName("snapshotType")]
+    public string? SnapshotType { get; set; }
+
     /// <summary>A reference to the disk used to create this snapshot.</summary>
     [JsonPropertyName("sourceDisk")]
     public string? SourceDisk { get; set; }
@@ -413,6 +444,10 @@ public partial class V1beta1SnapshotSpecForProvider
     [JsonPropertyName("sourceDiskSelector")]
     public V1beta1SnapshotSpecForProviderSourceDiskSelector? SourceDiskSelector { get; set; }
 
+    /// <summary>A reference to the instant snapshot used to create this snapshot.</summary>
+    [JsonPropertyName("sourceInstantSnapshot")]
+    public string? SourceInstantSnapshot { get; set; }
+
     /// <summary>Cloud Storage bucket storage location of the snapshot (regional or multi-regional).</summary>
     [JsonPropertyName("storageLocations")]
     public IList<string>? StorageLocations { get; set; }
@@ -420,6 +455,23 @@ public partial class V1beta1SnapshotSpecForProvider
     /// <summary>A reference to the zone where the disk is hosted.</summary>
     [JsonPropertyName("zone")]
     public string? Zone { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SnapshotSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the snapshot. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -768,6 +820,13 @@ public partial class V1beta1SnapshotSpecInitProvider
     public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1SnapshotSpecInitProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -790,6 +849,13 @@ public partial class V1beta1SnapshotSpecInitProvider
     [JsonPropertyName("snapshotEncryptionKey")]
     public V1beta1SnapshotSpecInitProviderSnapshotEncryptionKey? SnapshotEncryptionKey { get; set; }
 
+    /// <summary>
+    /// Indicates the type of the snapshot.
+    /// Possible values are: ARCHIVE, STANDARD.
+    /// </summary>
+    [JsonPropertyName("snapshotType")]
+    public string? SnapshotType { get; set; }
+
     /// <summary>A reference to the disk used to create this snapshot.</summary>
     [JsonPropertyName("sourceDisk")]
     public string? SourceDisk { get; set; }
@@ -810,6 +876,10 @@ public partial class V1beta1SnapshotSpecInitProvider
     /// <summary>Selector for a Disk in compute to populate sourceDisk.</summary>
     [JsonPropertyName("sourceDiskSelector")]
     public V1beta1SnapshotSpecInitProviderSourceDiskSelector? SourceDiskSelector { get; set; }
+
+    /// <summary>A reference to the instant snapshot used to create this snapshot.</summary>
+    [JsonPropertyName("sourceInstantSnapshot")]
+    public string? SourceInstantSnapshot { get; set; }
 
     /// <summary>Cloud Storage bucket storage location of the snapshot (regional or multi-regional).</summary>
     [JsonPropertyName("storageLocations")]
@@ -928,6 +998,23 @@ public partial class V1beta1SnapshotSpec
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SnapshotStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the snapshot. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Encrypts the snapshot using a customer-supplied encryption key.
 /// After you encrypt a snapshot using a customer-supplied key, you must
 /// provide the same key if you use the snapshot later. For example, you
@@ -1005,6 +1092,13 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1045,6 +1139,13 @@ public partial class V1beta1SnapshotStatusAtProvider
     public IList<string>? Licenses { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1SnapshotStatusAtProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -1075,6 +1176,13 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("snapshotId")]
     public double? SnapshotId { get; set; }
 
+    /// <summary>
+    /// Indicates the type of the snapshot.
+    /// Possible values are: ARCHIVE, STANDARD.
+    /// </summary>
+    [JsonPropertyName("snapshotType")]
+    public string? SnapshotType { get; set; }
+
     /// <summary>A reference to the disk used to create this snapshot.</summary>
     [JsonPropertyName("sourceDisk")]
     public string? SourceDisk { get; set; }
@@ -1087,6 +1195,10 @@ public partial class V1beta1SnapshotStatusAtProvider
     /// </summary>
     [JsonPropertyName("sourceDiskEncryptionKey")]
     public V1beta1SnapshotStatusAtProviderSourceDiskEncryptionKey? SourceDiskEncryptionKey { get; set; }
+
+    /// <summary>A reference to the instant snapshot used to create this snapshot.</summary>
+    [JsonPropertyName("sourceInstantSnapshot")]
+    public string? SourceInstantSnapshot { get; set; }
 
     /// <summary>
     /// A size of the storage used by the snapshot. As snapshots share
@@ -1166,6 +1278,15 @@ public partial class V1beta1SnapshotStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SnapshotStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

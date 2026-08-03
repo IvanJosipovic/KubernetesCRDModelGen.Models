@@ -763,6 +763,13 @@ public partial class V1beta1RegionNetworkFirewallPolicyAssociationStatusAtProvid
     [JsonPropertyName("attachmentTarget")]
     public string? AttachmentTarget { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>The firewall policy of the resource.</summary>
     [JsonPropertyName("firewallPolicy")]
     public string? FirewallPolicy { get; set; }
@@ -841,6 +848,15 @@ public partial class V1beta1RegionNetworkFirewallPolicyAssociationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionNetworkFirewallPolicyAssociationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

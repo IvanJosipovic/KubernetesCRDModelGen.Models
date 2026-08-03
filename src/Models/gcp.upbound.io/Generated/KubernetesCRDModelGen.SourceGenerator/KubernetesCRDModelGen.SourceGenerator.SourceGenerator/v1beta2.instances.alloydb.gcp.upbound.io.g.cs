@@ -239,6 +239,31 @@ public partial class V1beta2InstanceSpecForProviderClusterSelector
 }
 
 /// <summary>
+/// Configuration for Managed Connection Pool.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderConnectionPoolConfig
+{
+    /// <summary>Whether to enabled Managed Connection Pool.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>
+    /// Flags for configuring managed connection pooling when it is enabled.
+    /// These flags will only be set if connection_pool_config.enabled is
+    /// true.
+    /// Please see
+    /// https://cloud.google.com/alloydb/docs/configure-managed-connection-pooling#configuration-options
+    /// for a comprehensive list of flags that can be set. For example,
+    /// &quot;connection-pooling-pool-mode&quot; would be &quot;pool_mode&quot;.
+    /// </summary>
+    [JsonPropertyName("flags")]
+    public IDictionary<string, string>? Flags { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -618,6 +643,13 @@ public partial class V1beta2InstanceSpecForProvider
     [JsonPropertyName("clusterSelector")]
     public V1beta2InstanceSpecForProviderClusterSelector? ClusterSelector { get; set; }
 
+    /// <summary>
+    /// Configuration for Managed Connection Pool.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionPoolConfig")]
+    public V1beta2InstanceSpecForProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
+
     /// <summary>Database flags. Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.</summary>
     [JsonPropertyName("databaseFlags")]
     public IDictionary<string, string>? DatabaseFlags { get; set; }
@@ -727,6 +759,31 @@ public partial class V1beta2InstanceSpecInitProviderClientConnectionConfig
     /// </summary>
     [JsonPropertyName("sslConfig")]
     public V1beta2InstanceSpecInitProviderClientConnectionConfigSslConfig? SslConfig { get; set; }
+}
+
+/// <summary>
+/// Configuration for Managed Connection Pool.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderConnectionPoolConfig
+{
+    /// <summary>Whether to enabled Managed Connection Pool.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>
+    /// Flags for configuring managed connection pooling when it is enabled.
+    /// These flags will only be set if connection_pool_config.enabled is
+    /// true.
+    /// Please see
+    /// https://cloud.google.com/alloydb/docs/configure-managed-connection-pooling#configuration-options
+    /// for a comprehensive list of flags that can be set. For example,
+    /// &quot;connection-pooling-pool-mode&quot; would be &quot;pool_mode&quot;.
+    /// </summary>
+    [JsonPropertyName("flags")]
+    public IDictionary<string, string>? Flags { get; set; }
 }
 
 /// <summary>
@@ -1106,6 +1163,13 @@ public partial class V1beta2InstanceSpecInitProvider
     [JsonPropertyName("clientConnectionConfig")]
     public V1beta2InstanceSpecInitProviderClientConnectionConfig? ClientConnectionConfig { get; set; }
 
+    /// <summary>
+    /// Configuration for Managed Connection Pool.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionPoolConfig")]
+    public V1beta2InstanceSpecInitProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
+
     /// <summary>Database flags. Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.</summary>
     [JsonPropertyName("databaseFlags")]
     public IDictionary<string, string>? DatabaseFlags { get; set; }
@@ -1401,6 +1465,38 @@ public partial class V1beta2InstanceStatusAtProviderClientConnectionConfig
 }
 
 /// <summary>
+/// Configuration for Managed Connection Pool.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderConnectionPoolConfig
+{
+    /// <summary>Whether to enabled Managed Connection Pool.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>
+    /// Flags for configuring managed connection pooling when it is enabled.
+    /// These flags will only be set if connection_pool_config.enabled is
+    /// true.
+    /// Please see
+    /// https://cloud.google.com/alloydb/docs/configure-managed-connection-pooling#configuration-options
+    /// for a comprehensive list of flags that can be set. For example,
+    /// &quot;connection-pooling-pool-mode&quot; would be &quot;pool_mode&quot;.
+    /// </summary>
+    [JsonPropertyName("flags")]
+    public IDictionary<string, string>? Flags { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The number of running poolers per instance.
+    /// </summary>
+    [JsonPropertyName("poolerCount")]
+    public double? PoolerCount { get; set; }
+}
+
+/// <summary>
 /// Configurations for the machines that host the underlying database engine.
 /// Structure is documented below.
 /// </summary>
@@ -1663,6 +1759,13 @@ public partial class V1beta2InstanceStatusAtProvider
     [JsonPropertyName("cluster")]
     public string? Cluster { get; set; }
 
+    /// <summary>
+    /// Configuration for Managed Connection Pool.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionPoolConfig")]
+    public V1beta2InstanceStatusAtProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
+
     /// <summary>Time the Instance was created in UTC.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
@@ -1670,6 +1773,13 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>Database flags. Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.</summary>
     [JsonPropertyName("databaseFlags")]
     public IDictionary<string, string>? DatabaseFlags { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>User-settable and human-readable display name for the Instance.</summary>
     [JsonPropertyName("displayName")]
@@ -1845,6 +1955,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

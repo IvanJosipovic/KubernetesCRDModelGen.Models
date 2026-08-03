@@ -721,6 +721,102 @@ public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HttpGet specifies the http request to perform.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbeHttpGet
+{
+    /// <summary>Path exported by the NFS server</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after
+    /// having succeeded. Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HttpGet specifies the http request to perform.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1. Maximum value is 240.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1. Maximum value is 3600.
+    /// Must be smaller than periodSeconds.
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resources required by this container. Used to set values such as max memory
 /// Structure is documented below.
 /// </summary>
@@ -730,8 +826,7 @@ public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersResource
 {
     /// <summary>
     /// Limits describes the maximum amount of compute resources allowed.
-    /// The values of the map is string form of the &apos;quantity&apos; k8s type:
-    /// https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
+    /// CPU Limit details:
     /// </summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
@@ -903,6 +998,10 @@ public partial class V1beta1ServiceSpecForProviderTemplateSpecContainersVolumeMo
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -965,6 +1064,13 @@ public partial class V1beta1ServiceSpecForProviderTemplateSpecContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public IList<V1beta1ServiceSpecForProviderTemplateSpecContainersPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta1ServiceSpecForProviderTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resources required by this container. Used to set values such as max memory
@@ -2192,6 +2298,102 @@ public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HttpGet specifies the http request to perform.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbeHttpGet
+{
+    /// <summary>Path exported by the NFS server</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after
+    /// having succeeded. Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HttpGet specifies the http request to perform.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1. Maximum value is 240.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1. Maximum value is 3600.
+    /// Must be smaller than periodSeconds.
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resources required by this container. Used to set values such as max memory
 /// Structure is documented below.
 /// </summary>
@@ -2201,8 +2403,7 @@ public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersResourc
 {
     /// <summary>
     /// Limits describes the maximum amount of compute resources allowed.
-    /// The values of the map is string form of the &apos;quantity&apos; k8s type:
-    /// https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
+    /// CPU Limit details:
     /// </summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
@@ -2374,6 +2575,10 @@ public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainersVolumeM
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2436,6 +2641,13 @@ public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public IList<V1beta1ServiceSpecInitProviderTemplateSpecContainersPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta1ServiceSpecInitProviderTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resources required by this container. Used to set values such as max memory
@@ -3659,6 +3871,102 @@ public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HttpGet specifies the http request to perform.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbeHttpGet
+{
+    /// <summary>Path exported by the NFS server</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Number must be in the range 1 to 65535.
+    /// If not specified, defaults to the same value as container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after
+    /// having succeeded. Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HttpGet specifies the http request to perform.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1. Maximum value is 240.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1. Maximum value is 3600.
+    /// Must be smaller than periodSeconds.
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resources required by this container. Used to set values such as max memory
 /// Structure is documented below.
 /// </summary>
@@ -3668,8 +3976,7 @@ public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersResourc
 {
     /// <summary>
     /// Limits describes the maximum amount of compute resources allowed.
-    /// The values of the map is string form of the &apos;quantity&apos; k8s type:
-    /// https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
+    /// CPU Limit details:
     /// </summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
@@ -3841,6 +4148,10 @@ public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainersVolumeM
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3903,6 +4214,13 @@ public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public IList<V1beta1ServiceStatusAtProviderTemplateSpecContainersPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta1ServiceStatusAtProviderTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resources required by this container. Used to set values such as max memory
@@ -4258,6 +4576,13 @@ public partial class V1beta1ServiceStatusAtProvider
     [JsonPropertyName("autogenerateRevisionName")]
     public bool? AutogenerateRevisionName { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>an identifier for the resource with format locations/{{location}}/namespaces/{{project}}/services/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -4366,6 +4691,15 @@ public partial class V1beta1ServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

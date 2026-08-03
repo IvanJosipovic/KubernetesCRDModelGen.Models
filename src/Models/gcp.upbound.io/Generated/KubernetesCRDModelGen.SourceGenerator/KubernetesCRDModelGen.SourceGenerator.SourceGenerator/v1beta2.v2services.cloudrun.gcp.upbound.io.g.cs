@@ -77,153 +77,6 @@ public partial class V1beta2V2ServiceSpecForProviderBinaryAuthorization
 }
 
 /// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum>))]
-public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum>))]
-public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum>))]
-public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum>))]
-public enum V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelectorPolicy? Policy { get; set; }
-}
-
-/// <summary>
 /// Configuration for building a Cloud Run function.
 /// Structure is documented below.
 /// </summary>
@@ -255,14 +108,6 @@ public partial class V1beta2V2ServiceSpecForProviderBuildConfig
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-    [JsonPropertyName("serviceAccountRef")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountRef? ServiceAccountRef { get; set; }
-
-    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-    [JsonPropertyName("serviceAccountSelector")]
-    public V1beta2V2ServiceSpecForProviderBuildConfigServiceAccountSelector? ServiceAccountSelector { get; set; }
-
     /// <summary>The Cloud Storage bucket URI where the function source code is located.</summary>
     [JsonPropertyName("sourceLocation")]
     public string? SourceLocation { get; set; }
@@ -270,6 +115,19 @@ public partial class V1beta2V2ServiceSpecForProviderBuildConfig
     /// <summary>Name of the Cloud Build Custom Worker Pool that should be used to build the Cloud Run function. The format of this field is projects/{project}/locations/{region}/workerPools/{workerPool} where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.</summary>
     [JsonPropertyName("workerPool")]
     public string? WorkerPool { get; set; }
+}
+
+/// <summary>
+/// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderMultiRegionSettings
+{
+    /// <summary>The list of regions to deploy the multi-region Service.</summary>
+    [JsonPropertyName("regions")]
+    public IList<string>? Regions { get; set; }
 }
 
 /// <summary>
@@ -283,6 +141,13 @@ public partial class V1beta2V2ServiceSpecForProviderScaling
     /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
     [JsonPropertyName("manualInstanceCount")]
     public double? ManualInstanceCount { get; set; }
+
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
 
     /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
@@ -655,6 +520,94 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbeHttpGet
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
@@ -669,7 +622,7 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainersResources
     [JsonPropertyName("cpuIdle")]
     public bool? CpuIdle { get; set; }
 
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos; and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
@@ -818,6 +771,10 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainersVolumeMoun
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -869,6 +826,13 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public V1beta2V2ServiceSpecForProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta2V2ServiceSpecForProviderTemplateContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -1108,7 +1072,7 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -1273,7 +1237,7 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcs
 {
-    /// <summary>GCS Bucket name</summary>
+    /// <summary>The Cloud Storage bucket name.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1284,6 +1248,13 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateVolumesGcs
     /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
     [JsonPropertyName("bucketSelector")]
     public V1beta2V2ServiceSpecForProviderTemplateVolumesGcsBucketSelector? BucketSelector { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount the NFS volume as read only</summary>
     [JsonPropertyName("readOnly")]
@@ -1645,9 +1616,13 @@ public partial class V1beta2V2ServiceSpecForProviderTemplate
     [JsonPropertyName("gpuZonalRedundancyDisabled")]
     public bool? GpuZonalRedundancyDisabled { get; set; }
 
+    /// <summary>Disables health checking containers during deployment.</summary>
+    [JsonPropertyName("healthCheckDisabled")]
+    public bool? HealthCheckDisabled { get; set; }
+
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
-    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
     /// </summary>
@@ -1777,6 +1752,10 @@ public partial class V1beta2V2ServiceSpecForProvider
     [JsonPropertyName("customAudiences")]
     public IList<string>? CustomAudiences { get; set; }
 
+    /// <summary>Disables public resolution of the default URI of this service.</summary>
+    [JsonPropertyName("defaultUriDisabled")]
+    public bool? DefaultUriDisabled { get; set; }
+
     /// <summary>
     /// Defaults to true.
     /// When the field is set to false, deleting the service is allowed.
@@ -1787,6 +1766,10 @@ public partial class V1beta2V2ServiceSpecForProvider
     /// <summary>User-provided description of the Service. This field currently has a 512-character limit.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Used to enable/disable IAP for the cloud-run service.</summary>
+    [JsonPropertyName("iapEnabled")]
+    public bool? IapEnabled { get; set; }
 
     /// <summary>
     /// Provides the ingress settings for this Service. On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
@@ -1801,7 +1784,7 @@ public partial class V1beta2V2ServiceSpecForProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Service.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -1822,6 +1805,13 @@ public partial class V1beta2V2ServiceSpecForProvider
     /// <summary>The location of the cloud run service</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
+
+    /// <summary>
+    /// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("multiRegionSettings")]
+    public V1beta2V2ServiceSpecForProviderMultiRegionSettings? MultiRegionSettings { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -1874,153 +1864,6 @@ public partial class V1beta2V2ServiceSpecInitProviderBinaryAuthorization
 }
 
 /// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum>))]
-public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum>))]
-public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum>))]
-public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum>))]
-public enum V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelectorPolicy? Policy { get; set; }
-}
-
-/// <summary>
 /// Configuration for building a Cloud Run function.
 /// Structure is documented below.
 /// </summary>
@@ -2052,14 +1895,6 @@ public partial class V1beta2V2ServiceSpecInitProviderBuildConfig
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-    [JsonPropertyName("serviceAccountRef")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountRef? ServiceAccountRef { get; set; }
-
-    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-    [JsonPropertyName("serviceAccountSelector")]
-    public V1beta2V2ServiceSpecInitProviderBuildConfigServiceAccountSelector? ServiceAccountSelector { get; set; }
-
     /// <summary>The Cloud Storage bucket URI where the function source code is located.</summary>
     [JsonPropertyName("sourceLocation")]
     public string? SourceLocation { get; set; }
@@ -2067,6 +1902,19 @@ public partial class V1beta2V2ServiceSpecInitProviderBuildConfig
     /// <summary>Name of the Cloud Build Custom Worker Pool that should be used to build the Cloud Run function. The format of this field is projects/{project}/locations/{region}/workerPools/{workerPool} where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.</summary>
     [JsonPropertyName("workerPool")]
     public string? WorkerPool { get; set; }
+}
+
+/// <summary>
+/// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderMultiRegionSettings
+{
+    /// <summary>The list of regions to deploy the multi-region Service.</summary>
+    [JsonPropertyName("regions")]
+    public IList<string>? Regions { get; set; }
 }
 
 /// <summary>
@@ -2080,6 +1928,13 @@ public partial class V1beta2V2ServiceSpecInitProviderScaling
     /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
     [JsonPropertyName("manualInstanceCount")]
     public double? ManualInstanceCount { get; set; }
+
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
 
     /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
@@ -2452,6 +2307,94 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbeHttpGet
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
@@ -2466,7 +2409,7 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersResources
     [JsonPropertyName("cpuIdle")]
     public bool? CpuIdle { get; set; }
 
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos; and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
@@ -2615,6 +2558,10 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersVolumeMou
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2666,6 +2613,13 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public V1beta2V2ServiceSpecInitProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta2V2ServiceSpecInitProviderTemplateContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -2905,7 +2859,7 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -3070,7 +3024,7 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcs
 {
-    /// <summary>GCS Bucket name</summary>
+    /// <summary>The Cloud Storage bucket name.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -3081,6 +3035,13 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateVolumesGcs
     /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
     [JsonPropertyName("bucketSelector")]
     public V1beta2V2ServiceSpecInitProviderTemplateVolumesGcsBucketSelector? BucketSelector { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount the NFS volume as read only</summary>
     [JsonPropertyName("readOnly")]
@@ -3442,9 +3403,13 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplate
     [JsonPropertyName("gpuZonalRedundancyDisabled")]
     public bool? GpuZonalRedundancyDisabled { get; set; }
 
+    /// <summary>Disables health checking containers during deployment.</summary>
+    [JsonPropertyName("healthCheckDisabled")]
+    public bool? HealthCheckDisabled { get; set; }
+
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
-    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
     /// </summary>
@@ -3586,6 +3551,10 @@ public partial class V1beta2V2ServiceSpecInitProvider
     [JsonPropertyName("customAudiences")]
     public IList<string>? CustomAudiences { get; set; }
 
+    /// <summary>Disables public resolution of the default URI of this service.</summary>
+    [JsonPropertyName("defaultUriDisabled")]
+    public bool? DefaultUriDisabled { get; set; }
+
     /// <summary>
     /// Defaults to true.
     /// When the field is set to false, deleting the service is allowed.
@@ -3596,6 +3565,10 @@ public partial class V1beta2V2ServiceSpecInitProvider
     /// <summary>User-provided description of the Service. This field currently has a 512-character limit.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Used to enable/disable IAP for the cloud-run service.</summary>
+    [JsonPropertyName("iapEnabled")]
+    public bool? IapEnabled { get; set; }
 
     /// <summary>
     /// Provides the ingress settings for this Service. On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
@@ -3610,7 +3583,7 @@ public partial class V1beta2V2ServiceSpecInitProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Service.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -3627,6 +3600,13 @@ public partial class V1beta2V2ServiceSpecInitProvider
     /// </summary>
     [JsonPropertyName("launchStage")]
     public string? LaunchStage { get; set; }
+
+    /// <summary>
+    /// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("multiRegionSettings")]
+    public V1beta2V2ServiceSpecInitProviderMultiRegionSettings? MultiRegionSettings { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -3972,6 +3952,26 @@ public partial class V1beta2V2ServiceStatusAtProviderConditions
 }
 
 /// <summary>
+/// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderMultiRegionSettings
+{
+    /// <summary>
+    /// (Output)
+    /// System-generated unique id for the multi-region Service.
+    /// </summary>
+    [JsonPropertyName("multiRegionId")]
+    public string? MultiRegionId { get; set; }
+
+    /// <summary>The list of regions to deploy the multi-region Service.</summary>
+    [JsonPropertyName("regions")]
+    public IList<string>? Regions { get; set; }
+}
+
+/// <summary>
 /// Scaling settings that apply to the whole service
 /// Structure is documented below.
 /// </summary>
@@ -3982,6 +3982,13 @@ public partial class V1beta2V2ServiceStatusAtProviderScaling
     /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
     [JsonPropertyName("manualInstanceCount")]
     public double? ManualInstanceCount { get; set; }
+
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
+    [JsonPropertyName("maxInstanceCount")]
+    public double? MaxInstanceCount { get; set; }
 
     /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
@@ -4218,6 +4225,94 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersPorts
 }
 
 /// <summary>
+/// GRPC specifies an action involving a GRPC port.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbeGrpc
+{
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>
+    /// The name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
+/// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbeHttpGet
+{
+    /// <summary>Path that is exported by the NFS server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Port number to access on the container. Must be in the range 1 to 65535.
+    /// If not specified, defaults to the exposed port of the container, which
+    /// is the value of container.ports[0].containerPort.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container readiness.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbe
+{
+    /// <summary>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</summary>
+    [JsonPropertyName("failureThreshold")]
+    public double? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// GRPC specifies an action involving a GRPC port.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("grpc")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>
+    /// HTTPGet specifies the http request to perform. Exactly one of HTTPGet or TCPSocket must be specified.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("httpGet")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds</summary>
+    [JsonPropertyName("periodSeconds")]
+    public double? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 2.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public double? SuccessThreshold { get; set; }
+
+    /// <summary>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public double? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
@@ -4232,7 +4327,7 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersResources
     [JsonPropertyName("cpuIdle")]
     public bool? CpuIdle { get; set; }
 
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos; and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
@@ -4381,6 +4476,10 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersVolumeMou
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -4440,6 +4539,13 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
     /// </summary>
     [JsonPropertyName("ports")]
     public V1beta2V2ServiceStatusAtProviderTemplateContainersPorts? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container readiness.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1beta2V2ServiceStatusAtProviderTemplateContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -4524,7 +4630,7 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -4542,9 +4648,16 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesEmptyDir
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceStatusAtProviderTemplateVolumesGcs
 {
-    /// <summary>GCS Bucket name</summary>
+    /// <summary>The Cloud Storage bucket name.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount the NFS volume as read only</summary>
     [JsonPropertyName("readOnly")]
@@ -4751,9 +4864,13 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplate
     [JsonPropertyName("gpuZonalRedundancyDisabled")]
     public bool? GpuZonalRedundancyDisabled { get; set; }
 
+    /// <summary>Disables health checking containers during deployment.</summary>
+    [JsonPropertyName("healthCheckDisabled")]
+    public bool? HealthCheckDisabled { get; set; }
+
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
-    /// For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
     /// </summary>
@@ -4999,9 +5116,20 @@ public partial class V1beta2V2ServiceStatusAtProvider
     [JsonPropertyName("customAudiences")]
     public IList<string>? CustomAudiences { get; set; }
 
+    /// <summary>Disables public resolution of the default URI of this service.</summary>
+    [JsonPropertyName("defaultUriDisabled")]
+    public bool? DefaultUriDisabled { get; set; }
+
     /// <summary>The deletion time.</summary>
     [JsonPropertyName("deleteTime")]
     public string? DeleteTime { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// Defaults to true.
@@ -5032,6 +5160,10 @@ public partial class V1beta2V2ServiceStatusAtProvider
     [JsonPropertyName("generation")]
     public string? Generation { get; set; }
 
+    /// <summary>Used to enable/disable IAP for the cloud-run service.</summary>
+    [JsonPropertyName("iapEnabled")]
+    public bool? IapEnabled { get; set; }
+
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/services/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -5049,7 +5181,7 @@ public partial class V1beta2V2ServiceStatusAtProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with  run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Service.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -5082,6 +5214,13 @@ public partial class V1beta2V2ServiceStatusAtProvider
     /// <summary>The location of the cloud run service</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>
+    /// Settings for creating a Multi-Region Service. Make sure to use region = &apos;global&apos; when using them. For more information, visit https://cloud.google.com/run/docs/multiple-regions#deploy
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("multiRegionSettings")]
+    public V1beta2V2ServiceStatusAtProviderMultiRegionSettings? MultiRegionSettings { get; set; }
 
     /// <summary>The generation of this Service currently serving traffic. See comments in reconciling for additional information on reconciliation process in Cloud Run. Please note that unlike v1, this is an int64 value. As with most Google APIs, its JSON representation will be a string instead of an integer.</summary>
     [JsonPropertyName("observedGeneration")]
@@ -5216,6 +5355,15 @@ public partial class V1beta2V2ServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2V2ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

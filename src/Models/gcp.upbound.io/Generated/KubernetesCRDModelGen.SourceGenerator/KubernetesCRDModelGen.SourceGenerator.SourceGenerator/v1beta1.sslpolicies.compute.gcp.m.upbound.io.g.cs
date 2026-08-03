@@ -60,12 +60,27 @@ public partial class V1beta1SSLPolicySpecForProvider
 
     /// <summary>
     /// The minimum version of SSL protocol that can be used by the clients
-    /// to establish a connection with the load balancer.
+    /// to establish a connection with the load balancer. When set to TLS_1_3, the profile field must be set to RESTRICTED.
     /// Default value is TLS_1_0.
-    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2.
+    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2, TLS_1_3.
     /// </summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
+
+    /// <summary>
+    /// One of DEFAULT, ENABLED, or DEFERRED. Controls whether the load balancer
+    /// negotiates X25519MLKEM768 key exchange when clients advertise support for it.
+    /// When set to DEFAULT, or if no SSL Policy is attached to
+    /// the target proxy, the load balancer disallows X25519MLKEM768 key
+    /// exchange before October 2026, and allows it afterward. When set to
+    /// ENABLED, the load balancer allows X25519MLKEM768 key
+    /// exchange. When set to DEFERRED, the load balancer
+    /// disallows X25519MLKEM768 key exchange until October 2027, and allows
+    /// it afterward.
+    /// Possible values are: DEFAULT, ENABLED, DEFERRED.
+    /// </summary>
+    [JsonPropertyName("postQuantumKeyExchange")]
+    public string? PostQuantumKeyExchange { get; set; }
 
     /// <summary>
     /// Profile specifies the set of SSL features that can be used by the
@@ -75,8 +90,10 @@ public partial class V1beta1SSLPolicySpecForProvider
     /// See the official documentation
     /// for information on what cipher suites each profile provides. If
     /// CUSTOM is used, the custom_features attribute must be set.
+    /// If set to FIPS_202205, minTlsVersion must also be set to
+    /// TLS_1_2.
     /// Default value is COMPATIBLE.
-    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM.
+    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM, FIPS_202205.
     /// </summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
@@ -125,12 +142,27 @@ public partial class V1beta1SSLPolicySpecInitProvider
 
     /// <summary>
     /// The minimum version of SSL protocol that can be used by the clients
-    /// to establish a connection with the load balancer.
+    /// to establish a connection with the load balancer. When set to TLS_1_3, the profile field must be set to RESTRICTED.
     /// Default value is TLS_1_0.
-    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2.
+    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2, TLS_1_3.
     /// </summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
+
+    /// <summary>
+    /// One of DEFAULT, ENABLED, or DEFERRED. Controls whether the load balancer
+    /// negotiates X25519MLKEM768 key exchange when clients advertise support for it.
+    /// When set to DEFAULT, or if no SSL Policy is attached to
+    /// the target proxy, the load balancer disallows X25519MLKEM768 key
+    /// exchange before October 2026, and allows it afterward. When set to
+    /// ENABLED, the load balancer allows X25519MLKEM768 key
+    /// exchange. When set to DEFERRED, the load balancer
+    /// disallows X25519MLKEM768 key exchange until October 2027, and allows
+    /// it afterward.
+    /// Possible values are: DEFAULT, ENABLED, DEFERRED.
+    /// </summary>
+    [JsonPropertyName("postQuantumKeyExchange")]
+    public string? PostQuantumKeyExchange { get; set; }
 
     /// <summary>
     /// Profile specifies the set of SSL features that can be used by the
@@ -140,8 +172,10 @@ public partial class V1beta1SSLPolicySpecInitProvider
     /// See the official documentation
     /// for information on what cipher suites each profile provides. If
     /// CUSTOM is used, the custom_features attribute must be set.
+    /// If set to FIPS_202205, minTlsVersion must also be set to
+    /// TLS_1_2.
     /// Default value is COMPATIBLE.
-    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM.
+    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM, FIPS_202205.
     /// </summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
@@ -283,6 +317,13 @@ public partial class V1beta1SSLPolicyStatusAtProvider
     [JsonPropertyName("customFeatures")]
     public IList<string>? CustomFeatures { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -304,12 +345,27 @@ public partial class V1beta1SSLPolicyStatusAtProvider
 
     /// <summary>
     /// The minimum version of SSL protocol that can be used by the clients
-    /// to establish a connection with the load balancer.
+    /// to establish a connection with the load balancer. When set to TLS_1_3, the profile field must be set to RESTRICTED.
     /// Default value is TLS_1_0.
-    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2.
+    /// Possible values are: TLS_1_0, TLS_1_1, TLS_1_2, TLS_1_3.
     /// </summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
+
+    /// <summary>
+    /// One of DEFAULT, ENABLED, or DEFERRED. Controls whether the load balancer
+    /// negotiates X25519MLKEM768 key exchange when clients advertise support for it.
+    /// When set to DEFAULT, or if no SSL Policy is attached to
+    /// the target proxy, the load balancer disallows X25519MLKEM768 key
+    /// exchange before October 2026, and allows it afterward. When set to
+    /// ENABLED, the load balancer allows X25519MLKEM768 key
+    /// exchange. When set to DEFERRED, the load balancer
+    /// disallows X25519MLKEM768 key exchange until October 2027, and allows
+    /// it afterward.
+    /// Possible values are: DEFAULT, ENABLED, DEFERRED.
+    /// </summary>
+    [JsonPropertyName("postQuantumKeyExchange")]
+    public string? PostQuantumKeyExchange { get; set; }
 
     /// <summary>
     /// Profile specifies the set of SSL features that can be used by the
@@ -319,8 +375,10 @@ public partial class V1beta1SSLPolicyStatusAtProvider
     /// See the official documentation
     /// for information on what cipher suites each profile provides. If
     /// CUSTOM is used, the custom_features attribute must be set.
+    /// If set to FIPS_202205, minTlsVersion must also be set to
+    /// TLS_1_2.
     /// Default value is COMPATIBLE.
-    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM.
+    /// Possible values are: COMPATIBLE, MODERN, RESTRICTED, CUSTOM, FIPS_202205.
     /// </summary>
     [JsonPropertyName("profile")]
     public string? Profile { get; set; }
@@ -391,6 +449,15 @@ public partial class V1beta1SSLPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SSLPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -682,14 +682,19 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlMinu
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -1042,14 +1047,19 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
     public IList<V1beta1AlertPolicySpecForProviderConditionsConditionThresholdAggregations>? Aggregations { get; set; }
 
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -2038,14 +2048,19 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlMin
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -2398,14 +2413,19 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
     public IList<V1beta1AlertPolicySpecInitProviderConditionsConditionThresholdAggregations>? Aggregations { get; set; }
 
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -3513,14 +3533,19 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlMin
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -3873,14 +3898,19 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
     public IList<V1beta1AlertPolicyStatusAtProviderConditionsConditionThresholdAggregations>? Aggregations { get; set; }
 
     /// <summary>
-    /// The comparison to apply between the time
-    /// series (indicated by filter and aggregation)
-    /// and the threshold (indicated by
-    /// threshold_value). The comparison is applied
-    /// on each time series, with the time series on
-    /// the left-hand side and the threshold on the
-    /// right-hand side. Only COMPARISON_LT and
-    /// COMPARISON_GT are supported currently.
+    /// The comparison to apply between the time series
+    /// (indicated by filter and aggregation) and the
+    /// threshold (indicated by threshold_value). The
+    /// comparison is applied on each time series, with
+    /// the time series on the left-hand side and the
+    /// threshold on the right-hand side.
+    /// The Cloud Monitoring API only supports
+    /// COMPARISON_LT and COMPARISON_GT for SQL
+    /// row-count thresholds; the other values are kept
+    /// in the schema for backward compatibility with
+    /// imported state but will be rejected by the API.
+    /// See
+    /// https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.alertPolicies#MetricThreshold.
     /// Possible values are: COMPARISON_GT, COMPARISON_GE, COMPARISON_LT, COMPARISON_LE, COMPARISON_EQ, COMPARISON_NE.
     /// </summary>
     [JsonPropertyName("comparison")]
@@ -4201,6 +4231,13 @@ public partial class V1beta1AlertPolicyStatusAtProvider
     public IList<V1beta1AlertPolicyStatusAtProviderCreationRecord>? CreationRecord { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// A short name or phrase used to identify the policy in
     /// dashboards, notifications, and incidents. To avoid confusion, don&apos;t use
     /// the same display name for multiple policies in the same project. The
@@ -4328,6 +4365,15 @@ public partial class V1beta1AlertPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AlertPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -637,34 +637,44 @@ public partial class V1beta1JobSpecForProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -685,6 +695,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobSpecForProviderReplicationSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -799,6 +810,54 @@ public partial class V1beta1JobSpecForProviderSchedule
     public V1beta1JobSpecForProviderScheduleStartTimeOfDay? StartTimeOfDay { get; set; }
 }
 
+/// <summary>S3 compatible metadata. documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata
+{
+    /// <summary>Authentication and authorization method used by the storage service. When not specified, Transfer Service will attempt to determine right auth method to use.</summary>
+    [JsonPropertyName("authMethod")]
+    public string? AuthMethod { get; set; }
+
+    /// <summary>The Listing API to use for discovering objects. When not specified, Transfer Service will attempt to determine the right API to use.</summary>
+    [JsonPropertyName("listApi")]
+    public string? ListApi { get; set; }
+
+    /// <summary>The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>API request model used to call the storage service. When not specified, the default value of RequestModel REQUEST_MODEL_VIRTUAL_HOSTED_STYLE is used.</summary>
+    [JsonPropertyName("requestModel")]
+    public string? RequestModel { get; set; }
+}
+
+/// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecAwsS3CompatibleDataSource
+{
+    /// <summary>Google Cloud Storage bucket name.</summary>
+    [JsonPropertyName("bucketName")]
+    public string? BucketName { get; set; }
+
+    /// <summary>Endpoint of the storage service.</summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>Root directory path to the filesystem.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Specifies the region to sign requests with. This can be left blank if requests should be signed with an empty region.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>S3 compatible metadata. documented below.</summary>
+    [JsonPropertyName("s3Metadata")]
+    public V1beta1JobSpecForProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata? S3Metadata { get; set; }
+}
+
 /// <summary>AWS Key ID.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -862,6 +921,14 @@ public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSource
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
+    /// <summary>The CloudFront distribution domain name pointing to this bucket, to use when fetching. See Transfer from S3 via CloudFront for more information. Format: https://{id}.cloudfront.net or any valid custom domain. Must begin with https://.</summary>
+    [JsonPropertyName("cloudfrontDomain")]
+    public string? CloudfrontDomain { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
     /// <summary>Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.</summary>
     [JsonPropertyName("managedPrivateNetwork")]
     public bool? ManagedPrivateNetwork { get; set; }
@@ -893,7 +960,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
     public required string Namespace { get; set; }
 }
 
-/// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+/// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
@@ -903,18 +970,76 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
     public V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef? SasTokenSecretRef { get; set; }
 }
 
+/// <summary>The client (application) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The client (directory) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig
+{
+    /// <summary>The client (application) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
+
+    /// <summary>The client (directory) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("tenantIdSecretRef")]
+    public V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef? TenantIdSecretRef { get; set; }
+}
+
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSource
 {
-    /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+    /// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
     [JsonPropertyName("azureCredentials")]
     public V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials? AzureCredentials { get; set; }
 
     /// <summary>The container to transfer from the Azure Storage account.`</summary>
     [JsonPropertyName("container")]
     public string? Container { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
+    /// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+    [JsonPropertyName("federatedIdentityConfig")]
+    public V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig? FederatedIdentityConfig { get; set; }
 
     /// <summary>Root directory path to the filesystem.</summary>
     [JsonPropertyName("path")]
@@ -1333,34 +1458,54 @@ public partial class V1beta1JobSpecForProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTransferSpecTransferManifest
+{
+    /// <summary>The GCS URI to the manifest file (CSV or line-delimited). Example: gs://my-bucket/manifest.csv</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+}
+
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -1381,6 +1526,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobSpecForProviderTransferSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -1398,6 +1544,10 @@ public partial class V1beta1JobSpecForProviderTransferSpecTransferOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpec
 {
+    /// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+    [JsonPropertyName("awsS3CompatibleDataSource")]
+    public V1beta1JobSpecForProviderTransferSpecAwsS3CompatibleDataSource? AwsS3CompatibleDataSource { get; set; }
+
     /// <summary>An AWS S3 data source. Structure documented below.</summary>
     [JsonPropertyName("awsS3DataSource")]
     public V1beta1JobSpecForProviderTransferSpecAwsS3DataSource? AwsS3DataSource { get; set; }
@@ -1442,6 +1592,10 @@ public partial class V1beta1JobSpecForProviderTransferSpec
     [JsonPropertyName("sourceAgentPoolName")]
     public string? SourceAgentPoolName { get; set; }
 
+    /// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+    [JsonPropertyName("transferManifest")]
+    public V1beta1JobSpecForProviderTransferSpecTransferManifest? TransferManifest { get; set; }
+
     /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
     [JsonPropertyName("transferOptions")]
     public V1beta1JobSpecForProviderTransferSpecTransferOptions? TransferOptions { get; set; }
@@ -1485,6 +1639,10 @@ public partial class V1beta1JobSpecForProvider
     /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
     [JsonPropertyName("schedule")]
     public V1beta1JobSpecForProviderSchedule? Schedule { get; set; }
+
+    /// <summary>The user-managed service account to run the job. If this field is specified, the given service account is granted the necessary permissions to all applicable resources (e.g. GCS buckets) required by the job.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
 
     /// <summary>Status of the job. Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.</summary>
     [JsonPropertyName("status")]
@@ -2077,34 +2235,44 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -2125,6 +2293,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobSpecInitProviderReplicationSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -2239,6 +2408,54 @@ public partial class V1beta1JobSpecInitProviderSchedule
     public V1beta1JobSpecInitProviderScheduleStartTimeOfDay? StartTimeOfDay { get; set; }
 }
 
+/// <summary>S3 compatible metadata. documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata
+{
+    /// <summary>Authentication and authorization method used by the storage service. When not specified, Transfer Service will attempt to determine right auth method to use.</summary>
+    [JsonPropertyName("authMethod")]
+    public string? AuthMethod { get; set; }
+
+    /// <summary>The Listing API to use for discovering objects. When not specified, Transfer Service will attempt to determine the right API to use.</summary>
+    [JsonPropertyName("listApi")]
+    public string? ListApi { get; set; }
+
+    /// <summary>The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>API request model used to call the storage service. When not specified, the default value of RequestModel REQUEST_MODEL_VIRTUAL_HOSTED_STYLE is used.</summary>
+    [JsonPropertyName("requestModel")]
+    public string? RequestModel { get; set; }
+}
+
+/// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3CompatibleDataSource
+{
+    /// <summary>Google Cloud Storage bucket name.</summary>
+    [JsonPropertyName("bucketName")]
+    public string? BucketName { get; set; }
+
+    /// <summary>Endpoint of the storage service.</summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>Root directory path to the filesystem.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Specifies the region to sign requests with. This can be left blank if requests should be signed with an empty region.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>S3 compatible metadata. documented below.</summary>
+    [JsonPropertyName("s3Metadata")]
+    public V1beta1JobSpecInitProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata? S3Metadata { get; set; }
+}
+
 /// <summary>AWS Key ID.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2302,6 +2519,14 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSource
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
+    /// <summary>The CloudFront distribution domain name pointing to this bucket, to use when fetching. See Transfer from S3 via CloudFront for more information. Format: https://{id}.cloudfront.net or any valid custom domain. Must begin with https://.</summary>
+    [JsonPropertyName("cloudfrontDomain")]
+    public string? CloudfrontDomain { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
     /// <summary>Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.</summary>
     [JsonPropertyName("managedPrivateNetwork")]
     public bool? ManagedPrivateNetwork { get; set; }
@@ -2333,7 +2558,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
     public required string Namespace { get; set; }
 }
 
-/// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+/// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
@@ -2343,18 +2568,76 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
     public required V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef SasTokenSecretRef { get; set; }
 }
 
+/// <summary>The client (application) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The client (directory) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig
+{
+    /// <summary>The client (application) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public required V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef ClientIdSecretRef { get; set; }
+
+    /// <summary>The client (directory) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("tenantIdSecretRef")]
+    public required V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef TenantIdSecretRef { get; set; }
+}
+
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSource
 {
-    /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+    /// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
     [JsonPropertyName("azureCredentials")]
     public V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials? AzureCredentials { get; set; }
 
     /// <summary>The container to transfer from the Azure Storage account.`</summary>
     [JsonPropertyName("container")]
     public string? Container { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
+    /// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+    [JsonPropertyName("federatedIdentityConfig")]
+    public V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig? FederatedIdentityConfig { get; set; }
 
     /// <summary>Root directory path to the filesystem.</summary>
     [JsonPropertyName("path")]
@@ -2773,34 +3056,54 @@ public partial class V1beta1JobSpecInitProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTransferSpecTransferManifest
+{
+    /// <summary>The GCS URI to the manifest file (CSV or line-delimited). Example: gs://my-bucket/manifest.csv</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+}
+
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -2821,6 +3124,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobSpecInitProviderTransferSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -2838,6 +3142,10 @@ public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpec
 {
+    /// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+    [JsonPropertyName("awsS3CompatibleDataSource")]
+    public V1beta1JobSpecInitProviderTransferSpecAwsS3CompatibleDataSource? AwsS3CompatibleDataSource { get; set; }
+
     /// <summary>An AWS S3 data source. Structure documented below.</summary>
     [JsonPropertyName("awsS3DataSource")]
     public V1beta1JobSpecInitProviderTransferSpecAwsS3DataSource? AwsS3DataSource { get; set; }
@@ -2881,6 +3189,10 @@ public partial class V1beta1JobSpecInitProviderTransferSpec
     /// <summary>Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.</summary>
     [JsonPropertyName("sourceAgentPoolName")]
     public string? SourceAgentPoolName { get; set; }
+
+    /// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+    [JsonPropertyName("transferManifest")]
+    public V1beta1JobSpecInitProviderTransferSpecTransferManifest? TransferManifest { get; set; }
 
     /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
     [JsonPropertyName("transferOptions")]
@@ -2937,6 +3249,10 @@ public partial class V1beta1JobSpecInitProvider
     /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
     [JsonPropertyName("schedule")]
     public V1beta1JobSpecInitProviderSchedule? Schedule { get; set; }
+
+    /// <summary>The user-managed service account to run the job. If this field is specified, the given service account is granted the necessary permissions to all applicable resources (e.g. GCS buckets) required by the job.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
 
     /// <summary>Status of the job. Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.</summary>
     [JsonPropertyName("status")]
@@ -3247,34 +3563,44 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -3295,6 +3621,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobStatusAtProviderReplicationSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -3409,6 +3736,54 @@ public partial class V1beta1JobStatusAtProviderSchedule
     public V1beta1JobStatusAtProviderScheduleStartTimeOfDay? StartTimeOfDay { get; set; }
 }
 
+/// <summary>S3 compatible metadata. documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata
+{
+    /// <summary>Authentication and authorization method used by the storage service. When not specified, Transfer Service will attempt to determine right auth method to use.</summary>
+    [JsonPropertyName("authMethod")]
+    public string? AuthMethod { get; set; }
+
+    /// <summary>The Listing API to use for discovering objects. When not specified, Transfer Service will attempt to determine the right API to use.</summary>
+    [JsonPropertyName("listApi")]
+    public string? ListApi { get; set; }
+
+    /// <summary>The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>API request model used to call the storage service. When not specified, the default value of RequestModel REQUEST_MODEL_VIRTUAL_HOSTED_STYLE is used.</summary>
+    [JsonPropertyName("requestModel")]
+    public string? RequestModel { get; set; }
+}
+
+/// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3CompatibleDataSource
+{
+    /// <summary>Google Cloud Storage bucket name.</summary>
+    [JsonPropertyName("bucketName")]
+    public string? BucketName { get; set; }
+
+    /// <summary>Endpoint of the storage service.</summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>Root directory path to the filesystem.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>Specifies the region to sign requests with. This can be left blank if requests should be signed with an empty region.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>S3 compatible metadata. documented below.</summary>
+    [JsonPropertyName("s3Metadata")]
+    public V1beta1JobStatusAtProviderTransferSpecAwsS3CompatibleDataSourceS3Metadata? S3Metadata { get; set; }
+}
+
 /// <summary>AWS Key ID.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3472,6 +3847,14 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSource
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
+    /// <summary>The CloudFront distribution domain name pointing to this bucket, to use when fetching. See Transfer from S3 via CloudFront for more information. Format: https://{id}.cloudfront.net or any valid custom domain. Must begin with https://.</summary>
+    [JsonPropertyName("cloudfrontDomain")]
+    public string? CloudfrontDomain { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
     /// <summary>Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.</summary>
     [JsonPropertyName("managedPrivateNetwork")]
     public bool? ManagedPrivateNetwork { get; set; }
@@ -3503,7 +3886,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
     public required string Namespace { get; set; }
 }
 
-/// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+/// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
@@ -3513,18 +3896,76 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
     public V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef? SasTokenSecretRef { get; set; }
 }
 
+/// <summary>The client (application) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The client (directory) ID of the application with federated credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig
+{
+    /// <summary>The client (application) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigClientIdSecretRef? ClientIdSecretRef { get; set; }
+
+    /// <summary>The client (directory) ID of the application with federated credentials.</summary>
+    [JsonPropertyName("tenantIdSecretRef")]
+    public V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigTenantIdSecretRef? TenantIdSecretRef { get; set; }
+}
+
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSource
 {
-    /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
+    /// <summary>) Credentials used to authenticate API requests to Azure block.</summary>
     [JsonPropertyName("azureCredentials")]
     public V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials? AzureCredentials { get; set; }
 
     /// <summary>The container to transfer from the Azure Storage account.`</summary>
     [JsonPropertyName("container")]
     public string? Container { get; set; }
+
+    /// <summary>) Full Resource name of a secret in Secret Manager containing SAS Credentials in JSON form. Service Agent for Storage Transfer must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.`,</summary>
+    [JsonPropertyName("credentialsSecret")]
+    public string? CredentialsSecret { get; set; }
+
+    /// <summary>Federated identity config of a user registered Azure application. Structure documented below.</summary>
+    [JsonPropertyName("federatedIdentityConfig")]
+    public V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig? FederatedIdentityConfig { get; set; }
 
     /// <summary>Root directory path to the filesystem.</summary>
     [JsonPropertyName("path")]
@@ -3633,34 +4074,54 @@ public partial class V1beta1JobStatusAtProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTransferSpecTransferManifest
+{
+    /// <summary>The GCS URI to the manifest file (CSV or line-delimited). Example: gs://my-bucket/manifest.csv</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+}
+
+/// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptionsMetadataOptions
 {
+    /// <summary>Specifies how each object&apos;s ACLs should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX group ID (GID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("gid")]
     public string? Gid { get; set; }
 
+    /// <summary>Specifies how each object&apos;s Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
+    /// <summary>Specifies how each file&apos;s mode attribute should be handled by the transfer.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
+    /// <summary>Specifies how symlinks should be handled by the transfer.</summary>
     [JsonPropertyName("symlink")]
     public string? Symlink { get; set; }
 
+    /// <summary>Specifies how each object&apos;s temporary hold status should be preserved for transfers between Google Cloud Storage buckets.</summary>
     [JsonPropertyName("temporaryHold")]
     public string? TemporaryHold { get; set; }
 
+    /// <summary>Specifies how each object&apos;s timeCreated metadata is preserved for transfers.</summary>
     [JsonPropertyName("timeCreated")]
     public string? TimeCreated { get; set; }
 
+    /// <summary>Specifies how each file&apos;s POSIX user ID (UID) attribute should be handled by the transfer.</summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 }
@@ -3681,6 +4142,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptions
     [JsonPropertyName("deleteObjectsUniqueInSink")]
     public bool? DeleteObjectsUniqueInSink { get; set; }
 
+    /// <summary>Specifies the metadata options for running a transfer. Structure documented below.</summary>
     [JsonPropertyName("metadataOptions")]
     public V1beta1JobStatusAtProviderTransferSpecTransferOptionsMetadataOptions? MetadataOptions { get; set; }
 
@@ -3698,6 +4160,10 @@ public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpec
 {
+    /// <summary>An AWS S3 Compatible data source. Structure documented below.</summary>
+    [JsonPropertyName("awsS3CompatibleDataSource")]
+    public V1beta1JobStatusAtProviderTransferSpecAwsS3CompatibleDataSource? AwsS3CompatibleDataSource { get; set; }
+
     /// <summary>An AWS S3 data source. Structure documented below.</summary>
     [JsonPropertyName("awsS3DataSource")]
     public V1beta1JobStatusAtProviderTransferSpecAwsS3DataSource? AwsS3DataSource { get; set; }
@@ -3742,6 +4208,10 @@ public partial class V1beta1JobStatusAtProviderTransferSpec
     [JsonPropertyName("sourceAgentPoolName")]
     public string? SourceAgentPoolName { get; set; }
 
+    /// <summary>Use a manifest file to limit which object are transferred. See Storage Transfer Service manifest file format. Structure documented below.</summary>
+    [JsonPropertyName("transferManifest")]
+    public V1beta1JobStatusAtProviderTransferSpecTransferManifest? TransferManifest { get; set; }
+
     /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
     [JsonPropertyName("transferOptions")]
     public V1beta1JobStatusAtProviderTransferSpecTransferOptions? TransferOptions { get; set; }
@@ -3754,6 +4224,13 @@ public partial class V1beta1JobStatusAtProvider
     /// <summary>When the Transfer Job was created.</summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>When the Transfer Job was deleted.</summary>
     [JsonPropertyName("deletionTime")]
@@ -3800,6 +4277,10 @@ public partial class V1beta1JobStatusAtProvider
     /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
     [JsonPropertyName("schedule")]
     public V1beta1JobStatusAtProviderSchedule? Schedule { get; set; }
+
+    /// <summary>The user-managed service account to run the job. If this field is specified, the given service account is granted the necessary permissions to all applicable resources (e.g. GCS buckets) required by the job.</summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
 
     /// <summary>Status of the job. Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.</summary>
     [JsonPropertyName("status")]
@@ -3864,6 +4345,15 @@ public partial class V1beta1JobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1JobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -147,17 +147,29 @@ public partial class V1beta2ManagedZoneSpecForProviderForwardingConfigTargetName
     public string? DomainName { get; set; }
 
     /// <summary>
-    /// Forwarding path for this TargetNameServer. If unset or default Cloud DNS will make forwarding
-    /// decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-    /// to the Internet. When set to private, Cloud DNS will always send queries through VPC for this target
+    /// Forwarding path for this TargetNameServer. If unset or default
+    /// Cloud DNS will make forwarding decision based on address ranges,
+    /// i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+    /// to the Internet. When set to private, Cloud DNS will always
+    /// send queries through VPC for this target.
     /// Possible values are: default, private.
     /// </summary>
     [JsonPropertyName("forwardingPath")]
     public string? ForwardingPath { get; set; }
 
-    /// <summary>IPv4 address of a target name server.</summary>
+    /// <summary>
+    /// IPv4 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
     [JsonPropertyName("ipv4Address")]
     public string? Ipv4Address { get; set; }
+
+    /// <summary>
+    /// IPv6 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
+    [JsonPropertyName("ipv6Address")]
+    public string? Ipv6Address { get; set; }
 }
 
 /// <summary>
@@ -899,17 +911,29 @@ public partial class V1beta2ManagedZoneSpecInitProviderForwardingConfigTargetNam
     public string? DomainName { get; set; }
 
     /// <summary>
-    /// Forwarding path for this TargetNameServer. If unset or default Cloud DNS will make forwarding
-    /// decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-    /// to the Internet. When set to private, Cloud DNS will always send queries through VPC for this target
+    /// Forwarding path for this TargetNameServer. If unset or default
+    /// Cloud DNS will make forwarding decision based on address ranges,
+    /// i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+    /// to the Internet. When set to private, Cloud DNS will always
+    /// send queries through VPC for this target.
     /// Possible values are: default, private.
     /// </summary>
     [JsonPropertyName("forwardingPath")]
     public string? ForwardingPath { get; set; }
 
-    /// <summary>IPv4 address of a target name server.</summary>
+    /// <summary>
+    /// IPv4 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
     [JsonPropertyName("ipv4Address")]
     public string? Ipv4Address { get; set; }
+
+    /// <summary>
+    /// IPv6 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
+    [JsonPropertyName("ipv6Address")]
+    public string? Ipv6Address { get; set; }
 }
 
 /// <summary>
@@ -1846,17 +1870,29 @@ public partial class V1beta2ManagedZoneStatusAtProviderForwardingConfigTargetNam
     public string? DomainName { get; set; }
 
     /// <summary>
-    /// Forwarding path for this TargetNameServer. If unset or default Cloud DNS will make forwarding
-    /// decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-    /// to the Internet. When set to private, Cloud DNS will always send queries through VPC for this target
+    /// Forwarding path for this TargetNameServer. If unset or default
+    /// Cloud DNS will make forwarding decision based on address ranges,
+    /// i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+    /// to the Internet. When set to private, Cloud DNS will always
+    /// send queries through VPC for this target.
     /// Possible values are: default, private.
     /// </summary>
     [JsonPropertyName("forwardingPath")]
     public string? ForwardingPath { get; set; }
 
-    /// <summary>IPv4 address of a target name server.</summary>
+    /// <summary>
+    /// IPv4 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
     [JsonPropertyName("ipv4Address")]
     public string? Ipv4Address { get; set; }
+
+    /// <summary>
+    /// IPv6 address of a target name server.
+    /// Does not accept both fields (ipv4 &amp; ipv6) being populated.
+    /// </summary>
+    [JsonPropertyName("ipv6Address")]
+    public string? Ipv6Address { get; set; }
 }
 
 /// <summary>
@@ -1982,6 +2018,13 @@ public partial class V1beta2ManagedZoneStatusAtProvider
     /// </summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>A textual description field.</summary>
     [JsonPropertyName("description")]
@@ -2128,6 +2171,15 @@ public partial class V1beta2ManagedZoneStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ManagedZoneStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

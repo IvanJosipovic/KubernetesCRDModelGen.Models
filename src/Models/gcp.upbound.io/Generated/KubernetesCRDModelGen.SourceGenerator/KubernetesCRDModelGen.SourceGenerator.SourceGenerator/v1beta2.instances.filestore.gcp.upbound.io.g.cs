@@ -55,6 +55,59 @@ public enum V1beta2InstanceSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>
+/// Configuration for LDAP servers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderDirectoryServicesLdap
+{
+    /// <summary>The LDAP domain name in the format of my-domain.com.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>
+    /// The groups Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("groupsOu")]
+    public string? GroupsOu { get; set; }
+
+    /// <summary>
+    /// The servers names are used for specifying the LDAP servers names.
+    /// The LDAP servers names can come with two formats:
+    /// </summary>
+    [JsonPropertyName("servers")]
+    public IList<string>? Servers { get; set; }
+
+    /// <summary>
+    /// The users Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("usersOu")]
+    public string? UsersOu { get; set; }
+}
+
+/// <summary>
+/// Directory Services configuration.
+/// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderDirectoryServices
+{
+    /// <summary>
+    /// Configuration for LDAP servers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ldap")]
+    public V1beta2InstanceSpecForProviderDirectoryServicesLdap? Ldap { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderFileSharesNfsExportOptions
@@ -91,6 +144,13 @@ public partial class V1beta2InstanceSpecForProviderFileSharesNfsExportOptions
     /// </summary>
     [JsonPropertyName("ipRanges")]
     public IList<string>? IpRanges { get; set; }
+
+    /// <summary>
+    /// The source VPC network for ip_ranges.
+    /// Required for instances using Private Service Connect, optional otherwise.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
 
     /// <summary>
     /// Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or ROOT_SQUASH,
@@ -136,6 +196,14 @@ public partial class V1beta2InstanceSpecForProviderFileShares
     /// </summary>
     [JsonPropertyName("sourceBackup")]
     public string? SourceBackup { get; set; }
+
+    /// <summary>
+    /// The resource name of the BackupDR backup, in the format
+    /// projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id},
+    /// that this file share has been restored from.
+    /// </summary>
+    [JsonPropertyName("sourceBackupdrBackup")]
+    public string? SourceBackupdrBackup { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -319,6 +387,25 @@ public partial class V1beta2InstanceSpecForProviderKmsKeyNameSelector
     public V1beta2InstanceSpecForProviderKmsKeyNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Private Service Connect configuration.
+/// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecForProviderNetworksPscConfig
+{
+    /// <summary>
+    /// Consumer service project in which the Private Service Connect endpoint
+    /// would be set up. This is optional, and only relevant in case the network
+    /// is a shared VPC. If this is not specified, the endpoint would be set up
+    /// in the VPC host project.
+    /// </summary>
+    [JsonPropertyName("endpointProject")]
+    public string? EndpointProject { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderNetworks
@@ -347,6 +434,14 @@ public partial class V1beta2InstanceSpecForProviderNetworks
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Private Service Connect configuration.
+    /// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscConfig")]
+    public V1beta2InstanceSpecForProviderNetworksPscConfig? PscConfig { get; set; }
 
     /// <summary>
     /// A /29 CIDR block that identifies the range of IP
@@ -436,6 +531,18 @@ public partial class V1beta2InstanceSpecForProvider
     /// <summary>A description of the instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The desired_replica_state field controls the state of a replica.</summary>
+    [JsonPropertyName("desiredReplicaState")]
+    public string? DesiredReplicaState { get; set; }
+
+    /// <summary>
+    /// Directory Services configuration.
+    /// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directoryServices")]
+    public V1beta2InstanceSpecForProviderDirectoryServices? DirectoryServices { get; set; }
 
     /// <summary>
     /// File system shares on the instance. For this version, only a
@@ -533,6 +640,59 @@ public partial class V1beta2InstanceSpecForProvider
     public string? Zone { get; set; }
 }
 
+/// <summary>
+/// Configuration for LDAP servers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderDirectoryServicesLdap
+{
+    /// <summary>The LDAP domain name in the format of my-domain.com.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>
+    /// The groups Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("groupsOu")]
+    public string? GroupsOu { get; set; }
+
+    /// <summary>
+    /// The servers names are used for specifying the LDAP servers names.
+    /// The LDAP servers names can come with two formats:
+    /// </summary>
+    [JsonPropertyName("servers")]
+    public IList<string>? Servers { get; set; }
+
+    /// <summary>
+    /// The users Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("usersOu")]
+    public string? UsersOu { get; set; }
+}
+
+/// <summary>
+/// Directory Services configuration.
+/// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderDirectoryServices
+{
+    /// <summary>
+    /// Configuration for LDAP servers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ldap")]
+    public V1beta2InstanceSpecInitProviderDirectoryServicesLdap? Ldap { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderFileSharesNfsExportOptions
@@ -569,6 +729,13 @@ public partial class V1beta2InstanceSpecInitProviderFileSharesNfsExportOptions
     /// </summary>
     [JsonPropertyName("ipRanges")]
     public IList<string>? IpRanges { get; set; }
+
+    /// <summary>
+    /// The source VPC network for ip_ranges.
+    /// Required for instances using Private Service Connect, optional otherwise.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
 
     /// <summary>
     /// Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or ROOT_SQUASH,
@@ -614,6 +781,14 @@ public partial class V1beta2InstanceSpecInitProviderFileShares
     /// </summary>
     [JsonPropertyName("sourceBackup")]
     public string? SourceBackup { get; set; }
+
+    /// <summary>
+    /// The resource name of the BackupDR backup, in the format
+    /// projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id},
+    /// that this file share has been restored from.
+    /// </summary>
+    [JsonPropertyName("sourceBackupdrBackup")]
+    public string? SourceBackupdrBackup { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -797,6 +972,25 @@ public partial class V1beta2InstanceSpecInitProviderKmsKeyNameSelector
     public V1beta2InstanceSpecInitProviderKmsKeyNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Private Service Connect configuration.
+/// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceSpecInitProviderNetworksPscConfig
+{
+    /// <summary>
+    /// Consumer service project in which the Private Service Connect endpoint
+    /// would be set up. This is optional, and only relevant in case the network
+    /// is a shared VPC. If this is not specified, the endpoint would be set up
+    /// in the VPC host project.
+    /// </summary>
+    [JsonPropertyName("endpointProject")]
+    public string? EndpointProject { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderNetworks
@@ -825,6 +1019,14 @@ public partial class V1beta2InstanceSpecInitProviderNetworks
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Private Service Connect configuration.
+    /// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscConfig")]
+    public V1beta2InstanceSpecInitProviderNetworksPscConfig? PscConfig { get; set; }
 
     /// <summary>
     /// A /29 CIDR block that identifies the range of IP
@@ -926,6 +1128,18 @@ public partial class V1beta2InstanceSpecInitProvider
     /// <summary>A description of the instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The desired_replica_state field controls the state of a replica.</summary>
+    [JsonPropertyName("desiredReplicaState")]
+    public string? DesiredReplicaState { get; set; }
+
+    /// <summary>
+    /// Directory Services configuration.
+    /// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directoryServices")]
+    public V1beta2InstanceSpecInitProviderDirectoryServices? DirectoryServices { get; set; }
 
     /// <summary>
     /// File system shares on the instance. For this version, only a
@@ -1202,6 +1416,59 @@ public partial class V1beta2InstanceSpec
     public V1beta2InstanceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>
+/// Configuration for LDAP servers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderDirectoryServicesLdap
+{
+    /// <summary>The LDAP domain name in the format of my-domain.com.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>
+    /// The groups Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("groupsOu")]
+    public string? GroupsOu { get; set; }
+
+    /// <summary>
+    /// The servers names are used for specifying the LDAP servers names.
+    /// The LDAP servers names can come with two formats:
+    /// </summary>
+    [JsonPropertyName("servers")]
+    public IList<string>? Servers { get; set; }
+
+    /// <summary>
+    /// The users Organizational Unit (OU) is optional. This parameter is a hint
+    /// to allow faster lookup in the LDAP namespace. In case that this parameter
+    /// is not provided, Filestore instance will query the whole LDAP namespace.
+    /// </summary>
+    [JsonPropertyName("usersOu")]
+    public string? UsersOu { get; set; }
+}
+
+/// <summary>
+/// Directory Services configuration.
+/// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderDirectoryServices
+{
+    /// <summary>
+    /// Configuration for LDAP servers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ldap")]
+    public V1beta2InstanceStatusAtProviderDirectoryServicesLdap? Ldap { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderEffectiveReplicationReplicas
@@ -1291,6 +1558,13 @@ public partial class V1beta2InstanceStatusAtProviderFileSharesNfsExportOptions
     public IList<string>? IpRanges { get; set; }
 
     /// <summary>
+    /// The source VPC network for ip_ranges.
+    /// Required for instances using Private Service Connect, optional otherwise.
+    /// </summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>
     /// Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or ROOT_SQUASH,
     /// for not allowing root access. The default is NO_ROOT_SQUASH.
     /// Default value is NO_ROOT_SQUASH.
@@ -1334,6 +1608,14 @@ public partial class V1beta2InstanceStatusAtProviderFileShares
     /// </summary>
     [JsonPropertyName("sourceBackup")]
     public string? SourceBackup { get; set; }
+
+    /// <summary>
+    /// The resource name of the BackupDR backup, in the format
+    /// projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id},
+    /// that this file share has been restored from.
+    /// </summary>
+    [JsonPropertyName("sourceBackupdrBackup")]
+    public string? SourceBackupdrBackup { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1368,6 +1650,25 @@ public partial class V1beta2InstanceStatusAtProviderInitialReplication
     /// </summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
+}
+
+/// <summary>
+/// Private Service Connect configuration.
+/// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceStatusAtProviderNetworksPscConfig
+{
+    /// <summary>
+    /// Consumer service project in which the Private Service Connect endpoint
+    /// would be set up. This is optional, and only relevant in case the network
+    /// is a shared VPC. If this is not specified, the endpoint would be set up
+    /// in the VPC host project.
+    /// </summary>
+    [JsonPropertyName("endpointProject")]
+    public string? EndpointProject { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1405,6 +1706,14 @@ public partial class V1beta2InstanceStatusAtProviderNetworks
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Private Service Connect configuration.
+    /// Should only be set when connect_mode is PRIVATE_SERVICE_CONNECT.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscConfig")]
+    public V1beta2InstanceStatusAtProviderNetworksPscConfig? PscConfig { get; set; }
 
     /// <summary>
     /// A /29 CIDR block that identifies the range of IP
@@ -1487,6 +1796,13 @@ public partial class V1beta2InstanceStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Indicates whether the instance is protected against deletion.</summary>
     [JsonPropertyName("deletionProtectionEnabled")]
     public bool? DeletionProtectionEnabled { get; set; }
@@ -1498,6 +1814,18 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>A description of the instance.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The desired_replica_state field controls the state of a replica.</summary>
+    [JsonPropertyName("desiredReplicaState")]
+    public string? DesiredReplicaState { get; set; }
+
+    /// <summary>
+    /// Directory Services configuration.
+    /// Should only be set if protocol is &quot;NFS_V4_1&quot;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directoryServices")]
+    public V1beta2InstanceStatusAtProviderDirectoryServices? DirectoryServices { get; set; }
 
     /// <summary>for all of the labels present on the resource.</summary>
     [JsonPropertyName("effectiveLabels")]
@@ -1670,6 +1998,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

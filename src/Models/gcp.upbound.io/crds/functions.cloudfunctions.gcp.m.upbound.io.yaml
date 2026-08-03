@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: functions.cloudfunctions.gcp.m.upbound.io
 spec:
   group: cloudfunctions.gcp.m.upbound.io
@@ -130,7 +130,7 @@ spec:
                   labels:
                     additionalProperties:
                       type: string
-                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
+                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
                     type: object
                   maxInstances:
                     description: The limit on the maximum number of function instances that may coexist at a given time.
@@ -474,7 +474,7 @@ spec:
                   labels:
                     additionalProperties:
                       type: string
-                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
+                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
                     type: object
                   maxInstances:
                     description: The limit on the maximum number of function instances that may coexist at a given time.
@@ -810,6 +810,11 @@ spec:
                   buildWorkerPool:
                     description: Name of the Cloud Build Custom Worker Pool that should be used to build the function.
                     type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to "DELETE".
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   description:
                     description: Description of the function.
                     type: string
@@ -874,7 +879,7 @@ spec:
                   labels:
                     additionalProperties:
                       type: string
-                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
+                    description: A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
                     type: object
                   maxInstances:
                     description: The limit on the maximum number of function instances that may coexist at a given time.
@@ -1034,6 +1039,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

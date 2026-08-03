@@ -886,6 +886,10 @@ public partial class V1beta1QueueSpecForProvider
     [JsonPropertyName("appEngineRoutingOverride")]
     public V1beta1QueueSpecForProviderAppEngineRoutingOverride? AppEngineRoutingOverride { get; set; }
 
+    /// <summary>The desired state of the queue. Use this to pause and resume the queue.</summary>
+    [JsonPropertyName("desiredState")]
+    public string? DesiredState { get; set; }
+
     /// <summary>
     /// Modifies HTTP target for HTTP tasks.
     /// Structure is documented below.
@@ -1796,6 +1800,10 @@ public partial class V1beta1QueueSpecInitProvider
     [JsonPropertyName("appEngineRoutingOverride")]
     public V1beta1QueueSpecInitProviderAppEngineRoutingOverride? AppEngineRoutingOverride { get; set; }
 
+    /// <summary>The desired state of the queue. Use this to pause and resume the queue.</summary>
+    [JsonPropertyName("desiredState")]
+    public string? DesiredState { get; set; }
+
     /// <summary>
     /// Modifies HTTP target for HTTP tasks.
     /// Structure is documented below.
@@ -2335,6 +2343,17 @@ public partial class V1beta1QueueStatusAtProvider
     public V1beta1QueueStatusAtProviderAppEngineRoutingOverride? AppEngineRoutingOverride { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>The desired state of the queue. Use this to pause and resume the queue.</summary>
+    [JsonPropertyName("desiredState")]
+    public string? DesiredState { get; set; }
+
+    /// <summary>
     /// Modifies HTTP target for HTTP tasks.
     /// Structure is documented below.
     /// </summary>
@@ -2376,6 +2395,10 @@ public partial class V1beta1QueueStatusAtProvider
     /// </summary>
     [JsonPropertyName("stackdriverLoggingConfig")]
     public V1beta1QueueStatusAtProviderStackdriverLoggingConfig? StackdriverLoggingConfig { get; set; }
+
+    /// <summary>The current state of the queue.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -2432,6 +2455,15 @@ public partial class V1beta1QueueStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1QueueStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

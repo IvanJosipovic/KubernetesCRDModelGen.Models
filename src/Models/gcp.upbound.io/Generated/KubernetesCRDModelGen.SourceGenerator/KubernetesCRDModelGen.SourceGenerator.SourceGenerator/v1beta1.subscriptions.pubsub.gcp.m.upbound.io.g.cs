@@ -431,6 +431,16 @@ public partial class V1beta1SubscriptionSpecForProviderCloudStorageConfigService
 }
 
 /// <summary>
+/// If set, message data will be written to Cloud Storage in text format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderCloudStorageConfigTextConfig
+{
+}
+
+/// <summary>
 /// If delivery to Cloud Storage is used with this subscription, this field is used to configure it.
 /// Either pushConfig, bigQueryConfig or cloudStorageConfig can be set, but not combined.
 /// If all three are empty, then the subscriber will pull and ack messages using API methods.
@@ -497,6 +507,13 @@ public partial class V1beta1SubscriptionSpecForProviderCloudStorageConfig
     /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
     [JsonPropertyName("serviceAccountEmailSelector")]
     public V1beta1SubscriptionSpecForProviderCloudStorageConfigServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// If set, message data will be written to Cloud Storage in text format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("textConfig")]
+    public V1beta1SubscriptionSpecForProviderCloudStorageConfigTextConfig? TextConfig { get; set; }
 }
 
 /// <summary>
@@ -730,6 +747,222 @@ public partial class V1beta1SubscriptionSpecForProviderExpirationPolicy
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Service account email to be used for generating the OIDC token.
+    /// The caller (for subscriptions.create, subscriptions.patch, and
+    /// subscriptions.modifyPushConfig RPCs) must have the
+    /// iam.serviceAccounts.actAs permission for the service account.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -754,6 +987,15 @@ public partial class V1beta1SubscriptionSpecForProviderMessageTransformsJavascri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionSpecForProviderMessageTransforms
 {
+    /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1SubscriptionSpecForProviderMessageTransformsAiInference? AiInference { get; set; }
+
     /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
@@ -1206,6 +1448,19 @@ public partial class V1beta1SubscriptionSpecForProvider
     public V1beta1SubscriptionSpecForProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>
+    /// Input only. Resource manager tags to be bound to the subscription. Tag
+    /// keys and values have the same definition as resource manager tags. Keys
+    /// must be in the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// A reference to a Topic resource, of the form projects/{project}/topics/{{name}}
     /// (as in the id property of a google_pubsub_topic), or just a topic name if
     /// the topic is in the same project as the subscription.
@@ -1617,6 +1872,16 @@ public partial class V1beta1SubscriptionSpecInitProviderCloudStorageConfigServic
 }
 
 /// <summary>
+/// If set, message data will be written to Cloud Storage in text format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderCloudStorageConfigTextConfig
+{
+}
+
+/// <summary>
 /// If delivery to Cloud Storage is used with this subscription, this field is used to configure it.
 /// Either pushConfig, bigQueryConfig or cloudStorageConfig can be set, but not combined.
 /// If all three are empty, then the subscriber will pull and ack messages using API methods.
@@ -1683,6 +1948,13 @@ public partial class V1beta1SubscriptionSpecInitProviderCloudStorageConfig
     /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
     [JsonPropertyName("serviceAccountEmailSelector")]
     public V1beta1SubscriptionSpecInitProviderCloudStorageConfigServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// If set, message data will be written to Cloud Storage in text format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("textConfig")]
+    public V1beta1SubscriptionSpecInitProviderCloudStorageConfigTextConfig? TextConfig { get; set; }
 }
 
 /// <summary>
@@ -1916,6 +2188,222 @@ public partial class V1beta1SubscriptionSpecInitProviderExpirationPolicy
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Service account email to be used for generating the OIDC token.
+    /// The caller (for subscriptions.create, subscriptions.patch, and
+    /// subscriptions.modifyPushConfig RPCs) must have the
+    /// iam.serviceAccounts.actAs permission for the service account.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -1940,6 +2428,15 @@ public partial class V1beta1SubscriptionSpecInitProviderMessageTransformsJavascr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionSpecInitProviderMessageTransforms
 {
+    /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1SubscriptionSpecInitProviderMessageTransformsAiInference? AiInference { get; set; }
+
     /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
@@ -2404,6 +2901,19 @@ public partial class V1beta1SubscriptionSpecInitProvider
     public V1beta1SubscriptionSpecInitProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>
+    /// Input only. Resource manager tags to be bound to the subscription. Tag
+    /// keys and values have the same definition as resource manager tags. Keys
+    /// must be in the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// A reference to a Topic resource, of the form projects/{project}/topics/{{name}}
     /// (as in the id property of a google_pubsub_topic), or just a topic name if
     /// the topic is in the same project as the subscription.
@@ -2604,6 +3114,22 @@ public partial class V1beta1SubscriptionStatusAtProviderCloudStorageConfigAvroCo
 }
 
 /// <summary>
+/// If set, message data will be written to Cloud Storage in text format.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionStatusAtProviderCloudStorageConfigTextConfig
+{
+    /// <summary>
+    /// (Output)
+    /// Output only. Placeholder to allow the empty text_config block.
+    /// </summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+}
+
+/// <summary>
 /// If delivery to Cloud Storage is used with this subscription, this field is used to configure it.
 /// Either pushConfig, bigQueryConfig or cloudStorageConfig can be set, but not combined.
 /// If all three are empty, then the subscriber will pull and ack messages using API methods.
@@ -2669,6 +3195,13 @@ public partial class V1beta1SubscriptionStatusAtProviderCloudStorageConfig
     /// </summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
+
+    /// <summary>
+    /// If set, message data will be written to Cloud Storage in text format.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("textConfig")]
+    public V1beta1SubscriptionStatusAtProviderCloudStorageConfigTextConfig? TextConfig { get; set; }
 }
 
 /// <summary>
@@ -2739,6 +3272,59 @@ public partial class V1beta1SubscriptionStatusAtProviderExpirationPolicy
 }
 
 /// <summary>
+/// Configuration for making inferences using arbitrary JSON payloads.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionStatusAtProviderMessageTransformsAiInferenceUnstructuredInference
+{
+    /// <summary>
+    /// A parameters object to be included in each inference request.
+    /// The parameters object is combined with the data field of the Pub/Sub
+    /// message to form the inference request.
+    /// </summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+}
+
+/// <summary>
+/// AI Inference. Specifies the Vertex AI endpoint that inference
+/// requests built from the Pub/Sub message data and provided parameters will
+/// be sent to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionStatusAtProviderMessageTransformsAiInference
+{
+    /// <summary>
+    /// The endpoint to a Vertex AI model of the form
+    /// projects/{project}/locations/{location}/endpoints/{endpoint} or
+    /// projects/{project}/locations/{location}/publishers/{publisher}/models/{model}.
+    /// Vertex AI API requests will be sent to this endpoint.
+    /// </summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>
+    /// Service account email to be used for generating the OIDC token.
+    /// The caller (for subscriptions.create, subscriptions.patch, and
+    /// subscriptions.modifyPushConfig RPCs) must have the
+    /// iam.serviceAccounts.actAs permission for the service account.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>
+    /// Configuration for making inferences using arbitrary JSON payloads.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("unstructuredInference")]
+    public V1beta1SubscriptionStatusAtProviderMessageTransformsAiInferenceUnstructuredInference? UnstructuredInference { get; set; }
+}
+
+/// <summary>
 /// Javascript User Defined Function. If multiple Javascript UDFs are specified on a resource,
 /// each one must have a unique function_name.
 /// Structure is documented below.
@@ -2763,6 +3349,15 @@ public partial class V1beta1SubscriptionStatusAtProviderMessageTransformsJavascr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionStatusAtProviderMessageTransforms
 {
+    /// <summary>
+    /// AI Inference. Specifies the Vertex AI endpoint that inference
+    /// requests built from the Pub/Sub message data and provided parameters will
+    /// be sent to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("aiInference")]
+    public V1beta1SubscriptionStatusAtProviderMessageTransformsAiInference? AiInference { get; set; }
+
     /// <summary>
     /// Controls whether or not to use this transform. If not set or false,
     /// the transform will be applied to messages. Default: true.
@@ -2963,6 +3558,13 @@ public partial class V1beta1SubscriptionStatusAtProvider
     [JsonPropertyName("deadLetterPolicy")]
     public V1beta1SubscriptionStatusAtProviderDeadLetterPolicy? DeadLetterPolicy { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>for all of the labels present on the resource.</summary>
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
@@ -3068,6 +3670,19 @@ public partial class V1beta1SubscriptionStatusAtProvider
     public V1beta1SubscriptionStatusAtProviderRetryPolicy? RetryPolicy { get; set; }
 
     /// <summary>
+    /// Input only. Resource manager tags to be bound to the subscription. Tag
+    /// keys and values have the same definition as resource manager tags. Keys
+    /// must be in the format tagKeys/{tag_key_id}, and values are in the format
+    /// tagValues/456. The field is ignored when empty. The field is immutable and
+    /// causes resource replacement when mutated. This field is only set at create
+    /// time and modifying this field after creation will trigger recreation. To
+    /// apply tags to an existing resource, see the google_tags_tag_value
+    /// resource.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>
     /// The combination of labels configured directly on the resource
     /// and default labels configured on the provider.
     /// </summary>
@@ -3137,6 +3752,15 @@ public partial class V1beta1SubscriptionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SubscriptionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

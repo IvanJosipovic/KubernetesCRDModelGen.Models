@@ -205,9 +205,8 @@ public partial class V1beta1ProjectServiceSpecForProvider
     public bool? DisableDependentServices { get; set; }
 
     /// <summary>
-    /// Defaults to true. Most configurations should
-    /// set this to false; it should generally only be true or unset in configurations
-    /// that manage the google_project resource itself.
+    /// It should generally only
+    /// be true in configurations that manage the google_project resource itself.
     /// </summary>
     [JsonPropertyName("disableOnDestroy")]
     public bool? DisableOnDestroy { get; set; }
@@ -413,9 +412,8 @@ public partial class V1beta1ProjectServiceSpecInitProvider
     public bool? DisableDependentServices { get; set; }
 
     /// <summary>
-    /// Defaults to true. Most configurations should
-    /// set this to false; it should generally only be true or unset in configurations
-    /// that manage the google_project resource itself.
+    /// It should generally only
+    /// be true in configurations that manage the google_project resource itself.
     /// </summary>
     [JsonPropertyName("disableOnDestroy")]
     public bool? DisableOnDestroy { get; set; }
@@ -552,6 +550,13 @@ public partial class V1beta1ProjectServiceSpec
 public partial class V1beta1ProjectServiceStatusAtProvider
 {
     /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// If true, services that are enabled
     /// and which depend on this service should also be disabled when this service is
     /// destroyed. If false or unset, an error will be returned if any enabled
@@ -561,9 +566,8 @@ public partial class V1beta1ProjectServiceStatusAtProvider
     public bool? DisableDependentServices { get; set; }
 
     /// <summary>
-    /// Defaults to true. Most configurations should
-    /// set this to false; it should generally only be true or unset in configurations
-    /// that manage the google_project resource itself.
+    /// It should generally only
+    /// be true in configurations that manage the google_project resource itself.
     /// </summary>
     [JsonPropertyName("disableOnDestroy")]
     public bool? DisableOnDestroy { get; set; }
@@ -638,6 +642,15 @@ public partial class V1beta1ProjectServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ProjectServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

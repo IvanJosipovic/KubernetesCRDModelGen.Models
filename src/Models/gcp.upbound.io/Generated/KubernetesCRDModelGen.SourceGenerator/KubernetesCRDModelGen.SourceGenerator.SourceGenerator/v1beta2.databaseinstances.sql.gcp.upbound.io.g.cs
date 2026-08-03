@@ -79,9 +79,50 @@ public partial class V1beta2DatabaseInstanceSpecForProviderClone
     [JsonPropertyName("preferredZone")]
     public string? PreferredZone { get; set; }
 
+    /// <summary>The timestamp of when the source instance was deleted for a clone from a deleted instance.</summary>
+    [JsonPropertyName("sourceInstanceDeletionTime")]
+    public string? SourceInstanceDeletionTime { get; set; }
+
     /// <summary>Name of the source instance which will be cloned.</summary>
     [JsonPropertyName("sourceInstanceName")]
     public string? SourceInstanceName { get; set; }
+
+    /// <summary>Id of source project where source instances exits, required for cross project clone scenario.</summary>
+    [JsonPropertyName("sourceProject")]
+    public string? SourceProject { get; set; }
+}
+
+/// <summary>
+/// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+/// block during resource creation/update will trigger the restore action after the resource is created/updated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecForProviderPointInTimeRestoreContext
+{
+    /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
+    [JsonPropertyName("allocatedIpRange")]
+    public string? AllocatedIpRange { get; set; }
+
+    /// <summary>The Google Cloud Backup and Disaster Recovery Datasource URI.</summary>
+    [JsonPropertyName("datasource")]
+    public string? Datasource { get; set; }
+
+    /// <summary>The timestamp of the point in time that should be restored.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
+
+    /// <summary>Point-in-time recovery of an instance to the specified zone. If no zone is specified, then clone to the same primary zone as the source instance.</summary>
+    [JsonPropertyName("preferredZone")]
+    public string? PreferredZone { get; set; }
+
+    /// <summary>The region of the target instance where the datasource will be restored. For example: &quot;us-central1&quot;.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>The name of the target instance.</summary>
+    [JsonPropertyName("targetInstance")]
+    public string? TargetInstance { get; set; }
 }
 
 /// <summary>Password for the replication connection.</summary>
@@ -194,6 +235,10 @@ public partial class V1beta2DatabaseInstanceSpecForProviderReplicationCluster
     /// <summary>project:your-instance&quot;. You can also set this field to &quot;your-instance&quot;, but cloud SQL backend will convert it to the aforementioned standard format.</summary>
     [JsonPropertyName("failoverDrReplicaName")]
     public string? FailoverDrReplicaName { get; set; }
+
+    /// <summary>only field which if set, indicates this instance has a private service access (PSA) DNS endpoint that is pointing to the primary instance of the cluster. If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn&apos;t have a DR replica yet or the DR replica is deleted.</summary>
+    [JsonPropertyName("psaWriteEndpoint")]
+    public string? PsaWriteEndpoint { get; set; }
 }
 
 /// <summary>
@@ -242,12 +287,25 @@ public partial class V1beta2DatabaseInstanceSpecForProviderRootPasswordSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecForProviderSettingsActiveDirectoryConfig
 {
-    /// <summary>
-    /// The domain name for the active directory (e.g., mydomain.com).
-    /// Can only be used with SQL Server.
-    /// </summary>
+    /// <summary>The secret manager key storing the administrator credential. (e.g., projects/{project}/secrets/{secret}).</summary>
+    [JsonPropertyName("adminCredentialSecretName")]
+    public string? AdminCredentialSecretName { get; set; }
+
+    /// <summary>Domain controller IPv4 addresses used to bootstrap Active Directory.</summary>
+    [JsonPropertyName("dnsServers")]
+    public IList<string>? DnsServers { get; set; }
+
+    /// <summary>The domain name for the active directory (e.g., mydomain.com). Can only be used with SQL Server.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
+
+    /// <summary>The mode of the Active Directory configuration. Can be MANAGED_ACTIVE_DIRECTORY or CUSTOMER_MANAGED_ACTIVE_DIRECTORY.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The organizational unit distinguished name. This is the full hierarchical path to the organizational unit.</summary>
+    [JsonPropertyName("organizationalUnit")]
+    public string? OrganizationalUnit { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -348,7 +406,7 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettingsConnectionPoo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecForProviderSettingsDataCacheConfig
 {
-    /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
+    /// <summary>Whether data cache is enabled for the instance. Defaults to true for MYSQL Enterprise Plus and PostgreSQL Enterprise Plus instances only. For SQL Server Enterprise Plus instances it defaults to false.</summary>
     [JsonPropertyName("dataCacheEnabled")]
     public bool? DataCacheEnabled { get; set; }
 }
@@ -389,8 +447,38 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettingsDenyMaintenan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecForProviderSettingsEntraidConfig
+{
+    /// <summary>The application ID for the Entra ID configuration. This must be paired with a tenant_id to be valid.</summary>
+    [JsonPropertyName("applicationId")]
+    public string? ApplicationId { get; set; }
+
+    /// <summary>The tenant ID for the Entra ID configuration. This must be paired with an application_id to be valid.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecForProviderSettingsFinalBackupConfig
+{
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The number of days we retain the final backup after instance deletion. The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years.</summary>
+    [JsonPropertyName("retentionDays")]
+    public double? RetentionDays { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecForProviderSettingsInsightsConfig
 {
+    /// <summary>True if Enhanced Query Insights feature is enabled.</summary>
+    [JsonPropertyName("enhancedQueryInsightsEnabled")]
+    public bool? EnhancedQueryInsightsEnabled { get; set; }
+
     /// <summary>True if Query Insights feature is enabled.</summary>
     [JsonPropertyName("queryInsightsEnabled")]
     public bool? QueryInsightsEnabled { get; set; }
@@ -604,13 +692,25 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettingsIpConfigurati
     [JsonPropertyName("allowedConsumerProjects")]
     public IList<string>? AllowedConsumerProjects { get; set; }
 
+    /// <summary>Network Attachment URI in the format projects/project1/regions/region1/networkAttachments/networkAttachment1 to enable outbound connectivity on PSC instance.</summary>
+    [JsonPropertyName("networkAttachmentUri")]
+    public string? NetworkAttachmentUri { get; set; }
+
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
     public IList<V1beta2DatabaseInstanceSpecForProviderSettingsIpConfigurationPscConfigPscAutoConnections>? PscAutoConnections { get; set; }
 
+    /// <summary>Whether PSC auto DNS is enabled for this instance.</summary>
+    [JsonPropertyName("pscAutoDnsEnabled")]
+    public bool? PscAutoDnsEnabled { get; set; }
+
     /// <summary>Whether PSC connectivity is enabled for this instance.</summary>
     [JsonPropertyName("pscEnabled")]
     public bool? PscEnabled { get; set; }
+
+    /// <summary>Whether PSC write endpoint DNS is enabled for this instance. This is only supported for Enterprise Plus edition instances.</summary>
+    [JsonPropertyName("pscWriteEndpointDnsEnabled")]
+    public bool? PscWriteEndpointDnsEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -661,13 +761,17 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettingsIpConfigurati
     [JsonPropertyName("pscConfig")]
     public IList<V1beta2DatabaseInstanceSpecForProviderSettingsIpConfigurationPscConfig>? PscConfig { get; set; }
 
-    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA and GOOGLE_MANAGED_CAS_CA.</summary>
+    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA, GOOGLE_MANAGED_CAS_CA, and CUSTOMER_MANAGED_CAS_CA.</summary>
     [JsonPropertyName("serverCaMode")]
     public string? ServerCaMode { get; set; }
 
     /// <summary>The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA as the server_ca_mode.</summary>
     [JsonPropertyName("serverCaPool")]
     public string? ServerCaPool { get; set; }
+
+    /// <summary>Controls the automatic server certificate rotation feature. Supported values are NO_AUTOMATIC_ROTATIONand AUTOMATIC_ROTATION_DURING_MAINTENANCE. AUTOMATIC_ROTATION_DURING_MAINTENANCE can only be set if server_ca_mode is either GOOGLE_MANAGED_CAS_CA or CUSTOMER_MANAGED_CAS_CA. See API reference doc for details.</summary>
+    [JsonPropertyName("serverCertificateRotationMode")]
+    public string? ServerCertificateRotationMode { get; set; }
 
     /// <summary>Specify how SSL connection should be enforced in DB connections. Supported values are ALLOW_UNENCRYPTED_AND_ENCRYPTED, ENCRYPTED_ONLY, and TRUSTED_CLIENT_CERTIFICATE_REQUIRED (not supported for SQL Server). See API reference doc for details.</summary>
     [JsonPropertyName("sslMode")]
@@ -745,6 +849,52 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettingsPasswordValid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecForProviderSettingsReadPoolAutoScaleConfigTargetMetrics
+{
+    /// <summary>Metric name for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("metric")]
+    public string? Metric { get; set; }
+
+    /// <summary>Target value for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("targetValue")]
+    public double? TargetValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecForProviderSettingsReadPoolAutoScaleConfig
+{
+    /// <summary>True if auto scale in is disabled.</summary>
+    [JsonPropertyName("disableScaleIn")]
+    public bool? DisableScaleIn { get; set; }
+
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Maximum number of nodes in the read pool. If set to lower than current node count, node count will be updated.</summary>
+    [JsonPropertyName("maxNodeCount")]
+    public double? MaxNodeCount { get; set; }
+
+    /// <summary>Minimum number of nodes in the read pool. If set to higher than current node count, node count will be updated.</summary>
+    [JsonPropertyName("minNodeCount")]
+    public double? MinNodeCount { get; set; }
+
+    /// <summary>The cooldown period for scale in operations.</summary>
+    [JsonPropertyName("scaleInCooldownSeconds")]
+    public double? ScaleInCooldownSeconds { get; set; }
+
+    /// <summary>The cooldown period for scale out operations.</summary>
+    [JsonPropertyName("scaleOutCooldownSeconds")]
+    public double? ScaleOutCooldownSeconds { get; set; }
+
+    /// <summary>Target metrics for Read Pool Auto Scale. Must specify target_metrics.metric and target_metrics.target_value in subblock.</summary>
+    [JsonPropertyName("targetMetrics")]
+    public IList<V1beta2DatabaseInstanceSpecForProviderSettingsReadPoolAutoScaleConfigTargetMetrics>? TargetMetrics { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecForProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -782,12 +932,25 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     public V1beta2DatabaseInstanceSpecForProviderSettingsAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
 
     /// <summary>
+    /// Enables
+    /// Automatic Version Upgrade
+    /// feature. When this field is set to true, Automatic Upgrade is enabled for
+    /// MYSQL_8_0 based minor versions. The database_version must be
+    /// MYSQL_8_0_35 or higher. Can be used with MySQL only. Can&apos;t be unset or
+    /// changed if set to true.
+    /// </summary>
+    [JsonPropertyName("autoUpgradeEnabled")]
+    public bool? AutoUpgradeEnabled { get; set; }
+
+    /// <summary>
     /// The availability type of the Cloud SQL
-    /// instance, high availability (REGIONAL) or single zone (ZONAL).&apos; For all instances, ensure that
+    /// instance, high availability (REGIONAL) or single zone (ZONAL). For all instances, ensure that
     /// settings.backup_configuration.enabled is set to true.
     /// For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
     /// For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
     /// is set to true. Defaults to ZONAL.
+    /// For read pool instances, this field is read-only. The availability type is changed by specifying
+    /// the number of nodes (node_count).
     /// </summary>
     [JsonPropertyName("availabilityType")]
     public string? AvailabilityType { get; set; }
@@ -806,8 +969,20 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     [JsonPropertyName("connectorEnforcement")]
     public string? ConnectorEnforcement { get; set; }
 
+    /// <summary>Configures ExecuteSql API&apos;s access to the instance. connections, can be ALLOW_DATA_API or DISALLOW_DATA_API (default). ALLOW_DATA_API allows using ExecuteSql API to connect to the instance. For private IP instances, this allows authorized users to access the instance from the public internet using ExecuteSql API.</summary>
+    [JsonPropertyName("dataApiAccess")]
+    public string? DataApiAccess { get; set; }
+
     [JsonPropertyName("dataCacheConfig")]
     public V1beta2DatabaseInstanceSpecForProviderSettingsDataCacheConfig? DataCacheConfig { get; set; }
+
+    /// <summary>Provisioned number of I/O operations per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedIops")]
+    public double? DataDiskProvisionedIops { get; set; }
+
+    /// <summary>Provisioned throughput measured in MiB per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedThroughput")]
+    public double? DataDiskProvisionedThroughput { get; set; }
 
     [JsonPropertyName("databaseFlags")]
     public IList<V1beta2DatabaseInstanceSpecForProviderSettingsDatabaseFlags>? DatabaseFlags { get; set; }
@@ -831,11 +1006,20 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     [JsonPropertyName("diskSize")]
     public double? DiskSize { get; set; }
 
-    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD. HYPERDISK_BALANCED is preview.</summary>
+    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD.</summary>
     [JsonPropertyName("diskType")]
     public string? DiskType { get; set; }
 
-    /// <summary>The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.</summary>
+    /// <summary>
+    /// The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS. If edition
+    /// is not set, the Cloud SQL API determines the default based on database_version: instances with
+    /// database_version POSTGRES_16 or later default to ENTERPRISE_PLUS, while all others default to
+    /// ENTERPRISE. Note that ENTERPRISE_PLUS supports only predefined db-perf-optimized-N-* machine
+    /// types (the N2/C4A series); shared-core and custom tiers such as db-g1-small, db-f1-micro, and
+    /// db-custom-* require edition = &quot;ENTERPRISE&quot;. Omitting edition on a PostgreSQL 16+ instance while
+    /// setting a shared-core or custom tier therefore fails at create time with
+    /// Invalid Tier (...) for (ENTERPRISE_PLUS) Edition.
+    /// </summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
@@ -846,6 +1030,12 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     /// <summary>Enables Cloud SQL instances to connect to Vertex AI and pass requests for real-time predictions and insights. Defaults to false.</summary>
     [JsonPropertyName("enableGoogleMlIntegration")]
     public bool? EnableGoogleMlIntegration { get; set; }
+
+    [JsonPropertyName("entraidConfig")]
+    public V1beta2DatabaseInstanceSpecForProviderSettingsEntraidConfig? EntraidConfig { get; set; }
+
+    [JsonPropertyName("finalBackupConfig")]
+    public V1beta2DatabaseInstanceSpecForProviderSettingsFinalBackupConfig? FinalBackupConfig { get; set; }
 
     [JsonPropertyName("insightsConfig")]
     public V1beta2DatabaseInstanceSpecForProviderSettingsInsightsConfig? InsightsConfig { get; set; }
@@ -866,6 +1056,9 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
+    [JsonPropertyName("readPoolAutoScaleConfig")]
+    public V1beta2DatabaseInstanceSpecForProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -876,7 +1069,7 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
     /// <summary>
     /// The machine type to use. See tiers
     /// for more details and supported versions. Postgres supports only shared-core machine types,
-    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
+    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types. Note that shared-core and custom machine types are valid only under the ENTERPRISE edition; PostgreSQL 16+ instances default to ENTERPRISE_PLUS when edition is unset (see the edition argument below).
     /// </summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
@@ -895,6 +1088,13 @@ public partial class V1beta2DatabaseInstanceSpecForProviderSettings
 public partial class V1beta2DatabaseInstanceSpecForProvider
 {
     /// <summary>
+    /// The backupdr_backup needed to restore the database to a backup run. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("backupdrBackup")]
+    public string? BackupdrBackup { get; set; }
+
+    /// <summary>
     /// The context needed to create this instance as a clone of another instance. The
     /// configuration is detailed below.
     /// </summary>
@@ -905,10 +1105,10 @@ public partial class V1beta2DatabaseInstanceSpecForProvider
     /// The MySQL, PostgreSQL or
     /// SQL Server version to use. Supported values include MYSQL_5_6,
     /// MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6,POSTGRES_10, POSTGRES_11,
-    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17,
-    /// SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB.
-    /// SQLSERVER_2019_STANDARD, SQLSERVER_2019_ENTERPRISE, SQLSERVER_2019_EXPRESS,
-    /// SQLSERVER_2019_WEB.
+    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18,
+    /// SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS,
+    /// SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE,
+    /// SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB.
     /// Database Version Policies
     /// includes an up-to-date reference of supported versions.
     /// </summary>
@@ -931,6 +1131,10 @@ public partial class V1beta2DatabaseInstanceSpecForProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
+    [JsonPropertyName("finalBackupDescription")]
+    public string? FinalBackupDescription { get; set; }
+
     /// <summary>The current software version on the instance. This attribute can not be set during creation. Refer to available_maintenance_versions attribute to see what maintenance_version are available for upgrade. When this attribute gets updated, it will cause an instance restart. Setting a maintenance_version value that is older than the current one on the instance will be ignored.</summary>
     [JsonPropertyName("maintenanceVersion")]
     public string? MaintenanceVersion { get; set; }
@@ -942,6 +1146,17 @@ public partial class V1beta2DatabaseInstanceSpecForProvider
     /// </summary>
     [JsonPropertyName("masterInstanceName")]
     public string? MasterInstanceName { get; set; }
+
+    /// <summary>For a read pool instance, the number of nodes in the read pool. For read pools with auto scaling enabled, this field is read only.</summary>
+    [JsonPropertyName("nodeCount")]
+    public double? NodeCount { get; set; }
+
+    /// <summary>
+    /// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("pointInTimeRestoreContext")]
+    public V1beta2DatabaseInstanceSpecForProviderPointInTimeRestoreContext? PointInTimeRestoreContext { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
@@ -1014,9 +1229,50 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderClone
     [JsonPropertyName("preferredZone")]
     public string? PreferredZone { get; set; }
 
+    /// <summary>The timestamp of when the source instance was deleted for a clone from a deleted instance.</summary>
+    [JsonPropertyName("sourceInstanceDeletionTime")]
+    public string? SourceInstanceDeletionTime { get; set; }
+
     /// <summary>Name of the source instance which will be cloned.</summary>
     [JsonPropertyName("sourceInstanceName")]
     public string? SourceInstanceName { get; set; }
+
+    /// <summary>Id of source project where source instances exits, required for cross project clone scenario.</summary>
+    [JsonPropertyName("sourceProject")]
+    public string? SourceProject { get; set; }
+}
+
+/// <summary>
+/// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+/// block during resource creation/update will trigger the restore action after the resource is created/updated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecInitProviderPointInTimeRestoreContext
+{
+    /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
+    [JsonPropertyName("allocatedIpRange")]
+    public string? AllocatedIpRange { get; set; }
+
+    /// <summary>The Google Cloud Backup and Disaster Recovery Datasource URI.</summary>
+    [JsonPropertyName("datasource")]
+    public string? Datasource { get; set; }
+
+    /// <summary>The timestamp of the point in time that should be restored.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
+
+    /// <summary>Point-in-time recovery of an instance to the specified zone. If no zone is specified, then clone to the same primary zone as the source instance.</summary>
+    [JsonPropertyName("preferredZone")]
+    public string? PreferredZone { get; set; }
+
+    /// <summary>The region of the target instance where the datasource will be restored. For example: &quot;us-central1&quot;.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>The name of the target instance.</summary>
+    [JsonPropertyName("targetInstance")]
+    public string? TargetInstance { get; set; }
 }
 
 /// <summary>Password for the replication connection.</summary>
@@ -1129,6 +1385,10 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderReplicationCluster
     /// <summary>project:your-instance&quot;. You can also set this field to &quot;your-instance&quot;, but cloud SQL backend will convert it to the aforementioned standard format.</summary>
     [JsonPropertyName("failoverDrReplicaName")]
     public string? FailoverDrReplicaName { get; set; }
+
+    /// <summary>only field which if set, indicates this instance has a private service access (PSA) DNS endpoint that is pointing to the primary instance of the cluster. If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn&apos;t have a DR replica yet or the DR replica is deleted.</summary>
+    [JsonPropertyName("psaWriteEndpoint")]
+    public string? PsaWriteEndpoint { get; set; }
 }
 
 /// <summary>
@@ -1177,12 +1437,25 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderRootPasswordSecretRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsActiveDirectoryConfig
 {
-    /// <summary>
-    /// The domain name for the active directory (e.g., mydomain.com).
-    /// Can only be used with SQL Server.
-    /// </summary>
+    /// <summary>The secret manager key storing the administrator credential. (e.g., projects/{project}/secrets/{secret}).</summary>
+    [JsonPropertyName("adminCredentialSecretName")]
+    public string? AdminCredentialSecretName { get; set; }
+
+    /// <summary>Domain controller IPv4 addresses used to bootstrap Active Directory.</summary>
+    [JsonPropertyName("dnsServers")]
+    public IList<string>? DnsServers { get; set; }
+
+    /// <summary>The domain name for the active directory (e.g., mydomain.com). Can only be used with SQL Server.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
+
+    /// <summary>The mode of the Active Directory configuration. Can be MANAGED_ACTIVE_DIRECTORY or CUSTOMER_MANAGED_ACTIVE_DIRECTORY.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The organizational unit distinguished name. This is the full hierarchical path to the organizational unit.</summary>
+    [JsonPropertyName("organizationalUnit")]
+    public string? OrganizationalUnit { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1283,7 +1556,7 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsConnectionPo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsDataCacheConfig
 {
-    /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
+    /// <summary>Whether data cache is enabled for the instance. Defaults to true for MYSQL Enterprise Plus and PostgreSQL Enterprise Plus instances only. For SQL Server Enterprise Plus instances it defaults to false.</summary>
     [JsonPropertyName("dataCacheEnabled")]
     public bool? DataCacheEnabled { get; set; }
 }
@@ -1324,8 +1597,38 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsDenyMaintena
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsEntraidConfig
+{
+    /// <summary>The application ID for the Entra ID configuration. This must be paired with a tenant_id to be valid.</summary>
+    [JsonPropertyName("applicationId")]
+    public string? ApplicationId { get; set; }
+
+    /// <summary>The tenant ID for the Entra ID configuration. This must be paired with an application_id to be valid.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsFinalBackupConfig
+{
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The number of days we retain the final backup after instance deletion. The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years.</summary>
+    [JsonPropertyName("retentionDays")]
+    public double? RetentionDays { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsInsightsConfig
 {
+    /// <summary>True if Enhanced Query Insights feature is enabled.</summary>
+    [JsonPropertyName("enhancedQueryInsightsEnabled")]
+    public bool? EnhancedQueryInsightsEnabled { get; set; }
+
     /// <summary>True if Query Insights feature is enabled.</summary>
     [JsonPropertyName("queryInsightsEnabled")]
     public bool? QueryInsightsEnabled { get; set; }
@@ -1539,13 +1842,25 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsIpConfigurat
     [JsonPropertyName("allowedConsumerProjects")]
     public IList<string>? AllowedConsumerProjects { get; set; }
 
+    /// <summary>Network Attachment URI in the format projects/project1/regions/region1/networkAttachments/networkAttachment1 to enable outbound connectivity on PSC instance.</summary>
+    [JsonPropertyName("networkAttachmentUri")]
+    public string? NetworkAttachmentUri { get; set; }
+
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
     public IList<V1beta2DatabaseInstanceSpecInitProviderSettingsIpConfigurationPscConfigPscAutoConnections>? PscAutoConnections { get; set; }
 
+    /// <summary>Whether PSC auto DNS is enabled for this instance.</summary>
+    [JsonPropertyName("pscAutoDnsEnabled")]
+    public bool? PscAutoDnsEnabled { get; set; }
+
     /// <summary>Whether PSC connectivity is enabled for this instance.</summary>
     [JsonPropertyName("pscEnabled")]
     public bool? PscEnabled { get; set; }
+
+    /// <summary>Whether PSC write endpoint DNS is enabled for this instance. This is only supported for Enterprise Plus edition instances.</summary>
+    [JsonPropertyName("pscWriteEndpointDnsEnabled")]
+    public bool? PscWriteEndpointDnsEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1596,13 +1911,17 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsIpConfigurat
     [JsonPropertyName("pscConfig")]
     public IList<V1beta2DatabaseInstanceSpecInitProviderSettingsIpConfigurationPscConfig>? PscConfig { get; set; }
 
-    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA and GOOGLE_MANAGED_CAS_CA.</summary>
+    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA, GOOGLE_MANAGED_CAS_CA, and CUSTOMER_MANAGED_CAS_CA.</summary>
     [JsonPropertyName("serverCaMode")]
     public string? ServerCaMode { get; set; }
 
     /// <summary>The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA as the server_ca_mode.</summary>
     [JsonPropertyName("serverCaPool")]
     public string? ServerCaPool { get; set; }
+
+    /// <summary>Controls the automatic server certificate rotation feature. Supported values are NO_AUTOMATIC_ROTATIONand AUTOMATIC_ROTATION_DURING_MAINTENANCE. AUTOMATIC_ROTATION_DURING_MAINTENANCE can only be set if server_ca_mode is either GOOGLE_MANAGED_CAS_CA or CUSTOMER_MANAGED_CAS_CA. See API reference doc for details.</summary>
+    [JsonPropertyName("serverCertificateRotationMode")]
+    public string? ServerCertificateRotationMode { get; set; }
 
     /// <summary>Specify how SSL connection should be enforced in DB connections. Supported values are ALLOW_UNENCRYPTED_AND_ENCRYPTED, ENCRYPTED_ONLY, and TRUSTED_CLIENT_CERTIFICATE_REQUIRED (not supported for SQL Server). See API reference doc for details.</summary>
     [JsonPropertyName("sslMode")]
@@ -1680,6 +1999,52 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsPasswordVali
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsReadPoolAutoScaleConfigTargetMetrics
+{
+    /// <summary>Metric name for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("metric")]
+    public string? Metric { get; set; }
+
+    /// <summary>Target value for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("targetValue")]
+    public double? TargetValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsReadPoolAutoScaleConfig
+{
+    /// <summary>True if auto scale in is disabled.</summary>
+    [JsonPropertyName("disableScaleIn")]
+    public bool? DisableScaleIn { get; set; }
+
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Maximum number of nodes in the read pool. If set to lower than current node count, node count will be updated.</summary>
+    [JsonPropertyName("maxNodeCount")]
+    public double? MaxNodeCount { get; set; }
+
+    /// <summary>Minimum number of nodes in the read pool. If set to higher than current node count, node count will be updated.</summary>
+    [JsonPropertyName("minNodeCount")]
+    public double? MinNodeCount { get; set; }
+
+    /// <summary>The cooldown period for scale in operations.</summary>
+    [JsonPropertyName("scaleInCooldownSeconds")]
+    public double? ScaleInCooldownSeconds { get; set; }
+
+    /// <summary>The cooldown period for scale out operations.</summary>
+    [JsonPropertyName("scaleOutCooldownSeconds")]
+    public double? ScaleOutCooldownSeconds { get; set; }
+
+    /// <summary>Target metrics for Read Pool Auto Scale. Must specify target_metrics.metric and target_metrics.target_value in subblock.</summary>
+    [JsonPropertyName("targetMetrics")]
+    public IList<V1beta2DatabaseInstanceSpecInitProviderSettingsReadPoolAutoScaleConfigTargetMetrics>? TargetMetrics { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceSpecInitProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -1717,12 +2082,25 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     public V1beta2DatabaseInstanceSpecInitProviderSettingsAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
 
     /// <summary>
+    /// Enables
+    /// Automatic Version Upgrade
+    /// feature. When this field is set to true, Automatic Upgrade is enabled for
+    /// MYSQL_8_0 based minor versions. The database_version must be
+    /// MYSQL_8_0_35 or higher. Can be used with MySQL only. Can&apos;t be unset or
+    /// changed if set to true.
+    /// </summary>
+    [JsonPropertyName("autoUpgradeEnabled")]
+    public bool? AutoUpgradeEnabled { get; set; }
+
+    /// <summary>
     /// The availability type of the Cloud SQL
-    /// instance, high availability (REGIONAL) or single zone (ZONAL).&apos; For all instances, ensure that
+    /// instance, high availability (REGIONAL) or single zone (ZONAL). For all instances, ensure that
     /// settings.backup_configuration.enabled is set to true.
     /// For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
     /// For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
     /// is set to true. Defaults to ZONAL.
+    /// For read pool instances, this field is read-only. The availability type is changed by specifying
+    /// the number of nodes (node_count).
     /// </summary>
     [JsonPropertyName("availabilityType")]
     public string? AvailabilityType { get; set; }
@@ -1741,8 +2119,20 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     [JsonPropertyName("connectorEnforcement")]
     public string? ConnectorEnforcement { get; set; }
 
+    /// <summary>Configures ExecuteSql API&apos;s access to the instance. connections, can be ALLOW_DATA_API or DISALLOW_DATA_API (default). ALLOW_DATA_API allows using ExecuteSql API to connect to the instance. For private IP instances, this allows authorized users to access the instance from the public internet using ExecuteSql API.</summary>
+    [JsonPropertyName("dataApiAccess")]
+    public string? DataApiAccess { get; set; }
+
     [JsonPropertyName("dataCacheConfig")]
     public V1beta2DatabaseInstanceSpecInitProviderSettingsDataCacheConfig? DataCacheConfig { get; set; }
+
+    /// <summary>Provisioned number of I/O operations per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedIops")]
+    public double? DataDiskProvisionedIops { get; set; }
+
+    /// <summary>Provisioned throughput measured in MiB per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedThroughput")]
+    public double? DataDiskProvisionedThroughput { get; set; }
 
     [JsonPropertyName("databaseFlags")]
     public IList<V1beta2DatabaseInstanceSpecInitProviderSettingsDatabaseFlags>? DatabaseFlags { get; set; }
@@ -1766,11 +2156,20 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     [JsonPropertyName("diskSize")]
     public double? DiskSize { get; set; }
 
-    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD. HYPERDISK_BALANCED is preview.</summary>
+    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD.</summary>
     [JsonPropertyName("diskType")]
     public string? DiskType { get; set; }
 
-    /// <summary>The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.</summary>
+    /// <summary>
+    /// The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS. If edition
+    /// is not set, the Cloud SQL API determines the default based on database_version: instances with
+    /// database_version POSTGRES_16 or later default to ENTERPRISE_PLUS, while all others default to
+    /// ENTERPRISE. Note that ENTERPRISE_PLUS supports only predefined db-perf-optimized-N-* machine
+    /// types (the N2/C4A series); shared-core and custom tiers such as db-g1-small, db-f1-micro, and
+    /// db-custom-* require edition = &quot;ENTERPRISE&quot;. Omitting edition on a PostgreSQL 16+ instance while
+    /// setting a shared-core or custom tier therefore fails at create time with
+    /// Invalid Tier (...) for (ENTERPRISE_PLUS) Edition.
+    /// </summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
@@ -1781,6 +2180,12 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     /// <summary>Enables Cloud SQL instances to connect to Vertex AI and pass requests for real-time predictions and insights. Defaults to false.</summary>
     [JsonPropertyName("enableGoogleMlIntegration")]
     public bool? EnableGoogleMlIntegration { get; set; }
+
+    [JsonPropertyName("entraidConfig")]
+    public V1beta2DatabaseInstanceSpecInitProviderSettingsEntraidConfig? EntraidConfig { get; set; }
+
+    [JsonPropertyName("finalBackupConfig")]
+    public V1beta2DatabaseInstanceSpecInitProviderSettingsFinalBackupConfig? FinalBackupConfig { get; set; }
 
     [JsonPropertyName("insightsConfig")]
     public V1beta2DatabaseInstanceSpecInitProviderSettingsInsightsConfig? InsightsConfig { get; set; }
@@ -1801,6 +2206,9 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
+    [JsonPropertyName("readPoolAutoScaleConfig")]
+    public V1beta2DatabaseInstanceSpecInitProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -1811,7 +2219,7 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
     /// <summary>
     /// The machine type to use. See tiers
     /// for more details and supported versions. Postgres supports only shared-core machine types,
-    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
+    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types. Note that shared-core and custom machine types are valid only under the ENTERPRISE edition; PostgreSQL 16+ instances default to ENTERPRISE_PLUS when edition is unset (see the edition argument below).
     /// </summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
@@ -1842,6 +2250,13 @@ public partial class V1beta2DatabaseInstanceSpecInitProviderSettings
 public partial class V1beta2DatabaseInstanceSpecInitProvider
 {
     /// <summary>
+    /// The backupdr_backup needed to restore the database to a backup run. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("backupdrBackup")]
+    public string? BackupdrBackup { get; set; }
+
+    /// <summary>
     /// The context needed to create this instance as a clone of another instance. The
     /// configuration is detailed below.
     /// </summary>
@@ -1852,10 +2267,10 @@ public partial class V1beta2DatabaseInstanceSpecInitProvider
     /// The MySQL, PostgreSQL or
     /// SQL Server version to use. Supported values include MYSQL_5_6,
     /// MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6,POSTGRES_10, POSTGRES_11,
-    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17,
-    /// SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB.
-    /// SQLSERVER_2019_STANDARD, SQLSERVER_2019_ENTERPRISE, SQLSERVER_2019_EXPRESS,
-    /// SQLSERVER_2019_WEB.
+    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18,
+    /// SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS,
+    /// SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE,
+    /// SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB.
     /// Database Version Policies
     /// includes an up-to-date reference of supported versions.
     /// </summary>
@@ -1878,6 +2293,10 @@ public partial class V1beta2DatabaseInstanceSpecInitProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
+    [JsonPropertyName("finalBackupDescription")]
+    public string? FinalBackupDescription { get; set; }
+
     /// <summary>The current software version on the instance. This attribute can not be set during creation. Refer to available_maintenance_versions attribute to see what maintenance_version are available for upgrade. When this attribute gets updated, it will cause an instance restart. Setting a maintenance_version value that is older than the current one on the instance will be ignored.</summary>
     [JsonPropertyName("maintenanceVersion")]
     public string? MaintenanceVersion { get; set; }
@@ -1889,6 +2308,17 @@ public partial class V1beta2DatabaseInstanceSpecInitProvider
     /// </summary>
     [JsonPropertyName("masterInstanceName")]
     public string? MasterInstanceName { get; set; }
+
+    /// <summary>For a read pool instance, the number of nodes in the read pool. For read pools with auto scaling enabled, this field is read only.</summary>
+    [JsonPropertyName("nodeCount")]
+    public double? NodeCount { get; set; }
+
+    /// <summary>
+    /// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("pointInTimeRestoreContext")]
+    public V1beta2DatabaseInstanceSpecInitProviderPointInTimeRestoreContext? PointInTimeRestoreContext { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
@@ -2144,9 +2574,17 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderClone
     [JsonPropertyName("preferredZone")]
     public string? PreferredZone { get; set; }
 
+    /// <summary>The timestamp of when the source instance was deleted for a clone from a deleted instance.</summary>
+    [JsonPropertyName("sourceInstanceDeletionTime")]
+    public string? SourceInstanceDeletionTime { get; set; }
+
     /// <summary>Name of the source instance which will be cloned.</summary>
     [JsonPropertyName("sourceInstanceName")]
     public string? SourceInstanceName { get; set; }
+
+    /// <summary>Id of source project where source instances exits, required for cross project clone scenario.</summary>
+    [JsonPropertyName("sourceProject")]
+    public string? SourceProject { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2170,7 +2608,7 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderDnsNames
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceStatusAtProviderIpAddress
 {
-    /// <summary>The IPv4 address assigned.</summary>
+    /// <summary>(Output) The IP address of the consumer endpoint.</summary>
     [JsonPropertyName("ipAddress")]
     public string? IpAddress { get; set; }
 
@@ -2184,6 +2622,39 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderIpAddress
     /// <summary>The type of this IP address.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+}
+
+/// <summary>
+/// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+/// block during resource creation/update will trigger the restore action after the resource is created/updated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceStatusAtProviderPointInTimeRestoreContext
+{
+    /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
+    [JsonPropertyName("allocatedIpRange")]
+    public string? AllocatedIpRange { get; set; }
+
+    /// <summary>The Google Cloud Backup and Disaster Recovery Datasource URI.</summary>
+    [JsonPropertyName("datasource")]
+    public string? Datasource { get; set; }
+
+    /// <summary>The timestamp of the point in time that should be restored.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
+
+    /// <summary>Point-in-time recovery of an instance to the specified zone. If no zone is specified, then clone to the same primary zone as the source instance.</summary>
+    [JsonPropertyName("preferredZone")]
+    public string? PreferredZone { get; set; }
+
+    /// <summary>The region of the target instance where the datasource will be restored. For example: &quot;us-central1&quot;.</summary>
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    /// <summary>The name of the target instance.</summary>
+    [JsonPropertyName("targetInstance")]
+    public string? TargetInstance { get; set; }
 }
 
 /// <summary>
@@ -2278,6 +2749,10 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderReplicationCluster
     /// <summary>project:your-instance&quot;. You can also set this field to &quot;your-instance&quot;, but cloud SQL backend will convert it to the aforementioned standard format.</summary>
     [JsonPropertyName("failoverDrReplicaName")]
     public string? FailoverDrReplicaName { get; set; }
+
+    /// <summary>only field which if set, indicates this instance has a private service access (PSA) DNS endpoint that is pointing to the primary instance of the cluster. If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn&apos;t have a DR replica yet or the DR replica is deleted.</summary>
+    [JsonPropertyName("psaWriteEndpoint")]
+    public string? PsaWriteEndpoint { get; set; }
 }
 
 /// <summary>
@@ -2308,12 +2783,25 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderRestoreBackupContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsActiveDirectoryConfig
 {
-    /// <summary>
-    /// The domain name for the active directory (e.g., mydomain.com).
-    /// Can only be used with SQL Server.
-    /// </summary>
+    /// <summary>The secret manager key storing the administrator credential. (e.g., projects/{project}/secrets/{secret}).</summary>
+    [JsonPropertyName("adminCredentialSecretName")]
+    public string? AdminCredentialSecretName { get; set; }
+
+    /// <summary>Domain controller IPv4 addresses used to bootstrap Active Directory.</summary>
+    [JsonPropertyName("dnsServers")]
+    public IList<string>? DnsServers { get; set; }
+
+    /// <summary>The domain name for the active directory (e.g., mydomain.com). Can only be used with SQL Server.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
+
+    /// <summary>The mode of the Active Directory configuration. Can be MANAGED_ACTIVE_DIRECTORY or CUSTOMER_MANAGED_ACTIVE_DIRECTORY.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>The organizational unit distinguished name. This is the full hierarchical path to the organizational unit.</summary>
+    [JsonPropertyName("organizationalUnit")]
+    public string? OrganizationalUnit { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2349,6 +2837,10 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsBackupConfig
     /// <summary>Backup retention settings. The configuration is detailed below.</summary>
     [JsonPropertyName("backupRetentionSettings")]
     public V1beta2DatabaseInstanceStatusAtProviderSettingsBackupConfigurationBackupRetentionSettings? BackupRetentionSettings { get; set; }
+
+    /// <summary>(Computed) The backup tier that manages the backups for the instance.</summary>
+    [JsonPropertyName("backupTier")]
+    public string? BackupTier { get; set; }
 
     /// <summary>
     /// True if binary logging is enabled.
@@ -2414,7 +2906,7 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsConnectionPo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsDataCacheConfig
 {
-    /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
+    /// <summary>Whether data cache is enabled for the instance. Defaults to true for MYSQL Enterprise Plus and PostgreSQL Enterprise Plus instances only. For SQL Server Enterprise Plus instances it defaults to false.</summary>
     [JsonPropertyName("dataCacheEnabled")]
     public bool? DataCacheEnabled { get; set; }
 }
@@ -2455,8 +2947,38 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsDenyMaintena
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsEntraidConfig
+{
+    /// <summary>The application ID for the Entra ID configuration. This must be paired with a tenant_id to be valid.</summary>
+    [JsonPropertyName("applicationId")]
+    public string? ApplicationId { get; set; }
+
+    /// <summary>The tenant ID for the Entra ID configuration. This must be paired with an application_id to be valid.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsFinalBackupConfig
+{
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The number of days we retain the final backup after instance deletion. The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years.</summary>
+    [JsonPropertyName("retentionDays")]
+    public double? RetentionDays { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsInsightsConfig
 {
+    /// <summary>True if Enhanced Query Insights feature is enabled.</summary>
+    [JsonPropertyName("enhancedQueryInsightsEnabled")]
+    public bool? EnhancedQueryInsightsEnabled { get; set; }
+
     /// <summary>True if Query Insights feature is enabled.</summary>
     [JsonPropertyName("queryInsightsEnabled")]
     public bool? QueryInsightsEnabled { get; set; }
@@ -2510,9 +3032,21 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsIpConfigurat
     [JsonPropertyName("consumerNetwork")]
     public string? ConsumerNetwork { get; set; }
 
+    /// <summary>(Output) The connection policy status of the consumer network.</summary>
+    [JsonPropertyName("consumerNetworkStatus")]
+    public string? ConsumerNetworkStatus { get; set; }
+
     /// <summary>The project ID of consumer service project of this consumer endpoint.</summary>
     [JsonPropertyName("consumerServiceProjectId")]
     public string? ConsumerServiceProjectId { get; set; }
+
+    /// <summary>(Output) The IP address of the consumer endpoint.</summary>
+    [JsonPropertyName("ipAddress")]
+    public string? IpAddress { get; set; }
+
+    /// <summary>(Output) The connection status of the consumer endpoint.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2523,13 +3057,25 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsIpConfigurat
     [JsonPropertyName("allowedConsumerProjects")]
     public IList<string>? AllowedConsumerProjects { get; set; }
 
+    /// <summary>Network Attachment URI in the format projects/project1/regions/region1/networkAttachments/networkAttachment1 to enable outbound connectivity on PSC instance.</summary>
+    [JsonPropertyName("networkAttachmentUri")]
+    public string? NetworkAttachmentUri { get; set; }
+
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
     public IList<V1beta2DatabaseInstanceStatusAtProviderSettingsIpConfigurationPscConfigPscAutoConnections>? PscAutoConnections { get; set; }
 
+    /// <summary>Whether PSC auto DNS is enabled for this instance.</summary>
+    [JsonPropertyName("pscAutoDnsEnabled")]
+    public bool? PscAutoDnsEnabled { get; set; }
+
     /// <summary>Whether PSC connectivity is enabled for this instance.</summary>
     [JsonPropertyName("pscEnabled")]
     public bool? PscEnabled { get; set; }
+
+    /// <summary>Whether PSC write endpoint DNS is enabled for this instance. This is only supported for Enterprise Plus edition instances.</summary>
+    [JsonPropertyName("pscWriteEndpointDnsEnabled")]
+    public bool? PscWriteEndpointDnsEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2572,13 +3118,17 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsIpConfigurat
     [JsonPropertyName("pscConfig")]
     public IList<V1beta2DatabaseInstanceStatusAtProviderSettingsIpConfigurationPscConfig>? PscConfig { get; set; }
 
-    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA and GOOGLE_MANAGED_CAS_CA.</summary>
+    /// <summary>Specify how the server certificate&apos;s Certificate Authority is hosted. Supported values are GOOGLE_MANAGED_INTERNAL_CA, GOOGLE_MANAGED_CAS_CA, and CUSTOMER_MANAGED_CAS_CA.</summary>
     [JsonPropertyName("serverCaMode")]
     public string? ServerCaMode { get; set; }
 
     /// <summary>The resource name of the server CA pool for an instance with CUSTOMER_MANAGED_CAS_CA as the server_ca_mode.</summary>
     [JsonPropertyName("serverCaPool")]
     public string? ServerCaPool { get; set; }
+
+    /// <summary>Controls the automatic server certificate rotation feature. Supported values are NO_AUTOMATIC_ROTATIONand AUTOMATIC_ROTATION_DURING_MAINTENANCE. AUTOMATIC_ROTATION_DURING_MAINTENANCE can only be set if server_ca_mode is either GOOGLE_MANAGED_CAS_CA or CUSTOMER_MANAGED_CAS_CA. See API reference doc for details.</summary>
+    [JsonPropertyName("serverCertificateRotationMode")]
+    public string? ServerCertificateRotationMode { get; set; }
 
     /// <summary>Specify how SSL connection should be enforced in DB connections. Supported values are ALLOW_UNENCRYPTED_AND_ENCRYPTED, ENCRYPTED_ONLY, and TRUSTED_CLIENT_CERTIFICATE_REQUIRED (not supported for SQL Server). See API reference doc for details.</summary>
     [JsonPropertyName("sslMode")]
@@ -2656,6 +3206,52 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsPasswordVali
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsReadPoolAutoScaleConfigTargetMetrics
+{
+    /// <summary>Metric name for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("metric")]
+    public string? Metric { get; set; }
+
+    /// <summary>Target value for Read Pool Auto Scale.</summary>
+    [JsonPropertyName("targetValue")]
+    public double? TargetValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsReadPoolAutoScaleConfig
+{
+    /// <summary>True if auto scale in is disabled.</summary>
+    [JsonPropertyName("disableScaleIn")]
+    public bool? DisableScaleIn { get; set; }
+
+    /// <summary>True if Read Pool Auto Scale is enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Maximum number of nodes in the read pool. If set to lower than current node count, node count will be updated.</summary>
+    [JsonPropertyName("maxNodeCount")]
+    public double? MaxNodeCount { get; set; }
+
+    /// <summary>Minimum number of nodes in the read pool. If set to higher than current node count, node count will be updated.</summary>
+    [JsonPropertyName("minNodeCount")]
+    public double? MinNodeCount { get; set; }
+
+    /// <summary>The cooldown period for scale in operations.</summary>
+    [JsonPropertyName("scaleInCooldownSeconds")]
+    public double? ScaleInCooldownSeconds { get; set; }
+
+    /// <summary>The cooldown period for scale out operations.</summary>
+    [JsonPropertyName("scaleOutCooldownSeconds")]
+    public double? ScaleOutCooldownSeconds { get; set; }
+
+    /// <summary>Target metrics for Read Pool Auto Scale. Must specify target_metrics.metric and target_metrics.target_value in subblock.</summary>
+    [JsonPropertyName("targetMetrics")]
+    public IList<V1beta2DatabaseInstanceStatusAtProviderSettingsReadPoolAutoScaleConfigTargetMetrics>? TargetMetrics { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseInstanceStatusAtProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -2693,12 +3289,25 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     public V1beta2DatabaseInstanceStatusAtProviderSettingsAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
 
     /// <summary>
+    /// Enables
+    /// Automatic Version Upgrade
+    /// feature. When this field is set to true, Automatic Upgrade is enabled for
+    /// MYSQL_8_0 based minor versions. The database_version must be
+    /// MYSQL_8_0_35 or higher. Can be used with MySQL only. Can&apos;t be unset or
+    /// changed if set to true.
+    /// </summary>
+    [JsonPropertyName("autoUpgradeEnabled")]
+    public bool? AutoUpgradeEnabled { get; set; }
+
+    /// <summary>
     /// The availability type of the Cloud SQL
-    /// instance, high availability (REGIONAL) or single zone (ZONAL).&apos; For all instances, ensure that
+    /// instance, high availability (REGIONAL) or single zone (ZONAL). For all instances, ensure that
     /// settings.backup_configuration.enabled is set to true.
     /// For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
     /// For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
     /// is set to true. Defaults to ZONAL.
+    /// For read pool instances, this field is read-only. The availability type is changed by specifying
+    /// the number of nodes (node_count).
     /// </summary>
     [JsonPropertyName("availabilityType")]
     public string? AvailabilityType { get; set; }
@@ -2717,8 +3326,20 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     [JsonPropertyName("connectorEnforcement")]
     public string? ConnectorEnforcement { get; set; }
 
+    /// <summary>Configures ExecuteSql API&apos;s access to the instance. connections, can be ALLOW_DATA_API or DISALLOW_DATA_API (default). ALLOW_DATA_API allows using ExecuteSql API to connect to the instance. For private IP instances, this allows authorized users to access the instance from the public internet using ExecuteSql API.</summary>
+    [JsonPropertyName("dataApiAccess")]
+    public string? DataApiAccess { get; set; }
+
     [JsonPropertyName("dataCacheConfig")]
     public V1beta2DatabaseInstanceStatusAtProviderSettingsDataCacheConfig? DataCacheConfig { get; set; }
+
+    /// <summary>Provisioned number of I/O operations per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedIops")]
+    public double? DataDiskProvisionedIops { get; set; }
+
+    /// <summary>Provisioned throughput measured in MiB per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.</summary>
+    [JsonPropertyName("dataDiskProvisionedThroughput")]
+    public double? DataDiskProvisionedThroughput { get; set; }
 
     [JsonPropertyName("databaseFlags")]
     public IList<V1beta2DatabaseInstanceStatusAtProviderSettingsDatabaseFlags>? DatabaseFlags { get; set; }
@@ -2742,13 +3363,32 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     [JsonPropertyName("diskSize")]
     public double? DiskSize { get; set; }
 
-    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD. HYPERDISK_BALANCED is preview.</summary>
+    /// <summary>The type of data disk: PD_SSD, PD_HDD, or HYPERDISK_BALANCED. Defaults to PD_SSD.</summary>
     [JsonPropertyName("diskType")]
     public string? DiskType { get; set; }
 
-    /// <summary>The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.</summary>
+    /// <summary>
+    /// The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS. If edition
+    /// is not set, the Cloud SQL API determines the default based on database_version: instances with
+    /// database_version POSTGRES_16 or later default to ENTERPRISE_PLUS, while all others default to
+    /// ENTERPRISE. Note that ENTERPRISE_PLUS supports only predefined db-perf-optimized-N-* machine
+    /// types (the N2/C4A series); shared-core and custom tiers such as db-g1-small, db-f1-micro, and
+    /// db-custom-* require edition = &quot;ENTERPRISE&quot;. Omitting edition on a PostgreSQL 16+ instance while
+    /// setting a shared-core or custom tier therefore fails at create time with
+    /// Invalid Tier (...) for (ENTERPRISE_PLUS) Edition.
+    /// </summary>
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
+
+    /// <summary>
+    /// (Computed) The availability type of
+    /// the Cloud SQL instance, high availability (REGIONAL) or single zone
+    /// (ZONAL). This field always contains the value that is reported by the API (for
+    /// read pools, settings.0.effective_availability_type may differ from
+    /// settings.0.availability_type).
+    /// </summary>
+    [JsonPropertyName("effectiveAvailabilityType")]
+    public string? EffectiveAvailabilityType { get; set; }
 
     /// <summary>Enables Cloud SQL instance integration with Dataplex. MySQL, Postgres and SQL Server instances are supported for this feature. Defaults to false.</summary>
     [JsonPropertyName("enableDataplexIntegration")]
@@ -2757,6 +3397,12 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     /// <summary>Enables Cloud SQL instances to connect to Vertex AI and pass requests for real-time predictions and insights. Defaults to false.</summary>
     [JsonPropertyName("enableGoogleMlIntegration")]
     public bool? EnableGoogleMlIntegration { get; set; }
+
+    [JsonPropertyName("entraidConfig")]
+    public V1beta2DatabaseInstanceStatusAtProviderSettingsEntraidConfig? EntraidConfig { get; set; }
+
+    [JsonPropertyName("finalBackupConfig")]
+    public V1beta2DatabaseInstanceStatusAtProviderSettingsFinalBackupConfig? FinalBackupConfig { get; set; }
 
     [JsonPropertyName("insightsConfig")]
     public V1beta2DatabaseInstanceStatusAtProviderSettingsInsightsConfig? InsightsConfig { get; set; }
@@ -2777,6 +3423,9 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     [JsonPropertyName("pricingPlan")]
     public string? PricingPlan { get; set; }
 
+    [JsonPropertyName("readPoolAutoScaleConfig")]
+    public V1beta2DatabaseInstanceStatusAtProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -2787,7 +3436,7 @@ public partial class V1beta2DatabaseInstanceStatusAtProviderSettings
     /// <summary>
     /// The machine type to use. See tiers
     /// for more details and supported versions. Postgres supports only shared-core machine types,
-    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
+    /// and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types. Note that shared-core and custom machine types are valid only under the ENTERPRISE edition; PostgreSQL 16+ instances default to ENTERPRISE_PLUS when edition is unset (see the edition argument below).
     /// </summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
@@ -2817,6 +3466,13 @@ public partial class V1beta2DatabaseInstanceStatusAtProvider
     public IList<string>? AvailableMaintenanceVersions { get; set; }
 
     /// <summary>
+    /// The backupdr_backup needed to restore the database to a backup run. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("backupdrBackup")]
+    public string? BackupdrBackup { get; set; }
+
+    /// <summary>
     /// The context needed to create this instance as a clone of another instance. The
     /// configuration is detailed below.
     /// </summary>
@@ -2834,15 +3490,22 @@ public partial class V1beta2DatabaseInstanceStatusAtProvider
     /// The MySQL, PostgreSQL or
     /// SQL Server version to use. Supported values include MYSQL_5_6,
     /// MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6,POSTGRES_10, POSTGRES_11,
-    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17,
-    /// SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB.
-    /// SQLSERVER_2019_STANDARD, SQLSERVER_2019_ENTERPRISE, SQLSERVER_2019_EXPRESS,
-    /// SQLSERVER_2019_WEB.
+    /// POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18,
+    /// SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS,
+    /// SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE,
+    /// SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB.
     /// Database Version Policies
     /// includes an up-to-date reference of supported versions.
     /// </summary>
     [JsonPropertyName("databaseVersion")]
     public string? DatabaseVersion { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>When the field is set to false, deleting the instance is allowed.</summary>
     [JsonPropertyName("deletionProtection")]
@@ -2868,6 +3531,10 @@ public partial class V1beta2DatabaseInstanceStatusAtProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
+    [JsonPropertyName("finalBackupDescription")]
+    public string? FinalBackupDescription { get; set; }
+
     /// <summary>The first IPv4 address of any type assigned.</summary>
     [JsonPropertyName("firstIpAddress")]
     public string? FirstIpAddress { get; set; }
@@ -2875,11 +3542,11 @@ public partial class V1beta2DatabaseInstanceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The type of the instance. The supported values are SQL_INSTANCE_TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE, ON_PREMISES_INSTANCE and READ_REPLICA_INSTANCE.</summary>
+    /// <summary>The type of the instance. See API reference for SqlInstanceType for supported values.</summary>
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The IPv4 address assigned.</summary>
+    /// <summary>(Output) The IP address of the consumer endpoint.</summary>
     [JsonPropertyName("ipAddress")]
     public IList<V1beta2DatabaseInstanceStatusAtProviderIpAddress>? IpAddress { get; set; }
 
@@ -2894,6 +3561,17 @@ public partial class V1beta2DatabaseInstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("masterInstanceName")]
     public string? MasterInstanceName { get; set; }
+
+    /// <summary>For a read pool instance, the number of nodes in the read pool. For read pools with auto scaling enabled, this field is read only.</summary>
+    [JsonPropertyName("nodeCount")]
+    public double? NodeCount { get; set; }
+
+    /// <summary>
+    /// The point_in_time_restore_context needed for performing a point-in-time recovery of an instance managed by Google Cloud Backup and Disaster Recovery. The configuration is detailed below. Adding or modifying this
+    /// block during resource creation/update will trigger the restore action after the resource is created/updated.
+    /// </summary>
+    [JsonPropertyName("pointInTimeRestoreContext")]
+    public V1beta2DatabaseInstanceStatusAtProviderPointInTimeRestoreContext? PointInTimeRestoreContext { get; set; }
 
     /// <summary>The first private (PRIVATE) IPv4 address assigned.</summary>
     [JsonPropertyName("privateIpAddress")]
@@ -3015,6 +3693,15 @@ public partial class V1beta2DatabaseInstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DatabaseInstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

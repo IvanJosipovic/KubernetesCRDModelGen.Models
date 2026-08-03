@@ -275,6 +275,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderInstanceLif
     /// <summary>, Specifies whether to apply the group&apos;s latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group&apos;s instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group&apos;s update policy type.</summary>
     [JsonPropertyName("forceUpdateOnRepair")]
     public string? ForceUpdateOnRepair { get; set; }
+
+    /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
+    [JsonPropertyName("onFailedHealthCheck")]
+    public string? OnFailedHealthCheck { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -288,6 +292,16 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderNamedPort
     /// <summary>The port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
+}
+
+/// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecForProviderResourcePolicies
+{
+    /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
+    [JsonPropertyName("workloadPolicy")]
+    public string? WorkloadPolicy { get; set; }
 }
 
 /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
@@ -496,6 +510,15 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderTargetPools
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1RegionInstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecForProviderTargetSizePolicy
+{
+    /// <summary>The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: &quot;BULK&quot;, &quot;INDIVIDUAL&quot;.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }
 
 /// <summary>The update policy for this managed instance group. Structure is documented below. For more information, see the official documentation and API</summary>
@@ -831,6 +854,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+    [JsonPropertyName("resourcePolicies")]
+    public V1beta1RegionInstanceGroupManagerSpecForProviderResourcePolicies? ResourcePolicies { get; set; }
+
     /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
     [JsonPropertyName("standbyPolicy")]
     public V1beta1RegionInstanceGroupManagerSpecForProviderStandbyPolicy? StandbyPolicy { get; set; }
@@ -871,6 +898,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProvider
     /// </summary>
     [JsonPropertyName("targetSize")]
     public double? TargetSize { get; set; }
+
+    /// <summary>The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.</summary>
+    [JsonPropertyName("targetSizePolicy")]
+    public IList<V1beta1RegionInstanceGroupManagerSpecForProviderTargetSizePolicy>? TargetSizePolicy { get; set; }
 
     /// <summary>The target number of stopped instances for this managed instance group.</summary>
     [JsonPropertyName("targetStoppedSize")]
@@ -1148,6 +1179,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceLi
     /// <summary>, Specifies whether to apply the group&apos;s latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group&apos;s instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group&apos;s update policy type.</summary>
     [JsonPropertyName("forceUpdateOnRepair")]
     public string? ForceUpdateOnRepair { get; set; }
+
+    /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
+    [JsonPropertyName("onFailedHealthCheck")]
+    public string? OnFailedHealthCheck { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1161,6 +1196,16 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderNamedPort
     /// <summary>The port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
+}
+
+/// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderResourcePolicies
+{
+    /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
+    [JsonPropertyName("workloadPolicy")]
+    public string? WorkloadPolicy { get; set; }
 }
 
 /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
@@ -1369,6 +1414,15 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderTargetPool
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1RegionInstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderTargetSizePolicy
+{
+    /// <summary>The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: &quot;BULK&quot;, &quot;INDIVIDUAL&quot;.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }
 
 /// <summary>The update policy for this managed instance group. Structure is documented below. For more information, see the official documentation and API</summary>
@@ -1716,6 +1770,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+    [JsonPropertyName("resourcePolicies")]
+    public V1beta1RegionInstanceGroupManagerSpecInitProviderResourcePolicies? ResourcePolicies { get; set; }
+
     /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
     [JsonPropertyName("standbyPolicy")]
     public V1beta1RegionInstanceGroupManagerSpecInitProviderStandbyPolicy? StandbyPolicy { get; set; }
@@ -1756,6 +1814,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProvider
     /// </summary>
     [JsonPropertyName("targetSize")]
     public double? TargetSize { get; set; }
+
+    /// <summary>The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.</summary>
+    [JsonPropertyName("targetSizePolicy")]
+    public IList<V1beta1RegionInstanceGroupManagerSpecInitProviderTargetSizePolicy>? TargetSizePolicy { get; set; }
 
     /// <summary>The target number of stopped instances for this managed instance group.</summary>
     [JsonPropertyName("targetStoppedSize")]
@@ -1977,6 +2039,10 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceLi
     /// <summary>, Specifies whether to apply the group&apos;s latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group&apos;s instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group&apos;s update policy type.</summary>
     [JsonPropertyName("forceUpdateOnRepair")]
     public string? ForceUpdateOnRepair { get; set; }
+
+    /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
+    [JsonPropertyName("onFailedHealthCheck")]
+    public string? OnFailedHealthCheck { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1990,6 +2056,16 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderNamedPort
     /// <summary>The port number.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
+}
+
+/// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderResourcePolicies
+{
+    /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
+    [JsonPropertyName("workloadPolicy")]
+    public string? WorkloadPolicy { get; set; }
 }
 
 /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
@@ -2109,6 +2185,15 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderStatus
     public IList<V1beta1RegionInstanceGroupManagerStatusAtProviderStatusVersionTarget>? VersionTarget { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderTargetSizePolicy
+{
+    /// <summary>The mode of target size policy based on which the MIG creates its VMs individually or all at once. Values: &quot;BULK&quot;, &quot;INDIVIDUAL&quot;.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+}
+
 /// <summary>The update policy for this managed instance group. Structure is documented below. For more information, see the official documentation and API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2221,6 +2306,13 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProvider
     public string? CreationTimestamp { get; set; }
 
     /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional textual description of the instance
     /// group manager.
     /// </summary>
@@ -2299,6 +2391,10 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Resource policies for this managed instance group. Structure is documented below.</summary>
+    [JsonPropertyName("resourcePolicies")]
+    public V1beta1RegionInstanceGroupManagerStatusAtProviderResourcePolicies? ResourcePolicies { get; set; }
+
     /// <summary>The URL of the created resource.</summary>
     [JsonPropertyName("selfLink")]
     public string? SelfLink { get; set; }
@@ -2338,6 +2434,10 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProvider
     /// </summary>
     [JsonPropertyName("targetSize")]
     public double? TargetSize { get; set; }
+
+    /// <summary>The policy that specifies how the MIG creates its VMs to achieve the target size. Structure is documented below.</summary>
+    [JsonPropertyName("targetSizePolicy")]
+    public IList<V1beta1RegionInstanceGroupManagerStatusAtProviderTargetSizePolicy>? TargetSizePolicy { get; set; }
 
     /// <summary>The target number of stopped instances for this managed instance group.</summary>
     [JsonPropertyName("targetStoppedSize")]
@@ -2430,6 +2530,15 @@ public partial class V1beta1RegionInstanceGroupManagerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionInstanceGroupManagerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

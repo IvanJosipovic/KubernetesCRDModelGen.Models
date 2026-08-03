@@ -299,6 +299,23 @@ public partial class V1beta1RouterSpecForProviderNetworkSelector
     public V1beta1RouterSpecForProviderNetworkSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the router. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterSpecForProvider
@@ -339,6 +356,13 @@ public partial class V1beta1RouterSpecForProvider
     /// <summary>Selector for a Network in compute to populate network.</summary>
     [JsonPropertyName("networkSelector")]
     public V1beta1RouterSpecForProviderNetworkSelector? NetworkSelector { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RouterSpecForProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -616,6 +640,23 @@ public partial class V1beta1RouterSpecInitProviderNetworkSelector
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the router. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -667,6 +708,13 @@ public partial class V1beta1RouterSpecInitProvider
     /// <summary>Selector for a Network in compute to populate network.</summary>
     [JsonPropertyName("networkSelector")]
     public V1beta1RouterSpecInitProviderNetworkSelector? NetworkSelector { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RouterSpecInitProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -891,6 +939,23 @@ public partial class V1beta1RouterStatusAtProviderMd5AuthenticationKeys
     public string? Name { get; set; }
 }
 
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the router. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterStatusAtProvider
@@ -905,6 +970,13 @@ public partial class V1beta1RouterStatusAtProvider
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -931,6 +1003,13 @@ public partial class V1beta1RouterStatusAtProvider
     /// <summary>A reference to the network to which this router belongs.</summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1RouterStatusAtProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -1002,6 +1081,15 @@ public partial class V1beta1RouterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RouterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

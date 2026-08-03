@@ -1594,6 +1594,23 @@ public partial class V1beta1FunctionSpecForProviderEventTrigger
     public string? TriggerRegion { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecForProviderServiceConfigDirectVpcNetworkInterface
+{
+    /// <summary>The name of the VPC network to which the function will be connected. Specify either a VPC network or a subnet, or both. If you specify only a network, the subnet uses the same name as the network.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The name of the VPC subnetwork that the Cloud Function resource will get IPs from. Specify either a VPC network or a subnet, or both. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used.</summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Function resource.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -2141,7 +2158,7 @@ public partial class V1beta1FunctionSpecForProviderServiceConfigServiceAccountEm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecForProviderServiceConfig
 {
-    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true.</summary>
+    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true. When false, GCF honors the existing traffic configuration of the underlying Cloud Run service. If that configuration is set to route to LATEST (the default), the new deployment will become LATEST and intercept the traffic. To prevent traffic from shifting, you must manually pin the existing service to a specific revision name in Cloud Run before deploying.</summary>
     [JsonPropertyName("allTrafficOnLatestRevision")]
     public bool? AllTrafficOnLatestRevision { get; set; }
 
@@ -2160,6 +2177,20 @@ public partial class V1beta1FunctionSpecForProviderServiceConfig
     /// <summary>The binary authorization policy to be checked when deploying the Cloud Run service.</summary>
     [JsonPropertyName("binaryAuthorizationPolicy")]
     public string? BinaryAuthorizationPolicy { get; set; }
+
+    /// <summary>
+    /// Egress settings for direct VPC. If not provided, it defaults to VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// Possible values are: VPC_EGRESS_ALL_TRAFFIC, VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("directVpcEgress")]
+    public string? DirectVpcEgress { get; set; }
+
+    /// <summary>
+    /// The Direct VPC network interface for the Cloud Function. Currently only a single Direct VPC is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directVpcNetworkInterface")]
+    public IList<V1beta1FunctionSpecForProviderServiceConfigDirectVpcNetworkInterface>? DirectVpcNetworkInterface { get; set; }
 
     /// <summary>Environment variables that shall be available during function execution.</summary>
     [JsonPropertyName("environmentVariables")]
@@ -2204,10 +2235,6 @@ public partial class V1beta1FunctionSpecForProviderServiceConfig
     /// </summary>
     [JsonPropertyName("secretVolumes")]
     public IList<V1beta1FunctionSpecForProviderServiceConfigSecretVolumes>? SecretVolumes { get; set; }
-
-    /// <summary>Name of the service associated with a Function.</summary>
-    [JsonPropertyName("service")]
-    public string? Service { get; set; }
 
     /// <summary>The email of the service account for this function.</summary>
     [JsonPropertyName("serviceAccountEmail")]
@@ -3853,6 +3880,23 @@ public partial class V1beta1FunctionSpecInitProviderEventTrigger
     public string? TriggerRegion { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionSpecInitProviderServiceConfigDirectVpcNetworkInterface
+{
+    /// <summary>The name of the VPC network to which the function will be connected. Specify either a VPC network or a subnet, or both. If you specify only a network, the subnet uses the same name as the network.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The name of the VPC subnetwork that the Cloud Function resource will get IPs from. Specify either a VPC network or a subnet, or both. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used.</summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Function resource.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -4400,7 +4444,7 @@ public partial class V1beta1FunctionSpecInitProviderServiceConfigServiceAccountE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecInitProviderServiceConfig
 {
-    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true.</summary>
+    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true. When false, GCF honors the existing traffic configuration of the underlying Cloud Run service. If that configuration is set to route to LATEST (the default), the new deployment will become LATEST and intercept the traffic. To prevent traffic from shifting, you must manually pin the existing service to a specific revision name in Cloud Run before deploying.</summary>
     [JsonPropertyName("allTrafficOnLatestRevision")]
     public bool? AllTrafficOnLatestRevision { get; set; }
 
@@ -4419,6 +4463,20 @@ public partial class V1beta1FunctionSpecInitProviderServiceConfig
     /// <summary>The binary authorization policy to be checked when deploying the Cloud Run service.</summary>
     [JsonPropertyName("binaryAuthorizationPolicy")]
     public string? BinaryAuthorizationPolicy { get; set; }
+
+    /// <summary>
+    /// Egress settings for direct VPC. If not provided, it defaults to VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// Possible values are: VPC_EGRESS_ALL_TRAFFIC, VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("directVpcEgress")]
+    public string? DirectVpcEgress { get; set; }
+
+    /// <summary>
+    /// The Direct VPC network interface for the Cloud Function. Currently only a single Direct VPC is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directVpcNetworkInterface")]
+    public IList<V1beta1FunctionSpecInitProviderServiceConfigDirectVpcNetworkInterface>? DirectVpcNetworkInterface { get; set; }
 
     /// <summary>Environment variables that shall be available during function execution.</summary>
     [JsonPropertyName("environmentVariables")]
@@ -4463,10 +4521,6 @@ public partial class V1beta1FunctionSpecInitProviderServiceConfig
     /// </summary>
     [JsonPropertyName("secretVolumes")]
     public IList<V1beta1FunctionSpecInitProviderServiceConfigSecretVolumes>? SecretVolumes { get; set; }
-
-    /// <summary>Name of the service associated with a Function.</summary>
-    [JsonPropertyName("service")]
-    public string? Service { get; set; }
 
     /// <summary>The email of the service account for this function.</summary>
     [JsonPropertyName("serviceAccountEmail")]
@@ -4946,6 +5000,23 @@ public partial class V1beta1FunctionStatusAtProviderEventTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionStatusAtProviderServiceConfigDirectVpcNetworkInterface
+{
+    /// <summary>The name of the VPC network to which the function will be connected. Specify either a VPC network or a subnet, or both. If you specify only a network, the subnet uses the same name as the network.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The name of the VPC subnetwork that the Cloud Function resource will get IPs from. Specify either a VPC network or a subnet, or both. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used.</summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
+
+    /// <summary>Network tags applied to this Cloud Function resource.</summary>
+    [JsonPropertyName("tags")]
+    public IList<string>? Tags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionStatusAtProviderServiceConfigSecretEnvironmentVariables
 {
     /// <summary>Name of the environment variable.</summary>
@@ -5010,7 +5081,7 @@ public partial class V1beta1FunctionStatusAtProviderServiceConfigSecretVolumes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionStatusAtProviderServiceConfig
 {
-    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true.</summary>
+    /// <summary>Whether 100% of traffic is routed to the latest revision. Defaults to true. When false, GCF honors the existing traffic configuration of the underlying Cloud Run service. If that configuration is set to route to LATEST (the default), the new deployment will become LATEST and intercept the traffic. To prevent traffic from shifting, you must manually pin the existing service to a specific revision name in Cloud Run before deploying.</summary>
     [JsonPropertyName("allTrafficOnLatestRevision")]
     public bool? AllTrafficOnLatestRevision { get; set; }
 
@@ -5029,6 +5100,20 @@ public partial class V1beta1FunctionStatusAtProviderServiceConfig
     /// <summary>The binary authorization policy to be checked when deploying the Cloud Run service.</summary>
     [JsonPropertyName("binaryAuthorizationPolicy")]
     public string? BinaryAuthorizationPolicy { get; set; }
+
+    /// <summary>
+    /// Egress settings for direct VPC. If not provided, it defaults to VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// Possible values are: VPC_EGRESS_ALL_TRAFFIC, VPC_EGRESS_PRIVATE_RANGES_ONLY.
+    /// </summary>
+    [JsonPropertyName("directVpcEgress")]
+    public string? DirectVpcEgress { get; set; }
+
+    /// <summary>
+    /// The Direct VPC network interface for the Cloud Function. Currently only a single Direct VPC is supported.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("directVpcNetworkInterface")]
+    public IList<V1beta1FunctionStatusAtProviderServiceConfigDirectVpcNetworkInterface>? DirectVpcNetworkInterface { get; set; }
 
     /// <summary>Environment variables that shall be available during function execution.</summary>
     [JsonPropertyName("environmentVariables")]
@@ -5081,7 +5166,10 @@ public partial class V1beta1FunctionStatusAtProviderServiceConfig
     [JsonPropertyName("secretVolumes")]
     public IList<V1beta1FunctionStatusAtProviderServiceConfigSecretVolumes>? SecretVolumes { get; set; }
 
-    /// <summary>Name of the service associated with a Function.</summary>
+    /// <summary>
+    /// (Output)
+    /// Name of the service associated with a Function.
+    /// </summary>
     [JsonPropertyName("service")]
     public string? Service { get; set; }
 
@@ -5127,6 +5215,13 @@ public partial class V1beta1FunctionStatusAtProvider
     /// </summary>
     [JsonPropertyName("buildConfig")]
     public V1beta1FunctionStatusAtProviderBuildConfig? BuildConfig { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>User-provided description of a function.</summary>
     [JsonPropertyName("description")]
@@ -5255,6 +5350,15 @@ public partial class V1beta1FunctionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FunctionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

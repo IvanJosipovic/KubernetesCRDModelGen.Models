@@ -440,7 +440,8 @@ public partial class V1beta1ServiceConnectionPolicySpecForProvider
 
     /// <summary>
     /// The service class identifier for which this ServiceConnectionPolicy is for. The service class identifier is a unique, symbolic representation of a ServiceClass.
-    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, gcp-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, google-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// For a list of supported services, see Supported Services.
     /// </summary>
     [JsonPropertyName("serviceClass")]
     public string? ServiceClass { get; set; }
@@ -839,7 +840,8 @@ public partial class V1beta1ServiceConnectionPolicySpecInitProvider
 
     /// <summary>
     /// The service class identifier for which this ServiceConnectionPolicy is for. The service class identifier is a unique, symbolic representation of a ServiceClass.
-    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, gcp-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, google-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// For a list of supported services, see Supported Services.
     /// </summary>
     [JsonPropertyName("serviceClass")]
     public string? ServiceClass { get; set; }
@@ -1174,6 +1176,13 @@ public partial class V1beta1ServiceConnectionPolicyStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Free-text description of the resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1229,7 +1238,8 @@ public partial class V1beta1ServiceConnectionPolicyStatusAtProvider
 
     /// <summary>
     /// The service class identifier for which this ServiceConnectionPolicy is for. The service class identifier is a unique, symbolic representation of a ServiceClass.
-    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, gcp-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// It is provided by the Service Producer. Google services have a prefix of gcp. For example, google-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
+    /// For a list of supported services, see Supported Services.
     /// </summary>
     [JsonPropertyName("serviceClass")]
     public string? ServiceClass { get; set; }
@@ -1300,6 +1310,15 @@ public partial class V1beta1ServiceConnectionPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServiceConnectionPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

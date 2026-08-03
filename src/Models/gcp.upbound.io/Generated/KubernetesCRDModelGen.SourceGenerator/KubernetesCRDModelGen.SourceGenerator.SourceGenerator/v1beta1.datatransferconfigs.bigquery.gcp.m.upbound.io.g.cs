@@ -420,8 +420,8 @@ public partial class V1beta1DataTransferConfigSpecForProviderScheduleOptions
 }
 
 /// <summary>
-/// A LocalSecretKeySelector is a reference to a secret key
-/// in the same namespace with the referencing object.
+/// The Secret Access Key of the AWS account transferring data from.
+/// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -449,21 +449,11 @@ public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParamsSecr
 public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParams
 {
     /// <summary>
-    /// A LocalSecretKeySelector is a reference to a secret key
-    /// in the same namespace with the referencing object.
+    /// The Secret Access Key of the AWS account transferring data from.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("secretAccessKeySecretRef")]
     public V1beta1DataTransferConfigSpecForProviderSensitiveParamsSecretAccessKeySecretRef? SecretAccessKeySecretRef { get; set; }
-
-    /// <summary>
-    /// The Secret Access Key of the AWS account transferring data from.
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("secretAccessKeyWo")]
-    public string? SecretAccessKeyWo { get; set; }
-
-    [JsonPropertyName("secretAccessKeyWoVersion")]
-    public double? SecretAccessKeyWoVersion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -975,8 +965,8 @@ public partial class V1beta1DataTransferConfigSpecInitProviderScheduleOptions
 }
 
 /// <summary>
-/// A LocalSecretKeySelector is a reference to a secret key
-/// in the same namespace with the referencing object.
+/// The Secret Access Key of the AWS account transferring data from.
+/// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1004,21 +994,11 @@ public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParamsSec
 public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParams
 {
     /// <summary>
-    /// A LocalSecretKeySelector is a reference to a secret key
-    /// in the same namespace with the referencing object.
+    /// The Secret Access Key of the AWS account transferring data from.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("secretAccessKeySecretRef")]
     public V1beta1DataTransferConfigSpecInitProviderSensitiveParamsSecretAccessKeySecretRef? SecretAccessKeySecretRef { get; set; }
-
-    /// <summary>
-    /// The Secret Access Key of the AWS account transferring data from.
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("secretAccessKeyWo")]
-    public string? SecretAccessKeyWo { get; set; }
-
-    [JsonPropertyName("secretAccessKeyWoVersion")]
-    public double? SecretAccessKeyWoVersion { get; set; }
 }
 
 /// <summary>
@@ -1331,6 +1311,22 @@ public partial class V1beta1DataTransferConfigStatusAtProviderScheduleOptions
 }
 
 /// <summary>
+/// The Secret Access Key of the AWS account transferring data from.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DataTransferConfigStatusAtProviderSensitiveParamsSecretAccessKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Different parameters are configured primarily using the the params field on this
 /// resource. This block contains the parameters which contain secrets or passwords so that they can be marked
 /// sensitive and hidden from plan output. The name of the field, eg: secret_access_key, will be the key
@@ -1345,13 +1341,10 @@ public partial class V1beta1DataTransferConfigStatusAtProviderSensitiveParams
 {
     /// <summary>
     /// The Secret Access Key of the AWS account transferring data from.
-    /// Note: This property is write-only and will not be read from the API.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("secretAccessKeyWo")]
-    public string? SecretAccessKeyWo { get; set; }
-
-    [JsonPropertyName("secretAccessKeyWoVersion")]
-    public double? SecretAccessKeyWoVersion { get; set; }
+    [JsonPropertyName("secretAccessKeySecretRef")]
+    public V1beta1DataTransferConfigStatusAtProviderSensitiveParamsSecretAccessKeySecretRef? SecretAccessKeySecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1371,6 +1364,13 @@ public partial class V1beta1DataTransferConfigStatusAtProvider
     /// <summary>The data source id. Cannot be changed once the transfer config is created.</summary>
     [JsonPropertyName("dataSourceId")]
     public string? DataSourceId { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>The BigQuery target dataset id.</summary>
     [JsonPropertyName("destinationDatasetId")]
@@ -1539,6 +1539,15 @@ public partial class V1beta1DataTransferConfigStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DataTransferConfigStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

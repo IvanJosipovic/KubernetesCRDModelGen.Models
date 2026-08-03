@@ -692,6 +692,10 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestination
     [JsonPropertyName("gkeMasterCluster")]
     public string? GkeMasterCluster { get; set; }
 
+    /// <summary>A GKE Pod URI.</summary>
+    [JsonPropertyName("gkePod")]
+    public string? GkePod { get; set; }
+
     /// <summary>A Compute Engine instance URI.</summary>
     [JsonPropertyName("instance")]
     public string? Instance { get; set; }
@@ -727,6 +731,13 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestination
     /// <summary>Selector for a Network in compute to populate network.</summary>
     [JsonPropertyName("networkSelector")]
     public V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelector? NetworkSelector { get; set; }
+
+    /// <summary>
+    /// For source endpoints, type of the network where the endpoint is located. Not relevant for destination endpoints.
+    /// Possible values are: GCP_NETWORK, NON_GCP_NETWORK, INTERNET.
+    /// </summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>
     /// The IP protocol port of the endpoint. Only applicable when protocol is
@@ -2260,6 +2271,10 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestination
     [JsonPropertyName("gkeMasterCluster")]
     public string? GkeMasterCluster { get; set; }
 
+    /// <summary>A GKE Pod URI.</summary>
+    [JsonPropertyName("gkePod")]
+    public string? GkePod { get; set; }
+
     /// <summary>A Compute Engine instance URI.</summary>
     [JsonPropertyName("instance")]
     public string? Instance { get; set; }
@@ -2295,6 +2310,13 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestination
     /// <summary>Selector for a Network in compute to populate network.</summary>
     [JsonPropertyName("networkSelector")]
     public V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelector? NetworkSelector { get; set; }
+
+    /// <summary>
+    /// For source endpoints, type of the network where the endpoint is located. Not relevant for destination endpoints.
+    /// Possible values are: GCP_NETWORK, NON_GCP_NETWORK, INTERNET.
+    /// </summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>
     /// The IP protocol port of the endpoint. Only applicable when protocol is
@@ -3327,6 +3349,10 @@ public partial class V1beta1ConnectivityTestStatusAtProviderDestination
     [JsonPropertyName("gkeMasterCluster")]
     public string? GkeMasterCluster { get; set; }
 
+    /// <summary>A GKE Pod URI.</summary>
+    [JsonPropertyName("gkePod")]
+    public string? GkePod { get; set; }
+
     /// <summary>A Compute Engine instance URI.</summary>
     [JsonPropertyName("instance")]
     public string? Instance { get; set; }
@@ -3338,6 +3364,13 @@ public partial class V1beta1ConnectivityTestStatusAtProviderDestination
     /// <summary>A VPC network URI.</summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
+
+    /// <summary>
+    /// For source endpoints, type of the network where the endpoint is located. Not relevant for destination endpoints.
+    /// Possible values are: GCP_NETWORK, NON_GCP_NETWORK, INTERNET.
+    /// </summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>
     /// The IP protocol port of the endpoint. Only applicable when protocol is
@@ -3490,6 +3523,13 @@ public partial class V1beta1ConnectivityTestStatusAtProvider
     public bool? BypassFirewallChecks { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// The user-supplied description of the Connectivity Test.
     /// Maximum of 512 characters.
     /// </summary>
@@ -3624,6 +3664,15 @@ public partial class V1beta1ConnectivityTestStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectivityTestStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

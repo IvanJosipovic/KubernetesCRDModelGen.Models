@@ -1998,6 +1998,19 @@ public partial class V1beta1JobSpecForProviderLoad
     public string? WriteDisposition { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderQueryConnectionProperties
+{
+    /// <summary>The key of the property to set. Currently supported connection properties:</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the property to set.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -2602,6 +2615,15 @@ public partial class V1beta1JobSpecForProviderQuery
     /// </summary>
     [JsonPropertyName("allowLargeResults")]
     public bool? AllowLargeResults { get; set; }
+
+    /// <summary>
+    /// Connection properties to customize query behavior. Under JDBC, these correspond
+    /// directly to connection properties passed to the DriverManager. Under ODBC, these
+    /// correspond to properties in the connection string.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionProperties")]
+    public IList<V1beta1JobSpecForProviderQueryConnectionProperties>? ConnectionProperties { get; set; }
 
     /// <summary>
     /// Specifies whether the job is allowed to create new tables. The following values are supported:
@@ -4751,6 +4773,19 @@ public partial class V1beta1JobSpecInitProviderLoad
     public string? WriteDisposition { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderQueryConnectionProperties
+{
+    /// <summary>The key of the property to set. Currently supported connection properties:</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the property to set.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -5355,6 +5390,15 @@ public partial class V1beta1JobSpecInitProviderQuery
     /// </summary>
     [JsonPropertyName("allowLargeResults")]
     public bool? AllowLargeResults { get; set; }
+
+    /// <summary>
+    /// Connection properties to customize query behavior. Under JDBC, these correspond
+    /// directly to connection properties passed to the DriverManager. Under ODBC, these
+    /// correspond to properties in the connection string.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionProperties")]
+    public IList<V1beta1JobSpecInitProviderQueryConnectionProperties>? ConnectionProperties { get; set; }
 
     /// <summary>
     /// Specifies whether the job is allowed to create new tables. The following values are supported:
@@ -6170,6 +6214,19 @@ public partial class V1beta1JobStatusAtProviderLoad
     public string? WriteDisposition { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderQueryConnectionProperties
+{
+    /// <summary>The key of the property to set. Currently supported connection properties:</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the property to set.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
 /// <summary>
 /// Specifies the default dataset to use for unqualified table names in the query. Note that this does not alter behavior of unqualified dataset names.
 /// Structure is documented below.
@@ -6292,6 +6349,15 @@ public partial class V1beta1JobStatusAtProviderQuery
     /// </summary>
     [JsonPropertyName("allowLargeResults")]
     public bool? AllowLargeResults { get; set; }
+
+    /// <summary>
+    /// Connection properties to customize query behavior. Under JDBC, these correspond
+    /// directly to connection properties passed to the DriverManager. Under ODBC, these
+    /// correspond to properties in the connection string.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("connectionProperties")]
+    public IList<V1beta1JobStatusAtProviderQueryConnectionProperties>? ConnectionProperties { get; set; }
 
     /// <summary>
     /// Specifies whether the job is allowed to create new tables. The following values are supported:
@@ -6631,6 +6697,15 @@ public partial class V1beta1JobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1JobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

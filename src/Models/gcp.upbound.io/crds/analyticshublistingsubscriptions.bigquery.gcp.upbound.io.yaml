@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: analyticshublistingsubscriptions.bigquery.gcp.upbound.io
 spec:
   group: bigquery.gcp.upbound.io
@@ -256,6 +256,12 @@ spec:
                           The geographic location where the dataset should reside.
                           See https://cloud.google.com/bigquery/docs/locations for supported locations.
                         type: string
+                      replicaLocations:
+                        description: List of regions where the subscriber wants dataset replicas.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                     type: object
                   listingId:
                     description: The ID of the listing. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
@@ -540,6 +546,12 @@ spec:
                           The geographic location where the dataset should reside.
                           See https://cloud.google.com/bigquery/docs/locations for supported locations.
                         type: string
+                      replicaLocations:
+                        description: List of regions where the subscriber wants dataset replicas.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                     type: object
                   listingId:
                     description: The ID of the listing. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
@@ -750,6 +762,11 @@ spec:
                   dataExchangeId:
                     description: The ID of the data exchange. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
                     type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   destinationDataset:
                     description: |-
                       The destination dataset for this subscription.
@@ -786,6 +803,12 @@ spec:
                           The geographic location where the dataset should reside.
                           See https://cloud.google.com/bigquery/docs/locations for supported locations.
                         type: string
+                      replicaLocations:
+                        description: List of regions where the subscriber wants dataset replicas.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                     type: object
                   id:
                     description: an identifier for the resource with format projects/{{project}}/locations/{{location}}/subscriptions/{{subscription_id}}
@@ -913,6 +936,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

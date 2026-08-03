@@ -202,6 +202,112 @@ public partial class V1beta1InterconnectAttachmentSpecForProviderIpsecInternalAd
     public V1beta1InterconnectAttachmentSpecForProviderIpsecInternalAddressesSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecForProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings
+{
+    /// <summary>The inner appliance IP address.</summary>
+    [JsonPropertyName("innerApplianceIpAddress")]
+    public string? InnerApplianceIpAddress { get; set; }
+
+    /// <summary>List of inner VLAN tags.</summary>
+    [JsonPropertyName("innerVlanTags")]
+    public IList<string>? InnerVlanTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecForProviderL2ForwardingApplianceMappings
+{
+    /// <summary>The appliance IP address.</summary>
+    [JsonPropertyName("applianceIpAddress")]
+    public string? ApplianceIpAddress { get; set; }
+
+    /// <summary>Structure is documented below.</summary>
+    [JsonPropertyName("innerVlanToApplianceMappings")]
+    public IList<V1beta1InterconnectAttachmentSpecForProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings>? InnerVlanToApplianceMappings { get; set; }
+
+    /// <summary>
+    /// Name of the resource. Provided by the client when the resource is created. The
+    /// name must be 1-63 characters long, and comply with RFC1035. Specifically, the
+    /// name must be 1-63 characters long and match the regular expression
+    /// [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a
+    /// lowercase letter, and all following characters must be a dash, lowercase
+    /// letter, or digit, except the last character, which cannot be a dash.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The VLAN tag.</summary>
+    [JsonPropertyName("vlanId")]
+    public string? VlanId { get; set; }
+}
+
+/// <summary>
+/// GeneveHeader related configurations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecForProviderL2ForwardingGeneveHeader
+{
+    /// <summary>VNI is a 24-bit unique virtual network identifier.</summary>
+    [JsonPropertyName("vni")]
+    public double? Vni { get; set; }
+}
+
+/// <summary>
+/// L2 Interconnect Attachment related configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecForProviderL2Forwarding
+{
+    /// <summary>
+    /// A map of VLAN tags to appliances and optional inner mapping rules.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("applianceMappings")]
+    public IList<V1beta1InterconnectAttachmentSpecForProviderL2ForwardingApplianceMappings>? ApplianceMappings { get; set; }
+
+    /// <summary>The default appliance IP address.</summary>
+    [JsonPropertyName("defaultApplianceIpAddress")]
+    public string? DefaultApplianceIpAddress { get; set; }
+
+    /// <summary>
+    /// GeneveHeader related configurations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("geneveHeader")]
+    public V1beta1InterconnectAttachmentSpecForProviderL2ForwardingGeneveHeader? GeneveHeader { get; set; }
+
+    /// <summary>URL of the network to which this attachment belongs.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The tunnel endpoint IP address.</summary>
+    [JsonPropertyName("tunnelEndpointIpAddress")]
+    public string? TunnelEndpointIpAddress { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the interconnect attachment. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -366,10 +472,38 @@ public partial class V1beta1InterconnectAttachmentSpecForProvider
     /// For attachments of type PARTNER, the Google Partner that is operating the interconnect must set the bandwidth.
     /// Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED,
     /// Defaults to BPS_10G
-    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G.
+    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G, BPS_400G.
     /// </summary>
     [JsonPropertyName("bandwidth")]
     public string? Bandwidth { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 203.0.113.1/29
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpAddress")]
+    public string? CandidateCloudRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 2001:db8::1/125
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpv6Address")]
+    public string? CandidateCloudRouterIpv6Address { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 203.0.113.2/29
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpAddress")]
+    public string? CandidateCustomerRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 2001:db8::2/125
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpv6Address")]
+    public string? CandidateCustomerRouterIpv6Address { get; set; }
 
     /// <summary>
     /// Up to 16 candidate prefixes that can be used to restrict the allocation
@@ -443,6 +577,13 @@ public partial class V1beta1InterconnectAttachmentSpecForProvider
     public V1beta1InterconnectAttachmentSpecForProviderIpsecInternalAddressesSelector? IpsecInternalAddressesSelector { get; set; }
 
     /// <summary>
+    /// L2 Interconnect Attachment related configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("l2Forwarding")]
+    public V1beta1InterconnectAttachmentSpecForProviderL2Forwarding? L2Forwarding { get; set; }
+
+    /// <summary>
     /// Labels for this resource. These can only be added or modified by the setLabels
     /// method. Each label key/value pair must comply with RFC1035. Label values may be empty.
     /// </summary>
@@ -455,6 +596,13 @@ public partial class V1beta1InterconnectAttachmentSpecForProvider
     /// </summary>
     [JsonPropertyName("mtu")]
     public string? Mtu { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1InterconnectAttachmentSpecForProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -508,7 +656,7 @@ public partial class V1beta1InterconnectAttachmentSpecForProvider
     /// <summary>
     /// The type of InterconnectAttachment you wish to create. Defaults to
     /// DEDICATED.
-    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER.
+    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER, L2_DEDICATED.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -666,6 +814,112 @@ public partial class V1beta1InterconnectAttachmentSpecInitProviderIpsecInternalA
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1InterconnectAttachmentSpecInitProviderIpsecInternalAddressesSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings
+{
+    /// <summary>The inner appliance IP address.</summary>
+    [JsonPropertyName("innerApplianceIpAddress")]
+    public string? InnerApplianceIpAddress { get; set; }
+
+    /// <summary>List of inner VLAN tags.</summary>
+    [JsonPropertyName("innerVlanTags")]
+    public IList<string>? InnerVlanTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingApplianceMappings
+{
+    /// <summary>The appliance IP address.</summary>
+    [JsonPropertyName("applianceIpAddress")]
+    public string? ApplianceIpAddress { get; set; }
+
+    /// <summary>Structure is documented below.</summary>
+    [JsonPropertyName("innerVlanToApplianceMappings")]
+    public IList<V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings>? InnerVlanToApplianceMappings { get; set; }
+
+    /// <summary>
+    /// Name of the resource. Provided by the client when the resource is created. The
+    /// name must be 1-63 characters long, and comply with RFC1035. Specifically, the
+    /// name must be 1-63 characters long and match the regular expression
+    /// [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a
+    /// lowercase letter, and all following characters must be a dash, lowercase
+    /// letter, or digit, except the last character, which cannot be a dash.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The VLAN tag.</summary>
+    [JsonPropertyName("vlanId")]
+    public string? VlanId { get; set; }
+}
+
+/// <summary>
+/// GeneveHeader related configurations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingGeneveHeader
+{
+    /// <summary>VNI is a 24-bit unique virtual network identifier.</summary>
+    [JsonPropertyName("vni")]
+    public double? Vni { get; set; }
+}
+
+/// <summary>
+/// L2 Interconnect Attachment related configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecInitProviderL2Forwarding
+{
+    /// <summary>
+    /// A map of VLAN tags to appliances and optional inner mapping rules.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("applianceMappings")]
+    public IList<V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingApplianceMappings>? ApplianceMappings { get; set; }
+
+    /// <summary>The default appliance IP address.</summary>
+    [JsonPropertyName("defaultApplianceIpAddress")]
+    public string? DefaultApplianceIpAddress { get; set; }
+
+    /// <summary>
+    /// GeneveHeader related configurations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("geneveHeader")]
+    public V1beta1InterconnectAttachmentSpecInitProviderL2ForwardingGeneveHeader? GeneveHeader { get; set; }
+
+    /// <summary>URL of the network to which this attachment belongs.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The tunnel endpoint IP address.</summary>
+    [JsonPropertyName("tunnelEndpointIpAddress")]
+    public string? TunnelEndpointIpAddress { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the interconnect attachment. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -844,10 +1098,38 @@ public partial class V1beta1InterconnectAttachmentSpecInitProvider
     /// For attachments of type PARTNER, the Google Partner that is operating the interconnect must set the bandwidth.
     /// Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED,
     /// Defaults to BPS_10G
-    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G.
+    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G, BPS_400G.
     /// </summary>
     [JsonPropertyName("bandwidth")]
     public string? Bandwidth { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 203.0.113.1/29
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpAddress")]
+    public string? CandidateCloudRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 2001:db8::1/125
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpv6Address")]
+    public string? CandidateCloudRouterIpv6Address { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 203.0.113.2/29
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpAddress")]
+    public string? CandidateCustomerRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 2001:db8::2/125
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpv6Address")]
+    public string? CandidateCustomerRouterIpv6Address { get; set; }
 
     /// <summary>
     /// Up to 16 candidate prefixes that can be used to restrict the allocation
@@ -921,6 +1203,13 @@ public partial class V1beta1InterconnectAttachmentSpecInitProvider
     public V1beta1InterconnectAttachmentSpecInitProviderIpsecInternalAddressesSelector? IpsecInternalAddressesSelector { get; set; }
 
     /// <summary>
+    /// L2 Interconnect Attachment related configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("l2Forwarding")]
+    public V1beta1InterconnectAttachmentSpecInitProviderL2Forwarding? L2Forwarding { get; set; }
+
+    /// <summary>
     /// Labels for this resource. These can only be added or modified by the setLabels
     /// method. Each label key/value pair must comply with RFC1035. Label values may be empty.
     /// </summary>
@@ -933,6 +1222,13 @@ public partial class V1beta1InterconnectAttachmentSpecInitProvider
     /// </summary>
     [JsonPropertyName("mtu")]
     public string? Mtu { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1InterconnectAttachmentSpecInitProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -982,7 +1278,7 @@ public partial class V1beta1InterconnectAttachmentSpecInitProvider
     /// <summary>
     /// The type of InterconnectAttachment you wish to create. Defaults to
     /// DEDICATED.
-    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER.
+    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER, L2_DEDICATED.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -1180,6 +1476,112 @@ public partial class V1beta1InterconnectAttachmentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings
+{
+    /// <summary>The inner appliance IP address.</summary>
+    [JsonPropertyName("innerApplianceIpAddress")]
+    public string? InnerApplianceIpAddress { get; set; }
+
+    /// <summary>List of inner VLAN tags.</summary>
+    [JsonPropertyName("innerVlanTags")]
+    public IList<string>? InnerVlanTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingApplianceMappings
+{
+    /// <summary>The appliance IP address.</summary>
+    [JsonPropertyName("applianceIpAddress")]
+    public string? ApplianceIpAddress { get; set; }
+
+    /// <summary>Structure is documented below.</summary>
+    [JsonPropertyName("innerVlanToApplianceMappings")]
+    public IList<V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingApplianceMappingsInnerVlanToApplianceMappings>? InnerVlanToApplianceMappings { get; set; }
+
+    /// <summary>
+    /// Name of the resource. Provided by the client when the resource is created. The
+    /// name must be 1-63 characters long, and comply with RFC1035. Specifically, the
+    /// name must be 1-63 characters long and match the regular expression
+    /// [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a
+    /// lowercase letter, and all following characters must be a dash, lowercase
+    /// letter, or digit, except the last character, which cannot be a dash.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The VLAN tag.</summary>
+    [JsonPropertyName("vlanId")]
+    public string? VlanId { get; set; }
+}
+
+/// <summary>
+/// GeneveHeader related configurations.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingGeneveHeader
+{
+    /// <summary>VNI is a 24-bit unique virtual network identifier.</summary>
+    [JsonPropertyName("vni")]
+    public double? Vni { get; set; }
+}
+
+/// <summary>
+/// L2 Interconnect Attachment related configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentStatusAtProviderL2Forwarding
+{
+    /// <summary>
+    /// A map of VLAN tags to appliances and optional inner mapping rules.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("applianceMappings")]
+    public IList<V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingApplianceMappings>? ApplianceMappings { get; set; }
+
+    /// <summary>The default appliance IP address.</summary>
+    [JsonPropertyName("defaultApplianceIpAddress")]
+    public string? DefaultApplianceIpAddress { get; set; }
+
+    /// <summary>
+    /// GeneveHeader related configurations.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("geneveHeader")]
+    public V1beta1InterconnectAttachmentStatusAtProviderL2ForwardingGeneveHeader? GeneveHeader { get; set; }
+
+    /// <summary>URL of the network to which this attachment belongs.</summary>
+    [JsonPropertyName("network")]
+    public string? Network { get; set; }
+
+    /// <summary>The tunnel endpoint IP address.</summary>
+    [JsonPropertyName("tunnelEndpointIpAddress")]
+    public string? TunnelEndpointIpAddress { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InterconnectAttachmentStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the interconnect attachment. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InterconnectAttachmentStatusAtProviderPrivateInterconnectInfo
 {
     /// <summary>
@@ -1212,10 +1614,38 @@ public partial class V1beta1InterconnectAttachmentStatusAtProvider
     /// For attachments of type PARTNER, the Google Partner that is operating the interconnect must set the bandwidth.
     /// Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED,
     /// Defaults to BPS_10G
-    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G.
+    /// Possible values are: BPS_50M, BPS_100M, BPS_200M, BPS_300M, BPS_400M, BPS_500M, BPS_1G, BPS_2G, BPS_5G, BPS_10G, BPS_20G, BPS_50G, BPS_100G, BPS_400G.
     /// </summary>
     [JsonPropertyName("bandwidth")]
     public string? Bandwidth { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 203.0.113.1/29
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpAddress")]
+    public string? CandidateCloudRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the cloud router interface for this
+    /// interconnect attachment. Example: 2001:db8::1/125
+    /// </summary>
+    [JsonPropertyName("candidateCloudRouterIpv6Address")]
+    public string? CandidateCloudRouterIpv6Address { get; set; }
+
+    /// <summary>
+    /// Single IPv4 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 203.0.113.2/29
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpAddress")]
+    public string? CandidateCustomerRouterIpAddress { get; set; }
+
+    /// <summary>
+    /// Single IPv6 address + prefix length to be configured on the customer router interface for this
+    /// interconnect attachment. Example: 2001:db8::2/125
+    /// </summary>
+    [JsonPropertyName("candidateCustomerRouterIpv6Address")]
+    public string? CandidateCustomerRouterIpv6Address { get; set; }
 
     /// <summary>
     /// Up to 16 candidate prefixes that can be used to restrict the allocation
@@ -1260,6 +1690,13 @@ public partial class V1beta1InterconnectAttachmentStatusAtProvider
     /// </summary>
     [JsonPropertyName("customerRouterIpv6Address")]
     public string? CustomerRouterIpv6Address { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -1328,6 +1765,13 @@ public partial class V1beta1InterconnectAttachmentStatusAtProvider
     public IList<string>? IpsecInternalAddresses { get; set; }
 
     /// <summary>
+    /// L2 Interconnect Attachment related configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("l2Forwarding")]
+    public V1beta1InterconnectAttachmentStatusAtProviderL2Forwarding? L2Forwarding { get; set; }
+
+    /// <summary>
     /// A fingerprint for the labels being applied to this Interconnect, which is essentially a hash
     /// of the labels set used for optimistic locking. The fingerprint is initially generated by
     /// Compute Engine and changes after every request to modify or update labels.
@@ -1358,6 +1802,13 @@ public partial class V1beta1InterconnectAttachmentStatusAtProvider
     /// </summary>
     [JsonPropertyName("pairingKey")]
     public string? PairingKey { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1InterconnectAttachmentStatusAtProviderParams? Params { get; set; }
 
     /// <summary>
     /// [Output only for type PARTNER. Not present for DEDICATED]. Optional
@@ -1434,7 +1885,7 @@ public partial class V1beta1InterconnectAttachmentStatusAtProvider
     /// <summary>
     /// The type of InterconnectAttachment you wish to create. Defaults to
     /// DEDICATED.
-    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER.
+    /// Possible values are: DEDICATED, PARTNER, PARTNER_PROVIDER, L2_DEDICATED.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -1501,6 +1952,15 @@ public partial class V1beta1InterconnectAttachmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1InterconnectAttachmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigee.gcp.m.upbound.io;
-/// <summary>EndpointAttachment is the Schema for the EndpointAttachments API. &lt;no value&gt;</summary>
+/// <summary>EndpointAttachment is the Schema for the EndpointAttachments API. An</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -195,12 +195,21 @@ public partial class V1beta1EndpointAttachmentSpecForProviderServiceAttachmentSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAttachmentSpecForProvider
 {
+    /// <summary>The location of the endpoint attachment.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>
+    /// The Apigee Organization associated with the Apigee instance,
+    /// in the format organizations/{{org_name}}.
+    /// </summary>
     [JsonPropertyName("orgId")]
     public required string OrgId { get; set; }
 
+    /// <summary>
+    /// The resource URL of the service attachment in the format:
+    /// projects/*/regions/*/serviceAttachments/*.
+    /// </summary>
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 
@@ -384,9 +393,14 @@ public partial class V1beta1EndpointAttachmentSpecInitProviderServiceAttachmentS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAttachmentSpecInitProvider
 {
+    /// <summary>The location of the endpoint attachment.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>
+    /// The resource URL of the service attachment in the format:
+    /// projects/*/regions/*/serviceAttachments/*.
+    /// </summary>
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 
@@ -510,24 +524,50 @@ public partial class V1beta1EndpointAttachmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAttachmentStatusAtProvider
 {
+    /// <summary>
+    /// State of the endpoint attachment connection to the service attachment.
+    /// Possible values are: CONNECTION_STATE_UNSPECIFIED, PENDING, ACCEPTED, REJECTED, CLOSED.
+    /// </summary>
     [JsonPropertyName("connectionState")]
     public string? ConnectionState { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>Host that can be used in either HTTP Target Endpoint directly, or as the host in Target Server.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
+    /// <summary>an identifier for the resource with format {{org_id}}/endpointAttachments/{{endpoint_attachment_id}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>The location of the endpoint attachment.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>
+    /// Name of the Endpoint Attachment in the following format:
+    /// organizations/{organization}/endpointAttachments/{endpointAttachment}.
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>
+    /// The Apigee Organization associated with the Apigee instance,
+    /// in the format organizations/{{org_name}}.
+    /// </summary>
     [JsonPropertyName("orgId")]
     public string? OrgId { get; set; }
 
+    /// <summary>
+    /// The resource URL of the service attachment in the format:
+    /// projects/*/regions/*/serviceAttachments/*.
+    /// </summary>
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 }
@@ -588,6 +628,15 @@ public partial class V1beta1EndpointAttachmentStatus
     public IList<V1beta1EndpointAttachmentStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -596,7 +645,7 @@ public partial class V1beta1EndpointAttachmentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>EndpointAttachment is the Schema for the EndpointAttachments API. &lt;no value&gt;</summary>
+/// <summary>EndpointAttachment is the Schema for the EndpointAttachments API. An</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

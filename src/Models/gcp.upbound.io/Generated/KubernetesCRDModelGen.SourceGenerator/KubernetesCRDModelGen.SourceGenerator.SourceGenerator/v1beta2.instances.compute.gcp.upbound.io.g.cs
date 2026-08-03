@@ -624,6 +624,10 @@ public partial class V1beta2InstanceSpecForProviderBootDiskInitializeParams
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    /// <summary>A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.</summary>
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     /// <summary>A tag is a key-value pair that can be attached to a Google Cloud resource. You can use tags to conditionally allow or deny policies based on whether a resource has a specific tag. This value is not returned by the API.</summary>
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
@@ -760,11 +764,11 @@ public partial class V1beta2InstanceSpecForProviderBootDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderConfidentialInstanceConfig
 {
-    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
+    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
     [JsonPropertyName("confidentialInstanceType")]
     public string? ConfidentialInstanceType { get; set; }
 
-    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
+    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -1199,6 +1203,10 @@ public partial class V1beta2InstanceSpecForProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceSpecForProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    /// <summary>Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.</summary>
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -1240,7 +1248,7 @@ public partial class V1beta2InstanceSpecForProviderNetworkInterface
     [JsonPropertyName("networkSelector")]
     public V1beta2InstanceSpecForProviderNetworkInterfaceNetworkSelector? NetworkSelector { get; set; }
 
-    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.</summary>
+    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF</summary>
     [JsonPropertyName("nicType")]
     public string? NicType { get; set; }
 
@@ -1280,6 +1288,10 @@ public partial class V1beta2InstanceSpecForProviderNetworkInterface
     /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
     [JsonPropertyName("subnetworkSelector")]
     public V1beta2InstanceSpecForProviderNetworkInterfaceSubnetworkSelector? SubnetworkSelector { get; set; }
+
+    /// <summary>VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.</summary>
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 /// <summary>
@@ -1348,7 +1360,7 @@ public partial class V1beta2InstanceSpecForProviderReservationAffinity
     public string? Type { get; set; }
 }
 
-/// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+/// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderSchedulingLocalSsdRecoveryTimeout
@@ -1446,7 +1458,7 @@ public partial class V1beta2InstanceSpecForProviderScheduling
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
-    /// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+    /// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
     [JsonPropertyName("localSsdRecoveryTimeout")]
     public V1beta2InstanceSpecForProviderSchedulingLocalSsdRecoveryTimeout? LocalSsdRecoveryTimeout { get; set; }
 
@@ -2514,6 +2526,10 @@ public partial class V1beta2InstanceSpecInitProviderBootDiskInitializeParams
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    /// <summary>A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.</summary>
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     /// <summary>A tag is a key-value pair that can be attached to a Google Cloud resource. You can use tags to conditionally allow or deny policies based on whether a resource has a specific tag. This value is not returned by the API.</summary>
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
@@ -2650,11 +2666,11 @@ public partial class V1beta2InstanceSpecInitProviderBootDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderConfidentialInstanceConfig
 {
-    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
+    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
     [JsonPropertyName("confidentialInstanceType")]
     public string? ConfidentialInstanceType { get; set; }
 
-    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
+    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -3089,6 +3105,10 @@ public partial class V1beta2InstanceSpecInitProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceSpecInitProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    /// <summary>Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.</summary>
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -3130,7 +3150,7 @@ public partial class V1beta2InstanceSpecInitProviderNetworkInterface
     [JsonPropertyName("networkSelector")]
     public V1beta2InstanceSpecInitProviderNetworkInterfaceNetworkSelector? NetworkSelector { get; set; }
 
-    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.</summary>
+    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF</summary>
     [JsonPropertyName("nicType")]
     public string? NicType { get; set; }
 
@@ -3170,6 +3190,10 @@ public partial class V1beta2InstanceSpecInitProviderNetworkInterface
     /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
     [JsonPropertyName("subnetworkSelector")]
     public V1beta2InstanceSpecInitProviderNetworkInterfaceSubnetworkSelector? SubnetworkSelector { get; set; }
+
+    /// <summary>VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.</summary>
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 /// <summary>
@@ -3238,7 +3262,7 @@ public partial class V1beta2InstanceSpecInitProviderReservationAffinity
     public string? Type { get; set; }
 }
 
-/// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+/// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderSchedulingLocalSsdRecoveryTimeout
@@ -3336,7 +3360,7 @@ public partial class V1beta2InstanceSpecInitProviderScheduling
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
-    /// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+    /// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
     [JsonPropertyName("localSsdRecoveryTimeout")]
     public V1beta2InstanceSpecInitProviderSchedulingLocalSsdRecoveryTimeout? LocalSsdRecoveryTimeout { get; set; }
 
@@ -4227,6 +4251,10 @@ public partial class V1beta2InstanceStatusAtProviderBootDiskInitializeParams
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    /// <summary>A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.</summary>
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     /// <summary>A tag is a key-value pair that can be attached to a Google Cloud resource. You can use tags to conditionally allow or deny policies based on whether a resource has a specific tag. This value is not returned by the API.</summary>
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
@@ -4354,11 +4382,11 @@ public partial class V1beta2InstanceStatusAtProviderBootDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderConfidentialInstanceConfig
 {
-    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
+    /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
     [JsonPropertyName("confidentialInstanceType")]
     public string? ConfidentialInstanceType { get; set; }
 
-    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
+    /// <summary>Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to &quot;AMD Milan&quot; or &quot;AMD Genoa&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -4507,6 +4535,10 @@ public partial class V1beta2InstanceStatusAtProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceStatusAtProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    /// <summary>Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.</summary>
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -4554,9 +4586,13 @@ public partial class V1beta2InstanceStatusAtProviderNetworkInterface
     [JsonPropertyName("networkIp")]
     public string? NetworkIp { get; set; }
 
-    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.</summary>
+    /// <summary>The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF</summary>
     [JsonPropertyName("nicType")]
     public string? NicType { get; set; }
+
+    /// <summary>Name of the parent network interface of a dynamic network interface.</summary>
+    [JsonPropertyName("parentNicName")]
+    public string? ParentNicName { get; set; }
 
     /// <summary>The networking queue count that&apos;s specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.</summary>
     [JsonPropertyName("queueCount")]
@@ -4586,6 +4622,10 @@ public partial class V1beta2InstanceStatusAtProviderNetworkInterface
     /// </summary>
     [JsonPropertyName("subnetworkProject")]
     public string? SubnetworkProject { get; set; }
+
+    /// <summary>VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.</summary>
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 /// <summary>
@@ -4654,7 +4694,7 @@ public partial class V1beta2InstanceStatusAtProviderReservationAffinity
     public string? Type { get; set; }
 }
 
-/// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+/// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderSchedulingLocalSsdRecoveryTimeout
@@ -4752,7 +4792,7 @@ public partial class V1beta2InstanceStatusAtProviderScheduling
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
-    /// <summary>io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
+    /// <summary>(../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.</summary>
     [JsonPropertyName("localSsdRecoveryTimeout")]
     public V1beta2InstanceStatusAtProviderSchedulingLocalSsdRecoveryTimeout? LocalSsdRecoveryTimeout { get; set; }
 
@@ -4934,6 +4974,13 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>The current status of the instance. This could be one of the following values: PROVISIONING, STAGING, RUNNING, STOPPING, SUSPENDING, SUSPENDED, REPAIRING, and TERMINATED. For more information about the status of the instance, see Instance life cycle.</summary>
     [JsonPropertyName("currentStatus")]
     public string? CurrentStatus { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// Enable deletion protection on this instance. Defaults to false.
@@ -5193,6 +5240,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
