@@ -55,13 +55,16 @@ public enum V1beta1TableSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+/// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderAutomatedBackupPolicy
 {
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
+
+    [JsonPropertyName("locations")]
+    public IList<string>? Locations { get; set; }
 
     [JsonPropertyName("retentionPeriod")]
     public string? RetentionPeriod { get; set; }
@@ -231,7 +234,7 @@ public partial class V1beta1TableSpecForProviderInstanceNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProvider
 {
-    /// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+    /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
     [JsonPropertyName("automatedBackupPolicy")]
     public V1beta1TableSpecForProviderAutomatedBackupPolicy? AutomatedBackupPolicy { get; set; }
 
@@ -274,13 +277,16 @@ public partial class V1beta1TableSpecForProvider
     public IList<string>? SplitKeys { get; set; }
 }
 
-/// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+/// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderAutomatedBackupPolicy
 {
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
+
+    [JsonPropertyName("locations")]
+    public IList<string>? Locations { get; set; }
 
     [JsonPropertyName("retentionPeriod")]
     public string? RetentionPeriod { get; set; }
@@ -315,7 +321,7 @@ public partial class V1beta1TableSpecInitProviderColumnFamily
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProvider
 {
-    /// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+    /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
     [JsonPropertyName("automatedBackupPolicy")]
     public V1beta1TableSpecInitProviderAutomatedBackupPolicy? AutomatedBackupPolicy { get; set; }
 
@@ -529,13 +535,16 @@ public partial class V1beta1TableSpec
     public V1beta1TableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+/// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderAutomatedBackupPolicy
 {
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
+
+    [JsonPropertyName("locations")]
+    public IList<string>? Locations { get; set; }
 
     [JsonPropertyName("retentionPeriod")]
     public string? RetentionPeriod { get; set; }
@@ -558,7 +567,7 @@ public partial class V1beta1TableStatusAtProviderColumnFamily
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProvider
 {
-    /// <summary>Defines an automated backup policy for a table, specified by Retention Period and Frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument, or set both Retention Period and Frequency properties to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both Retention Period and Frequency properties to &quot;0&quot;. When updating an existing table, to modify the Retention Period or Frequency properties of the resource&apos;s automated backup policy, set the respective property to a non-zero value. If the automated_backup_policy argument is not provided in the configuration on update, the resource&apos;s automated backup policy will not be modified.</summary>
+    /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
     [JsonPropertyName("automatedBackupPolicy")]
     public V1beta1TableStatusAtProviderAutomatedBackupPolicy? AutomatedBackupPolicy { get; set; }
 
@@ -569,6 +578,13 @@ public partial class V1beta1TableStatusAtProvider
     /// <summary>A group of columns within a table which share a common configuration. This can be specified multiple times. Structure is documented below.</summary>
     [JsonPropertyName("columnFamily")]
     public IList<V1beta1TableStatusAtProviderColumnFamily>? ColumnFamily { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, deletion protection will be set to UNPROTECTED.</summary>
     [JsonPropertyName("deletionProtection")]
@@ -651,6 +667,15 @@ public partial class V1beta1TableStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TableStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

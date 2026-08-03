@@ -42,7 +42,7 @@ public partial class V1beta1ImageSpecForProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -123,6 +123,27 @@ public partial class V1beta1ImageSpecForProviderImageEncryptionKey
     /// </summary>
     [JsonPropertyName("rsaEncryptedKeySecretRef")]
     public V1beta1ImageSpecForProviderImageEncryptionKeyRsaEncryptedKeySecretRef? RsaEncryptedKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the image. Tag keys and values have the
+    /// same definition as resource manager tags. Keys and values can be either in numeric format,
+    /// such as tagKeys/{tag_key_id} and tagValues/{tag_value_id} or in namespaced format such as
+    /// {org_id|projectId}/{tag_key_short_name} and {tag_value_short_name}. The field is ignored when empty.
+    /// The field is immutable and causes resource replacement when mutated. This field is only
+    /// set at create time and modifying this field after creation will trigger recreation.
+    /// To apply tags to an existing resource, see the google_tags_tag_binding resource.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -716,6 +737,13 @@ public partial class V1beta1ImageSpecForProvider
     public IList<string>? Licenses { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ImageSpecForProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -805,7 +833,7 @@ public partial class V1beta1ImageSpecInitProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -886,6 +914,27 @@ public partial class V1beta1ImageSpecInitProviderImageEncryptionKey
     /// </summary>
     [JsonPropertyName("rsaEncryptedKeySecretRef")]
     public V1beta1ImageSpecInitProviderImageEncryptionKeyRsaEncryptedKeySecretRef? RsaEncryptedKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the image. Tag keys and values have the
+    /// same definition as resource manager tags. Keys and values can be either in numeric format,
+    /// such as tagKeys/{tag_key_id} and tagValues/{tag_value_id} or in namespaced format such as
+    /// {org_id|projectId}/{tag_key_short_name} and {tag_value_short_name}. The field is ignored when empty.
+    /// The field is immutable and causes resource replacement when mutated. This field is only
+    /// set at create time and modifying this field after creation will trigger recreation.
+    /// To apply tags to an existing resource, see the google_tags_tag_binding resource.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -1491,6 +1540,13 @@ public partial class V1beta1ImageSpecInitProvider
     public IList<string>? Licenses { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ImageSpecInitProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -1687,7 +1743,7 @@ public partial class V1beta1ImageStatusAtProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, IDPF, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -1718,6 +1774,27 @@ public partial class V1beta1ImageStatusAtProviderImageEncryptionKey
     /// </summary>
     [JsonPropertyName("kmsKeyServiceAccount")]
     public string? KmsKeyServiceAccount { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ImageStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the image. Tag keys and values have the
+    /// same definition as resource manager tags. Keys and values can be either in numeric format,
+    /// such as tagKeys/{tag_key_id} and tagValues/{tag_value_id} or in namespaced format such as
+    /// {org_id|projectId}/{tag_key_short_name} and {tag_value_short_name}. The field is ignored when empty.
+    /// The field is immutable and causes resource replacement when mutated. This field is only
+    /// set at create time and modifying this field after creation will trigger recreation.
+    /// To apply tags to an existing resource, see the google_tags_tag_binding resource.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -1960,6 +2037,13 @@ public partial class V1beta1ImageStatusAtProvider
     public string? CreationTimestamp { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource.
     /// </summary>
@@ -2023,6 +2107,13 @@ public partial class V1beta1ImageStatusAtProvider
     /// <summary>Any applicable license URI.</summary>
     [JsonPropertyName("licenses")]
     public IList<string>? Licenses { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ImageStatusAtProviderParams? Params { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -2165,6 +2256,15 @@ public partial class V1beta1ImageStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ImageStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

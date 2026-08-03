@@ -114,6 +114,26 @@ public partial class V1beta2WebhookSpecForProviderGenericWebServiceSecretVersion
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookSpecForProviderGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -186,6 +206,13 @@ public partial class V1beta2WebhookSpecForProviderGenericWebService
     /// </summary>
     [JsonPropertyName("secretVersionsForRequestHeaders")]
     public IList<V1beta2WebhookSpecForProviderGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookSpecForProviderGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
 
     /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
@@ -414,6 +441,26 @@ public partial class V1beta2WebhookSpecForProviderServiceDirectoryGenericWebServ
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookSpecForProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -486,6 +533,13 @@ public partial class V1beta2WebhookSpecForProviderServiceDirectoryGenericWebServ
     /// </summary>
     [JsonPropertyName("secretVersionsForRequestHeaders")]
     public IList<V1beta2WebhookSpecForProviderServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookSpecForProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
 
     /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
@@ -645,6 +699,26 @@ public partial class V1beta2WebhookSpecInitProviderGenericWebServiceSecretVersio
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookSpecInitProviderGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -717,6 +791,13 @@ public partial class V1beta2WebhookSpecInitProviderGenericWebService
     /// </summary>
     [JsonPropertyName("secretVersionsForRequestHeaders")]
     public IList<V1beta2WebhookSpecInitProviderGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookSpecInitProviderGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
 
     /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
@@ -945,6 +1026,26 @@ public partial class V1beta2WebhookSpecInitProviderServiceDirectoryGenericWebSer
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookSpecInitProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -1017,6 +1118,13 @@ public partial class V1beta2WebhookSpecInitProviderServiceDirectoryGenericWebSer
     /// </summary>
     [JsonPropertyName("secretVersionsForRequestHeaders")]
     public IList<V1beta2WebhookSpecInitProviderServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookSpecInitProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
 
     /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
@@ -1371,6 +1479,26 @@ public partial class V1beta2WebhookStatusAtProviderGenericWebServiceSecretVersio
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookStatusAtProviderGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -1443,6 +1571,13 @@ public partial class V1beta2WebhookStatusAtProviderGenericWebService
     /// </summary>
     [JsonPropertyName("secretVersionsForRequestHeaders")]
     public IList<V1beta2WebhookStatusAtProviderGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
+
+    /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookStatusAtProviderGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
 
     /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
@@ -1524,6 +1659,26 @@ public partial class V1beta2WebhookStatusAtProviderServiceDirectoryGenericWebSer
 }
 
 /// <summary>
+/// Configuration for authentication using a service account.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WebhookStatusAtProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+{
+    /// <summary>
+    /// The email address of the service account used to authenticate the webhook call.
+    /// Dialogflow uses this service account to exchange an access token and the access
+    /// token is then sent in the Authorization header of the webhook request.
+    /// The service account must have the roles/iam.serviceAccountTokenCreator role
+    /// granted to the
+    /// Dialogflow service agent.
+    /// </summary>
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+}
+
+/// <summary>
 /// Represents configuration for a generic web service.
 /// Structure is documented below.
 /// </summary>
@@ -1598,6 +1753,13 @@ public partial class V1beta2WebhookStatusAtProviderServiceDirectoryGenericWebSer
     public IList<V1beta2WebhookStatusAtProviderServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders>? SecretVersionsForRequestHeaders { get; set; }
 
     /// <summary>
+    /// Configuration for authentication using a service account.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serviceAccountAuthConfig")]
+    public V1beta2WebhookStatusAtProviderServiceDirectoryGenericWebServiceServiceAccountAuthConfig? ServiceAccountAuthConfig { get; set; }
+
+    /// <summary>
     /// Indicate the auth token type generated from the Diglogflow service
     /// agent.
     /// The generated token is sent in the Authorization header.
@@ -1642,6 +1804,13 @@ public partial class V1beta2WebhookStatusAtProviderServiceDirectory
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebhookStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Indicates whether the webhook is disabled.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
@@ -1757,6 +1926,15 @@ public partial class V1beta2WebhookStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WebhookStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

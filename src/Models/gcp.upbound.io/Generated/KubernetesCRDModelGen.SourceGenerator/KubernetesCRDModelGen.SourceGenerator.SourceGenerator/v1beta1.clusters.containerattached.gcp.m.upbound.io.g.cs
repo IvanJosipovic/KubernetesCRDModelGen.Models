@@ -258,7 +258,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("binaryAuthorization")]
     public V1beta1ClusterSpecForProviderBinaryAuthorization? BinaryAuthorization { get; set; }
 
-    /// <summary>Policy to determine what flags to send on delete. Possible values: DELETE, DELETE_IGNORE_ERRORS</summary>
+    /// <summary>Policy to determine what flags to send on delete.</summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -577,7 +577,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("binaryAuthorization")]
     public V1beta1ClusterSpecInitProviderBinaryAuthorization? BinaryAuthorization { get; set; }
 
-    /// <summary>Policy to determine what flags to send on delete. Possible values: DELETE, DELETE_IGNORE_ERRORS</summary>
+    /// <summary>Policy to determine what flags to send on delete.</summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -1037,7 +1037,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
-    /// <summary>Policy to determine what flags to send on delete. Possible values: DELETE, DELETE_IGNORE_ERRORS</summary>
+    /// <summary>Policy to determine what flags to send on delete.</summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 
@@ -1222,6 +1222,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

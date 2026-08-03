@@ -98,8 +98,8 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAcceptedRes
 }
 
 /// <summary>
-/// A LocalSecretKeySelector is a reference to a secret key
-/// in the same namespace with the referencing object.
+/// The password to authenticate.
+/// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -122,19 +122,13 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPas
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfo
 {
     /// <summary>
-    /// A LocalSecretKeySelector is a reference to a secret key
-    /// in the same namespace with the referencing object.
+    /// The password to authenticate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    [JsonPropertyName("passwordWoVersion")]
-    public string? PasswordWoVersion { get; set; }
-
-    /// <summary>A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].</summary>
+    /// <summary>The username to authenticate.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -828,8 +822,8 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAcceptedRe
 }
 
 /// <summary>
-/// A LocalSecretKeySelector is a reference to a secret key
-/// in the same namespace with the referencing object.
+/// The password to authenticate.
+/// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -852,19 +846,13 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPa
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfo
 {
     /// <summary>
-    /// A LocalSecretKeySelector is a reference to a secret key
-    /// in the same namespace with the referencing object.
+    /// The password to authenticate.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    [JsonPropertyName("passwordWoVersion")]
-    public string? PasswordWoVersion { get; set; }
-
-    /// <summary>A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].</summary>
+    /// <summary>The username to authenticate.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1684,13 +1672,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAcceptedRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAuthInfo
 {
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    [JsonPropertyName("passwordWoVersion")]
-    public string? PasswordWoVersion { get; set; }
-
-    /// <summary>A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].</summary>
+    /// <summary>The username to authenticate.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1927,6 +1909,13 @@ public partial class V1beta1UptimeCheckConfigStatusAtProvider
     [JsonPropertyName("contentMatchers")]
     public IList<V1beta1UptimeCheckConfigStatusAtProviderContentMatchers>? ContentMatchers { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>A human-friendly name for the uptime check configuration. The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however, uniqueness is not enforced.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -2062,6 +2051,15 @@ public partial class V1beta1UptimeCheckConfigStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UptimeCheckConfigStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

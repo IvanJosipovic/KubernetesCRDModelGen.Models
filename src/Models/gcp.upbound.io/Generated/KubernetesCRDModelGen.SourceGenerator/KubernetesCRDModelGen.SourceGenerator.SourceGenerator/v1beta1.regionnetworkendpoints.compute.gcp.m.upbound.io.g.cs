@@ -43,6 +43,161 @@ public partial class V1beta1RegionNetworkEndpointList : IKubernetesObject<V1List
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolutionEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolveEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecForProviderInstanceRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecForProviderInstanceSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupRefPolicyResolutionEnum
 {
@@ -195,12 +350,31 @@ public partial class V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEnd
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecForProvider
 {
+    /// <summary>Client destination port for the GCE_VM_IP_PORTMAP NEG.</summary>
+    [JsonPropertyName("clientDestinationPort")]
+    public double? ClientDestinationPort { get; set; }
+
     /// <summary>
     /// Fully qualified domain name of network endpoint.
     /// This can only be specified when network_endpoint_type of the NEG is INTERNET_FQDN_PORT.
     /// </summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
+
+    /// <summary>
+    /// The name for a specific VM instance that the IP address belongs to.
+    /// This is required for network endpoints of type GCE_VM_IP_PORTMAP.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
+
+    /// <summary>Reference to a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceRef")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceRef? InstanceRef { get; set; }
+
+    /// <summary>Selector for a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceSelector")]
+    public V1beta1RegionNetworkEndpointSpecForProviderInstanceSelector? InstanceSelector { get; set; }
 
     /// <summary>
     /// IPv4 address external endpoint.
@@ -235,6 +409,161 @@ public partial class V1beta1RegionNetworkEndpointSpecForProvider
     /// <summary>Selector for a RegionNetworkEndpointGroup in compute to populate regionNetworkEndpointGroup.</summary>
     [JsonPropertyName("regionNetworkEndpointGroupSelector")]
     public V1beta1RegionNetworkEndpointSpecForProviderRegionNetworkEndpointGroupSelector? RegionNetworkEndpointGroupSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolutionEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolveEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecInitProviderInstanceRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolveEnum>))]
+public enum V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Instance in compute to populate instance.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -408,12 +737,31 @@ public partial class V1beta1RegionNetworkEndpointSpecInitProviderRegionNetworkEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointSpecInitProvider
 {
+    /// <summary>Client destination port for the GCE_VM_IP_PORTMAP NEG.</summary>
+    [JsonPropertyName("clientDestinationPort")]
+    public double? ClientDestinationPort { get; set; }
+
     /// <summary>
     /// Fully qualified domain name of network endpoint.
     /// This can only be specified when network_endpoint_type of the NEG is INTERNET_FQDN_PORT.
     /// </summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
+
+    /// <summary>
+    /// The name for a specific VM instance that the IP address belongs to.
+    /// This is required for network endpoints of type GCE_VM_IP_PORTMAP.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
+
+    /// <summary>Reference to a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceRef")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceRef? InstanceRef { get; set; }
+
+    /// <summary>Selector for a Instance in compute to populate instance.</summary>
+    [JsonPropertyName("instanceSelector")]
+    public V1beta1RegionNetworkEndpointSpecInitProviderInstanceSelector? InstanceSelector { get; set; }
 
     /// <summary>
     /// IPv4 address external endpoint.
@@ -561,6 +909,17 @@ public partial class V1beta1RegionNetworkEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointStatusAtProvider
 {
+    /// <summary>Client destination port for the GCE_VM_IP_PORTMAP NEG.</summary>
+    [JsonPropertyName("clientDestinationPort")]
+    public double? ClientDestinationPort { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>
     /// Fully qualified domain name of network endpoint.
     /// This can only be specified when network_endpoint_type of the NEG is INTERNET_FQDN_PORT.
@@ -571,6 +930,13 @@ public partial class V1beta1RegionNetworkEndpointStatusAtProvider
     /// <summary>an identifier for the resource with format {{project}}/{{region}}/{{region_network_endpoint_group}}/{{ip_address}}/{{fqdn}}/{{port}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// The name for a specific VM instance that the IP address belongs to.
+    /// This is required for network endpoints of type GCE_VM_IP_PORTMAP.
+    /// </summary>
+    [JsonPropertyName("instance")]
+    public string? Instance { get; set; }
 
     /// <summary>
     /// IPv4 address external endpoint.
@@ -657,6 +1023,15 @@ public partial class V1beta1RegionNetworkEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionNetworkEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

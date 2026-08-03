@@ -317,6 +317,9 @@ public partial class V1beta2InstanceFromTemplateSpecForProviderBootDiskInitializ
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
 
@@ -788,6 +791,9 @@ public partial class V1beta2InstanceFromTemplateSpecForProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceFromTemplateSpecForProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -836,6 +842,9 @@ public partial class V1beta2InstanceFromTemplateSpecForProviderNetworkInterface
     /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
     [JsonPropertyName("subnetworkSelector")]
     public V1beta2InstanceFromTemplateSpecForProviderNetworkInterfaceSubnetworkSelector? SubnetworkSelector { get; set; }
+
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1543,6 +1552,9 @@ public partial class V1beta2InstanceFromTemplateSpecInitProviderBootDiskInitiali
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
 
@@ -2014,6 +2026,9 @@ public partial class V1beta2InstanceFromTemplateSpecInitProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceFromTemplateSpecInitProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -2062,6 +2077,9 @@ public partial class V1beta2InstanceFromTemplateSpecInitProviderNetworkInterface
     /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
     [JsonPropertyName("subnetworkSelector")]
     public V1beta2InstanceFromTemplateSpecInitProviderNetworkInterfaceSubnetworkSelector? SubnetworkSelector { get; set; }
+
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2805,6 +2823,9 @@ public partial class V1beta2InstanceFromTemplateStatusAtProviderBootDiskInitiali
     [JsonPropertyName("provisionedThroughput")]
     public double? ProvisionedThroughput { get; set; }
 
+    [JsonPropertyName("replicaZones")]
+    public IList<string>? ReplicaZones { get; set; }
+
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
 
@@ -2980,6 +3001,9 @@ public partial class V1beta2InstanceFromTemplateStatusAtProviderNetworkInterface
     [JsonPropertyName("aliasIpRange")]
     public IList<V1beta2InstanceFromTemplateStatusAtProviderNetworkInterfaceAliasIpRange>? AliasIpRange { get; set; }
 
+    [JsonPropertyName("igmpQuery")]
+    public string? IgmpQuery { get; set; }
+
     [JsonPropertyName("internalIpv6PrefixLength")]
     public double? InternalIpv6PrefixLength { get; set; }
 
@@ -3011,6 +3035,13 @@ public partial class V1beta2InstanceFromTemplateStatusAtProviderNetworkInterface
     [JsonPropertyName("nicType")]
     public string? NicType { get; set; }
 
+    /// <summary>
+    /// A unique name for the resource, required by GCE.
+    /// Changing this forces a new resource to be created.
+    /// </summary>
+    [JsonPropertyName("parentNicName")]
+    public string? ParentNicName { get; set; }
+
     [JsonPropertyName("queueCount")]
     public double? QueueCount { get; set; }
 
@@ -3022,6 +3053,9 @@ public partial class V1beta2InstanceFromTemplateStatusAtProviderNetworkInterface
 
     [JsonPropertyName("subnetworkProject")]
     public string? SubnetworkProject { get; set; }
+
+    [JsonPropertyName("vlan")]
+    public double? Vlan { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3222,6 +3256,9 @@ public partial class V1beta2InstanceFromTemplateStatusAtProvider
     [JsonPropertyName("currentStatus")]
     public string? CurrentStatus { get; set; }
 
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
@@ -3399,6 +3436,15 @@ public partial class V1beta2InstanceFromTemplateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceFromTemplateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

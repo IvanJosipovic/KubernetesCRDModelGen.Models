@@ -399,6 +399,10 @@ public partial class V1beta1NetworkPeeringSpecForProvider
     /// <summary>Which IP version(s) of traffic and routes are allowed to be imported or exported between peer networks. The default value is IPV4_ONLY. Possible values: [&quot;IPV4_ONLY&quot;, &quot;IPV4_IPV6&quot;].</summary>
     [JsonPropertyName("stackType")]
     public string? StackType { get; set; }
+
+    /// <summary>The update strategy determines the semantics for updates and deletes to the peering connection configuration. The default value is INDEPENDENT. Possible values: [&quot;INDEPENDENT&quot;, &quot;CONSENSUS&quot;]</summary>
+    [JsonPropertyName("updateStrategy")]
+    public string? UpdateStrategy { get; set; }
 }
 
 /// <summary>
@@ -598,6 +602,10 @@ public partial class V1beta1NetworkPeeringSpecInitProvider
     /// <summary>Which IP version(s) of traffic and routes are allowed to be imported or exported between peer networks. The default value is IPV4_ONLY. Possible values: [&quot;IPV4_ONLY&quot;, &quot;IPV4_IPV6&quot;].</summary>
     [JsonPropertyName("stackType")]
     public string? StackType { get; set; }
+
+    /// <summary>The update strategy determines the semantics for updates and deletes to the peering connection configuration. The default value is INDEPENDENT. Possible values: [&quot;INDEPENDENT&quot;, &quot;CONSENSUS&quot;]</summary>
+    [JsonPropertyName("updateStrategy")]
+    public string? UpdateStrategy { get; set; }
 }
 
 /// <summary>
@@ -787,6 +795,13 @@ public partial class V1beta1NetworkPeeringSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkPeeringStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Whether to export the custom routes to the peer network. Defaults to false.</summary>
     [JsonPropertyName("exportCustomRoutes")]
     public bool? ExportCustomRoutes { get; set; }
@@ -832,6 +847,10 @@ public partial class V1beta1NetworkPeeringStatusAtProvider
     /// <summary>Details about the current state of the peering.</summary>
     [JsonPropertyName("stateDetails")]
     public string? StateDetails { get; set; }
+
+    /// <summary>The update strategy determines the semantics for updates and deletes to the peering connection configuration. The default value is INDEPENDENT. Possible values: [&quot;INDEPENDENT&quot;, &quot;CONSENSUS&quot;]</summary>
+    [JsonPropertyName("updateStrategy")]
+    public string? UpdateStrategy { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -888,6 +907,15 @@ public partial class V1beta1NetworkPeeringStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkPeeringStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

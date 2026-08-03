@@ -578,6 +578,14 @@ public partial class V1alpha1ClusterSpec
     [JsonPropertyName("computeConfig")]
     public V1alpha1ClusterSpecComputeConfig? ComputeConfig { get; set; }
 
+    /// <summary>
+    /// Indicates whether to enable deletion protection for the cluster. When enabled,
+    /// the cluster cannot be deleted unless deletion protection is first disabled.
+    /// This helps prevent accidental cluster deletion. Default value is false.
+    /// </summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
+
     /// <summary>The encryption configuration for the cluster.</summary>
     [JsonPropertyName("encryptionConfig")]
     public IList<V1alpha1ClusterSpecEncryptionConfig>? EncryptionConfig { get; set; }

@@ -37,6 +37,24 @@ public partial class V1beta1CAPoolList : IKubernetesObject<V1ListMeta>, IItems<V
 }
 
 /// <summary>
+/// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+/// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+/// customer data will remain unencrypted.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CAPoolSpecForProviderEncryptionSpec
+{
+    /// <summary>
+    /// The resource name for an existing Cloud KMS key in the format
+    /// projects/*/locations/*/keyRings/*/cryptoKeys/*.
+    /// </summary>
+    [JsonPropertyName("cloudKmsKey")]
+    public string? CloudKmsKey { get; set; }
+}
+
+/// <summary>
 /// IssuanceModes specifies the allowed ways in which Certificates may be requested from this CaPool.
 /// Structure is documented below.
 /// </summary>
@@ -524,7 +542,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicy
 
     /// <summary>
     /// If any AllowedKeyType is specified, then the certificate request&apos;s public key must match one of the key types listed here.
-    /// Otherwise, any key may be used.
+    /// Otherwise, any key may be used. You can specify only one key type of those listed here.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("allowedKeyTypes")]
@@ -606,6 +624,15 @@ public partial class V1beta1CAPoolSpecForProviderPublishingOptions
 public partial class V1beta1CAPoolSpecForProvider
 {
     /// <summary>
+    /// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+    /// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+    /// customer data will remain unencrypted.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("encryptionSpec")]
+    public V1beta1CAPoolSpecForProviderEncryptionSpec? EncryptionSpec { get; set; }
+
+    /// <summary>
     /// The IssuancePolicy to control how Certificates will be issued from this CaPool.
     /// Structure is documented below.
     /// </summary>
@@ -647,6 +674,24 @@ public partial class V1beta1CAPoolSpecForProvider
     /// </summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
+}
+
+/// <summary>
+/// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+/// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+/// customer data will remain unencrypted.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CAPoolSpecInitProviderEncryptionSpec
+{
+    /// <summary>
+    /// The resource name for an existing Cloud KMS key in the format
+    /// projects/*/locations/*/keyRings/*/cryptoKeys/*.
+    /// </summary>
+    [JsonPropertyName("cloudKmsKey")]
+    public string? CloudKmsKey { get; set; }
 }
 
 /// <summary>
@@ -1130,7 +1175,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicy
 
     /// <summary>
     /// If any AllowedKeyType is specified, then the certificate request&apos;s public key must match one of the key types listed here.
-    /// Otherwise, any key may be used.
+    /// Otherwise, any key may be used. You can specify only one key type of those listed here.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("allowedKeyTypes")]
@@ -1223,6 +1268,15 @@ public partial class V1beta1CAPoolSpecInitProviderPublishingOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CAPoolSpecInitProvider
 {
+    /// <summary>
+    /// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+    /// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+    /// customer data will remain unencrypted.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("encryptionSpec")]
+    public V1beta1CAPoolSpecInitProviderEncryptionSpec? EncryptionSpec { get; set; }
+
     /// <summary>
     /// The IssuancePolicy to control how Certificates will be issued from this CaPool.
     /// Structure is documented below.
@@ -1365,6 +1419,24 @@ public partial class V1beta1CAPoolSpec
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
     public V1beta1CAPoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>
+/// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+/// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+/// customer data will remain unencrypted.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CAPoolStatusAtProviderEncryptionSpec
+{
+    /// <summary>
+    /// The resource name for an existing Cloud KMS key in the format
+    /// projects/*/locations/*/keyRings/*/cryptoKeys/*.
+    /// </summary>
+    [JsonPropertyName("cloudKmsKey")]
+    public string? CloudKmsKey { get; set; }
 }
 
 /// <summary>
@@ -1855,7 +1927,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicy
 
     /// <summary>
     /// If any AllowedKeyType is specified, then the certificate request&apos;s public key must match one of the key types listed here.
-    /// Otherwise, any key may be used.
+    /// Otherwise, any key may be used. You can specify only one key type of those listed here.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("allowedKeyTypes")]
@@ -1936,9 +2008,25 @@ public partial class V1beta1CAPoolStatusAtProviderPublishingOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CAPoolStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>for all of the labels present on the resource.</summary>
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>
+    /// Used when customer would like to encrypt data at rest. The customer-provided key will be used
+    /// to encrypt the Subject, SubjectAltNames and PEM-encoded certificate fields. When unspecified,
+    /// customer data will remain unencrypted.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("encryptionSpec")]
+    public V1beta1CAPoolStatusAtProviderEncryptionSpec? EncryptionSpec { get; set; }
 
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/caPools/{{name}}</summary>
     [JsonPropertyName("id")]
@@ -2049,6 +2137,15 @@ public partial class V1beta1CAPoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CAPoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

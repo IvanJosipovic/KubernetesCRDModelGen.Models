@@ -657,6 +657,15 @@ public partial class V1beta1GatewaySpecForProvider
     public IList<string>? Addresses { get; set; }
 
     /// <summary>
+    /// Configures this gateway to ​listen on all ports.
+    /// By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+    /// it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allPorts")]
+    public bool? AllPorts { get; set; }
+
+    /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
     /// This feature only applies to gateways of type &apos;SECURE_WEB_GATEWAY&apos;.
     /// </summary>
@@ -743,7 +752,7 @@ public partial class V1beta1GatewaySpecForProvider
 
     /// <summary>
     /// One or more port numbers (1-65535), on which the Gateway will receive traffic.
-    /// The proxy binds to the specified ports. Gateways of type &apos;SECURE_WEB_GATEWAY&apos; are limited to 1 port.
+    /// The proxy binds to the specified ports.
     /// Gateways of type &apos;OPEN_MESH&apos; listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
     /// </summary>
     [JsonPropertyName("ports")]
@@ -758,7 +767,7 @@ public partial class V1beta1GatewaySpecForProvider
 
     /// <summary>
     /// The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-    /// Possible values are: NEXT_HOP_ROUTING_MODE.
+    /// Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
     /// </summary>
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
@@ -1413,6 +1422,15 @@ public partial class V1beta1GatewaySpecInitProvider
     public IList<string>? Addresses { get; set; }
 
     /// <summary>
+    /// Configures this gateway to ​listen on all ports.
+    /// By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+    /// it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allPorts")]
+    public bool? AllPorts { get; set; }
+
+    /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
     /// This feature only applies to gateways of type &apos;SECURE_WEB_GATEWAY&apos;.
     /// </summary>
@@ -1492,7 +1510,7 @@ public partial class V1beta1GatewaySpecInitProvider
 
     /// <summary>
     /// One or more port numbers (1-65535), on which the Gateway will receive traffic.
-    /// The proxy binds to the specified ports. Gateways of type &apos;SECURE_WEB_GATEWAY&apos; are limited to 1 port.
+    /// The proxy binds to the specified ports.
     /// Gateways of type &apos;OPEN_MESH&apos; listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
     /// </summary>
     [JsonPropertyName("ports")]
@@ -1507,7 +1525,7 @@ public partial class V1beta1GatewaySpecInitProvider
 
     /// <summary>
     /// The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-    /// Possible values are: NEXT_HOP_ROUTING_MODE.
+    /// Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
     /// </summary>
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
@@ -1745,6 +1763,15 @@ public partial class V1beta1GatewayStatusAtProvider
     public IList<string>? Addresses { get; set; }
 
     /// <summary>
+    /// Configures this gateway to ​listen on all ports.
+    /// By enabling the wildcard ports feature on​ ​your Secure Web Proxy Gateway,
+    /// it will accept traffic destined for any port (1-65535) on its​ assigned IP address.​
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allPorts")]
+    public bool? AllPorts { get; set; }
+
+    /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
     /// This feature only applies to gateways of type &apos;SECURE_WEB_GATEWAY&apos;.
     /// </summary>
@@ -1761,6 +1788,13 @@ public partial class V1beta1GatewayStatusAtProvider
     /// </summary>
     [JsonPropertyName("deleteSwgAutogenRouterOnDestroy")]
     public bool? DeleteSwgAutogenRouterOnDestroy { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>A free-text description of the resource. Max length 1024 characters.</summary>
     [JsonPropertyName("description")]
@@ -1819,7 +1853,7 @@ public partial class V1beta1GatewayStatusAtProvider
 
     /// <summary>
     /// One or more port numbers (1-65535), on which the Gateway will receive traffic.
-    /// The proxy binds to the specified ports. Gateways of type &apos;SECURE_WEB_GATEWAY&apos; are limited to 1 port.
+    /// The proxy binds to the specified ports.
     /// Gateways of type &apos;OPEN_MESH&apos; listen on 0.0.0.0 for IPv4 and :: for IPv6 and support multiple ports.
     /// </summary>
     [JsonPropertyName("ports")]
@@ -1834,7 +1868,7 @@ public partial class V1beta1GatewayStatusAtProvider
 
     /// <summary>
     /// The routing mode of the Gateway. This field is configurable only for gateways of type SECURE_WEB_GATEWAY. This field is required for gateways of type SECURE_WEB_GATEWAY.
-    /// Possible values are: NEXT_HOP_ROUTING_MODE.
+    /// Possible values are: NEXT_HOP_ROUTING_MODE, EXPLICIT_ROUTING_MODE.
     /// </summary>
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
@@ -1936,6 +1970,15 @@ public partial class V1beta1GatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

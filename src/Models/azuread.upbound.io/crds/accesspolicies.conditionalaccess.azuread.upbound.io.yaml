@@ -88,6 +88,18 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              filter:
+                                description: A filter block as documented below.
+                                items:
+                                  properties:
+                                    mode:
+                                      description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                      type: string
+                                    rule:
+                                      description: Condition filter to match items.
+                                      type: string
+                                  type: object
+                                type: array
                               includedApplications:
                                 description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
                                 items:
@@ -384,6 +396,18 @@ spec:
                                 description: A list of application IDs explicitly excluded from the policy. Can also be set to Office365.
                                 items:
                                   type: string
+                                type: array
+                              filter:
+                                description: A filter block as documented below.
+                                items:
+                                  properties:
+                                    mode:
+                                      description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                      type: string
+                                    rule:
+                                      description: Condition filter to match items.
+                                      type: string
+                                  type: object
                                 type: array
                               includedApplications:
                                 description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
@@ -767,6 +791,18 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              filter:
+                                description: A filter block as documented below.
+                                items:
+                                  properties:
+                                    mode:
+                                      description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                      type: string
+                                    rule:
+                                      description: Condition filter to match items.
+                                      type: string
+                                  type: object
+                                type: array
                               includedApplications:
                                 description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
                                 items:
@@ -1090,6 +1126,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1170,6 +1213,16 @@ spec:
                             items:
                               type: string
                             type: array
+                          filter:
+                            description: A filter block as documented below.
+                            properties:
+                              mode:
+                                description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                type: string
+                              rule:
+                                description: Condition filter to match items.
+                                type: string
+                            type: object
                           includedApplications:
                             description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
                             items:
@@ -1445,6 +1498,16 @@ spec:
                             items:
                               type: string
                             type: array
+                          filter:
+                            description: A filter block as documented below.
+                            properties:
+                              mode:
+                                description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                type: string
+                              rule:
+                                description: Condition filter to match items.
+                                type: string
+                            type: object
                           includedApplications:
                             description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
                             items:
@@ -1805,6 +1868,16 @@ spec:
                             items:
                               type: string
                             type: array
+                          filter:
+                            description: A filter block as documented below.
+                            properties:
+                              mode:
+                                description: Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.
+                                type: string
+                              rule:
+                                description: Condition filter to match items.
+                                type: string
+                            type: object
                           includedApplications:
                             description: A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.
                             items:
@@ -2108,6 +2181,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

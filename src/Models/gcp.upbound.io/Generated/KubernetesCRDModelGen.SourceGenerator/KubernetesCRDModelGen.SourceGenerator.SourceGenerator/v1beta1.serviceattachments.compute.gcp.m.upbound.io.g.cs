@@ -203,6 +203,13 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptLists
     public double? ConnectionLimit { get; set; }
 
     /// <summary>
+    /// The endpoint that is allowed to connect to this service attachment.
+    /// Only one of project_id_or_num, network_url and endpoint_url may be set.
+    /// </summary>
+    [JsonPropertyName("endpointUrl")]
+    public string? EndpointUrl { get; set; }
+
+    /// <summary>
     /// The network that is allowed to connect to this service attachment.
     /// Only one of project_id_or_num and network_url may be set.
     /// </summary>
@@ -632,6 +639,14 @@ public partial class V1beta1ServiceAttachmentSpecForProvider
     [JsonPropertyName("sendPropagatedConnectionLimitIfZero")]
     public bool? SendPropagatedConnectionLimitIfZero { get; set; }
 
+    /// <summary>
+    /// NOTE: This field is temporarily non-functional due to an underlying API issue.
+    /// Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
+    /// [If true, show NAT IPs of all connected endpoints.]
+    /// </summary>
+    [JsonPropertyName("showNatIps")]
+    public bool? ShowNatIps { get; set; }
+
     /// <summary>The URL of a service serving the endpoint identified by this service attachment.</summary>
     [JsonPropertyName("targetService")]
     public string? TargetService { get; set; }
@@ -810,6 +825,13 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
     /// </summary>
     [JsonPropertyName("connectionLimit")]
     public double? ConnectionLimit { get; set; }
+
+    /// <summary>
+    /// The endpoint that is allowed to connect to this service attachment.
+    /// Only one of project_id_or_num, network_url and endpoint_url may be set.
+    /// </summary>
+    [JsonPropertyName("endpointUrl")]
+    public string? EndpointUrl { get; set; }
 
     /// <summary>
     /// The network that is allowed to connect to this service attachment.
@@ -1249,6 +1271,14 @@ public partial class V1beta1ServiceAttachmentSpecInitProvider
     [JsonPropertyName("sendPropagatedConnectionLimitIfZero")]
     public bool? SendPropagatedConnectionLimitIfZero { get; set; }
 
+    /// <summary>
+    /// NOTE: This field is temporarily non-functional due to an underlying API issue.
+    /// Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
+    /// [If true, show NAT IPs of all connected endpoints.]
+    /// </summary>
+    [JsonPropertyName("showNatIps")]
+    public bool? ShowNatIps { get; set; }
+
     /// <summary>The URL of a service serving the endpoint identified by this service attachment.</summary>
     [JsonPropertyName("targetService")]
     public string? TargetService { get; set; }
@@ -1389,6 +1419,15 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderConnectedEndpoints
 
     /// <summary>
     /// (Output)
+    /// NOTE: This field is temporarily non-functional due to an underlying API issue.
+    /// Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
+    /// &apos;The nat IPs of the connected endpoint.&apos;
+    /// </summary>
+    [JsonPropertyName("natIps")]
+    public IList<string>? NatIps { get; set; }
+
+    /// <summary>
+    /// (Output)
     /// The number of consumer Network Connectivity Center spokes that the connected Private Service Connect endpoint has propagated to.
     /// </summary>
     [JsonPropertyName("propagatedConnectionCount")]
@@ -1422,6 +1461,13 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderConsumerAcceptLists
     public double? ConnectionLimit { get; set; }
 
     /// <summary>
+    /// The endpoint that is allowed to connect to this service attachment.
+    /// Only one of project_id_or_num, network_url and endpoint_url may be set.
+    /// </summary>
+    [JsonPropertyName("endpointUrl")]
+    public string? EndpointUrl { get; set; }
+
+    /// <summary>
     /// The network that is allowed to connect to this service attachment.
     /// Only one of project_id_or_num and network_url may be set.
     /// </summary>
@@ -1434,6 +1480,25 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderConsumerAcceptLists
     /// </summary>
     [JsonPropertyName("projectIdOrNum")]
     public string? ProjectIdOrNum { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServiceAttachmentStatusAtProviderPscServiceAttachmentId
+{
+    /// <summary>
+    /// (Output)
+    /// The high 64 bits of the PSC service attachment ID.
+    /// </summary>
+    [JsonPropertyName("high")]
+    public string? High { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The low 64 bits of the PSC service attachment ID.
+    /// </summary>
+    [JsonPropertyName("low")]
+    public string? Low { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1469,6 +1534,13 @@ public partial class V1beta1ServiceAttachmentStatusAtProvider
     /// </summary>
     [JsonPropertyName("consumerRejectLists")]
     public IList<string>? ConsumerRejectLists { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -1524,6 +1596,13 @@ public partial class V1beta1ServiceAttachmentStatusAtProvider
     public double? PropagatedConnectionLimit { get; set; }
 
     /// <summary>
+    /// An 128-bit global unique ID of the PSC service attachment.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscServiceAttachmentId")]
+    public IList<V1beta1ServiceAttachmentStatusAtProviderPscServiceAttachmentId>? PscServiceAttachmentId { get; set; }
+
+    /// <summary>
     /// This flag determines whether a consumer accept/reject list change can reconcile the statuses of existing ACCEPTED or REJECTED PSC endpoints.
     /// If false, connection policy update will only affect existing PENDING PSC endpoints. Existing ACCEPTED/REJECTED endpoints will remain untouched regardless how the connection policy is modified .
     /// If true, update will affect both PENDING and ACCEPTED/REJECTED PSC endpoints. For example, an ACCEPTED PSC endpoint will be moved to REJECTED if its project is added to the reject list.
@@ -1547,6 +1626,14 @@ public partial class V1beta1ServiceAttachmentStatusAtProvider
     /// </summary>
     [JsonPropertyName("sendPropagatedConnectionLimitIfZero")]
     public bool? SendPropagatedConnectionLimitIfZero { get; set; }
+
+    /// <summary>
+    /// NOTE: This field is temporarily non-functional due to an underlying API issue.
+    /// Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
+    /// [If true, show NAT IPs of all connected endpoints.]
+    /// </summary>
+    [JsonPropertyName("showNatIps")]
+    public bool? ShowNatIps { get; set; }
 
     /// <summary>The URL of a service serving the endpoint identified by this service attachment.</summary>
     [JsonPropertyName("targetService")]
@@ -1607,6 +1694,15 @@ public partial class V1beta1ServiceAttachmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServiceAttachmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

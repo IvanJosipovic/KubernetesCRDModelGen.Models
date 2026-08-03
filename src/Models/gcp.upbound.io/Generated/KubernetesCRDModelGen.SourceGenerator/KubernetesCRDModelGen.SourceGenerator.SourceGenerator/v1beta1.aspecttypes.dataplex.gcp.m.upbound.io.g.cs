@@ -195,6 +195,16 @@ public partial class V1beta1AspectTypeSpecForProviderProjectSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AspectTypeSpecForProvider
 {
+    /// <summary>
+    /// Classifies the data stored by the aspect.
+    /// DATA_CLASSIFICATION_UNSPECIFIED denotes that the aspect contains only metadata
+    /// while METADATA_AND_DATA indicates data derived content.
+    /// 
+    /// Possible values are: DATA_CLASSIFICATION_UNSPECIFIED, METADATA_AND_DATA.
+    /// </summary>
+    [JsonPropertyName("dataClassification")]
+    public string? DataClassification { get; set; }
+
     /// <summary>Description of the AspectType.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -402,6 +412,16 @@ public partial class V1beta1AspectTypeSpecInitProviderProjectSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AspectTypeSpecInitProvider
 {
+    /// <summary>
+    /// Classifies the data stored by the aspect.
+    /// DATA_CLASSIFICATION_UNSPECIFIED denotes that the aspect contains only metadata
+    /// while METADATA_AND_DATA indicates data derived content.
+    /// 
+    /// Possible values are: DATA_CLASSIFICATION_UNSPECIFIED, METADATA_AND_DATA.
+    /// </summary>
+    [JsonPropertyName("dataClassification")]
+    public string? DataClassification { get; set; }
+
     /// <summary>Description of the AspectType.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -549,6 +569,23 @@ public partial class V1beta1AspectTypeStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Classifies the data stored by the aspect.
+    /// DATA_CLASSIFICATION_UNSPECIFIED denotes that the aspect contains only metadata
+    /// while METADATA_AND_DATA indicates data derived content.
+    /// 
+    /// Possible values are: DATA_CLASSIFICATION_UNSPECIFIED, METADATA_AND_DATA.
+    /// </summary>
+    [JsonPropertyName("dataClassification")]
+    public string? DataClassification { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Description of the AspectType.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -665,6 +702,15 @@ public partial class V1beta1AspectTypeStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AspectTypeStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

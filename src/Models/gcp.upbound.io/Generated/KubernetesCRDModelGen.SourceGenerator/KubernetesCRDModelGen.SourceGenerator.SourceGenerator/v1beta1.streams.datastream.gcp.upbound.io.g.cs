@@ -57,13 +57,70 @@ public enum V1beta1StreamSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// MongoDB data source objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
     /// <summary>Column collation.</summary>
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -107,7 +164,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -139,7 +196,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -178,7 +235,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -203,7 +260,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -254,7 +311,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedOb
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -295,7 +352,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedOb
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -318,9 +375,66 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedOb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// Spanner objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -352,7 +466,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -389,6 +503,13 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
 public partial class V1beta1StreamSpecForProviderBackfillAll
 {
     /// <summary>
+    /// MongoDB data source objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbExcludedObjects")]
+    public V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjects? MongodbExcludedObjects { get; set; }
+
+    /// <summary>
     /// MySQL data source objects to avoid backfilling.
     /// Structure is documented below.
     /// </summary>
@@ -415,6 +536,13 @@ public partial class V1beta1StreamSpecForProviderBackfillAll
     /// </summary>
     [JsonPropertyName("salesforceExcludedObjects")]
     public V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjects? SalesforceExcludedObjects { get; set; }
+
+    /// <summary>
+    /// Spanner objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerExcludedObjects")]
+    public V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjects? SpannerExcludedObjects { get; set; }
 
     /// <summary>
     /// SQL Server data source objects to avoid backfilling.
@@ -832,12 +960,156 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 
-    /// <summary>
-    /// The geographic location where the dataset should reside.
-    /// See https://cloud.google.com/bigquery/docs/locations for supported locations.
-    /// </summary>
+    /// <summary>The name of the location this stream is located in.</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum>))]
+public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -854,6 +1126,18 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
     /// </summary>
     [JsonPropertyName("datasetTemplate")]
     public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate? DatasetTemplate { get; set; }
+
+    /// <summary>Optional. The project id of the BigQuery dataset. If not specified, the project will be inferred from the stream resource.</summary>
+    [JsonPropertyName("projectId")]
+    public string? ProjectId { get; set; }
+
+    /// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
+    [JsonPropertyName("projectIdRef")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef? ProjectIdRef { get; set; }
+
+    /// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
+    [JsonPropertyName("projectIdSelector")]
+    public V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector? ProjectIdSelector { get; set; }
 }
 
 /// <summary>
@@ -1102,7 +1386,8 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestination
 
     /// <summary>
     /// The maximum duration for which new events are added before a file is closed and a new file is created.
-    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;. Defaults to 900s.
+    /// Values within the range of 15-60 seconds are allowed.
+    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;.
     /// </summary>
     [JsonPropertyName("fileRotationInterval")]
     public string? FileRotationInterval { get; set; }
@@ -1158,6 +1443,485 @@ public partial class V1beta1StreamSpecForProviderDestinationConfig
     public V1beta1StreamSpecForProviderDestinationConfigGcsDestinationConfig? GcsDestinationConfig { get; set; }
 }
 
+/// <summary>
+/// BigQuery clustering rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryClustering
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<string>? Columns { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
+{
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>The ending value for range partitioning (exclusive).</summary>
+    [JsonPropertyName("end")]
+    public double? End { get; set; }
+
+    /// <summary>The interval of each range within the partition.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The starting value for range partitioning (inclusive).</summary>
+    [JsonPropertyName("start")]
+    public double? Start { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// BigQuery partitioning rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioning
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ingestionTimePartition")]
+    public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition? IngestionTimePartition { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("integerRangePartition")]
+    public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition? IntegerRangePartition { get; set; }
+
+    /// <summary>If true, queries over the table require a partition filter.</summary>
+    [JsonPropertyName("requirePartitionFilter")]
+    public bool? RequirePartitionFilter { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("timeUnitPartition")]
+    public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRules
+{
+    /// <summary>
+    /// BigQuery clustering rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryClustering")]
+    public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryClustering? BigqueryClustering { get; set; }
+
+    /// <summary>
+    /// BigQuery partitioning rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryPartitioning")]
+    public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioning? BigqueryPartitioning { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
+{
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
+{
+    /// <summary>The Salesforce object name.</summary>
+    [JsonPropertyName("objectName")]
+    public string? ObjectName { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// Specific source object identifier.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifier
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier? MongodbIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mysqlIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier? MysqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("oracleIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier? OracleIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("postgresqlIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier? PostgresqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("salesforceIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier? SalesforceIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier? SpannerIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sqlServerIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier? SqlServerIdentifier { get; set; }
+}
+
+/// <summary>
+/// Object filter to apply the customization rules to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilter
+{
+    /// <summary>
+    /// Specific source object identifier.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceObjectIdentifier")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderRuleSets
+{
+    /// <summary>
+    /// List of customization rules to apply.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("customizationRules")]
+    public IList<V1beta1StreamSpecForProviderRuleSetsCustomizationRules>? CustomizationRules { get; set; }
+
+    /// <summary>
+    /// Object filter to apply the customization rules to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("objectFilter")]
+    public V1beta1StreamSpecForProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases>? Databases { get; set; }
+}
+
+/// <summary>
+/// MongoDB source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
+{
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+}
+
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1173,7 +1937,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1217,7 +1981,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -1260,7 +2024,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1304,7 +2068,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -1382,7 +2146,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1421,7 +2185,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -1446,7 +2210,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1485,7 +2249,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigI
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -1556,7 +2320,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1607,7 +2371,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -1632,7 +2396,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -1683,7 +2447,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -1765,7 +2529,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -1806,7 +2570,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -2001,6 +2765,170 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionPro
     public V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas>? Schemas { get; set; }
+}
+
+/// <summary>
+/// Spanner data source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
+{
+    /// <summary>Whether to use DataBoost for backfill queries.</summary>
+    [JsonPropertyName("backfillDataBoostEnabled")]
+    public bool? BackfillDataBoostEnabled { get; set; }
+
+    /// <summary>The Spanner change stream name to use.</summary>
+    [JsonPropertyName("changeStreamName")]
+    public string? ChangeStreamName { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>The FGAC role to use for Spanner queries.</summary>
+    [JsonPropertyName("fgacRole")]
+    public string? FgacRole { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+
+    /// <summary>Max concurrent CDC tasks.</summary>
+    [JsonPropertyName("maxConcurrentCdcTasks")]
+    public double? MaxConcurrentCdcTasks { get; set; }
+
+    /// <summary>
+    /// The RPC priority to use for Spanner queries.
+    /// Possible values are: LOW, MEDIUM, HIGH.
+    /// </summary>
+    [JsonPropertyName("spannerRpcPriority")]
+    public string? SpannerRpcPriority { get; set; }
+}
+
 /// <summary>CDC reader reads from change tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2012,7 +2940,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2044,7 +2972,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -2076,7 +3004,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2108,7 +3036,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -2191,6 +3119,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 public partial class V1beta1StreamSpecForProviderSourceConfig
 {
     /// <summary>
+    /// MongoDB source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbSourceConfig")]
+    public V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig? MongodbSourceConfig { get; set; }
+
+    /// <summary>
     /// MySQL data source configuration.
     /// Structure is documented below.
     /// </summary>
@@ -2229,6 +3164,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfig
     /// <summary>Selector for a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
     [JsonPropertyName("sourceConnectionProfileSelector")]
     public V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelector? SourceConnectionProfileSelector { get; set; }
+
+    /// <summary>
+    /// Spanner data source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerSourceConfig")]
+    public V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig? SpannerSourceConfig { get; set; }
 
     /// <summary>
     /// SQL Server data source configuration.
@@ -2304,11 +3246,75 @@ public partial class V1beta1StreamSpecForProvider
     public string? Project { get; set; }
 
     /// <summary>
+    /// Rule sets to apply to the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ruleSets")]
+    public IList<V1beta1StreamSpecForProviderRuleSets>? RuleSets { get; set; }
+
+    /// <summary>
     /// Source connection profile configuration.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("sourceConfig")]
     public V1beta1StreamSpecForProviderSourceConfig? SourceConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// MongoDB data source objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2319,7 +3325,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2363,7 +3369,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -2395,7 +3401,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2434,7 +3440,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -2459,7 +3465,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2510,7 +3516,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedO
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -2551,7 +3557,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedO
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -2574,9 +3580,66 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// Spanner objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -2608,7 +3671,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -2645,6 +3708,13 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
 public partial class V1beta1StreamSpecInitProviderBackfillAll
 {
     /// <summary>
+    /// MongoDB data source objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbExcludedObjects")]
+    public V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjects? MongodbExcludedObjects { get; set; }
+
+    /// <summary>
     /// MySQL data source objects to avoid backfilling.
     /// Structure is documented below.
     /// </summary>
@@ -2671,6 +3741,13 @@ public partial class V1beta1StreamSpecInitProviderBackfillAll
     /// </summary>
     [JsonPropertyName("salesforceExcludedObjects")]
     public V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjects? SalesforceExcludedObjects { get; set; }
+
+    /// <summary>
+    /// Spanner objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerExcludedObjects")]
+    public V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjects? SpannerExcludedObjects { get; set; }
 
     /// <summary>
     /// SQL Server data source objects to avoid backfilling.
@@ -3090,6 +4167,153 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum>))]
+public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum>))]
+public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum>))]
+public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// Destination datasets are created so that hierarchy of the destination data objects matches the source hierarchy.
 /// Structure is documented below.
 /// </summary>
@@ -3103,6 +4327,18 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
     /// </summary>
     [JsonPropertyName("datasetTemplate")]
     public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate? DatasetTemplate { get; set; }
+
+    /// <summary>Optional. The project id of the BigQuery dataset. If not specified, the project will be inferred from the stream resource.</summary>
+    [JsonPropertyName("projectId")]
+    public string? ProjectId { get; set; }
+
+    /// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
+    [JsonPropertyName("projectIdRef")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef? ProjectIdRef { get; set; }
+
+    /// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
+    [JsonPropertyName("projectIdSelector")]
+    public V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector? ProjectIdSelector { get; set; }
 }
 
 /// <summary>
@@ -3351,7 +4587,8 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinatio
 
     /// <summary>
     /// The maximum duration for which new events are added before a file is closed and a new file is created.
-    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;. Defaults to 900s.
+    /// Values within the range of 15-60 seconds are allowed.
+    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;.
     /// </summary>
     [JsonPropertyName("fileRotationInterval")]
     public string? FileRotationInterval { get; set; }
@@ -3407,6 +4644,485 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfig
     public V1beta1StreamSpecInitProviderDestinationConfigGcsDestinationConfig? GcsDestinationConfig { get; set; }
 }
 
+/// <summary>
+/// BigQuery clustering rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryClustering
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<string>? Columns { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
+{
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>The ending value for range partitioning (exclusive).</summary>
+    [JsonPropertyName("end")]
+    public double? End { get; set; }
+
+    /// <summary>The interval of each range within the partition.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The starting value for range partitioning (inclusive).</summary>
+    [JsonPropertyName("start")]
+    public double? Start { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// BigQuery partitioning rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioning
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ingestionTimePartition")]
+    public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition? IngestionTimePartition { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("integerRangePartition")]
+    public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition? IntegerRangePartition { get; set; }
+
+    /// <summary>If true, queries over the table require a partition filter.</summary>
+    [JsonPropertyName("requirePartitionFilter")]
+    public bool? RequirePartitionFilter { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("timeUnitPartition")]
+    public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRules
+{
+    /// <summary>
+    /// BigQuery clustering rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryClustering")]
+    public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryClustering? BigqueryClustering { get; set; }
+
+    /// <summary>
+    /// BigQuery partitioning rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryPartitioning")]
+    public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioning? BigqueryPartitioning { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
+{
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
+{
+    /// <summary>The Salesforce object name.</summary>
+    [JsonPropertyName("objectName")]
+    public string? ObjectName { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// Specific source object identifier.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifier
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier? MongodbIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mysqlIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier? MysqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("oracleIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier? OracleIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("postgresqlIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier? PostgresqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("salesforceIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier? SalesforceIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier? SpannerIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sqlServerIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier? SqlServerIdentifier { get; set; }
+}
+
+/// <summary>
+/// Object filter to apply the customization rules to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilter
+{
+    /// <summary>
+    /// Specific source object identifier.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceObjectIdentifier")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderRuleSets
+{
+    /// <summary>
+    /// List of customization rules to apply.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("customizationRules")]
+    public IList<V1beta1StreamSpecInitProviderRuleSetsCustomizationRules>? CustomizationRules { get; set; }
+
+    /// <summary>
+    /// Object filter to apply the customization rules to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("objectFilter")]
+    public V1beta1StreamSpecInitProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases>? Databases { get; set; }
+}
+
+/// <summary>
+/// MongoDB source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfig
+{
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+}
+
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3422,7 +5138,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3466,7 +5182,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -3509,7 +5225,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3553,7 +5269,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -3631,7 +5347,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3670,7 +5386,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -3695,7 +5411,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3734,7 +5450,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -3805,7 +5521,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3856,7 +5572,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -3881,7 +5597,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -3932,7 +5648,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -4014,7 +5730,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -4055,7 +5771,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -4250,6 +5966,170 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionPr
     public V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas>? Schemas { get; set; }
+}
+
+/// <summary>
+/// Spanner data source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfig
+{
+    /// <summary>Whether to use DataBoost for backfill queries.</summary>
+    [JsonPropertyName("backfillDataBoostEnabled")]
+    public bool? BackfillDataBoostEnabled { get; set; }
+
+    /// <summary>The Spanner change stream name to use.</summary>
+    [JsonPropertyName("changeStreamName")]
+    public string? ChangeStreamName { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>The FGAC role to use for Spanner queries.</summary>
+    [JsonPropertyName("fgacRole")]
+    public string? FgacRole { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+
+    /// <summary>Max concurrent CDC tasks.</summary>
+    [JsonPropertyName("maxConcurrentCdcTasks")]
+    public double? MaxConcurrentCdcTasks { get; set; }
+
+    /// <summary>
+    /// The RPC priority to use for Spanner queries.
+    /// Possible values are: LOW, MEDIUM, HIGH.
+    /// </summary>
+    [JsonPropertyName("spannerRpcPriority")]
+    public string? SpannerRpcPriority { get; set; }
+}
+
 /// <summary>CDC reader reads from change tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4261,7 +6141,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -4293,7 +6173,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -4325,7 +6205,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -4357,7 +6237,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -4440,6 +6320,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 public partial class V1beta1StreamSpecInitProviderSourceConfig
 {
     /// <summary>
+    /// MongoDB source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbSourceConfig")]
+    public V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfig? MongodbSourceConfig { get; set; }
+
+    /// <summary>
     /// MySQL data source configuration.
     /// Structure is documented below.
     /// </summary>
@@ -4478,6 +6365,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfig
     /// <summary>Selector for a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
     [JsonPropertyName("sourceConnectionProfileSelector")]
     public V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelector? SourceConnectionProfileSelector { get; set; }
+
+    /// <summary>
+    /// Spanner data source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerSourceConfig")]
+    public V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfig? SpannerSourceConfig { get; set; }
 
     /// <summary>
     /// SQL Server data source configuration.
@@ -4559,6 +6453,13 @@ public partial class V1beta1StreamSpecInitProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// Rule sets to apply to the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ruleSets")]
+    public IList<V1beta1StreamSpecInitProviderRuleSets>? RuleSets { get; set; }
 
     /// <summary>
     /// Source connection profile configuration.
@@ -4753,13 +6654,70 @@ public partial class V1beta1StreamSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// MongoDB data source objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
     /// <summary>Column collation.</summary>
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -4810,7 +6768,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -4842,7 +6800,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -4921,7 +6879,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -4946,7 +6904,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5018,7 +6976,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedO
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -5059,7 +7017,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedO
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -5082,9 +7040,84 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// The PostgreSQL data type. Full data types list can be found here:
+    /// https://www.postgresql.org/docs/current/datatype.html
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Whether or not the column is a primary key.
+    /// </summary>
+    [JsonPropertyName("isPrimaryKey")]
+    public bool? IsPrimaryKey { get; set; }
+
+    /// <summary>The ordinal position of the column in the table.</summary>
+    [JsonPropertyName("ordinalPosition")]
+    public double? OrdinalPosition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// Spanner objects to avoid backfilling.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5149,7 +7182,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -5186,6 +7219,13 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
 public partial class V1beta1StreamStatusAtProviderBackfillAll
 {
     /// <summary>
+    /// MongoDB data source objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbExcludedObjects")]
+    public V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjects? MongodbExcludedObjects { get; set; }
+
+    /// <summary>
     /// MySQL data source objects to avoid backfilling.
     /// Structure is documented below.
     /// </summary>
@@ -5212,6 +7252,13 @@ public partial class V1beta1StreamStatusAtProviderBackfillAll
     /// </summary>
     [JsonPropertyName("salesforceExcludedObjects")]
     public V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjects? SalesforceExcludedObjects { get; set; }
+
+    /// <summary>
+    /// Spanner objects to avoid backfilling.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerExcludedObjects")]
+    public V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjects? SpannerExcludedObjects { get; set; }
 
     /// <summary>
     /// SQL Server data source objects to avoid backfilling.
@@ -5319,10 +7366,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 
-    /// <summary>
-    /// The geographic location where the dataset should reside.
-    /// See https://cloud.google.com/bigquery/docs/locations for supported locations.
-    /// </summary>
+    /// <summary>The name of the location this stream is located in.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 }
@@ -5341,6 +7385,10 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
     /// </summary>
     [JsonPropertyName("datasetTemplate")]
     public V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate? DatasetTemplate { get; set; }
+
+    /// <summary>Optional. The project id of the BigQuery dataset. If not specified, the project will be inferred from the stream resource.</summary>
+    [JsonPropertyName("projectId")]
+    public string? ProjectId { get; set; }
 }
 
 /// <summary>
@@ -5442,7 +7490,8 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinatio
 
     /// <summary>
     /// The maximum duration for which new events are added before a file is closed and a new file is created.
-    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;. Defaults to 900s.
+    /// Values within the range of 15-60 seconds are allowed.
+    /// A duration in seconds with up to nine fractional digits, terminated by &apos;s&apos;. Example: &quot;3.5s&quot;.
     /// </summary>
     [JsonPropertyName("fileRotationInterval")]
     public string? FileRotationInterval { get; set; }
@@ -5490,6 +7539,485 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfig
     public V1beta1StreamStatusAtProviderDestinationConfigGcsDestinationConfig? GcsDestinationConfig { get; set; }
 }
 
+/// <summary>
+/// BigQuery clustering rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryClustering
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<string>? Columns { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
+{
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>The ending value for range partitioning (exclusive).</summary>
+    [JsonPropertyName("end")]
+    public double? End { get; set; }
+
+    /// <summary>The interval of each range within the partition.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The starting value for range partitioning (inclusive).</summary>
+    [JsonPropertyName("start")]
+    public double? Start { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// Partition granularity.
+    /// Possible values are: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED, PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY, PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR.
+    /// </summary>
+    [JsonPropertyName("partitioningTimeGranularity")]
+    public string? PartitioningTimeGranularity { get; set; }
+}
+
+/// <summary>
+/// BigQuery partitioning rule.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioning
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ingestionTimePartition")]
+    public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition? IngestionTimePartition { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("integerRangePartition")]
+    public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition? IntegerRangePartition { get; set; }
+
+    /// <summary>If true, queries over the table require a partition filter.</summary>
+    [JsonPropertyName("requirePartitionFilter")]
+    public bool? RequirePartitionFilter { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("timeUnitPartition")]
+    public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRules
+{
+    /// <summary>
+    /// BigQuery clustering rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryClustering")]
+    public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryClustering? BigqueryClustering { get; set; }
+
+    /// <summary>
+    /// BigQuery partitioning rule.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("bigqueryPartitioning")]
+    public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioning? BigqueryPartitioning { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
+{
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
+{
+    /// <summary>The Salesforce object name.</summary>
+    [JsonPropertyName("objectName")]
+    public string? ObjectName { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// A nested object resource.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+/// <summary>
+/// Specific source object identifier.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifier
+{
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier? MongodbIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mysqlIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier? MysqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("oracleIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier? OracleIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("postgresqlIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier? PostgresqlIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("salesforceIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier? SalesforceIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier? SpannerIdentifier { get; set; }
+
+    /// <summary>
+    /// A nested object resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sqlServerIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier? SqlServerIdentifier { get; set; }
+}
+
+/// <summary>
+/// Object filter to apply the customization rules to.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilter
+{
+    /// <summary>
+    /// Specific source object identifier.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceObjectIdentifier")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderRuleSets
+{
+    /// <summary>
+    /// List of customization rules to apply.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("customizationRules")]
+    public IList<V1beta1StreamStatusAtProviderRuleSetsCustomizationRules>? CustomizationRules { get; set; }
+
+    /// <summary>
+    /// Object filter to apply the customization rules to.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("objectFilter")]
+    public V1beta1StreamStatusAtProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
+{
+    /// <summary>Field name.</summary>
+    [JsonPropertyName("field")]
+    public string? Field { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
+{
+    /// <summary>The MongoDB collection name.</summary>
+    [JsonPropertyName("collection")]
+    public string? Collection { get; set; }
+
+    /// <summary>
+    /// Fields in the Salesforce object. When unspecified as part of include/exclude objects, includes/excludes everything/nothing.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
+{
+    /// <summary>
+    /// Collections in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("collections")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections>? Collections { get; set; }
+
+    /// <summary>The database name.</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// MongoDB databases in the cluster.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("databases")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases>? Databases { get; set; }
+}
+
+/// <summary>
+/// MongoDB source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfig
+{
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+}
+
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -5505,7 +8033,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5556,7 +8084,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -5599,7 +8127,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5650,7 +8178,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
-    /// <summary>Database name.</summary>
+    /// <summary>The database name.</summary>
     [JsonPropertyName("database")]
     public string? Database { get; set; }
 
@@ -5728,7 +8256,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5807,7 +8335,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -5832,7 +8360,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -5911,7 +8439,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     [JsonPropertyName("oracleTables")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables>? OracleTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -5982,7 +8510,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -6054,7 +8582,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -6079,7 +8607,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -6151,7 +8679,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     [JsonPropertyName("postgresqlTables")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables>? PostgresqlTables { get; set; }
 
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 }
@@ -6233,7 +8761,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -6274,7 +8802,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     [JsonPropertyName("fields")]
     public IList<V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields>? Fields { get; set; }
 
-    /// <summary>Name of object in Salesforce Org.</summary>
+    /// <summary>The Salesforce object name.</summary>
     [JsonPropertyName("objectName")]
     public string? ObjectName { get; set; }
 }
@@ -6322,6 +8850,206 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     public string? PollingInterval { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// The PostgreSQL data type. Full data types list can be found here:
+    /// https://www.postgresql.org/docs/current/datatype.html
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Whether or not the column is a primary key.
+    /// </summary>
+    [JsonPropertyName("isPrimaryKey")]
+    public bool? IsPrimaryKey { get; set; }
+
+    /// <summary>The ordinal position of the column in the table.</summary>
+    [JsonPropertyName("ordinalPosition")]
+    public double? OrdinalPosition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to exclude from the stream.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
+{
+    /// <summary>The partitioning column.</summary>
+    [JsonPropertyName("column")]
+    public string? Column { get; set; }
+
+    /// <summary>
+    /// The PostgreSQL data type. Full data types list can be found here:
+    /// https://www.postgresql.org/docs/current/datatype.html
+    /// </summary>
+    [JsonPropertyName("dataType")]
+    public string? DataType { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Whether or not the column is a primary key.
+    /// </summary>
+    [JsonPropertyName("isPrimaryKey")]
+    public bool? IsPrimaryKey { get; set; }
+
+    /// <summary>The ordinal position of the column in the table.</summary>
+    [JsonPropertyName("ordinalPosition")]
+    public double? OrdinalPosition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
+{
+    /// <summary>
+    /// SQL Server columns in the schema. When unspecified as part of include/exclude objects, includes/excludes everything.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns>? Columns { get; set; }
+
+    /// <summary>Table name.</summary>
+    [JsonPropertyName("table")]
+    public string? Table { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
+{
+    /// <summary>The schema name.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    /// <summary>
+    /// Tables in the database.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tables")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables>? Tables { get; set; }
+}
+
+/// <summary>
+/// SQL Server objects to retrieve from the source.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjects
+{
+    /// <summary>
+    /// SQL Server schemas/databases in the database server
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("schemas")]
+    public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas>? Schemas { get; set; }
+}
+
+/// <summary>
+/// Spanner data source configuration.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfig
+{
+    /// <summary>Whether to use DataBoost for backfill queries.</summary>
+    [JsonPropertyName("backfillDataBoostEnabled")]
+    public bool? BackfillDataBoostEnabled { get; set; }
+
+    /// <summary>The Spanner change stream name to use.</summary>
+    [JsonPropertyName("changeStreamName")]
+    public string? ChangeStreamName { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to exclude from the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("excludeObjects")]
+    public V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjects? ExcludeObjects { get; set; }
+
+    /// <summary>The FGAC role to use for Spanner queries.</summary>
+    [JsonPropertyName("fgacRole")]
+    public string? FgacRole { get; set; }
+
+    /// <summary>
+    /// SQL Server objects to retrieve from the source.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("includeObjects")]
+    public V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjects? IncludeObjects { get; set; }
+
+    /// <summary>Max concurrent backfill tasks.</summary>
+    [JsonPropertyName("maxConcurrentBackfillTasks")]
+    public double? MaxConcurrentBackfillTasks { get; set; }
+
+    /// <summary>Max concurrent CDC tasks.</summary>
+    [JsonPropertyName("maxConcurrentCdcTasks")]
+    public double? MaxConcurrentCdcTasks { get; set; }
+
+    /// <summary>
+    /// The RPC priority to use for Spanner queries.
+    /// Possible values are: LOW, MEDIUM, HIGH.
+    /// </summary>
+    [JsonPropertyName("spannerRpcPriority")]
+    public string? SpannerRpcPriority { get; set; }
+}
+
 /// <summary>CDC reader reads from change tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -6333,7 +9061,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -6398,7 +9126,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -6430,7 +9158,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
-    /// <summary>Column name.</summary>
+    /// <summary>The partitioning column.</summary>
     [JsonPropertyName("column")]
     public string? Column { get; set; }
 
@@ -6495,7 +9223,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
-    /// <summary>Schema name.</summary>
+    /// <summary>The schema name.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
@@ -6578,6 +9306,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 public partial class V1beta1StreamStatusAtProviderSourceConfig
 {
     /// <summary>
+    /// MongoDB source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("mongodbSourceConfig")]
+    public V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfig? MongodbSourceConfig { get; set; }
+
+    /// <summary>
     /// MySQL data source configuration.
     /// Structure is documented below.
     /// </summary>
@@ -6608,6 +9343,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfig
     /// <summary>Source connection profile resource. Format: projects/{project}/locations/{location}/connectionProfiles/{name}</summary>
     [JsonPropertyName("sourceConnectionProfile")]
     public string? SourceConnectionProfile { get; set; }
+
+    /// <summary>
+    /// Spanner data source configuration.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("spannerSourceConfig")]
+    public V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfig? SpannerSourceConfig { get; set; }
 
     /// <summary>
     /// SQL Server data source configuration.
@@ -6642,6 +9384,13 @@ public partial class V1beta1StreamStatusAtProvider
     /// </summary>
     [JsonPropertyName("customerManagedEncryptionKey")]
     public string? CustomerManagedEncryptionKey { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// Desired state of the Stream. Set this field to RUNNING to start the stream,
@@ -6692,6 +9441,13 @@ public partial class V1beta1StreamStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// Rule sets to apply to the stream.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ruleSets")]
+    public IList<V1beta1StreamStatusAtProviderRuleSets>? RuleSets { get; set; }
 
     /// <summary>
     /// Source connection profile configuration.
@@ -6766,6 +9522,15 @@ public partial class V1beta1StreamStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1StreamStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

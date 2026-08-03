@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: jobs.dataproc.gcp.m.upbound.io
 spec:
   group: dataproc.gcp.m.upbound.io
@@ -561,6 +561,8 @@ spec:
                         type: object
                         x-kubernetes-map-type: granular
                     type: object
+                  waitForCompletion:
+                    type: boolean
                 type: object
               initProvider:
                 description: |-
@@ -1079,6 +1081,8 @@ spec:
                         type: object
                         x-kubernetes-map-type: granular
                     type: object
+                  waitForCompletion:
+                    type: boolean
                 type: object
               managementPolicies:
                 default:
@@ -1146,6 +1150,11 @@ spec:
             properties:
               atProvider:
                 properties:
+                  deletionPolicy:
+                    description: |-
+                      Defaults to "DELETE".
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   driverControlsFilesUri:
                     description: If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri.
                     type: string
@@ -1531,6 +1540,8 @@ spec:
                     description: The combination of labels configured directly on the resource and default labels configured on the provider.
                     type: object
                     x-kubernetes-map-type: granular
+                  waitForCompletion:
+                    type: boolean
                 type: object
               conditions:
                 description: Conditions of the resource.
@@ -1576,6 +1587,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

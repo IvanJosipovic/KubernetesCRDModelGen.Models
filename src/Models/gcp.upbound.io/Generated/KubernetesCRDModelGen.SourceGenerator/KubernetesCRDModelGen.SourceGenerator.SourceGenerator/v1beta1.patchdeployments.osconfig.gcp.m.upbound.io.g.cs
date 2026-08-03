@@ -701,6 +701,10 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfig
     [JsonPropertyName("rebootConfig")]
     public string? RebootConfig { get; set; }
 
+    /// <summary>Enables enhanced reporting for the patch job:</summary>
+    [JsonPropertyName("skipUnpatchableVms")]
+    public bool? SkipUnpatchableVms { get; set; }
+
     /// <summary>
     /// Windows update settings. Use this setting to override the default Windows patch rules.
     /// Structure is documented below.
@@ -1656,6 +1660,10 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfig
     [JsonPropertyName("rebootConfig")]
     public string? RebootConfig { get; set; }
 
+    /// <summary>Enables enhanced reporting for the patch job:</summary>
+    [JsonPropertyName("skipUnpatchableVms")]
+    public bool? SkipUnpatchableVms { get; set; }
+
     /// <summary>
     /// Windows update settings. Use this setting to override the default Windows patch rules.
     /// Structure is documented below.
@@ -2567,6 +2575,10 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfig
     [JsonPropertyName("rebootConfig")]
     public string? RebootConfig { get; set; }
 
+    /// <summary>Enables enhanced reporting for the patch job:</summary>
+    [JsonPropertyName("skipUnpatchableVms")]
+    public bool? SkipUnpatchableVms { get; set; }
+
     /// <summary>
     /// Windows update settings. Use this setting to override the default Windows patch rules.
     /// Structure is documented below.
@@ -2826,6 +2838,13 @@ public partial class V1beta1PatchDeploymentStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Description of the patch deployment. Length of the description is limited to 1024 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -2959,6 +2978,15 @@ public partial class V1beta1PatchDeploymentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PatchDeploymentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

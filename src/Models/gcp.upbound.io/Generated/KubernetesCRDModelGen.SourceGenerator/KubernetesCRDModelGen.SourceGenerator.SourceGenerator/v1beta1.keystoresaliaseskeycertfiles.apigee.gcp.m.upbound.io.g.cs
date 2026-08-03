@@ -36,52 +36,6 @@ public partial class V1beta1KeystoresAliasesKeyCertFileList : IKubernetesObject<
     public required IList<V1beta1KeystoresAliasesKeyCertFile> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfoCertInfo
-{
-    [JsonPropertyName("basicConstraints")]
-    public string? BasicConstraints { get; set; }
-
-    [JsonPropertyName("expiryDate")]
-    public string? ExpiryDate { get; set; }
-
-    [JsonPropertyName("isValid")]
-    public string? IsValid { get; set; }
-
-    [JsonPropertyName("issuer")]
-    public string? Issuer { get; set; }
-
-    [JsonPropertyName("publicKey")]
-    public string? PublicKey { get; set; }
-
-    [JsonPropertyName("serialNumber")]
-    public string? SerialNumber { get; set; }
-
-    [JsonPropertyName("sigAlgName")]
-    public string? SigAlgName { get; set; }
-
-    [JsonPropertyName("subject")]
-    public string? Subject { get; set; }
-
-    [JsonPropertyName("subjectAlternativeNames")]
-    public IList<string>? SubjectAlternativeNames { get; set; }
-
-    [JsonPropertyName("validFrom")]
-    public string? ValidFrom { get; set; }
-
-    [JsonPropertyName("version")]
-    public double? Version { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfo
-{
-    [JsonPropertyName("certInfo")]
-    public IList<V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfoCertInfo>? CertInfo { get; set; }
-}
-
 /// <summary>
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
@@ -273,14 +227,14 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderPasswordSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProvider
 {
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
     [JsonPropertyName("cert")]
     public string? Cert { get; set; }
 
-    [JsonPropertyName("certsInfo")]
-    public V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfo? CertsInfo { get; set; }
-
     [JsonPropertyName("environment")]
-    public required string Environment { get; set; }
+    public string? Environment { get; set; }
 
     /// <summary>
     /// A LocalSecretKeySelector is a reference to a secret key
@@ -290,7 +244,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProvider
     public V1beta1KeystoresAliasesKeyCertFileSpecForProviderKeySecretRef? KeySecretRef { get; set; }
 
     [JsonPropertyName("keystore")]
-    public required string Keystore { get; set; }
+    public string? Keystore { get; set; }
 
     [JsonPropertyName("orgId")]
     public string? OrgId { get; set; }
@@ -311,52 +265,6 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProvider
     public V1beta1KeystoresAliasesKeyCertFileSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfoCertInfo
-{
-    [JsonPropertyName("basicConstraints")]
-    public string? BasicConstraints { get; set; }
-
-    [JsonPropertyName("expiryDate")]
-    public string? ExpiryDate { get; set; }
-
-    [JsonPropertyName("isValid")]
-    public string? IsValid { get; set; }
-
-    [JsonPropertyName("issuer")]
-    public string? Issuer { get; set; }
-
-    [JsonPropertyName("publicKey")]
-    public string? PublicKey { get; set; }
-
-    [JsonPropertyName("serialNumber")]
-    public string? SerialNumber { get; set; }
-
-    [JsonPropertyName("sigAlgName")]
-    public string? SigAlgName { get; set; }
-
-    [JsonPropertyName("subject")]
-    public string? Subject { get; set; }
-
-    [JsonPropertyName("subjectAlternativeNames")]
-    public IList<string>? SubjectAlternativeNames { get; set; }
-
-    [JsonPropertyName("validFrom")]
-    public string? ValidFrom { get; set; }
-
-    [JsonPropertyName("version")]
-    public double? Version { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfo
-{
-    [JsonPropertyName("certInfo")]
-    public IList<V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfoCertInfo>? CertInfo { get; set; }
-}
-
 /// <summary>
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
@@ -371,6 +279,161 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderKeySecret
     /// <summary>Name of the secret.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolutionEnum>))]
+public enum V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolveEnum>))]
+public enum V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Organization in apigee to populate orgId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolveEnum>))]
+public enum V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Organization in apigee to populate orgId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -405,11 +468,14 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderPasswordS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProvider
 {
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
     [JsonPropertyName("cert")]
     public string? Cert { get; set; }
 
-    [JsonPropertyName("certsInfo")]
-    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfo? CertsInfo { get; set; }
+    [JsonPropertyName("environment")]
+    public string? Environment { get; set; }
 
     /// <summary>
     /// A LocalSecretKeySelector is a reference to a secret key
@@ -417,6 +483,20 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProvider
     /// </summary>
     [JsonPropertyName("keySecretRef")]
     public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderKeySecretRef? KeySecretRef { get; set; }
+
+    [JsonPropertyName("keystore")]
+    public string? Keystore { get; set; }
+
+    [JsonPropertyName("orgId")]
+    public string? OrgId { get; set; }
+
+    /// <summary>Reference to a Organization in apigee to populate orgId.</summary>
+    [JsonPropertyName("orgIdRef")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdRef? OrgIdRef { get; set; }
+
+    /// <summary>Selector for a Organization in apigee to populate orgId.</summary>
+    [JsonPropertyName("orgIdSelector")]
+    public V1beta1KeystoresAliasesKeyCertFileSpecInitProviderOrgIdSelector? OrgIdSelector { get; set; }
 
     /// <summary>
     /// A LocalSecretKeySelector is a reference to a secret key
@@ -535,7 +615,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfoCertInfo
+public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
 {
     [JsonPropertyName("basicConstraints")]
     public string? BasicConstraints { get; set; }
@@ -573,21 +653,16 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
-{
-    [JsonPropertyName("certInfo")]
-    public IList<V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfoCertInfo>? CertInfo { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProvider
 {
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
     [JsonPropertyName("cert")]
     public string? Cert { get; set; }
 
     [JsonPropertyName("certsInfo")]
-    public V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo? CertsInfo { get; set; }
+    public IList<V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo>? CertsInfo { get; set; }
 
     [JsonPropertyName("environment")]
     public string? Environment { get; set; }
@@ -659,6 +734,15 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1KeystoresAliasesKeyCertFileStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

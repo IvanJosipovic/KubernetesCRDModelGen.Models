@@ -235,8 +235,20 @@ public partial class V1beta1UserSpecForProviderPasswordSecretRef
 public partial class V1beta1UserSpecForProvider
 {
     /// <summary>
-    /// The deletion policy for the user.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful
+    /// A list of database roles to be assigned to the user.
+    /// This option is only available for MySQL 8+ and PostgreSQL instances. You
+    /// can include predefined Cloud SQL roles, like cloudsqlsuperuser, or your
+    /// own custom roles. Custom roles must be created in the database before
+    /// you can assign them. You can create roles using the CREATE ROLE
+    /// statement for both MySQL and PostgreSQL.
+    /// Note: This property is write-only and will not be read from the API.
+    /// Caution: Existing database roles will be overwriten with new values from this field.
+    /// </summary>
+    [JsonPropertyName("databaseRoles")]
+    public IList<string>? DatabaseRoles { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;. This is useful
     /// for Postgres, where users cannot be deleted from the API if they have been granted SQL roles.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
@@ -276,20 +288,6 @@ public partial class V1beta1UserSpecForProvider
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1UserSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
-
-    /// <summary>
-    /// The password for the user. Can be updated. For Postgres
-    /// instances this is a Required field, unless type is set to either CLOUD_IAM_USER
-    /// or CLOUD_IAM_SERVICE_ACCOUNT. Don&apos;t set this field for CLOUD_IAM_USER
-    /// and CLOUD_IAM_SERVICE_ACCOUNT user types for any Cloud SQL instance.
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    /// <summary>The version of the password_wo. For more info see updating write-only attributes.</summary>
-    [JsonPropertyName("passwordWoVersion")]
-    public double? PasswordWoVersion { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
@@ -521,8 +519,20 @@ public partial class V1beta1UserSpecInitProviderPasswordSecretRef
 public partial class V1beta1UserSpecInitProvider
 {
     /// <summary>
-    /// The deletion policy for the user.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful
+    /// A list of database roles to be assigned to the user.
+    /// This option is only available for MySQL 8+ and PostgreSQL instances. You
+    /// can include predefined Cloud SQL roles, like cloudsqlsuperuser, or your
+    /// own custom roles. Custom roles must be created in the database before
+    /// you can assign them. You can create roles using the CREATE ROLE
+    /// statement for both MySQL and PostgreSQL.
+    /// Note: This property is write-only and will not be read from the API.
+    /// Caution: Existing database roles will be overwriten with new values from this field.
+    /// </summary>
+    [JsonPropertyName("databaseRoles")]
+    public IList<string>? DatabaseRoles { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;. This is useful
     /// for Postgres, where users cannot be deleted from the API if they have been granted SQL roles.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
@@ -562,20 +572,6 @@ public partial class V1beta1UserSpecInitProvider
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1UserSpecInitProviderPasswordSecretRef? PasswordSecretRef { get; set; }
-
-    /// <summary>
-    /// The password for the user. Can be updated. For Postgres
-    /// instances this is a Required field, unless type is set to either CLOUD_IAM_USER
-    /// or CLOUD_IAM_SERVICE_ACCOUNT. Don&apos;t set this field for CLOUD_IAM_USER
-    /// and CLOUD_IAM_SERVICE_ACCOUNT user types for any Cloud SQL instance.
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    /// <summary>The version of the password_wo. For more info see updating write-only attributes.</summary>
-    [JsonPropertyName("passwordWoVersion")]
-    public double? PasswordWoVersion { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
@@ -756,8 +752,20 @@ public partial class V1beta1UserStatusAtProviderSqlServerUserDetails
 public partial class V1beta1UserStatusAtProvider
 {
     /// <summary>
-    /// The deletion policy for the user.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful
+    /// A list of database roles to be assigned to the user.
+    /// This option is only available for MySQL 8+ and PostgreSQL instances. You
+    /// can include predefined Cloud SQL roles, like cloudsqlsuperuser, or your
+    /// own custom roles. Custom roles must be created in the database before
+    /// you can assign them. You can create roles using the CREATE ROLE
+    /// statement for both MySQL and PostgreSQL.
+    /// Note: This property is write-only and will not be read from the API.
+    /// Caution: Existing database roles will be overwriten with new values from this field.
+    /// </summary>
+    [JsonPropertyName("databaseRoles")]
+    public IList<string>? DatabaseRoles { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;. This is useful
     /// for Postgres, where users cannot be deleted from the API if they have been granted SQL roles.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
@@ -771,6 +779,10 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
+    /// <summary>(read only) IAM email address for MySQL IAM database users.</summary>
+    [JsonPropertyName("iamEmail")]
+    public string? IamEmail { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -783,20 +795,6 @@ public partial class V1beta1UserStatusAtProvider
 
     [JsonPropertyName("passwordPolicy")]
     public V1beta1UserStatusAtProviderPasswordPolicy? PasswordPolicy { get; set; }
-
-    /// <summary>
-    /// The password for the user. Can be updated. For Postgres
-    /// instances this is a Required field, unless type is set to either CLOUD_IAM_USER
-    /// or CLOUD_IAM_SERVICE_ACCOUNT. Don&apos;t set this field for CLOUD_IAM_USER
-    /// and CLOUD_IAM_SERVICE_ACCOUNT user types for any Cloud SQL instance.
-    /// Note: This property is write-only and will not be read from the API.
-    /// </summary>
-    [JsonPropertyName("passwordWo")]
-    public string? PasswordWo { get; set; }
-
-    /// <summary>The version of the password_wo. For more info see updating write-only attributes.</summary>
-    [JsonPropertyName("passwordWoVersion")]
-    public double? PasswordWoVersion { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
@@ -874,6 +872,15 @@ public partial class V1beta1UserStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UserStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

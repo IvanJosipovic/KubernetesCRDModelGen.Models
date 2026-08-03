@@ -297,7 +297,7 @@ public partial class V1beta1V2JobSpecForProviderTemplateTemplateContainersPorts
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2JobSpecForProviderTemplateTemplateContainersResources
 {
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 }
@@ -455,6 +455,10 @@ public partial class V1beta1V2JobSpecForProviderTemplateTemplateContainersVolume
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -724,7 +728,7 @@ public partial class V1beta1V2JobSpecForProviderTemplateTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -745,6 +749,13 @@ public partial class V1beta1V2JobSpecForProviderTemplateTemplateVolumesGcs
     /// <summary>Name of the cloud storage bucket to back the volume. The resource service account must have permission to access the bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount this volume as read-only in all mounts.</summary>
     [JsonPropertyName("readOnly")]
@@ -1161,7 +1172,7 @@ public partial class V1beta1V2JobSpecForProviderTemplate
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter,
-    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or
+    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or
     /// https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 ExecutionTemplate.
@@ -1224,7 +1235,7 @@ public partial class V1beta1V2JobSpecForProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Job.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -1522,7 +1533,7 @@ public partial class V1beta1V2JobSpecInitProviderTemplateTemplateContainersPorts
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2JobSpecInitProviderTemplateTemplateContainersResources
 {
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 }
@@ -1680,6 +1691,10 @@ public partial class V1beta1V2JobSpecInitProviderTemplateTemplateContainersVolum
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1949,7 +1964,7 @@ public partial class V1beta1V2JobSpecInitProviderTemplateTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -1970,6 +1985,13 @@ public partial class V1beta1V2JobSpecInitProviderTemplateTemplateVolumesGcs
     /// <summary>Name of the cloud storage bucket to back the volume. The resource service account must have permission to access the bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount this volume as read-only in all mounts.</summary>
     [JsonPropertyName("readOnly")]
@@ -2386,7 +2408,7 @@ public partial class V1beta1V2JobSpecInitProviderTemplate
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter,
-    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or
+    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or
     /// https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 ExecutionTemplate.
@@ -2461,7 +2483,7 @@ public partial class V1beta1V2JobSpecInitProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Job.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -2789,7 +2811,7 @@ public partial class V1beta1V2JobStatusAtProviderTemplateTemplateContainersPorts
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2JobStatusAtProviderTemplateTemplateContainersResources
 {
-    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
+    /// <summary>Only memory, CPU, and nvidia.com/gpu are supported. Use key cpu for CPU limit, memory for memory limit, nvidia.com/gpu for gpu limit. Note: The only supported values for CPU are &apos;1&apos;, &apos;2&apos;, &apos;4&apos;, &apos;6&apos;, and &apos;8&apos;. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the &apos;quantity&apos; k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 }
@@ -2947,6 +2969,10 @@ public partial class V1beta1V2JobStatusAtProviderTemplateTemplateContainersVolum
     /// <summary>Volume&apos;s name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3053,7 +3079,7 @@ public partial class V1beta1V2JobStatusAtProviderTemplateTemplateVolumesEmptyDir
     /// <summary>
     /// The different types of medium supported for EmptyDir.
     /// Default value is MEMORY.
-    /// Possible values are: MEMORY.
+    /// Possible values are: MEMORY, DISK.
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
@@ -3074,6 +3100,13 @@ public partial class V1beta1V2JobStatusAtProviderTemplateTemplateVolumesGcs
     /// <summary>Name of the cloud storage bucket to back the volume. The resource service account must have permission to access the bucket.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>
+    /// A list of flags to pass to the gcsfuse command for configuring this volume.
+    /// Flags should be passed without leading dashes.
+    /// </summary>
+    [JsonPropertyName("mountOptions")]
+    public IList<string>? MountOptions { get; set; }
 
     /// <summary>If true, mount this volume as read-only in all mounts.</summary>
     [JsonPropertyName("readOnly")]
@@ -3327,7 +3360,7 @@ public partial class V1beta1V2JobStatusAtProviderTemplate
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter,
-    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or
+    /// or break down billing charges by team, component, environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or
     /// https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 ExecutionTemplate.
@@ -3463,6 +3496,13 @@ public partial class V1beta1V2JobStatusAtProvider
     public string? DeleteTime { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Defaults to true.
     /// When the field is set to false, deleting the job is allowed.
     /// </summary>
@@ -3497,7 +3537,7 @@ public partial class V1beta1V2JobStatusAtProvider
 
     /// <summary>
     /// Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google&apos;s billing system, so they can be used to filter, or break down billing charges by team, component,
-    /// environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+    /// environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
     /// Cloud Run API v2 does not support labels with run.googleapis.com, cloud.googleapis.com, serving.knative.dev, or autoscaling.knative.dev namespaces, and they will be rejected.
     /// All system labels in v1 now have a corresponding field in v2 Job.
     /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -3634,6 +3674,15 @@ public partial class V1beta1V2JobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1V2JobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

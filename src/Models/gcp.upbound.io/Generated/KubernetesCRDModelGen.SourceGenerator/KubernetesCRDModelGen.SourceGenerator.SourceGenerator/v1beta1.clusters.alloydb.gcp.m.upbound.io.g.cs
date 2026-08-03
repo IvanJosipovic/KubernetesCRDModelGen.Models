@@ -221,6 +221,19 @@ public partial class V1beta1ClusterSpecForProviderContinuousBackupConfig
 }
 
 /// <summary>
+/// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderDataplexConfig
+{
+    /// <summary>Indicates whether Dataplex integration is enabled for the cluster.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>
 /// EncryptionConfig describes the encryption config of a cluster or a backup that is encrypted with a CMEK (customer-managed encryption key).
 /// Structure is documented below.
 /// </summary>
@@ -250,7 +263,7 @@ public partial class V1beta1ClusterSpecForProviderInitialUserPasswordSecretRef
 }
 
 /// <summary>
-/// Initial user to setup during cluster creation.
+/// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -684,7 +697,7 @@ public partial class V1beta1ClusterSpecForProviderRestoreBackupSourceBackupNameS
 }
 
 /// <summary>
-/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -702,6 +715,36 @@ public partial class V1beta1ClusterSpecForProviderRestoreBackupSource
     /// <summary>Selector for a Backup in alloydb to populate backupName.</summary>
     [JsonPropertyName("backupNameSelector")]
     public V1beta1ClusterSpecForProviderRestoreBackupSourceBackupNameSelector? BackupNameSelector { get; set; }
+}
+
+/// <summary>
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderRestoreBackupdrBackupSource
+{
+    /// <summary>The name of the BackupDR backup that this cluster is restored from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]/backups/[BACKUP_ID]&quot;</summary>
+    [JsonPropertyName("backup")]
+    public string? Backup { get; set; }
+}
+
+/// <summary>
+/// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderRestoreBackupdrPitrSource
+{
+    /// <summary>The name of the BackupDR data source that this cluster is restore from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]&quot;</summary>
+    [JsonPropertyName("dataSource")]
+    public string? DataSource { get; set; }
+
+    /// <summary>The point in time that this cluster is restored to, in RFC 3339 format.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
 }
 
 /// <summary>
@@ -860,7 +903,7 @@ public partial class V1beta1ClusterSpecForProviderRestoreContinuousBackupSourceC
 }
 
 /// <summary>
-/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1105,13 +1148,23 @@ public partial class V1beta1ClusterSpecForProvider
     public string? DatabaseVersion { get; set; }
 
     /// <summary>
+    /// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("dataplexConfig")]
+    public V1beta1ClusterSpecForProviderDataplexConfig? DataplexConfig { get; set; }
+
+    /// <summary>
     /// Policy to determine if the cluster should be deleted forcefully.
     /// Deleting a cluster forcefully, deletes the cluster and all its associated instances within the cluster.
     /// Deleting a Secondary cluster with a secondary instance REQUIRES setting deletion_policy = &quot;FORCE&quot; otherwise an error is returned. This is needed as there is no support to delete just the secondary instance, and the only way to delete secondary instance is to delete the associated secondary cluster forcefully which also deletes the secondary instance.
-    /// Possible values: DEFAULT, FORCE
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
+
+    /// <summary>When the field is set to false, deleting the cluster is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
 
     /// <summary>User-settable and human-readable display name for the Cluster.</summary>
     [JsonPropertyName("displayName")]
@@ -1129,7 +1182,7 @@ public partial class V1beta1ClusterSpecForProvider
     public string? Etag { get; set; }
 
     /// <summary>
-    /// Initial user to setup during cluster creation.
+    /// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("initialUser")]
@@ -1176,14 +1229,28 @@ public partial class V1beta1ClusterSpecForProvider
     public V1beta1ClusterSpecForProviderPscConfig? PscConfig { get; set; }
 
     /// <summary>
-    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreBackupSource")]
     public V1beta1ClusterSpecForProviderRestoreBackupSource? RestoreBackupSource { get; set; }
 
     /// <summary>
-    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrBackupSource")]
+    public V1beta1ClusterSpecForProviderRestoreBackupdrBackupSource? RestoreBackupdrBackupSource { get; set; }
+
+    /// <summary>
+    /// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrPitrSource")]
+    public V1beta1ClusterSpecForProviderRestoreBackupdrPitrSource? RestoreBackupdrPitrSource { get; set; }
+
+    /// <summary>
+    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreContinuousBackupSource")]
@@ -1393,6 +1460,19 @@ public partial class V1beta1ClusterSpecInitProviderContinuousBackupConfig
 }
 
 /// <summary>
+/// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderDataplexConfig
+{
+    /// <summary>Indicates whether Dataplex integration is enabled for the cluster.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>
 /// EncryptionConfig describes the encryption config of a cluster or a backup that is encrypted with a CMEK (customer-managed encryption key).
 /// Structure is documented below.
 /// </summary>
@@ -1422,7 +1502,7 @@ public partial class V1beta1ClusterSpecInitProviderInitialUserPasswordSecretRef
 }
 
 /// <summary>
-/// Initial user to setup during cluster creation.
+/// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1434,7 +1514,7 @@ public partial class V1beta1ClusterSpecInitProviderInitialUser
     /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("passwordSecretRef")]
-    public required V1beta1ClusterSpecInitProviderInitialUserPasswordSecretRef PasswordSecretRef { get; set; }
+    public V1beta1ClusterSpecInitProviderInitialUserPasswordSecretRef? PasswordSecretRef { get; set; }
 
     /// <summary>The database username.</summary>
     [JsonPropertyName("user")]
@@ -1856,7 +1936,7 @@ public partial class V1beta1ClusterSpecInitProviderRestoreBackupSourceBackupName
 }
 
 /// <summary>
-/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1874,6 +1954,36 @@ public partial class V1beta1ClusterSpecInitProviderRestoreBackupSource
     /// <summary>Selector for a Backup in alloydb to populate backupName.</summary>
     [JsonPropertyName("backupNameSelector")]
     public V1beta1ClusterSpecInitProviderRestoreBackupSourceBackupNameSelector? BackupNameSelector { get; set; }
+}
+
+/// <summary>
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderRestoreBackupdrBackupSource
+{
+    /// <summary>The name of the BackupDR backup that this cluster is restored from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]/backups/[BACKUP_ID]&quot;</summary>
+    [JsonPropertyName("backup")]
+    public string? Backup { get; set; }
+}
+
+/// <summary>
+/// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderRestoreBackupdrPitrSource
+{
+    /// <summary>The name of the BackupDR data source that this cluster is restore from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]&quot;</summary>
+    [JsonPropertyName("dataSource")]
+    public string? DataSource { get; set; }
+
+    /// <summary>The point in time that this cluster is restored to, in RFC 3339 format.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
 }
 
 /// <summary>
@@ -2032,7 +2142,7 @@ public partial class V1beta1ClusterSpecInitProviderRestoreContinuousBackupSource
 }
 
 /// <summary>
-/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2289,13 +2399,23 @@ public partial class V1beta1ClusterSpecInitProvider
     public string? DatabaseVersion { get; set; }
 
     /// <summary>
+    /// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("dataplexConfig")]
+    public V1beta1ClusterSpecInitProviderDataplexConfig? DataplexConfig { get; set; }
+
+    /// <summary>
     /// Policy to determine if the cluster should be deleted forcefully.
     /// Deleting a cluster forcefully, deletes the cluster and all its associated instances within the cluster.
     /// Deleting a Secondary cluster with a secondary instance REQUIRES setting deletion_policy = &quot;FORCE&quot; otherwise an error is returned. This is needed as there is no support to delete just the secondary instance, and the only way to delete secondary instance is to delete the associated secondary cluster forcefully which also deletes the secondary instance.
-    /// Possible values: DEFAULT, FORCE
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
+
+    /// <summary>When the field is set to false, deleting the cluster is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
 
     /// <summary>User-settable and human-readable display name for the Cluster.</summary>
     [JsonPropertyName("displayName")]
@@ -2313,7 +2433,7 @@ public partial class V1beta1ClusterSpecInitProvider
     public string? Etag { get; set; }
 
     /// <summary>
-    /// Initial user to setup during cluster creation.
+    /// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("initialUser")]
@@ -2356,14 +2476,28 @@ public partial class V1beta1ClusterSpecInitProvider
     public V1beta1ClusterSpecInitProviderPscConfig? PscConfig { get; set; }
 
     /// <summary>
-    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreBackupSource")]
     public V1beta1ClusterSpecInitProviderRestoreBackupSource? RestoreBackupSource { get; set; }
 
     /// <summary>
-    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrBackupSource")]
+    public V1beta1ClusterSpecInitProviderRestoreBackupdrBackupSource? RestoreBackupdrBackupSource { get; set; }
+
+    /// <summary>
+    /// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrPitrSource")]
+    public V1beta1ClusterSpecInitProviderRestoreBackupdrPitrSource? RestoreBackupdrPitrSource { get; set; }
+
+    /// <summary>
+    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreContinuousBackupSource")]
@@ -2651,6 +2785,15 @@ public partial class V1beta1ClusterStatusAtProviderBackupSource
     public string? BackupName { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderBackupdrBackupSource
+{
+    /// <summary>The name of the BackupDR backup resource.</summary>
+    [JsonPropertyName("backup")]
+    public string? Backup { get; set; }
+}
+
 /// <summary>
 /// EncryptionConfig describes the encryption config of a cluster or a backup that is encrypted with a CMEK (customer-managed encryption key).
 /// Structure is documented below.
@@ -2746,6 +2889,19 @@ public partial class V1beta1ClusterStatusAtProviderContinuousBackupInfo
 }
 
 /// <summary>
+/// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderDataplexConfig
+{
+    /// <summary>Indicates whether Dataplex integration is enabled for the cluster.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>
 /// EncryptionConfig describes the encryption config of a cluster or a backup that is encrypted with a CMEK (customer-managed encryption key).
 /// Structure is documented below.
 /// </summary>
@@ -2778,7 +2934,7 @@ public partial class V1beta1ClusterStatusAtProviderEncryptionInfo
 }
 
 /// <summary>
-/// Initial user to setup during cluster creation.
+/// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2912,7 +3068,7 @@ public partial class V1beta1ClusterStatusAtProviderPscConfig
 }
 
 /// <summary>
-/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2925,7 +3081,37 @@ public partial class V1beta1ClusterStatusAtProviderRestoreBackupSource
 }
 
 /// <summary>
-/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+/// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderRestoreBackupdrBackupSource
+{
+    /// <summary>The name of the BackupDR backup that this cluster is restored from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]/backups/[BACKUP_ID]&quot;</summary>
+    [JsonPropertyName("backup")]
+    public string? Backup { get; set; }
+}
+
+/// <summary>
+/// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderRestoreBackupdrPitrSource
+{
+    /// <summary>The name of the BackupDR data source that this cluster is restore from. It must be of the format &quot;projects/[PROJECT]/locations/[LOCATION]/backupVaults/[VAULT_ID]/dataSources/[DATASOURCE_ID]&quot;</summary>
+    [JsonPropertyName("dataSource")]
+    public string? DataSource { get; set; }
+
+    /// <summary>The point in time that this cluster is restored to, in RFC 3339 format.</summary>
+    [JsonPropertyName("pointInTime")]
+    public string? PointInTime { get; set; }
+}
+
+/// <summary>
+/// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3004,6 +3190,13 @@ public partial class V1beta1ClusterStatusAtProvider
     public IList<V1beta1ClusterStatusAtProviderBackupSource>? BackupSource { get; set; }
 
     /// <summary>
+    /// Cluster created from a BackupDR backup.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("backupdrBackupSource")]
+    public IList<V1beta1ClusterStatusAtProviderBackupdrBackupSource>? BackupdrBackupSource { get; set; }
+
+    /// <summary>
     /// The type of cluster. If not set, defaults to PRIMARY.
     /// Default value is PRIMARY.
     /// Possible values are: PRIMARY, SECONDARY.
@@ -3034,13 +3227,23 @@ public partial class V1beta1ClusterStatusAtProvider
     public string? DatabaseVersion { get; set; }
 
     /// <summary>
+    /// Configuration for Dataplex integration. This is an optional field. If not set, Dataplex integration will be enabled by default.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("dataplexConfig")]
+    public V1beta1ClusterStatusAtProviderDataplexConfig? DataplexConfig { get; set; }
+
+    /// <summary>
     /// Policy to determine if the cluster should be deleted forcefully.
     /// Deleting a cluster forcefully, deletes the cluster and all its associated instances within the cluster.
     /// Deleting a Secondary cluster with a secondary instance REQUIRES setting deletion_policy = &quot;FORCE&quot; otherwise an error is returned. This is needed as there is no support to delete just the secondary instance, and the only way to delete secondary instance is to delete the associated secondary cluster forcefully which also deletes the secondary instance.
-    /// Possible values: DEFAULT, FORCE
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
+
+    /// <summary>When the field is set to false, deleting the cluster is allowed.</summary>
+    [JsonPropertyName("deletionProtection")]
+    public bool? DeletionProtection { get; set; }
 
     /// <summary>User-settable and human-readable display name for the Cluster.</summary>
     [JsonPropertyName("displayName")]
@@ -3076,7 +3279,7 @@ public partial class V1beta1ClusterStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// Initial user to setup during cluster creation.
+    /// Initial user to setup during cluster creation. If unset for new Clusters, a postgres role with null password is created. You will need to create additional users or set the password in order to log in.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("initialUser")]
@@ -3142,14 +3345,28 @@ public partial class V1beta1ClusterStatusAtProvider
     public bool? Reconciling { get; set; }
 
     /// <summary>
-    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreBackupSource")]
     public V1beta1ClusterStatusAtProviderRestoreBackupSource? RestoreBackupSource { get; set; }
 
     /// <summary>
-    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, both can&apos;t be set together.
+    /// The source when restoring from a backup. Conflicts with &apos;restore_continuous_backup_source&apos;,  &apos;restore_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrBackupSource")]
+    public V1beta1ClusterStatusAtProviderRestoreBackupdrBackupSource? RestoreBackupdrBackupSource { get; set; }
+
+    /// <summary>
+    /// The BackupDR source used for point in time recovery. Conflicts with &apos;restore_backupdr_backup_source&apos;, &apos;restore_continuous_backup_source&apos; and &apos;restore_backupdr_backup_source&apos;, they can&apos;t be set togeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("restoreBackupdrPitrSource")]
+    public V1beta1ClusterStatusAtProviderRestoreBackupdrPitrSource? RestoreBackupdrPitrSource { get; set; }
+
+    /// <summary>
+    /// The source when restoring via point in time recovery (PITR). Conflicts with &apos;restore_backup_source&apos;, &apos;restore_backupdr_backup_source&apos; and &apos;restore_backupdr_pitr_source&apos;, they can&apos;t be set together.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("restoreContinuousBackupSource")]
@@ -3254,6 +3471,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

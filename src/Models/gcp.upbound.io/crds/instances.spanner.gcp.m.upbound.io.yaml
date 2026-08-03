@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: instances.spanner.gcp.m.upbound.io
 spec:
   group: spanner.gcp.m.upbound.io
@@ -82,12 +82,49 @@ spec:
                                     Structure is documented below.
                                   properties:
                                     maxNodes:
-                                      description: The maximum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies maximum number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to min_nodes.
+                                      type: number
+                                    maxProcessingUnits:
+                                      description: |-
+                                        Specifies maximum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000 and be greater than or equal to
+                                        min_processing_units.
                                       type: number
                                     minNodes:
-                                      description: The minimum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to 1.
+                                      type: number
+                                    minProcessingUnits:
+                                      description: |-
+                                        Specifies minimum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000.
                                       type: number
                                   type: object
+                                autoscalingTargetHighPriorityCpuUtilizationPercent:
+                                  description: |-
+                                    The target high priority cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                autoscalingTargetTotalCpuUtilizationPercent:
+                                  description: |-
+                                    The target total cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                disableHighPriorityCpuAutoscaling:
+                                  description: |-
+                                    If true, disables high priority CPU autoscaling for this replica and ignores
+                                    high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
+                                disableTotalCpuAutoscaling:
+                                  description: |-
+                                    If true, disables total CPU autoscaling for this replica and ignores
+                                    total_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
                               type: object
                             replicaSelection:
                               description: |-
@@ -111,7 +148,9 @@ spec:
                           Structure is documented below.
                         properties:
                           maxNodes:
-                            description: The maximum number of nodes for this specific replica.
+                            description: |-
+                              Specifies maximum number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to min_nodes.
                             type: number
                           maxProcessingUnits:
                             description: |-
@@ -120,7 +159,9 @@ spec:
                               min_processing_units.
                             type: number
                           minNodes:
-                            description: The minimum number of nodes for this specific replica.
+                            description: |-
+                              Specifies number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to 1.
                             type: number
                           minProcessingUnits:
                             description: |-
@@ -145,6 +186,13 @@ spec:
                               Specifies the target storage utilization percentage that the autoscaler
                               should be trying to achieve for the instance.
                               This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                            type: number
+                          totalCpuUtilizationPercent:
+                            description: |-
+                              The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+                              This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+                              If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+                              The value should be higher than high_priority_cpu_utilization_percent if present.
                             type: number
                         type: object
                     type: object
@@ -244,12 +292,49 @@ spec:
                                     Structure is documented below.
                                   properties:
                                     maxNodes:
-                                      description: The maximum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies maximum number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to min_nodes.
+                                      type: number
+                                    maxProcessingUnits:
+                                      description: |-
+                                        Specifies maximum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000 and be greater than or equal to
+                                        min_processing_units.
                                       type: number
                                     minNodes:
-                                      description: The minimum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to 1.
+                                      type: number
+                                    minProcessingUnits:
+                                      description: |-
+                                        Specifies minimum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000.
                                       type: number
                                   type: object
+                                autoscalingTargetHighPriorityCpuUtilizationPercent:
+                                  description: |-
+                                    The target high priority cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                autoscalingTargetTotalCpuUtilizationPercent:
+                                  description: |-
+                                    The target total cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                disableHighPriorityCpuAutoscaling:
+                                  description: |-
+                                    If true, disables high priority CPU autoscaling for this replica and ignores
+                                    high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
+                                disableTotalCpuAutoscaling:
+                                  description: |-
+                                    If true, disables total CPU autoscaling for this replica and ignores
+                                    total_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
                               type: object
                             replicaSelection:
                               description: |-
@@ -273,7 +358,9 @@ spec:
                           Structure is documented below.
                         properties:
                           maxNodes:
-                            description: The maximum number of nodes for this specific replica.
+                            description: |-
+                              Specifies maximum number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to min_nodes.
                             type: number
                           maxProcessingUnits:
                             description: |-
@@ -282,7 +369,9 @@ spec:
                               min_processing_units.
                             type: number
                           minNodes:
-                            description: The minimum number of nodes for this specific replica.
+                            description: |-
+                              Specifies number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to 1.
                             type: number
                           minProcessingUnits:
                             description: |-
@@ -307,6 +396,13 @@ spec:
                               Specifies the target storage utilization percentage that the autoscaler
                               should be trying to achieve for the instance.
                               This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                            type: number
+                          totalCpuUtilizationPercent:
+                            description: |-
+                              The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+                              This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+                              If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+                              The value should be higher than high_priority_cpu_utilization_percent if present.
                             type: number
                         type: object
                     type: object
@@ -461,12 +557,49 @@ spec:
                                     Structure is documented below.
                                   properties:
                                     maxNodes:
-                                      description: The maximum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies maximum number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to min_nodes.
+                                      type: number
+                                    maxProcessingUnits:
+                                      description: |-
+                                        Specifies maximum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000 and be greater than or equal to
+                                        min_processing_units.
                                       type: number
                                     minNodes:
-                                      description: The minimum number of nodes for this specific replica.
+                                      description: |-
+                                        Specifies number of nodes allocated to the instance. If set, this number
+                                        should be greater than or equal to 1.
+                                      type: number
+                                    minProcessingUnits:
+                                      description: |-
+                                        Specifies minimum number of processing units allocated to the instance.
+                                        If set, this number should be multiples of 1000.
                                       type: number
                                   type: object
+                                autoscalingTargetHighPriorityCpuUtilizationPercent:
+                                  description: |-
+                                    The target high priority cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                autoscalingTargetTotalCpuUtilizationPercent:
+                                  description: |-
+                                    The target total cpu utilization percentage that the autoscaler
+                                    should be trying to achieve for this replica.
+                                    This number is on a scale from 0 (no utilization) to 100 (full utilization).
+                                  type: number
+                                disableHighPriorityCpuAutoscaling:
+                                  description: |-
+                                    If true, disables high priority CPU autoscaling for this replica and ignores
+                                    high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
+                                disableTotalCpuAutoscaling:
+                                  description: |-
+                                    If true, disables total CPU autoscaling for this replica and ignores
+                                    total_cpu_utilization_percent in the top-level autoscaling configuration.
+                                  type: boolean
                               type: object
                             replicaSelection:
                               description: |-
@@ -490,7 +623,9 @@ spec:
                           Structure is documented below.
                         properties:
                           maxNodes:
-                            description: The maximum number of nodes for this specific replica.
+                            description: |-
+                              Specifies maximum number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to min_nodes.
                             type: number
                           maxProcessingUnits:
                             description: |-
@@ -499,7 +634,9 @@ spec:
                               min_processing_units.
                             type: number
                           minNodes:
-                            description: The minimum number of nodes for this specific replica.
+                            description: |-
+                              Specifies number of nodes allocated to the instance. If set, this number
+                              should be greater than or equal to 1.
                             type: number
                           minProcessingUnits:
                             description: |-
@@ -525,6 +662,13 @@ spec:
                               should be trying to achieve for the instance.
                               This number is on a scale from 0 (no utilization) to 100 (full utilization).
                             type: number
+                          totalCpuUtilizationPercent:
+                            description: |-
+                              The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+                              This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+                              If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+                              The value should be higher than high_priority_cpu_utilization_percent if present.
+                            type: number
                         type: object
                     type: object
                   config:
@@ -542,6 +686,11 @@ spec:
                       Note that AUTOMATIC is not permitted for free instances, as backups and backup schedules are not allowed for free instances.
                       if unset or NONE, no default backup schedule will be created for new databases within the instance.
                       Possible values are: NONE, AUTOMATIC.
+                    type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
                     type: string
                   displayName:
                     description: |-
@@ -649,6 +798,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

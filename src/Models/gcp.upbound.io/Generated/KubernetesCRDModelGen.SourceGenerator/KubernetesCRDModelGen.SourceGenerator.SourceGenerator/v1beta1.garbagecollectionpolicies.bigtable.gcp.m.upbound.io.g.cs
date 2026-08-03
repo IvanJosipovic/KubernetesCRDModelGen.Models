@@ -378,8 +378,9 @@ public partial class V1beta1GarbageCollectionPolicySpecForProvider
     public string? ColumnFamily { get; set; }
 
     /// <summary>
-    /// The deletion policy for the GC policy.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted in a replicated instance.
+    /// The deletion policy for the GC policy. Setting ABANDON allows the resource
+    /// to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted
+    /// in a replicated instance.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -791,8 +792,9 @@ public partial class V1beta1GarbageCollectionPolicySpecInitProvider
     public string? ColumnFamily { get; set; }
 
     /// <summary>
-    /// The deletion policy for the GC policy.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted in a replicated instance.
+    /// The deletion policy for the GC policy. Setting ABANDON allows the resource
+    /// to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted
+    /// in a replicated instance.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -989,8 +991,9 @@ public partial class V1beta1GarbageCollectionPolicyStatusAtProvider
     public string? ColumnFamily { get; set; }
 
     /// <summary>
-    /// The deletion policy for the GC policy.
-    /// Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted in a replicated instance.
+    /// The deletion policy for the GC policy. Setting ABANDON allows the resource
+    /// to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted
+    /// in a replicated instance.
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
@@ -1089,6 +1092,15 @@ public partial class V1beta1GarbageCollectionPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GarbageCollectionPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

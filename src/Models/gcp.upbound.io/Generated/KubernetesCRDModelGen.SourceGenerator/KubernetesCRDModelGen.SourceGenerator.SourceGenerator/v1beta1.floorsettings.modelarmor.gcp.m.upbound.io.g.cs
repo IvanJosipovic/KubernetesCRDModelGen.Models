@@ -618,6 +618,33 @@ public partial class V1beta1FloorSettingSpecForProviderFloorSettingMetadata
     public V1beta1FloorSettingSpecForProviderFloorSettingMetadataMultiLanguageDetection? MultiLanguageDetection { get; set; }
 }
 
+/// <summary>
+/// Google MCP Server floor setting.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FloorSettingSpecForProviderGoogleMcpServerFloorSetting
+{
+    /// <summary>If true, log Model Armor filter results to Cloud Logging.</summary>
+    [JsonPropertyName("enableCloudLogging")]
+    public bool? EnableCloudLogging { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect and block mode.
+    /// Requests that trip Model Armor filters will be blocked.
+    /// </summary>
+    [JsonPropertyName("inspectAndBlock")]
+    public bool? InspectAndBlock { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect only mode. No action
+    /// will be taken on the request.
+    /// </summary>
+    [JsonPropertyName("inspectOnly")]
+    public bool? InspectOnly { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingSpecForProvider
@@ -646,6 +673,13 @@ public partial class V1beta1FloorSettingSpecForProvider
     /// </summary>
     [JsonPropertyName("floorSettingMetadata")]
     public V1beta1FloorSettingSpecForProviderFloorSettingMetadata? FloorSettingMetadata { get; set; }
+
+    /// <summary>
+    /// Google MCP Server floor setting.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("googleMcpServerFloorSetting")]
+    public V1beta1FloorSettingSpecForProviderGoogleMcpServerFloorSetting? GoogleMcpServerFloorSetting { get; set; }
 
     /// <summary>List of integrated services for which the floor setting is applicable.</summary>
     [JsonPropertyName("integratedServices")]
@@ -1243,6 +1277,33 @@ public partial class V1beta1FloorSettingSpecInitProviderFloorSettingMetadata
 }
 
 /// <summary>
+/// Google MCP Server floor setting.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FloorSettingSpecInitProviderGoogleMcpServerFloorSetting
+{
+    /// <summary>If true, log Model Armor filter results to Cloud Logging.</summary>
+    [JsonPropertyName("enableCloudLogging")]
+    public bool? EnableCloudLogging { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect and block mode.
+    /// Requests that trip Model Armor filters will be blocked.
+    /// </summary>
+    [JsonPropertyName("inspectAndBlock")]
+    public bool? InspectAndBlock { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect only mode. No action
+    /// will be taken on the request.
+    /// </summary>
+    [JsonPropertyName("inspectOnly")]
+    public bool? InspectOnly { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -1282,6 +1343,13 @@ public partial class V1beta1FloorSettingSpecInitProvider
     /// </summary>
     [JsonPropertyName("floorSettingMetadata")]
     public V1beta1FloorSettingSpecInitProviderFloorSettingMetadata? FloorSettingMetadata { get; set; }
+
+    /// <summary>
+    /// Google MCP Server floor setting.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("googleMcpServerFloorSetting")]
+    public V1beta1FloorSettingSpecInitProviderGoogleMcpServerFloorSetting? GoogleMcpServerFloorSetting { get; set; }
 
     /// <summary>List of integrated services for which the floor setting is applicable.</summary>
     [JsonPropertyName("integratedServices")]
@@ -1651,6 +1719,33 @@ public partial class V1beta1FloorSettingStatusAtProviderFloorSettingMetadata
     public V1beta1FloorSettingStatusAtProviderFloorSettingMetadataMultiLanguageDetection? MultiLanguageDetection { get; set; }
 }
 
+/// <summary>
+/// Google MCP Server floor setting.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FloorSettingStatusAtProviderGoogleMcpServerFloorSetting
+{
+    /// <summary>If true, log Model Armor filter results to Cloud Logging.</summary>
+    [JsonPropertyName("enableCloudLogging")]
+    public bool? EnableCloudLogging { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect and block mode.
+    /// Requests that trip Model Armor filters will be blocked.
+    /// </summary>
+    [JsonPropertyName("inspectAndBlock")]
+    public bool? InspectAndBlock { get; set; }
+
+    /// <summary>
+    /// If true, Model Armor filters will be run in inspect only mode. No action
+    /// will be taken on the request.
+    /// </summary>
+    [JsonPropertyName("inspectOnly")]
+    public bool? InspectOnly { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FloorSettingStatusAtProvider
@@ -1683,6 +1778,13 @@ public partial class V1beta1FloorSettingStatusAtProvider
     /// </summary>
     [JsonPropertyName("floorSettingMetadata")]
     public V1beta1FloorSettingStatusAtProviderFloorSettingMetadata? FloorSettingMetadata { get; set; }
+
+    /// <summary>
+    /// Google MCP Server floor setting.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("googleMcpServerFloorSetting")]
+    public V1beta1FloorSettingStatusAtProviderGoogleMcpServerFloorSetting? GoogleMcpServerFloorSetting { get; set; }
 
     /// <summary>an identifier for the resource with format {{parent}}/locations/{{location}}/floorSetting</summary>
     [JsonPropertyName("id")]
@@ -1763,6 +1865,15 @@ public partial class V1beta1FloorSettingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FloorSettingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -346,6 +346,28 @@ public partial class V1beta2DiskSpecForProviderParams
 }
 
 /// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DiskSpecForProviderSourceImageEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// The customer-supplied encryption key of the source image. Required if
 /// the source image is protected by a customer-supplied encryption key.
 /// Structure is documented below.
@@ -374,9 +396,32 @@ public partial class V1beta2DiskSpecForProviderSourceImageEncryptionKey
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2DiskSpecForProviderSourceImageEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DiskSpecForProviderSourceSnapshotEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -409,9 +454,10 @@ public partial class V1beta2DiskSpecForProviderSourceSnapshotEncryptionKey
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2DiskSpecForProviderSourceSnapshotEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -921,6 +967,28 @@ public partial class V1beta2DiskSpecInitProviderParams
 }
 
 /// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DiskSpecInitProviderSourceImageEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// The customer-supplied encryption key of the source image. Required if
 /// the source image is protected by a customer-supplied encryption key.
 /// Structure is documented below.
@@ -949,9 +1017,32 @@ public partial class V1beta2DiskSpecInitProviderSourceImageEncryptionKey
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2DiskSpecInitProviderSourceImageEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DiskSpecInitProviderSourceSnapshotEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -984,9 +1075,10 @@ public partial class V1beta2DiskSpecInitProviderSourceSnapshotEncryptionKey
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2DiskSpecInitProviderSourceSnapshotEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
 }
 
 /// <summary>
@@ -1504,13 +1596,6 @@ public partial class V1beta2DiskStatusAtProviderSourceImageEncryptionKey
     public string? KmsKeyServiceAccount { get; set; }
 
     /// <summary>
-    /// Specifies a 256-bit customer-supplied encryption key, encoded in
-    /// RFC 4648 base64 to either encrypt or decrypt this resource.
-    /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
-
-    /// <summary>
     /// (Output)
     /// The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied
     /// encryption key that protects this resource.
@@ -1545,13 +1630,6 @@ public partial class V1beta2DiskStatusAtProviderSourceSnapshotEncryptionKey
     /// </summary>
     [JsonPropertyName("kmsKeyServiceAccount")]
     public string? KmsKeyServiceAccount { get; set; }
-
-    /// <summary>
-    /// Specifies a 256-bit customer-supplied encryption key, encoded in
-    /// RFC 4648 base64 to either encrypt or decrypt this resource.
-    /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
 
     /// <summary>
     /// (Output)
@@ -1599,6 +1677,13 @@ public partial class V1beta2DiskStatusAtProvider
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// An optional description of this resource. Provide this property when
@@ -1920,6 +2005,15 @@ public partial class V1beta2DiskStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DiskStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

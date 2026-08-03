@@ -54,6 +54,23 @@ public partial class V1beta1ReservationSpecForProviderDeleteAfterDuration
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the reservation. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Sharing policy for reservations with Google Cloud managed services.
 /// Structure is documented below.
 /// </summary>
@@ -393,6 +410,13 @@ public partial class V1beta1ReservationSpecForProvider
     public string? Description { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ReservationSpecForProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -448,6 +472,23 @@ public partial class V1beta1ReservationSpecInitProviderDeleteAfterDuration
     /// <summary>Number of seconds for the auto-delete duration.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the reservation. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -802,6 +843,13 @@ public partial class V1beta1ReservationSpecInitProvider
     public string? Description { get; set; }
 
     /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ReservationSpecInitProviderParams? Params { get; set; }
+
+    /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
     /// </summary>
@@ -963,6 +1011,23 @@ public partial class V1beta1ReservationStatusAtProviderDeleteAfterDuration
 }
 
 /// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the reservation. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Sharing policy for reservations with Google Cloud managed services.
 /// Structure is documented below.
 /// </summary>
@@ -976,6 +1041,210 @@ public partial class V1beta1ReservationStatusAtProviderReservationSharingPolicy
     /// </summary>
     [JsonPropertyName("serviceShareType")]
     public string? ServiceShareType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderResourceStatusHealthInfo
+{
+    /// <summary>
+    /// (Output)
+    /// The number of reservation blocks that are degraded.
+    /// </summary>
+    [JsonPropertyName("degradedBlockCount")]
+    public double? DegradedBlockCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The health status of the reservation.
+    /// </summary>
+    [JsonPropertyName("healthStatus")]
+    public string? HealthStatus { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The number of reservation blocks that are healthy.
+    /// </summary>
+    [JsonPropertyName("healthyBlockCount")]
+    public double? HealthyBlockCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderResourceStatusReservationMaintenanceUpcomingGroupMaintenance
+{
+    /// <summary>
+    /// (Output)
+    /// Indicates if the maintenance can be customer triggered.
+    /// </summary>
+    [JsonPropertyName("canReschedule")]
+    public bool? CanReschedule { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The latest time for the planned maintenance window to start. This timestamp value is in RFC3339 text format.
+    /// </summary>
+    [JsonPropertyName("latestWindowStartTime")]
+    public string? LatestWindowStartTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Indicates whether the UpcomingMaintenance will be triggered on VM shutdown.
+    /// </summary>
+    [JsonPropertyName("maintenanceOnShutdown")]
+    public bool? MaintenanceOnShutdown { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The reasons for the maintenance. Only valid for vms.
+    /// </summary>
+    [JsonPropertyName("maintenanceReasons")]
+    public IList<string>? MaintenanceReasons { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Status of the maintenance.
+    /// </summary>
+    [JsonPropertyName("maintenanceStatus")]
+    public string? MaintenanceStatus { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Defines the type of maintenance.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The time by which the maintenance disruption will be completed. This timestamp value is in RFC3339 text format.
+    /// </summary>
+    [JsonPropertyName("windowEndTime")]
+    public string? WindowEndTime { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The current start time of the maintenance window. This timestamp value is in RFC3339 text format.
+    /// </summary>
+    [JsonPropertyName("windowStartTime")]
+    public string? WindowStartTime { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderResourceStatusReservationMaintenance
+{
+    /// <summary>
+    /// (Output)
+    /// Describes number of instances that have ongoing maintenance.
+    /// </summary>
+    [JsonPropertyName("instanceMaintenanceOngoingCount")]
+    public double? InstanceMaintenanceOngoingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Describes number of instances that have pending maintenance.
+    /// </summary>
+    [JsonPropertyName("instanceMaintenancePendingCount")]
+    public double? InstanceMaintenancePendingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Progress for ongoing maintenance for this group of VMs/hosts. Describes number of hosts in the block that have ongoing maintenance.
+    /// </summary>
+    [JsonPropertyName("maintenanceOngoingCount")]
+    public double? MaintenanceOngoingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Progress for ongoing maintenance for this group of VMs/hosts. Describes number of hosts in the block that have pending maintenance.
+    /// </summary>
+    [JsonPropertyName("maintenancePendingCount")]
+    public double? MaintenancePendingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The type of maintenance for the reservation.
+    /// </summary>
+    [JsonPropertyName("schedulingType")]
+    public string? SchedulingType { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Describes number of subblock Infrastructure that has ongoing maintenance. Here, Subblock Infrastructure Maintenance pertains to upstream hardware contained in the Subblock that is necessary for a VM Family(e.g. NVLink Domains). Not all VM Families will support this field.
+    /// </summary>
+    [JsonPropertyName("subblockInfraMaintenanceOngoingCount")]
+    public double? SubblockInfraMaintenanceOngoingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Describes number of subblock Infrastructure that has pending maintenance. Here, Subblock Infrastructure Maintenance pertains to upstream hardware contained in the Subblock that is necessary for a VM Family (e.g. NVLink Domains). Not all VM Families will support this field.
+    /// </summary>
+    [JsonPropertyName("subblockInfraMaintenancePendingCount")]
+    public double? SubblockInfraMaintenancePendingCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Maintenance information on this group of VMs.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("upcomingGroupMaintenance")]
+    public IList<V1beta1ReservationStatusAtProviderResourceStatusReservationMaintenanceUpcomingGroupMaintenance>? UpcomingGroupMaintenance { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderResourceStatusSpecificSkuAllocation
+{
+    /// <summary>
+    /// (Output)
+    /// ID of the instance template used to populate reservation properties.
+    /// </summary>
+    [JsonPropertyName("sourceInstanceTemplateId")]
+    public string? SourceInstanceTemplateId { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Per service utilization breakdown. The Key is the Google Cloud managed service name.
+    /// </summary>
+    [JsonPropertyName("utilizations")]
+    public IDictionary<string, string>? Utilizations { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReservationStatusAtProviderResourceStatus
+{
+    /// <summary>
+    /// (Output)
+    /// Health information for the reservation.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("healthInfo")]
+    public IList<V1beta1ReservationStatusAtProviderResourceStatusHealthInfo>? HealthInfo { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The number of reservation blocks associated with this reservation.
+    /// </summary>
+    [JsonPropertyName("reservationBlockCount")]
+    public double? ReservationBlockCount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Maintenance information for this reservation
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("reservationMaintenance")]
+    public IList<V1beta1ReservationStatusAtProviderResourceStatusReservationMaintenance>? ReservationMaintenance { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Allocation Properties of this reservation.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("specificSkuAllocation")]
+    public IList<V1beta1ReservationStatusAtProviderResourceStatusSpecificSkuAllocation>? SpecificSkuAllocation { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1075,6 +1344,13 @@ public partial class V1beta1ReservationStatusAtProviderSpecificReservationInstan
     [JsonPropertyName("localSsds")]
     public IList<V1beta1ReservationStatusAtProviderSpecificReservationInstancePropertiesLocalSsds>? LocalSsds { get; set; }
 
+    /// <summary>
+    /// (Output)
+    /// An opaque location hint used to place the allocation close to other resources. This field is for use by internal tools that use the public API.
+    /// </summary>
+    [JsonPropertyName("locationHint")]
+    public string? LocationHint { get; set; }
+
     /// <summary>The name of the machine type to reserve.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -1097,6 +1373,13 @@ public partial class V1beta1ReservationStatusAtProviderSpecificReservationInstan
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReservationStatusAtProviderSpecificReservation
 {
+    /// <summary>
+    /// (Output)
+    /// Indicates how many instances are actually usable currently.
+    /// </summary>
+    [JsonPropertyName("assuredCount")]
+    public double? AssuredCount { get; set; }
+
     /// <summary>The number of resources that are allocated.</summary>
     [JsonPropertyName("count")]
     public double? Count { get; set; }
@@ -1127,6 +1410,10 @@ public partial class V1beta1ReservationStatusAtProviderSpecificReservation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReservationStatusAtProvider
 {
+    /// <summary>List of all reservation block names in the parent reservation.</summary>
+    [JsonPropertyName("blockNames")]
+    public IList<string>? BlockNames { get; set; }
+
     /// <summary>
     /// Full or partial URL to a parent commitment. This field displays for
     /// reservations that are tied to a commitment.
@@ -1152,6 +1439,13 @@ public partial class V1beta1ReservationStatusAtProvider
     [JsonPropertyName("deleteAtTime")]
     public string? DeleteAtTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1160,6 +1454,21 @@ public partial class V1beta1ReservationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Type of the resource. Always compute#reservations for reservations.</summary>
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    /// <summary>Full or partial URL to parent commitments. This field displays for reservations that are tied to multiple commitments.</summary>
+    [JsonPropertyName("linkedCommitments")]
+    public IList<string>? LinkedCommitments { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1ReservationStatusAtProviderParams? Params { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
@@ -1167,12 +1476,27 @@ public partial class V1beta1ReservationStatusAtProvider
     [JsonPropertyName("project")]
     public string? Project { get; set; }
 
+    /// <summary>The number of reservation blocks associated with this reservation.</summary>
+    [JsonPropertyName("reservationBlockCount")]
+    public double? ReservationBlockCount { get; set; }
+
     /// <summary>
     /// Sharing policy for reservations with Google Cloud managed services.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("reservationSharingPolicy")]
     public V1beta1ReservationStatusAtProviderReservationSharingPolicy? ReservationSharingPolicy { get; set; }
+
+    /// <summary>
+    /// Status information for Reservation resource.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resourceStatus")]
+    public IList<V1beta1ReservationStatusAtProviderResourceStatus>? ResourceStatus { get; set; }
+
+    /// <summary>Reserved for future use.</summary>
+    [JsonPropertyName("satisfiesPzs")]
+    public bool? SatisfiesPzs { get; set; }
 
     /// <summary>The URI of the created resource.</summary>
     [JsonPropertyName("selfLink")]
@@ -1263,6 +1587,15 @@ public partial class V1beta1ReservationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ReservationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

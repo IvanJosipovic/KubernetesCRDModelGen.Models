@@ -55,12 +55,12 @@ public enum V1beta2WorkflowTemplateSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecForProviderEncryptionConfig
 {
-    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    /// <summary>The Cloud KMS key name to use for encrypting workflow template job arguments.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 }
@@ -593,7 +593,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     public string? Policy { get; set; }
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEncryptionConfig
@@ -688,11 +688,11 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("reservationAffinity")]
     public V1beta2WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
-    /// <summary>The (https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
+    /// <summary>The (https://docs.cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
+    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/docs.cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
     [JsonPropertyName("serviceAccountScopes")]
     public IList<string>? ServiceAccountScopes { get; set; }
 
@@ -752,7 +752,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -792,7 +792,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -817,7 +817,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -857,7 +857,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -976,7 +976,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -1016,7 +1016,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -1042,7 +1042,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     [JsonPropertyName("autoscalingConfig")]
     public V1beta2WorkflowTemplateSpecForProviderPlacementManagedClusterConfigAutoscalingConfig? AutoscalingConfig { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEncryptionConfig? EncryptionConfig { get; set; }
 
@@ -1109,7 +1109,7 @@ public partial class V1beta2WorkflowTemplateSpecForProviderPlacementManagedClust
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-/// <summary>Required. WorkflowTemplate scheduling information.</summary>
+/// <summary>WorkflowTemplate scheduling information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecForProviderPlacement
@@ -1131,11 +1131,11 @@ public partial class V1beta2WorkflowTemplateSpecForProvider
     [JsonPropertyName("dagTimeout")]
     public string? DagTimeout { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateSpecForProviderEncryptionConfig? EncryptionConfig { get; set; }
 
-    /// <summary>Required. The Directed Acyclic Graph of Jobs to submit.</summary>
+    /// <summary>The Directed Acyclic Graph of Jobs to submit. Structure is documented below</summary>
     [JsonPropertyName("jobs")]
     public IList<V1beta2WorkflowTemplateSpecForProviderJobs>? Jobs { get; set; }
 
@@ -1151,7 +1151,7 @@ public partial class V1beta2WorkflowTemplateSpecForProvider
     [JsonPropertyName("parameters")]
     public IList<V1beta2WorkflowTemplateSpecForProviderParameters>? Parameters { get; set; }
 
-    /// <summary>Required. WorkflowTemplate scheduling information.</summary>
+    /// <summary>WorkflowTemplate scheduling information.</summary>
     [JsonPropertyName("placement")]
     public V1beta2WorkflowTemplateSpecForProviderPlacement? Placement { get; set; }
 
@@ -1164,12 +1164,12 @@ public partial class V1beta2WorkflowTemplateSpecForProvider
     public double? Version { get; set; }
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecInitProviderEncryptionConfig
 {
-    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    /// <summary>The Cloud KMS key name to use for encrypting workflow template job arguments.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 }
@@ -1702,7 +1702,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     public string? Policy { get; set; }
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEncryptionConfig
@@ -1797,11 +1797,11 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("reservationAffinity")]
     public V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
-    /// <summary>The (https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
+    /// <summary>The (https://docs.cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
+    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/docs.cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
     [JsonPropertyName("serviceAccountScopes")]
     public IList<string>? ServiceAccountScopes { get; set; }
 
@@ -1861,7 +1861,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -1901,7 +1901,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -1926,7 +1926,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -1966,7 +1966,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -2085,7 +2085,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -2125,7 +2125,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -2151,7 +2151,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     [JsonPropertyName("autoscalingConfig")]
     public V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigAutoscalingConfig? AutoscalingConfig { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEncryptionConfig? EncryptionConfig { get; set; }
 
@@ -2218,7 +2218,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProviderPlacementManagedClus
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-/// <summary>Required. WorkflowTemplate scheduling information.</summary>
+/// <summary>WorkflowTemplate scheduling information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateSpecInitProviderPlacement
@@ -2252,11 +2252,11 @@ public partial class V1beta2WorkflowTemplateSpecInitProvider
     [JsonPropertyName("dagTimeout")]
     public string? DagTimeout { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateSpecInitProviderEncryptionConfig? EncryptionConfig { get; set; }
 
-    /// <summary>Required. The Directed Acyclic Graph of Jobs to submit.</summary>
+    /// <summary>The Directed Acyclic Graph of Jobs to submit. Structure is documented below</summary>
     [JsonPropertyName("jobs")]
     public IList<V1beta2WorkflowTemplateSpecInitProviderJobs>? Jobs { get; set; }
 
@@ -2268,7 +2268,7 @@ public partial class V1beta2WorkflowTemplateSpecInitProvider
     [JsonPropertyName("parameters")]
     public IList<V1beta2WorkflowTemplateSpecInitProviderParameters>? Parameters { get; set; }
 
-    /// <summary>Required. WorkflowTemplate scheduling information.</summary>
+    /// <summary>WorkflowTemplate scheduling information.</summary>
     [JsonPropertyName("placement")]
     public V1beta2WorkflowTemplateSpecInitProviderPlacement? Placement { get; set; }
 
@@ -2464,12 +2464,12 @@ public partial class V1beta2WorkflowTemplateSpec
     public V1beta2WorkflowTemplateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderEncryptionConfig
 {
-    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    /// <summary>The Cloud KMS key name to use for encrypting workflow template job arguments.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 }
@@ -3002,7 +3002,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     public string? Policy { get; set; }
 }
 
-/// <summary>Encryption settings for the cluster.</summary>
+/// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEncryptionConfig
@@ -3101,11 +3101,11 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("reservationAffinity")]
     public V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity? ReservationAffinity { get; set; }
 
-    /// <summary>The (https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
+    /// <summary>The (https://docs.cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.</summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
+    /// <summary>The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/docs.cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specified, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</summary>
     [JsonPropertyName("serviceAccountScopes")]
     public IList<string>? ServiceAccountScopes { get; set; }
 
@@ -3169,7 +3169,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -3196,11 +3196,11 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigManagedGroupConfig
 {
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceGroupManagerName")]
     public string? InstanceGroupManagerName { get; set; }
 
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceTemplateName")]
     public string? InstanceTemplateName { get; set; }
 }
@@ -3230,7 +3230,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("isPreemptible")]
     public bool? IsPreemptible { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -3259,7 +3259,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -3286,11 +3286,11 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig
 {
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceGroupManagerName")]
     public string? InstanceGroupManagerName { get; set; }
 
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceTemplateName")]
     public string? InstanceTemplateName { get; set; }
 }
@@ -3320,7 +3320,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("isPreemptible")]
     public bool? IsPreemptible { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -3443,7 +3443,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("acceleratorCount")]
     public double? AcceleratorCount { get; set; }
 
-    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
+    /// <summary>Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See (https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for example, nvidia-tesla-k80.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 }
@@ -3470,11 +3470,11 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigManagedGroupConfig
 {
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceGroupManagerName")]
     public string? InstanceGroupManagerName { get; set; }
 
-    /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
+    /// <summary>The resource name of the workflow template, as described in https://docs.cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
     [JsonPropertyName("instanceTemplateName")]
     public string? InstanceTemplateName { get; set; }
 }
@@ -3504,7 +3504,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("isPreemptible")]
     public bool? IsPreemptible { get; set; }
 
-    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
+    /// <summary>The Compute Engine machine type used for cluster instances. A full URL, partial URI, or short name are valid. Examples: * https://www.googleapis.com/compute/v1/projects/(https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the machine type resource, for example, n1-standard-2`.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
@@ -3534,7 +3534,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     [JsonPropertyName("autoscalingConfig")]
     public V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigAutoscalingConfig? AutoscalingConfig { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEncryptionConfig? EncryptionConfig { get; set; }
 
@@ -3601,7 +3601,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProviderPlacementManagedClus
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-/// <summary>Required. WorkflowTemplate scheduling information.</summary>
+/// <summary>WorkflowTemplate scheduling information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowTemplateStatusAtProviderPlacement
@@ -3627,10 +3627,17 @@ public partial class V1beta2WorkflowTemplateStatusAtProvider
     [JsonPropertyName("dagTimeout")]
     public string? DagTimeout { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
 
-    /// <summary>Encryption settings for the cluster.</summary>
+    /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
     [JsonPropertyName("encryptionConfig")]
     public V1beta2WorkflowTemplateStatusAtProviderEncryptionConfig? EncryptionConfig { get; set; }
 
@@ -3638,7 +3645,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Required. The Directed Acyclic Graph of Jobs to submit.</summary>
+    /// <summary>The Directed Acyclic Graph of Jobs to submit. Structure is documented below</summary>
     [JsonPropertyName("jobs")]
     public IList<V1beta2WorkflowTemplateStatusAtProviderJobs>? Jobs { get; set; }
 
@@ -3654,7 +3661,7 @@ public partial class V1beta2WorkflowTemplateStatusAtProvider
     [JsonPropertyName("parameters")]
     public IList<V1beta2WorkflowTemplateStatusAtProviderParameters>? Parameters { get; set; }
 
-    /// <summary>Required. WorkflowTemplate scheduling information.</summary>
+    /// <summary>WorkflowTemplate scheduling information.</summary>
     [JsonPropertyName("placement")]
     public V1beta2WorkflowTemplateStatusAtProviderPlacement? Placement { get; set; }
 
@@ -3728,6 +3735,15 @@ public partial class V1beta2WorkflowTemplateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WorkflowTemplateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

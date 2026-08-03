@@ -63,13 +63,34 @@ public enum V1beta2InstanceSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000 and be greater than or equal to
+    /// min_processing_units.
+    /// </summary>
+    [JsonPropertyName("maxProcessingUnits")]
+    public double? MaxProcessingUnits { get; set; }
+
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
+
+    /// <summary>
+    /// Specifies minimum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000.
+    /// </summary>
+    [JsonPropertyName("minProcessingUnits")]
+    public double? MinProcessingUnits { get; set; }
 }
 
 /// <summary>
@@ -86,6 +107,36 @@ public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAsymmetricAu
     /// </summary>
     [JsonPropertyName("autoscalingLimits")]
     public V1beta2InstanceSpecForProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits? AutoscalingLimits { get; set; }
+
+    /// <summary>
+    /// The target high priority cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetHighPriorityCpuUtilizationPercent")]
+    public double? AutoscalingTargetHighPriorityCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetTotalCpuUtilizationPercent")]
+    public double? AutoscalingTargetTotalCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// If true, disables high priority CPU autoscaling for this replica and ignores
+    /// high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableHighPriorityCpuAutoscaling")]
+    public bool? DisableHighPriorityCpuAutoscaling { get; set; }
+
+    /// <summary>
+    /// If true, disables total CPU autoscaling for this replica and ignores
+    /// total_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableTotalCpuAutoscaling")]
+    public bool? DisableTotalCpuAutoscaling { get; set; }
 }
 
 /// <summary>
@@ -133,7 +184,10 @@ public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAsymmetricAu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
@@ -145,7 +199,10 @@ public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAutoscalingL
     [JsonPropertyName("maxProcessingUnits")]
     public double? MaxProcessingUnits { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
 
@@ -181,6 +238,15 @@ public partial class V1beta2InstanceSpecForProviderAutoscalingConfigAutoscalingT
     /// </summary>
     [JsonPropertyName("storageUtilizationPercent")]
     public double? StorageUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+    /// If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+    /// The value should be higher than high_priority_cpu_utilization_percent if present.
+    /// </summary>
+    [JsonPropertyName("totalCpuUtilizationPercent")]
+    public double? TotalCpuUtilizationPercent { get; set; }
 }
 
 /// <summary>
@@ -317,13 +383,34 @@ public partial class V1beta2InstanceSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000 and be greater than or equal to
+    /// min_processing_units.
+    /// </summary>
+    [JsonPropertyName("maxProcessingUnits")]
+    public double? MaxProcessingUnits { get; set; }
+
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
+
+    /// <summary>
+    /// Specifies minimum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000.
+    /// </summary>
+    [JsonPropertyName("minProcessingUnits")]
+    public double? MinProcessingUnits { get; set; }
 }
 
 /// <summary>
@@ -340,6 +427,36 @@ public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAsymmetricA
     /// </summary>
     [JsonPropertyName("autoscalingLimits")]
     public V1beta2InstanceSpecInitProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits? AutoscalingLimits { get; set; }
+
+    /// <summary>
+    /// The target high priority cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetHighPriorityCpuUtilizationPercent")]
+    public double? AutoscalingTargetHighPriorityCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetTotalCpuUtilizationPercent")]
+    public double? AutoscalingTargetTotalCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// If true, disables high priority CPU autoscaling for this replica and ignores
+    /// high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableHighPriorityCpuAutoscaling")]
+    public bool? DisableHighPriorityCpuAutoscaling { get; set; }
+
+    /// <summary>
+    /// If true, disables total CPU autoscaling for this replica and ignores
+    /// total_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableTotalCpuAutoscaling")]
+    public bool? DisableTotalCpuAutoscaling { get; set; }
 }
 
 /// <summary>
@@ -387,7 +504,10 @@ public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAsymmetricA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
@@ -399,7 +519,10 @@ public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAutoscaling
     [JsonPropertyName("maxProcessingUnits")]
     public double? MaxProcessingUnits { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
 
@@ -435,6 +558,15 @@ public partial class V1beta2InstanceSpecInitProviderAutoscalingConfigAutoscaling
     /// </summary>
     [JsonPropertyName("storageUtilizationPercent")]
     public double? StorageUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+    /// If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+    /// The value should be higher than high_priority_cpu_utilization_percent if present.
+    /// </summary>
+    [JsonPropertyName("totalCpuUtilizationPercent")]
+    public double? TotalCpuUtilizationPercent { get; set; }
 }
 
 /// <summary>
@@ -766,13 +898,34 @@ public partial class V1beta2InstanceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000 and be greater than or equal to
+    /// min_processing_units.
+    /// </summary>
+    [JsonPropertyName("maxProcessingUnits")]
+    public double? MaxProcessingUnits { get; set; }
+
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
+
+    /// <summary>
+    /// Specifies minimum number of processing units allocated to the instance.
+    /// If set, this number should be multiples of 1000.
+    /// </summary>
+    [JsonPropertyName("minProcessingUnits")]
+    public double? MinProcessingUnits { get; set; }
 }
 
 /// <summary>
@@ -789,6 +942,36 @@ public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAsymmetricA
     /// </summary>
     [JsonPropertyName("autoscalingLimits")]
     public V1beta2InstanceStatusAtProviderAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits? AutoscalingLimits { get; set; }
+
+    /// <summary>
+    /// The target high priority cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetHighPriorityCpuUtilizationPercent")]
+    public double? AutoscalingTargetHighPriorityCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler
+    /// should be trying to achieve for this replica.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization).
+    /// </summary>
+    [JsonPropertyName("autoscalingTargetTotalCpuUtilizationPercent")]
+    public double? AutoscalingTargetTotalCpuUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// If true, disables high priority CPU autoscaling for this replica and ignores
+    /// high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableHighPriorityCpuAutoscaling")]
+    public bool? DisableHighPriorityCpuAutoscaling { get; set; }
+
+    /// <summary>
+    /// If true, disables total CPU autoscaling for this replica and ignores
+    /// total_cpu_utilization_percent in the top-level autoscaling configuration.
+    /// </summary>
+    [JsonPropertyName("disableTotalCpuAutoscaling")]
+    public bool? DisableTotalCpuAutoscaling { get; set; }
 }
 
 /// <summary>
@@ -836,7 +1019,10 @@ public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAsymmetricA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAutoscalingLimits
 {
-    /// <summary>The maximum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies maximum number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to min_nodes.
+    /// </summary>
     [JsonPropertyName("maxNodes")]
     public double? MaxNodes { get; set; }
 
@@ -848,7 +1034,10 @@ public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAutoscaling
     [JsonPropertyName("maxProcessingUnits")]
     public double? MaxProcessingUnits { get; set; }
 
-    /// <summary>The minimum number of nodes for this specific replica.</summary>
+    /// <summary>
+    /// Specifies number of nodes allocated to the instance. If set, this number
+    /// should be greater than or equal to 1.
+    /// </summary>
     [JsonPropertyName("minNodes")]
     public double? MinNodes { get; set; }
 
@@ -884,6 +1073,15 @@ public partial class V1beta2InstanceStatusAtProviderAutoscalingConfigAutoscaling
     /// </summary>
     [JsonPropertyName("storageUtilizationPercent")]
     public double? StorageUtilizationPercent { get; set; }
+
+    /// <summary>
+    /// The target total cpu utilization percentage that the autoscaler should be trying to achieve for the instance.
+    /// This number is on a scale from 0 (no utilization) to 100 (full utilization). The valid range is [10, 90] inclusive.
+    /// If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
+    /// The value should be higher than high_priority_cpu_utilization_percent if present.
+    /// </summary>
+    [JsonPropertyName("totalCpuUtilizationPercent")]
+    public double? TotalCpuUtilizationPercent { get; set; }
 }
 
 /// <summary>
@@ -958,6 +1156,13 @@ public partial class V1beta2InstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("defaultBackupScheduleType")]
     public string? DefaultBackupScheduleType { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// The descriptive name for this instance as it appears in UIs. Must be
@@ -1085,6 +1290,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

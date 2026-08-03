@@ -319,6 +319,10 @@ public partial class V1beta1NodePoolSpecForProviderNetworkConfigPodCidrOverprovi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNetworkConfig
 {
+    /// <summary>Specifies the accelerator network profile for nodes in this node pool. Setting to &quot;auto&quot; enables GKE to automatically configure high-performance networking settings for nodes with accelerators (like GPUs). GKE manages the underlying resources (like VPCs and subnets) for this configuration.</summary>
+    [JsonPropertyName("acceleratorNetworkProfile")]
+    public string? AcceleratorNetworkProfile { get; set; }
+
     /// <summary>
     /// We specify the additional node networks for this node pool using this list. Each node network corresponds to an additional interface.
     /// Structure is documented below
@@ -356,6 +360,10 @@ public partial class V1beta1NodePoolSpecForProviderNetworkConfig
     /// <summary>The ID of the secondary range for pod IPs. If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.</summary>
     [JsonPropertyName("podRange")]
     public string? PodRange { get; set; }
+
+    /// <summary>The subnetwork path for the node pool. Format: projects/{project}/regions/{region}/subnetworks/{subnetwork}. If the cluster is associated with multiple subnetworks, the subnetwork for the node pool is picked based on the IP utilization during node pool creation and is immutable</summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -370,6 +378,23 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigAdvancedMachineFeat
 
     [JsonPropertyName("threadsPerCore")]
     public double? ThreadsPerCore { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigBootDisk
+{
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+
+    [JsonPropertyName("sizeGb")]
+    public double? SizeGb { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -417,10 +442,111 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigPri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsCa
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+/// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClient
+{
+    [JsonPropertyName("cert")]
+    public V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert? Cert { get; set; }
+
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey? Key { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsHeader
+{
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public IList<string>? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHosts
+{
+    [JsonPropertyName("ca")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsCa>? Ca { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public IList<string>? Capabilities { get; set; }
+
+    [JsonPropertyName("client")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClient>? Client { get; set; }
+
+    [JsonPropertyName("dialTimeout")]
+    public string? DialTimeout { get; set; }
+
+    [JsonPropertyName("header")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsHeader>? Header { get; set; }
+
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("overridePath")]
+    public bool? OverridePath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHosts
+{
+    [JsonPropertyName("hosts")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHostsHosts>? Hosts { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigWritableCgroups
+{
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigContainerdConfig
 {
     [JsonPropertyName("privateRegistryAccessConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigPrivateRegistryAccessConfig? PrivateRegistryAccessConfig { get; set; }
+
+    [JsonPropertyName("registryHosts")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigRegistryHosts>? RegistryHosts { get; set; }
+
+    [JsonPropertyName("writableCgroups")]
+    public V1beta1NodePoolSpecForProviderNodeConfigContainerdConfigWritableCgroups? WritableCgroups { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -520,6 +646,83 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigHostMaintenancePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigCrashLoopBackOff
+{
+    [JsonPropertyName("maxContainerRestartPeriod")]
+    public string? MaxContainerRestartPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionMinimumReclaim
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionSoft
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionSoftGracePeriod
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigMemoryManager
 {
     [JsonPropertyName("policy")]
@@ -537,6 +740,7 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigTopolo
     public string? Scope { get; set; }
 }
 
+/// <summary>Node kubelet configs. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfig
@@ -559,6 +763,21 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfig
     [JsonPropertyName("cpuManagerPolicy")]
     public string? CpuManagerPolicy { get; set; }
 
+    [JsonPropertyName("crashLoopBackOff")]
+    public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigCrashLoopBackOff? CrashLoopBackOff { get; set; }
+
+    [JsonPropertyName("evictionMaxPodGracePeriodSeconds")]
+    public double? EvictionMaxPodGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("evictionMinimumReclaim")]
+    public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionMinimumReclaim? EvictionMinimumReclaim { get; set; }
+
+    [JsonPropertyName("evictionSoft")]
+    public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionSoft? EvictionSoft { get; set; }
+
+    [JsonPropertyName("evictionSoftGracePeriod")]
+    public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigEvictionSoftGracePeriod? EvictionSoftGracePeriod { get; set; }
+
     [JsonPropertyName("imageGcHighThresholdPercent")]
     public double? ImageGcHighThresholdPercent { get; set; }
 
@@ -574,14 +793,36 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("maxParallelImagePulls")]
+    public double? MaxParallelImagePulls { get; set; }
+
     [JsonPropertyName("memoryManager")]
     public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
 
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
 
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown for critical pods. This value must be less than or equal to shutdown_grace_period_seconds. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodCriticalPodsSeconds")]
+    public double? ShutdownGracePeriodCriticalPodsSeconds { get; set; }
+
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown. This is the time allocated for all pods (critical and non-critical) to terminate. The value must be between 10 and 10000. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodSeconds")]
+    public double? ShutdownGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("singleProcessOomKill")]
+    public bool? SingleProcessOomKill { get; set; }
+
     [JsonPropertyName("topologyManager")]
     public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigAccurateTimeConfig
+{
+    [JsonPropertyName("enablePtpKvmTimeSync")]
+    public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -595,22 +836,102 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigHuge
     public double? HugepageSize2M { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile
+{
+    [JsonPropertyName("diskCount")]
+    public double? DiskCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig
+{
+    /// <summary>Whether pod cidr overprovision is disabled.</summary>
+    [JsonPropertyName("disabled")]
+    public bool? Disabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfig
+{
+    [JsonPropertyName("bootDiskProfile")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile? BootDiskProfile { get; set; }
+
+    [JsonPropertyName("dedicatedLocalSsdProfile")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile? DedicatedLocalSsdProfile { get; set; }
+
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig? EncryptionConfig { get; set; }
+
+    [JsonPropertyName("ephemeralLocalSsdProfile")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile? EphemeralLocalSsdProfile { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfig
 {
+    [JsonPropertyName("accurateTimeConfig")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigAccurateTimeConfig? AccurateTimeConfig { get; set; }
+
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
 
+    [JsonPropertyName("nodeKernelModuleLoading")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading? NodeKernelModuleLoading { get; set; }
+
+    [JsonPropertyName("swapConfig")]
+    public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfigSwapConfig? SwapConfig { get; set; }
+
     [JsonPropertyName("sysctls")]
     public IDictionary<string, string>? Sysctls { get; set; }
+
+    [JsonPropertyName("transparentHugepageDefrag")]
+    public string? TransparentHugepageDefrag { get; set; }
+
+    [JsonPropertyName("transparentHugepageEnabled")]
+    public string? TransparentHugepageEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -619,6 +940,21 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigLocalNvmeSsdBlockCo
 {
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigNodeImageConfig
+{
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which to create the node pool. If blank,
+    /// the provider-configured project will be used.
+    /// </summary>
+    [JsonPropertyName("imageProject")]
+    public string? ImageProject { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -639,6 +975,19 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigReservationAffinity
     /// <summary>name&quot;</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigSandboxConfig
+{
+    /// <summary>
+    /// The type of the policy. Supports a single value: COMPACT.
+    /// Specifying COMPACT placement policy type places node pool&apos;s nodes in a closer
+    /// physical proximity in order to reduce network latency between nodes.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -838,6 +1187,9 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigSoleTenantConfigNod
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigSoleTenantConfig
 {
+    [JsonPropertyName("minNodeCpus")]
+    public double? MinNodeCpus { get; set; }
+
     [JsonPropertyName("nodeAffinity")]
     public IList<V1beta1NodePoolSpecForProviderNodeConfigSoleTenantConfigNodeAffinity>? NodeAffinity { get; set; }
 }
@@ -857,10 +1209,17 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigTaint
     public string? Value { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeConfigTaintConfig
+{
+    /// <summary>Specifies the behavior for applying architecture taints to node pool nodes. Valid values are ARCHITECTURE_TAINT_BEHAVIOR_UNSPECIFIED, NONE, or ARM.</summary>
+    [JsonPropertyName("architectureTaintBehavior")]
+    public string? ArchitectureTaintBehavior { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfigWindowsNodeConfig
@@ -882,16 +1241,16 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfigWorkloadMetadataCon
     public string? Mode { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecForProviderNodeConfig
 {
     [JsonPropertyName("advancedMachineFeatures")]
     public V1beta1NodePoolSpecForProviderNodeConfigAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
+
+    [JsonPropertyName("bootDisk")]
+    public V1beta1NodePoolSpecForProviderNodeConfigBootDisk? BootDisk { get; set; }
 
     [JsonPropertyName("bootDiskKmsKey")]
     public string? BootDiskKmsKey { get; set; }
@@ -923,6 +1282,9 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("gcfsConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigGcfsConfig? GcfsConfig { get; set; }
 
+    [JsonPropertyName("gpudirectStrategy")]
+    public string? GpudirectStrategy { get; set; }
+
     [JsonPropertyName("guestAccelerator")]
     public IList<V1beta1NodePoolSpecForProviderNodeConfigGuestAccelerator>? GuestAccelerator { get; set; }
 
@@ -935,16 +1297,14 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 
+    /// <summary>Node kubelet configs. Structure is documented below.</summary>
     [JsonPropertyName("kubeletConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigKubeletConfig? KubeletConfig { get; set; }
 
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("linuxNodeConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigLinuxNodeConfig? LinuxNodeConfig { get; set; }
 
@@ -954,10 +1314,6 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
 
-    /// <summary>
-    /// Possible Local SSD encryption modes:
-    /// Accepted values are:
-    /// </summary>
     [JsonPropertyName("localSsdEncryptionMode")]
     public string? LocalSsdEncryptionMode { get; set; }
 
@@ -979,6 +1335,9 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("nodeGroup")]
     public string? NodeGroup { get; set; }
 
+    [JsonPropertyName("nodeImageConfig")]
+    public IList<V1beta1NodePoolSpecForProviderNodeConfigNodeImageConfig>? NodeImageConfig { get; set; }
+
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
 
@@ -993,6 +1352,9 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
 
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    [JsonPropertyName("sandboxConfig")]
+    public V1beta1NodePoolSpecForProviderNodeConfigSandboxConfig? SandboxConfig { get; set; }
 
     [JsonPropertyName("secondaryBootDisks")]
     public IList<V1beta1NodePoolSpecForProviderNodeConfigSecondaryBootDisks>? SecondaryBootDisks { get; set; }
@@ -1026,15 +1388,33 @@ public partial class V1beta1NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("taint")]
     public IList<V1beta1NodePoolSpecForProviderNodeConfigTaint>? Taint { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+    [JsonPropertyName("taintConfig")]
+    public V1beta1NodePoolSpecForProviderNodeConfigTaintConfig? TaintConfig { get; set; }
+
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("windowsNodeConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigWindowsNodeConfig? WindowsNodeConfig { get; set; }
 
     [JsonPropertyName("workloadMetadataConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfigWorkloadMetadataConfig? WorkloadMetadataConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecForProviderNodeDrainConfig
+{
+    /// <summary>The duration of the grace termination period for node drain.</summary>
+    [JsonPropertyName("graceTerminationDuration")]
+    public string? GraceTerminationDuration { get; set; }
+
+    /// <summary>The duration of the PDB timeout period for node drain.</summary>
+    [JsonPropertyName("pdbTimeoutDuration")]
+    public string? PdbTimeoutDuration { get; set; }
+
+    /// <summary>Whether to respect PodDisruptionBudget policy during node pool deletion.</summary>
+    [JsonPropertyName("respectPdbDuringNodePoolDeletion")]
+    public bool? RespectPdbDuringNodePoolDeletion { get; set; }
 }
 
 /// <summary>
@@ -1176,6 +1556,10 @@ public partial class V1beta1NodePoolSpecForProvider
     [JsonPropertyName("clusterSelector")]
     public V1beta1NodePoolSpecForProviderClusterSelector? ClusterSelector { get; set; }
 
+    /// <summary>Whether to ignore external changes (drift) to the node count (e.g. from GKE autoscaling). Setting this to true skips querying Compute Engine Instance Group Managers (IGMs) to determine the current node count on read, which can save API quota and speed up plans on large clusters.</summary>
+    [JsonPropertyName("ignoreNodeCountChanges")]
+    public bool? IgnoreNodeCountChanges { get; set; }
+
     /// <summary>
     /// The initial number of nodes for the pool. In
     /// regional or multi-zonal clusters, this is the number of nodes per zone. Changing
@@ -1215,10 +1599,7 @@ public partial class V1beta1NodePoolSpecForProvider
     [JsonPropertyName("networkConfig")]
     public V1beta1NodePoolSpecForProviderNetworkConfig? NetworkConfig { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1NodePoolSpecForProviderNodeConfig? NodeConfig { get; set; }
 
@@ -1228,6 +1609,10 @@ public partial class V1beta1NodePoolSpecForProvider
     /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
+
+    /// <summary>The node drain configuration of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("nodeDrainConfig")]
+    public IList<V1beta1NodePoolSpecForProviderNodeDrainConfig>? NodeDrainConfig { get; set; }
 
     /// <summary>
     /// The list of zones in which the node pool&apos;s nodes should be located. Nodes must
@@ -1403,6 +1788,10 @@ public partial class V1beta1NodePoolSpecInitProviderNetworkConfigPodCidrOverprov
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNetworkConfig
 {
+    /// <summary>Specifies the accelerator network profile for nodes in this node pool. Setting to &quot;auto&quot; enables GKE to automatically configure high-performance networking settings for nodes with accelerators (like GPUs). GKE manages the underlying resources (like VPCs and subnets) for this configuration.</summary>
+    [JsonPropertyName("acceleratorNetworkProfile")]
+    public string? AcceleratorNetworkProfile { get; set; }
+
     /// <summary>
     /// We specify the additional node networks for this node pool using this list. Each node network corresponds to an additional interface.
     /// Structure is documented below
@@ -1440,6 +1829,10 @@ public partial class V1beta1NodePoolSpecInitProviderNetworkConfig
     /// <summary>The ID of the secondary range for pod IPs. If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.</summary>
     [JsonPropertyName("podRange")]
     public string? PodRange { get; set; }
+
+    /// <summary>The subnetwork path for the node pool. Format: projects/{project}/regions/{region}/subnetworks/{subnetwork}. If the cluster is associated with multiple subnetworks, the subnetwork for the node pool is picked based on the IP utilization during node pool creation and is immutable</summary>
+    [JsonPropertyName("subnetwork")]
+    public string? Subnetwork { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1454,6 +1847,23 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigAdvancedMachineFea
 
     [JsonPropertyName("threadsPerCore")]
     public double? ThreadsPerCore { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigBootDisk
+{
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+
+    [JsonPropertyName("sizeGb")]
+    public double? SizeGb { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1501,10 +1911,111 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsCa
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+/// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClient
+{
+    [JsonPropertyName("cert")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert? Cert { get; set; }
+
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey? Key { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsHeader
+{
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public IList<string>? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHosts
+{
+    [JsonPropertyName("ca")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsCa>? Ca { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public IList<string>? Capabilities { get; set; }
+
+    [JsonPropertyName("client")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClient>? Client { get; set; }
+
+    [JsonPropertyName("dialTimeout")]
+    public string? DialTimeout { get; set; }
+
+    [JsonPropertyName("header")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsHeader>? Header { get; set; }
+
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("overridePath")]
+    public bool? OverridePath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHosts
+{
+    [JsonPropertyName("hosts")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHostsHosts>? Hosts { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigWritableCgroups
+{
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfig
 {
     [JsonPropertyName("privateRegistryAccessConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigPrivateRegistryAccessConfig? PrivateRegistryAccessConfig { get; set; }
+
+    [JsonPropertyName("registryHosts")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigRegistryHosts>? RegistryHosts { get; set; }
+
+    [JsonPropertyName("writableCgroups")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigContainerdConfigWritableCgroups? WritableCgroups { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1604,6 +2115,83 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigHostMaintenancePol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigCrashLoopBackOff
+{
+    [JsonPropertyName("maxContainerRestartPeriod")]
+    public string? MaxContainerRestartPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionMinimumReclaim
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionSoft
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionSoftGracePeriod
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigMemoryManager
 {
     [JsonPropertyName("policy")]
@@ -1621,6 +2209,7 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigTopol
     public string? Scope { get; set; }
 }
 
+/// <summary>Node kubelet configs. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfig
@@ -1643,6 +2232,21 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfig
     [JsonPropertyName("cpuManagerPolicy")]
     public string? CpuManagerPolicy { get; set; }
 
+    [JsonPropertyName("crashLoopBackOff")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigCrashLoopBackOff? CrashLoopBackOff { get; set; }
+
+    [JsonPropertyName("evictionMaxPodGracePeriodSeconds")]
+    public double? EvictionMaxPodGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("evictionMinimumReclaim")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionMinimumReclaim? EvictionMinimumReclaim { get; set; }
+
+    [JsonPropertyName("evictionSoft")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionSoft? EvictionSoft { get; set; }
+
+    [JsonPropertyName("evictionSoftGracePeriod")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigEvictionSoftGracePeriod? EvictionSoftGracePeriod { get; set; }
+
     [JsonPropertyName("imageGcHighThresholdPercent")]
     public double? ImageGcHighThresholdPercent { get; set; }
 
@@ -1658,14 +2262,36 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("maxParallelImagePulls")]
+    public double? MaxParallelImagePulls { get; set; }
+
     [JsonPropertyName("memoryManager")]
     public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
 
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
 
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown for critical pods. This value must be less than or equal to shutdown_grace_period_seconds. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodCriticalPodsSeconds")]
+    public double? ShutdownGracePeriodCriticalPodsSeconds { get; set; }
+
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown. This is the time allocated for all pods (critical and non-critical) to terminate. The value must be between 10 and 10000. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodSeconds")]
+    public double? ShutdownGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("singleProcessOomKill")]
+    public bool? SingleProcessOomKill { get; set; }
+
     [JsonPropertyName("topologyManager")]
     public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigAccurateTimeConfig
+{
+    [JsonPropertyName("enablePtpKvmTimeSync")]
+    public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1679,22 +2305,102 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigHug
     public double? HugepageSize2M { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile
+{
+    [JsonPropertyName("diskCount")]
+    public double? DiskCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig
+{
+    /// <summary>Whether pod cidr overprovision is disabled.</summary>
+    [JsonPropertyName("disabled")]
+    public bool? Disabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfig
+{
+    [JsonPropertyName("bootDiskProfile")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile? BootDiskProfile { get; set; }
+
+    [JsonPropertyName("dedicatedLocalSsdProfile")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile? DedicatedLocalSsdProfile { get; set; }
+
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig? EncryptionConfig { get; set; }
+
+    [JsonPropertyName("ephemeralLocalSsdProfile")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile? EphemeralLocalSsdProfile { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfig
 {
+    [JsonPropertyName("accurateTimeConfig")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigAccurateTimeConfig? AccurateTimeConfig { get; set; }
+
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
 
+    [JsonPropertyName("nodeKernelModuleLoading")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading? NodeKernelModuleLoading { get; set; }
+
+    [JsonPropertyName("swapConfig")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfigSwapConfig? SwapConfig { get; set; }
+
     [JsonPropertyName("sysctls")]
     public IDictionary<string, string>? Sysctls { get; set; }
+
+    [JsonPropertyName("transparentHugepageDefrag")]
+    public string? TransparentHugepageDefrag { get; set; }
+
+    [JsonPropertyName("transparentHugepageEnabled")]
+    public string? TransparentHugepageEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1703,6 +2409,21 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigLocalNvmeSsdBlockC
 {
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigNodeImageConfig
+{
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which to create the node pool. If blank,
+    /// the provider-configured project will be used.
+    /// </summary>
+    [JsonPropertyName("imageProject")]
+    public string? ImageProject { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1723,6 +2444,19 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigReservationAffinit
     /// <summary>name&quot;</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigSandboxConfig
+{
+    /// <summary>
+    /// The type of the policy. Supports a single value: COMPACT.
+    /// Specifying COMPACT placement policy type places node pool&apos;s nodes in a closer
+    /// physical proximity in order to reduce network latency between nodes.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1922,6 +2656,9 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigSoleTenantConfigNo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigSoleTenantConfig
 {
+    [JsonPropertyName("minNodeCpus")]
+    public double? MinNodeCpus { get; set; }
+
     [JsonPropertyName("nodeAffinity")]
     public IList<V1beta1NodePoolSpecInitProviderNodeConfigSoleTenantConfigNodeAffinity>? NodeAffinity { get; set; }
 }
@@ -1941,10 +2678,17 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigTaint
     public string? Value { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeConfigTaintConfig
+{
+    /// <summary>Specifies the behavior for applying architecture taints to node pool nodes. Valid values are ARCHITECTURE_TAINT_BEHAVIOR_UNSPECIFIED, NONE, or ARM.</summary>
+    [JsonPropertyName("architectureTaintBehavior")]
+    public string? ArchitectureTaintBehavior { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfigWindowsNodeConfig
@@ -1966,16 +2710,16 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfigWorkloadMetadataCo
     public string? Mode { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolSpecInitProviderNodeConfig
 {
     [JsonPropertyName("advancedMachineFeatures")]
     public V1beta1NodePoolSpecInitProviderNodeConfigAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
+
+    [JsonPropertyName("bootDisk")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigBootDisk? BootDisk { get; set; }
 
     [JsonPropertyName("bootDiskKmsKey")]
     public string? BootDiskKmsKey { get; set; }
@@ -2007,6 +2751,9 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("gcfsConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigGcfsConfig? GcfsConfig { get; set; }
 
+    [JsonPropertyName("gpudirectStrategy")]
+    public string? GpudirectStrategy { get; set; }
+
     [JsonPropertyName("guestAccelerator")]
     public IList<V1beta1NodePoolSpecInitProviderNodeConfigGuestAccelerator>? GuestAccelerator { get; set; }
 
@@ -2019,16 +2766,14 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 
+    /// <summary>Node kubelet configs. Structure is documented below.</summary>
     [JsonPropertyName("kubeletConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigKubeletConfig? KubeletConfig { get; set; }
 
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("linuxNodeConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigLinuxNodeConfig? LinuxNodeConfig { get; set; }
 
@@ -2038,10 +2783,6 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
 
-    /// <summary>
-    /// Possible Local SSD encryption modes:
-    /// Accepted values are:
-    /// </summary>
     [JsonPropertyName("localSsdEncryptionMode")]
     public string? LocalSsdEncryptionMode { get; set; }
 
@@ -2063,6 +2804,9 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("nodeGroup")]
     public string? NodeGroup { get; set; }
 
+    [JsonPropertyName("nodeImageConfig")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeConfigNodeImageConfig>? NodeImageConfig { get; set; }
+
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
 
@@ -2077,6 +2821,9 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
 
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    [JsonPropertyName("sandboxConfig")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigSandboxConfig? SandboxConfig { get; set; }
 
     [JsonPropertyName("secondaryBootDisks")]
     public IList<V1beta1NodePoolSpecInitProviderNodeConfigSecondaryBootDisks>? SecondaryBootDisks { get; set; }
@@ -2110,15 +2857,33 @@ public partial class V1beta1NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("taint")]
     public IList<V1beta1NodePoolSpecInitProviderNodeConfigTaint>? Taint { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+    [JsonPropertyName("taintConfig")]
+    public V1beta1NodePoolSpecInitProviderNodeConfigTaintConfig? TaintConfig { get; set; }
+
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("windowsNodeConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigWindowsNodeConfig? WindowsNodeConfig { get; set; }
 
     [JsonPropertyName("workloadMetadataConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfigWorkloadMetadataConfig? WorkloadMetadataConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolSpecInitProviderNodeDrainConfig
+{
+    /// <summary>The duration of the grace termination period for node drain.</summary>
+    [JsonPropertyName("graceTerminationDuration")]
+    public string? GraceTerminationDuration { get; set; }
+
+    /// <summary>The duration of the PDB timeout period for node drain.</summary>
+    [JsonPropertyName("pdbTimeoutDuration")]
+    public string? PdbTimeoutDuration { get; set; }
+
+    /// <summary>Whether to respect PodDisruptionBudget policy during node pool deletion.</summary>
+    [JsonPropertyName("respectPdbDuringNodePoolDeletion")]
+    public bool? RespectPdbDuringNodePoolDeletion { get; set; }
 }
 
 /// <summary>
@@ -2260,6 +3025,10 @@ public partial class V1beta1NodePoolSpecInitProvider
     [JsonPropertyName("autoscaling")]
     public V1beta1NodePoolSpecInitProviderAutoscaling? Autoscaling { get; set; }
 
+    /// <summary>Whether to ignore external changes (drift) to the node count (e.g. from GKE autoscaling). Setting this to true skips querying Compute Engine Instance Group Managers (IGMs) to determine the current node count on read, which can save API quota and speed up plans on large clusters.</summary>
+    [JsonPropertyName("ignoreNodeCountChanges")]
+    public bool? IgnoreNodeCountChanges { get; set; }
+
     /// <summary>
     /// The initial number of nodes for the pool. In
     /// regional or multi-zonal clusters, this is the number of nodes per zone. Changing
@@ -2295,10 +3064,7 @@ public partial class V1beta1NodePoolSpecInitProvider
     [JsonPropertyName("networkConfig")]
     public V1beta1NodePoolSpecInitProviderNetworkConfig? NetworkConfig { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1NodePoolSpecInitProviderNodeConfig? NodeConfig { get; set; }
 
@@ -2308,6 +3074,10 @@ public partial class V1beta1NodePoolSpecInitProvider
     /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
+
+    /// <summary>The node drain configuration of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("nodeDrainConfig")]
+    public IList<V1beta1NodePoolSpecInitProviderNodeDrainConfig>? NodeDrainConfig { get; set; }
 
     /// <summary>
     /// The list of zones in which the node pool&apos;s nodes should be located. Nodes must
@@ -2590,6 +3360,10 @@ public partial class V1beta1NodePoolStatusAtProviderNetworkConfigPodCidrOverprov
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNetworkConfig
 {
+    /// <summary>Specifies the accelerator network profile for nodes in this node pool. Setting to &quot;auto&quot; enables GKE to automatically configure high-performance networking settings for nodes with accelerators (like GPUs). GKE manages the underlying resources (like VPCs and subnets) for this configuration.</summary>
+    [JsonPropertyName("acceleratorNetworkProfile")]
+    public string? AcceleratorNetworkProfile { get; set; }
+
     /// <summary>
     /// We specify the additional node networks for this node pool using this list. Each node network corresponds to an additional interface.
     /// Structure is documented below
@@ -2649,6 +3423,23 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigAdvancedMachineFea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigBootDisk
+{
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+
+    [JsonPropertyName("sizeGb")]
+    public double? SizeGb { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigConfidentialNodes
 {
     [JsonPropertyName("confidentialInstanceType")]
@@ -2692,10 +3483,111 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsCa
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+/// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClient
+{
+    [JsonPropertyName("cert")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert? Cert { get; set; }
+
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey? Key { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsHeader
+{
+    /// <summary>name&quot; as the key and specify the name of your reservation as its value.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("value")]
+    public IList<string>? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHosts
+{
+    [JsonPropertyName("ca")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsCa>? Ca { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public IList<string>? Capabilities { get; set; }
+
+    [JsonPropertyName("client")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClient>? Client { get; set; }
+
+    [JsonPropertyName("dialTimeout")]
+    public string? DialTimeout { get; set; }
+
+    [JsonPropertyName("header")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsHeader>? Header { get; set; }
+
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("overridePath")]
+    public bool? OverridePath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHosts
+{
+    [JsonPropertyName("hosts")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHostsHosts>? Hosts { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigWritableCgroups
+{
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfig
 {
     [JsonPropertyName("privateRegistryAccessConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigPrivateRegistryAccessConfig? PrivateRegistryAccessConfig { get; set; }
+
+    [JsonPropertyName("registryHosts")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigRegistryHosts>? RegistryHosts { get; set; }
+
+    [JsonPropertyName("writableCgroups")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigContainerdConfigWritableCgroups? WritableCgroups { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2810,6 +3702,83 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigHostMaintenancePol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigCrashLoopBackOff
+{
+    [JsonPropertyName("maxContainerRestartPeriod")]
+    public string? MaxContainerRestartPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionMinimumReclaim
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionSoft
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionSoftGracePeriod
+{
+    [JsonPropertyName("imagefsAvailable")]
+    public string? ImagefsAvailable { get; set; }
+
+    [JsonPropertyName("imagefsInodesFree")]
+    public string? ImagefsInodesFree { get; set; }
+
+    [JsonPropertyName("memoryAvailable")]
+    public string? MemoryAvailable { get; set; }
+
+    [JsonPropertyName("nodefsAvailable")]
+    public string? NodefsAvailable { get; set; }
+
+    [JsonPropertyName("nodefsInodesFree")]
+    public string? NodefsInodesFree { get; set; }
+
+    [JsonPropertyName("pidAvailable")]
+    public string? PidAvailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigMemoryManager
 {
     [JsonPropertyName("policy")]
@@ -2827,6 +3796,7 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigTopol
     public string? Scope { get; set; }
 }
 
+/// <summary>Node kubelet configs. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfig
@@ -2849,6 +3819,21 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfig
     [JsonPropertyName("cpuManagerPolicy")]
     public string? CpuManagerPolicy { get; set; }
 
+    [JsonPropertyName("crashLoopBackOff")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigCrashLoopBackOff? CrashLoopBackOff { get; set; }
+
+    [JsonPropertyName("evictionMaxPodGracePeriodSeconds")]
+    public double? EvictionMaxPodGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("evictionMinimumReclaim")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionMinimumReclaim? EvictionMinimumReclaim { get; set; }
+
+    [JsonPropertyName("evictionSoft")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionSoft? EvictionSoft { get; set; }
+
+    [JsonPropertyName("evictionSoftGracePeriod")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigEvictionSoftGracePeriod? EvictionSoftGracePeriod { get; set; }
+
     [JsonPropertyName("imageGcHighThresholdPercent")]
     public double? ImageGcHighThresholdPercent { get; set; }
 
@@ -2864,14 +3849,36 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("maxParallelImagePulls")]
+    public double? MaxParallelImagePulls { get; set; }
+
     [JsonPropertyName("memoryManager")]
     public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
 
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
 
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown for critical pods. This value must be less than or equal to shutdown_grace_period_seconds. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodCriticalPodsSeconds")]
+    public double? ShutdownGracePeriodCriticalPodsSeconds { get; set; }
+
+    /// <summary>The grace period (in seconds) to use during a graceful node shutdown. This is the time allocated for all pods (critical and non-critical) to terminate. The value must be between 10 and 10000. This field can only be configured if the node pool uses Spot VMs or Preemptible VMs.</summary>
+    [JsonPropertyName("shutdownGracePeriodSeconds")]
+    public double? ShutdownGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("singleProcessOomKill")]
+    public bool? SingleProcessOomKill { get; set; }
+
     [JsonPropertyName("topologyManager")]
     public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigAccurateTimeConfig
+{
+    [JsonPropertyName("enablePtpKvmTimeSync")]
+    public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2885,22 +3892,102 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigHug
     public double? HugepageSize2M { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile
+{
+    [JsonPropertyName("diskCount")]
+    public double? DiskCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig
+{
+    /// <summary>Whether pod cidr overprovision is disabled.</summary>
+    [JsonPropertyName("disabled")]
+    public bool? Disabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile
+{
+    [JsonPropertyName("swapSizeGib")]
+    public double? SwapSizeGib { get; set; }
+
+    [JsonPropertyName("swapSizePercent")]
+    public double? SwapSizePercent { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfig
+{
+    [JsonPropertyName("bootDiskProfile")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile? BootDiskProfile { get; set; }
+
+    [JsonPropertyName("dedicatedLocalSsdProfile")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile? DedicatedLocalSsdProfile { get; set; }
+
+    /// <summary>Makes nodes obtainable through the ProvisioningRequest API exclusively.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig? EncryptionConfig { get; set; }
+
+    [JsonPropertyName("ephemeralLocalSsdProfile")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile? EphemeralLocalSsdProfile { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfig
 {
+    [JsonPropertyName("accurateTimeConfig")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigAccurateTimeConfig? AccurateTimeConfig { get; set; }
+
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
 
+    [JsonPropertyName("nodeKernelModuleLoading")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigNodeKernelModuleLoading? NodeKernelModuleLoading { get; set; }
+
+    [JsonPropertyName("swapConfig")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfigSwapConfig? SwapConfig { get; set; }
+
     [JsonPropertyName("sysctls")]
     public IDictionary<string, string>? Sysctls { get; set; }
+
+    [JsonPropertyName("transparentHugepageDefrag")]
+    public string? TransparentHugepageDefrag { get; set; }
+
+    [JsonPropertyName("transparentHugepageEnabled")]
+    public string? TransparentHugepageEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2909,6 +3996,21 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigLocalNvmeSsdBlockC
 {
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigNodeImageConfig
+{
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// The ID of the project in which to create the node pool. If blank,
+    /// the provider-configured project will be used.
+    /// </summary>
+    [JsonPropertyName("imageProject")]
+    public string? ImageProject { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2929,6 +4031,19 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigReservationAffinit
     /// <summary>name&quot;</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigSandboxConfig
+{
+    /// <summary>
+    /// The type of the policy. Supports a single value: COMPACT.
+    /// Specifying COMPACT placement policy type places node pool&apos;s nodes in a closer
+    /// physical proximity in order to reduce network latency between nodes.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2973,6 +4088,9 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigSoleTenantConfigNo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigSoleTenantConfig
 {
+    [JsonPropertyName("minNodeCpus")]
+    public double? MinNodeCpus { get; set; }
+
     [JsonPropertyName("nodeAffinity")]
     public IList<V1beta1NodePoolStatusAtProviderNodeConfigSoleTenantConfigNodeAffinity>? NodeAffinity { get; set; }
 }
@@ -2992,10 +4110,17 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigTaint
     public string? Value { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeConfigTaintConfig
+{
+    /// <summary>Specifies the behavior for applying architecture taints to node pool nodes. Valid values are ARCHITECTURE_TAINT_BEHAVIOR_UNSPECIFIED, NONE, or ARM.</summary>
+    [JsonPropertyName("architectureTaintBehavior")]
+    public string? ArchitectureTaintBehavior { get; set; }
+}
+
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfigWindowsNodeConfig
@@ -3017,16 +4142,16 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfigWorkloadMetadataCo
     public string? Mode { get; set; }
 }
 
-/// <summary>
-/// Parameters used in creating the node pool. See
-/// google_container_cluster for schema.
-/// </summary>
+/// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodePoolStatusAtProviderNodeConfig
 {
     [JsonPropertyName("advancedMachineFeatures")]
     public V1beta1NodePoolStatusAtProviderNodeConfigAdvancedMachineFeatures? AdvancedMachineFeatures { get; set; }
+
+    [JsonPropertyName("bootDisk")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigBootDisk? BootDisk { get; set; }
 
     [JsonPropertyName("bootDiskKmsKey")]
     public string? BootDiskKmsKey { get; set; }
@@ -3061,6 +4186,9 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("gcfsConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigGcfsConfig? GcfsConfig { get; set; }
 
+    [JsonPropertyName("gpudirectStrategy")]
+    public string? GpudirectStrategy { get; set; }
+
     [JsonPropertyName("guestAccelerator")]
     public IList<V1beta1NodePoolStatusAtProviderNodeConfigGuestAccelerator>? GuestAccelerator { get; set; }
 
@@ -3073,16 +4201,14 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("imageType")]
     public string? ImageType { get; set; }
 
+    /// <summary>Node kubelet configs. Structure is documented below.</summary>
     [JsonPropertyName("kubeletConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigKubeletConfig? KubeletConfig { get; set; }
 
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("linuxNodeConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigLinuxNodeConfig? LinuxNodeConfig { get; set; }
 
@@ -3092,10 +4218,6 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("localSsdCount")]
     public double? LocalSsdCount { get; set; }
 
-    /// <summary>
-    /// Possible Local SSD encryption modes:
-    /// Accepted values are:
-    /// </summary>
     [JsonPropertyName("localSsdEncryptionMode")]
     public string? LocalSsdEncryptionMode { get; set; }
 
@@ -3117,6 +4239,9 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("nodeGroup")]
     public string? NodeGroup { get; set; }
 
+    [JsonPropertyName("nodeImageConfig")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeConfigNodeImageConfig>? NodeImageConfig { get; set; }
+
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
 
@@ -3131,6 +4256,9 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
 
     [JsonPropertyName("resourceManagerTags")]
     public IDictionary<string, string>? ResourceManagerTags { get; set; }
+
+    [JsonPropertyName("sandboxConfig")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigSandboxConfig? SandboxConfig { get; set; }
 
     [JsonPropertyName("secondaryBootDisks")]
     public IList<V1beta1NodePoolStatusAtProviderNodeConfigSecondaryBootDisks>? SecondaryBootDisks { get; set; }
@@ -3156,15 +4284,33 @@ public partial class V1beta1NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("taint")]
     public IList<V1beta1NodePoolStatusAtProviderNodeConfigTaint>? Taint { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Taint configuration for the node pool. Structure is documented below.</summary>
+    [JsonPropertyName("taintConfig")]
+    public V1beta1NodePoolStatusAtProviderNodeConfigTaintConfig? TaintConfig { get; set; }
+
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("windowsNodeConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigWindowsNodeConfig? WindowsNodeConfig { get; set; }
 
     [JsonPropertyName("workloadMetadataConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfigWorkloadMetadataConfig? WorkloadMetadataConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodePoolStatusAtProviderNodeDrainConfig
+{
+    /// <summary>The duration of the grace termination period for node drain.</summary>
+    [JsonPropertyName("graceTerminationDuration")]
+    public string? GraceTerminationDuration { get; set; }
+
+    /// <summary>The duration of the PDB timeout period for node drain.</summary>
+    [JsonPropertyName("pdbTimeoutDuration")]
+    public string? PdbTimeoutDuration { get; set; }
+
+    /// <summary>Whether to respect PodDisruptionBudget policy during node pool deletion.</summary>
+    [JsonPropertyName("respectPdbDuringNodePoolDeletion")]
+    public bool? RespectPdbDuringNodePoolDeletion { get; set; }
 }
 
 /// <summary>
@@ -3298,9 +4444,20 @@ public partial class V1beta1NodePoolStatusAtProvider
     [JsonPropertyName("cluster")]
     public string? Cluster { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>an identifier for the resource with format {{project}}/{{location}}/{{cluster}}/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Whether to ignore external changes (drift) to the node count (e.g. from GKE autoscaling). Setting this to true skips querying Compute Engine Instance Group Managers (IGMs) to determine the current node count on read, which can save API quota and speed up plans on large clusters.</summary>
+    [JsonPropertyName("ignoreNodeCountChanges")]
+    public bool? IgnoreNodeCountChanges { get; set; }
 
     /// <summary>
     /// The initial number of nodes for the pool. In
@@ -3349,10 +4506,7 @@ public partial class V1beta1NodePoolStatusAtProvider
     [JsonPropertyName("networkConfig")]
     public V1beta1NodePoolStatusAtProviderNetworkConfig? NetworkConfig { get; set; }
 
-    /// <summary>
-    /// Parameters used in creating the node pool. See
-    /// google_container_cluster for schema.
-    /// </summary>
+    /// <summary>Parameters used in creating the node pool. Structure is documented below. See google_container_cluster for exact schema.</summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1NodePoolStatusAtProviderNodeConfig? NodeConfig { get; set; }
 
@@ -3362,6 +4516,10 @@ public partial class V1beta1NodePoolStatusAtProvider
     /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
+
+    /// <summary>The node drain configuration of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("nodeDrainConfig")]
+    public IList<V1beta1NodePoolStatusAtProviderNodeDrainConfig>? NodeDrainConfig { get; set; }
 
     /// <summary>
     /// The list of zones in which the node pool&apos;s nodes should be located. Nodes must
@@ -3466,6 +4624,15 @@ public partial class V1beta1NodePoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NodePoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

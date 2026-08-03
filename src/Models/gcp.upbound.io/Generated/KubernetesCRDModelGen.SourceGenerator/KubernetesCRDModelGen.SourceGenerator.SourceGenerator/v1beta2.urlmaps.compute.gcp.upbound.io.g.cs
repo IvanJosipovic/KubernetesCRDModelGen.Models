@@ -268,6 +268,380 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -356,18 +730,11 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -438,18 +805,11 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -636,18 +996,11 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -686,18 +1039,11 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -854,6 +1200,16 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBacke
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see
     /// W3C Recommendation for Cross Origin Resource Sharing
@@ -1459,6 +1815,380 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -1547,18 +2277,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -1631,18 +2354,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -1830,18 +2546,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -1881,18 +2590,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -2050,6 +2752,16 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -2630,6 +3342,380 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -2718,18 +3804,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -2802,18 +3881,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -3001,18 +4073,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -3052,18 +4117,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -3377,6 +4435,16 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -4109,6 +5177,380 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -4197,18 +5639,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -4281,18 +5716,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -4325,18 +5753,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -4376,18 +5797,11 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -4562,6 +5976,16 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -5553,6 +6977,380 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -5641,18 +7439,11 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -5723,18 +7514,11 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -5921,18 +7705,11 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -5971,18 +7748,11 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -6139,6 +7909,16 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBack
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see
     /// W3C Recommendation for Cross Origin Resource Sharing
@@ -6744,6 +8524,380 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -6832,18 +8986,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -6916,18 +9063,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -7115,18 +9255,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -7166,18 +9299,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -7335,6 +9461,16 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -7915,6 +10051,380 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -8003,18 +10513,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -8087,18 +10590,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -8286,18 +10782,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -8337,18 +10826,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -8662,6 +11144,16 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -9394,6 +11886,380 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -9482,18 +12348,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -9566,18 +12425,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -9610,18 +12462,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -9661,18 +12506,11 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -9847,6 +12685,16 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -10878,6 +13726,380 @@ public partial class V1beta2URLMapStatusAtProviderDefaultCustomErrorResponsePoli
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -10966,18 +14188,11 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11048,18 +14263,11 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11091,18 +14299,11 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRequestMirro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11141,18 +14342,11 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11309,6 +14503,16 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBack
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see
     /// W3C Recommendation for Cross Origin Resource Sharing
@@ -11612,6 +14816,380 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultCustomErrorR
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -11700,18 +15278,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11784,18 +15355,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11828,18 +15392,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -11879,18 +15436,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -12048,6 +15598,16 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -12326,6 +15886,380 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleCustomError
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -12414,18 +16348,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -12498,18 +16425,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -12542,18 +16462,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -12593,18 +16506,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -12763,6 +16669,16 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -13340,6 +17256,380 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 }
 
 /// <summary>
+/// The cache key configuration. If not specified, the default behavior depends
+/// on the backend type: for Backend Services, the complete request URI is
+/// used; for Backend Buckets, the request URI is used without the protocol or
+/// host, and only query parameters known to Cloud Storage are included.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
+{
+    /// <summary>
+    /// Names of query string parameters to exclude in cache keys. All other
+    /// parameters will be included. Either specify excludedQueryParameters
+    /// or includedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters. Note: This field applies to
+    /// routes that use backend services. Attempting to set it on a route that
+    /// points exclusively to Backend Buckets will result in a configuration
+    /// error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("excludedQueryParameters")]
+    public IList<string>? ExcludedQueryParameters { get; set; }
+
+    /// <summary>
+    /// If true, requests to different hosts will be cached separately. Note:
+    /// This setting is only applicable to routes that use a Backend Service.
+    /// It does not affect requests served by a Backend Bucket, as the host is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set it on
+    /// a route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeHost")]
+    public bool? IncludeHost { get; set; }
+
+    /// <summary>
+    /// If true, http and https requests will be cached separately. Note: This
+    /// setting is only applicable to routes that use a Backend Service. It
+    /// does not affect requests served by a Backend Bucket, as the protocol is
+    /// never included in a Backend Bucket&apos;s cache key. Attempting to set on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error.
+    /// </summary>
+    [JsonPropertyName("includeProtocol")]
+    public bool? IncludeProtocol { get; set; }
+
+    /// <summary>
+    /// If true, include query string parameters in the cache key according to
+    /// includedQueryParameters and excludedQueryParameters. If neither is
+    /// set, the entire query string will be included. If false, the query
+    /// string will be excluded from the cache key entirely. Note: This field
+    /// applies to routes that use backend services. Attempting to set it on a
+    /// route that points exclusively to Backend Buckets will result in a
+    /// configuration error. For routes that point to a Backend Bucket, use
+    /// includedQueryParameters to define which parameters should be part of
+    /// the cache key.
+    /// </summary>
+    [JsonPropertyName("includeQueryString")]
+    public bool? IncludeQueryString { get; set; }
+
+    /// <summary>
+    /// Allows HTTP cookies (by name) to be used in the cache key. The
+    /// name=value pair will be used in the cache key Cloud CDN generates.
+    /// Note: This setting is only applicable to routes that use a Backend
+    /// Service. It does not affect requests served by a Backend Bucket.
+    /// Attempting to set it on a route that points exclusively to Backend
+    /// Buckets will result in a configuration error. Up to 5 cookie names can
+    /// be specified.
+    /// </summary>
+    [JsonPropertyName("includedCookieNames")]
+    public IList<string>? IncludedCookieNames { get; set; }
+
+    /// <summary>Allows HTTP request headers (by name) to be used in the cache key.</summary>
+    [JsonPropertyName("includedHeaderNames")]
+    public IList<string>? IncludedHeaderNames { get; set; }
+
+    /// <summary>
+    /// Names of query string parameters to include in cache keys. All other
+    /// parameters will be excluded. Either specify includedQueryParameters
+    /// or excludedQueryParameters, not both. &apos; &amp; &apos; and &apos;=&apos; will be percent
+    /// encoded and not treated as delimiters.
+    /// </summary>
+    [JsonPropertyName("includedQueryParameters")]
+    public IList<string>? IncludedQueryParameters { get; set; }
+}
+
+/// <summary>
+/// Specifies a separate client (e.g. browser client) maximum TTL for cached
+/// content. This is used to clamp the max-age (or Expires) value sent to the
+/// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+/// is used for the response max-age directive, along with a &quot;public&quot;
+/// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+/// clamps the max-age from the origin (if specified), or else sets the
+/// response max-age directive to the lesser of the clientTtl and defaultTtl,
+/// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+/// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+/// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+/// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the default TTL for cached content for responses that do not have
+/// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+/// greater than that of maxTtl. When the cacheMode is set to
+/// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+/// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+/// accessed objects may be evicted from the cache before the defined TTL. If
+/// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+/// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+/// USE_ORIGIN_HEADERS.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the maximum allowed TTL for cached content. Cache directives that
+/// attempt to set a max-age or s-maxage higher than this, or an Expires header
+/// more than maxTtl seconds in the future will be capped at the value of
+/// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+/// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+/// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+/// Infrequently accessed objects may be evicted from the cache before the
+/// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+/// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+/// mode.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// The TTL (in seconds) for which to cache responses with the
+/// corresponding status code. The maximum allowed value is 1800s (30
+/// minutes). Infrequently accessed objects may be evicted from the cache
+/// before the defined TTL.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
+{
+    /// <summary>
+    /// The HTTP status code to define a TTL against. Only HTTP status codes
+    /// 300, 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be
+    /// specified as values, and you cannot specify a status code more than
+    /// once.
+    /// </summary>
+    [JsonPropertyName("code")]
+    public double? Code { get; set; }
+
+    /// <summary>
+    /// The TTL (in seconds) for which to cache responses with the
+    /// corresponding status code. The maximum allowed value is 1800s (30
+    /// minutes). Infrequently accessed objects may be evicted from the cache
+    /// before the defined TTL.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ttl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl? Ttl { get; set; }
+}
+
+/// <summary>
+/// Serve existing content from the cache (if available) when revalidating
+/// content with the origin, or when an error is encountered when refreshing
+/// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+/// cached responses that do not specify a max-stale directive. Stale
+/// responses that exceed the TTL configured here will not be served. The
+/// default limit (max-stale) is 86400s (1 day), which will allow stale
+/// content to be served up to this limit beyond the max-age (or s-maxage) of
+/// a cached response. The maximum allowed value is 604800 (1 week). Set this
+/// to zero (0) to disable serve-while-stale.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
+{
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
+    [JsonPropertyName("nanos")]
+    public double? Nanos { get; set; }
+
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
+    [JsonPropertyName("seconds")]
+    public string? Seconds { get; set; }
+}
+
+/// <summary>
+/// Specifies the cache policy configuration for matched traffic. Available
+/// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+/// property must be specified. This policy cannot be specified if any target
+/// backend has Identity-Aware Proxy enabled.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicy
+{
+    /// <summary>
+    /// Bypass the cache when the specified request headers are matched by name,
+    /// e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5
+    /// header names can be specified. The cache is bypassed for all cacheMode
+    /// values.
+    /// </summary>
+    [JsonPropertyName("cacheBypassRequestHeaderNames")]
+    public IList<string>? CacheBypassRequestHeaderNames { get; set; }
+
+    /// <summary>
+    /// The cache key configuration. If not specified, the default behavior depends
+    /// on the backend type: for Backend Services, the complete request URI is
+    /// used; for Backend Buckets, the request URI is used without the protocol or
+    /// host, and only query parameters known to Cloud Storage are included.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cacheKeyPolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy? CacheKeyPolicy { get; set; }
+
+    /// <summary>
+    /// Specifies the cache setting for all responses from this route. If not
+    /// specified, Cloud CDN uses CACHE_ALL_STATIC mode.
+    /// Possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL, CACHE_ALL_STATIC.
+    /// </summary>
+    [JsonPropertyName("cacheMode")]
+    public string? CacheMode { get; set; }
+
+    /// <summary>
+    /// Specifies a separate client (e.g. browser client) maximum TTL for cached
+    /// content. This is used to clamp the max-age (or Expires) value sent to the
+    /// client. With FORCE_CACHE_ALL, the lesser of clientTtl and defaultTtl
+    /// is used for the response max-age directive, along with a &quot;public&quot;
+    /// directive. For cacheable content in CACHE_ALL_STATIC mode, clientTtl
+    /// clamps the max-age from the origin (if specified), or else sets the
+    /// response max-age directive to the lesser of the clientTtl and defaultTtl,
+    /// and also ensures a &quot;public&quot; cache-control directive is present. The maximum
+    /// allowed value is 31,622,400s (1 year). If not specified, Cloud CDN uses
+    /// 3600s (1 hour) for CACHE_ALL_STATIC mode. Cannot exceed maxTtl.
+    /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl? ClientTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the default TTL for cached content for responses that do not have
+    /// an existing valid TTL (max-age or s-maxage). Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The value of defaultTtl cannot be set to a value
+    /// greater than that of maxTtl. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, the defaultTtl will overwrite the TTL set in all
+    /// responses. The maximum allowed value is 31,622,400s (1 year). Infrequently
+    /// accessed objects may be evicted from the cache before the defined TTL. If
+    /// not specified, Cloud CDN uses 3600s (1 hour) for CACHE_ALL_STATIC and
+    /// FORCE_CACHE_ALL modes. Cannot be specified when cacheMode is
+    /// USE_ORIGIN_HEADERS.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("defaultTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl? DefaultTtl { get; set; }
+
+    /// <summary>
+    /// Specifies the maximum allowed TTL for cached content. Cache directives that
+    /// attempt to set a max-age or s-maxage higher than this, or an Expires header
+    /// more than maxTtl seconds in the future will be capped at the value of
+    /// maxTtl, as if it were the value of an s-maxage Cache-Control directive.
+    /// Headers sent to the client will not be modified. Setting a TTL of &quot;0&quot; means
+    /// &quot;always revalidate&quot;. The maximum allowed value is 31,622,400s (1 year).
+    /// Infrequently accessed objects may be evicted from the cache before the
+    /// defined TTL. If not specified, Cloud CDN uses 86400s (1 day) for
+    /// CACHE_ALL_STATIC mode. Can be specified only for CACHE_ALL_STATIC cache
+    /// mode.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("maxTtl")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl? MaxTtl { get; set; }
+
+    /// <summary>
+    /// Negative caching allows per-status code TTLs to be set, in order to apply
+    /// fine-grained caching for common errors or redirects. This can reduce the
+    /// load on your origin and improve end-user experience by reducing response
+    /// latency. When the cacheMode is set to CACHE_ALL_STATIC or
+    /// USE_ORIGIN_HEADERS, negative caching applies to responses with the
+    /// specified response code that lack any Cache-Control, Expires, or
+    /// Pragma: no-cache directives. When the cacheMode is set to
+    /// FORCE_CACHE_ALL, negative caching applies to all responses with the
+    /// specified response code, and overrides any caching headers. By default,
+    /// Cloud CDN applies the following TTLs to these HTTP status codes:
+    /// </summary>
+    [JsonPropertyName("negativeCaching")]
+    public bool? NegativeCaching { get; set; }
+
+    /// <summary>
+    /// Sets a cache TTL for the specified HTTP status code. negativeCaching
+    /// must be enabled to configure negativeCachingPolicy. Omitting the policy
+    /// and leaving negativeCaching enabled will use Cloud CDN&apos;s default cache
+    /// TTLs. Note that when specifying an explicit negativeCachingPolicy, you
+    /// should take care to specify a cache TTL for all response codes that you
+    /// wish to cache. Cloud CDN will not apply any default negative caching when
+    /// a policy exists.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("negativeCachingPolicy")]
+    public IList<V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy>? NegativeCachingPolicy { get; set; }
+
+    /// <summary>
+    /// If true then Cloud CDN will combine multiple concurrent cache fill
+    /// requests into a small number of requests to the origin. If not specified,
+    /// Cloud CDN applies request coalescing by default.
+    /// </summary>
+    [JsonPropertyName("requestCoalescing")]
+    public bool? RequestCoalescing { get; set; }
+
+    /// <summary>
+    /// Serve existing content from the cache (if available) when revalidating
+    /// content with the origin, or when an error is encountered when refreshing
+    /// the cache. This setting defines the default &quot;max-stale&quot; duration for any
+    /// cached responses that do not specify a max-stale directive. Stale
+    /// responses that exceed the TTL configured here will not be served. The
+    /// default limit (max-stale) is 86400s (1 day), which will allow stale
+    /// content to be served up to this limit beyond the max-age (or s-maxage) of
+    /// a cached response. The maximum allowed value is 604800 (1 week). Set this
+    /// to zero (0) to disable serve-while-stale.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("serveWhileStale")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale? ServeWhileStale { get; set; }
+}
+
+/// <summary>
 /// The specification for allowing client side cross-origin requests. Please see W3C
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
@@ -13428,18 +17718,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -13512,18 +17795,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -13556,18 +17832,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -13607,18 +17876,11 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionTimeout
 {
-    /// <summary>
-    /// Span of time that&apos;s a fraction of a second at nanosecond resolution. Durations
-    /// less than one second are represented with a 0 seconds field and a positive
-    /// nanos field. Must be from 0 to 999,999,999 inclusive.
-    /// </summary>
+    /// <summary>Span of time that&apos;s a fraction of a second at nanosecond resolution.</summary>
     [JsonPropertyName("nanos")]
     public double? Nanos { get; set; }
 
-    /// <summary>
-    /// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-    /// inclusive.
-    /// </summary>
+    /// <summary>Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.</summary>
     [JsonPropertyName("seconds")]
     public string? Seconds { get; set; }
 }
@@ -13793,6 +18055,16 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteAction
 {
+    /// <summary>
+    /// Specifies the cache policy configuration for matched traffic. Available
+    /// only for Global EXTERNAL_MANAGED load balancer schemes. At least one
+    /// property must be specified. This policy cannot be specified if any target
+    /// backend has Identity-Aware Proxy enabled.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cachePolicy")]
+    public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicy? CachePolicy { get; set; }
+
     /// <summary>
     /// The specification for allowing client side cross-origin requests. Please see W3C
     /// Recommendation for Cross Origin Resource Sharing
@@ -14203,6 +18475,13 @@ public partial class V1beta2URLMapStatusAtProvider
     public V1beta2URLMapStatusAtProviderDefaultUrlRedirect? DefaultUrlRedirect { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when you create
     /// the resource.
     /// </summary>
@@ -14322,6 +18601,15 @@ public partial class V1beta2URLMapStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2URLMapStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

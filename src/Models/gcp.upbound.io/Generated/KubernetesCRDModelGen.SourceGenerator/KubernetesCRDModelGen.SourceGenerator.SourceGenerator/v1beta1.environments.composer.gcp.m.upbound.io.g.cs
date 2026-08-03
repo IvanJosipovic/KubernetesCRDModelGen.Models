@@ -40,7 +40,7 @@ public partial class V1beta1EnvironmentList : IKubernetesObject<V1ListMeta>, IIt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
-    /// <summary>How many days data should be retained for.</summary>
+    /// <summary>How many days data must be retained for.</summary>
     [JsonPropertyName("retentionDays")]
     public double? RetentionDays { get; set; }
 
@@ -59,15 +59,16 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigT
 {
     /// <summary>
     /// The mode of storage for Airflow workers task logs. Values for storage mode are
-    /// CLOUD_LOGGING_ONLY to only store logs in cloud logging and
-    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in cloud logging and cloud storage.
+    /// CLOUD_LOGGING_ONLY to only store logs in Cloud Logging and
+    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in Cloud Logging and
+    /// Cloud Storage.
     /// </summary>
     [JsonPropertyName("storageMode")]
     public string? StorageMode { get; set; }
 }
 
 /// <summary>
-/// Configuration setting for airflow data rentention mechanism. Structure is
+/// Configuration setting for Airflow database retention mechanism. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -75,7 +76,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigT
 public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig
 {
     /// <summary>
-    /// The retention policy for airflow metadata database. Structure is
+    /// The retention policy for the Airflow metadata database. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("airflowMetadataRetentionConfig")]
@@ -90,6 +91,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig
 }
 
 /// <summary>
+/// only)
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
@@ -98,18 +100,19 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig
 public partial class V1beta1EnvironmentSpecForProviderConfigDatabaseConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
@@ -117,7 +120,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDatabaseConfig
 }
 
 /// <summary>
-/// The encryption options for the Cloud Composer environment and its
+/// The encryption options for the Managed Airflow environment and its
 /// dependencies.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -125,30 +128,34 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDatabaseConfig
 public partial class V1beta1EnvironmentSpecForProviderConfigEncryptionConfig
 {
     /// <summary>
-    /// Customer-managed Encryption Key available through Google&apos;s Key Management Service. It must
-    /// be the fully qualified resource name,
-    /// i.e. projects/project-id/locations/location/keyRings/keyring/cryptoKeys/key. Cannot be updated.
+    /// Customer-managed Encryption Key available through Google&apos;s Key Management
+    /// Service. It must be the fully qualified resource name, for example:
+    /// projects/example-project-id/locations/example-location/keyRings/example-keyring/cryptoKeys/example-key.
+    /// Cannot be updated.
     /// </summary>
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 }
 
-/// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+/// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigMaintenanceWindow
 {
     /// <summary>
-    /// Maintenance window end time. It is used only to calculate the duration of the maintenance window.
-    /// The value for end-time must be in the future, relative to &apos;start_time&apos;.
+    /// Maintenance window end time. It is used only to calculate the duration of the
+    /// maintenance window.
+    /// The value for end-time must be in the future, relative to start_time.
     /// </summary>
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
     /// <summary>
-    /// Maintenance window recurrence. Format is a subset of RFC-5545 (https://tools.ietf.org/html/rfc5545) &apos;RRULE&apos;.
-    /// The only allowed values for &apos;FREQ&apos; field are &apos;FREQ=DAILY&apos; and &apos;FREQ=WEEKLY;BYDAY=...&apos;.
-    /// Example values: &apos;FREQ=WEEKLY;BYDAY=TU,WE&apos;, &apos;FREQ=DAILY&apos;.
+    /// Maintenance window recurrence. Format is a subset of
+    /// RFC-5545 RRULE.
+    /// The only allowed values for FREQ field are FREQ=DAILY and
+    /// FREQ=WEEKLY;BYDAY=....
+    /// Example values: FREQ=WEEKLY;BYDAY=TU,WE, FREQ=DAILY.
     /// </summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
@@ -172,21 +179,28 @@ public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetw
 }
 
 /// <summary>
-/// Configuration options for the master authorized networks feature. Enabled
-/// master authorized networks will disallow all external traffic to access
-/// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-/// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+/// Configuration options for the authorized networks feature. Enabled
+/// authorized networks will disallow all external traffic to access
+/// Kubernetes control plane through HTTPS except traffic from the given CIDR
+/// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetworksConfig
 {
-    /// <summary>cidr_blocks define up to 50 external networks that could access Kubernetes master through HTTPS. Structure is documented below.</summary>
+    /// <summary>
+    /// cidr_blocks define up to 50 external networks that could access Kubernetes
+    /// control plane through HTTPS. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("cidrBlocks")]
     public IList<V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetworksConfigCidrBlocks>? CidrBlocks { get; set; }
 
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -202,47 +216,55 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigIpAllocati
 {
     /// <summary>
     /// The IP address range used to allocate IP addresses to pods in the cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("clusterIpv4CidrBlock")]
     public string? ClusterIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to pods.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to
+    /// pods. Specify either cluster_secondary_range_name or
+    /// cluster_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("clusterSecondaryRangeName")]
     public string? ClusterSecondaryRangeName { get; set; }
 
     /// <summary>
     /// The IP address range used to allocate IP addresses in this cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either services_secondary_range_name or services_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("servicesIpv4CidrBlock")]
     public string? ServicesIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the services&apos; secondary range used to allocate IP addresses to the cluster.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the services&apos; secondary range used to allocate IP addresses to
+    /// the cluster. Specify either
+    /// services_secondary_range_name or services_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("servicesSecondaryRangeName")]
     public string? ServicesSecondaryRangeName { get; set; }
 
     /// <summary>
-    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native cluster is created.
-    /// Defaults to true if the ip_allocation_policy block is present in config.
+    /// only)
+    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native
+    /// cluster is created. Defaults to true if the ip_allocation_policy block is
+    /// present in config.
     /// </summary>
     [JsonPropertyName("useIpAliases")]
     public bool? UseIpAliases { get; set; }
@@ -713,27 +735,33 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetwork
     public V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration used for the environment&apos;s Google Kubernetes Engine
+/// cluster. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
 {
     /// <summary>
-    /// /20 IPv4 cidr range that will be used by Composer internal components.
-    /// Cannot be updated.
+    /// only)
+    /// /20 IPv4 cidr range that will be used by the environment&apos;s internal
+    /// components. Cannot be updated.
     /// </summary>
     [JsonPropertyName("composerInternalIpv4CidrBlock")]
     public string? ComposerInternalIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// PSC (Private Service Connect) Network entry point. Customers can pre-create the Network Attachment
-    /// and point Cloud Composer environment to use. It is possible to share network attachment among many environments,
+    /// only)
+    /// PSC (Private Service Connect) Network entry point. Customers can pre-create
+    /// the Network Attachment and point Managed Airflow environment to use. It is possible to share network attachment among many environments,
     /// provided enough IP addresses are available.
     /// </summary>
     [JsonPropertyName("composerNetworkAttachment")]
     public string? ComposerNetworkAttachment { get; set; }
 
     /// <summary>
+    /// only)
     /// The disk size in GB used for node VMs. Minimum size is 20GB.
     /// If unspecified, defaults to 100GB. Cannot be updated.
     /// </summary>
@@ -741,9 +769,9 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     public double? DiskSizeGb { get; set; }
 
     /// <summary>
-    /// Deploys &apos;ip-masq-agent&apos; daemon set in the GKE cluster and defines
-    /// nonMasqueradeCIDRs equals to pod IP range so IP masquerading is used for
-    /// all destination addresses, except between pods traffic.
+    /// IP Masq Agent translates Pod IP addresses to node IP addresses, so that
+    /// destinations and services targeted from Airflow DAGs and tasks only receive
+    /// packets from node IP addresses instead of Pod IP addresses
     /// See the documentation.
     /// </summary>
     [JsonPropertyName("enableIpMasqAgent")]
@@ -758,10 +786,10 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     public V1beta1EnvironmentSpecForProviderConfigNodeConfigIpAllocationPolicy? IpAllocationPolicy { get; set; }
 
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -769,7 +797,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine network to be used for machine
     /// communications, specified as a self-link, relative resource name
-    /// (for example &quot;projects/{project}/global/networks/{network}&quot;), by name.
+    /// (for example projects/{project}/global/networks/{network}), by name.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
@@ -783,6 +811,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     public V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelector? NetworkSelector { get; set; }
 
     /// <summary>
+    /// only)
     /// The set of Google API scopes to be made available on all node
     /// VMs. Cannot be updated. If empty, defaults to
     /// [&quot;https://www.googleapis.com/auth/cloud-platform&quot;].
@@ -792,10 +821,11 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
 
     /// <summary>
     /// The Google Cloud Platform Service Account to be used by the
-    /// node VMs. If a service account is not specified, the &quot;default&quot;
-    /// Compute Engine service account is used. Cannot be updated. If given,
-    /// note that the service account must have roles/composer.worker
-    /// for any GCP resources created under the Cloud Composer Environment.
+    /// environment to perform operations and run DAGs. Cannot be
+    /// updated. The service account must have the roles/composer.worker role
+    /// to create the environment. To access other resources in your Google Cloud
+    /// project, grant extra permissions to access those resources to this service
+    /// account.
     /// </summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
@@ -811,8 +841,9 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine subnetwork to be used for machine
     /// communications, specified as a self-link, relative resource name (for example,
-    /// &quot;projects/{project}/regions/{region}/subnetworks/{subnetwork}&quot;), or by name. If subnetwork is provided,
-    /// network must also be provided and the subnetwork must belong to the enclosing environment&apos;s project and region.
+    /// projects/{project}/regions/{region}/subnetworks/{subnetwork}), or by name.
+    /// If subnetwork is provided, network must also be provided and the subnetwork
+    /// must belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
@@ -826,8 +857,8 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     public V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelector? SubnetworkSelector { get; set; }
 
     /// <summary>
-    /// The list of instance tags applied to all node VMs. Tags are
-    /// used to identify valid sources or targets for network
+    /// The list of instance tags applied to all node VMs in the environment&apos;s
+    /// cluster. Tags are used to identify valid sources or targets for network
     /// firewalls. Each tag within the list must comply with RFC1035.
     /// Cannot be updated.
     /// </summary>
@@ -835,25 +866,27 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
     public IList<string>? Tags { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
     public string? Zone { get; set; }
 }
 
-/// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+/// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigPrivateEnvironmentConfig
 {
     /// <summary>
-    /// When specified, the environment will use Private Service Connect instead of VPC peerings to connect
-    /// to Cloud SQL in the Tenant Project, and the PSC endpoint in the Customer Project will use an IP
-    /// address from this subnetwork. This field is supported for Cloud Composer environments in
-    /// versions composer-2.*.*-airflow-*.*.* and newer.
+    /// When specified, the environment will use Private Service Connect instead of
+    /// VPC peerings to connect to Cloud SQL in the Tenant Project, and the PSC
+    /// endpoint in the customer project will use an IP address from this subnetwork.
+    /// This field is supported for Managed Airflow environments in versions
+    /// composer-2.*.*-airflow-*.*.* and newer.
     /// </summary>
     [JsonPropertyName("cloudComposerConnectionSubnetwork")]
     public string? CloudComposerConnectionSubnetwork { get; set; }
@@ -861,57 +894,65 @@ public partial class V1beta1EnvironmentSpecForProviderConfigPrivateEnvironmentCo
     [JsonPropertyName("cloudComposerNetworkIpv4CidrBlock")]
     public string? CloudComposerNetworkIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range in tenant project will be reserved for Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block</summary>
+    /// <summary>
+    /// The CIDR block from which IP range in the tenant project will be reserved for
+    /// Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block
+    /// </summary>
     [JsonPropertyName("cloudSqlIpv4CidrBlock")]
     public string? CloudSqlIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// Mode of internal communication within the Composer environment. Must be one
-    /// of &quot;VPC_PEERING&quot; or &quot;PRIVATE_SERVICE_CONNECT&quot;.
+    /// only)
+    /// Mode of internal communication within the Managed Airflow environment. Must
+    /// be one of VPC_PEERING or PRIVATE_SERVICE_CONNECT.
     /// </summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
     /// <summary>
-    /// If true, access to the public endpoint of the GKE cluster is denied.
-    /// If this field is set to true, the ip_allocation_policy.use_ip_aliases field must
-    /// also be set to true for Cloud Composer 1 environments.
+    /// If true, access to the public endpoint of the environment&apos;s
+    /// Google Kubernetes Enginge cluster is denied.
     /// </summary>
     [JsonPropertyName("enablePrivateEndpoint")]
     public bool? EnablePrivateEndpoint { get; set; }
 
     /// <summary>
-    /// When enabled, IPs from public (non-RFC1918) ranges can be used for
-    /// ip_allocation_policy.cluster_ipv4_cidr_block and ip_allocation_policy.service_ipv4_cidr_block.
+    /// When enabled, IPs from public (non-RFC 1918) ranges can be used for
+    /// ip_allocation_policy.cluster_ipv4_cidr_block and
+    /// ip_allocation_policy.service_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("enablePrivatelyUsedPublicIps")]
     public bool? EnablePrivatelyUsedPublicIps { get; set; }
 
     /// <summary>
-    /// The IP range in CIDR notation to use for the hosted master network. This range is used
-    /// for assigning internal IP addresses to the cluster master or set of masters and to the
-    /// internal load balancer virtual IP. This range must not overlap with any other ranges
-    /// in use within the cluster&apos;s network.
-    /// If left blank, the default value of is used. See documentation for default values per region.
+    /// and
+    /// cloud_sql_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("masterIpv4CidrBlock")]
     public string? MasterIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range for web server will be reserved. Needs to be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.</summary>
+    /// <summary>
+    /// only)
+    /// The CIDR block from which IP range for web server will be reserved. Needs to
+    /// be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.
+    /// </summary>
     [JsonPropertyName("webServerIpv4CidrBlock")]
     public string? WebServerIpv4CidrBlock { get; set; }
 }
 
-/// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+/// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Snapshot schedule, in the unix-cron format.</summary>
+    /// <summary>Snapshot schedule, in the Unix-cron format.</summary>
     [JsonPropertyName("snapshotCreationSchedule")]
     public string? SnapshotCreationSchedule { get; set; }
 
@@ -919,7 +960,11 @@ public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfigSchedu
     [JsonPropertyName("snapshotLocation")]
     public string? SnapshotLocation { get; set; }
 
-    /// <summary>A time zone for the schedule. This value is a time offset and does not take into account daylight saving time changes. Valid values are from UTC-12 to UTC+12. Examples: UTC, UTC-01, UTC+03.</summary>
+    /// <summary>
+    /// A time zone for the schedule. This value is a time offset and does not take
+    /// into account daylight saving time changes. Valid values are from UTC-12 to
+    /// UTC+12. Examples: UTC, UTC-01, UTC+03.
+    /// </summary>
     [JsonPropertyName("timeZone")]
     public string? TimeZone { get; set; }
 }
@@ -929,7 +974,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfigSchedu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfig
 {
-    /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+    /// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
     [JsonPropertyName("scheduledSnapshotsConfig")]
     public V1beta1EnvironmentSpecForProviderConfigRecoveryConfigScheduledSnapshotsConfig? ScheduledSnapshotsConfig { get; set; }
 }
@@ -942,20 +987,23 @@ public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration settings for the Airflow instance that runs inside the
+/// environment. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfig
 {
-    /// <summary>
-    /// Apache Airflow configuration properties to override. Property keys contain the section and property names,
-    /// separated by a hyphen, for example &quot;core-dags_are_paused_at_creation&quot;.
-    /// </summary>
+    /// <summary>Apache Airflow configuration options to override.</summary>
     [JsonPropertyName("airflowConfigOverrides")]
     public IDictionary<string, string>? AirflowConfigOverrides { get; set; }
 
@@ -967,53 +1015,73 @@ public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfig
     public V1beta1EnvironmentSpecForProviderConfigSoftwareConfigCloudDataLineageIntegration? CloudDataLineageIntegration { get; set; }
 
     /// <summary>
-    /// Additional environment variables to provide to the Apache Airflow scheduler, worker, and webserver processes.
-    /// Environment variable names must match the regular expression [a-zA-Z_][a-zA-Z0-9_]*.
-    /// They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
-    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the following reserved names:
+    /// Additional environment variables to provide to Apache Airflow components of the environment.
+    /// Environment variable names must match the regular expression
+    /// [a-zA-Z_][a-zA-Z0-9_]*. They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
+    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the
+    /// reserved variable names.
     /// </summary>
     [JsonPropertyName("envVariables")]
     public IDictionary<string, string>? EnvVariables { get; set; }
 
-    /// <summary>In Composer 1, use a specific Composer 1 version in this parameter. If omitted, the default is the latest version of Composer 2.</summary>
+    /// <summary>
+    /// Version of Managed Airflow and Apache Airflow to use.
+    /// If omitted, the
+    /// default build of Managed Airflow (Gen 3)
+    /// is used.
+    /// </summary>
     [JsonPropertyName("imageVersion")]
     public string? ImageVersion { get; set; }
 
     /// <summary>
     /// Custom Python Package Index (PyPI) packages to be installed
-    /// in the environment. Keys refer to the lowercase package name (e.g. &quot;numpy&quot;). Values are the lowercase extras and
-    /// version specifier (e.g. &quot;==1.12.0&quot;, &quot;[devel,gcp_api]&quot;, &quot;[devel]&gt;=1.8.2, &lt;1.9.2&quot;). To specify a package without
+    /// in the environment, in addition to
+    /// preinstalled packages.
+    /// Keys refer to the lowercase package name (for example: numpy). Values are
+    /// the lowercase extras and version specifier (example: ==1.12.0,
+    /// [devel,gcp_api], [devel]&gt;=1.8.2, &lt;1.9.2). To specify a package without
     /// pinning it to a version specifier, use the empty string as the value.
     /// </summary>
     [JsonPropertyName("pypiPackages")]
     public IDictionary<string, string>? PypiPackages { get; set; }
 
     /// <summary>
+    /// only)
     /// The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes.
     /// Can be set to &apos;2&apos; or &apos;3&apos;. If not specified, the default is &apos;3&apos;.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
-    /// <summary>The number of schedulers for Airflow.</summary>
+    /// <summary>
+    /// with Airflow 2 only)
+    /// The number of schedulers for Airflow.
+    /// </summary>
     [JsonPropertyName("schedulerCount")]
     public double? SchedulerCount { get; set; }
 
-    /// <summary>Web server plugins configuration. Can be either &apos;ENABLED&apos; or &apos;DISABLED&apos;. Defaults to &apos;ENABLED&apos;.</summary>
+    /// <summary>
+    /// only)
+    /// Web server plugins configuration. Can be either ENABLED or DISABLED.
+    /// Defaults to ENABLED.
+    /// </summary>
     [JsonPropertyName("webServerPluginsMode")]
     public string? WebServerPluginsMode { get; set; }
 }
 
-/// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+/// <summary>
+/// only)
+/// The configuration settings for the Airflow web server App Engine instance.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWebServerConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -1028,10 +1096,12 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAcce
     public string? Description { get; set; }
 
     /// <summary>
-    /// IP address or range, defined using CIDR notation, of requests that this rule applies to.
-    /// Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or 2001:0db8:0000:0042:0000:8a2e:0370:7334.
+    /// IP address or range, defined using CIDR notation, of requests that this rule
+    /// applies to. Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or
+    /// 2001:0db8:0000:0042:0000:8a2e:0370:7334.
     /// IP range prefixes should be properly truncated. For example,
-    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6, 2001:db8::1/32 should be truncated to 2001:db8::/32.
+    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6,
+    /// 2001:db8::1/32 should be truncated to 2001:db8::/32.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
@@ -1045,12 +1115,18 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAccessControl
 {
-    /// <summary>A collection of allowed IP ranges with descriptions. Structure is documented below.</summary>
+    /// <summary>
+    /// A collection of allowed IP ranges with descriptions. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("allowedIpRange")]
     public IList<V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAccessControlAllowedIpRange>? AllowedIpRange { get; set; }
 }
 
-/// <summary>Configuration for resources used by DAG processor.</summary>
+/// <summary>
+/// only)
+/// Configuration for resources used by Airflow DAG processors.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigDagProcessor
@@ -1094,7 +1170,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigSched
     public double? StorageGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow triggerer.</summary>
+/// <summary>Configuration for resources used by Airflow triggerers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigTriggerer
@@ -1112,7 +1188,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigTrigg
     public double? MemoryGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow web server.</summary>
+/// <summary>Configuration for resources used by the Airflow web server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWebServer
@@ -1140,9 +1216,9 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorke
     public double? Cpu { get; set; }
 
     /// <summary>
-    /// The maximum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go above this number, even if a higher number of workers is required to
-    /// handle the load.
+    /// The maximum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go above this number, even if a
+    /// higher number of workers is required to handle the load.
     /// </summary>
     [JsonPropertyName("maxCount")]
     public double? MaxCount { get; set; }
@@ -1152,8 +1228,9 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorke
     public double? MemoryGb { get; set; }
 
     /// <summary>
-    /// The minimum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go below this number, even if a lower number of workers can handle the load.
+    /// The minimum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go below this number, even if a
+    /// lower number of workers can handle the load.
     /// </summary>
     [JsonPropertyName("minCount")]
     public double? MinCount { get; set; }
@@ -1164,14 +1241,17 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorke
 }
 
 /// <summary>
-/// The Kubernetes workloads configuration for GKE cluster associated with the
-/// Cloud Composer environment.
+/// Environment resources configuration for the Google Kubernetes engine cluster
+/// associated with the Managed Airflow environment.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig
 {
-    /// <summary>Configuration for resources used by DAG processor.</summary>
+    /// <summary>
+    /// only)
+    /// Configuration for resources used by Airflow DAG processors.
+    /// </summary>
     [JsonPropertyName("dagProcessor")]
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigDagProcessor? DagProcessor { get; set; }
 
@@ -1179,11 +1259,11 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig
     [JsonPropertyName("scheduler")]
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigScheduler? Scheduler { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow triggerer.</summary>
+    /// <summary>Configuration for resources used by Airflow triggerers.</summary>
     [JsonPropertyName("triggerer")]
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigTriggerer? Triggerer { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow web server.</summary>
+    /// <summary>Configuration for resources used by the Airflow web server.</summary>
     [JsonPropertyName("webServer")]
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWebServer? WebServer { get; set; }
 
@@ -1192,19 +1272,23 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorker? Worker { get; set; }
 }
 
-/// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+/// <summary>
+/// Configuration parameters for this environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfig
 {
     /// <summary>
-    /// Configuration setting for airflow data rentention mechanism. Structure is
+    /// Configuration setting for Airflow database retention mechanism. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("dataRetentionConfig")]
     public V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig? DataRetentionConfig { get; set; }
 
     /// <summary>
+    /// only)
     /// The configuration settings for Cloud SQL instance used internally
     /// by Apache Airflow software.
     /// </summary>
@@ -1212,18 +1296,23 @@ public partial class V1beta1EnvironmentSpecForProviderConfig
     public V1beta1EnvironmentSpecForProviderConfigDatabaseConfig? DatabaseConfig { get; set; }
 
     /// <summary>
-    /// If true, builds performed during operations that install Python packages have only private connectivity to Google services.
-    /// If false, the builds also have access to the internet.
+    /// only)
+    /// If true, builds performed during operations that install Python packages have
+    /// only private connectivity to Google services. If false, the builds also have
+    /// access to the internet.
     /// </summary>
     [JsonPropertyName("enablePrivateBuildsOnly")]
     public bool? EnablePrivateBuildsOnly { get; set; }
 
-    /// <summary>If true, a private Composer environment will be created.</summary>
+    /// <summary>
+    /// only)
+    /// If true, a private environment will be created.
+    /// </summary>
     [JsonPropertyName("enablePrivateEnvironment")]
     public bool? EnablePrivateEnvironment { get; set; }
 
     /// <summary>
-    /// The encryption options for the Cloud Composer environment and its
+    /// The encryption options for the Managed Airflow environment and its
     /// dependencies.
     /// </summary>
     [JsonPropertyName("encryptionConfig")]
@@ -1231,36 +1320,42 @@ public partial class V1beta1EnvironmentSpecForProviderConfig
 
     /// <summary>
     /// The environment size controls the performance parameters of the managed
-    /// Cloud Composer infrastructure that includes the Airflow database. Values for
+    /// Managed Airflow infrastructure that includes the Airflow database. Values for
     /// environment size are ENVIRONMENT_SIZE_SMALL, ENVIRONMENT_SIZE_MEDIUM,
     /// and ENVIRONMENT_SIZE_LARGE.
     /// </summary>
     [JsonPropertyName("environmentSize")]
     public string? EnvironmentSize { get; set; }
 
-    /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+    /// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public V1beta1EnvironmentSpecForProviderConfigMaintenanceWindow? MaintenanceWindow { get; set; }
 
     /// <summary>
-    /// Configuration options for the master authorized networks feature. Enabled
-    /// master authorized networks will disallow all external traffic to access
-    /// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-    /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+    /// Configuration options for the authorized networks feature. Enabled
+    /// authorized networks will disallow all external traffic to access
+    /// Kubernetes control plane through HTTPS except traffic from the given CIDR
+    /// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("masterAuthorizedNetworksConfig")]
     public V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetworksConfig? MasterAuthorizedNetworksConfig { get; set; }
 
-    /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration used for the environment&apos;s Google Kubernetes Engine
+    /// cluster. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1EnvironmentSpecForProviderConfigNodeConfig? NodeConfig { get; set; }
 
-    /// <summary>The number of nodes in the Kubernetes Engine cluster of the environment.</summary>
+    /// <summary>
+    /// only)
+    /// The number of nodes in the Kubernetes Engine cluster of the environment.
+    /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
 
-    /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+    /// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
     [JsonPropertyName("privateEnvironmentConfig")]
     public V1beta1EnvironmentSpecForProviderConfigPrivateEnvironmentConfig? PrivateEnvironmentConfig { get; set; }
 
@@ -1277,11 +1372,17 @@ public partial class V1beta1EnvironmentSpecForProviderConfig
     [JsonPropertyName("resilienceMode")]
     public string? ResilienceMode { get; set; }
 
-    /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration settings for the Airflow instance that runs inside the
+    /// environment. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("softwareConfig")]
     public V1beta1EnvironmentSpecForProviderConfigSoftwareConfig? SoftwareConfig { get; set; }
 
-    /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+    /// <summary>
+    /// only)
+    /// The configuration settings for the Airflow web server App Engine instance.
+    /// </summary>
     [JsonPropertyName("webServerConfig")]
     public V1beta1EnvironmentSpecForProviderConfigWebServerConfig? WebServerConfig { get; set; }
 
@@ -1293,8 +1394,8 @@ public partial class V1beta1EnvironmentSpecForProviderConfig
     public V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAccessControl? WebServerNetworkAccessControl { get; set; }
 
     /// <summary>
-    /// The Kubernetes workloads configuration for GKE cluster associated with the
-    /// Cloud Composer environment.
+    /// Environment resources configuration for the Google Kubernetes engine cluster
+    /// associated with the Managed Airflow environment.
     /// </summary>
     [JsonPropertyName("workloadsConfig")]
     public V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig? WorkloadsConfig { get; set; }
@@ -1455,7 +1556,10 @@ public partial class V1beta1EnvironmentSpecForProviderProjectSelector
     public V1beta1EnvironmentSpecForProviderProjectSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+/// <summary>
+/// Configuration options for storage used by the environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderStorageConfig
@@ -1469,7 +1573,10 @@ public partial class V1beta1EnvironmentSpecForProviderStorageConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProvider
 {
-    /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration parameters for this environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("config")]
     public V1beta1EnvironmentSpecForProviderConfig? Config { get; set; }
 
@@ -1506,7 +1613,10 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration options for storage used by the environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("storageConfig")]
     public V1beta1EnvironmentSpecForProviderStorageConfig? StorageConfig { get; set; }
 }
@@ -1515,7 +1625,7 @@ public partial class V1beta1EnvironmentSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
-    /// <summary>How many days data should be retained for.</summary>
+    /// <summary>How many days data must be retained for.</summary>
     [JsonPropertyName("retentionDays")]
     public double? RetentionDays { get; set; }
 
@@ -1534,15 +1644,16 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 {
     /// <summary>
     /// The mode of storage for Airflow workers task logs. Values for storage mode are
-    /// CLOUD_LOGGING_ONLY to only store logs in cloud logging and
-    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in cloud logging and cloud storage.
+    /// CLOUD_LOGGING_ONLY to only store logs in Cloud Logging and
+    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in Cloud Logging and
+    /// Cloud Storage.
     /// </summary>
     [JsonPropertyName("storageMode")]
     public string? StorageMode { get; set; }
 }
 
 /// <summary>
-/// Configuration setting for airflow data rentention mechanism. Structure is
+/// Configuration setting for Airflow database retention mechanism. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1550,7 +1661,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 {
     /// <summary>
-    /// The retention policy for airflow metadata database. Structure is
+    /// The retention policy for the Airflow metadata database. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("airflowMetadataRetentionConfig")]
@@ -1565,6 +1676,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 }
 
 /// <summary>
+/// only)
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
@@ -1573,18 +1685,19 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 public partial class V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
@@ -1592,7 +1705,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig
 }
 
 /// <summary>
-/// The encryption options for the Cloud Composer environment and its
+/// The encryption options for the Managed Airflow environment and its
 /// dependencies.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1600,30 +1713,34 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig
 public partial class V1beta1EnvironmentSpecInitProviderConfigEncryptionConfig
 {
     /// <summary>
-    /// Customer-managed Encryption Key available through Google&apos;s Key Management Service. It must
-    /// be the fully qualified resource name,
-    /// i.e. projects/project-id/locations/location/keyRings/keyring/cryptoKeys/key. Cannot be updated.
+    /// Customer-managed Encryption Key available through Google&apos;s Key Management
+    /// Service. It must be the fully qualified resource name, for example:
+    /// projects/example-project-id/locations/example-location/keyRings/example-keyring/cryptoKeys/example-key.
+    /// Cannot be updated.
     /// </summary>
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 }
 
-/// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+/// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigMaintenanceWindow
 {
     /// <summary>
-    /// Maintenance window end time. It is used only to calculate the duration of the maintenance window.
-    /// The value for end-time must be in the future, relative to &apos;start_time&apos;.
+    /// Maintenance window end time. It is used only to calculate the duration of the
+    /// maintenance window.
+    /// The value for end-time must be in the future, relative to start_time.
     /// </summary>
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
     /// <summary>
-    /// Maintenance window recurrence. Format is a subset of RFC-5545 (https://tools.ietf.org/html/rfc5545) &apos;RRULE&apos;.
-    /// The only allowed values for &apos;FREQ&apos; field are &apos;FREQ=DAILY&apos; and &apos;FREQ=WEEKLY;BYDAY=...&apos;.
-    /// Example values: &apos;FREQ=WEEKLY;BYDAY=TU,WE&apos;, &apos;FREQ=DAILY&apos;.
+    /// Maintenance window recurrence. Format is a subset of
+    /// RFC-5545 RRULE.
+    /// The only allowed values for FREQ field are FREQ=DAILY and
+    /// FREQ=WEEKLY;BYDAY=....
+    /// Example values: FREQ=WEEKLY;BYDAY=TU,WE, FREQ=DAILY.
     /// </summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
@@ -1647,21 +1764,28 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNet
 }
 
 /// <summary>
-/// Configuration options for the master authorized networks feature. Enabled
-/// master authorized networks will disallow all external traffic to access
-/// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-/// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+/// Configuration options for the authorized networks feature. Enabled
+/// authorized networks will disallow all external traffic to access
+/// Kubernetes control plane through HTTPS except traffic from the given CIDR
+/// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNetworksConfig
 {
-    /// <summary>cidr_blocks define up to 50 external networks that could access Kubernetes master through HTTPS. Structure is documented below.</summary>
+    /// <summary>
+    /// cidr_blocks define up to 50 external networks that could access Kubernetes
+    /// control plane through HTTPS. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("cidrBlocks")]
     public IList<V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNetworksConfigCidrBlocks>? CidrBlocks { get; set; }
 
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -1677,47 +1801,55 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigIpAllocat
 {
     /// <summary>
     /// The IP address range used to allocate IP addresses to pods in the cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("clusterIpv4CidrBlock")]
     public string? ClusterIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to pods.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to
+    /// pods. Specify either cluster_secondary_range_name or
+    /// cluster_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("clusterSecondaryRangeName")]
     public string? ClusterSecondaryRangeName { get; set; }
 
     /// <summary>
     /// The IP address range used to allocate IP addresses in this cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either services_secondary_range_name or services_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("servicesIpv4CidrBlock")]
     public string? ServicesIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the services&apos; secondary range used to allocate IP addresses to the cluster.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the services&apos; secondary range used to allocate IP addresses to
+    /// the cluster. Specify either
+    /// services_secondary_range_name or services_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("servicesSecondaryRangeName")]
     public string? ServicesSecondaryRangeName { get; set; }
 
     /// <summary>
-    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native cluster is created.
-    /// Defaults to true if the ip_allocation_policy block is present in config.
+    /// only)
+    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native
+    /// cluster is created. Defaults to true if the ip_allocation_policy block is
+    /// present in config.
     /// </summary>
     [JsonPropertyName("useIpAliases")]
     public bool? UseIpAliases { get; set; }
@@ -2188,27 +2320,33 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetwor
     public V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration used for the environment&apos;s Google Kubernetes Engine
+/// cluster. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
 {
     /// <summary>
-    /// /20 IPv4 cidr range that will be used by Composer internal components.
-    /// Cannot be updated.
+    /// only)
+    /// /20 IPv4 cidr range that will be used by the environment&apos;s internal
+    /// components. Cannot be updated.
     /// </summary>
     [JsonPropertyName("composerInternalIpv4CidrBlock")]
     public string? ComposerInternalIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// PSC (Private Service Connect) Network entry point. Customers can pre-create the Network Attachment
-    /// and point Cloud Composer environment to use. It is possible to share network attachment among many environments,
+    /// only)
+    /// PSC (Private Service Connect) Network entry point. Customers can pre-create
+    /// the Network Attachment and point Managed Airflow environment to use. It is possible to share network attachment among many environments,
     /// provided enough IP addresses are available.
     /// </summary>
     [JsonPropertyName("composerNetworkAttachment")]
     public string? ComposerNetworkAttachment { get; set; }
 
     /// <summary>
+    /// only)
     /// The disk size in GB used for node VMs. Minimum size is 20GB.
     /// If unspecified, defaults to 100GB. Cannot be updated.
     /// </summary>
@@ -2216,9 +2354,9 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     public double? DiskSizeGb { get; set; }
 
     /// <summary>
-    /// Deploys &apos;ip-masq-agent&apos; daemon set in the GKE cluster and defines
-    /// nonMasqueradeCIDRs equals to pod IP range so IP masquerading is used for
-    /// all destination addresses, except between pods traffic.
+    /// IP Masq Agent translates Pod IP addresses to node IP addresses, so that
+    /// destinations and services targeted from Airflow DAGs and tasks only receive
+    /// packets from node IP addresses instead of Pod IP addresses
     /// See the documentation.
     /// </summary>
     [JsonPropertyName("enableIpMasqAgent")]
@@ -2233,10 +2371,10 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     public V1beta1EnvironmentSpecInitProviderConfigNodeConfigIpAllocationPolicy? IpAllocationPolicy { get; set; }
 
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -2244,7 +2382,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine network to be used for machine
     /// communications, specified as a self-link, relative resource name
-    /// (for example &quot;projects/{project}/global/networks/{network}&quot;), by name.
+    /// (for example projects/{project}/global/networks/{network}), by name.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
@@ -2258,6 +2396,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     public V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelector? NetworkSelector { get; set; }
 
     /// <summary>
+    /// only)
     /// The set of Google API scopes to be made available on all node
     /// VMs. Cannot be updated. If empty, defaults to
     /// [&quot;https://www.googleapis.com/auth/cloud-platform&quot;].
@@ -2267,10 +2406,11 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
 
     /// <summary>
     /// The Google Cloud Platform Service Account to be used by the
-    /// node VMs. If a service account is not specified, the &quot;default&quot;
-    /// Compute Engine service account is used. Cannot be updated. If given,
-    /// note that the service account must have roles/composer.worker
-    /// for any GCP resources created under the Cloud Composer Environment.
+    /// environment to perform operations and run DAGs. Cannot be
+    /// updated. The service account must have the roles/composer.worker role
+    /// to create the environment. To access other resources in your Google Cloud
+    /// project, grant extra permissions to access those resources to this service
+    /// account.
     /// </summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
@@ -2286,8 +2426,9 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine subnetwork to be used for machine
     /// communications, specified as a self-link, relative resource name (for example,
-    /// &quot;projects/{project}/regions/{region}/subnetworks/{subnetwork}&quot;), or by name. If subnetwork is provided,
-    /// network must also be provided and the subnetwork must belong to the enclosing environment&apos;s project and region.
+    /// projects/{project}/regions/{region}/subnetworks/{subnetwork}), or by name.
+    /// If subnetwork is provided, network must also be provided and the subnetwork
+    /// must belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
@@ -2301,8 +2442,8 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     public V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelector? SubnetworkSelector { get; set; }
 
     /// <summary>
-    /// The list of instance tags applied to all node VMs. Tags are
-    /// used to identify valid sources or targets for network
+    /// The list of instance tags applied to all node VMs in the environment&apos;s
+    /// cluster. Tags are used to identify valid sources or targets for network
     /// firewalls. Each tag within the list must comply with RFC1035.
     /// Cannot be updated.
     /// </summary>
@@ -2310,25 +2451,27 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
     public IList<string>? Tags { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
     public string? Zone { get; set; }
 }
 
-/// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+/// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigPrivateEnvironmentConfig
 {
     /// <summary>
-    /// When specified, the environment will use Private Service Connect instead of VPC peerings to connect
-    /// to Cloud SQL in the Tenant Project, and the PSC endpoint in the Customer Project will use an IP
-    /// address from this subnetwork. This field is supported for Cloud Composer environments in
-    /// versions composer-2.*.*-airflow-*.*.* and newer.
+    /// When specified, the environment will use Private Service Connect instead of
+    /// VPC peerings to connect to Cloud SQL in the Tenant Project, and the PSC
+    /// endpoint in the customer project will use an IP address from this subnetwork.
+    /// This field is supported for Managed Airflow environments in versions
+    /// composer-2.*.*-airflow-*.*.* and newer.
     /// </summary>
     [JsonPropertyName("cloudComposerConnectionSubnetwork")]
     public string? CloudComposerConnectionSubnetwork { get; set; }
@@ -2336,57 +2479,65 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigPrivateEnvironmentC
     [JsonPropertyName("cloudComposerNetworkIpv4CidrBlock")]
     public string? CloudComposerNetworkIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range in tenant project will be reserved for Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block</summary>
+    /// <summary>
+    /// The CIDR block from which IP range in the tenant project will be reserved for
+    /// Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block
+    /// </summary>
     [JsonPropertyName("cloudSqlIpv4CidrBlock")]
     public string? CloudSqlIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// Mode of internal communication within the Composer environment. Must be one
-    /// of &quot;VPC_PEERING&quot; or &quot;PRIVATE_SERVICE_CONNECT&quot;.
+    /// only)
+    /// Mode of internal communication within the Managed Airflow environment. Must
+    /// be one of VPC_PEERING or PRIVATE_SERVICE_CONNECT.
     /// </summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
     /// <summary>
-    /// If true, access to the public endpoint of the GKE cluster is denied.
-    /// If this field is set to true, the ip_allocation_policy.use_ip_aliases field must
-    /// also be set to true for Cloud Composer 1 environments.
+    /// If true, access to the public endpoint of the environment&apos;s
+    /// Google Kubernetes Enginge cluster is denied.
     /// </summary>
     [JsonPropertyName("enablePrivateEndpoint")]
     public bool? EnablePrivateEndpoint { get; set; }
 
     /// <summary>
-    /// When enabled, IPs from public (non-RFC1918) ranges can be used for
-    /// ip_allocation_policy.cluster_ipv4_cidr_block and ip_allocation_policy.service_ipv4_cidr_block.
+    /// When enabled, IPs from public (non-RFC 1918) ranges can be used for
+    /// ip_allocation_policy.cluster_ipv4_cidr_block and
+    /// ip_allocation_policy.service_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("enablePrivatelyUsedPublicIps")]
     public bool? EnablePrivatelyUsedPublicIps { get; set; }
 
     /// <summary>
-    /// The IP range in CIDR notation to use for the hosted master network. This range is used
-    /// for assigning internal IP addresses to the cluster master or set of masters and to the
-    /// internal load balancer virtual IP. This range must not overlap with any other ranges
-    /// in use within the cluster&apos;s network.
-    /// If left blank, the default value of is used. See documentation for default values per region.
+    /// and
+    /// cloud_sql_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("masterIpv4CidrBlock")]
     public string? MasterIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range for web server will be reserved. Needs to be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.</summary>
+    /// <summary>
+    /// only)
+    /// The CIDR block from which IP range for web server will be reserved. Needs to
+    /// be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.
+    /// </summary>
     [JsonPropertyName("webServerIpv4CidrBlock")]
     public string? WebServerIpv4CidrBlock { get; set; }
 }
 
-/// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+/// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Snapshot schedule, in the unix-cron format.</summary>
+    /// <summary>Snapshot schedule, in the Unix-cron format.</summary>
     [JsonPropertyName("snapshotCreationSchedule")]
     public string? SnapshotCreationSchedule { get; set; }
 
@@ -2394,7 +2545,11 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigSched
     [JsonPropertyName("snapshotLocation")]
     public string? SnapshotLocation { get; set; }
 
-    /// <summary>A time zone for the schedule. This value is a time offset and does not take into account daylight saving time changes. Valid values are from UTC-12 to UTC+12. Examples: UTC, UTC-01, UTC+03.</summary>
+    /// <summary>
+    /// A time zone for the schedule. This value is a time offset and does not take
+    /// into account daylight saving time changes. Valid values are from UTC-12 to
+    /// UTC+12. Examples: UTC, UTC-01, UTC+03.
+    /// </summary>
     [JsonPropertyName("timeZone")]
     public string? TimeZone { get; set; }
 }
@@ -2404,7 +2559,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigSched
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfig
 {
-    /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+    /// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
     [JsonPropertyName("scheduledSnapshotsConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigScheduledSnapshotsConfig? ScheduledSnapshotsConfig { get; set; }
 }
@@ -2417,20 +2572,23 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration settings for the Airflow instance that runs inside the
+/// environment. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfig
 {
-    /// <summary>
-    /// Apache Airflow configuration properties to override. Property keys contain the section and property names,
-    /// separated by a hyphen, for example &quot;core-dags_are_paused_at_creation&quot;.
-    /// </summary>
+    /// <summary>Apache Airflow configuration options to override.</summary>
     [JsonPropertyName("airflowConfigOverrides")]
     public IDictionary<string, string>? AirflowConfigOverrides { get; set; }
 
@@ -2442,53 +2600,73 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfig
     public V1beta1EnvironmentSpecInitProviderConfigSoftwareConfigCloudDataLineageIntegration? CloudDataLineageIntegration { get; set; }
 
     /// <summary>
-    /// Additional environment variables to provide to the Apache Airflow scheduler, worker, and webserver processes.
-    /// Environment variable names must match the regular expression [a-zA-Z_][a-zA-Z0-9_]*.
-    /// They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
-    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the following reserved names:
+    /// Additional environment variables to provide to Apache Airflow components of the environment.
+    /// Environment variable names must match the regular expression
+    /// [a-zA-Z_][a-zA-Z0-9_]*. They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
+    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the
+    /// reserved variable names.
     /// </summary>
     [JsonPropertyName("envVariables")]
     public IDictionary<string, string>? EnvVariables { get; set; }
 
-    /// <summary>In Composer 1, use a specific Composer 1 version in this parameter. If omitted, the default is the latest version of Composer 2.</summary>
+    /// <summary>
+    /// Version of Managed Airflow and Apache Airflow to use.
+    /// If omitted, the
+    /// default build of Managed Airflow (Gen 3)
+    /// is used.
+    /// </summary>
     [JsonPropertyName("imageVersion")]
     public string? ImageVersion { get; set; }
 
     /// <summary>
     /// Custom Python Package Index (PyPI) packages to be installed
-    /// in the environment. Keys refer to the lowercase package name (e.g. &quot;numpy&quot;). Values are the lowercase extras and
-    /// version specifier (e.g. &quot;==1.12.0&quot;, &quot;[devel,gcp_api]&quot;, &quot;[devel]&gt;=1.8.2, &lt;1.9.2&quot;). To specify a package without
+    /// in the environment, in addition to
+    /// preinstalled packages.
+    /// Keys refer to the lowercase package name (for example: numpy). Values are
+    /// the lowercase extras and version specifier (example: ==1.12.0,
+    /// [devel,gcp_api], [devel]&gt;=1.8.2, &lt;1.9.2). To specify a package without
     /// pinning it to a version specifier, use the empty string as the value.
     /// </summary>
     [JsonPropertyName("pypiPackages")]
     public IDictionary<string, string>? PypiPackages { get; set; }
 
     /// <summary>
+    /// only)
     /// The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes.
     /// Can be set to &apos;2&apos; or &apos;3&apos;. If not specified, the default is &apos;3&apos;.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
-    /// <summary>The number of schedulers for Airflow.</summary>
+    /// <summary>
+    /// with Airflow 2 only)
+    /// The number of schedulers for Airflow.
+    /// </summary>
     [JsonPropertyName("schedulerCount")]
     public double? SchedulerCount { get; set; }
 
-    /// <summary>Web server plugins configuration. Can be either &apos;ENABLED&apos; or &apos;DISABLED&apos;. Defaults to &apos;ENABLED&apos;.</summary>
+    /// <summary>
+    /// only)
+    /// Web server plugins configuration. Can be either ENABLED or DISABLED.
+    /// Defaults to ENABLED.
+    /// </summary>
     [JsonPropertyName("webServerPluginsMode")]
     public string? WebServerPluginsMode { get; set; }
 }
 
-/// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+/// <summary>
+/// only)
+/// The configuration settings for the Airflow web server App Engine instance.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -2503,10 +2681,12 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAcc
     public string? Description { get; set; }
 
     /// <summary>
-    /// IP address or range, defined using CIDR notation, of requests that this rule applies to.
-    /// Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or 2001:0db8:0000:0042:0000:8a2e:0370:7334.
+    /// IP address or range, defined using CIDR notation, of requests that this rule
+    /// applies to. Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or
+    /// 2001:0db8:0000:0042:0000:8a2e:0370:7334.
     /// IP range prefixes should be properly truncated. For example,
-    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6, 2001:db8::1/32 should be truncated to 2001:db8::/32.
+    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6,
+    /// 2001:db8::1/32 should be truncated to 2001:db8::/32.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
@@ -2520,12 +2700,18 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAccessControl
 {
-    /// <summary>A collection of allowed IP ranges with descriptions. Structure is documented below.</summary>
+    /// <summary>
+    /// A collection of allowed IP ranges with descriptions. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("allowedIpRange")]
     public IList<V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAccessControlAllowedIpRange>? AllowedIpRange { get; set; }
 }
 
-/// <summary>Configuration for resources used by DAG processor.</summary>
+/// <summary>
+/// only)
+/// Configuration for resources used by Airflow DAG processors.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigDagProcessor
@@ -2569,7 +2755,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigSche
     public double? StorageGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow triggerer.</summary>
+/// <summary>Configuration for resources used by Airflow triggerers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigTriggerer
@@ -2587,7 +2773,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigTrig
     public double? MemoryGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow web server.</summary>
+/// <summary>Configuration for resources used by the Airflow web server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWebServer
@@ -2615,9 +2801,9 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWork
     public double? Cpu { get; set; }
 
     /// <summary>
-    /// The maximum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go above this number, even if a higher number of workers is required to
-    /// handle the load.
+    /// The maximum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go above this number, even if a
+    /// higher number of workers is required to handle the load.
     /// </summary>
     [JsonPropertyName("maxCount")]
     public double? MaxCount { get; set; }
@@ -2627,8 +2813,9 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWork
     public double? MemoryGb { get; set; }
 
     /// <summary>
-    /// The minimum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go below this number, even if a lower number of workers can handle the load.
+    /// The minimum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go below this number, even if a
+    /// lower number of workers can handle the load.
     /// </summary>
     [JsonPropertyName("minCount")]
     public double? MinCount { get; set; }
@@ -2639,14 +2826,17 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWork
 }
 
 /// <summary>
-/// The Kubernetes workloads configuration for GKE cluster associated with the
-/// Cloud Composer environment.
+/// Environment resources configuration for the Google Kubernetes engine cluster
+/// associated with the Managed Airflow environment.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig
 {
-    /// <summary>Configuration for resources used by DAG processor.</summary>
+    /// <summary>
+    /// only)
+    /// Configuration for resources used by Airflow DAG processors.
+    /// </summary>
     [JsonPropertyName("dagProcessor")]
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigDagProcessor? DagProcessor { get; set; }
 
@@ -2654,11 +2844,11 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig
     [JsonPropertyName("scheduler")]
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigScheduler? Scheduler { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow triggerer.</summary>
+    /// <summary>Configuration for resources used by Airflow triggerers.</summary>
     [JsonPropertyName("triggerer")]
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigTriggerer? Triggerer { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow web server.</summary>
+    /// <summary>Configuration for resources used by the Airflow web server.</summary>
     [JsonPropertyName("webServer")]
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWebServer? WebServer { get; set; }
 
@@ -2667,19 +2857,23 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWorker? Worker { get; set; }
 }
 
-/// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+/// <summary>
+/// Configuration parameters for this environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfig
 {
     /// <summary>
-    /// Configuration setting for airflow data rentention mechanism. Structure is
+    /// Configuration setting for Airflow database retention mechanism. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("dataRetentionConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig? DataRetentionConfig { get; set; }
 
     /// <summary>
+    /// only)
     /// The configuration settings for Cloud SQL instance used internally
     /// by Apache Airflow software.
     /// </summary>
@@ -2687,18 +2881,23 @@ public partial class V1beta1EnvironmentSpecInitProviderConfig
     public V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig? DatabaseConfig { get; set; }
 
     /// <summary>
-    /// If true, builds performed during operations that install Python packages have only private connectivity to Google services.
-    /// If false, the builds also have access to the internet.
+    /// only)
+    /// If true, builds performed during operations that install Python packages have
+    /// only private connectivity to Google services. If false, the builds also have
+    /// access to the internet.
     /// </summary>
     [JsonPropertyName("enablePrivateBuildsOnly")]
     public bool? EnablePrivateBuildsOnly { get; set; }
 
-    /// <summary>If true, a private Composer environment will be created.</summary>
+    /// <summary>
+    /// only)
+    /// If true, a private environment will be created.
+    /// </summary>
     [JsonPropertyName("enablePrivateEnvironment")]
     public bool? EnablePrivateEnvironment { get; set; }
 
     /// <summary>
-    /// The encryption options for the Cloud Composer environment and its
+    /// The encryption options for the Managed Airflow environment and its
     /// dependencies.
     /// </summary>
     [JsonPropertyName("encryptionConfig")]
@@ -2706,36 +2905,42 @@ public partial class V1beta1EnvironmentSpecInitProviderConfig
 
     /// <summary>
     /// The environment size controls the performance parameters of the managed
-    /// Cloud Composer infrastructure that includes the Airflow database. Values for
+    /// Managed Airflow infrastructure that includes the Airflow database. Values for
     /// environment size are ENVIRONMENT_SIZE_SMALL, ENVIRONMENT_SIZE_MEDIUM,
     /// and ENVIRONMENT_SIZE_LARGE.
     /// </summary>
     [JsonPropertyName("environmentSize")]
     public string? EnvironmentSize { get; set; }
 
-    /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+    /// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public V1beta1EnvironmentSpecInitProviderConfigMaintenanceWindow? MaintenanceWindow { get; set; }
 
     /// <summary>
-    /// Configuration options for the master authorized networks feature. Enabled
-    /// master authorized networks will disallow all external traffic to access
-    /// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-    /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+    /// Configuration options for the authorized networks feature. Enabled
+    /// authorized networks will disallow all external traffic to access
+    /// Kubernetes control plane through HTTPS except traffic from the given CIDR
+    /// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("masterAuthorizedNetworksConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNetworksConfig? MasterAuthorizedNetworksConfig { get; set; }
 
-    /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration used for the environment&apos;s Google Kubernetes Engine
+    /// cluster. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigNodeConfig? NodeConfig { get; set; }
 
-    /// <summary>The number of nodes in the Kubernetes Engine cluster of the environment.</summary>
+    /// <summary>
+    /// only)
+    /// The number of nodes in the Kubernetes Engine cluster of the environment.
+    /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
 
-    /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+    /// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
     [JsonPropertyName("privateEnvironmentConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigPrivateEnvironmentConfig? PrivateEnvironmentConfig { get; set; }
 
@@ -2752,11 +2957,17 @@ public partial class V1beta1EnvironmentSpecInitProviderConfig
     [JsonPropertyName("resilienceMode")]
     public string? ResilienceMode { get; set; }
 
-    /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration settings for the Airflow instance that runs inside the
+    /// environment. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("softwareConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigSoftwareConfig? SoftwareConfig { get; set; }
 
-    /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+    /// <summary>
+    /// only)
+    /// The configuration settings for the Airflow web server App Engine instance.
+    /// </summary>
     [JsonPropertyName("webServerConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigWebServerConfig? WebServerConfig { get; set; }
 
@@ -2768,8 +2979,8 @@ public partial class V1beta1EnvironmentSpecInitProviderConfig
     public V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAccessControl? WebServerNetworkAccessControl { get; set; }
 
     /// <summary>
-    /// The Kubernetes workloads configuration for GKE cluster associated with the
-    /// Cloud Composer environment.
+    /// Environment resources configuration for the Google Kubernetes engine cluster
+    /// associated with the Managed Airflow environment.
     /// </summary>
     [JsonPropertyName("workloadsConfig")]
     public V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig? WorkloadsConfig { get; set; }
@@ -2930,7 +3141,10 @@ public partial class V1beta1EnvironmentSpecInitProviderProjectSelector
     public V1beta1EnvironmentSpecInitProviderProjectSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+/// <summary>
+/// Configuration options for storage used by the environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderStorageConfig
@@ -2956,7 +3170,10 @@ public partial class V1beta1EnvironmentSpecInitProviderStorageConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProvider
 {
-    /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration parameters for this environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("config")]
     public V1beta1EnvironmentSpecInitProviderConfig? Config { get; set; }
 
@@ -2989,7 +3206,10 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("projectSelector")]
     public V1beta1EnvironmentSpecInitProviderProjectSelector? ProjectSelector { get; set; }
 
-    /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration options for storage used by the environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("storageConfig")]
     public V1beta1EnvironmentSpecInitProviderStorageConfig? StorageConfig { get; set; }
 }
@@ -3105,7 +3325,7 @@ public partial class V1beta1EnvironmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
-    /// <summary>How many days data should be retained for.</summary>
+    /// <summary>How many days data must be retained for.</summary>
     [JsonPropertyName("retentionDays")]
     public double? RetentionDays { get; set; }
 
@@ -3124,15 +3344,16 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 {
     /// <summary>
     /// The mode of storage for Airflow workers task logs. Values for storage mode are
-    /// CLOUD_LOGGING_ONLY to only store logs in cloud logging and
-    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in cloud logging and cloud storage.
+    /// CLOUD_LOGGING_ONLY to only store logs in Cloud Logging and
+    /// CLOUD_LOGGING_AND_CLOUD_STORAGE to store logs in Cloud Logging and
+    /// Cloud Storage.
     /// </summary>
     [JsonPropertyName("storageMode")]
     public string? StorageMode { get; set; }
 }
 
 /// <summary>
-/// Configuration setting for airflow data rentention mechanism. Structure is
+/// Configuration setting for Airflow database retention mechanism. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3140,7 +3361,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 {
     /// <summary>
-    /// The retention policy for airflow metadata database. Structure is
+    /// The retention policy for the Airflow metadata database. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("airflowMetadataRetentionConfig")]
@@ -3155,6 +3376,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 }
 
 /// <summary>
+/// only)
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
@@ -3163,18 +3385,19 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 public partial class V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
@@ -3182,7 +3405,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig
 }
 
 /// <summary>
-/// The encryption options for the Cloud Composer environment and its
+/// The encryption options for the Managed Airflow environment and its
 /// dependencies.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3190,30 +3413,34 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig
 public partial class V1beta1EnvironmentStatusAtProviderConfigEncryptionConfig
 {
     /// <summary>
-    /// Customer-managed Encryption Key available through Google&apos;s Key Management Service. It must
-    /// be the fully qualified resource name,
-    /// i.e. projects/project-id/locations/location/keyRings/keyring/cryptoKeys/key. Cannot be updated.
+    /// Customer-managed Encryption Key available through Google&apos;s Key Management
+    /// Service. It must be the fully qualified resource name, for example:
+    /// projects/example-project-id/locations/example-location/keyRings/example-keyring/cryptoKeys/example-key.
+    /// Cannot be updated.
     /// </summary>
     [JsonPropertyName("kmsKeyName")]
     public string? KmsKeyName { get; set; }
 }
 
-/// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+/// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigMaintenanceWindow
 {
     /// <summary>
-    /// Maintenance window end time. It is used only to calculate the duration of the maintenance window.
-    /// The value for end-time must be in the future, relative to &apos;start_time&apos;.
+    /// Maintenance window end time. It is used only to calculate the duration of the
+    /// maintenance window.
+    /// The value for end-time must be in the future, relative to start_time.
     /// </summary>
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
     /// <summary>
-    /// Maintenance window recurrence. Format is a subset of RFC-5545 (https://tools.ietf.org/html/rfc5545) &apos;RRULE&apos;.
-    /// The only allowed values for &apos;FREQ&apos; field are &apos;FREQ=DAILY&apos; and &apos;FREQ=WEEKLY;BYDAY=...&apos;.
-    /// Example values: &apos;FREQ=WEEKLY;BYDAY=TU,WE&apos;, &apos;FREQ=DAILY&apos;.
+    /// Maintenance window recurrence. Format is a subset of
+    /// RFC-5545 RRULE.
+    /// The only allowed values for FREQ field are FREQ=DAILY and
+    /// FREQ=WEEKLY;BYDAY=....
+    /// Example values: FREQ=WEEKLY;BYDAY=TU,WE, FREQ=DAILY.
     /// </summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
@@ -3237,21 +3464,28 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNet
 }
 
 /// <summary>
-/// Configuration options for the master authorized networks feature. Enabled
-/// master authorized networks will disallow all external traffic to access
-/// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-/// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+/// Configuration options for the authorized networks feature. Enabled
+/// authorized networks will disallow all external traffic to access
+/// Kubernetes control plane through HTTPS except traffic from the given CIDR
+/// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNetworksConfig
 {
-    /// <summary>cidr_blocks define up to 50 external networks that could access Kubernetes master through HTTPS. Structure is documented below.</summary>
+    /// <summary>
+    /// cidr_blocks define up to 50 external networks that could access Kubernetes
+    /// control plane through HTTPS. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("cidrBlocks")]
     public IList<V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNetworksConfigCidrBlocks>? CidrBlocks { get; set; }
 
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
@@ -3267,73 +3501,87 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfigIpAllocat
 {
     /// <summary>
     /// The IP address range used to allocate IP addresses to pods in the cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("clusterIpv4CidrBlock")]
     public string? ClusterIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to pods.
-    /// Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the cluster&apos;s secondary range used to allocate IP addresses to
+    /// pods. Specify either cluster_secondary_range_name or
+    /// cluster_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("clusterSecondaryRangeName")]
     public string? ClusterSecondaryRangeName { get; set; }
 
     /// <summary>
     /// The IP address range used to allocate IP addresses in this cluster.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// For Managed Airflow (Legacy Gen 1) environments, this field is applicable
+    /// only when use_ip_aliases is true.
     /// Set to blank to have GKE choose a range with the default size.
     /// Set to /netmask (e.g. /14) to have GKE choose a range with a specific netmask.
     /// Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks
-    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
+    /// (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to
+    /// use.
+    /// Specify either services_secondary_range_name or services_ipv4_cidr_block
+    /// but not both.
     /// </summary>
     [JsonPropertyName("servicesIpv4CidrBlock")]
     public string? ServicesIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// The name of the services&apos; secondary range used to allocate IP addresses to the cluster.
-    /// Specify either services_secondary_range_name or services_ipv4_cidr_block but not both.
-    /// For Cloud Composer 1 environments, this field is applicable only when use_ip_aliases is true.
+    /// The name of the services&apos; secondary range used to allocate IP addresses to
+    /// the cluster. Specify either
+    /// services_secondary_range_name or services_ipv4_cidr_block but not both.
     /// </summary>
     [JsonPropertyName("servicesSecondaryRangeName")]
     public string? ServicesSecondaryRangeName { get; set; }
 
     /// <summary>
-    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native cluster is created.
-    /// Defaults to true if the ip_allocation_policy block is present in config.
+    /// only)
+    /// Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native
+    /// cluster is created. Defaults to true if the ip_allocation_policy block is
+    /// present in config.
     /// </summary>
     [JsonPropertyName("useIpAliases")]
     public bool? UseIpAliases { get; set; }
 }
 
-/// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration used for the environment&apos;s Google Kubernetes Engine
+/// cluster. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
 {
     /// <summary>
-    /// /20 IPv4 cidr range that will be used by Composer internal components.
-    /// Cannot be updated.
+    /// only)
+    /// /20 IPv4 cidr range that will be used by the environment&apos;s internal
+    /// components. Cannot be updated.
     /// </summary>
     [JsonPropertyName("composerInternalIpv4CidrBlock")]
     public string? ComposerInternalIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// PSC (Private Service Connect) Network entry point. Customers can pre-create the Network Attachment
-    /// and point Cloud Composer environment to use. It is possible to share network attachment among many environments,
+    /// only)
+    /// PSC (Private Service Connect) Network entry point. Customers can pre-create
+    /// the Network Attachment and point Managed Airflow environment to use. It is possible to share network attachment among many environments,
     /// provided enough IP addresses are available.
     /// </summary>
     [JsonPropertyName("composerNetworkAttachment")]
     public string? ComposerNetworkAttachment { get; set; }
 
     /// <summary>
+    /// only)
     /// The disk size in GB used for node VMs. Minimum size is 20GB.
     /// If unspecified, defaults to 100GB. Cannot be updated.
     /// </summary>
@@ -3341,9 +3589,9 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
     public double? DiskSizeGb { get; set; }
 
     /// <summary>
-    /// Deploys &apos;ip-masq-agent&apos; daemon set in the GKE cluster and defines
-    /// nonMasqueradeCIDRs equals to pod IP range so IP masquerading is used for
-    /// all destination addresses, except between pods traffic.
+    /// IP Masq Agent translates Pod IP addresses to node IP addresses, so that
+    /// destinations and services targeted from Airflow DAGs and tasks only receive
+    /// packets from node IP addresses instead of Pod IP addresses
     /// See the documentation.
     /// </summary>
     [JsonPropertyName("enableIpMasqAgent")]
@@ -3358,10 +3606,10 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
     public V1beta1EnvironmentStatusAtProviderConfigNodeConfigIpAllocationPolicy? IpAllocationPolicy { get; set; }
 
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -3369,12 +3617,13 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine network to be used for machine
     /// communications, specified as a self-link, relative resource name
-    /// (for example &quot;projects/{project}/global/networks/{network}&quot;), by name.
+    /// (for example projects/{project}/global/networks/{network}), by name.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
 
     /// <summary>
+    /// only)
     /// The set of Google API scopes to be made available on all node
     /// VMs. Cannot be updated. If empty, defaults to
     /// [&quot;https://www.googleapis.com/auth/cloud-platform&quot;].
@@ -3384,10 +3633,11 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
 
     /// <summary>
     /// The Google Cloud Platform Service Account to be used by the
-    /// node VMs. If a service account is not specified, the &quot;default&quot;
-    /// Compute Engine service account is used. Cannot be updated. If given,
-    /// note that the service account must have roles/composer.worker
-    /// for any GCP resources created under the Cloud Composer Environment.
+    /// environment to perform operations and run DAGs. Cannot be
+    /// updated. The service account must have the roles/composer.worker role
+    /// to create the environment. To access other resources in your Google Cloud
+    /// project, grant extra permissions to access those resources to this service
+    /// account.
     /// </summary>
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
@@ -3395,15 +3645,16 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
     /// <summary>
     /// The Compute Engine subnetwork to be used for machine
     /// communications, specified as a self-link, relative resource name (for example,
-    /// &quot;projects/{project}/regions/{region}/subnetworks/{subnetwork}&quot;), or by name. If subnetwork is provided,
-    /// network must also be provided and the subnetwork must belong to the enclosing environment&apos;s project and region.
+    /// projects/{project}/regions/{region}/subnetworks/{subnetwork}), or by name.
+    /// If subnetwork is provided, network must also be provided and the subnetwork
+    /// must belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
     /// <summary>
-    /// The list of instance tags applied to all node VMs. Tags are
-    /// used to identify valid sources or targets for network
+    /// The list of instance tags applied to all node VMs in the environment&apos;s
+    /// cluster. Tags are used to identify valid sources or targets for network
     /// firewalls. Each tag within the list must comply with RFC1035.
     /// Cannot be updated.
     /// </summary>
@@ -3411,25 +3662,27 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
     public IList<string>? Tags { get; set; }
 
     /// <summary>
+    /// only)
     /// The Compute Engine zone in which to deploy the VMs running the
     /// Apache Airflow software, specified as the zone name or
-    /// relative resource name (e.g. &quot;projects/{project}/zones/{zone}&quot;). Must
+    /// relative resource name (e.g. projects/{project}/zones/{zone}). Must
     /// belong to the enclosing environment&apos;s project and region.
     /// </summary>
     [JsonPropertyName("zone")]
     public string? Zone { get; set; }
 }
 
-/// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+/// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigPrivateEnvironmentConfig
 {
     /// <summary>
-    /// When specified, the environment will use Private Service Connect instead of VPC peerings to connect
-    /// to Cloud SQL in the Tenant Project, and the PSC endpoint in the Customer Project will use an IP
-    /// address from this subnetwork. This field is supported for Cloud Composer environments in
-    /// versions composer-2.*.*-airflow-*.*.* and newer.
+    /// When specified, the environment will use Private Service Connect instead of
+    /// VPC peerings to connect to Cloud SQL in the Tenant Project, and the PSC
+    /// endpoint in the customer project will use an IP address from this subnetwork.
+    /// This field is supported for Managed Airflow environments in versions
+    /// composer-2.*.*-airflow-*.*.* and newer.
     /// </summary>
     [JsonPropertyName("cloudComposerConnectionSubnetwork")]
     public string? CloudComposerConnectionSubnetwork { get; set; }
@@ -3437,57 +3690,65 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigPrivateEnvironmentC
     [JsonPropertyName("cloudComposerNetworkIpv4CidrBlock")]
     public string? CloudComposerNetworkIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range in tenant project will be reserved for Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block</summary>
+    /// <summary>
+    /// The CIDR block from which IP range in the tenant project will be reserved for
+    /// Cloud SQL. Needs to be disjoint from web_server_ipv4_cidr_block
+    /// </summary>
     [JsonPropertyName("cloudSqlIpv4CidrBlock")]
     public string? CloudSqlIpv4CidrBlock { get; set; }
 
     /// <summary>
-    /// Mode of internal communication within the Composer environment. Must be one
-    /// of &quot;VPC_PEERING&quot; or &quot;PRIVATE_SERVICE_CONNECT&quot;.
+    /// only)
+    /// Mode of internal communication within the Managed Airflow environment. Must
+    /// be one of VPC_PEERING or PRIVATE_SERVICE_CONNECT.
     /// </summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
     /// <summary>
-    /// If true, access to the public endpoint of the GKE cluster is denied.
-    /// If this field is set to true, the ip_allocation_policy.use_ip_aliases field must
-    /// also be set to true for Cloud Composer 1 environments.
+    /// If true, access to the public endpoint of the environment&apos;s
+    /// Google Kubernetes Enginge cluster is denied.
     /// </summary>
     [JsonPropertyName("enablePrivateEndpoint")]
     public bool? EnablePrivateEndpoint { get; set; }
 
     /// <summary>
-    /// When enabled, IPs from public (non-RFC1918) ranges can be used for
-    /// ip_allocation_policy.cluster_ipv4_cidr_block and ip_allocation_policy.service_ipv4_cidr_block.
+    /// When enabled, IPs from public (non-RFC 1918) ranges can be used for
+    /// ip_allocation_policy.cluster_ipv4_cidr_block and
+    /// ip_allocation_policy.service_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("enablePrivatelyUsedPublicIps")]
     public bool? EnablePrivatelyUsedPublicIps { get; set; }
 
     /// <summary>
-    /// The IP range in CIDR notation to use for the hosted master network. This range is used
-    /// for assigning internal IP addresses to the cluster master or set of masters and to the
-    /// internal load balancer virtual IP. This range must not overlap with any other ranges
-    /// in use within the cluster&apos;s network.
-    /// If left blank, the default value of is used. See documentation for default values per region.
+    /// and
+    /// cloud_sql_ipv4_cidr_block.
     /// </summary>
     [JsonPropertyName("masterIpv4CidrBlock")]
     public string? MasterIpv4CidrBlock { get; set; }
 
-    /// <summary>The CIDR block from which IP range for web server will be reserved. Needs to be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.</summary>
+    /// <summary>
+    /// only)
+    /// The CIDR block from which IP range for web server will be reserved. Needs to
+    /// be disjoint from master_ipv4_cidr_block and cloud_sql_ipv4_cidr_block.
+    /// </summary>
     [JsonPropertyName("webServerIpv4CidrBlock")]
     public string? WebServerIpv4CidrBlock { get; set; }
 }
 
-/// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+/// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Snapshot schedule, in the unix-cron format.</summary>
+    /// <summary>Snapshot schedule, in the Unix-cron format.</summary>
     [JsonPropertyName("snapshotCreationSchedule")]
     public string? SnapshotCreationSchedule { get; set; }
 
@@ -3495,7 +3756,11 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigSched
     [JsonPropertyName("snapshotLocation")]
     public string? SnapshotLocation { get; set; }
 
-    /// <summary>A time zone for the schedule. This value is a time offset and does not take into account daylight saving time changes. Valid values are from UTC-12 to UTC+12. Examples: UTC, UTC-01, UTC+03.</summary>
+    /// <summary>
+    /// A time zone for the schedule. This value is a time offset and does not take
+    /// into account daylight saving time changes. Valid values are from UTC-12 to
+    /// UTC+12. Examples: UTC, UTC-01, UTC+03.
+    /// </summary>
     [JsonPropertyName("timeZone")]
     public string? TimeZone { get; set; }
 }
@@ -3505,7 +3770,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigSched
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfig
 {
-    /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
+    /// <summary>The recovery configuration settings for the Managed Airflow environment.</summary>
     [JsonPropertyName("scheduledSnapshotsConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigScheduledSnapshotsConfig? ScheduledSnapshotsConfig { get; set; }
 }
@@ -3518,20 +3783,23 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
-    /// <summary>When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.</summary>
+    /// <summary>
+    /// When enabled, Managed Airflow periodically saves snapshots of your
+    /// environment to a Cloud Storage bucket.
+    /// </summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 }
 
-/// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+/// <summary>
+/// The configuration settings for the Airflow instance that runs inside the
+/// environment. Structure is documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfig
 {
-    /// <summary>
-    /// Apache Airflow configuration properties to override. Property keys contain the section and property names,
-    /// separated by a hyphen, for example &quot;core-dags_are_paused_at_creation&quot;.
-    /// </summary>
+    /// <summary>Apache Airflow configuration options to override.</summary>
     [JsonPropertyName("airflowConfigOverrides")]
     public IDictionary<string, string>? AirflowConfigOverrides { get; set; }
 
@@ -3543,53 +3811,73 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfig
     public V1beta1EnvironmentStatusAtProviderConfigSoftwareConfigCloudDataLineageIntegration? CloudDataLineageIntegration { get; set; }
 
     /// <summary>
-    /// Additional environment variables to provide to the Apache Airflow scheduler, worker, and webserver processes.
-    /// Environment variable names must match the regular expression [a-zA-Z_][a-zA-Z0-9_]*.
-    /// They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
-    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the following reserved names:
+    /// Additional environment variables to provide to Apache Airflow components of the environment.
+    /// Environment variable names must match the regular expression
+    /// [a-zA-Z_][a-zA-Z0-9_]*. They cannot specify Apache Airflow software configuration overrides (they cannot match the regular expression
+    /// AIRFLOW__[A-Z0-9_]+__[A-Z0-9_]+), and they cannot match any of the
+    /// reserved variable names.
     /// </summary>
     [JsonPropertyName("envVariables")]
     public IDictionary<string, string>? EnvVariables { get; set; }
 
-    /// <summary>In Composer 1, use a specific Composer 1 version in this parameter. If omitted, the default is the latest version of Composer 2.</summary>
+    /// <summary>
+    /// Version of Managed Airflow and Apache Airflow to use.
+    /// If omitted, the
+    /// default build of Managed Airflow (Gen 3)
+    /// is used.
+    /// </summary>
     [JsonPropertyName("imageVersion")]
     public string? ImageVersion { get; set; }
 
     /// <summary>
     /// Custom Python Package Index (PyPI) packages to be installed
-    /// in the environment. Keys refer to the lowercase package name (e.g. &quot;numpy&quot;). Values are the lowercase extras and
-    /// version specifier (e.g. &quot;==1.12.0&quot;, &quot;[devel,gcp_api]&quot;, &quot;[devel]&gt;=1.8.2, &lt;1.9.2&quot;). To specify a package without
+    /// in the environment, in addition to
+    /// preinstalled packages.
+    /// Keys refer to the lowercase package name (for example: numpy). Values are
+    /// the lowercase extras and version specifier (example: ==1.12.0,
+    /// [devel,gcp_api], [devel]&gt;=1.8.2, &lt;1.9.2). To specify a package without
     /// pinning it to a version specifier, use the empty string as the value.
     /// </summary>
     [JsonPropertyName("pypiPackages")]
     public IDictionary<string, string>? PypiPackages { get; set; }
 
     /// <summary>
+    /// only)
     /// The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes.
     /// Can be set to &apos;2&apos; or &apos;3&apos;. If not specified, the default is &apos;3&apos;.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
-    /// <summary>The number of schedulers for Airflow.</summary>
+    /// <summary>
+    /// with Airflow 2 only)
+    /// The number of schedulers for Airflow.
+    /// </summary>
     [JsonPropertyName("schedulerCount")]
     public double? SchedulerCount { get; set; }
 
-    /// <summary>Web server plugins configuration. Can be either &apos;ENABLED&apos; or &apos;DISABLED&apos;. Defaults to &apos;ENABLED&apos;.</summary>
+    /// <summary>
+    /// only)
+    /// Web server plugins configuration. Can be either ENABLED or DISABLED.
+    /// Defaults to ENABLED.
+    /// </summary>
     [JsonPropertyName("webServerPluginsMode")]
     public string? WebServerPluginsMode { get; set; }
 }
 
-/// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+/// <summary>
+/// only)
+/// The configuration settings for the Airflow web server App Engine instance.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerConfig
 {
     /// <summary>
-    /// Machine type on which Airflow web server is running. It has to be one of: composer-n1-webserver-2,
-    /// composer-n1-webserver-4 or composer-n1-webserver-8.
-    /// Value custom is returned only in response, if Airflow web server parameters were
-    /// manually changed to a non-standard values.
+    /// Machine type on which Airflow web server is running. It has to be one of:
+    /// composer-n1-webserver-2, composer-n1-webserver-4 or composer-n1-webserver-8.
+    /// Value custom is returned only in response, if Airflow web server parameters
+    /// were manually changed to a non-standard values.
     /// </summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -3604,10 +3892,12 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAcc
     public string? Description { get; set; }
 
     /// <summary>
-    /// IP address or range, defined using CIDR notation, of requests that this rule applies to.
-    /// Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or 2001:0db8:0000:0042:0000:8a2e:0370:7334.
+    /// IP address or range, defined using CIDR notation, of requests that this rule
+    /// applies to. Examples: 192.168.1.1 or 192.168.0.0/16 or 2001:db8::/32 or
+    /// 2001:0db8:0000:0042:0000:8a2e:0370:7334.
     /// IP range prefixes should be properly truncated. For example,
-    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6, 2001:db8::1/32 should be truncated to 2001:db8::/32.
+    /// 1.2.3.4/24 should be truncated to 1.2.3.0/24. Similarly, for IPv6,
+    /// 2001:db8::1/32 should be truncated to 2001:db8::/32.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
@@ -3621,12 +3911,18 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAccessControl
 {
-    /// <summary>A collection of allowed IP ranges with descriptions. Structure is documented below.</summary>
+    /// <summary>
+    /// A collection of allowed IP ranges with descriptions. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("allowedIpRange")]
     public IList<V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAccessControlAllowedIpRange>? AllowedIpRange { get; set; }
 }
 
-/// <summary>Configuration for resources used by DAG processor.</summary>
+/// <summary>
+/// only)
+/// Configuration for resources used by Airflow DAG processors.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigDagProcessor
@@ -3670,7 +3966,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigSche
     public double? StorageGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow triggerer.</summary>
+/// <summary>Configuration for resources used by Airflow triggerers.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigTriggerer
@@ -3688,7 +3984,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigTrig
     public double? MemoryGb { get; set; }
 }
 
-/// <summary>Configuration for resources used by Airflow web server.</summary>
+/// <summary>Configuration for resources used by the Airflow web server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWebServer
@@ -3716,9 +4012,9 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWork
     public double? Cpu { get; set; }
 
     /// <summary>
-    /// The maximum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go above this number, even if a higher number of workers is required to
-    /// handle the load.
+    /// The maximum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go above this number, even if a
+    /// higher number of workers is required to handle the load.
     /// </summary>
     [JsonPropertyName("maxCount")]
     public double? MaxCount { get; set; }
@@ -3728,8 +4024,9 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWork
     public double? MemoryGb { get; set; }
 
     /// <summary>
-    /// The minimum number of Airflow workers that the environment can run. The number of workers in the
-    /// environment does not go below this number, even if a lower number of workers can handle the load.
+    /// The minimum number of Airflow workers that the environment can run. The
+    /// number of workers in the environment does not go below this number, even if a
+    /// lower number of workers can handle the load.
     /// </summary>
     [JsonPropertyName("minCount")]
     public double? MinCount { get; set; }
@@ -3740,14 +4037,17 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWork
 }
 
 /// <summary>
-/// The Kubernetes workloads configuration for GKE cluster associated with the
-/// Cloud Composer environment.
+/// Environment resources configuration for the Google Kubernetes engine cluster
+/// associated with the Managed Airflow environment.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig
 {
-    /// <summary>Configuration for resources used by DAG processor.</summary>
+    /// <summary>
+    /// only)
+    /// Configuration for resources used by Airflow DAG processors.
+    /// </summary>
     [JsonPropertyName("dagProcessor")]
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigDagProcessor? DagProcessor { get; set; }
 
@@ -3755,11 +4055,11 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig
     [JsonPropertyName("scheduler")]
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigScheduler? Scheduler { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow triggerer.</summary>
+    /// <summary>Configuration for resources used by Airflow triggerers.</summary>
     [JsonPropertyName("triggerer")]
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigTriggerer? Triggerer { get; set; }
 
-    /// <summary>Configuration for resources used by Airflow web server.</summary>
+    /// <summary>Configuration for resources used by the Airflow web server.</summary>
     [JsonPropertyName("webServer")]
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWebServer? WebServer { get; set; }
 
@@ -3768,7 +4068,10 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWorker? Worker { get; set; }
 }
 
-/// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+/// <summary>
+/// Configuration parameters for this environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfig
@@ -3791,13 +4094,14 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
     public string? DagGcsPrefix { get; set; }
 
     /// <summary>
-    /// Configuration setting for airflow data rentention mechanism. Structure is
+    /// Configuration setting for Airflow database retention mechanism. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("dataRetentionConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig? DataRetentionConfig { get; set; }
 
     /// <summary>
+    /// only)
     /// The configuration settings for Cloud SQL instance used internally
     /// by Apache Airflow software.
     /// </summary>
@@ -3805,18 +4109,23 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
     public V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig? DatabaseConfig { get; set; }
 
     /// <summary>
-    /// If true, builds performed during operations that install Python packages have only private connectivity to Google services.
-    /// If false, the builds also have access to the internet.
+    /// only)
+    /// If true, builds performed during operations that install Python packages have
+    /// only private connectivity to Google services. If false, the builds also have
+    /// access to the internet.
     /// </summary>
     [JsonPropertyName("enablePrivateBuildsOnly")]
     public bool? EnablePrivateBuildsOnly { get; set; }
 
-    /// <summary>If true, a private Composer environment will be created.</summary>
+    /// <summary>
+    /// only)
+    /// If true, a private environment will be created.
+    /// </summary>
     [JsonPropertyName("enablePrivateEnvironment")]
     public bool? EnablePrivateEnvironment { get; set; }
 
     /// <summary>
-    /// The encryption options for the Cloud Composer environment and its
+    /// The encryption options for the Managed Airflow environment and its
     /// dependencies.
     /// </summary>
     [JsonPropertyName("encryptionConfig")]
@@ -3824,7 +4133,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
 
     /// <summary>
     /// The environment size controls the performance parameters of the managed
-    /// Cloud Composer infrastructure that includes the Airflow database. Values for
+    /// Managed Airflow infrastructure that includes the Airflow database. Values for
     /// environment size are ENVIRONMENT_SIZE_SMALL, ENVIRONMENT_SIZE_MEDIUM,
     /// and ENVIRONMENT_SIZE_LARGE.
     /// </summary>
@@ -3835,29 +4144,35 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
     [JsonPropertyName("gkeCluster")]
     public string? GkeCluster { get; set; }
 
-    /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
+    /// <summary>The configuration settings for Managed Airflow maintenance windows.</summary>
     [JsonPropertyName("maintenanceWindow")]
     public V1beta1EnvironmentStatusAtProviderConfigMaintenanceWindow? MaintenanceWindow { get; set; }
 
     /// <summary>
-    /// Configuration options for the master authorized networks feature. Enabled
-    /// master authorized networks will disallow all external traffic to access
-    /// Kubernetes master through HTTPS except traffic from the given CIDR blocks,
-    /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
+    /// Configuration options for the authorized networks feature. Enabled
+    /// authorized networks will disallow all external traffic to access
+    /// Kubernetes control plane through HTTPS except traffic from the given CIDR
+    /// blocks, Google Compute Engine Public IPs and Google Prod IPs. Structure is
     /// documented below.
     /// </summary>
     [JsonPropertyName("masterAuthorizedNetworksConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNetworksConfig? MasterAuthorizedNetworksConfig { get; set; }
 
-    /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration used for the environment&apos;s Google Kubernetes Engine
+    /// cluster. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("nodeConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigNodeConfig? NodeConfig { get; set; }
 
-    /// <summary>The number of nodes in the Kubernetes Engine cluster of the environment.</summary>
+    /// <summary>
+    /// only)
+    /// The number of nodes in the Kubernetes Engine cluster of the environment.
+    /// </summary>
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
 
-    /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
+    /// <summary>The configuration used for the Private IP Managed Airflow environment. Structure is documented below.</summary>
     [JsonPropertyName("privateEnvironmentConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigPrivateEnvironmentConfig? PrivateEnvironmentConfig { get; set; }
 
@@ -3874,11 +4189,17 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
     [JsonPropertyName("resilienceMode")]
     public string? ResilienceMode { get; set; }
 
-    /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
+    /// <summary>
+    /// The configuration settings for the Airflow instance that runs inside the
+    /// environment. Structure is documented below.
+    /// </summary>
     [JsonPropertyName("softwareConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigSoftwareConfig? SoftwareConfig { get; set; }
 
-    /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
+    /// <summary>
+    /// only)
+    /// The configuration settings for the Airflow web server App Engine instance.
+    /// </summary>
     [JsonPropertyName("webServerConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigWebServerConfig? WebServerConfig { get; set; }
 
@@ -3890,14 +4211,17 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
     public V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAccessControl? WebServerNetworkAccessControl { get; set; }
 
     /// <summary>
-    /// The Kubernetes workloads configuration for GKE cluster associated with the
-    /// Cloud Composer environment.
+    /// Environment resources configuration for the Google Kubernetes engine cluster
+    /// associated with the Managed Airflow environment.
     /// </summary>
     [JsonPropertyName("workloadsConfig")]
     public V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig? WorkloadsConfig { get; set; }
 }
 
-/// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+/// <summary>
+/// Configuration options for storage used by the environment. Structure is
+/// documented below.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderStorageConfig
@@ -3911,14 +4235,27 @@ public partial class V1beta1EnvironmentStatusAtProviderStorageConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProvider
 {
-    /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration parameters for this environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("config")]
     public V1beta1EnvironmentStatusAtProviderConfig? Config { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
 
-    /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{region}}/environments/{{name}}</summary>
+    /// <summary>
+    /// an identifier for the resource with format
+    /// projects/{{project}}/locations/{{region}}/environments/{{name}}
+    /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -3947,7 +4284,10 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
+    /// <summary>
+    /// Configuration options for storage used by the environment. Structure is
+    /// documented below.
+    /// </summary>
     [JsonPropertyName("storageConfig")]
     public V1beta1EnvironmentStatusAtProviderStorageConfig? StorageConfig { get; set; }
 
@@ -4010,6 +4350,15 @@ public partial class V1beta1EnvironmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EnvironmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

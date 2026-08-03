@@ -376,7 +376,7 @@ public partial class V1beta2ResourcePolicySpecForProviderWorkloadPolicy
 
     /// <summary>
     /// The maximum topology distance. This field can be set only when the workload policy type is HIGH_THROUGHPUT
-    /// and cannot be set if accelerator topology is set.
+    /// and cannot be set if accelerator topology or accelerator topology mode is set.
     /// Possible values are: BLOCK, CLUSTER, SUBBLOCK.
     /// </summary>
     [JsonPropertyName("maxTopologyDistance")]
@@ -766,7 +766,7 @@ public partial class V1beta2ResourcePolicySpecInitProviderWorkloadPolicy
 
     /// <summary>
     /// The maximum topology distance. This field can be set only when the workload policy type is HIGH_THROUGHPUT
-    /// and cannot be set if accelerator topology is set.
+    /// and cannot be set if accelerator topology or accelerator topology mode is set.
     /// Possible values are: BLOCK, CLUSTER, SUBBLOCK.
     /// </summary>
     [JsonPropertyName("maxTopologyDistance")]
@@ -1347,7 +1347,7 @@ public partial class V1beta2ResourcePolicyStatusAtProviderWorkloadPolicy
 
     /// <summary>
     /// The maximum topology distance. This field can be set only when the workload policy type is HIGH_THROUGHPUT
-    /// and cannot be set if accelerator topology is set.
+    /// and cannot be set if accelerator topology or accelerator topology mode is set.
     /// Possible values are: BLOCK, CLUSTER, SUBBLOCK.
     /// </summary>
     [JsonPropertyName("maxTopologyDistance")]
@@ -1365,6 +1365,13 @@ public partial class V1beta2ResourcePolicyStatusAtProviderWorkloadPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourcePolicyStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource. Provide this property when you create the resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1478,6 +1485,15 @@ public partial class V1beta2ResourcePolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ResourcePolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -496,6 +496,13 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishFin
 {
 }
 
+/// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishFindingsToDataplexCatalog
+{
+}
+
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -508,6 +515,26 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishSum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishToStackdriver
 {
+}
+
+/// <summary>
+/// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+/// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+/// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+/// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+/// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfigStoragePath
+{
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
 }
 
 /// <summary>
@@ -555,6 +582,17 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindin
     /// </summary>
     [JsonPropertyName("outputSchema")]
     public string? OutputSchema { get; set; }
+
+    /// <summary>
+    /// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+    /// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+    /// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+    /// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+    /// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("storagePath")]
+    public V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfigStoragePath? StoragePath { get; set; }
 
     /// <summary>
     /// The BigQuery table in which to store the output.
@@ -606,6 +644,10 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActions
     [JsonPropertyName("publishFindingsToCloudDataCatalog")]
     public V1beta2JobTriggerSpecForProviderInspectJobActionsPublishFindingsToCloudDataCatalog? PublishFindingsToCloudDataCatalog { get; set; }
 
+    /// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+    [JsonPropertyName("publishFindingsToDataplexCatalog")]
+    public V1beta2JobTriggerSpecForProviderInspectJobActionsPublishFindingsToDataplexCatalog? PublishFindingsToDataplexCatalog { get; set; }
+
     /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
     [JsonPropertyName("publishSummaryToCscc")]
     public V1beta2JobTriggerSpecForProviderInspectJobActionsPublishSummaryToCscc? PublishSummaryToCscc { get; set; }
@@ -630,7 +672,10 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -1033,7 +1078,10 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -2500,6 +2548,13 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishFi
 {
 }
 
+/// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishFindingsToDataplexCatalog
+{
+}
+
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2512,6 +2567,26 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishSu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishToStackdriver
 {
+}
+
+/// <summary>
+/// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+/// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+/// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+/// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+/// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfigStoragePath
+{
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
 }
 
 /// <summary>
@@ -2559,6 +2634,17 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindi
     /// </summary>
     [JsonPropertyName("outputSchema")]
     public string? OutputSchema { get; set; }
+
+    /// <summary>
+    /// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+    /// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+    /// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+    /// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+    /// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("storagePath")]
+    public V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfigStoragePath? StoragePath { get; set; }
 
     /// <summary>
     /// The BigQuery table in which to store the output.
@@ -2610,6 +2696,10 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActions
     [JsonPropertyName("publishFindingsToCloudDataCatalog")]
     public V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishFindingsToCloudDataCatalog? PublishFindingsToCloudDataCatalog { get; set; }
 
+    /// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+    [JsonPropertyName("publishFindingsToDataplexCatalog")]
+    public V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishFindingsToDataplexCatalog? PublishFindingsToDataplexCatalog { get; set; }
+
     /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
     [JsonPropertyName("publishSummaryToCscc")]
     public V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishSummaryToCscc? PublishSummaryToCscc { get; set; }
@@ -2634,7 +2724,10 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -3037,7 +3130,10 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -4389,6 +4485,13 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishFi
 {
 }
 
+/// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishFindingsToDataplexCatalog
+{
+}
+
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4401,6 +4504,26 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishSu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishToStackdriver
 {
+}
+
+/// <summary>
+/// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+/// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+/// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+/// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+/// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfigStoragePath
+{
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
 }
 
 /// <summary>
@@ -4448,6 +4571,17 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindi
     /// </summary>
     [JsonPropertyName("outputSchema")]
     public string? OutputSchema { get; set; }
+
+    /// <summary>
+    /// Store findings in an existing Cloud Storage bucket. Files will be generated with the job ID and file part number
+    /// as the filename, and will contain findings in textproto format as SaveToGcsFindingsOutput. The file name will use
+    /// the naming convention &lt;job_id&gt;-&lt;shard_number&gt;, for example: my-job-id-2.
+    /// Supported for InspectJobs. The bucket must not be the same as the bucket being inspected. If storing findings to
+    /// Cloud Storage, the output schema field should not be set. If set, it will be ignored.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("storagePath")]
+    public V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfigStoragePath? StoragePath { get; set; }
 
     /// <summary>
     /// The BigQuery table in which to store the output.
@@ -4499,6 +4633,10 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActions
     [JsonPropertyName("publishFindingsToCloudDataCatalog")]
     public V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishFindingsToCloudDataCatalog? PublishFindingsToCloudDataCatalog { get; set; }
 
+    /// <summary>Publish findings of a DlpJob as an aspect to Dataplex Universal Catalog.</summary>
+    [JsonPropertyName("publishFindingsToDataplexCatalog")]
+    public V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishFindingsToDataplexCatalog? PublishFindingsToDataplexCatalog { get; set; }
+
     /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
     [JsonPropertyName("publishSummaryToCscc")]
     public V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishSummaryToCscc? PublishSummaryToCscc { get; set; }
@@ -4523,7 +4661,10 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -4933,7 +5074,10 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
-    /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
+    /// <summary>
+    /// A URL representing a file or path (no wildcards) in Cloud Storage.
+    /// Example: gs://[BUCKET_NAME]/dictionary.txt
+    /// </summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -5917,6 +6061,13 @@ public partial class V1beta2JobTriggerStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>A description of the job trigger.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -6033,6 +6184,15 @@ public partial class V1beta2JobTriggerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2JobTriggerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

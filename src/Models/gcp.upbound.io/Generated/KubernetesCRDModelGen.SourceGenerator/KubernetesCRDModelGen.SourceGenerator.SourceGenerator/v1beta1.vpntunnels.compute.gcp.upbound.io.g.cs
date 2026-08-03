@@ -56,6 +56,92 @@ public enum V1beta1VPNTunnelSpecDeletionPolicyEnum
 }
 
 /// <summary>
+/// Cipher configuration for phase 1 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecForProviderCipherSuitePhase1
+{
+    /// <summary>Diffie-Hellman groups.</summary>
+    [JsonPropertyName("dh")]
+    public IList<string>? Dh { get; set; }
+
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Pseudo-random functions.</summary>
+    [JsonPropertyName("prf")]
+    public IList<string>? Prf { get; set; }
+}
+
+/// <summary>
+/// Cipher configuration for phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecForProviderCipherSuitePhase2
+{
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Perfect forward secrecy groups.</summary>
+    [JsonPropertyName("pfs")]
+    public IList<string>? Pfs { get; set; }
+}
+
+/// <summary>
+/// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecForProviderCipherSuite
+{
+    /// <summary>
+    /// Cipher configuration for phase 1 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase1")]
+    public V1beta1VPNTunnelSpecForProviderCipherSuitePhase1? Phase1 { get; set; }
+
+    /// <summary>
+    /// Cipher configuration for phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase2")]
+    public V1beta1VPNTunnelSpecForProviderCipherSuitePhase2? Phase2 { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecForProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the Vpn Tunnel. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -669,6 +755,13 @@ public partial class V1beta1VPNTunnelSpecForProviderVpnGatewaySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNTunnelSpecForProvider
 {
+    /// <summary>
+    /// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta1VPNTunnelSpecForProviderCipherSuite? CipherSuite { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -697,6 +790,13 @@ public partial class V1beta1VPNTunnelSpecForProvider
     /// </summary>
     [JsonPropertyName("localTrafficSelector")]
     public IList<string>? LocalTrafficSelector { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1VPNTunnelSpecForProviderParams? Params { get; set; }
 
     /// <summary>URL of the peer side external VPN gateway to which this VPN tunnel is connected.</summary>
     [JsonPropertyName("peerExternalGateway")]
@@ -801,6 +901,92 @@ public partial class V1beta1VPNTunnelSpecForProvider
     /// <summary>Selector for a HaVPNGateway in compute to populate vpnGateway.</summary>
     [JsonPropertyName("vpnGatewaySelector")]
     public V1beta1VPNTunnelSpecForProviderVpnGatewaySelector? VpnGatewaySelector { get; set; }
+}
+
+/// <summary>
+/// Cipher configuration for phase 1 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecInitProviderCipherSuitePhase1
+{
+    /// <summary>Diffie-Hellman groups.</summary>
+    [JsonPropertyName("dh")]
+    public IList<string>? Dh { get; set; }
+
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Pseudo-random functions.</summary>
+    [JsonPropertyName("prf")]
+    public IList<string>? Prf { get; set; }
+}
+
+/// <summary>
+/// Cipher configuration for phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecInitProviderCipherSuitePhase2
+{
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Perfect forward secrecy groups.</summary>
+    [JsonPropertyName("pfs")]
+    public IList<string>? Pfs { get; set; }
+}
+
+/// <summary>
+/// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecInitProviderCipherSuite
+{
+    /// <summary>
+    /// Cipher configuration for phase 1 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase1")]
+    public V1beta1VPNTunnelSpecInitProviderCipherSuitePhase1? Phase1 { get; set; }
+
+    /// <summary>
+    /// Cipher configuration for phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase2")]
+    public V1beta1VPNTunnelSpecInitProviderCipherSuitePhase2? Phase2 { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelSpecInitProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the Vpn Tunnel. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
 }
 
 /// <summary>
@@ -1429,6 +1615,13 @@ public partial class V1beta1VPNTunnelSpecInitProviderVpnGatewaySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNTunnelSpecInitProvider
 {
+    /// <summary>
+    /// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta1VPNTunnelSpecInitProviderCipherSuite? CipherSuite { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1457,6 +1650,13 @@ public partial class V1beta1VPNTunnelSpecInitProvider
     /// </summary>
     [JsonPropertyName("localTrafficSelector")]
     public IList<string>? LocalTrafficSelector { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1VPNTunnelSpecInitProviderParams? Params { get; set; }
 
     /// <summary>URL of the peer side external VPN gateway to which this VPN tunnel is connected.</summary>
     [JsonPropertyName("peerExternalGateway")]
@@ -1521,7 +1721,7 @@ public partial class V1beta1VPNTunnelSpecInitProvider
     /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("sharedSecretSecretRef")]
-    public required V1beta1VPNTunnelSpecInitProviderSharedSecretSecretRef SharedSecretSecretRef { get; set; }
+    public V1beta1VPNTunnelSpecInitProviderSharedSecretSecretRef? SharedSecretSecretRef { get; set; }
 
     /// <summary>
     /// URL of the Target VPN gateway with which this VPN tunnel is
@@ -1742,13 +1942,113 @@ public partial class V1beta1VPNTunnelSpec
     public V1beta1VPNTunnelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>
+/// Cipher configuration for phase 1 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelStatusAtProviderCipherSuitePhase1
+{
+    /// <summary>Diffie-Hellman groups.</summary>
+    [JsonPropertyName("dh")]
+    public IList<string>? Dh { get; set; }
+
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Pseudo-random functions.</summary>
+    [JsonPropertyName("prf")]
+    public IList<string>? Prf { get; set; }
+}
+
+/// <summary>
+/// Cipher configuration for phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelStatusAtProviderCipherSuitePhase2
+{
+    /// <summary>Encryption algorithms.</summary>
+    [JsonPropertyName("encryption")]
+    public IList<string>? Encryption { get; set; }
+
+    /// <summary>Integrity algorithms.</summary>
+    [JsonPropertyName("integrity")]
+    public IList<string>? Integrity { get; set; }
+
+    /// <summary>Perfect forward secrecy groups.</summary>
+    [JsonPropertyName("pfs")]
+    public IList<string>? Pfs { get; set; }
+}
+
+/// <summary>
+/// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelStatusAtProviderCipherSuite
+{
+    /// <summary>
+    /// Cipher configuration for phase 1 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase1")]
+    public V1beta1VPNTunnelStatusAtProviderCipherSuitePhase1? Phase1 { get; set; }
+
+    /// <summary>
+    /// Cipher configuration for phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("phase2")]
+    public V1beta1VPNTunnelStatusAtProviderCipherSuitePhase2? Phase2 { get; set; }
+}
+
+/// <summary>
+/// Additional params passed with the request, but not persisted as part of resource payload
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VPNTunnelStatusAtProviderParams
+{
+    /// <summary>
+    /// Resource manager tags to be bound to the Vpn Tunnel. Tag keys and values have the
+    /// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+    /// and values are in the format tagValues/456.
+    /// </summary>
+    [JsonPropertyName("resourceManagerTags")]
+    public IDictionary<string, string>? ResourceManagerTags { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNTunnelStatusAtProvider
 {
+    /// <summary>
+    /// User specified list of ciphers to use for the phase 1 and phase 2 of the IKE protocol.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta1VPNTunnelStatusAtProviderCipherSuite? CipherSuite { get; set; }
+
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
@@ -1796,6 +2096,13 @@ public partial class V1beta1VPNTunnelStatusAtProvider
     /// </summary>
     [JsonPropertyName("localTrafficSelector")]
     public IList<string>? LocalTrafficSelector { get; set; }
+
+    /// <summary>
+    /// Additional params passed with the request, but not persisted as part of resource payload
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("params")]
+    public V1beta1VPNTunnelStatusAtProviderParams? Params { get; set; }
 
     /// <summary>URL of the peer side external VPN gateway to which this VPN tunnel is connected.</summary>
     [JsonPropertyName("peerExternalGateway")]
@@ -1935,6 +2242,15 @@ public partial class V1beta1VPNTunnelStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VPNTunnelStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

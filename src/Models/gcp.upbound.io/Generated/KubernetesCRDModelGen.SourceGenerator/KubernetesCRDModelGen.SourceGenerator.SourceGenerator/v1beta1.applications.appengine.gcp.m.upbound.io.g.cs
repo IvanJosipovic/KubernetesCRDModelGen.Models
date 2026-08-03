@@ -297,6 +297,10 @@ public partial class V1beta1ApplicationSpecForProvider
     /// <summary>The serving status of the app.</summary>
     [JsonPropertyName("servingStatus")]
     public string? ServingStatus { get; set; }
+
+    /// <summary>A list of the SSL policy that will be applied. Each block has a SSL_POLICY_UNSPECIFIED, DEFAULT, and MODERN field.</summary>
+    [JsonPropertyName("sslPolicy")]
+    public string? SslPolicy { get; set; }
 }
 
 /// <summary>A block of optional settings to configure specific App Engine features:</summary>
@@ -572,6 +576,10 @@ public partial class V1beta1ApplicationSpecInitProvider
     /// <summary>The serving status of the app.</summary>
     [JsonPropertyName("servingStatus")]
     public string? ServingStatus { get; set; }
+
+    /// <summary>A list of the SSL policy that will be applied. Each block has a SSL_POLICY_UNSPECIFIED, DEFAULT, and MODERN field.</summary>
+    [JsonPropertyName("sslPolicy")]
+    public string? SslPolicy { get; set; }
 }
 
 /// <summary>
@@ -799,6 +807,10 @@ public partial class V1beta1ApplicationStatusAtProvider
     [JsonPropertyName("servingStatus")]
     public string? ServingStatus { get; set; }
 
+    /// <summary>A list of the SSL policy that will be applied. Each block has a SSL_POLICY_UNSPECIFIED, DEFAULT, and MODERN field.</summary>
+    [JsonPropertyName("sslPolicy")]
+    public string? SslPolicy { get; set; }
+
     /// <summary>A list of dispatch rule blocks. Each block has a domain, path, and service field.</summary>
     [JsonPropertyName("urlDispatchRule")]
     public IList<V1beta1ApplicationStatusAtProviderUrlDispatchRule>? UrlDispatchRule { get; set; }
@@ -858,6 +870,15 @@ public partial class V1beta1ApplicationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ApplicationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

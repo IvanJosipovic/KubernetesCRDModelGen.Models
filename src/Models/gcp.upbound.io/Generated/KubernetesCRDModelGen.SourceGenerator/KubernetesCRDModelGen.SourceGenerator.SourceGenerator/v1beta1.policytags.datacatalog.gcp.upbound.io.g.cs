@@ -947,6 +947,13 @@ public partial class V1beta1PolicyTagStatusAtProvider
     public IList<string>? ChildPolicyTags { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// Description of this policy tag. It must: contain only unicode characters, tabs,
     /// newlines, carriage returns and page breaks; and be at most 2000 bytes long when
     /// encoded in UTF-8. If not set, defaults to an empty description.
@@ -1041,6 +1048,15 @@ public partial class V1beta1PolicyTagStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PolicyTagStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

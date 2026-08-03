@@ -312,7 +312,7 @@ public partial class V1beta2RegionDiskSpecForProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -466,6 +466,111 @@ public partial class V1beta2RegionDiskSpecForProviderSnapshotSelector
 }
 
 /// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecForProviderSourceImageEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
+/// customer-supplied encryption key to either encrypt or decrypt
+/// this resource. You can provide either the rawKey or the rsaEncryptedKey.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecForProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// The customer-supplied encryption key of the source image. Required if
+/// the source image is protected by a customer-supplied encryption key.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecForProviderSourceImageEncryptionKey
+{
+    /// <summary>The name of the encryption key that is stored in Google Cloud KMS.</summary>
+    [JsonPropertyName("kmsKeyName")]
+    public string? KmsKeyName { get; set; }
+
+    /// <summary>
+    /// The service account used for the encryption request for the given KMS key.
+    /// If absent, the Compute Engine Service Agent service account is used.
+    /// </summary>
+    [JsonPropertyName("kmsKeyServiceAccount")]
+    public string? KmsKeyServiceAccount { get; set; }
+
+    /// <summary>
+    /// Specifies a 256-bit customer-supplied encryption key, encoded in
+    /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2RegionDiskSpecForProviderSourceImageEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
+
+    /// <summary>
+    /// Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
+    /// customer-supplied encryption key to either encrypt or decrypt
+    /// this resource. You can provide either the rawKey or the rsaEncryptedKey.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("rsaEncryptedKeySecretRef")]
+    public V1beta2RegionDiskSpecForProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef? RsaEncryptedKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecForProviderSourceSnapshotEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// The customer-supplied encryption key of the source snapshot. Required
 /// if the source snapshot is protected by a customer-supplied encryption
 /// key.
@@ -478,9 +583,10 @@ public partial class V1beta2RegionDiskSpecForProviderSourceSnapshotEncryptionKey
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2RegionDiskSpecForProviderSourceSnapshotEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -542,6 +648,20 @@ public partial class V1beta2RegionDiskSpecForProvider
     /// </summary>
     [JsonPropertyName("guestOsFeatures")]
     public IList<V1beta2RegionDiskSpecForProviderGuestOsFeatures>? GuestOsFeatures { get; set; }
+
+    /// <summary>
+    /// The image from which to initialize this disk. This can be
+    /// one of: the image&apos;s self_link, projects/{project}/global/images/{image},
+    /// projects/{project}/global/images/family/{family}, global/images/{image},
+    /// global/images/family/{family}, family/{family}, {project}/{family},
+    /// {project}/{image}, {family}, or {image}. If referred by family, the
+    /// images names must include the family name. If they don&apos;t, use the
+    /// google_compute_image data source.
+    /// For instance, the image centos-6-v20180104 includes its family name centos-6.
+    /// These images can be referred by family name here.
+    /// </summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
 
     /// <summary>Labels to apply to this disk.  A list of key-&gt;value pairs.</summary>
     [JsonPropertyName("labels")]
@@ -625,6 +745,14 @@ public partial class V1beta2RegionDiskSpecForProvider
     /// </summary>
     [JsonPropertyName("sourceDisk")]
     public string? SourceDisk { get; set; }
+
+    /// <summary>
+    /// The customer-supplied encryption key of the source image. Required if
+    /// the source image is protected by a customer-supplied encryption key.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceImageEncryptionKey")]
+    public V1beta2RegionDiskSpecForProviderSourceImageEncryptionKey? SourceImageEncryptionKey { get; set; }
 
     /// <summary>
     /// The customer-supplied encryption key of the source snapshot. Required
@@ -900,7 +1028,7 @@ public partial class V1beta2RegionDiskSpecInitProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -1054,6 +1182,111 @@ public partial class V1beta2RegionDiskSpecInitProviderSnapshotSelector
 }
 
 /// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
+/// customer-supplied encryption key to either encrypt or decrypt
+/// this resource. You can provide either the rawKey or the rsaEncryptedKey.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// The customer-supplied encryption key of the source image. Required if
+/// the source image is protected by a customer-supplied encryption key.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKey
+{
+    /// <summary>The name of the encryption key that is stored in Google Cloud KMS.</summary>
+    [JsonPropertyName("kmsKeyName")]
+    public string? KmsKeyName { get; set; }
+
+    /// <summary>
+    /// The service account used for the encryption request for the given KMS key.
+    /// If absent, the Compute Engine Service Agent service account is used.
+    /// </summary>
+    [JsonPropertyName("kmsKeyServiceAccount")]
+    public string? KmsKeyServiceAccount { get; set; }
+
+    /// <summary>
+    /// Specifies a 256-bit customer-supplied encryption key, encoded in
+    /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
+
+    /// <summary>
+    /// Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
+    /// customer-supplied encryption key to either encrypt or decrypt
+    /// this resource. You can provide either the rawKey or the rsaEncryptedKey.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("rsaEncryptedKeySecretRef")]
+    public V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef? RsaEncryptedKeySecretRef { get; set; }
+}
+
+/// <summary>
+/// Specifies a 256-bit customer-supplied encryption key, encoded in
+/// RFC 4648 base64 to either encrypt or decrypt this resource.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskSpecInitProviderSourceSnapshotEncryptionKeyRawKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// The customer-supplied encryption key of the source snapshot. Required
 /// if the source snapshot is protected by a customer-supplied encryption
 /// key.
@@ -1066,9 +1299,10 @@ public partial class V1beta2RegionDiskSpecInitProviderSourceSnapshotEncryptionKe
     /// <summary>
     /// Specifies a 256-bit customer-supplied encryption key, encoded in
     /// RFC 4648 base64 to either encrypt or decrypt this resource.
+    /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
+    [JsonPropertyName("rawKeySecretRef")]
+    public V1beta2RegionDiskSpecInitProviderSourceSnapshotEncryptionKeyRawKeySecretRef? RawKeySecretRef { get; set; }
 }
 
 /// <summary>
@@ -1142,6 +1376,20 @@ public partial class V1beta2RegionDiskSpecInitProvider
     /// </summary>
     [JsonPropertyName("guestOsFeatures")]
     public IList<V1beta2RegionDiskSpecInitProviderGuestOsFeatures>? GuestOsFeatures { get; set; }
+
+    /// <summary>
+    /// The image from which to initialize this disk. This can be
+    /// one of: the image&apos;s self_link, projects/{project}/global/images/{image},
+    /// projects/{project}/global/images/family/{family}, global/images/{image},
+    /// global/images/family/{family}, family/{family}, {project}/{family},
+    /// {project}/{image}, {family}, or {image}. If referred by family, the
+    /// images names must include the family name. If they don&apos;t, use the
+    /// google_compute_image data source.
+    /// For instance, the image centos-6-v20180104 includes its family name centos-6.
+    /// These images can be referred by family name here.
+    /// </summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
 
     /// <summary>Labels to apply to this disk.  A list of key-&gt;value pairs.</summary>
     [JsonPropertyName("labels")]
@@ -1221,6 +1469,14 @@ public partial class V1beta2RegionDiskSpecInitProvider
     /// </summary>
     [JsonPropertyName("sourceDisk")]
     public string? SourceDisk { get; set; }
+
+    /// <summary>
+    /// The customer-supplied encryption key of the source image. Required if
+    /// the source image is protected by a customer-supplied encryption key.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceImageEncryptionKey")]
+    public V1beta2RegionDiskSpecInitProviderSourceImageEncryptionKey? SourceImageEncryptionKey { get; set; }
 
     /// <summary>
     /// The customer-supplied encryption key of the source snapshot. Required
@@ -1470,10 +1726,39 @@ public partial class V1beta2RegionDiskStatusAtProviderGuestOsFeatures
 {
     /// <summary>
     /// The type of supported feature. Read Enabling guest operating system features to see a list of available options.
-    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE.
+    /// Possible values are: MULTI_IP_SUBNET, SECURE_BOOT, SEV_CAPABLE, UEFI_COMPATIBLE, VIRTIO_SCSI_MULTIQUEUE, WINDOWS, GVNIC, SEV_LIVE_MIGRATABLE, SEV_SNP_CAPABLE, SUSPEND_RESUME_COMPATIBLE, TDX_CAPABLE, SEV_LIVE_MIGRATABLE_V2, SNP_SVSM_CAPABLE.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+}
+
+/// <summary>
+/// The customer-supplied encryption key of the source image. Required if
+/// the source image is protected by a customer-supplied encryption key.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionDiskStatusAtProviderSourceImageEncryptionKey
+{
+    /// <summary>The name of the encryption key that is stored in Google Cloud KMS.</summary>
+    [JsonPropertyName("kmsKeyName")]
+    public string? KmsKeyName { get; set; }
+
+    /// <summary>
+    /// The service account used for the encryption request for the given KMS key.
+    /// If absent, the Compute Engine Service Agent service account is used.
+    /// </summary>
+    [JsonPropertyName("kmsKeyServiceAccount")]
+    public string? KmsKeyServiceAccount { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied
+    /// encryption key that protects this resource.
+    /// </summary>
+    [JsonPropertyName("sha256")]
+    public string? Sha256 { get; set; }
 }
 
 /// <summary>
@@ -1486,13 +1771,6 @@ public partial class V1beta2RegionDiskStatusAtProviderGuestOsFeatures
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RegionDiskStatusAtProviderSourceSnapshotEncryptionKey
 {
-    /// <summary>
-    /// Specifies a 256-bit customer-supplied encryption key, encoded in
-    /// RFC 4648 base64 to either encrypt or decrypt this resource.
-    /// </summary>
-    [JsonPropertyName("rawKey")]
-    public string? RawKey { get; set; }
-
     /// <summary>
     /// (Output)
     /// The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied
@@ -1537,6 +1815,13 @@ public partial class V1beta2RegionDiskStatusAtProvider
     public string? CreationTimestamp { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource.
     /// </summary>
@@ -1577,6 +1862,20 @@ public partial class V1beta2RegionDiskStatusAtProvider
     /// <summary>an identifier for the resource with format projects/{{project}}/regions/{{region}}/disks/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// The image from which to initialize this disk. This can be
+    /// one of: the image&apos;s self_link, projects/{project}/global/images/{image},
+    /// projects/{project}/global/images/family/{family}, global/images/{image},
+    /// global/images/family/{family}, family/{family}, {project}/{family},
+    /// {project}/{image}, {family}, or {image}. If referred by family, the
+    /// images names must include the family name. If they don&apos;t, use the
+    /// google_compute_image data source.
+    /// For instance, the image centos-6-v20180104 includes its family name centos-6.
+    /// These images can be referred by family name here.
+    /// </summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
 
     /// <summary>
     /// The fingerprint used for optimistic locking of this resource.  Used
@@ -1681,6 +1980,24 @@ public partial class V1beta2RegionDiskStatusAtProvider
     public string? SourceDiskId { get; set; }
 
     /// <summary>
+    /// The customer-supplied encryption key of the source image. Required if
+    /// the source image is protected by a customer-supplied encryption key.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sourceImageEncryptionKey")]
+    public V1beta2RegionDiskStatusAtProviderSourceImageEncryptionKey? SourceImageEncryptionKey { get; set; }
+
+    /// <summary>
+    /// The ID value of the image used to create this disk. This value
+    /// identifies the exact image that was used to create this persistent
+    /// disk. For example, if you created the persistent disk from an image
+    /// that was later deleted and recreated under the same name, the source
+    /// image ID would identify the exact version of the image that was used.
+    /// </summary>
+    [JsonPropertyName("sourceImageId")]
+    public string? SourceImageId { get; set; }
+
+    /// <summary>
     /// The customer-supplied encryption key of the source snapshot. Required
     /// if the source snapshot is protected by a customer-supplied encryption
     /// key.
@@ -1776,6 +2093,15 @@ public partial class V1beta2RegionDiskStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2RegionDiskStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

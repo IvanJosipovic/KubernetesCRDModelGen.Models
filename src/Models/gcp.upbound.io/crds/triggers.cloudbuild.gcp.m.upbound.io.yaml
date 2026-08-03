@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: triggers.cloudbuild.gcp.m.upbound.io
 spec:
   group: cloudbuild.gcp.m.upbound.io
@@ -622,6 +622,56 @@ spec:
                   description:
                     description: Human-readable description of the trigger.
                     type: string
+                  developerConnectEventConfig:
+                    description: |-
+                      Configuration for triggers that respond to Developer Connect events.
+                      Structure is documented below.
+                    properties:
+                      gitRepositoryLink:
+                        description: The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.
+                        type: string
+                      pullRequest:
+                        description: |-
+                          Filter to match changes in pull requests.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          commentControl:
+                            description: |-
+                              Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+                              Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                        type: object
+                      push:
+                        description: |-
+                          Filter to match changes in refs like branches and tags.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                          tag:
+                            description: |-
+                              Regex of tags to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                        type: object
+                    type: object
                   disabled:
                     description: Whether the trigger is disabled or not. If true, the trigger will never result in a build.
                     type: boolean
@@ -678,7 +728,6 @@ spec:
                   github:
                     description: |-
                       Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-                      One of trigger_template, github, pubsub_config or webhook_config must be provided.
                       Structure is documented below.
                     properties:
                       enterpriseConfigResourceName:
@@ -788,7 +837,6 @@ spec:
                     description: |-
                       PubsubConfig describes the configuration of a trigger that creates
                       a build whenever a Pub/Sub message is published.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       serviceAccountEmail:
@@ -1020,7 +1068,6 @@ spec:
                       This field is used only for those triggers that do not respond to SCM events.
                       Triggers that respond to such events build source at whatever commit caused the event.
                       This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       bitbucketServerConfig:
@@ -1068,7 +1115,6 @@ spec:
                       Branch and tag names in trigger templates are interpreted as regular
                       expressions. Any branch or tag change that matches that regular
                       expression will trigger a build.
-                      One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       branchName:
@@ -1107,7 +1153,6 @@ spec:
                     description: |-
                       WebhookConfig describes the configuration of a trigger that creates
                       a build whenever a webhook is sent to a trigger's webhook URL.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       secret:
@@ -1772,6 +1817,56 @@ spec:
                   description:
                     description: Human-readable description of the trigger.
                     type: string
+                  developerConnectEventConfig:
+                    description: |-
+                      Configuration for triggers that respond to Developer Connect events.
+                      Structure is documented below.
+                    properties:
+                      gitRepositoryLink:
+                        description: The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.
+                        type: string
+                      pullRequest:
+                        description: |-
+                          Filter to match changes in pull requests.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          commentControl:
+                            description: |-
+                              Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+                              Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                        type: object
+                      push:
+                        description: |-
+                          Filter to match changes in refs like branches and tags.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                          tag:
+                            description: |-
+                              Regex of tags to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                        type: object
+                    type: object
                   disabled:
                     description: Whether the trigger is disabled or not. If true, the trigger will never result in a build.
                     type: boolean
@@ -1828,7 +1923,6 @@ spec:
                   github:
                     description: |-
                       Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-                      One of trigger_template, github, pubsub_config or webhook_config must be provided.
                       Structure is documented below.
                     properties:
                       enterpriseConfigResourceName:
@@ -1938,7 +2032,6 @@ spec:
                     description: |-
                       PubsubConfig describes the configuration of a trigger that creates
                       a build whenever a Pub/Sub message is published.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       serviceAccountEmail:
@@ -2170,7 +2263,6 @@ spec:
                       This field is used only for those triggers that do not respond to SCM events.
                       Triggers that respond to such events build source at whatever commit caused the event.
                       This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       bitbucketServerConfig:
@@ -2218,7 +2310,6 @@ spec:
                       Branch and tag names in trigger templates are interpreted as regular
                       expressions. Any branch or tag change that matches that regular
                       expression will trigger a build.
-                      One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       branchName:
@@ -2257,7 +2348,6 @@ spec:
                     description: |-
                       WebhookConfig describes the configuration of a trigger that creates
                       a build whenever a webhook is sent to a trigger's webhook URL.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       secret:
@@ -2992,9 +3082,69 @@ spec:
                   createTime:
                     description: Time when the trigger was created.
                     type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   description:
                     description: Human-readable description of the trigger.
                     type: string
+                  developerConnectEventConfig:
+                    description: |-
+                      Configuration for triggers that respond to Developer Connect events.
+                      Structure is documented below.
+                    properties:
+                      gitRepositoryLink:
+                        description: The Developer Connect Git repository link, formatted as projects/*/locations/*/connections/*/gitRepositoryLink/*.
+                        type: string
+                      gitRepositoryLinkType:
+                        description: |-
+                          (Output)
+                          The type of DeveloperConnect GitRepositoryLink.
+                        type: string
+                      pullRequest:
+                        description: |-
+                          Filter to match changes in pull requests.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          commentControl:
+                            description: |-
+                              Configure builds to run whether a repository owner or collaborator need to comment /gcbrun.
+                              Possible values are: COMMENTS_DISABLED, COMMENTS_ENABLED, COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY.
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                        type: object
+                      push:
+                        description: |-
+                          Filter to match changes in refs like branches and tags.
+                          Structure is documented below.
+                        properties:
+                          branch:
+                            description: |-
+                              Regex of branches to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                          invertRegex:
+                            description: Only trigger a build if the revision regex does NOT match the revision regex.
+                            type: boolean
+                          tag:
+                            description: |-
+                              Regex of tags to match.
+                              The syntax of the regular expressions accepted is the syntax accepted by
+                              RE2 and described at https://github.com/google/re2/wiki/Syntax
+                            type: string
+                        type: object
+                    type: object
                   disabled:
                     description: Whether the trigger is disabled or not. If true, the trigger will never result in a build.
                     type: boolean
@@ -3051,7 +3201,6 @@ spec:
                   github:
                     description: |-
                       Describes the configuration of a trigger that creates a build whenever a GitHub event is received.
-                      One of trigger_template, github, pubsub_config or webhook_config must be provided.
                       Structure is documented below.
                     properties:
                       enterpriseConfigResourceName:
@@ -3164,7 +3313,6 @@ spec:
                     description: |-
                       PubsubConfig describes the configuration of a trigger that creates
                       a build whenever a Pub/Sub message is published.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       serviceAccountEmail:
@@ -3249,7 +3397,6 @@ spec:
                       This field is used only for those triggers that do not respond to SCM events.
                       Triggers that respond to such events build source at whatever commit caused the event.
                       This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       bitbucketServerConfig:
@@ -3300,7 +3447,6 @@ spec:
                       Branch and tag names in trigger templates are interpreted as regular
                       expressions. Any branch or tag change that matches that regular
                       expression will trigger a build.
-                      One of trigger_template, github, pubsub_config, webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       branchName:
@@ -3339,7 +3485,6 @@ spec:
                     description: |-
                       WebhookConfig describes the configuration of a trigger that creates
                       a build whenever a webhook is sent to a trigger's webhook URL.
-                      One of trigger_template, github, pubsub_config webhook_config or source_to_build must be provided.
                       Structure is documented below.
                     properties:
                       secret:
@@ -3397,6 +3542,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

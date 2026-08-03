@@ -285,6 +285,7 @@ public partial class V1beta2CryptoKeySpecForProvider
     /// If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
     /// You must use the google_kms_crypto_key_version resource to create a new CryptoKeyVersion
     /// or google_kms_key_ring_import_job resource to import the CryptoKeyVersion.
+    /// This field is only applicable during initial CryptoKey creation.
     /// </summary>
     [JsonPropertyName("skipInitialVersionCreation")]
     public bool? SkipInitialVersionCreation { get; set; }
@@ -377,6 +378,7 @@ public partial class V1beta2CryptoKeySpecInitProvider
     /// If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
     /// You must use the google_kms_crypto_key_version resource to create a new CryptoKeyVersion
     /// or google_kms_key_ring_import_job resource to import the CryptoKeyVersion.
+    /// This field is only applicable during initial CryptoKey creation.
     /// </summary>
     [JsonPropertyName("skipInitialVersionCreation")]
     public bool? SkipInitialVersionCreation { get; set; }
@@ -623,6 +625,13 @@ public partial class V1beta2CryptoKeyStatusAtProvider
     public string? CryptoKeyBackend { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED.
     /// If not specified at creation time, the default duration is 30 days.
     /// </summary>
@@ -682,6 +691,7 @@ public partial class V1beta2CryptoKeyStatusAtProvider
     /// If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
     /// You must use the google_kms_crypto_key_version resource to create a new CryptoKeyVersion
     /// or google_kms_key_ring_import_job resource to import the CryptoKeyVersion.
+    /// This field is only applicable during initial CryptoKey creation.
     /// </summary>
     [JsonPropertyName("skipInitialVersionCreation")]
     public bool? SkipInitialVersionCreation { get; set; }
@@ -755,6 +765,15 @@ public partial class V1beta2CryptoKeyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2CryptoKeyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

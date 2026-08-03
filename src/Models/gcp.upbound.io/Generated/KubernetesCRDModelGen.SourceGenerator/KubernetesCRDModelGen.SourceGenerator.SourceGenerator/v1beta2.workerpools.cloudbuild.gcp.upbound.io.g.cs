@@ -244,6 +244,10 @@ public partial class V1beta2WorkerPoolSpecForProviderWorkerConfig
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
 
+    /// <summary>Enable nested virtualization on the worker, if supported by the machine type. See Worker pool config file. If left blank, Cloud Build will set this to false.</summary>
+    [JsonPropertyName("enableNestedVirtualization")]
+    public bool? EnableNestedVirtualization { get; set; }
+
     /// <summary>Machine type of a worker, such as n1-standard-1. See machineType. If left blank, Cloud Build will use n1-standard-1.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -472,6 +476,10 @@ public partial class V1beta2WorkerPoolSpecInitProviderWorkerConfig
     /// <summary>Size of the disk attached to the worker, in GB. See diskSizeGb. Specify a value of up to 1000. If 0 is specified, Cloud Build will use a standard disk size.</summary>
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
+
+    /// <summary>Enable nested virtualization on the worker, if supported by the machine type. See Worker pool config file. If left blank, Cloud Build will set this to false.</summary>
+    [JsonPropertyName("enableNestedVirtualization")]
+    public bool? EnableNestedVirtualization { get; set; }
 
     /// <summary>Machine type of a worker, such as n1-standard-1. See machineType. If left blank, Cloud Build will use n1-standard-1.</summary>
     [JsonPropertyName("machineType")]
@@ -738,6 +746,10 @@ public partial class V1beta2WorkerPoolStatusAtProviderWorkerConfig
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
 
+    /// <summary>Enable nested virtualization on the worker, if supported by the machine type. See Worker pool config file. If left blank, Cloud Build will set this to false.</summary>
+    [JsonPropertyName("enableNestedVirtualization")]
+    public bool? EnableNestedVirtualization { get; set; }
+
     /// <summary>Machine type of a worker, such as n1-standard-1. See machineType. If left blank, Cloud Build will use n1-standard-1.</summary>
     [JsonPropertyName("machineType")]
     public string? MachineType { get; set; }
@@ -761,6 +773,13 @@ public partial class V1beta2WorkerPoolStatusAtProvider
     /// <summary>Output only. Time at which the request to delete the WorkerPool was received.</summary>
     [JsonPropertyName("deleteTime")]
     public string? DeleteTime { get; set; }
+
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>User-defined name of the WorkerPool.</summary>
     [JsonPropertyName("displayName")]
@@ -859,6 +878,15 @@ public partial class V1beta2WorkerPoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WorkerPoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

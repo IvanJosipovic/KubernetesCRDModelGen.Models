@@ -89,6 +89,13 @@ public partial class V1beta1NetworkSpecForProvider
     public string? BgpInterRegionCost { get; set; }
 
     /// <summary>
+    /// If set to true, the bgp_always_compare_med field will be cleared.
+    /// If set to false (the default), bgp_always_compare_med will be set to the value specified in the configuration.
+    /// </summary>
+    [JsonPropertyName("deleteBgpAlwaysCompareMed")]
+    public bool? DeleteBgpAlwaysCompareMed { get; set; }
+
+    /// <summary>
     /// If set to true, default routes (0.0.0.0/0) will be deleted
     /// immediately after network creation. Defaults to false.
     /// </summary>
@@ -234,6 +241,13 @@ public partial class V1beta1NetworkSpecInitProvider
     /// </summary>
     [JsonPropertyName("bgpInterRegionCost")]
     public string? BgpInterRegionCost { get; set; }
+
+    /// <summary>
+    /// If set to true, the bgp_always_compare_med field will be cleared.
+    /// If set to false (the default), bgp_always_compare_med will be set to the value specified in the configuration.
+    /// </summary>
+    [JsonPropertyName("deleteBgpAlwaysCompareMed")]
+    public bool? DeleteBgpAlwaysCompareMed { get; set; }
 
     /// <summary>
     /// If set to true, default routes (0.0.0.0/0) will be deleted
@@ -478,11 +492,25 @@ public partial class V1beta1NetworkStatusAtProvider
     public string? BgpInterRegionCost { get; set; }
 
     /// <summary>
+    /// If set to true, the bgp_always_compare_med field will be cleared.
+    /// If set to false (the default), bgp_always_compare_med will be set to the value specified in the configuration.
+    /// </summary>
+    [JsonPropertyName("deleteBgpAlwaysCompareMed")]
+    public bool? DeleteBgpAlwaysCompareMed { get; set; }
+
+    /// <summary>
     /// If set to true, default routes (0.0.0.0/0) will be deleted
     /// immediately after network creation. Defaults to false.
     /// </summary>
     [JsonPropertyName("deleteDefaultRoutesOnCreate")]
     public bool? DeleteDefaultRoutesOnCreate { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// An optional description of this resource. The resource must be
@@ -640,6 +668,15 @@ public partial class V1beta1NetworkStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

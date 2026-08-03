@@ -63,6 +63,14 @@ public partial class V1beta1ChannelSpecForProvider
     [JsonPropertyName("cryptoKeyName")]
     public string? CryptoKeyName { get; set; }
 
+    /// <summary>
+    /// User-defined labels for the channel.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
     /// <summary>The location for the resource</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
@@ -98,6 +106,14 @@ public partial class V1beta1ChannelSpecInitProvider
     /// <summary>Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern projects/*/locations/*/keyRings/*/cryptoKeys/*.</summary>
     [JsonPropertyName("cryptoKeyName")]
     public string? CryptoKeyName { get; set; }
+
+    /// <summary>
+    /// User-defined labels for the channel.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -310,9 +326,27 @@ public partial class V1beta1ChannelStatusAtProvider
     [JsonPropertyName("cryptoKeyName")]
     public string? CryptoKeyName { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    [JsonPropertyName("effectiveLabels")]
+    public IDictionary<string, string>? EffectiveLabels { get; set; }
+
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/channels/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// User-defined labels for the channel.
+    /// Note: This field is non-authoritative, and will only manage the labels present in your configuration.
+    /// Please refer to the field effective_labels for all of the labels present on the resource.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>The location for the resource</summary>
     [JsonPropertyName("location")]
@@ -332,6 +366,13 @@ public partial class V1beta1ChannelStatusAtProvider
     /// <summary>The state of a Channel.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
+
+    /// <summary>
+    /// The combination of labels configured directly on the resource
+    /// and default labels configured on the provider.
+    /// </summary>
+    [JsonPropertyName("terraformLabels")]
+    public IDictionary<string, string>? TerraformLabels { get; set; }
 
     /// <summary>The name of the event provider (e.g. Eventarc SaaS partner) associated with the channel. This provider will be granted permissions to publish events to the channel. Format: projects/{project}/locations/{location}/providers/{provider_id}.</summary>
     [JsonPropertyName("thirdPartyProvider")]
@@ -400,6 +441,15 @@ public partial class V1beta1ChannelStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ChannelStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

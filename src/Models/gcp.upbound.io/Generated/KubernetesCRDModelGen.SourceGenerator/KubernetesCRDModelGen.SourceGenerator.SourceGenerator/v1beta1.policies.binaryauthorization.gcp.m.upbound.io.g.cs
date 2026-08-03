@@ -468,6 +468,10 @@ public partial class V1beta1PolicySpecForProvider
     /// to by one or more attestors, that all pod creations will be allowed,
     /// or that all pod creations will be denied. There can be at most one
     /// admission rule per cluster spec.
+    /// Identifier format: {{location}}.{{clusterId}}.
+    /// A location is either a compute zone (e.g. us-central1-a) or a region
+    /// (e.g. us-central1).
+    /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("clusterAdmissionRules")]
     public IList<V1beta1PolicySpecForProviderClusterAdmissionRules>? ClusterAdmissionRules { get; set; }
@@ -945,6 +949,10 @@ public partial class V1beta1PolicySpecInitProvider
     /// to by one or more attestors, that all pod creations will be allowed,
     /// or that all pod creations will be denied. There can be at most one
     /// admission rule per cluster spec.
+    /// Identifier format: {{location}}.{{clusterId}}.
+    /// A location is either a compute zone (e.g. us-central1-a) or a region
+    /// (e.g. us-central1).
+    /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("clusterAdmissionRules")]
     public IList<V1beta1PolicySpecInitProviderClusterAdmissionRules>? ClusterAdmissionRules { get; set; }
@@ -1191,6 +1199,10 @@ public partial class V1beta1PolicyStatusAtProvider
     /// to by one or more attestors, that all pod creations will be allowed,
     /// or that all pod creations will be denied. There can be at most one
     /// admission rule per cluster spec.
+    /// Identifier format: {{location}}.{{clusterId}}.
+    /// A location is either a compute zone (e.g. us-central1-a) or a region
+    /// (e.g. us-central1).
+    /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("clusterAdmissionRules")]
     public IList<V1beta1PolicyStatusAtProviderClusterAdmissionRules>? ClusterAdmissionRules { get; set; }
@@ -1202,6 +1214,13 @@ public partial class V1beta1PolicyStatusAtProvider
     /// </summary>
     [JsonPropertyName("defaultAdmissionRule")]
     public V1beta1PolicyStatusAtProviderDefaultAdmissionRule? DefaultAdmissionRule { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>A descriptive comment.</summary>
     [JsonPropertyName("description")]
@@ -1282,6 +1301,15 @@ public partial class V1beta1PolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

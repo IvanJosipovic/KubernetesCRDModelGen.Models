@@ -216,7 +216,7 @@ public partial class V1beta1RegionSSLCertificateSpecInitProvider
     /// Note: This property is sensitive and will not be displayed in the plan.
     /// </summary>
     [JsonPropertyName("privateKeySecretRef")]
-    public required V1beta1RegionSSLCertificateSpecInitProviderPrivateKeySecretRef PrivateKeySecretRef { get; set; }
+    public V1beta1RegionSSLCertificateSpecInitProviderPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -421,6 +421,13 @@ public partial class V1beta1RegionSSLCertificateStatusAtProvider
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>An optional description of this resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -506,6 +513,15 @@ public partial class V1beta1RegionSSLCertificateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RegionSSLCertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: instances.compute.gcp.m.upbound.io
 spec:
   group: compute.gcp.m.upbound.io
@@ -343,6 +343,11 @@ spec:
                               for an update of throughput every 4 hours. To update your hyperdisk more
                               frequently, you'll need to manually delete and recreate it.
                             type: number
+                          replicaZones:
+                            description: A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.
+                            items:
+                              type: string
+                            type: array
                           resourceManagerTags:
                             additionalProperties:
                               type: string
@@ -493,10 +498,10 @@ spec:
                     description: Enable Confidential Mode on this VM. Structure is documented below
                     properties:
                       confidentialInstanceType:
-                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
+                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
                         type: string
                       enableConfidentialCompute:
-                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
+                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
                         type: boolean
                     type: object
                   deletionProtection:
@@ -648,6 +653,9 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        igmpQuery:
+                          description: Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.
+                          type: string
                         internalIpv6PrefixLength:
                           type: number
                         ipv6AccessConfig:
@@ -780,7 +788,7 @@ spec:
                               type: object
                           type: object
                         nicType:
-                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.'
+                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF'
                           type: string
                         queueCount:
                           description: The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
@@ -884,6 +892,9 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        vlan:
+                          description: VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.
+                          type: number
                       type: object
                     type: array
                   networkPerformanceConfig:
@@ -960,7 +971,7 @@ spec:
                         description: Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here
                         type: string
                       localSsdRecoveryTimeout:
-                        description: io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
+                        description: (../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
                         properties:
                           nanos:
                             description: |-
@@ -1504,6 +1515,11 @@ spec:
                               for an update of throughput every 4 hours. To update your hyperdisk more
                               frequently, you'll need to manually delete and recreate it.
                             type: number
+                          replicaZones:
+                            description: A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.
+                            items:
+                              type: string
+                            type: array
                           resourceManagerTags:
                             additionalProperties:
                               type: string
@@ -1654,10 +1670,10 @@ spec:
                     description: Enable Confidential Mode on this VM. Structure is documented below
                     properties:
                       confidentialInstanceType:
-                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
+                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
                         type: string
                       enableConfidentialCompute:
-                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
+                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
                         type: boolean
                     type: object
                   deletionProtection:
@@ -1809,6 +1825,9 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        igmpQuery:
+                          description: Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.
+                          type: string
                         internalIpv6PrefixLength:
                           type: number
                         ipv6AccessConfig:
@@ -1941,7 +1960,7 @@ spec:
                               type: object
                           type: object
                         nicType:
-                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.'
+                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF'
                           type: string
                         queueCount:
                           description: The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
@@ -2045,6 +2064,9 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        vlan:
+                          description: VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.
+                          type: number
                       type: object
                     type: array
                   networkPerformanceConfig:
@@ -2121,7 +2143,7 @@ spec:
                         description: Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here
                         type: string
                       localSsdRecoveryTimeout:
-                        description: io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
+                        description: (../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
                         properties:
                           nanos:
                             description: |-
@@ -2587,6 +2609,11 @@ spec:
                               for an update of throughput every 4 hours. To update your hyperdisk more
                               frequently, you'll need to manually delete and recreate it.
                             type: number
+                          replicaZones:
+                            description: A list of short names or self_links of zones in which to create the disk. Setting this field converts the disk to a regional disk. You must provide exactly two replica zones, and one zone must be the same as the instance zone.
+                            items:
+                              type: string
+                            type: array
                           resourceManagerTags:
                             additionalProperties:
                               type: string
@@ -2685,10 +2712,10 @@ spec:
                     description: Enable Confidential Mode on this VM. Structure is documented below
                     properties:
                       confidentialInstanceType:
-                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
+                        description: 'Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to "AMD Milan" or this will fail to create the VM.'
                         type: string
                       enableConfidentialCompute:
-                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
+                        description: Defines whether the instance should have confidential compute enabled with AMD SEV. If enabled, on_host_maintenance can be set to MIGRATE if min_cpu_platform is set to "AMD Milan" or "AMD Genoa". Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM.
                         type: boolean
                     type: object
                   cpuPlatform:
@@ -2699,6 +2726,11 @@ spec:
                     type: string
                   currentStatus:
                     description: 'The current status of the instance. This could be one of the following values: PROVISIONING, STAGING, RUNNING, STOPPING, SUSPENDING, SUSPENDED, REPAIRING, and TERMINATED. For more information about the status of the instance, see Instance life cycle.'
+                    type: string
+                  deletionPolicy:
+                    description: |-
+                      Defaults to "DELETE".
+                      When set to "DELETE", deleting the resource is allowed.
                     type: string
                   deletionProtection:
                     description: |-
@@ -2872,6 +2904,9 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        igmpQuery:
+                          description: Indicates whether igmp query is enabled on the network interface or not. If enabled, also indicates the version of IGMP supported.
+                          type: string
                         internalIpv6PrefixLength:
                           type: number
                         ipv6AccessConfig:
@@ -2935,7 +2970,10 @@ spec:
                             empty, the address will be automatically assigned.
                           type: string
                         nicType:
-                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA.'
+                          description: 'The type of vNIC to be used on this interface. Possible values: GVNIC, VIRTIO_NET, IDPF, MRDMA, IRDMA, IDPF'
+                          type: string
+                        parentNicName:
+                          description: Name of the parent network interface of a dynamic network interface.
                           type: string
                         queueCount:
                           description: The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
@@ -2960,6 +2998,9 @@ spec:
                             defined in the subnetwork self_link. If the subnetwork is a name and this
                             field is not provided, the provider project is used.
                           type: string
+                        vlan:
+                          description: VLAN tag of a dynamic network interface, must be an integer in the range from 2 to 255 inclusively.
+                          type: number
                       type: object
                     type: array
                   networkPerformanceConfig:
@@ -3036,7 +3077,7 @@ spec:
                         description: Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here
                         type: string
                       localSsdRecoveryTimeout:
-                        description: io/docs/providers/google/guides/provider_versions.html) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
+                        description: (../guides/provider_versions.html.markdown) Specifies the maximum amount of time a Local Ssd Vm should wait while recovery of the Local Ssd state is attempted. Its value should be in between 0 and 168 hours with hour granularity and the default value being 1 hour. Structure is documented below.
                         properties:
                           nanos:
                             description: |-
@@ -3256,6 +3297,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

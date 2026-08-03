@@ -410,6 +410,10 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
     /// </summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>List of regions where the subscriber wants dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 }
 
 /// <summary>
@@ -961,6 +965,10 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
     /// </summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>List of regions where the subscriber wants dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 }
 
 /// <summary>
@@ -1430,6 +1438,10 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderDesti
     /// </summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>List of regions where the subscriber wants dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1492,6 +1504,13 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProvider
     /// <summary>The ID of the data exchange. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.</summary>
     [JsonPropertyName("dataExchangeId")]
     public string? DataExchangeId { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>
     /// The destination dataset for this subscription.
@@ -1625,6 +1644,15 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AnalyticsHubListingSubscriptionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

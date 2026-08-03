@@ -242,6 +242,35 @@ public partial class V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedA
     public IList<V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedApplicationsNamespacedNames>? NamespacedNames { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedNamespaceLabelsResourceLabels
+{
+    /// <summary>The key of the kubernetes label.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the Label.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// If set, include just the resources in the listed namespace Labels.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedNamespaceLabels
+{
+    /// <summary>
+    /// A list of Kubernetes Namespace labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resourceLabels")]
+    public IList<V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedNamespaceLabelsResourceLabels>? ResourceLabels { get; set; }
+}
+
 /// <summary>
 /// If set, include just the resources in the listed namespaces.
 /// Structure is documented below.
@@ -303,6 +332,13 @@ public partial class V1beta1BackupBackupPlanSpecForProviderBackupConfig
     /// </summary>
     [JsonPropertyName("selectedApplications")]
     public V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedApplications? SelectedApplications { get; set; }
+
+    /// <summary>
+    /// If set, include just the resources in the listed namespace Labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("selectedNamespaceLabels")]
+    public V1beta1BackupBackupPlanSpecForProviderBackupConfigSelectedNamespaceLabels? SelectedNamespaceLabels { get; set; }
 
     /// <summary>
     /// If set, include just the resources in the listed namespaces.
@@ -961,6 +997,35 @@ public partial class V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelected
     public IList<V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedApplicationsNamespacedNames>? NamespacedNames { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedNamespaceLabelsResourceLabels
+{
+    /// <summary>The key of the kubernetes label.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the Label.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// If set, include just the resources in the listed namespace Labels.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedNamespaceLabels
+{
+    /// <summary>
+    /// A list of Kubernetes Namespace labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resourceLabels")]
+    public IList<V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedNamespaceLabelsResourceLabels>? ResourceLabels { get; set; }
+}
+
 /// <summary>
 /// If set, include just the resources in the listed namespaces.
 /// Structure is documented below.
@@ -1022,6 +1087,13 @@ public partial class V1beta1BackupBackupPlanSpecInitProviderBackupConfig
     /// </summary>
     [JsonPropertyName("selectedApplications")]
     public V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedApplications? SelectedApplications { get; set; }
+
+    /// <summary>
+    /// If set, include just the resources in the listed namespace Labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("selectedNamespaceLabels")]
+    public V1beta1BackupBackupPlanSpecInitProviderBackupConfigSelectedNamespaceLabels? SelectedNamespaceLabels { get; set; }
 
     /// <summary>
     /// If set, include just the resources in the listed namespaces.
@@ -1632,6 +1704,35 @@ public partial class V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelected
     public IList<V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedApplicationsNamespacedNames>? NamespacedNames { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedNamespaceLabelsResourceLabels
+{
+    /// <summary>The key of the kubernetes label.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>The value of the Label.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// If set, include just the resources in the listed namespace Labels.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedNamespaceLabels
+{
+    /// <summary>
+    /// A list of Kubernetes Namespace labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("resourceLabels")]
+    public IList<V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedNamespaceLabelsResourceLabels>? ResourceLabels { get; set; }
+}
+
 /// <summary>
 /// If set, include just the resources in the listed namespaces.
 /// Structure is documented below.
@@ -1693,6 +1794,13 @@ public partial class V1beta1BackupBackupPlanStatusAtProviderBackupConfig
     /// </summary>
     [JsonPropertyName("selectedApplications")]
     public V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedApplications? SelectedApplications { get; set; }
+
+    /// <summary>
+    /// If set, include just the resources in the listed namespace Labels.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("selectedNamespaceLabels")]
+    public V1beta1BackupBackupPlanStatusAtProviderBackupConfigSelectedNamespaceLabels? SelectedNamespaceLabels { get; set; }
 
     /// <summary>
     /// If set, include just the resources in the listed namespaces.
@@ -1951,6 +2059,13 @@ public partial class V1beta1BackupBackupPlanStatusAtProvider
     [JsonPropertyName("deactivated")]
     public bool? Deactivated { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>User specified descriptive string for this BackupPlan.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1992,6 +2107,10 @@ public partial class V1beta1BackupBackupPlanStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>The number of Kubernetes Namespaces backed up in the last successful Backup created via this BackupPlan.</summary>
+    [JsonPropertyName("protectedNamespaceCount")]
+    public double? ProtectedNamespaceCount { get; set; }
 
     /// <summary>The number of Kubernetes Pods backed up in the last successful Backup created via this BackupPlan.</summary>
     [JsonPropertyName("protectedPodCount")]
@@ -2078,6 +2197,15 @@ public partial class V1beta1BackupBackupPlanStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BackupBackupPlanStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

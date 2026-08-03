@@ -774,6 +774,9 @@ public partial class V1beta2JobSpecForProvider
 
     [JsonPropertyName("sparksqlConfig")]
     public V1beta2JobSpecForProviderSparksqlConfig? SparksqlConfig { get; set; }
+
+    [JsonPropertyName("waitForCompletion")]
+    public bool? WaitForCompletion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1507,6 +1510,9 @@ public partial class V1beta2JobSpecInitProvider
 
     [JsonPropertyName("sparksqlConfig")]
     public V1beta2JobSpecInitProviderSparksqlConfig? SparksqlConfig { get; set; }
+
+    [JsonPropertyName("waitForCompletion")]
+    public bool? WaitForCompletion { get; set; }
 }
 
 /// <summary>
@@ -2067,6 +2073,13 @@ public partial class V1beta2JobStatusAtProviderStatus
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri.</summary>
     [JsonPropertyName("driverControlsFilesUri")]
     public string? DriverControlsFilesUri { get; set; }
@@ -2147,6 +2160,9 @@ public partial class V1beta2JobStatusAtProvider
     /// <summary>The combination of labels configured directly on the resource and default labels configured on the provider.</summary>
     [JsonPropertyName("terraformLabels")]
     public IDictionary<string, string>? TerraformLabels { get; set; }
+
+    [JsonPropertyName("waitForCompletion")]
+    public bool? WaitForCompletion { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -2203,6 +2219,15 @@ public partial class V1beta2JobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2JobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

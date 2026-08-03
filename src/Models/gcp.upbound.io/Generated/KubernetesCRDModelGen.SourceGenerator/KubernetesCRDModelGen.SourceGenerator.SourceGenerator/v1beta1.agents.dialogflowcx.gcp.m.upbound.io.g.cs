@@ -140,6 +140,43 @@ public partial class V1beta1AgentSpecForProviderAdvancedSettings
 }
 
 /// <summary>
+/// Answer feedback collection settings.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecForProviderAnswerFeedbackSettings
+{
+    /// <summary>
+    /// If enabled, end users will be able to provide answer feedback
+    /// to Dialogflow responses. Feature works only if interaction logging is enabled in the Dialogflow agent.
+    /// </summary>
+    [JsonPropertyName("enableAnswerFeedback")]
+    public bool? EnableAnswerFeedback { get; set; }
+}
+
+/// <summary>
+/// Settings for custom client certificates.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecForProviderClientCertificateSettings
+{
+    /// <summary>The name of the SecretManager secret version resource storing the passphrase. &apos;passphrase&apos; should be left unset if the private key is not encrypted. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("passphrase")]
+    public string? Passphrase { get; set; }
+
+    /// <summary>The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("privateKey")]
+    public string? PrivateKey { get; set; }
+
+    /// <summary>The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.</summary>
+    [JsonPropertyName("sslCertificate")]
+    public string? SslCertificate { get; set; }
+}
+
+/// <summary>
 /// Gen App Builder-related agent-level settings.
 /// Structure is documented below.
 /// </summary>
@@ -220,6 +257,24 @@ public partial class V1beta1AgentSpecForProviderGitIntegrationSettings
 }
 
 /// <summary>
+/// Settings for end user personalization.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecForProviderPersonalizationSettings
+{
+    /// <summary>
+    /// Default end user metadata, used when processing DetectIntent requests. Recommended to be filled as a template instead of hard-coded value, for example { &quot;age&quot;: &quot;$session.params.age&quot; }.
+    /// The data will be merged with the QueryParameters.end_user_metadata
+    /// in DetectIntentRequest.query_params during query processing.
+    /// This field uses JSON data as a string. The value provided must be a valid JSON representation documented in Struct.
+    /// </summary>
+    [JsonPropertyName("defaultEndUserMetadata")]
+    public string? DefaultEndUserMetadata { get; set; }
+}
+
+/// <summary>
 /// Settings related to speech recognition.
 /// Structure is documented below.
 /// </summary>
@@ -260,9 +315,23 @@ public partial class V1beta1AgentSpecForProvider
     [JsonPropertyName("advancedSettings")]
     public V1beta1AgentSpecForProviderAdvancedSettings? AdvancedSettings { get; set; }
 
+    /// <summary>
+    /// Answer feedback collection settings.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("answerFeedbackSettings")]
+    public V1beta1AgentSpecForProviderAnswerFeedbackSettings? AnswerFeedbackSettings { get; set; }
+
     /// <summary>The URI of the agent&apos;s avatar. Avatars are used throughout the Dialogflow console and in the self-hosted Web Demo integration.</summary>
     [JsonPropertyName("avatarUri")]
     public string? AvatarUri { get; set; }
+
+    /// <summary>
+    /// Settings for custom client certificates.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSettings")]
+    public V1beta1AgentSpecForProviderClientCertificateSettings? ClientCertificateSettings { get; set; }
 
     /// <summary>
     /// The default language of the agent as a language tag. See Language Support
@@ -282,6 +351,10 @@ public partial class V1beta1AgentSpecForProvider
     /// <summary>The human-readable name of the agent, unique within the location.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
+
+    /// <summary>Enable training multi-lingual models for this agent. These models will be trained on all the languages supported by the agent.</summary>
+    [JsonPropertyName("enableMultiLanguageTraining")]
+    public bool? EnableMultiLanguageTraining { get; set; }
 
     /// <summary>Indicates if automatic spell correction is enabled in detect intent requests.</summary>
     [JsonPropertyName("enableSpellCorrection")]
@@ -314,6 +387,17 @@ public partial class V1beta1AgentSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>Indicates whether the agent is locked for changes. If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].</summary>
+    [JsonPropertyName("locked")]
+    public bool? Locked { get; set; }
+
+    /// <summary>
+    /// Settings for end user personalization.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("personalizationSettings")]
+    public V1beta1AgentSpecForProviderPersonalizationSettings? PersonalizationSettings { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
@@ -331,6 +415,10 @@ public partial class V1beta1AgentSpecForProvider
     /// </summary>
     [JsonPropertyName("speechToTextSettings")]
     public V1beta1AgentSpecForProviderSpeechToTextSettings? SpeechToTextSettings { get; set; }
+
+    /// <summary>Name of the start playbook in this agent. A start playbook will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: projects/. Currently only the default playbook with id &quot;00000000-0000-0000-0000-000000000000&quot; is allowed.</summary>
+    [JsonPropertyName("startPlaybook")]
+    public string? StartPlaybook { get; set; }
 
     /// <summary>The list of all languages supported by this agent (except for the default_language_code).</summary>
     [JsonPropertyName("supportedLanguageCodes")]
@@ -455,6 +543,43 @@ public partial class V1beta1AgentSpecInitProviderAdvancedSettings
 }
 
 /// <summary>
+/// Answer feedback collection settings.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecInitProviderAnswerFeedbackSettings
+{
+    /// <summary>
+    /// If enabled, end users will be able to provide answer feedback
+    /// to Dialogflow responses. Feature works only if interaction logging is enabled in the Dialogflow agent.
+    /// </summary>
+    [JsonPropertyName("enableAnswerFeedback")]
+    public bool? EnableAnswerFeedback { get; set; }
+}
+
+/// <summary>
+/// Settings for custom client certificates.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecInitProviderClientCertificateSettings
+{
+    /// <summary>The name of the SecretManager secret version resource storing the passphrase. &apos;passphrase&apos; should be left unset if the private key is not encrypted. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("passphrase")]
+    public string? Passphrase { get; set; }
+
+    /// <summary>The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("privateKey")]
+    public string? PrivateKey { get; set; }
+
+    /// <summary>The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.</summary>
+    [JsonPropertyName("sslCertificate")]
+    public string? SslCertificate { get; set; }
+}
+
+/// <summary>
 /// Gen App Builder-related agent-level settings.
 /// Structure is documented below.
 /// </summary>
@@ -535,6 +660,24 @@ public partial class V1beta1AgentSpecInitProviderGitIntegrationSettings
 }
 
 /// <summary>
+/// Settings for end user personalization.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentSpecInitProviderPersonalizationSettings
+{
+    /// <summary>
+    /// Default end user metadata, used when processing DetectIntent requests. Recommended to be filled as a template instead of hard-coded value, for example { &quot;age&quot;: &quot;$session.params.age&quot; }.
+    /// The data will be merged with the QueryParameters.end_user_metadata
+    /// in DetectIntentRequest.query_params during query processing.
+    /// This field uses JSON data as a string. The value provided must be a valid JSON representation documented in Struct.
+    /// </summary>
+    [JsonPropertyName("defaultEndUserMetadata")]
+    public string? DefaultEndUserMetadata { get; set; }
+}
+
+/// <summary>
 /// Settings related to speech recognition.
 /// Structure is documented below.
 /// </summary>
@@ -587,9 +730,23 @@ public partial class V1beta1AgentSpecInitProvider
     [JsonPropertyName("advancedSettings")]
     public V1beta1AgentSpecInitProviderAdvancedSettings? AdvancedSettings { get; set; }
 
+    /// <summary>
+    /// Answer feedback collection settings.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("answerFeedbackSettings")]
+    public V1beta1AgentSpecInitProviderAnswerFeedbackSettings? AnswerFeedbackSettings { get; set; }
+
     /// <summary>The URI of the agent&apos;s avatar. Avatars are used throughout the Dialogflow console and in the self-hosted Web Demo integration.</summary>
     [JsonPropertyName("avatarUri")]
     public string? AvatarUri { get; set; }
+
+    /// <summary>
+    /// Settings for custom client certificates.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSettings")]
+    public V1beta1AgentSpecInitProviderClientCertificateSettings? ClientCertificateSettings { get; set; }
 
     /// <summary>
     /// The default language of the agent as a language tag. See Language Support
@@ -609,6 +766,10 @@ public partial class V1beta1AgentSpecInitProvider
     /// <summary>The human-readable name of the agent, unique within the location.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
+
+    /// <summary>Enable training multi-lingual models for this agent. These models will be trained on all the languages supported by the agent.</summary>
+    [JsonPropertyName("enableMultiLanguageTraining")]
+    public bool? EnableMultiLanguageTraining { get; set; }
 
     /// <summary>Indicates if automatic spell correction is enabled in detect intent requests.</summary>
     [JsonPropertyName("enableSpellCorrection")]
@@ -641,6 +802,17 @@ public partial class V1beta1AgentSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>Indicates whether the agent is locked for changes. If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].</summary>
+    [JsonPropertyName("locked")]
+    public bool? Locked { get; set; }
+
+    /// <summary>
+    /// Settings for end user personalization.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("personalizationSettings")]
+    public V1beta1AgentSpecInitProviderPersonalizationSettings? PersonalizationSettings { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
@@ -658,6 +830,10 @@ public partial class V1beta1AgentSpecInitProvider
     /// </summary>
     [JsonPropertyName("speechToTextSettings")]
     public V1beta1AgentSpecInitProviderSpeechToTextSettings? SpeechToTextSettings { get; set; }
+
+    /// <summary>Name of the start playbook in this agent. A start playbook will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: projects/. Currently only the default playbook with id &quot;00000000-0000-0000-0000-000000000000&quot; is allowed.</summary>
+    [JsonPropertyName("startPlaybook")]
+    public string? StartPlaybook { get; set; }
 
     /// <summary>The list of all languages supported by this agent (except for the default_language_code).</summary>
     [JsonPropertyName("supportedLanguageCodes")]
@@ -889,6 +1065,43 @@ public partial class V1beta1AgentStatusAtProviderAdvancedSettings
 }
 
 /// <summary>
+/// Answer feedback collection settings.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentStatusAtProviderAnswerFeedbackSettings
+{
+    /// <summary>
+    /// If enabled, end users will be able to provide answer feedback
+    /// to Dialogflow responses. Feature works only if interaction logging is enabled in the Dialogflow agent.
+    /// </summary>
+    [JsonPropertyName("enableAnswerFeedback")]
+    public bool? EnableAnswerFeedback { get; set; }
+}
+
+/// <summary>
+/// Settings for custom client certificates.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentStatusAtProviderClientCertificateSettings
+{
+    /// <summary>The name of the SecretManager secret version resource storing the passphrase. &apos;passphrase&apos; should be left unset if the private key is not encrypted. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("passphrase")]
+    public string? Passphrase { get; set; }
+
+    /// <summary>The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}</summary>
+    [JsonPropertyName("privateKey")]
+    public string? PrivateKey { get; set; }
+
+    /// <summary>The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.</summary>
+    [JsonPropertyName("sslCertificate")]
+    public string? SslCertificate { get; set; }
+}
+
+/// <summary>
 /// Gen App Builder-related agent-level settings.
 /// Structure is documented below.
 /// </summary>
@@ -946,6 +1159,24 @@ public partial class V1beta1AgentStatusAtProviderGitIntegrationSettings
 }
 
 /// <summary>
+/// Settings for end user personalization.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentStatusAtProviderPersonalizationSettings
+{
+    /// <summary>
+    /// Default end user metadata, used when processing DetectIntent requests. Recommended to be filled as a template instead of hard-coded value, for example { &quot;age&quot;: &quot;$session.params.age&quot; }.
+    /// The data will be merged with the QueryParameters.end_user_metadata
+    /// in DetectIntentRequest.query_params during query processing.
+    /// This field uses JSON data as a string. The value provided must be a valid JSON representation documented in Struct.
+    /// </summary>
+    [JsonPropertyName("defaultEndUserMetadata")]
+    public string? DefaultEndUserMetadata { get; set; }
+}
+
+/// <summary>
 /// Settings related to speech recognition.
 /// Structure is documented below.
 /// </summary>
@@ -986,9 +1217,23 @@ public partial class V1beta1AgentStatusAtProvider
     [JsonPropertyName("advancedSettings")]
     public V1beta1AgentStatusAtProviderAdvancedSettings? AdvancedSettings { get; set; }
 
+    /// <summary>
+    /// Answer feedback collection settings.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("answerFeedbackSettings")]
+    public V1beta1AgentStatusAtProviderAnswerFeedbackSettings? AnswerFeedbackSettings { get; set; }
+
     /// <summary>The URI of the agent&apos;s avatar. Avatars are used throughout the Dialogflow console and in the self-hosted Web Demo integration.</summary>
     [JsonPropertyName("avatarUri")]
     public string? AvatarUri { get; set; }
+
+    /// <summary>
+    /// Settings for custom client certificates.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("clientCertificateSettings")]
+    public V1beta1AgentStatusAtProviderClientCertificateSettings? ClientCertificateSettings { get; set; }
 
     /// <summary>
     /// The default language of the agent as a language tag. See Language Support
@@ -1001,6 +1246,13 @@ public partial class V1beta1AgentStatusAtProvider
     [JsonPropertyName("deleteChatEngineOnDestroy")]
     public bool? DeleteChatEngineOnDestroy { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1008,6 +1260,10 @@ public partial class V1beta1AgentStatusAtProvider
     /// <summary>The human-readable name of the agent, unique within the location.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
+
+    /// <summary>Enable training multi-lingual models for this agent. These models will be trained on all the languages supported by the agent.</summary>
+    [JsonPropertyName("enableMultiLanguageTraining")]
+    public bool? EnableMultiLanguageTraining { get; set; }
 
     /// <summary>Indicates if automatic spell correction is enabled in detect intent requests.</summary>
     [JsonPropertyName("enableSpellCorrection")]
@@ -1044,9 +1300,20 @@ public partial class V1beta1AgentStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>Indicates whether the agent is locked for changes. If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].</summary>
+    [JsonPropertyName("locked")]
+    public bool? Locked { get; set; }
+
     /// <summary>The unique identifier of the agent.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>
+    /// Settings for end user personalization.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("personalizationSettings")]
+    public V1beta1AgentStatusAtProviderPersonalizationSettings? PersonalizationSettings { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -1054,6 +1321,14 @@ public partial class V1beta1AgentStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>A read only boolean field reflecting Zone Isolation status of the agent.</summary>
+    [JsonPropertyName("satisfiesPzi")]
+    public bool? SatisfiesPzi { get; set; }
+
+    /// <summary>A read only boolean field reflecting Zone Separation status of the agent.</summary>
+    [JsonPropertyName("satisfiesPzs")]
+    public bool? SatisfiesPzs { get; set; }
 
     /// <summary>Name of the SecuritySettings reference for the agent. Format: projects//locations//securitySettings/.</summary>
     [JsonPropertyName("securitySettings")]
@@ -1069,6 +1344,10 @@ public partial class V1beta1AgentStatusAtProvider
     /// <summary>Name of the start flow in this agent. A start flow will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: projects//locations//agents//flows/.</summary>
     [JsonPropertyName("startFlow")]
     public string? StartFlow { get; set; }
+
+    /// <summary>Name of the start playbook in this agent. A start playbook will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: projects/. Currently only the default playbook with id &quot;00000000-0000-0000-0000-000000000000&quot; is allowed.</summary>
+    [JsonPropertyName("startPlaybook")]
+    public string? StartPlaybook { get; set; }
 
     /// <summary>The list of all languages supported by this agent (except for the default_language_code).</summary>
     [JsonPropertyName("supportedLanguageCodes")]
@@ -1143,6 +1422,15 @@ public partial class V1beta1AgentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AgentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: regionurlmaps.compute.gcp.m.upbound.io
 spec:
   group: compute.gcp.m.upbound.io
@@ -443,8 +443,7 @@ spec:
                               properties:
                                 requestHeadersToAdd:
                                   description: |-
-                                    Headers to add to a matching request prior to forwarding the request to the
-                                    backendService.
+                                    Headers to add to a matching request before forwarding the request to the backendService.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -456,22 +455,19 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 requestHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the request
-                                    prior to forwarding the request to the backendService.
+                                  description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                   items:
                                     type: string
                                   type: array
                                 responseHeadersToAdd:
                                   description: |-
-                                    Headers to add the response prior to sending the response back to the client.
+                                    Headers to add the response before sending the response back to the client.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -483,16 +479,13 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 responseHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the response
-                                    prior to sending the response back to the client.
+                                  description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                   items:
                                     type: string
                                   type: array
@@ -649,6 +642,63 @@ spec:
                       An optional description of this resource. Provide this property when
                       you create the resource.
                     type: string
+                  headerAction:
+                    description: |-
+                      Specifies changes to request and response headers that need to take effect for the selected backendService.
+                      headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                      headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                      Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                      Structure is documented below.
+                    properties:
+                      requestHeadersToAdd:
+                        description: |-
+                          Headers to add to a matching request before forwarding the request to the backendService.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      requestHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                        items:
+                          type: string
+                        type: array
+                      responseHeadersToAdd:
+                        description: |-
+                          Headers to add the response before sending the response back to the client.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      responseHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   hostRule:
                     description: |-
                       The list of HostRules to use against the URL.
@@ -1111,8 +1161,7 @@ spec:
                                     properties:
                                       requestHeadersToAdd:
                                         description: |-
-                                          Headers to add to a matching request prior to forwarding the request to the
-                                          backendService.
+                                          Headers to add to a matching request before forwarding the request to the backendService.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -1124,22 +1173,19 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       requestHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the request
-                                          prior to forwarding the request to the backendService.
+                                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                         items:
                                           type: string
                                         type: array
                                       responseHeadersToAdd:
                                         description: |-
-                                          Headers to add the response prior to sending the response back to the client.
+                                          Headers to add the response before sending the response back to the client.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -1151,16 +1197,13 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       responseHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the response
-                                          prior to sending the response back to the client.
+                                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                         items:
                                           type: string
                                         type: array
@@ -1313,6 +1356,63 @@ spec:
                         description:
                           description: An optional description of this resource.
                           type: string
+                        headerAction:
+                          description: |-
+                            Specifies changes to request and response headers that need to take effect for the selected backendService.
+                            headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                            headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                            Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                            Structure is documented below.
+                          properties:
+                            requestHeadersToAdd:
+                              description: |-
+                                Headers to add to a matching request before forwarding the request to the backendService.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            requestHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                              items:
+                                type: string
+                              type: array
+                            responseHeadersToAdd:
+                              description: |-
+                                Headers to add the response before sending the response back to the client.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            responseHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                              items:
+                                type: string
+                              type: array
+                          type: object
                         name:
                           description: The name to which this PathMatcher is referred by the HostRule.
                           type: string
@@ -1731,8 +1831,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -1744,22 +1843,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -1771,16 +1867,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -1949,8 +2042,7 @@ spec:
                                 properties:
                                   requestHeadersToAdd:
                                     description: |-
-                                      Headers to add to a matching request prior to forwarding the request to the
-                                      backendService.
+                                      Headers to add to a matching request before forwarding the request to the backendService.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -1962,22 +2054,19 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   requestHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the request
-                                      prior to forwarding the request to the backendService.
+                                    description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                     items:
                                       type: string
                                     type: array
                                   responseHeadersToAdd:
                                     description: |-
-                                      Headers to add the response prior to sending the response back to the client.
+                                      Headers to add the response before sending the response back to the client.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -1989,16 +2078,13 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   responseHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the response
-                                      prior to sending the response back to the client.
+                                    description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                     items:
                                       type: string
                                     type: array
@@ -2454,8 +2540,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -2467,22 +2552,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -2494,16 +2576,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -3166,8 +3245,7 @@ spec:
                               properties:
                                 requestHeadersToAdd:
                                   description: |-
-                                    Headers to add to a matching request prior to forwarding the request to the
-                                    backendService.
+                                    Headers to add to a matching request before forwarding the request to the backendService.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -3179,22 +3257,19 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 requestHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the request
-                                    prior to forwarding the request to the backendService.
+                                  description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                   items:
                                     type: string
                                   type: array
                                 responseHeadersToAdd:
                                   description: |-
-                                    Headers to add the response prior to sending the response back to the client.
+                                    Headers to add the response before sending the response back to the client.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -3206,16 +3281,13 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 responseHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the response
-                                    prior to sending the response back to the client.
+                                  description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                   items:
                                     type: string
                                   type: array
@@ -3372,6 +3444,63 @@ spec:
                       An optional description of this resource. Provide this property when
                       you create the resource.
                     type: string
+                  headerAction:
+                    description: |-
+                      Specifies changes to request and response headers that need to take effect for the selected backendService.
+                      headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                      headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                      Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                      Structure is documented below.
+                    properties:
+                      requestHeadersToAdd:
+                        description: |-
+                          Headers to add to a matching request before forwarding the request to the backendService.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      requestHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                        items:
+                          type: string
+                        type: array
+                      responseHeadersToAdd:
+                        description: |-
+                          Headers to add the response before sending the response back to the client.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      responseHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   hostRule:
                     description: |-
                       The list of HostRules to use against the URL.
@@ -3834,8 +3963,7 @@ spec:
                                     properties:
                                       requestHeadersToAdd:
                                         description: |-
-                                          Headers to add to a matching request prior to forwarding the request to the
-                                          backendService.
+                                          Headers to add to a matching request before forwarding the request to the backendService.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -3847,22 +3975,19 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       requestHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the request
-                                          prior to forwarding the request to the backendService.
+                                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                         items:
                                           type: string
                                         type: array
                                       responseHeadersToAdd:
                                         description: |-
-                                          Headers to add the response prior to sending the response back to the client.
+                                          Headers to add the response before sending the response back to the client.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -3874,16 +3999,13 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       responseHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the response
-                                          prior to sending the response back to the client.
+                                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                         items:
                                           type: string
                                         type: array
@@ -4036,6 +4158,63 @@ spec:
                         description:
                           description: An optional description of this resource.
                           type: string
+                        headerAction:
+                          description: |-
+                            Specifies changes to request and response headers that need to take effect for the selected backendService.
+                            headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                            headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                            Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                            Structure is documented below.
+                          properties:
+                            requestHeadersToAdd:
+                              description: |-
+                                Headers to add to a matching request before forwarding the request to the backendService.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            requestHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                              items:
+                                type: string
+                              type: array
+                            responseHeadersToAdd:
+                              description: |-
+                                Headers to add the response before sending the response back to the client.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            responseHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                              items:
+                                type: string
+                              type: array
+                          type: object
                         name:
                           description: The name to which this PathMatcher is referred by the HostRule.
                           type: string
@@ -4454,8 +4633,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -4467,22 +4645,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -4494,16 +4669,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -4672,8 +4844,7 @@ spec:
                                 properties:
                                   requestHeadersToAdd:
                                     description: |-
-                                      Headers to add to a matching request prior to forwarding the request to the
-                                      backendService.
+                                      Headers to add to a matching request before forwarding the request to the backendService.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -4685,22 +4856,19 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   requestHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the request
-                                      prior to forwarding the request to the backendService.
+                                    description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                     items:
                                       type: string
                                     type: array
                                   responseHeadersToAdd:
                                     description: |-
-                                      Headers to add the response prior to sending the response back to the client.
+                                      Headers to add the response before sending the response back to the client.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -4712,16 +4880,13 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   responseHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the response
-                                      prior to sending the response back to the client.
+                                    description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                     items:
                                       type: string
                                     type: array
@@ -5177,8 +5342,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -5190,22 +5354,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -5217,16 +5378,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -5777,8 +5935,7 @@ spec:
                               properties:
                                 requestHeadersToAdd:
                                   description: |-
-                                    Headers to add to a matching request prior to forwarding the request to the
-                                    backendService.
+                                    Headers to add to a matching request before forwarding the request to the backendService.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -5790,22 +5947,19 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 requestHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the request
-                                    prior to forwarding the request to the backendService.
+                                  description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                   items:
                                     type: string
                                   type: array
                                 responseHeadersToAdd:
                                   description: |-
-                                    Headers to add the response prior to sending the response back to the client.
+                                    Headers to add the response before sending the response back to the client.
                                     Structure is documented below.
                                   items:
                                     properties:
@@ -5817,16 +5971,13 @@ spec:
                                         type: string
                                       replace:
                                         description: |-
-                                          If false, headerValue is appended to any values that already exist for the
-                                          header. If true, headerValue is set for the header, discarding any values that
-                                          were set for that header.
+                                          If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                          The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                                 responseHeadersToRemove:
-                                  description: |-
-                                    A list of header names for headers that need to be removed from the response
-                                    prior to sending the response back to the client.
+                                  description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                   items:
                                     type: string
                                   type: array
@@ -5899,6 +6050,11 @@ spec:
                           This field is required to ensure an empty block is not set. The normal default value is false.
                         type: boolean
                     type: object
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   description:
                     description: |-
                       An optional description of this resource. Provide this property when
@@ -5909,6 +6065,63 @@ spec:
                       Fingerprint of this resource. This field is used internally during
                       updates of this resource.
                     type: string
+                  headerAction:
+                    description: |-
+                      Specifies changes to request and response headers that need to take effect for the selected backendService.
+                      headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                      headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                      Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                      Structure is documented below.
+                    properties:
+                      requestHeadersToAdd:
+                        description: |-
+                          Headers to add to a matching request before forwarding the request to the backendService.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      requestHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                        items:
+                          type: string
+                        type: array
+                      responseHeadersToAdd:
+                        description: |-
+                          Headers to add the response before sending the response back to the client.
+                          Structure is documented below.
+                        items:
+                          properties:
+                            headerName:
+                              description: The name of the header.
+                              type: string
+                            headerValue:
+                              description: The value of the header to add.
+                              type: string
+                            replace:
+                              description: |-
+                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                The default value is false.
+                              type: boolean
+                          type: object
+                        type: array
+                      responseHeadersToRemove:
+                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   hostRule:
                     description: |-
                       The list of HostRules to use against the URL.
@@ -6219,8 +6432,7 @@ spec:
                                     properties:
                                       requestHeadersToAdd:
                                         description: |-
-                                          Headers to add to a matching request prior to forwarding the request to the
-                                          backendService.
+                                          Headers to add to a matching request before forwarding the request to the backendService.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -6232,22 +6444,19 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       requestHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the request
-                                          prior to forwarding the request to the backendService.
+                                        description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                         items:
                                           type: string
                                         type: array
                                       responseHeadersToAdd:
                                         description: |-
-                                          Headers to add the response prior to sending the response back to the client.
+                                          Headers to add the response before sending the response back to the client.
                                           Structure is documented below.
                                         items:
                                           properties:
@@ -6259,16 +6468,13 @@ spec:
                                               type: string
                                             replace:
                                               description: |-
-                                                If false, headerValue is appended to any values that already exist for the
-                                                header. If true, headerValue is set for the header, discarding any values that
-                                                were set for that header.
+                                                If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                The default value is false.
                                               type: boolean
                                           type: object
                                         type: array
                                       responseHeadersToRemove:
-                                        description: |-
-                                          A list of header names for headers that need to be removed from the response
-                                          prior to sending the response back to the client.
+                                        description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                         items:
                                           type: string
                                         type: array
@@ -6342,6 +6548,63 @@ spec:
                         description:
                           description: An optional description of this resource.
                           type: string
+                        headerAction:
+                          description: |-
+                            Specifies changes to request and response headers that need to take effect for the selected backendService.
+                            headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+                            headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+                            Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+                            Structure is documented below.
+                          properties:
+                            requestHeadersToAdd:
+                              description: |-
+                                Headers to add to a matching request before forwarding the request to the backendService.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            requestHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
+                              items:
+                                type: string
+                              type: array
+                            responseHeadersToAdd:
+                              description: |-
+                                Headers to add the response before sending the response back to the client.
+                                Structure is documented below.
+                              items:
+                                properties:
+                                  headerName:
+                                    description: The name of the header.
+                                    type: string
+                                  headerValue:
+                                    description: The value of the header to add.
+                                    type: string
+                                  replace:
+                                    description: |-
+                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                      The default value is false.
+                                    type: boolean
+                                type: object
+                              type: array
+                            responseHeadersToRemove:
+                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
+                              items:
+                                type: string
+                              type: array
+                          type: object
                         name:
                           description: The name to which this PathMatcher is referred by the HostRule.
                           type: string
@@ -6602,8 +6865,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -6615,22 +6877,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -6642,16 +6901,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -6741,8 +6997,7 @@ spec:
                                 properties:
                                   requestHeadersToAdd:
                                     description: |-
-                                      Headers to add to a matching request prior to forwarding the request to the
-                                      backendService.
+                                      Headers to add to a matching request before forwarding the request to the backendService.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -6754,22 +7009,19 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   requestHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the request
-                                      prior to forwarding the request to the backendService.
+                                    description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                     items:
                                       type: string
                                     type: array
                                   responseHeadersToAdd:
                                     description: |-
-                                      Headers to add the response prior to sending the response back to the client.
+                                      Headers to add the response before sending the response back to the client.
                                       Structure is documented below.
                                     items:
                                       properties:
@@ -6781,16 +7033,13 @@ spec:
                                           type: string
                                         replace:
                                           description: |-
-                                            If false, headerValue is appended to any values that already exist for the
-                                            header. If true, headerValue is set for the header, discarding any values that
-                                            were set for that header.
+                                            If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                            The default value is false.
                                           type: boolean
                                       type: object
                                     type: array
                                   responseHeadersToRemove:
-                                    description: |-
-                                      A list of header names for headers that need to be removed from the response
-                                      prior to sending the response back to the client.
+                                    description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                     items:
                                       type: string
                                     type: array
@@ -7246,8 +7495,7 @@ spec:
                                           properties:
                                             requestHeadersToAdd:
                                               description: |-
-                                                Headers to add to a matching request prior to forwarding the request to the
-                                                backendService.
+                                                Headers to add to a matching request before forwarding the request to the backendService.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -7259,22 +7507,19 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             requestHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the request
-                                                prior to forwarding the request to the backendService.
+                                              description: A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.
                                               items:
                                                 type: string
                                               type: array
                                             responseHeadersToAdd:
                                               description: |-
-                                                Headers to add the response prior to sending the response back to the client.
+                                                Headers to add the response before sending the response back to the client.
                                                 Structure is documented below.
                                               items:
                                                 properties:
@@ -7286,16 +7531,13 @@ spec:
                                                     type: string
                                                   replace:
                                                     description: |-
-                                                      If false, headerValue is appended to any values that already exist for the
-                                                      header. If true, headerValue is set for the header, discarding any values that
-                                                      were set for that header.
+                                                      If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+                                                      The default value is false.
                                                     type: boolean
                                                 type: object
                                               type: array
                                             responseHeadersToRemove:
-                                              description: |-
-                                                A list of header names for headers that need to be removed from the response
-                                                prior to sending the response back to the client.
+                                              description: A list of header names for headers that need to be removed from the response before sending the response back to the client.
                                               items:
                                                 type: string
                                               type: array
@@ -7446,6 +7688,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

@@ -230,6 +230,13 @@ public partial class V1beta1ProviderConfigSpecReconciliationPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpec
 {
+    /// <summary>
+    /// BillingProject is the project name (not numerical ID) to attribute API
+    /// requests to. Only used when userProjectOverride is true.
+    /// </summary>
+    [JsonPropertyName("billingProject")]
+    public string? BillingProject { get; set; }
+
     /// <summary>Credentials required to authenticate to this provider.</summary>
     [JsonPropertyName("credentials")]
     public required V1beta1ProviderConfigSpecCredentials Credentials { get; set; }
@@ -245,6 +252,15 @@ public partial class V1beta1ProviderConfigSpec
     /// </summary>
     [JsonPropertyName("reconciliationPolicy")]
     public V1beta1ProviderConfigSpecReconciliationPolicy? ReconciliationPolicy { get; set; }
+
+    /// <summary>
+    /// UserProjectOverride enables attributing API requests to the project in
+    /// billingProject (or, when that is unset, the resource&apos;s project) by
+    /// sending the X-Goog-User-Project header, instead of attributing them to
+    /// the credential&apos;s home project.
+    /// </summary>
+    [JsonPropertyName("userProjectOverride")]
+    public bool? UserProjectOverride { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

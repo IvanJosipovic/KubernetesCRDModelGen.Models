@@ -375,6 +375,153 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcAddr
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Network in compute to populate srcNetworks.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcSecureTagsNameRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcSecureTagsNameRefPolicyResolutionEnum
 {
@@ -552,6 +699,13 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatch
     [JsonPropertyName("destIpRanges")]
     public IList<string>? DestIpRanges { get; set; }
 
+    /// <summary>
+    /// Network context of the traffic destination.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("destNetworkContext")]
+    public string? DestNetworkContext { get; set; }
+
     /// <summary>Region codes whose IP addresses will be used to match for destination of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of dest region codes allowed is 5000.</summary>
     [JsonPropertyName("destRegionCodes")]
     public IList<string>? DestRegionCodes { get; set; }
@@ -587,6 +741,25 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatch
     [JsonPropertyName("srcIpRanges")]
     public IList<string>? SrcIpRanges { get; set; }
 
+    /// <summary>
+    /// Network context of the traffic source.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("srcNetworkContext")]
+    public string? SrcNetworkContext { get; set; }
+
+    /// <summary>Networks of the traffic source. It can be either a full or partial url.</summary>
+    [JsonPropertyName("srcNetworks")]
+    public IList<string>? SrcNetworks { get; set; }
+
+    /// <summary>References to Network in compute to populate srcNetworks.</summary>
+    [JsonPropertyName("srcNetworksRefs")]
+    public IList<V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksRefs>? SrcNetworksRefs { get; set; }
+
+    /// <summary>Selector for a list of Network in compute to populate srcNetworks.</summary>
+    [JsonPropertyName("srcNetworksSelector")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderMatchSrcNetworksSelector? SrcNetworksSelector { get; set; }
+
     /// <summary>Region codes whose IP addresses will be used to match for source of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of source region codes allowed is 5000.</summary>
     [JsonPropertyName("srcRegionCodes")]
     public IList<string>? SrcRegionCodes { get; set; }
@@ -601,6 +774,153 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderMatch
     /// <summary>Names of Network Threat Intelligence lists. The IPs in these lists will be matched against traffic source.</summary>
     [JsonPropertyName("srcThreatIntelligences")]
     public IList<string>? SrcThreatIntelligences { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of ForwardingRule in compute to populate targetForwardingRules.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelectorPolicy? Policy { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -695,6 +1015,22 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProvider
     public string? SecurityProfileGroup { get; set; }
 
     /// <summary>
+    /// A list of forwarding rules to which this rule applies.
+    /// This field allows you to control which load balancers get this rule.
+    /// For example, the following are valid values:
+    /// </summary>
+    [JsonPropertyName("targetForwardingRules")]
+    public IList<string>? TargetForwardingRules { get; set; }
+
+    /// <summary>References to ForwardingRule in compute to populate targetForwardingRules.</summary>
+    [JsonPropertyName("targetForwardingRulesRefs")]
+    public IList<V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesRefs>? TargetForwardingRulesRefs { get; set; }
+
+    /// <summary>Selector for a list of ForwardingRule in compute to populate targetForwardingRules.</summary>
+    [JsonPropertyName("targetForwardingRulesSelector")]
+    public V1beta1NetworkFirewallPolicyRuleSpecForProviderTargetForwardingRulesSelector? TargetForwardingRulesSelector { get; set; }
+
+    /// <summary>
     /// A list of secure tags that controls which instances the firewall rule applies to.
     /// If targetSecureTag are specified, then the firewall rule applies only to instances in the VPC network that have one of those EFFECTIVE secure tags, if all the targetSecureTag are in INEFFECTIVE state, then this rule will be ignored.
     /// targetSecureTag may not be set at the same time as targetServiceAccounts. If neither targetServiceAccounts nor targetSecureTag are specified, the firewall rule applies to all instances on the specified network. Maximum number of target label tags allowed is 256.
@@ -706,6 +1042,15 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecForProvider
     /// <summary>A list of service accounts indicating the sets of instances that are applied with this rule.</summary>
     [JsonPropertyName("targetServiceAccounts")]
     public IList<string>? TargetServiceAccounts { get; set; }
+
+    /// <summary>
+    /// Target types of the firewall policy rule.
+    /// Default value is INSTANCES.
+    /// When target_type is INTERNAL_MANAGED_LB, target_forwarding_rules must be set
+    /// Possible values are: INSTANCES, INTERNAL_MANAGED_LB.
+    /// </summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
 
     /// <summary>
     /// Boolean flag indicating if the traffic should be TLS decrypted.
@@ -879,6 +1224,153 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcAdd
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcAddressGroupsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Network in compute to populate srcNetworks.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -1065,6 +1557,13 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatch
     [JsonPropertyName("destIpRanges")]
     public IList<string>? DestIpRanges { get; set; }
 
+    /// <summary>
+    /// Network context of the traffic destination.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("destNetworkContext")]
+    public string? DestNetworkContext { get; set; }
+
     /// <summary>Region codes whose IP addresses will be used to match for destination of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of dest region codes allowed is 5000.</summary>
     [JsonPropertyName("destRegionCodes")]
     public IList<string>? DestRegionCodes { get; set; }
@@ -1100,6 +1599,25 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatch
     [JsonPropertyName("srcIpRanges")]
     public IList<string>? SrcIpRanges { get; set; }
 
+    /// <summary>
+    /// Network context of the traffic source.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("srcNetworkContext")]
+    public string? SrcNetworkContext { get; set; }
+
+    /// <summary>Networks of the traffic source. It can be either a full or partial url.</summary>
+    [JsonPropertyName("srcNetworks")]
+    public IList<string>? SrcNetworks { get; set; }
+
+    /// <summary>References to Network in compute to populate srcNetworks.</summary>
+    [JsonPropertyName("srcNetworksRefs")]
+    public IList<V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksRefs>? SrcNetworksRefs { get; set; }
+
+    /// <summary>Selector for a list of Network in compute to populate srcNetworks.</summary>
+    [JsonPropertyName("srcNetworksSelector")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatchSrcNetworksSelector? SrcNetworksSelector { get; set; }
+
     /// <summary>Region codes whose IP addresses will be used to match for source of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of source region codes allowed is 5000.</summary>
     [JsonPropertyName("srcRegionCodes")]
     public IList<string>? SrcRegionCodes { get; set; }
@@ -1114,6 +1632,153 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderMatch
     /// <summary>Names of Network Threat Intelligence lists. The IPs in these lists will be matched against traffic source.</summary>
     [JsonPropertyName("srcThreatIntelligences")]
     public IList<string>? SrcThreatIntelligences { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolutionEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolveEnum>))]
+public enum V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of ForwardingRule in compute to populate targetForwardingRules.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelectorPolicy? Policy { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1200,6 +1865,22 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProvider
     public string? SecurityProfileGroup { get; set; }
 
     /// <summary>
+    /// A list of forwarding rules to which this rule applies.
+    /// This field allows you to control which load balancers get this rule.
+    /// For example, the following are valid values:
+    /// </summary>
+    [JsonPropertyName("targetForwardingRules")]
+    public IList<string>? TargetForwardingRules { get; set; }
+
+    /// <summary>References to ForwardingRule in compute to populate targetForwardingRules.</summary>
+    [JsonPropertyName("targetForwardingRulesRefs")]
+    public IList<V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesRefs>? TargetForwardingRulesRefs { get; set; }
+
+    /// <summary>Selector for a list of ForwardingRule in compute to populate targetForwardingRules.</summary>
+    [JsonPropertyName("targetForwardingRulesSelector")]
+    public V1beta1NetworkFirewallPolicyRuleSpecInitProviderTargetForwardingRulesSelector? TargetForwardingRulesSelector { get; set; }
+
+    /// <summary>
     /// A list of secure tags that controls which instances the firewall rule applies to.
     /// If targetSecureTag are specified, then the firewall rule applies only to instances in the VPC network that have one of those EFFECTIVE secure tags, if all the targetSecureTag are in INEFFECTIVE state, then this rule will be ignored.
     /// targetSecureTag may not be set at the same time as targetServiceAccounts. If neither targetServiceAccounts nor targetSecureTag are specified, the firewall rule applies to all instances on the specified network. Maximum number of target label tags allowed is 256.
@@ -1211,6 +1892,15 @@ public partial class V1beta1NetworkFirewallPolicyRuleSpecInitProvider
     /// <summary>A list of service accounts indicating the sets of instances that are applied with this rule.</summary>
     [JsonPropertyName("targetServiceAccounts")]
     public IList<string>? TargetServiceAccounts { get; set; }
+
+    /// <summary>
+    /// Target types of the firewall policy rule.
+    /// Default value is INSTANCES.
+    /// When target_type is INTERNAL_MANAGED_LB, target_forwarding_rules must be set
+    /// Possible values are: INSTANCES, INTERNAL_MANAGED_LB.
+    /// </summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
 
     /// <summary>
     /// Boolean flag indicating if the traffic should be TLS decrypted.
@@ -1458,6 +2148,13 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatusAtProviderMatch
     [JsonPropertyName("destIpRanges")]
     public IList<string>? DestIpRanges { get; set; }
 
+    /// <summary>
+    /// Network context of the traffic destination.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("destNetworkContext")]
+    public string? DestNetworkContext { get; set; }
+
     /// <summary>Region codes whose IP addresses will be used to match for destination of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of dest region codes allowed is 5000.</summary>
     [JsonPropertyName("destRegionCodes")]
     public IList<string>? DestRegionCodes { get; set; }
@@ -1484,6 +2181,17 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatusAtProviderMatch
     /// <summary>CIDR IP address range. Maximum number of source CIDR IP ranges allowed is 5000.</summary>
     [JsonPropertyName("srcIpRanges")]
     public IList<string>? SrcIpRanges { get; set; }
+
+    /// <summary>
+    /// Network context of the traffic source.
+    /// Possible values are: UNSPECIFIED, INTERNET, INTRA_VPC, NON_INTERNET, VPC_NETWORKS.
+    /// </summary>
+    [JsonPropertyName("srcNetworkContext")]
+    public string? SrcNetworkContext { get; set; }
+
+    /// <summary>Networks of the traffic source. It can be either a full or partial url.</summary>
+    [JsonPropertyName("srcNetworks")]
+    public IList<string>? SrcNetworks { get; set; }
 
     /// <summary>Region codes whose IP addresses will be used to match for source of traffic. Should be specified as 2 letter country code defined as per ISO 3166 alpha-2 country codes. ex.&quot;US&quot; Maximum number of source region codes allowed is 5000.</summary>
     [JsonPropertyName("srcRegionCodes")]
@@ -1528,6 +2236,13 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatusAtProvider
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
+
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
 
     /// <summary>An optional description for this resource.</summary>
     [JsonPropertyName("description")]
@@ -1608,6 +2323,14 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatusAtProvider
     public string? SecurityProfileGroup { get; set; }
 
     /// <summary>
+    /// A list of forwarding rules to which this rule applies.
+    /// This field allows you to control which load balancers get this rule.
+    /// For example, the following are valid values:
+    /// </summary>
+    [JsonPropertyName("targetForwardingRules")]
+    public IList<string>? TargetForwardingRules { get; set; }
+
+    /// <summary>
     /// A list of secure tags that controls which instances the firewall rule applies to.
     /// If targetSecureTag are specified, then the firewall rule applies only to instances in the VPC network that have one of those EFFECTIVE secure tags, if all the targetSecureTag are in INEFFECTIVE state, then this rule will be ignored.
     /// targetSecureTag may not be set at the same time as targetServiceAccounts. If neither targetServiceAccounts nor targetSecureTag are specified, the firewall rule applies to all instances on the specified network. Maximum number of target label tags allowed is 256.
@@ -1619,6 +2342,15 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatusAtProvider
     /// <summary>A list of service accounts indicating the sets of instances that are applied with this rule.</summary>
     [JsonPropertyName("targetServiceAccounts")]
     public IList<string>? TargetServiceAccounts { get; set; }
+
+    /// <summary>
+    /// Target types of the firewall policy rule.
+    /// Default value is INSTANCES.
+    /// When target_type is INTERNAL_MANAGED_LB, target_forwarding_rules must be set
+    /// Possible values are: INSTANCES, INTERNAL_MANAGED_LB.
+    /// </summary>
+    [JsonPropertyName("targetType")]
+    public string? TargetType { get; set; }
 
     /// <summary>
     /// Boolean flag indicating if the traffic should be TLS decrypted.
@@ -1682,6 +2414,15 @@ public partial class V1beta1NetworkFirewallPolicyRuleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkFirewallPolicyRuleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

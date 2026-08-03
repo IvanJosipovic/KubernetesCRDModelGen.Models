@@ -650,9 +650,8 @@ public partial class V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeighte
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -671,9 +670,8 @@ public partial class V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeighte
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -690,31 +688,24 @@ public partial class V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeighte
 public partial class V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -1041,6 +1032,80 @@ public partial class V1beta2RegionURLMapSpecForProviderDefaultUrlRedirect
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecForProviderHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecForProviderHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1715,9 +1780,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteAc
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -1736,9 +1800,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteAc
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -1755,31 +1818,24 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteAc
 public partial class V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -2126,6 +2182,80 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherDefaultUrlRedi
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderPathMatcherHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderPathMatcherHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecForProviderPathMatcherHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecForProviderPathMatcherHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecForProviderPathMatcherHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 /// <summary>
@@ -2728,9 +2858,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -2749,9 +2878,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -2768,31 +2896,24 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteA
 public partial class V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -3191,9 +3312,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHead
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -3212,9 +3332,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHead
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -3231,31 +3350,24 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHead
 public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -3822,9 +3934,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRout
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -3843,9 +3954,8 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRout
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -3862,31 +3972,24 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRout
 public partial class V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -4333,6 +4436,16 @@ public partial class V1beta2RegionURLMapSpecForProviderPathMatcher
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapSpecForProviderPathMatcherHeaderAction? HeaderAction { get; set; }
+
     /// <summary>The name to which this PathMatcher is referred by the HostRule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -4587,6 +4700,16 @@ public partial class V1beta2RegionURLMapSpecForProvider
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapSpecForProviderHeaderAction? HeaderAction { get; set; }
 
     /// <summary>
     /// The list of HostRules to use against the URL.
@@ -5220,9 +5343,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeight
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -5241,9 +5363,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeight
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -5260,31 +5381,24 @@ public partial class V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeight
 public partial class V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -5611,6 +5725,80 @@ public partial class V1beta2RegionURLMapSpecInitProviderDefaultUrlRedirect
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecInitProviderHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecInitProviderHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -6285,9 +6473,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -6306,9 +6493,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -6325,31 +6511,24 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteA
 public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -6696,6 +6875,80 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherDefaultUrlRed
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 /// <summary>
@@ -7298,9 +7551,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRoute
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -7319,9 +7571,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRoute
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -7338,31 +7589,24 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRoute
 public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -7761,9 +8005,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHea
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -7782,9 +8025,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHea
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -7801,31 +8043,24 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHea
 public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -8392,9 +8627,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRou
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -8413,9 +8647,8 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRou
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -8432,31 +8665,24 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRou
 public partial class V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -8903,6 +9129,16 @@ public partial class V1beta2RegionURLMapSpecInitProviderPathMatcher
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapSpecInitProviderPathMatcherHeaderAction? HeaderAction { get; set; }
+
     /// <summary>The name to which this PathMatcher is referred by the HostRule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -9169,6 +9405,16 @@ public partial class V1beta2RegionURLMapSpecInitProvider
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapSpecInitProviderHeaderAction? HeaderAction { get; set; }
 
     /// <summary>
     /// The list of HostRules to use against the URL.
@@ -9676,9 +9922,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeight
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -9697,9 +9942,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeight
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -9716,31 +9960,24 @@ public partial class V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeight
 public partial class V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -9912,6 +10149,80 @@ public partial class V1beta2RegionURLMapStatusAtProviderDefaultUrlRedirect
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapStatusAtProviderHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapStatusAtProviderHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -10284,9 +10595,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -10305,9 +10615,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteA
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -10324,31 +10633,24 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteA
 public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -10540,6 +10842,80 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherDefaultUrlRed
     /// </summary>
     [JsonPropertyName("stripQuery")]
     public bool? StripQuery { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderActionRequestHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderActionResponseHeadersToAdd
+{
+    /// <summary>The name of the header.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+
+    /// <summary>The value of the header to add.</summary>
+    [JsonPropertyName("headerValue")]
+    public string? HeaderValue { get; set; }
+
+    /// <summary>
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
+    /// </summary>
+    [JsonPropertyName("replace")]
+    public bool? Replace { get; set; }
+}
+
+/// <summary>
+/// Specifies changes to request and response headers that need to take effect for the selected backendService.
+/// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+/// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+/// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderAction
+{
+    /// <summary>
+    /// Headers to add to a matching request before forwarding the request to the backendService.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeadersToAdd")]
+    public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
+    [JsonPropertyName("requestHeadersToRemove")]
+    public IList<string>? RequestHeadersToRemove { get; set; }
+
+    /// <summary>
+    /// Headers to add the response before sending the response back to the client.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeadersToAdd")]
+    public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
+
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
+    [JsonPropertyName("responseHeadersToRemove")]
+    public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
 /// <summary>
@@ -10840,9 +11216,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRoute
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -10861,9 +11236,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRoute
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -10880,31 +11254,24 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRoute
 public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -11140,9 +11507,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHea
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -11161,9 +11527,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHea
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -11180,31 +11545,24 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHea
 public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -11771,9 +12129,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRou
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -11792,9 +12149,8 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRou
     public string? HeaderValue { get; set; }
 
     /// <summary>
-    /// If false, headerValue is appended to any values that already exist for the
-    /// header. If true, headerValue is set for the header, discarding any values that
-    /// were set for that header.
+    /// If false, headerValue is appended to any values that already exist for the header. If true, headerValue is set for the header, discarding any values that were set for that header.
+    /// The default value is false.
     /// </summary>
     [JsonPropertyName("replace")]
     public bool? Replace { get; set; }
@@ -11811,31 +12167,24 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRou
 public partial class V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
-    /// Headers to add to a matching request prior to forwarding the request to the
-    /// backendService.
+    /// Headers to add to a matching request before forwarding the request to the backendService.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("requestHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd>? RequestHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the request
-    /// prior to forwarding the request to the backendService.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the request before forwarding the request to the backendService.</summary>
     [JsonPropertyName("requestHeadersToRemove")]
     public IList<string>? RequestHeadersToRemove { get; set; }
 
     /// <summary>
-    /// Headers to add the response prior to sending the response back to the client.
+    /// Headers to add the response before sending the response back to the client.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("responseHeadersToAdd")]
     public IList<V1beta2RegionURLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd>? ResponseHeadersToAdd { get; set; }
 
-    /// <summary>
-    /// A list of header names for headers that need to be removed from the response
-    /// prior to sending the response back to the client.
-    /// </summary>
+    /// <summary>A list of header names for headers that need to be removed from the response before sending the response back to the client.</summary>
     [JsonPropertyName("responseHeadersToRemove")]
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
@@ -12119,6 +12468,16 @@ public partial class V1beta2RegionURLMapStatusAtProviderPathMatcher
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapStatusAtProviderPathMatcherHeaderAction? HeaderAction { get; set; }
+
     /// <summary>The name to which this PathMatcher is referred by the HostRule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -12209,6 +12568,13 @@ public partial class V1beta2RegionURLMapStatusAtProvider
     public V1beta2RegionURLMapStatusAtProviderDefaultUrlRedirect? DefaultUrlRedirect { get; set; }
 
     /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
+    /// <summary>
     /// An optional description of this resource. Provide this property when
     /// you create the resource.
     /// </summary>
@@ -12221,6 +12587,16 @@ public partial class V1beta2RegionURLMapStatusAtProvider
     /// </summary>
     [JsonPropertyName("fingerprint")]
     public string? Fingerprint { get; set; }
+
+    /// <summary>
+    /// Specifies changes to request and response headers that need to take effect for the selected backendService.
+    /// headerAction specified here take effect before headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
+    /// headerAction is not supported for load balancers that have their loadBalancingScheme set to EXTERNAL.
+    /// Not supported when the URL map is bound to a target gRPC proxy that has validateForProxyless field set to true.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("headerAction")]
+    public V1beta2RegionURLMapStatusAtProviderHeaderAction? HeaderAction { get; set; }
 
     /// <summary>
     /// The list of HostRules to use against the URL.
@@ -12325,6 +12701,15 @@ public partial class V1beta2RegionURLMapStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2RegionURLMapStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

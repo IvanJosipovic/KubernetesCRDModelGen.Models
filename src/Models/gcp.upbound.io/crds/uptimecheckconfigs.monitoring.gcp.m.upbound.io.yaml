@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.20.0
   name: uptimecheckconfigs.monitoring.gcp.m.upbound.io
 spec:
   group: monitoring.gcp.m.upbound.io
@@ -125,8 +125,8 @@ spec:
                         properties:
                           passwordSecretRef:
                             description: |-
-                              A LocalSecretKeySelector is a reference to a secret key
-                              in the same namespace with the referencing object.
+                              The password to authenticate.
+                              Note: This property is sensitive and will not be displayed in the plan.
                             properties:
                               key:
                                 type: string
@@ -137,12 +137,8 @@ spec:
                             - key
                             - name
                             type: object
-                          passwordWo:
-                            type: string
-                          passwordWoVersion:
-                            type: string
                           username:
-                            description: A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].
+                            description: The username to authenticate.
                             type: string
                         type: object
                       body:
@@ -533,8 +529,8 @@ spec:
                         properties:
                           passwordSecretRef:
                             description: |-
-                              A LocalSecretKeySelector is a reference to a secret key
-                              in the same namespace with the referencing object.
+                              The password to authenticate.
+                              Note: This property is sensitive and will not be displayed in the plan.
                             properties:
                               key:
                                 type: string
@@ -545,12 +541,8 @@ spec:
                             - key
                             - name
                             type: object
-                          passwordWo:
-                            type: string
-                          passwordWoVersion:
-                            type: string
                           username:
-                            description: A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].
+                            description: The username to authenticate.
                             type: string
                         type: object
                       body:
@@ -965,6 +957,11 @@ spec:
                           type: string
                       type: object
                     type: array
+                  deletionPolicy:
+                    description: |-
+                      Defaults to DELETE.
+                      When set to "DELETE", deleting the resource is allowed.
+                    type: string
                   displayName:
                     description: A human-friendly name for the uptime check configuration. The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however, uniqueness is not enforced.
                     type: string
@@ -994,12 +991,8 @@ spec:
                           The authentication information using username and password. Optional when creating an HTTP check; defaults to empty. Do not use with other authentication fields.
                           Structure is documented below.
                         properties:
-                          passwordWo:
-                            type: string
-                          passwordWoVersion:
-                            type: string
                           username:
-                            description: A unique resource name for this UptimeCheckConfig. The format is projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].
+                            description: The username to authenticate.
                             type: string
                         type: object
                       body:
@@ -1204,6 +1197,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

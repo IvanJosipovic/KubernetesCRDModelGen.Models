@@ -210,7 +210,7 @@ public partial class V1beta1TagBindingSpecForProvider
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }
 
-    /// <summary>The TagValue of the TagBinding. Must be of the form tagValues/456.</summary>
+    /// <summary>The TagValue of the TagBinding. Must be either in id format tagValues/{tag-value-id}, or namespaced format {parent-id}/{tag-key-short-name}/{tag-value-short-name}.</summary>
     [JsonPropertyName("tagValue")]
     public string? TagValue { get; set; }
 
@@ -390,7 +390,7 @@ public partial class V1beta1TagBindingSpecInitProvider
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }
 
-    /// <summary>The TagValue of the TagBinding. Must be of the form tagValues/456.</summary>
+    /// <summary>The TagValue of the TagBinding. Must be either in id format tagValues/{tag-value-id}, or namespaced format {parent-id}/{tag-key-short-name}/{tag-value-short-name}.</summary>
     [JsonPropertyName("tagValue")]
     public string? TagValue { get; set; }
 
@@ -590,11 +590,18 @@ public partial class V1beta1TagBindingSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TagBindingStatusAtProvider
 {
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>an identifier for the resource with format tagBindings/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The generated id for the TagBinding. This is a string of the form: tagBindings/{full-resource-name}/{tag-value-name}</summary>
+    /// <summary>The generated id for the TagBinding. This is a string of the form tagBindings/{full-resource-name}/{tag-value-name} or tagBindings/{full-resource-name}/{tag-key-name}</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -602,7 +609,7 @@ public partial class V1beta1TagBindingStatusAtProvider
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }
 
-    /// <summary>The TagValue of the TagBinding. Must be of the form tagValues/456.</summary>
+    /// <summary>The TagValue of the TagBinding. Must be either in id format tagValues/{tag-value-id}, or namespaced format {parent-id}/{tag-key-short-name}/{tag-value-short-name}.</summary>
     [JsonPropertyName("tagValue")]
     public string? TagValue { get; set; }
 }
@@ -661,6 +668,15 @@ public partial class V1beta1TagBindingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TagBindingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

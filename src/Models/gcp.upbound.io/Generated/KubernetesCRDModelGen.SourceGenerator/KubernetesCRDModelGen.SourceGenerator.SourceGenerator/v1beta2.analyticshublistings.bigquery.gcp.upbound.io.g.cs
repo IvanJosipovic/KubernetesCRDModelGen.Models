@@ -209,6 +209,153 @@ public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetDat
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum>))]
+public enum V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum>))]
+public enum V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Routine in bigquery to populate routine.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum>))]
+public enum V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum>))]
+public enum V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Routine in bigquery to populate routine.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum>))]
 public enum V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum
 {
@@ -353,6 +500,18 @@ public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResources
 {
+    /// <summary>Format: For routine: projects/{projectId}/datasets/{datasetId}/routines/{routineId} Example:&quot;projects/test_project/datasets/test_dataset/routines/test_routine&quot;</summary>
+    [JsonPropertyName("routine")]
+    public string? Routine { get; set; }
+
+    /// <summary>Reference to a Routine in bigquery to populate routine.</summary>
+    [JsonPropertyName("routineRef")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineRef? RoutineRef { get; set; }
+
+    /// <summary>Selector for a Routine in bigquery to populate routine.</summary>
+    [JsonPropertyName("routineSelector")]
+    public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesRoutineSelector? RoutineSelector { get; set; }
+
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
@@ -385,6 +544,10 @@ public partial class V1beta2AnalyticsHubListingSpecForProviderBigqueryDataset
     /// <summary>Selector for a Dataset in bigquery to populate dataset.</summary>
     [JsonPropertyName("datasetSelector")]
     public V1beta2AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelector? DatasetSelector { get; set; }
+
+    /// <summary>A list of regions where the publisher has created shared dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 
     /// <summary>
     /// Resource in this dataset that is selectively shared. This field is required for data clean room exchanges.
@@ -1031,6 +1194,153 @@ public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetDa
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum>))]
+public enum V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum>))]
+public enum V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Routine in bigquery to populate routine.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum>))]
+public enum V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum>))]
+public enum V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Routine in bigquery to populate routine.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum>))]
 public enum V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum
 {
@@ -1175,6 +1485,18 @@ public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResources
 {
+    /// <summary>Format: For routine: projects/{projectId}/datasets/{datasetId}/routines/{routineId} Example:&quot;projects/test_project/datasets/test_dataset/routines/test_routine&quot;</summary>
+    [JsonPropertyName("routine")]
+    public string? Routine { get; set; }
+
+    /// <summary>Reference to a Routine in bigquery to populate routine.</summary>
+    [JsonPropertyName("routineRef")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineRef? RoutineRef { get; set; }
+
+    /// <summary>Selector for a Routine in bigquery to populate routine.</summary>
+    [JsonPropertyName("routineSelector")]
+    public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesRoutineSelector? RoutineSelector { get; set; }
+
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
@@ -1207,6 +1529,10 @@ public partial class V1beta2AnalyticsHubListingSpecInitProviderBigqueryDataset
     /// <summary>Selector for a Dataset in bigquery to populate dataset.</summary>
     [JsonPropertyName("datasetSelector")]
     public V1beta2AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelector? DatasetSelector { get; set; }
+
+    /// <summary>A list of regions where the publisher has created shared dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 
     /// <summary>
     /// Resource in this dataset that is selectively shared. This field is required for data clean room exchanges.
@@ -1733,8 +2059,37 @@ public partial class V1beta2AnalyticsHubListingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AnalyticsHubListingStatusAtProviderBigqueryDatasetEffectiveReplicas
+{
+    /// <summary>The name of the location this data exchange listing.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Output-only. Indicates that this replica is the primary replica.
+    /// Possible values: PRIMARY_STATE_UNSPECIFIED, PRIMARY_REPLICA
+    /// </summary>
+    [JsonPropertyName("primaryState")]
+    public string? PrimaryState { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Output-only. Assigned by Analytics Hub based on real BigQuery replication state.
+    /// Possible values: REPLICA_STATE_UNSPECIFIED, READY_TO_USE, UNAVAILABLE
+    /// </summary>
+    [JsonPropertyName("replicaState")]
+    public string? ReplicaState { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AnalyticsHubListingStatusAtProviderBigqueryDatasetSelectedResources
 {
+    /// <summary>Format: For routine: projects/{projectId}/datasets/{datasetId}/routines/{routineId} Example:&quot;projects/test_project/datasets/test_dataset/routines/test_routine&quot;</summary>
+    [JsonPropertyName("routine")]
+    public string? Routine { get; set; }
+
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
     [JsonPropertyName("table")]
     public string? Table { get; set; }
@@ -1751,6 +2106,19 @@ public partial class V1beta2AnalyticsHubListingStatusAtProviderBigqueryDataset
     /// <summary>Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123</summary>
     [JsonPropertyName("dataset")]
     public string? Dataset { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Server owned effective state of replicas. Contains both primary and secondary replicas.
+    /// Each replica includes a system-computed (output-only) state and primary designation.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("effectiveReplicas")]
+    public IList<V1beta2AnalyticsHubListingStatusAtProviderBigqueryDatasetEffectiveReplicas>? EffectiveReplicas { get; set; }
+
+    /// <summary>A list of regions where the publisher has created shared dataset replicas.</summary>
+    [JsonPropertyName("replicaLocations")]
+    public IList<string>? ReplicaLocations { get; set; }
 
     /// <summary>
     /// Resource in this dataset that is selectively shared. This field is required for data clean room exchanges.
@@ -1912,6 +2280,13 @@ public partial class V1beta2AnalyticsHubListingStatusAtProvider
     [JsonPropertyName("deleteCommercial")]
     public bool? DeleteCommercial { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>Short description of the listing. The description must not contain Unicode non-characters and C0 and C1 control codes except tabs (HT), new lines (LF), carriage returns (CR), and page breaks (FF).</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -2046,6 +2421,15 @@ public partial class V1beta2AnalyticsHubListingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2AnalyticsHubListingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

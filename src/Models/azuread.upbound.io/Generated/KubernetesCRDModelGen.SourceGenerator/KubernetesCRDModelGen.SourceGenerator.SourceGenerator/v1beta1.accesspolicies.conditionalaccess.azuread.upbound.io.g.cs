@@ -63,11 +63,29 @@ public enum V1beta1AccessPolicySpecDeletionPolicyEnum
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicySpecForProviderConditionsApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecForProviderConditionsApplications
 {
     /// <summary>A list of application IDs explicitly excluded from the policy. Can also be set to Office365.</summary>
     [JsonPropertyName("excludedApplications")]
     public IList<string>? ExcludedApplications { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicySpecForProviderConditionsApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.</summary>
     [JsonPropertyName("includedApplications")]
@@ -403,11 +421,29 @@ public partial class V1beta1AccessPolicySpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicySpecInitProviderConditionsApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecInitProviderConditionsApplications
 {
     /// <summary>A list of application IDs explicitly excluded from the policy. Can also be set to Office365.</summary>
     [JsonPropertyName("excludedApplications")]
     public IList<string>? ExcludedApplications { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicySpecInitProviderConditionsApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.</summary>
     [JsonPropertyName("includedApplications")]
@@ -945,11 +981,29 @@ public partial class V1beta1AccessPolicySpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicyStatusAtProviderConditionsApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicyStatusAtProviderConditionsApplications
 {
     /// <summary>A list of application IDs explicitly excluded from the policy. Can also be set to Office365.</summary>
     [JsonPropertyName("excludedApplications")]
     public IList<string>? ExcludedApplications { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicyStatusAtProviderConditionsApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of application IDs the policy applies to, unless explicitly excluded (in excluded_applications). Can also be set to All, None or Office365. Cannot be specified with included_user_actions. One of included_applications or included_user_actions must be specified.</summary>
     [JsonPropertyName("includedApplications")]
@@ -1349,6 +1403,15 @@ public partial class V1beta1AccessPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccessPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

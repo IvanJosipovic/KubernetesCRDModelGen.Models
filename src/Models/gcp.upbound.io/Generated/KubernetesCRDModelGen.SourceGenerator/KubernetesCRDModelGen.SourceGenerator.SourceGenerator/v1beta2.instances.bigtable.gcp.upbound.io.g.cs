@@ -140,6 +140,10 @@ public partial class V1beta2InstanceSpecForProvider
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
+    /// <summary>The edition of the Bigtable instance. One of &quot;ENTERPRISE&quot; or &quot;ENTERPRISE_PLUS&quot;. Defaults to &quot;ENTERPRISE&quot;. Details can be found at the Cloud Bigtable editions page.</summary>
+    [JsonPropertyName("edition")]
+    public string? Edition { get; set; }
+
     /// <summary>Deleting a BigTable instance can be blocked if any backups are present in the instance. Defaults to false.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
@@ -154,7 +158,7 @@ public partial class V1beta2InstanceSpecForProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -164,6 +168,10 @@ public partial class V1beta2InstanceSpecForProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>A set of key/value label pairs to assign to the resource. Tags must follow the requirements at create and manage tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>Autoscaling config for the cluster, contains the following arguments:</summary>
@@ -263,6 +271,10 @@ public partial class V1beta2InstanceSpecInitProvider
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
+    /// <summary>The edition of the Bigtable instance. One of &quot;ENTERPRISE&quot; or &quot;ENTERPRISE_PLUS&quot;. Defaults to &quot;ENTERPRISE&quot;. Details can be found at the Cloud Bigtable editions page.</summary>
+    [JsonPropertyName("edition")]
+    public string? Edition { get; set; }
+
     /// <summary>Deleting a BigTable instance can be blocked if any backups are present in the instance. Defaults to false.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
@@ -277,7 +289,7 @@ public partial class V1beta2InstanceSpecInitProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -287,6 +299,10 @@ public partial class V1beta2InstanceSpecInitProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>A set of key/value label pairs to assign to the resource. Tags must follow the requirements at create and manage tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -553,6 +569,13 @@ public partial class V1beta2InstanceStatusAtProvider
     [JsonPropertyName("cluster")]
     public IList<V1beta2InstanceStatusAtProviderCluster>? Cluster { get; set; }
 
+    /// <summary>
+    /// Defaults to &quot;DELETE&quot;.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
+    [JsonPropertyName("deletionPolicy")]
+    public string? DeletionPolicy { get; set; }
+
     /// <summary>When the field is set to false, deleting the instance is allowed.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
@@ -560,6 +583,10 @@ public partial class V1beta2InstanceStatusAtProvider
     /// <summary>The human-readable display name of the Bigtable instance. Defaults to the instance name.</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
+
+    /// <summary>The edition of the Bigtable instance. One of &quot;ENTERPRISE&quot; or &quot;ENTERPRISE_PLUS&quot;. Defaults to &quot;ENTERPRISE&quot;. Details can be found at the Cloud Bigtable editions page.</summary>
+    [JsonPropertyName("edition")]
+    public string? Edition { get; set; }
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
@@ -582,7 +609,7 @@ public partial class V1beta2InstanceStatusAtProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
+    /// <summary>A set of key/value label pairs to assign to the resource. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
 
@@ -592,6 +619,10 @@ public partial class V1beta2InstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>A set of key/value label pairs to assign to the resource. Tags must follow the requirements at create and manage tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>The combination of labels configured directly on the resource and default labels configured on the provider.</summary>
     [JsonPropertyName("terraformLabels")]
@@ -652,6 +683,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
