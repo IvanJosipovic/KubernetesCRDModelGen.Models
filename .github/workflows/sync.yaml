@@ -51,7 +51,7 @@ jobs:
           }
 
       - name: Build
-        run: dotnet build -c Release
+        run: dotnet build -c Release --tl:off -clp:ErrorsOnly
 
       - name: Validate Cs
         shell: pwsh
