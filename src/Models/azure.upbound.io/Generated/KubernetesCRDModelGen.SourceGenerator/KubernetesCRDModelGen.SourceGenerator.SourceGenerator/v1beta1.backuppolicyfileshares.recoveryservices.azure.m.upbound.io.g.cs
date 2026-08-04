@@ -470,6 +470,10 @@ public partial class V1beta1BackupPolicyFileShareSpecForProvider
     [JsonPropertyName("backup")]
     public V1beta1BackupPolicyFileShareSpecForProviderBackup? Backup { get; set; }
 
+    /// <summary>The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.</summary>
+    [JsonPropertyName("backupTier")]
+    public string? BackupTier { get; set; }
+
     /// <summary>Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("recoveryVaultName")]
     public string? RecoveryVaultName { get; set; }
@@ -509,6 +513,10 @@ public partial class V1beta1BackupPolicyFileShareSpecForProvider
     /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
     [JsonPropertyName("retentionYearly")]
     public V1beta1BackupPolicyFileShareSpecForProviderRetentionYearly? RetentionYearly { get; set; }
+
+    /// <summary>The number of days to retain the snapshots. Defaults to 0.</summary>
+    [JsonPropertyName("snapshotRetentionInDays")]
+    public double? SnapshotRetentionInDays { get; set; }
 
     /// <summary>Specifies the timezone. the possible values are defined here. Defaults to UTC</summary>
     [JsonPropertyName("timezone")]
@@ -651,6 +659,10 @@ public partial class V1beta1BackupPolicyFileShareSpecInitProvider
     [JsonPropertyName("backup")]
     public V1beta1BackupPolicyFileShareSpecInitProviderBackup? Backup { get; set; }
 
+    /// <summary>The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.</summary>
+    [JsonPropertyName("backupTier")]
+    public string? BackupTier { get; set; }
+
     /// <summary>Configures the policy daily retention as documented in the retention_daily block below.</summary>
     [JsonPropertyName("retentionDaily")]
     public V1beta1BackupPolicyFileShareSpecInitProviderRetentionDaily? RetentionDaily { get; set; }
@@ -666,6 +678,10 @@ public partial class V1beta1BackupPolicyFileShareSpecInitProvider
     /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
     [JsonPropertyName("retentionYearly")]
     public V1beta1BackupPolicyFileShareSpecInitProviderRetentionYearly? RetentionYearly { get; set; }
+
+    /// <summary>The number of days to retain the snapshots. Defaults to 0.</summary>
+    [JsonPropertyName("snapshotRetentionInDays")]
+    public double? SnapshotRetentionInDays { get; set; }
 
     /// <summary>Specifies the timezone. the possible values are defined here. Defaults to UTC</summary>
     [JsonPropertyName("timezone")]
@@ -903,6 +919,10 @@ public partial class V1beta1BackupPolicyFileShareStatusAtProvider
     [JsonPropertyName("backup")]
     public V1beta1BackupPolicyFileShareStatusAtProviderBackup? Backup { get; set; }
 
+    /// <summary>The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.</summary>
+    [JsonPropertyName("backupTier")]
+    public string? BackupTier { get; set; }
+
     /// <summary>The ID of the Azure File Share Backup Policy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -930,6 +950,10 @@ public partial class V1beta1BackupPolicyFileShareStatusAtProvider
     /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
     [JsonPropertyName("retentionYearly")]
     public V1beta1BackupPolicyFileShareStatusAtProviderRetentionYearly? RetentionYearly { get; set; }
+
+    /// <summary>The number of days to retain the snapshots. Defaults to 0.</summary>
+    [JsonPropertyName("snapshotRetentionInDays")]
+    public double? SnapshotRetentionInDays { get; set; }
 
     /// <summary>Specifies the timezone. the possible values are defined here. Defaults to UTC</summary>
     [JsonPropertyName("timezone")]
@@ -990,6 +1014,15 @@ public partial class V1beta1BackupPolicyFileShareStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BackupPolicyFileShareStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

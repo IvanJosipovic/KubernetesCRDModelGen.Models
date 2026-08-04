@@ -33,7 +33,7 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages the association between a NAT Gateway and a Public IP Prefix.
+        description: NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages a NAT Gateway Public IP Prefix association.
         properties:
           apiVersion:
             description: |-
@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   publicIpPrefixId:
-                    description: The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                   publicIpPrefixIdRef:
                     description: Reference to a PublicIPPrefix in network to populate publicIpPrefixId.
@@ -314,7 +314,7 @@ spec:
                         type: object
                     type: object
                   publicIpPrefixId:
-                    description: The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                   publicIpPrefixIdRef:
                     description: Reference to a PublicIPPrefix in network to populate publicIpPrefixId.
@@ -487,7 +487,7 @@ spec:
                     description: The ID of the NAT Gateway. Changing this forces a new resource to be created.
                     type: string
                   publicIpPrefixId:
-                    description: The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                 type: object
               conditions:
@@ -534,6 +534,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

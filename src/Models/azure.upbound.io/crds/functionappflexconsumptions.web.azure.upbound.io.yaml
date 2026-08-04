@@ -916,7 +916,7 @@ spec:
                     description: The Azure Region where the Function App should exist. Changing this forces a new Function App to be created.
                     type: string
                   maximumInstanceCount:
-                    description: The number of workers this function app can scale out to.
+                    description: The number of workers this function app can scale out to. The supported value are from 1 to 1000.
                     type: number
                   publicNetworkAccessEnabled:
                     description: Should public network access be enabled for the Function App. Defaults to true.
@@ -1001,7 +1001,7 @@ spec:
                     description: The Runtime of the Linux Function App. Possible values are node, dotnet-isolated, powershell, python, java and custom.
                     type: string
                   runtimeVersion:
-                    description: The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.
+                    description: The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.
                     type: string
                   servicePlanId:
                     description: |-
@@ -2895,7 +2895,7 @@ spec:
                     description: The Azure Region where the Function App should exist. Changing this forces a new Function App to be created.
                     type: string
                   maximumInstanceCount:
-                    description: The number of workers this function app can scale out to.
+                    description: The number of workers this function app can scale out to. The supported value are from 1 to 1000.
                     type: number
                   publicNetworkAccessEnabled:
                     description: Should public network access be enabled for the Function App. Defaults to true.
@@ -2904,7 +2904,7 @@ spec:
                     description: The Runtime of the Linux Function App. Possible values are node, dotnet-isolated, powershell, python, java and custom.
                     type: string
                   runtimeVersion:
-                    description: The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.
+                    description: The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.
                     type: string
                   servicePlanId:
                     description: |-
@@ -4731,7 +4731,7 @@ spec:
                     description: The Azure Region where the Function App should exist. Changing this forces a new Function App to be created.
                     type: string
                   maximumInstanceCount:
-                    description: The number of workers this function app can scale out to.
+                    description: The number of workers this function app can scale out to. The supported value are from 1 to 1000.
                     type: number
                   outboundIpAddressList:
                     description: A list of outbound IP addresses. For example ["52.23.25.3", "52.143.43.12"]
@@ -4759,7 +4759,7 @@ spec:
                     description: The Runtime of the Linux Function App. Possible values are node, dotnet-isolated, powershell, python, java and custom.
                     type: string
                   runtimeVersion:
-                    description: The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.
+                    description: The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.
                     type: string
                   servicePlanId:
                     description: |-
@@ -5150,6 +5150,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

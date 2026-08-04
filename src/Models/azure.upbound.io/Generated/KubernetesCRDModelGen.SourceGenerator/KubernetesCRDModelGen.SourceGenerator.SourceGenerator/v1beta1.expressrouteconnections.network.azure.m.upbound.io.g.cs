@@ -390,7 +390,6 @@ public partial class V1beta1ExpressRouteConnectionSpecForProvider
     [JsonPropertyName("authorizationKey")]
     public string? AuthorizationKey { get; set; }
 
-    /// <summary>Is Internet security enabled for this Express Route Connection?</summary>
     [JsonPropertyName("enableInternetSecurity")]
     public bool? EnableInternetSecurity { get; set; }
 
@@ -421,6 +420,10 @@ public partial class V1beta1ExpressRouteConnectionSpecForProvider
     /// <summary>Selector for a ExpressRouteGateway in network to populate expressRouteGatewayId.</summary>
     [JsonPropertyName("expressRouteGatewayIdSelector")]
     public V1beta1ExpressRouteConnectionSpecForProviderExpressRouteGatewayIdSelector? ExpressRouteGatewayIdSelector { get; set; }
+
+    /// <summary>Is Internet security enabled for this Express Route Connection? Defaults to false.</summary>
+    [JsonPropertyName("internetSecurityEnabled")]
+    public bool? InternetSecurityEnabled { get; set; }
 
     [JsonPropertyName("privateLinkFastPathEnabled")]
     public bool? PrivateLinkFastPathEnabled { get; set; }
@@ -645,7 +648,6 @@ public partial class V1beta1ExpressRouteConnectionSpecInitProvider
     [JsonPropertyName("authorizationKey")]
     public string? AuthorizationKey { get; set; }
 
-    /// <summary>Is Internet security enabled for this Express Route Connection?</summary>
     [JsonPropertyName("enableInternetSecurity")]
     public bool? EnableInternetSecurity { get; set; }
 
@@ -664,6 +666,10 @@ public partial class V1beta1ExpressRouteConnectionSpecInitProvider
     /// <summary>Specified whether Fast Path is enabled for Virtual Wan Firewall Hub. Defaults to false.</summary>
     [JsonPropertyName("expressRouteGatewayBypassEnabled")]
     public bool? ExpressRouteGatewayBypassEnabled { get; set; }
+
+    /// <summary>Is Internet security enabled for this Express Route Connection? Defaults to false.</summary>
+    [JsonPropertyName("internetSecurityEnabled")]
+    public bool? InternetSecurityEnabled { get; set; }
 
     [JsonPropertyName("privateLinkFastPathEnabled")]
     public bool? PrivateLinkFastPathEnabled { get; set; }
@@ -828,7 +834,6 @@ public partial class V1beta1ExpressRouteConnectionStatusAtProvider
     [JsonPropertyName("authorizationKey")]
     public string? AuthorizationKey { get; set; }
 
-    /// <summary>Is Internet security enabled for this Express Route Connection?</summary>
     [JsonPropertyName("enableInternetSecurity")]
     public bool? EnableInternetSecurity { get; set; }
 
@@ -847,6 +852,10 @@ public partial class V1beta1ExpressRouteConnectionStatusAtProvider
     /// <summary>The ID of the Express Route Connection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Is Internet security enabled for this Express Route Connection? Defaults to false.</summary>
+    [JsonPropertyName("internetSecurityEnabled")]
+    public bool? InternetSecurityEnabled { get; set; }
 
     [JsonPropertyName("privateLinkFastPathEnabled")]
     public bool? PrivateLinkFastPathEnabled { get; set; }
@@ -914,6 +923,15 @@ public partial class V1beta1ExpressRouteConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ExpressRouteConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

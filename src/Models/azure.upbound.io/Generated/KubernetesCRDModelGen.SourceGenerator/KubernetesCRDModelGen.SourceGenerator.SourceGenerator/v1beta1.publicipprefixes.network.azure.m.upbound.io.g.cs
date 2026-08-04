@@ -223,11 +223,11 @@ public partial class V1beta1PublicIPPrefixSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1PublicIPPrefixSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The SKU of the Public IP Prefix. Accepted values are Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP Prefix. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
-    /// <summary>The SKU Tier that should be used for the Public IP. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU Tier that should be used for the Public IP Prefix. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuTier")]
     public string? SkuTier { get; set; }
 
@@ -272,11 +272,11 @@ public partial class V1beta1PublicIPPrefixSpecInitProvider
     [JsonPropertyName("prefixLength")]
     public double? PrefixLength { get; set; }
 
-    /// <summary>The SKU of the Public IP Prefix. Accepted values are Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP Prefix. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
-    /// <summary>The SKU Tier that should be used for the Public IP. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU Tier that should be used for the Public IP Prefix. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuTier")]
     public string? SkuTier { get; set; }
 
@@ -428,11 +428,11 @@ public partial class V1beta1PublicIPPrefixStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The SKU of the Public IP Prefix. Accepted values are Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP Prefix. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
-    /// <summary>The SKU Tier that should be used for the Public IP. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU Tier that should be used for the Public IP Prefix. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuTier")]
     public string? SkuTier { get; set; }
 
@@ -499,6 +499,15 @@ public partial class V1beta1PublicIPPrefixStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PublicIPPrefixStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

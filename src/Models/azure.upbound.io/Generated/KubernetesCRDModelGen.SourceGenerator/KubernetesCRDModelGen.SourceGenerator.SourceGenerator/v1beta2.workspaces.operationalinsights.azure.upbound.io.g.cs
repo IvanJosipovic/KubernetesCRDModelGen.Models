@@ -263,7 +263,7 @@ public partial class V1beta2WorkspaceSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.</summary>
+    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000, 5000, 10000, 25000, and 50000.</summary>
     [JsonPropertyName("reservationCapacityInGbPerDay")]
     public double? ReservationCapacityInGbPerDay { get; set; }
 
@@ -365,7 +365,7 @@ public partial class V1beta2WorkspaceSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.</summary>
+    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000, 5000, 10000, 25000, and 50000.</summary>
     [JsonPropertyName("reservationCapacityInGbPerDay")]
     public double? ReservationCapacityInGbPerDay { get; set; }
 
@@ -638,7 +638,7 @@ public partial class V1beta2WorkspaceStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.</summary>
+    /// <summary>The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000, 5000, 10000, 25000, and 50000.</summary>
     [JsonPropertyName("reservationCapacityInGbPerDay")]
     public double? ReservationCapacityInGbPerDay { get; set; }
 
@@ -717,6 +717,15 @@ public partial class V1beta2WorkspaceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WorkspaceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

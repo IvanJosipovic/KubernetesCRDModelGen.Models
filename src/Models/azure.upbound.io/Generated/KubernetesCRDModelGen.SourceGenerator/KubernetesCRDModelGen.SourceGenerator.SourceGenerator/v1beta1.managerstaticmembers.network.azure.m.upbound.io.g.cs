@@ -362,7 +362,7 @@ public partial class V1beta1ManagerStaticMemberSpecForProvider
     [JsonPropertyName("networkGroupIdSelector")]
     public V1beta1ManagerStaticMemberSpecForProviderNetworkGroupIdSelector? NetworkGroupIdSelector { get; set; }
 
-    /// <summary>Specifies the Resource ID of the Virtual Network using as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
+    /// <summary>Specifies the Resource ID of the Virtual Network or Subnet used as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
     [JsonPropertyName("targetVirtualNetworkId")]
     public string? TargetVirtualNetworkId { get; set; }
 
@@ -546,7 +546,7 @@ public partial class V1beta1ManagerStaticMemberSpecInitProviderTargetVirtualNetw
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerStaticMemberSpecInitProvider
 {
-    /// <summary>Specifies the Resource ID of the Virtual Network using as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
+    /// <summary>Specifies the Resource ID of the Virtual Network or Subnet used as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
     [JsonPropertyName("targetVirtualNetworkId")]
     public string? TargetVirtualNetworkId { get; set; }
 
@@ -682,7 +682,7 @@ public partial class V1beta1ManagerStaticMemberStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the Resource ID of the Virtual Network using as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
+    /// <summary>Specifies the Resource ID of the Virtual Network or Subnet used as the Static Member. Changing this forces a new Network Manager Static Member to be created.</summary>
     [JsonPropertyName("targetVirtualNetworkId")]
     public string? TargetVirtualNetworkId { get; set; }
 }
@@ -741,6 +741,15 @@ public partial class V1beta1ManagerStaticMemberStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ManagerStaticMemberStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

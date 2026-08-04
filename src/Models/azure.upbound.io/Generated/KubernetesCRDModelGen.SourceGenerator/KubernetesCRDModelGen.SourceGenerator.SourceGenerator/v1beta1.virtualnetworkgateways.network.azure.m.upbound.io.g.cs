@@ -685,6 +685,19 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef? SecretSecretRef { get; set; }
 }
 
+/// <summary>The secret used by the Radius server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef1
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRevokedCertificate
@@ -765,8 +778,8 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public string? RadiusServerAddress { get; set; }
 
     /// <summary>The secret used by the Radius server.</summary>
-    [JsonPropertyName("radiusServerSecret")]
-    public string? RadiusServerSecret { get; set; }
+    [JsonPropertyName("radiusServerSecretSecretRef")]
+    public V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef1? RadiusServerSecretSecretRef { get; set; }
 
     /// <summary>One or more revoked_certificate blocks which are defined below.</summary>
     [JsonPropertyName("revokedCertificate")]
@@ -805,6 +818,10 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProvider
     [JsonPropertyName("activeActive")]
     public bool? ActiveActive { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Is BGP Route Translation for NAT enabled? Defaults to false.</summary>
     [JsonPropertyName("bgpRouteTranslationForNatEnabled")]
     public bool? BgpRouteTranslationForNatEnabled { get; set; }
@@ -829,7 +846,6 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProvider
     [JsonPropertyName("edgeZone")]
     public string? EdgeZone { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -848,6 +864,14 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProvider
     /// <summary>The location/region where the Virtual Network Gateway is located. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>The maximum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("maximumScaleUnit")]
+    public double? MaximumScaleUnit { get; set; }
+
+    /// <summary>The minimum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("minimumScaleUnit")]
+    public double? MinimumScaleUnit { get; set; }
 
     /// <summary>One or more policy_group blocks as defined below.</summary>
     [JsonPropertyName("policyGroup")]
@@ -873,7 +897,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance SKU is only supported by an ExpressRoute gateway.</summary>
+    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGwScale, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance and ErGwScale SKU is only supported by an ExpressRoute gateway.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -1392,6 +1416,19 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public required V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef SecretSecretRef { get; set; }
 }
 
+/// <summary>The secret used by the Radius server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef1
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRevokedCertificate
@@ -1472,8 +1509,8 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public string? RadiusServerAddress { get; set; }
 
     /// <summary>The secret used by the Radius server.</summary>
-    [JsonPropertyName("radiusServerSecret")]
-    public string? RadiusServerSecret { get; set; }
+    [JsonPropertyName("radiusServerSecretSecretRef")]
+    public V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef1? RadiusServerSecretSecretRef { get; set; }
 
     /// <summary>One or more revoked_certificate blocks which are defined below.</summary>
     [JsonPropertyName("revokedCertificate")]
@@ -1524,6 +1561,10 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
     [JsonPropertyName("activeActive")]
     public bool? ActiveActive { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Is BGP Route Translation for NAT enabled? Defaults to false.</summary>
     [JsonPropertyName("bgpRouteTranslationForNatEnabled")]
     public bool? BgpRouteTranslationForNatEnabled { get; set; }
@@ -1548,7 +1589,6 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
     [JsonPropertyName("edgeZone")]
     public string? EdgeZone { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -1568,6 +1608,14 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>The maximum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("maximumScaleUnit")]
+    public double? MaximumScaleUnit { get; set; }
+
+    /// <summary>The minimum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("minimumScaleUnit")]
+    public double? MinimumScaleUnit { get; set; }
+
     /// <summary>One or more policy_group blocks as defined below.</summary>
     [JsonPropertyName("policyGroup")]
     public IList<V1beta1VirtualNetworkGatewaySpecInitProviderPolicyGroup>? PolicyGroup { get; set; }
@@ -1580,7 +1628,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
     [JsonPropertyName("remoteVnetTrafficEnabled")]
     public bool? RemoteVnetTrafficEnabled { get; set; }
 
-    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance SKU is only supported by an ExpressRoute gateway.</summary>
+    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGwScale, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance and ErGwScale SKU is only supported by an ExpressRoute gateway.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -1950,10 +1998,6 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     [JsonPropertyName("radiusServerAddress")]
     public string? RadiusServerAddress { get; set; }
 
-    /// <summary>The secret used by the Radius server.</summary>
-    [JsonPropertyName("radiusServerSecret")]
-    public string? RadiusServerSecret { get; set; }
-
     /// <summary>One or more revoked_certificate blocks which are defined below.</summary>
     [JsonPropertyName("revokedCertificate")]
     public IList<V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRevokedCertificate>? RevokedCertificate { get; set; }
@@ -1991,6 +2035,10 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
     [JsonPropertyName("activeActive")]
     public bool? ActiveActive { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Is BGP Route Translation for NAT enabled? Defaults to false.</summary>
     [JsonPropertyName("bgpRouteTranslationForNatEnabled")]
     public bool? BgpRouteTranslationForNatEnabled { get; set; }
@@ -2015,7 +2063,6 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
     [JsonPropertyName("edgeZone")]
     public string? EdgeZone { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) will be enabled for this Virtual Network Gateway. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -2039,6 +2086,14 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>The maximum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("maximumScaleUnit")]
+    public double? MaximumScaleUnit { get; set; }
+
+    /// <summary>The minimum scale unit for the Virtual Network Gateway, possible values are 1 through 40.</summary>
+    [JsonPropertyName("minimumScaleUnit")]
+    public double? MinimumScaleUnit { get; set; }
+
     /// <summary>One or more policy_group blocks as defined below.</summary>
     [JsonPropertyName("policyGroup")]
     public IList<V1beta1VirtualNetworkGatewayStatusAtProviderPolicyGroup>? PolicyGroup { get; set; }
@@ -2055,7 +2110,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance SKU is only supported by an ExpressRoute gateway.</summary>
+    /// <summary>Configuration of the size and capacity of the virtual network gateway. Valid options are Basic, Standard, HighPerformance, UltraPerformance, ErGwScale, ErGw1AZ, ErGw2AZ, ErGw3AZ, VpnGw1, VpnGw2, VpnGw3, VpnGw4,VpnGw5, VpnGw1AZ, VpnGw2AZ, VpnGw3AZ,VpnGw4AZ and VpnGw5AZ and depend on the type, vpn_type and generation arguments. A PolicyBased gateway only supports the Basic SKU. Further, the UltraPerformance and ErGwScale SKU is only supported by an ExpressRoute gateway.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -2134,6 +2189,15 @@ public partial class V1beta1VirtualNetworkGatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VirtualNetworkGatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

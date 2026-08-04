@@ -366,7 +366,7 @@ public partial class V1beta1MSSQLManagedInstanceTransparentDataEncryptionSpecFor
     [JsonPropertyName("keyVaultKeyIdSelector")]
     public V1beta1MSSQLManagedInstanceTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelector? KeyVaultKeyIdSelector { get; set; }
 
-    /// <summary>To use customer managed keys from a managed HSM, provide the Managed HSM Key ID. To use service managed keys, omit this field.</summary>
+    /// <summary>The ID of the MSSQL encryption protector</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -570,7 +570,7 @@ public partial class V1beta1MSSQLManagedInstanceTransparentDataEncryptionSpecIni
     [JsonPropertyName("keyVaultKeyIdSelector")]
     public V1beta1MSSQLManagedInstanceTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelector? KeyVaultKeyIdSelector { get; set; }
 
-    /// <summary>To use customer managed keys from a managed HSM, provide the Managed HSM Key ID. To use service managed keys, omit this field.</summary>
+    /// <summary>The ID of the MSSQL encryption protector</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 }
@@ -698,7 +698,7 @@ public partial class V1beta1MSSQLManagedInstanceTransparentDataEncryptionStatusA
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
-    /// <summary>To use customer managed keys from a managed HSM, provide the Managed HSM Key ID. To use service managed keys, omit this field.</summary>
+    /// <summary>The ID of the MSSQL encryption protector</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -761,6 +761,15 @@ public partial class V1beta1MSSQLManagedInstanceTransparentDataEncryptionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MSSQLManagedInstanceTransparentDataEncryptionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

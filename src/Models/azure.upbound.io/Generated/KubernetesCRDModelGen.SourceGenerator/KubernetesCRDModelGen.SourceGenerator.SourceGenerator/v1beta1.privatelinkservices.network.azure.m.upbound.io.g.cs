@@ -195,11 +195,11 @@ public partial class V1beta1PrivateLinkServiceSpecForProviderNatIpConfigurationS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateLinkServiceSpecForProviderNatIpConfiguration
 {
-    /// <summary>Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name which should be used for the NAT IP Configuration.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Is this is the Primary IP Configuration? Changing this forces a new resource to be created.</summary>
+    /// <summary>Is this is the Primary IP Configuration?</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
 
@@ -391,7 +391,6 @@ public partial class V1beta1PrivateLinkServiceSpecForProvider
     [JsonPropertyName("destinationIpAddress")]
     public string? DestinationIpAddress { get; set; }
 
-    /// <summary>Should the Private Link Service support the Proxy Protocol?</summary>
     [JsonPropertyName("enableProxyProtocol")]
     public bool? EnableProxyProtocol { get; set; }
 
@@ -410,6 +409,10 @@ public partial class V1beta1PrivateLinkServiceSpecForProvider
     /// <summary>One or more (up to 8) nat_ip_configuration block as defined below.</summary>
     [JsonPropertyName("natIpConfiguration")]
     public IList<V1beta1PrivateLinkServiceSpecForProviderNatIpConfiguration>? NatIpConfiguration { get; set; }
+
+    /// <summary>Should the Private Link Service support the Proxy Protocol? Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolEnabled")]
+    public bool? ProxyProtocolEnabled { get; set; }
 
     /// <summary>The name of the Resource Group where the Private Link Service should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
@@ -591,11 +594,11 @@ public partial class V1beta1PrivateLinkServiceSpecInitProviderNatIpConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateLinkServiceSpecInitProviderNatIpConfiguration
 {
-    /// <summary>Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name which should be used for the NAT IP Configuration.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Is this is the Primary IP Configuration? Changing this forces a new resource to be created.</summary>
+    /// <summary>Is this is the Primary IP Configuration?</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
 
@@ -644,7 +647,6 @@ public partial class V1beta1PrivateLinkServiceSpecInitProvider
     [JsonPropertyName("destinationIpAddress")]
     public string? DestinationIpAddress { get; set; }
 
-    /// <summary>Should the Private Link Service support the Proxy Protocol?</summary>
     [JsonPropertyName("enableProxyProtocol")]
     public bool? EnableProxyProtocol { get; set; }
 
@@ -663,6 +665,10 @@ public partial class V1beta1PrivateLinkServiceSpecInitProvider
     /// <summary>One or more (up to 8) nat_ip_configuration block as defined below.</summary>
     [JsonPropertyName("natIpConfiguration")]
     public IList<V1beta1PrivateLinkServiceSpecInitProviderNatIpConfiguration>? NatIpConfiguration { get; set; }
+
+    /// <summary>Should the Private Link Service support the Proxy Protocol? Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolEnabled")]
+    public bool? ProxyProtocolEnabled { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -784,11 +790,11 @@ public partial class V1beta1PrivateLinkServiceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateLinkServiceStatusAtProviderNatIpConfiguration
 {
-    /// <summary>Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name which should be used for the NAT IP Configuration.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Is this is the Primary IP Configuration? Changing this forces a new resource to be created.</summary>
+    /// <summary>Is this is the Primary IP Configuration?</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
 
@@ -821,7 +827,6 @@ public partial class V1beta1PrivateLinkServiceStatusAtProvider
     [JsonPropertyName("destinationIpAddress")]
     public string? DestinationIpAddress { get; set; }
 
-    /// <summary>Should the Private Link Service support the Proxy Protocol?</summary>
     [JsonPropertyName("enableProxyProtocol")]
     public bool? EnableProxyProtocol { get; set; }
 
@@ -843,6 +848,10 @@ public partial class V1beta1PrivateLinkServiceStatusAtProvider
     /// <summary>One or more (up to 8) nat_ip_configuration block as defined below.</summary>
     [JsonPropertyName("natIpConfiguration")]
     public IList<V1beta1PrivateLinkServiceStatusAtProviderNatIpConfiguration>? NatIpConfiguration { get; set; }
+
+    /// <summary>Should the Private Link Service support the Proxy Protocol? Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolEnabled")]
+    public bool? ProxyProtocolEnabled { get; set; }
 
     /// <summary>The name of the Resource Group where the Private Link Service should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
@@ -911,6 +920,15 @@ public partial class V1beta1PrivateLinkServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PrivateLinkServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

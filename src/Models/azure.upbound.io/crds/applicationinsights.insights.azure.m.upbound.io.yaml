@@ -64,10 +64,11 @@ spec:
                     description: Specifies the Application Insights component daily data volume cap in GB. Defaults to 100.
                     type: number
                   dailyDataCapNotificationsDisabled:
-                    description: Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.
+                    type: boolean
+                  dailyDataCapNotificationsEnabled:
+                    description: Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.
                     type: boolean
                   disableIpMasking:
-                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.
                     type: boolean
                   forceCustomerStorageForProfiler:
                     description: Should the Application Insights component force users to create their own storage account for profiling? Defaults to false.
@@ -78,8 +79,13 @@ spec:
                   internetQueryEnabled:
                     description: Should the Application Insights component support querying over the Public Internet? Defaults to true.
                     type: boolean
+                  ipMaskingEnabled:
+                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.
+                    type: boolean
                   localAuthenticationDisabled:
-                    description: Disable Non-Azure AD based Auth. Defaults to false.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether Non-Azure AD based Auth is enabled. Defaults to true.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -281,10 +287,11 @@ spec:
                     description: Specifies the Application Insights component daily data volume cap in GB. Defaults to 100.
                     type: number
                   dailyDataCapNotificationsDisabled:
-                    description: Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.
+                    type: boolean
+                  dailyDataCapNotificationsEnabled:
+                    description: Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.
                     type: boolean
                   disableIpMasking:
-                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.
                     type: boolean
                   forceCustomerStorageForProfiler:
                     description: Should the Application Insights component force users to create their own storage account for profiling? Defaults to false.
@@ -295,8 +302,13 @@ spec:
                   internetQueryEnabled:
                     description: Should the Application Insights component support querying over the Public Internet? Defaults to true.
                     type: boolean
+                  ipMaskingEnabled:
+                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.
+                    type: boolean
                   localAuthenticationDisabled:
-                    description: Disable Non-Azure AD based Auth. Defaults to false.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether Non-Azure AD based Auth is enabled. Defaults to true.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -474,10 +486,11 @@ spec:
                     description: Specifies the Application Insights component daily data volume cap in GB. Defaults to 100.
                     type: number
                   dailyDataCapNotificationsDisabled:
-                    description: Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.
+                    type: boolean
+                  dailyDataCapNotificationsEnabled:
+                    description: Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.
                     type: boolean
                   disableIpMasking:
-                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.
                     type: boolean
                   forceCustomerStorageForProfiler:
                     description: Should the Application Insights component force users to create their own storage account for profiling? Defaults to false.
@@ -491,8 +504,13 @@ spec:
                   internetQueryEnabled:
                     description: Should the Application Insights component support querying over the Public Internet? Defaults to true.
                     type: boolean
+                  ipMaskingEnabled:
+                    description: By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.
+                    type: boolean
                   localAuthenticationDisabled:
-                    description: Disable Non-Azure AD based Auth. Defaults to false.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether Non-Azure AD based Auth is enabled. Defaults to true.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -560,6 +578,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

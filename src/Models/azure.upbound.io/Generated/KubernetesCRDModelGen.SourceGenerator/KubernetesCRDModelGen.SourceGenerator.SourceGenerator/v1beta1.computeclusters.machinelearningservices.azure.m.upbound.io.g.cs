@@ -223,14 +223,27 @@ public partial class V1beta1ComputeClusterSpecForProviderScaleSettings
     public string? ScaleDownNodesAfterIdleDuration { get; set; }
 }
 
+/// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ComputeClusterSpecForProviderSshAdminPasswordSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>Credentials for an administrator user account that will be created on each compute node. A ssh block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeClusterSpecForProviderSsh
 {
     /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
+    [JsonPropertyName("adminPasswordSecretRef")]
+    public V1beta1ComputeClusterSpecForProviderSshAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
@@ -660,14 +673,27 @@ public partial class V1beta1ComputeClusterSpecInitProviderScaleSettings
     public string? ScaleDownNodesAfterIdleDuration { get; set; }
 }
 
+/// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ComputeClusterSpecInitProviderSshAdminPasswordSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>Credentials for an administrator user account that will be created on each compute node. A ssh block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeClusterSpecInitProviderSsh
 {
     /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
+    [JsonPropertyName("adminPasswordSecretRef")]
+    public V1beta1ComputeClusterSpecInitProviderSshAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
@@ -1074,10 +1100,6 @@ public partial class V1beta1ComputeClusterStatusAtProviderScaleSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeClusterStatusAtProviderSsh
 {
-    /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
-
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
@@ -1206,6 +1228,15 @@ public partial class V1beta1ComputeClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

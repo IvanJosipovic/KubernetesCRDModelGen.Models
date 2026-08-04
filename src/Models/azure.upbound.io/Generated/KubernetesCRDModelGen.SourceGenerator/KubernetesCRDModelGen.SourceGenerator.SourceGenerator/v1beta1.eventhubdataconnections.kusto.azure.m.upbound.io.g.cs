@@ -903,6 +903,10 @@ public partial class V1beta1EventHubDataConnectionSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1EventHubDataConnectionSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from Event Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the Event Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the target table name used for the message ingestion. Table must exist before resource is created.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
@@ -1286,6 +1290,10 @@ public partial class V1beta1EventHubDataConnectionSpecInitProvider
     [JsonPropertyName("mappingRuleName")]
     public string? MappingRuleName { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from Event Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the Event Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the target table name used for the message ingestion. Table must exist before resource is created.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
@@ -1454,6 +1462,10 @@ public partial class V1beta1EventHubDataConnectionStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from Event Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the Event Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the target table name used for the message ingestion. Table must exist before resource is created.</summary>
     [JsonPropertyName("tableName")]
     public string? TableName { get; set; }
@@ -1513,6 +1525,15 @@ public partial class V1beta1EventHubDataConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EventHubDataConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

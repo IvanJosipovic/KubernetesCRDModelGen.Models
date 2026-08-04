@@ -105,7 +105,7 @@ public partial class V1beta2PointToSiteVPNGatewaySpecForProviderConnectionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PointToSiteVPNGatewaySpecForProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -678,7 +678,7 @@ public partial class V1beta2PointToSiteVPNGatewaySpecInitProviderConnectionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PointToSiteVPNGatewaySpecInitProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -1287,7 +1287,7 @@ public partial class V1beta2PointToSiteVPNGatewayStatusAtProviderConnectionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PointToSiteVPNGatewayStatusAtProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -1403,6 +1403,15 @@ public partial class V1beta2PointToSiteVPNGatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2PointToSiteVPNGatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -430,7 +430,7 @@ public partial class V1beta1AccountSpecForProviderNetworkAclsVirtualNetworkRules
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountSpecForProviderNetworkAclsVirtualNetworkRules
 {
-    /// <summary>Whether ignore missing vnet service endpoint or not. Default to false.</summary>
+    /// <summary>Whether ignore missing vnet service endpoint or not. Defaults to false.</summary>
     [JsonPropertyName("ignoreMissingVnetServiceEndpoint")]
     public bool? IgnoreMissingVnetServiceEndpoint { get; set; }
 
@@ -1154,7 +1154,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("customQuestionAnsweringSearchServiceKeySecretRef")]
     public V1beta1AccountSpecForProviderCustomQuestionAnsweringSearchServiceKeySecretRef? CustomQuestionAnsweringSearchServiceKeySecretRef { get; set; }
 
-    /// <summary>The subdomain name used for token-based authentication. This property is required when network_acls is specified. This property is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/.  Changing this forces a new resource to be created.</summary>
+    /// <summary>The subdomain name used for Entra ID token-based authentication. This attribute is required when network_acls is specified. This attribute is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/. This can be specified during creation or added later, but once set changing this forces a new resource to be created.</summary>
     [JsonPropertyName("customSubdomainName")]
     public string? CustomSubdomainName { get; set; }
 
@@ -1162,7 +1162,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("customerManagedKey")]
     public IList<V1beta1AccountSpecForProviderCustomerManagedKey>? CustomerManagedKey { get; set; }
 
-    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account.</summary>
+    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account. This attribute cannot be set when the kind is OpenAI or AIServices.</summary>
     [JsonPropertyName("dynamicThrottlingEnabled")]
     public bool? DynamicThrottlingEnabled { get; set; }
 
@@ -1174,7 +1174,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("identity")]
     public IList<V1beta1AccountSpecForProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -1214,7 +1214,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -1238,7 +1238,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1AccountSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are F0, F1, S0, S, S1, S2, S3, S4, S5, S6, P0, P1, P2, E0 and DC0.</summary>
+    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are C2, C3, C4, D3, DC0, E0, F0, F1, P0, P1, P2, S, S0, S1, S2, S3, S4, S5 and S6.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -1621,7 +1621,7 @@ public partial class V1beta1AccountSpecInitProviderNetworkAclsVirtualNetworkRule
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountSpecInitProviderNetworkAclsVirtualNetworkRules
 {
-    /// <summary>Whether ignore missing vnet service endpoint or not. Default to false.</summary>
+    /// <summary>Whether ignore missing vnet service endpoint or not. Defaults to false.</summary>
     [JsonPropertyName("ignoreMissingVnetServiceEndpoint")]
     public bool? IgnoreMissingVnetServiceEndpoint { get; set; }
 
@@ -2202,7 +2202,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("customQuestionAnsweringSearchServiceKeySecretRef")]
     public V1beta1AccountSpecInitProviderCustomQuestionAnsweringSearchServiceKeySecretRef? CustomQuestionAnsweringSearchServiceKeySecretRef { get; set; }
 
-    /// <summary>The subdomain name used for token-based authentication. This property is required when network_acls is specified. This property is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/.  Changing this forces a new resource to be created.</summary>
+    /// <summary>The subdomain name used for Entra ID token-based authentication. This attribute is required when network_acls is specified. This attribute is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/. This can be specified during creation or added later, but once set changing this forces a new resource to be created.</summary>
     [JsonPropertyName("customSubdomainName")]
     public string? CustomSubdomainName { get; set; }
 
@@ -2210,7 +2210,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("customerManagedKey")]
     public IList<V1beta1AccountSpecInitProviderCustomerManagedKey>? CustomerManagedKey { get; set; }
 
-    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account.</summary>
+    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account. This attribute cannot be set when the kind is OpenAI or AIServices.</summary>
     [JsonPropertyName("dynamicThrottlingEnabled")]
     public bool? DynamicThrottlingEnabled { get; set; }
 
@@ -2222,7 +2222,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("identity")]
     public IList<V1beta1AccountSpecInitProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -2262,7 +2262,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -2274,7 +2274,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("qnaRuntimeEndpoint")]
     public string? QnaRuntimeEndpoint { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are F0, F1, S0, S, S1, S2, S3, S4, S5, S6, P0, P1, P2, E0 and DC0.</summary>
+    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are C2, C3, C4, D3, DC0, E0, F0, F1, P0, P1, P2, S, S0, S1, S2, S3, S4, S5 and S6.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -2518,7 +2518,7 @@ public partial class V1beta1AccountStatusAtProviderIdentity
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountStatusAtProviderNetworkAclsVirtualNetworkRules
 {
-    /// <summary>Whether ignore missing vnet service endpoint or not. Default to false.</summary>
+    /// <summary>Whether ignore missing vnet service endpoint or not. Defaults to false.</summary>
     [JsonPropertyName("ignoreMissingVnetServiceEndpoint")]
     public bool? IgnoreMissingVnetServiceEndpoint { get; set; }
 
@@ -2586,7 +2586,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("customQuestionAnsweringSearchServiceId")]
     public string? CustomQuestionAnsweringSearchServiceId { get; set; }
 
-    /// <summary>The subdomain name used for token-based authentication. This property is required when network_acls is specified. This property is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/.  Changing this forces a new resource to be created.</summary>
+    /// <summary>The subdomain name used for Entra ID token-based authentication. This attribute is required when network_acls is specified. This attribute is also required when using the OpenAI service with libraries which assume the Azure OpenAI endpoint is a subdomain on https://openai.azure.com/, eg. https://&lt;custom_subdomain_name&gt;.openai.azure.com/. This can be specified during creation or added later, but once set changing this forces a new resource to be created.</summary>
     [JsonPropertyName("customSubdomainName")]
     public string? CustomSubdomainName { get; set; }
 
@@ -2594,7 +2594,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("customerManagedKey")]
     public IList<V1beta1AccountStatusAtProviderCustomerManagedKey>? CustomerManagedKey { get; set; }
 
-    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account.</summary>
+    /// <summary>Whether to enable the dynamic throttling for this Cognitive Service Account. This attribute cannot be set when the kind is OpenAI or AIServices.</summary>
     [JsonPropertyName("dynamicThrottlingEnabled")]
     public bool? DynamicThrottlingEnabled { get; set; }
 
@@ -2614,7 +2614,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("identity")]
     public IList<V1beta1AccountStatusAtProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -2654,7 +2654,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -2670,7 +2670,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are F0, F1, S0, S, S1, S2, S3, S4, S5, S6, P0, P1, P2, E0 and DC0.</summary>
+    /// <summary>Specifies the SKU Name for this Cognitive Service Account. Possible values are C2, C3, C4, D3, DC0, E0, F0, F1, P0, P1, P2, S, S0, S1, S2, S3, S4, S5 and S6.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -2739,6 +2739,15 @@ public partial class V1beta1AccountStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

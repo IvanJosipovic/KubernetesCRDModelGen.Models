@@ -234,6 +234,10 @@ public partial class V1beta1LinkedServiceMySQLSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.</summary>
+    [JsonPropertyName("driverVersion")]
+    public string? DriverVersion { get; set; }
+
     /// <summary>The integration runtime reference to associate with the Data Factory Linked Service MySQL.</summary>
     [JsonPropertyName("integrationRuntimeName")]
     public string? IntegrationRuntimeName { get; set; }
@@ -274,6 +278,10 @@ public partial class V1beta1LinkedServiceMySQLSpecInitProvider
     /// <summary>The description for the Data Factory Linked Service MySQL.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.</summary>
+    [JsonPropertyName("driverVersion")]
+    public string? DriverVersion { get; set; }
 
     /// <summary>The integration runtime reference to associate with the Data Factory Linked Service MySQL.</summary>
     [JsonPropertyName("integrationRuntimeName")]
@@ -491,6 +499,10 @@ public partial class V1beta1LinkedServiceMySQLStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.</summary>
+    [JsonPropertyName("driverVersion")]
+    public string? DriverVersion { get; set; }
+
     /// <summary>The ID of the Data Factory MySQL Linked Service.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -558,6 +570,15 @@ public partial class V1beta1LinkedServiceMySQLStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinkedServiceMySQLStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

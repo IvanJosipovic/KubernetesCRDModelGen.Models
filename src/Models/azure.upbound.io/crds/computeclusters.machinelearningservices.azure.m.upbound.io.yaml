@@ -183,9 +183,18 @@ spec:
                   ssh:
                     description: Credentials for an administrator user account that will be created on each compute node. A ssh block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.
                     properties:
-                      adminPassword:
+                      adminPasswordSecretRef:
                         description: Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.
-                        type: string
+                        properties:
+                          key:
+                            type: string
+                          name:
+                            description: Name of the secret.
+                            type: string
+                        required:
+                        - key
+                        - name
+                        type: object
                       adminUsername:
                         description: Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.
                         type: string
@@ -430,9 +439,18 @@ spec:
                   ssh:
                     description: Credentials for an administrator user account that will be created on each compute node. A ssh block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.
                     properties:
-                      adminPassword:
+                      adminPasswordSecretRef:
                         description: Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.
-                        type: string
+                        properties:
+                          key:
+                            type: string
+                          name:
+                            description: Name of the secret.
+                            type: string
+                        required:
+                        - key
+                        - name
+                        type: object
                       adminUsername:
                         description: Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.
                         type: string
@@ -668,9 +686,6 @@ spec:
                   ssh:
                     description: Credentials for an administrator user account that will be created on each compute node. A ssh block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.
                     properties:
-                      adminPassword:
-                        description: Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.
-                        type: string
                       adminUsername:
                         description: Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.
                         type: string
@@ -741,6 +756,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

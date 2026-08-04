@@ -82,7 +82,7 @@ public partial class V1beta2ExpressRoutePortSpecForProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -108,7 +108,7 @@ public partial class V1beta2ExpressRoutePortSpecForProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -348,7 +348,7 @@ public partial class V1beta2ExpressRoutePortSpecInitProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -374,7 +374,7 @@ public partial class V1beta2ExpressRoutePortSpecInitProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -670,7 +670,7 @@ public partial class V1beta2ExpressRoutePortStatusAtProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -720,7 +720,7 @@ public partial class V1beta2ExpressRoutePortStatusAtProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -860,6 +860,15 @@ public partial class V1beta2ExpressRoutePortStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ExpressRoutePortStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

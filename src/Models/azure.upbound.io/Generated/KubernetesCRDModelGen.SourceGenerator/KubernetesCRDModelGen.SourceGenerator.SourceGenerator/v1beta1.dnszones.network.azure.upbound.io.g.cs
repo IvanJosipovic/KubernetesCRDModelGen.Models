@@ -270,7 +270,7 @@ public partial class V1beta1DNSZoneSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1DNSZoneSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public IList<V1beta1DNSZoneSpecForProviderSoaRecord>? SoaRecord { get; set; }
 
@@ -334,7 +334,7 @@ public partial class V1beta1DNSZoneSpecInitProviderSoaRecord
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DNSZoneSpecInitProvider
 {
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public IList<V1beta1DNSZoneSpecInitProviderSoaRecord>? SoaRecord { get; set; }
 
@@ -546,10 +546,11 @@ public partial class V1beta1DNSZoneStatusAtProviderSoaRecord
     [JsonPropertyName("expireTime")]
     public double? ExpireTime { get; set; }
 
+    /// <summary>The fully qualified domain name.</summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
 
-    /// <summary>The domain name of the authoritative name server for the SOA record. If not set, computed value from Azure will be used.</summary>
+    /// <summary>The domain name of the authoritative name server for the SOA record.</summary>
     [JsonPropertyName("hostName")]
     public string? HostName { get; set; }
 
@@ -587,7 +588,7 @@ public partial class V1beta1DNSZoneStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Maximum number of Records in the zone. Defaults to 1000.</summary>
+    /// <summary>Maximum number of Records in the zone.</summary>
     [JsonPropertyName("maxNumberOfRecordSets")]
     public double? MaxNumberOfRecordSets { get; set; }
 
@@ -603,7 +604,7 @@ public partial class V1beta1DNSZoneStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public IList<V1beta1DNSZoneStatusAtProviderSoaRecord>? SoaRecord { get; set; }
 
@@ -668,6 +669,15 @@ public partial class V1beta1DNSZoneStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DNSZoneStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

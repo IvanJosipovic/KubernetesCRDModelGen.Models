@@ -45,7 +45,10 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubeletConfi
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
 
-    /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
+
     [JsonPropertyName("containerLogMaxLine")]
     public double? ContainerLogMaxLine { get; set; }
 
@@ -877,7 +880,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProvider
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise it forces a new resource to be created.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; any other change forces a new resource to be created.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -953,7 +956,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProvider
     [JsonPropertyName("windowsProfile")]
     public V1beta1KubernetesClusterNodePoolSpecForProviderWindowsProfile? WindowsProfile { get; set; }
 
-    /// <summary>Used to specify the workload runtime. Allowed values are OCIContainer and WasmWasi.</summary>
+    /// <summary>Used to specify the workload runtime. Allowed values are KataVmIsolation, OCIContainer and WasmWasi.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -971,7 +974,10 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderKubeletConf
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
 
-    /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
+
     [JsonPropertyName("containerLogMaxLine")]
     public double? ContainerLogMaxLine { get; set; }
 
@@ -1648,7 +1654,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProvider
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise it forces a new resource to be created.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; any other change forces a new resource to be created.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -1724,7 +1730,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProvider
     [JsonPropertyName("windowsProfile")]
     public V1beta1KubernetesClusterNodePoolSpecInitProviderWindowsProfile? WindowsProfile { get; set; }
 
-    /// <summary>Used to specify the workload runtime. Allowed values are OCIContainer and WasmWasi.</summary>
+    /// <summary>Used to specify the workload runtime. Allowed values are KataVmIsolation, OCIContainer and WasmWasi.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -1849,7 +1855,10 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderKubeletConf
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
 
-    /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
+
     [JsonPropertyName("containerLogMaxLine")]
     public double? ContainerLogMaxLine { get; set; }
 
@@ -2180,6 +2189,10 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProvider
     [JsonPropertyName("nodeCount")]
     public double? NodeCount { get; set; }
 
+    /// <summary>The current node image version running on this Node Pool.</summary>
+    [JsonPropertyName("nodeImageVersion")]
+    public string? NodeImageVersion { get; set; }
+
     /// <summary>A map of Kubernetes labels which should be applied to nodes in this Node Pool.</summary>
     [JsonPropertyName("nodeLabels")]
     public IDictionary<string, string>? NodeLabels { get; set; }
@@ -2212,7 +2225,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProvider
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise it forces a new resource to be created.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; any other change forces a new resource to be created.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -2272,7 +2285,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProvider
     [JsonPropertyName("windowsProfile")]
     public V1beta1KubernetesClusterNodePoolStatusAtProviderWindowsProfile? WindowsProfile { get; set; }
 
-    /// <summary>Used to specify the workload runtime. Allowed values are OCIContainer and WasmWasi.</summary>
+    /// <summary>Used to specify the workload runtime. Allowed values are KataVmIsolation, OCIContainer and WasmWasi.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -2335,6 +2348,15 @@ public partial class V1beta1KubernetesClusterNodePoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1KubernetesClusterNodePoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

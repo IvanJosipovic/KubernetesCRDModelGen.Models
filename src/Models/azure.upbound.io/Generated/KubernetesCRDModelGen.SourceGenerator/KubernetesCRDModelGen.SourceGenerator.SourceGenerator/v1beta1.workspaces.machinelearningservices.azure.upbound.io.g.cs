@@ -1077,7 +1077,7 @@ public partial class V1beta1WorkspaceSpecForProviderKeyVaultIdSelector
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkspaceSpecForProviderManagedNetwork
 {
-    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound</summary>
+    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
 
@@ -1840,6 +1840,10 @@ public partial class V1beta1WorkspaceSpecForProvider
     /// <summary>SKU/edition of the Machine Learning Workspace, possible values are Free, Basic, Standard and Premium. Defaults to Basic.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
+
+    /// <summary>The access type for the system storage account. Possible values are AccessKey and Identity. Defaults to AccessKey.</summary>
+    [JsonPropertyName("storageAccountAccessType")]
+    public string? StorageAccountAccessType { get; set; }
 
     /// <summary>The ID of the Storage Account associated with this Machine Learning Workspace. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountId")]
@@ -2879,7 +2883,7 @@ public partial class V1beta1WorkspaceSpecInitProviderKeyVaultIdSelector
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkspaceSpecInitProviderManagedNetwork
 {
-    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound</summary>
+    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
 
@@ -3488,6 +3492,10 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
+    /// <summary>The access type for the system storage account. Possible values are AccessKey and Identity. Defaults to AccessKey.</summary>
+    [JsonPropertyName("storageAccountAccessType")]
+    public string? StorageAccountAccessType { get; set; }
+
     /// <summary>The ID of the Storage Account associated with this Machine Learning Workspace. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
@@ -3762,7 +3770,7 @@ public partial class V1beta1WorkspaceStatusAtProviderIdentity
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkspaceStatusAtProviderManagedNetwork
 {
-    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound</summary>
+    /// <summary>The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
 
@@ -3874,6 +3882,10 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
+    /// <summary>The access type for the system storage account. Possible values are AccessKey and Identity. Defaults to AccessKey.</summary>
+    [JsonPropertyName("storageAccountAccessType")]
+    public string? StorageAccountAccessType { get; set; }
+
     /// <summary>The ID of the Storage Account associated with this Machine Learning Workspace. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
@@ -3947,6 +3959,15 @@ public partial class V1beta1WorkspaceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WorkspaceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

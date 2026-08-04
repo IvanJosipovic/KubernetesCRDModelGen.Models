@@ -100,7 +100,7 @@ spec:
                     items:
                       properties:
                         name:
-                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
+                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
                           type: string
                       type: object
                     type: array
@@ -286,13 +286,15 @@ spec:
                     description: Specifies the Kind of CosmosDB to create - possible values are GlobalDocumentDB, MongoDB and Parse. Defaults to GlobalDocumentDB. Changing this forces a new resource to be created.
                     type: string
                   localAuthenticationDisabled:
-                    description: Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   managedHsmKeyId:
-                    description: A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.
+                    description: The CosmosDB Account ID.
                     type: string
                   minimalTlsVersion:
                     description: 'Specifies the minimal TLS version for the CosmosDB account. Possible values are: Tls, Tls11, and Tls12. Defaults to Tls12.'
@@ -318,7 +320,7 @@ spec:
                     description: Is partition merge on the Cosmos DB account enabled? Defaults to false.
                     type: boolean
                   publicNetworkAccessEnabled:
-                    description: Whether or not public network access is allowed for this CosmosDB account. Defaults to true.
+                    description: Whether public network access is allowed for this CosmosDB account. Defaults to true.
                     type: boolean
                   resourceGroupName:
                     description: The name of the resource group in which the CosmosDB Account is created. Changing this forces a new resource to be created.
@@ -600,7 +602,7 @@ spec:
                     items:
                       properties:
                         name:
-                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
+                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
                           type: string
                       type: object
                     type: array
@@ -786,13 +788,15 @@ spec:
                     description: Specifies the Kind of CosmosDB to create - possible values are GlobalDocumentDB, MongoDB and Parse. Defaults to GlobalDocumentDB. Changing this forces a new resource to be created.
                     type: string
                   localAuthenticationDisabled:
-                    description: Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   managedHsmKeyId:
-                    description: A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.
+                    description: The CosmosDB Account ID.
                     type: string
                   minimalTlsVersion:
                     description: 'Specifies the minimal TLS version for the CosmosDB account. Possible values are: Tls, Tls11, and Tls12. Defaults to Tls12.'
@@ -818,7 +822,7 @@ spec:
                     description: Is partition merge on the Cosmos DB account enabled? Defaults to false.
                     type: boolean
                   publicNetworkAccessEnabled:
-                    description: Whether or not public network access is allowed for this CosmosDB account. Defaults to true.
+                    description: Whether public network access is allowed for this CosmosDB account. Defaults to true.
                     type: boolean
                   restore:
                     description: A restore block as defined below.
@@ -1077,7 +1081,7 @@ spec:
                     items:
                       properties:
                         name:
-                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
+                          description: The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.
                           type: string
                       type: object
                     type: array
@@ -1196,13 +1200,15 @@ spec:
                     description: Specifies the Kind of CosmosDB to create - possible values are GlobalDocumentDB, MongoDB and Parse. Defaults to GlobalDocumentDB. Changing this forces a new resource to be created.
                     type: string
                   localAuthenticationDisabled:
-                    description: Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.
+                    type: boolean
+                  localAuthenticationEnabled:
+                    description: Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.
                     type: boolean
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   managedHsmKeyId:
-                    description: A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.
+                    description: The CosmosDB Account ID.
                     type: string
                   minimalTlsVersion:
                     description: 'Specifies the minimal TLS version for the CosmosDB account. Possible values are: Tls, Tls11, and Tls12. Defaults to Tls12.'
@@ -1228,7 +1234,7 @@ spec:
                     description: Is partition merge on the Cosmos DB account enabled? Defaults to false.
                     type: boolean
                   publicNetworkAccessEnabled:
-                    description: Whether or not public network access is allowed for this CosmosDB account. Defaults to true.
+                    description: Whether public network access is allowed for this CosmosDB account. Defaults to true.
                     type: boolean
                   readEndpoints:
                     description: A list of read endpoints available for this CosmosDB account.
@@ -1350,6 +1356,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

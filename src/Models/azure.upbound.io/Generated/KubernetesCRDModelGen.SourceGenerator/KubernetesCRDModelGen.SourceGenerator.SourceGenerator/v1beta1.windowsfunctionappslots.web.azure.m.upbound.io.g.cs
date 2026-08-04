@@ -1312,21 +1312,21 @@ public partial class V1beta1WindowsFunctionAppSlotSpecForProviderSiteConfigAppli
 
     /// <summary>
     /// The version of Java to use. Possible values are 1.8, 11, 17 and 21.
-    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, and `21`
+    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, and ~22.
+    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, ~22 and ~24.
     /// The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20` and `~22`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
     /// <summary>
-    /// The PowerShell Core version to use. Possible values are 7, 7.2, and 7.4.
-    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, and `7.4`
+    /// The PowerShell Core version to use. Possible values are 7, 7.2, 7.4, and 7.6.
+    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`
     /// </summary>
     [JsonPropertyName("powershellCoreVersion")]
     public string? PowershellCoreVersion { get; set; }
@@ -1985,6 +1985,13 @@ public partial class V1beta1WindowsFunctionAppSlotSpecForProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -3765,21 +3772,21 @@ public partial class V1beta1WindowsFunctionAppSlotSpecInitProviderSiteConfigAppl
 
     /// <summary>
     /// The version of Java to use. Possible values are 1.8, 11, 17 and 21.
-    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, and `21`
+    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, and ~22.
+    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, ~22 and ~24.
     /// The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20` and `~22`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
     /// <summary>
-    /// The PowerShell Core version to use. Possible values are 7, 7.2, and 7.4.
-    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, and `7.4`
+    /// The PowerShell Core version to use. Possible values are 7, 7.2, 7.4, and 7.6.
+    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`
     /// </summary>
     [JsonPropertyName("powershellCoreVersion")]
     public string? PowershellCoreVersion { get; set; }
@@ -4438,6 +4445,13 @@ public partial class V1beta1WindowsFunctionAppSlotSpecInitProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -6167,21 +6181,21 @@ public partial class V1beta1WindowsFunctionAppSlotStatusAtProviderSiteConfigAppl
 
     /// <summary>
     /// The version of Java to use. Possible values are 1.8, 11, 17 and 21.
-    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, and `21`
+    /// The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, and ~22.
+    /// The version of Node to use. Possible values are ~12, ~14, ~16, ~18, ~20, ~22 and ~24.
     /// The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20` and `~22`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
     /// <summary>
-    /// The PowerShell Core version to use. Possible values are 7, 7.2, and 7.4.
-    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, and `7.4`
+    /// The PowerShell Core version to use. Possible values are 7, 7.2, 7.4, and 7.6.
+    /// The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`
     /// </summary>
     [JsonPropertyName("powershellCoreVersion")]
     public string? PowershellCoreVersion { get; set; }
@@ -6507,6 +6521,13 @@ public partial class V1beta1WindowsFunctionAppSlotStatusAtProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -6910,6 +6931,15 @@ public partial class V1beta1WindowsFunctionAppSlotStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WindowsFunctionAppSlotStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

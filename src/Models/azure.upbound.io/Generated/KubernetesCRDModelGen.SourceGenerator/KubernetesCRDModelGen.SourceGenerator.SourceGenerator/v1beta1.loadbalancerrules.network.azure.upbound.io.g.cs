@@ -240,7 +240,7 @@ public partial class V1beta1LoadBalancerRuleSpecForProvider
     [JsonPropertyName("idleTimeoutInMinutes")]
     public double? IdleTimeoutInMinutes { get; set; }
 
-    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are: Default – The load balancer is configured to use a 5 tuple hash to map traffic to available servers. SourceIP – The load balancer is configured to use a 2 tuple hash to map traffic to available servers. SourceIPProtocol – The load balancer is configured to use a 3 tuple hash to map traffic to available servers. Also known as Session Persistence, where in the Azure portal the options are called None, Client IP and Client IP and Protocol respectively. Defaults to Default.</summary>
+    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are Default, SourceIP and SourceIPProtocol. Defaults to Default.</summary>
     [JsonPropertyName("loadDistribution")]
     public string? LoadDistribution { get; set; }
 
@@ -319,7 +319,7 @@ public partial class V1beta1LoadBalancerRuleSpecInitProvider
     [JsonPropertyName("idleTimeoutInMinutes")]
     public double? IdleTimeoutInMinutes { get; set; }
 
-    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are: Default – The load balancer is configured to use a 5 tuple hash to map traffic to available servers. SourceIP – The load balancer is configured to use a 2 tuple hash to map traffic to available servers. SourceIPProtocol – The load balancer is configured to use a 3 tuple hash to map traffic to available servers. Also known as Session Persistence, where in the Azure portal the options are called None, Client IP and Client IP and Protocol respectively. Defaults to Default.</summary>
+    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are Default, SourceIP and SourceIPProtocol. Defaults to Default.</summary>
     [JsonPropertyName("loadDistribution")]
     public string? LoadDistribution { get; set; }
 
@@ -565,7 +565,7 @@ public partial class V1beta1LoadBalancerRuleStatusAtProvider
     [JsonPropertyName("idleTimeoutInMinutes")]
     public double? IdleTimeoutInMinutes { get; set; }
 
-    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are: Default – The load balancer is configured to use a 5 tuple hash to map traffic to available servers. SourceIP – The load balancer is configured to use a 2 tuple hash to map traffic to available servers. SourceIPProtocol – The load balancer is configured to use a 3 tuple hash to map traffic to available servers. Also known as Session Persistence, where in the Azure portal the options are called None, Client IP and Client IP and Protocol respectively. Defaults to Default.</summary>
+    /// <summary>Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are Default, SourceIP and SourceIPProtocol. Defaults to Default.</summary>
     [JsonPropertyName("loadDistribution")]
     public string? LoadDistribution { get; set; }
 
@@ -640,6 +640,15 @@ public partial class V1beta1LoadBalancerRuleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LoadBalancerRuleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

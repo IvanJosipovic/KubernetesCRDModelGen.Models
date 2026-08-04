@@ -111,7 +111,7 @@ public partial class V1beta1PointToSiteVPNGatewaySpecForProviderConnectionConfig
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PointToSiteVPNGatewaySpecForProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -710,7 +710,7 @@ public partial class V1beta1PointToSiteVPNGatewaySpecInitProviderConnectionConfi
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PointToSiteVPNGatewaySpecInitProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -1344,7 +1344,7 @@ public partial class V1beta1PointToSiteVPNGatewayStatusAtProviderConnectionConfi
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PointToSiteVPNGatewayStatusAtProviderConnectionConfiguration
 {
-    /// <summary>Should Internet Security be enabled to secure internet traffic? Changing this forces a new resource to be created. Defaults to false.</summary>
+    /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
     [JsonPropertyName("internetSecurityEnabled")]
     public bool? InternetSecurityEnabled { get; set; }
 
@@ -1463,6 +1463,15 @@ public partial class V1beta1PointToSiteVPNGatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PointToSiteVPNGatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -207,11 +207,11 @@ public partial class V1beta1AccountSpecForProviderCustomDomain
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecForProviderCustomerManagedKey
 {
-    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
-    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Storage Account.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -861,7 +861,7 @@ public partial class V1beta1AccountSpecForProviderStaticWebsite
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecForProvider
 {
-    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold, Smart and Premium. Defaults to Hot.</summary>
     [JsonPropertyName("accessTier")]
     public string? AccessTier { get; set; }
 
@@ -881,7 +881,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("allowNestedItemsToBePublic")]
     public bool? AllowNestedItemsToBePublic { get; set; }
 
-    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    /// <summary>The permitted scope for copy operations between storage accounts. Possible values are AAD, PrivateLink and All.</summary>
     [JsonPropertyName("allowedCopyScope")]
     public string? AllowedCopyScope { get; set; }
 
@@ -949,7 +949,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1 and TLS1_2. Defaults to TLS1_2 for new storage accounts.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -1193,11 +1193,11 @@ public partial class V1beta1AccountSpecInitProviderCustomDomain
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecInitProviderCustomerManagedKey
 {
-    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
-    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Storage Account.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -1704,7 +1704,7 @@ public partial class V1beta1AccountSpecInitProviderStaticWebsite
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecInitProvider
 {
-    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold, Smart and Premium. Defaults to Hot.</summary>
     [JsonPropertyName("accessTier")]
     public string? AccessTier { get; set; }
 
@@ -1724,7 +1724,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("allowNestedItemsToBePublic")]
     public bool? AllowNestedItemsToBePublic { get; set; }
 
-    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    /// <summary>The permitted scope for copy operations between storage accounts. Possible values are AAD, PrivateLink and All.</summary>
     [JsonPropertyName("allowedCopyScope")]
     public string? AllowedCopyScope { get; set; }
 
@@ -1792,7 +1792,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1 and TLS1_2. Defaults to TLS1_2 for new storage accounts.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -2131,11 +2131,11 @@ public partial class V1beta1AccountStatusAtProviderCustomDomain
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProviderCustomerManagedKey
 {
-    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Key Vault Key, supplying a version-less key ID will enable auto-rotation of this key.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
-    /// <summary>The ID of the managed HSM Key. Exactly one of key_vault_key_id and managed_hsm_key_id may be specified.</summary>
+    /// <summary>The ID of the Storage Account.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -2475,7 +2475,7 @@ public partial class V1beta1AccountStatusAtProviderStaticWebsite
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProvider
 {
-    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold and Premium. Defaults to Hot.</summary>
+    /// <summary>Defines the access tier for BlobStorage, FileStorage and StorageV2 accounts. Valid options are Hot, Cool, Cold, Smart and Premium. Defaults to Hot.</summary>
     [JsonPropertyName("accessTier")]
     public string? AccessTier { get; set; }
 
@@ -2495,7 +2495,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("allowNestedItemsToBePublic")]
     public bool? AllowNestedItemsToBePublic { get; set; }
 
-    /// <summary>Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. Possible values are AAD and PrivateLink.</summary>
+    /// <summary>The permitted scope for copy operations between storage accounts. Possible values are AAD, PrivateLink and All.</summary>
     [JsonPropertyName("allowedCopyScope")]
     public string? AllowedCopyScope { get; set; }
 
@@ -2567,7 +2567,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, TLS1_2 and TLS1_3. Defaults to TLS1_2 for new storage accounts.</summary>
+    /// <summary>The minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1 and TLS1_2. Defaults to TLS1_2 for new storage accounts.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -2950,6 +2950,15 @@ public partial class V1beta1AccountStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

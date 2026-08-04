@@ -102,6 +102,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   recoveryVaultName:
                     description: Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.
                     type: string
@@ -344,6 +347,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -388,6 +394,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   retentionDaily:
                     description: Configures the policy daily retention as documented in the retention_daily block below.
                     items:
@@ -478,6 +487,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -605,6 +617,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   id:
                     description: The ID of the Azure File Share Backup Policy.
                     type: string
@@ -704,6 +719,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -752,6 +770,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -844,6 +869,9 @@ spec:
                         description: The time of day to perform the backup in 24-hour format. Times must be either on the hour or half hour (e.g. 12:00, 12:30, 13:00, etc.)
                         type: string
                     type: object
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   recoveryVaultName:
                     description: Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.
                     type: string
@@ -1078,6 +1106,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -1118,6 +1149,9 @@ spec:
                         description: The time of day to perform the backup in 24-hour format. Times must be either on the hour or half hour (e.g. 12:00, 12:30, 13:00, etc.)
                         type: string
                     type: object
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   retentionDaily:
                     description: Configures the policy daily retention as documented in the retention_daily block below.
                     properties:
@@ -1200,6 +1234,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -1323,6 +1360,9 @@ spec:
                         description: The time of day to perform the backup in 24-hour format. Times must be either on the hour or half hour (e.g. 12:00, 12:30, 13:00, etc.)
                         type: string
                     type: object
+                  backupTier:
+                    description: The backup tier to use. Possible values are vault-standard and snapshot. Defaults to snapshot.
+                    type: string
                   id:
                     description: The ID of the Azure File Share Backup Policy.
                     type: string
@@ -1414,6 +1454,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  snapshotRetentionInDays:
+                    description: The number of days to retain the snapshots. Defaults to 0.
+                    type: number
                   timezone:
                     description: Specifies the timezone. the possible values are defined here. Defaults to UTC
                     type: string
@@ -1462,6 +1505,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

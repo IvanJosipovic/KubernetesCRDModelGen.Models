@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   dataLocation:
-                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.
+                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.
                     type: string
                   resourceGroupName:
                     description: The name of the Resource Group where the Communication Service should exist. Changing this forces a new Communication Service to be created.
@@ -171,7 +171,7 @@ spec:
                   autoscaler.
                 properties:
                   dataLocation:
-                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.
+                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.
                     type: string
                   tags:
                     additionalProperties:
@@ -272,7 +272,7 @@ spec:
               atProvider:
                 properties:
                   dataLocation:
-                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.
+                    description: The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.
                     type: string
                   hostname:
                     description: The hostname of the Communication Service
@@ -334,6 +334,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

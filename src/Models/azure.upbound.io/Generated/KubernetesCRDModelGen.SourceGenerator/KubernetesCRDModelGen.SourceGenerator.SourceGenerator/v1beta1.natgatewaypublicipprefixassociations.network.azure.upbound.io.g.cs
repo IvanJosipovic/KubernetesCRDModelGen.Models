@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages the association between a NAT Gateway and a Public IP Prefix.</summary>
+/// <summary>NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages a NAT Gateway Public IP Prefix association.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -365,7 +365,7 @@ public partial class V1beta1NATGatewayPublicIPPrefixAssociationSpecForProvider
     [JsonPropertyName("natGatewayIdSelector")]
     public V1beta1NATGatewayPublicIPPrefixAssociationSpecForProviderNatGatewayIdSelector? NatGatewayIdSelector { get; set; }
 
-    /// <summary>The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 
@@ -700,7 +700,7 @@ public partial class V1beta1NATGatewayPublicIPPrefixAssociationSpecInitProvider
     [JsonPropertyName("natGatewayIdSelector")]
     public V1beta1NATGatewayPublicIPPrefixAssociationSpecInitProviderNatGatewayIdSelector? NatGatewayIdSelector { get; set; }
 
-    /// <summary>The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 
@@ -907,7 +907,7 @@ public partial class V1beta1NATGatewayPublicIPPrefixAssociationStatusAtProvider
     [JsonPropertyName("natGatewayId")]
     public string? NatGatewayId { get; set; }
 
-    /// <summary>The ID of the Public IP Prefix which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Public IP Prefix which this NAT Gateway should be connected to. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 }
@@ -968,6 +968,15 @@ public partial class V1beta1NATGatewayPublicIPPrefixAssociationStatus
     public IList<V1beta1NATGatewayPublicIPPrefixAssociationStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -976,7 +985,7 @@ public partial class V1beta1NATGatewayPublicIPPrefixAssociationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages the association between a NAT Gateway and a Public IP Prefix.</summary>
+/// <summary>NATGatewayPublicIPPrefixAssociation is the Schema for the NATGatewayPublicIPPrefixAssociations API. Manages a NAT Gateway Public IP Prefix association.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

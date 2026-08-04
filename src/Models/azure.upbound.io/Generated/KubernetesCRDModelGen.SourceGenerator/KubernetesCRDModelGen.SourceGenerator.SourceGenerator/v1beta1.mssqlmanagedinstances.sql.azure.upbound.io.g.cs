@@ -601,7 +601,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("azureActiveDirectoryAdministrator")]
     public IList<V1beta1MSSQLManagedInstanceSpecForProviderAzureActiveDirectoryAdministrator>? AzureActiveDirectoryAdministrator { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
@@ -620,6 +620,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     /// <summary>Selector for a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
     [JsonPropertyName("dnsZonePartnerIdSelector")]
     public V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelector? DnsZonePartnerIdSelector { get; set; }
+
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
 
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
@@ -645,11 +649,11 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.</summary>
     [JsonPropertyName("proxyOverride")]
     public string? ProxyOverride { get; set; }
 
-    /// <summary>Is the public data endpoint enabled? Default value is false.</summary>
+    /// <summary>Is the public data endpoint enabled? Defaults to false.</summary>
     [JsonPropertyName("publicDataEndpointEnabled")]
     public bool? PublicDataEndpointEnabled { get; set; }
 
@@ -669,13 +673,17 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("servicePrincipalType")]
     public string? ServicePrincipalType { get; set; }
 
-    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
+    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -697,7 +705,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.</summary>
+    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("timezoneId")]
     public string? TimezoneId { get; set; }
 
@@ -705,7 +713,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("vcores")]
     public double? Vcores { get; set; }
 
-    /// <summary>Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.</summary>
+    /// <summary>Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.</summary>
     [JsonPropertyName("zoneRedundantEnabled")]
     public bool? ZoneRedundantEnabled { get; set; }
 }
@@ -1108,7 +1116,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("azureActiveDirectoryAdministrator")]
     public IList<V1beta1MSSQLManagedInstanceSpecInitProviderAzureActiveDirectoryAdministrator>? AzureActiveDirectoryAdministrator { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
@@ -1127,6 +1135,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     /// <summary>Selector for a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
     [JsonPropertyName("dnsZonePartnerIdSelector")]
     public V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelector? DnsZonePartnerIdSelector { get; set; }
+
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
 
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
@@ -1152,11 +1164,11 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.</summary>
     [JsonPropertyName("proxyOverride")]
     public string? ProxyOverride { get; set; }
 
-    /// <summary>Is the public data endpoint enabled? Default value is false.</summary>
+    /// <summary>Is the public data endpoint enabled? Defaults to false.</summary>
     [JsonPropertyName("publicDataEndpointEnabled")]
     public bool? PublicDataEndpointEnabled { get; set; }
 
@@ -1164,13 +1176,17 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("servicePrincipalType")]
     public string? ServicePrincipalType { get; set; }
 
-    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
+    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -1192,7 +1208,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.</summary>
+    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("timezoneId")]
     public string? TimezoneId { get; set; }
 
@@ -1200,7 +1216,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("vcores")]
     public double? Vcores { get; set; }
 
-    /// <summary>Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.</summary>
+    /// <summary>Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.</summary>
     [JsonPropertyName("zoneRedundantEnabled")]
     public bool? ZoneRedundantEnabled { get; set; }
 }
@@ -1456,7 +1472,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("azureActiveDirectoryAdministrator")]
     public IList<V1beta1MSSQLManagedInstanceStatusAtProviderAzureActiveDirectoryAdministrator>? AzureActiveDirectoryAdministrator { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("collation")]
     public string? Collation { get; set; }
 
@@ -1475,6 +1491,10 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     /// <summary>The fully qualified domain name of the Azure Managed SQL Instance</summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
+
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
 
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
@@ -1504,11 +1524,11 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
 
-    /// <summary>Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.</summary>
+    /// <summary>Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.</summary>
     [JsonPropertyName("proxyOverride")]
     public string? ProxyOverride { get; set; }
 
-    /// <summary>Is the public data endpoint enabled? Default value is false.</summary>
+    /// <summary>Is the public data endpoint enabled? Defaults to false.</summary>
     [JsonPropertyName("publicDataEndpointEnabled")]
     public bool? PublicDataEndpointEnabled { get; set; }
 
@@ -1520,13 +1540,17 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("servicePrincipalType")]
     public string? ServicePrincipalType { get; set; }
 
-    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
+    /// <summary>Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -1540,7 +1564,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.</summary>
+    /// <summary>The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("timezoneId")]
     public string? TimezoneId { get; set; }
 
@@ -1548,7 +1572,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("vcores")]
     public double? Vcores { get; set; }
 
-    /// <summary>Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.</summary>
+    /// <summary>Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.</summary>
     [JsonPropertyName("zoneRedundantEnabled")]
     public bool? ZoneRedundantEnabled { get; set; }
 }
@@ -1609,6 +1633,15 @@ public partial class V1beta1MSSQLManagedInstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MSSQLManagedInstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

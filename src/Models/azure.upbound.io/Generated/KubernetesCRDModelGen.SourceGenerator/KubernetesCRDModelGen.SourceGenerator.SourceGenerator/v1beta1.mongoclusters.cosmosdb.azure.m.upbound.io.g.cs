@@ -49,6 +49,34 @@ public partial class V1beta1MongoClusterSpecForProviderAdministratorPasswordSecr
     public required string Name { get; set; }
 }
 
+/// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecForProviderCustomerManagedKey
+{
+    /// <summary>The ID of the key vault key used for encryption. For example: https://example-vault-name.vault.azure.net/keys/example-key-name.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the User Assigned Identity that has access to the Key Vault Key.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecForProviderIdentity
+{
+    /// <summary>- A list of one or more Resource IDs for User Assigned Managed identities to assign.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>The type of managed identity to assign. Possible value is UserAssigned.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -202,6 +230,20 @@ public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameSelector
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecForProviderRestore
+{
+    /// <summary>The point in time (in UTC) to restore from, in ISO 8601 format (e.g., 2024-01-01T00:00:00Z). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("pointInTimeUtc")]
+    public string? PointInTimeUtc { get; set; }
+
+    /// <summary>The ID of the source MongoDB Cluster to restore from. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("sourceId")]
+    public string? SourceId { get; set; }
 }
 
 /// <summary>
@@ -526,17 +568,33 @@ public partial class V1beta1MongoClusterSpecForProvider
     [JsonPropertyName("administratorUsername")]
     public string? AdministratorUsername { get; set; }
 
+    /// <summary>A list of allowed authentication modes for the MongoDB Cluster. Possible values are NativeAuth and MicrosoftEntraID.</summary>
+    [JsonPropertyName("authenticationMethods")]
+    public IList<string>? AuthenticationMethods { get; set; }
+
     /// <summary>The compute tier to assign to the MongoDB Cluster. Possible values are Free, M10, M20, M25, M30, M40, M50, M60, M80, and M200.</summary>
     [JsonPropertyName("computeTier")]
     public string? ComputeTier { get; set; }
 
-    /// <summary>The creation mode for the MongoDB Cluster. Possibles values are Default and GeoReplica. Defaults to Default.</summary>
+    /// <summary>The creation mode for the MongoDB Cluster. Possible values are Default, GeoReplica and PointInTimeRestore. Defaults to Default. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
+
+    /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta1MongoClusterSpecForProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Is the Data API for the MongoDB Cluster enabled? Defaults to false.</summary>
+    [JsonPropertyName("dataApiModeEnabled")]
+    public bool? DataApiModeEnabled { get; set; }
 
     /// <summary>The high availability mode for the MongoDB Cluster. Possibles values are Disabled and ZoneRedundantPreferred.</summary>
     [JsonPropertyName("highAvailabilityMode")]
     public string? HighAvailabilityMode { get; set; }
+
+    /// <summary>An identity block as detailed below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta1MongoClusterSpecForProviderIdentity? Identity { get; set; }
 
     /// <summary>The supported Azure location where the MongoDB Cluster exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -561,6 +619,10 @@ public partial class V1beta1MongoClusterSpecForProvider
     /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1MongoClusterSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
+
+    /// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("restore")]
+    public V1beta1MongoClusterSpecForProviderRestore? Restore { get; set; }
 
     /// <summary>The Number of shards to provision on the MongoDB Cluster. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("shardCount")]
@@ -594,6 +656,10 @@ public partial class V1beta1MongoClusterSpecForProvider
     [JsonPropertyName("storageSizeInGb")]
     public double? StorageSizeInGb { get; set; }
 
+    /// <summary>The storage type for the MongoDB Cluster. Possible values are PremiumSSD and PremiumSSDv2. Defaults to PremiumSSD. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageType")]
+    public string? StorageType { get; set; }
+
     /// <summary>A mapping of tags to assign to the MongoDB Cluster.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -614,6 +680,48 @@ public partial class V1beta1MongoClusterSpecInitProviderAdministratorPasswordSec
     /// <summary>Name of the secret.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+}
+
+/// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecInitProviderCustomerManagedKey
+{
+    /// <summary>The ID of the key vault key used for encryption. For example: https://example-vault-name.vault.azure.net/keys/example-key-name.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the User Assigned Identity that has access to the Key Vault Key.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecInitProviderIdentity
+{
+    /// <summary>- A list of one or more Resource IDs for User Assigned Managed identities to assign.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>The type of managed identity to assign. Possible value is UserAssigned.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterSpecInitProviderRestore
+{
+    /// <summary>The point in time (in UTC) to restore from, in ISO 8601 format (e.g., 2024-01-01T00:00:00Z). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("pointInTimeUtc")]
+    public string? PointInTimeUtc { get; set; }
+
+    /// <summary>The ID of the source MongoDB Cluster to restore from. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("sourceId")]
+    public string? SourceId { get; set; }
 }
 
 /// <summary>
@@ -950,17 +1058,33 @@ public partial class V1beta1MongoClusterSpecInitProvider
     [JsonPropertyName("administratorUsername")]
     public string? AdministratorUsername { get; set; }
 
+    /// <summary>A list of allowed authentication modes for the MongoDB Cluster. Possible values are NativeAuth and MicrosoftEntraID.</summary>
+    [JsonPropertyName("authenticationMethods")]
+    public IList<string>? AuthenticationMethods { get; set; }
+
     /// <summary>The compute tier to assign to the MongoDB Cluster. Possible values are Free, M10, M20, M25, M30, M40, M50, M60, M80, and M200.</summary>
     [JsonPropertyName("computeTier")]
     public string? ComputeTier { get; set; }
 
-    /// <summary>The creation mode for the MongoDB Cluster. Possibles values are Default and GeoReplica. Defaults to Default.</summary>
+    /// <summary>The creation mode for the MongoDB Cluster. Possible values are Default, GeoReplica and PointInTimeRestore. Defaults to Default. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
+
+    /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta1MongoClusterSpecInitProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Is the Data API for the MongoDB Cluster enabled? Defaults to false.</summary>
+    [JsonPropertyName("dataApiModeEnabled")]
+    public bool? DataApiModeEnabled { get; set; }
 
     /// <summary>The high availability mode for the MongoDB Cluster. Possibles values are Disabled and ZoneRedundantPreferred.</summary>
     [JsonPropertyName("highAvailabilityMode")]
     public string? HighAvailabilityMode { get; set; }
+
+    /// <summary>An identity block as detailed below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta1MongoClusterSpecInitProviderIdentity? Identity { get; set; }
 
     /// <summary>The supported Azure location where the MongoDB Cluster exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -973,6 +1097,10 @@ public partial class V1beta1MongoClusterSpecInitProvider
     /// <summary>The Public Network Access setting for the MongoDB Cluster. Possibles values are Disabled and Enabled. Defaults to Enabled.</summary>
     [JsonPropertyName("publicNetworkAccess")]
     public string? PublicNetworkAccess { get; set; }
+
+    /// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("restore")]
+    public V1beta1MongoClusterSpecInitProviderRestore? Restore { get; set; }
 
     /// <summary>The Number of shards to provision on the MongoDB Cluster. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("shardCount")]
@@ -1005,6 +1133,10 @@ public partial class V1beta1MongoClusterSpecInitProvider
     /// <summary>The size of the data disk space for the MongoDB Cluster.</summary>
     [JsonPropertyName("storageSizeInGb")]
     public double? StorageSizeInGb { get; set; }
+
+    /// <summary>The storage type for the MongoDB Cluster. Possible values are PremiumSSD and PremiumSSDv2. Defaults to PremiumSSD. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageType")]
+    public string? StorageType { get; set; }
 
     /// <summary>A mapping of tags to assign to the MongoDB Cluster.</summary>
     [JsonPropertyName("tags")]
@@ -1122,6 +1254,48 @@ public partial class V1beta1MongoClusterSpec
     public V1beta1MongoClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterStatusAtProviderCustomerManagedKey
+{
+    /// <summary>The ID of the key vault key used for encryption. For example: https://example-vault-name.vault.azure.net/keys/example-key-name.</summary>
+    [JsonPropertyName("keyVaultKeyId")]
+    public string? KeyVaultKeyId { get; set; }
+
+    /// <summary>The ID of the User Assigned Identity that has access to the Key Vault Key.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+}
+
+/// <summary>An identity block as detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterStatusAtProviderIdentity
+{
+    /// <summary>- A list of one or more Resource IDs for User Assigned Managed identities to assign.</summary>
+    [JsonPropertyName("identityIds")]
+    public IList<string>? IdentityIds { get; set; }
+
+    /// <summary>The type of managed identity to assign. Possible value is UserAssigned.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MongoClusterStatusAtProviderRestore
+{
+    /// <summary>The point in time (in UTC) to restore from, in ISO 8601 format (e.g., 2024-01-01T00:00:00Z). Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("pointInTimeUtc")]
+    public string? PointInTimeUtc { get; set; }
+
+    /// <summary>The ID of the source MongoDB Cluster to restore from. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("sourceId")]
+    public string? SourceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterStatusAtProvider
@@ -1130,13 +1304,25 @@ public partial class V1beta1MongoClusterStatusAtProvider
     [JsonPropertyName("administratorUsername")]
     public string? AdministratorUsername { get; set; }
 
+    /// <summary>A list of allowed authentication modes for the MongoDB Cluster. Possible values are NativeAuth and MicrosoftEntraID.</summary>
+    [JsonPropertyName("authenticationMethods")]
+    public IList<string>? AuthenticationMethods { get; set; }
+
     /// <summary>The compute tier to assign to the MongoDB Cluster. Possible values are Free, M10, M20, M25, M30, M40, M50, M60, M80, and M200.</summary>
     [JsonPropertyName("computeTier")]
     public string? ComputeTier { get; set; }
 
-    /// <summary>The creation mode for the MongoDB Cluster. Possibles values are Default and GeoReplica. Defaults to Default.</summary>
+    /// <summary>The creation mode for the MongoDB Cluster. Possible values are Default, GeoReplica and PointInTimeRestore. Defaults to Default. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
+
+    /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("customerManagedKey")]
+    public V1beta1MongoClusterStatusAtProviderCustomerManagedKey? CustomerManagedKey { get; set; }
+
+    /// <summary>Is the Data API for the MongoDB Cluster enabled? Defaults to false.</summary>
+    [JsonPropertyName("dataApiModeEnabled")]
+    public bool? DataApiModeEnabled { get; set; }
 
     /// <summary>The high availability mode for the MongoDB Cluster. Possibles values are Disabled and ZoneRedundantPreferred.</summary>
     [JsonPropertyName("highAvailabilityMode")]
@@ -1145,6 +1331,10 @@ public partial class V1beta1MongoClusterStatusAtProvider
     /// <summary>The ID of the MongoDB Cluster.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>An identity block as detailed below.</summary>
+    [JsonPropertyName("identity")]
+    public V1beta1MongoClusterStatusAtProviderIdentity? Identity { get; set; }
 
     /// <summary>The supported Azure location where the MongoDB Cluster exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -1162,6 +1352,10 @@ public partial class V1beta1MongoClusterStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
+    /// <summary>A restore block as defined below. Required when create_mode is set to PointInTimeRestore. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("restore")]
+    public V1beta1MongoClusterStatusAtProviderRestore? Restore { get; set; }
+
     /// <summary>The Number of shards to provision on the MongoDB Cluster. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("shardCount")]
     public double? ShardCount { get; set; }
@@ -1177,6 +1371,10 @@ public partial class V1beta1MongoClusterStatusAtProvider
     /// <summary>The size of the data disk space for the MongoDB Cluster.</summary>
     [JsonPropertyName("storageSizeInGb")]
     public double? StorageSizeInGb { get; set; }
+
+    /// <summary>The storage type for the MongoDB Cluster. Possible values are PremiumSSD and PremiumSSDv2. Defaults to PremiumSSD. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageType")]
+    public string? StorageType { get; set; }
 
     /// <summary>A mapping of tags to assign to the MongoDB Cluster.</summary>
     [JsonPropertyName("tags")]
@@ -1241,6 +1439,15 @@ public partial class V1beta1MongoClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MongoClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

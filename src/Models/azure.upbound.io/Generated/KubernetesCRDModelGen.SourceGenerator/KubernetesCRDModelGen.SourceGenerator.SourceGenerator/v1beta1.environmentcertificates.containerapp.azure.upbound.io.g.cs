@@ -56,9 +56,330 @@ public enum V1beta1EnvironmentCertificateSpecDeletionPolicyEnum
 }
 
 /// <summary>
-/// The password for the Certificate. Changing this forces a new resource to be created.
-/// The password for the Certificate.
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
 /// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVault
+{
+    /// <summary>The managed identity to authenticate with Azure Key Vault. Possible values are the resource ID of user-assigned identity, and System for system-assigned identity. Defaults to System. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
+    [JsonPropertyName("identityRef")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRef? IdentityRef { get; set; }
+
+    /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
+    [JsonPropertyName("identitySelector")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelector? IdentitySelector { get; set; }
+
+    /// <summary>The ID of the Key Vault Secret containing the certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultSecretId")]
+    public string? KeyVaultSecretId { get; set; }
+
+    /// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
+    [JsonPropertyName("keyVaultSecretIdRef")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRef? KeyVaultSecretIdRef { get; set; }
+
+    /// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
+    [JsonPropertyName("keyVaultSecretIdSelector")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelector? KeyVaultSecretIdSelector { get; set; }
+}
+
+/// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificatePasswordSecretRef
@@ -227,24 +548,19 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProvider
 {
-    /// <summary>
-    /// The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.
-    /// The Certificate Private Key as a base64 encoded PFX or PEM.
-    /// </summary>
+    /// <summary>The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("certificateBlobBase64")]
     public string? CertificateBlobBase64 { get; set; }
 
-    /// <summary>
-    /// The password for the Certificate. Changing this forces a new resource to be created.
-    /// The password for the Certificate.
-    /// </summary>
+    /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("certificateKeyVault")]
+    public V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVault? CertificateKeyVault { get; set; }
+
+    /// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("certificatePasswordSecretRef")]
     public V1beta1EnvironmentCertificateSpecForProviderCertificatePasswordSecretRef? CertificatePasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// The Container App Managed Environment ID to configure this Certificate on. Changing this forces a new resource to be created.
-    /// The Container App Managed Environment ID to configure this Certificate on.
-    /// </summary>
+    /// <summary>The Container App Managed Environment ID to configure this Certificate on. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("containerAppEnvironmentId")]
     public string? ContainerAppEnvironmentId { get; set; }
 
@@ -262,9 +578,330 @@ public partial class V1beta1EnvironmentCertificateSpecForProvider
 }
 
 /// <summary>
-/// The password for the Certificate. Changing this forces a new resource to be created.
-/// The password for the Certificate.
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
 /// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum>))]
+public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVault
+{
+    /// <summary>The managed identity to authenticate with Azure Key Vault. Possible values are the resource ID of user-assigned identity, and System for system-assigned identity. Defaults to System. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
+    [JsonPropertyName("identityRef")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRef? IdentityRef { get; set; }
+
+    /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
+    [JsonPropertyName("identitySelector")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelector? IdentitySelector { get; set; }
+
+    /// <summary>The ID of the Key Vault Secret containing the certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultSecretId")]
+    public string? KeyVaultSecretId { get; set; }
+
+    /// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
+    [JsonPropertyName("keyVaultSecretIdRef")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRef? KeyVaultSecretIdRef { get; set; }
+
+    /// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
+    [JsonPropertyName("keyVaultSecretIdSelector")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelector? KeyVaultSecretIdSelector { get; set; }
+}
+
+/// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePasswordSecretRef
@@ -298,19 +935,17 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePas
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProvider
 {
-    /// <summary>
-    /// The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.
-    /// The Certificate Private Key as a base64 encoded PFX or PEM.
-    /// </summary>
+    /// <summary>The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("certificateBlobBase64")]
     public string? CertificateBlobBase64 { get; set; }
 
-    /// <summary>
-    /// The password for the Certificate. Changing this forces a new resource to be created.
-    /// The password for the Certificate.
-    /// </summary>
+    /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("certificateKeyVault")]
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVault? CertificateKeyVault { get; set; }
+
+    /// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("certificatePasswordSecretRef")]
-    public required V1beta1EnvironmentCertificateSpecInitProviderCertificatePasswordSecretRef CertificatePasswordSecretRef { get; set; }
+    public V1beta1EnvironmentCertificateSpecInitProviderCertificatePasswordSecretRef? CertificatePasswordSecretRef { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -500,21 +1135,33 @@ public partial class V1beta1EnvironmentCertificateSpec
     public V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EnvironmentCertificateStatusAtProviderCertificateKeyVault
+{
+    /// <summary>The managed identity to authenticate with Azure Key Vault. Possible values are the resource ID of user-assigned identity, and System for system-assigned identity. Defaults to System. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>The ID of the Key Vault Secret containing the certificate. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("keyVaultSecretId")]
+    public string? KeyVaultSecretId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusAtProvider
 {
-    /// <summary>
-    /// The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.
-    /// The Certificate Private Key as a base64 encoded PFX or PEM.
-    /// </summary>
+    /// <summary>The Certificate Private Key as a base64 encoded PFX or PEM. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("certificateBlobBase64")]
     public string? CertificateBlobBase64 { get; set; }
 
-    /// <summary>
-    /// The Container App Managed Environment ID to configure this Certificate on. Changing this forces a new resource to be created.
-    /// The Container App Managed Environment ID to configure this Certificate on.
-    /// </summary>
+    /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("certificateKeyVault")]
+    public V1beta1EnvironmentCertificateStatusAtProviderCertificateKeyVault? CertificateKeyVault { get; set; }
+
+    /// <summary>The Container App Managed Environment ID to configure this Certificate on. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("containerAppEnvironmentId")]
     public string? ContainerAppEnvironmentId { get; set; }
 
@@ -616,6 +1263,15 @@ public partial class V1beta1EnvironmentCertificateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EnvironmentCertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

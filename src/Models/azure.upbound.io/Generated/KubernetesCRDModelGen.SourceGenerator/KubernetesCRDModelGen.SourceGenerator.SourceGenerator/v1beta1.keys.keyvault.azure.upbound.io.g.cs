@@ -218,6 +218,20 @@ public partial class V1beta1KeySpecForProviderKeyVaultIdSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KeySpecForProviderReleasePolicy
+{
+    /// <summary>Whether this policy is immutable. Defaults to false.</summary>
+    [JsonPropertyName("immutable")]
+    public bool? Immutable { get; set; }
+
+    /// <summary>The policy contents in JSON format.</summary>
+    [JsonPropertyName("json")]
+    public string? Json { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KeySpecForProviderRotationPolicyAutomatic
 {
     /// <summary>Rotate automatically at a duration after create as an ISO 8601 duration.</summary>
@@ -256,11 +270,11 @@ public partial class V1beta1KeySpecForProvider
     [JsonPropertyName("curve")]
     public string? Curve { get; set; }
 
-    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;). When this parameter gets changed on reruns, if newer date is ahead of current date, an update is performed. If the newer date is before the current date, resource will be force created.</summary>
+    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;).</summary>
     [JsonPropertyName("expirationDate")]
     public string? ExpirationDate { get; set; }
 
-    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case sensitive.</summary>
+    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case-sensitive.</summary>
     [JsonPropertyName("keyOpts")]
     public IList<string>? KeyOpts { get; set; }
 
@@ -291,6 +305,10 @@ public partial class V1beta1KeySpecForProvider
     /// <summary>Key not usable before the provided UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;).</summary>
     [JsonPropertyName("notBeforeDate")]
     public string? NotBeforeDate { get; set; }
+
+    /// <summary>A release_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("releasePolicy")]
+    public IList<V1beta1KeySpecForProviderReleasePolicy>? ReleasePolicy { get; set; }
 
     /// <summary>A rotation_policy block as defined below.</summary>
     [JsonPropertyName("rotationPolicy")]
@@ -459,6 +477,20 @@ public partial class V1beta1KeySpecInitProviderKeyVaultIdSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KeySpecInitProviderReleasePolicy
+{
+    /// <summary>Whether this policy is immutable. Defaults to false.</summary>
+    [JsonPropertyName("immutable")]
+    public bool? Immutable { get; set; }
+
+    /// <summary>The policy contents in JSON format.</summary>
+    [JsonPropertyName("json")]
+    public string? Json { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KeySpecInitProviderRotationPolicyAutomatic
 {
     /// <summary>Rotate automatically at a duration after create as an ISO 8601 duration.</summary>
@@ -509,11 +541,11 @@ public partial class V1beta1KeySpecInitProvider
     [JsonPropertyName("curve")]
     public string? Curve { get; set; }
 
-    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;). When this parameter gets changed on reruns, if newer date is ahead of current date, an update is performed. If the newer date is before the current date, resource will be force created.</summary>
+    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;).</summary>
     [JsonPropertyName("expirationDate")]
     public string? ExpirationDate { get; set; }
 
-    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case sensitive.</summary>
+    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case-sensitive.</summary>
     [JsonPropertyName("keyOpts")]
     public IList<string>? KeyOpts { get; set; }
 
@@ -544,6 +576,10 @@ public partial class V1beta1KeySpecInitProvider
     /// <summary>Key not usable before the provided UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;).</summary>
     [JsonPropertyName("notBeforeDate")]
     public string? NotBeforeDate { get; set; }
+
+    /// <summary>A release_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("releasePolicy")]
+    public IList<V1beta1KeySpecInitProviderReleasePolicy>? ReleasePolicy { get; set; }
 
     /// <summary>A rotation_policy block as defined below.</summary>
     [JsonPropertyName("rotationPolicy")]
@@ -747,6 +783,20 @@ public partial class V1beta1KeySpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KeyStatusAtProviderReleasePolicy
+{
+    /// <summary>Whether this policy is immutable. Defaults to false.</summary>
+    [JsonPropertyName("immutable")]
+    public bool? Immutable { get; set; }
+
+    /// <summary>The policy contents in JSON format.</summary>
+    [JsonPropertyName("json")]
+    public string? Json { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KeyStatusAtProviderRotationPolicyAutomatic
 {
     /// <summary>Rotate automatically at a duration after create as an ISO 8601 duration.</summary>
@@ -789,7 +839,7 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("e")]
     public string? E { get; set; }
 
-    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;). When this parameter gets changed on reruns, if newer date is ahead of current date, an update is performed. If the newer date is before the current date, resource will be force created.</summary>
+    /// <summary>Expiration UTC datetime (Y-m-d&apos;T&apos;H:M:S&apos;Z&apos;).</summary>
     [JsonPropertyName("expirationDate")]
     public string? ExpirationDate { get; set; }
 
@@ -797,7 +847,7 @@ public partial class V1beta1KeyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case sensitive.</summary>
+    /// <summary>A list of JSON web key operations. Possible values include: decrypt, encrypt, sign, unwrapKey, verify and wrapKey. Please note these values are case-sensitive.</summary>
     [JsonPropertyName("keyOpts")]
     public IList<string>? KeyOpts { get; set; }
 
@@ -832,6 +882,10 @@ public partial class V1beta1KeyStatusAtProvider
     /// <summary>The PEM encoded public key of this Key Vault Key.</summary>
     [JsonPropertyName("publicKeyPem")]
     public string? PublicKeyPem { get; set; }
+
+    /// <summary>A release_policy block as defined below. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("releasePolicy")]
+    public IList<V1beta1KeyStatusAtProviderReleasePolicy>? ReleasePolicy { get; set; }
 
     /// <summary>The (Versioned) ID for this Key Vault Key. This property points to a specific version of a Key Vault Key, as such using this won&apos;t auto-rotate values if used in other Azure Services.</summary>
     [JsonPropertyName("resourceId")]
@@ -922,6 +976,15 @@ public partial class V1beta1KeyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1KeyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

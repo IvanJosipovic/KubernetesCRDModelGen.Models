@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.databricks.azure.m.upbound.io;
-/// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System(DBFS)</summary>
+/// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System (DBFS)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -354,7 +354,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProvider
     [JsonPropertyName("keyVaultId")]
     public string? KeyVaultId { get; set; }
 
-    /// <summary>The resource ID of the Key Vault Key to be used.</summary>
+    /// <summary>The ID of the Key Vault Key to be used.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
@@ -366,7 +366,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProvider
     [JsonPropertyName("keyVaultKeyIdSelector")]
     public V1beta1WorkspaceRootDbfsCustomerManagedKeySpecForProviderKeyVaultKeyIdSelector? KeyVaultKeyIdSelector { get; set; }
 
-    /// <summary>The resource ID of the Databricks Workspace.</summary>
+    /// <summary>The Resource ID of the Databricks Workspace.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 
@@ -554,7 +554,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeySpecInitProvider
     [JsonPropertyName("keyVaultId")]
     public string? KeyVaultId { get; set; }
 
-    /// <summary>The resource ID of the Key Vault Key to be used.</summary>
+    /// <summary>The ID of the Key Vault Key to be used.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
@@ -686,11 +686,11 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusAtProvider
     [JsonPropertyName("keyVaultId")]
     public string? KeyVaultId { get; set; }
 
-    /// <summary>The resource ID of the Key Vault Key to be used.</summary>
+    /// <summary>The ID of the Key Vault Key to be used.</summary>
     [JsonPropertyName("keyVaultKeyId")]
     public string? KeyVaultKeyId { get; set; }
 
-    /// <summary>The resource ID of the Databricks Workspace.</summary>
+    /// <summary>The Resource ID of the Databricks Workspace.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
 }
@@ -751,6 +751,15 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatus
     public IList<V1beta1WorkspaceRootDbfsCustomerManagedKeyStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -759,7 +768,7 @@ public partial class V1beta1WorkspaceRootDbfsCustomerManagedKeyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System(DBFS)</summary>
+/// <summary>WorkspaceRootDbfsCustomerManagedKey is the Schema for the WorkspaceRootDbfsCustomerManagedKeys API. Manages a Customer Managed Key for the Databricks Workspaces Root Databricks File System (DBFS)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

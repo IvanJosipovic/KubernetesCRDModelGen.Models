@@ -45,7 +45,7 @@ public partial class V1beta1AccountSpecForProviderIdentity
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are UserAssigned and SystemAssigned.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are SystemAssigned and SystemAssigned, UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -418,7 +418,7 @@ public partial class V1beta1AccountSpecInitProviderIdentity
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are UserAssigned and SystemAssigned.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are SystemAssigned and SystemAssigned, UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -751,7 +751,7 @@ public partial class V1beta1AccountStatusAtProviderIdentity
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are UserAssigned and SystemAssigned.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Purview Account. Possible values are SystemAssigned and SystemAssigned, UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -884,6 +884,15 @@ public partial class V1beta1AccountStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

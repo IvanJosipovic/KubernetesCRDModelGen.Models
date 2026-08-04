@@ -935,7 +935,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -1489,6 +1489,11 @@ spec:
                           type: boolean
                         managedPipelineMode:
                           description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
+                          type: string
+                        minimumTlsCipherSuite:
+                          description: |-
+                            The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                            Configures the minimum TLS cipher suite for the incoming requests to the Site.
                           type: string
                         minimumTlsVersion:
                           description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
@@ -2625,7 +2630,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -3183,6 +3188,11 @@ spec:
                           type: boolean
                         managedPipelineMode:
                           description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
+                          type: string
+                        minimumTlsCipherSuite:
+                          description: |-
+                            The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                            Configures the minimum TLS cipher suite for the incoming requests to the Site.
                           type: string
                         minimumTlsVersion:
                           description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
@@ -4308,7 +4318,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -4774,6 +4784,11 @@ spec:
                         managedPipelineMode:
                           description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
                           type: string
+                        minimumTlsCipherSuite:
+                          description: |-
+                            The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                            Configures the minimum TLS cipher suite for the incoming requests to the Site.
+                          type: string
                         minimumTlsVersion:
                           description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
                           type: string
@@ -4995,6 +5010,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -5886,7 +5908,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -6407,6 +6429,11 @@ spec:
                         type: boolean
                       managedPipelineMode:
                         description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
+                        type: string
+                      minimumTlsCipherSuite:
+                        description: |-
+                          The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                          Configures the minimum TLS cipher suite for the incoming requests to the Site.
                         type: string
                       minimumTlsVersion:
                         description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
@@ -7502,7 +7529,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -8027,6 +8054,11 @@ spec:
                         type: boolean
                       managedPipelineMode:
                         description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
+                        type: string
+                      minimumTlsCipherSuite:
+                        description: |-
+                          The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                          Configures the minimum TLS cipher suite for the incoming requests to the Site.
                         type: string
                       minimumTlsVersion:
                         description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
@@ -9111,7 +9143,7 @@ spec:
                       Paths to exclude when using client certificates, separated by ;
                     type: string
                   clientCertificateMode:
-                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_cert_enabled is false. Defaults to Required.
+                    description: The Client Certificate mode. Possible values are Required, Optional, and OptionalInteractiveUser. This property has no effect when client_certificate_enabled is false. Defaults to Required.
                     type: string
                   connectionString:
                     description: One or more connection_string blocks as defined below.
@@ -9544,6 +9576,11 @@ spec:
                       managedPipelineMode:
                         description: 'Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.'
                         type: string
+                      minimumTlsCipherSuite:
+                        description: |-
+                          The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384",TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", TLS_RSA_WITH_AES_128_CBC_SHA",TLS_RSA_WITH_AES_128_CBC_SHA256",TLS_RSA_WITH_AES_128_GCM_SHA256",TLS_RSA_WITH_AES_256_CBC_SHA",TLS_RSA_WITH_AES_256_CBC_SHA256",TLS_RSA_WITH_AES_256_GCM_SHA384".
+                          Configures the minimum TLS cipher suite for the incoming requests to the Site.
+                        type: string
                       minimumTlsVersion:
                         description: The configures the minimum version of TLS required for SSL requests. Possible values are 1.1, 1.3, 1.2 and 1.0. Defaults to 1.2.
                         type: string
@@ -9762,6 +9799,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

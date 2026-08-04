@@ -81,7 +81,6 @@ spec:
                     description: The destination IP address of the Private Link Service.
                     type: string
                   enableProxyProtocol:
-                    description: Should the Private Link Service support the Proxy Protocol?
                     type: boolean
                   fqdns:
                     description: List of FQDNs allowed for the Private Link Service.
@@ -102,10 +101,10 @@ spec:
                     items:
                       properties:
                         name:
-                          description: Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.
+                          description: Specifies the name which should be used for the NAT IP Configuration.
                           type: string
                         primary:
-                          description: Is this is the Primary IP Configuration? Changing this forces a new resource to be created.
+                          description: Is this is the Primary IP Configuration?
                           type: boolean
                         privateIpAddress:
                           description: Specifies a Private Static IP Address for this IP Configuration.
@@ -191,6 +190,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                  proxyProtocolEnabled:
+                    description: Should the Private Link Service support the Proxy Protocol? Defaults to false.
+                    type: boolean
                   resourceGroupName:
                     description: The name of the Resource Group where the Private Link Service should exist. Changing this forces a new resource to be created.
                     type: string
@@ -303,7 +305,6 @@ spec:
                     description: The destination IP address of the Private Link Service.
                     type: string
                   enableProxyProtocol:
-                    description: Should the Private Link Service support the Proxy Protocol?
                     type: boolean
                   fqdns:
                     description: List of FQDNs allowed for the Private Link Service.
@@ -324,10 +325,10 @@ spec:
                     items:
                       properties:
                         name:
-                          description: Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.
+                          description: Specifies the name which should be used for the NAT IP Configuration.
                           type: string
                         primary:
-                          description: Is this is the Primary IP Configuration? Changing this forces a new resource to be created.
+                          description: Is this is the Primary IP Configuration?
                           type: boolean
                         privateIpAddress:
                           description: Specifies a Private Static IP Address for this IP Configuration.
@@ -413,6 +414,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                  proxyProtocolEnabled:
+                    description: Should the Private Link Service support the Proxy Protocol? Defaults to false.
+                    type: boolean
                   tags:
                     additionalProperties:
                       type: string
@@ -535,7 +539,6 @@ spec:
                     description: The destination IP address of the Private Link Service.
                     type: string
                   enableProxyProtocol:
-                    description: Should the Private Link Service support the Proxy Protocol?
                     type: boolean
                   fqdns:
                     description: List of FQDNs allowed for the Private Link Service.
@@ -558,10 +561,10 @@ spec:
                     items:
                       properties:
                         name:
-                          description: Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.
+                          description: Specifies the name which should be used for the NAT IP Configuration.
                           type: string
                         primary:
-                          description: Is this is the Primary IP Configuration? Changing this forces a new resource to be created.
+                          description: Is this is the Primary IP Configuration?
                           type: boolean
                         privateIpAddress:
                           description: Specifies a Private Static IP Address for this IP Configuration.
@@ -574,6 +577,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  proxyProtocolEnabled:
+                    description: Should the Private Link Service support the Proxy Protocol? Defaults to false.
+                    type: boolean
                   resourceGroupName:
                     description: The name of the Resource Group where the Private Link Service should exist. Changing this forces a new resource to be created.
                     type: string
@@ -634,6 +640,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

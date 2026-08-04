@@ -590,6 +590,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("dnsZonePartnerIdSelector")]
     public V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelector? DnsZonePartnerIdSelector { get; set; }
 
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
+
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
     public string? HybridSecondaryUsage { get; set; }
@@ -606,7 +610,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -645,6 +649,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -1090,6 +1098,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("dnsZonePartnerIdSelector")]
     public V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelector? DnsZonePartnerIdSelector { get; set; }
 
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
+
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
     public string? HybridSecondaryUsage { get; set; }
@@ -1106,7 +1118,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -1133,6 +1145,10 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -1354,6 +1370,10 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
 
+    /// <summary>Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.</summary>
+    [JsonPropertyName("generalPurposeV2Enabled")]
+    public bool? GeneralPurposeV2Enabled { get; set; }
+
     /// <summary>Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.</summary>
     [JsonPropertyName("hybridSecondaryUsage")]
     public string? HybridSecondaryUsage { get; set; }
@@ -1374,7 +1394,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -1405,6 +1425,10 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
     /// <summary>Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
+
+    /// <summary>The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.</summary>
+    [JsonPropertyName("storageIops")]
+    public double? StorageIops { get; set; }
 
     /// <summary>Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).</summary>
     [JsonPropertyName("storageSizeInGb")]
@@ -1485,6 +1509,15 @@ public partial class V1beta1MSSQLManagedInstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MSSQLManagedInstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

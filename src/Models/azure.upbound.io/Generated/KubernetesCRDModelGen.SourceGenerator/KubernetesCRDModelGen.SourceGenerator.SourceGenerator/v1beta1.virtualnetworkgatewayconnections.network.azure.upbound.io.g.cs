@@ -797,6 +797,10 @@ public partial class V1beta1VirtualNetworkGatewayConnectionSpecForProvider
     [JsonPropertyName("authorizationKeySecretRef")]
     public V1beta1VirtualNetworkGatewayConnectionSpecForProviderAuthorizationKeySecretRef? AuthorizationKeySecretRef { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -1531,6 +1535,10 @@ public partial class V1beta1VirtualNetworkGatewayConnectionSpecInitProvider
     [JsonPropertyName("authorizationKeySecretRef")]
     public V1beta1VirtualNetworkGatewayConnectionSpecInitProviderAuthorizationKeySecretRef? AuthorizationKeySecretRef { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -1924,6 +1932,10 @@ public partial class V1beta1VirtualNetworkGatewayConnectionStatusAtProviderTraff
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayConnectionStatusAtProvider
 {
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -2088,6 +2100,15 @@ public partial class V1beta1VirtualNetworkGatewayConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VirtualNetworkGatewayConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -222,7 +222,7 @@ spec:
                       type: object
                     type: array
                   msiWorkSpaceResourceId:
-                    description: Authenticate to ADB via managed service identity.
+                    description: The ID of the Data Factory Linked Service.
                     type: string
                   msiWorkSpaceResourceIdRef:
                     description: Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.
@@ -260,6 +260,82 @@ spec:
                     type: object
                   msiWorkSpaceResourceIdSelector:
                     description: Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.
+                    properties:
+                      matchControllerRef:
+                        description: |-
+                          MatchControllerRef ensures an object with the same controller reference
+                          as the selecting object is selected.
+                        type: boolean
+                      matchLabels:
+                        additionalProperties:
+                          type: string
+                        description: MatchLabels ensures an object with matching labels is selected.
+                        type: object
+                      policy:
+                        description: Policies for selection.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    type: object
+                  msiWorkspaceId:
+                    description: Authenticate to ADB via managed service identity.
+                    type: string
+                  msiWorkspaceIdRef:
+                    description: Reference to a Workspace in databricks to populate msiWorkspaceId.
+                    properties:
+                      name:
+                        description: Name of the referenced object.
+                        type: string
+                      policy:
+                        description: Policies for referencing.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    required:
+                    - name
+                    type: object
+                  msiWorkspaceIdSelector:
+                    description: Selector for a Workspace in databricks to populate msiWorkspaceId.
                     properties:
                       matchControllerRef:
                         description: |-
@@ -435,7 +511,7 @@ spec:
                       type: object
                     type: array
                   msiWorkSpaceResourceId:
-                    description: Authenticate to ADB via managed service identity.
+                    description: The ID of the Data Factory Linked Service.
                     type: string
                   msiWorkSpaceResourceIdRef:
                     description: Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.
@@ -473,6 +549,82 @@ spec:
                     type: object
                   msiWorkSpaceResourceIdSelector:
                     description: Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.
+                    properties:
+                      matchControllerRef:
+                        description: |-
+                          MatchControllerRef ensures an object with the same controller reference
+                          as the selecting object is selected.
+                        type: boolean
+                      matchLabels:
+                        additionalProperties:
+                          type: string
+                        description: MatchLabels ensures an object with matching labels is selected.
+                        type: object
+                      policy:
+                        description: Policies for selection.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    type: object
+                  msiWorkspaceId:
+                    description: Authenticate to ADB via managed service identity.
+                    type: string
+                  msiWorkspaceIdRef:
+                    description: Reference to a Workspace in databricks to populate msiWorkspaceId.
+                    properties:
+                      name:
+                        description: Name of the referenced object.
+                        type: string
+                      policy:
+                        description: Policies for referencing.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    required:
+                    - name
+                    type: object
+                  msiWorkspaceIdSelector:
+                    description: Selector for a Workspace in databricks to populate msiWorkspaceId.
                     properties:
                       matchControllerRef:
                         description: |-
@@ -718,6 +870,9 @@ spec:
                       type: object
                     type: array
                   msiWorkSpaceResourceId:
+                    description: The ID of the Data Factory Linked Service.
+                    type: string
+                  msiWorkspaceId:
                     description: Authenticate to ADB via managed service identity.
                     type: string
                   newClusterConfig:
@@ -818,6 +973,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1030,7 +1192,7 @@ spec:
                         type: string
                     type: object
                   msiWorkSpaceResourceId:
-                    description: Authenticate to ADB via managed service identity.
+                    description: The ID of the Data Factory Linked Service.
                     type: string
                   msiWorkSpaceResourceIdRef:
                     description: Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.
@@ -1068,6 +1230,82 @@ spec:
                     type: object
                   msiWorkSpaceResourceIdSelector:
                     description: Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.
+                    properties:
+                      matchControllerRef:
+                        description: |-
+                          MatchControllerRef ensures an object with the same controller reference
+                          as the selecting object is selected.
+                        type: boolean
+                      matchLabels:
+                        additionalProperties:
+                          type: string
+                        description: MatchLabels ensures an object with matching labels is selected.
+                        type: object
+                      policy:
+                        description: Policies for selection.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    type: object
+                  msiWorkspaceId:
+                    description: Authenticate to ADB via managed service identity.
+                    type: string
+                  msiWorkspaceIdRef:
+                    description: Reference to a Workspace in databricks to populate msiWorkspaceId.
+                    properties:
+                      name:
+                        description: Name of the referenced object.
+                        type: string
+                      policy:
+                        description: Policies for referencing.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    required:
+                    - name
+                    type: object
+                  msiWorkspaceIdSelector:
+                    description: Selector for a Workspace in databricks to populate msiWorkspaceId.
                     properties:
                       matchControllerRef:
                         description: |-
@@ -1237,7 +1475,7 @@ spec:
                         type: string
                     type: object
                   msiWorkSpaceResourceId:
-                    description: Authenticate to ADB via managed service identity.
+                    description: The ID of the Data Factory Linked Service.
                     type: string
                   msiWorkSpaceResourceIdRef:
                     description: Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.
@@ -1275,6 +1513,82 @@ spec:
                     type: object
                   msiWorkSpaceResourceIdSelector:
                     description: Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.
+                    properties:
+                      matchControllerRef:
+                        description: |-
+                          MatchControllerRef ensures an object with the same controller reference
+                          as the selecting object is selected.
+                        type: boolean
+                      matchLabels:
+                        additionalProperties:
+                          type: string
+                        description: MatchLabels ensures an object with matching labels is selected.
+                        type: object
+                      policy:
+                        description: Policies for selection.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    type: object
+                  msiWorkspaceId:
+                    description: Authenticate to ADB via managed service identity.
+                    type: string
+                  msiWorkspaceIdRef:
+                    description: Reference to a Workspace in databricks to populate msiWorkspaceId.
+                    properties:
+                      name:
+                        description: Name of the referenced object.
+                        type: string
+                      policy:
+                        description: Policies for referencing.
+                        properties:
+                          resolution:
+                            default: Required
+                            description: |-
+                              Resolution specifies whether resolution of this reference is required.
+                              The default is 'Required', which means the reconcile will fail if the
+                              reference cannot be resolved. 'Optional' means this reference will be
+                              a no-op if it cannot be resolved.
+                            enum:
+                            - Required
+                            - Optional
+                            type: string
+                          resolve:
+                            description: |-
+                              Resolve specifies when this reference should be resolved. The default
+                              is 'IfNotPresent', which will attempt to resolve the reference only when
+                              the corresponding field is not present. Use 'Always' to resolve the
+                              reference on every reconcile.
+                            enum:
+                            - Always
+                            - IfNotPresent
+                            type: string
+                        type: object
+                    required:
+                    - name
+                    type: object
+                  msiWorkspaceIdSelector:
+                    description: Selector for a Workspace in databricks to populate msiWorkspaceId.
                     properties:
                       matchControllerRef:
                         description: |-
@@ -1514,6 +1828,9 @@ spec:
                         type: string
                     type: object
                   msiWorkSpaceResourceId:
+                    description: The ID of the Data Factory Linked Service.
+                    type: string
+                  msiWorkspaceId:
                     description: Authenticate to ADB via managed service identity.
                     type: string
                   newClusterConfig:
@@ -1612,6 +1929,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

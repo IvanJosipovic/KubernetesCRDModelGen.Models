@@ -437,7 +437,7 @@ public partial class V1beta1CassandraClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11 and 4.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
+    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11, 4.0, 4.1 and 5.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -688,7 +688,7 @@ public partial class V1beta1CassandraClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11 and 4.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
+    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11, 4.0, 4.1 and 5.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -870,7 +870,7 @@ public partial class V1beta1CassandraClusterStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11 and 4.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
+    /// <summary>The version of Cassandra what the Cluster converges to run. Possible values are 3.11, 4.0, 4.1 and 5.0. Defaults to 3.11. Changing this forces a new Cassandra Cluster to be created.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
@@ -929,6 +929,15 @@ public partial class V1beta1CassandraClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CassandraClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

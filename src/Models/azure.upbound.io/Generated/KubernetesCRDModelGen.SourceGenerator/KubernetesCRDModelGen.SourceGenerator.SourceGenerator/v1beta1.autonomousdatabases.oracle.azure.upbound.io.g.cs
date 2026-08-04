@@ -55,7 +55,7 @@ public enum V1beta1AutonomousDatabaseSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database to be created.</summary>
+/// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseSpecForProviderAdminPasswordSecretRef
@@ -393,7 +393,7 @@ public partial class V1beta1AutonomousDatabaseSpecForProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseSpecForProvider
 {
-    /// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database to be created.</summary>
+    /// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing.</summary>
     [JsonPropertyName("adminPasswordSecretRef")]
     public V1beta1AutonomousDatabaseSpecForProviderAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
@@ -498,7 +498,7 @@ public partial class V1beta1AutonomousDatabaseSpecForProvider
     public string? VirtualNetworkId { get; set; }
 }
 
-/// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database to be created.</summary>
+/// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseSpecInitProviderAdminPasswordSecretRef
@@ -701,7 +701,7 @@ public partial class V1beta1AutonomousDatabaseSpecInitProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutonomousDatabaseSpecInitProvider
 {
-    /// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing. Changing this forces a new Autonomous Database to be created.</summary>
+    /// <summary>The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (&quot;) or the username &quot;admin&quot;, regardless of casing.</summary>
     [JsonPropertyName("adminPasswordSecretRef")]
     public required V1beta1AutonomousDatabaseSpecInitProviderAdminPasswordSecretRef AdminPasswordSecretRef { get; set; }
 
@@ -1146,6 +1146,15 @@ public partial class V1beta1AutonomousDatabaseStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AutonomousDatabaseStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

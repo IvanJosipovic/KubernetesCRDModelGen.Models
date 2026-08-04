@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitiveservices.azure.m.upbound.io;
-/// <summary>AccountRaiBlocklist is the Schema for the AccountRaiBlocklists API. Manages a Cognitive Account Rai Blocklist.</summary>
+/// <summary>AccountRaiBlocklist is the Schema for the AccountRaiBlocklists API. Manages a Microsoft Foundry &quot;Guardrails + Controls&quot; blocklist. Microsoft Foundry was previously known as &quot;Cognitive Account&quot;.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -210,6 +210,10 @@ public partial class V1beta1AccountRaiBlocklistSpecForProvider
     /// <summary>A short description for the Cognitive Account Rai Blocklist.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>A mapping of tags assigned to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -231,6 +235,10 @@ public partial class V1beta1AccountRaiBlocklistSpecInitProvider
     /// <summary>A short description for the Cognitive Account Rai Blocklist.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>A mapping of tags assigned to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -355,6 +363,10 @@ public partial class V1beta1AccountRaiBlocklistStatusAtProvider
     /// <summary>The ID of the Cognitive Account Rai Blocklist.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>A mapping of tags assigned to the resource.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -413,6 +425,15 @@ public partial class V1beta1AccountRaiBlocklistStatus
     public IList<V1beta1AccountRaiBlocklistStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -421,7 +442,7 @@ public partial class V1beta1AccountRaiBlocklistStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AccountRaiBlocklist is the Schema for the AccountRaiBlocklists API. Manages a Cognitive Account Rai Blocklist.</summary>
+/// <summary>AccountRaiBlocklist is the Schema for the AccountRaiBlocklists API. Manages a Microsoft Foundry &quot;Guardrails + Controls&quot; blocklist. Microsoft Foundry was previously known as &quot;Cognitive Account&quot;.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

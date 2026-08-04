@@ -78,7 +78,7 @@ spec:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
                   customBlockResponseStatusCode:
-                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, or 429.
+                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, 429, 990, 991, 992, 993, 994, 995, 996, 997, 998, or 999.
                     type: number
                   customRule:
                     description: One or more custom_rule blocks as defined below.
@@ -438,7 +438,7 @@ spec:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
                   customBlockResponseStatusCode:
-                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, or 429.
+                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, 429, 990, 991, 992, 993, 994, 995, 996, 997, 998, or 999.
                     type: number
                   customRule:
                     description: One or more custom_rule blocks as defined below.
@@ -803,7 +803,7 @@ spec:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
                   customBlockResponseStatusCode:
-                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, or 429.
+                    description: If a custom_rule block's action type is block, this is the response status code. Possible values are 200, 403, 405, 406, 429, 990, 991, 992, 993, 994, 995, 996, 997, 998, or 999.
                     type: number
                   customRule:
                     description: One or more custom_rule blocks as defined below.
@@ -1049,6 +1049,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

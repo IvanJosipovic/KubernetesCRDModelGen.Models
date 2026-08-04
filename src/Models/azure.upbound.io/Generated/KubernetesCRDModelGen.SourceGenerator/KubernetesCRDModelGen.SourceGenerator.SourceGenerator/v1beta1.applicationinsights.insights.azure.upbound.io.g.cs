@@ -361,11 +361,13 @@ public partial class V1beta1ApplicationInsightsSpecForProvider
     [JsonPropertyName("dailyDataCapInGb")]
     public double? DailyDataCapInGb { get; set; }
 
-    /// <summary>Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.</summary>
     [JsonPropertyName("dailyDataCapNotificationsDisabled")]
     public bool? DailyDataCapNotificationsDisabled { get; set; }
 
-    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.</summary>
+    /// <summary>Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.</summary>
+    [JsonPropertyName("dailyDataCapNotificationsEnabled")]
+    public bool? DailyDataCapNotificationsEnabled { get; set; }
+
     [JsonPropertyName("disableIpMasking")]
     public bool? DisableIpMasking { get; set; }
 
@@ -381,9 +383,16 @@ public partial class V1beta1ApplicationInsightsSpecForProvider
     [JsonPropertyName("internetQueryEnabled")]
     public bool? InternetQueryEnabled { get; set; }
 
-    /// <summary>Disable Non-Azure AD based Auth. Defaults to false.</summary>
+    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.</summary>
+    [JsonPropertyName("ipMaskingEnabled")]
+    public bool? IpMaskingEnabled { get; set; }
+
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether Non-Azure AD based Auth is enabled. Defaults to true.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -597,11 +606,13 @@ public partial class V1beta1ApplicationInsightsSpecInitProvider
     [JsonPropertyName("dailyDataCapInGb")]
     public double? DailyDataCapInGb { get; set; }
 
-    /// <summary>Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.</summary>
     [JsonPropertyName("dailyDataCapNotificationsDisabled")]
     public bool? DailyDataCapNotificationsDisabled { get; set; }
 
-    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.</summary>
+    /// <summary>Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.</summary>
+    [JsonPropertyName("dailyDataCapNotificationsEnabled")]
+    public bool? DailyDataCapNotificationsEnabled { get; set; }
+
     [JsonPropertyName("disableIpMasking")]
     public bool? DisableIpMasking { get; set; }
 
@@ -617,9 +628,16 @@ public partial class V1beta1ApplicationInsightsSpecInitProvider
     [JsonPropertyName("internetQueryEnabled")]
     public bool? InternetQueryEnabled { get; set; }
 
-    /// <summary>Disable Non-Azure AD based Auth. Defaults to false.</summary>
+    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.</summary>
+    [JsonPropertyName("ipMaskingEnabled")]
+    public bool? IpMaskingEnabled { get; set; }
+
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether Non-Azure AD based Auth is enabled. Defaults to true.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -849,11 +867,13 @@ public partial class V1beta1ApplicationInsightsStatusAtProvider
     [JsonPropertyName("dailyDataCapInGb")]
     public double? DailyDataCapInGb { get; set; }
 
-    /// <summary>Specifies if a notification email will be sent when the daily data volume cap is met. Defaults to false.</summary>
     [JsonPropertyName("dailyDataCapNotificationsDisabled")]
     public bool? DailyDataCapNotificationsDisabled { get; set; }
 
-    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Use this argument to disable masking and log the real client IP. Defaults to false.</summary>
+    /// <summary>Whether a notification email will be sent when the daily data volume cap is met. Defaults to true.</summary>
+    [JsonPropertyName("dailyDataCapNotificationsEnabled")]
+    public bool? DailyDataCapNotificationsEnabled { get; set; }
+
     [JsonPropertyName("disableIpMasking")]
     public bool? DisableIpMasking { get; set; }
 
@@ -873,9 +893,16 @@ public partial class V1beta1ApplicationInsightsStatusAtProvider
     [JsonPropertyName("internetQueryEnabled")]
     public bool? InternetQueryEnabled { get; set; }
 
-    /// <summary>Disable Non-Azure AD based Auth. Defaults to false.</summary>
+    /// <summary>By default the real client IP is masked as 0.0.0.0 in the logs. Set this argument to false to disable masking and log the real client IP. Defaults to true.</summary>
+    [JsonPropertyName("ipMaskingEnabled")]
+    public bool? IpMaskingEnabled { get; set; }
+
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether Non-Azure AD based Auth is enabled. Defaults to true.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -956,6 +983,15 @@ public partial class V1beta1ApplicationInsightsStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ApplicationInsightsStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

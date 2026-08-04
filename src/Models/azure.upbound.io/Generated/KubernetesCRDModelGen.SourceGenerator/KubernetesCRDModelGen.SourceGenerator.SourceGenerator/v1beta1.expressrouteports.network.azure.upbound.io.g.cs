@@ -87,7 +87,7 @@ public partial class V1beta1ExpressRoutePortSpecForProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -113,7 +113,7 @@ public partial class V1beta1ExpressRoutePortSpecForProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -290,7 +290,7 @@ public partial class V1beta1ExpressRoutePortSpecForProvider
     [JsonPropertyName("bandwidthInGbps")]
     public double? BandwidthInGbps { get; set; }
 
-    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.</summary>
+    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.</summary>
     [JsonPropertyName("billingType")]
     public string? BillingType { get; set; }
 
@@ -362,7 +362,7 @@ public partial class V1beta1ExpressRoutePortSpecInitProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -388,7 +388,7 @@ public partial class V1beta1ExpressRoutePortSpecInitProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -422,7 +422,7 @@ public partial class V1beta1ExpressRoutePortSpecInitProvider
     [JsonPropertyName("bandwidthInGbps")]
     public double? BandwidthInGbps { get; set; }
 
-    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.</summary>
+    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.</summary>
     [JsonPropertyName("billingType")]
     public string? BillingType { get; set; }
 
@@ -692,7 +692,7 @@ public partial class V1beta1ExpressRoutePortStatusAtProviderLink1
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -742,7 +742,7 @@ public partial class V1beta1ExpressRoutePortStatusAtProviderLink2
     [JsonPropertyName("macsecCakKeyvaultSecretId")]
     public string? MacsecCakKeyvaultSecretId { get; set; }
 
-    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.</summary>
+    /// <summary>The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.</summary>
     [JsonPropertyName("macsecCipher")]
     public string? MacsecCipher { get; set; }
 
@@ -776,7 +776,7 @@ public partial class V1beta1ExpressRoutePortStatusAtProvider
     [JsonPropertyName("bandwidthInGbps")]
     public double? BandwidthInGbps { get; set; }
 
-    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.</summary>
+    /// <summary>The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.</summary>
     [JsonPropertyName("billingType")]
     public string? BillingType { get; set; }
 
@@ -885,6 +885,15 @@ public partial class V1beta1ExpressRoutePortStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ExpressRoutePortStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

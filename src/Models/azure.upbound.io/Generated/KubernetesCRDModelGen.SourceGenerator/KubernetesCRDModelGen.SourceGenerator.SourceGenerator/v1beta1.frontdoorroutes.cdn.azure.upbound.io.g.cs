@@ -902,7 +902,7 @@ public partial class V1beta1FrontdoorRouteSpecForProvider
     [JsonPropertyName("cdnFrontdoorOriginGroupIdSelector")]
     public V1beta1FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelector? CdnFrontdoorOriginGroupIdSelector { get; set; }
 
-    /// <summary>One or more Front Door Origin resource IDs that this Front Door Route will link to.</summary>
+    /// <summary>One or more Front Door Origin resource IDs for this Front Door Route.</summary>
     [JsonPropertyName("cdnFrontdoorOriginIds")]
     public IList<string>? CdnFrontdoorOriginIds { get; set; }
 
@@ -1642,7 +1642,7 @@ public partial class V1beta1FrontdoorRouteSpecInitProvider
     [JsonPropertyName("cdnFrontdoorOriginGroupIdSelector")]
     public V1beta1FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelector? CdnFrontdoorOriginGroupIdSelector { get; set; }
 
-    /// <summary>One or more Front Door Origin resource IDs that this Front Door Route will link to.</summary>
+    /// <summary>One or more Front Door Origin resource IDs for this Front Door Route.</summary>
     [JsonPropertyName("cdnFrontdoorOriginIds")]
     public IList<string>? CdnFrontdoorOriginIds { get; set; }
 
@@ -1928,7 +1928,7 @@ public partial class V1beta1FrontdoorRouteStatusAtProvider
     [JsonPropertyName("cdnFrontdoorOriginGroupId")]
     public string? CdnFrontdoorOriginGroupId { get; set; }
 
-    /// <summary>One or more Front Door Origin resource IDs that this Front Door Route will link to.</summary>
+    /// <summary>One or more Front Door Origin resource IDs for this Front Door Route.</summary>
     [JsonPropertyName("cdnFrontdoorOriginIds")]
     public IList<string>? CdnFrontdoorOriginIds { get; set; }
 
@@ -2025,6 +2025,15 @@ public partial class V1beta1FrontdoorRouteStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FrontdoorRouteStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

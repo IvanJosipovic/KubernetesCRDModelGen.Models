@@ -216,6 +216,13 @@ public partial class V1beta1ContainerJobSpecForProviderEventTriggerConfigScaleRu
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
 
+    /// <summary>
+    /// The ID of the identity used to authenticate with the scale rule backend. This can either be the Resource ID of a User Assigned Identity, or System for the System Assigned Identity.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
+
     /// <summary>Metadata properties to describe the scale rule.</summary>
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
@@ -923,7 +930,7 @@ public partial class V1beta1ContainerJobSpecForProviderTemplateContainerLiveness
 public partial class V1beta1ContainerJobSpecForProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -1007,8 +1014,8 @@ public partial class V1beta1ContainerJobSpecForProviderTemplateContainerReadines
 public partial class V1beta1ContainerJobSpecForProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -1098,8 +1105,8 @@ public partial class V1beta1ContainerJobSpecForProviderTemplateContainerStartupP
 public partial class V1beta1ContainerJobSpecForProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -1666,6 +1673,13 @@ public partial class V1beta1ContainerJobSpecInitProviderEventTriggerConfigScaleR
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
 
+    /// <summary>
+    /// The ID of the identity used to authenticate with the scale rule backend. This can either be the Resource ID of a User Assigned Identity, or System for the System Assigned Identity.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
+
     /// <summary>Metadata properties to describe the scale rule.</summary>
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
@@ -2218,7 +2232,7 @@ public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerLivenes
 public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -2302,8 +2316,8 @@ public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerReadine
 public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -2393,8 +2407,8 @@ public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerStartup
 public partial class V1beta1ContainerJobSpecInitProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -2913,6 +2927,13 @@ public partial class V1beta1ContainerJobStatusAtProviderEventTriggerConfigScaleR
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
 
+    /// <summary>
+    /// The ID of the identity used to authenticate with the scale rule backend. This can either be the Resource ID of a User Assigned Identity, or System for the System Assigned Identity.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
+
     /// <summary>Metadata properties to describe the scale rule.</summary>
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
@@ -3124,7 +3145,7 @@ public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerLivenes
 public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -3212,8 +3233,8 @@ public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerReadine
 public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -3303,8 +3324,8 @@ public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerStartup
 public partial class V1beta1ContainerJobStatusAtProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 10. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -3759,6 +3780,15 @@ public partial class V1beta1ContainerJobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ContainerJobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -117,7 +117,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyKeyProper
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeActionAction
 {
-    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggered. Possible values include AutoRenew and EmailContacts.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 }
@@ -498,7 +498,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyKeyPrope
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetimeActionAction
 {
-    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggered. Possible values include AutoRenew and EmailContacts.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 }
@@ -1027,7 +1027,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyKeyPrope
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetimeActionAction
 {
-    /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
+    /// <summary>The Type of action to be performed when the lifetime trigger is triggered. Possible values include AutoRenew and EmailContacts.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 }
@@ -1262,6 +1262,15 @@ public partial class V1beta1CertificateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

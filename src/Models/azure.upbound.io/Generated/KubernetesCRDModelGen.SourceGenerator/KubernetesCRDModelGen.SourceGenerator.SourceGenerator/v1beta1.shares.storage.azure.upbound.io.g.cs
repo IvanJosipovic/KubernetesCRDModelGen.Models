@@ -744,6 +744,10 @@ public partial class V1beta1ShareStatusAtProvider
     [JsonPropertyName("quota")]
     public double? Quota { get; set; }
 
+    /// <summary>The ID that is supposed to be used as the scope of an azurerm_role_assignmet for this File Share.</summary>
+    [JsonPropertyName("rbacScopeId")]
+    public string? RbacScopeId { get; set; }
+
     /// <summary>The Resource Manager ID of this File Share.</summary>
     [JsonPropertyName("resourceManagerId")]
     public string? ResourceManagerId { get; set; }
@@ -815,6 +819,15 @@ public partial class V1beta1ShareStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ShareStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

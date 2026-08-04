@@ -173,12 +173,40 @@ spec:
                   servicePrincipalId:
                     description: The service principal id with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with storage_account_key and use_managed_identity.
                     type: string
-                  servicePrincipalKey:
+                  servicePrincipalKeySecretRef:
                     description: The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.
-                    type: string
-                  storageAccountKey:
+                    properties:
+                      key:
+                        description: The key to select.
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                      namespace:
+                        description: Namespace of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    - namespace
+                    type: object
+                  storageAccountKeySecretRef:
                     description: The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.
-                    type: string
+                    properties:
+                      key:
+                        description: The key to select.
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                      namespace:
+                        description: Namespace of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    - namespace
+                    type: object
                   tenant:
                     description: The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.
                     type: string
@@ -228,12 +256,40 @@ spec:
                   servicePrincipalId:
                     description: The service principal id with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with storage_account_key and use_managed_identity.
                     type: string
-                  servicePrincipalKey:
+                  servicePrincipalKeySecretRef:
                     description: The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.
-                    type: string
-                  storageAccountKey:
+                    properties:
+                      key:
+                        description: The key to select.
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                      namespace:
+                        description: Namespace of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    - namespace
+                    type: object
+                  storageAccountKeySecretRef:
                     description: The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.
-                    type: string
+                    properties:
+                      key:
+                        description: The key to select.
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                      namespace:
+                        description: Namespace of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    - namespace
+                    type: object
                   tenant:
                     description: The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.
                     type: string
@@ -370,12 +426,6 @@ spec:
                   servicePrincipalId:
                     description: The service principal id with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with storage_account_key and use_managed_identity.
                     type: string
-                  servicePrincipalKey:
-                    description: The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.
-                    type: string
-                  storageAccountKey:
-                    description: The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.
-                    type: string
                   tenant:
                     description: The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.
                     type: string
@@ -430,6 +480,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

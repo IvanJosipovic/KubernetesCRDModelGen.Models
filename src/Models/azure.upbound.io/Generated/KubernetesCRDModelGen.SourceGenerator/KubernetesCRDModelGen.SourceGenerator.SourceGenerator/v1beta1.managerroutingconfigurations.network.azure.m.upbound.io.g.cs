@@ -210,6 +210,10 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProvider
     /// <summary>Selector for a Manager in network to populate networkManagerId.</summary>
     [JsonPropertyName("networkManagerIdSelector")]
     public V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelector? NetworkManagerIdSelector { get; set; }
+
+    /// <summary>The route table usage mode for the Network Manager Routing Configuration. Possible values are ManagedOnly and UseExisting. Defaults to ManagedOnly.</summary>
+    [JsonPropertyName("routeTableUsageMode")]
+    public string? RouteTableUsageMode { get; set; }
 }
 
 /// <summary>
@@ -231,6 +235,10 @@ public partial class V1beta1ManagerRoutingConfigurationSpecInitProvider
     /// <summary>The description of the Network Manager Routing Configuration.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The route table usage mode for the Network Manager Routing Configuration. Possible values are ManagedOnly and UseExisting. Defaults to ManagedOnly.</summary>
+    [JsonPropertyName("routeTableUsageMode")]
+    public string? RouteTableUsageMode { get; set; }
 }
 
 /// <summary>
@@ -355,6 +363,10 @@ public partial class V1beta1ManagerRoutingConfigurationStatusAtProvider
     /// <summary>The ID of the Network Manager. Changing this forces a new Network Manager Routing Configuration to be created.</summary>
     [JsonPropertyName("networkManagerId")]
     public string? NetworkManagerId { get; set; }
+
+    /// <summary>The route table usage mode for the Network Manager Routing Configuration. Possible values are ManagedOnly and UseExisting. Defaults to ManagedOnly.</summary>
+    [JsonPropertyName("routeTableUsageMode")]
+    public string? RouteTableUsageMode { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -411,6 +423,15 @@ public partial class V1beta1ManagerRoutingConfigurationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ManagerRoutingConfigurationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

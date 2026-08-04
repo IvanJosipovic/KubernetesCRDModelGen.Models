@@ -233,6 +233,10 @@ public partial class V1beta1TableSpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Specifies the ID of the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountId")]
+    public string? StorageAccountId { get; set; }
+
     /// <summary>Specifies the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountName")]
     public string? StorageAccountName { get; set; }
@@ -455,6 +459,10 @@ public partial class V1beta1TableSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Specifies the ID of the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountId")]
+    public string? StorageAccountId { get; set; }
+
     /// <summary>Specifies the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountName")]
     public string? StorageAccountName { get; set; }
@@ -628,6 +636,10 @@ public partial class V1beta1TableStatusAtProvider
     [JsonPropertyName("resourceManagerId")]
     public string? ResourceManagerId { get; set; }
 
+    /// <summary>Specifies the ID of the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("storageAccountId")]
+    public string? StorageAccountId { get; set; }
+
     /// <summary>Specifies the storage account in which to create the storage table. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountName")]
     public string? StorageAccountName { get; set; }
@@ -687,6 +699,15 @@ public partial class V1beta1TableStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TableStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

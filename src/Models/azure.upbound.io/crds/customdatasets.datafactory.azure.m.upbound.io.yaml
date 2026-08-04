@@ -261,7 +261,9 @@ spec:
                     description: The type of dataset that will be associated with Data Factory. Changing this forces a new resource to be created.
                     type: string
                   typePropertiesJson:
-                    description: A JSON object that contains the properties of the Data Factory Dataset.
+                    description: |-
+                      A JSON object that contains the properties of the Data Factory Dataset. Refer to
+                      datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlob-typed Dataset will be unmarshaled into AzureBlobDatasetTypeProperties struct.
                     type: string
                 type: object
               initProvider:
@@ -399,7 +401,9 @@ spec:
                     description: The type of dataset that will be associated with Data Factory. Changing this forces a new resource to be created.
                     type: string
                   typePropertiesJson:
-                    description: A JSON object that contains the properties of the Data Factory Dataset.
+                    description: |-
+                      A JSON object that contains the properties of the Data Factory Dataset. Refer to
+                      datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlob-typed Dataset will be unmarshaled into AzureBlobDatasetTypeProperties struct.
                     type: string
                 type: object
               managementPolicies:
@@ -521,7 +525,9 @@ spec:
                     description: The type of dataset that will be associated with Data Factory. Changing this forces a new resource to be created.
                     type: string
                   typePropertiesJson:
-                    description: A JSON object that contains the properties of the Data Factory Dataset.
+                    description: |-
+                      A JSON object that contains the properties of the Data Factory Dataset. Refer to
+                      datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlob-typed Dataset will be unmarshaled into AzureBlobDatasetTypeProperties struct.
                     type: string
                 type: object
               conditions:
@@ -568,6 +574,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

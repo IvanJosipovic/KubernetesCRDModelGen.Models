@@ -117,7 +117,7 @@ spec:
                       type: object
                     type: array
                   collation:
-                    description: Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
+                    description: Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
                     type: string
                   databaseFormat:
                     description: Specifies the internal format of the SQL Managed Instance databases specific to the SQL engine version. Possible values are AlwaysUpToDate and SQLServer2022. Defaults to SQLServer2022.
@@ -198,6 +198,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -229,10 +232,10 @@ spec:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
                     type: string
                   proxyOverride:
-                    description: Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.
+                    description: Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.
                     type: string
                   publicDataEndpointEnabled:
-                    description: Is the public data endpoint enabled? Default value is false.
+                    description: Is the public data endpoint enabled? Defaults to false.
                     type: boolean
                   resourceGroupName:
                     description: The name of the resource group in which to create the SQL Managed Instance. Changing this forces a new resource to be created.
@@ -314,11 +317,14 @@ spec:
                     description: The service principal type. The only possible value is SystemAssigned.
                     type: string
                   skuName:
-                    description: Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
+                    description: Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
                     type: string
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -405,13 +411,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   timezoneId:
-                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.
+                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.
                     type: string
                   vcores:
                     description: Number of cores that should be assigned to the SQL Managed Instance. Values can be 8, 16, or 24 for Gen4 SKUs, or 4, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96 or 128 for Gen5 SKUs.
                     type: number
                   zoneRedundantEnabled:
-                    description: Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.
+                    description: Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.
                     type: boolean
                 type: object
               initProvider:
@@ -469,7 +475,7 @@ spec:
                       type: object
                     type: array
                   collation:
-                    description: Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
+                    description: Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
                     type: string
                   databaseFormat:
                     description: Specifies the internal format of the SQL Managed Instance databases specific to the SQL engine version. Possible values are AlwaysUpToDate and SQLServer2022. Defaults to SQLServer2022.
@@ -550,6 +556,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -581,20 +590,23 @@ spec:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
                     type: string
                   proxyOverride:
-                    description: Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.
+                    description: Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.
                     type: string
                   publicDataEndpointEnabled:
-                    description: Is the public data endpoint enabled? Default value is false.
+                    description: Is the public data endpoint enabled? Defaults to false.
                     type: boolean
                   servicePrincipalType:
                     description: The service principal type. The only possible value is SystemAssigned.
                     type: string
                   skuName:
-                    description: Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
+                    description: Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
                     type: string
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -681,13 +693,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   timezoneId:
-                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.
+                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.
                     type: string
                   vcores:
                     description: Number of cores that should be assigned to the SQL Managed Instance. Values can be 8, 16, or 24 for Gen4 SKUs, or 4, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96 or 128 for Gen5 SKUs.
                     type: number
                   zoneRedundantEnabled:
-                    description: Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.
+                    description: Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.
                     type: boolean
                 type: object
               managementPolicies:
@@ -817,7 +829,7 @@ spec:
                       type: object
                     type: array
                   collation:
-                    description: Specifies how the SQL Managed Instance will be collated. Default value is SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
+                    description: Specifies how the SQL Managed Instance will be collated. Defaults to SQL_Latin1_General_CP1_CI_AS. Changing this forces a new resource to be created.
                     type: string
                   databaseFormat:
                     description: Specifies the internal format of the SQL Managed Instance databases specific to the SQL engine version. Possible values are AlwaysUpToDate and SQLServer2022. Defaults to SQLServer2022.
@@ -831,6 +843,9 @@ spec:
                   fqdn:
                     description: The fully qualified domain name of the Azure Managed SQL Instance
                     type: string
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -871,10 +886,10 @@ spec:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
                     type: string
                   proxyOverride:
-                    description: Specifies how the SQL Managed Instance will be accessed. Default value is Default. Valid values include Default, Proxy, and Redirect.
+                    description: Specifies how the SQL Managed Instance will be accessed. Defaults to Default. Possible values are Default, Proxy, and Redirect.
                     type: string
                   publicDataEndpointEnabled:
-                    description: Is the public data endpoint enabled? Default value is false.
+                    description: Is the public data endpoint enabled? Defaults to false.
                     type: boolean
                   resourceGroupName:
                     description: The name of the resource group in which to create the SQL Managed Instance. Changing this forces a new resource to be created.
@@ -883,11 +898,14 @@ spec:
                     description: The service principal type. The only possible value is SystemAssigned.
                     type: string
                   skuName:
-                    description: Specifies the SKU Name for the SQL Managed Instance. Valid values include GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
+                    description: Specifies the SKU Name for the SQL Managed Instance. Possible values are GP_Gen4, GP_Gen5, GP_Gen8IM, GP_Gen8IH, BC_Gen4, BC_Gen5, BC_Gen8IM or BC_Gen8IH.
                     type: string
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -901,13 +919,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   timezoneId:
-                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Default value is UTC. Changing this forces a new resource to be created.
+                    description: The TimeZone ID that the SQL Managed Instance will be operating in. Defaults to UTC. Changing this forces a new resource to be created.
                     type: string
                   vcores:
                     description: Number of cores that should be assigned to the SQL Managed Instance. Values can be 8, 16, or 24 for Gen4 SKUs, or 4, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96 or 128 for Gen5 SKUs.
                     type: number
                   zoneRedundantEnabled:
-                    description: Specifies whether or not the SQL Managed Instance is zone redundant. Defaults to false.
+                    description: Specifies whether the SQL Managed Instance is zone redundant. Defaults to false.
                     type: boolean
                 type: object
               conditions:
@@ -954,6 +972,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1144,6 +1169,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -1167,7 +1195,7 @@ spec:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   maintenanceConfigurationName:
-                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
+                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
                     type: string
                   minimumTlsVersion:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
@@ -1263,6 +1291,9 @@ spec:
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -1492,6 +1523,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -1515,7 +1549,7 @@ spec:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   maintenanceConfigurationName:
-                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
+                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
                     type: string
                   minimumTlsVersion:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
@@ -1535,6 +1569,9 @@ spec:
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -1769,6 +1806,9 @@ spec:
                   fqdn:
                     description: The fully qualified domain name of the Azure Managed SQL Instance
                     type: string
+                  generalPurposeV2Enabled:
+                    description: Specifies whether the SQL Managed Instance should use the Next-gen General Purpose service tier. Defaults to false.
+                    type: boolean
                   hybridSecondaryUsage:
                     description: Specifies the hybrid secondary usage for disaster recovery of the SQL Managed Instance. Possible values are Active and Passive. Defaults to Active.
                     type: string
@@ -1801,7 +1841,7 @@ spec:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   maintenanceConfigurationName:
-                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Possible values are SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
+                    description: The name of the Public Maintenance Configuration window to apply to the SQL Managed Instance. Valid values include SQL_Default or an Azure Location in the format SQL_{Location}_MI_{Size}(for example SQL_EastUS_MI_1). Defaults to SQL_Default.
                     type: string
                   minimumTlsVersion:
                     description: The Minimum TLS Version. Default value is 1.2 Valid values include 1.0, 1.1, 1.2.
@@ -1824,6 +1864,9 @@ spec:
                   storageAccountType:
                     description: Specifies the storage account type used to store backups for this database. Possible values are GRS, GZRS, LRS, and ZRS. Defaults to GRS.
                     type: string
+                  storageIops:
+                    description: The storage IOPS for the SQL Managed Instance. Possible values are between 300 and 80000. This can only be specified when general_purpose_v2_enabled is true.
+                    type: number
                   storageSizeInGb:
                     description: Maximum storage space for the SQL Managed instance. This should be a multiple of 32 (GB).
                     type: number
@@ -1890,6 +1933,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

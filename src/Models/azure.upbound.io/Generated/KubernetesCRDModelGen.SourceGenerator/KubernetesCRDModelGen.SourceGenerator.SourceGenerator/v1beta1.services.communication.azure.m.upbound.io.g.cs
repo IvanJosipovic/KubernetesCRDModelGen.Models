@@ -195,7 +195,7 @@ public partial class V1beta1ServiceSpecForProviderResourceGroupNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceSpecForProvider
 {
-    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.</summary>
+    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.</summary>
     [JsonPropertyName("dataLocation")]
     public string? DataLocation { get; set; }
 
@@ -232,7 +232,7 @@ public partial class V1beta1ServiceSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceSpecInitProvider
 {
-    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.</summary>
+    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.</summary>
     [JsonPropertyName("dataLocation")]
     public string? DataLocation { get; set; }
 
@@ -352,7 +352,7 @@ public partial class V1beta1ServiceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceStatusAtProvider
 {
-    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Defaults to United States. Changing this forces a new Communication Service to be created.</summary>
+    /// <summary>The location where the Communication service stores its data at rest. Possible values are Africa, Asia Pacific, Australia, Brazil, Canada, Europe, France, Germany, India, Japan, Korea, Norway, Switzerland, UAE, UK, usgov and United States. Changing this forces a new Communication Service to be created.</summary>
     [JsonPropertyName("dataLocation")]
     public string? DataLocation { get; set; }
 
@@ -427,6 +427,15 @@ public partial class V1beta1ServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

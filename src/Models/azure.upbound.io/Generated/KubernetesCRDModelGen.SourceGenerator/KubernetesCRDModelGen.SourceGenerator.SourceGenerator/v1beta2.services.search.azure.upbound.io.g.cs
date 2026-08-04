@@ -614,6 +614,10 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("customerManagedKeyEnforcementEnabled")]
     public bool? CustomerManagedKeyEnforcementEnabled { get; set; }
 
+    /// <summary>The endpoint used to connect to this Search Service.</summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
     /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.</summary>
     [JsonPropertyName("hostingMode")]
     public string? HostingMode { get; set; }
@@ -725,6 +729,15 @@ public partial class V1beta2ServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

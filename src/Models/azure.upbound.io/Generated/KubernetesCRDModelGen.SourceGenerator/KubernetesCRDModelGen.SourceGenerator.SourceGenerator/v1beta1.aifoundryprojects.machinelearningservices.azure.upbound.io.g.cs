@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.upbound.io;
-/// <summary>AIFoundryProject is the Schema for the AIFoundryProjects API. Manages an AI Foundry Project.</summary>
+/// <summary>AIFoundryProject is the Schema for the AIFoundryProjects API. Manages a Microsoft Foundry Hub (classic) Project resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -1405,6 +1405,15 @@ public partial class V1beta1AIFoundryProjectStatus
     public IList<V1beta1AIFoundryProjectStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -1413,7 +1422,7 @@ public partial class V1beta1AIFoundryProjectStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AIFoundryProject is the Schema for the AIFoundryProjects API. Manages an AI Foundry Project.</summary>
+/// <summary>AIFoundryProject is the Schema for the AIFoundryProjects API. Manages a Microsoft Foundry Hub (classic) Project resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

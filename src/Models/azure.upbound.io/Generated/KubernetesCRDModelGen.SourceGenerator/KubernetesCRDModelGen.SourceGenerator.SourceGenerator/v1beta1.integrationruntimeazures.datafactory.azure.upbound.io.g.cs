@@ -218,7 +218,7 @@ public partial class V1beta1IntegrationRuntimeAzureSpecForProvider
     [JsonPropertyName("coreCount")]
     public double? CoreCount { get; set; }
 
-    /// <summary>The Data Factory ID in which to associate the Linked Service with. Changing this forces a new resource.</summary>
+    /// <summary>The Data Factory ID in which to associate the Linked Service with. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("dataFactoryId")]
     public string? DataFactoryId { get; set; }
 
@@ -233,6 +233,10 @@ public partial class V1beta1IntegrationRuntimeAzureSpecForProvider
     /// <summary>Integration runtime description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The time to live in minutes for the interactive authoring feature, setting this enables interactive authoring. Possible values are 10, 30, 60, and 120.</summary>
+    [JsonPropertyName("interactiveAuthoringTimeToLiveInMinutes")]
+    public double? InteractiveAuthoringTimeToLiveInMinutes { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Use AutoResolve to create an auto-resolve integration runtime. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -278,6 +282,10 @@ public partial class V1beta1IntegrationRuntimeAzureSpecInitProvider
     /// <summary>Integration runtime description.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>The time to live in minutes for the interactive authoring feature, setting this enables interactive authoring. Possible values are 10, 30, 60, and 120.</summary>
+    [JsonPropertyName("interactiveAuthoringTimeToLiveInMinutes")]
+    public double? InteractiveAuthoringTimeToLiveInMinutes { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Use AutoResolve to create an auto-resolve integration runtime. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -491,7 +499,7 @@ public partial class V1beta1IntegrationRuntimeAzureStatusAtProvider
     [JsonPropertyName("coreCount")]
     public double? CoreCount { get; set; }
 
-    /// <summary>The Data Factory ID in which to associate the Linked Service with. Changing this forces a new resource.</summary>
+    /// <summary>The Data Factory ID in which to associate the Linked Service with. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("dataFactoryId")]
     public string? DataFactoryId { get; set; }
 
@@ -502,6 +510,10 @@ public partial class V1beta1IntegrationRuntimeAzureStatusAtProvider
     /// <summary>The ID of the Data Factory Integration Runtime.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The time to live in minutes for the interactive authoring feature, setting this enables interactive authoring. Possible values are 10, 30, 60, and 120.</summary>
+    [JsonPropertyName("interactiveAuthoringTimeToLiveInMinutes")]
+    public double? InteractiveAuthoringTimeToLiveInMinutes { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Use AutoResolve to create an auto-resolve integration runtime. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -570,6 +582,15 @@ public partial class V1beta1IntegrationRuntimeAzureStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1IntegrationRuntimeAzureStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -1309,7 +1309,7 @@ public partial class V1beta2PrivateEndpointStatusAtProviderPrivateDnsZoneConfigs
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of IP Addresses</summary>
+    /// <summary>The ID of the Private DNS Zone that the config belongs to.</summary>
     [JsonPropertyName("privateDnsZoneId")]
     public string? PrivateDnsZoneId { get; set; }
 
@@ -1357,7 +1357,7 @@ public partial class V1beta2PrivateEndpointStatusAtProviderPrivateServiceConnect
     [JsonPropertyName("privateConnectionResourceId")]
     public string? PrivateConnectionResourceId { get; set; }
 
-    /// <summary>(Computed) The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was Rejected.</summary>
+    /// <summary>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was Rejected.</summary>
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }
 
@@ -1477,6 +1477,15 @@ public partial class V1beta2PrivateEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2PrivateEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

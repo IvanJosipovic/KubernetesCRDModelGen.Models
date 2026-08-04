@@ -280,7 +280,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateServiceConnecti
     [JsonPropertyName("privateConnectionResourceId")]
     public string? PrivateConnectionResourceId { get; set; }
 
-    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The request message can be a maximum of 140 characters in length. Only valid if is_manual_connection is set to true.</summary>
+    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The provider allows a maximum request message length of 140 characters, however the request message maximum length is dependent on the service the private endpoint is connected to. Only valid if is_manual_connection is set to true.</summary>
     [JsonPropertyName("requestMessage")]
     public string? RequestMessage { get; set; }
 
@@ -873,7 +873,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateServiceConnect
     [JsonPropertyName("privateConnectionResourceId")]
     public string? PrivateConnectionResourceId { get; set; }
 
-    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The request message can be a maximum of 140 characters in length. Only valid if is_manual_connection is set to true.</summary>
+    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The provider allows a maximum request message length of 140 characters, however the request message maximum length is dependent on the service the private endpoint is connected to. Only valid if is_manual_connection is set to true.</summary>
     [JsonPropertyName("requestMessage")]
     public string? RequestMessage { get; set; }
 
@@ -1370,7 +1370,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneConfigs
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of IP Addresses</summary>
+    /// <summary>The ID of the Private DNS Zone that the config belongs to.</summary>
     [JsonPropertyName("privateDnsZoneId")]
     public string? PrivateDnsZoneId { get; set; }
 
@@ -1418,11 +1418,11 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateServiceConnect
     [JsonPropertyName("privateConnectionResourceId")]
     public string? PrivateConnectionResourceId { get; set; }
 
-    /// <summary>(Computed) The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was Rejected.</summary>
+    /// <summary>The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was Rejected.</summary>
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }
 
-    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The request message can be a maximum of 140 characters in length. Only valid if is_manual_connection is set to true.</summary>
+    /// <summary>A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The provider allows a maximum request message length of 140 characters, however the request message maximum length is dependent on the service the private endpoint is connected to. Only valid if is_manual_connection is set to true.</summary>
     [JsonPropertyName("requestMessage")]
     public string? RequestMessage { get; set; }
 
@@ -1541,6 +1541,15 @@ public partial class V1beta1PrivateEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PrivateEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

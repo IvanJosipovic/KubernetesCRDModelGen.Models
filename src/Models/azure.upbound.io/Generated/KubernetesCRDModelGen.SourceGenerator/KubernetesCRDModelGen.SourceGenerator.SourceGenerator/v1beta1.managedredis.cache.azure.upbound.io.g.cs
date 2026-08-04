@@ -392,7 +392,7 @@ public partial class V1beta1ManagedRedisSpecForProviderDefaultDatabaseModule
     public string? Name { get; set; }
 }
 
-/// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+/// <summary>A default_database block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisSpecForProviderDefaultDatabase
@@ -413,7 +413,7 @@ public partial class V1beta1ManagedRedisSpecForProviderDefaultDatabase
     [JsonPropertyName("evictionPolicy")]
     public string? EvictionPolicy { get; set; }
 
-    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_database_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
+    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
     [JsonPropertyName("geoReplicationGroupName")]
     public string? GeoReplicationGroupName { get; set; }
 
@@ -754,7 +754,7 @@ public partial class V1beta1ManagedRedisSpecForProvider
     [JsonPropertyName("customerManagedKey")]
     public V1beta1ManagedRedisSpecForProviderCustomerManagedKey? CustomerManagedKey { get; set; }
 
-    /// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+    /// <summary>A default_database block as defined below.</summary>
     [JsonPropertyName("defaultDatabase")]
     public V1beta1ManagedRedisSpecForProviderDefaultDatabase? DefaultDatabase { get; set; }
 
@@ -786,7 +786,7 @@ public partial class V1beta1ManagedRedisSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1ManagedRedisSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication. Changing this forces a new Managed Redis instance to be created.</summary>
+    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -1132,7 +1132,7 @@ public partial class V1beta1ManagedRedisSpecInitProviderDefaultDatabaseModule
     public string? Name { get; set; }
 }
 
-/// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+/// <summary>A default_database block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisSpecInitProviderDefaultDatabase
@@ -1153,7 +1153,7 @@ public partial class V1beta1ManagedRedisSpecInitProviderDefaultDatabase
     [JsonPropertyName("evictionPolicy")]
     public string? EvictionPolicy { get; set; }
 
-    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_database_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
+    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
     [JsonPropertyName("geoReplicationGroupName")]
     public string? GeoReplicationGroupName { get; set; }
 
@@ -1359,7 +1359,7 @@ public partial class V1beta1ManagedRedisSpecInitProvider
     [JsonPropertyName("customerManagedKey")]
     public V1beta1ManagedRedisSpecInitProviderCustomerManagedKey? CustomerManagedKey { get; set; }
 
-    /// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+    /// <summary>A default_database block as defined below.</summary>
     [JsonPropertyName("defaultDatabase")]
     public V1beta1ManagedRedisSpecInitProviderDefaultDatabase? DefaultDatabase { get; set; }
 
@@ -1379,7 +1379,7 @@ public partial class V1beta1ManagedRedisSpecInitProvider
     [JsonPropertyName("publicNetworkAccess")]
     public string? PublicNetworkAccess { get; set; }
 
-    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication. Changing this forces a new Managed Redis instance to be created.</summary>
+    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -1602,7 +1602,7 @@ public partial class V1beta1ManagedRedisStatusAtProviderDefaultDatabaseModule
     public string? Version { get; set; }
 }
 
-/// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+/// <summary>A default_database block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisStatusAtProviderDefaultDatabase
@@ -1623,7 +1623,7 @@ public partial class V1beta1ManagedRedisStatusAtProviderDefaultDatabase
     [JsonPropertyName("evictionPolicy")]
     public string? EvictionPolicy { get; set; }
 
-    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_database_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
+    /// <summary>The name of the geo-replication group. If provided, a geo-replication group will be created for this database with itself as the only member. Use azurerm_managed_redis_geo_replication resource to manage group membership, linking and unlinking. All databases to be linked have to have the same group name. Refer to the Managed Redis geo-replication documentation for more information.</summary>
     [JsonPropertyName("geoReplicationGroupName")]
     public string? GeoReplicationGroupName { get; set; }
 
@@ -1678,7 +1678,7 @@ public partial class V1beta1ManagedRedisStatusAtProvider
     [JsonPropertyName("customerManagedKey")]
     public V1beta1ManagedRedisStatusAtProviderCustomerManagedKey? CustomerManagedKey { get; set; }
 
-    /// <summary>A default_database block as defined below. A Managed Redis instance will not be functional without a database. This block is intentionally optional to allow removal and re-creation of the database for troubleshooting purposes. A default database can be created or deleted in-place, however most properties will trigger an entire cluster replacement if changed.</summary>
+    /// <summary>A default_database block as defined below.</summary>
     [JsonPropertyName("defaultDatabase")]
     public V1beta1ManagedRedisStatusAtProviderDefaultDatabase? DefaultDatabase { get; set; }
 
@@ -1710,7 +1710,7 @@ public partial class V1beta1ManagedRedisStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication. Changing this forces a new Managed Redis instance to be created.</summary>
+    /// <summary>The features and specification of the Managed Redis instance to deploy. Possible values are Balanced_B0, Balanced_B1, Balanced_B10, Balanced_B100, Balanced_B1000, Balanced_B150, Balanced_B20, Balanced_B250, Balanced_B3, Balanced_B350, Balanced_B5, Balanced_B50, Balanced_B500, Balanced_B700, ComputeOptimized_X10, ComputeOptimized_X100, ComputeOptimized_X150, ComputeOptimized_X20, ComputeOptimized_X250, ComputeOptimized_X3, ComputeOptimized_X350, ComputeOptimized_X5, ComputeOptimized_X50, ComputeOptimized_X500, ComputeOptimized_X700, FlashOptimized_A1000, FlashOptimized_A1500, FlashOptimized_A2000, FlashOptimized_A250, FlashOptimized_A4500, FlashOptimized_A500, FlashOptimized_A700, MemoryOptimized_M10, MemoryOptimized_M100, MemoryOptimized_M1000, MemoryOptimized_M150, MemoryOptimized_M1500, MemoryOptimized_M20, MemoryOptimized_M2000, MemoryOptimized_M250, MemoryOptimized_M350, MemoryOptimized_M50, MemoryOptimized_M500 and MemoryOptimized_M700. Balanced_B3 SKU or higher is required for geo-replication.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -1773,6 +1773,15 @@ public partial class V1beta1ManagedRedisStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ManagedRedisStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

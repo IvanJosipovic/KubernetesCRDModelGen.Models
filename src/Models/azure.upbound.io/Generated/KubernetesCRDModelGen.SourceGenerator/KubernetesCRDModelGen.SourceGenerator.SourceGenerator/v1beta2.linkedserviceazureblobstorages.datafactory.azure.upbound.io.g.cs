@@ -367,7 +367,6 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVault
     public V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasToken
@@ -383,6 +382,20 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVault
     /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
     [JsonPropertyName("linkedServiceNameSelector")]
     public V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelector? LinkedServiceNameSelector { get; set; }
+
+    /// <summary>Specifies the secret name in Azure Key Vault that stores the Service Principal key.</summary>
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+/// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2LinkedServiceAzureBlobStorageSpecForProviderSasTokenLinkedKeyVaultKey
+{
+    /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
+    [JsonPropertyName("linkedServiceName")]
+    public string? LinkedServiceName { get; set; }
 
     /// <summary>Specifies the secret name in Azure Key Vault that stores the SAS token.</summary>
     [JsonPropertyName("secretName")]
@@ -634,13 +647,16 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecForProvider
     [JsonPropertyName("integrationRuntimeName")]
     public string? IntegrationRuntimeName { get; set; }
 
-    /// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
     [JsonPropertyName("keyVaultSasToken")]
     public V1beta2LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasToken? KeyVaultSasToken { get; set; }
 
     /// <summary>A map of parameters to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
+
+    /// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+    [JsonPropertyName("sasTokenLinkedKeyVaultKey")]
+    public V1beta2LinkedServiceAzureBlobStorageSpecForProviderSasTokenLinkedKeyVaultKey? SasTokenLinkedKeyVaultKey { get; set; }
 
     /// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
     [JsonPropertyName("sasuriSecretRef")]
@@ -840,7 +856,6 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
     public V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
@@ -856,6 +871,20 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
     /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
     [JsonPropertyName("linkedServiceNameSelector")]
     public V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelector? LinkedServiceNameSelector { get; set; }
+
+    /// <summary>Specifies the secret name in Azure Key Vault that stores the Service Principal key.</summary>
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+/// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2LinkedServiceAzureBlobStorageSpecInitProviderSasTokenLinkedKeyVaultKey
+{
+    /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
+    [JsonPropertyName("linkedServiceName")]
+    public string? LinkedServiceName { get; set; }
 
     /// <summary>Specifies the secret name in Azure Key Vault that stores the SAS token.</summary>
     [JsonPropertyName("secretName")]
@@ -1107,13 +1136,16 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpecInitProvider
     [JsonPropertyName("integrationRuntimeName")]
     public string? IntegrationRuntimeName { get; set; }
 
-    /// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
     [JsonPropertyName("keyVaultSasToken")]
     public V1beta2LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken? KeyVaultSasToken { get; set; }
 
     /// <summary>A map of parameters to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
+
+    /// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+    [JsonPropertyName("sasTokenLinkedKeyVaultKey")]
+    public V1beta2LinkedServiceAzureBlobStorageSpecInitProviderSasTokenLinkedKeyVaultKey? SasTokenLinkedKeyVaultKey { get; set; }
 
     /// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
     [JsonPropertyName("sasuriSecretRef")]
@@ -1331,10 +1363,23 @@ public partial class V1beta2LinkedServiceAzureBlobStorageSpec
     public V1beta2LinkedServiceAzureBlobStorageSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureBlobStorageStatusAtProviderKeyVaultSasToken
+{
+    /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
+    [JsonPropertyName("linkedServiceName")]
+    public string? LinkedServiceName { get; set; }
+
+    /// <summary>Specifies the secret name in Azure Key Vault that stores the Service Principal key.</summary>
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+/// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2LinkedServiceAzureBlobStorageStatusAtProviderSasTokenLinkedKeyVaultKey
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
     [JsonPropertyName("linkedServiceName")]
@@ -1391,13 +1436,16 @@ public partial class V1beta2LinkedServiceAzureBlobStorageStatusAtProvider
     [JsonPropertyName("integrationRuntimeName")]
     public string? IntegrationRuntimeName { get; set; }
 
-    /// <summary>A key_vault_sas_token block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
     [JsonPropertyName("keyVaultSasToken")]
     public V1beta2LinkedServiceAzureBlobStorageStatusAtProviderKeyVaultSasToken? KeyVaultSasToken { get; set; }
 
     /// <summary>A map of parameters to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
+
+    /// <summary>A sas_token_linked_key_vault_key block as defined below. Use this argument to store SAS Token in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. A sas_uri is required.</summary>
+    [JsonPropertyName("sasTokenLinkedKeyVaultKey")]
+    public V1beta2LinkedServiceAzureBlobStorageStatusAtProviderSasTokenLinkedKeyVaultKey? SasTokenLinkedKeyVaultKey { get; set; }
 
     /// <summary>The service principal id in which to authenticate against the Azure Blob Storage account.</summary>
     [JsonPropertyName("servicePrincipalId")]
@@ -1478,6 +1526,15 @@ public partial class V1beta2LinkedServiceAzureBlobStorageStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2LinkedServiceAzureBlobStorageStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

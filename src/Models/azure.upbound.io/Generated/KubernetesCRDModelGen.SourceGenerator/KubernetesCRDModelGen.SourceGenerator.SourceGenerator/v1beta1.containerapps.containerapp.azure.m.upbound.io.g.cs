@@ -725,7 +725,7 @@ public partial class V1beta1ContainerAppSpecForProviderTemplateContainerLiveness
 public partial class V1beta1ContainerAppSpecForProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -809,8 +809,8 @@ public partial class V1beta1ContainerAppSpecForProviderTemplateContainerReadines
 public partial class V1beta1ContainerAppSpecForProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -900,8 +900,8 @@ public partial class V1beta1ContainerAppSpecForProviderTemplateContainerStartupP
 public partial class V1beta1ContainerAppSpecForProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -1077,6 +1077,13 @@ public partial class V1beta1ContainerAppSpecForProviderTemplateCustomScaleRule
     /// <summary>The Custom rule type. Possible values include: activemq, artemis-queue, kafka, pulsar, aws-cloudwatch, aws-dynamodb, aws-dynamodb-streams, aws-kinesis-stream, aws-sqs-queue, azure-app-insights, azure-blob, azure-data-explorer, azure-eventhub, azure-log-analytics, azure-monitor, azure-pipelines, azure-servicebus, azure-queue, cassandra, cpu, cron, datadog, elasticsearch, external, external-push, gcp-stackdriver, gcp-storage, gcp-pubsub, graphite, http, huawei-cloudeye, ibmmq, influxdb, kubernetes-workload, liiklus, memory, metrics-api, mongodb, mssql, mysql, nats-jetstream, stan, tcp, new-relic, openstack-metric, openstack-swift, postgresql, predictkube, prometheus, rabbitmq, redis, redis-cluster, redis-sentinel, redis-streams, redis-cluster-streams, redis-sentinel-streams, selenium-grid,solace-event-queue, and github-runner.</summary>
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
+
+    /// <summary>
+    /// The ID of the Container App.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
 
     /// <summary>- A map of string key-value pairs to configure the Custom Scale Rule.</summary>
     [JsonPropertyName("metadata")]
@@ -1969,7 +1976,7 @@ public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerLivenes
 public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -2053,8 +2060,8 @@ public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerReadine
 public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -2144,8 +2151,8 @@ public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerStartup
 public partial class V1beta1ContainerAppSpecInitProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -2321,6 +2328,13 @@ public partial class V1beta1ContainerAppSpecInitProviderTemplateCustomScaleRule
     /// <summary>The Custom rule type. Possible values include: activemq, artemis-queue, kafka, pulsar, aws-cloudwatch, aws-dynamodb, aws-dynamodb-streams, aws-kinesis-stream, aws-sqs-queue, azure-app-insights, azure-blob, azure-data-explorer, azure-eventhub, azure-log-analytics, azure-monitor, azure-pipelines, azure-servicebus, azure-queue, cassandra, cpu, cron, datadog, elasticsearch, external, external-push, gcp-stackdriver, gcp-storage, gcp-pubsub, graphite, http, huawei-cloudeye, ibmmq, influxdb, kubernetes-workload, liiklus, memory, metrics-api, mongodb, mssql, mysql, nats-jetstream, stan, tcp, new-relic, openstack-metric, openstack-swift, postgresql, predictkube, prometheus, rabbitmq, redis, redis-cluster, redis-sentinel, redis-streams, redis-cluster-streams, redis-sentinel-streams, selenium-grid,solace-event-queue, and github-runner.</summary>
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
+
+    /// <summary>
+    /// The ID of the Container App.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
 
     /// <summary>- A map of string key-value pairs to configure the Custom Scale Rule.</summary>
     [JsonPropertyName("metadata")]
@@ -3155,7 +3169,7 @@ public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerLivenes
 public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerLivenessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
     /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
@@ -3246,8 +3260,8 @@ public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerReadine
 public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerReadinessProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -3337,8 +3351,8 @@ public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerStartup
 public partial class V1beta1ContainerAppStatusAtProviderTemplateContainerStartupProbe
 {
     /// <summary>
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 30. Defaults to 3.
-    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between 1 and 240. Defaults to 3.
+    /// The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
     /// </summary>
     [JsonPropertyName("failureCountThreshold")]
     public double? FailureCountThreshold { get; set; }
@@ -3528,6 +3542,13 @@ public partial class V1beta1ContainerAppStatusAtProviderTemplateCustomScaleRule
     /// <summary>The Custom rule type. Possible values include: activemq, artemis-queue, kafka, pulsar, aws-cloudwatch, aws-dynamodb, aws-dynamodb-streams, aws-kinesis-stream, aws-sqs-queue, azure-app-insights, azure-blob, azure-data-explorer, azure-eventhub, azure-log-analytics, azure-monitor, azure-pipelines, azure-servicebus, azure-queue, cassandra, cpu, cron, datadog, elasticsearch, external, external-push, gcp-stackdriver, gcp-storage, gcp-pubsub, graphite, http, huawei-cloudeye, ibmmq, influxdb, kubernetes-workload, liiklus, memory, metrics-api, mongodb, mssql, mysql, nats-jetstream, stan, tcp, new-relic, openstack-metric, openstack-swift, postgresql, predictkube, prometheus, rabbitmq, redis, redis-cluster, redis-sentinel, redis-streams, redis-cluster-streams, redis-sentinel-streams, selenium-grid,solace-event-queue, and github-runner.</summary>
     [JsonPropertyName("customRuleType")]
     public string? CustomRuleType { get; set; }
+
+    /// <summary>
+    /// The ID of the Container App.
+    /// ID of the System or User Managed Identity used to execute scale rule.
+    /// </summary>
+    [JsonPropertyName("identityId")]
+    public string? IdentityId { get; set; }
 
     /// <summary>- A map of string key-value pairs to configure the Custom Scale Rule.</summary>
     [JsonPropertyName("metadata")]
@@ -3957,6 +3978,15 @@ public partial class V1beta1ContainerAppStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ContainerAppStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

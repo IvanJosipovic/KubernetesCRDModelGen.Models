@@ -1141,7 +1141,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("identity")]
     public V1beta1AccountSpecForProviderIdentity? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are AIServices, Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ConversationalLanguageUnderstanding, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -1181,7 +1181,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -2180,7 +2180,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("identity")]
     public V1beta1AccountSpecInitProviderIdentity? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are AIServices, Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ConversationalLanguageUnderstanding, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -2220,7 +2220,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -2486,7 +2486,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("identity")]
     public V1beta1AccountStatusAtProviderIdentity? Identity { get; set; }
 
-    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are AIServices, Academic, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ConversationalLanguageUnderstanding, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Cognitive Service Account that should be created. Possible values are Academic, AIServices, AnomalyDetector, Bing.Autosuggest, Bing.Autosuggest.v7, Bing.CustomSearch, Bing.Search, Bing.Search.v7, Bing.Speech, Bing.SpellCheck, Bing.SpellCheck.v7, CognitiveServices, ComputerVision, ContentModerator, ContentSafety, CustomSpeech, CustomVision.Prediction, CustomVision.Training, Emotion, Face, FormRecognizer, ImmersiveReader, LUIS, LUIS.Authoring, MetricsAdvisor, OpenAI, Personalizer, QnAMaker, Recommendations, SpeakerRecognition, Speech, SpeechServices, SpeechTranslation, TextAnalytics, TextTranslation and WebLM. Changing this forces a new resource to be created except when upgrading the Cognitive Service Account from OpenAI to AIServices or rolling back from AIServices to OpenAI. More information on upgrade and rollback scenario.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
@@ -2526,7 +2526,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("outboundNetworkAccessRestricted")]
     public bool? OutboundNetworkAccessRestricted { get; set; }
 
-    /// <summary>Whether project management is enabled when the kind is set to AIServices. Once enabled, project_management_enabled cannot be disabled. Defaults to false.</summary>
+    /// <summary>Whether project management is enabled. Can only be set to true when kind is set to AIServices. Once enabled, disabling project_management_enabled forces a new resource to be created unless kind is set to OpenAI. Defaults to false.</summary>
     [JsonPropertyName("projectManagementEnabled")]
     public bool? ProjectManagementEnabled { get; set; }
 
@@ -2609,6 +2609,15 @@ public partial class V1beta1AccountStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

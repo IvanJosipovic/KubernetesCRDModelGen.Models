@@ -375,7 +375,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociationDomain
 {
-    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.</summary>
     [JsonPropertyName("cdnFrontdoorDomainId")]
     public string? CdnFrontdoorDomainId { get; set; }
 
@@ -393,11 +393,11 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
@@ -562,11 +562,11 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewall
 {
-    /// <summary>An association block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>An association block as defined below.</summary>
     [JsonPropertyName("association")]
     public IList<V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociation>? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 
@@ -584,7 +584,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public IList<V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewall>? Firewall { get; set; }
 }
@@ -594,7 +594,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecForProvider
 {
-    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
@@ -606,7 +606,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecForProvider
     [JsonPropertyName("cdnFrontdoorProfileIdSelector")]
     public V1beta1FrontdoorSecurityPolicySpecForProviderCdnFrontdoorProfileIdSelector? CdnFrontdoorProfileIdSelector { get; set; }
 
-    /// <summary>An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public IList<V1beta1FrontdoorSecurityPolicySpecForProviderSecurityPolicies>? SecurityPolicies { get; set; }
 }
@@ -771,7 +771,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociationDomain
 {
-    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.</summary>
     [JsonPropertyName("cdnFrontdoorDomainId")]
     public string? CdnFrontdoorDomainId { get; set; }
 
@@ -789,11 +789,11 @@ public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
@@ -958,11 +958,11 @@ public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewall
 {
-    /// <summary>An association block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>An association block as defined below.</summary>
     [JsonPropertyName("association")]
     public IList<V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociation>? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 
@@ -980,7 +980,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public IList<V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewall>? Firewall { get; set; }
 }
@@ -1002,7 +1002,7 @@ public partial class V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicySpecInitProvider
 {
-    /// <summary>An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public IList<V1beta1FrontdoorSecurityPolicySpecInitProviderSecurityPolicies>? SecurityPolicies { get; set; }
 }
@@ -1202,11 +1202,11 @@ public partial class V1beta1FrontdoorSecurityPolicySpec
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociationDomain
 {
-    /// <summary>(Computed) Is the Front Door Custom Domain/Endpoint activated?</summary>
+    /// <summary>Whether the Front Door Custom Domain or Front Door Endpoint is active.</summary>
     [JsonPropertyName("active")]
     public bool? Active { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.</summary>
     [JsonPropertyName("cdnFrontdoorDomainId")]
     public string? CdnFrontdoorDomainId { get; set; }
 }
@@ -1216,11 +1216,11 @@ public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
@@ -1230,11 +1230,11 @@ public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewall
 {
-    /// <summary>An association block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>An association block as defined below.</summary>
     [JsonPropertyName("association")]
     public IList<V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociation>? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 }
@@ -1244,7 +1244,7 @@ public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public IList<V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewall>? Firewall { get; set; }
 }
@@ -1254,7 +1254,7 @@ public partial class V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorSecurityPolicyStatusAtProvider
 {
-    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
@@ -1262,7 +1262,7 @@ public partial class V1beta1FrontdoorSecurityPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public IList<V1beta1FrontdoorSecurityPolicyStatusAtProviderSecurityPolicies>? SecurityPolicies { get; set; }
 }
@@ -1323,6 +1323,15 @@ public partial class V1beta1FrontdoorSecurityPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FrontdoorSecurityPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
