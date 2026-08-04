@@ -1409,7 +1409,7 @@ public partial class V1beta1LinuxWebAppSlotSpecForProviderSiteConfigApplicationS
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
-    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts and 22-lts. This property conflicts with java_version.</summary>
+    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts, 22-lts and 24-lts. This property conflicts with java_version.</summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
@@ -1417,7 +1417,7 @@ public partial class V1beta1LinuxWebAppSlotSpecForProviderSiteConfigApplicationS
     [JsonPropertyName("phpVersion")]
     public string? PhpVersion { get; set; }
 
-    /// <summary>The version of Python to run. Possible values include 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
+    /// <summary>The version of Python to run. Possible values include 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -2151,6 +2151,13 @@ public partial class V1beta1LinuxWebAppSlotSpecForProviderSiteConfig
     /// <summary>Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.</summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>The configures the minimum version of TLS required for SSL requests. Possible values are 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.</summary>
     [JsonPropertyName("minimumTlsVersion")]
@@ -3905,7 +3912,7 @@ public partial class V1beta1LinuxWebAppSlotSpecInitProviderSiteConfigApplication
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
-    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts and 22-lts. This property conflicts with java_version.</summary>
+    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts, 22-lts and 24-lts. This property conflicts with java_version.</summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
@@ -3913,7 +3920,7 @@ public partial class V1beta1LinuxWebAppSlotSpecInitProviderSiteConfigApplication
     [JsonPropertyName("phpVersion")]
     public string? PhpVersion { get; set; }
 
-    /// <summary>The version of Python to run. Possible values include 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
+    /// <summary>The version of Python to run. Possible values include 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -4647,6 +4654,13 @@ public partial class V1beta1LinuxWebAppSlotSpecInitProviderSiteConfig
     /// <summary>Managed pipeline mode. Possible values include: Integrated, Classic. Defaults to Integrated.</summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>The configures the minimum version of TLS required for SSL requests. Possible values are 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.</summary>
     [JsonPropertyName("minimumTlsVersion")]
@@ -6205,7 +6219,7 @@ public partial class V1beta1LinuxWebAppSlotStatusAtProviderSiteConfigApplication
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
-    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts and 22-lts. This property conflicts with java_version.</summary>
+    /// <summary>The version of Node to run. Possible values are 12-lts, 14-lts, 16-lts, 18-lts, 20-lts, 22-lts and 24-lts. This property conflicts with java_version.</summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
 
@@ -6213,7 +6227,7 @@ public partial class V1beta1LinuxWebAppSlotStatusAtProviderSiteConfigApplication
     [JsonPropertyName("phpVersion")]
     public string? PhpVersion { get; set; }
 
-    /// <summary>The version of Python to run. Possible values include 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
+    /// <summary>The version of Python to run. Possible values include 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.</summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
 
@@ -6629,6 +6643,13 @@ public partial class V1beta1LinuxWebAppSlotStatusAtProviderSiteConfig
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
 
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
+
     /// <summary>The configures the minimum version of TLS required for SSL requests. Possible values are 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.</summary>
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
@@ -6914,6 +6935,15 @@ public partial class V1beta1LinuxWebAppSlotStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinuxWebAppSlotStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

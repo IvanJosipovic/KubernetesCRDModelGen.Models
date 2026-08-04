@@ -211,7 +211,7 @@ public partial class V1beta1HealthBotSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1HealthBotSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.</summary>
+    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -240,7 +240,7 @@ public partial class V1beta1HealthBotSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.</summary>
+    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1HealthBotStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.</summary>
+    /// <summary>The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -439,6 +439,15 @@ public partial class V1beta1HealthBotStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1HealthBotStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

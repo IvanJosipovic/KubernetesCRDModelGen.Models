@@ -1025,6 +1025,10 @@ public partial class V1beta1IOTHubDataConnectionSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1IOTHubDataConnectionSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from IoT Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the IoT Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the IotHub Shared Access Policy this data connection will use for ingestion, which must have read permission. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sharedAccessPolicyName")]
     public string? SharedAccessPolicyName { get; set; }
@@ -2024,6 +2028,10 @@ public partial class V1beta1IOTHubDataConnectionSpecInitProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1IOTHubDataConnectionSpecInitProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from IoT Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the IoT Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the IotHub Shared Access Policy this data connection will use for ingestion, which must have read permission. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sharedAccessPolicyName")]
     public string? SharedAccessPolicyName { get; set; }
@@ -2276,6 +2284,10 @@ public partial class V1beta1IOTHubDataConnectionStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
+    /// <summary>Specifies the date after which data should be retrieved from IoT Hub. When defined, the data connection retrieves existing events created since the specified retrieval start date. It can only retrieve events retained by the IoT Hub, based on its retention period. The value should be in RFC3339 format (e.g., 2023-06-26T12:00:00Z).</summary>
+    [JsonPropertyName("retrievalStartDate")]
+    public string? RetrievalStartDate { get; set; }
+
     /// <summary>Specifies the IotHub Shared Access Policy this data connection will use for ingestion, which must have read permission. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sharedAccessPolicyName")]
     public string? SharedAccessPolicyName { get; set; }
@@ -2339,6 +2351,15 @@ public partial class V1beta1IOTHubDataConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1IOTHubDataConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

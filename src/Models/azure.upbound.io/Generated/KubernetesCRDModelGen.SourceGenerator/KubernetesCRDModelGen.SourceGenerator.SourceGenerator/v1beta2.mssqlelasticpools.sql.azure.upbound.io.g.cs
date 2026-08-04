@@ -380,7 +380,7 @@ public partial class V1beta2MSSQLElasticPoolSpecForProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -392,6 +392,10 @@ public partial class V1beta2MSSQLElasticPoolSpecForProvider
     /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>Specifies the license type applied to this database. Possible values are LicenseIncluded and BasePrice.</summary>
     [JsonPropertyName("licenseType")]
@@ -485,7 +489,7 @@ public partial class V1beta2MSSQLElasticPoolSpecInitProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -509,6 +513,10 @@ public partial class V1beta2MSSQLElasticPoolSpecInitProvider
     /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>Specifies the license type applied to this database. Possible values are LicenseIncluded and BasePrice.</summary>
     [JsonPropertyName("licenseType")]
@@ -761,7 +769,7 @@ public partial class V1beta2MSSQLElasticPoolStatusAtProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -773,6 +781,10 @@ public partial class V1beta2MSSQLElasticPoolStatusAtProvider
     /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>The ID of the MS SQL Elastic Pool.</summary>
     [JsonPropertyName("id")]
@@ -877,6 +889,15 @@ public partial class V1beta2MSSQLElasticPoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2MSSQLElasticPoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -696,6 +696,10 @@ public partial class V1beta1ObjectReplicationSpecForProvider
     [JsonPropertyName("destinationStorageAccountIdSelector")]
     public V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelector? DestinationStorageAccountIdSelector { get; set; }
 
+    /// <summary>Whether metrics are enabled for this object replication. Defaults to false.</summary>
+    [JsonPropertyName("metricsEnabled")]
+    public bool? MetricsEnabled { get; set; }
+
     /// <summary>One or more rules blocks as defined below.</summary>
     [JsonPropertyName("rules")]
     public IList<V1beta1ObjectReplicationSpecForProviderRules>? Rules { get; set; }
@@ -1366,6 +1370,10 @@ public partial class V1beta1ObjectReplicationSpecInitProvider
     [JsonPropertyName("destinationStorageAccountIdSelector")]
     public V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelector? DestinationStorageAccountIdSelector { get; set; }
 
+    /// <summary>Whether metrics are enabled for this object replication. Defaults to false.</summary>
+    [JsonPropertyName("metricsEnabled")]
+    public bool? MetricsEnabled { get; set; }
+
     /// <summary>One or more rules blocks as defined below.</summary>
     [JsonPropertyName("rules")]
     public IList<V1beta1ObjectReplicationSpecInitProviderRules>? Rules { get; set; }
@@ -1606,6 +1614,10 @@ public partial class V1beta1ObjectReplicationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Whether metrics are enabled for this object replication. Defaults to false.</summary>
+    [JsonPropertyName("metricsEnabled")]
+    public bool? MetricsEnabled { get; set; }
+
     /// <summary>One or more rules blocks as defined below.</summary>
     [JsonPropertyName("rules")]
     public IList<V1beta1ObjectReplicationStatusAtProviderRules>? Rules { get; set; }
@@ -1673,6 +1685,15 @@ public partial class V1beta1ObjectReplicationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ObjectReplicationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

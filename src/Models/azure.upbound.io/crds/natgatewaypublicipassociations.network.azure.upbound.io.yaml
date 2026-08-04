@@ -33,7 +33,7 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: NATGatewayPublicIPAssociation is the Schema for the NATGatewayPublicIPAssociations API. Manages the association between a NAT Gateway and a Public IP.
+        description: NATGatewayPublicIPAssociation is the Schema for the NATGatewayPublicIPAssociations API. Manages a NAT Gateway Public IP Address association.
         properties:
           apiVersion:
             description: |-
@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   publicIpAddressId:
-                    description: The ID of the Public IP which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Address which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                   publicIpAddressIdRef:
                     description: Reference to a PublicIP in network to populate publicIpAddressId.
@@ -314,7 +314,7 @@ spec:
                         type: object
                     type: object
                   publicIpAddressId:
-                    description: The ID of the Public IP which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Address which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                   publicIpAddressIdRef:
                     description: Reference to a PublicIP in network to populate publicIpAddressId.
@@ -487,7 +487,7 @@ spec:
                     description: The ID of the NAT Gateway. Changing this forces a new resource to be created.
                     type: string
                   publicIpAddressId:
-                    description: The ID of the Public IP which this NAT Gateway which should be connected to. Changing this forces a new resource to be created.
+                    description: The ID of the Public IP Address which this NAT Gateway should be connected to. Changing this forces a new resource to be created.
                     type: string
                 type: object
               conditions:
@@ -534,6 +534,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

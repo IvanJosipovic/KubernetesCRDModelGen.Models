@@ -702,7 +702,7 @@ public partial class V1beta1EnvironmentSpecForProviderWorkloadProfile
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, D4, D8, D16, D32, E4, E8, E16 and E32.</summary>
+    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, Consumption-GPU-NC24-A100, Consumption-GPU-NC8as-T4, D4, D8, D16, D32, E4, E8, E16, E32, NC24-A100, NC48-A100 and NC96-A100.</summary>
     [JsonPropertyName("workloadProfileType")]
     public string? WorkloadProfileType { get; set; }
 }
@@ -1332,7 +1332,7 @@ public partial class V1beta1EnvironmentSpecInitProviderWorkloadProfile
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, D4, D8, D16, D32, E4, E8, E16 and E32.</summary>
+    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, Consumption-GPU-NC24-A100, Consumption-GPU-NC8as-T4, D4, D8, D16, D32, E4, E8, E16, E32, NC24-A100, NC48-A100 and NC96-A100.</summary>
     [JsonPropertyName("workloadProfileType")]
     public string? WorkloadProfileType { get; set; }
 }
@@ -1596,7 +1596,7 @@ public partial class V1beta1EnvironmentStatusAtProviderWorkloadProfile
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, D4, D8, D16, D32, E4, E8, E16 and E32.</summary>
+    /// <summary>Workload profile type for the workloads to run on. Possible values include Consumption, Consumption-GPU-NC24-A100, Consumption-GPU-NC8as-T4, D4, D8, D16, D32, E4, E8, E16, E32, NC24-A100, NC48-A100 and NC96-A100.</summary>
     [JsonPropertyName("workloadProfileType")]
     public string? WorkloadProfileType { get; set; }
 }
@@ -1776,6 +1776,15 @@ public partial class V1beta1EnvironmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EnvironmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

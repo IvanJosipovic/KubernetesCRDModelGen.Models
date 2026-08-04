@@ -62,6 +62,153 @@ public enum V1beta2AttachedDatabaseConfigurationSpecDeletionPolicyEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolutionEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolveEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Cluster in kusto to populate clusterId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolveEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Cluster in kusto to populate clusterId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecForProviderClusterNameRefPolicyResolutionEnum>))]
 public enum V1beta2AttachedDatabaseConfigurationSpecForProviderClusterNameRefPolicyResolutionEnum
 {
@@ -656,6 +803,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecForProviderSharing
     [JsonPropertyName("externalTablesToInclude")]
     public IList<string>? ExternalTablesToInclude { get; set; }
 
+    /// <summary>List of functions to exclude from the follower database.</summary>
+    [JsonPropertyName("functionsToExclude")]
+    public IList<string>? FunctionsToExclude { get; set; }
+
+    /// <summary>List of functions to include in the follower database.</summary>
+    [JsonPropertyName("functionsToInclude")]
+    public IList<string>? FunctionsToInclude { get; set; }
+
     /// <summary>List of materialized views exclude from the follower database.</summary>
     [JsonPropertyName("materializedViewsToExclude")]
     public IList<string>? MaterializedViewsToExclude { get; set; }
@@ -680,6 +835,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecForProvider
     /// <summary>The resource id of the cluster where the databases you would like to attach reside.</summary>
     [JsonPropertyName("clusterId")]
     public string? ClusterId { get; set; }
+
+    /// <summary>Reference to a Cluster in kusto to populate clusterId.</summary>
+    [JsonPropertyName("clusterIdRef")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdRef? ClusterIdRef { get; set; }
+
+    /// <summary>Selector for a Cluster in kusto to populate clusterId.</summary>
+    [JsonPropertyName("clusterIdSelector")]
+    public V1beta2AttachedDatabaseConfigurationSpecForProviderClusterIdSelector? ClusterIdSelector { get; set; }
 
     /// <summary>Specifies the name of the Kusto Cluster for which the configuration will be created. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("clusterName")]
@@ -708,6 +871,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecForProvider
     /// <summary>The name of the database which you would like to attach, use * if you want to follow all current and future databases. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
+
+    /// <summary>The database name to use for the attached database instead of using the original database name. Relevant only when attaching to a specific database.</summary>
+    [JsonPropertyName("databaseNameOverride")]
+    public string? DatabaseNameOverride { get; set; }
+
+    /// <summary>Adds a prefix to the attached databases name. When following an entire cluster, that prefix would be added to all of the databases original names from leader cluster.</summary>
+    [JsonPropertyName("databaseNamePrefix")]
+    public string? DatabaseNamePrefix { get; set; }
 
     /// <summary>Reference to a Database in kusto to populate databaseName.</summary>
     [JsonPropertyName("databaseNameRef")]
@@ -744,6 +915,153 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecForProvider
     /// <summary>A sharing block as defined below.</summary>
     [JsonPropertyName("sharing")]
     public V1beta2AttachedDatabaseConfigurationSpecForProviderSharing? Sharing { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolutionEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolveEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Cluster in kusto to populate clusterId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolutionEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolveEnum>))]
+public enum V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Cluster in kusto to populate clusterId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -1347,6 +1665,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecInitProviderSharing
     [JsonPropertyName("externalTablesToInclude")]
     public IList<string>? ExternalTablesToInclude { get; set; }
 
+    /// <summary>List of functions to exclude from the follower database.</summary>
+    [JsonPropertyName("functionsToExclude")]
+    public IList<string>? FunctionsToExclude { get; set; }
+
+    /// <summary>List of functions to include in the follower database.</summary>
+    [JsonPropertyName("functionsToInclude")]
+    public IList<string>? FunctionsToInclude { get; set; }
+
     /// <summary>List of materialized views exclude from the follower database.</summary>
     [JsonPropertyName("materializedViewsToExclude")]
     public IList<string>? MaterializedViewsToExclude { get; set; }
@@ -1384,6 +1710,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecInitProvider
     [JsonPropertyName("clusterId")]
     public string? ClusterId { get; set; }
 
+    /// <summary>Reference to a Cluster in kusto to populate clusterId.</summary>
+    [JsonPropertyName("clusterIdRef")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdRef? ClusterIdRef { get; set; }
+
+    /// <summary>Selector for a Cluster in kusto to populate clusterId.</summary>
+    [JsonPropertyName("clusterIdSelector")]
+    public V1beta2AttachedDatabaseConfigurationSpecInitProviderClusterIdSelector? ClusterIdSelector { get; set; }
+
     /// <summary>Specifies the name of the Kusto Cluster for which the configuration will be created. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
@@ -1411,6 +1745,14 @@ public partial class V1beta2AttachedDatabaseConfigurationSpecInitProvider
     /// <summary>The name of the database which you would like to attach, use * if you want to follow all current and future databases. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
+
+    /// <summary>The database name to use for the attached database instead of using the original database name. Relevant only when attaching to a specific database.</summary>
+    [JsonPropertyName("databaseNameOverride")]
+    public string? DatabaseNameOverride { get; set; }
+
+    /// <summary>Adds a prefix to the attached databases name. When following an entire cluster, that prefix would be added to all of the databases original names from leader cluster.</summary>
+    [JsonPropertyName("databaseNamePrefix")]
+    public string? DatabaseNamePrefix { get; set; }
 
     /// <summary>Reference to a Database in kusto to populate databaseName.</summary>
     [JsonPropertyName("databaseNameRef")]
@@ -1645,6 +1987,14 @@ public partial class V1beta2AttachedDatabaseConfigurationStatusAtProviderSharing
     [JsonPropertyName("externalTablesToInclude")]
     public IList<string>? ExternalTablesToInclude { get; set; }
 
+    /// <summary>List of functions to exclude from the follower database.</summary>
+    [JsonPropertyName("functionsToExclude")]
+    public IList<string>? FunctionsToExclude { get; set; }
+
+    /// <summary>List of functions to include in the follower database.</summary>
+    [JsonPropertyName("functionsToInclude")]
+    public IList<string>? FunctionsToInclude { get; set; }
+
     /// <summary>List of materialized views exclude from the follower database.</summary>
     [JsonPropertyName("materializedViewsToExclude")]
     public IList<string>? MaterializedViewsToExclude { get; set; }
@@ -1685,6 +2035,14 @@ public partial class V1beta2AttachedDatabaseConfigurationStatusAtProvider
     /// <summary>The name of the database which you would like to attach, use * if you want to follow all current and future databases. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
+
+    /// <summary>The database name to use for the attached database instead of using the original database name. Relevant only when attaching to a specific database.</summary>
+    [JsonPropertyName("databaseNameOverride")]
+    public string? DatabaseNameOverride { get; set; }
+
+    /// <summary>Adds a prefix to the attached databases name. When following an entire cluster, that prefix would be added to all of the databases original names from leader cluster.</summary>
+    [JsonPropertyName("databaseNamePrefix")]
+    public string? DatabaseNamePrefix { get; set; }
 
     /// <summary>The default principals modification kind. Valid values are: None (default), Replace and Union. Defaults to None.</summary>
     [JsonPropertyName("defaultPrincipalModificationKind")]
@@ -1765,6 +2123,15 @@ public partial class V1beta2AttachedDatabaseConfigurationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2AttachedDatabaseConfigurationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

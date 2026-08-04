@@ -250,6 +250,17 @@ spec:
                             type: string
                         type: object
                     type: object
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    items:
+                      properties:
+                        protectionEnabled:
+                          description: |-
+                            Enable or disable the Advanced Ransomware Protection feature.
+                            Enable or disable the Advanced Ransomware Protection feature.
+                          type: boolean
+                      type: object
+                    type: array
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     items:
@@ -911,6 +922,17 @@ spec:
                             type: string
                         type: object
                     type: object
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    items:
+                      properties:
+                        protectionEnabled:
+                          description: |-
+                            Enable or disable the Advanced Ransomware Protection feature.
+                            Enable or disable the Advanced Ransomware Protection feature.
+                          type: boolean
+                      type: object
+                    type: array
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     items:
@@ -1437,6 +1459,17 @@ spec:
                   createFromSnapshotResourceId:
                     description: 'Creates volume from snapshot. Following properties must be the same as the original volume where the snapshot was taken from: protocols, subnet_id, location, service_level, resource_group_name and account_name. Changing this forces a new resource to be created.'
                     type: string
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    items:
+                      properties:
+                        protectionEnabled:
+                          description: |-
+                            Enable or disable the Advanced Ransomware Protection feature.
+                            Enable or disable the Advanced Ransomware Protection feature.
+                          type: boolean
+                      type: object
+                    type: array
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     items:
@@ -1673,6 +1706,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1915,6 +1955,15 @@ spec:
                             type: string
                         type: object
                     type: object
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    properties:
+                      protectionEnabled:
+                        description: |-
+                          Enable or disable the Advanced Ransomware Protection feature.
+                          Enable or disable the Advanced Ransomware Protection feature.
+                        type: boolean
+                    type: object
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     properties:
@@ -2568,6 +2617,15 @@ spec:
                             type: string
                         type: object
                     type: object
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    properties:
+                      protectionEnabled:
+                        description: |-
+                          Enable or disable the Advanced Ransomware Protection feature.
+                          Enable or disable the Advanced Ransomware Protection feature.
+                        type: boolean
+                    type: object
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     properties:
@@ -3086,6 +3144,15 @@ spec:
                   createFromSnapshotResourceId:
                     description: 'Creates volume from snapshot. Following properties must be the same as the original volume where the snapshot was taken from: protocols, subnet_id, location, service_level, resource_group_name and account_name. Changing this forces a new resource to be created.'
                     type: string
+                  dataProtectionAdvancedRansomware:
+                    description: A data_protection_advanced_ransomware block as defined below.
+                    properties:
+                      protectionEnabled:
+                        description: |-
+                          Enable or disable the Advanced Ransomware Protection feature.
+                          Enable or disable the Advanced Ransomware Protection feature.
+                        type: boolean
+                    type: object
                   dataProtectionBackupPolicy:
                     description: A data_protection_backup_policy block as defined below.
                     properties:
@@ -3316,6 +3383,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

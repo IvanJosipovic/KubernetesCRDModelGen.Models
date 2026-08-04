@@ -94,6 +94,20 @@ public partial class V1beta2FlexibleServerSpecForProviderAuthentication
     public string? TenantId { get; set; }
 }
 
+/// <summary>A cluster block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlexibleServerSpecForProviderCluster
+{
+    /// <summary>The default database name to be created. Changing this forces a new PostgreSQL Flexible Server to be created.</summary>
+    [JsonPropertyName("defaultDatabaseName")]
+    public string? DefaultDatabaseName { get; set; }
+
+    /// <summary>The number of nodes in the cluster. Must be at least 1 and no greater than 32.</summary>
+    [JsonPropertyName("size")]
+    public double? Size { get; set; }
+}
+
 /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -789,6 +803,10 @@ public partial class V1beta2FlexibleServerSpecForProvider
     [JsonPropertyName("backupRetentionDays")]
     public double? BackupRetentionDays { get; set; }
 
+    /// <summary>A cluster block as defined below.</summary>
+    [JsonPropertyName("cluster")]
+    public V1beta2FlexibleServerSpecForProviderCluster? Cluster { get; set; }
+
     /// <summary>The creation mode which can be used to restore or replicate existing servers. Possible values are Default, GeoRestore, PointInTimeRestore, Replica, ReviveDropped and Update.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
@@ -885,7 +903,7 @@ public partial class V1beta2FlexibleServerSpecForProvider
     [JsonPropertyName("storageMb")]
     public double? StorageMb { get; set; }
 
-    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependant on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
+    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependent on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
     [JsonPropertyName("storageTier")]
     public string? StorageTier { get; set; }
 
@@ -893,7 +911,7 @@ public partial class V1beta2FlexibleServerSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.</summary>
+    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16, 17, and 18. Required when create_mode is Default.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -939,6 +957,20 @@ public partial class V1beta2FlexibleServerSpecInitProviderAuthentication
     /// <summary>The Tenant ID of the Azure Active Directory which is used by the Active Directory authentication. active_directory_auth_enabled must be set to true.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
+}
+
+/// <summary>A cluster block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlexibleServerSpecInitProviderCluster
+{
+    /// <summary>The default database name to be created. Changing this forces a new PostgreSQL Flexible Server to be created.</summary>
+    [JsonPropertyName("defaultDatabaseName")]
+    public string? DefaultDatabaseName { get; set; }
+
+    /// <summary>The number of nodes in the cluster. Must be at least 1 and no greater than 32.</summary>
+    [JsonPropertyName("size")]
+    public double? Size { get; set; }
 }
 
 /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
@@ -1497,6 +1529,10 @@ public partial class V1beta2FlexibleServerSpecInitProvider
     [JsonPropertyName("backupRetentionDays")]
     public double? BackupRetentionDays { get; set; }
 
+    /// <summary>A cluster block as defined below.</summary>
+    [JsonPropertyName("cluster")]
+    public V1beta2FlexibleServerSpecInitProviderCluster? Cluster { get; set; }
+
     /// <summary>The creation mode which can be used to restore or replicate existing servers. Possible values are Default, GeoRestore, PointInTimeRestore, Replica, ReviveDropped and Update.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
@@ -1581,7 +1617,7 @@ public partial class V1beta2FlexibleServerSpecInitProvider
     [JsonPropertyName("storageMb")]
     public double? StorageMb { get; set; }
 
-    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependant on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
+    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependent on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
     [JsonPropertyName("storageTier")]
     public string? StorageTier { get; set; }
 
@@ -1589,7 +1625,7 @@ public partial class V1beta2FlexibleServerSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.</summary>
+    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16, 17, and 18. Required when create_mode is Default.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -1799,6 +1835,20 @@ public partial class V1beta2FlexibleServerStatusAtProviderAuthentication
     public string? TenantId { get; set; }
 }
 
+/// <summary>A cluster block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlexibleServerStatusAtProviderCluster
+{
+    /// <summary>The default database name to be created. Changing this forces a new PostgreSQL Flexible Server to be created.</summary>
+    [JsonPropertyName("defaultDatabaseName")]
+    public string? DefaultDatabaseName { get; set; }
+
+    /// <summary>The number of nodes in the cluster. Must be at least 1 and no greater than 32.</summary>
+    [JsonPropertyName("size")]
+    public double? Size { get; set; }
+}
+
 /// <summary>A customer_managed_key block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1903,6 +1953,10 @@ public partial class V1beta2FlexibleServerStatusAtProvider
     [JsonPropertyName("backupRetentionDays")]
     public double? BackupRetentionDays { get; set; }
 
+    /// <summary>A cluster block as defined below.</summary>
+    [JsonPropertyName("cluster")]
+    public V1beta2FlexibleServerStatusAtProviderCluster? Cluster { get; set; }
+
     /// <summary>The creation mode which can be used to restore or replicate existing servers. Possible values are Default, GeoRestore, PointInTimeRestore, Replica, ReviveDropped and Update.</summary>
     [JsonPropertyName("createMode")]
     public string? CreateMode { get; set; }
@@ -1975,7 +2029,7 @@ public partial class V1beta2FlexibleServerStatusAtProvider
     [JsonPropertyName("storageMb")]
     public double? StorageMb { get; set; }
 
-    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependant on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
+    /// <summary>The name of storage performance tier for IOPS of the PostgreSQL Flexible Server. Possible values are P4, P6, P10, P15,P20, P30,P40, P50,P60, P70 or P80. Default value is dependent on the storage_mb value. Please see the storage_tier defaults based on storage_mb table below.</summary>
     [JsonPropertyName("storageTier")]
     public string? StorageTier { get; set; }
 
@@ -1983,7 +2037,7 @@ public partial class V1beta2FlexibleServerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.</summary>
+    /// <summary>The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16, 17, and 18. Required when create_mode is Default.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -2046,6 +2100,15 @@ public partial class V1beta2FlexibleServerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2FlexibleServerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

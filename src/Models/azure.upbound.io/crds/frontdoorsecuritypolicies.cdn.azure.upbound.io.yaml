@@ -76,7 +76,7 @@ spec:
               forProvider:
                 properties:
                   cdnFrontdoorProfileId:
-                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                     type: string
                   cdnFrontdoorProfileIdRef:
                     description: Reference to a FrontdoorProfile in cdn to populate cdnFrontdoorProfileId.
@@ -152,23 +152,23 @@ spec:
                         type: object
                     type: object
                   securityPolicies:
-                    description: An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                    description: A security_policies block as defined below.
                     items:
                       properties:
                         firewall:
-                          description: An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                          description: A firewall block as defined below.
                           items:
                             properties:
                               association:
-                                description: An association block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                description: An association block as defined below.
                                 items:
                                   properties:
                                     domain:
-                                      description: One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                      description: A domain block as defined below.
                                       items:
                                         properties:
                                           cdnFrontdoorDomainId:
-                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.
                                             type: string
                                           cdnFrontdoorDomainIdRef:
                                             description: Reference to a FrontdoorCustomDomain in cdn to populate cdnFrontdoorDomainId.
@@ -246,14 +246,14 @@ spec:
                                         type: object
                                       type: array
                                     patternsToMatch:
-                                      description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                      description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                       items:
                                         type: string
                                       type: array
                                   type: object
                                 type: array
                               cdnFrontdoorFirewallPolicyId:
-                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                                 type: string
                               cdnFrontdoorFirewallPolicyIdRef:
                                 description: Reference to a FrontdoorFirewallPolicy in cdn to populate cdnFrontdoorFirewallPolicyId.
@@ -347,23 +347,23 @@ spec:
                   autoscaler.
                 properties:
                   securityPolicies:
-                    description: An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                    description: A security_policies block as defined below.
                     items:
                       properties:
                         firewall:
-                          description: An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                          description: A firewall block as defined below.
                           items:
                             properties:
                               association:
-                                description: An association block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                description: An association block as defined below.
                                 items:
                                   properties:
                                     domain:
-                                      description: One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                      description: A domain block as defined below.
                                       items:
                                         properties:
                                           cdnFrontdoorDomainId:
-                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.
                                             type: string
                                           cdnFrontdoorDomainIdRef:
                                             description: Reference to a FrontdoorCustomDomain in cdn to populate cdnFrontdoorDomainId.
@@ -441,14 +441,14 @@ spec:
                                         type: object
                                       type: array
                                     patternsToMatch:
-                                      description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                      description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                       items:
                                         type: string
                                       type: array
                                   type: object
                                 type: array
                               cdnFrontdoorFirewallPolicyId:
-                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                                 type: string
                               cdnFrontdoorFirewallPolicyIdRef:
                                 description: Reference to a FrontdoorFirewallPolicy in cdn to populate cdnFrontdoorFirewallPolicyId.
@@ -623,44 +623,44 @@ spec:
               atProvider:
                 properties:
                   cdnFrontdoorProfileId:
-                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                     type: string
                   id:
                     description: The ID of the Front Door Security Policy.
                     type: string
                   securityPolicies:
-                    description: An security_policies block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                    description: A security_policies block as defined below.
                     items:
                       properties:
                         firewall:
-                          description: An firewall block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                          description: A firewall block as defined below.
                           items:
                             properties:
                               association:
-                                description: An association block as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                description: An association block as defined below.
                                 items:
                                   properties:
                                     domain:
-                                      description: One or more domain blocks as defined below. Changing this forces a new Front Door Security Policy to be created.
+                                      description: A domain block as defined below.
                                       items:
                                         properties:
                                           active:
-                                            description: (Computed) Is the Front Door Custom Domain/Endpoint activated?
+                                            description: Whether the Front Door Custom Domain or Front Door Endpoint is active.
                                             type: boolean
                                           cdnFrontdoorDomainId:
-                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                            description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.
                                             type: string
                                         type: object
                                       type: array
                                     patternsToMatch:
-                                      description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                      description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                       items:
                                         type: string
                                       type: array
                                   type: object
                                 type: array
                               cdnFrontdoorFirewallPolicyId:
-                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                                description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                                 type: string
                             type: object
                           type: array
@@ -711,6 +711,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -781,7 +788,7 @@ spec:
               forProvider:
                 properties:
                   cdnFrontdoorProfileId:
-                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                     type: string
                   cdnFrontdoorProfileIdRef:
                     description: Reference to a FrontdoorProfile in cdn to populate cdnFrontdoorProfileId.
@@ -857,16 +864,16 @@ spec:
                         type: object
                     type: object
                   securityPolicies:
-                    description: An security_policies block as defined below.
+                    description: A security_policies block as defined below.
                     properties:
                       firewall:
-                        description: An firewall block as defined below.
+                        description: A firewall block as defined below.
                         properties:
                           association:
                             description: An association block as defined below.
                             properties:
                               domain:
-                                description: One or more domain blocks as defined below.
+                                description: A domain block as defined below.
                                 items:
                                   properties:
                                     cdnFrontdoorDomainId:
@@ -948,13 +955,13 @@ spec:
                                   type: object
                                 type: array
                               patternsToMatch:
-                                description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                 items:
                                   type: string
                                 type: array
                             type: object
                           cdnFrontdoorFirewallPolicyId:
-                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                             type: string
                           cdnFrontdoorFirewallPolicyIdRef:
                             description: Reference to a FrontdoorFirewallPolicy in cdn to populate cdnFrontdoorFirewallPolicyId.
@@ -1046,16 +1053,16 @@ spec:
                   autoscaler.
                 properties:
                   securityPolicies:
-                    description: An security_policies block as defined below.
+                    description: A security_policies block as defined below.
                     properties:
                       firewall:
-                        description: An firewall block as defined below.
+                        description: A firewall block as defined below.
                         properties:
                           association:
                             description: An association block as defined below.
                             properties:
                               domain:
-                                description: One or more domain blocks as defined below.
+                                description: A domain block as defined below.
                                 items:
                                   properties:
                                     cdnFrontdoorDomainId:
@@ -1137,13 +1144,13 @@ spec:
                                   type: object
                                 type: array
                               patternsToMatch:
-                                description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                 items:
                                   type: string
                                 type: array
                             type: object
                           cdnFrontdoorFirewallPolicyId:
-                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                             type: string
                           cdnFrontdoorFirewallPolicyIdRef:
                             description: Reference to a FrontdoorFirewallPolicy in cdn to populate cdnFrontdoorFirewallPolicyId.
@@ -1316,26 +1323,26 @@ spec:
               atProvider:
                 properties:
                   cdnFrontdoorProfileId:
-                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                    description: The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                     type: string
                   id:
                     description: The ID of the Front Door Security Policy.
                     type: string
                   securityPolicies:
-                    description: An security_policies block as defined below.
+                    description: A security_policies block as defined below.
                     properties:
                       firewall:
-                        description: An firewall block as defined below.
+                        description: A firewall block as defined below.
                         properties:
                           association:
                             description: An association block as defined below.
                             properties:
                               domain:
-                                description: One or more domain blocks as defined below.
+                                description: A domain block as defined below.
                                 items:
                                   properties:
                                     active:
-                                      description: (Computed) Is the Front Door Custom Domain/Endpoint activated?
+                                      description: Whether the Front Door Custom Domain or Front Door Endpoint is active.
                                       type: boolean
                                     cdnFrontdoorDomainId:
                                       description: The Resource Id of the Front Door Custom Domain or Front Door Endpoint that should be bound to this Front Door Security Policy.
@@ -1343,13 +1350,13 @@ spec:
                                   type: object
                                 type: array
                               patternsToMatch:
-                                description: The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.
+                                description: The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.
                                 items:
                                   type: string
                                 type: array
                             type: object
                           cdnFrontdoorFirewallPolicyId:
-                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.
+                            description: The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.
                             type: string
                         type: object
                     type: object
@@ -1398,6 +1405,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

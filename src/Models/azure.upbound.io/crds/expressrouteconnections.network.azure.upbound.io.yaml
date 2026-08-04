@@ -236,6 +236,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
+                    type: boolean
                   privateLinkFastPathEnabled:
                     description: Bypass the Express Route gateway when accessing private-links. When enabled express_route_gateway_bypass_enabled must be set to true. Defaults to false.
                     type: boolean
@@ -372,6 +375,9 @@ spec:
                     type: object
                   expressRouteGatewayBypassEnabled:
                     description: Specified whether Fast Path is enabled for Virtual Wan Firewall Hub. Defaults to false.
+                    type: boolean
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
                     type: boolean
                   privateLinkFastPathEnabled:
                     description: Bypass the Express Route gateway when accessing private-links. When enabled express_route_gateway_bypass_enabled must be set to true. Defaults to false.
@@ -521,6 +527,9 @@ spec:
                   id:
                     description: The ID of the Express Route Connection.
                     type: string
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
+                    type: boolean
                   privateLinkFastPathEnabled:
                     description: Bypass the Express Route gateway when accessing private-links. When enabled express_route_gateway_bypass_enabled must be set to true. Defaults to false.
                     type: boolean
@@ -604,6 +613,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -677,7 +693,6 @@ spec:
                     description: The authorization key to establish the Express Route Connection.
                     type: string
                   enableInternetSecurity:
-                    description: Is Internet security enabled for this Express Route Connection?
                     type: boolean
                   expressRouteCircuitPeeringId:
                     description: The ID of the Express Route Circuit Peering that this Express Route Connection connects with. Changing this forces a new resource to be created.
@@ -834,6 +849,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
+                    type: boolean
                   privateLinkFastPathEnabled:
                     type: boolean
                   routing:
@@ -885,7 +903,6 @@ spec:
                     description: The authorization key to establish the Express Route Connection.
                     type: string
                   enableInternetSecurity:
-                    description: Is Internet security enabled for this Express Route Connection?
                     type: boolean
                   expressRouteCircuitPeeringId:
                     description: The ID of the Express Route Circuit Peering that this Express Route Connection connects with. Changing this forces a new resource to be created.
@@ -965,6 +982,9 @@ spec:
                     type: object
                   expressRouteGatewayBypassEnabled:
                     description: Specified whether Fast Path is enabled for Virtual Wan Firewall Hub. Defaults to false.
+                    type: boolean
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
                     type: boolean
                   privateLinkFastPathEnabled:
                     type: boolean
@@ -1095,7 +1115,6 @@ spec:
                     description: The authorization key to establish the Express Route Connection.
                     type: string
                   enableInternetSecurity:
-                    description: Is Internet security enabled for this Express Route Connection?
                     type: boolean
                   expressRouteCircuitPeeringId:
                     description: The ID of the Express Route Circuit Peering that this Express Route Connection connects with. Changing this forces a new resource to be created.
@@ -1109,6 +1128,9 @@ spec:
                   id:
                     description: The ID of the Express Route Connection.
                     type: string
+                  internetSecurityEnabled:
+                    description: Is Internet security enabled for this Express Route Connection? Defaults to false.
+                    type: boolean
                   privateLinkFastPathEnabled:
                     type: boolean
                   routing:
@@ -1187,6 +1209,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

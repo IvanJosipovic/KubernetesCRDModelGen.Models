@@ -278,6 +278,18 @@ public partial class V1beta1BotWebAppSpecForProvider
     [JsonPropertyName("microsoftAppId")]
     public string? MicrosoftAppId { get; set; }
 
+    /// <summary>The Microsoft Application Tenant ID for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppTenantId")]
+    public string? MicrosoftAppTenantId { get; set; }
+
+    /// <summary>The Microsoft Application Type for the Bot Channels Registration. Possible values are MultiTenant, SingleTenant and UserAssignedMSI. Defaults to MultiTenant. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppType")]
+    public string? MicrosoftAppType { get; set; }
+
+    /// <summary>The ID of Microsoft Application User Assigned Identity for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppUserAssignedIdentityId")]
+    public string? MicrosoftAppUserAssignedIdentityId { get; set; }
+
     /// <summary>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
@@ -386,6 +398,18 @@ public partial class V1beta1BotWebAppSpecInitProvider
     /// <summary>The Microsoft Application ID for the Web App Bot. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("microsoftAppId")]
     public string? MicrosoftAppId { get; set; }
+
+    /// <summary>The Microsoft Application Tenant ID for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppTenantId")]
+    public string? MicrosoftAppTenantId { get; set; }
+
+    /// <summary>The Microsoft Application Type for the Bot Channels Registration. Possible values are MultiTenant, SingleTenant and UserAssignedMSI. Defaults to MultiTenant. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppType")]
+    public string? MicrosoftAppType { get; set; }
+
+    /// <summary>The ID of Microsoft Application User Assigned Identity for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppUserAssignedIdentityId")]
+    public string? MicrosoftAppUserAssignedIdentityId { get; set; }
 
     /// <summary>The SKU of the Web App Bot. Valid values include F0 or S1. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
@@ -615,6 +639,18 @@ public partial class V1beta1BotWebAppStatusAtProvider
     [JsonPropertyName("microsoftAppId")]
     public string? MicrosoftAppId { get; set; }
 
+    /// <summary>The Microsoft Application Tenant ID for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppTenantId")]
+    public string? MicrosoftAppTenantId { get; set; }
+
+    /// <summary>The Microsoft Application Type for the Bot Channels Registration. Possible values are MultiTenant, SingleTenant and UserAssignedMSI. Defaults to MultiTenant. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppType")]
+    public string? MicrosoftAppType { get; set; }
+
+    /// <summary>The ID of Microsoft Application User Assigned Identity for the Bot Channels Registration. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("microsoftAppUserAssignedIdentityId")]
+    public string? MicrosoftAppUserAssignedIdentityId { get; set; }
+
     /// <summary>The name of the resource group in which to create the Web App Bot. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
@@ -682,6 +718,15 @@ public partial class V1beta1BotWebAppStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BotWebAppStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

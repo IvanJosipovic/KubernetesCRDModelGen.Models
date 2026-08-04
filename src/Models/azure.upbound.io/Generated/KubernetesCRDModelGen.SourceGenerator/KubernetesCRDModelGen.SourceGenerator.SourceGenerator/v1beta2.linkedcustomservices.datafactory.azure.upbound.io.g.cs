@@ -256,7 +256,10 @@ public partial class V1beta2LinkedCustomServiceSpecForProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A JSON object that contains the properties of the Data Factory Linked Service.</summary>
+    /// <summary>
+    /// A JSON object that contains the properties of the Data Factory Linked Service. Refer to
+    /// datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlobStorage-typed Linked Service will be unmarshaled into AzureBlobStorageLinkedServiceTypeProperties struct.
+    /// </summary>
     [JsonPropertyName("typePropertiesJson")]
     public string? TypePropertiesJson { get; set; }
 }
@@ -315,7 +318,10 @@ public partial class V1beta2LinkedCustomServiceSpecInitProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A JSON object that contains the properties of the Data Factory Linked Service.</summary>
+    /// <summary>
+    /// A JSON object that contains the properties of the Data Factory Linked Service. Refer to
+    /// datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlobStorage-typed Linked Service will be unmarshaled into AzureBlobStorageLinkedServiceTypeProperties struct.
+    /// </summary>
     [JsonPropertyName("typePropertiesJson")]
     public string? TypePropertiesJson { get; set; }
 }
@@ -553,7 +559,10 @@ public partial class V1beta2LinkedCustomServiceStatusAtProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>A JSON object that contains the properties of the Data Factory Linked Service.</summary>
+    /// <summary>
+    /// A JSON object that contains the properties of the Data Factory Linked Service. Refer to
+    /// datafactory/models.go for the shape of the expected JSON. For example, the JSON object for AzureBlobStorage-typed Linked Service will be unmarshaled into AzureBlobStorageLinkedServiceTypeProperties struct.
+    /// </summary>
     [JsonPropertyName("typePropertiesJson")]
     public string? TypePropertiesJson { get; set; }
 }
@@ -612,6 +621,15 @@ public partial class V1beta2LinkedCustomServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2LinkedCustomServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

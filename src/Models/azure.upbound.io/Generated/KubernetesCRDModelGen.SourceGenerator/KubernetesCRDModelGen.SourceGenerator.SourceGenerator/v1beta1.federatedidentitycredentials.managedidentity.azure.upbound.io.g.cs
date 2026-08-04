@@ -349,6 +349,153 @@ public partial class V1beta1FederatedIdentityCredentialSpecForProviderResourceGr
     public V1beta1FederatedIdentityCredentialSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolutionEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolveEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FederatedIdentityCredentialSpecForProvider
@@ -361,7 +508,7 @@ public partial class V1beta1FederatedIdentityCredentialSpecForProvider
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>Specifies parent ID of User Assigned Identity for this Federated Identity Credential. Changing this forces a new Federated Identity Credential to be created.</summary>
+    /// <summary>The ID of the Federated Identity Credential.</summary>
     [JsonPropertyName("parentId")]
     public string? ParentId { get; set; }
 
@@ -373,7 +520,7 @@ public partial class V1beta1FederatedIdentityCredentialSpecForProvider
     [JsonPropertyName("parentIdSelector")]
     public V1beta1FederatedIdentityCredentialSpecForProviderParentIdSelector? ParentIdSelector { get; set; }
 
-    /// <summary>Specifies the name of the Resource Group within which this Federated Identity Credential should exist. Changing this forces a new Federated Identity Credential to be created.</summary>
+    /// <summary>Specifies the name of this Federated Identity Credential. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
@@ -388,6 +535,18 @@ public partial class V1beta1FederatedIdentityCredentialSpecForProvider
     /// <summary>Specifies the subject for this Federated Identity Credential.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
+
+    /// <summary>Specifies the ID of the User Assigned Identity for this Federated Identity Credential. Changing this forces a new Federated Identity Credential to be created.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+
+    /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+    [JsonPropertyName("userAssignedIdentityIdRef")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdRef? UserAssignedIdentityIdRef { get; set; }
+
+    /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+    [JsonPropertyName("userAssignedIdentityIdSelector")]
+    public V1beta1FederatedIdentityCredentialSpecForProviderUserAssignedIdentityIdSelector? UserAssignedIdentityIdSelector { get; set; }
 }
 
 /// <summary>
@@ -538,6 +697,153 @@ public partial class V1beta1FederatedIdentityCredentialSpecInitProviderResourceG
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolutionEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolveEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
+public enum V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -561,7 +867,7 @@ public partial class V1beta1FederatedIdentityCredentialSpecInitProvider
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>Specifies the name of the Resource Group within which this Federated Identity Credential should exist. Changing this forces a new Federated Identity Credential to be created.</summary>
+    /// <summary>Specifies the name of this Federated Identity Credential. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
@@ -576,6 +882,18 @@ public partial class V1beta1FederatedIdentityCredentialSpecInitProvider
     /// <summary>Specifies the subject for this Federated Identity Credential.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
+
+    /// <summary>Specifies the ID of the User Assigned Identity for this Federated Identity Credential. Changing this forces a new Federated Identity Credential to be created.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
+
+    /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+    [JsonPropertyName("userAssignedIdentityIdRef")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdRef? UserAssignedIdentityIdRef { get; set; }
+
+    /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate userAssignedIdentityId.</summary>
+    [JsonPropertyName("userAssignedIdentityIdSelector")]
+    public V1beta1FederatedIdentityCredentialSpecInitProviderUserAssignedIdentityIdSelector? UserAssignedIdentityIdSelector { get; set; }
 }
 
 /// <summary>
@@ -777,17 +1095,21 @@ public partial class V1beta1FederatedIdentityCredentialStatusAtProvider
     [JsonPropertyName("issuer")]
     public string? Issuer { get; set; }
 
-    /// <summary>Specifies parent ID of User Assigned Identity for this Federated Identity Credential. Changing this forces a new Federated Identity Credential to be created.</summary>
+    /// <summary>The ID of the Federated Identity Credential.</summary>
     [JsonPropertyName("parentId")]
     public string? ParentId { get; set; }
 
-    /// <summary>Specifies the name of the Resource Group within which this Federated Identity Credential should exist. Changing this forces a new Federated Identity Credential to be created.</summary>
+    /// <summary>Specifies the name of this Federated Identity Credential. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
     /// <summary>Specifies the subject for this Federated Identity Credential.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
+
+    /// <summary>Specifies the ID of the User Assigned Identity for this Federated Identity Credential. Changing this forces a new Federated Identity Credential to be created.</summary>
+    [JsonPropertyName("userAssignedIdentityId")]
+    public string? UserAssignedIdentityId { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -844,6 +1166,15 @@ public partial class V1beta1FederatedIdentityCredentialStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FederatedIdentityCredentialStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

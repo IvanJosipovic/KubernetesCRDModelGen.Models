@@ -922,7 +922,7 @@ public partial class V1beta1FlexibleServerSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, and 8.0.21.</summary>
+    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, 8.0.21 and 8.4.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -1638,7 +1638,7 @@ public partial class V1beta1FlexibleServerSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, and 8.0.21.</summary>
+    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, 8.0.21 and 8.4.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -2039,7 +2039,7 @@ public partial class V1beta1FlexibleServerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, and 8.0.21.</summary>
+    /// <summary>The version of the MySQL Flexible Server to use. Possible values are 5.7, 8.0.21 and 8.4.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 
@@ -2104,6 +2104,15 @@ public partial class V1beta1FlexibleServerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FlexibleServerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

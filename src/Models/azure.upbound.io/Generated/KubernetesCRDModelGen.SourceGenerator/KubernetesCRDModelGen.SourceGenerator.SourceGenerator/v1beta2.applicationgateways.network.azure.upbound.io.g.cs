@@ -102,6 +102,43 @@ public partial class V1beta2ApplicationGatewaySpecForProviderAutoscaleConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecForProviderBackend
+{
+    /// <summary>Whether client IP preservation is enabled for this Backend Settings Collection. Defaults to false.</summary>
+    [JsonPropertyName("clientIpPreservationEnabled")]
+    public bool? ClientIpPreservationEnabled { get; set; }
+
+    /// <summary>Host header to be sent to the backend servers. Can only be set when protocol is Tls.</summary>
+    [JsonPropertyName("hostName")]
+    public string? HostName { get; set; }
+
+    /// <summary>The name of the Backend Settings Collection.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The port which should be used for this Backend Settings Collection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>The name of an associated Probe.</summary>
+    [JsonPropertyName("probeName")]
+    public string? ProbeName { get; set; }
+
+    /// <summary>The Protocol which should be used. Possible values are Tcp and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The connection timeout in seconds. Possible values range between 1 and 86400. Defaults to 30.</summary>
+    [JsonPropertyName("timeoutInSeconds")]
+    public double? TimeoutInSeconds { get; set; }
+
+    /// <summary>A list of trusted_root_certificate names.</summary>
+    [JsonPropertyName("trustedRootCertificateNames")]
+    public IList<string>? TrustedRootCertificateNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecForProviderBackendAddressPool
 {
     /// <summary>A list of FQDN&apos;s which should be part of the Backend Address Pool.</summary>
@@ -152,6 +189,10 @@ public partial class V1beta2ApplicationGatewaySpecForProviderBackendHttpSettings
     [JsonPropertyName("authenticationCertificate")]
     public IList<V1beta2ApplicationGatewaySpecForProviderBackendHttpSettingsAuthenticationCertificate>? AuthenticationCertificate { get; set; }
 
+    /// <summary>Whether to validate the certificate chain and expiry on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("certificateChainValidationEnabled")]
+    public bool? CertificateChainValidationEnabled { get; set; }
+
     /// <summary>A connection_draining block as defined below.</summary>
     [JsonPropertyName("connectionDraining")]
     public V1beta2ApplicationGatewaySpecForProviderBackendHttpSettingsConnectionDraining? ConnectionDraining { get; set; }
@@ -195,6 +236,14 @@ public partial class V1beta2ApplicationGatewaySpecForProviderBackendHttpSettings
     /// <summary>The request timeout in seconds, which must be between 1 and 86400 seconds. Defaults to 30.</summary>
     [JsonPropertyName("requestTimeout")]
     public double? RequestTimeout { get; set; }
+
+    /// <summary>The Server Name Indication (SNI) hostname to send to the backend servers.</summary>
+    [JsonPropertyName("sniName")]
+    public string? SniName { get; set; }
+
+    /// <summary>Whether to enable Server Name Indication (SNI) validation on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("sniValidationEnabled")]
+    public bool? SniValidationEnabled { get; set; }
 
     /// <summary>A list of trusted_root_certificate names.</summary>
     [JsonPropertyName("trustedRootCertificateNames")]
@@ -832,6 +881,39 @@ public partial class V1beta2ApplicationGatewaySpecForProviderIdentity
     public string? Type { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecForProviderListener
+{
+    /// <summary>The Name of the Frontend IP Configuration used for this Listener.</summary>
+    [JsonPropertyName("frontendIpConfigurationName")]
+    public string? FrontendIpConfigurationName { get; set; }
+
+    /// <summary>The Name of the Frontend Port use for this Listener.</summary>
+    [JsonPropertyName("frontendPortName")]
+    public string? FrontendPortName { get; set; }
+
+    /// <summary>A list of Hostname(s) should be used for this Listener. It allows special wildcard characters.</summary>
+    [JsonPropertyName("hostNames")]
+    public IList<string>? HostNames { get; set; }
+
+    /// <summary>The Name of the Listener.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The Protocol to use for this Listener. Possible values are Tcp, and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The name of the associated SSL Certificate which should be used for this Listener.</summary>
+    [JsonPropertyName("sslCertificateName")]
+    public string? SslCertificateName { get; set; }
+
+    /// <summary>The name of the associated SSL Profile which should be used for this Listener.</summary>
+    [JsonPropertyName("sslProfileName")]
+    public string? SslProfileName { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1043,11 +1125,11 @@ public partial class V1beta2ApplicationGatewaySpecForProviderProbeMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecForProviderProbe
 {
-    /// <summary>The Hostname used for this Probe. If the Application Gateway is configured for a single site, by default the Host name should be specified as 127.0.0.1, unless otherwise configured in custom probe. Cannot be set if pick_host_name_from_backend_http_settings is set to true.</summary>
+    /// <summary>The hostname used for this Probe. If the Application Gateway is configured for a single site, by default the hostname should be specified as 127.0.0.1, unless otherwise configured in custom Probe.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The Interval between two consecutive probes in seconds. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>The interval between two consecutive probes in seconds. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("interval")]
     public double? Interval { get; set; }
 
@@ -1059,11 +1141,11 @@ public partial class V1beta2ApplicationGatewaySpecForProviderProbe
     [JsonPropertyName("minimumServers")]
     public double? MinimumServers { get; set; }
 
-    /// <summary>The Name of the Probe.</summary>
+    /// <summary>The name of the Probe.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Path used for this Probe.</summary>
+    /// <summary>The relative URL path of the Probe. Valid value starts with /.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -1071,19 +1153,23 @@ public partial class V1beta2ApplicationGatewaySpecForProviderProbe
     [JsonPropertyName("pickHostNameFromBackendHttpSettings")]
     public bool? PickHostNameFromBackendHttpSettings { get; set; }
 
-    /// <summary>Custom port which will be used for probing the backend servers. The valid value ranges from 1 to 65535. In case not set, port from HTTP settings will be used. This property is valid for Basic, Standard_v2 and WAF_v2 only.</summary>
+    /// <summary>Custom port which will be used for probing the backend servers. Possible values range from 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The Protocol used for this Probe. Possible values are Http and Https.</summary>
+    /// <summary>The protocol used for this Probe. Possible values are Http, Https, Tcp, and Tls.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The Timeout used for this Probe, which indicates when a probe becomes unhealthy. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>Whether the proxy protocol header is enabled for this Probe. Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolHeaderEnabled")]
+    public bool? ProxyProtocolHeaderEnabled { get; set; }
+
+    /// <summary>The timeout in seconds used for this Probe, which indicates when a Probe becomes unhealthy. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The Unhealthy Threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values are from 1 to 20.</summary>
+    /// <summary>The unhealthy threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values range from 1 to 20.</summary>
     [JsonPropertyName("unhealthyThreshold")]
     public double? UnhealthyThreshold { get; set; }
 }
@@ -1416,6 +1502,31 @@ public partial class V1beta2ApplicationGatewaySpecForProviderRewriteRuleSet
     public IList<V1beta2ApplicationGatewaySpecForProviderRewriteRuleSetRewriteRule>? RewriteRule { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecForProviderRoutingRule
+{
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendAddressPoolName")]
+    public string? BackendAddressPoolName { get; set; }
+
+    /// <summary>The Name of the Backend Settings which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendName")]
+    public string? BackendName { get; set; }
+
+    /// <summary>The Name of the Listener which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("listenerName")]
+    public string? ListenerName { get; set; }
+
+    /// <summary>The Name of this Routing Rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The routing rule priority, indicating the order in which rules are evaluated. Possible values range between 1 and 20000, with 1 being the highest priority and 20000 being the lowest priority.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+}
+
 /// <summary>A sku block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1429,7 +1540,7 @@ public partial class V1beta2ApplicationGatewaySpecForProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard_v2, and WAF_v2.</summary>
+    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard, Standard_v2, WAF, and WAF_v2.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -1559,9 +1670,12 @@ public partial class V1beta2ApplicationGatewaySpecForProviderSslProfile
     [JsonPropertyName("trustedClientCertificateNames")]
     public IList<string>? TrustedClientCertificateNames { get; set; }
 
-    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
     [JsonPropertyName("verifyClientCertIssuerDn")]
     public bool? VerifyClientCertIssuerDn { get; set; }
+
+    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
+    [JsonPropertyName("verifyClientCertificateIssuerDn")]
+    public bool? VerifyClientCertificateIssuerDn { get; set; }
 
     /// <summary>Specify the method to check client certificate revocation status. Possible value is OCSP.</summary>
     [JsonPropertyName("verifyClientCertificateRevocation")]
@@ -1638,7 +1752,7 @@ public partial class V1beta2ApplicationGatewaySpecForProviderTrustedRootCertific
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecForProviderUrlPathMapPathRule
 {
-    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule. Cannot be set if redirect_configuration_name is set.</summary>
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
     [JsonPropertyName("backendAddressPoolName")]
     public string? BackendAddressPoolName { get; set; }
 
@@ -1700,7 +1814,7 @@ public partial class V1beta2ApplicationGatewaySpecForProviderUrlPathMap
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecForProviderWafConfigurationDisabledRuleGroup
 {
-    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI and MS-ThreatIntel-CVEs.</summary>
+    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI, MS-ThreatIntel-CVEs and MS-ThreatIntel-XSS.</summary>
     [JsonPropertyName("ruleGroupName")]
     public string? RuleGroupName { get; set; }
 
@@ -1763,7 +1877,7 @@ public partial class V1beta2ApplicationGatewaySpecForProviderWafConfiguration
     [JsonPropertyName("ruleSetType")]
     public string? RuleSetType { get; set; }
 
-    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2.9, 3.0, 3.1 and 3.2.</summary>
+    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2, 2.2.9, 3.0, 3.1 and 3.2.</summary>
     [JsonPropertyName("ruleSetVersion")]
     public string? RuleSetVersion { get; set; }
 }
@@ -1780,6 +1894,10 @@ public partial class V1beta2ApplicationGatewaySpecForProvider
     [JsonPropertyName("autoscaleConfiguration")]
     public V1beta2ApplicationGatewaySpecForProviderAutoscaleConfiguration? AutoscaleConfiguration { get; set; }
 
+    /// <summary>One or more backend blocks as defined below.</summary>
+    [JsonPropertyName("backend")]
+    public IList<V1beta2ApplicationGatewaySpecForProviderBackend>? Backend { get; set; }
+
     /// <summary>One or more backend_address_pool blocks as defined below.</summary>
     [JsonPropertyName("backendAddressPool")]
     public IList<V1beta2ApplicationGatewaySpecForProviderBackendAddressPool>? BackendAddressPool { get; set; }
@@ -1792,7 +1910,6 @@ public partial class V1beta2ApplicationGatewaySpecForProvider
     [JsonPropertyName("customErrorConfiguration")]
     public IList<V1beta2ApplicationGatewaySpecForProviderCustomErrorConfiguration>? CustomErrorConfiguration { get; set; }
 
-    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
     [JsonPropertyName("enableHttp2")]
     public bool? EnableHttp2 { get; set; }
 
@@ -1824,6 +1941,10 @@ public partial class V1beta2ApplicationGatewaySpecForProvider
     [JsonPropertyName("global")]
     public V1beta2ApplicationGatewaySpecForProviderGlobal? Global { get; set; }
 
+    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
     /// <summary>One or more http_listener blocks as defined below.</summary>
     [JsonPropertyName("httpListener")]
     public IList<V1beta2ApplicationGatewaySpecForProviderHttpListener>? HttpListener { get; set; }
@@ -1831,6 +1952,10 @@ public partial class V1beta2ApplicationGatewaySpecForProvider
     /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public V1beta2ApplicationGatewaySpecForProviderIdentity? Identity { get; set; }
+
+    /// <summary>One or more listener blocks as defined below.</summary>
+    [JsonPropertyName("listener")]
+    public IList<V1beta2ApplicationGatewaySpecForProviderListener>? Listener { get; set; }
 
     /// <summary>The Azure region where the Application Gateway should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -1867,6 +1992,10 @@ public partial class V1beta2ApplicationGatewaySpecForProvider
     /// <summary>One or more rewrite_rule_set blocks as defined below. Only valid for v2 WAF and Standard SKUs.</summary>
     [JsonPropertyName("rewriteRuleSet")]
     public IList<V1beta2ApplicationGatewaySpecForProviderRewriteRuleSet>? RewriteRuleSet { get; set; }
+
+    /// <summary>One or more routing_rule blocks as defined below.</summary>
+    [JsonPropertyName("routingRule")]
+    public IList<V1beta2ApplicationGatewaySpecForProviderRoutingRule>? RoutingRule { get; set; }
 
     /// <summary>A sku block as defined below.</summary>
     [JsonPropertyName("sku")]
@@ -1956,6 +2085,43 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderAutoscaleConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecInitProviderBackend
+{
+    /// <summary>Whether client IP preservation is enabled for this Backend Settings Collection. Defaults to false.</summary>
+    [JsonPropertyName("clientIpPreservationEnabled")]
+    public bool? ClientIpPreservationEnabled { get; set; }
+
+    /// <summary>Host header to be sent to the backend servers. Can only be set when protocol is Tls.</summary>
+    [JsonPropertyName("hostName")]
+    public string? HostName { get; set; }
+
+    /// <summary>The name of the Backend Settings Collection.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The port which should be used for this Backend Settings Collection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>The name of an associated Probe.</summary>
+    [JsonPropertyName("probeName")]
+    public string? ProbeName { get; set; }
+
+    /// <summary>The Protocol which should be used. Possible values are Tcp and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The connection timeout in seconds. Possible values range between 1 and 86400. Defaults to 30.</summary>
+    [JsonPropertyName("timeoutInSeconds")]
+    public double? TimeoutInSeconds { get; set; }
+
+    /// <summary>A list of trusted_root_certificate names.</summary>
+    [JsonPropertyName("trustedRootCertificateNames")]
+    public IList<string>? TrustedRootCertificateNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecInitProviderBackendAddressPool
 {
     /// <summary>A list of FQDN&apos;s which should be part of the Backend Address Pool.</summary>
@@ -2006,6 +2172,10 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderBackendHttpSetting
     [JsonPropertyName("authenticationCertificate")]
     public IList<V1beta2ApplicationGatewaySpecInitProviderBackendHttpSettingsAuthenticationCertificate>? AuthenticationCertificate { get; set; }
 
+    /// <summary>Whether to validate the certificate chain and expiry on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("certificateChainValidationEnabled")]
+    public bool? CertificateChainValidationEnabled { get; set; }
+
     /// <summary>A connection_draining block as defined below.</summary>
     [JsonPropertyName("connectionDraining")]
     public V1beta2ApplicationGatewaySpecInitProviderBackendHttpSettingsConnectionDraining? ConnectionDraining { get; set; }
@@ -2049,6 +2219,14 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderBackendHttpSetting
     /// <summary>The request timeout in seconds, which must be between 1 and 86400 seconds. Defaults to 30.</summary>
     [JsonPropertyName("requestTimeout")]
     public double? RequestTimeout { get; set; }
+
+    /// <summary>The Server Name Indication (SNI) hostname to send to the backend servers.</summary>
+    [JsonPropertyName("sniName")]
+    public string? SniName { get; set; }
+
+    /// <summary>Whether to enable Server Name Indication (SNI) validation on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("sniValidationEnabled")]
+    public bool? SniValidationEnabled { get; set; }
 
     /// <summary>A list of trusted_root_certificate names.</summary>
     [JsonPropertyName("trustedRootCertificateNames")]
@@ -2686,6 +2864,39 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderIdentity
     public string? Type { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecInitProviderListener
+{
+    /// <summary>The Name of the Frontend IP Configuration used for this Listener.</summary>
+    [JsonPropertyName("frontendIpConfigurationName")]
+    public string? FrontendIpConfigurationName { get; set; }
+
+    /// <summary>The Name of the Frontend Port use for this Listener.</summary>
+    [JsonPropertyName("frontendPortName")]
+    public string? FrontendPortName { get; set; }
+
+    /// <summary>A list of Hostname(s) should be used for this Listener. It allows special wildcard characters.</summary>
+    [JsonPropertyName("hostNames")]
+    public IList<string>? HostNames { get; set; }
+
+    /// <summary>The Name of the Listener.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The Protocol to use for this Listener. Possible values are Tcp, and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The name of the associated SSL Certificate which should be used for this Listener.</summary>
+    [JsonPropertyName("sslCertificateName")]
+    public string? SslCertificateName { get; set; }
+
+    /// <summary>The name of the associated SSL Profile which should be used for this Listener.</summary>
+    [JsonPropertyName("sslProfileName")]
+    public string? SslProfileName { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -2897,11 +3108,11 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderProbeMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecInitProviderProbe
 {
-    /// <summary>The Hostname used for this Probe. If the Application Gateway is configured for a single site, by default the Host name should be specified as 127.0.0.1, unless otherwise configured in custom probe. Cannot be set if pick_host_name_from_backend_http_settings is set to true.</summary>
+    /// <summary>The hostname used for this Probe. If the Application Gateway is configured for a single site, by default the hostname should be specified as 127.0.0.1, unless otherwise configured in custom Probe.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
-    /// <summary>The Interval between two consecutive probes in seconds. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>The interval between two consecutive probes in seconds. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("interval")]
     public double? Interval { get; set; }
 
@@ -2913,11 +3124,11 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderProbe
     [JsonPropertyName("minimumServers")]
     public double? MinimumServers { get; set; }
 
-    /// <summary>The Name of the Probe.</summary>
+    /// <summary>The name of the Probe.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Path used for this Probe.</summary>
+    /// <summary>The relative URL path of the Probe. Valid value starts with /.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -2925,19 +3136,23 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderProbe
     [JsonPropertyName("pickHostNameFromBackendHttpSettings")]
     public bool? PickHostNameFromBackendHttpSettings { get; set; }
 
-    /// <summary>Custom port which will be used for probing the backend servers. The valid value ranges from 1 to 65535. In case not set, port from HTTP settings will be used. This property is valid for Basic, Standard_v2 and WAF_v2 only.</summary>
+    /// <summary>Custom port which will be used for probing the backend servers. Possible values range from 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The Protocol used for this Probe. Possible values are Http and Https.</summary>
+    /// <summary>The protocol used for this Probe. Possible values are Http, Https, Tcp, and Tls.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The Timeout used for this Probe, which indicates when a probe becomes unhealthy. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>Whether the proxy protocol header is enabled for this Probe. Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolHeaderEnabled")]
+    public bool? ProxyProtocolHeaderEnabled { get; set; }
+
+    /// <summary>The timeout in seconds used for this Probe, which indicates when a Probe becomes unhealthy. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The Unhealthy Threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values are from 1 to 20.</summary>
+    /// <summary>The unhealthy threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values range from 1 to 20.</summary>
     [JsonPropertyName("unhealthyThreshold")]
     public double? UnhealthyThreshold { get; set; }
 }
@@ -3123,6 +3338,31 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderRewriteRuleSet
     public IList<V1beta2ApplicationGatewaySpecInitProviderRewriteRuleSetRewriteRule>? RewriteRule { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewaySpecInitProviderRoutingRule
+{
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendAddressPoolName")]
+    public string? BackendAddressPoolName { get; set; }
+
+    /// <summary>The Name of the Backend Settings which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendName")]
+    public string? BackendName { get; set; }
+
+    /// <summary>The Name of the Listener which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("listenerName")]
+    public string? ListenerName { get; set; }
+
+    /// <summary>The Name of this Routing Rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The routing rule priority, indicating the order in which rules are evaluated. Possible values range between 1 and 20000, with 1 being the highest priority and 20000 being the lowest priority.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+}
+
 /// <summary>A sku block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3136,7 +3376,7 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard_v2, and WAF_v2.</summary>
+    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard, Standard_v2, WAF, and WAF_v2.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -3266,9 +3506,12 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderSslProfile
     [JsonPropertyName("trustedClientCertificateNames")]
     public IList<string>? TrustedClientCertificateNames { get; set; }
 
-    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
     [JsonPropertyName("verifyClientCertIssuerDn")]
     public bool? VerifyClientCertIssuerDn { get; set; }
+
+    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
+    [JsonPropertyName("verifyClientCertificateIssuerDn")]
+    public bool? VerifyClientCertificateIssuerDn { get; set; }
 
     /// <summary>Specify the method to check client certificate revocation status. Possible value is OCSP.</summary>
     [JsonPropertyName("verifyClientCertificateRevocation")]
@@ -3345,7 +3588,7 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderTrustedRootCertifi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecInitProviderUrlPathMapPathRule
 {
-    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule. Cannot be set if redirect_configuration_name is set.</summary>
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
     [JsonPropertyName("backendAddressPoolName")]
     public string? BackendAddressPoolName { get; set; }
 
@@ -3407,7 +3650,7 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderUrlPathMap
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewaySpecInitProviderWafConfigurationDisabledRuleGroup
 {
-    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI and MS-ThreatIntel-CVEs.</summary>
+    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI, MS-ThreatIntel-CVEs and MS-ThreatIntel-XSS.</summary>
     [JsonPropertyName("ruleGroupName")]
     public string? RuleGroupName { get; set; }
 
@@ -3470,7 +3713,7 @@ public partial class V1beta2ApplicationGatewaySpecInitProviderWafConfiguration
     [JsonPropertyName("ruleSetType")]
     public string? RuleSetType { get; set; }
 
-    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2.9, 3.0, 3.1 and 3.2.</summary>
+    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2, 2.2.9, 3.0, 3.1 and 3.2.</summary>
     [JsonPropertyName("ruleSetVersion")]
     public string? RuleSetVersion { get; set; }
 }
@@ -3499,6 +3742,10 @@ public partial class V1beta2ApplicationGatewaySpecInitProvider
     [JsonPropertyName("autoscaleConfiguration")]
     public V1beta2ApplicationGatewaySpecInitProviderAutoscaleConfiguration? AutoscaleConfiguration { get; set; }
 
+    /// <summary>One or more backend blocks as defined below.</summary>
+    [JsonPropertyName("backend")]
+    public IList<V1beta2ApplicationGatewaySpecInitProviderBackend>? Backend { get; set; }
+
     /// <summary>One or more backend_address_pool blocks as defined below.</summary>
     [JsonPropertyName("backendAddressPool")]
     public IList<V1beta2ApplicationGatewaySpecInitProviderBackendAddressPool>? BackendAddressPool { get; set; }
@@ -3511,7 +3758,6 @@ public partial class V1beta2ApplicationGatewaySpecInitProvider
     [JsonPropertyName("customErrorConfiguration")]
     public IList<V1beta2ApplicationGatewaySpecInitProviderCustomErrorConfiguration>? CustomErrorConfiguration { get; set; }
 
-    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
     [JsonPropertyName("enableHttp2")]
     public bool? EnableHttp2 { get; set; }
 
@@ -3543,6 +3789,10 @@ public partial class V1beta2ApplicationGatewaySpecInitProvider
     [JsonPropertyName("global")]
     public V1beta2ApplicationGatewaySpecInitProviderGlobal? Global { get; set; }
 
+    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
     /// <summary>One or more http_listener blocks as defined below.</summary>
     [JsonPropertyName("httpListener")]
     public IList<V1beta2ApplicationGatewaySpecInitProviderHttpListener>? HttpListener { get; set; }
@@ -3550,6 +3800,10 @@ public partial class V1beta2ApplicationGatewaySpecInitProvider
     /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public V1beta2ApplicationGatewaySpecInitProviderIdentity? Identity { get; set; }
+
+    /// <summary>One or more listener blocks as defined below.</summary>
+    [JsonPropertyName("listener")]
+    public IList<V1beta2ApplicationGatewaySpecInitProviderListener>? Listener { get; set; }
 
     /// <summary>The Azure region where the Application Gateway should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -3574,6 +3828,10 @@ public partial class V1beta2ApplicationGatewaySpecInitProvider
     /// <summary>One or more rewrite_rule_set blocks as defined below. Only valid for v2 WAF and Standard SKUs.</summary>
     [JsonPropertyName("rewriteRuleSet")]
     public IList<V1beta2ApplicationGatewaySpecInitProviderRewriteRuleSet>? RewriteRuleSet { get; set; }
+
+    /// <summary>One or more routing_rule blocks as defined below.</summary>
+    [JsonPropertyName("routingRule")]
+    public IList<V1beta2ApplicationGatewaySpecInitProviderRoutingRule>? RoutingRule { get; set; }
 
     /// <summary>A sku block as defined below.</summary>
     [JsonPropertyName("sku")]
@@ -3828,6 +4086,51 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderAutoscaleConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewayStatusAtProviderBackend
+{
+    /// <summary>Whether client IP preservation is enabled for this Backend Settings Collection. Defaults to false.</summary>
+    [JsonPropertyName("clientIpPreservationEnabled")]
+    public bool? ClientIpPreservationEnabled { get; set; }
+
+    /// <summary>Host header to be sent to the backend servers. Can only be set when protocol is Tls.</summary>
+    [JsonPropertyName("hostName")]
+    public string? HostName { get; set; }
+
+    /// <summary>The ID of the Backend Settings Configuration.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The name of the Backend Settings Collection.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The port which should be used for this Backend Settings Collection.</summary>
+    [JsonPropertyName("port")]
+    public double? Port { get; set; }
+
+    /// <summary>The ID of the associated Probe.</summary>
+    [JsonPropertyName("probeId")]
+    public string? ProbeId { get; set; }
+
+    /// <summary>The name of an associated Probe.</summary>
+    [JsonPropertyName("probeName")]
+    public string? ProbeName { get; set; }
+
+    /// <summary>The Protocol which should be used. Possible values are Tcp and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The connection timeout in seconds. Possible values range between 1 and 86400. Defaults to 30.</summary>
+    [JsonPropertyName("timeoutInSeconds")]
+    public double? TimeoutInSeconds { get; set; }
+
+    /// <summary>A list of trusted_root_certificate names.</summary>
+    [JsonPropertyName("trustedRootCertificateNames")]
+    public IList<string>? TrustedRootCertificateNames { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewayStatusAtProviderBackendAddressPool
 {
     /// <summary>A list of FQDN&apos;s which should be part of the Backend Address Pool.</summary>
@@ -3886,6 +4189,10 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderBackendHttpSetting
     [JsonPropertyName("authenticationCertificate")]
     public IList<V1beta2ApplicationGatewayStatusAtProviderBackendHttpSettingsAuthenticationCertificate>? AuthenticationCertificate { get; set; }
 
+    /// <summary>Whether to validate the certificate chain and expiry on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("certificateChainValidationEnabled")]
+    public bool? CertificateChainValidationEnabled { get; set; }
+
     /// <summary>A connection_draining block as defined below.</summary>
     [JsonPropertyName("connectionDraining")]
     public V1beta2ApplicationGatewayStatusAtProviderBackendHttpSettingsConnectionDraining? ConnectionDraining { get; set; }
@@ -3937,6 +4244,14 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderBackendHttpSetting
     /// <summary>The request timeout in seconds, which must be between 1 and 86400 seconds. Defaults to 30.</summary>
     [JsonPropertyName("requestTimeout")]
     public double? RequestTimeout { get; set; }
+
+    /// <summary>The Server Name Indication (SNI) hostname to send to the backend servers.</summary>
+    [JsonPropertyName("sniName")]
+    public string? SniName { get; set; }
+
+    /// <summary>Whether to enable Server Name Indication (SNI) validation on the backend HTTPS servers. Defaults to true.</summary>
+    [JsonPropertyName("sniValidationEnabled")]
+    public bool? SniValidationEnabled { get; set; }
 
     /// <summary>A list of trusted_root_certificate names.</summary>
     [JsonPropertyName("trustedRootCertificateNames")]
@@ -4163,6 +4478,59 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewayStatusAtProviderListener
+{
+    /// <summary>The ID of the associated Frontend Configuration.</summary>
+    [JsonPropertyName("frontendIpConfigurationId")]
+    public string? FrontendIpConfigurationId { get; set; }
+
+    /// <summary>The Name of the Frontend IP Configuration used for this Listener.</summary>
+    [JsonPropertyName("frontendIpConfigurationName")]
+    public string? FrontendIpConfigurationName { get; set; }
+
+    /// <summary>The ID of the associated Frontend Port.</summary>
+    [JsonPropertyName("frontendPortId")]
+    public string? FrontendPortId { get; set; }
+
+    /// <summary>The Name of the Frontend Port use for this Listener.</summary>
+    [JsonPropertyName("frontendPortName")]
+    public string? FrontendPortName { get; set; }
+
+    /// <summary>A list of Hostname(s) should be used for this Listener. It allows special wildcard characters.</summary>
+    [JsonPropertyName("hostNames")]
+    public IList<string>? HostNames { get; set; }
+
+    /// <summary>The ID of the Listener.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The Name of the Listener.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The Protocol to use for this Listener. Possible values are Tcp, and Tls.</summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>The ID of the associated SSL Certificate.</summary>
+    [JsonPropertyName("sslCertificateId")]
+    public string? SslCertificateId { get; set; }
+
+    /// <summary>The name of the associated SSL Certificate which should be used for this Listener.</summary>
+    [JsonPropertyName("sslCertificateName")]
+    public string? SslCertificateName { get; set; }
+
+    /// <summary>The ID of the associated SSL Profile.</summary>
+    [JsonPropertyName("sslProfileId")]
+    public string? SslProfileId { get; set; }
+
+    /// <summary>The name of the associated SSL Profile which should be used for this Listener.</summary>
+    [JsonPropertyName("sslProfileName")]
+    public string? SslProfileName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewayStatusAtProviderPrivateEndpointConnection
 {
     /// <summary>The ID of the private endpoint connection.</summary>
@@ -4234,7 +4602,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderProbeMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewayStatusAtProviderProbe
 {
-    /// <summary>The Hostname used for this Probe. If the Application Gateway is configured for a single site, by default the Host name should be specified as 127.0.0.1, unless otherwise configured in custom probe. Cannot be set if pick_host_name_from_backend_http_settings is set to true.</summary>
+    /// <summary>The hostname used for this Probe. If the Application Gateway is configured for a single site, by default the hostname should be specified as 127.0.0.1, unless otherwise configured in custom Probe.</summary>
     [JsonPropertyName("host")]
     public string? Host { get; set; }
 
@@ -4242,7 +4610,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderProbe
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Interval between two consecutive probes in seconds. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>The interval between two consecutive probes in seconds. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("interval")]
     public double? Interval { get; set; }
 
@@ -4254,11 +4622,11 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderProbe
     [JsonPropertyName("minimumServers")]
     public double? MinimumServers { get; set; }
 
-    /// <summary>The Name of the Probe.</summary>
+    /// <summary>The name of the Probe.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Path used for this Probe.</summary>
+    /// <summary>The relative URL path of the Probe. Valid value starts with /.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -4266,19 +4634,23 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderProbe
     [JsonPropertyName("pickHostNameFromBackendHttpSettings")]
     public bool? PickHostNameFromBackendHttpSettings { get; set; }
 
-    /// <summary>Custom port which will be used for probing the backend servers. The valid value ranges from 1 to 65535. In case not set, port from HTTP settings will be used. This property is valid for Basic, Standard_v2 and WAF_v2 only.</summary>
+    /// <summary>Custom port which will be used for probing the backend servers. Possible values range from 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The Protocol used for this Probe. Possible values are Http and Https.</summary>
+    /// <summary>The protocol used for this Probe. Possible values are Http, Https, Tcp, and Tls.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The Timeout used for this Probe, which indicates when a probe becomes unhealthy. Possible values range from 1 second to a maximum of 86,400 seconds.</summary>
+    /// <summary>Whether the proxy protocol header is enabled for this Probe. Defaults to false.</summary>
+    [JsonPropertyName("proxyProtocolHeaderEnabled")]
+    public bool? ProxyProtocolHeaderEnabled { get; set; }
+
+    /// <summary>The timeout in seconds used for this Probe, which indicates when a Probe becomes unhealthy. Possible values range from 1 to 86400.</summary>
     [JsonPropertyName("timeout")]
     public double? Timeout { get; set; }
 
-    /// <summary>The Unhealthy Threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values are from 1 to 20.</summary>
+    /// <summary>The unhealthy threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values range from 1 to 20.</summary>
     [JsonPropertyName("unhealthyThreshold")]
     public double? UnhealthyThreshold { get; set; }
 }
@@ -4504,6 +4876,47 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderRewriteRuleSet
     public IList<V1beta2ApplicationGatewayStatusAtProviderRewriteRuleSetRewriteRule>? RewriteRule { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationGatewayStatusAtProviderRoutingRule
+{
+    /// <summary>The ID of the associated Backend Address Pool.</summary>
+    [JsonPropertyName("backendAddressPoolId")]
+    public string? BackendAddressPoolId { get; set; }
+
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendAddressPoolName")]
+    public string? BackendAddressPoolName { get; set; }
+
+    /// <summary>The ID of the associated Backend Settings.</summary>
+    [JsonPropertyName("backendId")]
+    public string? BackendId { get; set; }
+
+    /// <summary>The Name of the Backend Settings which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("backendName")]
+    public string? BackendName { get; set; }
+
+    /// <summary>The ID of the Routing Rule.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>The ID of the associated Listener.</summary>
+    [JsonPropertyName("listenerId")]
+    public string? ListenerId { get; set; }
+
+    /// <summary>The Name of the Listener which should be used for this Routing Rule.</summary>
+    [JsonPropertyName("listenerName")]
+    public string? ListenerName { get; set; }
+
+    /// <summary>The Name of this Routing Rule.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The routing rule priority, indicating the order in which rules are evaluated. Possible values range between 1 and 20000, with 1 being the highest priority and 20000 being the lowest priority.</summary>
+    [JsonPropertyName("priority")]
+    public double? Priority { get; set; }
+}
+
 /// <summary>A sku block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4517,7 +4930,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderSku
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard_v2, and WAF_v2.</summary>
+    /// <summary>The Tier of the SKU to use for this Application Gateway. Possible values are Basic, Standard, Standard_v2, WAF, and WAF_v2.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -4615,9 +5028,12 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderSslProfile
     [JsonPropertyName("trustedClientCertificateNames")]
     public IList<string>? TrustedClientCertificateNames { get; set; }
 
-    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
     [JsonPropertyName("verifyClientCertIssuerDn")]
     public bool? VerifyClientCertIssuerDn { get; set; }
+
+    /// <summary>Should client certificate issuer DN be verified? Defaults to false.</summary>
+    [JsonPropertyName("verifyClientCertificateIssuerDn")]
+    public bool? VerifyClientCertificateIssuerDn { get; set; }
 
     /// <summary>Specify the method to check client certificate revocation status. Possible value is OCSP.</summary>
     [JsonPropertyName("verifyClientCertificateRevocation")]
@@ -4662,7 +5078,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderUrlPathMapPathRule
     [JsonPropertyName("backendAddressPoolId")]
     public string? BackendAddressPoolId { get; set; }
 
-    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule. Cannot be set if redirect_configuration_name is set.</summary>
+    /// <summary>The Name of the Backend Address Pool which should be used for this Routing Rule.</summary>
     [JsonPropertyName("backendAddressPoolName")]
     public string? BackendAddressPoolName { get; set; }
 
@@ -4760,7 +5176,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderUrlPathMap
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationGatewayStatusAtProviderWafConfigurationDisabledRuleGroup
 {
-    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI and MS-ThreatIntel-CVEs.</summary>
+    /// <summary>The rule group where specific rules should be disabled. Possible values are BadBots, crs_20_protocol_violations, crs_21_protocol_anomalies, crs_23_request_limits, crs_30_http_policy, crs_35_bad_robots, crs_40_generic_attacks, crs_41_sql_injection_attacks, crs_41_xss_attacks, crs_42_tight_security, crs_45_trojans, crs_49_inbound_blocking, General, GoodBots, KnownBadBots, Known-CVEs, REQUEST-911-METHOD-ENFORCEMENT, REQUEST-913-SCANNER-DETECTION, REQUEST-920-PROTOCOL-ENFORCEMENT, REQUEST-921-PROTOCOL-ATTACK, REQUEST-930-APPLICATION-ATTACK-LFI, REQUEST-931-APPLICATION-ATTACK-RFI, REQUEST-932-APPLICATION-ATTACK-RCE, REQUEST-933-APPLICATION-ATTACK-PHP, REQUEST-941-APPLICATION-ATTACK-XSS, REQUEST-942-APPLICATION-ATTACK-SQLI, REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION, REQUEST-944-APPLICATION-ATTACK-JAVA, UnknownBots, METHOD-ENFORCEMENT, PROTOCOL-ENFORCEMENT, PROTOCOL-ATTACK, LFI, RFI, RCE, PHP, NODEJS, XSS, SQLI, FIX, JAVA, MS-ThreatIntel-WebShells, MS-ThreatIntel-AppSec, MS-ThreatIntel-SQLI, MS-ThreatIntel-CVEs and MS-ThreatIntel-XSS.</summary>
     [JsonPropertyName("ruleGroupName")]
     public string? RuleGroupName { get; set; }
 
@@ -4823,7 +5239,7 @@ public partial class V1beta2ApplicationGatewayStatusAtProviderWafConfiguration
     [JsonPropertyName("ruleSetType")]
     public string? RuleSetType { get; set; }
 
-    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2.9, 3.0, 3.1 and 3.2.</summary>
+    /// <summary>The Version of the Rule Set used for this Web Application Firewall. Possible values are 0.1, 1.0, 1.1, 2.1, 2.2, 2.2.9, 3.0, 3.1 and 3.2.</summary>
     [JsonPropertyName("ruleSetVersion")]
     public string? RuleSetVersion { get; set; }
 }
@@ -4840,6 +5256,10 @@ public partial class V1beta2ApplicationGatewayStatusAtProvider
     [JsonPropertyName("autoscaleConfiguration")]
     public V1beta2ApplicationGatewayStatusAtProviderAutoscaleConfiguration? AutoscaleConfiguration { get; set; }
 
+    /// <summary>One or more backend blocks as defined below.</summary>
+    [JsonPropertyName("backend")]
+    public IList<V1beta2ApplicationGatewayStatusAtProviderBackend>? Backend { get; set; }
+
     /// <summary>One or more backend_address_pool blocks as defined below.</summary>
     [JsonPropertyName("backendAddressPool")]
     public IList<V1beta2ApplicationGatewayStatusAtProviderBackendAddressPool>? BackendAddressPool { get; set; }
@@ -4852,7 +5272,6 @@ public partial class V1beta2ApplicationGatewayStatusAtProvider
     [JsonPropertyName("customErrorConfiguration")]
     public IList<V1beta2ApplicationGatewayStatusAtProviderCustomErrorConfiguration>? CustomErrorConfiguration { get; set; }
 
-    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
     [JsonPropertyName("enableHttp2")]
     public bool? EnableHttp2 { get; set; }
 
@@ -4884,6 +5303,10 @@ public partial class V1beta2ApplicationGatewayStatusAtProvider
     [JsonPropertyName("global")]
     public V1beta2ApplicationGatewayStatusAtProviderGlobal? Global { get; set; }
 
+    /// <summary>Is HTTP2 enabled on the application gateway resource? Defaults to false.</summary>
+    [JsonPropertyName("http2Enabled")]
+    public bool? Http2Enabled { get; set; }
+
     /// <summary>One or more http_listener blocks as defined below.</summary>
     [JsonPropertyName("httpListener")]
     public IList<V1beta2ApplicationGatewayStatusAtProviderHttpListener>? HttpListener { get; set; }
@@ -4895,6 +5318,10 @@ public partial class V1beta2ApplicationGatewayStatusAtProvider
     /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public V1beta2ApplicationGatewayStatusAtProviderIdentity? Identity { get; set; }
+
+    /// <summary>One or more listener blocks as defined below.</summary>
+    [JsonPropertyName("listener")]
+    public IList<V1beta2ApplicationGatewayStatusAtProviderListener>? Listener { get; set; }
 
     /// <summary>The Azure region where the Application Gateway should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
@@ -4927,6 +5354,10 @@ public partial class V1beta2ApplicationGatewayStatusAtProvider
     /// <summary>One or more rewrite_rule_set blocks as defined below. Only valid for v2 WAF and Standard SKUs.</summary>
     [JsonPropertyName("rewriteRuleSet")]
     public IList<V1beta2ApplicationGatewayStatusAtProviderRewriteRuleSet>? RewriteRuleSet { get; set; }
+
+    /// <summary>One or more routing_rule blocks as defined below.</summary>
+    [JsonPropertyName("routingRule")]
+    public IList<V1beta2ApplicationGatewayStatusAtProviderRoutingRule>? RoutingRule { get; set; }
 
     /// <summary>A sku block as defined below.</summary>
     [JsonPropertyName("sku")]
@@ -5023,6 +5454,15 @@ public partial class V1beta2ApplicationGatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ApplicationGatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

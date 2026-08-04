@@ -364,6 +364,19 @@ public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSel
     public V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VolumeSpecForProviderDataProtectionAdvancedRansomware
+{
+    /// <summary>
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// </summary>
+    [JsonPropertyName("protectionEnabled")]
+    public bool? ProtectionEnabled { get; set; }
+}
+
 /// <summary>A data_protection_backup_policy block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1313,6 +1326,10 @@ public partial class V1beta1VolumeSpecForProvider
     [JsonPropertyName("createFromSnapshotResourceIdSelector")]
     public V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelector? CreateFromSnapshotResourceIdSelector { get; set; }
 
+    /// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+    [JsonPropertyName("dataProtectionAdvancedRansomware")]
+    public V1beta1VolumeSpecForProviderDataProtectionAdvancedRansomware? DataProtectionAdvancedRansomware { get; set; }
+
     /// <summary>A data_protection_backup_policy block as defined below.</summary>
     [JsonPropertyName("dataProtectionBackupPolicy")]
     public V1beta1VolumeSpecForProviderDataProtectionBackupPolicy? DataProtectionBackupPolicy { get; set; }
@@ -1631,6 +1648,19 @@ public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSe
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VolumeSpecInitProviderDataProtectionAdvancedRansomware
+{
+    /// <summary>
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// </summary>
+    [JsonPropertyName("protectionEnabled")]
+    public bool? ProtectionEnabled { get; set; }
 }
 
 /// <summary>A data_protection_backup_policy block as defined below.</summary>
@@ -2272,6 +2302,10 @@ public partial class V1beta1VolumeSpecInitProvider
     [JsonPropertyName("createFromSnapshotResourceIdSelector")]
     public V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelector? CreateFromSnapshotResourceIdSelector { get; set; }
 
+    /// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+    [JsonPropertyName("dataProtectionAdvancedRansomware")]
+    public V1beta1VolumeSpecInitProviderDataProtectionAdvancedRansomware? DataProtectionAdvancedRansomware { get; set; }
+
     /// <summary>A data_protection_backup_policy block as defined below.</summary>
     [JsonPropertyName("dataProtectionBackupPolicy")]
     public V1beta1VolumeSpecInitProviderDataProtectionBackupPolicy? DataProtectionBackupPolicy { get; set; }
@@ -2520,6 +2554,19 @@ public partial class V1beta1VolumeStatusAtProviderCoolAccess
     public string? TieringPolicy { get; set; }
 }
 
+/// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VolumeStatusAtProviderDataProtectionAdvancedRansomware
+{
+    /// <summary>
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// Enable or disable the Advanced Ransomware Protection feature.
+    /// </summary>
+    [JsonPropertyName("protectionEnabled")]
+    public bool? ProtectionEnabled { get; set; }
+}
+
 /// <summary>A data_protection_backup_policy block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2661,6 +2708,10 @@ public partial class V1beta1VolumeStatusAtProvider
     /// <summary>Creates volume from snapshot. Following properties must be the same as the original volume where the snapshot was taken from: protocols, subnet_id, location, service_level, resource_group_name and account_name. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("createFromSnapshotResourceId")]
     public string? CreateFromSnapshotResourceId { get; set; }
+
+    /// <summary>A data_protection_advanced_ransomware block as defined below.</summary>
+    [JsonPropertyName("dataProtectionAdvancedRansomware")]
+    public V1beta1VolumeStatusAtProviderDataProtectionAdvancedRansomware? DataProtectionAdvancedRansomware { get; set; }
 
     /// <summary>A data_protection_backup_policy block as defined below.</summary>
     [JsonPropertyName("dataProtectionBackupPolicy")]
@@ -2847,6 +2898,15 @@ public partial class V1beta1VolumeStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VolumeStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

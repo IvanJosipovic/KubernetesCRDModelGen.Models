@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
-/// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
+/// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Orchestrated Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -70,7 +70,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAdd
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAutomaticInstanceRepair
 {
-    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
+    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values are Replace, Restart, and Reimage.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -97,7 +97,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderBoo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderDataDisk
 {
-    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -117,7 +117,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderDat
     [JsonPropertyName("lun")]
     public double? Lun { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.</summary>
+    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS, and UltraSSD_LRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -220,11 +220,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderIdentity
 {
-    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
+    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Orchestrated Virtual Machine Scale Set.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>The type of Managed Identity that should be configured on this Windows Virtual Machine Scale Set. Only possible value is UserAssigned.</summary>
+    /// <summary>The type of Managed Identity that should be configured on this Orchestrated Virtual Machine Scale Set. The only possible value is UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -246,7 +246,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
-    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine. Valid values must be between 1 and 26 characters long, start with a lower case letter, end with a lower case letter or number and contains only a-z, 0-9 and hyphens.</summary>
+    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance.</summary>
     [JsonPropertyName("domainNameLabel")]
     public string? DomainNameLabel { get; set; }
 
@@ -258,7 +258,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     [JsonPropertyName("ipTag")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag>? IpTag { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -266,7 +266,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -438,7 +438,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     [JsonPropertyName("loadBalancerBackendAddressPoolIds")]
     public IList<string>? LoadBalancerBackendAddressPoolIds { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -475,7 +475,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     [JsonPropertyName("auxiliaryMode")]
     public string? AuxiliaryMode { get; set; }
 
-    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4 and A8.</summary>
+    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4, and A8.</summary>
     [JsonPropertyName("auxiliarySku")]
     public string? AuxiliarySku { get; set; }
 
@@ -527,7 +527,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsDisk
 {
-    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -543,7 +543,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsD
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this the Internal OS Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS and Premium_ZRS. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Type of Storage Account which should back the Internal OS Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, and Premium_ZRS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -614,7 +614,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -623,7 +623,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public string? KeyVaultId { get; set; }
 }
 
-/// <summary>A linux_configuration block as documented below.</summary>
+/// <summary>A linux_configuration block as defined above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfiguration
@@ -632,7 +632,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("adminPasswordSecretRef")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
-    /// <summary>A admin_ssh_key block as documented below.</summary>
+    /// <summary>An admin_ssh_key block as defined above.</summary>
     [JsonPropertyName("adminSshKey")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationAdminSshKey>? AdminSshKey { get; set; }
 
@@ -652,15 +652,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationSecret>? Secret { get; set; }
 }
@@ -731,7 +731,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -748,17 +748,17 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("certificateUrl")]
     public string? CertificateUrl { get; set; }
 
-    /// <summary>Specifies the protocol of listener. Possible values are Http or Https. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the protocol of listener. Possible values are Http and Https. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
-/// <summary>A windows_configuration block as documented below.</summary>
+/// <summary>A windows_configuration block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfiguration
 {
-    /// <summary>One or more additional_unattend_content blocks as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>One or more additional_unattend_content blocks as defined above. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("additionalUnattendContent")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationAdditionalUnattendContent>? AdditionalUnattendContent { get; set; }
 
@@ -778,7 +778,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("enableAutomaticUpdates")]
     public bool? EnableAutomaticUpdates { get; set; }
 
-    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true or false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
+    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true and false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
     [JsonPropertyName("hotpatchingEnabled")]
     public bool? HotpatchingEnabled { get; set; }
 
@@ -786,15 +786,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationSecret>? Secret { get; set; }
 
@@ -816,16 +816,16 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     [JsonPropertyName("customDataSecretRef")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileCustomDataSecretRef? CustomDataSecretRef { get; set; }
 
-    /// <summary>A linux_configuration block as documented below.</summary>
+    /// <summary>A linux_configuration block as defined above.</summary>
     [JsonPropertyName("linuxConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfiguration? LinuxConfiguration { get; set; }
 
-    /// <summary>A windows_configuration block as documented below.</summary>
+    /// <summary>A windows_configuration block as defined below.</summary>
     [JsonPropertyName("windowsConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfiguration? WindowsConfiguration { get; set; }
 }
 
-/// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+/// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPlan
@@ -843,7 +843,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPla
     public string? Publisher { get; set; }
 }
 
-/// <summary>a priority_mix block as defined below</summary>
+/// <summary>A priority_mix block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPriorityMix
@@ -1004,12 +1004,12 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRes
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+/// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRollingUpgradePolicy
 {
-    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
+    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true and false.</summary>
     [JsonPropertyName("crossZoneUpgradesEnabled")]
     public bool? CrossZoneUpgradesEnabled { get; set; }
 
@@ -1025,7 +1025,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRol
     [JsonPropertyName("maxUnhealthyUpgradedInstancePercent")]
     public double? MaxUnhealthyUpgradedInstancePercent { get; set; }
 
-    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true or false.</summary>
+    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true and false.</summary>
     [JsonPropertyName("maximumSurgeInstancesEnabled")]
     public bool? MaximumSurgeInstancesEnabled { get; set; }
 
@@ -1033,21 +1033,37 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRol
     [JsonPropertyName("pauseTimeBetweenBatches")]
     public string? PauseTimeBetweenBatches { get; set; }
 
-    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true or false.</summary>
+    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true and false.</summary>
     [JsonPropertyName("prioritizeUnhealthyInstancesEnabled")]
     public bool? PrioritizeUnhealthyInstancesEnabled { get; set; }
 }
 
-/// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfileVirtualMachineSize
+{
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specifies the priority rank of the VM size. Possible values are integers between 1 and 3, inclusive. Lower values represent higher priority.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>A sku_profile block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfile
 {
-    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are CapacityOptimized, LowestPrice and Prioritized.</summary>
+    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are LowestPrice, Prioritized, and CapacityOptimized.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
+    /// <summary>One or more virtual_machine_size blocks as defined below.</summary>
+    [JsonPropertyName("virtualMachineSize")]
+    public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
+
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }
@@ -1079,7 +1095,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderTerminationNotification
 {
-    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values true or false.</summary>
+    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values are true and false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -1142,11 +1158,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("extension")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExtension>? Extension { get; set; }
 
-    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new Virtual Machine Scale Set to be created.</summary>
+    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("extensionOperationsEnabled")]
     public bool? ExtensionOperationsEnabled { get; set; }
 
-    /// <summary>Specifies the time alloted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
+    /// <summary>Specifies the time allotted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
     [JsonPropertyName("extensionsTimeBudget")]
     public string? ExtensionsTimeBudget { get; set; }
 
@@ -1158,7 +1174,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("instances")]
     public double? Instances { get; set; }
 
-    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client and Windows_Server.</summary>
+    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client, and Windows_Server.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
@@ -1186,7 +1202,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("osProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfile? OsProfile { get; set; }
 
-    /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("plan")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPlan? Plan { get; set; }
 
@@ -1194,11 +1210,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("platformFaultDomainCount")]
     public double? PlatformFaultDomainCount { get; set; }
 
-    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this value forces a new resource.</summary>
+    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("priority")]
     public string? Priority { get; set; }
 
-    /// <summary>a priority_mix block as defined below</summary>
+    /// <summary>A priority_mix block as defined below.</summary>
     [JsonPropertyName("priorityMix")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPriorityMix? PriorityMix { get; set; }
 
@@ -1218,7 +1234,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("rollingUpgradePolicy")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRollingUpgradePolicy? RollingUpgradePolicy { get; set; }
 
@@ -1226,11 +1242,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
-    /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A sku_profile block as defined below.</summary>
     [JsonPropertyName("skuProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfile? SkuProfile { get; set; }
 
@@ -1250,7 +1266,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("terminationNotification")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderTerminationNotification? TerminationNotification { get; set; }
 
-    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual, and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("upgradeMode")]
     public string? UpgradeMode { get; set; }
 
@@ -1282,7 +1298,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAd
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAutomaticInstanceRepair
 {
-    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
+    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values are Replace, Restart, and Reimage.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -1309,7 +1325,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderBo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderDataDisk
 {
-    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -1329,7 +1345,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderDa
     [JsonPropertyName("lun")]
     public double? Lun { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.</summary>
+    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS, and UltraSSD_LRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -1432,11 +1448,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderEx
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderIdentity
 {
-    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
+    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Orchestrated Virtual Machine Scale Set.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>The type of Managed Identity that should be configured on this Windows Virtual Machine Scale Set. Only possible value is UserAssigned.</summary>
+    /// <summary>The type of Managed Identity that should be configured on this Orchestrated Virtual Machine Scale Set. The only possible value is UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1458,7 +1474,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
-    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine. Valid values must be between 1 and 26 characters long, start with a lower case letter, end with a lower case letter or number and contains only a-z, 0-9 and hyphens.</summary>
+    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance.</summary>
     [JsonPropertyName("domainNameLabel")]
     public string? DomainNameLabel { get; set; }
 
@@ -1470,7 +1486,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     [JsonPropertyName("ipTag")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag>? IpTag { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1478,7 +1494,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -1650,7 +1666,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     [JsonPropertyName("loadBalancerBackendAddressPoolIds")]
     public IList<string>? LoadBalancerBackendAddressPoolIds { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1687,7 +1703,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     [JsonPropertyName("auxiliaryMode")]
     public string? AuxiliaryMode { get; set; }
 
-    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4 and A8.</summary>
+    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4, and A8.</summary>
     [JsonPropertyName("auxiliarySku")]
     public string? AuxiliarySku { get; set; }
 
@@ -1739,7 +1755,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsDisk
 {
-    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -1755,7 +1771,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this the Internal OS Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS and Premium_ZRS. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Type of Storage Account which should back the Internal OS Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, and Premium_ZRS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -1826,7 +1842,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -1835,7 +1851,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public string? KeyVaultId { get; set; }
 }
 
-/// <summary>A linux_configuration block as documented below.</summary>
+/// <summary>A linux_configuration block as defined above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfiguration
@@ -1844,7 +1860,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("adminPasswordSecretRef")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
-    /// <summary>A admin_ssh_key block as documented below.</summary>
+    /// <summary>An admin_ssh_key block as defined above.</summary>
     [JsonPropertyName("adminSshKey")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationAdminSshKey>? AdminSshKey { get; set; }
 
@@ -1864,15 +1880,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationSecret>? Secret { get; set; }
 }
@@ -1943,7 +1959,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -1960,17 +1976,17 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("certificateUrl")]
     public string? CertificateUrl { get; set; }
 
-    /// <summary>Specifies the protocol of listener. Possible values are Http or Https. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the protocol of listener. Possible values are Http and Https. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
-/// <summary>A windows_configuration block as documented below.</summary>
+/// <summary>A windows_configuration block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfiguration
 {
-    /// <summary>One or more additional_unattend_content blocks as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>One or more additional_unattend_content blocks as defined above. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("additionalUnattendContent")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationAdditionalUnattendContent>? AdditionalUnattendContent { get; set; }
 
@@ -1990,7 +2006,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("enableAutomaticUpdates")]
     public bool? EnableAutomaticUpdates { get; set; }
 
-    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true or false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
+    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true and false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
     [JsonPropertyName("hotpatchingEnabled")]
     public bool? HotpatchingEnabled { get; set; }
 
@@ -1998,15 +2014,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationSecret>? Secret { get; set; }
 
@@ -2028,16 +2044,16 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     [JsonPropertyName("customDataSecretRef")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileCustomDataSecretRef? CustomDataSecretRef { get; set; }
 
-    /// <summary>A linux_configuration block as documented below.</summary>
+    /// <summary>A linux_configuration block as defined above.</summary>
     [JsonPropertyName("linuxConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfiguration? LinuxConfiguration { get; set; }
 
-    /// <summary>A windows_configuration block as documented below.</summary>
+    /// <summary>A windows_configuration block as defined below.</summary>
     [JsonPropertyName("windowsConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfiguration? WindowsConfiguration { get; set; }
 }
 
-/// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+/// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPlan
@@ -2055,7 +2071,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPl
     public string? Publisher { get; set; }
 }
 
-/// <summary>a priority_mix block as defined below</summary>
+/// <summary>A priority_mix block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPriorityMix
@@ -2069,12 +2085,12 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPr
     public double? RegularPercentageAboveBase { get; set; }
 }
 
-/// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+/// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRollingUpgradePolicy
 {
-    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
+    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true and false.</summary>
     [JsonPropertyName("crossZoneUpgradesEnabled")]
     public bool? CrossZoneUpgradesEnabled { get; set; }
 
@@ -2090,7 +2106,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRo
     [JsonPropertyName("maxUnhealthyUpgradedInstancePercent")]
     public double? MaxUnhealthyUpgradedInstancePercent { get; set; }
 
-    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true or false.</summary>
+    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true and false.</summary>
     [JsonPropertyName("maximumSurgeInstancesEnabled")]
     public bool? MaximumSurgeInstancesEnabled { get; set; }
 
@@ -2098,21 +2114,37 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRo
     [JsonPropertyName("pauseTimeBetweenBatches")]
     public string? PauseTimeBetweenBatches { get; set; }
 
-    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true or false.</summary>
+    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true and false.</summary>
     [JsonPropertyName("prioritizeUnhealthyInstancesEnabled")]
     public bool? PrioritizeUnhealthyInstancesEnabled { get; set; }
 }
 
-/// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfileVirtualMachineSize
+{
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specifies the priority rank of the VM size. Possible values are integers between 1 and 3, inclusive. Lower values represent higher priority.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>A sku_profile block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfile
 {
-    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are CapacityOptimized, LowestPrice and Prioritized.</summary>
+    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are LowestPrice, Prioritized, and CapacityOptimized.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
+    /// <summary>One or more virtual_machine_size blocks as defined below.</summary>
+    [JsonPropertyName("virtualMachineSize")]
+    public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
+
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }
@@ -2144,7 +2176,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderTerminationNotification
 {
-    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values true or false.</summary>
+    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values are true and false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -2219,11 +2251,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("extension")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderExtension>? Extension { get; set; }
 
-    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new Virtual Machine Scale Set to be created.</summary>
+    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("extensionOperationsEnabled")]
     public bool? ExtensionOperationsEnabled { get; set; }
 
-    /// <summary>Specifies the time alloted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
+    /// <summary>Specifies the time allotted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
     [JsonPropertyName("extensionsTimeBudget")]
     public string? ExtensionsTimeBudget { get; set; }
 
@@ -2235,7 +2267,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("instances")]
     public double? Instances { get; set; }
 
-    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client and Windows_Server.</summary>
+    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client, and Windows_Server.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
@@ -2263,7 +2295,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("osProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfile? OsProfile { get; set; }
 
-    /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("plan")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPlan? Plan { get; set; }
 
@@ -2271,11 +2303,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("platformFaultDomainCount")]
     public double? PlatformFaultDomainCount { get; set; }
 
-    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this value forces a new resource.</summary>
+    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("priority")]
     public string? Priority { get; set; }
 
-    /// <summary>a priority_mix block as defined below</summary>
+    /// <summary>A priority_mix block as defined below.</summary>
     [JsonPropertyName("priorityMix")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPriorityMix? PriorityMix { get; set; }
 
@@ -2283,7 +2315,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("proximityPlacementGroupId")]
     public string? ProximityPlacementGroupId { get; set; }
 
-    /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("rollingUpgradePolicy")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRollingUpgradePolicy? RollingUpgradePolicy { get; set; }
 
@@ -2291,11 +2323,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
-    /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A sku_profile block as defined below.</summary>
     [JsonPropertyName("skuProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfile? SkuProfile { get; set; }
 
@@ -2315,7 +2347,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("terminationNotification")]
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderTerminationNotification? TerminationNotification { get; set; }
 
-    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual, and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("upgradeMode")]
     public string? UpgradeMode { get; set; }
 
@@ -2530,7 +2562,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAd
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAutomaticInstanceRepair
 {
-    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
+    /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values are Replace, Restart, and Reimage.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
@@ -2557,7 +2589,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderBo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderDataDisk
 {
-    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -2577,7 +2609,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderDa
     [JsonPropertyName("lun")]
     public double? Lun { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.</summary>
+    /// <summary>The Type of Storage Account which should back this Data Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS, and UltraSSD_LRS.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -2658,11 +2690,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderEx
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderIdentity
 {
-    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
+    /// <summary>Specifies a list of User Managed Identity IDs to be assigned to this Orchestrated Virtual Machine Scale Set.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>The type of Managed Identity that should be configured on this Windows Virtual Machine Scale Set. Only possible value is UserAssigned.</summary>
+    /// <summary>The type of Managed Identity that should be configured on this Orchestrated Virtual Machine Scale Set. The only possible value is UserAssigned.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -2684,7 +2716,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
-    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine. Valid values must be between 1 and 26 characters long, start with a lower case letter, end with a lower case letter or number and contains only a-z, 0-9 and hyphens.</summary>
+    /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance.</summary>
     [JsonPropertyName("domainNameLabel")]
     public string? DomainNameLabel { get; set; }
 
@@ -2696,7 +2728,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     [JsonPropertyName("ipTag")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag>? IpTag { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2704,7 +2736,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     [JsonPropertyName("publicIpPrefixId")]
     public string? PublicIpPrefixId { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -2729,7 +2761,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     [JsonPropertyName("loadBalancerBackendAddressPoolIds")]
     public IList<string>? LoadBalancerBackendAddressPoolIds { get; set; }
 
-    /// <summary>The Name of the Public IP Address Configuration.</summary>
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2758,7 +2790,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     [JsonPropertyName("auxiliaryMode")]
     public string? AuxiliaryMode { get; set; }
 
-    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4 and A8.</summary>
+    /// <summary>Specifies the SKU used for the network high-performance feature on Network Virtual Appliances (NVAs). Possible values are A1, A2, A4, and A8.</summary>
     [JsonPropertyName("auxiliarySku")]
     public string? AuxiliarySku { get; set; }
 
@@ -2810,7 +2842,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsDisk
 {
-    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
+    /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly, and ReadWrite.</summary>
     [JsonPropertyName("caching")]
     public string? Caching { get; set; }
 
@@ -2826,7 +2858,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
 
-    /// <summary>The Type of Storage Account which should back this the Internal OS Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS and Premium_ZRS. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Type of Storage Account which should back the Internal OS Disk. Possible values are Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, and Premium_ZRS. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
@@ -2861,7 +2893,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -2870,12 +2902,12 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? KeyVaultId { get; set; }
 }
 
-/// <summary>A linux_configuration block as documented below.</summary>
+/// <summary>A linux_configuration block as defined above.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfiguration
 {
-    /// <summary>A admin_ssh_key block as documented below.</summary>
+    /// <summary>An admin_ssh_key block as defined above.</summary>
     [JsonPropertyName("adminSshKey")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationAdminSshKey>? AdminSshKey { get; set; }
 
@@ -2895,15 +2927,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecret>? Secret { get; set; }
 }
@@ -2934,7 +2966,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationSecret
 {
-    /// <summary>One or more certificate blocks as defined below.</summary>
+    /// <summary>One or more certificate blocks as defined above.</summary>
     [JsonPropertyName("certificate")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationSecretCertificate>? Certificate { get; set; }
 
@@ -2951,17 +2983,17 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     [JsonPropertyName("certificateUrl")]
     public string? CertificateUrl { get; set; }
 
-    /// <summary>Specifies the protocol of listener. Possible values are Http or Https. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the protocol of listener. Possible values are Http and Https. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 }
 
-/// <summary>A windows_configuration block as documented below.</summary>
+/// <summary>A windows_configuration block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfiguration
 {
-    /// <summary>One or more additional_unattend_content blocks as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>One or more additional_unattend_content blocks as defined above. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("additionalUnattendContent")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationAdditionalUnattendContent>? AdditionalUnattendContent { get; set; }
 
@@ -2977,7 +3009,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     [JsonPropertyName("enableAutomaticUpdates")]
     public bool? EnableAutomaticUpdates { get; set; }
 
-    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true or false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
+    /// <summary>Should the VM be patched without requiring a reboot? Possible values are true and false. Defaults to false. For more information about hot patching please see the product documentation.</summary>
     [JsonPropertyName("hotpatchingEnabled")]
     public bool? HotpatchingEnabled { get; set; }
 
@@ -2985,15 +3017,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     [JsonPropertyName("patchAssessmentMode")]
     public string? PatchAssessmentMode { get; set; }
 
-    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
+    /// <summary>Specifies the mode of in-guest patching of this Windows Virtual Machine. Possible values are Manual, AutomaticByOS, and AutomaticByPlatform. Defaults to AutomaticByOS. For more information on patch modes please see the product documentation.</summary>
     [JsonPropertyName("patchMode")]
     public string? PatchMode { get; set; }
 
-    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this value forces a new resource to be created.</summary>
+    /// <summary>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("provisionVmAgent")]
     public bool? ProvisionVmAgent { get; set; }
 
-    /// <summary>One or more secret blocks as defined below.</summary>
+    /// <summary>One or more secret blocks as defined above.</summary>
     [JsonPropertyName("secret")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationSecret>? Secret { get; set; }
 
@@ -3011,16 +3043,16 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfile
 {
-    /// <summary>A linux_configuration block as documented below.</summary>
+    /// <summary>A linux_configuration block as defined above.</summary>
     [JsonPropertyName("linuxConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfiguration? LinuxConfiguration { get; set; }
 
-    /// <summary>A windows_configuration block as documented below.</summary>
+    /// <summary>A windows_configuration block as defined below.</summary>
     [JsonPropertyName("windowsConfiguration")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfiguration? WindowsConfiguration { get; set; }
 }
 
-/// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+/// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPlan
@@ -3038,7 +3070,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPl
     public string? Publisher { get; set; }
 }
 
-/// <summary>a priority_mix block as defined below</summary>
+/// <summary>A priority_mix block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPriorityMix
@@ -3052,12 +3084,12 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPr
     public double? RegularPercentageAboveBase { get; set; }
 }
 
-/// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+/// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRollingUpgradePolicy
 {
-    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
+    /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true and false.</summary>
     [JsonPropertyName("crossZoneUpgradesEnabled")]
     public bool? CrossZoneUpgradesEnabled { get; set; }
 
@@ -3073,7 +3105,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRo
     [JsonPropertyName("maxUnhealthyUpgradedInstancePercent")]
     public double? MaxUnhealthyUpgradedInstancePercent { get; set; }
 
-    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true or false.</summary>
+    /// <summary>Create new virtual machines to upgrade the scale set, rather than updating the existing virtual machines. Existing virtual machines will be deleted once the new virtual machines are created for each batch. Possible values are true and false.</summary>
     [JsonPropertyName("maximumSurgeInstancesEnabled")]
     public bool? MaximumSurgeInstancesEnabled { get; set; }
 
@@ -3081,21 +3113,37 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRo
     [JsonPropertyName("pauseTimeBetweenBatches")]
     public string? PauseTimeBetweenBatches { get; set; }
 
-    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true or false.</summary>
+    /// <summary>Upgrade all unhealthy instances in a scale set before any healthy instances. Possible values are true and false.</summary>
     [JsonPropertyName("prioritizeUnhealthyInstancesEnabled")]
     public bool? PrioritizeUnhealthyInstancesEnabled { get; set; }
 }
 
-/// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfileVirtualMachineSize
+{
+    /// <summary>The name of the VM SKU which should be used for this Virtual Machine Scale Set, such as Standard_B1ls or Standard_B2s.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specifies the priority rank of the VM size. Possible values are integers between 1 and 3, inclusive. Lower values represent higher priority.</summary>
+    [JsonPropertyName("rank")]
+    public double? Rank { get; set; }
+}
+
+/// <summary>A sku_profile block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfile
 {
-    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are CapacityOptimized, LowestPrice and Prioritized.</summary>
+    /// <summary>Specifies the allocation strategy for the virtual machine scale set based on which the VMs will be allocated. Possible values are LowestPrice, Prioritized, and CapacityOptimized.</summary>
     [JsonPropertyName("allocationStrategy")]
     public string? AllocationStrategy { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
+    /// <summary>One or more virtual_machine_size blocks as defined below.</summary>
+    [JsonPropertyName("virtualMachineSize")]
+    public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
+
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }
@@ -3127,7 +3175,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderTerminationNotification
 {
-    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values true or false.</summary>
+    /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set? Possible values are true and false.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
@@ -3172,15 +3220,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("extension")]
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderExtension>? Extension { get; set; }
 
-    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new Virtual Machine Scale Set to be created.</summary>
+    /// <summary>Should extension operations be allowed on the Virtual Machine Scale Set? Possible values are true or false. Defaults to true. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("extensionOperationsEnabled")]
     public bool? ExtensionOperationsEnabled { get; set; }
 
-    /// <summary>Specifies the time alloted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
+    /// <summary>Specifies the time allotted for all extensions to start. The time duration should be between 15 minutes and 120 minutes (inclusive) and should be specified in ISO 8601 format. Defaults to PT1H30M.</summary>
     [JsonPropertyName("extensionsTimeBudget")]
     public string? ExtensionsTimeBudget { get; set; }
 
-    /// <summary>The ID of the Virtual Machine Scale Set.</summary>
+    /// <summary>The ID of the Orchestrated Virtual Machine Scale Set.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -3192,7 +3240,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("instances")]
     public double? Instances { get; set; }
 
-    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client and Windows_Server.</summary>
+    /// <summary>Specifies the type of on-premise license (also known as Azure Hybrid Use Benefit) which should be used for this Virtual Machine Scale Set. Possible values are None, Windows_Client, and Windows_Server.</summary>
     [JsonPropertyName("licenseType")]
     public string? LicenseType { get; set; }
 
@@ -3220,7 +3268,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("osProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfile? OsProfile { get; set; }
 
-    /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A plan block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("plan")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPlan? Plan { get; set; }
 
@@ -3228,11 +3276,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("platformFaultDomainCount")]
     public double? PlatformFaultDomainCount { get; set; }
 
-    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this value forces a new resource.</summary>
+    /// <summary>The Priority of this Virtual Machine Scale Set. Possible values are Regular and Spot. Defaults to Regular. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("priority")]
     public string? Priority { get; set; }
 
-    /// <summary>a priority_mix block as defined below</summary>
+    /// <summary>A priority_mix block as defined below.</summary>
     [JsonPropertyName("priorityMix")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPriorityMix? PriorityMix { get; set; }
 
@@ -3244,7 +3292,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>A rolling_upgrade_policy block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("rollingUpgradePolicy")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRollingUpgradePolicy? RollingUpgradePolicy { get; set; }
 
@@ -3252,11 +3300,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set. Valid values include: any of the General purpose, Compute optimized, Memory optimized, Storage optimized, GPU optimized, FPGA optimized, High performance, or Previous generation virtual machine SKUs.</summary>
+    /// <summary>The name of the SKU to be used by this Virtual Machine Scale Set.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
-    /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
+    /// <summary>A sku_profile block as defined below.</summary>
     [JsonPropertyName("skuProfile")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfile? SkuProfile { get; set; }
 
@@ -3276,11 +3324,11 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("terminationNotification")]
     public V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderTerminationNotification? TerminationNotification { get; set; }
 
-    /// <summary>The Unique ID for the Virtual Machine Scale Set.</summary>
+    /// <summary>The Unique ID for the Orchestrated Virtual Machine Scale Set.</summary>
     [JsonPropertyName("uniqueId")]
     public string? UniqueId { get; set; }
 
-    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies how upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are Automatic, Manual, and Rolling. Defaults to Manual. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("upgradeMode")]
     public string? UpgradeMode { get; set; }
 
@@ -3349,6 +3397,15 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatus
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -3357,7 +3414,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
+/// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Orchestrated Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

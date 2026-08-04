@@ -425,6 +425,161 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSp
     public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
@@ -524,7 +679,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProvider
     [JsonPropertyName("keyVaultPassword")]
     public IList<V1beta1LinkedServiceAzureDatabricksSpecForProviderKeyVaultPassword>? KeyVaultPassword { get; set; }
 
-    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    /// <summary>The ID of the Data Factory Linked Service.</summary>
     [JsonPropertyName("msiWorkSpaceResourceId")]
     public string? MsiWorkSpaceResourceId { get; set; }
 
@@ -535,6 +690,18 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProvider
     /// <summary>Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
     [JsonPropertyName("msiWorkSpaceResourceIdSelector")]
     public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelector? MsiWorkSpaceResourceIdSelector { get; set; }
+
+    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    [JsonPropertyName("msiWorkspaceId")]
+    public string? MsiWorkspaceId { get; set; }
+
+    /// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
+    [JsonPropertyName("msiWorkspaceIdRef")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRef? MsiWorkspaceIdRef { get; set; }
+
+    /// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
+    [JsonPropertyName("msiWorkspaceIdSelector")]
+    public V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelector? MsiWorkspaceIdSelector { get; set; }
 
     /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
     [JsonPropertyName("newClusterConfig")]
@@ -755,6 +922,161 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkS
     public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
@@ -854,7 +1176,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProvider
     [JsonPropertyName("keyVaultPassword")]
     public IList<V1beta1LinkedServiceAzureDatabricksSpecInitProviderKeyVaultPassword>? KeyVaultPassword { get; set; }
 
-    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    /// <summary>The ID of the Data Factory Linked Service.</summary>
     [JsonPropertyName("msiWorkSpaceResourceId")]
     public string? MsiWorkSpaceResourceId { get; set; }
 
@@ -865,6 +1187,18 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProvider
     /// <summary>Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
     [JsonPropertyName("msiWorkSpaceResourceIdSelector")]
     public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelector? MsiWorkSpaceResourceIdSelector { get; set; }
+
+    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    [JsonPropertyName("msiWorkspaceId")]
+    public string? MsiWorkspaceId { get; set; }
+
+    /// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
+    [JsonPropertyName("msiWorkspaceIdRef")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRef? MsiWorkspaceIdRef { get; set; }
+
+    /// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
+    [JsonPropertyName("msiWorkspaceIdSelector")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelector? MsiWorkspaceIdSelector { get; set; }
 
     /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
     [JsonPropertyName("newClusterConfig")]
@@ -1192,9 +1526,13 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProvider
     [JsonPropertyName("keyVaultPassword")]
     public IList<V1beta1LinkedServiceAzureDatabricksStatusAtProviderKeyVaultPassword>? KeyVaultPassword { get; set; }
 
-    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    /// <summary>The ID of the Data Factory Linked Service.</summary>
     [JsonPropertyName("msiWorkSpaceResourceId")]
     public string? MsiWorkSpaceResourceId { get; set; }
+
+    /// <summary>Authenticate to ADB via managed service identity.</summary>
+    [JsonPropertyName("msiWorkspaceId")]
+    public string? MsiWorkspaceId { get; set; }
 
     /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
     [JsonPropertyName("newClusterConfig")]
@@ -1261,6 +1599,15 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinkedServiceAzureDatabricksStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

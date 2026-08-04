@@ -95,6 +95,12 @@ spec:
                               storageAccountId:
                                 description: The ID of the Blob Storage Account where messages should be archived.
                                 type: string
+                              storageAuthenticationId:
+                                description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                                type: string
+                              storageAuthenticationType:
+                                description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                                type: string
                             type: object
                           type: array
                         enabled:
@@ -400,6 +406,12 @@ spec:
                               storageAccountId:
                                 description: The ID of the Blob Storage Account where messages should be archived.
                                 type: string
+                              storageAuthenticationId:
+                                description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                                type: string
+                              storageAuthenticationType:
+                                description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                                type: string
                             type: object
                           type: array
                         enabled:
@@ -634,6 +646,12 @@ spec:
                               storageAccountId:
                                 description: The ID of the Blob Storage Account where messages should be archived.
                                 type: string
+                              storageAuthenticationId:
+                                description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                                type: string
+                              storageAuthenticationType:
+                                description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                                type: string
                             type: object
                           type: array
                         enabled:
@@ -740,6 +758,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -827,6 +852,12 @@ spec:
                           storageAccountId:
                             description: The ID of the Blob Storage Account where messages should be archived.
                             type: string
+                          storageAuthenticationId:
+                            description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                            type: string
+                          storageAuthenticationType:
+                            description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                            type: string
                         type: object
                       enabled:
                         description: Specifies if the Capture Description is Enabled.
@@ -1126,6 +1157,12 @@ spec:
                           storageAccountId:
                             description: The ID of the Blob Storage Account where messages should be archived.
                             type: string
+                          storageAuthenticationId:
+                            description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                            type: string
+                          storageAuthenticationType:
+                            description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                            type: string
                         type: object
                       enabled:
                         description: Specifies if the Capture Description is Enabled.
@@ -1354,6 +1391,12 @@ spec:
                           storageAccountId:
                             description: The ID of the Blob Storage Account where messages should be archived.
                             type: string
+                          storageAuthenticationId:
+                            description: The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.
+                            type: string
+                          storageAuthenticationType:
+                            description: The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.
+                            type: string
                         type: object
                       enabled:
                         description: Specifies if the Capture Description is Enabled.
@@ -1456,6 +1499,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

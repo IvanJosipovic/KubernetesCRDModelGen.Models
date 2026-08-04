@@ -375,7 +375,7 @@ public partial class V1beta1IOTHubSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Defaults to 1.2. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -604,7 +604,7 @@ public partial class V1beta1IOTHubSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Defaults to 1.2. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -1081,7 +1081,7 @@ public partial class V1beta1IOTHubStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the minimum TLS version to support for this hub. The only valid value is 1.2. Defaults to 1.2. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("minTlsVersion")]
     public string? MinTlsVersion { get; set; }
 
@@ -1172,6 +1172,15 @@ public partial class V1beta1IOTHubStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1IOTHubStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

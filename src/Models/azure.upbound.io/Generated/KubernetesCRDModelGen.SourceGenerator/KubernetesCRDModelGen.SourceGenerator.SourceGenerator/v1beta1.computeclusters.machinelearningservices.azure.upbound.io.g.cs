@@ -65,11 +65,11 @@ public enum V1beta1ComputeClusterSpecDeletionPolicyEnum
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterSpecForProviderIdentity
 {
-    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both). Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -234,17 +234,36 @@ public partial class V1beta1ComputeClusterSpecForProviderMachineLearningWorkspac
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterSpecForProviderScaleSettings
 {
-    /// <summary>Maximum node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Maximum node count.</summary>
     [JsonPropertyName("maxNodeCount")]
     public double? MaxNodeCount { get; set; }
 
-    /// <summary>Minimal node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Minimal node count.</summary>
     [JsonPropertyName("minNodeCount")]
     public double? MinNodeCount { get; set; }
 
-    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration.</summary>
     [JsonPropertyName("scaleDownNodesAfterIdleDuration")]
     public string? ScaleDownNodesAfterIdleDuration { get; set; }
+}
+
+/// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ComputeClusterSpecForProviderSshAdminPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -253,8 +272,8 @@ public partial class V1beta1ComputeClusterSpecForProviderScaleSettings
 public partial class V1beta1ComputeClusterSpecForProviderSsh
 {
     /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
+    [JsonPropertyName("adminPasswordSecretRef")]
+    public V1beta1ComputeClusterSpecForProviderSshAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
@@ -429,7 +448,7 @@ public partial class V1beta1ComputeClusterSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta1ComputeClusterSpecForProviderIdentity>? Identity { get; set; }
 
@@ -457,11 +476,11 @@ public partial class V1beta1ComputeClusterSpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Whether the compute cluster will have a public ip. To set this to false a subnet_resource_id needs to be set. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Whether the compute cluster will have a public ip. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("nodePublicIpEnabled")]
     public bool? NodePublicIpEnabled { get; set; }
 
-    /// <summary>A scale_settings block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A scale_settings block as defined below.</summary>
     [JsonPropertyName("scaleSettings")]
     public IList<V1beta1ComputeClusterSpecForProviderScaleSettings>? ScaleSettings { get; set; }
 
@@ -469,7 +488,7 @@ public partial class V1beta1ComputeClusterSpecForProvider
     [JsonPropertyName("ssh")]
     public IList<V1beta1ComputeClusterSpecForProviderSsh>? Ssh { get; set; }
 
-    /// <summary>A boolean value indicating whether enable the public SSH port. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A boolean value indicating whether enable the public SSH port. Defaults to false. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("sshPublicAccessEnabled")]
     public bool? SshPublicAccessEnabled { get; set; }
 
@@ -485,7 +504,7 @@ public partial class V1beta1ComputeClusterSpecForProvider
     [JsonPropertyName("subnetResourceIdSelector")]
     public V1beta1ComputeClusterSpecForProviderSubnetResourceIdSelector? SubnetResourceIdSelector { get; set; }
 
-    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -503,11 +522,11 @@ public partial class V1beta1ComputeClusterSpecForProvider
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterSpecInitProviderIdentity
 {
-    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both). Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -672,17 +691,36 @@ public partial class V1beta1ComputeClusterSpecInitProviderMachineLearningWorkspa
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterSpecInitProviderScaleSettings
 {
-    /// <summary>Maximum node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Maximum node count.</summary>
     [JsonPropertyName("maxNodeCount")]
     public double? MaxNodeCount { get; set; }
 
-    /// <summary>Minimal node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Minimal node count.</summary>
     [JsonPropertyName("minNodeCount")]
     public double? MinNodeCount { get; set; }
 
-    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration.</summary>
     [JsonPropertyName("scaleDownNodesAfterIdleDuration")]
     public string? ScaleDownNodesAfterIdleDuration { get; set; }
+}
+
+/// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ComputeClusterSpecInitProviderSshAdminPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -691,8 +729,8 @@ public partial class V1beta1ComputeClusterSpecInitProviderScaleSettings
 public partial class V1beta1ComputeClusterSpecInitProviderSsh
 {
     /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
+    [JsonPropertyName("adminPasswordSecretRef")]
+    public V1beta1ComputeClusterSpecInitProviderSshAdminPasswordSecretRef? AdminPasswordSecretRef { get; set; }
 
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
@@ -879,7 +917,7 @@ public partial class V1beta1ComputeClusterSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta1ComputeClusterSpecInitProviderIdentity>? Identity { get; set; }
 
@@ -907,11 +945,11 @@ public partial class V1beta1ComputeClusterSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Whether the compute cluster will have a public ip. To set this to false a subnet_resource_id needs to be set. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Whether the compute cluster will have a public ip. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("nodePublicIpEnabled")]
     public bool? NodePublicIpEnabled { get; set; }
 
-    /// <summary>A scale_settings block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A scale_settings block as defined below.</summary>
     [JsonPropertyName("scaleSettings")]
     public IList<V1beta1ComputeClusterSpecInitProviderScaleSettings>? ScaleSettings { get; set; }
 
@@ -919,7 +957,7 @@ public partial class V1beta1ComputeClusterSpecInitProvider
     [JsonPropertyName("ssh")]
     public IList<V1beta1ComputeClusterSpecInitProviderSsh>? Ssh { get; set; }
 
-    /// <summary>A boolean value indicating whether enable the public SSH port. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A boolean value indicating whether enable the public SSH port. Defaults to false. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("sshPublicAccessEnabled")]
     public bool? SshPublicAccessEnabled { get; set; }
 
@@ -935,7 +973,7 @@ public partial class V1beta1ComputeClusterSpecInitProvider
     [JsonPropertyName("subnetResourceIdSelector")]
     public V1beta1ComputeClusterSpecInitProviderSubnetResourceIdSelector? SubnetResourceIdSelector { get; set; }
 
-    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -1143,7 +1181,7 @@ public partial class V1beta1ComputeClusterSpec
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterStatusAtProviderIdentity
 {
-    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
@@ -1155,7 +1193,7 @@ public partial class V1beta1ComputeClusterStatusAtProviderIdentity
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 
-    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both). Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the type of Managed Service Identity that should be configured on this Machine Learning Compute Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned (to enable both).</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1165,15 +1203,15 @@ public partial class V1beta1ComputeClusterStatusAtProviderIdentity
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterStatusAtProviderScaleSettings
 {
-    /// <summary>Maximum node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Maximum node count.</summary>
     [JsonPropertyName("maxNodeCount")]
     public double? MaxNodeCount { get; set; }
 
-    /// <summary>Minimal node count. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Minimal node count.</summary>
     [JsonPropertyName("minNodeCount")]
     public double? MinNodeCount { get; set; }
 
-    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Node Idle Time Before Scale Down: defines the time until the compute is shutdown when it has gone into Idle state. Is defined according to W3C XML schema standard for duration.</summary>
     [JsonPropertyName("scaleDownNodesAfterIdleDuration")]
     public string? ScaleDownNodesAfterIdleDuration { get; set; }
 }
@@ -1183,10 +1221,6 @@ public partial class V1beta1ComputeClusterStatusAtProviderScaleSettings
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ComputeClusterStatusAtProviderSsh
 {
-    /// <summary>Password of the administrator user account. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
-    [JsonPropertyName("adminPassword")]
-    public string? AdminPassword { get; set; }
-
     /// <summary>Name of the administrator user account which can be used to SSH to nodes. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
@@ -1209,7 +1243,7 @@ public partial class V1beta1ComputeClusterStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>An identity block as defined below.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta1ComputeClusterStatusAtProviderIdentity>? Identity { get; set; }
 
@@ -1229,11 +1263,11 @@ public partial class V1beta1ComputeClusterStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Whether the compute cluster will have a public ip. To set this to false a subnet_resource_id needs to be set. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>Whether the compute cluster will have a public ip. Defaults to true. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("nodePublicIpEnabled")]
     public bool? NodePublicIpEnabled { get; set; }
 
-    /// <summary>A scale_settings block as defined below. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A scale_settings block as defined below.</summary>
     [JsonPropertyName("scaleSettings")]
     public IList<V1beta1ComputeClusterStatusAtProviderScaleSettings>? ScaleSettings { get; set; }
 
@@ -1241,7 +1275,7 @@ public partial class V1beta1ComputeClusterStatusAtProvider
     [JsonPropertyName("ssh")]
     public IList<V1beta1ComputeClusterStatusAtProviderSsh>? Ssh { get; set; }
 
-    /// <summary>A boolean value indicating whether enable the public SSH port. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A boolean value indicating whether enable the public SSH port. Defaults to false. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
     [JsonPropertyName("sshPublicAccessEnabled")]
     public bool? SshPublicAccessEnabled { get; set; }
 
@@ -1249,7 +1283,7 @@ public partial class V1beta1ComputeClusterStatusAtProvider
     [JsonPropertyName("subnetResourceId")]
     public string? SubnetResourceId { get; set; }
 
-    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster. Changing this forces a new Machine Learning Compute Cluster to be created.</summary>
+    /// <summary>A mapping of tags which should be assigned to the Machine Learning Compute Cluster.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -1318,6 +1352,15 @@ public partial class V1beta1ComputeClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ComputeClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

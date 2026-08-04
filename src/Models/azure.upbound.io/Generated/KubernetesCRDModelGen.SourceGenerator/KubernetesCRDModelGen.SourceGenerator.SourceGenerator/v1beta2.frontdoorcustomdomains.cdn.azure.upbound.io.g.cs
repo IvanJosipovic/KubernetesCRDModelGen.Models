@@ -349,6 +349,181 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelecto
     public V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolutionEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolveEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a FrontdoorOrigin in cdn to populate hostName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderHostNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a FrontdoorOrigin in cdn to populate hostName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A custom_ciphers block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderTlsCipherSuiteCustomCiphers
+{
+    /// <summary>A set of TLS 1.2 cipher suites. Possible values are ECDHE_RSA_AES128_GCM_SHA256, ECDHE_RSA_AES128_SHA256, ECDHE_RSA_AES256_GCM_SHA384, and ECDHE_RSA_AES256_SHA384.</summary>
+    [JsonPropertyName("tls12")]
+    public IList<string>? Tls12 { get; set; }
+
+    /// <summary>A set of TLS 1.3 cipher suites. Possible values are TLS_AES_128_GCM_SHA256 and TLS_AES_256_GCM_SHA384.</summary>
+    [JsonPropertyName("tls13")]
+    public IList<string>? Tls13 { get; set; }
+}
+
+/// <summary>A cipher_suite block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecForProviderTlsCipherSuite
+{
+    /// <summary>A custom_ciphers block as defined below.</summary>
+    [JsonPropertyName("customCiphers")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderTlsCipherSuiteCustomCiphers? CustomCiphers { get; set; }
+
+    /// <summary>The cipher suite set type. Possible values are Customized, TLS12_2022, and TLS12_2023.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>A tls block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -358,20 +533,27 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderTls
     [JsonPropertyName("cdnFrontdoorSecretId")]
     public string? CdnFrontdoorSecretId { get; set; }
 
-    /// <summary>Defines the source of the SSL certificate. Possible values include CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
+    /// <summary>Defines the source of the SSL certificate. Possible values are CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 
-    /// <summary>TLS protocol version that will be used for Https. Possible values are TLS12. Defaults to TLS12.</summary>
+    /// <summary>A cipher_suite block as defined below.</summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderTlsCipherSuite? CipherSuite { get; set; }
+
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
+
+    /// <summary>TLS protocol version that will be used for HTTPS. The only possible value is TLS12. Defaults to TLS12.</summary>
+    [JsonPropertyName("minimumVersion")]
+    public string? MinimumVersion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProvider
 {
-    /// <summary>The ID of the Front Door Profile. Changing this forces a new Front Door Custom Domain to be created.</summary>
+    /// <summary>The ID of the Front Door Profile. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
@@ -383,7 +565,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProvider
     [JsonPropertyName("cdnFrontdoorProfileIdSelector")]
     public V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelector? CdnFrontdoorProfileIdSelector { get; set; }
 
-    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain. If you are using Azure to host your DNS domains, you must delegate the domain provider&apos;s domain name system (DNS) to an Azure DNS Zone. For more information, see Delegate a domain to Azure DNS. Otherwise, if you&apos;re using your own domain provider to handle your DNS, you must validate the Front Door Custom Domain by creating the DNS TXT records manually.</summary>
+    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain.</summary>
     [JsonPropertyName("dnsZoneId")]
     public string? DnsZoneId { get; set; }
 
@@ -395,9 +577,17 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProvider
     [JsonPropertyName("dnsZoneIdSelector")]
     public V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelector? DnsZoneIdSelector { get; set; }
 
-    /// <summary>The host name of the domain. The host_name field must be the FQDN of your domain(e.g. contoso.fabrikam.com). Changing this forces a new Front Door Custom Domain to be created.</summary>
+    /// <summary>The host name of the domain. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("hostName")]
     public string? HostName { get; set; }
+
+    /// <summary>Reference to a FrontdoorOrigin in cdn to populate hostName.</summary>
+    [JsonPropertyName("hostNameRef")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameRef? HostNameRef { get; set; }
+
+    /// <summary>Selector for a FrontdoorOrigin in cdn to populate hostName.</summary>
+    [JsonPropertyName("hostNameSelector")]
+    public V1beta2FrontdoorCustomDomainSpecForProviderHostNameSelector? HostNameSelector { get; set; }
 
     /// <summary>A tls block as defined below.</summary>
     [JsonPropertyName("tls")]
@@ -551,6 +741,181 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelect
     public V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolutionEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolveEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a FrontdoorOrigin in cdn to populate hostName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolutionEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolveEnum>))]
+public enum V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a FrontdoorOrigin in cdn to populate hostName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>A custom_ciphers block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTlsCipherSuiteCustomCiphers
+{
+    /// <summary>A set of TLS 1.2 cipher suites. Possible values are ECDHE_RSA_AES128_GCM_SHA256, ECDHE_RSA_AES128_SHA256, ECDHE_RSA_AES256_GCM_SHA384, and ECDHE_RSA_AES256_SHA384.</summary>
+    [JsonPropertyName("tls12")]
+    public IList<string>? Tls12 { get; set; }
+
+    /// <summary>A set of TLS 1.3 cipher suites. Possible values are TLS_AES_128_GCM_SHA256 and TLS_AES_256_GCM_SHA384.</summary>
+    [JsonPropertyName("tls13")]
+    public IList<string>? Tls13 { get; set; }
+}
+
+/// <summary>A cipher_suite block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTlsCipherSuite
+{
+    /// <summary>A custom_ciphers block as defined below.</summary>
+    [JsonPropertyName("customCiphers")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderTlsCipherSuiteCustomCiphers? CustomCiphers { get; set; }
+
+    /// <summary>The cipher suite set type. Possible values are Customized, TLS12_2022, and TLS12_2023.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>A tls block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -560,13 +925,20 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTls
     [JsonPropertyName("cdnFrontdoorSecretId")]
     public string? CdnFrontdoorSecretId { get; set; }
 
-    /// <summary>Defines the source of the SSL certificate. Possible values include CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
+    /// <summary>Defines the source of the SSL certificate. Possible values are CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 
-    /// <summary>TLS protocol version that will be used for Https. Possible values are TLS12. Defaults to TLS12.</summary>
+    /// <summary>A cipher_suite block as defined below.</summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderTlsCipherSuite? CipherSuite { get; set; }
+
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
+
+    /// <summary>TLS protocol version that will be used for HTTPS. The only possible value is TLS12. Defaults to TLS12.</summary>
+    [JsonPropertyName("minimumVersion")]
+    public string? MinimumVersion { get; set; }
 }
 
 /// <summary>
@@ -585,7 +957,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTls
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProvider
 {
-    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain. If you are using Azure to host your DNS domains, you must delegate the domain provider&apos;s domain name system (DNS) to an Azure DNS Zone. For more information, see Delegate a domain to Azure DNS. Otherwise, if you&apos;re using your own domain provider to handle your DNS, you must validate the Front Door Custom Domain by creating the DNS TXT records manually.</summary>
+    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain.</summary>
     [JsonPropertyName("dnsZoneId")]
     public string? DnsZoneId { get; set; }
 
@@ -597,9 +969,17 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProvider
     [JsonPropertyName("dnsZoneIdSelector")]
     public V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelector? DnsZoneIdSelector { get; set; }
 
-    /// <summary>The host name of the domain. The host_name field must be the FQDN of your domain(e.g. contoso.fabrikam.com). Changing this forces a new Front Door Custom Domain to be created.</summary>
+    /// <summary>The host name of the domain. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("hostName")]
     public string? HostName { get; set; }
+
+    /// <summary>Reference to a FrontdoorOrigin in cdn to populate hostName.</summary>
+    [JsonPropertyName("hostNameRef")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameRef? HostNameRef { get; set; }
+
+    /// <summary>Selector for a FrontdoorOrigin in cdn to populate hostName.</summary>
+    [JsonPropertyName("hostNameSelector")]
+    public V1beta2FrontdoorCustomDomainSpecInitProviderHostNameSelector? HostNameSelector { get; set; }
 
     /// <summary>A tls block as defined below.</summary>
     [JsonPropertyName("tls")]
@@ -789,6 +1169,34 @@ public partial class V1beta2FrontdoorCustomDomainSpec
     public V1beta2FrontdoorCustomDomainSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>A custom_ciphers block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainStatusAtProviderTlsCipherSuiteCustomCiphers
+{
+    /// <summary>A set of TLS 1.2 cipher suites. Possible values are ECDHE_RSA_AES128_GCM_SHA256, ECDHE_RSA_AES128_SHA256, ECDHE_RSA_AES256_GCM_SHA384, and ECDHE_RSA_AES256_SHA384.</summary>
+    [JsonPropertyName("tls12")]
+    public IList<string>? Tls12 { get; set; }
+
+    /// <summary>A set of TLS 1.3 cipher suites. Possible values are TLS_AES_128_GCM_SHA256 and TLS_AES_256_GCM_SHA384.</summary>
+    [JsonPropertyName("tls13")]
+    public IList<string>? Tls13 { get; set; }
+}
+
+/// <summary>A cipher_suite block as defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FrontdoorCustomDomainStatusAtProviderTlsCipherSuite
+{
+    /// <summary>A custom_ciphers block as defined below.</summary>
+    [JsonPropertyName("customCiphers")]
+    public V1beta2FrontdoorCustomDomainStatusAtProviderTlsCipherSuiteCustomCiphers? CustomCiphers { get; set; }
+
+    /// <summary>The cipher suite set type. Possible values are Customized, TLS12_2022, and TLS12_2023.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>A tls block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -798,32 +1206,39 @@ public partial class V1beta2FrontdoorCustomDomainStatusAtProviderTls
     [JsonPropertyName("cdnFrontdoorSecretId")]
     public string? CdnFrontdoorSecretId { get; set; }
 
-    /// <summary>Defines the source of the SSL certificate. Possible values include CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
+    /// <summary>Defines the source of the SSL certificate. Possible values are CustomerCertificate and ManagedCertificate. Defaults to ManagedCertificate.</summary>
     [JsonPropertyName("certificateType")]
     public string? CertificateType { get; set; }
 
-    /// <summary>TLS protocol version that will be used for Https. Possible values are TLS12. Defaults to TLS12.</summary>
+    /// <summary>A cipher_suite block as defined below.</summary>
+    [JsonPropertyName("cipherSuite")]
+    public V1beta2FrontdoorCustomDomainStatusAtProviderTlsCipherSuite? CipherSuite { get; set; }
+
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }
+
+    /// <summary>TLS protocol version that will be used for HTTPS. The only possible value is TLS12. Defaults to TLS12.</summary>
+    [JsonPropertyName("minimumVersion")]
+    public string? MinimumVersion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainStatusAtProvider
 {
-    /// <summary>The ID of the Front Door Profile. Changing this forces a new Front Door Custom Domain to be created.</summary>
+    /// <summary>The ID of the Front Door Profile. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
-    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain. If you are using Azure to host your DNS domains, you must delegate the domain provider&apos;s domain name system (DNS) to an Azure DNS Zone. For more information, see Delegate a domain to Azure DNS. Otherwise, if you&apos;re using your own domain provider to handle your DNS, you must validate the Front Door Custom Domain by creating the DNS TXT records manually.</summary>
+    /// <summary>The ID of the Azure DNS Zone which should be used for this Front Door Custom Domain.</summary>
     [JsonPropertyName("dnsZoneId")]
     public string? DnsZoneId { get; set; }
 
-    /// <summary>The date time that the token expires.</summary>
+    /// <summary>The date and time that the token expires.</summary>
     [JsonPropertyName("expirationDate")]
     public string? ExpirationDate { get; set; }
 
-    /// <summary>The host name of the domain. The host_name field must be the FQDN of your domain(e.g. contoso.fabrikam.com). Changing this forces a new Front Door Custom Domain to be created.</summary>
+    /// <summary>The host name of the domain. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("hostName")]
     public string? HostName { get; set; }
 
@@ -894,6 +1309,15 @@ public partial class V1beta2FrontdoorCustomDomainStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2FrontdoorCustomDomainStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

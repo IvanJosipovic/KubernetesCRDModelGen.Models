@@ -3256,7 +3256,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of workers this function app can scale out to.</summary>
+    /// <summary>The number of workers this function app can scale out to. The supported value are from 1 to 1000.</summary>
     [JsonPropertyName("maximumInstanceCount")]
     public double? MaximumInstanceCount { get; set; }
 
@@ -3280,7 +3280,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecForProvider
     [JsonPropertyName("runtimeName")]
     public string? RuntimeName { get; set; }
 
-    /// <summary>The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.</summary>
+    /// <summary>The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 
@@ -6451,7 +6451,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of workers this function app can scale out to.</summary>
+    /// <summary>The number of workers this function app can scale out to. The supported value are from 1 to 1000.</summary>
     [JsonPropertyName("maximumInstanceCount")]
     public double? MaximumInstanceCount { get; set; }
 
@@ -6463,7 +6463,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecInitProvider
     [JsonPropertyName("runtimeName")]
     public string? RuntimeName { get; set; }
 
-    /// <summary>The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.</summary>
+    /// <summary>The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 
@@ -8124,7 +8124,7 @@ public partial class V1beta1FunctionAppFlexConsumptionStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The number of workers this function app can scale out to.</summary>
+    /// <summary>The number of workers this function app can scale out to. The supported value are from 1 to 1000.</summary>
     [JsonPropertyName("maximumInstanceCount")]
     public double? MaximumInstanceCount { get; set; }
 
@@ -8156,7 +8156,7 @@ public partial class V1beta1FunctionAppFlexConsumptionStatusAtProvider
     [JsonPropertyName("runtimeName")]
     public string? RuntimeName { get; set; }
 
-    /// <summary>The Runtime version of the Linux Function App. The values are diff from different runtime version. The supported values are 8.0, 9.0 for dotnet-isolated, 20 for node, 3.10, 3.11 for python, 11, 17 for java, 7.4 for powershell.</summary>
+    /// <summary>The Runtime version of the Linux Function App. Accepted values varies with the value of runtime_name.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 
@@ -8275,6 +8275,15 @@ public partial class V1beta1FunctionAppFlexConsumptionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FunctionAppFlexConsumptionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

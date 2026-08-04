@@ -1637,22 +1637,22 @@ public partial class V1beta1LinuxFunctionAppSpecForProviderSiteConfigApplication
     public IList<V1beta1LinuxFunctionAppSpecForProviderSiteConfigApplicationStackDocker>? Docker { get; set; }
 
     /// <summary>
-    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0 and 9.0.
+    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0, 9.0 and 10.0.
     /// The version of .Net. Possible values are `3.1`, `6.0`, `7.0`, `8.0` and `9.0`
     /// </summary>
     [JsonPropertyName("dotnetVersion")]
     public string? DotnetVersion { get; set; }
 
     /// <summary>
-    /// The Version of Java to use. Supported versions include 8, 11, 17, 21.
-    /// The version of Java to use. Possible values are `8`, `11`, `17`, and `21`
+    /// The Version of Java to use. Supported versions include 8, 11, 17, 21, 25.
+    /// The version of Java to use. Possible values are `8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to run. Possible values include 12, 14, 16, 18 20 and 22.
-    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20` and `22`
+    /// The version of Node to run. Possible values include 12, 14, 16, 18, 20, 22 and 24.
+    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20`, `22` and `24`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
@@ -1665,8 +1665,8 @@ public partial class V1beta1LinuxFunctionAppSpecForProviderSiteConfigApplication
     public string? PowershellCoreVersion { get; set; }
 
     /// <summary>
-    /// The version of Python to run. Possible values are 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
-    /// The version of Python to use. Possible values include `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
+    /// The version of Python to run. Possible values are 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
+    /// The version of Python to use. Possible values include `3.14`, `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
@@ -2334,6 +2334,13 @@ public partial class V1beta1LinuxFunctionAppSpecForProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -4628,22 +4635,22 @@ public partial class V1beta1LinuxFunctionAppSpecInitProviderSiteConfigApplicatio
     public IList<V1beta1LinuxFunctionAppSpecInitProviderSiteConfigApplicationStackDocker>? Docker { get; set; }
 
     /// <summary>
-    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0 and 9.0.
+    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0, 9.0 and 10.0.
     /// The version of .Net. Possible values are `3.1`, `6.0`, `7.0`, `8.0` and `9.0`
     /// </summary>
     [JsonPropertyName("dotnetVersion")]
     public string? DotnetVersion { get; set; }
 
     /// <summary>
-    /// The Version of Java to use. Supported versions include 8, 11, 17, 21.
-    /// The version of Java to use. Possible values are `8`, `11`, `17`, and `21`
+    /// The Version of Java to use. Supported versions include 8, 11, 17, 21, 25.
+    /// The version of Java to use. Possible values are `8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to run. Possible values include 12, 14, 16, 18 20 and 22.
-    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20` and `22`
+    /// The version of Node to run. Possible values include 12, 14, 16, 18, 20, 22 and 24.
+    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20`, `22` and `24`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
@@ -4656,8 +4663,8 @@ public partial class V1beta1LinuxFunctionAppSpecInitProviderSiteConfigApplicatio
     public string? PowershellCoreVersion { get; set; }
 
     /// <summary>
-    /// The version of Python to run. Possible values are 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
-    /// The version of Python to use. Possible values include `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
+    /// The version of Python to run. Possible values are 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
+    /// The version of Python to use. Possible values include `3.14`, `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
@@ -5325,6 +5332,13 @@ public partial class V1beta1LinuxFunctionAppSpecInitProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -7235,22 +7249,22 @@ public partial class V1beta1LinuxFunctionAppStatusAtProviderSiteConfigApplicatio
     public IList<V1beta1LinuxFunctionAppStatusAtProviderSiteConfigApplicationStackDocker>? Docker { get; set; }
 
     /// <summary>
-    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0 and 9.0.
+    /// The version of .NET to use. Possible values include 3.1, 6.0, 7.0, 8.0, 9.0 and 10.0.
     /// The version of .Net. Possible values are `3.1`, `6.0`, `7.0`, `8.0` and `9.0`
     /// </summary>
     [JsonPropertyName("dotnetVersion")]
     public string? DotnetVersion { get; set; }
 
     /// <summary>
-    /// The Version of Java to use. Supported versions include 8, 11, 17, 21.
-    /// The version of Java to use. Possible values are `8`, `11`, `17`, and `21`
+    /// The Version of Java to use. Supported versions include 8, 11, 17, 21, 25.
+    /// The version of Java to use. Possible values are `8`, `11`, `17`, `21` and `25`
     /// </summary>
     [JsonPropertyName("javaVersion")]
     public string? JavaVersion { get; set; }
 
     /// <summary>
-    /// The version of Node to run. Possible values include 12, 14, 16, 18 20 and 22.
-    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20` and `22`
+    /// The version of Node to run. Possible values include 12, 14, 16, 18, 20, 22 and 24.
+    /// The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20`, `22` and `24`
     /// </summary>
     [JsonPropertyName("nodeVersion")]
     public string? NodeVersion { get; set; }
@@ -7263,8 +7277,8 @@ public partial class V1beta1LinuxFunctionAppStatusAtProviderSiteConfigApplicatio
     public string? PowershellCoreVersion { get; set; }
 
     /// <summary>
-    /// The version of Python to run. Possible values are 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
-    /// The version of Python to use. Possible values include `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
+    /// The version of Python to run. Possible values are 3.14, 3.13, 3.12, 3.11, 3.10, 3.9, 3.8 and 3.7.
+    /// The version of Python to use. Possible values include `3.14`, `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`.
     /// </summary>
     [JsonPropertyName("pythonVersion")]
     public string? PythonVersion { get; set; }
@@ -7603,6 +7617,13 @@ public partial class V1beta1LinuxFunctionAppStatusAtProviderSiteConfig
     /// </summary>
     [JsonPropertyName("managedPipelineMode")]
     public string? ManagedPipelineMode { get; set; }
+
+    /// <summary>
+    /// The configures the minimum cipher suite of TLS required for SSL requests. Possible values include: TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, TLS_RSA_WITH_AES_128_CBC_SHA&quot;,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,TLS_RSA_WITH_AES_256_CBC_SHA&quot;,TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,TLS_RSA_WITH_AES_256_GCM_SHA384&quot;.
+    /// Configures the minimum TLS cipher suite for the incoming requests to the Site.
+    /// </summary>
+    [JsonPropertyName("minimumTlsCipherSuite")]
+    public string? MinimumTlsCipherSuite { get; set; }
 
     /// <summary>
     /// The configures the minimum version of TLS required for SSL requests. Possible values include: 1.0, 1.1, 1.2 and 1.3. Defaults to 1.2.
@@ -8018,6 +8039,15 @@ public partial class V1beta1LinuxFunctionAppStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinuxFunctionAppStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

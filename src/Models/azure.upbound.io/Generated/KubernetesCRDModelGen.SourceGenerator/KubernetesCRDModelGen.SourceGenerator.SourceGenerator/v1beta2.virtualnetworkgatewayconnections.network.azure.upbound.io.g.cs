@@ -764,6 +764,10 @@ public partial class V1beta2VirtualNetworkGatewayConnectionSpecForProvider
     [JsonPropertyName("authorizationKeySecretRef")]
     public V1beta2VirtualNetworkGatewayConnectionSpecForProviderAuthorizationKeySecretRef? AuthorizationKeySecretRef { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -791,7 +795,6 @@ public partial class V1beta2VirtualNetworkGatewayConnectionSpecForProvider
     [JsonPropertyName("egressNatRuleIds")]
     public IList<string>? EgressNatRuleIds { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -1478,6 +1481,10 @@ public partial class V1beta2VirtualNetworkGatewayConnectionSpecInitProvider
     [JsonPropertyName("authorizationKeySecretRef")]
     public V1beta2VirtualNetworkGatewayConnectionSpecInitProviderAuthorizationKeySecretRef? AuthorizationKeySecretRef { get; set; }
 
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -1505,7 +1512,6 @@ public partial class V1beta2VirtualNetworkGatewayConnectionSpecInitProvider
     [JsonPropertyName("egressNatRuleIds")]
     public IList<string>? EgressNatRuleIds { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -1870,6 +1876,10 @@ public partial class V1beta2VirtualNetworkGatewayConnectionStatusAtProviderTraff
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayConnectionStatusAtProvider
 {
+    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
+    [JsonPropertyName("bgpEnabled")]
+    public bool? BgpEnabled { get; set; }
+
     /// <summary>Connection mode to use. Possible values are Default, InitiatorOnly and ResponderOnly. Defaults to Default. Changing this value will force a resource to be created.</summary>
     [JsonPropertyName("connectionMode")]
     public string? ConnectionMode { get; set; }
@@ -1897,7 +1907,6 @@ public partial class V1beta2VirtualNetworkGatewayConnectionStatusAtProvider
     [JsonPropertyName("egressNatRuleIds")]
     public IList<string>? EgressNatRuleIds { get; set; }
 
-    /// <summary>If true, BGP (Border Gateway Protocol) is enabled for this connection. Defaults to false.</summary>
     [JsonPropertyName("enableBgp")]
     public bool? EnableBgp { get; set; }
 
@@ -2032,6 +2041,15 @@ public partial class V1beta2VirtualNetworkGatewayConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2VirtualNetworkGatewayConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

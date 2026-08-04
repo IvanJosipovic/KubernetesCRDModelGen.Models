@@ -202,7 +202,7 @@ public partial class V1beta2DNSZoneSpecForProviderResourceGroupNameSelector
     public V1beta2DNSZoneSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An soa_record block as defined below.</summary>
+/// <summary>A soa_record block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DNSZoneSpecForProviderSoaRecord
@@ -256,7 +256,7 @@ public partial class V1beta2DNSZoneSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta2DNSZoneSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public V1beta2DNSZoneSpecForProviderSoaRecord? SoaRecord { get; set; }
 
@@ -265,7 +265,7 @@ public partial class V1beta2DNSZoneSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>An soa_record block as defined below.</summary>
+/// <summary>A soa_record block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DNSZoneSpecInitProviderSoaRecord
@@ -319,7 +319,7 @@ public partial class V1beta2DNSZoneSpecInitProviderSoaRecord
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DNSZoneSpecInitProvider
 {
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public V1beta2DNSZoneSpecInitProviderSoaRecord? SoaRecord { get; set; }
 
@@ -511,7 +511,7 @@ public partial class V1beta2DNSZoneSpec
     public V1beta2DNSZoneSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>An soa_record block as defined below.</summary>
+/// <summary>A soa_record block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DNSZoneStatusAtProviderSoaRecord
@@ -524,10 +524,11 @@ public partial class V1beta2DNSZoneStatusAtProviderSoaRecord
     [JsonPropertyName("expireTime")]
     public double? ExpireTime { get; set; }
 
+    /// <summary>The fully qualified domain name.</summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
 
-    /// <summary>The domain name of the authoritative name server for the SOA record. If not set, computed value from Azure will be used.</summary>
+    /// <summary>The domain name of the authoritative name server for the SOA record.</summary>
     [JsonPropertyName("hostName")]
     public string? HostName { get; set; }
 
@@ -564,7 +565,7 @@ public partial class V1beta2DNSZoneStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Maximum number of Records in the zone. Defaults to 1000.</summary>
+    /// <summary>Maximum number of Records in the zone.</summary>
     [JsonPropertyName("maxNumberOfRecordSets")]
     public double? MaxNumberOfRecordSets { get; set; }
 
@@ -580,7 +581,7 @@ public partial class V1beta2DNSZoneStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>An soa_record block as defined below.</summary>
+    /// <summary>A soa_record block as defined below.</summary>
     [JsonPropertyName("soaRecord")]
     public V1beta2DNSZoneStatusAtProviderSoaRecord? SoaRecord { get; set; }
 
@@ -643,6 +644,15 @@ public partial class V1beta2DNSZoneStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DNSZoneStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

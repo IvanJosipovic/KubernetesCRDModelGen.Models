@@ -788,7 +788,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_F2. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_D4_v5. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -1573,7 +1573,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_F2. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_D4_v5. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -1796,7 +1796,7 @@ public partial class V1beta1LinuxVirtualMachineStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_F2. Changing this forces a new resource to be created.</summary>
+    /// <summary>The Machine Size to use for this Virtual Machine, such as Standard_D4_v5. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -1875,6 +1875,15 @@ public partial class V1beta1LinuxVirtualMachineStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinuxVirtualMachineStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

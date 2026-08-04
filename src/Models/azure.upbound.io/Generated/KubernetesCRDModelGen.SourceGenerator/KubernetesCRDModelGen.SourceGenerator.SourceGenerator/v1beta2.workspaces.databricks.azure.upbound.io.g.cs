@@ -432,7 +432,7 @@ public partial class V1beta2WorkspaceSpecForProviderEnhancedSecurityCompliance
     [JsonPropertyName("complianceSecurityProfileEnabled")]
     public bool? ComplianceSecurityProfileEnabled { get; set; }
 
-    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA and PCI_DSS.</summary>
+    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA, PCI_DSS, FEDRAMP_MODERATE, IRAP_PROTECTED, FEDRAMP_HIGH, FEDRAMP_IL5, ITAR_EAR, CYBER_ESSENTIAL_PLUS, CANADA_PROTECTED_B, ISMAP, HITRUST, K_FSI, GERMANY_C5, and GERMANY_TISAX</summary>
     [JsonPropertyName("complianceSecurityProfileStandards")]
     public IList<string>? ComplianceSecurityProfileStandards { get; set; }
 
@@ -1209,7 +1209,7 @@ public partial class V1beta2WorkspaceSpecInitProviderEnhancedSecurityCompliance
     [JsonPropertyName("complianceSecurityProfileEnabled")]
     public bool? ComplianceSecurityProfileEnabled { get; set; }
 
-    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA and PCI_DSS.</summary>
+    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA, PCI_DSS, FEDRAMP_MODERATE, IRAP_PROTECTED, FEDRAMP_HIGH, FEDRAMP_IL5, ITAR_EAR, CYBER_ESSENTIAL_PLUS, CANADA_PROTECTED_B, ISMAP, HITRUST, K_FSI, GERMANY_C5, and GERMANY_TISAX</summary>
     [JsonPropertyName("complianceSecurityProfileStandards")]
     public IList<string>? ComplianceSecurityProfileStandards { get; set; }
 
@@ -1712,7 +1712,7 @@ public partial class V1beta2WorkspaceStatusAtProviderEnhancedSecurityCompliance
     [JsonPropertyName("complianceSecurityProfileEnabled")]
     public bool? ComplianceSecurityProfileEnabled { get; set; }
 
-    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA and PCI_DSS.</summary>
+    /// <summary>A list of standards to enforce on this workspace. Possible values include HIPAA, PCI_DSS, FEDRAMP_MODERATE, IRAP_PROTECTED, FEDRAMP_HIGH, FEDRAMP_IL5, ITAR_EAR, CYBER_ESSENTIAL_PLUS, CANADA_PROTECTED_B, ISMAP, HITRUST, K_FSI, GERMANY_C5, and GERMANY_TISAX</summary>
     [JsonPropertyName("complianceSecurityProfileStandards")]
     public IList<string>? ComplianceSecurityProfileStandards { get; set; }
 
@@ -1918,6 +1918,15 @@ public partial class V1beta2WorkspaceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WorkspaceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

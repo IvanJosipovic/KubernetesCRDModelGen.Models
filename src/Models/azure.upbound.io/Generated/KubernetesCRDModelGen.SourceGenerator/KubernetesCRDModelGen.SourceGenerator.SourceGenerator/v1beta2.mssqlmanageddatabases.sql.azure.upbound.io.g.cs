@@ -60,11 +60,10 @@ public enum V1beta2MSSQLManagedDatabaseSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MSSQLManagedDatabaseSpecForProviderLongTermRetentionPolicy
 {
-    /// <summary>Specifies if the backups are immutable. Defaults to false.</summary>
     [JsonPropertyName("immutableBackupsEnabled")]
     public bool? ImmutableBackupsEnabled { get; set; }
 
-    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
+    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
     [JsonPropertyName("monthlyRetention")]
     public string? MonthlyRetention { get; set; }
 
@@ -72,11 +71,11 @@ public partial class V1beta2MSSQLManagedDatabaseSpecForProviderLongTermRetention
     [JsonPropertyName("weekOfYear")]
     public double? WeekOfYear { get; set; }
 
-    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
+    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
     [JsonPropertyName("weeklyRetention")]
     public string? WeeklyRetention { get; set; }
 
-    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
+    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
     [JsonPropertyName("yearlyRetention")]
     public string? YearlyRetention { get; set; }
 }
@@ -280,11 +279,10 @@ public partial class V1beta2MSSQLManagedDatabaseSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MSSQLManagedDatabaseSpecInitProviderLongTermRetentionPolicy
 {
-    /// <summary>Specifies if the backups are immutable. Defaults to false.</summary>
     [JsonPropertyName("immutableBackupsEnabled")]
     public bool? ImmutableBackupsEnabled { get; set; }
 
-    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
+    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
     [JsonPropertyName("monthlyRetention")]
     public string? MonthlyRetention { get; set; }
 
@@ -292,11 +290,11 @@ public partial class V1beta2MSSQLManagedDatabaseSpecInitProviderLongTermRetentio
     [JsonPropertyName("weekOfYear")]
     public double? WeekOfYear { get; set; }
 
-    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
+    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
     [JsonPropertyName("weeklyRetention")]
     public string? WeeklyRetention { get; set; }
 
-    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
+    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
     [JsonPropertyName("yearlyRetention")]
     public string? YearlyRetention { get; set; }
 }
@@ -536,11 +534,10 @@ public partial class V1beta2MSSQLManagedDatabaseSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MSSQLManagedDatabaseStatusAtProviderLongTermRetentionPolicy
 {
-    /// <summary>Specifies if the backups are immutable. Defaults to false.</summary>
     [JsonPropertyName("immutableBackupsEnabled")]
     public bool? ImmutableBackupsEnabled { get; set; }
 
-    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
+    /// <summary>The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 120 months. e.g. P1Y, P1M, P4W or P30D. Defaults to PT0S.</summary>
     [JsonPropertyName("monthlyRetention")]
     public string? MonthlyRetention { get; set; }
 
@@ -548,11 +545,11 @@ public partial class V1beta2MSSQLManagedDatabaseStatusAtProviderLongTermRetentio
     [JsonPropertyName("weekOfYear")]
     public double? WeekOfYear { get; set; }
 
-    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
+    /// <summary>The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 520 weeks. e.g. P1Y, P1M, P1W or P7D. Defaults to PT0S.</summary>
     [JsonPropertyName("weeklyRetention")]
     public string? WeeklyRetention { get; set; }
 
-    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
+    /// <summary>The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 and 10 years. e.g. P1Y, P12M, P52W or P365D. Defaults to PT0S.</summary>
     [JsonPropertyName("yearlyRetention")]
     public string? YearlyRetention { get; set; }
 }
@@ -654,6 +651,15 @@ public partial class V1beta2MSSQLManagedDatabaseStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2MSSQLManagedDatabaseStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

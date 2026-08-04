@@ -155,7 +155,7 @@ spec:
                     description: Whether to enable the Grafana instance to use deterministic outbound IPs. Defaults to false.
                     type: boolean
                   grafanaMajorVersion:
-                    description: Which major version of Grafana to deploy. Possible values are 10, 11.
+                    description: Which major version of Grafana to deploy. Possible values are 11, 12.
                     type: string
                   identity:
                     description: An identity block as defined below. Changing this forces a new Dashboard Grafana to be created.
@@ -341,7 +341,10 @@ spec:
                         type: object
                     type: object
                   sku:
-                    description: The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    description: The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    type: string
+                  skuSize:
+                    description: The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.
                     type: string
                   smtp:
                     description: A smtp block as defined below.
@@ -501,7 +504,7 @@ spec:
                     description: Whether to enable the Grafana instance to use deterministic outbound IPs. Defaults to false.
                     type: boolean
                   grafanaMajorVersion:
-                    description: Which major version of Grafana to deploy. Possible values are 10, 11.
+                    description: Which major version of Grafana to deploy. Possible values are 11, 12.
                     type: string
                   identity:
                     description: An identity block as defined below. Changing this forces a new Dashboard Grafana to be created.
@@ -605,7 +608,10 @@ spec:
                     description: Whether to enable traffic over the public interface. Defaults to true.
                     type: boolean
                   sku:
-                    description: The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    description: The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    type: string
+                  skuSize:
+                    description: The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.
                     type: string
                   smtp:
                     description: A smtp block as defined below.
@@ -746,7 +752,7 @@ spec:
                     description: The endpoint of the Grafana instance.
                     type: string
                   grafanaMajorVersion:
-                    description: Which major version of Grafana to deploy. Possible values are 10, 11.
+                    description: Which major version of Grafana to deploy. Possible values are 11, 12.
                     type: string
                   grafanaVersion:
                     description: The full Grafana software semantic version deployed.
@@ -788,7 +794,10 @@ spec:
                     description: Specifies the name of the Resource Group where the Dashboard Grafana should exist. Changing this forces a new Dashboard Grafana to be created.
                     type: string
                   sku:
-                    description: The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    description: The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.
+                    type: string
+                  skuSize:
+                    description: The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.
                     type: string
                   smtp:
                     description: A smtp block as defined below.
@@ -869,6 +878,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

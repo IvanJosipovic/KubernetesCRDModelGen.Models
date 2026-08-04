@@ -255,7 +255,7 @@ public partial class V1beta1PublicIPSpecForProvider
     [JsonPropertyName("reverseFqdn")]
     public string? ReverseFqdn { get; set; }
 
-    /// <summary>The SKU of the Public IP. Accepted values are Basic and Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP. Possible values are Basic, Standard, and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -336,7 +336,7 @@ public partial class V1beta1PublicIPSpecInitProvider
     [JsonPropertyName("reverseFqdn")]
     public string? ReverseFqdn { get; set; }
 
-    /// <summary>The SKU of the Public IP. Accepted values are Basic and Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP. Possible values are Basic, Standard, and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -528,7 +528,7 @@ public partial class V1beta1PublicIPStatusAtProvider
     [JsonPropertyName("reverseFqdn")]
     public string? ReverseFqdn { get; set; }
 
-    /// <summary>The SKU of the Public IP. Accepted values are Basic and Standard. Defaults to Standard. Changing this forces a new resource to be created.</summary>
+    /// <summary>The SKU of the Public IP. Possible values are Basic, Standard, and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -599,6 +599,15 @@ public partial class V1beta1PublicIPStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PublicIPStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

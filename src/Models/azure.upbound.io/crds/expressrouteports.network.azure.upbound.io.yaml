@@ -79,7 +79,7 @@ spec:
                     description: Bandwidth of the Express Route Port in Gbps. Changing this forces a new Express Route Port to be created.
                     type: number
                   billingType:
-                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.
+                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.
                     type: string
                   encapsulation:
                     description: 'The encapsulation method used for the Express Route Port. Changing this forces a new Express Route Port to be created. Possible values are: Dot1Q, QinQ.'
@@ -110,7 +110,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -131,7 +131,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -247,7 +247,7 @@ spec:
                     description: Bandwidth of the Express Route Port in Gbps. Changing this forces a new Express Route Port to be created.
                     type: number
                   billingType:
-                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.
+                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.
                     type: string
                   encapsulation:
                     description: 'The encapsulation method used for the Express Route Port. Changing this forces a new Express Route Port to be created. Possible values are: Dot1Q, QinQ.'
@@ -278,7 +278,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -299,7 +299,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -426,7 +426,7 @@ spec:
                     description: Bandwidth of the Express Route Port in Gbps. Changing this forces a new Express Route Port to be created.
                     type: number
                   billingType:
-                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData.
+                    description: The billing type of the Express Route Port. Possible values are MeteredData and UnlimitedData. Defaults to MeteredData.
                     type: string
                   encapsulation:
                     description: 'The encapsulation method used for the Express Route Port. Changing this forces a new Express Route Port to be created. Possible values are: Dot1Q, QinQ.'
@@ -481,7 +481,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -520,7 +520,7 @@ spec:
                           description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                           type: string
                         macsecCipher:
-                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                          description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                           type: string
                         macsecCknKeyvaultSecretId:
                           description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -602,6 +602,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -703,7 +710,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -722,7 +729,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -865,7 +872,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -884,7 +891,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -1062,7 +1069,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -1099,7 +1106,7 @@ spec:
                         description: The ID of the Key Vault Secret that contains the Mac security CAK key for this Express Route Port Link.
                         type: string
                       macsecCipher:
-                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128 and GcmAes256. Defaults to GcmAes128.
+                        description: The MACSec cipher used for this Express Route Port Link. Possible values are GcmAes128, GcmAes256, GcmAesXpn128 and GcmAesXpn256. Defaults to GcmAes128.
                         type: string
                       macsecCknKeyvaultSecretId:
                         description: The ID of the Key Vault Secret that contains the MACSec CKN key for this Express Route Port Link.
@@ -1180,6 +1187,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

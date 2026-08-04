@@ -300,18 +300,19 @@ public partial class V1beta1RunBookSpecForProviderDraft
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RunBookSpecForProviderJobSchedule
 {
-    /// <summary>The Automation Runbook ID.</summary>
+    /// <summary>The UUID of automation runbook job schedule ID.</summary>
     [JsonPropertyName("jobScheduleId")]
     public string? JobScheduleId { get; set; }
 
-    /// <summary>A list of parameters block as defined below.</summary>
+    /// <summary>A map of key/value pairs corresponding to the arguments that can be passed to the Runbook.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
+    /// <summary>Name of a Hybrid Worker Group the Runbook will be executed on.</summary>
     [JsonPropertyName("runOn")]
     public string? RunOn { get; set; }
 
-    /// <summary>Specifies the name of the Runbook. Changing this forces a new resource to be created.</summary>
+    /// <summary>The name of the Schedule.</summary>
     [JsonPropertyName("scheduleName")]
     public string? ScheduleName { get; set; }
 }
@@ -524,14 +525,15 @@ public partial class V1beta1RunBookSpecForProvider
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>A description for this credential.</summary>
+    /// <summary>A description for the runbook.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A draft block as defined below .</summary>
+    /// <summary>A draft block as defined below.</summary>
     [JsonPropertyName("draft")]
     public IList<V1beta1RunBookSpecForProviderDraft>? Draft { get; set; }
 
+    /// <summary>One or more job_schedule block as defined below.</summary>
     [JsonPropertyName("jobSchedule")]
     public IList<V1beta1RunBookSpecForProviderJobSchedule>? JobSchedule { get; set; }
 
@@ -571,9 +573,13 @@ public partial class V1beta1RunBookSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1RunBookSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -820,18 +826,19 @@ public partial class V1beta1RunBookSpecInitProviderDraft
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RunBookSpecInitProviderJobSchedule
 {
-    /// <summary>The Automation Runbook ID.</summary>
+    /// <summary>The UUID of automation runbook job schedule ID.</summary>
     [JsonPropertyName("jobScheduleId")]
     public string? JobScheduleId { get; set; }
 
-    /// <summary>A list of parameters block as defined below.</summary>
+    /// <summary>A map of key/value pairs corresponding to the arguments that can be passed to the Runbook.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
+    /// <summary>Name of a Hybrid Worker Group the Runbook will be executed on.</summary>
     [JsonPropertyName("runOn")]
     public string? RunOn { get; set; }
 
-    /// <summary>Specifies the name of the Runbook. Changing this forces a new resource to be created.</summary>
+    /// <summary>The name of the Schedule.</summary>
     [JsonPropertyName("scheduleName")]
     public string? ScheduleName { get; set; }
 }
@@ -1056,14 +1063,15 @@ public partial class V1beta1RunBookSpecInitProvider
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>A description for this credential.</summary>
+    /// <summary>A description for the runbook.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A draft block as defined below .</summary>
+    /// <summary>A draft block as defined below.</summary>
     [JsonPropertyName("draft")]
     public IList<V1beta1RunBookSpecInitProviderDraft>? Draft { get; set; }
 
+    /// <summary>One or more job_schedule block as defined below.</summary>
     [JsonPropertyName("jobSchedule")]
     public IList<V1beta1RunBookSpecInitProviderJobSchedule>? JobSchedule { get; set; }
 
@@ -1103,9 +1111,13 @@ public partial class V1beta1RunBookSpecInitProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1RunBookSpecInitProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -1393,18 +1405,19 @@ public partial class V1beta1RunBookStatusAtProviderDraft
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RunBookStatusAtProviderJobSchedule
 {
-    /// <summary>The Automation Runbook ID.</summary>
+    /// <summary>The UUID of automation runbook job schedule ID.</summary>
     [JsonPropertyName("jobScheduleId")]
     public string? JobScheduleId { get; set; }
 
-    /// <summary>A list of parameters block as defined below.</summary>
+    /// <summary>A map of key/value pairs corresponding to the arguments that can be passed to the Runbook.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
+    /// <summary>Name of a Hybrid Worker Group the Runbook will be executed on.</summary>
     [JsonPropertyName("runOn")]
     public string? RunOn { get; set; }
 
-    /// <summary>Specifies the name of the Runbook. Changing this forces a new resource to be created.</summary>
+    /// <summary>The name of the Schedule.</summary>
     [JsonPropertyName("scheduleName")]
     public string? ScheduleName { get; set; }
 }
@@ -1454,11 +1467,11 @@ public partial class V1beta1RunBookStatusAtProvider
     [JsonPropertyName("content")]
     public string? Content { get; set; }
 
-    /// <summary>A description for this credential.</summary>
+    /// <summary>A description for the runbook.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A draft block as defined below .</summary>
+    /// <summary>A draft block as defined below.</summary>
     [JsonPropertyName("draft")]
     public IList<V1beta1RunBookStatusAtProviderDraft>? Draft { get; set; }
 
@@ -1466,6 +1479,7 @@ public partial class V1beta1RunBookStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>One or more job_schedule block as defined below.</summary>
     [JsonPropertyName("jobSchedule")]
     public IList<V1beta1RunBookStatusAtProviderJobSchedule>? JobSchedule { get; set; }
 
@@ -1497,9 +1511,13 @@ public partial class V1beta1RunBookStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -1562,6 +1580,15 @@ public partial class V1beta1RunBookStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RunBookStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

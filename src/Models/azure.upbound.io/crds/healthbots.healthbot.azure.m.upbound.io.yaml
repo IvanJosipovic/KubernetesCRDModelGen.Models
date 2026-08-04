@@ -143,7 +143,7 @@ spec:
                         type: object
                     type: object
                   skuName:
-                    description: The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.
+                    description: The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.
                     type: string
                   tags:
                     additionalProperties:
@@ -169,7 +169,7 @@ spec:
                     description: Specifies The Azure Region where the resource exists. Changing this force a new resource to be created.
                     type: string
                   skuName:
-                    description: The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.
+                    description: The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.
                     type: string
                   tags:
                     additionalProperties:
@@ -259,7 +259,7 @@ spec:
                     description: Specifies The name of the Resource Group in which to create the Healthbot Service. changing this forces a new resource to be created.
                     type: string
                   skuName:
-                    description: The name which should be used for the SKU of the service. Possible values are C0, F0 and S1.
+                    description: The name which should be used for the SKU of the service. Possible values are C0, C1, F0, PES and S1.
                     type: string
                   tags:
                     additionalProperties:
@@ -312,6 +312,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

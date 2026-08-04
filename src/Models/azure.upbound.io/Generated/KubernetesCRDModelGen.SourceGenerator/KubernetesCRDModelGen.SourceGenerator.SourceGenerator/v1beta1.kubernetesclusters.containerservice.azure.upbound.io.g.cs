@@ -551,6 +551,10 @@ public partial class V1beta1KubernetesClusterSpecForProviderDefaultNodePoolKubel
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
 
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
+
     /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
     [JsonPropertyName("containerLogMaxLine")]
     public double? ContainerLogMaxLine { get; set; }
@@ -1200,7 +1204,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderDefaultNodePool
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -1264,7 +1268,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderDefaultNodePool
     [JsonPropertyName("vnetSubnetIdSelector")]
     public V1beta1KubernetesClusterSpecForProviderDefaultNodePoolVnetSubnetIdSelector? VnetSubnetIdSelector { get; set; }
 
-    /// <summary>Specifies the workload runtime used by the node pool. Possible value is OCIContainer.</summary>
+    /// <summary>Specifies the workload runtime used by the node pool. Possible values are KataVmIsolation and OCIContainer.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -1741,7 +1745,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderLinuxProfile
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
 
-    /// <summary>An ssh_key block as defined below. Only one is currently allowed. Changing this will update the key on all node pools. More information can be found in the documentation.</summary>
+    /// <summary>An ssh_key block as defined below.</summary>
     [JsonPropertyName("sshKey")]
     public IList<V1beta1KubernetesClusterSpecForProviderLinuxProfileSshKey>? SshKey { get; set; }
 }
@@ -1755,7 +1759,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderMaintenanceWindowAll
     [JsonPropertyName("day")]
     public string? Day { get; set; }
 
-    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00m. Possible values are between 0 and 23.</summary>
+    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00am. Possible values are between 0 and 23.</summary>
     [JsonPropertyName("hours")]
     public IList<double>? Hours { get; set; }
 }
@@ -1944,7 +1948,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfileAdvanc
     [JsonPropertyName("observabilityEnabled")]
     public bool? ObservabilityEnabled { get; set; }
 
-    /// <summary>Is security enabled? Defaults to false.</summary>
+    /// <summary>Is security enabled? Defaults to false. This can only be enabled (set to true) when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
     [JsonPropertyName("securityEnabled")]
     public bool? SecurityEnabled { get; set; }
 }
@@ -2002,7 +2006,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfileNatGat
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfile
 {
-    /// <summary>An advanced_networking block as defined below. This can only be specified when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
+    /// <summary>An advanced_networking block as defined below.</summary>
     [JsonPropertyName("advancedNetworking")]
     public IList<V1beta1KubernetesClusterSpecForProviderNetworkProfileAdvancedNetworking>? AdvancedNetworking { get; set; }
 
@@ -2034,7 +2038,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfile
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none. Changing this forces a new resource to be created.</summary>
+    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none</summary>
     [JsonPropertyName("networkPlugin")]
     public string? NetworkPlugin { get; set; }
 
@@ -2050,11 +2054,11 @@ public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfile
     [JsonPropertyName("outboundType")]
     public string? OutboundType { get; set; }
 
-    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay.</summary>
     [JsonPropertyName("podCidr")]
     public string? PodCidr { get; set; }
 
-    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
+    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected.</summary>
     [JsonPropertyName("podCidrs")]
     public IList<string>? PodCidrs { get; set; }
 
@@ -2065,6 +2069,20 @@ public partial class V1beta1KubernetesClusterSpecForProviderNetworkProfile
     /// <summary>A list of CIDRs to use for Kubernetes services. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("serviceCidrs")]
     public IList<string>? ServiceCidrs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KubernetesClusterSpecForProviderNodeProvisioningProfile
+{
+    /// <summary>Specifies whether default node pools should be provisioned automatically. Possible values are Auto and None. Defaults to Auto. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("defaultNodePools")]
+    public string? DefaultNodePools { get; set; }
+
+    /// <summary>Specifies the provisioning mode for node pools created in this cluster. Possible values are Auto and Manual. Defaults to Manual. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2438,7 +2456,7 @@ public partial class V1beta1KubernetesClusterSpecForProviderServiceMeshProfile
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-25&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-25&quot;, &quot;asm-1-26&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-25&quot;]. To confirm the upgrade, change to [&quot;asm-1-26&quot;].</summary>
+    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-27&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-27&quot;, &quot;asm-1-28&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-27&quot;]. To confirm the upgrade, change to [&quot;asm-1-28&quot;].</summary>
     [JsonPropertyName("revisions")]
     public IList<string>? Revisions { get; set; }
 }
@@ -2744,11 +2762,15 @@ public partial class V1beta1KubernetesClusterSpecForProvider
     [JsonPropertyName("nodeOsUpgradeChannel")]
     public string? NodeOsUpgradeChannel { get; set; }
 
+    /// <summary>A node_provisioning_profile block as defined below.</summary>
+    [JsonPropertyName("nodeProvisioningProfile")]
+    public IList<V1beta1KubernetesClusterSpecForProviderNodeProvisioningProfile>? NodeProvisioningProfile { get; set; }
+
     /// <summary>The auto-generated Resource Group which contains the resources for this Managed Kubernetes Cluster.</summary>
     [JsonPropertyName("nodeResourceGroup")]
     public string? NodeResourceGroup { get; set; }
 
-    /// <summary>Enable or Disable the OIDC issuer URL</summary>
+    /// <summary>Whether to enable the OIDC issuer feature.</summary>
     [JsonPropertyName("oidcIssuerEnabled")]
     public bool? OidcIssuerEnabled { get; set; }
 
@@ -3335,6 +3357,10 @@ public partial class V1beta1KubernetesClusterSpecInitProviderDefaultNodePoolKube
     /// <summary>Specifies the allow list of unsafe sysctls command or patterns (ending in *).</summary>
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
+
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
 
     /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
     [JsonPropertyName("containerLogMaxLine")]
@@ -3985,7 +4011,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderDefaultNodePool
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -4049,7 +4075,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderDefaultNodePool
     [JsonPropertyName("vnetSubnetIdSelector")]
     public V1beta1KubernetesClusterSpecInitProviderDefaultNodePoolVnetSubnetIdSelector? VnetSubnetIdSelector { get; set; }
 
-    /// <summary>Specifies the workload runtime used by the node pool. Possible value is OCIContainer.</summary>
+    /// <summary>Specifies the workload runtime used by the node pool. Possible values are KataVmIsolation and OCIContainer.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -4526,7 +4552,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderLinuxProfile
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
 
-    /// <summary>An ssh_key block as defined below. Only one is currently allowed. Changing this will update the key on all node pools. More information can be found in the documentation.</summary>
+    /// <summary>An ssh_key block as defined below.</summary>
     [JsonPropertyName("sshKey")]
     public IList<V1beta1KubernetesClusterSpecInitProviderLinuxProfileSshKey>? SshKey { get; set; }
 }
@@ -4540,7 +4566,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderMaintenanceWindowAl
     [JsonPropertyName("day")]
     public string? Day { get; set; }
 
-    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00m. Possible values are between 0 and 23.</summary>
+    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00am. Possible values are between 0 and 23.</summary>
     [JsonPropertyName("hours")]
     public IList<double>? Hours { get; set; }
 }
@@ -4729,7 +4755,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfileAdvan
     [JsonPropertyName("observabilityEnabled")]
     public bool? ObservabilityEnabled { get; set; }
 
-    /// <summary>Is security enabled? Defaults to false.</summary>
+    /// <summary>Is security enabled? Defaults to false. This can only be enabled (set to true) when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
     [JsonPropertyName("securityEnabled")]
     public bool? SecurityEnabled { get; set; }
 }
@@ -4787,7 +4813,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfileNatGa
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfile
 {
-    /// <summary>An advanced_networking block as defined below. This can only be specified when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
+    /// <summary>An advanced_networking block as defined below.</summary>
     [JsonPropertyName("advancedNetworking")]
     public IList<V1beta1KubernetesClusterSpecInitProviderNetworkProfileAdvancedNetworking>? AdvancedNetworking { get; set; }
 
@@ -4819,7 +4845,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfile
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none. Changing this forces a new resource to be created.</summary>
+    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none</summary>
     [JsonPropertyName("networkPlugin")]
     public string? NetworkPlugin { get; set; }
 
@@ -4835,11 +4861,11 @@ public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfile
     [JsonPropertyName("outboundType")]
     public string? OutboundType { get; set; }
 
-    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay.</summary>
     [JsonPropertyName("podCidr")]
     public string? PodCidr { get; set; }
 
-    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
+    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected.</summary>
     [JsonPropertyName("podCidrs")]
     public IList<string>? PodCidrs { get; set; }
 
@@ -4850,6 +4876,20 @@ public partial class V1beta1KubernetesClusterSpecInitProviderNetworkProfile
     /// <summary>A list of CIDRs to use for Kubernetes services. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("serviceCidrs")]
     public IList<string>? ServiceCidrs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KubernetesClusterSpecInitProviderNodeProvisioningProfile
+{
+    /// <summary>Specifies whether default node pools should be provisioned automatically. Possible values are Auto and None. Defaults to Auto. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("defaultNodePools")]
+    public string? DefaultNodePools { get; set; }
+
+    /// <summary>Specifies the provisioning mode for node pools created in this cluster. Possible values are Auto and Manual. Defaults to Manual. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5068,7 +5108,7 @@ public partial class V1beta1KubernetesClusterSpecInitProviderServiceMeshProfile
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-25&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-25&quot;, &quot;asm-1-26&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-25&quot;]. To confirm the upgrade, change to [&quot;asm-1-26&quot;].</summary>
+    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-27&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-27&quot;, &quot;asm-1-28&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-27&quot;]. To confirm the upgrade, change to [&quot;asm-1-28&quot;].</summary>
     [JsonPropertyName("revisions")]
     public IList<string>? Revisions { get; set; }
 }
@@ -5386,11 +5426,15 @@ public partial class V1beta1KubernetesClusterSpecInitProvider
     [JsonPropertyName("nodeOsUpgradeChannel")]
     public string? NodeOsUpgradeChannel { get; set; }
 
+    /// <summary>A node_provisioning_profile block as defined below.</summary>
+    [JsonPropertyName("nodeProvisioningProfile")]
+    public IList<V1beta1KubernetesClusterSpecInitProviderNodeProvisioningProfile>? NodeProvisioningProfile { get; set; }
+
     /// <summary>The auto-generated Resource Group which contains the resources for this Managed Kubernetes Cluster.</summary>
     [JsonPropertyName("nodeResourceGroup")]
     public string? NodeResourceGroup { get; set; }
 
-    /// <summary>Enable or Disable the OIDC issuer URL</summary>
+    /// <summary>Whether to enable the OIDC issuer feature.</summary>
     [JsonPropertyName("oidcIssuerEnabled")]
     public bool? OidcIssuerEnabled { get; set; }
 
@@ -5852,6 +5896,10 @@ public partial class V1beta1KubernetesClusterStatusAtProviderDefaultNodePoolKube
     [JsonPropertyName("allowedUnsafeSysctls")]
     public IList<string>? AllowedUnsafeSysctls { get; set; }
 
+    /// <summary>Specifies the maximum number of container log files that can be present for a container. Must be at least 2.</summary>
+    [JsonPropertyName("containerLogMaxFiles")]
+    public double? ContainerLogMaxFiles { get; set; }
+
     /// <summary>Specifies the maximum number of container log files that can be present for a container. must be at least 2.</summary>
     [JsonPropertyName("containerLogMaxLine")]
     public double? ContainerLogMaxLine { get; set; }
@@ -6191,7 +6239,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderDefaultNodePool
     [JsonPropertyName("osDiskType")]
     public string? OsDiskType { get; set; }
 
-    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Windows2019 and Windows2022. If not specified, the default is Ubuntu if OSType=Linux or Windows2019 if OSType=Windows. And the default Windows OSSKU will be changed to Windows2022 after Windows2019 is deprecated. Changing this from AzureLinux or Ubuntu to AzureLinux or Ubuntu will not replace the resource, otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
+    /// <summary>Specifies the OS SKU used by the agent pool. Possible values are AzureLinux, AzureLinux3, Ubuntu, Ubuntu2204, Ubuntu2404, Windows2019 and Windows2022. If not specified, the default is Ubuntu when os_type=Linux or Windows2019 if os_type=Windows (Windows2022 Kubernetes ≥1.33). Changing between AzureLinux and Ubuntu does not replace the resource; otherwise temporary_name_for_rotation must be specified when attempting a change.</summary>
     [JsonPropertyName("osSku")]
     public string? OsSku { get; set; }
 
@@ -6239,7 +6287,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderDefaultNodePool
     [JsonPropertyName("vnetSubnetId")]
     public string? VnetSubnetId { get; set; }
 
-    /// <summary>Specifies the workload runtime used by the node pool. Possible value is OCIContainer.</summary>
+    /// <summary>Specifies the workload runtime used by the node pool. Possible values are KataVmIsolation and OCIContainer.</summary>
     [JsonPropertyName("workloadRuntime")]
     public string? WorkloadRuntime { get; set; }
 
@@ -6423,7 +6471,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderLinuxProfile
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
 
-    /// <summary>An ssh_key block as defined below. Only one is currently allowed. Changing this will update the key on all node pools. More information can be found in the documentation.</summary>
+    /// <summary>An ssh_key block as defined below.</summary>
     [JsonPropertyName("sshKey")]
     public IList<V1beta1KubernetesClusterStatusAtProviderLinuxProfileSshKey>? SshKey { get; set; }
 }
@@ -6437,7 +6485,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderMaintenanceWindowAl
     [JsonPropertyName("day")]
     public string? Day { get; set; }
 
-    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00m. Possible values are between 0 and 23.</summary>
+    /// <summary>An array of hour slots in a day. For example, specifying 1 will allow maintenance from 1:00am to 2:00am. Specifying 1, 2 will allow maintenance from 1:00am to 3:00am. Possible values are between 0 and 23.</summary>
     [JsonPropertyName("hours")]
     public IList<double>? Hours { get; set; }
 }
@@ -6626,7 +6674,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfileAdvan
     [JsonPropertyName("observabilityEnabled")]
     public bool? ObservabilityEnabled { get; set; }
 
-    /// <summary>Is security enabled? Defaults to false.</summary>
+    /// <summary>Is security enabled? Defaults to false. This can only be enabled (set to true) when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
     [JsonPropertyName("securityEnabled")]
     public bool? SecurityEnabled { get; set; }
 }
@@ -6692,7 +6740,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfileNatGa
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfile
 {
-    /// <summary>An advanced_networking block as defined below. This can only be specified when network_plugin is set to azure and network_data_plane is set to cilium.</summary>
+    /// <summary>An advanced_networking block as defined below.</summary>
     [JsonPropertyName("advancedNetworking")]
     public IList<V1beta1KubernetesClusterStatusAtProviderNetworkProfileAdvancedNetworking>? AdvancedNetworking { get; set; }
 
@@ -6724,7 +6772,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfile
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none. Changing this forces a new resource to be created.</summary>
+    /// <summary>Network plugin to use for networking. Currently supported values are azure, kubenet and none</summary>
     [JsonPropertyName("networkPlugin")]
     public string? NetworkPlugin { get; set; }
 
@@ -6740,11 +6788,11 @@ public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfile
     [JsonPropertyName("outboundType")]
     public string? OutboundType { get; set; }
 
-    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CIDR to use for pod IP addresses. This field can only be set when network_plugin is set to kubenet or network_plugin_mode is set to overlay.</summary>
     [JsonPropertyName("podCidr")]
     public string? PodCidr { get; set; }
 
-    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
+    /// <summary>A list of CIDRs to use for pod IP addresses. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected.</summary>
     [JsonPropertyName("podCidrs")]
     public IList<string>? PodCidrs { get; set; }
 
@@ -6755,6 +6803,20 @@ public partial class V1beta1KubernetesClusterStatusAtProviderNetworkProfile
     /// <summary>A list of CIDRs to use for Kubernetes services. For single-stack networking a single IPv4 CIDR is expected. For dual-stack networking an IPv4 and IPv6 CIDR are expected. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("serviceCidrs")]
     public IList<string>? ServiceCidrs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1KubernetesClusterStatusAtProviderNodeProvisioningProfile
+{
+    /// <summary>Specifies whether default node pools should be provisioned automatically. Possible values are Auto and None. Defaults to Auto. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("defaultNodePools")]
+    public string? DefaultNodePools { get; set; }
+
+    /// <summary>Specifies the provisioning mode for node pools created in this cluster. Possible values are Auto and Manual. Defaults to Manual. At least one of mode or default_node_pools must be specified.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -6840,7 +6902,7 @@ public partial class V1beta1KubernetesClusterStatusAtProviderServiceMeshProfile
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-25&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-25&quot;, &quot;asm-1-26&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-25&quot;]. To confirm the upgrade, change to [&quot;asm-1-26&quot;].</summary>
+    /// <summary>Specify 1 or 2 Istio control plane revisions for managing minor upgrades using the canary upgrade process. For example, create the resource with revisions set to [&quot;asm-1-27&quot;], or leave it empty (the revisions will only be known after apply). To start the canary upgrade, change revisions to [&quot;asm-1-27&quot;, &quot;asm-1-28&quot;]. To roll back the canary upgrade, revert to [&quot;asm-1-27&quot;]. To confirm the upgrade, change to [&quot;asm-1-28&quot;].</summary>
     [JsonPropertyName("revisions")]
     public IList<string>? Revisions { get; set; }
 }
@@ -7138,6 +7200,10 @@ public partial class V1beta1KubernetesClusterStatusAtProvider
     [JsonPropertyName("nodeOsUpgradeChannel")]
     public string? NodeOsUpgradeChannel { get; set; }
 
+    /// <summary>A node_provisioning_profile block as defined below.</summary>
+    [JsonPropertyName("nodeProvisioningProfile")]
+    public IList<V1beta1KubernetesClusterStatusAtProviderNodeProvisioningProfile>? NodeProvisioningProfile { get; set; }
+
     /// <summary>The auto-generated Resource Group which contains the resources for this Managed Kubernetes Cluster.</summary>
     [JsonPropertyName("nodeResourceGroup")]
     public string? NodeResourceGroup { get; set; }
@@ -7146,7 +7212,7 @@ public partial class V1beta1KubernetesClusterStatusAtProvider
     [JsonPropertyName("nodeResourceGroupId")]
     public string? NodeResourceGroupId { get; set; }
 
-    /// <summary>Enable or Disable the OIDC issuer URL</summary>
+    /// <summary>Whether to enable the OIDC issuer feature.</summary>
     [JsonPropertyName("oidcIssuerEnabled")]
     public bool? OidcIssuerEnabled { get; set; }
 
@@ -7295,6 +7361,15 @@ public partial class V1beta1KubernetesClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1KubernetesClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

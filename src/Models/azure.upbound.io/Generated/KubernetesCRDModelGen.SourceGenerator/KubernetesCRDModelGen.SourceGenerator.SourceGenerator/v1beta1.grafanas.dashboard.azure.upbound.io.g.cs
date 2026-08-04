@@ -611,7 +611,7 @@ public partial class V1beta1GrafanaSpecForProvider
     [JsonPropertyName("deterministicOutboundIpEnabled")]
     public bool? DeterministicOutboundIpEnabled { get; set; }
 
-    /// <summary>Which major version of Grafana to deploy. Possible values are 10, 11.</summary>
+    /// <summary>Which major version of Grafana to deploy. Possible values are 11, 12.</summary>
     [JsonPropertyName("grafanaMajorVersion")]
     public string? GrafanaMajorVersion { get; set; }
 
@@ -639,9 +639,13 @@ public partial class V1beta1GrafanaSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1GrafanaSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
+    /// <summary>The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
+
+    /// <summary>The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.</summary>
+    [JsonPropertyName("skuSize")]
+    public string? SkuSize { get; set; }
 
     /// <summary>A smtp block as defined below.</summary>
     [JsonPropertyName("smtp")]
@@ -1077,7 +1081,7 @@ public partial class V1beta1GrafanaSpecInitProvider
     [JsonPropertyName("deterministicOutboundIpEnabled")]
     public bool? DeterministicOutboundIpEnabled { get; set; }
 
-    /// <summary>Which major version of Grafana to deploy. Possible values are 10, 11.</summary>
+    /// <summary>Which major version of Grafana to deploy. Possible values are 11, 12.</summary>
     [JsonPropertyName("grafanaMajorVersion")]
     public string? GrafanaMajorVersion { get; set; }
 
@@ -1093,9 +1097,13 @@ public partial class V1beta1GrafanaSpecInitProvider
     [JsonPropertyName("publicNetworkAccessEnabled")]
     public bool? PublicNetworkAccessEnabled { get; set; }
 
-    /// <summary>The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
+    /// <summary>The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
+
+    /// <summary>The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.</summary>
+    [JsonPropertyName("skuSize")]
+    public string? SkuSize { get; set; }
 
     /// <summary>A smtp block as defined below.</summary>
     [JsonPropertyName("smtp")]
@@ -1382,7 +1390,7 @@ public partial class V1beta1GrafanaStatusAtProvider
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>Which major version of Grafana to deploy. Possible values are 10, 11.</summary>
+    /// <summary>Which major version of Grafana to deploy. Possible values are 11, 12.</summary>
     [JsonPropertyName("grafanaMajorVersion")]
     public string? GrafanaMajorVersion { get; set; }
 
@@ -1414,9 +1422,13 @@ public partial class V1beta1GrafanaStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The name of the SKU used for the Grafana instance. Possible values are Standard and Essential. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
+    /// <summary>The name of the SKU used for the Grafana instance. The only possible value is Standard. Defaults to Standard. Changing this forces a new Dashboard Grafana to be created.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
+
+    /// <summary>The size of the SKU used for the Grafana instance. Possible values are X1 and X2. Defaults to X1. Changing this forces a new Dashboard Grafana to be created.</summary>
+    [JsonPropertyName("skuSize")]
+    public string? SkuSize { get; set; }
 
     /// <summary>A smtp block as defined below.</summary>
     [JsonPropertyName("smtp")]
@@ -1485,6 +1497,15 @@ public partial class V1beta1GrafanaStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GrafanaStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

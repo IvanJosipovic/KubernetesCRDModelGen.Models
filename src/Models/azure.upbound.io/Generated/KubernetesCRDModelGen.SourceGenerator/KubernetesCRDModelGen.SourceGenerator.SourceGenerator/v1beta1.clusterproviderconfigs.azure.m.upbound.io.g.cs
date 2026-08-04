@@ -135,6 +135,29 @@ public partial class V1beta1ClusterProviderConfigSpecCredentials
     public required V1beta1ClusterProviderConfigSpecCredentialsSourceEnum Source { get; set; }
 }
 
+/// <summary>PostgreSQLFlexibleServer configures behaviors specific to Azure PostgreSQL Flexible Servers</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecFeaturesPostgreSQLFlexibleServer
+{
+    /// <summary>Should the PostgreSQL Flexible Server restart after static server parameter change or removal?</summary>
+    [JsonPropertyName("restartServerOnConfigurationValueChange")]
+    public bool? RestartServerOnConfigurationValueChange { get; set; }
+}
+
+/// <summary>
+/// Features configures optional behaviors of the underlying Terraform
+/// AzureRM provider, mirroring its `features` block.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecFeatures
+{
+    /// <summary>PostgreSQLFlexibleServer configures behaviors specific to Azure PostgreSQL Flexible Servers</summary>
+    [JsonPropertyName("postgreSQLFlexibleServer")]
+    public V1beta1ClusterProviderConfigSpecFeaturesPostgreSQLFlexibleServer? PostgreSQLFlexibleServer { get; set; }
+}
+
 /// <summary>
 /// ExponentialFailureRateLimiter, when set, overrides the parameters of the
 /// exponential failure rate limiter used to schedule retries for the
@@ -195,6 +218,13 @@ public partial class V1beta1ClusterProviderConfigSpec
     /// </summary>
     [JsonPropertyName("environment")]
     public string? Environment { get; set; }
+
+    /// <summary>
+    /// Features configures optional behaviors of the underlying Terraform
+    /// AzureRM provider, mirroring its `features` block.
+    /// </summary>
+    [JsonPropertyName("features")]
+    public V1beta1ClusterProviderConfigSpecFeatures? Features { get; set; }
 
     /// <summary>
     /// MSIEndpoint is the optional path to a custom endpoint for

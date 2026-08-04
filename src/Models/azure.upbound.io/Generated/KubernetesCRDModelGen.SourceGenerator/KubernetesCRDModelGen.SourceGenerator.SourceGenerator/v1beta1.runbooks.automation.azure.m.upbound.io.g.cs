@@ -546,9 +546,13 @@ public partial class V1beta1RunBookSpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1RunBookSpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -1077,9 +1081,13 @@ public partial class V1beta1RunBookSpecInitProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1RunBookSpecInitProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -1387,9 +1395,13 @@ public partial class V1beta1RunBookStatusAtProvider
     [JsonPropertyName("resourceGroupName")]
     public string? ResourceGroupName { get; set; }
 
-    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
+    /// <summary>The type of the runbook - can be either Graph, GraphPowerShell, GraphPowerShellWorkflow, PowerShellWorkflow, PowerShell, PowerShell72, Python, Python3, Python2 or Script. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("runbookType")]
     public string? RunbookType { get; set; }
+
+    /// <summary>The runtime environment name for the runbook.</summary>
+    [JsonPropertyName("runtimeEnvironmentName")]
+    public string? RuntimeEnvironmentName { get; set; }
 
     /// <summary>A mapping of tags to assign to the resource.</summary>
     [JsonPropertyName("tags")]
@@ -1450,6 +1462,15 @@ public partial class V1beta1RunBookStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RunBookStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -191,20 +191,20 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
     public V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+/// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurations
 {
-    /// <summary>Private IP address of the IP configuration.</summary>
+    /// <summary>Private IP address of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }
 
-    /// <summary>Private IP address allocation method. Allowed value is Dynamic and Static. Defaults to Dynamic.</summary>
+    /// <summary>Private IP address allocation method. Possible values are Dynamic and Static. Defaults to Dynamic. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAllocationMethod")]
     public string? PrivateIpAllocationMethod { get; set; }
 
-    /// <summary>The subnet ID of the IP configuration.</summary>
+    /// <summary>The subnet ID of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -376,15 +376,15 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProvider
 {
-    /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("ipConfigurations")]
     public V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurations? IpConfigurations { get; set; }
 
-    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Specifies the ID of the Private DNS Resolver Inbound Endpoint. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>Specifies the ID of the Private DNS Resolver Inbound Endpoint. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateDnsResolverId")]
     public string? PrivateDnsResolverId { get; set; }
 
@@ -556,20 +556,20 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
     public V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+/// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurations
 {
-    /// <summary>Private IP address of the IP configuration.</summary>
+    /// <summary>Private IP address of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }
 
-    /// <summary>Private IP address allocation method. Allowed value is Dynamic and Static. Defaults to Dynamic.</summary>
+    /// <summary>Private IP address allocation method. Possible values are Dynamic and Static. Defaults to Dynamic. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAllocationMethod")]
     public string? PrivateIpAllocationMethod { get; set; }
 
-    /// <summary>The subnet ID of the IP configuration.</summary>
+    /// <summary>The subnet ID of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
@@ -598,11 +598,11 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProvider
 {
-    /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("ipConfigurations")]
     public V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurations? IpConfigurations { get; set; }
 
-    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
@@ -718,20 +718,20 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpec
     public V1beta1PrivateDNSResolverInboundEndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+/// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProviderIpConfigurations
 {
-    /// <summary>Private IP address of the IP configuration.</summary>
+    /// <summary>Private IP address of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAddress")]
     public string? PrivateIpAddress { get; set; }
 
-    /// <summary>Private IP address allocation method. Allowed value is Dynamic and Static. Defaults to Dynamic.</summary>
+    /// <summary>Private IP address allocation method. Possible values are Dynamic and Static. Defaults to Dynamic. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateIpAllocationMethod")]
     public string? PrivateIpAllocationMethod { get; set; }
 
-    /// <summary>The subnet ID of the IP configuration.</summary>
+    /// <summary>The subnet ID of the IP configuration. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 }
@@ -744,15 +744,15 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>One ip_configurations block as defined below. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("ipConfigurations")]
     public V1beta1PrivateDNSResolverInboundEndpointStatusAtProviderIpConfigurations? IpConfigurations { get; set; }
 
-    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>Specifies the Azure Region where the Private DNS Resolver Inbound Endpoint should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Specifies the ID of the Private DNS Resolver Inbound Endpoint. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
+    /// <summary>Specifies the ID of the Private DNS Resolver Inbound Endpoint. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("privateDnsResolverId")]
     public string? PrivateDnsResolverId { get; set; }
 
@@ -815,6 +815,15 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PrivateDNSResolverInboundEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

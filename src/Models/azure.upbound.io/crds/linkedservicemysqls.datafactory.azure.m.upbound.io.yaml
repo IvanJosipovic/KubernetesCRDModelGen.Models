@@ -156,6 +156,9 @@ spec:
                   description:
                     description: The description for the Data Factory Linked Service MySQL.
                     type: string
+                  driverVersion:
+                    description: The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.
+                    type: string
                   integrationRuntimeName:
                     description: The integration runtime reference to associate with the Data Factory Linked Service MySQL.
                     type: string
@@ -195,6 +198,9 @@ spec:
                     type: string
                   description:
                     description: The description for the Data Factory Linked Service MySQL.
+                    type: string
+                  driverVersion:
+                    description: The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.
                     type: string
                   integrationRuntimeName:
                     description: The integration runtime reference to associate with the Data Factory Linked Service MySQL.
@@ -292,6 +298,9 @@ spec:
                   description:
                     description: The description for the Data Factory Linked Service MySQL.
                     type: string
+                  driverVersion:
+                    description: The version of the MySQL driver. Possible values are V1 and V2. Defaults to V1.
+                    type: string
                   id:
                     description: The ID of the Data Factory MySQL Linked Service.
                     type: string
@@ -349,6 +358,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

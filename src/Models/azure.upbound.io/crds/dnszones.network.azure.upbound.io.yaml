@@ -152,7 +152,7 @@ spec:
                         type: object
                     type: object
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     items:
                       properties:
                         email:
@@ -205,7 +205,7 @@ spec:
                   autoscaler.
                 properties:
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     items:
                       properties:
                         email:
@@ -339,7 +339,7 @@ spec:
                     description: The DNS Zone ID.
                     type: string
                   maxNumberOfRecordSets:
-                    description: Maximum number of Records in the zone. Defaults to 1000.
+                    description: Maximum number of Records in the zone.
                     type: number
                   nameServers:
                     description: A list of values that make up the NS record for the zone.
@@ -354,7 +354,7 @@ spec:
                     description: Specifies the resource group where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     items:
                       properties:
                         email:
@@ -364,9 +364,10 @@ spec:
                           description: The expire time for the SOA record. Defaults to 2419200.
                           type: number
                         fqdn:
+                          description: The fully qualified domain name.
                           type: string
                         hostName:
-                          description: The domain name of the authoritative name server for the SOA record. If not set, computed value from Azure will be used.
+                          description: The domain name of the authoritative name server for the SOA record.
                           type: string
                         minimumTtl:
                           description: The minimum Time To Live for the SOA record. By convention, it is used to determine the negative caching duration. Defaults to 300.
@@ -442,6 +443,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -588,7 +596,7 @@ spec:
                         type: object
                     type: object
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     properties:
                       email:
                         description: The email contact for the SOA record.
@@ -639,7 +647,7 @@ spec:
                   autoscaler.
                 properties:
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     properties:
                       email:
                         description: The email contact for the SOA record.
@@ -771,7 +779,7 @@ spec:
                     description: The DNS Zone ID.
                     type: string
                   maxNumberOfRecordSets:
-                    description: Maximum number of Records in the zone. Defaults to 1000.
+                    description: Maximum number of Records in the zone.
                     type: number
                   nameServers:
                     description: A list of values that make up the NS record for the zone.
@@ -786,7 +794,7 @@ spec:
                     description: Specifies the resource group where the resource exists. Changing this forces a new resource to be created.
                     type: string
                   soaRecord:
-                    description: An soa_record block as defined below.
+                    description: A soa_record block as defined below.
                     properties:
                       email:
                         description: The email contact for the SOA record.
@@ -795,9 +803,10 @@ spec:
                         description: The expire time for the SOA record. Defaults to 2419200.
                         type: number
                       fqdn:
+                        description: The fully qualified domain name.
                         type: string
                       hostName:
-                        description: The domain name of the authoritative name server for the SOA record. If not set, computed value from Azure will be used.
+                        description: The domain name of the authoritative name server for the SOA record.
                         type: string
                       minimumTtl:
                         description: The minimum Time To Live for the SOA record. By convention, it is used to determine the negative caching duration. Defaults to 300.
@@ -872,6 +881,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

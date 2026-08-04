@@ -99,6 +99,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   instantRestoreResourceGroup:
                     description: Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.
                     items:
@@ -421,6 +424,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   instantRestoreResourceGroup:
                     description: Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.
                     items:
@@ -672,6 +678,9 @@ spec:
                           x-kubernetes-list-type: set
                       type: object
                     type: array
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   id:
                     description: The ID of the VM Backup Policy.
                     type: string
@@ -858,6 +867,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -949,6 +965,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   instantRestoreResourceGroup:
                     description: Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.
                     properties:
@@ -1255,6 +1274,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   instantRestoreResourceGroup:
                     description: Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.
                     properties:
@@ -1490,6 +1512,9 @@ spec:
                         type: array
                         x-kubernetes-list-type: set
                     type: object
+                  consistencyType:
+                    description: The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.
+                    type: string
                   id:
                     description: The ID of the VM Backup Policy.
                     type: string
@@ -1662,6 +1687,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

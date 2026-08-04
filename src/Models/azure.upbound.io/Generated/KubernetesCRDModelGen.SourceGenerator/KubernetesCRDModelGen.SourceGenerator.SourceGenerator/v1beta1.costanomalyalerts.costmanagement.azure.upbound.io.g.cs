@@ -67,11 +67,11 @@ public partial class V1beta1CostAnomalyAlertSpecForProvider
     [JsonPropertyName("emailAddresses")]
     public IList<string>? EmailAddresses { get; set; }
 
-    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 70.</summary>
+    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 50.</summary>
     [JsonPropertyName("emailSubject")]
     public string? EmailSubject { get; set; }
 
-    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 250.</summary>
+    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 100.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
@@ -108,11 +108,11 @@ public partial class V1beta1CostAnomalyAlertSpecInitProvider
     [JsonPropertyName("emailAddresses")]
     public IList<string>? EmailAddresses { get; set; }
 
-    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 70.</summary>
+    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 50.</summary>
     [JsonPropertyName("emailSubject")]
     public string? EmailSubject { get; set; }
 
-    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 250.</summary>
+    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 100.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
@@ -320,7 +320,7 @@ public partial class V1beta1CostAnomalyAlertStatusAtProvider
     [JsonPropertyName("emailAddresses")]
     public IList<string>? EmailAddresses { get; set; }
 
-    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 70.</summary>
+    /// <summary>The email subject of the Cost Anomaly Alerts. Maximum length of the subject is 50.</summary>
     [JsonPropertyName("emailSubject")]
     public string? EmailSubject { get; set; }
 
@@ -328,7 +328,7 @@ public partial class V1beta1CostAnomalyAlertStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 250.</summary>
+    /// <summary>The message of the Cost Anomaly Alert. Maximum length of the message is 100.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
@@ -395,6 +395,15 @@ public partial class V1beta1CostAnomalyAlertStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CostAnomalyAlertStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

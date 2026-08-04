@@ -527,6 +527,10 @@ public partial class V1beta1BackupPolicyVMSpecForProvider
     [JsonPropertyName("backup")]
     public IList<V1beta1BackupPolicyVMSpecForProviderBackup>? Backup { get; set; }
 
+    /// <summary>The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.</summary>
+    [JsonPropertyName("consistencyType")]
+    public string? ConsistencyType { get; set; }
+
     /// <summary>Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.</summary>
     [JsonPropertyName("instantRestoreResourceGroup")]
     public IList<V1beta1BackupPolicyVMSpecForProviderInstantRestoreResourceGroup>? InstantRestoreResourceGroup { get; set; }
@@ -756,6 +760,10 @@ public partial class V1beta1BackupPolicyVMSpecInitProvider
     /// <summary>Configures the Policy backup frequency, times &amp; days as documented in the backup block below.</summary>
     [JsonPropertyName("backup")]
     public IList<V1beta1BackupPolicyVMSpecInitProviderBackup>? Backup { get; set; }
+
+    /// <summary>The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.</summary>
+    [JsonPropertyName("consistencyType")]
+    public string? ConsistencyType { get; set; }
 
     /// <summary>Specifies the instant restore resource group name as documented in the instant_restore_resource_group block below.</summary>
     [JsonPropertyName("instantRestoreResourceGroup")]
@@ -1141,6 +1149,10 @@ public partial class V1beta1BackupPolicyVMStatusAtProvider
     [JsonPropertyName("backup")]
     public IList<V1beta1BackupPolicyVMStatusAtProviderBackup>? Backup { get; set; }
 
+    /// <summary>The consistency type for the backup policy. The only possible value is OnlyCrashConsistent.</summary>
+    [JsonPropertyName("consistencyType")]
+    public string? ConsistencyType { get; set; }
+
     /// <summary>The ID of the VM Backup Policy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -1246,6 +1258,15 @@ public partial class V1beta1BackupPolicyVMStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BackupPolicyVMStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -807,7 +807,7 @@ public partial class V1beta1WindowsVirtualMachineSpecForProvider
     [JsonPropertyName("secureBootEnabled")]
     public bool? SecureBootEnabled { get; set; }
 
-    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_F2.</summary>
+    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_D4_v5.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -1472,7 +1472,7 @@ public partial class V1beta1WindowsVirtualMachineSpecInitProvider
     [JsonPropertyName("secureBootEnabled")]
     public bool? SecureBootEnabled { get; set; }
 
-    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_F2.</summary>
+    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_D4_v5.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -2054,7 +2054,7 @@ public partial class V1beta1WindowsVirtualMachineStatusAtProvider
     [JsonPropertyName("secureBootEnabled")]
     public bool? SecureBootEnabled { get; set; }
 
-    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_F2.</summary>
+    /// <summary>The SKU which should be used for this Virtual Machine, such as Standard_D4_v5.</summary>
     [JsonPropertyName("size")]
     public string? Size { get; set; }
 
@@ -2161,6 +2161,15 @@ public partial class V1beta1WindowsVirtualMachineStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WindowsVirtualMachineStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

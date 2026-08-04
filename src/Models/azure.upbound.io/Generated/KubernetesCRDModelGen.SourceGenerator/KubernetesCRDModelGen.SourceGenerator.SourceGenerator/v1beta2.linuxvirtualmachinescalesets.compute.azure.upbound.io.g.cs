@@ -1113,7 +1113,7 @@ public partial class V1beta2LinuxVirtualMachineScaleSetSpecForProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_F2.</summary>
+    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_D4_v5.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -2069,7 +2069,7 @@ public partial class V1beta2LinuxVirtualMachineScaleSetSpecInitProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_F2.</summary>
+    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_D4_v5.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -2991,7 +2991,7 @@ public partial class V1beta2LinuxVirtualMachineScaleSetStatusAtProvider
     [JsonPropertyName("singlePlacementGroup")]
     public bool? SinglePlacementGroup { get; set; }
 
-    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_F2.</summary>
+    /// <summary>The Virtual Machine SKU for the Scale Set, such as Standard_D4_v5.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -3094,6 +3094,15 @@ public partial class V1beta2LinuxVirtualMachineScaleSetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2LinuxVirtualMachineScaleSetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

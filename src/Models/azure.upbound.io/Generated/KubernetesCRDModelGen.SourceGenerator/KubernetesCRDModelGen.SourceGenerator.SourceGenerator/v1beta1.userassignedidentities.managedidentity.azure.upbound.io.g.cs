@@ -206,6 +206,10 @@ public partial class V1beta1UserAssignedIdentitySpecForProviderResourceGroupName
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserAssignedIdentitySpecForProvider
 {
+    /// <summary>The isolation scope for the User Assigned Identity. The only possible value is Regional.</summary>
+    [JsonPropertyName("isolationScope")]
+    public string? IsolationScope { get; set; }
+
     /// <summary>The Azure Region where the User Assigned Identity should exist. Changing this forces a new User Assigned Identity to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
@@ -394,6 +398,10 @@ public partial class V1beta1UserAssignedIdentitySpecInitProviderResourceGroupNam
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserAssignedIdentitySpecInitProvider
 {
+    /// <summary>The isolation scope for the User Assigned Identity. The only possible value is Regional.</summary>
+    [JsonPropertyName("isolationScope")]
+    public string? IsolationScope { get; set; }
+
     /// <summary>The Azure Region where the User Assigned Identity should exist. Changing this forces a new User Assigned Identity to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
@@ -614,6 +622,10 @@ public partial class V1beta1UserAssignedIdentityStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>The isolation scope for the User Assigned Identity. The only possible value is Regional.</summary>
+    [JsonPropertyName("isolationScope")]
+    public string? IsolationScope { get; set; }
+
     /// <summary>The Azure Region where the User Assigned Identity should exist. Changing this forces a new User Assigned Identity to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
@@ -693,6 +705,15 @@ public partial class V1beta1UserAssignedIdentityStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UserAssignedIdentityStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

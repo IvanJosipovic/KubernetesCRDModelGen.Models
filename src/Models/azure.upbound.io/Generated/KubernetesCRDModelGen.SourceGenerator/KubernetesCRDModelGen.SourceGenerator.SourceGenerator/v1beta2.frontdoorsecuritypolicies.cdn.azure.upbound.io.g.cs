@@ -371,11 +371,11 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
@@ -527,7 +527,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolici
     public V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallCdnFrontdoorFirewallPolicyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An firewall block as defined below.</summary>
+/// <summary>A firewall block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewall
@@ -536,7 +536,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolici
     [JsonPropertyName("association")]
     public V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallAssociation? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 
@@ -549,12 +549,12 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolici
     public V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewallCdnFrontdoorFirewallPolicyIdSelector? CdnFrontdoorFirewallPolicyIdSelector { get; set; }
 }
 
-/// <summary>An security_policies block as defined below.</summary>
+/// <summary>A security_policies block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPoliciesFirewall? Firewall { get; set; }
 }
@@ -563,7 +563,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolici
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecForProvider
 {
-    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
@@ -575,7 +575,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecForProvider
     [JsonPropertyName("cdnFrontdoorProfileIdSelector")]
     public V1beta2FrontdoorSecurityPolicySpecForProviderCdnFrontdoorProfileIdSelector? CdnFrontdoorProfileIdSelector { get; set; }
 
-    /// <summary>An security_policies block as defined below.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public V1beta2FrontdoorSecurityPolicySpecForProviderSecurityPolicies? SecurityPolicies { get; set; }
 }
@@ -749,11 +749,11 @@ public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
@@ -905,7 +905,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolic
     public V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallCdnFrontdoorFirewallPolicyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An firewall block as defined below.</summary>
+/// <summary>A firewall block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewall
@@ -914,7 +914,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolic
     [JsonPropertyName("association")]
     public V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallAssociation? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 
@@ -927,12 +927,12 @@ public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolic
     public V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewallCdnFrontdoorFirewallPolicyIdSelector? CdnFrontdoorFirewallPolicyIdSelector { get; set; }
 }
 
-/// <summary>An security_policies block as defined below.</summary>
+/// <summary>A security_policies block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPoliciesFirewall? Firewall { get; set; }
 }
@@ -953,7 +953,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicySpecInitProvider
 {
-    /// <summary>An security_policies block as defined below.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public V1beta2FrontdoorSecurityPolicySpecInitProviderSecurityPolicies? SecurityPolicies { get; set; }
 }
@@ -1145,7 +1145,7 @@ public partial class V1beta2FrontdoorSecurityPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociationDomain
 {
-    /// <summary>(Computed) Is the Front Door Custom Domain/Endpoint activated?</summary>
+    /// <summary>Whether the Front Door Custom Domain or Front Door Endpoint is active.</summary>
     [JsonPropertyName("active")]
     public bool? Active { get; set; }
 
@@ -1159,16 +1159,16 @@ public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociation
 {
-    /// <summary>One or more domain blocks as defined below.</summary>
+    /// <summary>A domain block as defined below.</summary>
     [JsonPropertyName("domain")]
     public IList<V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociationDomain>? Domain { get; set; }
 
-    /// <summary>The list of paths to match for this firewall policy. Possible value includes /*. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The list of paths to match for this firewall policy. The only possible value is /*. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("patternsToMatch")]
     public IList<string>? PatternsToMatch { get; set; }
 }
 
-/// <summary>An firewall block as defined below.</summary>
+/// <summary>A firewall block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewall
@@ -1177,17 +1177,17 @@ public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
     [JsonPropertyName("association")]
     public V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewallAssociation? Association { get; set; }
 
-    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Resource Id of the Front Door Firewall Policy that should be linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorFirewallPolicyId")]
     public string? CdnFrontdoorFirewallPolicyId { get; set; }
 }
 
-/// <summary>An security_policies block as defined below.</summary>
+/// <summary>A security_policies block as defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPolicies
 {
-    /// <summary>An firewall block as defined below.</summary>
+    /// <summary>A firewall block as defined below.</summary>
     [JsonPropertyName("firewall")]
     public V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPoliciesFirewall? Firewall { get; set; }
 }
@@ -1196,7 +1196,7 @@ public partial class V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPolic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorSecurityPolicyStatusAtProvider
 {
-    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new Front Door Security Policy to be created.</summary>
+    /// <summary>The Front Door Profile Resource Id that is linked to this Front Door Security Policy. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("cdnFrontdoorProfileId")]
     public string? CdnFrontdoorProfileId { get; set; }
 
@@ -1204,7 +1204,7 @@ public partial class V1beta2FrontdoorSecurityPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An security_policies block as defined below.</summary>
+    /// <summary>A security_policies block as defined below.</summary>
     [JsonPropertyName("securityPolicies")]
     public V1beta2FrontdoorSecurityPolicyStatusAtProviderSecurityPolicies? SecurityPolicies { get; set; }
 }
@@ -1263,6 +1263,15 @@ public partial class V1beta2FrontdoorSecurityPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2FrontdoorSecurityPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

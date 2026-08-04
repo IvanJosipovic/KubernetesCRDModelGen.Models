@@ -294,7 +294,7 @@ public partial class V1beta1FactorySpecForProvider
     [JsonPropertyName("customerManagedKeyId")]
     public string? CustomerManagedKeyId { get; set; }
 
-    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied if customer_managed_key_id is set.</summary>
+    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied at factory creation if customer_managed_key_id is set. Can be left empty once factory is created to use the system assigned identity. See the Microsoft documentation for more information.</summary>
     [JsonPropertyName("customerManagedKeyIdentityId")]
     public string? CustomerManagedKeyIdentityId { get; set; }
 
@@ -462,7 +462,7 @@ public partial class V1beta1FactorySpecInitProvider
     [JsonPropertyName("customerManagedKeyId")]
     public string? CustomerManagedKeyId { get; set; }
 
-    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied if customer_managed_key_id is set.</summary>
+    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied at factory creation if customer_managed_key_id is set. Can be left empty once factory is created to use the system assigned identity. See the Microsoft documentation for more information.</summary>
     [JsonPropertyName("customerManagedKeyIdentityId")]
     public string? CustomerManagedKeyIdentityId { get; set; }
 
@@ -721,7 +721,7 @@ public partial class V1beta1FactoryStatusAtProvider
     [JsonPropertyName("customerManagedKeyId")]
     public string? CustomerManagedKeyId { get; set; }
 
-    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied if customer_managed_key_id is set.</summary>
+    /// <summary>Specifies the ID of the user assigned identity associated with the Customer Managed Key. Must be supplied at factory creation if customer_managed_key_id is set. Can be left empty once factory is created to use the system assigned identity. See the Microsoft documentation for more information.</summary>
     [JsonPropertyName("customerManagedKeyIdentityId")]
     public string? CustomerManagedKeyIdentityId { get; set; }
 
@@ -824,6 +824,15 @@ public partial class V1beta1FactoryStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FactoryStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

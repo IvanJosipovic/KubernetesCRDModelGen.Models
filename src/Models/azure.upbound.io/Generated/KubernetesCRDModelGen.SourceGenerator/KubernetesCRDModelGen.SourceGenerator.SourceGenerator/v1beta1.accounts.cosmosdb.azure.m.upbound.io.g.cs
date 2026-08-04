@@ -76,7 +76,7 @@ public partial class V1beta1AccountSpecForProviderBackup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecForProviderCapabilities
 {
-    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
+    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -792,15 +792,18 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
-    /// <summary>Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.</summary>
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CosmosDB Account ID.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -832,7 +835,7 @@ public partial class V1beta1AccountSpecForProvider
     [JsonPropertyName("partitionMergeEnabled")]
     public bool? PartitionMergeEnabled { get; set; }
 
-    /// <summary>Whether or not public network access is allowed for this CosmosDB account. Defaults to true.</summary>
+    /// <summary>Whether public network access is allowed for this CosmosDB account. Defaults to true.</summary>
     [JsonPropertyName("publicNetworkAccessEnabled")]
     public bool? PublicNetworkAccessEnabled { get; set; }
 
@@ -901,7 +904,7 @@ public partial class V1beta1AccountSpecInitProviderBackup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSpecInitProviderCapabilities
 {
-    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
+    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1474,15 +1477,18 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
-    /// <summary>Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.</summary>
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CosmosDB Account ID.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -1514,7 +1520,7 @@ public partial class V1beta1AccountSpecInitProvider
     [JsonPropertyName("partitionMergeEnabled")]
     public bool? PartitionMergeEnabled { get; set; }
 
-    /// <summary>Whether or not public network access is allowed for this CosmosDB account. Defaults to true.</summary>
+    /// <summary>Whether public network access is allowed for this CosmosDB account. Defaults to true.</summary>
     [JsonPropertyName("publicNetworkAccessEnabled")]
     public bool? PublicNetworkAccessEnabled { get; set; }
 
@@ -1678,7 +1684,7 @@ public partial class V1beta1AccountStatusAtProviderBackup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProviderCapabilities
 {
-    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
+    /// <summary>The capability to enable - Possible values are AllowSelfServeUpgradeToMongo36, DeleteAllItemsByPartitionKey, DisableRateLimitingResponses, EnableAggregationPipeline, EnableCassandra, EnableFabricNetworkAclBypass, EnableGremlin, EnableMongo, EnableMongo16MBDocumentSupport, EnableMongoRetryableWrites, EnableMongoRoleBasedAccessControl, EnableNoSQLVectorSearch, EnableNoSQLFullTextSearch, EnablePartialUniqueIndex, EnableServerless, EnableTable, EnableTtlOnCustomPath, EnableUniqueCompoundNestedDocs, MongoDBv3.4 and mongoEnableDocLevelTTL.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1933,15 +1939,18 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
-    /// <summary>Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false. Can be set only when using the SQL API.</summary>
     [JsonPropertyName("localAuthenticationDisabled")]
     public bool? LocalAuthenticationDisabled { get; set; }
+
+    /// <summary>Whether local authentication is enabled, when disabled only MSI and AAD can be used exclusively for authentication. Defaults to true. Can be set only when using the SQL API.</summary>
+    [JsonPropertyName("localAuthenticationEnabled")]
+    public bool? LocalAuthenticationEnabled { get; set; }
 
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>A versionless Managed HSM Key ID for CMK encryption. Changing this forces a new resource to be created.</summary>
+    /// <summary>The CosmosDB Account ID.</summary>
     [JsonPropertyName("managedHsmKeyId")]
     public string? ManagedHsmKeyId { get; set; }
 
@@ -1973,7 +1982,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("partitionMergeEnabled")]
     public bool? PartitionMergeEnabled { get; set; }
 
-    /// <summary>Whether or not public network access is allowed for this CosmosDB account. Defaults to true.</summary>
+    /// <summary>Whether public network access is allowed for this CosmosDB account. Defaults to true.</summary>
     [JsonPropertyName("publicNetworkAccessEnabled")]
     public bool? PublicNetworkAccessEnabled { get; set; }
 
@@ -2056,6 +2065,15 @@ public partial class V1beta1AccountStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

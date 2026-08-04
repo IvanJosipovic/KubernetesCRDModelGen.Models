@@ -202,6 +202,42 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataF
     public V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderServicePrincipalKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderStorageAccountKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProvider
@@ -243,12 +279,12 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProvider
     public string? ServicePrincipalId { get; set; }
 
     /// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
-    [JsonPropertyName("servicePrincipalKey")]
-    public string? ServicePrincipalKey { get; set; }
+    [JsonPropertyName("servicePrincipalKeySecretRef")]
+    public V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderServicePrincipalKeySecretRef? ServicePrincipalKeySecretRef { get; set; }
 
     /// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
-    [JsonPropertyName("storageAccountKey")]
-    public string? StorageAccountKey { get; set; }
+    [JsonPropertyName("storageAccountKeySecretRef")]
+    public V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderStorageAccountKeySecretRef? StorageAccountKeySecretRef { get; set; }
 
     /// <summary>The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
     [JsonPropertyName("tenant")]
@@ -261,6 +297,42 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProvider
     /// <summary>Whether to use the Data Factory&apos;s managed identity to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and storage_account_key.</summary>
     [JsonPropertyName("useManagedIdentity")]
     public bool? UseManagedIdentity { get; set; }
+}
+
+/// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderServicePrincipalKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderStorageAccountKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -304,12 +376,12 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProvider
     public string? ServicePrincipalId { get; set; }
 
     /// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
-    [JsonPropertyName("servicePrincipalKey")]
-    public string? ServicePrincipalKey { get; set; }
+    [JsonPropertyName("servicePrincipalKeySecretRef")]
+    public V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderServicePrincipalKeySecretRef? ServicePrincipalKeySecretRef { get; set; }
 
     /// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
-    [JsonPropertyName("storageAccountKey")]
-    public string? StorageAccountKey { get; set; }
+    [JsonPropertyName("storageAccountKeySecretRef")]
+    public V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderStorageAccountKeySecretRef? StorageAccountKeySecretRef { get; set; }
 
     /// <summary>The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
     [JsonPropertyName("tenant")]
@@ -543,14 +615,6 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2StatusAtProvider
     [JsonPropertyName("servicePrincipalId")]
     public string? ServicePrincipalId { get; set; }
 
-    /// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
-    [JsonPropertyName("servicePrincipalKey")]
-    public string? ServicePrincipalKey { get; set; }
-
-    /// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
-    [JsonPropertyName("storageAccountKey")]
-    public string? StorageAccountKey { get; set; }
-
     /// <summary>The tenant id or name in which the service principal exists to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
     [JsonPropertyName("tenant")]
     public string? Tenant { get; set; }
@@ -618,6 +682,15 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2Status
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1LinkedServiceDataLakeStorageGen2StatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

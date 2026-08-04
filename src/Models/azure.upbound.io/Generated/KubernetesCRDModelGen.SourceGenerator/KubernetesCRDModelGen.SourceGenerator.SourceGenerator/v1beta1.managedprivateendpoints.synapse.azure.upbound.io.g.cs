@@ -353,6 +353,10 @@ public partial class V1beta1ManagedPrivateEndpointSpecForProviderTargetResourceI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedPrivateEndpointSpecForProvider
 {
+    /// <summary>A list of fully qualified domain names to assign to the Synapse Private Endpoint. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("fullyQualifiedDomainNames")]
+    public IList<string>? FullyQualifiedDomainNames { get; set; }
+
     /// <summary>Specifies the name which should be used for this Managed Private Endpoint. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -696,6 +700,10 @@ public partial class V1beta1ManagedPrivateEndpointSpecInitProviderTargetResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedPrivateEndpointSpecInitProvider
 {
+    /// <summary>A list of fully qualified domain names to assign to the Synapse Private Endpoint. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("fullyQualifiedDomainNames")]
+    public IList<string>? FullyQualifiedDomainNames { get; set; }
+
     /// <summary>Specifies the name which should be used for this Managed Private Endpoint. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -916,6 +924,10 @@ public partial class V1beta1ManagedPrivateEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedPrivateEndpointStatusAtProvider
 {
+    /// <summary>A list of fully qualified domain names to assign to the Synapse Private Endpoint. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("fullyQualifiedDomainNames")]
+    public IList<string>? FullyQualifiedDomainNames { get; set; }
+
     /// <summary>The Synapse Managed Private Endpoint ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -991,6 +1003,15 @@ public partial class V1beta1ManagedPrivateEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ManagedPrivateEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

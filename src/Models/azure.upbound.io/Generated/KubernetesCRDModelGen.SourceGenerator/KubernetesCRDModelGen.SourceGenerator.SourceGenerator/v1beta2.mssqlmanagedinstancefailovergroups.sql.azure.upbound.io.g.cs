@@ -369,7 +369,7 @@ public partial class V1beta2MSSQLManagedInstanceFailoverGroupSpecForProvider
 {
     /// <summary>The Azure Region where the Managed Instance Failover Group should exist. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
-    public required string Location { get; set; }
+    public string? Location { get; set; }
 
     /// <summary>The ID of the Azure SQL Managed Instance which will be replicated using a Managed Instance Failover Group. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("managedInstanceId")]
@@ -732,6 +732,10 @@ public partial class V1beta2MSSQLManagedInstanceFailoverGroupSpecInitProviderRea
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MSSQLManagedInstanceFailoverGroupSpecInitProvider
 {
+    /// <summary>The Azure Region where the Managed Instance Failover Group should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
     /// <summary>The ID of the Azure SQL Managed Instance which will be replicated using a Managed Instance Failover Group. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("managedInstanceId")]
     public string? ManagedInstanceId { get; set; }
@@ -1074,6 +1078,15 @@ public partial class V1beta2MSSQLManagedInstanceFailoverGroupStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2MSSQLManagedInstanceFailoverGroupStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

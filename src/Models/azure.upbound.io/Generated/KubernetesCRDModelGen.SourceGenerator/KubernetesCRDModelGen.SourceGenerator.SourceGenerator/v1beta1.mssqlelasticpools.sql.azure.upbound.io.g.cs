@@ -393,15 +393,15 @@ public partial class V1beta1MSSQLElasticPoolSpecForProviderSku
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>The family of hardware Gen4, Gen5, Fsv2 or DC.</summary>
+    /// <summary>The family of hardware Gen4, Gen5, Fsv2, MOPRMS, PRMS, or DC.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, or HS_Gen5.</summary>
+    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, HS_PRMS, HS_MOPRMS, or HS_Gen5.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -411,9 +411,13 @@ public partial class V1beta1MSSQLElasticPoolSpecForProviderSku
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLElasticPoolSpecForProvider
 {
-    /// <summary>Specifies the type of enclave to be used by the elastic pool. Possible value VBS.</summary>
+    /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>Specifies the license type applied to this database. Possible values are LicenseIncluded and BasePrice.</summary>
     [JsonPropertyName("licenseType")]
@@ -423,7 +427,7 @@ public partial class V1beta1MSSQLElasticPoolSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2. Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2, SQL_SouthAfricaNorth_DB_1, SQL_SouthAfricaNorth_DB_2, SQL_WestUS3_DB_1, SQL_WestUS3_DB_2, SQL_SwedenCentral_DB_1, SQL_SwedenCentral_DB_2. Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -499,15 +503,15 @@ public partial class V1beta1MSSQLElasticPoolSpecInitProviderSku
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>The family of hardware Gen4, Gen5, Fsv2 or DC.</summary>
+    /// <summary>The family of hardware Gen4, Gen5, Fsv2, MOPRMS, PRMS, or DC.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, or HS_Gen5.</summary>
+    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, HS_PRMS, HS_MOPRMS, or HS_Gen5.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -529,9 +533,13 @@ public partial class V1beta1MSSQLElasticPoolSpecInitProviderSku
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLElasticPoolSpecInitProvider
 {
-    /// <summary>Specifies the type of enclave to be used by the elastic pool. Possible value VBS.</summary>
+    /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>Specifies the license type applied to this database. Possible values are LicenseIncluded and BasePrice.</summary>
     [JsonPropertyName("licenseType")]
@@ -541,7 +549,7 @@ public partial class V1beta1MSSQLElasticPoolSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2. Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2, SQL_SouthAfricaNorth_DB_1, SQL_SouthAfricaNorth_DB_2, SQL_WestUS3_DB_1, SQL_WestUS3_DB_2, SQL_SwedenCentral_DB_1, SQL_SwedenCentral_DB_2. Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -783,15 +791,15 @@ public partial class V1beta1MSSQLElasticPoolStatusAtProviderSku
     [JsonPropertyName("capacity")]
     public double? Capacity { get; set; }
 
-    /// <summary>The family of hardware Gen4, Gen5, Fsv2 or DC.</summary>
+    /// <summary>The family of hardware Gen4, Gen5, Fsv2, MOPRMS, PRMS, or DC.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, or HS_Gen5.</summary>
+    /// <summary>Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either vCore based or DTU based. Possible DTU based values are BasicPool, StandardPool, PremiumPool while possible vCore based values are GP_Gen4, GP_Gen5, GP_Fsv2, GP_DC, BC_Gen4, BC_Gen5, BC_DC, HS_PRMS, HS_MOPRMS, or HS_Gen5.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or HyperScale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
+    /// <summary>The tier of the particular SKU. Possible values are GeneralPurpose, BusinessCritical, Basic, Standard, Premium, or Hyperscale. For more information see the documentation for your Elasticpool configuration: vCore-based or DTU-based.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -801,9 +809,13 @@ public partial class V1beta1MSSQLElasticPoolStatusAtProviderSku
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLElasticPoolStatusAtProvider
 {
-    /// <summary>Specifies the type of enclave to be used by the elastic pool. Possible value VBS.</summary>
+    /// <summary>Specifies the type of enclave to be used by the elastic pool. When enclave_type is not specified (e.g., the default) enclaves are not enabled on the elastic pool. Once enabled (e.g., by specifying Default or VBS) removing the enclave_type field from the configuration file will force the creation of a new resource. Possible values are Default or VBS.</summary>
     [JsonPropertyName("enclaveType")]
     public string? EnclaveType { get; set; }
+
+    /// <summary>Specifies the number of high availability replicas for the elastic pool. Defaults to 1. Possible values are between 0 and 4.</summary>
+    [JsonPropertyName("highAvailabilityReplicaCount")]
+    public double? HighAvailabilityReplicaCount { get; set; }
 
     /// <summary>The ID of the MS SQL Elastic Pool.</summary>
     [JsonPropertyName("id")]
@@ -817,7 +829,7 @@ public partial class V1beta1MSSQLElasticPoolStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2. Defaults to SQL_Default.</summary>
+    /// <summary>The name of the Public Maintenance Configuration window to apply to the elastic pool. Valid values include SQL_Default, SQL_EastUS_DB_1, SQL_EastUS2_DB_1, SQL_SoutheastAsia_DB_1, SQL_AustraliaEast_DB_1, SQL_NorthEurope_DB_1, SQL_SouthCentralUS_DB_1, SQL_WestUS2_DB_1, SQL_UKSouth_DB_1, SQL_WestEurope_DB_1, SQL_EastUS_DB_2, SQL_EastUS2_DB_2, SQL_WestUS2_DB_2, SQL_SoutheastAsia_DB_2, SQL_AustraliaEast_DB_2, SQL_NorthEurope_DB_2, SQL_SouthCentralUS_DB_2, SQL_UKSouth_DB_2, SQL_WestEurope_DB_2, SQL_AustraliaSoutheast_DB_1, SQL_BrazilSouth_DB_1, SQL_CanadaCentral_DB_1, SQL_CanadaEast_DB_1, SQL_CentralUS_DB_1, SQL_EastAsia_DB_1, SQL_FranceCentral_DB_1, SQL_GermanyWestCentral_DB_1, SQL_CentralIndia_DB_1, SQL_SouthIndia_DB_1, SQL_JapanEast_DB_1, SQL_JapanWest_DB_1, SQL_NorthCentralUS_DB_1, SQL_UKWest_DB_1, SQL_WestUS_DB_1, SQL_AustraliaSoutheast_DB_2, SQL_BrazilSouth_DB_2, SQL_CanadaCentral_DB_2, SQL_CanadaEast_DB_2, SQL_CentralUS_DB_2, SQL_EastAsia_DB_2, SQL_FranceCentral_DB_2, SQL_GermanyWestCentral_DB_2, SQL_CentralIndia_DB_2, SQL_SouthIndia_DB_2, SQL_JapanEast_DB_2, SQL_JapanWest_DB_2, SQL_NorthCentralUS_DB_2, SQL_UKWest_DB_2, SQL_WestUS_DB_2, SQL_WestCentralUS_DB_1, SQL_FranceSouth_DB_1, SQL_WestCentralUS_DB_2, SQL_FranceSouth_DB_2, SQL_SwitzerlandNorth_DB_1, SQL_SwitzerlandNorth_DB_2, SQL_BrazilSoutheast_DB_1, SQL_UAENorth_DB_1, SQL_BrazilSoutheast_DB_2, SQL_UAENorth_DB_2, SQL_SouthAfricaNorth_DB_1, SQL_SouthAfricaNorth_DB_2, SQL_WestUS3_DB_1, SQL_WestUS3_DB_2, SQL_SwedenCentral_DB_1, SQL_SwedenCentral_DB_2. Defaults to SQL_Default.</summary>
     [JsonPropertyName("maintenanceConfigurationName")]
     public string? MaintenanceConfigurationName { get; set; }
 
@@ -910,6 +922,15 @@ public partial class V1beta1MSSQLElasticPoolStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MSSQLElasticPoolStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

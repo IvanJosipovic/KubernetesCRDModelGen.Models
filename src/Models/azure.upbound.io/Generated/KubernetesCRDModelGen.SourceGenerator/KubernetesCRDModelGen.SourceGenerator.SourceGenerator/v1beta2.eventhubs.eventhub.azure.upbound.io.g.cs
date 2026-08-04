@@ -75,6 +75,14 @@ public partial class V1beta2EventHubSpecForProviderCaptureDescriptionDestination
     /// <summary>The ID of the Blob Storage Account where messages should be archived.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
+
+    /// <summary>The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.</summary>
+    [JsonPropertyName("storageAuthenticationId")]
+    public string? StorageAuthenticationId { get; set; }
+
+    /// <summary>The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.</summary>
+    [JsonPropertyName("storageAuthenticationType")]
+    public string? StorageAuthenticationType { get; set; }
 }
 
 /// <summary>A capture_description block as defined below.</summary>
@@ -647,6 +655,14 @@ public partial class V1beta2EventHubSpecInitProviderCaptureDescriptionDestinatio
     /// <summary>The ID of the Blob Storage Account where messages should be archived.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
+
+    /// <summary>The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.</summary>
+    [JsonPropertyName("storageAuthenticationId")]
+    public string? StorageAuthenticationId { get; set; }
+
+    /// <summary>The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.</summary>
+    [JsonPropertyName("storageAuthenticationType")]
+    public string? StorageAuthenticationType { get; set; }
 }
 
 /// <summary>A capture_description block as defined below.</summary>
@@ -1096,6 +1112,14 @@ public partial class V1beta2EventHubStatusAtProviderCaptureDescriptionDestinatio
     /// <summary>The ID of the Blob Storage Account where messages should be archived.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
+
+    /// <summary>The id of the User Assigned Identity that is used to authenticate the Blob Storage Account where messages should be archived.</summary>
+    [JsonPropertyName("storageAuthenticationId")]
+    public string? StorageAuthenticationId { get; set; }
+
+    /// <summary>The identity used to authenticate the Blob Storage Account where messages should be archived. Possible values are StorageSAS, SystemAssigned or UserAssigned. Defaults to StorageSAS.</summary>
+    [JsonPropertyName("storageAuthenticationType")]
+    public string? StorageAuthenticationType { get; set; }
 }
 
 /// <summary>A capture_description block as defined below.</summary>
@@ -1245,6 +1269,15 @@ public partial class V1beta2EventHubStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2EventHubStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

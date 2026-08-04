@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
-/// <summary>NATGateway is the Schema for the NATGateways API. Manages a Azure NAT Gateway.</summary>
+/// <summary>NATGateway is the Schema for the NATGateways API. Manages an Azure NAT Gateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -215,7 +215,7 @@ public partial class V1beta1NATGatewaySpecForProvider
     [JsonPropertyName("resourceGroupNameSelector")]
     public V1beta1NATGatewaySpecForProviderResourceGroupNameSelector? ResourceGroupNameSelector { get; set; }
 
-    /// <summary>The SKU which should be used. At this time the only supported value is Standard. Defaults to Standard.</summary>
+    /// <summary>The SKU which should be used. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -223,7 +223,7 @@ public partial class V1beta1NATGatewaySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new NAT Gateway to be created.</summary>
+    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("zones")]
     public IList<string>? Zones { get; set; }
 }
@@ -252,7 +252,7 @@ public partial class V1beta1NATGatewaySpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>The SKU which should be used. At this time the only supported value is Standard. Defaults to Standard.</summary>
+    /// <summary>The SKU which should be used. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -260,7 +260,7 @@ public partial class V1beta1NATGatewaySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new NAT Gateway to be created.</summary>
+    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("zones")]
     public IList<string>? Zones { get; set; }
 }
@@ -396,7 +396,7 @@ public partial class V1beta1NATGatewayStatusAtProvider
     [JsonPropertyName("resourceGuid")]
     public string? ResourceGuid { get; set; }
 
-    /// <summary>The SKU which should be used. At this time the only supported value is Standard. Defaults to Standard.</summary>
+    /// <summary>The SKU which should be used. Possible values are Standard and StandardV2. Defaults to Standard. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("skuName")]
     public string? SkuName { get; set; }
 
@@ -404,7 +404,7 @@ public partial class V1beta1NATGatewayStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new NAT Gateway to be created.</summary>
+    /// <summary>A list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("zones")]
     public IList<string>? Zones { get; set; }
 }
@@ -465,6 +465,15 @@ public partial class V1beta1NATGatewayStatus
     public IList<V1beta1NATGatewayStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -473,7 +482,7 @@ public partial class V1beta1NATGatewayStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>NATGateway is the Schema for the NATGateways API. Manages a Azure NAT Gateway.</summary>
+/// <summary>NATGateway is the Schema for the NATGateways API. Manages an Azure NAT Gateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

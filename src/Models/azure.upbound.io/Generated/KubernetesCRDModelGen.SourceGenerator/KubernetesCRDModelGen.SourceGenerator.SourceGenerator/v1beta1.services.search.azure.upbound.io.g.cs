@@ -246,7 +246,7 @@ public partial class V1beta1ServiceSpecForProvider
     [JsonPropertyName("customerManagedKeyEnforcementEnabled")]
     public bool? CustomerManagedKeyEnforcementEnabled { get; set; }
 
-    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.</summary>
     [JsonPropertyName("hostingMode")]
     public string? HostingMode { get; set; }
 
@@ -262,7 +262,7 @@ public partial class V1beta1ServiceSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.</summary>
+    /// <summary>Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
     public string? NetworkRuleBypassOption { get; set; }
 
@@ -294,7 +294,7 @@ public partial class V1beta1ServiceSpecForProvider
     [JsonPropertyName("semanticSearchSku")]
     public string? SemanticSearchSku { get; set; }
 
-    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -346,7 +346,7 @@ public partial class V1beta1ServiceSpecInitProvider
     [JsonPropertyName("customerManagedKeyEnforcementEnabled")]
     public bool? CustomerManagedKeyEnforcementEnabled { get; set; }
 
-    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.</summary>
     [JsonPropertyName("hostingMode")]
     public string? HostingMode { get; set; }
 
@@ -362,7 +362,7 @@ public partial class V1beta1ServiceSpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.</summary>
+    /// <summary>Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
     public string? NetworkRuleBypassOption { get; set; }
 
@@ -382,7 +382,7 @@ public partial class V1beta1ServiceSpecInitProvider
     [JsonPropertyName("semanticSearchSku")]
     public string? SemanticSearchSku { get; set; }
 
-    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -638,7 +638,11 @@ public partial class V1beta1ServiceStatusAtProvider
     [JsonPropertyName("customerManagedKeyEnforcementEnabled")]
     public bool? CustomerManagedKeyEnforcementEnabled { get; set; }
 
-    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>The endpoint used to connect to this Search Service.</summary>
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    /// <summary>Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.</summary>
     [JsonPropertyName("hostingMode")]
     public string? HostingMode { get; set; }
 
@@ -658,7 +662,7 @@ public partial class V1beta1ServiceStatusAtProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.</summary>
+    /// <summary>Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
     public string? NetworkRuleBypassOption { get; set; }
 
@@ -686,7 +690,7 @@ public partial class V1beta1ServiceStatusAtProvider
     [JsonPropertyName("semanticSearchSku")]
     public string? SemanticSearchSku { get; set; }
 
-    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.</summary>
+    /// <summary>The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.</summary>
     [JsonPropertyName("sku")]
     public string? Sku { get; set; }
 
@@ -751,6 +755,15 @@ public partial class V1beta1ServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

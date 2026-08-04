@@ -88,7 +88,7 @@ spec:
                     description: Specifies whether the Search Service should enforce that non-customer resources are encrypted. Defaults to false.
                     type: boolean
                   hostingMode:
-                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.
+                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.
                     type: string
                   identity:
                     description: An identity block as defined below.
@@ -112,7 +112,7 @@ spec:
                     description: The Azure Region where the Search Service should exist. Changing this forces a new Search Service to be created.
                     type: string
                   networkRuleBypassOption:
-                    description: Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.
+                    description: Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.
                     type: string
                   partitionCount:
                     description: Specifies the number of partitions which should be created. This field cannot be set when using a free sku (see the Microsoft documentation). Possible values include 1, 2, 3, 4, 6, or 12. Defaults to 1.
@@ -203,7 +203,7 @@ spec:
                     description: Specifies the Semantic Search SKU which should be used for this Search Service. Possible values include free and standard.
                     type: string
                   sku:
-                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.
+                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.
                     type: string
                   tags:
                     additionalProperties:
@@ -238,7 +238,7 @@ spec:
                     description: Specifies whether the Search Service should enforce that non-customer resources are encrypted. Defaults to false.
                     type: boolean
                   hostingMode:
-                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.
+                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.
                     type: string
                   identity:
                     description: An identity block as defined below.
@@ -262,7 +262,7 @@ spec:
                     description: The Azure Region where the Search Service should exist. Changing this forces a new Search Service to be created.
                     type: string
                   networkRuleBypassOption:
-                    description: Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.
+                    description: Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.
                     type: string
                   partitionCount:
                     description: Specifies the number of partitions which should be created. This field cannot be set when using a free sku (see the Microsoft documentation). Possible values include 1, 2, 3, 4, 6, or 12. Defaults to 1.
@@ -277,7 +277,7 @@ spec:
                     description: Specifies the Semantic Search SKU which should be used for this Search Service. Possible values include free and standard.
                     type: string
                   sku:
-                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.
+                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.
                     type: string
                   tags:
                     additionalProperties:
@@ -397,8 +397,11 @@ spec:
                   customerManagedKeyEnforcementEnabled:
                     description: Specifies whether the Search Service should enforce that non-customer resources are encrypted. Defaults to false.
                     type: boolean
+                  endpoint:
+                    description: The endpoint used to connect to this Search Service.
+                    type: string
                   hostingMode:
-                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are highDensity or default. Defaults to default. Changing this forces a new Search Service to be created.
+                    description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.
                     type: string
                   id:
                     description: The ID of the Search Service.
@@ -431,7 +434,7 @@ spec:
                     description: The Azure Region where the Search Service should exist. Changing this forces a new Search Service to be created.
                     type: string
                   networkRuleBypassOption:
-                    description: Whether to allow trusted Azure services to access a network restricted Container Registry? Possible values are None and AzureServices. Defaults to None.
+                    description: Whether to allow trusted Azure services to access a network restricted Search Service? Possible values are None and AzureServices. Defaults to None.
                     type: string
                   partitionCount:
                     description: Specifies the number of partitions which should be created. This field cannot be set when using a free sku (see the Microsoft documentation). Possible values include 1, 2, 3, 4, 6, or 12. Defaults to 1.
@@ -461,7 +464,7 @@ spec:
                     description: Specifies the Semantic Search SKU which should be used for this Search Service. Possible values include free and standard.
                     type: string
                   sku:
-                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2. Changing this forces a new Search Service to be created.
+                    description: The SKU which should be used for this Search Service. Possible values include basic, free, standard, standard2, standard3, storage_optimized_l1 and storage_optimized_l2.
                     type: string
                   tags:
                     additionalProperties:
@@ -514,6 +517,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -901,6 +911,9 @@ spec:
                   customerManagedKeyEnforcementEnabled:
                     description: Specifies whether the Search Service should enforce that non-customer resources are encrypted. Defaults to false.
                     type: boolean
+                  endpoint:
+                    description: The endpoint used to connect to this Search Service.
+                    type: string
                   hostingMode:
                     description: Specifies the Hosting Mode, which allows for High Density partitions (that allow for up to 1000 indexes) should be supported. Possible values are HighDensity or Default. Defaults to Default. Changing this forces a new Search Service to be created.
                     type: string
@@ -1016,6 +1029,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
