@@ -82,6 +82,18 @@ public partial class V1alpha1DataCatalogSpec
     /// underscore, at sign, or hyphen characters. The remainder of the length constraint
     /// of 256 is reserved for use by Athena.
     /// 
+    /// For FEDERATED type the catalog name has following considerations and limits:
+    /// 
+    ///   - The catalog name allows special characters such as _ , @ , \ , - . These
+    ///     characters are replaced with a hyphen (-) when creating the CFN Stack
+    ///     Name and with an underscore (_) when creating the Lambda Function and
+    ///     Glue Connection Name.
+    /// 
+    ///   - The catalog name has a theoretical limit of 128 characters. However,
+    ///     since we use it to create other resources that allow less characters and
+    ///     we prepend a prefix to it, the actual catalog name limit for FEDERATED
+    ///     catalog is 64 - 23 = 41 characters.
+    /// 
     /// Regex Pattern: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*$`
     /// </summary>
     [JsonPropertyName("name")]
@@ -107,17 +119,35 @@ public partial class V1alpha1DataCatalogSpec
     ///     Data Catalog belongs. catalog-id=catalog_id The GLUE data catalog type
     ///     also applies to the default AwsDataCatalog that already exists in your
     ///     account, of which you can have only one and cannot modify.
+    /// 
+    ///   - The FEDERATED data catalog type uses one of the following parameters,
+    ///     but not both. Use connection-arn for an existing Glue connection. Use
+    ///     connection-type and connection-properties to specify the configuration
+    ///     setting for a new connection. connection-arn: lambda-role-arn (optional):
+    ///     The execution role to use for the Lambda function. If not provided, one
+    ///     is created. connection-type:MYSQL|REDSHIFT|...., connection-properties:&quot; &quot;
+    ///     For , use escaped JSON text, as in the following example. &quot;{\&quot;spill_bucket\&quot;:\&quot;my_spill\&quot;,\&quot;spill_prefix\&quot;:\&quot;athena-spill\&quot;,\&quot;host\&quot;:\&quot;abc12345.snowflakecomputing.com\&quot;,\&quot;port\&quot;:\&quot;1234\&quot;,\&quot;warehouse\&quot;:\&quot;DEV_WH\&quot;,\&quot;database\&quot;:\&quot;TEST\&quot;,\&quot;schema\&quot;:\&quot;PUBLIC\&quot;,\&quot;SecretArn\&quot;:\&quot;arn:aws:secretsmanager:ap-south-1:111122223333:secret:snowflake-XHb67j\&quot;}&quot;
     /// </summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>A list of comma separated tags to add to the data catalog that is created.</summary>
+    /// <summary>
+    /// A list of comma separated tags to add to the data catalog that is created.
+    /// All the resources that are created by the CreateDataCatalog API operation
+    /// with FEDERATED type will have the tag federated_athena_datacatalog=&quot;true&quot;.
+    /// This includes the CFN Stack, Glue Connection, Athena DataCatalog, and all
+    /// the resources created as part of the CFN Stack (Lambda Function, IAM policies/roles).
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<V1alpha1DataCatalogSpecTags>? Tags { get; set; }
 
     /// <summary>
-    /// The type of data catalog to create: LAMBDA for a federated catalog, HIVE
-    /// for an external hive metastore, or GLUE for an Glue Data Catalog.
+    /// The type of data catalog to create: LAMBDA for a federated catalog, GLUE
+    /// for an Glue Data Catalog, and HIVE for an external Apache Hive metastore.
+    /// FEDERATED is a federated catalog for which Athena creates the connection
+    /// and the Lambda function for you based on the parameters that you pass.
+    /// 
+    /// For FEDERATED type, we do not support IAM identity center.
     /// </summary>
     [JsonPropertyName("type")]
     public required string Type { get; set; }
@@ -211,6 +241,54 @@ public partial class V1alpha1DataCatalogStatus
     /// </summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1DataCatalogStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// The type of connection for a FEDERATED data catalog (for example, REDSHIFT,
+    /// MYSQL, or SQLSERVER). For information about individual connectors, see Available
+    /// data source connectors (https://docs.aws.amazon.com/athena/latest/ug/connectors-available.html).
+    /// </summary>
+    [JsonPropertyName("connectionType")]
+    public string? ConnectionType { get; set; }
+
+    /// <summary>Text of the error that occurred during data catalog creation or deletion.</summary>
+    [JsonPropertyName("error")]
+    public string? Error { get; set; }
+
+    /// <summary>
+    /// The status of the creation or deletion of the data catalog.
+    /// 
+    ///    * The LAMBDA, GLUE, and HIVE data catalog types are created synchronously.
+    ///    Their status is either CREATE_COMPLETE or CREATE_FAILED.
+    /// 
+    ///    * The FEDERATED data catalog type is created asynchronously.
+    /// 
+    /// Data catalog creation status:
+    /// 
+    ///    * CREATE_IN_PROGRESS: Federated data catalog creation in progress.
+    /// 
+    ///    * CREATE_COMPLETE: Data catalog creation complete.
+    /// 
+    ///    * CREATE_FAILED: Data catalog could not be created.
+    /// 
+    ///    * CREATE_FAILED_CLEANUP_IN_PROGRESS: Federated data catalog creation failed
+    ///    and is being removed.
+    /// 
+    ///    * CREATE_FAILED_CLEANUP_COMPLETE: Federated data catalog creation failed
+    ///    and was removed.
+    /// 
+    ///    * CREATE_FAILED_CLEANUP_FAILED: Federated data catalog creation failed
+    ///    but could not be removed.
+    /// 
+    /// Data catalog deletion status:
+    /// 
+    ///    * DELETE_IN_PROGRESS: Federated data catalog deletion in progress.
+    /// 
+    ///    * DELETE_COMPLETE: Federated data catalog deleted.
+    /// 
+    ///    * DELETE_FAILED: Federated data catalog could not be deleted.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }
 
 /// <summary>DataCatalog is the Schema for the DataCatalogs API</summary>

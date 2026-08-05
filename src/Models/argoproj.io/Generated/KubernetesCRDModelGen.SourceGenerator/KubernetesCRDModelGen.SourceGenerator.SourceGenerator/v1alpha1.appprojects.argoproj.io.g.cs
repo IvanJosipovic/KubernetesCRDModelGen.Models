@@ -220,7 +220,11 @@ public partial class V1alpha1AppProjectSpecRoles
     public IList<string>? Policies { get; set; }
 }
 
-/// <summary>SignatureKey is the specification of a key required to verify commit signatures with</summary>
+/// <summary>
+/// SignatureKey is the specification of a key required to verify commit signatures with
+/// 
+/// Deprecated: Use SourceIntegrity instead. SignatureKeys will be removed with the next major version.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSignatureKeys
@@ -228,6 +232,63 @@ public partial class V1alpha1AppProjectSpecSignatureKeys
     /// <summary>The ID of the key in hexadecimal notation</summary>
     [JsonPropertyName("keyID")]
     public required string KeyID { get; set; }
+}
+
+/// <summary>Verify GPG commit/tag signatures</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesGpg
+{
+    /// <summary>List of key IDs to trust. The keys need to be in the repository server keyring.</summary>
+    [JsonPropertyName("keys")]
+    public required IList<string> Keys { get; set; }
+
+    [JsonPropertyName("mode")]
+    public required string Mode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesRepos
+{
+    /// <summary>URL specifier, glob.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AppProjectSpecSourceIntegrityGitPolicies
+{
+    /// <summary>Verify GPG commit/tag signatures</summary>
+    [JsonPropertyName("gpg")]
+    public required V1alpha1AppProjectSpecSourceIntegrityGitPoliciesGpg Gpg { get; set; }
+
+    /// <summary>List of repository criteria restricting repositories the policy will apply to</summary>
+    [JsonPropertyName("repos")]
+    public required IList<V1alpha1AppProjectSpecSourceIntegrityGitPoliciesRepos> Repos { get; set; }
+}
+
+/// <summary>Git - policies for git source verification</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AppProjectSpecSourceIntegrityGit
+{
+    [JsonPropertyName("policies")]
+    public required IList<V1alpha1AppProjectSpecSourceIntegrityGitPolicies> Policies { get; set; }
+}
+
+/// <summary>
+/// SourceIntegrity represents a constraint on manifest sources integrity to be met before they can be used.
+/// Do not access directly, use EffectiveSourceIntegrity() for correct backwards compatibility handling.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1AppProjectSpecSourceIntegrity
+{
+    /// <summary>Git - policies for git source verification</summary>
+    [JsonPropertyName("git")]
+    public required V1alpha1AppProjectSpecSourceIntegrityGit Git { get; set; }
 }
 
 /// <summary>SyncWindow contains the kind, time, duration and attributes that are used to assign the syncWindows to apps</summary>
@@ -270,6 +331,14 @@ public partial class V1alpha1AppProjectSpecSyncWindows
     /// <summary>Schedule is the time the window will begin, specified in cron format</summary>
     [JsonPropertyName("schedule")]
     public string? Schedule { get; set; }
+
+    /// <summary>
+    /// SyncOverrun allows ongoing syncs to continue in two scenarios:
+    /// For deny windows: allows syncs that started before the deny window became active to continue running
+    /// For allow windows: allows syncs that started during the allow window to continue after the window ends
+    /// </summary>
+    [JsonPropertyName("syncOverrun")]
+    public bool? SyncOverrun { get; set; }
 
     /// <summary>TimeZone of the sync that will be applied to the schedule</summary>
     [JsonPropertyName("timeZone")]
@@ -321,9 +390,20 @@ public partial class V1alpha1AppProjectSpec
     [JsonPropertyName("roles")]
     public IList<V1alpha1AppProjectSpecRoles>? Roles { get; set; }
 
-    /// <summary>SignatureKeys contains a list of PGP key IDs that commits in Git must be signed with in order to be allowed for sync</summary>
+    /// <summary>
+    /// SignatureKeys contains a list of PGP key IDs that commits in Git must be signed with in order to be allowed for sync
+    /// 
+    /// Deprecated: Use SourceIntegrity instead. SignatureKeys will be removed with the next major version.
+    /// </summary>
     [JsonPropertyName("signatureKeys")]
     public IList<V1alpha1AppProjectSpecSignatureKeys>? SignatureKeys { get; set; }
+
+    /// <summary>
+    /// SourceIntegrity represents a constraint on manifest sources integrity to be met before they can be used.
+    /// Do not access directly, use EffectiveSourceIntegrity() for correct backwards compatibility handling.
+    /// </summary>
+    [JsonPropertyName("sourceIntegrity")]
+    public V1alpha1AppProjectSpecSourceIntegrity? SourceIntegrity { get; set; }
 
     /// <summary>SourceNamespaces defines the namespaces application resources are allowed to be created in</summary>
     [JsonPropertyName("sourceNamespaces")]
