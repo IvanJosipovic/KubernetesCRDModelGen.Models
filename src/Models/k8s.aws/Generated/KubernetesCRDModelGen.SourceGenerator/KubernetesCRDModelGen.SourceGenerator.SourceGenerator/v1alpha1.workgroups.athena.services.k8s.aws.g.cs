@@ -136,6 +136,72 @@ public partial class V1alpha1WorkGroupSpecConfigurationIdentityCenterConfigurati
     public string? IdentityCenterInstanceARN { get; set; }
 }
 
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfigurationKmsKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for KMSKey</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfigurationKmsKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfigurationKmsKeyRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// If you encrypt query and calculation results in Athena owned storage, this
+/// field indicates the encryption option (for example, SSE_KMS or CSE_KMS) and
+/// key information.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
+{
+    [JsonPropertyName("kmsKey")]
+    public string? KmsKey { get; set; }
+
+    /// <summary>Reference field for KMSKey</summary>
+    [JsonPropertyName("kmsKeyRef")]
+    public V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfigurationKmsKeyRef? KmsKeyRef { get; set; }
+}
+
+/// <summary>
+/// The configuration for storing results in Athena owned storage, which includes
+/// whether this feature is enabled; whether encryption configuration, if any,
+/// is used for encrypting query results.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfiguration
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>
+    /// If you encrypt query and calculation results in Athena owned storage, this
+    /// field indicates the encryption option (for example, SSE_KMS or CSE_KMS) and
+    /// key information.
+    /// </summary>
+    [JsonPropertyName("encryptionConfiguration")]
+    public V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
+}
+
 /// <summary>Specifies whether Amazon S3 access grants are enabled for query results.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -302,6 +368,14 @@ public partial class V1alpha1WorkGroupSpecConfiguration
     /// <summary>Specifies whether the workgroup is IAM Identity Center supported.</summary>
     [JsonPropertyName("identityCenterConfiguration")]
     public V1alpha1WorkGroupSpecConfigurationIdentityCenterConfiguration? IdentityCenterConfiguration { get; set; }
+
+    /// <summary>
+    /// The configuration for storing results in Athena owned storage, which includes
+    /// whether this feature is enabled; whether encryption configuration, if any,
+    /// is used for encrypting query results.
+    /// </summary>
+    [JsonPropertyName("managedQueryResultsConfiguration")]
+    public V1alpha1WorkGroupSpecConfigurationManagedQueryResultsConfiguration? ManagedQueryResultsConfiguration { get; set; }
 
     [JsonPropertyName("publishCloudWatchMetricsEnabled")]
     public bool? PublishCloudWatchMetricsEnabled { get; set; }

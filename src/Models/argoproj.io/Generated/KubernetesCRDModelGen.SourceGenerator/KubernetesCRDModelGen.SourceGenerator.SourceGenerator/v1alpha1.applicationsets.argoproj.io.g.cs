@@ -451,6 +451,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -784,6 +787,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -1122,6 +1128,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -1682,6 +1691,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -2015,6 +2027,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -2353,6 +2368,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -2904,6 +2922,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSource
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -3237,6 +3258,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourceHy
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -3575,6 +3599,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSources
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -4116,6 +4143,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSource
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -4449,6 +4479,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourceH
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -4787,6 +4820,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSources
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -5338,6 +5374,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -5671,6 +5710,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -6009,6 +6051,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -6569,6 +6614,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -6902,6 +6950,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -7240,6 +7291,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -7791,6 +7845,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -8124,6 +8181,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -8462,6 +8522,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -9003,6 +9066,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -9336,6 +9402,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -9674,6 +9743,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -10216,6 +10288,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -10549,6 +10624,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -10887,6 +10965,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -11722,6 +11803,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -12055,6 +12139,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -12393,6 +12480,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -12758,6 +12848,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
     [JsonPropertyName("api")]
     public required string Api { get; set; }
 
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
+
     [JsonPropertyName("insecure")]
     public bool? Insecure { get; set; }
 
@@ -12791,6 +12884,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 
     [JsonPropertyName("appSecretName")]
     public string? AppSecretName { get; set; }
+
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
 
     [JsonPropertyName("organization")]
     public required string Organization { get; set; }
@@ -12836,6 +12932,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 
     [JsonPropertyName("group")]
     public required string Group { get; set; }
+
+    [JsonPropertyName("includeArchivedRepos")]
+    public bool? IncludeArchivedRepos { get; set; }
 
     [JsonPropertyName("includeSharedProjects")]
     public bool? IncludeSharedProjects { get; set; }
@@ -13244,6 +13343,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -13577,6 +13679,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -13915,6 +14020,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -14528,6 +14636,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -14861,6 +14972,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -15199,6 +15313,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -15747,6 +15864,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -16080,6 +16200,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -16418,6 +16541,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -16978,6 +17104,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -17311,6 +17440,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -17649,6 +17781,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -18200,6 +18335,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -18533,6 +18671,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -18871,6 +19012,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -19412,6 +19556,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -19745,6 +19892,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -20083,6 +20233,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -20625,6 +20778,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -20958,6 +21114,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -21296,6 +21455,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -22131,6 +22293,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -22464,6 +22629,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -22802,6 +22970,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -23167,6 +23338,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
     [JsonPropertyName("api")]
     public required string Api { get; set; }
 
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
+
     [JsonPropertyName("insecure")]
     public bool? Insecure { get; set; }
 
@@ -23200,6 +23374,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 
     [JsonPropertyName("appSecretName")]
     public string? AppSecretName { get; set; }
+
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
 
     [JsonPropertyName("organization")]
     public required string Organization { get; set; }
@@ -23245,6 +23422,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 
     [JsonPropertyName("group")]
     public required string Group { get; set; }
+
+    [JsonPropertyName("includeArchivedRepos")]
+    public bool? IncludeArchivedRepos { get; set; }
 
     [JsonPropertyName("includeSharedProjects")]
     public bool? IncludeSharedProjects { get; set; }
@@ -23653,6 +23833,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -23986,6 +24169,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -24324,6 +24510,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -24937,6 +25126,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -25270,6 +25462,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -25608,6 +25803,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -26150,6 +26348,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -26483,6 +26684,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -26821,6 +27025,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -27656,6 +27863,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -27989,6 +28199,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -28327,6 +28540,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -28692,6 +28908,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderGitea
     [JsonPropertyName("api")]
     public required string Api { get; set; }
 
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
+
     [JsonPropertyName("insecure")]
     public bool? Insecure { get; set; }
 
@@ -28725,6 +28944,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderGithub
 
     [JsonPropertyName("appSecretName")]
     public string? AppSecretName { get; set; }
+
+    [JsonPropertyName("excludeArchivedRepos")]
+    public bool? ExcludeArchivedRepos { get; set; }
 
     [JsonPropertyName("organization")]
     public required string Organization { get; set; }
@@ -28770,6 +28992,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderGitlab
 
     [JsonPropertyName("group")]
     public required string Group { get; set; }
+
+    [JsonPropertyName("includeArchivedRepos")]
+    public bool? IncludeArchivedRepos { get; set; }
 
     [JsonPropertyName("includeSharedProjects")]
     public bool? IncludeSharedProjects { get; set; }
@@ -29178,6 +29403,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -29511,6 +29739,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -29849,6 +30080,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
@@ -30559,6 +30793,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSource
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
 
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }
 }
@@ -30892,6 +31129,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSourceHydratorSyncSou
 {
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     [JsonPropertyName("targetBranch")]
     public required string TargetBranch { get; set; }
@@ -31230,6 +31470,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSources
 
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     [JsonPropertyName("targetRevision")]
     public string? TargetRevision { get; set; }

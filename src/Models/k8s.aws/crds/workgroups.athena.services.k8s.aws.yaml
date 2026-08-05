@@ -126,6 +126,38 @@ spec:
                       identityCenterInstanceARN:
                         type: string
                     type: object
+                  managedQueryResultsConfiguration:
+                    description: |-
+                      The configuration for storing results in Athena owned storage, which includes
+                      whether this feature is enabled; whether encryption configuration, if any,
+                      is used for encrypting query results.
+                    properties:
+                      enabled:
+                        type: boolean
+                      encryptionConfiguration:
+                        description: |-
+                          If you encrypt query and calculation results in Athena owned storage, this
+                          field indicates the encryption option (for example, SSE_KMS or CSE_KMS) and
+                          key information.
+                        properties:
+                          kmsKey:
+                            type: string
+                          kmsKeyRef:
+                            description: Reference field for KMSKey
+                            properties:
+                              from:
+                                description: |-
+                                  AWSResourceReference provides all the values necessary to reference another
+                                  k8s resource for finding the identifier(Id/ARN/Name)
+                                properties:
+                                  name:
+                                    type: string
+                                  namespace:
+                                    type: string
+                                type: object
+                            type: object
+                        type: object
+                    type: object
                   publishCloudWatchMetricsEnabled:
                     type: boolean
                   queryResultsS3AccessGrantsConfiguration:

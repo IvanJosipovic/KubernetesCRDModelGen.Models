@@ -525,6 +525,15 @@ public partial class V1alpha1ApplicationOperationSyncSource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -938,6 +947,15 @@ public partial class V1alpha1ApplicationOperationSyncSources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
@@ -1544,6 +1562,15 @@ public partial class V1alpha1ApplicationSpecSource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -1976,6 +2003,13 @@ public partial class V1alpha1ApplicationSpecSourceHydratorSyncSource
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// RepoURL is the URL to the git repository that contains the hydrated manifests. If not set, defaults to
+    /// the DrySource.RepoURL.
+    /// </summary>
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
 
     /// <summary>
     /// TargetBranch is the branch from which hydrated manifests will be synced.
@@ -2411,6 +2445,15 @@ public partial class V1alpha1ApplicationSpecSources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
@@ -3025,6 +3068,15 @@ public partial class V1alpha1ApplicationStatusHistorySource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -3438,6 +3490,15 @@ public partial class V1alpha1ApplicationStatusHistorySources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
@@ -3975,6 +4036,15 @@ public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -4388,6 +4458,15 @@ public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
@@ -4996,6 +5075,15 @@ public partial class V1alpha1ApplicationStatusOperationStateSyncResultSource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -5409,6 +5497,15 @@ public partial class V1alpha1ApplicationStatusOperationStateSyncResultSources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
@@ -5997,6 +6094,13 @@ public partial class V1alpha1ApplicationStatusSourceHydratorCurrentOperationSour
     public required string Path { get; set; }
 
     /// <summary>
+    /// RepoURL is the URL to the git repository that contains the hydrated manifests. If not set, defaults to
+    /// the DrySource.RepoURL.
+    /// </summary>
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
+
+    /// <summary>
     /// TargetBranch is the branch from which hydrated manifests will be synced.
     /// If HydrateTo is not set, this is also the branch to which hydrated manifests are committed.
     /// </summary>
@@ -6485,6 +6589,13 @@ public partial class V1alpha1ApplicationStatusSourceHydratorLastSuccessfulOperat
     public required string Path { get; set; }
 
     /// <summary>
+    /// RepoURL is the URL to the git repository that contains the hydrated manifests. If not set, defaults to
+    /// the DrySource.RepoURL.
+    /// </summary>
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
+
+    /// <summary>
     /// TargetBranch is the branch from which hydrated manifests will be synced.
     /// If HydrateTo is not set, this is also the branch to which hydrated manifests are committed.
     /// </summary>
@@ -6540,6 +6651,13 @@ public partial class V1alpha1ApplicationStatusSourceHydrator
     [JsonPropertyName("currentOperation")]
     public V1alpha1ApplicationStatusSourceHydratorCurrentOperation? CurrentOperation { get; set; }
 
+    /// <summary>
+    /// LastComparedDryRevision holds the resolved revision from the most recent dry source comparison.
+    /// This is updated on every evaluation, even when hydration is skipped due to no changes.
+    /// </summary>
+    [JsonPropertyName("lastComparedDryRevision")]
+    public string? LastComparedDryRevision { get; set; }
+
     /// <summary>LastSuccessfulOperation holds info about the most recent successful hydration</summary>
     [JsonPropertyName("lastSuccessfulOperation")]
     public V1alpha1ApplicationStatusSourceHydratorLastSuccessfulOperation? LastSuccessfulOperation { get; set; }
@@ -6557,6 +6675,10 @@ public partial class V1alpha1ApplicationStatusSummary
     /// <summary>Images holds all images of application child resources.</summary>
     [JsonPropertyName("images")]
     public IList<string>? Images { get; set; }
+
+    /// <summary>IsAppOfApps holds true if the application has any application for child resource.</summary>
+    [JsonPropertyName("isAppOfApps")]
+    public bool? IsAppOfApps { get; set; }
 }
 
 /// <summary>Destination is a reference to the application&apos;s destination used for comparison</summary>
@@ -7018,6 +7140,15 @@ public partial class V1alpha1ApplicationStatusSyncComparedToSource
     public required string RepoURL { get; set; }
 
     /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
     /// In case of Git, this can be commit, tag, or branch. If omitted, will equal to HEAD.
     /// In case of Helm, this is a semver tag for the Chart&apos;s version.
@@ -7431,6 +7562,15 @@ public partial class V1alpha1ApplicationStatusSyncComparedToSources
     /// <summary>RepoURL is the URL to the repository (Git or Helm) that contains the application manifests</summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// TagPrefix filters git tags to only those with this prefix before evaluating targetRevision as a semver constraint.
+    /// The prefix is stripped from tag names before comparison and re-added to the resolved version.
+    /// For example, with tagPrefix &quot;component-b/&quot; and targetRevision &quot;1.0.*&quot;, tags like &quot;component-b/1.0.0&quot; and
+    /// &quot;component-b/1.0.1&quot; are candidates, and the constraint resolves to &quot;component-b/1.0.1&quot;.
+    /// </summary>
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
 
     /// <summary>
     /// TargetRevision defines the revision of the source to sync the application to.
