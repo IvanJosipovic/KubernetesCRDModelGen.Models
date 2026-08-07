@@ -251,6 +251,7 @@ public partial class V1ImageUpdateAutomationSpecGitPush
     /// Refspec specifies the Git Refspec to use for a push operation.
     /// If both Branch and Refspec are provided, then the commit is pushed
     /// to the branch and also using the specified refspec.
+    /// Deletion refspecs and refspecs prefixed with &apos;+&apos; are not supported.
     /// For more details about Git Refspecs, see:
     /// https://git-scm.com/book/en/v2/Git-Internals-The-Refspec
     /// </summary>
