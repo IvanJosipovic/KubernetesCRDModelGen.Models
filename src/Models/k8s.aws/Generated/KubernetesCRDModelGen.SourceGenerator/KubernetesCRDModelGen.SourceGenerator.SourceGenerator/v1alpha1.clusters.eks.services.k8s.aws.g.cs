@@ -69,6 +69,18 @@ public partial class V1alpha1ClusterSpecComputeConfig
 }
 
 /// <summary>
+/// The control plane scaling tier configuration. For more information, see EKS
+/// Provisioned Control Plane in the Amazon EKS User Guide.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecControlPlaneScalingConfig
+{
+    [JsonPropertyName("tier")]
+    public string? Tier { get; set; }
+}
+
+/// <summary>
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
@@ -577,6 +589,13 @@ public partial class V1alpha1ClusterSpec
     /// </summary>
     [JsonPropertyName("computeConfig")]
     public V1alpha1ClusterSpecComputeConfig? ComputeConfig { get; set; }
+
+    /// <summary>
+    /// The control plane scaling tier configuration. For more information, see EKS
+    /// Provisioned Control Plane in the Amazon EKS User Guide.
+    /// </summary>
+    [JsonPropertyName("controlPlaneScalingConfig")]
+    public V1alpha1ClusterSpecControlPlaneScalingConfig? ControlPlaneScalingConfig { get; set; }
 
     /// <summary>
     /// Indicates whether to enable deletion protection for the cluster. When enabled,
