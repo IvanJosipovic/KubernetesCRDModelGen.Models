@@ -9,6 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.argoproj.io;
+/// <summary>WorkflowTaskSet holds a set of tasks to be executed as part of a workflow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -946,6 +947,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttp
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksArchiveLocationHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -1148,6 +1152,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksArchiveLocationS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1250,6 +1257,23 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFieldR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -1285,6 +1309,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFrom
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -1757,6 +1784,28 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkflowTaskSetSpecTasksContainerRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -2042,6 +2091,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainer
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
 
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksContainerRestartPolicyRules>? RestartPolicyRules { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerSecurityContext? SecurityContext { get; set; }
 
@@ -2100,6 +2152,23 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -2135,6 +2204,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvVa
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -2607,6 +2679,28 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersResou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -2894,6 +2988,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksContainerSetContainers
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkflowTaskSetSpecTasksContainerSetContainersSecurityContext? SecurityContext { get; set; }
@@ -3489,6 +3586,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsH
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -3690,6 +3790,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -4414,6 +4517,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -4615,6 +4721,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtif
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksDagTasksHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -5451,6 +5560,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttp
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -5652,6 +5764,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksDataSourceArtifactPathsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -5910,6 +6025,23 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -5945,6 +6077,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFrom
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -6417,6 +6552,28 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkflowTaskSetSpecTasksInitContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -6704,6 +6861,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInitContainers
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksInitContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkflowTaskSetSpecTasksInitContainersSecurityContext? SecurityContext { get; set; }
@@ -7248,6 +7408,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttp
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -7449,6 +7612,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksInputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -8293,6 +8459,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttp
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -8494,6 +8663,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksOutputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -8699,6 +8871,31 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksOutputs
 
     [JsonPropertyName("result")]
     public string? Result { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksPodResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksPodResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksPodResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -9231,6 +9428,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -9433,6 +9633,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifac
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksResourceManifestFromArtifactS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -9595,6 +9798,20 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksResourceClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("resourceClaimName")]
+    public string? ResourceClaimName { get; set; }
+
+    [JsonPropertyName("resourceClaimTemplateName")]
+    public string? ResourceClaimTemplateName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksRetryStrategyAffinityNodeAntiAffinity
 {
 }
@@ -9685,6 +9902,23 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFieldRef
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -9720,6 +9954,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFrom
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksScriptEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -10192,6 +10429,28 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScriptResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksScriptRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksScriptRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkflowTaskSetSpecTasksScriptRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -10477,6 +10736,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksScript
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
 
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksScriptRestartPolicyRules>? RestartPolicyRules { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkflowTaskSetSpecTasksScriptSecurityContext? SecurityContext { get; set; }
 
@@ -10649,6 +10911,23 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFieldRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -10684,6 +10963,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFrom
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -11156,6 +11438,28 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkflowTaskSetSpecTasksSidecarsRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -11443,6 +11747,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksSidecars
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksSidecarsRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkflowTaskSetSpecTasksSidecarsSecurityContext? SecurityContext { get; set; }
@@ -11987,6 +12294,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -12188,6 +12498,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifact
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -12912,6 +13225,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -13113,6 +13429,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArt
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetSpecTasksStepsStepsHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -14235,6 +14554,32 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDown
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesPodCertificate
+{
+    [JsonPropertyName("certificateChainPath")]
+    public string? CertificateChainPath { get; set; }
+
+    [JsonPropertyName("credentialBundlePath")]
+    public string? CredentialBundlePath { get; set; }
+
+    [JsonPropertyName("keyPath")]
+    public string? KeyPath { get; set; }
+
+    [JsonPropertyName("keyType")]
+    public required string KeyType { get; set; }
+
+    [JsonPropertyName("maxExpirationSeconds")]
+    public int? MaxExpirationSeconds { get; set; }
+
+    [JsonPropertyName("signerName")]
+    public required string SignerName { get; set; }
+
+    [JsonPropertyName("userAnnotations")]
+    public IDictionary<string, string>? UserAnnotations { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecretItems
 {
     [JsonPropertyName("key")]
@@ -14287,6 +14632,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSources
 
     [JsonPropertyName("downwardAPI")]
     public V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesDownwardAPI? DownwardAPI { get; set; }
+
+    [JsonPropertyName("podCertificate")]
+    public V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesPodCertificate? PodCertificate { get; set; }
 
     [JsonPropertyName("secret")]
     public V1alpha1WorkflowTaskSetSpecTasksVolumesProjectedSourcesSecret? Secret { get; set; }
@@ -14656,8 +15004,14 @@ public partial class V1alpha1WorkflowTaskSetSpecTasks
     [JsonPropertyName("parallelism")]
     public long? Parallelism { get; set; }
 
+    [JsonPropertyName("pendingTimeout")]
+    public string? PendingTimeout { get; set; }
+
     [JsonPropertyName("plugin")]
     public JsonNode? Plugin { get; set; }
+
+    [JsonPropertyName("podResources")]
+    public V1alpha1WorkflowTaskSetSpecTasksPodResources? PodResources { get; set; }
 
     [JsonPropertyName("podSpecPatch")]
     public string? PodSpecPatch { get; set; }
@@ -14667,6 +15021,9 @@ public partial class V1alpha1WorkflowTaskSetSpecTasks
 
     [JsonPropertyName("resource")]
     public V1alpha1WorkflowTaskSetSpecTasksResource? Resource { get; set; }
+
+    [JsonPropertyName("resourceClaims")]
+    public IList<V1alpha1WorkflowTaskSetSpecTasksResourceClaims>? ResourceClaims { get; set; }
 
     [JsonPropertyName("retryStrategy")]
     public V1alpha1WorkflowTaskSetSpecTasksRetryStrategy? RetryStrategy { get; set; }
@@ -15410,7 +15767,7 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthO
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpAuthOauth2EndpointParams
@@ -15516,6 +15873,15 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttp
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -15818,6 +16184,19 @@ public partial class V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowTaskSetStatusNodesOutputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -16139,6 +16518,7 @@ public partial class V1alpha1WorkflowTaskSetStatus
     public IDictionary<string, V1alpha1WorkflowTaskSetStatusNodes>? Nodes { get; set; }
 }
 
+/// <summary>WorkflowTaskSet holds a set of tasks to be executed as part of a workflow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

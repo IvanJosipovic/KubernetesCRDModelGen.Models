@@ -387,6 +387,15 @@ public partial class V1beta1ReleaseSpecForProvider
     public bool? SkipCreateNamespace { get; set; }
 
     /// <summary>
+    /// SSAForceConflicts forces Kubernetes server-side apply to overwrite
+    /// field conflicts (&quot;become sole manager&quot;) when installing, upgrading,
+    /// or rolling back the release.
+    /// See https://kubernetes.io/docs/reference/using-api/server-side-apply/#conflicts
+    /// </summary>
+    [JsonPropertyName("ssaForceConflicts")]
+    public bool? SsaForceConflicts { get; set; }
+
+    /// <summary>
     /// TakeOwnership ignores Helm ownership validation and adopts pre-existing releases.
     /// This is a ONE-TIME operation: after the first successful deployment, the flag is recorded
     /// in status.atProvider.ownershipTaken and subsequent reconciles use normal Helm validation.
@@ -680,6 +689,15 @@ public partial class V1beta1ReleaseStatus
 
     [JsonPropertyName("failed")]
     public int? Failed { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

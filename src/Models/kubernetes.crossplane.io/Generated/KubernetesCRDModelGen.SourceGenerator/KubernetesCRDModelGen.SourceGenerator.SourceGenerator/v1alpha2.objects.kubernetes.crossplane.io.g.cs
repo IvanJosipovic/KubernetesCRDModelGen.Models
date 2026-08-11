@@ -115,11 +115,28 @@ public enum V1alpha2ObjectSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>Deletion policy for created kubernetes object, defaults to Background</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum>))]
+public enum V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Background"), JsonStringEnumMemberName("Background")]
+    Background,
+    [EnumMember(Value = "Foreground"), JsonStringEnumMemberName("Foreground")]
+    Foreground
+}
+
 /// <summary>ObjectParameters are the configurable fields of a Object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ObjectSpecForProvider
 {
+    /// <summary>Deletion policy for created kubernetes object, defaults to Background</summary>
+    [JsonPropertyName("deletionPropagationPolicy")]
+    public V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum? DeletionPropagationPolicy { get; set; }
+
     /// <summary>Raw JSON representation of the kubernetes object to be created.</summary>
     [JsonPropertyName("manifest")]
     public required JsonNode Manifest { get; set; }
@@ -513,6 +530,15 @@ public partial class V1alpha2ObjectStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha2ObjectStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

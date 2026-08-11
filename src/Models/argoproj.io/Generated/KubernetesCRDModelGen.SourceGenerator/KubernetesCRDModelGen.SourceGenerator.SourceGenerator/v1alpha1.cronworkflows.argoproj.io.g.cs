@@ -1077,8 +1077,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecAffinityPodAntiAffinity
     /// most preferred is the one with the greatest sum of weights, i.e.
     /// for each node that meets all of the scheduling requirements (resource
     /// request, requiredDuringScheduling anti-affinity expressions, etc.),
-    /// compute a sum by iterating through the elements of this field and adding
-    /// &quot;weight&quot; to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// compute a sum by iterating through the elements of this field and subtracting
+    /// &quot;weight&quot; from the sum if the node has pods which matches the corresponding podAffinityTerm; the
     /// node(s) with the highest sum are the most preferred.
     /// </summary>
     [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
@@ -1815,7 +1815,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsHttpA
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -1921,6 +1921,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsHttp
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -2223,6 +2232,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsS3
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -2626,6 +2648,1955 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutor
     /// <summary>ServiceAccountName specifies the service account name of the executor container.</summary>
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Selects a key of a ConfigMap.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromConfigMapKeyRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specify whether the ConfigMap or its key must be defined</summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>
+/// Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels[&apos; &lt;KEY&gt; &apos;]`, `metadata.annotations[&apos; &lt;KEY&gt; &apos;]`,
+/// spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromFieldRef
+{
+    /// <summary>Version of the schema the FieldPath is written in terms of, defaults to &quot;v1&quot;.</summary>
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    /// <summary>Path of the field to select in the specified API version.</summary>
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+/// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
+/// Selects a resource of the container: only resources limits and requests
+/// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromResourceFieldRef
+{
+    /// <summary>Container name: required for volumes, optional for env vars</summary>
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    /// <summary>Specifies the output format of the exposed resources, defaults to &quot;1&quot;</summary>
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    /// <summary>Required: resource to select</summary>
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+/// <summary>Selects a key of a secret in the pod&apos;s namespace</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromSecretKeyRef
+{
+    /// <summary>The key of the secret to select from.  Must be a valid secret key.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specify whether the Secret or its key must be defined</summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>Source for the environment variable&apos;s value. Cannot be used if value is not empty.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFrom
+{
+    /// <summary>Selects a key of a ConfigMap.</summary>
+    [JsonPropertyName("configMapKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
+
+    /// <summary>
+    /// Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels[&apos; &lt;KEY&gt; &apos;]`, `metadata.annotations[&apos; &lt;KEY&gt; &apos;]`,
+    /// spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
+    /// </summary>
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromFieldRef? FieldRef { get; set; }
+
+    /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
+    /// Selects a resource of the container: only resources limits and requests
+    /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
+    /// </summary>
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
+
+    /// <summary>Selects a key of a secret in the pod&apos;s namespace</summary>
+    [JsonPropertyName("secretKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+/// <summary>EnvVar represents an environment variable present in a Container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnv
+{
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Variable references $(VAR_NAME) are expanded
+    /// using the previously defined environment variables in the container and
+    /// any service environment variables. If a variable cannot be resolved,
+    /// the reference in the input string will be unchanged. Double $$ are reduced
+    /// to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e.
+    /// &quot;$$(VAR_NAME)&quot; will produce the string literal &quot;$(VAR_NAME)&quot;.
+    /// Escaped references will never be expanded, regardless of whether the variable
+    /// exists or not.
+    /// Defaults to &quot; &quot;.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>Source for the environment variable&apos;s value. Cannot be used if value is not empty.</summary>
+    [JsonPropertyName("valueFrom")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvValueFrom? ValueFrom { get; set; }
+}
+
+/// <summary>The ConfigMap to select from</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFromConfigMapRef
+{
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specify whether the ConfigMap must be defined</summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>The Secret to select from</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFromSecretRef
+{
+    /// <summary>
+    /// Name of the referent.
+    /// This field is effectively required, but due to backwards compatibility is
+    /// allowed to be empty. Instances of this type with an empty value here are
+    /// almost certainly wrong.
+    /// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Specify whether the Secret must be defined</summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>EnvFromSource represents the source of a set of ConfigMaps or Secrets</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFrom
+{
+    /// <summary>The ConfigMap to select from</summary>
+    [JsonPropertyName("configMapRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFromConfigMapRef? ConfigMapRef { get; set; }
+
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    /// <summary>The Secret to select from</summary>
+    [JsonPropertyName("secretRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFromSecretRef? SecretRef { get; set; }
+}
+
+/// <summary>Exec specifies a command to execute in the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartExec
+{
+    /// <summary>
+    /// Command is the command line to execute inside the container, the working directory for the
+    /// command  is root (&apos;/&apos;) in the container&apos;s filesystem. The command is simply exec&apos;d, it is
+    /// not run inside a shell, so traditional shell instructions (&apos;|&apos;, etc) won&apos;t work. To use
+    /// a shell, you need to explicitly call out to that shell.
+    /// Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+/// <summary>HTTPHeader describes a custom header to be used in HTTP probes</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartHttpGetHttpHeaders
+{
+    /// <summary>
+    /// The header field name.
+    /// This will be canonicalized upon output, so case-variant names will be understood as the same header.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartHttpGet
+{
+    /// <summary>
+    /// Host name to connect to, defaults to the pod IP. You probably want to set
+    /// &quot;Host&quot; in httpHeaders instead.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>Custom headers to set in the request. HTTP allows repeated headers.</summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path to access on the HTTP server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Name or number of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Scheme to use for connecting to the host.
+    /// Defaults to HTTP.
+    /// </summary>
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+/// <summary>Sleep represents a duration that the container should sleep.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartSleep
+{
+    /// <summary>Seconds is the number of seconds to sleep.</summary>
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+/// <summary>
+/// Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+/// for backward compatibility. There is no validation of this field and
+/// lifecycle hooks will fail at runtime when it is specified.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartTcpSocket
+{
+    /// <summary>Optional: Host name to connect to, defaults to the pod IP.</summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>
+    /// Number or name of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+/// <summary>
+/// PostStart is called immediately after a container is created. If the handler fails,
+/// the container is terminated and restarted according to its restart policy.
+/// Other management of the container blocks until the hook completes.
+/// More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStart
+{
+    /// <summary>Exec specifies a command to execute in the container.</summary>
+    [JsonPropertyName("exec")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartExec? Exec { get; set; }
+
+    /// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+    [JsonPropertyName("httpGet")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartHttpGet? HttpGet { get; set; }
+
+    /// <summary>Sleep represents a duration that the container should sleep.</summary>
+    [JsonPropertyName("sleep")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartSleep? Sleep { get; set; }
+
+    /// <summary>
+    /// Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+    /// for backward compatibility. There is no validation of this field and
+    /// lifecycle hooks will fail at runtime when it is specified.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStartTcpSocket? TcpSocket { get; set; }
+}
+
+/// <summary>Exec specifies a command to execute in the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopExec
+{
+    /// <summary>
+    /// Command is the command line to execute inside the container, the working directory for the
+    /// command  is root (&apos;/&apos;) in the container&apos;s filesystem. The command is simply exec&apos;d, it is
+    /// not run inside a shell, so traditional shell instructions (&apos;|&apos;, etc) won&apos;t work. To use
+    /// a shell, you need to explicitly call out to that shell.
+    /// Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+/// <summary>HTTPHeader describes a custom header to be used in HTTP probes</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopHttpGetHttpHeaders
+{
+    /// <summary>
+    /// The header field name.
+    /// This will be canonicalized upon output, so case-variant names will be understood as the same header.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopHttpGet
+{
+    /// <summary>
+    /// Host name to connect to, defaults to the pod IP. You probably want to set
+    /// &quot;Host&quot; in httpHeaders instead.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>Custom headers to set in the request. HTTP allows repeated headers.</summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path to access on the HTTP server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Name or number of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Scheme to use for connecting to the host.
+    /// Defaults to HTTP.
+    /// </summary>
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+/// <summary>Sleep represents a duration that the container should sleep.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopSleep
+{
+    /// <summary>Seconds is the number of seconds to sleep.</summary>
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+/// <summary>
+/// Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+/// for backward compatibility. There is no validation of this field and
+/// lifecycle hooks will fail at runtime when it is specified.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopTcpSocket
+{
+    /// <summary>Optional: Host name to connect to, defaults to the pod IP.</summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>
+    /// Number or name of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+/// <summary>
+/// PreStop is called immediately before a container is terminated due to an
+/// API request or management event such as liveness/startup probe failure,
+/// preemption, resource contention, etc. The handler is not called if the
+/// container crashes or exits. The Pod&apos;s termination grace period countdown begins before the
+/// PreStop hook is executed. Regardless of the outcome of the handler, the
+/// container will eventually terminate within the Pod&apos;s termination grace
+/// period (unless delayed by finalizers). Other management of the container blocks until the hook completes
+/// or until the termination grace period is reached.
+/// More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStop
+{
+    /// <summary>Exec specifies a command to execute in the container.</summary>
+    [JsonPropertyName("exec")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopExec? Exec { get; set; }
+
+    /// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+    [JsonPropertyName("httpGet")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopHttpGet? HttpGet { get; set; }
+
+    /// <summary>Sleep represents a duration that the container should sleep.</summary>
+    [JsonPropertyName("sleep")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopSleep? Sleep { get; set; }
+
+    /// <summary>
+    /// Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+    /// for backward compatibility. There is no validation of this field and
+    /// lifecycle hooks will fail at runtime when it is specified.
+    /// </summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStopTcpSocket? TcpSocket { get; set; }
+}
+
+/// <summary>
+/// Actions that the management system should take in response to container lifecycle events.
+/// Cannot be updated.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecycle
+{
+    /// <summary>
+    /// PostStart is called immediately after a container is created. If the handler fails,
+    /// the container is terminated and restarted according to its restart policy.
+    /// Other management of the container blocks until the hook completes.
+    /// More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+    /// </summary>
+    [JsonPropertyName("postStart")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePostStart? PostStart { get; set; }
+
+    /// <summary>
+    /// PreStop is called immediately before a container is terminated due to an
+    /// API request or management event such as liveness/startup probe failure,
+    /// preemption, resource contention, etc. The handler is not called if the
+    /// container crashes or exits. The Pod&apos;s termination grace period countdown begins before the
+    /// PreStop hook is executed. Regardless of the outcome of the handler, the
+    /// container will eventually terminate within the Pod&apos;s termination grace
+    /// period (unless delayed by finalizers). Other management of the container blocks until the hook completes
+    /// or until the termination grace period is reached.
+    /// More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+    /// </summary>
+    [JsonPropertyName("preStop")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecyclePreStop? PreStop { get; set; }
+
+    /// <summary>
+    /// StopSignal defines which signal will be sent to a container when it is being stopped.
+    /// If not specified, the default is defined by the container runtime in use.
+    /// StopSignal can only be set for Pods with a non-empty .spec.os.name
+    /// </summary>
+    [JsonPropertyName("stopSignal")]
+    public string? StopSignal { get; set; }
+}
+
+/// <summary>Exec specifies a command to execute in the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeExec
+{
+    /// <summary>
+    /// Command is the command line to execute inside the container, the working directory for the
+    /// command  is root (&apos;/&apos;) in the container&apos;s filesystem. The command is simply exec&apos;d, it is
+    /// not run inside a shell, so traditional shell instructions (&apos;|&apos;, etc) won&apos;t work. To use
+    /// a shell, you need to explicitly call out to that shell.
+    /// Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+/// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeGrpc
+{
+    /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    /// <summary>
+    /// Service is the name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// 
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>HTTPHeader describes a custom header to be used in HTTP probes</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeHttpGetHttpHeaders
+{
+    /// <summary>
+    /// The header field name.
+    /// This will be canonicalized upon output, so case-variant names will be understood as the same header.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeHttpGet
+{
+    /// <summary>
+    /// Host name to connect to, defaults to the pod IP. You probably want to set
+    /// &quot;Host&quot; in httpHeaders instead.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>Custom headers to set in the request. HTTP allows repeated headers.</summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path to access on the HTTP server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Name or number of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Scheme to use for connecting to the host.
+    /// Defaults to HTTP.
+    /// </summary>
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+/// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeTcpSocket
+{
+    /// <summary>Optional: Host name to connect to, defaults to the pod IP.</summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>
+    /// Number or name of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container liveness.
+/// Container will be restarted if the probe fails.
+/// Cannot be updated.
+/// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbe
+{
+    /// <summary>Exec specifies a command to execute in the container.</summary>
+    [JsonPropertyName("exec")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeExec? Exec { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after having succeeded.
+    /// Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+    [JsonPropertyName("grpc")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+    [JsonPropertyName("httpGet")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// Number of seconds after the container has started before liveness probes are initiated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    /// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>
+    /// Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+    /// The grace period is the duration in seconds after the processes running in the pod are sent
+    /// a termination signal and the time when the processes are forcibly halted with a kill signal.
+    /// Set this value longer than the expected cleanup time for your process.
+    /// If this value is nil, the pod&apos;s terminationGracePeriodSeconds will be used. Otherwise, this
+    /// value overrides the value provided by the pod spec.
+    /// Value must be non-negative integer. The value zero indicates stop immediately via
+    /// the kill signal (no opportunity to shut down).
+    /// This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+    /// Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
+    /// </summary>
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>ContainerPort represents a network port in a single container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerPorts
+{
+    /// <summary>
+    /// Number of port to expose on the pod&apos;s IP address.
+    /// This must be a valid port number, 0 &lt; x &lt; 65536.
+    /// </summary>
+    [JsonPropertyName("containerPort")]
+    public required int ContainerPort { get; set; }
+
+    /// <summary>What host IP to bind the external port to.</summary>
+    [JsonPropertyName("hostIP")]
+    public string? HostIP { get; set; }
+
+    /// <summary>
+    /// Number of port to expose on the host.
+    /// If specified, this must be a valid port number, 0 &lt; x &lt; 65536.
+    /// If HostNetwork is specified, this must match ContainerPort.
+    /// Most containers do not need this.
+    /// </summary>
+    [JsonPropertyName("hostPort")]
+    public int? HostPort { get; set; }
+
+    /// <summary>
+    /// If specified, this must be an IANA_SVC_NAME and unique within the pod. Each
+    /// named port in a pod must have a unique name. Name for the port that can be
+    /// referred to by services.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Protocol for port. Must be UDP, TCP, or SCTP.
+    /// Defaults to &quot;TCP&quot;.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+}
+
+/// <summary>Exec specifies a command to execute in the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeExec
+{
+    /// <summary>
+    /// Command is the command line to execute inside the container, the working directory for the
+    /// command  is root (&apos;/&apos;) in the container&apos;s filesystem. The command is simply exec&apos;d, it is
+    /// not run inside a shell, so traditional shell instructions (&apos;|&apos;, etc) won&apos;t work. To use
+    /// a shell, you need to explicitly call out to that shell.
+    /// Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+/// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeGrpc
+{
+    /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    /// <summary>
+    /// Service is the name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// 
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>HTTPHeader describes a custom header to be used in HTTP probes</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeHttpGetHttpHeaders
+{
+    /// <summary>
+    /// The header field name.
+    /// This will be canonicalized upon output, so case-variant names will be understood as the same header.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeHttpGet
+{
+    /// <summary>
+    /// Host name to connect to, defaults to the pod IP. You probably want to set
+    /// &quot;Host&quot; in httpHeaders instead.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>Custom headers to set in the request. HTTP allows repeated headers.</summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path to access on the HTTP server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Name or number of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Scheme to use for connecting to the host.
+    /// Defaults to HTTP.
+    /// </summary>
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+/// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeTcpSocket
+{
+    /// <summary>Optional: Host name to connect to, defaults to the pod IP.</summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>
+    /// Number or name of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+/// <summary>
+/// Periodic probe of container service readiness.
+/// Container will be removed from service endpoints if the probe fails.
+/// Cannot be updated.
+/// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbe
+{
+    /// <summary>Exec specifies a command to execute in the container.</summary>
+    [JsonPropertyName("exec")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeExec? Exec { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after having succeeded.
+    /// Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+    [JsonPropertyName("grpc")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeGrpc? Grpc { get; set; }
+
+    /// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+    [JsonPropertyName("httpGet")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// Number of seconds after the container has started before liveness probes are initiated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    /// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>
+    /// Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+    /// The grace period is the duration in seconds after the processes running in the pod are sent
+    /// a termination signal and the time when the processes are forcibly halted with a kill signal.
+    /// Set this value longer than the expected cleanup time for your process.
+    /// If this value is nil, the pod&apos;s terminationGracePeriodSeconds will be used. Otherwise, this
+    /// value overrides the value provided by the pod spec.
+    /// Value must be non-negative integer. The value zero indicates stop immediately via
+    /// the kill signal (no opportunity to shut down).
+    /// This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+    /// Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
+    /// </summary>
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>ContainerResizePolicy represents resource resize policy for the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResizePolicy
+{
+    /// <summary>
+    /// Name of the resource to which this resource resize policy applies.
+    /// Supported values: cpu, memory.
+    /// </summary>
+    [JsonPropertyName("resourceName")]
+    public required string ResourceName { get; set; }
+
+    /// <summary>
+    /// Restart policy to apply when specified resource is resized.
+    /// If not specified, it defaults to NotRequired.
+    /// </summary>
+    [JsonPropertyName("restartPolicy")]
+    public required string RestartPolicy { get; set; }
+}
+
+/// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResourcesClaims
+{
+    /// <summary>
+    /// Name must match the name of one entry in pod.spec.resourceClaims of
+    /// the Pod where this field is used. It makes that resource available
+    /// inside a container.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Request is the name chosen for a request in the referenced claim.
+    /// If empty, everything from the claim is made available, otherwise
+    /// only the result of this request.
+    /// </summary>
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+/// <summary>
+/// Compute Resources required by this container.
+/// Cannot be updated.
+/// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResources
+{
+    /// <summary>
+    /// Claims lists the names of resources, defined in spec.resourceClaims,
+    /// that are used by this container.
+    /// 
+    /// This field depends on the
+    /// DynamicResourceAllocation feature gate.
+    /// 
+    /// This field is immutable. It can only be set for containers.
+    /// </summary>
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResourcesClaims>? Claims { get; set; }
+
+    /// <summary>
+    /// Limits describes the maximum amount of compute resources allowed.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    /// <summary>
+    /// Requests describes the minimum amount of compute resources required.
+    /// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+    /// otherwise to an implementation-defined value. Requests cannot exceed Limits.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+/// <summary>
+/// appArmorProfile is the AppArmor options to use by this container. If set, this profile
+/// overrides the pod&apos;s appArmorProfile.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextAppArmorProfile
+{
+    /// <summary>
+    /// localhostProfile indicates a profile loaded on the node that should be used.
+    /// The profile must be preconfigured on the node to work.
+    /// Must match the loaded name of the profile.
+    /// Must be set if and only if type is &quot;Localhost&quot;.
+    /// </summary>
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    /// <summary>
+    /// type indicates which kind of AppArmor profile will be applied.
+    /// Valid options are:
+    ///   Localhost - a profile pre-loaded on the node.
+    ///   RuntimeDefault - the container runtime&apos;s default profile.
+    ///   Unconfined - no AppArmor enforcement.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>
+/// The capabilities to add/drop when running containers.
+/// Defaults to the default set of capabilities granted by the container runtime.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextCapabilities
+{
+    /// <summary>Added capabilities</summary>
+    [JsonPropertyName("add")]
+    public IList<string>? Add { get; set; }
+
+    /// <summary>Removed capabilities</summary>
+    [JsonPropertyName("drop")]
+    public IList<string>? Drop { get; set; }
+}
+
+/// <summary>
+/// The SELinux context to be applied to the container.
+/// If unspecified, the container runtime will allocate a random SELinux context for each
+/// container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+/// PodSecurityContext, the value specified in SecurityContext takes precedence.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextSeLinuxOptions
+{
+    /// <summary>Level is SELinux level label that applies to the container.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Role is a SELinux role label that applies to the container.</summary>
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    /// <summary>Type is a SELinux type label that applies to the container.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>User is a SELinux user label that applies to the container.</summary>
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+/// <summary>
+/// The seccomp options to use by this container. If seccomp options are
+/// provided at both the pod &amp; container level, the container options
+/// override the pod options.
+/// Note that this field cannot be set when spec.os.name is windows.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextSeccompProfile
+{
+    /// <summary>
+    /// localhostProfile indicates a profile defined in a file on the node should be used.
+    /// The profile must be preconfigured on the node to work.
+    /// Must be a descending path, relative to the kubelet&apos;s configured seccomp profile location.
+    /// Must be set if type is &quot;Localhost&quot;. Must NOT be set for any other type.
+    /// </summary>
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    /// <summary>
+    /// type indicates which kind of seccomp profile will be applied.
+    /// Valid options are:
+    /// 
+    /// Localhost - a profile defined in a file on the node should be used.
+    /// RuntimeDefault - the container runtime default profile should be used.
+    /// Unconfined - no profile should be applied.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+/// <summary>
+/// The Windows specific settings applied to all containers.
+/// If unspecified, the options from the PodSecurityContext will be used.
+/// If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+/// Note that this field cannot be set when spec.os.name is linux.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextWindowsOptions
+{
+    /// <summary>
+    /// GMSACredentialSpec is where the GMSA admission webhook
+    /// (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the
+    /// GMSA credential spec named by the GMSACredentialSpecName field.
+    /// </summary>
+    [JsonPropertyName("gmsaCredentialSpec")]
+    public string? GmsaCredentialSpec { get; set; }
+
+    /// <summary>GMSACredentialSpecName is the name of the GMSA credential spec to use.</summary>
+    [JsonPropertyName("gmsaCredentialSpecName")]
+    public string? GmsaCredentialSpecName { get; set; }
+
+    /// <summary>
+    /// HostProcess determines if a container should be run as a &apos;Host Process&apos; container.
+    /// All of a Pod&apos;s containers must have the same effective HostProcess value
+    /// (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).
+    /// In addition, if HostProcess is true then HostNetwork must also be set to true.
+    /// </summary>
+    [JsonPropertyName("hostProcess")]
+    public bool? HostProcess { get; set; }
+
+    /// <summary>
+    /// The UserName in Windows to run the entrypoint of the container process.
+    /// Defaults to the user specified in image metadata if unspecified.
+    /// May also be set in PodSecurityContext. If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// </summary>
+    [JsonPropertyName("runAsUserName")]
+    public string? RunAsUserName { get; set; }
+}
+
+/// <summary>
+/// SecurityContext defines the security options the container should be run with.
+/// If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext.
+/// More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContext
+{
+    /// <summary>
+    /// AllowPrivilegeEscalation controls whether a process can gain more
+    /// privileges than its parent process. This bool directly controls if
+    /// the no_new_privs flag will be set on the container process.
+    /// AllowPrivilegeEscalation is true always when the container is:
+    /// 1) run as Privileged
+    /// 2) has CAP_SYS_ADMIN
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("allowPrivilegeEscalation")]
+    public bool? AllowPrivilegeEscalation { get; set; }
+
+    /// <summary>
+    /// appArmorProfile is the AppArmor options to use by this container. If set, this profile
+    /// overrides the pod&apos;s appArmorProfile.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("appArmorProfile")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextAppArmorProfile? AppArmorProfile { get; set; }
+
+    /// <summary>
+    /// The capabilities to add/drop when running containers.
+    /// Defaults to the default set of capabilities granted by the container runtime.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("capabilities")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextCapabilities? Capabilities { get; set; }
+
+    /// <summary>
+    /// Run container in privileged mode.
+    /// Processes in privileged containers are essentially equivalent to root on the host.
+    /// Defaults to false.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("privileged")]
+    public bool? Privileged { get; set; }
+
+    /// <summary>
+    /// procMount denotes the type of proc mount to use for the containers.
+    /// The default value is Default which uses the container runtime defaults for
+    /// readonly paths and masked paths.
+    /// This requires the ProcMountType feature flag to be enabled.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("procMount")]
+    public string? ProcMount { get; set; }
+
+    /// <summary>
+    /// Whether this container has a read-only root filesystem.
+    /// Default is false.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("readOnlyRootFilesystem")]
+    public bool? ReadOnlyRootFilesystem { get; set; }
+
+    /// <summary>
+    /// The GID to run the entrypoint of the container process.
+    /// Uses runtime default if unset.
+    /// May also be set in PodSecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    /// <summary>
+    /// Indicates that the container must run as a non-root user.
+    /// If true, the Kubelet will validate the image at runtime to ensure that it
+    /// does not run as UID 0 (root) and fail to start the container if it does.
+    /// If unset or false, no such validation will be performed.
+    /// May also be set in PodSecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// </summary>
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    /// <summary>
+    /// The UID to run the entrypoint of the container process.
+    /// Defaults to user specified in image metadata if unspecified.
+    /// May also be set in PodSecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    /// <summary>
+    /// The SELinux context to be applied to the container.
+    /// If unspecified, the container runtime will allocate a random SELinux context for each
+    /// container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+    /// PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seLinuxOptions")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    /// <summary>
+    /// The seccomp options to use by this container. If seccomp options are
+    /// provided at both the pod &amp; container level, the container options
+    /// override the pod options.
+    /// Note that this field cannot be set when spec.os.name is windows.
+    /// </summary>
+    [JsonPropertyName("seccompProfile")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    /// <summary>
+    /// The Windows specific settings applied to all containers.
+    /// If unspecified, the options from the PodSecurityContext will be used.
+    /// If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+    /// Note that this field cannot be set when spec.os.name is linux.
+    /// </summary>
+    [JsonPropertyName("windowsOptions")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContextWindowsOptions? WindowsOptions { get; set; }
+}
+
+/// <summary>Exec specifies a command to execute in the container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeExec
+{
+    /// <summary>
+    /// Command is the command line to execute inside the container, the working directory for the
+    /// command  is root (&apos;/&apos;) in the container&apos;s filesystem. The command is simply exec&apos;d, it is
+    /// not run inside a shell, so traditional shell instructions (&apos;|&apos;, etc) won&apos;t work. To use
+    /// a shell, you need to explicitly call out to that shell.
+    /// Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+/// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeGrpc
+{
+    /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    /// <summary>
+    /// Service is the name of the service to place in the gRPC HealthCheckRequest
+    /// (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+    /// 
+    /// If this is not specified, the default behavior is defined by gRPC.
+    /// </summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>HTTPHeader describes a custom header to be used in HTTP probes</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeHttpGetHttpHeaders
+{
+    /// <summary>
+    /// The header field name.
+    /// This will be canonicalized upon output, so case-variant names will be understood as the same header.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+/// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeHttpGet
+{
+    /// <summary>
+    /// Host name to connect to, defaults to the pod IP. You probably want to set
+    /// &quot;Host&quot; in httpHeaders instead.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>Custom headers to set in the request. HTTP allows repeated headers.</summary>
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    /// <summary>Path to access on the HTTP server.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>
+    /// Name or number of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Scheme to use for connecting to the host.
+    /// Defaults to HTTP.
+    /// </summary>
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+/// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeTcpSocket
+{
+    /// <summary>Optional: Host name to connect to, defaults to the pod IP.</summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    /// <summary>
+    /// Number or name of the port to access on the container.
+    /// Number must be in the range 1 to 65535.
+    /// Name must be an IANA_SVC_NAME.
+    /// </summary>
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+/// <summary>
+/// StartupProbe indicates that the Pod has successfully initialized.
+/// If specified, no other probes are executed until this completes successfully.
+/// If this probe fails, the Pod will be restarted, just as if the livenessProbe failed.
+/// This can be used to provide different probe parameters at the beginning of a Pod&apos;s lifecycle,
+/// when it might take a long time to load data or warm a cache, than during steady-state operation.
+/// This cannot be updated.
+/// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbe
+{
+    /// <summary>Exec specifies a command to execute in the container.</summary>
+    [JsonPropertyName("exec")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeExec? Exec { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after having succeeded.
+    /// Defaults to 3. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>GRPC specifies a GRPC HealthCheckRequest.</summary>
+    [JsonPropertyName("grpc")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeGrpc? Grpc { get; set; }
+
+    /// <summary>HTTPGet specifies an HTTP GET request to perform.</summary>
+    [JsonPropertyName("httpGet")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeHttpGet? HttpGet { get; set; }
+
+    /// <summary>
+    /// Number of seconds after the container has started before liveness probes are initiated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>
+    /// How often (in seconds) to perform the probe.
+    /// Default to 10 seconds. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed.
+    /// Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+    /// </summary>
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    /// <summary>TCPSocket specifies a connection to a TCP port.</summary>
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    /// <summary>
+    /// Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+    /// The grace period is the duration in seconds after the processes running in the pod are sent
+    /// a termination signal and the time when the processes are forcibly halted with a kill signal.
+    /// Set this value longer than the expected cleanup time for your process.
+    /// If this value is nil, the pod&apos;s terminationGracePeriodSeconds will be used. Otherwise, this
+    /// value overrides the value provided by the pod spec.
+    /// Value must be non-negative integer. The value zero indicates stop immediately via
+    /// the kill signal (no opportunity to shut down).
+    /// This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+    /// Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.
+    /// </summary>
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    /// <summary>
+    /// Number of seconds after which the probe times out.
+    /// Defaults to 1 second. Minimum value is 1.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>volumeDevice describes a mapping of a raw block device within a container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerVolumeDevices
+{
+    /// <summary>devicePath is the path inside of the container that the device will be mapped to.</summary>
+    [JsonPropertyName("devicePath")]
+    public required string DevicePath { get; set; }
+
+    /// <summary>name must match the name of a persistentVolumeClaim in the pod</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>VolumeMount describes a mounting of a Volume within a container.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerVolumeMounts
+{
+    /// <summary>
+    /// Path within the container at which the volume should be mounted.  Must
+    /// not contain &apos;:&apos;.
+    /// </summary>
+    [JsonPropertyName("mountPath")]
+    public required string MountPath { get; set; }
+
+    /// <summary>
+    /// mountPropagation determines how mounts are propagated from the host
+    /// to container and the other way around.
+    /// When not set, MountPropagationNone is used.
+    /// This field is beta in 1.10.
+    /// When RecursiveReadOnly is set to IfPossible or to Enabled, MountPropagation must be None or unspecified
+    /// (which defaults to None).
+    /// </summary>
+    [JsonPropertyName("mountPropagation")]
+    public string? MountPropagation { get; set; }
+
+    /// <summary>This must match the Name of a Volume.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Mounted read-only if true, read-write otherwise (false or unspecified).
+    /// Defaults to false.
+    /// </summary>
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    /// <summary>
+    /// RecursiveReadOnly specifies whether read-only mounts should be handled
+    /// recursively.
+    /// 
+    /// If ReadOnly is false, this field has no meaning and must be unspecified.
+    /// 
+    /// If ReadOnly is true, and this field is set to Disabled, the mount is not made
+    /// recursively read-only.  If this field is set to IfPossible, the mount is made
+    /// recursively read-only, if it is supported by the container runtime.  If this
+    /// field is set to Enabled, the mount is made recursively read-only if it is
+    /// supported by the container runtime, otherwise the pod will not be started and
+    /// an error will be generated to indicate the reason.
+    /// 
+    /// If this field is set to IfPossible or Enabled, MountPropagation must be set to
+    /// None (or be unspecified, which defaults to None).
+    /// 
+    /// If this field is not specified, it is treated as an equivalent of Disabled.
+    /// </summary>
+    [JsonPropertyName("recursiveReadOnly")]
+    public string? RecursiveReadOnly { get; set; }
+
+    /// <summary>
+    /// Path within the volume from which the container&apos;s volume should be mounted.
+    /// Defaults to &quot; &quot; (volume&apos;s root).
+    /// </summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+
+    /// <summary>
+    /// Expanded path within the volume from which the container&apos;s volume should be mounted.
+    /// Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container&apos;s environment.
+    /// Defaults to &quot; &quot; (volume&apos;s root).
+    /// SubPathExpr and SubPath are mutually exclusive.
+    /// </summary>
+    [JsonPropertyName("subPathExpr")]
+    public string? SubPathExpr { get; set; }
+}
+
+/// <summary>Container defines the Kubernetes container specification for the sidecar.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainer
+{
+    /// <summary>
+    /// Arguments to the entrypoint.
+    /// The container image&apos;s CMD is used if this is not provided.
+    /// Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable
+    /// cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced
+    /// to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. &quot;$$(VAR_NAME)&quot; will
+    /// produce the string literal &quot;$(VAR_NAME)&quot;. Escaped references will never be expanded, regardless
+    /// of whether the variable exists or not. Cannot be updated.
+    /// More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+    /// </summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>
+    /// Entrypoint array. Not executed within a shell.
+    /// The container image&apos;s ENTRYPOINT is used if this is not provided.
+    /// Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable
+    /// cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced
+    /// to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. &quot;$$(VAR_NAME)&quot; will
+    /// produce the string literal &quot;$(VAR_NAME)&quot;. Escaped references will never be expanded, regardless
+    /// of whether the variable exists or not. Cannot be updated.
+    /// More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+    /// </summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the container.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnv>? Env { get; set; }
+
+    /// <summary>
+    /// List of sources to populate environment variables in the container.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
+    /// sources, the value associated with the last source will take precedence.
+    /// Values defined by an Env with a duplicate key will take precedence.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("envFrom")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerEnvFrom>? EnvFrom { get; set; }
+
+    /// <summary>
+    /// Container image name.
+    /// More info: https://kubernetes.io/docs/concepts/containers/images
+    /// This field is optional to allow higher level config management to default or override
+    /// container images in workload controllers like Deployments and StatefulSets.
+    /// </summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>
+    /// Image pull policy.
+    /// One of Always, Never, IfNotPresent.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
+    /// Cannot be updated.
+    /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
+    /// </summary>
+    [JsonPropertyName("imagePullPolicy")]
+    public string? ImagePullPolicy { get; set; }
+
+    /// <summary>
+    /// Actions that the management system should take in response to container lifecycle events.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("lifecycle")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLifecycle? Lifecycle { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container liveness.
+    /// Container will be restarted if the probe fails.
+    /// Cannot be updated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
+    /// Name of the container specified as a DNS_LABEL.
+    /// Each container in a pod must have a unique name (DNS_LABEL).
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// List of ports to expose from the container. Not specifying a port here
+    /// DOES NOT prevent that port from being exposed. Any port which is
+    /// listening on the default &quot;0.0.0.0&quot; address inside a container will be
+    /// accessible from the network.
+    /// Modifying this array with strategic merge patch may corrupt the data.
+    /// For more information See https://github.com/kubernetes/kubernetes/issues/108255.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("ports")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// Periodic probe of container service readiness.
+    /// Container will be removed from service endpoints if the probe fails.
+    /// Cannot be updated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerReadinessProbe? ReadinessProbe { get; set; }
+
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
+    [JsonPropertyName("resizePolicy")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResizePolicy>? ResizePolicy { get; set; }
+
+    /// <summary>
+    /// Compute Resources required by this container.
+    /// Cannot be updated.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("resources")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerResources? Resources { get; set; }
+
+    /// <summary>
+    /// RestartPolicy defines the restart behavior of individual containers in a pod.
+    /// This overrides the pod-level restart policy. When this field is not specified,
+    /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
+    /// this init container will be continually restarted on
+    /// exit until all regular containers have terminated. Once all regular
+    /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
+    /// will be shut down. This lifecycle differs from normal init containers and
+    /// is often referred to as a &quot;sidecar&quot; container. Although this init
+    /// container still starts in the init container sequence, it does not wait
+    /// for the container to complete before proceeding to the next init
+    /// container. Instead, the next init container starts immediately after this
+    /// init container is started, or after any startupProbe has successfully
+    /// completed.
+    /// </summary>
+    [JsonPropertyName("restartPolicy")]
+    public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerRestartPolicyRules>? RestartPolicyRules { get; set; }
+
+    /// <summary>
+    /// SecurityContext defines the security options the container should be run with.
+    /// If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext.
+    /// More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+    /// </summary>
+    [JsonPropertyName("securityContext")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerSecurityContext? SecurityContext { get; set; }
+
+    /// <summary>
+    /// StartupProbe indicates that the Pod has successfully initialized.
+    /// If specified, no other probes are executed until this completes successfully.
+    /// If this probe fails, the Pod will be restarted, just as if the livenessProbe failed.
+    /// This can be used to provide different probe parameters at the beginning of a Pod&apos;s lifecycle,
+    /// when it might take a long time to load data or warm a cache, than during steady-state operation.
+    /// This cannot be updated.
+    /// More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerStartupProbe? StartupProbe { get; set; }
+
+    /// <summary>
+    /// Whether this container should allocate a buffer for stdin in the container runtime. If this
+    /// is not set, reads from stdin in the container will always result in EOF.
+    /// Default is false.
+    /// </summary>
+    [JsonPropertyName("stdin")]
+    public bool? Stdin { get; set; }
+
+    /// <summary>
+    /// Whether the container runtime should close the stdin channel after it has been opened by
+    /// a single attach. When stdin is true the stdin stream will remain open across multiple attach
+    /// sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the
+    /// first client attaches to stdin, and then remains open and accepts data until the client disconnects,
+    /// at which time stdin is closed and remains closed until the container is restarted. If this
+    /// flag is false, a container processes that reads from stdin will never receive an EOF.
+    /// Default is false
+    /// </summary>
+    [JsonPropertyName("stdinOnce")]
+    public bool? StdinOnce { get; set; }
+
+    /// <summary>
+    /// Optional: Path at which the file to which the container&apos;s termination message
+    /// will be written is mounted into the container&apos;s filesystem.
+    /// Message written is intended to be brief final status, such as an assertion failure message.
+    /// Will be truncated by the node if greater than 4096 bytes. The total message length across
+    /// all containers will be limited to 12kb.
+    /// Defaults to /dev/termination-log.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("terminationMessagePath")]
+    public string? TerminationMessagePath { get; set; }
+
+    /// <summary>
+    /// Indicate how the termination message should be populated. File will use the contents of
+    /// terminationMessagePath to populate the container status message on both success and failure.
+    /// FallbackToLogsOnError will use the last chunk of container log output if the termination
+    /// message file is empty and the container exited with an error.
+    /// The log output is limited to 2048 bytes or 80 lines, whichever is smaller.
+    /// Defaults to File.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("terminationMessagePolicy")]
+    public string? TerminationMessagePolicy { get; set; }
+
+    /// <summary>
+    /// Whether this container should allocate a TTY for itself, also requires &apos;stdin&apos; to be true.
+    /// Default is false.
+    /// </summary>
+    [JsonPropertyName("tty")]
+    public bool? Tty { get; set; }
+
+    /// <summary>volumeDevices is the list of block devices to be used by the container.</summary>
+    [JsonPropertyName("volumeDevices")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerVolumeDevices>? VolumeDevices { get; set; }
+
+    /// <summary>
+    /// Pod volumes to mount into the container&apos;s filesystem.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainerVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>
+    /// Container&apos;s working directory.
+    /// If not specified, the container runtime&apos;s default will be used, which
+    /// might be configured in the container image.
+    /// Cannot be updated.
+    /// </summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecar
+{
+    /// <summary>
+    /// AutomountServiceAccountToken enables mounting the service account token.
+    /// The service account must be named &lt;plugin-name&gt;-executor-plugin.
+    /// </summary>
+    [JsonPropertyName("automountServiceAccountToken")]
+    public bool? AutomountServiceAccountToken { get; set; }
+
+    /// <summary>Container defines the Kubernetes container specification for the sidecar.</summary>
+    [JsonPropertyName("container")]
+    public required V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecarContainer Container { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpec
+{
+    [JsonPropertyName("sidecar")]
+    public required V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpecSidecar Sidecar { get; set; }
+}
+
+/// <summary>ExecutorPlugin describes workflow-level executor plugin</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecExecutorPlugins
+{
+    [JsonPropertyName("metadata")]
+    public required V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsMetadata Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public required V1alpha1CronWorkflowSpecWorkflowSpecExecutorPluginsSpec Spec { get; set; }
 }
 
 /// <summary>
@@ -3325,7 +5296,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifacts
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -3431,6 +5402,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifacts
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -3733,6 +5713,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifacts
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -4405,6 +6398,116 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecPodMetadata
 
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecPodResourcesClaims
+{
+    /// <summary>
+    /// Name must match the name of one entry in pod.spec.resourceClaims of
+    /// the Pod where this field is used. It makes that resource available
+    /// inside a container.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Request is the name chosen for a request in the referenced claim.
+    /// If empty, everything from the claim is made available, otherwise
+    /// only the result of this request.
+    /// </summary>
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+/// <summary>
+/// PodResources defines pod-level resource requests and limits to apply to all workflow pods.
+/// Will be overridden if a template&apos;s podResources is set.
+/// Requires the PodLevelResources feature gate to be enabled on the cluster (beta since Kubernetes v1.34).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecPodResources
+{
+    /// <summary>
+    /// Claims lists the names of resources, defined in spec.resourceClaims,
+    /// that are used by this container.
+    /// 
+    /// This field depends on the
+    /// DynamicResourceAllocation feature gate.
+    /// 
+    /// This field is immutable. It can only be set for containers.
+    /// </summary>
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecPodResourcesClaims>? Claims { get; set; }
+
+    /// <summary>
+    /// Limits describes the maximum amount of compute resources allowed.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    /// <summary>
+    /// Requests describes the minimum amount of compute resources required.
+    /// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+    /// otherwise to an implementation-defined value. Requests cannot exceed Limits.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>
+/// PodResourceClaim references exactly one ResourceClaim, either directly
+/// or by naming a ResourceClaimTemplate which is then turned into a ResourceClaim
+/// for the pod.
+/// 
+/// It adds a name to it that uniquely identifies the ResourceClaim inside the Pod.
+/// Containers that need access to the ResourceClaim reference it with this name.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecResourceClaims
+{
+    /// <summary>
+    /// Name uniquely identifies this resource claim inside the pod.
+    /// This must be a DNS_LABEL.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// ResourceClaimName is the name of a ResourceClaim object in the same
+    /// namespace as this pod.
+    /// 
+    /// Exactly one of ResourceClaimName and ResourceClaimTemplateName must
+    /// be set.
+    /// </summary>
+    [JsonPropertyName("resourceClaimName")]
+    public string? ResourceClaimName { get; set; }
+
+    /// <summary>
+    /// ResourceClaimTemplateName is the name of a ResourceClaimTemplate
+    /// object in the same namespace as this pod.
+    /// 
+    /// The template will be used to create a new ResourceClaim, which will
+    /// be bound to this pod. When this pod is deleted, the ResourceClaim
+    /// will also be deleted. The pod name and resource name, along with a
+    /// generated component, will be used to form a unique name for the
+    /// ResourceClaim, which will be recorded in pod.status.resourceClaimStatuses.
+    /// 
+    /// This field is immutable and no changes will be made to the
+    /// corresponding ResourceClaim by the control plane after creating the
+    /// ResourceClaim.
+    /// 
+    /// Exactly one of ResourceClaimName and ResourceClaimTemplateName must
+    /// be set.
+    /// </summary>
+    [JsonPropertyName("resourceClaimTemplateName")]
+    public string? ResourceClaimTemplateName { get; set; }
 }
 
 /// <summary>
@@ -5806,6 +7909,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsArchive
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsArchiveLocationHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -6008,6 +8114,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsArchive
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsArchiveLocationS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -6110,6 +8219,23 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -6145,6 +8271,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -6617,6 +8746,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -6902,6 +9053,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
 
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerRestartPolicyRules>? RestartPolicyRules { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSecurityContext? SecurityContext { get; set; }
 
@@ -6960,6 +9114,23 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -6995,6 +9166,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -7467,6 +9641,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -7754,6 +9950,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContain
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsContainerSetContainersSecurityContext? SecurityContext { get; set; }
@@ -8349,6 +10548,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTask
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTasksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -8550,6 +10752,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTask
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTasksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -9274,6 +11479,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTask
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTasksHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -9475,6 +11683,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTask
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDagTasksHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -10311,6 +12522,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDataSou
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDataSourceArtifactPathsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -10512,6 +12726,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDataSou
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsDataSourceArtifactPathsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -10770,6 +12987,23 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -10805,6 +13039,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitCon
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -11277,6 +13514,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -11564,6 +13823,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitCon
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInitContainersSecurityContext? SecurityContext { get; set; }
@@ -12108,6 +14370,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInputsA
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInputsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -12309,6 +14574,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInputsA
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsInputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -13153,6 +15421,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsOutputs
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsOutputsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -13354,6 +15625,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsOutputs
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsOutputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -13559,6 +15833,31 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsOutputs
 
     [JsonPropertyName("result")]
     public string? Result { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsPodResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsPodResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsPodResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -14091,6 +16390,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourc
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourceManifestFromArtifactHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -14293,6 +16595,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourc
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourceManifestFromArtifactS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -14455,6 +16760,20 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourceClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("resourceClaimName")]
+    public string? ResourceClaimName { get; set; }
+
+    [JsonPropertyName("resourceClaimTemplateName")]
+    public string? ResourceClaimTemplateName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsRetryStrategyAffinityNodeAntiAffinity
 {
 }
@@ -14545,6 +16864,23 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -14580,6 +16916,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptE
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -15052,6 +17391,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -15337,6 +17698,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScript
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
 
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptRestartPolicyRules>? RestartPolicyRules { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsScriptSecurityContext? SecurityContext { get; set; }
 
@@ -15509,6 +17873,23 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsEnvValueFromResourceFieldRef
 {
     [JsonPropertyName("containerName")]
@@ -15544,6 +17925,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecar
 
     [JsonPropertyName("fieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsEnvValueFromFileKeyRef? FileKeyRef { get; set; }
 
     [JsonPropertyName("resourceFieldRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
@@ -16016,6 +18400,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -16303,6 +18709,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecar
 
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     [JsonPropertyName("securityContext")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsSidecarsSecurityContext? SecurityContext { get; set; }
@@ -16847,6 +19256,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsAr
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -17048,6 +19460,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsAr
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -17772,6 +20187,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsHo
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -17973,6 +20391,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsHo
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsStepsHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -19087,6 +21508,32 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumesProjectedSourcesPodCertificate
+{
+    [JsonPropertyName("certificateChainPath")]
+    public string? CertificateChainPath { get; set; }
+
+    [JsonPropertyName("credentialBundlePath")]
+    public string? CredentialBundlePath { get; set; }
+
+    [JsonPropertyName("keyPath")]
+    public string? KeyPath { get; set; }
+
+    [JsonPropertyName("keyType")]
+    public required string KeyType { get; set; }
+
+    [JsonPropertyName("maxExpirationSeconds")]
+    public int? MaxExpirationSeconds { get; set; }
+
+    [JsonPropertyName("signerName")]
+    public required string SignerName { get; set; }
+
+    [JsonPropertyName("userAnnotations")]
+    public IDictionary<string, string>? UserAnnotations { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumesProjectedSourcesSecretItems
 {
     [JsonPropertyName("key")]
@@ -19139,6 +21586,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumes
 
     [JsonPropertyName("downwardAPI")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumesProjectedSourcesDownwardAPI? DownwardAPI { get; set; }
+
+    [JsonPropertyName("podCertificate")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumesProjectedSourcesPodCertificate? PodCertificate { get; set; }
 
     [JsonPropertyName("secret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsVolumesProjectedSourcesSecret? Secret { get; set; }
@@ -19512,8 +21962,14 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaults
     [JsonPropertyName("parallelism")]
     public long? Parallelism { get; set; }
 
+    [JsonPropertyName("pendingTimeout")]
+    public string? PendingTimeout { get; set; }
+
     [JsonPropertyName("plugin")]
     public JsonNode? Plugin { get; set; }
+
+    [JsonPropertyName("podResources")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsPodResources? PodResources { get; set; }
 
     [JsonPropertyName("podSpecPatch")]
     public string? PodSpecPatch { get; set; }
@@ -19523,6 +21979,9 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaults
 
     [JsonPropertyName("resource")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResource? Resource { get; set; }
+
+    [JsonPropertyName("resourceClaims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsResourceClaims>? ResourceClaims { get; set; }
 
     [JsonPropertyName("retryStrategy")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplateDefaultsRetryStrategy? RetryStrategy { get; set; }
@@ -20552,8 +23011,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesAffinityPodAnt
     /// most preferred is the one with the greatest sum of weights, i.e.
     /// for each node that meets all of the scheduling requirements (resource
     /// request, requiredDuringScheduling anti-affinity expressions, etc.),
-    /// compute a sum by iterating through the elements of this field and adding
-    /// &quot;weight&quot; to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// compute a sum by iterating through the elements of this field and subtracting
+    /// &quot;weight&quot; from the sum if the node has pods which matches the corresponding podAffinityTerm; the
     /// node(s) with the highest sum are the most preferred.
     /// </summary>
     [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
@@ -21207,7 +23666,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocatio
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocationHttpAuthOauth2EndpointParams
@@ -21313,6 +23772,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocatio
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocationHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -21616,6 +24084,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocatio
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesArchiveLocationS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -21762,6 +24243,46 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvVa
 }
 
 /// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
 /// Selects a resource of the container: only resources limits and requests
 /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 /// </summary>
@@ -21823,6 +24344,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvVa
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvValueFromFieldRef? FieldRef { get; set; }
 
     /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
     /// Selects a resource of the container: only resources limits and requests
     /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     /// </summary>
@@ -21839,7 +24367,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvVa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnv
 {
-    /// <summary>Name of the environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -21911,7 +24442,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvFr
     [JsonPropertyName("configMapRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerEnvFromConfigMapRef? ConfigMapRef { get; set; }
 
-    /// <summary>Optional text to prepend to the name of each environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -22693,7 +25227,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerResou
     /// Claims lists the names of resources, defined in spec.resourceClaims,
     /// that are used by this container.
     /// 
-    /// This is an alpha field and requires enabling the
+    /// This field depends on the
     /// DynamicResourceAllocation feature gate.
     /// 
     /// This field is immutable. It can only be set for containers.
@@ -22716,6 +25250,48 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerResou
     /// </summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
 /// <summary>
@@ -23302,8 +25878,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainer
 
     /// <summary>
     /// List of sources to populate environment variables in the container.
-    /// The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    /// will be reported as an event when the container is starting. When a key exists in multiple
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
     /// sources, the value associated with the last source will take precedence.
     /// Values defined by an Env with a duplicate key will take precedence.
     /// Cannot be updated.
@@ -23323,7 +25899,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainer
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -23375,7 +25951,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainer
     [JsonPropertyName("readinessProbe")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerReadinessProbe? ReadinessProbe { get; set; }
 
-    /// <summary>Resources resize policy for the container.</summary>
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
     [JsonPropertyName("resizePolicy")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerResizePolicy>? ResizePolicy { get; set; }
 
@@ -23389,10 +25968,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainer
 
     /// <summary>
     /// RestartPolicy defines the restart behavior of individual containers in a pod.
-    /// This field may only be set for init containers, and the only allowed value is &quot;Always&quot;.
-    /// For non-init containers or when this field is not specified,
+    /// This overrides the pod-level restart policy. When this field is not specified,
     /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
-    /// Setting the RestartPolicy as &quot;Always&quot; for the init container will have the following effect:
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
     /// this init container will be continually restarted on
     /// exit until all regular containers have terminated. Once all regular
     /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
@@ -23406,6 +25985,22 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainer
     /// </summary>
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     /// <summary>
     /// SecurityContext defines the security options the container should be run with.
@@ -23541,6 +26136,46 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
 }
 
 /// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
 /// Selects a resource of the container: only resources limits and requests
 /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 /// </summary>
@@ -23602,6 +26237,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersEnvValueFromFieldRef? FieldRef { get; set; }
 
     /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
     /// Selects a resource of the container: only resources limits and requests
     /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     /// </summary>
@@ -23618,7 +26260,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersEnv
 {
-    /// <summary>Name of the environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -23690,7 +26335,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     [JsonPropertyName("configMapRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersEnvFromConfigMapRef? ConfigMapRef { get; set; }
 
-    /// <summary>Optional text to prepend to the name of each environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -24472,7 +27120,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     /// Claims lists the names of resources, defined in spec.resourceClaims,
     /// that are used by this container.
     /// 
-    /// This is an alpha field and requires enabling the
+    /// This field depends on the
     /// DynamicResourceAllocation feature gate.
     /// 
     /// This field is immutable. It can only be set for containers.
@@ -24495,6 +27143,48 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     /// </summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
 /// <summary>
@@ -25083,8 +27773,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
 
     /// <summary>
     /// List of sources to populate environment variables in the container.
-    /// The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    /// will be reported as an event when the container is starting. When a key exists in multiple
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
     /// sources, the value associated with the last source will take precedence.
     /// Values defined by an Env with a duplicate key will take precedence.
     /// Cannot be updated.
@@ -25104,7 +27794,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -25156,7 +27846,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     [JsonPropertyName("readinessProbe")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersReadinessProbe? ReadinessProbe { get; set; }
 
-    /// <summary>Resources resize policy for the container.</summary>
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
     [JsonPropertyName("resizePolicy")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersResizePolicy>? ResizePolicy { get; set; }
 
@@ -25170,10 +27863,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
 
     /// <summary>
     /// RestartPolicy defines the restart behavior of individual containers in a pod.
-    /// This field may only be set for init containers, and the only allowed value is &quot;Always&quot;.
-    /// For non-init containers or when this field is not specified,
+    /// This overrides the pod-level restart policy. When this field is not specified,
     /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
-    /// Setting the RestartPolicy as &quot;Always&quot; for the init container will have the following effect:
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
     /// this init container will be continually restarted on
     /// exit until all regular containers have terminated. Once all regular
     /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
@@ -25187,6 +27880,22 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetCo
     /// </summary>
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesContainerSetContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     /// <summary>
     /// SecurityContext defines the security options the container should be run with.
@@ -26091,7 +28800,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgume
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -26197,6 +28906,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgume
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -26499,6 +29217,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgume
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -27496,7 +30227,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksA
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -27602,6 +30333,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksA
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -27904,6 +30644,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksA
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasksHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -28321,7 +31074,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDagTasks
     /// OnExit is a template reference which is invoked at the end of the
     /// template, irrespective of the success, failure, or error of the
     /// primary template.
-    /// DEPRECATED: Use Hooks[exit].Template instead.
+    /// 
+    /// Deprecated: Use Hooks[exit].Template instead.
     /// </summary>
     [JsonPropertyName("onExit")]
     public string? OnExit { get; set; }
@@ -29083,7 +31837,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArti
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArtifactPathsHttpAuthOauth2EndpointParams
@@ -29189,6 +31943,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArti
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArtifactPathsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -29491,6 +32254,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArti
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesDataSourceArtifactPathsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -29842,6 +32618,46 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
 }
 
 /// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
 /// Selects a resource of the container: only resources limits and requests
 /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 /// </summary>
@@ -29903,6 +32719,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersEnvValueFromFieldRef? FieldRef { get; set; }
 
     /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
     /// Selects a resource of the container: only resources limits and requests
     /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     /// </summary>
@@ -29919,7 +32742,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersEnv
 {
-    /// <summary>Name of the environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -29991,7 +32817,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     [JsonPropertyName("configMapRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersEnvFromConfigMapRef? ConfigMapRef { get; set; }
 
-    /// <summary>Optional text to prepend to the name of each environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -30773,7 +33602,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     /// Claims lists the names of resources, defined in spec.resourceClaims,
     /// that are used by this container.
     /// 
-    /// This is an alpha field and requires enabling the
+    /// This field depends on the
     /// DynamicResourceAllocation feature gate.
     /// 
     /// This field is immutable. It can only be set for containers.
@@ -30796,6 +33625,48 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     /// </summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
 /// <summary>
@@ -31382,8 +34253,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
 
     /// <summary>
     /// List of sources to populate environment variables in the container.
-    /// The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    /// will be reported as an event when the container is starting. When a key exists in multiple
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
     /// sources, the value associated with the last source will take precedence.
     /// Values defined by an Env with a duplicate key will take precedence.
     /// Cannot be updated.
@@ -31403,7 +34274,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -31464,7 +34335,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     [JsonPropertyName("readinessProbe")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersReadinessProbe? ReadinessProbe { get; set; }
 
-    /// <summary>Resources resize policy for the container.</summary>
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
     [JsonPropertyName("resizePolicy")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersResizePolicy>? ResizePolicy { get; set; }
 
@@ -31478,10 +34352,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
 
     /// <summary>
     /// RestartPolicy defines the restart behavior of individual containers in a pod.
-    /// This field may only be set for init containers, and the only allowed value is &quot;Always&quot;.
-    /// For non-init containers or when this field is not specified,
+    /// This overrides the pod-level restart policy. When this field is not specified,
     /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
-    /// Setting the RestartPolicy as &quot;Always&quot; for the init container will have the following effect:
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
     /// this init container will be continually restarted on
     /// exit until all regular containers have terminated. Once all regular
     /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
@@ -31495,6 +34369,22 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainers
     /// </summary>
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInitContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     /// <summary>
     /// SecurityContext defines the security options the container should be run with.
@@ -32285,7 +35175,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifact
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifactsHttpAuthOauth2EndpointParams
@@ -32391,6 +35281,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifact
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -32693,6 +35592,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifact
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesInputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -33855,7 +36767,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifac
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifactsHttpAuthOauth2EndpointParams
@@ -33961,6 +36873,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifac
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -34264,6 +37185,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifac
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -34554,6 +37488,66 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesOutputs
     /// <summary>Result holds the result (stdout) of a script or container template, or the response body of an HTTP template</summary>
     [JsonPropertyName("result")]
     public string? Result { get; set; }
+}
+
+/// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesPodResourcesClaims
+{
+    /// <summary>
+    /// Name must match the name of one entry in pod.spec.resourceClaims of
+    /// the Pod where this field is used. It makes that resource available
+    /// inside a container.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Request is the name chosen for a request in the referenced claim.
+    /// If empty, everything from the claim is made available, otherwise
+    /// only the result of this request.
+    /// </summary>
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+/// <summary>
+/// PodResources defines pod-level resource requests and limits for this template&apos;s pod.
+/// Overrides the workflow-level podResources.
+/// Requires the PodLevelResources feature gate to be enabled on the cluster (beta since Kubernetes v1.34).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesPodResources
+{
+    /// <summary>
+    /// Claims lists the names of resources, defined in spec.resourceClaims,
+    /// that are used by this container.
+    /// 
+    /// This field depends on the
+    /// DynamicResourceAllocation feature gate.
+    /// 
+    /// This field is immutable. It can only be set for containers.
+    /// </summary>
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesPodResourcesClaims>? Claims { get; set; }
+
+    /// <summary>
+    /// Limits describes the maximum amount of compute resources allowed.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    /// <summary>
+    /// Requests describes the minimum amount of compute resources required.
+    /// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+    /// otherwise to an implementation-defined value. Requests cannot exceed Limits.
+    /// More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+    /// </summary>
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
 /// <summary>
@@ -35275,7 +38269,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManife
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManifestFromArtifactHttpAuthOauth2EndpointParams
@@ -35381,6 +38375,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManife
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManifestFromArtifactHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -35684,6 +38687,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManife
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceManifestFromArtifactS3AccessKeySecret? AccessKeySecret { get; set; }
 
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
+
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -35921,6 +38937,56 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResource
 }
 
 /// <summary>
+/// PodResourceClaim references exactly one ResourceClaim, either directly
+/// or by naming a ResourceClaimTemplate which is then turned into a ResourceClaim
+/// for the pod.
+/// 
+/// It adds a name to it that uniquely identifies the ResourceClaim inside the Pod.
+/// Containers that need access to the ResourceClaim reference it with this name.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceClaims
+{
+    /// <summary>
+    /// Name uniquely identifies this resource claim inside the pod.
+    /// This must be a DNS_LABEL.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// ResourceClaimName is the name of a ResourceClaim object in the same
+    /// namespace as this pod.
+    /// 
+    /// Exactly one of ResourceClaimName and ResourceClaimTemplateName must
+    /// be set.
+    /// </summary>
+    [JsonPropertyName("resourceClaimName")]
+    public string? ResourceClaimName { get; set; }
+
+    /// <summary>
+    /// ResourceClaimTemplateName is the name of a ResourceClaimTemplate
+    /// object in the same namespace as this pod.
+    /// 
+    /// The template will be used to create a new ResourceClaim, which will
+    /// be bound to this pod. When this pod is deleted, the ResourceClaim
+    /// will also be deleted. The pod name and resource name, along with a
+    /// generated component, will be used to form a unique name for the
+    /// ResourceClaim, which will be recorded in pod.status.resourceClaimStatuses.
+    /// 
+    /// This field is immutable and no changes will be made to the
+    /// corresponding ResourceClaim by the control plane after creating the
+    /// ResourceClaim.
+    /// 
+    /// Exactly one of ResourceClaimName and ResourceClaimTemplateName must
+    /// be set.
+    /// </summary>
+    [JsonPropertyName("resourceClaimTemplateName")]
+    public string? ResourceClaimTemplateName { get; set; }
+}
+
+/// <summary>
 /// RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAntiAffinity is allowed.
 /// In order to prevent running steps on the same host, it uses &quot;kubernetes.io/hostname&quot;.
 /// </summary>
@@ -36063,6 +39129,46 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValue
 }
 
 /// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
 /// Selects a resource of the container: only resources limits and requests
 /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 /// </summary>
@@ -36124,6 +39230,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValue
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValueFromFieldRef? FieldRef { get; set; }
 
     /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
     /// Selects a resource of the container: only resources limits and requests
     /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     /// </summary>
@@ -36140,7 +39253,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvValue
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnv
 {
-    /// <summary>Name of the environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -36212,7 +39328,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvFrom
     [JsonPropertyName("configMapRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptEnvFromConfigMapRef? ConfigMapRef { get; set; }
 
-    /// <summary>Optional text to prepend to the name of each environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -36994,7 +40113,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptResource
     /// Claims lists the names of resources, defined in spec.resourceClaims,
     /// that are used by this container.
     /// 
-    /// This is an alpha field and requires enabling the
+    /// This field depends on the
     /// DynamicResourceAllocation feature gate.
     /// 
     /// This field is immutable. It can only be set for containers.
@@ -37017,6 +40136,48 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptResource
     /// </summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
 /// <summary>
@@ -37603,8 +40764,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScript
 
     /// <summary>
     /// List of sources to populate environment variables in the container.
-    /// The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    /// will be reported as an event when the container is starting. When a key exists in multiple
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
     /// sources, the value associated with the last source will take precedence.
     /// Values defined by an Env with a duplicate key will take precedence.
     /// Cannot be updated.
@@ -37624,7 +40785,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScript
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -37676,7 +40837,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScript
     [JsonPropertyName("readinessProbe")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptReadinessProbe? ReadinessProbe { get; set; }
 
-    /// <summary>Resources resize policy for the container.</summary>
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
     [JsonPropertyName("resizePolicy")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptResizePolicy>? ResizePolicy { get; set; }
 
@@ -37690,10 +40854,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScript
 
     /// <summary>
     /// RestartPolicy defines the restart behavior of individual containers in a pod.
-    /// This field may only be set for init containers, and the only allowed value is &quot;Always&quot;.
-    /// For non-init containers or when this field is not specified,
+    /// This overrides the pod-level restart policy. When this field is not specified,
     /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
-    /// Setting the RestartPolicy as &quot;Always&quot; for the init container will have the following effect:
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
     /// this init container will be continually restarted on
     /// exit until all regular containers have terminated. Once all regular
     /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
@@ -37707,6 +40871,22 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScript
     /// </summary>
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesScriptRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     /// <summary>
     /// SecurityContext defines the security options the container should be run with.
@@ -38150,6 +41330,46 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvVal
 }
 
 /// <summary>
+/// FileKeyRef selects a key of the env file.
+/// Requires the EnvFiles feature gate to be enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvValueFromFileKeyRef
+{
+    /// <summary>
+    /// The key within the env file. An invalid key will prevent the pod from starting.
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Specify whether the file or its key must be defined. If the file or key
+    /// does not exist, then the env var is not published.
+    /// If optional is set to true and the specified key does not exist,
+    /// the environment variable will not be set in the Pod&apos;s containers.
+    /// 
+    /// If optional is set to false and the specified key does not exist,
+    /// an error will be returned during Pod creation.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
+    /// The path within the volume from which to select the file.
+    /// Must be relative and may not contain the &apos;..&apos; path or start with &apos;..&apos;.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    /// <summary>The name of the volume mount containing the env file.</summary>
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+/// <summary>
 /// Selects a resource of the container: only resources limits and requests
 /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 /// </summary>
@@ -38211,6 +41431,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvVal
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvValueFromFieldRef? FieldRef { get; set; }
 
     /// <summary>
+    /// FileKeyRef selects a key of the env file.
+    /// Requires the EnvFiles feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    /// <summary>
     /// Selects a resource of the container: only resources limits and requests
     /// (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
     /// </summary>
@@ -38227,7 +41454,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvVal
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnv
 {
-    /// <summary>Name of the environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Name of the environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -38299,7 +41529,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvFro
     [JsonPropertyName("configMapRef")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsEnvFromConfigMapRef? ConfigMapRef { get; set; }
 
-    /// <summary>Optional text to prepend to the name of each environment variable. Must be a C_IDENTIFIER.</summary>
+    /// <summary>
+    /// Optional text to prepend to the name of each environment variable.
+    /// May consist of any printable ASCII characters except &apos;=&apos;.
+    /// </summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -39081,7 +42314,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsResour
     /// Claims lists the names of resources, defined in spec.resourceClaims,
     /// that are used by this container.
     /// 
-    /// This is an alpha field and requires enabling the
+    /// This field depends on the
     /// DynamicResourceAllocation feature gate.
     /// 
     /// This field is immutable. It can only be set for containers.
@@ -39104,6 +42337,48 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsResour
     /// </summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+/// <summary>Represents the exit codes to check on container exits.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsRestartPolicyRulesExitCodes
+{
+    /// <summary>
+    /// Represents the relationship between the container exit code(s) and the
+    /// specified values. Possible values are:
+    /// - In: the requirement is satisfied if the container exit code is in the
+    ///   set of specified values.
+    /// - NotIn: the requirement is satisfied if the container exit code is
+    ///   not in the set of specified values.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// Specifies the set of values to check for container exit codes.
+    /// At most 255 elements are allowed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+/// <summary>ContainerRestartRule describes how a container exit is handled.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsRestartPolicyRules
+{
+    /// <summary>
+    /// Specifies the action taken on a container exit if the requirements
+    /// are satisfied. The only possible value is &quot;Restart&quot; to restart the
+    /// container.
+    /// </summary>
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    /// <summary>Represents the exit codes to check on container exits.</summary>
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsRestartPolicyRulesExitCodes? ExitCodes { get; set; }
 }
 
 /// <summary>
@@ -39690,8 +42965,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecars
 
     /// <summary>
     /// List of sources to populate environment variables in the container.
-    /// The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    /// will be reported as an event when the container is starting. When a key exists in multiple
+    /// The keys defined within a source may consist of any printable ASCII characters except &apos;=&apos;.
+    /// When a key exists in multiple
     /// sources, the value associated with the last source will take precedence.
     /// Values defined by an Env with a duplicate key will take precedence.
     /// Cannot be updated.
@@ -39711,7 +42986,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecars
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -39772,7 +43047,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecars
     [JsonPropertyName("readinessProbe")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsReadinessProbe? ReadinessProbe { get; set; }
 
-    /// <summary>Resources resize policy for the container.</summary>
+    /// <summary>
+    /// Resources resize policy for the container.
+    /// This field cannot be set on ephemeral containers.
+    /// </summary>
     [JsonPropertyName("resizePolicy")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsResizePolicy>? ResizePolicy { get; set; }
 
@@ -39786,10 +43064,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecars
 
     /// <summary>
     /// RestartPolicy defines the restart behavior of individual containers in a pod.
-    /// This field may only be set for init containers, and the only allowed value is &quot;Always&quot;.
-    /// For non-init containers or when this field is not specified,
+    /// This overrides the pod-level restart policy. When this field is not specified,
     /// the restart behavior is defined by the Pod&apos;s restart policy and the container type.
-    /// Setting the RestartPolicy as &quot;Always&quot; for the init container will have the following effect:
+    /// Additionally, setting the RestartPolicy as &quot;Always&quot; for the init container will
+    /// have the following effect:
     /// this init container will be continually restarted on
     /// exit until all regular containers have terminated. Once all regular
     /// containers have completed, all init containers with restartPolicy &quot;Always&quot;
@@ -39803,6 +43081,22 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecars
     /// </summary>
     [JsonPropertyName("restartPolicy")]
     public string? RestartPolicy { get; set; }
+
+    /// <summary>
+    /// Represents a list of rules to be checked to determine if the
+    /// container should be restarted on exit. The rules are evaluated in
+    /// order. Once a rule matches a container exit condition, the remaining
+    /// rules are ignored. If no rule matches the container exit condition,
+    /// the Container-level restart policy determines the whether the container
+    /// is restarted or not. Constraints on the rules:
+    /// - At most 20 rules are allowed.
+    /// - Rules can have the same action.
+    /// - Identical rules are not forbidden in validations.
+    /// When rules are specified, container MUST set RestartPolicy explicitly
+    /// even it if matches the Pod&apos;s RestartPolicy.
+    /// </summary>
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSidecarsRestartPolicyRules>? RestartPolicyRules { get; set; }
 
     /// <summary>
     /// SecurityContext defines the security options the container should be run with.
@@ -40593,7 +43887,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArguments
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -40699,6 +43993,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArguments
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -41001,6 +44304,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArguments
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -41998,7 +45314,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgu
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -42104,6 +45420,15 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgu
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -42406,6 +45731,19 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgu
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesStepsHooksArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]
@@ -42816,7 +46154,8 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesSteps
     /// OnExit is a template reference which is invoked at the end of the
     /// template, irrespective of the success, failure, or error of the
     /// primary template.
-    /// DEPRECATED: Use Hooks[exit].Template instead.
+    /// 
+    /// Deprecated: Use Hooks[exit].Template instead.
     /// </summary>
     [JsonPropertyName("onExit")]
     public string? OnExit { get; set; }
@@ -42973,9 +46312,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesTolerations
 
     /// <summary>
     /// Operator represents a key&apos;s relationship to the value.
-    /// Valid operators are Exists and Equal. Defaults to Equal.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
     /// Exists is equivalent to wildcard for value, so that a pod can
     /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
     /// </summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
@@ -43611,7 +46951,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesEphemer
 
 /// <summary>
 /// resources represents the minimum resources the volume should have.
-/// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+/// Users are allowed to specify resource requirements
 /// that are lower than previous value but must still be higher than capacity recorded in the
 /// status field of the claim.
 /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -43744,7 +47084,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesEphemer
 
     /// <summary>
     /// resources represents the minimum resources the volume should have.
-    /// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+    /// Users are allowed to specify resource requirements
     /// that are lower than previous value but must still be higher than capacity recorded in the
     /// status field of the claim.
     /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -43767,15 +47107,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesEphemer
     /// volumeAttributesClassName may be used to set the VolumeAttributesClass used by this claim.
     /// If specified, the CSI driver will create or update the volume with the attributes defined
     /// in the corresponding VolumeAttributesClass. This has a different purpose than storageClassName,
-    /// it can be changed after the claim is created. An empty string value means that no VolumeAttributesClass
-    /// will be applied to the claim but it&apos;s not allowed to reset this field to empty string once it is set.
-    /// If unspecified and the PersistentVolumeClaim is unbound, the default VolumeAttributesClass
-    /// will be set by the persistentvolume controller if it exists.
+    /// it can be changed after the claim is created. An empty string or nil value indicates that no
+    /// VolumeAttributesClass will be applied to the claim. If the claim enters an Infeasible error state,
+    /// this field can be reset to its previous value (including nil) to cancel the modification.
     /// If the resource referred to by volumeAttributesClass does not exist, this PersistentVolumeClaim will be
     /// set to a Pending state, as reflected by the modifyVolumeStatus field, until such as a resource
     /// exists.
     /// More info: https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/
-    /// (Beta) Using this field requires the VolumeAttributesClass feature gate to be enabled (off by default).
     /// </summary>
     [JsonPropertyName("volumeAttributesClassName")]
     public string? VolumeAttributesClassName { get; set; }
@@ -44092,16 +47430,12 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesGitRepo
 /// <summary>
 /// glusterfs represents a Glusterfs mount on the host that shares a pod&apos;s lifetime.
 /// Deprecated: Glusterfs is deprecated and the in-tree glusterfs type is no longer supported.
-/// More info: https://examples.k8s.io/volumes/glusterfs/README.md
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesGlusterfs
 {
-    /// <summary>
-    /// endpoints is the endpoint name that details Glusterfs topology.
-    /// More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
-    /// </summary>
+    /// <summary>endpoints is the endpoint name that details Glusterfs topology.</summary>
     [JsonPropertyName("endpoints")]
     public required string Endpoints { get; set; }
 
@@ -44174,7 +47508,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesImage
     /// Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.
     /// Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn&apos;t present.
     /// IfNotPresent: the kubelet pulls if the reference isn&apos;t already present on disk. Container creation will fail if the reference isn&apos;t present and the pull fails.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// </summary>
     [JsonPropertyName("pullPolicy")]
     public string? PullPolicy { get; set; }
@@ -44210,7 +47544,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesIscsiSe
 /// <summary>
 /// iscsi represents an ISCSI Disk resource that is attached to a
 /// kubelet&apos;s host machine and then exposed to the pod.
-/// More info: https://examples.k8s.io/volumes/iscsi/README.md
+/// More info: https://kubernetes.io/docs/concepts/storage/volumes/#iscsi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -44637,6 +47971,138 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProject
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProjectedSourcesDownwardAPIItems>? Items { get; set; }
 }
 
+/// <summary>
+/// Projects an auto-rotating credential bundle (private key and certificate
+/// chain) that the pod can use either as a TLS client or server.
+/// 
+/// Kubelet generates a private key and uses it to send a
+/// PodCertificateRequest to the named signer.  Once the signer approves the
+/// request and issues a certificate chain, Kubelet writes the key and
+/// certificate chain to the pod filesystem.  The pod does not start until
+/// certificates have been issued for each podCertificate projected volume
+/// source in its spec.
+/// 
+/// Kubelet will begin trying to rotate the certificate at the time indicated
+/// by the signer using the PodCertificateRequest.Status.BeginRefreshAt
+/// timestamp.
+/// 
+/// Kubelet can write a single file, indicated by the credentialBundlePath
+/// field, or separate files, indicated by the keyPath and
+/// certificateChainPath fields.
+/// 
+/// The credential bundle is a single file in PEM format.  The first PEM
+/// entry is the private key (in PKCS#8 format), and the remaining PEM
+/// entries are the certificate chain issued by the signer (typically,
+/// signers will return their certificate chain in leaf-to-root order).
+/// 
+/// Prefer using the credential bundle format, since your application code
+/// can read it atomically.  If you use keyPath and certificateChainPath,
+/// your application must make two separate file reads. If these coincide
+/// with a certificate rotation, it is possible that the private key and leaf
+/// certificate you read may not correspond to each other.  Your application
+/// will need to check for this condition, and re-read until they are
+/// consistent.
+/// 
+/// The named signer controls chooses the format of the certificate it
+/// issues; consult the signer implementation&apos;s documentation to learn how to
+/// use the certificates it issues.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProjectedSourcesPodCertificate
+{
+    /// <summary>
+    /// Write the certificate chain at this path in the projected volume.
+    /// 
+    /// Most applications should use credentialBundlePath.  When using keyPath
+    /// and certificateChainPath, your application needs to check that the key
+    /// and leaf certificate are consistent, because it is possible to read the
+    /// files mid-rotation.
+    /// </summary>
+    [JsonPropertyName("certificateChainPath")]
+    public string? CertificateChainPath { get; set; }
+
+    /// <summary>
+    /// Write the credential bundle at this path in the projected volume.
+    /// 
+    /// The credential bundle is a single file that contains multiple PEM blocks.
+    /// The first PEM block is a PRIVATE KEY block, containing a PKCS#8 private
+    /// key.
+    /// 
+    /// The remaining blocks are CERTIFICATE blocks, containing the issued
+    /// certificate chain from the signer (leaf and any intermediates).
+    /// 
+    /// Using credentialBundlePath lets your Pod&apos;s application code make a single
+    /// atomic read that retrieves a consistent key and certificate chain.  If you
+    /// project them to separate files, your application code will need to
+    /// additionally check that the leaf certificate was issued to the key.
+    /// </summary>
+    [JsonPropertyName("credentialBundlePath")]
+    public string? CredentialBundlePath { get; set; }
+
+    /// <summary>
+    /// Write the key at this path in the projected volume.
+    /// 
+    /// Most applications should use credentialBundlePath.  When using keyPath
+    /// and certificateChainPath, your application needs to check that the key
+    /// and leaf certificate are consistent, because it is possible to read the
+    /// files mid-rotation.
+    /// </summary>
+    [JsonPropertyName("keyPath")]
+    public string? KeyPath { get; set; }
+
+    /// <summary>
+    /// The type of keypair Kubelet will generate for the pod.
+    /// 
+    /// Valid values are &quot;RSA3072&quot;, &quot;RSA4096&quot;, &quot;ECDSAP256&quot;, &quot;ECDSAP384&quot;,
+    /// &quot;ECDSAP521&quot;, and &quot;ED25519&quot;.
+    /// </summary>
+    [JsonPropertyName("keyType")]
+    public required string KeyType { get; set; }
+
+    /// <summary>
+    /// maxExpirationSeconds is the maximum lifetime permitted for the
+    /// certificate.
+    /// 
+    /// Kubelet copies this value verbatim into the PodCertificateRequests it
+    /// generates for this projection.
+    /// 
+    /// If omitted, kube-apiserver will set it to 86400(24 hours). kube-apiserver
+    /// will reject values shorter than 3600 (1 hour).  The maximum allowable
+    /// value is 7862400 (91 days).
+    /// 
+    /// The signer implementation is then free to issue a certificate with any
+    /// lifetime *shorter* than MaxExpirationSeconds, but no shorter than 3600
+    /// seconds (1 hour).  This constraint is enforced by kube-apiserver.
+    /// `kubernetes.io` signers will never issue certificates with a lifetime
+    /// longer than 24 hours.
+    /// </summary>
+    [JsonPropertyName("maxExpirationSeconds")]
+    public int? MaxExpirationSeconds { get; set; }
+
+    /// <summary>Kubelet&apos;s generated CSRs will be addressed to this signer.</summary>
+    [JsonPropertyName("signerName")]
+    public required string SignerName { get; set; }
+
+    /// <summary>
+    /// userAnnotations allow pod authors to pass additional information to
+    /// the signer implementation.  Kubernetes does not restrict or validate this
+    /// metadata in any way.
+    /// 
+    /// These values are copied verbatim into the `spec.unverifiedUserAnnotations` field of
+    /// the PodCertificateRequest objects that Kubelet creates.
+    /// 
+    /// Entries are subject to the same validation as object metadata annotations,
+    /// with the addition that all keys must be domain-prefixed. No restrictions
+    /// are placed on values, except an overall size limitation on the entire field.
+    /// 
+    /// Signers should document the keys and values they support. Signers should
+    /// deny requests that contain keys they do not recognize.
+    /// </summary>
+    [JsonPropertyName("userAnnotations")]
+    public IDictionary<string, string>? UserAnnotations { get; set; }
+}
+
 /// <summary>Maps a string key to a path within a volume.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -44766,6 +48232,45 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProject
     [JsonPropertyName("downwardAPI")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProjectedSourcesDownwardAPI? DownwardAPI { get; set; }
 
+    /// <summary>
+    /// Projects an auto-rotating credential bundle (private key and certificate
+    /// chain) that the pod can use either as a TLS client or server.
+    /// 
+    /// Kubelet generates a private key and uses it to send a
+    /// PodCertificateRequest to the named signer.  Once the signer approves the
+    /// request and issues a certificate chain, Kubelet writes the key and
+    /// certificate chain to the pod filesystem.  The pod does not start until
+    /// certificates have been issued for each podCertificate projected volume
+    /// source in its spec.
+    /// 
+    /// Kubelet will begin trying to rotate the certificate at the time indicated
+    /// by the signer using the PodCertificateRequest.Status.BeginRefreshAt
+    /// timestamp.
+    /// 
+    /// Kubelet can write a single file, indicated by the credentialBundlePath
+    /// field, or separate files, indicated by the keyPath and
+    /// certificateChainPath fields.
+    /// 
+    /// The credential bundle is a single file in PEM format.  The first PEM
+    /// entry is the private key (in PKCS#8 format), and the remaining PEM
+    /// entries are the certificate chain issued by the signer (typically,
+    /// signers will return their certificate chain in leaf-to-root order).
+    /// 
+    /// Prefer using the credential bundle format, since your application code
+    /// can read it atomically.  If you use keyPath and certificateChainPath,
+    /// your application must make two separate file reads. If these coincide
+    /// with a certificate rotation, it is possible that the private key and leaf
+    /// certificate you read may not correspond to each other.  Your application
+    /// will need to check for this condition, and re-read until they are
+    /// consistent.
+    /// 
+    /// The named signer controls chooses the format of the certificate it
+    /// issues; consult the signer implementation&apos;s documentation to learn how to
+    /// use the certificates it issues.
+    /// </summary>
+    [JsonPropertyName("podCertificate")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProjectedSourcesPodCertificate? PodCertificate { get; set; }
+
     /// <summary>secret information about the secret data to project</summary>
     [JsonPropertyName("secret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesProjectedSourcesSecret? Secret { get; set; }
@@ -44872,7 +48377,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesRbdSecr
 /// <summary>
 /// rbd represents a Rados Block Device mount on the host that shares a pod&apos;s lifetime.
 /// Deprecated: RBD is deprecated and the in-tree rbd type is no longer supported.
-/// More info: https://examples.k8s.io/volumes/rbd/README.md
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -45336,7 +48840,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumes
     /// <summary>
     /// glusterfs represents a Glusterfs mount on the host that shares a pod&apos;s lifetime.
     /// Deprecated: Glusterfs is deprecated and the in-tree glusterfs type is no longer supported.
-    /// More info: https://examples.k8s.io/volumes/glusterfs/README.md
     /// </summary>
     [JsonPropertyName("glusterfs")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesGlusterfs? Glusterfs { get; set; }
@@ -45373,7 +48876,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumes
     /// <summary>
     /// iscsi represents an ISCSI Disk resource that is attached to a
     /// kubelet&apos;s host machine and then exposed to the pod.
-    /// More info: https://examples.k8s.io/volumes/iscsi/README.md
+    /// More info: https://kubernetes.io/docs/concepts/storage/volumes/#iscsi
     /// </summary>
     [JsonPropertyName("iscsi")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesIscsi? Iscsi { get; set; }
@@ -45431,7 +48934,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumes
     /// <summary>
     /// rbd represents a Rados Block Device mount on the host that shares a pod&apos;s lifetime.
     /// Deprecated: RBD is deprecated and the in-tree rbd type is no longer supported.
-    /// More info: https://examples.k8s.io/volumes/rbd/README.md
     /// </summary>
     [JsonPropertyName("rbd")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesVolumesRbd? Rbd { get; set; }
@@ -45589,12 +49091,28 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplates
     public long? Parallelism { get; set; }
 
     /// <summary>
+    /// PendingTimeout allows to set the maximum time spent in pending status counting from the node&apos;s start time.
+    /// It is enforced by the controller, so a pod that starts running just as the timeout expires may still be failed.
+    /// This duration may not be applied to Step or DAG templates.
+    /// </summary>
+    [JsonPropertyName("pendingTimeout")]
+    public string? PendingTimeout { get; set; }
+
+    /// <summary>
     /// Plugin is a plugin template
     /// Note: the structure of a plugin template is free-form, so we need to have
     /// &quot;x-kubernetes-preserve-unknown-fields: true&quot; in the validation schema.
     /// </summary>
     [JsonPropertyName("plugin")]
     public JsonNode? Plugin { get; set; }
+
+    /// <summary>
+    /// PodResources defines pod-level resource requests and limits for this template&apos;s pod.
+    /// Overrides the workflow-level podResources.
+    /// Requires the PodLevelResources feature gate to be enabled on the cluster (beta since Kubernetes v1.34).
+    /// </summary>
+    [JsonPropertyName("podResources")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesPodResources? PodResources { get; set; }
 
     /// <summary>
     /// PodSpecPatch holds strategic merge patch to apply against the pod spec. Allows parameterization of
@@ -45610,6 +49128,17 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTemplates
     /// <summary>Resource template subtype which can run k8s resources</summary>
     [JsonPropertyName("resource")]
     public V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResource? Resource { get; set; }
+
+    /// <summary>
+    /// ResourceClaims defines the ResourceClaims that must be allocated and reserved before this template&apos;s pod is allowed to start.
+    /// Each entry names either an existing ResourceClaim or a ResourceClaimTemplate in the workflow&apos;s namespace, and containers ask for one by name through resources.claims.
+    /// Replaces the workflow-level resourceClaims as a whole rather than merging with it.
+    /// Not supported for a template that creates no pod: Steps, DAG and Suspend, which orchestrate other templates, and HTTP and Plugin, which run on the shared agent pod.
+    /// A template reached through a templateRef keeps its own claims, and falls back to those of the workflow calling it rather than to the spec-level claims of the WorkflowTemplate it was defined in.
+    /// Requires the DynamicResourceAllocation feature gate to be enabled on the cluster.
+    /// </summary>
+    [JsonPropertyName("resourceClaims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecTemplatesResourceClaims>? ResourceClaims { get; set; }
 
     /// <summary>RetryStrategy describes how to retry a template when it fails</summary>
     [JsonPropertyName("retryStrategy")]
@@ -45697,9 +49226,10 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecTolerations
 
     /// <summary>
     /// Operator represents a key&apos;s relationship to the value.
-    /// Valid operators are Exists and Equal. Defaults to Equal.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
     /// Exists is equivalent to wildcard for value, so that a pod can
     /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
     /// </summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
@@ -45868,7 +49398,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSpe
 
 /// <summary>
 /// resources represents the minimum resources the volume should have.
-/// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+/// Users are allowed to specify resource requirements
 /// that are lower than previous value but must still be higher than capacity recorded in the
 /// status field of the claim.
 /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -45999,7 +49529,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSpe
 
     /// <summary>
     /// resources represents the minimum resources the volume should have.
-    /// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+    /// Users are allowed to specify resource requirements
     /// that are lower than previous value but must still be higher than capacity recorded in the
     /// status field of the claim.
     /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -46022,15 +49552,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSpe
     /// volumeAttributesClassName may be used to set the VolumeAttributesClass used by this claim.
     /// If specified, the CSI driver will create or update the volume with the attributes defined
     /// in the corresponding VolumeAttributesClass. This has a different purpose than storageClassName,
-    /// it can be changed after the claim is created. An empty string value means that no VolumeAttributesClass
-    /// will be applied to the claim but it&apos;s not allowed to reset this field to empty string once it is set.
-    /// If unspecified and the PersistentVolumeClaim is unbound, the default VolumeAttributesClass
-    /// will be set by the persistentvolume controller if it exists.
+    /// it can be changed after the claim is created. An empty string or nil value indicates that no
+    /// VolumeAttributesClass will be applied to the claim. If the claim enters an Infeasible error state,
+    /// this field can be reset to its previous value (including nil) to cancel the modification.
     /// If the resource referred to by volumeAttributesClass does not exist, this PersistentVolumeClaim will be
     /// set to a Pending state, as reflected by the modifyVolumeStatus field, until such as a resource
     /// exists.
     /// More info: https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/
-    /// (Beta) Using this field requires the VolumeAttributesClass feature gate to be enabled (off by default).
     /// </summary>
     [JsonPropertyName("volumeAttributesClassName")]
     public string? VolumeAttributesClassName { get; set; }
@@ -46091,7 +49619,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSta
 /// <summary>
 /// ModifyVolumeStatus represents the status object of ControllerModifyVolume operation.
 /// When this is unset, there is no ModifyVolume operation being attempted.
-/// This is a beta field and requires enabling VolumeAttributesClass feature (off by default).
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -46167,8 +49694,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSta
     /// should ignore the update for the purpose it was designed. For example - a controller that
     /// only is responsible for resizing capacity of the volume, should ignore PVC updates that change other valid
     /// resources associated with PVC.
-    /// 
-    /// This is an alpha field and requires enabling RecoverVolumeExpansionFailure feature.
     /// </summary>
     [JsonPropertyName("allocatedResourceStatuses")]
     public IDictionary<string, string>? AllocatedResourceStatuses { get; set; }
@@ -46194,8 +49719,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSta
     /// should ignore the update for the purpose it was designed. For example - a controller that
     /// only is responsible for resizing capacity of the volume, should ignore PVC updates that change other valid
     /// resources associated with PVC.
-    /// 
-    /// This is an alpha field and requires enabling RecoverVolumeExpansionFailure feature.
     /// </summary>
     [JsonPropertyName("allocatedResources")]
     public IDictionary<string, IntOrString>? AllocatedResources { get; set; }
@@ -46214,7 +49737,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSta
     /// <summary>
     /// currentVolumeAttributesClassName is the current name of the VolumeAttributesClass the PVC is using.
     /// When unset, there is no VolumeAttributeClass applied to this PersistentVolumeClaim
-    /// This is a beta field and requires enabling VolumeAttributesClass feature (off by default).
     /// </summary>
     [JsonPropertyName("currentVolumeAttributesClassName")]
     public string? CurrentVolumeAttributesClassName { get; set; }
@@ -46222,7 +49744,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesSta
     /// <summary>
     /// ModifyVolumeStatus represents the status object of ControllerModifyVolume operation.
     /// When this is unset, there is no ModifyVolume operation being attempted.
-    /// This is a beta field and requires enabling VolumeAttributesClass feature (off by default).
     /// </summary>
     [JsonPropertyName("modifyVolumeStatus")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumeClaimTemplatesStatusModifyVolumeStatus? ModifyVolumeStatus { get; set; }
@@ -46893,7 +50414,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesEphemeralVolumeC
 
 /// <summary>
 /// resources represents the minimum resources the volume should have.
-/// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+/// Users are allowed to specify resource requirements
 /// that are lower than previous value but must still be higher than capacity recorded in the
 /// status field of the claim.
 /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -47026,7 +50547,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesEphemeralVolumeC
 
     /// <summary>
     /// resources represents the minimum resources the volume should have.
-    /// If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+    /// Users are allowed to specify resource requirements
     /// that are lower than previous value but must still be higher than capacity recorded in the
     /// status field of the claim.
     /// More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
@@ -47049,15 +50570,13 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesEphemeralVolumeC
     /// volumeAttributesClassName may be used to set the VolumeAttributesClass used by this claim.
     /// If specified, the CSI driver will create or update the volume with the attributes defined
     /// in the corresponding VolumeAttributesClass. This has a different purpose than storageClassName,
-    /// it can be changed after the claim is created. An empty string value means that no VolumeAttributesClass
-    /// will be applied to the claim but it&apos;s not allowed to reset this field to empty string once it is set.
-    /// If unspecified and the PersistentVolumeClaim is unbound, the default VolumeAttributesClass
-    /// will be set by the persistentvolume controller if it exists.
+    /// it can be changed after the claim is created. An empty string or nil value indicates that no
+    /// VolumeAttributesClass will be applied to the claim. If the claim enters an Infeasible error state,
+    /// this field can be reset to its previous value (including nil) to cancel the modification.
     /// If the resource referred to by volumeAttributesClass does not exist, this PersistentVolumeClaim will be
     /// set to a Pending state, as reflected by the modifyVolumeStatus field, until such as a resource
     /// exists.
     /// More info: https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/
-    /// (Beta) Using this field requires the VolumeAttributesClass feature gate to be enabled (off by default).
     /// </summary>
     [JsonPropertyName("volumeAttributesClassName")]
     public string? VolumeAttributesClassName { get; set; }
@@ -47374,16 +50893,12 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesGitRepo
 /// <summary>
 /// glusterfs represents a Glusterfs mount on the host that shares a pod&apos;s lifetime.
 /// Deprecated: Glusterfs is deprecated and the in-tree glusterfs type is no longer supported.
-/// More info: https://examples.k8s.io/volumes/glusterfs/README.md
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesGlusterfs
 {
-    /// <summary>
-    /// endpoints is the endpoint name that details Glusterfs topology.
-    /// More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
-    /// </summary>
+    /// <summary>endpoints is the endpoint name that details Glusterfs topology.</summary>
     [JsonPropertyName("endpoints")]
     public required string Endpoints { get; set; }
 
@@ -47456,7 +50971,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesImage
     /// Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.
     /// Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn&apos;t present.
     /// IfNotPresent: the kubelet pulls if the reference isn&apos;t already present on disk. Container creation will fail if the reference isn&apos;t present and the pull fails.
-    /// Defaults to Always if :v4.0.8 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.0 tag is specified, or IfNotPresent otherwise.
     /// </summary>
     [JsonPropertyName("pullPolicy")]
     public string? PullPolicy { get; set; }
@@ -47492,7 +51007,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesIscsiSecretRef
 /// <summary>
 /// iscsi represents an ISCSI Disk resource that is attached to a
 /// kubelet&apos;s host machine and then exposed to the pod.
-/// More info: https://examples.k8s.io/volumes/iscsi/README.md
+/// More info: https://kubernetes.io/docs/concepts/storage/volumes/#iscsi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -47919,6 +51434,138 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSources
     public IList<V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSourcesDownwardAPIItems>? Items { get; set; }
 }
 
+/// <summary>
+/// Projects an auto-rotating credential bundle (private key and certificate
+/// chain) that the pod can use either as a TLS client or server.
+/// 
+/// Kubelet generates a private key and uses it to send a
+/// PodCertificateRequest to the named signer.  Once the signer approves the
+/// request and issues a certificate chain, Kubelet writes the key and
+/// certificate chain to the pod filesystem.  The pod does not start until
+/// certificates have been issued for each podCertificate projected volume
+/// source in its spec.
+/// 
+/// Kubelet will begin trying to rotate the certificate at the time indicated
+/// by the signer using the PodCertificateRequest.Status.BeginRefreshAt
+/// timestamp.
+/// 
+/// Kubelet can write a single file, indicated by the credentialBundlePath
+/// field, or separate files, indicated by the keyPath and
+/// certificateChainPath fields.
+/// 
+/// The credential bundle is a single file in PEM format.  The first PEM
+/// entry is the private key (in PKCS#8 format), and the remaining PEM
+/// entries are the certificate chain issued by the signer (typically,
+/// signers will return their certificate chain in leaf-to-root order).
+/// 
+/// Prefer using the credential bundle format, since your application code
+/// can read it atomically.  If you use keyPath and certificateChainPath,
+/// your application must make two separate file reads. If these coincide
+/// with a certificate rotation, it is possible that the private key and leaf
+/// certificate you read may not correspond to each other.  Your application
+/// will need to check for this condition, and re-read until they are
+/// consistent.
+/// 
+/// The named signer controls chooses the format of the certificate it
+/// issues; consult the signer implementation&apos;s documentation to learn how to
+/// use the certificates it issues.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSourcesPodCertificate
+{
+    /// <summary>
+    /// Write the certificate chain at this path in the projected volume.
+    /// 
+    /// Most applications should use credentialBundlePath.  When using keyPath
+    /// and certificateChainPath, your application needs to check that the key
+    /// and leaf certificate are consistent, because it is possible to read the
+    /// files mid-rotation.
+    /// </summary>
+    [JsonPropertyName("certificateChainPath")]
+    public string? CertificateChainPath { get; set; }
+
+    /// <summary>
+    /// Write the credential bundle at this path in the projected volume.
+    /// 
+    /// The credential bundle is a single file that contains multiple PEM blocks.
+    /// The first PEM block is a PRIVATE KEY block, containing a PKCS#8 private
+    /// key.
+    /// 
+    /// The remaining blocks are CERTIFICATE blocks, containing the issued
+    /// certificate chain from the signer (leaf and any intermediates).
+    /// 
+    /// Using credentialBundlePath lets your Pod&apos;s application code make a single
+    /// atomic read that retrieves a consistent key and certificate chain.  If you
+    /// project them to separate files, your application code will need to
+    /// additionally check that the leaf certificate was issued to the key.
+    /// </summary>
+    [JsonPropertyName("credentialBundlePath")]
+    public string? CredentialBundlePath { get; set; }
+
+    /// <summary>
+    /// Write the key at this path in the projected volume.
+    /// 
+    /// Most applications should use credentialBundlePath.  When using keyPath
+    /// and certificateChainPath, your application needs to check that the key
+    /// and leaf certificate are consistent, because it is possible to read the
+    /// files mid-rotation.
+    /// </summary>
+    [JsonPropertyName("keyPath")]
+    public string? KeyPath { get; set; }
+
+    /// <summary>
+    /// The type of keypair Kubelet will generate for the pod.
+    /// 
+    /// Valid values are &quot;RSA3072&quot;, &quot;RSA4096&quot;, &quot;ECDSAP256&quot;, &quot;ECDSAP384&quot;,
+    /// &quot;ECDSAP521&quot;, and &quot;ED25519&quot;.
+    /// </summary>
+    [JsonPropertyName("keyType")]
+    public required string KeyType { get; set; }
+
+    /// <summary>
+    /// maxExpirationSeconds is the maximum lifetime permitted for the
+    /// certificate.
+    /// 
+    /// Kubelet copies this value verbatim into the PodCertificateRequests it
+    /// generates for this projection.
+    /// 
+    /// If omitted, kube-apiserver will set it to 86400(24 hours). kube-apiserver
+    /// will reject values shorter than 3600 (1 hour).  The maximum allowable
+    /// value is 7862400 (91 days).
+    /// 
+    /// The signer implementation is then free to issue a certificate with any
+    /// lifetime *shorter* than MaxExpirationSeconds, but no shorter than 3600
+    /// seconds (1 hour).  This constraint is enforced by kube-apiserver.
+    /// `kubernetes.io` signers will never issue certificates with a lifetime
+    /// longer than 24 hours.
+    /// </summary>
+    [JsonPropertyName("maxExpirationSeconds")]
+    public int? MaxExpirationSeconds { get; set; }
+
+    /// <summary>Kubelet&apos;s generated CSRs will be addressed to this signer.</summary>
+    [JsonPropertyName("signerName")]
+    public required string SignerName { get; set; }
+
+    /// <summary>
+    /// userAnnotations allow pod authors to pass additional information to
+    /// the signer implementation.  Kubernetes does not restrict or validate this
+    /// metadata in any way.
+    /// 
+    /// These values are copied verbatim into the `spec.unverifiedUserAnnotations` field of
+    /// the PodCertificateRequest objects that Kubelet creates.
+    /// 
+    /// Entries are subject to the same validation as object metadata annotations,
+    /// with the addition that all keys must be domain-prefixed. No restrictions
+    /// are placed on values, except an overall size limitation on the entire field.
+    /// 
+    /// Signers should document the keys and values they support. Signers should
+    /// deny requests that contain keys they do not recognize.
+    /// </summary>
+    [JsonPropertyName("userAnnotations")]
+    public IDictionary<string, string>? UserAnnotations { get; set; }
+}
+
 /// <summary>Maps a string key to a path within a volume.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -48048,6 +51695,45 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSources
     [JsonPropertyName("downwardAPI")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSourcesDownwardAPI? DownwardAPI { get; set; }
 
+    /// <summary>
+    /// Projects an auto-rotating credential bundle (private key and certificate
+    /// chain) that the pod can use either as a TLS client or server.
+    /// 
+    /// Kubelet generates a private key and uses it to send a
+    /// PodCertificateRequest to the named signer.  Once the signer approves the
+    /// request and issues a certificate chain, Kubelet writes the key and
+    /// certificate chain to the pod filesystem.  The pod does not start until
+    /// certificates have been issued for each podCertificate projected volume
+    /// source in its spec.
+    /// 
+    /// Kubelet will begin trying to rotate the certificate at the time indicated
+    /// by the signer using the PodCertificateRequest.Status.BeginRefreshAt
+    /// timestamp.
+    /// 
+    /// Kubelet can write a single file, indicated by the credentialBundlePath
+    /// field, or separate files, indicated by the keyPath and
+    /// certificateChainPath fields.
+    /// 
+    /// The credential bundle is a single file in PEM format.  The first PEM
+    /// entry is the private key (in PKCS#8 format), and the remaining PEM
+    /// entries are the certificate chain issued by the signer (typically,
+    /// signers will return their certificate chain in leaf-to-root order).
+    /// 
+    /// Prefer using the credential bundle format, since your application code
+    /// can read it atomically.  If you use keyPath and certificateChainPath,
+    /// your application must make two separate file reads. If these coincide
+    /// with a certificate rotation, it is possible that the private key and leaf
+    /// certificate you read may not correspond to each other.  Your application
+    /// will need to check for this condition, and re-read until they are
+    /// consistent.
+    /// 
+    /// The named signer controls chooses the format of the certificate it
+    /// issues; consult the signer implementation&apos;s documentation to learn how to
+    /// use the certificates it issues.
+    /// </summary>
+    [JsonPropertyName("podCertificate")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSourcesPodCertificate? PodCertificate { get; set; }
+
     /// <summary>secret information about the secret data to project</summary>
     [JsonPropertyName("secret")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumesProjectedSourcesSecret? Secret { get; set; }
@@ -48154,7 +51840,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumesRbdSecretRef
 /// <summary>
 /// rbd represents a Rados Block Device mount on the host that shares a pod&apos;s lifetime.
 /// Deprecated: RBD is deprecated and the in-tree rbd type is no longer supported.
-/// More info: https://examples.k8s.io/volumes/rbd/README.md
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -48618,7 +52303,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumes
     /// <summary>
     /// glusterfs represents a Glusterfs mount on the host that shares a pod&apos;s lifetime.
     /// Deprecated: Glusterfs is deprecated and the in-tree glusterfs type is no longer supported.
-    /// More info: https://examples.k8s.io/volumes/glusterfs/README.md
     /// </summary>
     [JsonPropertyName("glusterfs")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumesGlusterfs? Glusterfs { get; set; }
@@ -48655,7 +52339,7 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumes
     /// <summary>
     /// iscsi represents an ISCSI Disk resource that is attached to a
     /// kubelet&apos;s host machine and then exposed to the pod.
-    /// More info: https://examples.k8s.io/volumes/iscsi/README.md
+    /// More info: https://kubernetes.io/docs/concepts/storage/volumes/#iscsi
     /// </summary>
     [JsonPropertyName("iscsi")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumesIscsi? Iscsi { get; set; }
@@ -48713,7 +52397,6 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpecVolumes
     /// <summary>
     /// rbd represents a Rados Block Device mount on the host that shares a pod&apos;s lifetime.
     /// Deprecated: RBD is deprecated and the in-tree rbd type is no longer supported.
-    /// More info: https://examples.k8s.io/volumes/rbd/README.md
     /// </summary>
     [JsonPropertyName("rbd")]
     public V1alpha1CronWorkflowSpecWorkflowSpecVolumesRbd? Rbd { get; set; }
@@ -48862,6 +52545,21 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpec
     public V1alpha1CronWorkflowSpecWorkflowSpecExecutor? Executor { get; set; }
 
     /// <summary>
+    /// Specifies executor plugins at the workflow level.
+    /// 
+    /// This field is effective only when the ARGO_WORKFLOW_LEVEL_EXECUTOR_PLUGINS
+    /// feature gate is enabled.
+    /// 
+    /// If this field contains one or more executor plugins, executor plugin
+    /// settings from the controller ConfigMap are ignored.
+    /// 
+    /// If this field is empty or not set, the controller falls back to the
+    /// ConfigMap configuration.
+    /// </summary>
+    [JsonPropertyName("executorPlugins")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecExecutorPlugins>? ExecutorPlugins { get; set; }
+
+    /// <summary>
     /// Hooks holds the lifecycle hook which is invoked at lifecycle of
     /// step, irrespective of the success, failure, or error status of the primary step
     /// </summary>
@@ -48929,6 +52627,14 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpec
     public string? PodPriorityClassName { get; set; }
 
     /// <summary>
+    /// PodResources defines pod-level resource requests and limits to apply to all workflow pods.
+    /// Will be overridden if a template&apos;s podResources is set.
+    /// Requires the PodLevelResources feature gate to be enabled on the cluster (beta since Kubernetes v1.34).
+    /// </summary>
+    [JsonPropertyName("podResources")]
+    public V1alpha1CronWorkflowSpecWorkflowSpecPodResources? PodResources { get; set; }
+
+    /// <summary>
     /// PodSpecPatch holds strategic merge patch to apply against the pod spec. Allows parameterization of
     /// container fields which are not strings (e.g. resource limits).
     /// </summary>
@@ -48938,6 +52644,17 @@ public partial class V1alpha1CronWorkflowSpecWorkflowSpec
     /// <summary>Priority is used if controller is configured to process limited number of workflows in parallel. Workflows with higher priority are processed first.</summary>
     [JsonPropertyName("priority")]
     public int? Priority { get; set; }
+
+    /// <summary>
+    /// ResourceClaims defines the ResourceClaims that must be allocated and reserved before the pods running this workflow&apos;s templates are allowed to start.
+    /// Each entry names either an existing ResourceClaim or a ResourceClaimTemplate in the workflow&apos;s namespace, and containers ask for one by name through resources.claims.
+    /// The list is replaced as a whole rather than merged, so a template&apos;s resourceClaims, or a Workflow overriding a WorkflowTemplate, supersedes it entirely.
+    /// Applies to the pods this workflow runs, including one whose template came through a templateRef, but not to the shared agent pod behind HTTP and Plugin templates.
+    /// A referenced WorkflowTemplate&apos;s own spec-level resourceClaims do not come along with a templateRef; use workflowTemplateRef to inherit the referenced spec.
+    /// Requires the DynamicResourceAllocation feature gate to be enabled on the cluster.
+    /// </summary>
+    [JsonPropertyName("resourceClaims")]
+    public IList<V1alpha1CronWorkflowSpecWorkflowSpecResourceClaims>? ResourceClaims { get; set; }
 
     /// <summary>RetryStrategy for all templates in the workflow.</summary>
     [JsonPropertyName("retryStrategy")]

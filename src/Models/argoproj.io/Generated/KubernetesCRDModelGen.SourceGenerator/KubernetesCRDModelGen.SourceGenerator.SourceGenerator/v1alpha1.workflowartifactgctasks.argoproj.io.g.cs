@@ -489,6 +489,9 @@ public partial class V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArchiveLoc
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArchiveLocationHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -690,6 +693,9 @@ public partial class V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArchiveLoc
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArchiveLocationS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
@@ -1278,6 +1284,9 @@ public partial class V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArtifactsH
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArtifactsHttpHeaders>? Headers { get; set; }
 
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
+
     [JsonPropertyName("url")]
     public required string Url { get; set; }
 }
@@ -1479,6 +1488,9 @@ public partial class V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArtifactsS
 {
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowArtifactGCTaskSpecArtifactsByNodeArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
